@@ -10,14 +10,29 @@ key gets scraped and auto-revoked. This Worker holds the key instead.
 ## Deploy
 
 ```bash
-cd worker
-npx wrangler secret put ANTHROPIC_API_KEY     # paste the key; never in a file
-npx wrangler deploy
+./scripts/deploy_worker.sh
 ```
 
-Then set the deployed URL in the Creator, either by editing `AI_PROXY` at the
-top of `assets/creator.js` or by adding it to `src/foundry_sources.json` as
-`"ai_proxy"`, which `scripts/build.py` writes into `data/ai-proxy.js`.
+That pipes `ANTHROPIC_API_KEY` straight from `.env` into `wrangler secret put`
+(so the value is never printed or pasted), deploys, reads the URL out of
+wrangler's output, writes it to `src/foundry_sources.json` as `ai_proxy.url`,
+and rebuilds. Commit and push afterwards to put it live.
+
+By hand, if you would rather:
+
+```bash
+cd worker
+npx wrangler secret put ANTHROPIC_API_KEY     # reads stdin; paste, then Ctrl-D
+npx wrangler deploy                            # prints the URL
+```
+
+then set that URL in `src/foundry_sources.json` under `ai_proxy.url` and run
+`python3 scripts/build.py`.
+
+**The URL is predictable**: `name` in `wrangler.toml` plus your workers.dev
+subdomain, which is `sortilege` — so
+`https://sortilege-l5r-creator-ai.sortilege.workers.dev`, alongside the existing
+`sortilege-onboarding.sortilege.workers.dev`.
 
 ## What it will and will not do
 
