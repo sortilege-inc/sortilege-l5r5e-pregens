@@ -1,0 +1,839 @@
+{
+ "slug": "shinjo-anzu",
+ "name": "Shinjō Anzu",
+ "folder_label": "Shinjō Anzu",
+ "campaign": "The Fragile Peace",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Unicorn",
+  "family": "Shinjo",
+  "school": "Iuchi Meishodo Master School",
+  "role": "Artisan",
+  "age": ""
+ },
+ "portrait": "src/portraits/shinjo-anzu.webp",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Unicorn",
+     "ring": "water",
+     "skill": "survival",
+     "social_status": 30
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Shinjo",
+     "ring": "fire",
+     "skill1": "sentiment",
+     "skill2": "survival",
+     "wealth": 8,
+     "social_glory": 44
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Iuchi Meishodo Master School",
+     "roles": "Artisan",
+     "ring1": "earth",
+     "ring2": "water",
+     "skill1": "aesthetics",
+     "skill2": "design",
+     "skill3": "theology",
+     "social_honor": 40
+    },
+    "picks": {
+     "techniques": [
+      "Jurōjin’s Balm",
+      "The Rushing Wave",
+      "Commune with the Spirits",
+      "Ancestry Unearthed"
+     ],
+     "school_ability": [
+      "The Way of Names"
+     ],
+     "equipment": [
+      "Ceremonial Clothes",
+      "Traveling Clothes",
+      "Wakizashi",
+      "Horsebow",
+      "Calligraphy Set",
+      "Traveling pack"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "stand_out": "The Way of Names uses the element of the practitioner's choice, and most masters use Earth to settle a spirit into place or Void to meet it on its own terms. Anzu uses Fire: she doesn't settle the spirit, she inflames it into wanting to be there. It's faster, it takes worse, and the talismans that survive it have vocal opinions.",
+     "ring": "fire"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Her giri is to Shinjo Altansarnai, Khan of Khans and daimyō of the Shinjo: she makes meishōdō for the family's own use, issued where they are needed rather than given where they are wanted."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "She wants children and has not been able to have them."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "She stands well with the Unicorn and is called auntie by half of them, including men older than she is, which is usually a courtesy.",
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "bushido": "She holds Compassion first and Honour last, having spent enough time putting bushi back together to conclude that most of what the code asks of them on a field is foolishness.",
+     "skill": "medicine",
+     "social_add_honor": 0,
+     "tenet_paramount": "Compassion",
+     "tenet_less_significant": "Honour"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "A meishōdō that fails does not merely stop working; it lets something out. Anzu made the browband Ping has worn since Shinjo Altansarnai first rode her, and in all those years it has needed neither repair nor replacement — which is why the word the family uses for her work is not clever but reliable, and why she is the one they send for when the thing must not fail."
+    },
+    "picks": {
+     "distinction": [
+      "Famously Reliable"
+     ]
+    }
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "The family's talismans are never finished, only sufficient, and Anzu keeps a running count in her head of which ones are ageing and who is carrying them; anything else has to be done around it, and the list is never completed."
+    },
+    "picks": {
+     "adversity": [
+      "Encompassing Duty"
+     ]
+    }
+   },
+   "step11": {
+    "answers": {
+     "calms": "Occasionally she is able to cook outside for whoever is there — a pot big enough for everyone, and the children eating standing up between rides."
+    },
+    "picks": {
+     "passion": [
+      "Hot Pot"
+     ]
+    }
+   },
+   "step12": {
+    "answers": {
+     "worries": "The Phoenix decide what counts as proper practice and the court decides what the Emperor hears, and the Iuchi way answers to neither on its own merits. Anzu assumes any authority she has not yet met has already been told something about meishōdō, and it is unlikely to have been kind, or even true."
+    },
+    "picks": {
+     "anxiety": [
+      "Conspiracy"
+     ]
+    }
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "She and all eight of her siblings were delivered by the same old Ujik woman, who stayed long enough afterwards to teach Anzu what she knew: how a birth goes wrong and how early it can be read, which fevers in a child are worth waking the ordu for, and the names of the Ten Lords of Death, of whom the Child Bearer is one. Anzu is who they send for when a child is coming. She has never had one."
+    },
+    "picks": {
+     "advantage": [
+      "Skilled Midwife"
+     ]
+    }
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Broad-faced and weathered past her years, with the grey starting to come in at the temples and her hair worn long and loose the way riders wear it rather than pinned the way the Iuchi school prefers. Her hands are marked across the backs and knuckles from wire and hot metal, and she wears her own work — braided metal at the ears and throat."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "She yells and invents her own very colourful profanity."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Shinjo Harunobu — her younger brother. Left for the Crab at about nine and has been a stranger to the family since; she made him Musubi.\n\nShinjo Altansarnai — Khan of Khans and daimyō of the Shinjo, Anzu's lord.\n\nThe old Ujik midwife — delivered Anzu and all nine of them, taught her what she knows.\n\nThe children of the ordu — auntie to all of them."
+    },
+    "picks": {
+     "item": [
+      "Herbal Medicines"
+     ]
+    }
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "The Iuchi mark their students young, and the family gave her up the year she was marked. Before that she was her father's girl: the horse-lines and the forge, wire and hooves and the fitting of tack, and both her parents will still tell you she was better with a hammer at eleven than a smith's apprentice — which is the nearest either of them comes to saying they would rather have kept her.",
+     "skill": "smithing"
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "She is named after her grandmother's spirit companion, and befittingly it seems a spirit has chosen her as well, although its strange powers convey the Void.",
+     "heritage_1": 9,
+     "heritage_2": 10,
+     "heritage_add_honor": 0,
+     "heritage_add_glory": -3,
+     "heritage_add_status": 3
+    },
+    "picks": {
+     "heritage_item": [
+      "Sight beyond Existence"
+     ]
+    }
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Anzu"
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "She will receive a great vision while riding, and will perish from the fall off her horse."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Iuchi Meishodo Master School",
+   "foundry_id": "d2MPs8wj7KsCV5w7",
+   "foundry_name": "Shinjō Anzu (0 XP)",
+   "rings": {
+    "air": 1,
+    "earth": 2,
+    "fire": 3,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 0,
+     "design": 1,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 1,
+     "theology": 1
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 40,
+    "glory": 46,
+    "status": 33,
+    "ninjo": "She wants children and has not been able to have them.",
+    "giri": "Her giri is to Shinjo Altansarnai, Khan of Khans and daimyō of the Shinjo: she makes meishōdō for the family's own use, issued where they are needed rather than given where they are wanted.",
+    "bushido_tenets": {
+     "paramount": "Compassion",
+     "less_significant": "Honour"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Jurōjin’s Balm",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "The Rushing Wave",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Commune with the Spirits",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Ancestry Unearthed",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "The Way of Names",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Sight beyond Existence",
+     "xp_used": 0,
+     "xp_cost": 6,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "inversion",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Famously Reliable",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "earth",
+     "types": "Fame, Interpersonal"
+    },
+    {
+     "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Mental"
+    },
+    {
+     "name": "Hot Pot",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "earth",
+     "types": "Interpersonal, Physical"
+    },
+    {
+     "name": "Conspiracy",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "earth",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Skilled Midwife",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Interpersonal"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Horsebow",
+     "quantity": 1
+    },
+    {
+     "name": "Ceremonial Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Calligraphy Set",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Maker's Punch",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Herbal Medicines",
+     "quantity": 1
+    }
+   ],
+   "advancements": []
+  },
+  {
+   "xp": 104,
+   "label": null,
+   "rank": 4,
+   "school": "Iuchi Meishodo Master School",
+   "foundry_id": "JmyWJBtsDzEzhsey",
+   "foundry_name": "Shinjō Anzu (104 XP)",
+   "rings": {
+    "air": 1,
+    "earth": 2,
+    "fire": 5,
+    "water": 3,
+    "void": 4
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 0,
+     "design": 3,
+     "smithing": 3
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 1,
+     "theology": 2
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 3
+    }
+   },
+   "social": {
+    "honor": 40,
+    "glory": 46,
+    "status": 33,
+    "ninjo": "She wants children and has not been able to have them.",
+    "giri": "Her giri is to Shinjo Altansarnai, Khan of Khans and daimyō of the Shinjo: she makes meishōdō for the family's own use, issued where they are needed rather than given where they are wanted.",
+    "bushido_tenets": {
+     "paramount": "Compassion",
+     "less_significant": "Honour"
+    }
+   },
+   "derived": {
+    "endurance": 14,
+    "composure": 10,
+    "focus": 6,
+    "vigilance": 2,
+    "void_points": 4
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Jurōjin’s Balm",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "The Rushing Wave",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Commune with the Spirits",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Ancestry Unearthed",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "The Way of Names",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Sight beyond Existence",
+     "xp_used": 0,
+     "xp_cost": 6,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "inversion",
+     "rank": 1
+    },
+    {
+     "name": "Sympathetic Energies",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
+     "kind": "invocation",
+     "rank": 2
+    },
+    {
+     "name": "Cleansing Rite",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Hands of the Tides",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "invocation",
+     "rank": 3
+    },
+    {
+     "name": "Courage of Seven Thunders",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Dazzling Performance",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
+     "name": "Rise, Earth",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
+     "kind": "invocation",
+     "rank": 4
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Famously Reliable",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "earth",
+     "types": "Fame, Interpersonal"
+    },
+    {
+     "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Mental"
+    },
+    {
+     "name": "Hot Pot",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "earth",
+     "types": "Interpersonal, Physical"
+    },
+    {
+     "name": "Conspiracy",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "earth",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Skilled Midwife",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Interpersonal"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Horsebow",
+     "quantity": 1
+    },
+    {
+     "name": "Ceremonial Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Calligraphy Set",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Maker's Punch",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Herbal Medicines",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Courtesy +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "courtesy",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Void +1 (1 -> 2)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": false
+    },
+    {
+     "label": "Void +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Fire +1 (3 -> 4)",
+     "type": "ring",
+     "skill": null,
+     "ring": "fire",
+     "at_rank": 1,
+     "xp": 12,
+     "in_curriculum": false
+    },
+    {
+     "label": "Void +1 (3 -> 4)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 12,
+     "in_curriculum": false
+    },
+    {
+     "label": "Fire +1 (4 -> 5)",
+     "type": "ring",
+     "skill": null,
+     "ring": "fire",
+     "at_rank": 2,
+     "xp": 15,
+     "in_curriculum": false
+    },
+    {
+     "label": "Design +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "design",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Design +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "design",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Smithing +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "smithing",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Survival +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "survival",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Smithing +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "smithing",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Theology +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "theology",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 4,
+     "in_curriculum": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shinjō Anzu — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Shinjō Anzu</span>
+  <a href="../characters/shinjo-anzu.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "shinjo-anzu-0xp",
+ "name": "Shinjō Anzu",
+ "clan": "Unicorn",
+ "family": "Shinjo",
+ "school": "Iuchi Meishodo Master School",
+ "role": "Artisan",
+ "rank": 1,
+ "portrait": "../src/portraits/shinjo-anzu.webp",
+ "rings": {
+  "air": 1,
+  "earth": 2,
+  "fire": 3,
+  "water": 3,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 10,
+  "composure": 10,
+  "focus": 4,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 10
+  },
+  "fatigue": {
+   "max": 10
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 40,
+  "glory": 46,
+  "status": 33
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 1,
+  "composition": 0,
+  "design": 1,
+  "smithing": 1,
+  "fitness": 0,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 1,
+  "sentiment": 1,
+  "theology": 1,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 2
+ },
+ "bushido": {
+  "paramount": "Compassion",
+  "less": "Honour"
+ },
+ "ninjo": "She wants children and has not been able to have them.",
+ "giri": "Her giri is to Shinjo Altansarnai, Khan of Khans and daimyō of the Shinjo: she makes meishōdō for the family's own use, issued where they are needed rather than given where they are wanted.",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Jurōjin’s Balm",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<p>Lifeblood of the Earth Kami (Elemental), Jiro's Patience (Fortunist), Kiss of the Pond Woman (Foreign)</p><p><em>Jurōjin, guardian of longevity, health, and physical wellbeing, is one of the most sought after of the Seven Fortunes—for whether one is a lord or a peasant, one is sure to pray for health sooner or later. A shugenja can impart spiritual fortification in this Fortune’s name, anointing the body of the target with sacred earth, healing plants such as ginseng or rhubarb, or stranger remedies still. While under the effects of this blessing, a character is much more resistant to poison, disease, and the effects of alcohol—which can be a boon or curse depending on one's goals.</em></p><p><strong>Activation:</strong> As a Support action, you may make a TN 1 Theology (earth) check targeting one character at range 0–1.</p><p><strong>Effects:</strong> If you succeed, you augment your target’s fortitude. The target reduces TN of all checks to resist the effects of poison and disease by 2 (to a minimum of 1). Additionally, the target cannot become intoxicated via imbibing alcohol. This effect persists until the end of the scene.</p><h4>New Opportunities</h4><p>(earth)(op): If you succeed, your target also reduces the TN of all checks to resist mahō, the Defiled terrain quality, and the effects of Otherworldly beings by 2 (to a minimum of 1).</p><p>(earth)(op): This effect persists for twenty-four hours instead.</p><p>(earth)(op)(op): If you succeed, you also mend your target, removing any poisons currently afflicting them and the Dying condition, and any symptoms of diseases affecting them are suppressed until the end of the scene.</p>"
+  },
+  {
+   "name": "The Rushing Wave",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<p>Utaku's Waterborne Steed (Ancestral), The Clay Kobune (Alchemy), Isora's Spinning Dance (Fortunist)</p><p><em>The shugenja calls the torrent as their steed and rides it, pulling a wave of water from a nearby lake, pond, river, or ocean to propel them forward at incredible speed.</em></p><p><strong>Activation:</strong> As a Movement action, you may make a TN 2 Theology (water) check targeting one character at range 0–1. There must be a large source of water nearby to perform this invocation.</p><p><strong>Effects:</strong> If you succeed during a skirmish, you summon a rushing waterspout that propels the target. The target may immediately move 1 range band, plus additional range bands equal to your bonus successes. If you succeed during a narrative or downtime scene, you summon a gentle current that doubles the target’s speed across or through the water (such as while swimming or while traveling in a sailing ship or riverboat). This effect persists until the end of the scene.</p>"
+  },
+  {
+   "name": "Commune with the Spirits",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<p><span class=\"fontstyle0\"><em>The ritualist centers their mind on one of the Elements, appealing to the spirits in their environment and seeking their counsel or boon. Priests and laypeople are able to use this ritual to receive less specific guidance from the spirits, such as a leaf that falls to the ground pointing in the direction of the person or thing they are seeking.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity or Support action, you may make a </span><span class=\"fontstyle2\">TN 1 Theology check </span><span class=\"fontstyle3\">using (air), (earth), (fire), (water), or (void) to appeal to nearby spirits of that Element (appeal to the departed, such as ancestor spirits, and other non-elemental supernatural presences, if using (void)) for aid.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, choose and receive one of the following boons from the spirit or spirits you contacted:</span></p><ul><li><p><span class=\"fontstyle2\">- Sense the Kami: </span><span class=\"fontstyle3\">Detect all spirits and uses of their magic by shugenja within a number of range bands equal to the ring you used plus your bonus successes.</span></p></li><li><p><span class=\"fontstyle2\">- Spiritual Knowledge: </span><span class=\"fontstyle3\">Learn one fact the spirits know about the area.</span></p></li><li><p><span class=\"fontstyle2\">- Elemental Gift: </span><span class=\"fontstyle3\">The kami deliver a small amount of the Element in question to you. For instance, a prayer to a water kami might cause it to begin raining lightly, for a short time, but it might also cause you to run across a stream, or even find groundwater. In contrast, a prayer to fire kami might bring forth a small shower of sparks, while a prayer to an air kami might elicit a gust of wind. Praying to an earth kami might cause you to stumble across a large stone, or find a small patch of arable ground amid a wasteland. Prayers to the ancestors may allow the petitioner to find something that belonged to an ancestor in a time of need.</span></p></li></ul><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Reduce the TN of your next check to interact with or appeal to kami or supernatural presences of this Element by 1.</span></p><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">If you succeed, receive one additional boon per </span><span class=\"fontstyle6\">(op) </span><span class=\"fontstyle3\">spent this way. Each boon can only be received one time per activation.</span></p>"
+  },
+  {
+   "name": "Ancestry Unearthed",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<p><span class=\"fontstyle0\"><em>A samurai’s ancestry often reveals a great deal about their political opportunities, assets, and probable allies in the Emerald Empire, for the rigid social strata allow little divergence. Any courtier can likely dredge up another samurai’s lineage from the dark corners of their mind, but some can recall it in an instant.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Scholar skill (earth) or Social skill (earth) check targeting a character, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(earth)(op): </span><span class=\"fontstyle3\">You know one sworn oath the character’s family took in the past, and whether or not they have broken or bent it.</span></p><p><span class=\"fontstyle2\">(earth)(op)(op): </span><span class=\"fontstyle3\">You know one secret of the character’s family that they would prefer be forgotten, and have perhaps even worked to bury.</span></p><p><span class=\"fontstyle2\">(earth)(op)(op): </span><span class=\"fontstyle3\">You know something the character does not even known about their own ancestry.</span></p>"
+  },
+  {
+   "name": "The Way of Names",
+   "tag": "School Ability",
+   "kind": "school_ability",
+   "text": "<p><span class=\"fontstyle0\">As a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 2 Design check </span><span class=\"fontstyle0\">using any ring to bind a spirit to an inanimate vessel, creating a meishōdō talisman for one invocation of that Element that you have learned. While you have the talisman in your possession, reduce the TN of checks to activate that invocation by 1. You can give the talisman to another shugenja, allowing them to perform that invocation even if they have not learned it and reducing the TN to activate it by 1, but the talisman ceases to function after a number of uses equal to your school rank. You can sustain a number of meishōdō talismans up to your school rank. You can only have one meishōdō talisman for any single invocation.</span></p>"
+  },
+  {
+   "name": "Sight beyond Existence",
+   "tag": "Inversion",
+   "kind": "inversion",
+   "text": "<p><em>The Void is nonexistence; therefore, within it, all possibilities exist. One who attunes their senses to nonexistence can perceive the other possible realities that ripple outward from each moment of action. The signs often do not come as complete visions, but as brief flashes: hazy vignettes of a world that never was. The rustling of leaves from a tree that has not yet grown, the first laugh shared with a new friend, the scent of blood and burning flesh. However, these rippling potential truths can become intoxicating, drawing an undisciplined mind deeper and deeper into twisted realms of refracted possibility until there is no escape. This is what those who study the Void call the “Lying Darkness”: the trap that awaits all who let their worldly desires guide their ventures into the Void.</em></p><p><strong>Activation:</strong> Once per session, immediately after you or another character at range 0–3 performs an action or makes a choice of great consequence in a narrative scene, you may make a TN 2 Theology (void) check targeting that character to peer beyond the lie of time and find another outcome.</p><p><strong>Effects:</strong> If you succeed, you scry for another outcome and return to the moment before the action was performed. All effects and outcomes stemming from the action are undone, but only you and the target are aware of the reality that no longer is. If you are the target, you may choose the same or a different action or decision. If another character is the target, you may say up to five words to the target before they act or make a decision.</p><h4>New Opportunities</h4><p>(op): If you target another character and you succeed, you may perform an action immediately before the target performs their new action.</p><h4>Magnitude</h4><p><strong>Magnitude 1+:</strong> You see one possible consequence of the original action or decision that would occur before the end of the scene.</p><p><strong>Magnitude 2+:</strong> You see one additional possible consequence of the original action or decision that would occur in the next year.</p><p><strong>Magnitude 3+:</strong> You see one additional possible consequence of the original action or decision that would occur in the next decades, or even further in the future.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Famously Reliable",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<p><span class=\"fontstyle0\"><em>When the lord came to see how the smith was proceeding on his sword, he found the smithy a shambles, the river running through the forge, and the smith with his robes tied up around his middle.</em></span></p><p><span class=\"fontstyle0\"><em>“Tsi-san,” said the great lord. “I trust my sword will be ready tomorrow, as we agreed?”</em></span></p><p><span class=\"fontstyle0\"><em>“Of course, great lord,” said the smith, bowing low. “This is only a minor setback.”</em></span></p><p><span class=\"fontstyle2\"><em>– The Trials of Tsi Wenfu, </em></span><span class=\"fontstyle3\"><em>author unknown</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Famously Reliable distinction:</span></p><ul><li><p><span class=\"fontstyle2\">- Other people have heard of you for your remarkable adherence to your oaths and responsibilities, even over and above most samurai, and they believe it by default unless given evidence to the contrary.</span></p></li><li><p><span class=\"fontstyle2\">- When performing a check for which you need to leverage your reputation for keeping your oaths and bargains (such as a Command (earth) check to calm a panicked soldier or a Performance (earth) check to relate a tale that inspires patience), you may reroll up to two dice.</span></p></li></ul>"
+  },
+  {
+   "name": "Encompassing Duty",
+   "tag": "Adversity",
+   "ring": "earth",
+   "kind": "adversity",
+   "text": "<p><em>“I will lay down my life for my family. Nothing will stand in the way of that.”</em></p><p><em>– Aina, Ashigaru of the Lion</em></p><p></p><p>The following apply to a character with the Encompassing Duty adversity:</p><ul><li><p>- You have a duty to something: your family, a friend, a cause, or some other person or ideal. This duty should manifest into at least one discernible goal, one you can work out with the GM. A goal may be to provide for your family, rescue a friend, or achieve a similar aim. You have a difficult time relaxing or focusing on tasks that do not somehow advance your goal, and this may manifest in several ways, including frustration, anger, worry, or nervousness. </p></li><li><p>- Whenever you make a check related to overcoming something that could hinder you in achieving your duty (such as a Meditation (earth) check to keep a cool head in an ambush or a Courtesy (earth) check to reason with a stubborn shopkeeper), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>"
+  },
+  {
+   "name": "Hot Pot",
+   "tag": "Passion",
+   "ring": "earth",
+   "kind": "passion",
+   "text": "<p><span class=\"fontstyle0\"><em>Möngke sat on his horse—back aching, stomach growling—as the night grew deeper. It had been a long, dusty journey. His stomach growled again, but this time in anticipation: of the fiery bite of chili; the heady, back-of-the-throat warmth of herbs; and the satisfying aroma of meaty fats. Urging his horse faster and faster, he finally came across the encampment, flew into his family’s yurt, and slid in front of the hot pot, bowl already in hand.</em></span></p><p><span class=\"fontstyle0\"><em>“Möngke travels on his stomach!” his aunts and uncles laughed. “His nose will always bring him back home.”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Hot Pot passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You know how to prepare a good, hearty, flavorful meal in a communal environment. You can identify the meats, tubers, vegetables, and spices to make hot pot, as well as what might spoil or be poisonous to the meal. Because of the strong associations, you can also recall memories connected to sharing hot pot with friends and family.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check involving the preparation of a communal meal of hot pot (such as a Labor (earth) check to stretch limited rations into a satisfying meal or a Courtesy (earth) check to make a guest feel disarmed and at ease over dinner), you remove 3 strife.</span></p></li></ul>"
+  },
+  {
+   "name": "Conspiracy",
+   "tag": "Anxiety",
+   "ring": "earth",
+   "kind": "anxiety",
+   "text": "<p><em>“Why is she never seen out during the day?”</em></p><p><em>“Genjirō, you know the family keeps Lady Kaguya out of the sun because she burns so easily.”</em></p><p><em>“No, it’s because she feeds off the light of the moon.”</em></p><p><em>His friend sighed. “Moon people don’t exist, you know.”</em></p><p><em>“They do! They eat the dreams of their lovers, causing terrible nightmares.”</em></p><p><em>“Wait, does she eat dreams or moonlight?”</em></p><p><em>“You aren’t listening! If our lady’s bride-to-be isn’t human, we have to warn her. Now, moon people have a crescent-shaped birthmark on their—”</em></p><p><em>“We are not sneaking into Lady Kaguya’s bedroom to search her body! Do you want your head chopped off?”</em></p><p><strong>Effects:</strong> The following apply to a character with the Conspiracy anxiety:</p><ul><li><p>- You are plagued by the knowledge that there are greater plots in the world than what most others can see. Everywhere, treacherous schemes wait to ruin the lives of good people, and you cannot help but warn others of these awful machinations.</p></li><li><p>- After performing a check to interact with an unfamiliar authority figure (such as a Courtesy (earth) check to be properly deferential or a Government (earth) check to remember an authority figure’s specific role), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>"
+  },
+  {
+   "name": "Skilled Midwife",
+   "tag": "Distinction",
+   "ring": "fire",
+   "kind": "distinction",
+   "text": "<p><span class=\"fontstyle0\"><em>Ryōshirō nodded and smiled but put up a hand to ward the family off. “No, you don’t have to gift me anything.”</em></span></p><p><span class=\"fontstyle0\"><em>They had offered him salted eggs, tea, a yukata family heirloom, their whole daikon harvest, a goat of all things. The brand-new father said, “For the safe birth of my child, for the health of my wife, we owe you everything.”</em></span></p><p><span class=\"fontstyle0\"><em>“No, it is my job. Nothing more.”</em></span></p><p><span class=\"fontstyle0\"><em>The grandmother finally lifted herself up, leaning on a walking stick. Everyone patiently waited for her to amble over, until she grabbed Ryōshirō’s wrist with a grip that could crush mountains.</em></span></p><p><span class=\"fontstyle0\"><em>“Yes,” Ryōshirō said, smiling. “I am being rude. Let us share a meal.”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Skilled Midwife distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- You are exceptionally skilled in most aspects of pregnancy, childbirth, common illnesses children are prone to, and child-rearing and others are more likely to take your advice regarding such matters.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check for which your midwife skills are a benefit (such as a Culture (fire) check to theorize why a particular village is experiencing a rash of illnesses in their youth or a Fitness (fire) check to act quickly enough to save a child), you may reroll up to two dice.</span></p></li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Horsebow",
+   "kind": "Weapon",
+   "category": "Bows",
+   "skill": "ranged",
+   "range": "2-4",
+   "damage": 4,
+   "deadliness": 5,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "4",
+   "text": "<p><span class=\"fontstyle0\">Among the Unicorn Clan’s many adopted weapons is a small, sturdy bow used by the nomadic peoples of the steppes far to the west. Called the Shinjo horsebow in Rokugan, this weapon is a compact bow designed to be fired from the back of a moving horse. It is a shortrange weapon intended for raiding and cavalry attacks</span>.</p>"
+  },
+  {
+   "name": "Ceremonial Clothes",
+   "kind": "Armor",
+   "physical": 1,
+   "qualities": [
+    "Ceremonial",
+    "Resplendent"
+   ],
+   "rarity": "4",
+   "text": "<p>Ceremonial clothing is any garment worn during an official ceremony, from a samurai’s court kimono to the accoutrement of the Imperial family. Ceremonial clothing is often richly decorated and offers little protection.</p>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>"
+  },
+  {
+   "name": "Calligraphy Set",
+   "kind": "Item",
+   "rarity": "3",
+   "text": "<p>These ornate boxes contain items a practiced calligrapher needs to craft books, letters, scrolls, and other written communications. It consists of a small wooden box that contains a variety of brushes, inkstones, and pigments; a small bowl for water; and a small bag of sand for drying. Calligraphers and scribes customarily carry a calligraphy set, as so do some samurai and courtiers who prefer to write their own correspondence. (Cost: 1 bu. Rarity: 3.)</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  },
+  {
+   "name": "Maker's Punch",
+   "kind": "Item",
+   "rarity": "0"
+  },
+  {
+   "name": "Herbal Medicines",
+   "kind": "Item",
+   "rarity": "5",
+   "text": "<p>Shinobi often must keep strange schedules. On castle missions, they sometimes stay up all night to gather information or harass foes after spending a day working in disguise. In the wilderness, they must remain alert for long periods of time when working as scouts or sentries. Herbal medicines, kept in pill form in small medicine cases or as tea brews, allow the shinobi to stave off hunger, thirst, drowsiness, or pain.</p><p data-start=\"512\" data-end=\"790\">At the end of a scene, a character with the Exhausted condition may use one dose of herbal medicine to remove strife and fatigue as if they were not Exhausted. They cannot benefit from this effect again until they remove the Exhausted condition. (Cost: 1 bu per dose. Rarity 5.)</p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

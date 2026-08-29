@@ -26,6 +26,7 @@
         '<span class="rl">' + esc(c.school || "—") + "</span>" +
         '<span class="xp">' + esc(c.clan || "") + " · " +
         (c.xp_min === c.xp_max ? c.xp_min : c.xp_min + "–" + c.xp_max) + " XP</span>" +
+        (c.campaign ? '<span class="camp">' + esc(c.campaign) + "</span>" : "") +
         "</a>";
     }).join("");
   };

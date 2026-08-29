@@ -1,0 +1,651 @@
+{
+ "slug": "shinjo-harunobu",
+ "name": "Shinjō Harunobu",
+ "folder_label": "Shinjō Harunobu",
+ "campaign": "The Fragile Peace",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Unicorn",
+  "family": "Shinjo",
+  "school": "Hida Battle Leader School",
+  "role": "Bushi",
+  "age": ""
+ },
+ "portrait": "src/portraits/shinjo-harunobu.webp",
+ "concept": null,
+ "summary": null,
+ "notes": "<h3 data-start=\"412\" data-end=\"454\"><strong data-start=\"416\" data-end=\"452\">Harunobu’s Core Responsibilities</strong></h3><ol data-start=\"456\" data-end=\"1719\"><li data-start=\"456\" data-end=\"821\"><p data-start=\"459\" data-end=\"503\"><strong data-start=\"459\" data-end=\"501\">Strategic Commander in Utaku Kamoko’s Forces</strong></p><ul data-start=\"507\" data-end=\"821\"><li data-start=\"507\" data-end=\"639\"><p>Commands <strong data-start=\"518\" data-end=\"565\">a specialized force within the Unicorn army</strong>, focusing on <strong data-start=\"579\" data-end=\"636\">long-term campaign planning and battlefield logistics</strong>.</p></li><li data-start=\"643\" data-end=\"739\"><p><strong data-start=\"645\" data-end=\"677\">Directs defensive operations</strong> when Kamoko’s usual fast-strike tactics need reinforcement.</p></li><li data-start=\"743\" data-end=\"821\"><p>Trusted to <strong data-start=\"756\" data-end=\"785\">lead forces independently</strong> when Kamoko must focus elsewhere.</p></li></ul></li><li data-start=\"823\" data-end=\"1194\"><p data-start=\"826\" data-end=\"857\"><strong data-start=\"826\" data-end=\"855\">Kamoko’s Personal Advisor</strong></p><ul data-start=\"861\" data-end=\"1194\"><li data-start=\"861\" data-end=\"962\"><p>One of <strong data-start=\"870\" data-end=\"925\">the few people Kamoko trusts to challenge her ideas</strong> without undermining her authority.</p></li><li data-start=\"966\" data-end=\"1041\"><p>Offers <strong data-start=\"975\" data-end=\"1001\">alternative strategies</strong> when pure cavalry charges won’t work.</p></li><li data-start=\"1045\" data-end=\"1194\"><p>Helps Kamoko <strong data-start=\"1060\" data-end=\"1090\">anticipate enemy movements</strong>, particularly against foes like the <strong data-start=\"1127\" data-end=\"1148\">Lion and Scorpion</strong>, who rely on deception and layered tactics.</p></li></ul></li><li data-start=\"1196\" data-end=\"1719\"><p data-start=\"1199\" data-end=\"1222\"><strong data-start=\"1199\" data-end=\"1220\">Crab Clan Liaison</strong></p><ul data-start=\"1226\" data-end=\"1719\"><li data-start=\"1226\" data-end=\"1362\"><p>Handles <strong data-start=\"1236\" data-end=\"1290\">military negotiations between the Unicorn and Crab</strong>, ensuring both sides <strong data-start=\"1312\" data-end=\"1338\">coordinate effectively</strong> in shared operations.</p></li><li data-start=\"1366\" data-end=\"1476\"><p>Respected by <strong data-start=\"1381\" data-end=\"1400\">Crab commanders</strong>, even if they see him as <strong data-start=\"1426\" data-end=\"1473\">too soft for having returned to the Unicorn</strong>.</p></li><li data-start=\"1480\" data-end=\"1607\"><p>Acts as a <strong data-start=\"1492\" data-end=\"1502\">buffer</strong> when Unicorn cavalry tactics clash with the Crab’s <strong data-start=\"1554\" data-end=\"1604\">fortification and attrition warfare strategies</strong>.</p></li><li data-start=\"1611\" data-end=\"1719\"><p>Ensures that <strong data-start=\"1626\" data-end=\"1662\">Unicorn supply lines remain open</strong> when dealing with the often blunt and inflexible Hida.</p></li></ul></li></ol><hr data-start=\"1721\" data-end=\"1724\"><h3 data-start=\"1726\" data-end=\"1787\"><strong data-start=\"1730\" data-end=\"1785\">How This Affects His Relationship with Doji Setsuna</strong></h3><ul data-start=\"1788\" data-end=\"2806\"><li data-start=\"1788\" data-end=\"2139\"><p data-start=\"1790\" data-end=\"1841\"><strong data-start=\"1790\" data-end=\"1839\">Always in military councils, rarely in court.</strong></p><ul data-start=\"1844\" data-end=\"2139\"><li data-start=\"1844\" data-end=\"1975\"><p><strong data-start=\"1846\" data-end=\"1916\">Harunobu is busy with Kamoko’s campaigns and dealing with the Crab</strong>, meaning <strong data-start=\"1926\" data-end=\"1972\">he is almost never around Setsuna for long</strong>.</p></li><li data-start=\"1978\" data-end=\"2139\"><p>He doesn’t <strong data-start=\"1991\" data-end=\"2033\">see court politics as an active threat</strong> because <strong data-start=\"2042\" data-end=\"2074\">his world is the battlefield</strong>—leaving <strong data-start=\"2083\" data-end=\"2136\">Setsuna to fight battles he doesn’t realize exist</strong>.</p></li></ul></li><li data-start=\"2141\" data-end=\"2424\"><p data-start=\"2143\" data-end=\"2193\"><strong data-start=\"2143\" data-end=\"2191\">Kamoko trusts him, but Setsuna protects him.</strong></p><ul data-start=\"2196\" data-end=\"2424\"><li data-start=\"2196\" data-end=\"2314\"><p>Kamoko <strong data-start=\"2205\" data-end=\"2243\">respects his loyalty and intellect</strong>, but doesn’t <strong data-start=\"2257\" data-end=\"2311\">concern herself with his political vulnerabilities</strong>.</p></li><li data-start=\"2317\" data-end=\"2424\"><p><strong data-start=\"2319\" data-end=\"2391\">Setsuna, however, is likely protecting Harunobu from courtly enemies</strong> without him even realizing it.</p></li></ul></li></ul>",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Unicorn",
+     "ring": "water",
+     "skill": "survival",
+     "social_status": 30
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Shinjo",
+     "ring": "fire",
+     "skill1": "sentiment",
+     "skill2": "survival",
+     "wealth": 8,
+     "social_glory": 44
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Hida Battle Leader School [Crab]",
+     "roles": "Bushi",
+     "ring1": "earth",
+     "ring2": "void",
+     "skill1": "command",
+     "skill2": "fitness",
+     "skill3": "sentiment",
+     "skill4": "tactics",
+     "skill5": "melee",
+     "social_honor": 55
+    },
+    "picks": {
+     "techniques": [
+      "Tactical Assessment",
+      "Fortress of Necessity"
+     ],
+     "school_ability": [
+      "Thunderous Courage"
+     ],
+     "equipment": [
+      "Lacquered Armor",
+      "Traveling Clothes",
+      "Katana",
+      "Wakizashi",
+      "Tetsubō",
+      "Horsebow",
+      "Gunbai",
+      "Traveling pack",
+      "Finger of Jade"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "stand_out": "When the Carpenter Wall was under attack, he snuck a group of soldiers behind the creatures assaulting it, pinchering them.",
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Utaku Kamoko\n\n1. **Strategic Commander in Utaku Kamoko’s Forces**\n    - Commands **a specialized force within the Unicorn army**, focusing on **long-term campaign planning and battlefield logistics**.\n    - **Directs defensive operations** when Kamoko’s usual fast-strike tactics need reinforcement.\n    - Trusted to **lead forces independently** when Kamoko must focus elsewhere.\n2. **Kamoko’s Personal Advisor**\n    - One of **the few people Kamoko trusts to challenge her ideas** without undermining her authority.\n    - Offers **alternative strategies** when pure cavalry charges won’t work.\n    - Helps Kamoko **anticipate enemy movements**, particularly against foes like the **Lion and Scorpion**, who rely on deception and layered tactics.\n3. **Crab Clan Liaison**\n    - Handles **military negotiations between the Unicorn and Crab**, ensuring both sides **coordinate effectively** in shared operations.\n    - Respected by **Crab commanders**, even if they see him as **too soft for having returned to the Unicorn**.\n    - Acts as a **buffer** when Unicorn cavalry tactics clash with the Crab’s **fortification and attrition warfare strategies**.\n    - Ensures that **Unicorn supply lines remain open** when dealing with the often blunt and inflexible Hida."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "He feels constrained by courts and by command. He wants men under his own command, particularly after the debacle with the Lion.\n\n1. **He Disagrees with Kamoko but Must Obey**\n    - He believes **his strategies are often more sound**, but as long as **Kamoko holds authority**, he **must defer to her final decision**—even when he sees a mistake coming.\n    - He might **occasionally challenge her, but always within respectful bounds**—never outright defying her, though the temptation is there.\n2. **He Watches Kamoko Command and Thinks, ‘That Should Be Me.’**\n    - He respects Kamoko but **knows he is just as capable**—perhaps even more so, because he understands **both Unicorn and Crab military doctrines**.\n    - The **frustration of seeing an opportunity and being unable to seize it** gnaws at him.\n3. **He Feels Trapped by Loyalty**\n    - If Kamoko **relies on him so much**, why isn’t he **the one leading the armies**?\n    - He cannot **betray her or act dishonorably**, but his **own ambition remains unfulfilled**.\n4. **He Sees Court Politics as a Route to Power, But Refuses to Engage**\n    - The irony is that **a politically savvy samurai could maneuver themselves into a greater command**, but Harunobu **disdains courtly maneuvering**—which **keeps him locked in Kamoko’s shadow**.\n    - His **refusal to play the political game could be what’s preventing his rise**, but he still **sees politics as beneath him**."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "He was offered in marriage to the high-status Doji Setsuna as part of a marriage treaty with the Crane.",
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "bushido": "The oni do not care about your bushido, and sometimes one must engage dishonorably with evil.",
+     "skill": "survival",
+     "social_add_honor": 0,
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "As **Shinjo Harunobu rode alone into the Shadowlands**, the **stench of blood and decay thickened the air**. He found **Hida Ayame and her remaining warriors in a desperate last stand**, backs to a crumbling ravine, surrounded by the ravenous dead. Towering over them, a hulking oni with **limbs like tree trunks and a maw split too wide** waded through the chaos, **ripping Crab samurai apart as they fought to their last breath.** Harunobu barely had time to take in the horror before he moved—**there was no saving them all, only her.** **His horse surged forward**, weaving between snapping jaws and lunging claws, **his blade clearing only what was necessary**. **He did not look at the dying—he could not afford to.** Reaching Ayame as she struck down another foe with **the last strength in her body**, he hauled her onto his horse with a single motion, felt her **ragged breath against his back**, and **turned to flee.**\n\nThe oni barely noticed him at first, too **consumed by its slaughter**, tearing **screaming Crab warriors apart with its massive hands, twisting their limbs like broken dolls**. The **sickening crunch of bones snapping, the guttural roar of the dying**—it **burned itself into Harunobu’s mind**, a sight that would never leave him. But it also **bought them seconds**—**the only seconds that mattered.** He **pushed his horse beyond its limit, beyond reason**, the beast’s hooves pounding against cracked, desolate earth. **They did not stop, did not look back.** By the time the oni turned its burning eyes toward them, they were already too far. It **roared in frustration, hurling a corpse in their direction**, but they **vanished into the darkness**, the winds of the Shadowlands swallowing the sound of the massacre behind them. When they finally reached safety, **Harunobu did not collapse. He simply sat there, silent, as Ayame stirred beside him.** His heart still beat. His body still moved. But something inside him had **stayed behind, where the oni feasted on the dead.**"
+    },
+    "picks": {
+     "distinction": [
+      "Bishamon’s Blessing"
+     ]
+    }
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "He is not good at learning from books, and lacks the patience for court (although he can spend hours listening to lectures on tactics)."
+    },
+    "picks": {
+     "adversity": [
+      "Fukurokujin’s Curse"
+     ]
+    }
+   },
+   "step11": {
+    "answers": {
+     "calms": "He is in his element riding out as part of a charge or a hunt."
+    },
+    "picks": {
+     "passion": [
+      "Glorious Deeds"
+     ]
+    }
+   },
+   "step12": {
+    "answers": {
+     "worries": "He gets belligerent and picks fights, particularly when drunk."
+    },
+    "picks": {
+     "anxiety": [
+      "Belligerent"
+     ]
+    }
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "### **Hida Katsuro – The Commander Who Shaped Him**\n\n- **Katsuro taught Harunobu that hesitation is death.** If you wait to think about whether something is the right move, **you’ve already lost the opportunity.**\n- **“War is not a duel.”** Katsuro drilled into Harunobu that **battle is about overwhelming force, terrain control, and knowing when to cut your losses.**\n- **The importance of logistics.** He hammered home the reality that **tactics mean nothing if your army doesn’t have food, rest, and supply lines.**\n- **Command is a burden, not a privilege.** Katsuro was the one who first told Harunobu: **“If you want to be in charge, you better be ready to order men to their deaths. If you can’t do that, stay in line.”**\n\nHarunobu **respected and absorbed Katsuro’s lessons**, though he **never fully embraced the Crab way of thinking.** Unlike Katsuro, who **saw his soldiers as resources to be managed**, Harunobu **wanted to lead from the front, to be the one who took the risk first**. This difference made Katsuro **both admire and shake his head at the young Unicorn.**\n\n---\n\n### **How This Affects Harunobu Today**\n\n- His **ability to make decisions under pressure without hesitation** comes **directly from Katsuro’s training.**\n- He understands **defensive warfare, siege tactics, and attrition-based strategy**, making him **different from many Unicorn commanders** who focus only on speed and cavalry maneuvers.\n- **Katsuro’s words still echo in his mind**—especially the question: **“If you want to be in charge, are you ready to send men to die?”**\n- Harunobu **wants command, but he doesn’t want to be Katsuro.** He wants to lead—but **not as a heartless strategist who views his soldiers as expendable.**",
+     "skill": "tactics"
+    },
+    "picks": {
+     "disadvantage": [
+      "Superstition"
+     ]
+    }
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "A young officer, lean and tall with corded muscles, bearded with shoulder-length black hair, worn loose. At 6 foot 3, he towers over his peers. He wears practical furs and leathers but has elegant courtly wear courtesy of his Crane clan wife. He ties his hair up when not wearing a helmet, using a fancy purple ribbon.\n"
+    },
+    "picks": {
+     "special_features": [
+      "Ceremonial Clothes"
+     ]
+    }
+   },
+   "step15": {
+    "answers": {
+     "stress": "When things start to go poorly, he reacts by entering the fray himself, silently and ferociously."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "When he is at court, he has enjoyed the company of Akodo Masanari, but does not speak of him to Kamoko.\n\n### **Akodo Masanari – A Kindred Spirit**\n\n- A **brilliant battlefield tactician**, respected within the Akodo ranks.\n- Like Harunobu, **he has no patience for court politics but is forced to be there.**\n- Their conversations **are a battle of minds, debating strategy and command.**\n- **Tension:** **If Harunobu’s ambition to lead one day grows, would Masanari push him toward it?**\n\n### **The Exchange of Gifts – A Pact of Brotherhood**\n\nTo solidify their bond, they have **exchanged gifts, a gesture of mutual respect** that carries **great weight among samurai warriors**.\n\n1. **Harunobu’s Gift to Masanari** – **An Iron Mon of the Kaiu Wall**\n    - A **piece of blackened iron**, forged by **Kaiu smiths**, taken from a **fallen section of the Wall that Harunobu defended.**\n    - A **symbol of endurance, resilience, and the unyielding strength of the Crab.**\n    - By giving it to Masanari, Harunobu **acknowledges his friend as an equal in fortitude and leadership.**\n2. **Masanari’s Gift to Harunobu** – **A Calligraphy Scroll of “The Three Victories”**\n    - A **Lion war proverb**, penned by Masanari himself:*“Victory over the enemy. Victory over oneself. Victory over fate.”*\n    - A **subtle challenge**—does Harunobu truly pursue **his own path, or is he merely following orders?**\n    - The **scroll is meant to remind Harunobu that there are more battles than just the ones fought with steel.**\n\nThis exchange of gifts **binds them as brothers-in-arms, as warriors who respect each other beyond clan lines.**"
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "- **They are proud of him.** To them, **he is a hero, a dutiful son who has brought great honor to the family.** They tell stories of his bravery on the **Kaiu Wall**, of his service under **Utaku Kamoko**, and of **his high-status marriage to a Crane on the path to becoming an Emerald Magistrate.**\n- **They worry about him.** When they see him now, they notice that **he is not the same boy who left home.** He is **colder, quieter, more distant**, and though they do not have the words for it, **they sense that something was taken from him in his years away.**\n- **They do not understand him.** He is **a stranger to them, a son who belongs more to the battlefield than to the home they once shared.** His siblings and cousins **laugh and celebrate together**, but **Harunobu stands apart, always observing, never quite joining in.**\n- **They assume he is simply reserved, not broken.** His **stoicism and silence** they attribute to **his time with the Crab and his military life**, not realizing that **there are things he has seen that he will never speak of.**",
+     "skill": "meditation"
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "Lost Banner: your family once possessed a banner that symbolically carries your family's spirit, but an ancestor lost it on the return to Rokugan. Everyone in your family has sworn to find it.",
+     "heritage_1": 5,
+     "heritage_add_honor": 0,
+     "heritage_add_glory": -5,
+     "heritage_add_status": 0
+    },
+    "picks": {
+     "heritage_item": [
+      "Indomitable Will"
+     ]
+    }
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Harunobu"
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Harunobu should die on the field of battle, commander of an army of Unicorn, leading from the front."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 100,
+   "label": null,
+   "rank": 3,
+   "school": "Hida Battle Leader School",
+   "foundry_id": "VEf4nAHO0O9A2jIu",
+   "foundry_name": "Shinjō Harunobu",
+   "rings": {
+    "air": 2,
+    "earth": 3,
+    "fire": 3,
+    "water": 2,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 3,
+     "ranged": 2,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 3
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 2,
+     "theology": 0
+    },
+    "social": {
+     "command": 3,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 3
+    }
+   },
+   "social": {
+    "honor": 55,
+    "glory": 49,
+    "status": 35,
+    "ninjo": "He feels constrained by courts and by command. He wants men under his own command, particularly after the debacle with the Lion.\n\n1. **He Disagrees with Kamoko but Must Obey**\n    - He believes **his strategies are often more sound**, but as long as **Kamoko holds authority**, he **must defer to her final decision**—even when he sees a mistake coming.\n    - He might **occasionally challenge her, but always within respectful bounds**—never outright defying her, though the temptation is there.\n2. **He Watches Kamoko Command and Thinks, ‘That Should Be Me.’**\n    - He respects Kamoko but **knows he is just as capable**—perhaps even more so, because he understands **both Unicorn and Crab military doctrines**.\n    - The **frustration of seeing an opportunity and being unable to seize it** gnaws at him.\n3. **He Feels Trapped by Loyalty**\n    - If Kamoko **relies on him so much**, why isn’t he **the one leading the armies**?\n    - He cannot **betray her or act dishonorably**, but his **own ambition remains unfulfilled**.\n4. **He Sees Court Politics as a Route to Power, But Refuses to Engage**\n    - The irony is that **a politically savvy samurai could maneuver themselves into a greater command**, but Harunobu **disdains courtly maneuvering**—which **keeps him locked in Kamoko’s shadow**.\n    - His **refusal to play the political game could be what’s preventing his rise**, but he still **sees politics as beneath him**.",
+    "giri": "Utaku Kamoko\n\n1. **Strategic Commander in Utaku Kamoko’s Forces**\n    - Commands **a specialized force within the Unicorn army**, focusing on **long-term campaign planning and battlefield logistics**.\n    - **Directs defensive operations** when Kamoko’s usual fast-strike tactics need reinforcement.\n    - Trusted to **lead forces independently** when Kamoko must focus elsewhere.\n2. **Kamoko’s Personal Advisor**\n    - One of **the few people Kamoko trusts to challenge her ideas** without undermining her authority.\n    - Offers **alternative strategies** when pure cavalry charges won’t work.\n    - Helps Kamoko **anticipate enemy movements**, particularly against foes like the **Lion and Scorpion**, who rely on deception and layered tactics.\n3. **Crab Clan Liaison**\n    - Handles **military negotiations between the Unicorn and Crab**, ensuring both sides **coordinate effectively** in shared operations.\n    - Respected by **Crab commanders**, even if they see him as **too soft for having returned to the Unicorn**.\n    - Acts as a **buffer** when Unicorn cavalry tactics clash with the Crab’s **fortification and attrition warfare strategies**.\n    - Ensures that **Unicorn supply lines remain open** when dealing with the often blunt and inflexible Hida.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Courtesy"
+    }
+   },
+   "derived": {
+    "endurance": 12,
+    "composure": 10,
+    "focus": 5,
+    "vigilance": 2,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 400
+   },
+   "techniques": [
+    {
+     "name": "Tactical Assessment",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Fortress of Necessity",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Thunderous Courage",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Beseech Hida's Might",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
+     "kind": "ritual",
+     "rank": 2
+    },
+    {
+     "name": "Battle of No Escape",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Soaring Slice",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Striking as Fire",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Warrior’s Resolve",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Striking as Earth",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Great Anvil's Measure",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Beseech Shiba's Calm",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "ritual",
+     "rank": 3
+    },
+    {
+     "name": "Behold the Legend",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
+     "kind": "title_ability",
+     "rank": 1
+    },
+    {
+     "name": "The Patient Viper",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
+     "kind": "ninjutsu",
+     "rank": 2
+    },
+    {
+     "name": "Beseech Akodo's Judgment",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
+     "kind": "ritual",
+     "rank": 3
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Bishamon’s Blessing",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Physical, Spiritual"
+    },
+    {
+     "name": "Fukurokujin’s Curse",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "fire",
+     "types": "Mental, Spiritual"
+    },
+    {
+     "name": "Glorious Deeds",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "fire",
+     "types": "Martial, Social"
+    },
+    {
+     "name": "Belligerent",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "earth",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Superstition",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "void",
+     "types": "Mental, Spiritual"
+    },
+    {
+     "name": "Indomitable Will",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "earth",
+     "types": "Interpersonal, Mental"
+    }
+   ],
+   "titles": [
+    {
+     "name": "Renowned Warrior",
+     "xp_used": 16,
+     "xp_cost": 16,
+     "in_curriculum": false,
+     "bought_at_rank": 3
+    }
+   ],
+   "bonds": [
+    {
+     "name": "Doji Setsuna",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
+     "custom": true,
+     "description": "<p><span class=\"fontstyle0\">Samurai are expected to place romantic love below their obligations to family and clan—but the human heart is not so easily confined. Many samurai who fall in love keep their relationship secret, while others are more overt. The following are suggested narrative effects for a character with a Lover bond:</span></p><ul><li><p><span class=\"fontstyle0\">- A lover seeks to spend time with you, writes letters to you, and is willing to assist you in ways that do not require publicly acknowledging your bond (giving you information key to pursuing a desired goal, encouraging you to pursue your personal interests, helping you to deal with emotions you usually must keep to yourself), and they expect you to do the same.</span></p></li><li><p><span class=\"fontstyle0\">Generally, your lover’s allies do not acknowledge your relationship. Some might be favorably disposed to you covertly if you make their ally happy (and unfavorably disposed if you make them unhappy), while others might be jealous of the attention you receive. Your lover’s enemies might target you to attempt to gain leverage over your lover.</span></p></li><li><p><span class=\"fontstyle0\">If your bond rank is 3 or higher, a lover is more overt about your relationship, allowing them to assist you more publicly (such as giving you letters of introduction to officials above your status, allowing you to use their name to pursue your goals, and even helping you directly), and they expect the same from you.</span></p></li></ul><p></p><p><span class=\"fontstyle3\"><strong>Bond Ability:</strong> With You, the Storm Subsides</span></p>",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     }
+    }
+   ],
+   "gear": [
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Tetsubō",
+     "quantity": 1
+    },
+    {
+     "name": "Horsebow",
+     "quantity": 1
+    },
+    {
+     "name": "Gunbai",
+     "quantity": 1
+    },
+    {
+     "name": "Lacquered Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Ceremonial Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Finger of Jade",
+     "quantity": 1
+    },
+    {
+     "name": "Three Victories",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Scroll of Battle Tactics",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Courtesy +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "courtesy",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Void +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Fire +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "fire",
+     "at_rank": 2,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Earth +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "earth",
+     "at_rank": 3,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Tactics +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "tactics",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    }
+   ]
+  }
+ ]
+}

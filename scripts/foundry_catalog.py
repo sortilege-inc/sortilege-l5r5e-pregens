@@ -56,6 +56,24 @@ def pick_client():
     return live[0]["clientId"]
 
 
+def fetch_lang():
+    """The system's own English strings — the source for the twenty questions'
+    official wording and page references. Never paraphrase these."""
+    dest = os.path.join(ROOT, "pipeline", "foundry", "lang")
+    os.makedirs(dest, exist_ok=True)
+    manifest = get_json(f"{HOST}/systems/l5r5e/system.json")
+    for entry in manifest.get("languages", []):
+        if entry.get("lang") != "en":
+            continue
+        data = get_json(f"{HOST}/systems/l5r5e/{entry['path']}")
+        out = os.path.join(dest, "en.json")
+        with open(out, "w") as f:
+            json.dump(data, f, indent=1, ensure_ascii=False)
+        print(f"lang: {os.path.basename(out)} ({len(json.dumps(data))} bytes)", flush=True)
+        return
+    print("lang: no English entry in system.json", flush=True)
+
+
 def main():
     full = "--full" in sys.argv
     force = "--force" in sys.argv
@@ -94,6 +112,7 @@ def main():
             with open(dest, "w") as f:
                 json.dump(docs, f, indent=1, ensure_ascii=False)
             print(f"   wrote {len(docs):4} -> {os.path.basename(dest)}", flush=True)
+    fetch_lang()
     print("DONE_MARKER", flush=True)
 
 

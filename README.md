@@ -10,18 +10,26 @@ Served as a buildless static site (GitHub Pages, works from `file://` too).
 
 ```
 index.html                 landing page: headline coverage + roster
-characters/index.html      searchable roster
-characters/<slug>.html     generated stub; all rendering is in assets/sheet.js
+characters/index.html      searchable roster (clan / role / campaign)
+characters/<slug>.html     generated stub — three tabs, all rendered by assets/sheet.js:
+                           Dossier · Twenty Questions · Play
+play/<slug>-<xp>xp.html    GENERATED — a playable sheet per character per XP tier
 admin/index.html           the coverage ledger
 assets/
   l5r.css                  the whole visual language (shares Portents & Fortunes' palette)
   sheet.js                 character sheet + XP timeline + between-tier changelog
   roster.js                the card-grid renderer (not to be confused with data/roster.js)
   admin.js                 coverage ledger: tabs, filters, used/unused table
+  play/                    the Portents & Fortunes character sheet, reused as-is
+                           (sheet.js / sheet.css / l5rdata.js); scripts/build.py's
+                           sheet_from_tier() is the only translation layer
+  dice/ rings/ mon/        art the play sheet needs
 data/roster.js             GENERATED — window.L5R_ROSTER: card fields only (small)
 data/characters/<slug>.js  GENERATED — window.L5R_CHARACTER: one character, all tiers
 data/catalog.js            GENERATED — window.L5R_CATALOG: the coverage denominator
 data/coverage.js           GENERATED — window.L5R_COVERAGE: what is used, by whom
+data/twenty_questions.js   GENERATED — window.L5R_20Q: the official question wording
+                           and page references, from the l5r5e system's own en.json
 src/characters/<slug>.json SOURCE OF TRUTH — hand-editable character definitions
 src/portraits/             character art referenced by src/characters/*.json
 pipeline/foundry/          raw Foundry pulls (actors + compendium catalog)
@@ -35,16 +43,35 @@ scripts/                   the pipeline (below)
 ## The pipeline
 
 ```bash
-python3 scripts/foundry_pull.py        # Foundry "General" folder -> pipeline/foundry/actors
-python3 scripts/foundry_catalog.py --full   # compendium -> pipeline/foundry/catalog (the denominator)
+./scripts/pipeline.sh                  # the whole chain, in dependency order
+./scripts/pipeline.sh --pull           # ...also re-fetching from Foundry
+./scripts/pipeline.sh --force          # ...also re-extracting sources from raw actors
+```
+
+The individual steps, if you need one on its own:
+
+```bash
+python3 scripts/foundry_pull.py        # what src/foundry_sources.json declares -> pipeline/foundry/actors
+python3 scripts/foundry_catalog.py --full   # compendium + lang -> pipeline/foundry (the denominator)
 python3 scripts/extract_characters.py  # actors -> src/characters/*.json  (won't overwrite; --force)
-python3 scripts/build.py               # src + catalog -> sqlite -> data/*.js + character pages
+python3 scripts/derive_tiers.py <slug> # rebuild earlier XP tiers for a one-actor character
+python3 scripts/build.py               # src + catalog -> sqlite -> data/*.js + pages + play sheets
 python3 scripts/coverage.py            # coverage report + integrity gate
 python3 scripts/foundry_push.py        # src/characters -> Foundry   (DRY RUN unless --apply)
 ```
 
-Only `build.py` and `coverage.py` are needed for day-to-day work; the Foundry scripts
-need the world open and `.env` present.
+Order matters in two places: `derive_tiers.py` needs the curriculum table `build.py`
+writes, and re-extracting with `--force` discards derived tiers, so they have to be
+rebuilt afterwards. `pipeline.sh` handles both.
+
+The Foundry scripts need the world open and `.env` present; everything else is offline.
+
+### What gets pulled
+
+`src/foundry_sources.json` declares it: folder `roots` pulled whole, individual `actors`
+elsewhere in the world (several may share one `character`, becoming its XP tiers),
+`campaigns` tagged by slug, `portraits` by slug, `corrections` for fields the Foundry
+record has wrong, and `derive_tiers` for characters Foundry holds at a single point.
 
 ### `.env`
 
@@ -94,3 +121,16 @@ number is the point.
 ```bash
 python3 -m http.server 8412
 ```
+
+## Reconstructed tiers
+
+Most characters exist in Foundry as several actors, one per XP tier. A few exist only as
+a current actor; `scripts/derive_tiers.py` rebuilds their earlier tiers from what the
+actor itself records — advancements name their own before/after and the rank they were
+bought at, purchased content carries its XP cost, and the school curriculum says at which
+rank a technique becomes available. Those tiers are marked `"reconstructed": true` in the
+source file, and the last tier is always the Foundry record, untouched.
+
+Where the arithmetic does not close (Doji Setsuna's recorded purchases total 71 XP against
+an actor `xp_total` of 100), the derived tiers show cumulative recorded cost and the final
+tier keeps the actor's own figure. The script says so when it runs.

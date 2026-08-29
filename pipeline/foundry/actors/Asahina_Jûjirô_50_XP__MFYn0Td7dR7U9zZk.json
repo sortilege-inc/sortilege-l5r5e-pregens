@@ -1,0 +1,1747 @@
+{
+ "folder": "tD3ze5ZC9pJwMbL6",
+ "name": "Asahina Jûjirô (50 XP)",
+ "type": "character",
+ "img": "modules/l5r5e-compendia-sortilege/images/portraits/asahina-jujiro.png",
+ "prototypeToken": {
+  "actorLink": true,
+  "disposition": 1,
+  "bar1": {
+   "attribute": "fatigue"
+  },
+  "bar2": {
+   "attribute": "strife"
+  },
+  "name": "Asahina Jûjirô (50 XP)",
+  "displayName": 0,
+  "width": 1,
+  "height": 1,
+  "depth": 1,
+  "texture": {
+   "src": "modules/l5r5e-compendia-sortilege/images/portraits/asahina-jujiro.png",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "lockRotation": false,
+  "rotation": 0,
+  "alpha": 1,
+  "displayBars": 0,
+  "light": {
+   "negative": false,
+   "priority": 0,
+   "alpha": 0.5,
+   "angle": 360,
+   "bright": 0,
+   "color": null,
+   "coloration": 1,
+   "dim": 0,
+   "attenuation": 0.5,
+   "luminosity": 0.5,
+   "saturation": 0,
+   "contrast": 0,
+   "shadows": 0,
+   "animation": {
+    "type": null,
+    "speed": 5,
+    "intensity": 5,
+    "reverse": false
+   },
+   "darkness": {
+    "min": 0,
+    "max": 1
+   }
+  },
+  "sight": {
+   "enabled": false,
+   "range": 0,
+   "angle": 360,
+   "visionMode": "basic",
+   "color": null,
+   "attenuation": 0.1,
+   "brightness": 0,
+   "saturation": 0,
+   "contrast": 0
+  },
+  "detectionModes": {},
+  "occludable": {
+   "radius": 0
+  },
+  "ring": {
+   "enabled": false,
+   "colors": {
+    "ring": null,
+    "background": null
+   },
+   "effects": 1,
+   "subject": {
+    "scale": 1,
+    "texture": null
+   }
+  },
+  "turnMarker": {
+   "mode": 1,
+   "animation": null,
+   "src": null,
+   "disposition": false
+  },
+  "movementAction": null,
+  "flags": {},
+  "randomImg": false,
+  "appendNumber": false,
+  "prependAdjective": false
+ },
+ "_id": "MFYn0Td7dR7U9zZk",
+ "system": {
+  "soft_locked": true,
+  "identity": {
+   "age": "",
+   "clan": "Crane",
+   "family": "Asahina",
+   "female": null,
+   "marital_status": "",
+   "roles": "Artisan",
+   "school": "Asahina Artificer School",
+   "school_rank": 2,
+   "school_curriculum_journal": {}
+  },
+  "rings": {
+   "earth": 1,
+   "air": 3,
+   "water": 2,
+   "fire": 3,
+   "void": 2
+  },
+  "notes": "",
+  "description": "",
+  "social": {
+   "honor": 60,
+   "glory": 78,
+   "status": 35,
+   "ninjo": "Convince the family to use their time-honored method to find him a match that truly is a fit, and not merely a force-fit.",
+   "giri": "Lord: Asahina Shigehiro of Shirogome, a distant relation, to whose house the family is attached. That duty stands but is in abeyance: when the Emperor's consort asks for your artisan, you lend them, and Shigehiro did.",
+   "bushido_tenets": {
+    "paramount": "Courtesy",
+    "less_significant": "Courage"
+   }
+  },
+  "skills": {
+   "artisan": {
+    "aesthetics": 3,
+    "composition": 0,
+    "design": 1,
+    "smithing": 1
+   },
+   "martial": {
+    "fitness": 0,
+    "melee": 0,
+    "ranged": 0,
+    "unarmed": 0,
+    "meditation": 2,
+    "tactics": 0
+   },
+   "scholar": {
+    "culture": 2,
+    "government": 0,
+    "medicine": 1,
+    "sentiment": 1,
+    "theology": 3
+   },
+   "social": {
+    "command": 0,
+    "courtesy": 2,
+    "games": 0,
+    "performance": 2
+   },
+   "trade": {
+    "commerce": 0,
+    "labor": 0,
+    "seafaring": 0,
+    "skulduggery": 0,
+    "survival": 0
+   }
+  },
+  "techniques": {
+   "kata": false,
+   "kiho": false,
+   "inversion": false,
+   "invocation": true,
+   "ritual": true,
+   "shuji": true,
+   "maho": false,
+   "ninjutsu": false,
+   "mantra": false,
+   "specificity": true
+  },
+  "endurance": 8,
+  "composure": 6,
+  "focus": 6,
+  "vigilance": 3,
+  "void_points": {
+   "max": 2,
+   "value": 2
+  },
+  "fatigue": {
+   "max": 8,
+   "value": 0
+  },
+  "strife": {
+   "max": 6,
+   "value": 0
+  },
+  "stance": "void",
+  "prepared": true,
+  "xp_total": 50,
+  "xp_spent": 0,
+  "xp_saved": 0,
+  "template": "core",
+  "twenty_questions": {
+   "template": "core",
+   "generated": true,
+   "step1": {
+    "clan": "Crane",
+    "ring": "air",
+    "skill": "culture",
+    "social_status": 35
+   },
+   "step2": {
+    "family": "Asahina",
+    "ring": "void",
+    "skill1": "aesthetics",
+    "skill2": "theology",
+    "wealth": 6,
+    "social_glory": 40
+   },
+   "step3": {
+    "school": "Asahina Artificer School",
+    "roles": "Artisan",
+    "ring1": "air",
+    "ring2": "fire",
+    "skill1": "aesthetics",
+    "skill2": "courtesy",
+    "skill3": "design",
+    "skill4": "none",
+    "skill5": "none",
+    "allowed_techniques": {
+     "kata": false,
+     "kiho": false,
+     "inversion": false,
+     "invocation": true,
+     "ritual": true,
+     "shuji": true,
+     "maho": false,
+     "ninjutsu": false,
+     "mantra": false,
+     "specificity": true
+    },
+    "techniques": [
+     "L5RCoreInv000033",
+     "L5RCoreInv000056",
+     "L5RCoreInv000015"
+    ],
+    "school_ability": [
+     "L5RCoreSch000006"
+    ],
+    "equipment": [
+     "L5RCoreArm000007",
+     "L5RCoreWea000009",
+     "L5RCoreWea000019",
+     "L5RCoreWea000030"
+    ],
+    "social_honor": 50
+   },
+   "step4": {
+    "stand_out": "Jūjirō is known for working past the point where a piece is finished, and for giving away the result.",
+    "ring": "fire"
+   },
+   "step5": {
+    "social_giri": "Lord: Asahina Shigehiro of Shirogome, a distant relation, to whose house the family is attached. That duty stands but is in abeyance: when the Emperor's consort asks for your artisan, you lend them, and Shigehiro did.\n\nCurrent giri: to outfit imperial consort Shiba Ayame's new shrine — a careful curation of awakened objects, each shintai chosen for the place it will stand and the people who will stand before it. It is the family method applied at the scale of a building."
+   },
+   "step6": {
+    "social_ninjo": "Convince the family to use their time-honored method to find them a match that truly is a fit, and not merely a force-fit."
+   },
+   "step7": {
+    "clan_relations": "Positive toward the Crane, and complicated toward the Kakita. A Doji ruling on artisan exemptions voided a provincial daimyō's levy on craftsmen and saved Jūjirō's workshop.",
+    "skill": "none",
+    "social_add_glory": 5
+   },
+   "step8": {
+    "bushido": "Courtesy above all. Every commission is somebody's patronage, and an artisan who cannot hold a room does not eat. Courage least — nothing has yet asked it of them, and their body gives out before their nerve is tested.",
+    "skill": "none",
+    "social_add_honor": 10,
+    "tenet_paramount": "Courtesy",
+    "tenet_less_significant": "Courage",
+    "item": []
+   },
+   "step9": {
+    "success": "Shiba Ayame commissioned them to rework a damaged family heirloom, and they made a piece that not only stunned, but awoke. She had it recorded as a great feat and directed that Jūjirō be honoured for it, by moving to Otosan Uchi and accepting her patronage to work on Benten's shrine as their craft fully flowered.",
+    "distinction": [
+     "L5RCoreDis000003"
+    ]
+   },
+   "step10": {
+    "difficulty": "The marriage to Mirumoto Shizuka was well-intentioned, but not only is there no chemistry (something they are quite aware of, particularly in contrast to their trysts with Setsuna), but after their patronage by Shiba Ayame, it no longer seems to make political sense, either. Nonetheless, promises had been made, and marriage can only be deferred for so long.",
+    "adversity": [
+     "L5RCoreAdv000003"
+    ]
+   },
+   "step11": {
+    "calms": "Giving the work away. A commission satisfied is a debt discharged and nothing more; a piece put into hands that could never have paid for it settles them completely. They have done it often enough that people they have never met will grant them a reasonable favour on the strength of the reputation.",
+    "passion": [
+     "L5RCorePas000043"
+    ]
+   },
+   "step12": {
+    "worries": "Enclosed spaces. Kilns, storehouses, shrine interiors, the inner rooms of the Forbidden City — anywhere the air is finite. It compounds the illness, because the first sign of a fit is that breathing stops being automatic, and a closed room leaves them nothing to do but wait for it.",
+    "anxiety": [
+     "L5RCoreAnx000027"
+    ]
+   },
+   "step13": {
+    "most_learn": "Asahina Riku, an old woman in back in Shirogome who taught them the arts of their school. It was during this tutelage that the sensitivity of their lungs first manifested.",
+    "skill": "aesthetics",
+    "advantage": [],
+    "disadvantage": [
+     "L5RCoreAdv000025"
+    ]
+   },
+   "step14": {
+    "first_sight": "Beautiful, although sickly in the wrong light, and they are wracked by coughs when their body is pushed too hard.",
+    "special_features": []
+   },
+   "step15": {
+    "stress": "They hole themselves up and work until their body gives out. They are stubborn in their refusals."
+   },
+   "step16": {
+    "relations": "Shiba Ayame: Imperial consort and patron. Commissioned the damaged heirloom that woke, had Jūjirō named Master Artisan, and brought them to Otosan Uchi. She dotes on them. She gave them the omamori — a Boon of Benten — knowing exactly what she was making a joke about. She knows about Setsuna and treats it as a confidence between the two of them; she does not know it went further than that.\n\nDoji Setsuna: met at court, at Ayame's salon. The reading came back open — the first time in Jūjirō's life the family method ever answered in their favour — and what followed was neither a near-miss nor a courtesy. It was an affair conducted with appetite on both sides, over weeks, and Jūjirō is under no illusion about what it was. She had spent years reading pillow books and turning what she could not have into verse; with them she stopped writing it down and did it instead, and there was very little in those books she was not willing to find out about in person. Jūjirō understood, without being told, that they were the first thing she had taken for herself rather than argued for. There has been no contact since she left Otosan Uchi.\n\nMirumoto Shizuka: betrothed. Raised in the Asahina Envoy school to be married into the family; she will be Asahina Shizuka when it happens. The match was well-intentioned and neither of them pretends it is more than that.\n\nAsahina Riku: the old woman in Shirogome who taught them the school's arts, and the first person to hear the lungs fail.\n\nAsahina Shigehiro: distant relation, and their lord. His claim stands; it is currently lent out.",
+    "item": [
+     "L5RCoreIte000135"
+    ]
+   },
+   "step17": {
+    "parents_pov": "Proud in public, careful in private. They gave Jūjirō the ancestor's name before anyone could know whether the aptitude had carried, and were vindicated. They also arranged the Mirumoto match, consulted the method, and accepted its answer that she would steady them. Smithing was taught as the family's ordinary trade; the fame is regarded as an ornament on a craft.",
+    "skill": "smithing",
+    "bond": []
+   },
+   "step18": {
+    "heritage_name": "Asahina Jūjirō, who found that people have elemental temperaments and can be read the way an object is read. The discovery was put to two uses: pairing a person with an awakened object so that neither is wasted on the other, and pairing people with each other. The family kept the finding, the method, and the name — which goes in each generation to the child judged likeliest to have inherited the eye for it.",
+    "heritage_1": 5,
+    "heritage_2": 6,
+    "heritage_item": [],
+    "heritage_add_honor": 0,
+    "heritage_add_glory": 3,
+    "heritage_add_status": 0,
+    "skill": "sentiment"
+   },
+   "step19": {
+    "firstname": "Jûjirô"
+   },
+   "step20": {
+    "death": "The illness will kill them young; they likely have only a few years left, and they intend to spend them gloriously."
+   },
+   "autoCompleteListName": "step3.roles",
+   "autoCompleteListSelectedIndex": "0"
+  },
+  "zeni": 300,
+  "money": {
+   "koku": 0,
+   "bu": 0,
+   "zeni": 0
+  },
+  "is_afflicted_or_compromised": false
+ },
+ "items": [
+  {
+   "_id": "xo7IuvGJ38ClKyog",
+   "name": "Sanctified Robes",
+   "type": "armor",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929408,
+    "modifiedTime": 1787705929408,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "239"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "7",
+    "zeni": "4 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     }
+    ],
+    "armor": {
+     "physical": "1",
+     "supernatural": "3"
+    }
+   },
+   "folder": null
+  },
+  {
+   "_id": "UCyUhoGNniJsbei8",
+   "name": "Wakizashi",
+   "type": "weapon",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929408,
+    "modifiedTime": 1787705929408,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "233"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "7",
+    "zeni": "15 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     }
+    ],
+    "category": "Swords",
+    "skill": "melee",
+    "readied": false,
+    "range": "0-1",
+    "damage": "3",
+    "deadliness": "5",
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null
+  },
+  {
+   "_id": "Lq0Z6hmjszKxytje",
+   "name": "Knife",
+   "type": "weapon",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/knife.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929409,
+    "modifiedTime": 1787705929409,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "234"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "1",
+    "zeni": "1 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     },
+     {
+      "id": "L5RCorePro000005",
+      "name": "Concealable"
+     },
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ],
+    "category": "Hand Weapons",
+    "skill": "melee",
+    "readied": false,
+    "range": "",
+    "damage": "2",
+    "deadliness": "4",
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null
+  },
+  {
+   "_id": "wsfQjr3r8C5ENTtd",
+   "name": "Yumi",
+   "type": "weapon",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/bow.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929410,
+    "modifiedTime": 1787705929410,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "236"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "3",
+    "zeni": "3 koku",
+    "properties": [],
+    "category": "Bows",
+    "skill": "ranged",
+    "readied": false,
+    "range": "2-5",
+    "damage": "5",
+    "deadliness": "3",
+    "grip_1": "N/A",
+    "grip_2": ""
+   },
+   "folder": null
+  },
+  {
+   "_id": "Sb3zJ3qs5C2FRe4x",
+   "name": "Benten’s Blessing",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929411,
+    "modifiedTime": 1787705929411,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "102"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "peculiarity_type": "distinction",
+    "types": "Interpersonal, Spiritual"
+   },
+   "folder": null
+  },
+  {
+   "_id": "DFLmdB36SeqsQMpL",
+   "name": "Bitter Betrothal",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929411,
+    "modifiedTime": 1787705929411,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "117"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "water",
+    "peculiarity_type": "adversity",
+    "types": "Interpersonal"
+   },
+   "folder": null
+  },
+  {
+   "_id": "UxRBqdQkNLFKUIrj",
+   "name": "Charity",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929412,
+    "modifiedTime": 1787705929412,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "writ_of_the_wild",
+     "page": "103"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "water",
+    "peculiarity_type": "passion",
+    "types": "Interpersonal, Mental"
+   },
+   "folder": null
+  },
+  {
+   "_id": "3lFeLQFaxwAIbA8I",
+   "name": "Claustrophobia",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929412,
+    "modifiedTime": 1787705929412,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "emerald_empire",
+     "page": "247"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "water",
+    "peculiarity_type": "anxiety",
+    "types": "Mental"
+   },
+   "folder": null
+  },
+  {
+   "_id": "blNVlmxPk2qQZzD6",
+   "name": "Incurable Illness",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929413,
+    "modifiedTime": 1787705929413,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "122"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "earth",
+    "peculiarity_type": "adversity",
+    "types": "Physical"
+   },
+   "folder": null
+  },
+  {
+   "_id": "bhD1fZ1TIVqOezaA",
+   "name": "Omamori (Boon of Benten)",
+   "type": "item",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929413,
+    "modifiedTime": 1787705929413,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "243"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "0",
+    "rarity": "2",
+    "zeni": "5 bu",
+    "properties": []
+   },
+   "folder": null
+  },
+  {
+   "_id": "N3S40f3PwhCYj39e",
+   "name": "Master Artisan",
+   "type": "title",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/title.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929414,
+    "modifiedTime": 1787705929414,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 130
+    },
+    "description": "<h2>Curriculum</h2><table><tr><td>Artisan Skills</td><td>Skill Group</td></tr><tr><td>Courtesy</td><td>Skill</td></tr><tr><td>Culture</td><td>Skill</td></tr><tr><td>Medicine</td><td>Skill</td></tr><tr><td>Meditation</td><td>Skill</td></tr><tr><td><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000043\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000043\">(shuji) All Arts Are One</a> (prereq)</td><td>Technique</td></tr><tr><td><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000011\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000011\">(ritual) Formal Tea Ceremony</a> (prereq)</td><td>Technique</td></tr></table>",
+    "parent_id": null,
+    "items": [
+     {
+      "_id": "eY6iGLBZDLExgkad",
+      "name": "Culture +1 (1 -> 2)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "N3S40f3PwhCYj39e",
+        "actor_id": "MFYn0Td7dR7U9zZk"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 4,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "culture"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "37oQ2MVII7YO5Jlf",
+      "name": "Medicine +1 (0 -> 1)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "N3S40f3PwhCYj39e",
+        "actor_id": "MFYn0Td7dR7U9zZk"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 2,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "medicine"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "WrKcre6AHKI6fDHM",
+      "name": "Meditation +1 (0 -> 1)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "N3S40f3PwhCYj39e",
+        "actor_id": "MFYn0Td7dR7U9zZk"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 2,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "meditation"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "Ab174mqVMhExGOaI",
+      "name": "Meditation +1 (1 -> 2)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "N3S40f3PwhCYj39e",
+        "actor_id": "MFYn0Td7dR7U9zZk"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 4,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "meditation"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "in_curriculum": false,
+    "xp_used": 12,
+    "xp_cost": 60,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancements": [],
+    "xp_used_total": 12
+   },
+   "folder": null,
+   "sort": 0
+  },
+  {
+   "name": "Theology +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "aJxqlxns4TiC3Krk",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 4,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "theology"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929414,
+    "modifiedTime": 1787705929414,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "name": "Theology +1 (2 -> 3)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "u6TlUBJcwHXcbJCX",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 6,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "theology"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929414,
+    "modifiedTime": 1787705929414,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "name": "Courtesy +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "ziy9JQW0GOzJKtFr",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 4,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "courtesy"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929415,
+    "modifiedTime": 1787705929415,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "name": "Water +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/icons/rings/water.svg",
+   "_id": "XenFJTnju7TdBEMT",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 6,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 2,
+    "ring": "water",
+    "advancement_type": "ring",
+    "skill": ""
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929416,
+    "modifiedTime": 1787705929416,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "name": "Performance +1 (0 -> 1)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "MAZU97Iq1SPvocEY",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 2,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 2,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "performance"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929416,
+    "modifiedTime": 1787705929416,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "name": "Performance +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "q3phZp7tC1TI7mfc",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 4,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 2,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "performance"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929416,
+    "modifiedTime": 1787705929416,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   }
+  },
+  {
+   "name": "Armor of Radiance",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/invocation.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-invocations-l5r-sortilege.Item.kHwwIzOR9JhF5sOr",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929417,
+    "modifiedTime": 1787705929417,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 202
+    },
+    "description": "<p>Oil of Awakening Flames (Alchemy), Armor of Osano-wo (Ancestral), Robes of the Ifrit (Foreign)</p><p><em>By appealing to the fire kami that slumber within an object, a shugenja can turn a set of armor into a weapon. The fire kami’s creative energy expands rapidly as the incantation ends, causing shimmering radiance to burst forth into a halo of fire that encircles the armor and the wearer, searing their foes.</em></p><p><strong>Activation:</strong> As a Support action, you may make a TN 2 Theology (fire) check targeting one set of armor at range 0–1.</p><p><strong>Effects:</strong> If you succeed, you augment the target armor, enveloping it in blinding radiance and searing heat (that miraculously do not affect the wearer). When a character at range 0–1 of the wearer begins their turn, they suffer the Burning and Dazed conditions. This effect persists for one round, plus additional rounds equal to your bonus successes.</p><h4>New Opportunities</h4><p>(fire)(op): The armor gains the Wargear quality.</p><p>(fire)(op)(op): This effect persists until the end of the scene instead.</p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 2,
+    "ring": "fire",
+    "skill": "theology",
+    "difficulty": "2",
+    "technique_type": "invocation"
+   },
+   "folder": "yytezxbAZwbr8Ljm",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "EA8t12ZYayxxDQfo",
+   "sort": 100000
+  },
+  {
+   "name": "Cloak of Night",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/invocation.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-invocations-l5r-sortilege.Item.fveOrp1xJ9uGnNCl",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929417,
+    "modifiedTime": 1787705929417,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 192
+    },
+    "description": "<p>Smoke of Stolen Light (Alchemy), Shroud of the North Wind (Fortunist), Walk in the Shadow World (Foreign)</p><p><em>A sufficiently learned shugenja can call forth air kami to play one of their simplest and most effective tricks: enveloping an object or person in their embrace to hide it from sight.</em></p><p><strong>Activation:</strong> As a Scheme and Support action, you may make a Theology (air) check targeting one object or character at range 0–1. The TN is equal to the target’s silhouette (see page 265).</p><p><strong>Effects:</strong> If you succeed, you augment the target with an illusion that renders it invisible to the naked eye. The object is still physically present and can be touched, smelled, or sensed with any normal sense other than vision. This effect persists for one round, plus additional rounds equal to your bonus successes.</p><h4>New Opportunities</h4><p>(air)(op)(op)+: Choose one additional target of the same silhouette or smaller per (op)(op) spent this way.</p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "air",
+    "skill": "theology",
+    "difficulty": "2",
+    "technique_type": "invocation"
+   },
+   "folder": "NYbYr6ibiCt7Fh20",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "4JUFtsuFBlXbNLNc",
+   "sort": 125000
+  },
+  {
+   "name": "Path to Inner Peace",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/invocation.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-invocations-l5r-sortilege.Item.hD5nUwJoFhmPNH1n",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929418,
+    "modifiedTime": 1787705929418,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 209
+    },
+    "description": "<p>Jurōjin's Kiss (Alchemy), Trancendence of Asako (Ancestral), Touch of the Hot Springs (Elemental)</p><p><em>By communing with the water kami that dwell within the body, a shugenja can right imbalances and correct the flow of ki, speeding the recovery of stamina dramatically.</em></p><p><strong>Activation:</strong> As a Support action, you may make a TN 2 Theology (water) check targeting yourself or another character at range 0–2.</p><p><strong>Effects:</strong> If you succeed, you mend your target’s exhausted muscles. The target removes fatigue equal to your Water Ring plus your bonus successes. Each target cannot be affected by the Path to Inner Peace invocation again until the end of the scene.</p><h4>New Opportunities</h4><p>(water)(op): Choose one of the following conditions: Bleeding, Dazed, Disoriented, or Lightly Wounded. Remove that condition from each target.</p><p>(water)(op): Your target also removes strife equal to your bonus successes.</p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "water",
+    "skill": "theology",
+    "difficulty": "2",
+    "technique_type": "invocation"
+   },
+   "folder": "bBTQ0pJ3kakGWtrx",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "lO3jX2JHSshVdZf5",
+   "sort": 101563
+  },
+  {
+   "name": "Reflections of P’an Ku",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/invocation.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-invocations-l5r-sortilege.Item.JKM0mQ54QRAkCzDB",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929418,
+    "modifiedTime": 1787705929418,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 209
+    },
+    "description": "<p>Agasha's Vast Wisdom (Ancestral), Rumors of the Water Kami (Elemental), Whispers of the Steel (Foreign)</p><p><em>Water kami are notoriously covetous, and things lost to the depths rarely resurface. Still, this avarice can offer advantages. A shugenja learned in this art can call forth water spirits to recognize an item by submerging it in sacred water. The water spirits often provide cryptic answers, but they usually can grant the shugenja a good idea of an item’s composition, whether it possesses any mystical properties, and the general disposition of these traits.</em></p><p><strong>Activation:</strong> As a Scheme action, you may make a TN 2 Theology (water) check targeting one item at range 0–1.</p><p><strong>Effects:</strong> If you succeed, you scry to uncover all properties an item possesses, including its name, maker, mundane qualities, magical properties, curses, and sealed techniques (see Nemuranai on page 307).</p><h4>New Opportunities</h4><p>(water)(op): Gain knowledge of the item’s origin in broad strokes, such as where it was forged, the clan of the individual who has carried it the longest, or a similar piece of information.</p><p>(water)(op): You may target a character instead of an object. If you succeed, you identify one invocation, kihō, mahō, or supernatural ability or item possessed by that person, along with its name and general qualities.</p><p></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "water",
+    "skill": "theology",
+    "difficulty": "2",
+    "technique_type": "invocation"
+   },
+   "folder": "bBTQ0pJ3kakGWtrx",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "s6mKtgbAfrbF4NB3",
+   "sort": 100782
+  },
+  {
+   "name": "Token of Memory",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/invocation.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-invocations-l5r-sortilege.Item.XFrtYWz8RaU5O0Ja",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929418,
+    "modifiedTime": 1787705929418,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 195
+    },
+    "description": "<p>Riddle of Agasha (Ancestral), Trick of the Air Kami (Elemental), Ebisu's Joke (Fortunist)</p><p><em>After performing this invocation, the shugenja conjures an illusion from the air, a trick of the light captured in hand.</em></p><p><strong>Activation:</strong> As a Scheme action, you may make a TN 2 Theology (air) check targeting one position at range 0–1.</p><p><strong>Effects:</strong> If you succeed, you summon an illusion of one inanimate object at the target position. The illusory object’s size is a silhouette of up to your bonus successes (beginning at 0, or a small handheld object). The item appears real, but it does not actually exist, and it cannot be used. Any character confronted with one of these illusions must resist with a TN 4 Artisan, Smithing, or Design check (Earth 5, Fire 2) using a Scholar skill approach to discern its illusory nature. The object persists until the end of the scene.</p><h4>New Opportunities</h4><p>(air)(op): The object can appear to be a creature or person (though it does not move).</p><p>(air)(op)+: Summon one additional illusory object in range per (op) spent this way.</p><p>(air)(op)(op): Illusory objects you summon this way have mass, and they can be used as if they were real (though they are still inanimate, and thus do not move on their own). They still vanish when the effect ends.</p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "air",
+    "skill": "theology",
+    "difficulty": "2",
+    "technique_type": "invocation"
+   },
+   "folder": "NYbYr6ibiCt7Fh20",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "WTgx8qGelSdSsi8c",
+   "sort": 100049
+  },
+  {
+   "name": "Cleansing Rite",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-rituals-l5r-sortilege.Item.1lVY0jhJAeEa4Byg",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929419,
+    "modifiedTime": 1787705929419,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 212
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The ritualist sanctifies a person or group, anointing them with sacred substances that drive out unholy presences and malign sorcery.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 3 Theology (void) check </span><span class=\"fontstyle3\">targeting up to five characters to remove spiritual contaminants from the targets before they spread. Note that this cannot remove a Shadowlands Taint disadvantage once it has taken hold, but it can prevent this spiritual contamination from taking root after a character is exposed.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, remove the Afflicted condition from the target.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(void)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">If one or more targets is an Otherworldly being, you become aware of it after completing the ritual—but you do not know which target.</span></p><p><span class=\"fontstyle5\">(void)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Choose one additional target per (op) spent this way.</span></p><p><span class=\"fontstyle2\">(void)(op)+: </span><span class=\"fontstyle3\">Instead of targeting characters, you may target an area that encompasses a number of range bands around you equal to (op) spent this way. Remove the Defiled terrain quality from this area. If it is a deeply unhallowed place that has long been the domain of evil, the Defiled quality returns after one day, plus additional days equal to your bonus successes.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "void",
+    "skill": "theology",
+    "difficulty": "3",
+    "technique_type": "ritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "MIbc2HjPyOQcdQz2",
+   "sort": 0
+  },
+  {
+   "name": "Commune with the Spirits",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-rituals-l5r-sortilege.Item.r9DyFb62vtLwexbW",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929419,
+    "modifiedTime": 1787705929419,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 212
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The ritualist centers their mind on one of the Elements, appealing to the spirits in their environment and seeking their counsel or boon. Priests and laypeople are able to use this ritual to receive less specific guidance from the spirits, such as a leaf that falls to the ground pointing in the direction of the person or thing they are seeking.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity or Support action, you may make a </span><span class=\"fontstyle2\">TN 1 Theology check </span><span class=\"fontstyle3\">using (air), (earth), (fire), (water), or (void) to appeal to nearby spirits of that Element (appeal to the departed, such as ancestor spirits, and other non-elemental supernatural presences, if using (void)) for aid.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, choose and receive one of the following boons from the spirit or spirits you contacted:</span></p><ul><li><p><span class=\"fontstyle2\">- Sense the Kami: </span><span class=\"fontstyle3\">Detect all spirits and uses of their magic by shugenja within a number of range bands equal to the ring you used plus your bonus successes.</span></p></li><li><p><span class=\"fontstyle2\">- Spiritual Knowledge: </span><span class=\"fontstyle3\">Learn one fact the spirits know about the area.</span></p></li><li><p><span class=\"fontstyle2\">- Elemental Gift: </span><span class=\"fontstyle3\">The kami deliver a small amount of the Element in question to you. For instance, a prayer to a water kami might cause it to begin raining lightly, for a short time, but it might also cause you to run across a stream, or even find groundwater. In contrast, a prayer to fire kami might bring forth a small shower of sparks, while a prayer to an air kami might elicit a gust of wind. Praying to an earth kami might cause you to stumble across a large stone, or find a small patch of arable ground amid a wasteland. Prayers to the ancestors may allow the petitioner to find something that belonged to an ancestor in a time of need.</span></p></li></ul><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Reduce the TN of your next check to interact with or appeal to kami or supernatural presences of this Element by 1.</span></p><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">If you succeed, receive one additional boon per </span><span class=\"fontstyle6\">(op) </span><span class=\"fontstyle3\">spent this way. Each boon can only be received one time per activation.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "void",
+    "skill": "theology",
+    "difficulty": "1",
+    "technique_type": "ritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "HiTTbFLRdRb3C2Ac",
+   "sort": 0
+  },
+  {
+   "name": "Tea Ceremony",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-rituals-l5r-sortilege.Item.JWmEEgfShNBM4fEK",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929420,
+    "modifiedTime": 1787705929420,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 213
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>When Lady Doji served tea for the very first Emperor, the tea ceremony was born. Ceremony styles vary among the clans, from the gilded tea rooms of the Phoenix to the imperfect tea bowls of the Dragon, the early morning gatherings of the Crane to the snow- and moon-viewing ceremonies of the Scorpion. However, at its core the tea ceremony is fundamentally an appreciation of tea and, if done well, a spiritual moment for its participants. The tea represents all five elements: the fire used to heat the water, the earth from which the tea is grown, and the air that carries the aroma of the tea. Finally, void holds all four elements together, and brings in the mysterious fifth element, the moment of harmony and tranquility as one sips the tea.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">Once per game session, as a downtime activity using a tea set, you may make a </span><span class=\"fontstyle2\">TN 2 Performance (void) check </span><span class=\"fontstyle3\">targeting yourself and a number of other characters up to your ranks in Culture, who are also participants. Up to one other participant may assist, providing the usual benefits (see </span><span class=\"fontstyle2\">Assistance </span><span class=\"fontstyle3\">on page 26).</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">Each target removes 3 strife, plus additional strife equal to your bonus successes.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Reduce the TN of each target’s next check by 1.</span></p><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle6\">+: </span><span class=\"fontstyle3\">Each target removes 1 fatigue, plus 1 fatigue per (op)</span><span class=\"fontstyle5\">(op) </span><span class=\"fontstyle3\">spent this way.</span></p><p><span class=\"fontstyle5\">(op)(op)</span><span class=\"fontstyle6\">: </span><span class=\"fontstyle3\">If you succeed, each target gains 1 Void point.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 2,
+    "ring": "void",
+    "skill": "performance",
+    "difficulty": "2",
+    "technique_type": "ritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "18givYV4eHeIFuJx",
+   "sort": 0
+  },
+  {
+   "name": "Spiritual Artisan",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.school-abilities-l5r-sortilege.Item.dGFY1ZVAzo3jxD2A",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929420,
+    "modifiedTime": 1787705929420,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 62
+    },
+    "description": "<p><span class=\"fontstyle0\">When making a check to mystically </span><span class=\"fontstyle2\">summon </span><span class=\"fontstyle0\">an illusion or to </span><span class=\"fontstyle2\">summon</span><span class=\"fontstyle0\">, </span><span class=\"fontstyle2\">augment</span><span class=\"fontstyle0\">, or </span><span class=\"fontstyle2\">awaken </span><span class=\"fontstyle0\">an object, you may add a number of kept (ring) set to (op) results equal to your school rank.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "school_ability"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "0YTxznlHznP5TV9j",
+   "sort": 0
+  },
+  {
+   "name": "Artisan’s Appraisal",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.BalrfvLIoSiI9016",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787705929420,
+    "modifiedTime": 1787705929420,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 214
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The courtier looks at an object but sees its maker. Each thumbprint tells a story about the hand that crafted the piece; every subtle choice reveals something about the desires that linger in the artist’s mind.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When assessing an object or performance with an Artisan skill (air), Performance (air), or Games (air) check, you may spend </span><span class=\"fontstyle4\"> </span><span class=\"fontstyle3\">in the following ways:</span></p><p><span class=\"fontstyle4\">(air)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Choose a ring; learn the value of that ring for the creator or performer and all advantages and disadvantages attached to that ring that are not of the curse type.</span></p><p><span class=\"fontstyle2\">(air)(op): </span><span class=\"fontstyle3\">If the creator or performer is an NPC, learn their demeanor.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 2,
+    "ring": "air",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "shuji"
+   },
+   "folder": "uXh7bFxBSFiGnaaB",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "Id33HXwOgkxMMiqt",
+   "sort": 100000
+  }
+ ],
+ "effects": [],
+ "sort": 0,
+ "ownership": {
+  "default": 0,
+  "7vKCnwOtrdD7lBip": 3
+ },
+ "flags": {},
+ "_stats": {
+  "coreVersion": "14.365",
+  "systemId": "l5r5e",
+  "systemVersion": "1.14.0",
+  "createdTime": 1787705929405,
+  "modifiedTime": 1787705929405,
+  "lastModifiedBy": "7vKCnwOtrdD7lBip",
+  "compendiumSource": "Compendium.l5r5e-compendia-sortilege.pregens-l5r-sortilege.Actor.MFYn0Td7dR7U9zZk",
+  "duplicateSource": null,
+  "exportSource": null
+ }
+}

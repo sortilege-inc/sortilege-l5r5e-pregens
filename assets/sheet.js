@@ -225,6 +225,66 @@
       "</tbody></table></div></section>";
   }
 
+  /* ------------------------------------------------- twenty questions */
+
+  // Question wording and page references come from the l5r5e system's own
+  // en.json (data/twenty_questions.js) — never retyped here.
+  var Q = window.L5R_20Q || {};
+
+  function fieldLabel(f) {
+    return (Q.fields || {})[f] || titleCase(f.replace(/_/g, " "));
+  }
+
+  // Answers store raw keys ("meditation", "fire"); show them the way the rest
+  // of the sheet does.
+  var RING_SET = { air: 1, earth: 1, fire: 1, water: 1, "void": 1 };
+  function prettyValue(f, v) {
+    if (typeof v !== "string") return String(v);
+    if (RING_SET[v]) return titleCase(v) + " Ring";
+    if (SKILL_LABEL[v]) return SKILL_LABEL[v];
+    return v;
+  }
+
+  function renderQuestions() {
+    var tq = CHAR.twenty_questions || {};
+    var steps = tq.steps || {};
+    if (!Object.keys(steps).length) {
+      return '<p class="lede">No twenty questions recorded for ' + esc(CHAR.name) +
+        ".</p>";
+    }
+    var pow = tq.template === "pow";
+    var html = '<p class="muted small">' +
+      "The Game of Twenty Questions as answered at this character's making. " +
+      "Question wording and page references are the system's own." + "</p>";
+
+    (Q.parts || []).forEach(function (part) {
+      var rows = part.questions.map(function (n) {
+        var step = steps["step" + n];
+        if (!step) return "";
+        var text = ((Q.questions || {})[n] || {})[pow ? "pow" : "core"] ||
+          ((Q.questions || {})[n] || {}).core || ("Question " + n);
+        // the question number is already at the head of the official string
+        var body = [];
+        Object.keys(step.answers || {}).forEach(function (f) {
+          body.push('<div class="qa-row"><dt>' + esc(fieldLabel(f)) + "</dt><dd>" +
+            esc(prettyValue(f, step.answers[f])) + "</dd></div>");
+        });
+        Object.keys(step.picks || {}).forEach(function (f) {
+          body.push('<div class="qa-row"><dt>' + esc(fieldLabel(f)) + "</dt><dd>" +
+            step.picks[f].map(function (n2) {
+              return '<span class="chip">' + esc(n2) + "</span>";
+            }).join(" ") + "</dd></div>");
+        });
+        return '<div class="qa"><h3 class="qa-q">' + esc(text) + "</h3>" +
+          '<dl class="qa-body">' + body.join("") + "</dl></div>";
+      }).join("");
+      if (!rows.replace(/\s/g, "")) return;
+      html += '<h2 class="section-h"><span class="kanji">問</span>' +
+        esc((pow && part.title_pow) || part.title) + "</h2>" + rows;
+    });
+    return html;
+  }
+
   /* ---------------------------------------------------------- changelog */
 
   function names(list) {
@@ -322,6 +382,18 @@
         n.scrollIntoView({ block: "nearest", inline: "center" });
       }
     });
+
+    // the Play tab always shows the tier the timeline is on
+    var frame = el("play-frame");
+    var src = "../play/" + CHAR.slug + "-" + t.xp + "xp.html";
+    if (frame.getAttribute("data-src") !== src) {
+      frame.setAttribute("data-src", src);
+      if (!el("panel-play").hidden) frame.src = src;
+    }
+    el("play-note").innerHTML = "Playing <strong>" + esc(CHAR.name) + "</strong> at " +
+      t.xp + " XP" + (t.rank ? ", school rank " + t.rank : "") +
+      '. Trackers, rolls and the log are saved in this browser, per tier. ' +
+      '<a href="' + esc(src) + '" target="_blank" rel="noopener">Open full screen</a>.';
     if (history.replaceState) {
       history.replaceState(null, "", "#" + t.xp + "xp");
     }
@@ -340,6 +412,7 @@
         esc(CHAR.clan) + "</span>" : "") +
       (CHAR.family ? '<span class="chip">' + esc(CHAR.family) + " family</span>" : "") +
       (CHAR.role ? '<span class="chip">' + esc(CHAR.role) + "</span>" : "") +
+      (CHAR.campaign ? '<span class="chip crimson">' + esc(CHAR.campaign) + "</span>" : "") +
       '<span class="chip">' + CHAR.tier_count +
         (CHAR.tier_count === 1 ? " XP tier" : " XP tiers") + "</span>";
 
@@ -351,6 +424,25 @@
     el("timeline").innerHTML = renderTimeline();
     Array.prototype.forEach.call(document.querySelectorAll("#timeline .tl-node"), function (n) {
       n.addEventListener("click", function () { activate(Number(n.getAttribute("data-i"))); });
+    });
+
+    el("panel-questions").innerHTML = renderQuestions();
+
+    Array.prototype.forEach.call(document.querySelectorAll("#tabbar button"), function (b) {
+      b.addEventListener("click", function () {
+        var tab = b.getAttribute("data-tab");
+        Array.prototype.forEach.call(document.querySelectorAll("#tabbar button"),
+          function (o) { o.classList.toggle("active", o === b); });
+        ["dossier", "questions", "play"].forEach(function (t) {
+          el("panel-" + t).hidden = t !== tab;
+        });
+        // the play sheet is only loaded once its tab is actually opened
+        var frame = el("play-frame");
+        if (tab === "play" && frame.getAttribute("data-src") &&
+            frame.src.indexOf(frame.getAttribute("data-src")) < 0) {
+          frame.src = frame.getAttribute("data-src");
+        }
+      });
     });
 
     // deep link: #57xp

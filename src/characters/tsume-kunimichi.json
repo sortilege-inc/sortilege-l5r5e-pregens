@@ -2,6 +2,7 @@
  "slug": "tsume-kunimichi",
  "name": "Tsume Kunimichi",
  "folder_label": "Tsume Kunimichi",
+ "campaign": "The Bushi Oni",
  "bucket": "Shinobi",
  "accent": "#83cecc",
  "identity": {
@@ -18,150 +19,199 @@
  "twenty_questions": {
   "template": "core",
   "generated": true,
-  "step1": {
-   "clan": "Crane",
-   "ring": "air",
-   "skill": "culture",
-   "social_status": 35
-  },
-  "step2": {
-   "family": "Tsume",
-   "ring": "water",
-   "skill1": "courtesy",
-   "skill2": "design",
-   "wealth": 8,
-   "social_glory": 44
-  },
-  "step3": {
-   "school": "Daidoji Harrier School",
-   "roles": "Shinobi",
-   "ring1": "air",
-   "ring2": "fire",
-   "skill1": "fitness",
-   "skill2": "skulduggery",
-   "skill3": "melee",
-   "skill4": "ranged",
-   "skill5": "medicine",
-   "allowed_techniques": {
-    "kata": true,
-    "kiho": false,
-    "inversion": false,
-    "invocation": false,
-    "ritual": true,
-    "shuji": true,
-    "maho": false,
-    "ninjutsu": false,
-    "mantra": false,
-    "specificity": true
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Crane",
+     "ring": "air",
+     "skill": "culture",
+     "social_status": 35
+    },
+    "picks": {}
    },
-   "techniques": [
-    "tKw2dMxzwVBuWOaT",
-    "pNvLI7ImoPeZPzwK"
-   ],
-   "school_ability": [
-    "bCg2D67yA5yoON9g"
-   ],
-   "equipment": [
-    "Rex7fGo6R1KuUhQJ",
-    "zcsgspz4VluSMeI0",
-    "vYOT19tl8uiIDt14",
-    "BhKwwnN5UHI5rZpp",
-    "n8xA05Fb9WpXg3oo",
-    "S1MG4qPHEV3N8XnO",
-    "5Lr1CNs1uvX7J38y"
-   ],
-   "social_honor": 30
-  },
-  "step4": {
-   "stand_out": "Kunimichi has clear vision about what his capabilities and limitations are.",
-   "ring": "void"
-  },
-  "step5": {
-   "social_giri": "Daidoji Masahiro, a regional administrator who oversees border territories and trade routes. Kunimichi's official duty is to serve as an advance scout and intelligence gatherer, traveling ahead of diplomatic missions to assess threats and gather information about local conditions. His reputation for thoroughness and discretion makes him invaluable for sensitive assignments where the Crane need eyes and ears in unfriendly territory."
-  },
-  "step6": {
-   "social_ninjo": "To see the rigid hierarchy that keeps the common people suffering finally brought low. Kunimichi has witnessed too much injustice perpetuated by the celestial order - peasants starving while nobles feast, talented individuals held back by birth, and the Emperor's divine mandate used to justify cruelty. He longs for a world where merit and compassion matter more than bloodline and divine favor. This desire constantly puts him at odds with his official duties, as he must publicly support the very system he secretly works to undermine."
-  },
-  "step7": {
-   "clan_relations": "Kunimichi genuinely respects the Daidoji family's values of hard work and practical service, but he's grown increasingly disillusioned with how the Crane's political maneuvering serves only the elite. He sees some of the Tsume and Daidoji good people trapped in a corrupt system, and his Kolat activities are partly motivated by a desire to free them from the endless cycle of serving the ungrateful Doji, and above them, Hantei XXXVIII. ",
-   "skill": "meditation",
-   "social_add_glory": 0
-  },
-  "step8": {
-   "bushido": "Kunimichi views Bushido as a beautiful philosophy corrupted by those in power. The ideals of Courage, Honor, and Compassion resonate with him deeply, but he's seen how Duty and Loyalty are weaponized to keep people obedient to unjust rulers. He believes true honor lies in serving the greater good of all people, not blindly following orders from divine autocrats. ",
-   "skill": "none",
-   "social_add_honor": 10,
-   "tenet_paramount": "Righteousness",
-   "tenet_less_significant": "Duty and Loyalty",
-   "item": []
-  },
-  "step9": {
-   "success": "Using carefully placed explosive charges to sink a trading vessel which was carrying a shipment of weapons intended for a Lion clan vassal who was becoming too powerful for Crane political interests. Kunimichi posed as a dock worker, and on the night before departure, he placed small but precisely calculated charges that went off more than a day later, while the ship was en route, sinking it.",
-   "distinction": [
-    "DWrZtBuyK83Ah3a7"
-   ]
-  },
-  "step10": {
-   "difficulty": "While learning to craft more sophisticated charges, an experimental mixture detonated prematurely, leaving his arm permanently weakened and scarred. Though he's adapted his techniques and become much more careful, the injury serves as a constant reminder of the dangers in his work. The physical limitation affects his ability to use certain weapons and perform some manual tasks, forcing him to rely more on precision and planning than raw capability.",
-   "adversity": [
-    "BUdmYV82FFppmXo1"
-   ]
-  },
-  "step11": {
-   "calms": "Kunimichi finds deep satisfaction in taking something that appears ruined and transforming it into something more beautiful than before. The careful, meditative process of examining cracks, mixing the precious metal, and slowly rebuilding broken pieces mirrors his hopes for society itself.",
-   "passion": [
-    "pVo3SUK4ZeNQUwye"
-   ]
-  },
-  "step12": {
-   "worries": "Hypervigilance about being discovered by authorities or enemy agents. Kunimichi constantly scans crowds for familiar faces, analyzes every interaction for signs of suspicion, and maintains multiple exit strategies from any location. This paranoid awareness has saved his life several times, but it also exhausts him mentally and makes it difficult to form genuine relationships.",
-   "anxiety": [
-    "Sw9LFYlxdkwGFCfu"
-   ]
-  },
-  "step13": {
-   "most_learn": "Yuki, a geisha who operates in the entertainment districts of Otosan Uchi. On the surface, she appears to be merely an accomplished entertainer skilled in poetry, music, and conversation. However, she is actually a high-ranking Kolat agent who first introduced Kunimichi to the conspiracy's philosophy during what appeared to be routine visits to a tea house. Through seemingly casual conversations about poetry and philosophy, she taught him to see the inherent contradictions in the Celestial Order and showed him how the rigid hierarchy perpetuates suffering. Her lessons in reading people, managing multiple identities, and maintaining perfect composure under pressure have been invaluable to his survival as a double agent. To any observer, their relationship appears to be that of a samurai seeking cultured entertainment, making it the perfect cover for their true mentorship.",
-   "skill": "performance",
-   "advantage": [],
-   "disadvantage": [
-    "p1cGWR2i5WrGtIKb"
-   ]
-  },
-  "step14": {
-   "first_sight": "The careful way he holds his left arm - not protectively, but with a stiffness that suggests old injury. Those observant enough notice that he unconsciously favors his right side when reaching for items or gesturing. The scarring is mostly hidden by his clothing. Some interpret this as the mark of a dedicated warrior who has seen real action, which actually enhances his reputation for experience.",
-   "special_features": [
-    "xFAWMoykfSYWIScE"
-   ]
-  },
-  "step15": {
-   "stress": "Kunimichi becomes eerily calm and methodical when under pressure. Years of managing explosives and maintaining his cover identity have taught him that panic leads to fatal mistakes. He speaks more quietly, moves more deliberately, and his eyes become constantly mobile as he assesses threats and escape routes. To most observers, this controlled response makes him appear calm, though those who know him well recognize it as a sign that he's operating in 'mission mode' and may be preparing for violence."
-  },
-  "step16": {
-   "relations": "His marriage to Sodona Akemi is a constant source of tension in his life. Arranged to strengthen ties between the Crane and a Phoenix vassal family, their union is politically useful but personally hollow. Akemi is intelligent and dutiful but finds Kunimichi's frequent absences and emotional distance frustrating. She suspects he's hiding something but attributes it to typical masculine stoicism rather than his true secret. Their shared home is polite but cold, and both maintain their duties while privately resenting the arrangement.\n\nAdditionally, he maintains a professional relationship with Yasuki Toshiro, a Crab merchant who occasionally supplies the Crane with specialty goods. Unknown to most, Toshiro is actually a Kolat sympathizer who provides Kunimichi with hard-to-acquire materials for his sabotage work, disguised as legitimate trade goods. Toshiro gave him a carved jade medallion that identifies the bearer as someone he will do business with, no questions asked. Can be used to acquire unusual materials or arrange discreet meetings.",
-   "item": [
-    "gg11bRZvs9Obf8RV"
-   ]
-  },
-  "step17": {
-   "parents_pov": "His parents, Tsume Jiro and Tsume Mariko, would describe Kunimichi as 'their dutiful but distant son.' They're immensely proud of his reputation for completing difficult assignments and his marriage to a Phoenix family, seeing both as bringing honor to the Tsume name.  His father respects his dedication to duty but privately wishes Kunimichi would request safer assignments and focus on building a proper family with his wife. They see him as someone who gives everything to his obligations but takes little joy from life, though they assume this is simply the burden of serving the clan in dangerous times.",
-   "skill": "unarmed",
-   "bond": []
-  },
-  "step18": {
-   "heritage_name": "He is named after his ancestor that was the most recent known link to the Imperial family.",
-   "heritage_1": 9,
-   "heritage_2": 3,
-   "heritage_item": [],
-   "heritage_add_honor": 0,
-   "heritage_add_glory": 0,
-   "heritage_add_status": 10,
-   "skill": "smithing"
-  },
-  "step19": {
-   "firstname": "Kunimichi"
-  },
-  "step20": {
-   "death": "Kunimichi is not under any illusions. Most likely, he dies by his own hand in an accident; next most likely is that the conspiracy is betrayed and he is executed."
+   "step2": {
+    "answers": {
+     "family": "Tsume",
+     "ring": "water",
+     "skill1": "courtesy",
+     "skill2": "design",
+     "wealth": 8,
+     "social_glory": 44
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Daidoji Harrier School",
+     "roles": "Shinobi",
+     "ring1": "air",
+     "ring2": "fire",
+     "skill1": "fitness",
+     "skill2": "skulduggery",
+     "skill3": "melee",
+     "skill4": "ranged",
+     "skill5": "medicine",
+     "social_honor": 30
+    },
+    "picks": {
+     "techniques": [
+      "Skulk",
+      "Striking as Air"
+     ],
+     "school_ability": [
+      "Explosive Arrival"
+     ],
+     "equipment": [
+      "Traveling pack",
+      "Traveling Clothes",
+      "Common Clothes",
+      "Katana",
+      "Knife",
+      "Wakizashi",
+      "Shuriken"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "stand_out": "Kunimichi has clear vision about what his capabilities and limitations are.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Daidoji Masahiro, a regional administrator who oversees border territories and trade routes. Kunimichi's official duty is to serve as an advance scout and intelligence gatherer, traveling ahead of diplomatic missions to assess threats and gather information about local conditions. His reputation for thoroughness and discretion makes him invaluable for sensitive assignments where the Crane need eyes and ears in unfriendly territory."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "To see the rigid hierarchy that keeps the common people suffering finally brought low. Kunimichi has witnessed too much injustice perpetuated by the celestial order - peasants starving while nobles feast, talented individuals held back by birth, and the Emperor's divine mandate used to justify cruelty. He longs for a world where merit and compassion matter more than bloodline and divine favor. This desire constantly puts him at odds with his official duties, as he must publicly support the very system he secretly works to undermine."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Kunimichi genuinely respects the Daidoji family's values of hard work and practical service, but he's grown increasingly disillusioned with how the Crane's political maneuvering serves only the elite. He sees some of the Tsume and Daidoji good people trapped in a corrupt system, and his Kolat activities are partly motivated by a desire to free them from the endless cycle of serving the ungrateful Doji, and above them, Hantei XXXVIII. ",
+     "skill": "meditation",
+     "social_add_glory": 0
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "bushido": "Kunimichi views Bushido as a beautiful philosophy corrupted by those in power. The ideals of Courage, Honor, and Compassion resonate with him deeply, but he's seen how Duty and Loyalty are weaponized to keep people obedient to unjust rulers. He believes true honor lies in serving the greater good of all people, not blindly following orders from divine autocrats. ",
+     "social_add_honor": 10,
+     "tenet_paramount": "Righteousness",
+     "tenet_less_significant": "Duty and Loyalty"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Using carefully placed explosive charges to sink a trading vessel which was carrying a shipment of weapons intended for a Lion clan vassal who was becoming too powerful for Crane political interests. Kunimichi posed as a dock worker, and on the night before departure, he placed small but precisely calculated charges that went off more than a day later, while the ship was en route, sinking it."
+    },
+    "picks": {
+     "distinction": [
+      "Famously Reliable"
+     ]
+    }
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "While learning to craft more sophisticated charges, an experimental mixture detonated prematurely, leaving his arm permanently weakened and scarred. Though he's adapted his techniques and become much more careful, the injury serves as a constant reminder of the dangers in his work. The physical limitation affects his ability to use certain weapons and perform some manual tasks, forcing him to rely more on precision and planning than raw capability."
+    },
+    "picks": {
+     "adversity": [
+      "Maimed Arm"
+     ]
+    }
+   },
+   "step11": {
+    "answers": {
+     "calms": "Kunimichi finds deep satisfaction in taking something that appears ruined and transforming it into something more beautiful than before. The careful, meditative process of examining cracks, mixing the precious metal, and slowly rebuilding broken pieces mirrors his hopes for society itself."
+    },
+    "picks": {
+     "passion": [
+      "Kintsugi"
+     ]
+    }
+   },
+   "step12": {
+    "answers": {
+     "worries": "Hypervigilance about being discovered by authorities or enemy agents. Kunimichi constantly scans crowds for familiar faces, analyzes every interaction for signs of suspicion, and maintains multiple exit strategies from any location. This paranoid awareness has saved his life several times, but it also exhausts him mentally and makes it difficult to form genuine relationships."
+    },
+    "picks": {
+     "anxiety": [
+      "Eyes of Many"
+     ]
+    }
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Yuki, a geisha who operates in the entertainment districts of Otosan Uchi. On the surface, she appears to be merely an accomplished entertainer skilled in poetry, music, and conversation. However, she is actually a high-ranking Kolat agent who first introduced Kunimichi to the conspiracy's philosophy during what appeared to be routine visits to a tea house. Through seemingly casual conversations about poetry and philosophy, she taught him to see the inherent contradictions in the Celestial Order and showed him how the rigid hierarchy perpetuates suffering. Her lessons in reading people, managing multiple identities, and maintaining perfect composure under pressure have been invaluable to his survival as a double agent. To any observer, their relationship appears to be that of a samurai seeking cultured entertainment, making it the perfect cover for their true mentorship.",
+     "skill": "performance"
+    },
+    "picks": {
+     "disadvantage": [
+      "Bitter Betrothal"
+     ]
+    }
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "The careful way he holds his left arm - not protectively, but with a stiffness that suggests old injury. Those observant enough notice that he unconsciously favors his right side when reaching for items or gesturing. The scarring is mostly hidden by his clothing. Some interpret this as the mark of a dedicated warrior who has seen real action, which actually enhances his reputation for experience."
+    },
+    "picks": {
+     "special_features": [
+      "Engineer's Kit"
+     ]
+    }
+   },
+   "step15": {
+    "answers": {
+     "stress": "Kunimichi becomes eerily calm and methodical when under pressure. Years of managing explosives and maintaining his cover identity have taught him that panic leads to fatal mistakes. He speaks more quietly, moves more deliberately, and his eyes become constantly mobile as he assesses threats and escape routes. To most observers, this controlled response makes him appear calm, though those who know him well recognize it as a sign that he's operating in 'mission mode' and may be preparing for violence."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "His marriage to Sodona Akemi is a constant source of tension in his life. Arranged to strengthen ties between the Crane and a Phoenix vassal family, their union is politically useful but personally hollow. Akemi is intelligent and dutiful but finds Kunimichi's frequent absences and emotional distance frustrating. She suspects he's hiding something but attributes it to typical masculine stoicism rather than his true secret. Their shared home is polite but cold, and both maintain their duties while privately resenting the arrangement.\n\nAdditionally, he maintains a professional relationship with Yasuki Toshiro, a Crab merchant who occasionally supplies the Crane with specialty goods. Unknown to most, Toshiro is actually a Kolat sympathizer who provides Kunimichi with hard-to-acquire materials for his sabotage work, disguised as legitimate trade goods. Toshiro gave him a carved jade medallion that identifies the bearer as someone he will do business with, no questions asked. Can be used to acquire unusual materials or arrange discreet meetings."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "His parents, Tsume Jiro and Tsume Mariko, would describe Kunimichi as 'their dutiful but distant son.' They're immensely proud of his reputation for completing difficult assignments and his marriage to a Phoenix family, seeing both as bringing honor to the Tsume name.  His father respects his dedication to duty but privately wishes Kunimichi would request safer assignments and focus on building a proper family with his wife. They see him as someone who gives everything to his obligations but takes little joy from life, though they assume this is simply the burden of serving the clan in dangerous times.",
+     "skill": "unarmed"
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "He is named after his ancestor that was the most recent known link to the Imperial family.",
+     "heritage_1": 9,
+     "heritage_2": 3,
+     "heritage_add_honor": 0,
+     "heritage_add_glory": 0,
+     "heritage_add_status": 10,
+     "skill": "smithing"
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Kunimichi"
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Kunimichi is not under any illusions. Most likely, he dies by his own hand in an accident; next most likely is that the conspiracy is betrayed and he is executed."
+    },
+    "picks": {}
+   }
   }
  },
  "tiers": [
@@ -241,16 +291,28 @@
    "techniques": [
     {
      "name": "Skulk",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "ninjutsu",
      "rank": 1
     },
     {
      "name": "Striking as Air",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Explosive Arrival",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     }
@@ -258,30 +320,50 @@
    "peculiarities": [
     {
      "name": "Famously Reliable",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "earth",
      "types": "Fame, Interpersonal"
     },
     {
      "name": "Maimed Arm",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "fire",
      "types": "Physical, Scar"
     },
     {
      "name": "Kintsugi",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "earth",
      "types": "Mental, Physical"
     },
     {
      "name": "Eyes of Many",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "air",
      "types": "Mental"
     },
     {
      "name": "Bitter Betrothal",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "water",
      "types": "Interpersonal"
@@ -414,31 +496,55 @@
    "techniques": [
     {
      "name": "Skulk",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "ninjutsu",
      "rank": 1
     },
     {
      "name": "Striking as Air",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Explosive Arrival",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Swift Scouting",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "ninjutsu",
      "rank": 1
     },
     {
      "name": "Trip the Leg",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Cautious Tread",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 1
     }
@@ -446,30 +552,50 @@
    "peculiarities": [
     {
      "name": "Famously Reliable",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "earth",
      "types": "Fame, Interpersonal"
     },
     {
      "name": "Maimed Arm",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "fire",
      "types": "Physical, Scar"
     },
     {
      "name": "Kintsugi",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "earth",
      "types": "Mental, Physical"
     },
     {
      "name": "Eyes of Many",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "air",
      "types": "Mental"
     },
     {
      "name": "Bitter Betrothal",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "water",
      "types": "Interpersonal"
@@ -639,46 +765,82 @@
    "techniques": [
     {
      "name": "Skulk",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "ninjutsu",
      "rank": 1
     },
     {
      "name": "Striking as Air",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Explosive Arrival",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Swift Scouting",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "ninjutsu",
      "rank": 1
     },
     {
      "name": "Trip the Leg",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Cautious Tread",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Employ Terrible Thunder",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "ninjutsu",
      "rank": 2
     },
     {
      "name": "Staggering Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "The Patient Viper",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "ninjutsu",
      "rank": 2
     }
@@ -686,30 +848,50 @@
    "peculiarities": [
     {
      "name": "Famously Reliable",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "earth",
      "types": "Fame, Interpersonal"
     },
     {
      "name": "Maimed Arm",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "fire",
      "types": "Physical, Scar"
     },
     {
      "name": "Kintsugi",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "earth",
      "types": "Mental, Physical"
     },
     {
      "name": "Eyes of Many",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "air",
      "types": "Mental"
     },
     {
      "name": "Bitter Betrothal",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "water",
      "types": "Interpersonal"
@@ -906,51 +1088,91 @@
    "techniques": [
     {
      "name": "Skulk",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "ninjutsu",
      "rank": 1
     },
     {
      "name": "Striking as Air",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Explosive Arrival",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Swift Scouting",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "ninjutsu",
      "rank": 1
     },
     {
      "name": "Trip the Leg",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Cautious Tread",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Employ Terrible Thunder",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "ninjutsu",
      "rank": 2
     },
     {
      "name": "Staggering Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "The Patient Viper",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "ninjutsu",
      "rank": 2
     },
     {
      "name": "Ender of Works",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
      "kind": "title_ability",
      "rank": 1
     }
@@ -958,30 +1180,50 @@
    "peculiarities": [
     {
      "name": "Famously Reliable",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "earth",
      "types": "Fame, Interpersonal"
     },
     {
      "name": "Maimed Arm",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "fire",
      "types": "Physical, Scar"
     },
     {
      "name": "Kintsugi",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "earth",
      "types": "Mental, Physical"
     },
     {
      "name": "Eyes of Many",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "air",
      "types": "Mental"
     },
     {
      "name": "Bitter Betrothal",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "water",
      "types": "Interpersonal"
@@ -989,7 +1231,11 @@
    ],
    "titles": [
     {
-     "name": "Master Saboteur"
+     "name": "Master Saboteur",
+     "xp_used": 40,
+     "xp_cost": 40,
+     "in_curriculum": false,
+     "bought_at_rank": 3
     }
    ],
    "bonds": [],

@@ -1,0 +1,490 @@
+{
+ "slug": "asahina-jujiro",
+ "name": "Asahina Jûjirô",
+ "folder_label": "Asahina Jûjirô",
+ "campaign": "The Fragile Peace",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Crane",
+  "family": "Asahina",
+  "school": "Asahina Artificer School",
+  "role": "Artisan",
+  "age": ""
+ },
+ "portrait": "src/portraits/asahina-jujiro.webp",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Crane",
+     "ring": "air",
+     "skill": "culture",
+     "social_status": 35
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Asahina",
+     "ring": "void",
+     "skill1": "aesthetics",
+     "skill2": "theology",
+     "wealth": 6,
+     "social_glory": 40
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Asahina Artificer School",
+     "roles": "Artisan",
+     "ring1": "air",
+     "ring2": "fire",
+     "skill1": "aesthetics",
+     "skill2": "courtesy",
+     "skill3": "design",
+     "social_honor": 50
+    },
+    "picks": {}
+   },
+   "step4": {
+    "answers": {
+     "stand_out": "Jūjirō is known for working past the point where a piece is finished, and for giving away the result.",
+     "ring": "fire"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Lord: Asahina Shigehiro of Shirogome, a distant relation, to whose house the family is attached. That duty stands but is in abeyance: when the Emperor's consort asks for your artisan, you lend them, and Shigehiro did.\n\nCurrent giri: to outfit imperial consort Shiba Ayame's new shrine — a careful curation of awakened objects, each shintai chosen for the place it will stand and the people who will stand before it. It is the family method applied at the scale of a building."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Convince the family to use their time-honored method to find them a match that truly is a fit, and not merely a force-fit."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Positive toward the Crane, and complicated toward the Kakita. A Doji ruling on artisan exemptions voided a provincial daimyō's levy on craftsmen and saved Jūjirō's workshop.",
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "bushido": "Courtesy above all. Every commission is somebody's patronage, and an artisan who cannot hold a room does not eat. Courage least — nothing has yet asked it of them, and their body gives out before their nerve is tested.",
+     "social_add_honor": 10,
+     "tenet_paramount": "Courtesy",
+     "tenet_less_significant": "Courage"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Shiba Ayame commissioned them to rework a damaged family heirloom, and they made a piece that not only stunned, but awoke. She had it recorded as a great feat and directed that Jūjirō be honoured for it, by moving to Otosan Uchi and accepting her patronage to work on Benten's shrine as their craft fully flowered."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "The marriage to Mirumoto Shizuka was well-intentioned, but not only is there no chemistry (something they are quite aware of, particularly in contrast to their trysts with Setsuna), but after their patronage by Shiba Ayame, it no longer seems to make political sense, either. Nonetheless, promises had been made, and marriage can only be deferred for so long."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Giving the work away. A commission satisfied is a debt discharged and nothing more; a piece put into hands that could never have paid for it settles them completely. They have done it often enough that people they have never met will grant them a reasonable favour on the strength of the reputation."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Enclosed spaces. Kilns, storehouses, shrine interiors, the inner rooms of the Forbidden City — anywhere the air is finite. It compounds the illness, because the first sign of a fit is that breathing stops being automatic, and a closed room leaves them nothing to do but wait for it."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Asahina Riku, an old woman in back in Shirogome who taught them the arts of their school. It was during this tutelage that the sensitivity of their lungs first manifested.",
+     "skill": "aesthetics"
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Beautiful, although sickly in the wrong light, and they are wracked by coughs when their body is pushed too hard."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "They hole themselves up and work until their body gives out. They are stubborn in their refusals."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Shiba Ayame: Imperial consort and patron. Commissioned the damaged heirloom that woke, had Jūjirō named Master Artisan, and brought them to Otosan Uchi. She dotes on them. She gave them the omamori — a Boon of Benten — knowing exactly what she was making a joke about. She knows about Setsuna and treats it as a confidence between the two of them; she does not know it went further than that.\n\nDoji Setsuna: met at court, at Ayame's salon. The reading came back open — the first time in Jūjirō's life the family method ever answered in their favour — and what followed was neither a near-miss nor a courtesy. It was an affair conducted with appetite on both sides, over weeks, and Jūjirō is under no illusion about what it was. She had spent years reading pillow books and turning what she could not have into verse; with them she stopped writing it down and did it instead, and there was very little in those books she was not willing to find out about in person. Jūjirō understood, without being told, that they were the first thing she had taken for herself rather than argued for. There has been no contact since she left Otosan Uchi.\n\nMirumoto Shizuka: betrothed. Raised in the Asahina Envoy school to be married into the family; she will be Asahina Shizuka when it happens. The match was well-intentioned and neither of them pretends it is more than that.\n\nAsahina Riku: the old woman in Shirogome who taught them the school's arts, and the first person to hear the lungs fail.\n\nAsahina Shigehiro: distant relation, and their lord. His claim stands; it is currently lent out."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Proud in public, careful in private. They gave Jūjirō the ancestor's name before anyone could know whether the aptitude had carried, and were vindicated. They also arranged the Mirumoto match, consulted the method, and accepted its answer that she would steady them. Smithing was taught as the family's ordinary trade; the fame is regarded as an ornament on a craft.",
+     "skill": "smithing"
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "Asahina Jūjirō, who found that people have elemental temperaments and can be read the way an object is read. The discovery was put to two uses: pairing a person with an awakened object so that neither is wasted on the other, and pairing people with each other. The family kept the finding, the method, and the name — which goes in each generation to the child judged likeliest to have inherited the eye for it.",
+     "heritage_1": 5,
+     "heritage_2": 6,
+     "heritage_add_honor": 0,
+     "heritage_add_glory": 3,
+     "heritage_add_status": 0,
+     "skill": "sentiment"
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Jûjirô"
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "The illness will kill them young; they likely have only a few years left, and they intend to spend them gloriously."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 50,
+   "label": null,
+   "rank": 2,
+   "school": "Asahina Artificer School",
+   "foundry_id": "MFYn0Td7dR7U9zZk",
+   "foundry_name": "Asahina Jûjirô (50 XP)",
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 3,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 3,
+     "composition": 0,
+     "design": 1,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 2,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 2,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 1,
+     "theology": 3
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 2,
+     "games": 0,
+     "performance": 2
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 60,
+    "glory": 78,
+    "status": 35,
+    "ninjo": "Convince the family to use their time-honored method to find him a match that truly is a fit, and not merely a force-fit.",
+    "giri": "Lord: Asahina Shigehiro of Shirogome, a distant relation, to whose house the family is attached. That duty stands but is in abeyance: when the Emperor's consort asks for your artisan, you lend them, and Shigehiro did.",
+    "bushido_tenets": {
+     "paramount": "Courtesy",
+     "less_significant": "Courage"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 6,
+    "focus": 6,
+    "vigilance": 3,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Armor of Radiance",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 2,
+     "kind": "invocation",
+     "rank": 2
+    },
+    {
+     "name": "Cloak of Night",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 2,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Path to Inner Peace",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 2,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Reflections of P’an Ku",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 2,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Token of Memory",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 2,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Cleansing Rite",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 2,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Commune with the Spirits",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 2,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Tea Ceremony",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 2,
+     "kind": "ritual",
+     "rank": 2
+    },
+    {
+     "name": "Spiritual Artisan",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Artisan’s Appraisal",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 2,
+     "kind": "shuji",
+     "rank": 2
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Benten’s Blessing",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "air",
+     "types": "Interpersonal, Spiritual"
+    },
+    {
+     "name": "Bitter Betrothal",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "water",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Charity",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "water",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Claustrophobia",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "water",
+     "types": "Mental"
+    },
+    {
+     "name": "Incurable Illness",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Physical"
+    }
+   ],
+   "titles": [
+    {
+     "name": "Master Artisan",
+     "xp_used": 12,
+     "xp_cost": 60,
+     "in_curriculum": false,
+     "bought_at_rank": 1
+    }
+   ],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Yumi",
+     "quantity": 1
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1
+    },
+    {
+     "name": "Omamori (Boon of Benten)",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "core_rulebook",
+      "page": "243"
+     },
+     "rarity": "2",
+     "zeni": "5 bu",
+     "properties": []
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Theology +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "theology",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Theology +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "theology",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Courtesy +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "courtesy",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Water +1 (1 -> 2)",
+     "type": "ring",
+     "skill": null,
+     "ring": "water",
+     "at_rank": 2,
+     "xp": 6,
+     "in_curriculum": false
+    },
+    {
+     "label": "Performance +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "performance",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Performance +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "performance",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 4,
+     "in_curriculum": true
+    }
+   ]
+  }
+ ]
+}

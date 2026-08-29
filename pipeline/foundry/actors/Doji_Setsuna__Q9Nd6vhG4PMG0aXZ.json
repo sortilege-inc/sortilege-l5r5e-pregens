@@ -1,0 +1,2532 @@
+{
+ "folder": "tD3ze5ZC9pJwMbL6",
+ "name": "Doji Setsuna",
+ "type": "character",
+ "img": "modules/l5r5e-compendia-sortilege/images/portraits/doji-setsuna-fullsize.jpeg",
+ "prototypeToken": {
+  "actorLink": true,
+  "disposition": 1,
+  "bar1": {
+   "attribute": "fatigue"
+  },
+  "bar2": {
+   "attribute": "strife"
+  },
+  "name": "Doji Setsuna",
+  "displayName": 0,
+  "width": 1,
+  "height": 1,
+  "depth": 1,
+  "texture": {
+   "src": "modules/l5r5e-compendia-sortilege/images/portraits/doji-setsuna-fullsize.jpeg",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "lockRotation": false,
+  "rotation": 0,
+  "alpha": 1,
+  "displayBars": 0,
+  "light": {
+   "negative": false,
+   "priority": 0,
+   "alpha": 0.5,
+   "angle": 360,
+   "bright": 0,
+   "color": null,
+   "coloration": 1,
+   "dim": 0,
+   "attenuation": 0.5,
+   "luminosity": 0.5,
+   "saturation": 0,
+   "contrast": 0,
+   "shadows": 0,
+   "animation": {
+    "type": null,
+    "speed": 5,
+    "intensity": 5,
+    "reverse": false
+   },
+   "darkness": {
+    "min": 0,
+    "max": 1
+   }
+  },
+  "sight": {
+   "enabled": false,
+   "range": 0,
+   "angle": 360,
+   "visionMode": "basic",
+   "color": null,
+   "attenuation": 0.1,
+   "brightness": 0,
+   "saturation": 0,
+   "contrast": 0
+  },
+  "detectionModes": {},
+  "occludable": {
+   "radius": 0
+  },
+  "ring": {
+   "enabled": false,
+   "colors": {
+    "ring": null,
+    "background": null
+   },
+   "effects": 1,
+   "subject": {
+    "scale": 1,
+    "texture": null
+   }
+  },
+  "turnMarker": {
+   "mode": 1,
+   "animation": null,
+   "src": null,
+   "disposition": false
+  },
+  "movementAction": null,
+  "flags": {},
+  "randomImg": false,
+  "appendNumber": false,
+  "prependAdjective": false
+ },
+ "_id": "Q9Nd6vhG4PMG0aXZ",
+ "system": {
+  "soft_locked": false,
+  "identity": {
+   "age": "",
+   "clan": "Crane",
+   "family": "Doji",
+   "female": null,
+   "marital_status": "",
+   "roles": "Courtier",
+   "school": "Doji Bureaucrat School",
+   "school_rank": 3,
+   "school_curriculum_journal": {}
+  },
+  "rings": {
+   "earth": 3,
+   "air": 3,
+   "water": 3,
+   "fire": 2,
+   "void": 2
+  },
+  "notes": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><strong>Kogarashi</strong> is a white Utaku steed with a silver mane and tail — lean, swift, and always poised. She was a wedding gift from the Shinjo family and is the one being in Setsuna's life to whom warmth flows without mediation. Ridden equally for pleasure and for political effect, Kogarashi's distinctive Utaku breeding marks Setsuna at distance to any Unicorn who sees her.</p><hr class=\"border-border-200 border-t-0.5 my-3 mx-1.5\"><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Setsuna currently serves Imperial Envoy Miya Misato as her Personal Advisor. Her <em>giri</em> is to see Misato succeed in brokering a peace between the Lion and the Unicorn. Her <em>ninjō</em> is to innovate the trilateral agreement for Toshi Ranbo — for the Crane clan, for her grandmother, and to see to her husband's freedom.</p><hr class=\"border-border-200 border-t-0.5 my-3 mx-1.5\"><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><strong>Household</strong></p><ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3\"><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Aika</strong> — Personal attendant. Former geisha, now in Setsuna's intimate care. Manages hair, dress, and the chamber. Geisha-trained discretion. One of the two senior women of the household.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Ishika</strong> — Lady's maid and personal attendant. Quiet, middle-aged, motherly. Carries the maternal-continuity register of the household. The second of the two senior women.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Otoya</strong> — Scribe and legal assistant. A Crane man with encyclopedic knowledge of Imperial law. Setsuna's working partner for document preparation and legal research.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Jiro</strong> — Horse attendant. A Unicorn, responsible for the care of Kogarashi.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Bayushi Monbon</strong> — Yojimbo. A Scorpion samurai assigned to Setsuna as punishment duty by his lord, originally without the right of seppuku. Fired by Setsuna at the Ifrit incident and reclaimed at the Midnight Treaty; his ransom was invoiced back to his lord. Currently in functional partnership with her. Carries a bound Lady of Decay that has been growing in visibility.</li></ul><hr><p><strong>Family</strong></p><ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3\"><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Doji Masateru</strong> — Father. Imperial legal scholar, well-versed and emotionally distant. Taught her to wield the law like a sword: a single correct argument, like a single cut, should be fatal.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Doji Ayaka</strong> — Mother. Arranged her marriage to Harunobu. A year later, advised obliquely that <em>a daughter of the Doji turns infidelities into poetry</em>.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Doji Retsuo</strong> — Older brother. The model heir. Thinks she is too verbose.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Doji Emika</strong> — Younger sister. Sees Setsuna as a woman trapped by duty, but keeps her thoughts private. Has no desire to follow in her footsteps. Reserved in Setsuna's plans for the Toshi Ranbo settlement, to marry into the Matsu family and satisfy the grandmother's restoration demand.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Matsu Tomoe</strong> — Late maternal grandmother. Married into the Crane from the Matsu and hated being a Crane for the rest of her life. Now haunts Setsuna as a ghost, demanding the restoration of Toshi Ranbo and the Matsu lineage.</li></ul><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><strong>Marriage</strong></p><ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3\"><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Shinjo Harunobu</strong> — Husband. A respected Shinjo commander, currently a Lion prisoner of war. Loves her and respects her intellect, though he considers her work <em>legal trickery</em> and prefers to solve problems directly. He understands he has married up. They communicate by letter; the marriage has been long-distance for years.</li></ul><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><strong>Mentors and Superiors</strong></p><ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3\"><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Bayushi Tomono</strong> — Scorpion courtier she encountered in Shirogome. Engaged her in wordplay and taught her how to exploit Imperial law and weaponize harmlessness. One of three people whose approval she cares about.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Asahina Shigehiro</strong> — Her former lord, Crane shugenja and ruler of the city of Shirogome. Employed her as legal counsel on matters of Imperial law. One of three whose approval matters.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Kitsuki Kāgi</strong> — Her Emerald Magistrate superior. Recruited her into Imperial service after the Kakita tax loophole brought her to his attention. One of three whose approval matters.</li></ul><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><strong>Magistrate Colleagues</strong></p><ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3\"><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Kakita Kazumi</strong> — Kakita duelist, Topaz Champion, and trained Crane Harrier (shinobi) operating in plain sight. Has consistently shown her discretion and quiet loyalty, including providing logistical support during the abortion procedure.</li><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Shiba Midori</strong> — Phoenix shugenja. Brewed the abortifacient and conducted the procedure. The sole peer-level intimate with whom Setsuna has been visibly unmasked. Her shugenja presence first allowed the grandmother's ghost to manifest.</li></ul><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><strong>Lord</strong></p><ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3\"><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Miya Misato</strong> — Imperial Envoy, sixteen years old. Originally dispatched on a mission designed to fail. Setsuna appointed herself as her advisor and has invested her own XP transferring skills to her. Nearly assassinated and now blind, but alive. The displaced object of the motherhood Setsuna refused, and simultaneously her operational frame and political instrument.</li></ul><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><strong>Adversary</strong></p><ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3\"><li class=\"font-claude-response-body whitespace-normal break-words pl-2\"><strong>Kakita Noritomo</strong> — The Kakita provincial daimyō whose new artisan tax Setsuna voided through an Imperial precedent during her time in Shirogome. He banned her from his lands rather than risk a contest he would lose; the institutional grudge remains active in the Kakita family.</li></ul><p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><strong>The Lover At Court</strong></p><ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3\"><li class=\"font-claude-response-body whitespace-normal break-words pl-2\">An unnamed member of an Imperial family in Otosan Uchi. Father of the pregnancy Setsuna conceived approximately four months before her departure for Loyalty Castle. He does not know she was pregnant and has never known. Setsuna does not pursue contact.</li></ul>",
+  "description": "<p><strong>Doji Setsuna</strong> is a Crane noblewoman of Imperial Bloodline, Emerald Magistrate, and Personal Advisor to the Imperial Envoy — a lawyer trained to wield the law as a blade and a courtier who has built her interior architecture around the institutional doctrine that visibility, when properly deployed, is the surest armor.</p><p>She is in her mid-twenties — slight of build at about 5'4\", finely-boned with soft hands, light skin warmed by an undertone of gold, and dark brown eyes set in a composed face. Her long black hair is worn in a high, elegant bun from which a few strands always escape — the one persistent imperfection in an otherwise immaculate presentation. She carries herself with a tall, deliberate poise that makes her seem larger than her frame, and her dress is consistently the finest in any party she travels with: refined Crane silks in pale blue and white, often with gold detailing, cut and worn to suggest understated harmlessness rather than display. Her station speaks for her; she does not need to.</p>",
+  "social": {
+   "honor": 69,
+   "glory": 71,
+   "status": 60,
+   "ninjo": "Strictures too often interfere with a beautiful tale.\n\nShe escapes into literature, particularly pillow-books, and riding her horse, Kogorashi, a Utaku steed and wedding gift from her husband's family.",
+   "giri": "Currently, Kitsuki Kāgi, in service as an Emerald Magistrate under the Emperor.\n\nPreviously, she served Asahina Shigehiro, lord of the city of Shirogome, on issues of imperial law and legal arbitration.\n\nHer giri: Rule must bind, and if needed, contort.",
+   "bushido_tenets": {
+    "paramount": "Courtesy",
+    "less_significant": "Courage"
+   }
+  },
+  "skills": {
+   "artisan": {
+    "aesthetics": 0,
+    "composition": 2,
+    "design": 1,
+    "smithing": 0
+   },
+   "martial": {
+    "fitness": 1,
+    "melee": 0,
+    "ranged": 0,
+    "unarmed": 3,
+    "meditation": 0,
+    "tactics": 0
+   },
+   "scholar": {
+    "culture": 2,
+    "government": 3,
+    "medicine": 0,
+    "sentiment": 2,
+    "theology": 0
+   },
+   "social": {
+    "command": 3,
+    "courtesy": 3,
+    "games": 0,
+    "performance": 1
+   },
+   "trade": {
+    "commerce": 1,
+    "labor": 0,
+    "seafaring": 0,
+    "skulduggery": 0,
+    "survival": 0
+   }
+  },
+  "techniques": {
+   "kata": false,
+   "kiho": false,
+   "inversion": false,
+   "invocation": false,
+   "ritual": true,
+   "shuji": true,
+   "maho": false,
+   "ninjutsu": false,
+   "mantra": false,
+   "specificity": true
+  },
+  "endurance": 10,
+  "composure": 12,
+  "focus": 5,
+  "vigilance": 3,
+  "void_points": {
+   "max": 2,
+   "value": 1
+  },
+  "fatigue": {
+   "max": 10,
+   "value": 0
+  },
+  "strife": {
+   "max": 12,
+   "value": 4
+  },
+  "stance": "air",
+  "prepared": true,
+  "xp_total": 100,
+  "xp_spent": 84,
+  "xp_saved": 0,
+  "template": "core",
+  "twenty_questions": {
+   "template": "core",
+   "generated": true,
+   "step1": {
+    "clan": "Crane",
+    "ring": "air",
+    "skill": "culture",
+    "social_status": 35
+   },
+   "step2": {
+    "family": "Doji",
+    "ring": "water",
+    "skill1": "courtesy",
+    "skill2": "design",
+    "wealth": 8,
+    "social_glory": 44
+   },
+   "step3": {
+    "school": "Doji Bureaucrat School",
+    "roles": "Courtier",
+    "ring1": "earth",
+    "ring2": "water",
+    "skill1": "composition",
+    "skill2": "courtesy",
+    "skill3": "government",
+    "skill4": "culture",
+    "skill5": "command",
+    "allowed_techniques": {
+     "kata": false,
+     "kiho": false,
+     "inversion": false,
+     "invocation": false,
+     "ritual": true,
+     "shuji": true,
+     "maho": false,
+     "ninjutsu": false,
+     "mantra": false,
+     "specificity": true
+    },
+    "techniques": [
+     "L5RCoreShu000037",
+     "L5RCoreShu000017"
+    ],
+    "school_ability": [
+     "L5RCoreSch000043"
+    ],
+    "equipment": [
+     "L5RCoreArm000005",
+     "L5RCoreWea000009",
+     "L5RCoreIte000017"
+    ],
+    "social_honor": 55
+   },
+   "step4": {
+    "stand_out": "She is a careful and close reader in imperial law, and often finds subtle and surprising interactions within it.",
+    "ring": "air"
+   },
+   "step5": {
+    "social_giri": "Currently, Kitsuki Kāgi, in service as an Emerald Magistrate under the Emperor.\n\nPreviously, she served Asahina Shigehiro, lord of the city of Shirogome, on issues of imperial law and legal arbitration.\n\nHer giri: Rule must bind, and if needed, contort."
+   },
+   "step6": {
+    "social_ninjo": "Strictures too often interfere with a beautiful tale.\n\nShe escapes into literature, particularly pillow-books, and riding her horse, Kogorashi, a Utaku steed and wedding gift from her husband's family."
+   },
+   "step7": {
+    "clan_relations": "Positive, as she upholds Crane values, although her ruling put her at odds with a Kakita family daimyo.",
+    "skill": "command",
+    "social_add_glory": 0
+   },
+   "step8": {
+    "bushido": "Rigid acquiescence.",
+    "skill": "none",
+    "social_add_honor": 10,
+    "tenet_paramount": "Courtesy",
+    "tenet_less_significant": "Courage",
+    "item": []
+   },
+   "step9": {
+    "success": "She served Asahina Shigehiro, lord of the city of Shirogome, on issues of imperial law and legal arbitration. Her most notable moment was when there was a dispute with the provincial daimyo, a Kakita, who attempted to impose new levies on skilled artisans.\n\nShe ruled that artisans were protected under an Imperial precedent granting exemptions to craftsmen in service to samurai and the court, citing an edict from Hantei V, which specified examples (non-exclusive) or silk and ceramics which were essential to Imperial culture and could not be overtaxed. The daimyo backed down, knowing that pushing forward could invite scrutiny and a more binding decision from an emerald magistrate.\n\nThis situation resulted in both Affect of Harmlessness (Air) and Scorn of Kakita (Water)",
+    "distinction": [
+     "L5RCoreDis000044"
+    ]
+   },
+   "step10": {
+    "difficulty": "See question 9.",
+    "adversity": [
+     "L5RCoreAdv000038"
+    ]
+   },
+   "step11": {
+    "calms": "At peace when writing poetry and reading pillow books, as well as riding Kogorashi.",
+    "passion": [
+     "L5RCorePas000020"
+    ]
+   },
+   "step12": {
+    "worries": "She is terrified of death.",
+    "anxiety": [
+     "L5RCoreAnx000006"
+    ]
+   },
+   "step13": {
+    "most_learn": "Bayushi Tomono: A Scorpion courtier visiting Shirogome. Engaged in wordplay with Setsuna, and taught her how to exploit Imperial law and weaponize “harmlessness”.",
+    "skill": "composition",
+    "advantage": [],
+    "disadvantage": [
+     "L5RCoreAdv000024"
+    ]
+   },
+   "step14": {
+    "first_sight": "The first thing people notice about Doji Setsuna is her manner of speech; not just its elegance, but its precision. She speaks in a way that feels deliberate, choosing less ordinary words when a specificity is needed. This can be delightful or discomforting. It also means that when she seems to misspeak, it may have been intentional.\n\nHer otherwise immaculate presentation is consistently marred by stray strands of hair escaping.",
+    "special_features": []
+   },
+   "step15": {
+    "stress": "In times of stress, she will usually step forward into a situation, even one that feels dangerous or that she is woefully ill-equipped for, believing that her words might help de-escalate or escape the situation.\n\nWhen her strife is high, her need for agency rises, and she will try increasingly improbable solutions, and grow curt with people who impede her attempts to cut through to a solution.\n\nThe only people whose approval she cares about are Asahina Shigehiro, Bayushi Tomono, and Kitsuki Kāgi."
+   },
+   "step16": {
+    "relations": "Kakita Noritomo: Does not openly acknowledge his disdain, but Setsuna has been barred from Kakita courts and dojos following her ruling.\n    - His allies within the Emerald Magistrates may look for opportunities to undermine or discredit her.\nShinjo Harunobu: A respected Shinjo commander. Respects Setsuna’s intellect, but prefers to solve problems directly and not through “legal trickery”. It was a political marriage but they barely speak beyond what is necessary, and Harunobu spends most of his time away on campaign. He sees little value in courtly games and is blind to how Setsuna protects him politically.\nDoji Masateru (Father): An imperial legal scholar, well versed, emotionally distant. Taught Setsuna to wield the law like a sword. A single correct argument, like a single cut, should be fatal.\nDoji Ayaka (Mother): The marriage to Takahiro was her working, and she cannot claim ignorance; a year after the marriage, she advised obliquely that a “daughter of the Doji turns infidelities into poetry.”\nDoji Retsuo (Older Brother): The model heir. Thinks she is too verbose.\nDoji Emika (Younger Sister): Sees Setsuna as a woman trapped by duty, but keeps her thoughts private, but has no desire to follow in her footsteps.\nEmerald Magistrate Mirumoto Kyou resents Setsuna; she does not seem to cherish her role that she bested him at. He does not understand how she was chosen over him.\nEmerald Magistrate Kakita Yoshitada did not support Setsuna’s appointment. Would never openly undermine an Emerald Magistrate. Two decades of experience in Imperial law and dueling arbitration.",
+    "item": [
+     "L5RCoreIte000026"
+    ]
+   },
+   "step17": {
+    "parents_pov": "Doji Masateru (Father): An imperial legal scholar, well versed, emotionally distant. Taught Setsuna to wield the law like a sword. A single correct argument, like a single cut, should be fatal.\nDoji Ayaka (Mother): The marriage to Takahiro was her working, and she cannot claim ignorance; a year after the marriage, she advised obliquely that a “daughter of the Doji turns infidelities into poetry.”",
+    "skill": "sentiment",
+    "bond": []
+   },
+   "step18": {
+    "heritage_name": "Named after her great-aunt, who perished nobly in battle. Estate was lost.",
+    "heritage_1": 9,
+    "heritage_2": null,
+    "heritage_item": [
+     "L5RCoreDis000006"
+    ],
+    "heritage_add_honor": null,
+    "heritage_add_glory": null,
+    "heritage_add_status": 10,
+    "skill": "none"
+   },
+   "step19": {
+    "firstname": "Setsuna"
+   },
+   "step20": {
+    "death": "Setsuna should die unexpectedly and suddenly, so that she does not have a chance to shrink from it or overthink it. It is unlikely that her destiny is fulfilled in this life."
+   },
+   "autoCompleteListName": "step3.roles",
+   "autoCompleteListSelectedIndex": "2"
+  },
+  "zeni": 400,
+  "money": {
+   "koku": 0,
+   "bu": 0,
+   "zeni": 0
+  },
+  "is_afflicted_or_compromised": false
+ },
+ "items": [
+  {
+   "_id": "8UX9LTYVDh13hWOG",
+   "name": "Courtier’s Resolve",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021506,
+    "modifiedTime": 1787692021506,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000037",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 222
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Warriors do battle with their bodies, and courtiers do battle with their minds. To maintain one’s composure while surrounded by the challenges of court, one must be able to clear and organize one’s mind, returning focus to the most vital tasks.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">Once per scene as a Support action, you may spend 1 Void point to recover from strife.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">Remove strife equal to your glory rank.</span> </p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "shuji"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "PZ8J8Buz8b8ymipI",
+   "name": "Stonewall Tactics",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021507,
+    "modifiedTime": 1787692021507,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000017",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 216
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The courtier makes themself impossible for the target to ignore, raising a pressing concern that must be addressed first or even physically planting themself between a rival and their allies.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When making a Social skill (earth) or Martial skill (earth) check targeting a character, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle2\">(earth)(op)+: </span><span class=\"fontstyle3\">Increase the TN of any check the target makes that does not target you by 1 per (op) spent this way. This effect persists until the beginning of your next turn.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "earth",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "shuji"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "JfPciQVGlUBJ7VrN",
+   "name": "Procedure and Protocol",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/clans/crane.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021507,
+    "modifiedTime": 1787692021507,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-techniques-school.Item.L5RCoreSch000043",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 91
+    },
+    "description": "<p><span class=\"fontstyle0\">When you cause a character to receive strife as a result of a check using a social approach, that character suffers additional strife equal to your school rank.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "school_ability"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "7n1gCe7A1DleA5RG",
+   "name": "Ceremonial Clothes",
+   "type": "armor",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021509,
+    "modifiedTime": 1787692021509,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-armors.Item.L5RCoreArm000005",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "239"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "4",
+    "zeni": "1 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000010",
+      "name": "Resplendent"
+     }
+    ],
+    "armor": {
+     "physical": "1",
+     "supernatural": ""
+    }
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "vnyPnBt1qpBQNh90",
+   "name": "Calligraphy Set",
+   "type": "item",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021510,
+    "modifiedTime": 1787692021510,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-items.Item.L5RCoreIte000017",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "242"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "3",
+    "zeni": "1 bu",
+    "properties": []
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "WwpyzbD3pkP9RKJ6",
+   "name": "Wakizashi",
+   "type": "weapon",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/weapons/katana.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021512,
+    "modifiedTime": 1787692021512,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-weapons.Item.L5RCoreWea000009",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "233"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "7",
+    "zeni": "15 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     }
+    ],
+    "category": "Swords",
+    "skill": "melee",
+    "readied": false,
+    "range": "0-1",
+    "damage": "3",
+    "deadliness": "5",
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "VY6txwoSP2siig6t",
+   "name": "Scorn of [One Group]",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021513,
+    "modifiedTime": 1787692021513,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-peculiarities-adversities.Item.L5RCoreAdv000038",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "127"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "water",
+    "peculiarity_type": "adversity",
+    "types": "Interpersonal"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "KKkmm17QyzjFidoA",
+   "name": "Wordplay",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021513,
+    "modifiedTime": 1787692021513,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-peculiarities-passions.Item.L5RCorePas000020",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 116
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "peculiarity_type": "passion",
+    "types": "Interpersonal, Mental"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "PiL4IzSAMm0XSq0W",
+   "name": "Fear of Death",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021514,
+    "modifiedTime": 1787692021514,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-peculiarities-anxieties.Item.L5RCoreAnx000006",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "132"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "earth",
+    "peculiarity_type": "anxiety",
+    "types": "Mental, Physical"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "jCGBL9hNOd1Ktkro",
+   "name": "Haunting",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021514,
+    "modifiedTime": 1787692021514,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-peculiarities-adversities.Item.L5RCoreAdv000024",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "122"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "peculiarity_type": "adversity",
+    "types": "Interpersonal, Spiritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "NZruvf9Zo61pVQrD",
+   "name": "Personal Seal or Chop",
+   "type": "item",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021514,
+    "modifiedTime": 1787692021514,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-items.Item.L5RCoreIte000026",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "243"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "0",
+    "rarity": "6",
+    "zeni": "4 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     }
+    ]
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "cF9Yj0Wv5ROr2jTD",
+   "name": "Blessed Lineage",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021515,
+    "modifiedTime": 1787692021515,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-peculiarities-distinctions.Item.L5RCoreDis000006",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "103"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "peculiarity_type": "distinction",
+    "types": "Interpersonal, Spiritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "EJGrQ22XZ9HdsBNK",
+   "name": "Paragon of Courtesy",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021515,
+    "modifiedTime": 1787692021515,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-peculiarities-distinctions.Item.L5RCoreDis000029",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 108
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "peculiarity_type": "distinction",
+    "types": "Mental, Virtue"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Government +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "cfeSmL9W7BhnZZ5o",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 4,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "government"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021515,
+    "modifiedTime": 1787692021515,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Government +1 (2 -> 3)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "fmcGcZ3kXr28G45i",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 6,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "government"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021516,
+    "modifiedTime": 1787692021516,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "SPvRJLrEHZcVJVWd",
+   "name": "Beware The Smallest Mouse",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021516,
+    "modifiedTime": 1787692021516,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000051",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 118
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Often, minor functionaries at court find themselves able to successfully complete their tasks because they are so unimportant that nobody bothers to impede them (or even notices their existence). Some courtiers quickly learn to play up this appearance when need be.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Social skill (water) check targeting one or more characters, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle2\">(water)(op)(op)+: </span><span class=\"fontstyle3\">While interacting with you, the target treats their vigilance as 1 lower per (op)(op) spent this way and decreases the TN of their social checks targeting you by 1. This effect persists until the end of the scene</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "water",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "shuji"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "zPKVWtnGoA5PP2Fa",
+   "name": "Treaty Signing",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/ritual.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021516,
+    "modifiedTime": 1787692021516,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000012",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 116
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Entering into treaties and other formal agreements between clans and families has become something of a ritual over the centuries. The particulars vary from clan to clan (Unicorn treaties are often accompanied by the exchange of horses, while the Dragon generally ask for an hour of meditative contemplation beforehand), but generally such agreements involve both parties signing a document that contains the terms of the agreement and making pledges to uphold the agreement in front of an audience. The audience ensures the agreement is widely publicized, making it that much harder for either side to back down without losing face. However, inventing a document that both sides are willing to agree to is a true creative challenge. Such treaties become legendary amongst Rokugani diplomats.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">Once per game session as a downtime activity (see page 248 of the core rulebook), you may make a </span><span class=\"fontstyle2\">TN 2 Composition (fire) check </span><span class=\"fontstyle3\">to write an agreement. If you succeed, you may make a </span><span class=\"fontstyle2\">TN 3 Government (air) check </span><span class=\"fontstyle3\">targeting yourself and a number of other characters, who are also participants. Up to three other participants may assist, providing the usual benefits (see </span><span class=\"fontstyle2\">Assistance </span><span class=\"fontstyle3\">on page 26 of the core rulebook).</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, each participant is assured that there are no mistakes or objectionable loopholes to the agreement, and that the agreement is acceptable to all parties involved. Each participant stakes 10 honor on upholding the agreement. Anyone who later breaks the agreement loses the honor they staked, unless another participant broke the agreement first.</span></p><h4><span class=\"fontstyle4\">New Opportunities (Both Checks)</span></h4><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">If you succeed, all participates stake 1 additional honor, plus 1 additional honor per (op) spent this way.</span></p><p><span class=\"fontstyle2\">(op)(op)(op): </span><span class=\"fontstyle3\">If you succeed, you need only stake half the honor that the other participants stake.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 1,
+    "ring": "fire",
+    "skill": "composition",
+    "difficulty": "2",
+    "technique_type": "ritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Sentiment +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "PAAWAHs4c4aomJv2",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 4,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "sentiment"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021517,
+    "modifiedTime": 1787692021517,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Fire +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/icons/rings/fire.svg",
+   "_id": "icDUKlwHm2o0uKnv",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 6,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 2,
+    "ring": "fire",
+    "advancement_type": "ring",
+    "skill": ""
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021518,
+    "modifiedTime": 1787692021518,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Void +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/icons/rings/void.svg",
+   "_id": "yeUyiFA44qPcm0PO",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 6,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 2,
+    "ring": "void",
+    "advancement_type": "ring",
+    "skill": ""
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021518,
+    "modifiedTime": 1787692021518,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "dAg1PzmPQCYqkXrK",
+   "name": "Civility Foremost",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021519,
+    "modifiedTime": 1787692021519,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000014",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 216
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Samurai are warriors, but there are many contexts in which violence is inappropriate. Many strictures exist around the times weapons can and cannot be drawn. A courtier who has memorized the rules of such engagements can articulate why fighting would be improper or profane in nearly any situation.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Scheme action, you may make a </span><span class=\"fontstyle2\">Command </span><span class=\"fontstyle3\">or </span><span class=\"fontstyle2\">Courtesy (earth) check </span><span class=\"fontstyle3\">targeting one character to claim protection for an individual of your choice by rights of honor. The TN of the check is equal to the target’s vigilance.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, the target must forfeit honor equal to your Earth Ring plus your bonus successes and suffer that much strife to perform an Attack or Scheme action targeting the chosen individual. This effect persists until the end of the scene, or until the target performs an Attack or Scheme action.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(earth)</span><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Choose one additional target with vigilance lower than or equal to your first target’s vigilance per (op) spent this way.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 2,
+    "ring": "earth",
+    "skill": "command,courtesy",
+    "difficulty": "@T:vigilance",
+    "technique_type": "shuji"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "n7ScQEjP9PVOREqx",
+   "name": "Well of Desire",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021520,
+    "modifiedTime": 1787692021520,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000033",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 221
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Bribery is considered to be corruption in Rokugan, yet gift exchanges and gift giving is a time-honored tradition. The shrewdest courtiers can engineer scenarios in which their targets cannot refuse their gifts without tarnishing their reputations. Thus, the recipient of such a poisoned gift might find it preferable to owe the courtier a favor than to be shamed in public.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Courtesy (water) check to present a gift to a target, you may spend </span><span class=\"fontstyle4\">(op) </span><span class=\"fontstyle3\">as follows:</span></p><p><span class=\"fontstyle2\">(water)(op): </span><span class=\"fontstyle3\">To refuse your gift, your target must forfeit glory equal to your Water Ring. Additionally, if the gift is something that the target desires, the target also must suffer strife equal to its rarity to refuse it. If your target accepts the gift, reduce the TN of your next Social skill check targeting them by the rarity of the item (to a minimum of 1).</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "water",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "shuji"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "UXGCqiDdWFSl1IH4",
+   "name": "The Wind Blows Both Ways",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021520,
+    "modifiedTime": 1787692021520,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000005",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 215
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>A word in the right ear at the right time can enhance the accomplishment of another, or a cutting slight can diminish their success in the eyes of those who matter.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Courtesy or Performance (air) check targeting another character, you may spend (op) in the following ways:</span></p><p><span class=\"fontstyle4\">(air)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">The next time the target receives a glory award, increase the glory they gain by 1 per (op) spent this way. This effect persists until the end of the scene.</span></p><p><span class=\"fontstyle2\">(air)(op)+: </span><span class=\"fontstyle3\">The next time the target forfeits or stakes glory, increase the glory they must forfeit or stake by 1 per (op) spent this way. This effect persists until the end of the scene.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 3,
+    "bought_at_rank": 2,
+    "ring": "air",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "shuji"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "OLlYiEz6BQqaNeQW",
+   "name": "Dark Secret",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021521,
+    "modifiedTime": 1787692021521,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-peculiarities-anxieties.Item.L5RCoreAnx000004",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "132"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 2,
+    "ring": "void",
+    "peculiarity_type": "anxiety",
+    "types": "Interpersonal"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "pcoSsk9jVvxoqOTm",
+   "name": "Famously Successful",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021521,
+    "modifiedTime": 1787692021521,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-peculiarities-distinctions.Item.L5RCoreDis000014",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "105"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 2,
+    "ring": "fire",
+    "peculiarity_type": "distinction",
+    "types": "Fame, Interpersonal"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Emerald Magistrate",
+   "type": "title",
+   "img": "systems/l5r5e/assets/icons/items/title.svg",
+   "_id": "07RrD1dfoxYtdu2H",
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 305
+    },
+    "description": "<p><span class=\"fontstyle0\">Emerald Magistrates are agents of the Emperor’s Law, warrior-sages who dispense wisdom and justice.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">The Emerald Champion, the Emperor, and other high-ranking officials in the office of the Emerald Champion can appoint Emerald Magistrates, and do so when a samurai proves worthy of the post or when the need arises for more arbiters of the Emperor’s Justice.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+15 (to a maximum of 40)</span></p><p><strong>Title Ability:</strong> Voice of Authority</p><h2>Curriculum</h2><table><tbody><tr><td><p>Trade Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Fitness</p></td><td><p>Skill</p></td></tr><tr><td><p>Martial Arts [Choose One]</p></td><td><p>Skill</p></td></tr><tr><td><p>Performance</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1–2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000026\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000026\">(kata) Open-Hand Style</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000034\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000034\">(shuji) Shallow Waters</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+    "parent_id": null,
+    "items": [
+     {
+      "_id": "abUmSUt0bkB21WSj",
+      "name": "Crescent Moon Style",
+      "type": "technique",
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/kata.svg",
+      "system": {
+       "source_reference": {
+        "source": "core_rulebook",
+        "page": 175
+       },
+       "description": "<p><span class=\"fontstyle0\"><em>Striking first is valuable, but so is surviving. To defend without sacrificing offense, a bushi must be ready to retaliate swiftly after blocking or evading. With a quick shift, the bushi switches from defense to bring down their full force upon their enemy.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you perform Guard action (see page 264), you may spend </span><span class=\"fontstyle4\">(op) </span><span class=\"fontstyle3\">in the following way:</span></p><p><span class=\"fontstyle4\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">After a character at range 1–2 performs an Attack action targeting you or another character you are guarding, you may perform a Strike action with one readied Martial Arts [Melee or Unarmed] weapon targeting that character (if they are within your weapon’s range). This effect persists until the start of your next turn, or until you perform a Strike action this way.</span></p>",
+       "parent_id": {
+        "item_id": "07RrD1dfoxYtdu2H",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 3,
+       "xp_cost": 3,
+       "rank": 2,
+       "bought_at_rank": 0,
+       "ring": "void",
+       "skill": "",
+       "difficulty": "",
+       "technique_type": "kata"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100001,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": null,
+       "systemVersion": null,
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": "Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000018",
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "Jx2rwxcCykqrelUe",
+      "name": "Coiling Serpent Style",
+      "type": "technique",
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/kata.svg",
+      "system": {
+       "source_reference": {
+        "source": "core_rulebook",
+        "page": 179
+       },
+       "description": "<p><span class=\"fontstyle0\"><em>Entrapping techniques can be performed with many different weapons, from the </em></span><span class=\"fontstyle2\"><em>kusari-gama </em></span><span class=\"fontstyle0\"><em>wielded by brigands to the ornate, hook-headed polearms used by the Phoenix Clan’s greatest masters of the spear.</em></span></p><p><span class=\"fontstyle3\"><strong>Activation:</strong> </span><span class=\"fontstyle2\">When you make a Martial Arts [Melee] or Martial Arts [Unarmed] check using a Snaring weapon, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle4\">(op)</span><span class=\"fontstyle3\">+: </span><span class=\"fontstyle2\">Choose one weapon a target has readied; that weapon cannot be used for Attack actions. This effect persists until the end of your next turn.</span></p><p><span class=\"fontstyle3\">(op)(op)+: </span><span class=\"fontstyle2\">One target of your action per (op)(op) spent this way becomes Immobilized.</span></p>",
+       "parent_id": {
+        "item_id": "07RrD1dfoxYtdu2H",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 3,
+       "xp_cost": 3,
+       "rank": 2,
+       "bought_at_rank": 0,
+       "ring": "void",
+       "skill": "",
+       "difficulty": "",
+       "technique_type": "kata"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100001,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": null,
+       "systemVersion": null,
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": "Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000029",
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "8lzYfDJf7Nnt3y9R",
+      "name": "Open-Hand Style",
+      "type": "technique",
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/kata.svg",
+      "system": {
+       "source_reference": {
+        "source": "core_rulebook",
+        "page": 180
+       },
+       "description": "<p><span class=\"fontstyle0\"><em>Power does not come from speed alone. A master martial artist can apply force for maximum effect, making even gentle movements devastatingly effective blocks and strikes. With enough experience, a martial artist can even control their opponent’s stance.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Martial Arts [Unarmed] check using a weapon with the Snaring quality, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle2\">(op)(op)+: </span><span class=\"fontstyle3\">One target of your action per (op)(op) spent this way must switch to a different stance of your choice. Targets of silhouette 3 or greater may resist with a </span><span class=\"fontstyle2\">TN 3 Fitness check </span><span class=\"fontstyle3\">and ignore this effect if they succeed.</span></p>",
+       "parent_id": {
+        "item_id": "07RrD1dfoxYtdu2H",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 3,
+       "xp_cost": 3,
+       "rank": 2,
+       "bought_at_rank": 0,
+       "ring": "void",
+       "skill": "",
+       "difficulty": "",
+       "technique_type": "kata"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100001,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": null,
+       "systemVersion": null,
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": "Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000026",
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "iJNbJyLTrgQqf8B5",
+      "name": "Martial Arts [Unarmed] +1 (0 -> 1)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "07RrD1dfoxYtdu2H",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 2,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "unarmed"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "ScCCjnnKoBfSD242",
+      "name": "Martial Arts [Unarmed] +1 (1 -> 2)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "07RrD1dfoxYtdu2H",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 4,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "unarmed"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "pglZW57iCjkidnnT",
+      "name": "Martial Arts [Unarmed] +1 (2 -> 3)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "07RrD1dfoxYtdu2H",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 6,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "unarmed"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "gBkkj8ZWNgzWgUFO",
+      "name": "Shallow Waters",
+      "type": "technique",
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+      "system": {
+       "source_reference": {
+        "source": "core_rulebook",
+        "page": 220
+       },
+       "description": "<p><span class=\"fontstyle0\"><em>A good courtier learns how to read the desires of those around them from the subtle cues of their responses in conversation, as well as how to probe for details without revealing their intentions.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Social skill (water) check targeting a character, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(water)(op): </span><span class=\"fontstyle3\">Learn of one material item or worldly experience the target desires.</span></p><p><span class=\"fontstyle2\">(water)(op)(op): </span><span class=\"fontstyle3\">Learn the target’s ninjō (see page 38).</span></p>",
+       "parent_id": {
+        "item_id": "07RrD1dfoxYtdu2H",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 3,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 0,
+       "ring": "water",
+       "skill": "",
+       "difficulty": "",
+       "technique_type": "shuji"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100001,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": null,
+       "systemVersion": null,
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000034",
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "sv1Wn0hFswyS6ouC",
+      "name": "Performance +1 (0 -> 1)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "07RrD1dfoxYtdu2H",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 2,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "performance"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "HlahEgbLXgbgY9YW",
+      "name": "Fitness +1 (0 -> 1)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "07RrD1dfoxYtdu2H",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 2,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "fitness"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "d7AoLu91HCAQcRNn",
+      "name": "Commerce +1 (0 -> 1)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "07RrD1dfoxYtdu2H",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 2,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "commerce"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "in_curriculum": false,
+    "xp_used": 30,
+    "xp_cost": 30,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "void",
+    "advancements": [],
+    "xp_used_total": 30
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.titles-l5r-sortilege.Item.wJaOsQLVZi3JQrmy",
+    "duplicateSource": null,
+    "exportSource": {
+     "worldId": "l5r-test",
+     "uuid": "Item.0anCLKyrF8aX2hES",
+     "coreVersion": "14.365",
+     "systemId": "l5r5e",
+     "systemVersion": "1.14.0"
+    },
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021522,
+    "modifiedTime": 1787692021522,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Courtesy +1 (2 -> 3)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "WRFMs2txd0Lz46rv",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 6,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 2,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "courtesy"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021523,
+    "modifiedTime": 1787692021523,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "j1aoF5zYPUc30TDg",
+   "name": "Call to Ride",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021523,
+    "modifiedTime": 1787692021523,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000096",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "children_of_the_five_winds",
+     "page": 115
+    },
+    "description": "<p><em>A skilled rider can train their loyal steed to come to them on command. When the rider takes a long journey through perilous lands, this technique can be especially vital for escaping the chaos of battle or pursuing marauders who have struck at their caravan.</em></p><p><strong>Activation:</strong> As a Support action, you can make a <strong>TN 1 Survival (water)</strong> check targeting your mount or animal companion, provided it is within range 5 of you.</p><p><strong>Effects:</strong> If you succeed, your mount or animal companion immediately moves up to 2 range bands towards you, plus 1 additional range band for every two bonus successes. If it is a mount and ends at range 0 of you, you can immediately mount it.</p><p><strong>New Opportunities:</strong></p><p>(op)(op): Increase the TN of Attack action checks targeting you and your mount or animal companion by 1. This effect persists until the end of your next turn.</p><p>(op)(op): If you perform a Maneuver action after mounting, you may move up to 2 range bands instead of 1.</p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "water",
+    "skill": "survival",
+    "difficulty": "1",
+    "technique_type": "shuji"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "A8Bmgstg6TKeFJ26",
+   "name": "Hidden in Smoke",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021523,
+    "modifiedTime": 1787692021523,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000044",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 117
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The stratagem used in games such as Go has been debated and studied for centuries in Rokugan, and masters of such games know how to distract opponents with their words and movements to hide their true intent in a variety of social settings.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">Once per scene as a Scheme action, you may make a </span><span class=\"fontstyle2\">Social (air) check </span><span class=\"fontstyle3\">targeting one other character. The TN of this check is equal to the target’s vigilance.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you hide your true goal or objective from your opponent. Any action or ability that would reveal your true intentions or objective to the target instead reveals a false, narratively appropriate goal, subject to the GM’s approval. This effect persists until the end of the scene. If you succeed, during an intrigue scene, you gain 1 momentum point toward a relevant goal.</span></p><h4><span class=\"fontstyle4\">New Opportunities:</span></h4><p><span class=\"fontstyle2\">(air)(op)(op)+: </span><span class=\"fontstyle3\">Choose one additional target with vigilance lower than the original target per (op)(op) spent this way.</span></p><p><span class=\"fontstyle2\">(air)(op)(op)+: </span><span class=\"fontstyle3\">If you succeed, you gain 1 additional momentum point per (op)(op) spent this way.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 4,
+    "bought_at_rank": 3,
+    "ring": "air",
+    "skill": "social",
+    "difficulty": "@T:vigilance",
+    "technique_type": "shuji"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "nFB3tRNwcDT3L3hJ",
+   "name": "Legal Scholarship",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021524,
+    "modifiedTime": 1787692021524,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-peculiarities-distinctions.Item.L5RCoreDis000073",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "children_of_the_five_winds",
+     "page": "93"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 3,
+    "ring": "air",
+    "peculiarity_type": "distinction",
+    "types": "Interpersonal, Social"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "oCw9U7IGeG4fSYvZ",
+   "name": "Paragon of Courage",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021524,
+    "modifiedTime": 1787692021524,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": "Compendium.l5r5e.core-peculiarities-distinctions.Item.L5RCoreDis000028",
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "108"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 3,
+    "ring": "fire",
+    "peculiarity_type": "distinction",
+    "types": "Mental, Virtue"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Voice of Authority",
+   "type": "signature_scroll",
+   "img": "systems/l5r5e/assets/icons/items/signature_scroll.svg",
+   "_id": "wsYPQnB6aTwkbNu4",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "<p><span class=\"fontstyle0\">Once per game session when making a Scheme or Support action check using a Social skill, you may choose additional targets equal to your Glory rank. You cannot choose any additional target with vigilance higher than the highest among your initial targets.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 2,
+    "ring": "void"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021524,
+    "modifiedTime": 1787692021524,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Shinjo Harunobu",
+   "type": "bond",
+   "img": "systems/l5r5e/assets/icons/items/bond.svg",
+   "_id": "7Q0OWNQFAL3b8giN",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "<p><span class=\"fontstyle0\">Samurai are expected to place romantic love below their obligations to family and clan—but the human heart is not so easily confined. Many samurai who fall in love keep their relationship secret, while others are more overt. The following are suggested narrative effects for a character with a Lover bond:</span></p><ul><li><p><span class=\"fontstyle0\">- A lover seeks to spend time with you, writes letters to you, and is willing to assist you in ways that do not require publicly acknowledging your bond (giving you information key to pursuing a desired goal, encouraging you to pursue your personal interests, helping you to deal with emotions you usually must keep to yourself), and they expect you to do the same.</span></p></li><li><p><span class=\"fontstyle0\">Generally, your lover’s allies do not acknowledge your relationship. Some might be favorably disposed to you covertly if you make their ally happy (and unfavorably disposed if you make them unhappy), while others might be jealous of the attention you receive. Your lover’s enemies might target you to attempt to gain leverage over your lover.</span></p></li><li><p><span class=\"fontstyle0\">If your bond rank is 3 or higher, a lover is more overt about your relationship, allowing them to assist you more publicly (such as giving you letters of introduction to officials above your status, allowing you to use their name to pursue your goals, and even helping you directly), and they expect the same from you.</span></p></li></ul><p></p><p><span class=\"fontstyle3\"><strong>Bond Ability:</strong> With You, the Storm Subsides</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "bond_type": "Husband (Lover)"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021525,
+    "modifiedTime": 1787692021525,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Blank Forms",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "_id": "kQg39sAU3UJgKfJJ",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "0",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021525,
+    "modifiedTime": 1787692021525,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Legal Primer",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "_id": "H8Ff05yJBX3eScC9",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "0",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021525,
+    "modifiedTime": 1787692021525,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Hano no Ami Pillow Book",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/bond.svg",
+   "_id": "TF7WrOg6P1YzFhDP",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "0",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021526,
+    "modifiedTime": 1787692021526,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Scroll of Authority from Magistrate of Shirogome",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "_id": "qnoAExlc5Ns49UvL",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "0",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021526,
+    "modifiedTime": 1787692021526,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Personal Advisor to Miya Misato",
+   "type": "title",
+   "img": "systems/l5r5e/assets/icons/items/title.svg",
+   "_id": "LFnFmwMR7hKuzpwg",
+   "system": {
+    "source_reference": {
+     "source": "emerald_empire",
+     "page": 249
+    },
+    "description": "<p><span class=\"fontstyle0\">Advisors serve daimyō, Emerald Magistrates, generals, and other notables with their minds and their words, giving them guidance, ideas, and counsel as requested. A great leader must have access to far more information than any one person can reasonably know, and therefore they employ various specialists and experts who keep them up to speed on dozens of vital topics. As a result, many military strategies, legal precedents, and trade deals are penned by advisors in the name of the one they serve, and these people wield great power as a result.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Daimyō, Emerald Magistrates, military leaders, high-ranking courtiers, and other individuals of import can appoint Advisors, and do so at their discretion.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10 (to a minimum of 40)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Skilled Attendant</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Commerce</p></td><td><p>Skill</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Design</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000018\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000018\">(shuji) Fanning the Flames</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000008\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000008\">(shuji) Feigned Opening</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000017\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000017\">(shuji) Stonewall Tactics</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+    "parent_id": null,
+    "items": [
+     {
+      "_id": "geVos0lvBi87zGLP",
+      "name": "Earth +1 (2 -> 3)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/icons/rings/earth.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "LFnFmwMR7hKuzpwg",
+        "actor_id": "Kl12YzeigyacVJ73"
+       },
+       "items": {},
+       "in_curriculum": false,
+       "xp_used": 9,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "earth",
+       "advancement_type": "ring",
+       "skill": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 2,
+       "A88pz0QQdIW2iYMv": 3,
+       "k4AAbzALTvtrTA9c": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "14.365",
+       "systemId": "l5r5e",
+       "systemVersion": "1.14.0",
+       "createdTime": null,
+       "modifiedTime": null,
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "in_curriculum": false,
+    "xp_used": 5,
+    "xp_cost": 36,
+    "rank": 1,
+    "bought_at_rank": 3,
+    "ring": "void",
+    "advancements": [],
+    "xp_used_total": 9
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": "Item.NWXIuJsBm7LR65Yf",
+    "duplicateSource": null,
+    "exportSource": {
+     "worldId": "my-first-world",
+     "uuid": "Item.NWXIuJsBm7LR65Yf",
+     "coreVersion": "14.365",
+     "systemId": "l5r5e",
+     "systemVersion": "1.14.0"
+    },
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021501,
+    "modifiedTime": 1787692021501,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Command +1 (2 -> 3)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "fgwL4jqAF7FYs0zF",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 6,
+    "xp_cost": 3,
+    "rank": 3,
+    "bought_at_rank": 3,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "command"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "createdTime": 1787692021501,
+    "modifiedTime": 1787692021501,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  }
+ ],
+ "effects": [],
+ "sort": 0,
+ "ownership": {
+  "default": 0,
+  "7vKCnwOtrdD7lBip": 3
+ },
+ "flags": {},
+ "_stats": {
+  "coreVersion": "14.365",
+  "systemId": "l5r5e",
+  "systemVersion": "1.14.0",
+  "createdTime": 1787692021501,
+  "modifiedTime": 1787692307406,
+  "lastModifiedBy": "7vKCnwOtrdD7lBip",
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": {
+   "worldId": "my-first-world",
+   "uuid": "Actor.Kl12YzeigyacVJ73",
+   "coreVersion": "14.365",
+   "systemId": "l5r5e",
+   "systemVersion": "1.14.0"
+  }
+ }
+}

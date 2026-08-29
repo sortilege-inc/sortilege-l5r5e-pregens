@@ -2,6 +2,7 @@
  "slug": "aarav",
  "name": "Aarav",
  "folder_label": "Aarav (Ivory Kingdoms Sage)",
+ "campaign": null,
  "bucket": "Bushi",
  "accent": "#fbf541",
  "identity": {
@@ -18,153 +19,193 @@
  "twenty_questions": {
   "template": "pow",
   "generated": true,
-  "step1": {
-   "clan": "The Sheelavaan of Bhavyatapura",
-   "ring": "air",
-   "skill": "courtesy",
-   "social_status": 0
-  },
-  "step2": {
-   "family": "Fallen Noble (Gaijin)",
-   "ring": "fire",
-   "skill1": "ranged",
-   "skill2": "command",
-   "wealth": 0,
-   "social_glory": 28
-  },
-  "step3": {
-   "school": "Ivory Kingdoms Sage Tradition",
-   "roles": "Bushi",
-   "ring1": "void",
-   "ring2": "earth",
-   "skill1": "melee",
-   "skill2": "unarmed",
-   "skill3": "meditation",
-   "skill4": "theology",
-   "skill5": "command",
-   "allowed_techniques": {
-    "kata": true,
-    "kiho": true,
-    "inversion": false,
-    "invocation": false,
-    "ritual": true,
-    "shuji": false,
-    "maho": false,
-    "ninjutsu": false,
-    "mantra": false,
-    "specificity": true
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "The Sheelavaan of Bhavyatapura",
+     "ring": "air",
+     "skill": "courtesy",
+     "social_status": 0
+    },
+    "picks": {}
    },
-   "techniques": [
-    "qFpqm3GpkCEAu6z2",
-    "5jLb6bvrYkwlkSc8",
-    "2iB4EK0I42kk83V3"
-   ],
-   "school_ability": [
-    "xQRMG49wGf3rL3YS"
-   ],
-   "equipment": [
-    "Cq1koK56k9dvLfMh",
-    "zcsgspz4VluSMeI0",
-    "tSwkJCF7OSXTVnvY",
-    "sjVz7tI11BkNAA7t",
-    "Rex7fGo6R1KuUhQJ",
-    "XsYJV8qKMImJ6PD0",
-    "7OWReYbIMfTvNrqv"
-   ],
-   "social_honor": 50
-  },
-  "step4": {
-   "stand_out": "Gregarious and charming.",
-   "ring": "water"
-  },
-  "step5": {
-   "social_giri": "Aarav's family was betrayed, his brothers executed; he fled east."
-  },
-  "step6": {
-   "social_ninjo": "Regain his home; he seeks to reconquer his homeland."
-  },
-  "step7": {
-   "clan_relations": "Aarav is famously handsome and kind, and a warrior of great prowess.",
-   "skill": "none",
-   "social_add_glory": 5
-  },
-  "step8": {
-   "bushido": "Aarav is unfamiliar with Bushido.",
-   "skill": "seafaring",
-   "social_add_honor": 0,
-   "tenet_paramount": "",
-   "tenet_less_significant": "",
-   "item": []
-  },
-  "step9": {
-   "success": "Survived the palace coup, and led his tutor's children to safety.",
-   "distinction": [
-    "qzkQyP8jGDoLiItw"
-   ]
-  },
-  "step10": {
-   "difficulty": "He is unused to having to negotiate, to working with people who don't have to obey him.",
-   "adversity": [
-    "FCw1pfvIVYoe5yyk"
-   ]
-  },
-  "step11": {
-   "calms": "Challenging himself, pushing himself.",
-   "passion": [
-    "B9fnpC0enRx8DeSO"
-   ]
-  },
-  "step12": {
-   "worries": "Doubts about his fate to rule; perhaps the downfall of his family was karma?",
-   "anxiety": [
-    "TVReYB8XXXDEQUkr"
-   ]
-  },
-  "step13": {
-   "most_learn": "The love of his life, Riya, is in another city. He is afraid that to visit her prematurely will bring danger to her, but their love has opened his eyes to the world in a way that he had previously been blind to.",
-   "skill": "none",
-   "advantage": [
-    "Vi9SQaa3y48ob8Hp"
-   ],
-   "disadvantage": []
-  },
-  "step14": {
-   "first_sight": "His signet ring bears a tiger and his family's sigil.",
-   "special_features": [
-    "lh0BUCh3cKO0BUnn"
-   ]
-  },
-  "step15": {
-   "stress": "He exercises strenuously, or practices archery."
-  },
-  "step16": {
-   "relations": "His family's former vassals are scattered in exile or hiding in submission. Some noble houses have sworn fealty to the usurper, while others wait for a sign that restoration is possible.\n\nAs a foreign prince in Rokugan, he occupies an awkward position - too noble to ignore, but without the local connections that grant true influence. His royal blood means little here.\n\n",
-   "item": [
-    "uaCKNEXDlq1OI3wO"
-   ]
-  },
-  "step17": {
-   "parents_pov": "Aarav has gathered a small group of mercenaries. They travel together, and he is trying to convince them to build their strength to help him return to power.",
-   "skill": "culture",
-   "bond": [
-    "ItUUhYTr7vst11ZH"
-   ]
-  },
-  "step18": {
-   "heritage_name": "Raised in a royal suzerain's household, with servants and private tutors.",
-   "heritage_1": null,
-   "heritage_2": null,
-   "heritage_item": [],
-   "heritage_add_honor": 0,
-   "heritage_add_glory": 0,
-   "heritage_add_status": 0,
-   "skill": "none"
-  },
-  "step19": {
-   "firstname": "Aarav"
-  },
-  "step20": {
-   "death": "He should die in an act of glorious heroism, defending his people."
+   "step2": {
+    "answers": {
+     "family": "Fallen Noble (Gaijin)",
+     "ring": "fire",
+     "skill1": "ranged",
+     "skill2": "command",
+     "wealth": 0,
+     "social_glory": 28
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Ivory Kingdoms Sage Tradition",
+     "roles": "Bushi",
+     "ring1": "void",
+     "ring2": "earth",
+     "skill1": "melee",
+     "skill2": "unarmed",
+     "skill3": "meditation",
+     "skill4": "theology",
+     "skill5": "command",
+     "social_honor": 50
+    },
+    "picks": {
+     "techniques": [
+      "Earth Needs No Eyes",
+      "Cleansing Spirit",
+      "Threshold Barrier"
+     ],
+     "school_ability": [
+      "Gift of Inner Power"
+     ],
+     "equipment": [
+      "Sanctified Robes",
+      "Traveling Clothes",
+      "Talwar",
+      "Daikyū",
+      "Traveling pack",
+      "Gunbai"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "stand_out": "Gregarious and charming.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Aarav's family was betrayed, his brothers executed; he fled east."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Regain his home; he seeks to reconquer his homeland."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Aarav is famously handsome and kind, and a warrior of great prowess.",
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "bushido": "Aarav is unfamiliar with Bushido.",
+     "skill": "seafaring",
+     "social_add_honor": 0
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Survived the palace coup, and led his tutor's children to safety."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "He is unused to having to negotiate, to working with people who don't have to obey him."
+    },
+    "picks": {
+     "adversity": [
+      "Gaijin Name, Culture, or Appearance"
+     ]
+    }
+   },
+   "step11": {
+    "answers": {
+     "calms": "Challenging himself, pushing himself."
+    },
+    "picks": {
+     "passion": [
+      "Glorious Deeds"
+     ]
+    }
+   },
+   "step12": {
+    "answers": {
+     "worries": "Doubts about his fate to rule; perhaps the downfall of his family was karma?"
+    },
+    "picks": {
+     "anxiety": [
+      "Fear of Mediocrity"
+     ]
+    }
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "The love of his life, Riya, is in another city. He is afraid that to visit her prematurely will bring danger to her, but their love has opened his eyes to the world in a way that he had previously been blind to."
+    },
+    "picks": {
+     "advantage": [
+      "Benten’s Blessing"
+     ]
+    }
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "His signet ring bears a tiger and his family's sigil."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "He exercises strenuously, or practices archery."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "His family's former vassals are scattered in exile or hiding in submission. Some noble houses have sworn fealty to the usurper, while others wait for a sign that restoration is possible.\n\nAs a foreign prince in Rokugan, he occupies an awkward position - too noble to ignore, but without the local connections that grant true influence. His royal blood means little here.\n\n"
+    },
+    "picks": {
+     "item": [
+      "Uma-Jirushi"
+     ]
+    }
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Aarav has gathered a small group of mercenaries. They travel together, and he is trying to convince them to build their strength to help him return to power.",
+     "skill": "culture"
+    },
+    "picks": {
+     "bond": [
+      "Wanderers Fellowship"
+     ]
+    }
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "Raised in a royal suzerain's household, with servants and private tutors.",
+     "heritage_add_honor": 0,
+     "heritage_add_glory": 0,
+     "heritage_add_status": 0
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Aarav"
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "He should die in an act of glorious heroism, defending his people."
+    },
+    "picks": {}
+   }
   }
  },
  "tiers": [
@@ -244,21 +285,37 @@
    "techniques": [
     {
      "name": "Earth Needs No Eyes",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kiho",
      "rank": 1
     },
     {
      "name": "Cleansing Spirit",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kiho",
      "rank": 1
     },
     {
      "name": "Threshold Barrier",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "ritual",
      "rank": 1
     },
     {
      "name": "Gift of Inner Power",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     }
@@ -266,30 +323,50 @@
    "peculiarities": [
     {
      "name": "Blessed Lineage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "void",
      "types": "Interpersonal, Spiritual"
     },
     {
      "name": "Gaijin Name, Culture, or Appearance",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "fire",
      "types": "Interpersonal (Culture) or Physical (Appearance), Interpersonal (Name), Mental"
     },
     {
      "name": "Glorious Deeds",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "fire",
      "types": "Martial, Social"
     },
     {
      "name": "Fear of Mediocrity",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Interpersonal, Mental"
     },
     {
      "name": "Benten’s Blessing",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "air",
      "types": "Interpersonal, Spiritual"
@@ -298,7 +375,11 @@
    "titles": [],
    "bonds": [
     {
-     "name": "Wanderers Fellowship"
+     "name": "Wanderers Fellowship",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0
     }
    ],
    "gear": [
@@ -435,26 +516,46 @@
    "techniques": [
     {
      "name": "Earth Needs No Eyes",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kiho",
      "rank": 1
     },
     {
      "name": "Cleansing Spirit",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kiho",
      "rank": 1
     },
     {
      "name": "Threshold Barrier",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "ritual",
      "rank": 1
     },
     {
      "name": "Gift of Inner Power",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Sacred Mantras",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 1,
      "kind": "title_ability",
      "rank": 1
     }
@@ -462,30 +563,50 @@
    "peculiarities": [
     {
      "name": "Blessed Lineage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "void",
      "types": "Interpersonal, Spiritual"
     },
     {
      "name": "Gaijin Name, Culture, or Appearance",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "fire",
      "types": "Interpersonal (Culture) or Physical (Appearance), Interpersonal (Name), Mental"
     },
     {
      "name": "Glorious Deeds",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "fire",
      "types": "Martial, Social"
     },
     {
      "name": "Fear of Mediocrity",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Interpersonal, Mental"
     },
     {
      "name": "Benten’s Blessing",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "air",
      "types": "Interpersonal, Spiritual"
@@ -493,12 +614,20 @@
    ],
    "titles": [
     {
-     "name": "Astradhari"
+     "name": "Astradhari",
+     "xp_used": 36,
+     "xp_cost": 36,
+     "in_curriculum": false,
+     "bought_at_rank": 1
     }
    ],
    "bonds": [
     {
-     "name": "Wanderers Fellowship"
+     "name": "Wanderers Fellowship",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0
     }
    ],
    "gear": [
@@ -635,51 +764,91 @@
    "techniques": [
     {
      "name": "Earth Needs No Eyes",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kiho",
      "rank": 1
     },
     {
      "name": "Cleansing Spirit",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kiho",
      "rank": 1
     },
     {
      "name": "Threshold Barrier",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "ritual",
      "rank": 1
     },
     {
      "name": "Gift of Inner Power",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Sacred Mantras",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 1,
      "kind": "title_ability",
      "rank": 1
     },
     {
      "name": "Countering Mantra",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 1,
      "kind": "mantra",
      "rank": 4
     },
     {
      "name": "Ki Protection",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kiho",
      "rank": 1
     },
     {
      "name": "The Great Silence",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kiho",
      "rank": 1
     },
     {
      "name": "Bellow of Resolve",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Landslide Strike",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 2
     }
@@ -687,30 +856,50 @@
    "peculiarities": [
     {
      "name": "Blessed Lineage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "void",
      "types": "Interpersonal, Spiritual"
     },
     {
      "name": "Gaijin Name, Culture, or Appearance",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "fire",
      "types": "Interpersonal (Culture) or Physical (Appearance), Interpersonal (Name), Mental"
     },
     {
      "name": "Glorious Deeds",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "fire",
      "types": "Martial, Social"
     },
     {
      "name": "Fear of Mediocrity",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Interpersonal, Mental"
     },
     {
      "name": "Benten’s Blessing",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "air",
      "types": "Interpersonal, Spiritual"
@@ -718,12 +907,20 @@
    ],
    "titles": [
     {
-     "name": "Astradhari"
+     "name": "Astradhari",
+     "xp_used": 36,
+     "xp_cost": 36,
+     "in_curriculum": false,
+     "bought_at_rank": 1
     }
    ],
    "bonds": [
     {
-     "name": "Wanderers Fellowship"
+     "name": "Wanderers Fellowship",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0
     }
    ],
    "gear": [

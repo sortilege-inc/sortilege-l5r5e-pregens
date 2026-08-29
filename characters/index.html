@@ -31,6 +31,8 @@
     <select id="clan"><option value="">All</option></select>
     <label for="role">Role</label>
     <select id="role"><option value="">All</option></select>
+    <label for="campaign">Campaign</label>
+    <select id="campaign"><option value="">All</option></select>
     <span class="chip" id="shown"></span>
   </div>
 
@@ -46,7 +48,8 @@
   var chars = window.L5R_ROSTER || [];
   var q = document.getElementById("q"),
       clan = document.getElementById("clan"),
-      role = document.getElementById("role");
+      role = document.getElementById("role"),
+      campaign = document.getElementById("campaign");
 
   function fill(sel, key) {
     var vals = {};
@@ -55,22 +58,23 @@
       var o = document.createElement("option"); o.value = o.textContent = v; sel.appendChild(o);
     });
   }
-  fill(clan, "clan"); fill(role, "role");
+  fill(clan, "clan"); fill(role, "role"); fill(campaign, "campaign");
 
   function draw() {
     var term = q.value.trim().toLowerCase();
     var list = chars.filter(function (c) {
       if (clan.value && c.clan !== clan.value) return false;
       if (role.value && c.role !== role.value) return false;
+      if (campaign.value && c.campaign !== campaign.value) return false;
       if (!term) return true;
-      return [c.name, c.school, c.clan, c.family, c.role]
+      return [c.name, c.school, c.clan, c.family, c.role, c.campaign]
         .join(" ").toLowerCase().indexOf(term) >= 0;
     });
     document.getElementById("roster").innerHTML = window.renderRoster(list, "");
     document.getElementById("shown").textContent =
       list.length + " of " + chars.length;
   }
-  [q, clan, role].forEach(function (e) { e.addEventListener("input", draw); });
+  [q, clan, role, campaign].forEach(function (e) { e.addEventListener("input", draw); });
   draw();
 })();
 </script>

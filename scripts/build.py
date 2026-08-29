@@ -19,6 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "src", "characters")
 CATDIR = os.path.join(ROOT, "pipeline", "foundry", "catalog")
 DB = os.path.join(ROOT, "pipeline", "l5r.sqlite")
+LANG = os.path.join(ROOT, "pipeline", "foundry", "lang", "en.json")
 SITEDATA = os.path.join(ROOT, "data")
 
 # category in a tier -> catalog subType it resolves against
@@ -27,6 +28,8 @@ CATEGORY_SUBTYPE = {
     "titles": "title", "bonds": "bond", "gear": ("weapon", "armor", "item"),
 }
 SCHOOL_CLAN_RE = re.compile(r"^(?P<name>.*?)\s*\[(?P<clan>[^\]]+)\]\s*$")
+# "Scorn of [One Group]" -> "Scorn of"; the bracket is the player's choice
+OPEN_ENDED_RE = re.compile(r"\s*\[[^\]]+\]\s*$")
 
 # --- school curriculum journals -------------------------------------------
 # Each curriculum page is a <blockquote>Book p.N</blockquote> followed by a
@@ -101,8 +104,9 @@ def schema(cx):
     CREATE INDEX catalog_norm ON catalog(sub_type, norm);
     CREATE TABLE character(
       slug TEXT PRIMARY KEY, name TEXT, clan TEXT, family TEXT, school TEXT,
-      school_norm TEXT, role TEXT, bucket TEXT, accent TEXT, portrait TEXT,
-      concept TEXT, summary TEXT, tier_count INTEGER, xp_min INTEGER, xp_max INTEGER);
+      school_norm TEXT, role TEXT, bucket TEXT, campaign TEXT, accent TEXT,
+      portrait TEXT, concept TEXT, summary TEXT, tier_count INTEGER,
+      xp_min INTEGER, xp_max INTEGER);
     CREATE TABLE tier(
       id INTEGER PRIMARY KEY, slug TEXT, idx INTEGER, xp INTEGER, label TEXT,
       rank INTEGER, school TEXT, foundry_id TEXT, rings TEXT, skills TEXT,
@@ -168,11 +172,11 @@ def load_characters(cx):
     for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
         c = json.load(open(path))
         tiers = c["tiers"]
-        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 15) + ")", (
+        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 16) + ")", (
             c["slug"], c["name"], c["identity"].get("clan"), c["identity"].get("family"),
             c["identity"].get("school"), norm(c["identity"].get("school")),
-            c["identity"].get("role"), c.get("bucket"), c.get("accent"),
-            c.get("portrait"), c.get("concept"), c.get("summary"),
+            c["identity"].get("role"), c.get("bucket"), c.get("campaign"),
+            c.get("accent"), c.get("portrait"), c.get("concept"), c.get("summary"),
             len(tiers), min(t["xp"] for t in tiers), max(t["xp"] for t in tiers)))
         for idx, t in enumerate(tiers):
             tid += 1
@@ -190,6 +194,15 @@ def load_characters(cx):
                         row = cx.execute(
                             "SELECT uuid FROM catalog WHERE norm=? AND sub_type IN (%s)"
                             % ",".join("?" * len(subs)), (n, *subs)).fetchone()
+                        if not row:
+                            # Open-ended compendium entries ("Scorn of", "Hero of")
+                            # are recorded with the target filled in — resolve the
+                            # stem, keep the character's specific wording.
+                            stem = norm(OPEN_ENDED_RE.sub("", entry["name"]))
+                            if stem and stem != n:
+                                row = cx.execute(
+                                    "SELECT uuid FROM catalog WHERE norm=? AND sub_type IN (%s)"
+                                    % ",".join("?" * len(subs)), (stem, *subs)).fetchone()
                         if row:
                             uuid = row[0]
                         else:
@@ -199,6 +212,32 @@ def load_characters(cx):
                         1 if entry.get("custom") else 0, uuid,
                         json.dumps(entry, ensure_ascii=False)))
     return unresolved
+
+
+def twenty_question_labels():
+    """The official question wording and page references, from the l5r5e system's
+    own en.json. Never retyped here — a paraphrase would be wrong on both the
+    question and the page number."""
+    if not os.path.exists(LANG):
+        print("   ! no pipeline/foundry/lang/en.json — run foundry_catalog.py")
+        return {}
+    tq = json.load(open(LANG))["l5r5e"]["twenty_questions"]
+    parts, questions, fields = [], {}, {}
+    for pkey in sorted((k for k in tq if k.startswith("part") and k != "part0"),
+                       key=lambda k: int(k[4:])):
+        part = tq[pkey]
+        qs = []
+        for k, v in part.items():
+            m = re.match(r"^q(\d+)(_pow)?$", k)
+            if m:
+                questions.setdefault(int(m.group(1)), {})["pow" if m.group(2) else "core"] = v
+                if not m.group(2):
+                    qs.append(int(m.group(1)))
+            elif not k.startswith("title"):
+                fields[k] = v
+        parts.append({"key": pkey, "title": part.get("title"),
+                      "title_pow": part.get("title_pow"), "questions": sorted(qs)})
+    return {"parts": parts, "questions": questions, "fields": fields}
 
 
 def emit(cx):
@@ -228,7 +267,7 @@ def emit(cx):
             {"rank": r["rank"], "kind": r["kind"], "group": r["grp"],
              "label": r["label"], "prereq": bool(r["prereq"])})
 
-    roster, biggest = [], 0
+    roster, biggest, docs = [], 0, []
     for c in cx.execute("SELECT * FROM character ORDER BY name"):
         src = json.load(open(os.path.join(SRC, c["slug"] + ".json")))
         tiers = []
@@ -263,11 +302,12 @@ def emit(cx):
                "notes": src.get("notes", ""),
                "curriculum": curricula.get(c["school_norm"], []),
                "tiers": tiers}
+        docs.append(doc)
         size = write(os.path.join(chardir, c["slug"] + ".js"), "L5R_CHARACTER", doc)
         biggest = max(biggest, size)
         roster.append({k: c[k] for k in
                        ("slug", "name", "clan", "family", "school", "role", "bucket",
-                        "portrait", "tier_count", "xp_min", "xp_max")})
+                        "campaign", "portrait", "tier_count", "xp_min", "xp_max")})
 
     n1 = write(os.path.join(SITEDATA, "roster.js"), "L5R_ROSTER", roster)
 
@@ -293,7 +333,148 @@ def emit(cx):
         " FROM catalog c WHERE c.pack LIKE '%school-curriculum%' ORDER BY c.name")]
     n3 = write(os.path.join(SITEDATA, "coverage.js"), "L5R_COVERAGE",
                {"used": used, "customs": customs, "schools": schools})
-    return n1, n2, n3, biggest
+    write(os.path.join(SITEDATA, "twenty_questions.js"), "L5R_20Q",
+          twenty_question_labels())
+    return (n1, n2, n3, biggest), docs
+
+
+PLAY_PAGE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{name} — {xp} XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">{name}</span>
+  <a href="../characters/{slug}.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">{tier_label}</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{sheet_json}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>
+"""
+
+# tier category -> how the play sheet labels it
+PLAY_TAG = {"technique": "Technique", "peculiarity": "Peculiarity"}
+
+
+def _plain(html):
+    return html or ""
+
+
+def sheet_from_tier(char, tier):
+    """Adapt one XP tier to the shape assets/play/sheet.js expects.
+
+    That engine is the Portents & Fortunes character sheet, reused as-is; this
+    is the only translation layer, so the engine stays a drop-in.
+    """
+    derived = tier.get("derived") or {}
+    social = tier.get("social") or {}
+    tenets = social.get("bushido_tenets") or {}
+    skills = {}
+    for group in (tier.get("skills") or {}).values():
+        skills.update(group)
+    money = tier.get("money") or {}
+    money_str = ", ".join(f"{v} {k}" for k, v in money.items() if v) or None
+
+    def gear_entry(e):
+        armor = e.get("armor") or {}
+        return {k: v for k, v in {
+            "name": e["name"],
+            "kind": ("Weapon" if e.get("damage") is not None else
+                     "Armor" if armor else "Item"),
+            "category": e.get("category"), "skill": e.get("skill"),
+            "range": e.get("range"), "damage": e.get("damage"),
+            "deadliness": e.get("deadliness"),
+            "physical": armor.get("physical") or None,
+            "supernatural": armor.get("supernatural") or None,
+            "grips": e.get("grip_2") or None,
+            "qualities": [p["name"] for p in (e.get("properties") or [])] or None,
+            "rarity": e.get("rarity"), "text": _plain(e.get("description")),
+        }.items() if v not in (None, "", [])}
+
+    def simple(e, tag):
+        return {k: v for k, v in {
+            "name": e["name"],
+            "tag": (e.get("kind") or tag).replace("_", " ").title(),
+            "ring": e.get("ring"), "kind": e.get("kind"),
+            "text": _plain(e.get("description")),
+        }.items() if v not in (None, "", [])}
+
+    xp = tier["xp"]
+    return {
+        "id": f"{char['slug']}-{xp}xp",
+        "name": char["name"], "clan": char.get("clan"), "family": char.get("family"),
+        "school": tier.get("school") or char.get("school"),
+        "role": char.get("role"), "rank": tier.get("rank"),
+        "portrait": ("../" + char["portrait"]) if char.get("portrait") else None,
+        "rings": tier.get("rings") or {},
+        "derived": {k: derived.get(k) for k in
+                    ("endurance", "composure", "focus", "vigilance")},
+        "trackers": {
+            "strife": {"max": derived.get("composure")},
+            "fatigue": {"max": derived.get("endurance")},
+            "void": {"max": derived.get("void_points"),
+                     "start": derived.get("void_points")},
+        },
+        "stance": "void",
+        "social": {k: social.get(k) for k in ("honor", "glory", "status")},
+        "xp": {"earned": xp, "spent": xp},
+        "skills": skills,
+        "bushido": {"paramount": tenets.get("paramount"),
+                    "less": tenets.get("less_significant")},
+        "ninjo": social.get("ninjo"), "giri": social.get("giri"),
+        "money": money_str,
+        "techniques": [simple(e, "technique") for e in tier.get("techniques", [])],
+        "peculiarities": [simple(e, "peculiarity") for e in tier.get("peculiarities", [])],
+        "titles": [{"name": e["name"], "text": _plain(e.get("description"))}
+                   for e in tier.get("titles", [])],
+        "bonds": [{"name": e["name"], "text": _plain(e.get("description"))}
+                  for e in tier.get("bonds", [])],
+        "gear": [gear_entry(e) for e in tier.get("gear", [])],
+    }
+
+
+def emit_play_pages(chars):
+    """One playable sheet per character per XP tier.
+
+    A page per tier rather than one page with a version picker, because the
+    engine only lets you track state on the *live* sheet — every tier here has
+    to be playable, with its own saved state.
+    """
+    out = os.path.join(ROOT, "play")
+    os.makedirs(out, exist_ok=True)
+    for stale in glob.glob(os.path.join(out, "*.html")):
+        os.remove(stale)
+    n = 0
+    for char in chars:
+        for tier in char["tiers"]:
+            sheet = sheet_from_tier(char, tier)
+            label = tier.get("label")
+            with open(os.path.join(out, f"{sheet['id']}.html"), "w") as f:
+                f.write(PLAY_PAGE.format(
+                    name=char["name"], slug=char["slug"], xp=tier["xp"],
+                    tier_label=(f"{tier['xp']} XP · {label}" if label
+                                else f"{tier['xp']} XP"),
+                    sheet_json=json.dumps(sheet, ensure_ascii=False, indent=1)))
+            n += 1
+    return n
 
 
 PAGE_STUB = """<!DOCTYPE html>
@@ -330,16 +511,32 @@ PAGE_STUB = """<!DOCTYPE html>
     <div class="tl-track" id="timeline"></div>
   </div>
 
-  <div id="changelog-target"></div>
-  <div id="stats-target"></div>
-  <div id="duty-target"></div>
-  <div id="skills-target"></div>
-  <div id="content-target"></div>
+  <div class="tabbar" id="tabbar">
+    <button type="button" data-tab="dossier" class="active">Dossier</button>
+    <button type="button" data-tab="questions">Twenty Questions</button>
+    <button type="button" data-tab="play">Play</button>
+  </div>
+
+  <section id="panel-dossier">
+    <div id="changelog-target"></div>
+    <div id="stats-target"></div>
+    <div id="duty-target"></div>
+    <div id="skills-target"></div>
+    <div id="content-target"></div>
+  </section>
+
+  <section id="panel-questions" hidden></section>
+
+  <section id="panel-play" hidden>
+    <p class="muted small" id="play-note"></p>
+    <iframe id="play-frame" title="Playable character sheet" loading="lazy"></iframe>
+  </section>
 </div>
 
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
 <script src="../data/characters/{slug}.js"></script>
+<script src="../data/twenty_questions.js"></script>
 <script src="../assets/sheet.js"></script>
 </body>
 </html>
@@ -389,8 +586,9 @@ def main():
     unresolved = load_characters(cx)
     off_roll = check_schools(cx)
     cx.commit()
-    sizes = emit(cx)
+    sizes, docs = emit(cx)
     npages = emit_pages(cx)
+    nplay = emit_play_pages(docs)
     cx.commit()
 
     print(f"catalog:    {ncat} entries ({missing} without full text yet)"
@@ -400,7 +598,7 @@ def main():
           f", content refs {cx.execute('SELECT COUNT(*) FROM tier_content').fetchone()[0]}")
     print("site data:  roster.js %.1f KB | catalog.js %.1f KB | coverage.js %.1f KB"
           " | largest character %.1f KB" % tuple(s / 1024 for s in sizes))
-    print(f"pages:      {npages} character stubs")
+    print(f"pages:      {npages} character stubs, {nplay} playable sheets")
     if off_roll:
         print(f"SCHOOLS off the compendium roll ({len(off_roll)}):")
         for slug, school, near in off_roll:

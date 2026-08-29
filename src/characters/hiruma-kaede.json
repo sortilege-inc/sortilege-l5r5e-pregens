@@ -2,6 +2,7 @@
  "slug": "hiruma-kaede",
  "name": "Hiruma Kaede",
  "folder_label": "Hiruma Kaede (Hida Defender)",
+ "campaign": null,
  "bucket": "Bushi",
  "accent": "#492886",
  "identity": {
@@ -18,151 +19,202 @@
  "twenty_questions": {
   "template": "core",
   "generated": true,
-  "step1": {
-   "clan": "Crab",
-   "ring": "earth",
-   "skill": "fitness",
-   "social_status": 30
-  },
-  "step2": {
-   "family": "Hiruma",
-   "ring": "air",
-   "skill1": "skulduggery",
-   "skill2": "survival",
-   "wealth": 3,
-   "social_glory": 39
-  },
-  "step3": {
-   "school": "Hida Defender School",
-   "roles": "Bushi",
-   "ring1": "void",
-   "ring2": "fire",
-   "skill1": "melee",
-   "skill2": "fitness",
-   "skill3": "survival",
-   "skill4": "command",
-   "skill5": "tactics",
-   "allowed_techniques": {
-    "kata": true,
-    "kiho": false,
-    "inversion": false,
-    "invocation": false,
-    "ritual": true,
-    "shuji": true,
-    "maho": false,
-    "ninjutsu": false,
-    "mantra": false,
-    "specificity": true
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Crab",
+     "ring": "earth",
+     "skill": "fitness",
+     "social_status": 30
+    },
+    "picks": {}
    },
-   "techniques": [
-    "aKTfAZXbHo77kHOq",
-    "ERExWdY04GNvu3p0"
-   ],
-   "school_ability": [
-    "7LHxYqmpqMUETLEq"
-   ],
-   "equipment": [
-    "sPKkavq6O0SoxiPj",
-    "zcsgspz4VluSMeI0",
-    "ElFJfEcGvWe6A5yU",
-    "BhKwwnN5UHI5rZpp",
-    "n8xA05Fb9WpXg3oo",
-    "CW6h0NSzTEhimQXw",
-    "S1MG4qPHEV3N8XnO",
-    "Rex7fGo6R1KuUhQJ"
-   ],
-   "social_honor": 40
-  },
-  "step4": {
-   "stand_out": "Careful observation of physical phenomena.",
-   "ring": "earth"
-  },
-  "step5": {
-   "social_giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall."
-  },
-  "step6": {
-   "social_ninjo": "Longs to travel Rokugan, or possibly even beyond."
-  },
-  "step7": {
-   "clan_relations": "She has commanded her clan's respect.",
-   "skill": "none",
-   "social_add_glory": 5
-  },
-  "step8": {
-   "bushido": "Bushido maintains order and strength.",
-   "skill": "none",
-   "social_add_honor": 10,
-   "tenet_paramount": "Courage",
-   "tenet_less_significant": "Sincerity",
-   "item": []
-  },
-  "step9": {
-   "success": "Held a section of the Kaiu wall against a trio of trolls.",
-   "distinction": [
-    "ZtoejR7hmjZ0aE8k"
-   ]
-  },
-  "step10": {
-   "difficulty": "She struggles to stand up for herself.",
-   "adversity": [
-    "TP83fjX8gnxELunG"
-   ]
-  },
-  "step11": {
-   "calms": "Travel, particularly into the wilderness, fills her with peace.",
-   "passion": [
-    "7keAIKn0N8wjEsGa"
-   ]
-  },
-  "step12": {
-   "worries": "She thinks back on the horrors she has witnessed, the men who have died... and she doesn't feel anything. And she's concerned about what that says about her.",
-   "anxiety": [
-    "jlSq86lbglLrHXp8"
-   ]
-  },
-  "step13": {
-   "most_learn": "Hida Nao. She trained under Nao, and the training was fierce, and some failed, but Kaede discovered her power.",
-   "skill": "none",
-   "advantage": [
-    "trppadBbshGjbSP2"
-   ],
-   "disadvantage": []
-  },
-  "step14": {
-   "first_sight": "Her armor and clothing do not match, but appear to be of varying age and provenance.",
-   "special_features": [
-    "6J25vJx1tVirgXf1"
-   ]
-  },
-  "step15": {
-   "stress": "Sullen resentment."
-  },
-  "step16": {
-   "relations": "Has once done a joint patrol with the Unicorn clan, alongside the outrider Shinjo Tomiko.\n\nHas a grudging respect for the Dragon clan's Kitsuki investigators.",
-   "item": [
-    "PsmRwhHYBz0daKi5"
-   ]
-  },
-  "step17": {
-   "parents_pov": "Kaede was an obedient and quiet child. They had hoped military service would anchor her, but they worry that she's become too hardened.",
-   "skill": "courtesy",
-   "bond": []
-  },
-  "step18": {
-   "heritage_name": "She was named after her relative, who had broken through ranks of hellish creatures and claimed land far from the Kaiu Wall, and held it for three weeks.",
-   "heritage_1": 9,
-   "heritage_2": 9,
-   "heritage_item": [],
-   "heritage_add_honor": -5,
-   "heritage_add_glory": 0,
-   "heritage_add_status": 0,
-   "skill": "tactics"
-  },
-  "step19": {
-   "firstname": "Kaede"
-  },
-  "step20": {
-   "death": "She will die at the hands of a stranger she meets on a road, far from Crab lands."
+   "step2": {
+    "answers": {
+     "family": "Hiruma",
+     "ring": "air",
+     "skill1": "skulduggery",
+     "skill2": "survival",
+     "wealth": 3,
+     "social_glory": 39
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Hida Defender School",
+     "roles": "Bushi",
+     "ring1": "void",
+     "ring2": "fire",
+     "skill1": "melee",
+     "skill2": "fitness",
+     "skill3": "survival",
+     "skill4": "command",
+     "skill5": "tactics",
+     "social_honor": 40
+    },
+    "picks": {
+     "techniques": [
+      "Striking as Earth",
+      "Lord Hida’s Grip (Crab)"
+     ],
+     "school_ability": [
+      "Way of the Crab"
+     ],
+     "equipment": [
+      "Lacquered Armor",
+      "Traveling Clothes",
+      "Club",
+      "Katana",
+      "Knife",
+      "Tetsubō",
+      "Wakizashi",
+      "Traveling pack"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "stand_out": "Careful observation of physical phenomena.",
+     "ring": "earth"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Longs to travel Rokugan, or possibly even beyond."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "She has commanded her clan's respect.",
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "bushido": "Bushido maintains order and strength.",
+     "social_add_honor": 10,
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Sincerity"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Held a section of the Kaiu wall against a trio of trolls."
+    },
+    "picks": {
+     "distinction": [
+      "Light Sleeper"
+     ]
+    }
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "She struggles to stand up for herself."
+    },
+    "picks": {
+     "adversity": [
+      "Encompassing Duty"
+     ]
+    }
+   },
+   "step11": {
+    "answers": {
+     "calms": "Travel, particularly into the wilderness, fills her with peace."
+    },
+    "picks": {
+     "passion": [
+      "Travel"
+     ]
+    }
+   },
+   "step12": {
+    "answers": {
+     "worries": "She thinks back on the horrors she has witnessed, the men who have died... and she doesn't feel anything. And she's concerned about what that says about her."
+    },
+    "picks": {
+     "anxiety": [
+      "Battle Trauma"
+     ]
+    }
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Hida Nao. She trained under Nao, and the training was fierce, and some failed, but Kaede discovered her power."
+    },
+    "picks": {
+     "advantage": [
+      "Paragon of Courage"
+     ]
+    }
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Her armor and clothing do not match, but appear to be of varying age and provenance."
+    },
+    "picks": {
+     "special_features": [
+      "Kubi Bukuro"
+     ]
+    }
+   },
+   "step15": {
+    "answers": {
+     "stress": "Sullen resentment."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Has once done a joint patrol with the Unicorn clan, alongside the outrider Shinjo Tomiko.\n\nHas a grudging respect for the Dragon clan's Kitsuki investigators."
+    },
+    "picks": {
+     "item": [
+      "Kamayari"
+     ]
+    }
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Kaede was an obedient and quiet child. They had hoped military service would anchor her, but they worry that she's become too hardened.",
+     "skill": "courtesy"
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "She was named after her relative, who had broken through ranks of hellish creatures and claimed land far from the Kaiu Wall, and held it for three weeks.",
+     "heritage_1": 9,
+     "heritage_2": 9,
+     "heritage_add_honor": -5,
+     "heritage_add_glory": 0,
+     "heritage_add_status": 0,
+     "skill": "tactics"
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Kaede"
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "She will die at the hands of a stranger she meets on a road, far from Crab lands."
+    },
+    "picks": {}
+   }
   }
  },
  "tiers": [
@@ -242,16 +294,28 @@
    "techniques": [
     {
      "name": "Striking as Earth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Lord Hida’s Grip (Crab)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Way of the Crab",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     }
@@ -259,30 +323,50 @@
    "peculiarities": [
     {
      "name": "Light Sleeper",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "water",
      "types": "Physical"
     },
     {
      "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "earth",
      "types": "Mental"
     },
     {
      "name": "Travel",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "water",
      "types": "Mental, Physical"
     },
     {
      "name": "Battle Trauma",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Mental, Physical"
     },
     {
      "name": "Paragon of Courage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "fire",
      "types": "Mental, Virtue"
@@ -410,31 +494,55 @@
    "techniques": [
     {
      "name": "Striking as Earth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Lord Hida’s Grip (Crab)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Way of the Crab",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Appreciate the Scenery",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Honest Assessment",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Rushing Avalanche Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 2
     }
@@ -442,30 +550,50 @@
    "peculiarities": [
     {
      "name": "Light Sleeper",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "water",
      "types": "Physical"
     },
     {
      "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "earth",
      "types": "Mental"
     },
     {
      "name": "Travel",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "water",
      "types": "Mental, Physical"
     },
     {
      "name": "Battle Trauma",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Mental, Physical"
     },
     {
      "name": "Paragon of Courage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "fire",
      "types": "Mental, Virtue"
@@ -630,41 +758,73 @@
    "techniques": [
     {
      "name": "Striking as Earth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Lord Hida’s Grip (Crab)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Way of the Crab",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Appreciate the Scenery",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Honest Assessment",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Rushing Avalanche Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Staggering Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Touchstone of Courage",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "shuji",
      "rank": 3
     }
@@ -672,30 +832,50 @@
    "peculiarities": [
     {
      "name": "Light Sleeper",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "water",
      "types": "Physical"
     },
     {
      "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "earth",
      "types": "Mental"
     },
     {
      "name": "Travel",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "water",
      "types": "Mental, Physical"
     },
     {
      "name": "Battle Trauma",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Mental, Physical"
     },
     {
      "name": "Paragon of Courage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "fire",
      "types": "Mental, Virtue"
@@ -905,46 +1085,82 @@
    "techniques": [
     {
      "name": "Striking as Earth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Lord Hida’s Grip (Crab)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Way of the Crab",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Appreciate the Scenery",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Honest Assessment",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Rushing Avalanche Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Staggering Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Touchstone of Courage",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "shuji",
      "rank": 3
     },
     {
      "name": "Lead from the Front",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
      "kind": "title_ability",
      "rank": 1
     }
@@ -952,30 +1168,50 @@
    "peculiarities": [
     {
      "name": "Light Sleeper",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "water",
      "types": "Physical"
     },
     {
      "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "earth",
      "types": "Mental"
     },
     {
      "name": "Travel",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "water",
      "types": "Mental, Physical"
     },
     {
      "name": "Battle Trauma",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Mental, Physical"
     },
     {
      "name": "Paragon of Courage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "fire",
      "types": "Mental, Virtue"
@@ -983,7 +1219,11 @@
    ],
    "titles": [
     {
-     "name": "Gunsō"
+     "name": "Gunsō",
+     "xp_used": 24,
+     "xp_cost": 24,
+     "in_curriculum": false,
+     "bought_at_rank": 3
     }
    ],
    "bonds": [],
@@ -1189,71 +1429,127 @@
    "techniques": [
     {
      "name": "Striking as Earth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Lord Hida’s Grip (Crab)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Way of the Crab",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Appreciate the Scenery",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Honest Assessment",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Rushing Avalanche Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Staggering Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Touchstone of Courage",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "shuji",
      "rank": 3
     },
     {
      "name": "Lead from the Front",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
      "kind": "title_ability",
      "rank": 1
     },
     {
      "name": "Great Anvil's Measure",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
      "kind": "shuji",
      "rank": 2
     },
     {
      "name": "Improvised Assault",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Iron in the Mountains Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 4
     },
     {
      "name": "Iron Shell Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Wanderer's Resolve",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "shuji",
      "rank": 1
     }
@@ -1261,30 +1557,50 @@
    "peculiarities": [
     {
      "name": "Light Sleeper",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "water",
      "types": "Physical"
     },
     {
      "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "earth",
      "types": "Mental"
     },
     {
      "name": "Travel",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "water",
      "types": "Mental, Physical"
     },
     {
      "name": "Battle Trauma",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Mental, Physical"
     },
     {
      "name": "Paragon of Courage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "fire",
      "types": "Mental, Virtue"
@@ -1292,7 +1608,11 @@
    ],
    "titles": [
     {
-     "name": "Gunsō"
+     "name": "Gunsō",
+     "xp_used": 24,
+     "xp_cost": 24,
+     "in_curriculum": false,
+     "bought_at_rank": 3
     }
    ],
    "bonds": [],
@@ -1534,96 +1854,172 @@
    "techniques": [
     {
      "name": "Striking as Earth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Lord Hida’s Grip (Crab)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Way of the Crab",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Appreciate the Scenery",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Honest Assessment",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Rushing Avalanche Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Staggering Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Touchstone of Courage",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "shuji",
      "rank": 3
     },
     {
      "name": "Lead from the Front",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
      "kind": "title_ability",
      "rank": 1
     },
     {
      "name": "Great Anvil's Measure",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
      "kind": "shuji",
      "rank": 2
     },
     {
      "name": "Improvised Assault",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Iron in the Mountains Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 4
     },
     {
      "name": "Iron Shell Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Wanderer's Resolve",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Striking as Void",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "kata",
      "rank": 5
     },
     {
      "name": "Eyeless Sight Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "kata",
      "rank": 4
     },
     {
      "name": "Battle in the Mind",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Foreseen Need",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 4,
      "kind": "shuji",
      "rank": 4
     },
     {
      "name": "A Samurai’s Fate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "shuji",
      "rank": 4
     }
@@ -1631,30 +2027,50 @@
    "peculiarities": [
     {
      "name": "Light Sleeper",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "water",
      "types": "Physical"
     },
     {
      "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "earth",
      "types": "Mental"
     },
     {
      "name": "Travel",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "water",
      "types": "Mental, Physical"
     },
     {
      "name": "Battle Trauma",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Mental, Physical"
     },
     {
      "name": "Paragon of Courage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "fire",
      "types": "Mental, Virtue"
@@ -1662,7 +2078,11 @@
    ],
    "titles": [
     {
-     "name": "Gunsō"
+     "name": "Gunsō",
+     "xp_used": 24,
+     "xp_cost": 24,
+     "in_curriculum": false,
+     "bought_at_rank": 3
     }
    ],
    "bonds": [],
@@ -1967,101 +2387,181 @@
    "techniques": [
     {
      "name": "Striking as Earth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Lord Hida’s Grip (Crab)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Way of the Crab",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Appreciate the Scenery",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Honest Assessment",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Rushing Avalanche Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Staggering Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Touchstone of Courage",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "shuji",
      "rank": 3
     },
     {
      "name": "Lead from the Front",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
      "kind": "title_ability",
      "rank": 1
     },
     {
      "name": "Great Anvil's Measure",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
      "kind": "shuji",
      "rank": 2
     },
     {
      "name": "Improvised Assault",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Iron in the Mountains Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 4
     },
     {
      "name": "Iron Shell Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Wanderer's Resolve",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Striking as Void",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "kata",
      "rank": 5
     },
     {
      "name": "Eyeless Sight Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "kata",
      "rank": 4
     },
     {
      "name": "Battle in the Mind",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Foreseen Need",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 4,
      "kind": "shuji",
      "rank": 4
     },
     {
      "name": "A Samurai’s Fate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "shuji",
      "rank": 4
     },
     {
      "name": "Superior Command",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 5,
      "kind": "title_ability",
      "rank": 1
     }
@@ -2069,30 +2569,50 @@
    "peculiarities": [
     {
      "name": "Light Sleeper",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "water",
      "types": "Physical"
     },
     {
      "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "earth",
      "types": "Mental"
     },
     {
      "name": "Travel",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "water",
      "types": "Mental, Physical"
     },
     {
      "name": "Battle Trauma",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Mental, Physical"
     },
     {
      "name": "Paragon of Courage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "fire",
      "types": "Mental, Virtue"
@@ -2100,10 +2620,18 @@
    ],
    "titles": [
     {
-     "name": "Gunsō"
+     "name": "Gunsō",
+     "xp_used": 24,
+     "xp_cost": 24,
+     "in_curriculum": false,
+     "bought_at_rank": 3
     },
     {
-     "name": "General"
+     "name": "General",
+     "xp_used": 51,
+     "xp_cost": 50,
+     "in_curriculum": false,
+     "bought_at_rank": 5
     }
    ],
    "bonds": [],
@@ -2408,131 +2936,235 @@
    "techniques": [
     {
      "name": "Striking as Earth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 1
     },
     {
      "name": "Lord Hida’s Grip (Crab)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Way of the Crab",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
     },
     {
      "name": "Appreciate the Scenery",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Honest Assessment",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Rushing Avalanche Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 1,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Staggering Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "kata",
      "rank": 2
     },
     {
      "name": "Touchstone of Courage",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
      "kind": "shuji",
      "rank": 3
     },
     {
      "name": "Lead from the Front",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
      "kind": "title_ability",
      "rank": 1
     },
     {
      "name": "Great Anvil's Measure",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 3,
      "kind": "shuji",
      "rank": 2
     },
     {
      "name": "Improvised Assault",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Iron in the Mountains Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 4
     },
     {
      "name": "Iron Shell Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Wanderer's Resolve",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 3,
      "kind": "shuji",
      "rank": 1
     },
     {
      "name": "Striking as Void",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "kata",
      "rank": 5
     },
     {
      "name": "Eyeless Sight Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "kata",
      "rank": 4
     },
     {
      "name": "Battle in the Mind",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "kata",
      "rank": 3
     },
     {
      "name": "Foreseen Need",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 4,
      "kind": "shuji",
      "rank": 4
     },
     {
      "name": "A Samurai’s Fate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 4,
      "kind": "shuji",
      "rank": 4
     },
     {
      "name": "Superior Command",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 5,
      "kind": "title_ability",
      "rank": 1
     },
     {
      "name": "Falling Heavens Shot",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 5,
      "kind": "kata",
      "rank": 5
     },
     {
      "name": "Pin the Fan",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 5,
      "kind": "kata",
      "rank": 5
     },
     {
      "name": "Void Embrace Style",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 5,
      "kind": "kata",
      "rank": 5
     },
     {
      "name": "Rouse the Soul",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 5,
      "kind": "shuji",
      "rank": 5
     },
     {
      "name": "The Immovable Hand of Peace",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 5,
      "kind": "shuji",
      "rank": 5
     },
     {
      "name": "The Mountain Does Not Fall",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": true,
+     "bought_at_rank": 6,
      "kind": "mastery_ability",
      "rank": 6
     }
@@ -2540,30 +3172,50 @@
    "peculiarities": [
     {
      "name": "Light Sleeper",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "water",
      "types": "Physical"
     },
     {
      "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "adversity",
      "ring": "earth",
      "types": "Mental"
     },
     {
      "name": "Travel",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "passion",
      "ring": "water",
      "types": "Mental, Physical"
     },
     {
      "name": "Battle Trauma",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "anxiety",
      "ring": "fire",
      "types": "Mental, Physical"
     },
     {
      "name": "Paragon of Courage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "fire",
      "types": "Mental, Virtue"
@@ -2571,10 +3223,18 @@
    ],
    "titles": [
     {
-     "name": "Gunsō"
+     "name": "Gunsō",
+     "xp_used": 24,
+     "xp_cost": 24,
+     "in_curriculum": false,
+     "bought_at_rank": 3
     },
     {
-     "name": "General"
+     "name": "General",
+     "xp_used": 51,
+     "xp_cost": 50,
+     "in_curriculum": false,
+     "bought_at_rank": 5
     }
    ],
    "bonds": [],

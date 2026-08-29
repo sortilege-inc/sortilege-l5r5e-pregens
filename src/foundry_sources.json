@@ -1,0 +1,87 @@
+{
+ "_comment": "What foundry_pull.py fetches, and how it is tagged. Folder roots are pulled whole (General/<bucket>/<Character>/<tier actors>); listed actors are pulled individually and grouped under the named character.",
+ "roots": [
+  {
+   "folder": "General",
+   "campaign": null
+  }
+ ],
+ "actors": [
+  {
+   "uuid": "Actor.Ize23PRZWy4PPiGS",
+   "character": "Togashi Norikage",
+   "campaign": "Portents & Fortunes"
+  },
+  {
+   "uuid": "Actor.WCy4gy20ScafOA8e",
+   "character": "Togashi Renshō",
+   "campaign": "Imperfect Land"
+  },
+  {
+   "uuid": "Actor.LW8UWcA0siitWpec",
+   "character": "Tonbo Asahi",
+   "campaign": "Imperfect Land"
+  },
+  {
+   "uuid": "Actor.Q9Nd6vhG4PMG0aXZ",
+   "character": "Doji Setsuna",
+   "campaign": "The Fragile Peace"
+  },
+  {
+   "uuid": "Actor.d2MPs8wj7KsCV5w7",
+   "character": "Shinjō Anzu",
+   "campaign": "The Fragile Peace"
+  },
+  {
+   "uuid": "Actor.JmyWJBtsDzEzhsey",
+   "character": "Shinjō Anzu",
+   "campaign": "The Fragile Peace"
+  },
+  {
+   "uuid": "Actor.MFYn0Td7dR7U9zZk",
+   "character": "Asahina Jûjirô",
+   "campaign": "The Fragile Peace"
+  },
+  {
+   "uuid": "Actor.VEf4nAHO0O9A2jIu",
+   "character": "Shinjō Harunobu",
+   "campaign": "The Fragile Peace",
+   "note": "the 100 XP actor with the completed twenty questions; the other Shinjō Harunobu actor (FCqx2vUqaoQHEK5w) has none"
+  }
+ ],
+ "campaigns": {
+  "_comment": "campaign tag by character slug; anything not listed has no campaign",
+  "ikoma-no-hosokawa-ota": "City of the Rich Frog",
+  "nasu-kogo": "The Bushi Oni",
+  "tsume-kunimichi": "The Bushi Oni"
+ },
+ "corrections": {
+  "_comment": "field fixes applied on extract; the Foundry record has the typo",
+  "nasu-kogo": {
+   "identity.school": "Shosuro Shadowweaver School",
+   "_why": "Foundry records 'Shoshuro Shadoweaver School'; the compendium roll spells it 'Shosuro Shadowweaver School'"
+  },
+  "tonbo-asahi": {
+   "identity.school": "Dragonfly Grace of the Spirits School",
+   "_why": "Foundry records 'Dragonfly Grace of the Spirits'; the compendium roll has ' School'"
+  }
+ },
+ "portraits": {
+  "_comment": "portrait path per slug, relative to the repo root",
+  "aarav": "src/portraits/aarav.png",
+  "hiruma-kaede": "src/portraits/hiruma-kaede.png",
+  "ikoma-no-hosokawa-ota": "src/portraits/ikoma-no-hosokawa-ota.png",
+  "isawa-yukiko": "src/portraits/isawa-yukiko.png",
+  "nasu-kogo": "src/portraits/nasu-kogo.png",
+  "tsume-kunimichi": "src/portraits/tsume-kunimichi.png",
+  "togashi-norikage": "src/portraits/togashi-norikage.webp",
+  "doji-setsuna": "src/portraits/doji-setsuna.webp",
+  "shinjo-anzu": "src/portraits/shinjo-anzu.webp",
+  "asahina-jujiro": "src/portraits/asahina-jujiro.webp",
+  "shinjo-harunobu": "src/portraits/shinjo-harunobu.webp"
+ },
+ "derive_tiers": [
+  "doji-setsuna"
+ ],
+ "_derive_tiers_comment": "characters Foundry holds at one point only; scripts/derive_tiers.py rebuilds their earlier XP tiers"
+}

@@ -21,6 +21,14 @@ CATALOG = os.path.join(ROOT, "pipeline", "foundry", "catalog", "index.json")
 OUT = os.path.join(ROOT, "src", "characters")
 
 RINGS = ["air", "earth", "fire", "water", "void"]
+# School Curriculum entries are titled "<School> [Clan]"; when that whole string
+# is pasted into an actor's school field the suffix has to come back off.
+SCHOOL_CLAN_RE = re.compile(r"^(?P<name>.*?)\s*\[[^\]]+\]\s*$")
+
+
+def clean_school(name):
+    m = SCHOOL_CLAN_RE.match(name or "")
+    return m.group("name") if m else name
 # XP tier label, e.g. "Hiruma Kaede 107 XP (Gunsō, Rank 4)"
 TIER_RE = re.compile(r"^(?P<name>.*?)\s+(?P<xp>\d+)\s*XP\s*(?:\((?P<note>.*)\))?\s*$", re.I)
 
@@ -53,6 +61,11 @@ def ref(item, idx):
     sysd = item.get("system", {})
     canon = idx.get(t, {}).get(norm(item["name"]))
     out = {"name": canon or item["name"]}
+    # Purchase record: character-specific, not catalog data, so it lives here.
+    # scripts/derive_tiers.py needs it to tell starting kit from bought content.
+    for k in ("xp_used", "xp_cost", "in_curriculum", "bought_at_rank"):
+        if sysd.get(k) not in (None, ""):
+            out[k] = sysd[k]
     if t == "peculiarity":
         out["kind"] = sysd.get("peculiarity_type")
         out["ring"] = sysd.get("ring")
@@ -72,6 +85,46 @@ def ref(item, idx):
                   "rarity", "zeni", "properties", "xp_cost"):
             if k in sysd:
                 out[k] = sysd[k]
+    return out
+
+
+# 20Q steps store their mechanical picks as arrays of the actor's own embedded
+# item ids. Resolve them to names here, where the actor is still in hand.
+PICK_FIELDS = ("distinction", "adversity", "passion", "anxiety", "advantage",
+               "disadvantage", "item", "bond", "techniques", "school_ability",
+               "equipment", "special_features", "heritage_item")
+
+
+def catalog_by_id():
+    cat = json.load(open(CATALOG))
+    out = {}
+    for pack, v in cat.items():
+        for e in v["entries"]:
+            out[e["id"]] = e["name"]
+    return out
+
+
+def resolve_twenty_questions(actor, cat_ids):
+    # Picks are compendium ids for anything from a pack, and the actor's own
+    # embedded item ids for bespoke content, so try both.
+    by_id = {i["_id"]: i["name"] for i in actor.get("items", [])}
+    tq = actor["system"].get("twenty_questions") or {}
+    out = {"template": tq.get("template"), "generated": bool(tq.get("generated")),
+           "steps": {}}
+    for key, val in tq.items():
+        if not key.startswith("step") or not isinstance(val, dict):
+            continue
+        answers, picks = {}, {}
+        for field, v in val.items():
+            if field in PICK_FIELDS and isinstance(v, list):
+                names = [cat_ids.get(i) or by_id.get(i) for i in v]
+                names = [n for n in names if n]
+                if names:
+                    picks[field] = names
+            elif isinstance(v, (str, int, float)) and v not in ("", "none", None):
+                answers[field] = v
+        if answers or picks:
+            out["steps"][key] = {"answers": answers, "picks": picks}
     return out
 
 
@@ -97,7 +150,7 @@ def tier_from_actor(actor, idx):
         "xp": int(m.group("xp")) if m else s.get("xp_total", 0),
         "label": note or None,
         "rank": s["identity"].get("school_rank"),
-        "school": s["identity"].get("school"),
+        "school": clean_school(s["identity"].get("school")),
         "foundry_id": actor["_id"],
         "foundry_name": actor["name"],
         "rings": {r: s["rings"].get(r, 1) for r in RINGS},
@@ -120,7 +173,13 @@ def tier_from_actor(actor, idx):
 def main():
     force = "--force" in sys.argv
     idx = load_catalog()
+    cat_ids = catalog_by_id()
     index = json.load(open(os.path.join(ROOT, "pipeline", "foundry", "index.json")))
+    campaigns = {k: v for k, v in index.get("campaigns", {}).items()
+                 if not k.startswith("_")}
+    sources = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+    corrections = sources.get("corrections", {})
+    portraits = sources.get("portraits", {})
     by_char = collections.defaultdict(list)
     for entry in index["actors"]:
         by_char[entry["character"]].append(entry)
@@ -137,26 +196,43 @@ def main():
         m = re.match(r"^(?P<n>.*?)\s*\((?P<s>.*)\)\s*$", char)
         display = (m.group("n") if m else char).strip()
         slug = slugify(display)
+        # campaign comes from the actor's own tag, then the by-slug overrides
+        campaign = campaigns.get(slug) or entries[0].get("campaign")
         doc = {
             "slug": slug,
             "name": display,
             "folder_label": char,
-            "bucket": entries[0]["bucket"],
+            "campaign": campaign,
+            "bucket": entries[0].get("bucket"),
             "accent": entries[0].get("color"),
             "identity": {
                 "clan": base["identity"].get("clan"),
                 "family": base["identity"].get("family"),
-                "school": base["identity"].get("school"),
+                "school": clean_school(base["identity"].get("school")),
                 "role": base["identity"].get("roles"),
                 "age": base["identity"].get("age"),
             },
-            "portrait": None,
+            "portrait": portraits.get(slug),
             "concept": None,
             "summary": None,
             "notes": base.get("notes") or "",
-            "twenty_questions": base.get("twenty_questions", {}),
+            "twenty_questions": resolve_twenty_questions(actors[0], cat_ids),
             "tiers": tiers,
         }
+        # manifest corrections: the Foundry record is wrong and stays wrong,
+        # so the fix has to survive every re-extract
+        for field, value in (corrections.get(slug) or {}).items():
+            if field.startswith("_"):
+                continue
+            section, _, key = field.partition(".")
+            if key and section in doc:
+                was = doc[section].get(key)
+                doc[section][key] = value
+                for t in doc["tiers"]:
+                    if t.get(key) == was:
+                        t[key] = value
+                print(f"   correction {slug}: {field} {was!r} -> {value!r}")
+
         dest = os.path.join(OUT, f"{slug}.json")
         if os.path.exists(dest) and not force:
             skipped += 1

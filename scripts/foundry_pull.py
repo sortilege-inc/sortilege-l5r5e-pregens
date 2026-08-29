@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
-"""Pull the `General` actor tree from the L5R Foundry world via the REST relay.
+"""Pull actors from the L5R Foundry world via the REST relay.
 
-Enumerates world Actors, resolves each one's full folder chain, keeps everything
-under the `General` root folder, and writes raw JSON to data/foundry/actors/.
-Also writes data/foundry/index.json describing the tree:
+What to pull is declared in src/foundry_sources.json:
 
-    General / <bucket> / <Character (School)> / <actor snapshot>
+  * `roots`  — folder trees pulled whole, shaped
+               `<root> / <bucket> / <Character (School)> / <actor snapshot>`
+  * `actors` — individual actors elsewhere in the world, each assigned to a
+               named character (several actors may share one character, and
+               become that character's XP tiers)
+
+Raw JSON lands in pipeline/foundry/actors/, with pipeline/foundry/index.json
+describing what was fetched and how it is grouped.
 
 Idempotent: re-fetches only missing files unless --force.
 
@@ -17,7 +22,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://foundryrestapi.com"
 OUT = os.path.join(ROOT, "pipeline", "foundry")
 ACTOR_DIR = os.path.join(OUT, "actors")
-ROOT_FOLDER = "General"
+SOURCES = os.path.join(ROOT, "src", "foundry_sources.json")
 
 
 def load_env():
@@ -87,56 +92,92 @@ def chain(fid):
     return list(reversed(out))
 
 
+def fetch(entry, force):
+    """Fetch one actor to disk; returns its index record."""
+    eid = entry["id"]
+    fname = f"{slug(entry['name'])}__{eid}.json"
+    fpath = os.path.join(ACTOR_DIR, fname)
+    entry["file"] = os.path.join("actors", fname)
+    if os.path.exists(fpath) and not force:
+        return entry, True
+    try:
+        doc = api("/get", {"uuid": entry["uuid"]})
+        with open(fpath, "w") as f:
+            json.dump(doc.get("data", doc), f, indent=1, ensure_ascii=False)
+        return entry, True
+    except Exception as e:
+        print(f"   FAIL {entry['uuid']}: {e}", flush=True)
+        return entry, False
+
+
 def main():
     force = "--force" in sys.argv
     os.makedirs(ACTOR_DIR, exist_ok=True)
-    results = [r for r in api("/search", {"filter": "documentType:Actor",
-                                          "excludeCompendiums": "true",
-                                          "limit": 500}).get("results", [])
-               if not r.get("package")]
-    keep = []
-    for r in results:
-        if not r.get("folder"):
-            continue
-        ch = chain(r["folder"])
-        if ch and ch[0]["name"] == ROOT_FOLDER:
-            r["_chain"] = ch
-            keep.append(r)
-    print(f"== {ROOT_FOLDER}: {len(keep)} actor snapshots under {len(results)} world actors",
-          flush=True)
+    sources = json.load(open(SOURCES))
+
+    world = [r for r in api("/search", {"filter": "documentType:Actor",
+                                        "excludeCompendiums": "true",
+                                        "limit": 500}).get("results", [])
+             if not r.get("package")]
+    by_uuid = {r["uuid"]: r for r in world}
 
     index, ok, fail = [], 0, 0
-    for i, r in enumerate(keep, 1):
-        eid = r.get("id") or r["uuid"].split(".")[-1]
-        fname = f"{slug(r.get('name'))}__{eid}.json"
-        fpath = os.path.join(ACTOR_DIR, fname)
-        path = [f["name"] for f in r["_chain"]]
-        index.append({
-            "uuid": r["uuid"], "id": eid, "name": r.get("name"),
-            "subType": r.get("subType"), "path": path,
-            "bucket": path[1] if len(path) > 1 else None,
-            "character": path[2] if len(path) > 2 else None,
-            "color": r["_chain"][-1].get("color"),
-            "sort": r.get("sort", 0),
-            "file": os.path.join("actors", fname),
-        })
-        if os.path.exists(fpath) and not force:
-            ok += 1
-            continue
-        try:
-            doc = api("/get", {"uuid": r["uuid"]})
-            with open(fpath, "w") as f:
-                json.dump(doc.get("data", doc), f, indent=1, ensure_ascii=False)
-            ok += 1
-            print(f"   {i}/{len(keep)} {r.get('name')}", flush=True)
-        except Exception as e:
+
+    # --- folder roots ------------------------------------------------------
+    for root in sources.get("roots", []):
+        name = root["folder"]
+        found = []
+        for r in world:
+            if not r.get("folder"):
+                continue
+            ch = chain(r["folder"])
+            if ch and ch[0]["name"] == name:
+                found.append((r, ch))
+        print(f"== root {name}: {len(found)} actor snapshots", flush=True)
+        for r, ch in found:
+            path = [f["name"] for f in ch]
+            entry, good = fetch({
+                "uuid": r["uuid"], "id": r.get("id") or r["uuid"].split(".")[-1],
+                "name": r.get("name"), "subType": r.get("subType"),
+                "path": path, "root": name,
+                "bucket": path[1] if len(path) > 1 else None,
+                "character": path[2] if len(path) > 2 else r.get("name"),
+                "campaign": root.get("campaign"),
+                "color": ch[-1].get("color"), "sort": r.get("sort", 0),
+            }, force)
+            index.append(entry)
+            ok, fail = (ok + 1, fail) if good else (ok, fail + 1)
+
+    # --- individually listed actors ---------------------------------------
+    listed = sources.get("actors", [])
+    if listed:
+        print(f"== listed actors: {len(listed)}", flush=True)
+    for spec in listed:
+        r = by_uuid.get(spec["uuid"])
+        if not r:
+            print(f"   MISSING from world: {spec['uuid']} ({spec.get('character')})",
+                  flush=True)
             fail += 1
-            print(f"   FAIL {r['uuid']}: {e}", flush=True)
+            continue
+        path = [f["name"] for f in chain(r["folder"])] if r.get("folder") else []
+        entry, good = fetch({
+            "uuid": r["uuid"], "id": r.get("id") or r["uuid"].split(".")[-1],
+            "name": r.get("name"), "subType": r.get("subType"),
+            "path": path, "root": path[0] if path else None,
+            "bucket": None, "character": spec["character"],
+            "campaign": spec.get("campaign"),
+            "color": None, "sort": r.get("sort", 0),
+        }, force)
+        index.append(entry)
+        ok, fail = (ok + 1, fail) if good else (ok, fail + 1)
+        print(f"   {r.get('name')}  ->  {spec['character']}", flush=True)
 
     with open(os.path.join(OUT, "index.json"), "w") as f:
-        json.dump({"root": ROOT_FOLDER, "client": CLIENT, "actors": index}, f,
+        json.dump({"client": CLIENT, "actors": index,
+                   "campaigns": sources.get("campaigns", {})}, f,
                   indent=1, ensure_ascii=False)
-    print(f"DONE_MARKER ok={ok} fail={fail}", flush=True)
+    print(f"DONE_MARKER ok={ok} fail={fail} characters="
+          f"{len({e['character'] for e in index})}", flush=True)
 
 
 load_env()

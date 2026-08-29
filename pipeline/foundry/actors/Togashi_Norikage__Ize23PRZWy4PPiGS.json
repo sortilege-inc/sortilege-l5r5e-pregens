@@ -1,0 +1,938 @@
+{
+ "name": "Togashi Norikage",
+ "type": "character",
+ "img": "sortilege/temp/togashi_norikage.png",
+ "prototypeToken": {
+  "actorLink": true,
+  "disposition": 1,
+  "bar1": {
+   "attribute": "fatigue"
+  },
+  "bar2": {
+   "attribute": "strife"
+  },
+  "name": "Togashi Norikage",
+  "displayName": 0,
+  "width": 1,
+  "height": 1,
+  "texture": {
+   "src": "sortilege/temp/togashi_norikage.png",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "lockRotation": false,
+  "rotation": 0,
+  "alpha": 1,
+  "displayBars": 0,
+  "light": {
+   "negative": false,
+   "priority": 0,
+   "alpha": 0.5,
+   "angle": 360,
+   "bright": 0,
+   "color": null,
+   "coloration": 1,
+   "dim": 0,
+   "attenuation": 0.5,
+   "luminosity": 0.5,
+   "saturation": 0,
+   "contrast": 0,
+   "shadows": 0,
+   "animation": {
+    "type": null,
+    "speed": 5,
+    "intensity": 5,
+    "reverse": false
+   },
+   "darkness": {
+    "min": 0,
+    "max": 1
+   }
+  },
+  "sight": {
+   "enabled": false,
+   "range": 0,
+   "angle": 360,
+   "visionMode": "basic",
+   "color": null,
+   "attenuation": 0.1,
+   "brightness": 0,
+   "saturation": 0,
+   "contrast": 0
+  },
+  "detectionModes": {},
+  "occludable": {
+   "radius": 0
+  },
+  "ring": {
+   "enabled": false,
+   "colors": {
+    "ring": null,
+    "background": null
+   },
+   "effects": 1,
+   "subject": {
+    "scale": 1,
+    "texture": null
+   }
+  },
+  "turnMarker": {
+   "mode": 1,
+   "animation": null,
+   "src": null,
+   "disposition": false
+  },
+  "movementAction": null,
+  "flags": {},
+  "randomImg": false,
+  "appendNumber": false,
+  "prependAdjective": false,
+  "depth": 1
+ },
+ "_id": "Ize23PRZWy4PPiGS",
+ "system": {
+  "soft_locked": false,
+  "identity": {
+   "age": "",
+   "clan": "Dragon",
+   "family": "Togashi",
+   "female": null,
+   "marital_status": "",
+   "roles": "Monk",
+   "school": "Togashi Tattooed Order",
+   "school_rank": 1,
+   "school_curriculum_journal": {}
+  },
+  "rings": {
+   "earth": 3,
+   "air": 1,
+   "water": 1,
+   "fire": 2,
+   "void": 3
+  },
+  "notes": "",
+  "description": "",
+  "social": {
+   "honor": 55,
+   "glory": 50,
+   "status": 30,
+   "ninjo": "Wants to study theology with the Phoenix. They seem to understand what's going on with elemental unbalance.",
+   "giri": "Togashi Oharu, provincial daimyo. Lives in the regional capital. At the moment, he is eyes and ears.",
+   "bushido_tenets": {
+    "paramount": "Sincerity",
+    "less_significant": "Duty"
+   }
+  },
+  "skills": {
+   "artisan": {
+    "aesthetics": 0,
+    "composition": 0,
+    "design": 0,
+    "smithing": 0
+   },
+   "martial": {
+    "fitness": 3,
+    "melee": 0,
+    "ranged": 0,
+    "unarmed": 1,
+    "meditation": 2,
+    "tactics": 0
+   },
+   "scholar": {
+    "culture": 0,
+    "government": 0,
+    "medicine": 0,
+    "sentiment": 0,
+    "theology": 2
+   },
+   "social": {
+    "command": 0,
+    "courtesy": 1,
+    "games": 0,
+    "performance": 0
+   },
+   "trade": {
+    "commerce": 0,
+    "labor": 0,
+    "seafaring": 0,
+    "skulduggery": 0,
+    "survival": 0
+   }
+  },
+  "techniques": {
+   "kata": false,
+   "kiho": true,
+   "inversion": false,
+   "invocation": false,
+   "ritual": true,
+   "shuji": true,
+   "maho": false,
+   "ninjutsu": false,
+   "mantra": false,
+   "specificity": true
+  },
+  "endurance": 10,
+  "composure": 8,
+  "focus": 3,
+  "vigilance": 1,
+  "void_points": {
+   "max": 3,
+   "value": 3
+  },
+  "fatigue": {
+   "max": 10,
+   "value": 0
+  },
+  "strife": {
+   "max": 8,
+   "value": 0
+  },
+  "stance": "void",
+  "prepared": true,
+  "xp_total": 0,
+  "xp_spent": 0,
+  "xp_saved": 0,
+  "template": "core",
+  "twenty_questions": {
+   "template": "core",
+   "generated": true,
+   "step1": {
+    "clan": "Dragon",
+    "ring": "fire",
+    "skill": "meditation",
+    "social_status": 30
+   },
+   "step2": {
+    "family": "Togashi",
+    "ring": "void",
+    "skill1": "fitness",
+    "skill2": "theology",
+    "wealth": 3,
+    "social_glory": 45
+   },
+   "step3": {
+    "school": "Togashi Tattooed Order",
+    "roles": "Monk",
+    "ring1": "earth",
+    "ring2": "void",
+    "skill1": "unarmed",
+    "skill2": "meditation",
+    "skill3": "theology",
+    "skill4": "fitness",
+    "skill5": "none",
+    "allowed_techniques": {
+     "kata": false,
+     "kiho": true,
+     "inversion": false,
+     "invocation": false,
+     "ritual": true,
+     "shuji": true,
+     "maho": false,
+     "ninjutsu": false,
+     "mantra": false,
+     "specificity": true
+    },
+    "techniques": [
+     "awtmdFZCRWwIic6V",
+     "qFpqm3GpkCEAu6z2"
+    ],
+    "school_ability": [
+     "B5Njc59tSrqUHrj0"
+    ],
+    "equipment": [
+     "vYOT19tl8uiIDt14",
+     "0ZcXEpZP8WC9KVUv",
+     "Rex7fGo6R1KuUhQJ"
+    ],
+    "social_honor": 40
+   },
+   "step4": {
+    "stand_out": "Calm",
+    "ring": "earth"
+   },
+   "step5": {
+    "social_giri": "Togashi Oharu, provincial daimyo. Lives in the regional capital. At the moment, he is eyes and ears."
+   },
+   "step6": {
+    "social_ninjo": "Wants to study theology with the Phoenix. They seem to understand what's going on with elemental unbalance."
+   },
+   "step7": {
+    "clan_relations": "Prioritizes sincerity over duty/loyalty.",
+    "skill": "none",
+    "social_add_glory": 5
+   },
+   "step8": {
+    "bushido": "Bushido has been largely unquestioned.",
+    "skill": "none",
+    "social_add_honor": 10,
+    "tenet_paramount": "Sincerity",
+    "tenet_less_significant": "Duty",
+    "item": []
+   },
+   "step9": {
+    "success": "Debated a theologian to a draw shortly after gempuku.",
+    "distinction": [
+     "US7uSaPQHxj4wCKy"
+    ]
+   },
+   "step10": {
+    "difficulty": "Being local. New ideas, even ones that intrigue, are hard to hold in the mind. Inadvertent traditionalist.",
+    "adversity": [
+     "aYvvitux1aP5qcfh"
+    ]
+   },
+   "step11": {
+    "calms": "",
+    "passion": [
+     "Q5OE5qzPYY5KsAwk"
+    ]
+   },
+   "step12": {
+    "worries": "Being slow to adjust to changing circumstances.",
+    "anxiety": [
+     "SUMU4sHoppE2zn9G"
+    ]
+   },
+   "step13": {
+    "most_learn": "Brother Kenzan (Yogo Kenzan).",
+    "skill": "none",
+    "advantage": [
+     "BWppXOZKuJuXycKO"
+    ],
+    "disadvantage": []
+   },
+   "step14": {
+    "first_sight": "",
+    "special_features": [
+     "eQxN4DnyImKINy8o"
+    ]
+   },
+   "step15": {
+    "stress": "Slooooooow down."
+   },
+   "step16": {
+    "relations": "Gift from Togashi Yokuni",
+    "item": [
+     "0HqWvhkyKSD8yYJB"
+    ]
+   },
+   "step17": {
+    "parents_pov": "Studious. Tangential; the thought process between A & B is opaque.",
+    "skill": "courtesy",
+    "bond": []
+   },
+   "step18": {
+    "heritage_name": "(Norikage) Brutal martial victory through fitness.",
+    "heritage_1": 6,
+    "heritage_2": 1,
+    "heritage_item": [],
+    "heritage_add_honor": 5,
+    "heritage_add_glory": 0,
+    "heritage_add_status": 0,
+    "skill": "fitness"
+   },
+   "step19": {
+    "firstname": "Norikage"
+   },
+   "step20": {
+    "death": "Fear that it will happen in secret; hear or see something you should not, and that will be the cause of it."
+   },
+   "autoCompleteListName": "step3.school",
+   "autoCompleteListSelectedIndex": "12"
+  },
+  "zeni": 150,
+  "is_afflicted_or_compromised": false
+ },
+ "items": [
+  {
+   "name": "Lord Togashi’s Insight (Dragon)",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.awtmdFZCRWwIic6V",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 223
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The enigmatic Kami Togashi was said to have the ability to see the future, by which provenance he excused himself from the Tournament of the Kami. Occasionally he appears to his descendants, the members of the Dragon Clan, in flashes of visions or sudden, unexplained bursts of insight. Whether those who hear the voice of Togashi himself are truly in contact with their progenitor, channeling his essence across the ages, or are letting their imaginations run a bit too wild is a topic of discussion among the Dragon’s scholars.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">Once per game session as an action, you may make a </span><span class=\"fontstyle2\">TN 2 Meditation (void) check </span><span class=\"fontstyle3\">to seek cosmic wisdom regarding a quandary in front of you.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you receive a brief vision or hear the voice of Togashi providing a hint regarding one way you might proceed (which the GM should furnish). This hint should not be the full answer, but it should help you move forward toward a solution or at least formulate a plan of action.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(void)(op): </span><span class=\"fontstyle3\">Reduce the TN of your first check to overcome the problem you are facing by your school rank (to a minimum of 1).</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "meditation",
+    "difficulty": "2",
+    "technique_type": "shuji"
+   },
+   "folder": "3O7WHeIBeu3QmtYw",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "UqIsJdOyxKVgcUHA",
+   "sort": 101563
+  },
+  {
+   "name": "Earth Needs No Eyes",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kiho.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kiho-l5r-sortilege.Item.qFpqm3GpkCEAu6z2",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 182
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The monk who waits and listens sees much, even without eyes. Sending out waves of their own energy and letting the ki of the life around them flow back into their body through the ground, the monk feels the reverberations of everything moving nearby, from the thunderous breaths of a warrior in battle to the footsteps of the tiniest ants.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may activate this kihō. When you do so, you may make a </span><span class=\"fontstyle2\">TN 1 Meditation (earth) check </span><span class=\"fontstyle3\">to gain an awareness of your surroundings.</span></p><p><span class=\"fontstyle2\"><strong>Enhancement Effect:</strong> </span><span class=\"fontstyle3\">If you succeed, this kihō activates. While this kihō is active, you can use vibrations through the earth to “see” a number of range bands in all directions equal to your Earth Ring. While this kihō is active, increase your vigilance by your Earth Ring.</span></p><p><span class=\"fontstyle2\"><strong>Burst Effect:</strong> </span><span class=\"fontstyle3\">If you succeed with three or more bonus successes, you instantly become aware of all living creatures and objects touching the ground within a number of range bands equal to your Earth Ring plus your bonus successes.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "earth",
+    "skill": "meditation",
+    "difficulty": "1",
+    "technique_type": "kiho"
+   },
+   "folder": "oiyt4mxXCjcQfVkN",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "yaY33wp9v4hQwHqR",
+   "sort": 200000
+  },
+  {
+   "name": "Blood of the Kami",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.school-abilities-l5r-sortilege.Item.B5Njc59tSrqUHrj0",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 69
+    },
+    "description": "<p><span class=\"fontstyle0\">You have one mystical tattoo that empowers your kihō, and gain more as your school rank increases. When you make a check to activate a kihō linked to one of your mystical tattoos, if you succeed, add additional bonus successes equal to your school rank.</span></p><p><span class=\"fontstyle0\">Select a natural motif for your first tattoo and choose one kihō for which you meet the prerequisites that are linked to the tattoo. If you have not learned it, you learn that kihō (without paying its XP cost). You cannot choose the same kihō multiple times this way. </span></p><p><span class=\"fontstyle0\">Each time your school rank increases, you gain one additional tattoo this way</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "school_ability"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "R3AHh9HGkmPcsoQX",
+   "sort": 0
+  },
+  {
+   "name": "Common Clothes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.vYOT19tl8uiIDt14",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p>Rokugani clothing runs the gamut from the simple trousers and smocks worn by peasants, to the broad-shouldered haori worn by traditionalist samurai, to the noble’s embroidered silk kimono.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "1",
+    "zeni": "1 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ],
+    "armor": {
+     "physical": 1,
+     "supernatural": 0
+    }
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "ZOxP97yPPe1vTuX4",
+   "sort": 0
+  },
+  {
+   "name": "Bō",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/bo.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.0ZcXEpZP8WC9KVUv",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 235
+    },
+    "description": "<p><span class=\"fontstyle0\">The bō, a humble staff, is a versatile weapon found throughout Rokugan. Roughly six feet long and made from sturdy hardwood, it is carried by travelers who need both a walking stick and an inconspicuous weapon.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "2",
+    "zeni": "2 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ],
+    "category": "Polearms",
+    "skill": "melee",
+    "readied": false,
+    "range": "1-2",
+    "damage": 6,
+    "deadliness": 2,
+    "grip_1": "N/A",
+    "grip_2": ""
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "yN4oGhu3eA65Bhce",
+   "sort": 0
+  },
+  {
+   "name": "Traveling pack",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.Rex7fGo6R1KuUhQJ",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 245
+    },
+    "description": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "1",
+    "zeni": "10 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ]
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "3DmZh2n0KczIKn3y",
+   "sort": 5800000
+  },
+  {
+   "name": "Portentous Birth",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.distinctions-l5r-sortilege.Item.US7uSaPQHxj4wCKy",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "celestial_realms",
+     "page": 89
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The childbirth assistant carried the silent bundle to the priest outside of the birthing chamber. The child’s grandmother followed with a stony look on her face.</em></span></p><p><span class=\"fontstyle2\"><em>Why isn’t the child crying? </em></span><span class=\"fontstyle0\"><em>the priest thought.</em></span></p><p><span class=\"fontstyle0\"><em>“Show him,” the grandmother said.</em></span></p><p><span class=\"fontstyle0\"><em>The assistant carefully unwrapped the bundle. The unnerving infant stared about, clear-eyed, as the grandmother pointed out the seven moles in a perfect circle on their ear.</em></span></p><p><span class=\"fontstyle0\"><em>“The child will reverse the family’s bad fortune!” the priest exclaimed. The grandmother let out a breath and smiled for the first time in years.</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Portentous Birth distinction:</span></p><ul><li><p><span class=\"fontstyle2\">- You are known among your clan or family group to have been born under blessed circumstances or have had some sort of mark or other indication of greatness bestowed upon you by the Heavens. When you interact with someone who knows of your portentous birth and believes in its power, they treat you favorably and may be inclined to give you special privileges as long as you do not give them a reason to treat you otherwise.</span></p></li><li><p><span class=\"fontstyle2\">- When performing a check for which your fortuitous birth is an asset (such as a Composition (fire) check to craft a clever request to someone who believes in the legacy of your birth or a Theology (fire) check to theorize about an omen), you may reroll up to two dice.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "fire",
+    "peculiarity_type": "distinction",
+    "types": "Interpersonal, Spiritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "G7fioXZhtfNCyCXP",
+   "sort": 0
+  },
+  {
+   "name": "Elemental Deficiency (Fire)",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.adversities-l5r-sortilege.Item.aYvvitux1aP5qcfh",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "celestial_realms",
+     "page": 94
+    },
+    "description": "<p><em>Moto Chizue sat in her tent, staring at her attendant, Tadao. He had stayed by her side for decades, in pal\u0002aces and on the field. Never had she met a person so dedicated, humble, and loyal. He deserved a title, wealth, and respect.</em></p><p><em>“I cannot give you that promotion,” Chizue said.</em></p><p><em>“You belong with me, not in a faraway command.”</em></p><p><em>Tadao bowed, pressing his head to the mat. “I understand, Moto-sama.” He didn’t know how to express his relief. Never had his mind been so clear than when executing his lady’s orders.</em></p><p></p><p>The following apply to a character with the Elemental Deficiency (Fire) adversity:</p><ul><li><p>- For one reason or another, you lack a fundamental connection with the element of Fire. You tend to have trouble in areas associated with the element, and you have a very poor relationship with fire kami.</p></li><li><p>When performing a check to align yourself with the element of Fire or interact  with fire kami (such as a Theology [Fire] check to invoke the kami or a Performance [Fire] check to expound upon complex theories), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "fire",
+    "peculiarity_type": "adversity",
+    "types": "Mental, Physical, Spiritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "3uw2ObBOQYD5ui05",
+   "sort": 0
+  },
+  {
+   "name": "Brushwork",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.passions-l5r-sortilege.Item.Q5OE5qzPYY5KsAwk",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 111
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>There are few arts more respected in Rokugan than those of the calligrapher and painter. The grace and precision of the brush, able to capture life or thought upon paper, is a discipline that few master. The greatest practitioners of the brush are revered for more than just the works they produce; they are admired for their mastery of self, the inward focus on achievement through great effort.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Brushwork passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You can identify the signature styles of numerous different schools and individual artists, as well as common motifs and techniques.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to study or practice brushwork (such as an Aesthetics (air) check to assess a painting’s qualities and artist or a Composition (air) check to add the finishing touches to a letter written in calligraphy), you remove 3 strife.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "peculiarity_type": "passion",
+    "types": "Mental, Physical"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "IrMJFbi99devX0SU",
+   "sort": 300000
+  },
+  {
+   "name": "Tip of the Tongue",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.anxieties-l5r-sortilege.Item.SUMU4sHoppE2zn9G",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "children_of_the_five_winds",
+     "page": 97
+    },
+    "description": "<p><em>Orghina sucked her teeth in frustration. She knew the Rokugani word. Except the Rokugani word refused to leap from her mind and down her tongue, and the Rokugani merchant smiling politely in front of her would not have any idea what the Ujik equivalent meant.</em></p><p><em>“Are you looking for dried fish?” the merchant said.</em></p><p><em>Orghina shook her head. “No, it’s not food.”</em></p><p><em>“A netsuke?”</em></p><p><em>“No, you don’t wear it!”</em></p><p><em>“Ah! Of course, I have a set of tantō you might like.”</em></p><p><em>“No! You don’t…nothing that stabs.”</em></p><p><em>The merchant then went on a litany of Rokugani nouns as Orghina sat down on a stool, head in her hands.</em></p><p><strong>Effects:</strong> The following apply to a character with the Tip of the Tongue anxiety:</p><ul><li><p>-  You know more than one language, perhaps several, and are fluent in all of them. So fluent that your mind mixes and matches words from all of them. While it does not hinder you socially, you find this frustrating when you cannot come up with that word you definitely know.</p></li><li><p>-  After performing a check to communicate that requires you to bridge cultural, religious, philosophical, or regional differences (such as a Courtesy (air) check to use veiled wordplay or metaphors to smooth out a dispute between the samurai and bonge or a Theology (air) check to explain an equivalent religious idea from another culture), you receive 3 strife. If this is the first time this has occurred this scene, you gain 1 Void point.</p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "peculiarity_type": "anxiety",
+    "types": "Mental"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "2EQe0WswkFbRKAT9",
+   "sort": 0
+  },
+  {
+   "name": "Affect of Harmlessness",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.distinctions-l5r-sortilege.Item.BWppXOZKuJuXycKO",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 99
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>“Well, I…you do understand my meaning? I am sorry. I can be such a fool with words sometimes,” Shika Kasumi sputtered, a deep blush on her cheeks.</em></span></p><p><span class=\"fontstyle0\"><em>“Calm yourself, Deer,” Akodo Nanako said with a smile. Nanako had spent the last few weeks dreading the Shika Matchmaker’s arrival. She had expected a severe old monk. Not this young woman, matching her age.</em></span></p><p><span class=\"fontstyle0\"><em>“I am sorry.”</em></span></p><p><span class=\"fontstyle0\"><em>“You’ve spent more time apologizing than delivering advice,” Nanako replied.</em></span></p><p><span class=\"fontstyle0\"><em>The two laughed, Nanako with a proud chuckle and Kasumi giggling behind her hand. No, Nanako found this matchmaker sweet and utterly harmless. She eagerly awaited the rest of Kasumi’s counsel.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Affect of Harmlessness distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- You appear earnest and perhaps a bit hapless, and your flaws generally come off as charming, at least at first glance. Additionally, people tend to underestimate you, and this works to your benefit.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check to ingratiate yourself with a stranger (such as a Courtesy (air) check to be pleasant to someone of higher social status or a Performance (air) check to conceal your true intentions toward a social equal), you may reroll up to two dice.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "peculiarity_type": "distinction",
+    "types": "Interpersonal"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "7RD9i3KcN0CsdFlx",
+   "sort": 0
+  },
+  {
+   "name": "Left Green Armband-sash",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "_id": "DVPDAM4CnzJLG4eK",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "0",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "flags": {},
+   "_stats": {
+    "compendiumSource": "Item.eQxN4DnyImKINy8o",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   }
+  },
+  {
+   "name": "Jade Tadpole",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "_id": "KsMFpWIyxZMqA2v7",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "0",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "flags": {},
+   "_stats": {
+    "compendiumSource": "Item.0HqWvhkyKSD8yYJB",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "createdTime": 1785976938231,
+    "modifiedTime": 1785976938231,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   }
+  }
+ ],
+ "effects": [],
+ "folder": "SwD4GwUecYyHDyMW",
+ "sort": 100000,
+ "ownership": {
+  "default": 0,
+  "7vKCnwOtrdD7lBip": 3
+ },
+ "flags": {},
+ "_stats": {
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null,
+  "coreVersion": "14.365",
+  "systemId": "l5r5e",
+  "systemVersion": "1.13.4",
+  "createdTime": 1785972734710,
+  "modifiedTime": 1787691699337,
+  "lastModifiedBy": "7vKCnwOtrdD7lBip"
+ }
+}

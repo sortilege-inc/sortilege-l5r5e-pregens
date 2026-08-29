@@ -1,0 +1,419 @@
+{
+ "slug": "togashi-rensho",
+ "name": "Togashi Renshō",
+ "folder_label": "Togashi Renshō",
+ "campaign": "Imperfect Land",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Dragon",
+  "family": "Togashi",
+  "school": "Togashi Tattooed Order",
+  "role": "Monk",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Dragon",
+     "ring": "fire",
+     "skill": "meditation",
+     "social_status": 30
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Togashi",
+     "ring": "earth",
+     "skill1": "fitness",
+     "skill2": "theology",
+     "wealth": 3,
+     "social_glory": 45
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Togashi Tattooed Order",
+     "roles": "Monk",
+     "ring1": "earth",
+     "ring2": "void",
+     "skill1": "unarmed",
+     "skill2": "survival",
+     "skill3": "meditation",
+     "skill4": "theology",
+     "social_honor": 40
+    },
+    "picks": {
+     "techniques": [
+      "Lord Togashi’s Insight (Dragon)",
+      "Earthen Fist"
+     ],
+     "school_ability": [
+      "Blood of the Kami"
+     ],
+     "equipment": [
+      "Common Clothes",
+      "Traveling pack",
+      "Bō"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "stand_out": "Fearlessness.",
+     "ring": "fire"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "To guide seekers along the path to enlightenment for the next ten years of wandering, without imposing my own understanding upon them."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "To find one moment of absolute certainty—to know beyond doubt that he has grasped true understanding, not just another comforting illusion."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Renshō honors the Dragon Clan's role as enigmatic observers of the Empire, but his wandering puts him at the periphery. He maintains respectful distance from clan politics, seeing his duty to universal truth as transcending clan loyalty—though he knows this detachment itself may be another illusion he's created to justify his path.",
+     "skill": "culture",
+     "social_add_glory": 0
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "bushido": "It is an imperfect approximation, but the best available to them, as a path towards enlightenment and order.",
+     "social_add_honor": 10,
+     "tenet_paramount": "Sincerity",
+     "tenet_less_significant": "Duty and Loyalty"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Renshō climbed the tallest peak near his monastery, and survived a rockfall with barely more than a scratch; a scratch that left a scar, that is."
+    },
+    "picks": {
+     "distinction": [
+      "Dashing Scar"
+     ]
+    }
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "While his sincerity is without question, his choice of words sometimes leaves a lot to be desired."
+    },
+    "picks": {
+     "adversity": [
+      "Sailor’s Tongue"
+     ]
+    }
+   },
+   "step11": {
+    "answers": {
+     "calms": "Pushing himself, climbing rock faces without rope, exhilirates him and makes him feel alive."
+    },
+    "picks": {
+     "passion": [
+      "Daredevil"
+     ]
+    }
+   },
+   "step12": {
+    "answers": {
+     "worries": "Even when politeness demands it, he struggles to let lies pass, often prolonging conversations as he seeks to guide others toward truthfulness—even when they have no interest in being guided."
+    },
+    "picks": {
+     "anxiety": [
+      "Painful Honesty"
+     ]
+    }
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Renshō studied briefly with Tonbo Asahi, a Dragonfly seer whose visions were famously ambiguous. Her quiet acceptance of uncertainty challenges his philosophy—that doubt is not weakness but wisdom."
+    },
+    "picks": {
+     "advantage": [
+      "Karmic Tie"
+     ]
+    }
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Hands are rugged from climbing, he is lean and strong, and a ragged scar mars the back of his head and running down his neck and back from the rockfall he survived. He wears a single zuni on a necklace, a gift from a child."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "He gets animated, asking probing and provocative questions, challenging other people's assumptions."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Mirumoto Kenshin: Former abbot of Renshō's monastery who sent him wandering three years ago. Believed Renshō was becoming too comfortable and needed to test his philosophy against the world.\n\nIuchi Temur: A Unicorn shugenja investigating the Dragon Clan's mysterious infertility. Renshō respects Temur's compassionate approach and careful observations, seeing in him a kindred spirit who values understanding over quick solutions."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "He was friendly, and constantly bringing strangers home for dinner.",
+     "skill": "sentiment"
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "His uncle saved the life of a daimyo's family traveling through the mountains. He was rewarded with a horse, which he gave to his nephew for his journey.",
+     "heritage_1": 1,
+     "heritage_2": 9,
+     "heritage_add_honor": 0,
+     "heritage_add_glory": 3,
+     "heritage_add_status": 0
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Renshō"
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "He hopes to die enlightened; realistically, he will likely die from a fall."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Togashi Tattooed Order",
+   "foundry_id": "WCy4gy20ScafOA8e",
+   "foundry_name": "Togashi Renshō",
+   "rings": {
+    "air": 1,
+    "earth": 3,
+    "fire": 3,
+    "water": 1,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 2,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 2
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 48,
+    "status": 30,
+    "ninjo": "To find one moment of absolute certainty—to know beyond doubt that he has grasped true understanding, not just another comforting illusion.",
+    "giri": "To guide seekers along the path to enlightenment for the next ten years of wandering, without imposing my own understanding upon them.",
+    "bushido_tenets": {
+     "paramount": "Sincerity",
+     "less_significant": "Duty and Loyalty"
+    }
+   },
+   "derived": {
+    "endurance": 12,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 1,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Lord Togashi’s Insight (Dragon)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Earthen Fist",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Blood of the Kami",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Dashing Scar",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "air",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Sailor’s Tongue",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "air",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Daredevil",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "fire",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Painful Honesty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "air",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Karmic Tie",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "void",
+     "types": "Interpersonal, Spiritual"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Bō",
+     "quantity": 1
+    },
+    {
+     "name": "Common Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "1 zuni on a necklace",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Bell",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "3",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Imperial-Stock Pony",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

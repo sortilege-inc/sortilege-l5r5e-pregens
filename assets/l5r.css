@@ -59,6 +59,8 @@
   --disp:  "Cormorant", "Cormorant Garamond", Baskerville, "Times New Roman", serif;
   --caps:  "Barlow Condensed", "Futura", "Trebuchet MS", Arial, sans-serif;
   --mono:  "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  /* the reused play sheet expects this name */
+  --body:  var(--serif);
 }
 
 *{ box-sizing:border-box; }
@@ -479,4 +481,49 @@ table.cur-table tr.cur-current td.cur-rank{ color:var(--crimson); }
 .cur-entry .cur-kind{
   font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em;
   font-size:0.6rem; color:var(--ink-dim); margin-left:0.5em;
+}
+
+/* ------------------------------------------------------------ tabs */
+.tabbar{
+  display:flex; gap:0; flex-wrap:wrap; margin:0 0 1.6rem;
+  border-bottom:1px solid var(--gold-soft);
+}
+.tabbar button{
+  appearance:none; background:none; border:0; cursor:pointer;
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.16em;
+  font-size:0.82rem; color:var(--ink-soft);
+  padding:0.6rem 1.2rem; border-bottom:2px solid transparent;
+  margin-bottom:-1px; transition:.16s;
+}
+.tabbar button:hover{ color:var(--sumi); }
+.tabbar button.active{ color:var(--crimson); border-bottom-color:var(--crimson); }
+
+/* ------------------------------------------------------------ twenty questions */
+.qa{ margin:0 0 1.4rem; }
+.qa-q{
+  font-family:var(--disp); font-weight:600; font-size:1.16rem; color:var(--sumi);
+  margin:0 0 0.5rem; line-height:1.3;
+}
+dl.qa-body{ margin:0; }
+.qa-row{
+  display:grid; grid-template-columns:minmax(140px,0.28fr) 1fr; gap:0.6rem 1.2rem;
+  padding:0.34rem 0; border-bottom:1px solid var(--edge-soft);
+}
+.qa-row dt{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.12em;
+  font-size:0.7rem; color:var(--ink-dim); padding-top:0.22rem;
+}
+.qa-row dd{ margin:0; color:var(--ink-2); }
+.qa-row dd .chip{ margin:0 0.3rem 0.2rem 0; }
+@media (max-width:620px){ .qa-row{ grid-template-columns:1fr; gap:0.1rem; } }
+
+/* ------------------------------------------------------------ play frame */
+#play-frame{
+  width:100%; height:min(1500px, 190vh); border:1px solid var(--edge);
+  border-radius:2px; background:var(--paper); box-shadow:var(--shadow-soft);
+}
+#play-note{ margin-bottom:0.8rem; }
+.pcard .camp{
+  font-family:var(--caps); font-size:0.68rem; letter-spacing:0.14em;
+  text-transform:uppercase; color:var(--crimson); display:block; margin-top:0.15rem;
 }

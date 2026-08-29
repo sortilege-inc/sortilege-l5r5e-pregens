@@ -1,0 +1,396 @@
+{
+ "slug": "togashi-norikage",
+ "name": "Togashi Norikage",
+ "folder_label": "Togashi Norikage",
+ "campaign": "Portents & Fortunes",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Dragon",
+  "family": "Togashi",
+  "school": "Togashi Tattooed Order",
+  "role": "Monk",
+  "age": ""
+ },
+ "portrait": "src/portraits/togashi-norikage.webp",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Dragon",
+     "ring": "fire",
+     "skill": "meditation",
+     "social_status": 30
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Togashi",
+     "ring": "void",
+     "skill1": "fitness",
+     "skill2": "theology",
+     "wealth": 3,
+     "social_glory": 45
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Togashi Tattooed Order",
+     "roles": "Monk",
+     "ring1": "earth",
+     "ring2": "void",
+     "skill1": "unarmed",
+     "skill2": "meditation",
+     "skill3": "theology",
+     "skill4": "fitness",
+     "social_honor": 40
+    },
+    "picks": {
+     "techniques": [
+      "Lord Togashi’s Insight (Dragon)",
+      "Earth Needs No Eyes"
+     ],
+     "school_ability": [
+      "Blood of the Kami"
+     ],
+     "equipment": [
+      "Common Clothes",
+      "Bō",
+      "Traveling pack"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "stand_out": "Calm",
+     "ring": "earth"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Togashi Oharu, provincial daimyo. Lives in the regional capital. At the moment, he is eyes and ears."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Wants to study theology with the Phoenix. They seem to understand what's going on with elemental unbalance."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Prioritizes sincerity over duty/loyalty.",
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "bushido": "Bushido has been largely unquestioned.",
+     "social_add_honor": 10,
+     "tenet_paramount": "Sincerity",
+     "tenet_less_significant": "Duty"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Debated a theologian to a draw shortly after gempuku."
+    },
+    "picks": {
+     "distinction": [
+      "Portentous Birth"
+     ]
+    }
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Being local. New ideas, even ones that intrigue, are hard to hold in the mind. Inadvertent traditionalist."
+    },
+    "picks": {
+     "adversity": [
+      "Elemental Deficiency (Fire)"
+     ]
+    }
+   },
+   "step11": {
+    "answers": {},
+    "picks": {
+     "passion": [
+      "Brushwork"
+     ]
+    }
+   },
+   "step12": {
+    "answers": {
+     "worries": "Being slow to adjust to changing circumstances."
+    },
+    "picks": {
+     "anxiety": [
+      "Tip of the Tongue"
+     ]
+    }
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Brother Kenzan (Yogo Kenzan)."
+    },
+    "picks": {
+     "advantage": [
+      "Affect of Harmlessness"
+     ]
+    }
+   },
+   "step15": {
+    "answers": {
+     "stress": "Slooooooow down."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Gift from Togashi Yokuni"
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Studious. Tangential; the thought process between A & B is opaque.",
+     "skill": "courtesy"
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "(Norikage) Brutal martial victory through fitness.",
+     "heritage_1": 6,
+     "heritage_2": 1,
+     "heritage_add_honor": 5,
+     "heritage_add_glory": 0,
+     "heritage_add_status": 0,
+     "skill": "fitness"
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Norikage"
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Fear that it will happen in secret; hear or see something you should not, and that will be the cause of it."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Togashi Tattooed Order",
+   "foundry_id": "Ize23PRZWy4PPiGS",
+   "foundry_name": "Togashi Norikage",
+   "rings": {
+    "air": 1,
+    "earth": 3,
+    "fire": 2,
+    "water": 1,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 3,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 2,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 2
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 55,
+    "glory": 50,
+    "status": 30,
+    "ninjo": "Wants to study theology with the Phoenix. They seem to understand what's going on with elemental unbalance.",
+    "giri": "Togashi Oharu, provincial daimyo. Lives in the regional capital. At the moment, he is eyes and ears.",
+    "bushido_tenets": {
+     "paramount": "Sincerity",
+     "less_significant": "Duty"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 3,
+    "vigilance": 1,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 150
+   },
+   "techniques": [
+    {
+     "name": "Lord Togashi’s Insight (Dragon)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Earth Needs No Eyes",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Blood of the Kami",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Portentous Birth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Interpersonal, Spiritual"
+    },
+    {
+     "name": "Elemental Deficiency (Fire)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "fire",
+     "types": "Mental, Physical, Spiritual"
+    },
+    {
+     "name": "Brushwork",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "air",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Tip of the Tongue",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "air",
+     "types": "Mental"
+    },
+    {
+     "name": "Affect of Harmlessness",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "air",
+     "types": "Interpersonal"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Bō",
+     "quantity": 1
+    },
+    {
+     "name": "Common Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Left Green Armband-sash",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Jade Tadpole",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

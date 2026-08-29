@@ -32,16 +32,32 @@
     <div class="tl-track" id="timeline"></div>
   </div>
 
-  <div id="changelog-target"></div>
-  <div id="stats-target"></div>
-  <div id="duty-target"></div>
-  <div id="skills-target"></div>
-  <div id="content-target"></div>
+  <div class="tabbar" id="tabbar">
+    <button type="button" data-tab="dossier" class="active">Dossier</button>
+    <button type="button" data-tab="questions">Twenty Questions</button>
+    <button type="button" data-tab="play">Play</button>
+  </div>
+
+  <section id="panel-dossier">
+    <div id="changelog-target"></div>
+    <div id="stats-target"></div>
+    <div id="duty-target"></div>
+    <div id="skills-target"></div>
+    <div id="content-target"></div>
+  </section>
+
+  <section id="panel-questions" hidden></section>
+
+  <section id="panel-play" hidden>
+    <p class="muted small" id="play-note"></p>
+    <iframe id="play-frame" title="Playable character sheet" loading="lazy"></iframe>
+  </section>
 </div>
 
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
 <script src="../data/characters/tsume-kunimichi.js"></script>
+<script src="../data/twenty_questions.js"></script>
 <script src="../assets/sheet.js"></script>
 </body>
 </html>
