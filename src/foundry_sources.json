@@ -121,6 +121,6 @@
  },
  "ai_proxy": {
   "_comment": "deployed URL of worker/ — the Anthropic shim the published Creator calls. Empty until deployed; the Creator then asks for a pasted key instead.",
-  "url": ""
+  "url": "https://sortilege-l5r-creator-ai.sortilege.workers.dev"
  }
 }
