@@ -432,6 +432,46 @@
    ],
    "advancements": [
     {
+     "label": "Culture +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "culture",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Master Artisan"
+    },
+    {
+     "label": "Medicine +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "medicine",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Master Artisan"
+    },
+    {
+     "label": "Meditation +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Master Artisan"
+    },
+    {
+     "label": "Meditation +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Master Artisan"
+    },
+    {
      "label": "Theology +1 (1 -> 2)",
      "type": "skill",
      "skill": "theology",
@@ -461,7 +501,6 @@
     {
      "label": "Water +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "water",
      "at_rank": 2,
      "xp": 6,

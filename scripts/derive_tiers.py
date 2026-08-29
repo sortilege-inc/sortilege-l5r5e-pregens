@@ -13,6 +13,8 @@ are still recoverable, because the actor records what was bought and what it cos
   * a purchased technique that does NOT appear on the school curriculum is title
     curriculum: it is placed with the title whose `xp_used_total` accounts for it.
   * titles get a tier of their own when fully paid (`xp_used == xp_cost`).
+  * a title's own `xp_used` is a ROLLUP of the curriculum items nested inside it,
+    not a separate price — counting both double-counts the title.
 
 Everything else — gear, social, twenty questions — is not XP-bought and is carried
 unchanged. Reconstructed tiers are marked `"reconstructed": true` in the source
@@ -103,36 +105,56 @@ def main():
     final = char["tiers"][0]
     curriculum = school_curriculum(final.get("school") or char["identity"]["school"])
 
-    # --- classify what was bought -----------------------------------------
-    adv_by_rank = {}
+    # --- classify what was bought ------------------------------------------
+    # Every purchase belongs either to a school rank or to a title's curriculum.
+    # Items nested inside a title carry `via`; everything else is school.
+    adv_by_rank, adv_by_title = {}, {}
     for a in final.get("advancements", []):
-        adv_by_rank.setdefault(a.get("at_rank") or 1, []).append(a)
-
-    tech_by_rank, off_curriculum = {}, []
-    for e in final.get("techniques", []):
-        if not purchased(e):
-            continue
-        r = curriculum.get(norm(e["name"]))
-        if r:
-            tech_by_rank.setdefault(r, []).append(e)
+        if a.get("via"):
+            adv_by_title.setdefault(a["via"], []).append(a)
         else:
-            off_curriculum.append(e)
+            adv_by_rank.setdefault(a.get("at_rank") or 1, []).append(a)
+
+    tech_by_rank, tech_by_title = {}, {}
+    for cat in ("techniques", "signature_scrolls"):
+        for e in final.get(cat, []):
+            if e.get("via"):
+                tech_by_title.setdefault(e["via"], []).append((cat, e))
+            elif purchased(e):
+                r = curriculum.get(norm(e["name"])) or e.get("bought_at_rank") or 1
+                tech_by_rank.setdefault(r, []).append((cat, e))
 
     titles_done = [t for t in final.get("titles", [])
                    if t.get("xp_used") and t.get("xp_used") == t.get("xp_cost")]
-    titles_open = [t for t in final.get("titles", [])
-                   if t not in titles_done]
+    titles_open = [t for t in final.get("titles", []) if t not in titles_done]
 
-    print(f"== {char['name']}  ({final['xp']} XP, rank {final.get('rank')})")
-    print(f"   advancements by rank : "
-          f"{ {k: len(v) for k, v in sorted(adv_by_rank.items())} }")
-    print(f"   curriculum techniques: "
-          f"{ {k: [e['name'] for e in v] for k, v in sorted(tech_by_rank.items())} }")
-    print(f"   off-curriculum techs : {[e['name'] for e in off_curriculum]}")
-    print(f"   titles completed     : {[t['name'] for t in titles_done]}")
-    print(f"   titles in progress   : {[t['name'] for t in titles_open]}")
+    def title_cost(name):
+        """What the title actually cost: the sum of its nested curriculum items."""
+        return (sum(a.get("xp") or 0 for a in adv_by_title.get(name, []))
+                + sum(e.get("xp_used") or 0 for _, e in tech_by_title.get(name, [])))
+
+    print(f"== {char['name']}  ({final['xp']} XP earned, rank {final.get('rank')})")
+    for r in sorted(set(adv_by_rank) | set(tech_by_rank)):
+        cost_r = (sum(a.get("xp") or 0 for a in adv_by_rank.get(r, []))
+                  + sum(e.get("xp_used") or 0 for _, e in tech_by_rank.get(r, [])))
+        print(f"   school rank {r}: {cost_r} XP")
+    for t in final.get("titles", []):
+        print(f"   title {t['name']}: {title_cost(t['name'])} XP"
+              f"  ({'complete' if t in titles_done else 'in progress'})")
 
     # --- build the tier chain ---------------------------------------------
+    def apply_adv(state, a):
+        m = ADV_RE.match(a["label"])
+        if m:
+            to = int(m.group("to"))
+            if a.get("type") == "ring" and a.get("ring"):
+                state["rings"][a["ring"]] = to
+            elif a.get("type") == "skill" and a.get("skill"):
+                for skills in state["skills"].values():
+                    if a["skill"] in skills:
+                        skills[a["skill"]] = to
+        state["advancements"] = state.get("advancements", []) + [a]
+
     tiers = [rewind(final)]
     state = copy.deepcopy(tiers[0])
     spent = 0
@@ -140,20 +162,11 @@ def main():
 
     for r in range(1, max_rank):
         for a in adv_by_rank.get(r, []):
-            m = ADV_RE.match(a["label"])
-            if m:
-                to = int(m.group("to"))
-                if a.get("type") == "ring" and a.get("ring"):
-                    state["rings"][a["ring"]] = to
-                elif a.get("type") == "skill" and a.get("skill"):
-                    for grp, skills in state["skills"].items():
-                        if a["skill"] in skills:
-                            skills[a["skill"]] = to
-            state["advancements"] = state.get("advancements", []) + [a]
+            apply_adv(state, a)
             spent += a.get("xp") or 0
-        for e in tech_by_rank.get(r, []):
-            state["techniques"] = state["techniques"] + [e]
-            spent += cost(e)
+        for cat, e in tech_by_rank.get(r, []):
+            state[cat] = state.get(cat, []) + [e]
+            spent += e.get("xp_used") or 0
         t = copy.deepcopy(state)
         t.update({"xp": spent, "rank": r + 1, "label": f"Rank {r + 1}",
                   "reconstructed": True, "foundry_id": None})
@@ -172,19 +185,30 @@ def main():
 
     for title in titles_done:
         state["titles"] = state.get("titles", []) + [title]
+        for a in adv_by_title.get(title["name"], []):
+            apply_adv(state, a)
+        for cat, e in tech_by_title.get(title["name"], []):
+            state[cat] = state.get(cat, []) + [e]
         granted = scroll_for(title["name"])
-        if granted:
+        if granted and granted not in state.get("signature_scrolls", []):
             state["signature_scrolls"] = state.get("signature_scrolls", []) + [granted]
-        spent += title.get("xp_used") or 0
+        spent += title_cost(title["name"])
         t = copy.deepcopy(state)
         t.update({"xp": spent, "rank": max_rank, "label": title["name"],
                   "reconstructed": True, "foundry_id": None})
         tiers.append(t)
         state = copy.deepcopy(t)
 
+    # everything still unaccounted for lands on the final, recorded tier
+    remaining = (sum(a.get("xp") or 0 for a in adv_by_rank.get(max_rank, []))
+                 + sum(e.get("xp_used") or 0 for _, e in tech_by_rank.get(max_rank, []))
+                 + sum(title_cost(t["name"]) for t in titles_open))
+    total_spent = spent + remaining
+
     # the recorded actor, exactly as pulled, always last
     if not final.get("label"):
         final["label"] = "Current"
+    final["xp_spent"] = total_spent
     tiers.append(final)
 
     # --- gate: the last tier must still be the Foundry record --------------
@@ -202,10 +226,11 @@ def main():
             len(t.get("techniques", [])), len(t.get("titles", [])),
             len(t.get("signature_scrolls", [])),
             "" if t.get("reconstructed") else "   <- Foundry record"))
-    if spent != final["xp"]:
-        print(f"\n   NOTE: recorded purchases total {spent} XP but the actor's "
-              f"xp_total is {final['xp']}. The final tier keeps the actor's own "
-              f"figure; derived tiers show cumulative recorded cost.")
+    banked = final["xp"] - total_spent
+    print(f"\n   {total_spent} XP spent of {final['xp']} earned"
+          + (f" — {banked} banked." if banked > 0 else
+             " — fully spent." if banked == 0 else
+             f" — OVERSPENT by {-banked}, check the record."))
 
     if args.write:
         char["tiers"] = tiers

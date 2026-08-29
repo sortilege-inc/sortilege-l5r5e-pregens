@@ -391,6 +391,26 @@
      "rank": 3
     },
     {
+     "name": "Righteous Example",
+     "via": "Renowned Warrior",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Heartpiercing Strike",
+     "via": "Renowned Warrior",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 3
+    },
+    {
      "name": "Behold the Legend",
      "xp_used": 3,
      "xp_cost": 3,
@@ -586,7 +606,6 @@
     {
      "label": "Void +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 9,
@@ -595,7 +614,6 @@
     {
      "label": "Fire +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "fire",
      "at_rank": 2,
      "xp": 9,
@@ -620,6 +638,36 @@
      "in_curriculum": true
     },
     {
+     "label": "Command +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Renowned Warrior"
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Renowned Warrior"
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Renowned Warrior"
+    },
+    {
      "label": "Command +1 (2 -> 3)",
      "type": "skill",
      "skill": "command",
@@ -631,7 +679,6 @@
     {
      "label": "Earth +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "earth",
      "at_rank": 3,
      "xp": 9,

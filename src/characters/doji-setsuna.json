@@ -179,7 +179,7 @@
    "foundry_name": "Doji Setsuna",
    "rings": {
     "air": 3,
-    "earth": 3,
+    "earth": 2,
     "fire": 1,
     "water": 3,
     "void": 1
@@ -192,10 +192,10 @@
      "smithing": 0
     },
     "martial": {
-     "fitness": 1,
+     "fitness": 0,
      "melee": 0,
      "ranged": 0,
-     "unarmed": 3,
+     "unarmed": 2,
      "meditation": 0,
      "tactics": 0
     },
@@ -210,10 +210,10 @@
      "command": 2,
      "courtesy": 2,
      "games": 0,
-     "performance": 1
+     "performance": 0
     },
     "trade": {
-     "commerce": 1,
+     "commerce": 0,
      "labor": 0,
      "seafaring": 0,
      "skulduggery": 0,
@@ -473,7 +473,7 @@
    "foundry_name": "Doji Setsuna",
    "rings": {
     "air": 3,
-    "earth": 3,
+    "earth": 2,
     "fire": 1,
     "water": 3,
     "void": 1
@@ -486,10 +486,10 @@
      "smithing": 0
     },
     "martial": {
-     "fitness": 1,
+     "fitness": 0,
      "melee": 0,
      "ranged": 0,
-     "unarmed": 3,
+     "unarmed": 2,
      "meditation": 0,
      "tactics": 0
     },
@@ -504,10 +504,10 @@
      "command": 2,
      "courtesy": 2,
      "games": 0,
-     "performance": 1
+     "performance": 0
     },
     "trade": {
-     "commerce": 1,
+     "commerce": 0,
      "labor": 0,
      "seafaring": 0,
      "skulduggery": 0,
@@ -805,7 +805,7 @@
    "reconstructed": true
   },
   {
-   "xp": 41,
+   "xp": 50,
    "label": "Rank 3",
    "rank": 3,
    "school": "Doji Bureaucrat School",
@@ -813,7 +813,7 @@
    "foundry_name": "Doji Setsuna",
    "rings": {
     "air": 3,
-    "earth": 3,
+    "earth": 2,
     "fire": 2,
     "water": 3,
     "void": 2
@@ -826,10 +826,10 @@
      "smithing": 0
     },
     "martial": {
-     "fitness": 1,
+     "fitness": 0,
      "melee": 0,
      "ranged": 0,
-     "unarmed": 3,
+     "unarmed": 2,
      "meditation": 0,
      "tactics": 0
     },
@@ -844,10 +844,10 @@
      "command": 2,
      "courtesy": 3,
      "games": 0,
-     "performance": 1
+     "performance": 0
     },
     "trade": {
-     "commerce": 1,
+     "commerce": 0,
      "labor": 0,
      "seafaring": 0,
      "skulduggery": 0,
@@ -924,6 +924,24 @@
      "rank": 2
     },
     {
+     "name": "Civility Foremost",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Well of Desire",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
      "name": "The Wind Blows Both Ways",
      "xp_used": 3,
      "xp_cost": 3,
@@ -931,6 +949,15 @@
      "bought_at_rank": 2,
      "kind": "shuji",
      "rank": 3
+    },
+    {
+     "name": "Call to Ride",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "shuji",
+     "rank": 1
     }
    ],
    "peculiarities": [
@@ -1153,7 +1180,6 @@
     {
      "label": "Fire +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "fire",
      "at_rank": 2,
      "xp": 6,
@@ -1162,7 +1188,6 @@
     {
      "label": "Void +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 6,
@@ -1181,7 +1206,7 @@
    "reconstructed": true
   },
   {
-   "xp": 71,
+   "xp": 80,
    "label": "Emerald Magistrate",
    "rank": 3,
    "school": "Doji Bureaucrat School",
@@ -1189,7 +1214,7 @@
    "foundry_name": "Doji Setsuna",
    "rings": {
     "air": 3,
-    "earth": 3,
+    "earth": 2,
     "fire": 2,
     "water": 3,
     "void": 2
@@ -1300,6 +1325,24 @@
      "rank": 2
     },
     {
+     "name": "Civility Foremost",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Well of Desire",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
      "name": "The Wind Blows Both Ways",
      "xp_used": 3,
      "xp_cost": 3,
@@ -1307,6 +1350,55 @@
      "bought_at_rank": 2,
      "kind": "shuji",
      "rank": 3
+    },
+    {
+     "name": "Call to Ride",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 2,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Crescent Moon Style",
+     "via": "Emerald Magistrate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Coiling Serpent Style",
+     "via": "Emerald Magistrate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Open-Hand Style",
+     "via": "Emerald Magistrate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Shallow Waters",
+     "via": "Emerald Magistrate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
     }
    ],
    "peculiarities": [
@@ -1545,7 +1637,6 @@
     {
      "label": "Fire +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "fire",
      "at_rank": 2,
      "xp": 6,
@@ -1554,7 +1645,6 @@
     {
      "label": "Void +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 6,
@@ -1568,6 +1658,66 @@
      "at_rank": 2,
      "xp": 6,
      "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
+    },
+    {
+     "label": "Performance +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "performance",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
+    },
+    {
+     "label": "Fitness +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "fitness",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
+    },
+    {
+     "label": "Commerce +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "commerce",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
     }
    ],
    "reconstructed": true
@@ -1717,6 +1867,46 @@
      "bought_at_rank": 2,
      "kind": "shuji",
      "rank": 3
+    },
+    {
+     "name": "Crescent Moon Style",
+     "via": "Emerald Magistrate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Coiling Serpent Style",
+     "via": "Emerald Magistrate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Open-Hand Style",
+     "via": "Emerald Magistrate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Shallow Waters",
+     "via": "Emerald Magistrate",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
     },
     {
      "name": "Call to Ride",
@@ -1986,7 +2176,6 @@
     {
      "label": "Fire +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "fire",
      "at_rank": 2,
      "xp": 6,
@@ -1995,11 +2184,70 @@
     {
      "label": "Void +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 6,
      "in_curriculum": false
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
+    },
+    {
+     "label": "Performance +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "performance",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
+    },
+    {
+     "label": "Fitness +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "fitness",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
+    },
+    {
+     "label": "Commerce +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "commerce",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Emerald Magistrate"
     },
     {
      "label": "Courtesy +1 (2 -> 3)",
@@ -2011,6 +2259,15 @@
      "in_curriculum": true
     },
     {
+     "label": "Earth +1 (2 -> 3)",
+     "type": "ring",
+     "ring": "earth",
+     "at_rank": 1,
+     "xp": 9,
+     "in_curriculum": false,
+     "via": "Personal Advisor to Miya Misato"
+    },
+    {
      "label": "Command +1 (2 -> 3)",
      "type": "skill",
      "skill": "command",
@@ -2019,7 +2276,8 @@
      "xp": 6,
      "in_curriculum": true
     }
-   ]
+   ],
+   "xp_spent": 98
   }
  ]
 }

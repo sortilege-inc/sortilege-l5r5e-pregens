@@ -739,7 +739,6 @@
     {
      "label": "Void +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 1,
      "xp": 6,
@@ -748,7 +747,6 @@
     {
      "label": "Void +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 1,
      "xp": 9,
@@ -757,7 +755,6 @@
     {
      "label": "Fire +1 (3 -> 4)",
      "type": "ring",
-     "skill": null,
      "ring": "fire",
      "at_rank": 1,
      "xp": 12,
@@ -766,7 +763,6 @@
     {
      "label": "Void +1 (3 -> 4)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 12,
@@ -775,7 +771,6 @@
     {
      "label": "Fire +1 (4 -> 5)",
      "type": "ring",
-     "skill": null,
      "ring": "fire",
      "at_rank": 2,
      "xp": 15,

@@ -977,7 +977,6 @@
     {
      "label": "Void +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 9,
@@ -1159,6 +1158,46 @@
      "rank": 3
     },
     {
+     "name": "Thunderbolt Style",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Deflective Defense",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Tactical Assessment",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Rallying Cry",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
      "name": "Lead from the Front",
      "xp_used": 0,
      "xp_cost": 0,
@@ -1322,7 +1361,6 @@
     {
      "label": "Void +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 9,
@@ -1354,6 +1392,26 @@
      "at_rank": 2,
      "xp": 2,
      "in_curriculum": false
+    },
+    {
+     "label": "Command +1 (4 -> 5)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 10,
+     "in_curriculum": true,
+     "via": "Gunsō"
+    },
+    {
+     "label": "Government +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Gunsō"
     }
    ]
   },
@@ -1500,6 +1558,46 @@
      "xp_cost": 3,
      "in_curriculum": true,
      "bought_at_rank": 2,
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
+     "name": "Thunderbolt Style",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Deflective Defense",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Tactical Assessment",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Rallying Cry",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
      "kind": "shuji",
      "rank": 3
     },
@@ -1712,7 +1810,6 @@
     {
      "label": "Void +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 9,
@@ -1744,6 +1841,26 @@
      "at_rank": 2,
      "xp": 2,
      "in_curriculum": false
+    },
+    {
+     "label": "Command +1 (4 -> 5)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 10,
+     "in_curriculum": true,
+     "via": "Gunsō"
+    },
+    {
+     "label": "Government +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Gunsō"
     },
     {
      "label": "Fitness +1 (2 -> 3)",
@@ -1926,6 +2043,46 @@
      "xp_cost": 3,
      "in_curriculum": true,
      "bought_at_rank": 2,
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
+     "name": "Thunderbolt Style",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Deflective Defense",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Tactical Assessment",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Rallying Cry",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
      "kind": "shuji",
      "rank": 3
     },
@@ -2183,7 +2340,6 @@
     {
      "label": "Void +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 9,
@@ -2215,6 +2371,26 @@
      "at_rank": 2,
      "xp": 2,
      "in_curriculum": false
+    },
+    {
+     "label": "Command +1 (4 -> 5)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 10,
+     "in_curriculum": true,
+     "via": "Gunsō"
+    },
+    {
+     "label": "Government +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Gunsō"
     },
     {
      "label": "Fitness +1 (2 -> 3)",
@@ -2255,7 +2431,6 @@
     {
      "label": "Earth +1 (3 -> 4)",
      "type": "ring",
-     "skill": null,
      "ring": "earth",
      "at_rank": 4,
      "xp": 12,
@@ -2264,7 +2439,6 @@
     {
      "label": "Water +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "water",
      "at_rank": 4,
      "xp": 6,
@@ -2273,7 +2447,6 @@
     {
      "label": "Water +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "water",
      "at_rank": 4,
      "xp": 9,
@@ -2464,6 +2637,46 @@
      "rank": 3
     },
     {
+     "name": "Thunderbolt Style",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Deflective Defense",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Tactical Assessment",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Rallying Cry",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
      "name": "Lead from the Front",
      "xp_used": 0,
      "xp_cost": 0,
@@ -2561,6 +2774,56 @@
      "bought_at_rank": 4,
      "kind": "shuji",
      "rank": 4
+    },
+    {
+     "name": "Pillar of Calm",
+     "via": "General",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 4
+    },
+    {
+     "name": "Landslide Strike",
+     "via": "General",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Pelting Hail Style",
+     "via": "General",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Beseech Hida's Might",
+     "via": "General",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 2
+    },
+    {
+     "name": "Cleansing Rite",
+     "via": "General",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
     },
     {
      "name": "Superior Command",
@@ -2733,7 +2996,6 @@
     {
      "label": "Void +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 9,
@@ -2765,6 +3027,26 @@
      "at_rank": 2,
      "xp": 2,
      "in_curriculum": false
+    },
+    {
+     "label": "Command +1 (4 -> 5)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 10,
+     "in_curriculum": true,
+     "via": "Gunsō"
+    },
+    {
+     "label": "Government +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Gunsō"
     },
     {
      "label": "Fitness +1 (2 -> 3)",
@@ -2805,7 +3087,6 @@
     {
      "label": "Earth +1 (3 -> 4)",
      "type": "ring",
-     "skill": null,
      "ring": "earth",
      "at_rank": 4,
      "xp": 12,
@@ -2814,7 +3095,6 @@
     {
      "label": "Water +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "water",
      "at_rank": 4,
      "xp": 6,
@@ -2823,7 +3103,6 @@
     {
      "label": "Water +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "water",
      "at_rank": 4,
      "xp": 9,
@@ -2864,6 +3143,76 @@
      "at_rank": 4,
      "xp": 6,
      "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Government +1 (3 -> 4)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 8,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Games +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "games",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Games +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "games",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Games +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "games",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Meditation +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "General"
     }
    ]
   },
@@ -3014,6 +3363,46 @@
      "rank": 3
     },
     {
+     "name": "Thunderbolt Style",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Deflective Defense",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Tactical Assessment",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Rallying Cry",
+     "via": "Gunsō",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
      "name": "Lead from the Front",
      "xp_used": 0,
      "xp_cost": 0,
@@ -3111,6 +3500,56 @@
      "bought_at_rank": 4,
      "kind": "shuji",
      "rank": 4
+    },
+    {
+     "name": "Pillar of Calm",
+     "via": "General",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 4
+    },
+    {
+     "name": "Landslide Strike",
+     "via": "General",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Pelting Hail Style",
+     "via": "General",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Beseech Hida's Might",
+     "via": "General",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 2
+    },
+    {
+     "name": "Cleansing Rite",
+     "via": "General",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
     },
     {
      "name": "Superior Command",
@@ -3337,7 +3776,6 @@
     {
      "label": "Void +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 9,
@@ -3369,6 +3807,26 @@
      "at_rank": 2,
      "xp": 2,
      "in_curriculum": false
+    },
+    {
+     "label": "Command +1 (4 -> 5)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 10,
+     "in_curriculum": true,
+     "via": "Gunsō"
+    },
+    {
+     "label": "Government +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Gunsō"
     },
     {
      "label": "Fitness +1 (2 -> 3)",
@@ -3409,7 +3867,6 @@
     {
      "label": "Earth +1 (3 -> 4)",
      "type": "ring",
-     "skill": null,
      "ring": "earth",
      "at_rank": 4,
      "xp": 12,
@@ -3418,7 +3875,6 @@
     {
      "label": "Water +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "water",
      "at_rank": 4,
      "xp": 6,
@@ -3427,7 +3883,6 @@
     {
      "label": "Water +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "water",
      "at_rank": 4,
      "xp": 9,
@@ -3468,6 +3923,76 @@
      "at_rank": 4,
      "xp": 6,
      "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Government +1 (3 -> 4)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 8,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Games +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "games",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Games +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "games",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Games +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "games",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "General"
+    },
+    {
+     "label": "Meditation +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "General"
     },
     {
      "label": "Aesthetics +1 (0 -> 1)",

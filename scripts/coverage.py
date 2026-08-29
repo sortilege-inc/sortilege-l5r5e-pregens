@@ -85,17 +85,38 @@ def main():
     # dropped: the other gates only ever look at what was already extracted.
     handled = {"technique", "peculiarity", "title", "bond", "signature_scroll",
                "weapon", "armor", "item", "advancement"}
+    def walk(items):
+        for i in items or []:
+            if not isinstance(i, dict):
+                continue
+            yield i
+            nested = (i.get("system") or {}).get("items")
+            if isinstance(nested, dict):
+                nested = list(nested.values())
+            if isinstance(nested, list):
+                yield from walk(nested)
+
     on_actors = collections.Counter()
+    nested_count = 0
     for path in glob.glob(os.path.join(ROOT, "pipeline", "foundry", "actors", "*.json")):
-        for i in json.load(open(path)).get("items", []):
+        doc = json.load(open(path))
+        top = len(doc.get("items", []))
+        every = list(walk(doc.get("items", [])))
+        nested_count += len(every) - top
+        for i in every:
             on_actors[i["type"]] += 1
     for t, n in sorted(on_actors.items()):
         if t not in handled:
             fail.append(f"actor item type {t!r} ({n} items) is not extracted — "
                         "silent content drop")
-    print(f"actor item types: {len(on_actors)} kinds, "
-          f"{sum(on_actors.values())} items, all handled"
-          if all(t in handled for t in on_actors) else "")
+    # Nested items (a title's curriculum purchases live inside the title item)
+    # must be counted, or the gate passes while content is being dropped.
+    total_items = sum(on_actors.values())
+    extracted = cx.execute("SELECT COUNT(*) FROM tier_content").fetchone()[0]
+    print(f"actor items: {total_items} across {len(on_actors)} types "
+          f"({nested_count} nested inside a parent item)")
+    if all(t in handled for t in on_actors):
+        print("             every type is extracted")
 
     pages = {os.path.basename(p)[:-5] for p in
              glob.glob(os.path.join(ROOT, "characters", "*.html"))} - {"index"}

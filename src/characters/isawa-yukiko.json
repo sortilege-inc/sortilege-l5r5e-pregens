@@ -303,6 +303,26 @@
      "rank": 1
     },
     {
+     "name": "Eternal Mind’s Gate",
+     "via": "Awakened Soul",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kiho",
+     "rank": 4
+    },
+    {
+     "name": "Trance of Lives Past",
+     "via": "Awakened Soul",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 4
+    },
+    {
      "name": "Wisdom of Countless Lifetimes",
      "xp_used": 0,
      "xp_cost": 0,
@@ -420,7 +440,78 @@
      "quantity": 1
     }
    ],
-   "advancements": []
+   "advancements": [
+    {
+     "label": "Meditation +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Theology +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "theology",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Sentiment +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "sentiment",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Meditation +1 (3 -> 4)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 8,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Meditation +1 (4 -> 5)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 10,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Command +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Courtesy +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "courtesy",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    }
+   ]
   },
   {
    "xp": 74,
@@ -531,6 +622,26 @@
      "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
+    },
+    {
+     "name": "Eternal Mind’s Gate",
+     "via": "Awakened Soul",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kiho",
+     "rank": 4
+    },
+    {
+     "name": "Trance of Lives Past",
+     "via": "Awakened Soul",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 4
     },
     {
      "name": "Wisdom of Countless Lifetimes",
@@ -679,9 +790,78 @@
    ],
    "advancements": [
     {
+     "label": "Meditation +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Theology +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "theology",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Sentiment +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "sentiment",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Meditation +1 (3 -> 4)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 8,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Meditation +1 (4 -> 5)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 10,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Command +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Courtesy +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "courtesy",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
      "label": "Air +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "air",
      "at_rank": 1,
      "xp": 6,
@@ -690,7 +870,6 @@
     {
      "label": "Void +1 (3 -> 4)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 1,
      "xp": 12,
@@ -807,6 +986,26 @@
      "bought_at_rank": 0,
      "kind": "school_ability",
      "rank": 1
+    },
+    {
+     "name": "Eternal Mind’s Gate",
+     "via": "Awakened Soul",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kiho",
+     "rank": 4
+    },
+    {
+     "name": "Trance of Lives Past",
+     "via": "Awakened Soul",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 4
     },
     {
      "name": "Wisdom of Countless Lifetimes",
@@ -982,9 +1181,78 @@
    ],
    "advancements": [
     {
+     "label": "Meditation +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Theology +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "theology",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Sentiment +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "sentiment",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Meditation +1 (3 -> 4)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 8,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Meditation +1 (4 -> 5)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 10,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Command +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
+     "label": "Courtesy +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "courtesy",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Awakened Soul"
+    },
+    {
      "label": "Air +1 (1 -> 2)",
      "type": "ring",
-     "skill": null,
      "ring": "air",
      "at_rank": 1,
      "xp": 6,
@@ -993,7 +1261,6 @@
     {
      "label": "Void +1 (3 -> 4)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 1,
      "xp": 12,

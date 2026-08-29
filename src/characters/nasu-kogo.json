@@ -916,6 +916,16 @@
      "rank": 1
     },
     {
+     "name": "Cultural Exchange",
+     "via": "Interpreter (Ivory Kingdoms)",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
      "name": "Linguistic Liason",
      "xp_used": 3,
      "xp_cost": 3,
@@ -1062,6 +1072,26 @@
      "at_rank": 1,
      "xp": 4,
      "in_curriculum": true
+    },
+    {
+     "label": "Performance +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "performance",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Interpreter (Ivory Kingdoms)"
+    },
+    {
+     "label": "Government +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Interpreter (Ivory Kingdoms)"
     }
    ]
   },
@@ -1227,6 +1257,16 @@
      "in_curriculum": true,
      "bought_at_rank": 1,
      "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Cultural Exchange",
+     "via": "Interpreter (Ivory Kingdoms)",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
      "rank": 1
     },
     {
@@ -1439,6 +1479,26 @@
      "at_rank": 1,
      "xp": 4,
      "in_curriculum": true
+    },
+    {
+     "label": "Performance +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "performance",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Interpreter (Ivory Kingdoms)"
+    },
+    {
+     "label": "Government +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Interpreter (Ivory Kingdoms)"
     },
     {
      "label": "Martial Arts [Ranged] +1 (0 -> 1)",

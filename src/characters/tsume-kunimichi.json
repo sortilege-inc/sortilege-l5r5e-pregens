@@ -989,7 +989,6 @@
     {
      "label": "Void +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 9,
@@ -1171,6 +1170,46 @@
      "rank": 2
     },
     {
+     "name": "Imbue Thunder",
+     "via": "Master Saboteur",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 4
+    },
+    {
+     "name": "Wreak Havoc",
+     "via": "Master Saboteur",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ninjutsu",
+     "rank": 4
+    },
+    {
+     "name": "Cunning Distraction",
+     "via": "Master Saboteur",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ninjutsu",
+     "rank": 2
+    },
+    {
+     "name": "Deadly Sting",
+     "via": "Master Saboteur",
+     "xp_used": 3,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ninjutsu",
+     "rank": 2
+    },
+    {
      "name": "Ender of Works",
      "xp_used": 3,
      "xp_cost": 3,
@@ -1330,7 +1369,6 @@
     {
      "label": "Void +1 (2 -> 3)",
      "type": "ring",
-     "skill": null,
      "ring": "void",
      "at_rank": 2,
      "xp": 9,
@@ -1353,6 +1391,75 @@
      "at_rank": 2,
      "xp": 6,
      "in_curriculum": true
+    },
+    {
+     "label": "Medicine +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "medicine",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Master Saboteur"
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Master Saboteur"
+    },
+    {
+     "label": "Government +1 (0 -> 1)",
+     "type": "skill",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Master Saboteur"
+    },
+    {
+     "label": "Government +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true,
+     "via": "Master Saboteur"
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Master Saboteur"
+    },
+    {
+     "label": "Labor +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true,
+     "via": "Master Saboteur"
+    },
+    {
+     "label": "Medicine +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "medicine",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": true,
+     "via": "Master Saboteur"
     }
    ]
   }

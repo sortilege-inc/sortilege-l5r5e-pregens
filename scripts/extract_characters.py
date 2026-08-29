@@ -82,7 +82,7 @@ def qualified_match(idx, subtypes, name, held_titles):
     return None
 
 
-def ref(item, idx, held_titles=()):
+def ref(item, idx, held_titles=(), via=None):
     """A content reference: canonical name if the catalog has it, else inline custom."""
     t = item["type"]
     sysd = item.get("system", {})
@@ -93,6 +93,9 @@ def ref(item, idx, held_titles=()):
         canon = qualified_match(idx, ("technique", "signature_scroll"),
                                 item["name"], held_titles)
     out = {"name": canon or item["name"]}
+    if via:
+        # nested under a title: this was bought for that title's curriculum
+        out["via"] = via
     # Purchase record: character-specific, not catalog data, so it lives here.
     # scripts/derive_tiers.py needs it to tell starting kit from bought content.
     for k in ("xp_used", "xp_cost", "in_curriculum", "bought_at_rank"):
@@ -160,13 +163,35 @@ def resolve_twenty_questions(actor, cat_ids):
     return out
 
 
+def walk_items(items, parent=None):
+    """Every item on an actor, including those nested in a parent's system.items.
+
+    A title's curriculum purchases live inside that title item rather than in the
+    actor's top-level items array. Reading only the top level drops them —
+    134 of them across this corpus — so the walk is recursive and each item
+    remembers the parent that carried it.
+    """
+    for i in items or []:
+        if not isinstance(i, dict):
+            continue
+        yield i, parent
+        nested = (i.get("system") or {}).get("items")
+        if isinstance(nested, dict):
+            nested = list(nested.values())
+        if isinstance(nested, list):
+            yield from walk_items(nested, i.get("name"))
+
+
 def tier_from_actor(actor, idx):
     s = actor["system"]
     m = TIER_RE.match(actor["name"])
     note = (m.group("note") or "").strip() if m else ""
     items = collections.defaultdict(list)
-    for i in actor["items"]:
+    parent_of = {}
+    for i, parent in walk_items(actor["items"]):
         items[i["type"]].append(i)
+        if parent:
+            parent_of[id(i)] = parent
     unknown = set(items) - HANDLED_ITEM_TYPES
     if unknown:
         raise SystemExit(
@@ -175,7 +200,7 @@ def tier_from_actor(actor, idx):
 
     held_titles = {norm(i["name"]) for i in items["title"]}
 
-    advancements = [{
+    advancements = [{k: v for k, v in {
         "label": a["name"],
         "type": a["system"].get("advancement_type"),
         "skill": a["system"].get("skill") or None,
@@ -183,7 +208,9 @@ def tier_from_actor(actor, idx):
         "at_rank": a["system"].get("rank"),
         "xp": a["system"].get("xp_used"),
         "in_curriculum": bool(a["system"].get("in_curriculum")),
-    } for a in items["advancement"]]
+        # the title whose curriculum this was bought for, when it was nested
+        "via": parent_of.get(id(a)),
+    }.items() if v is not None} for a in items["advancement"]]
 
     return {
         "xp": int(m.group("xp")) if m else s.get("xp_total", 0),
@@ -200,14 +227,15 @@ def tier_from_actor(actor, idx):
                     "focus": s.get("focus"), "vigilance": s.get("vigilance"),
                     "void_points": (s.get("void_points") or {}).get("max")},
         "money": {"zeni": s.get("zeni"), **(s.get("money") or {})},
-        "techniques": [ref(i, idx) for i in items["technique"]],
-        "peculiarities": [ref(i, idx) for i in items["peculiarity"]],
-        "titles": [ref(i, idx) for i in items["title"]],
-        "bonds": [ref(i, idx) for i in items["bond"]],
+        "techniques": [ref(i, idx, via=parent_of.get(id(i))) for i in items["technique"]],
+        "peculiarities": [ref(i, idx, via=parent_of.get(id(i))) for i in items["peculiarity"]],
+        "titles": [ref(i, idx, via=parent_of.get(id(i))) for i in items["title"]],
+        "bonds": [ref(i, idx, via=parent_of.get(id(i))) for i in items["bond"]],
         # the system files a title's granted ability under signature_scroll
-        "signature_scrolls": [ref(i, idx, held_titles)
+        "signature_scrolls": [ref(i, idx, held_titles, parent_of.get(id(i)))
                               for i in items["signature_scroll"]],
-        "gear": [ref(i, idx) for i in items["weapon"] + items["armor"] + items["item"]],
+        "gear": [ref(i, idx, via=parent_of.get(id(i)))
+                 for i in items["weapon"] + items["armor"] + items["item"]],
         "advancements": advancements,
     }
 

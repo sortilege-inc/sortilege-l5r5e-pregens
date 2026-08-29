@@ -80,11 +80,18 @@ is what the site serves, named by the `portraits` map in the manifest.
 ## Nothing gets dropped silently
 
 `scripts/extract_characters.py` refuses to run on an actor carrying an item type it does
-not handle, and `scripts/coverage.py` fails if any type present on a pulled actor is not
-extracted. This exists because it happened: Doji Setsuna carries a `signature_scroll`
-item — the Emerald Magistrate's title ability, "Voice of Authority" — and an earlier
-version of the extractor collected eight item types and quietly ignored the ninth. Every
-other gate passed, because they only ever checked what had already been extracted.
+not handle, and walks nested items recursively; `scripts/coverage.py` re-walks the raw
+actors and fails on any type that isn't extracted, reporting the nested count so a
+regression is visible:
+
+```
+actor items: 1054 across 9 types (134 nested inside a parent item)
+             every type is extracted
+```
+
+Both gates exist because both failures happened, and neither was caught by the gates that
+existed at the time — they only ever checked already-extracted content. See
+[CLAUDE.md](CLAUDE.md) before writing anything that reads a Foundry actor.
 
 ### `.env`
 
@@ -144,6 +151,9 @@ bought at, purchased content carries its XP cost, and the school curriculum says
 rank a technique becomes available. Those tiers are marked `"reconstructed": true` in the
 source file, and the last tier is always the Foundry record, untouched.
 
-Where the arithmetic does not close (Doji Setsuna's recorded purchases total 71 XP against
-an actor `xp_total` of 100), the derived tiers show cumulative recorded cost and the final
-tier keeps the actor's own figure. The script says so when it runs.
+The arithmetic closes, and the script prints it — Doji Setsuna reconstructs to
+`98 XP spent of 100 earned — 2 banked`, with each bucket matching its tab in the Foundry
+character sheet. Getting there needed two things that are easy to get wrong and are
+written up in [CLAUDE.md](CLAUDE.md): a title's curriculum purchases are nested inside the
+title item rather than sitting in `actor.items`, and a title's own `xp_used` is a rollup
+of those nested items rather than a price paid on top of them.
