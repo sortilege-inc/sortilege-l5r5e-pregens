@@ -1,0 +1,258 @@
+{
+ "slug": "isawa-chisato",
+ "name": "Isawa Chisato",
+ "folder_label": "Isawa Chisato",
+ "campaign": null,
+ "status": "draft",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Phoenix",
+  "family": "Isawa",
+  "school": "Isawai Tensai School",
+  "role": "Shugenja",
+  "age": ""
+ },
+ "portrait": "src/portraits/isawa-chisato.webp",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Phoenix",
+     "ring": "void",
+     "skill": "theology",
+     "social_status": 30
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Isawa",
+     "ring": "void",
+     "skill1": "meditation",
+     "skill2": "theology",
+     "wealth": 5,
+     "social_glory": 44
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Isawa Tensai School",
+     "roles": "Shugenja",
+     "ring1": "fire",
+     "ring2": "fire",
+     "skill1": "sentiment",
+     "skill2": "courtesy",
+     "skill3": "survival",
+     "social_honor": 50
+    },
+    "picks": {
+     "techniques": [
+      "Threshold Barrier",
+      "Borrowed Courage",
+      "Truth Burns through Lies",
+      "Cleansing Rite"
+     ],
+     "school_ability": [
+      "Elemental Inspiration"
+     ],
+     "equipment": [
+      "Sanctified Robes",
+      "Traveling Clothes",
+      "Traveling pack",
+      "Scroll satchel",
+      "Wakizashi"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "social_add_honor": 10
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_add_honor": 0,
+     "heritage_add_glory": 0,
+     "heritage_add_status": 0
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Chisato"
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Isawai Tensai School",
+   "foundry_id": "mi3cyhYMkaigwR8i",
+   "foundry_name": "Isawa Chisato",
+   "rings": {
+    "air": 2,
+    "earth": 1,
+    "fire": 3,
+    "water": 1,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 2
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 60,
+    "glory": 49,
+    "status": 30,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "",
+     "less_significant": ""
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 4,
+    "focus": 5,
+    "vigilance": 2,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Threshold Barrier",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Borrowed Courage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Truth Burns through Lies",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Cleansing Rite",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Elemental Inspiration",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Scroll satchel",
+     "quantity": 1
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

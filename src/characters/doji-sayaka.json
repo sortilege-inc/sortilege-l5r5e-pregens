@@ -1,0 +1,263 @@
+{
+ "slug": "doji-sayaka",
+ "name": "Doji Sayaka",
+ "folder_label": "Doji Sayaka",
+ "campaign": null,
+ "status": "draft",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Crane",
+  "family": "Doji",
+  "school": "Daidoji Spymaster School",
+  "role": "Courtier",
+  "age": ""
+ },
+ "portrait": "src/portraits/doji-sayaka.webp",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Crane",
+     "ring": "air",
+     "skill": "culture",
+     "social_status": 35
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Doji",
+     "ring": "water",
+     "skill1": "courtesy",
+     "skill2": "design",
+     "wealth": 8,
+     "social_glory": 44
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Daidoji Spymaster School",
+     "roles": "Courtier",
+     "ring1": "air",
+     "ring2": "earth",
+     "skill1": "skulduggery",
+     "skill2": "government",
+     "skill3": "performance",
+     "skill4": "culture",
+     "skill5": "sentiment",
+     "social_honor": 30
+    },
+    "picks": {
+     "techniques": [
+      "Ancestry Unearthed",
+      "Like a Ghost",
+      "Striking as Air"
+     ],
+     "school_ability": [
+      "Incisive Insight"
+     ],
+     "equipment": [
+      "Traveling Clothes",
+      "Ceremonial Clothes",
+      "Wakizashi",
+      "Sokutoki",
+      "Disguise Kit"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "social_add_honor": 10
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_add_honor": 0,
+     "heritage_add_glory": 0,
+     "heritage_add_status": 0
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Sayaka"
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Daidoji Spymaster School",
+   "foundry_id": "5CAEASJK5cHcGRFI",
+   "foundry_name": "Doji Sayaka",
+   "rings": {
+    "air": 3,
+    "earth": 2,
+    "fire": 1,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 1,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 2,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 40,
+    "glory": 49,
+    "status": 35,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "",
+     "less_significant": ""
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Ancestry Unearthed",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Like a Ghost",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "ninjutsu",
+     "rank": 2
+    },
+    {
+     "name": "Striking as Air",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Incisive Insight",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Ceremonial Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Sokutoki",
+     "quantity": 1
+    },
+    {
+     "name": "Disguise Kit",
+     "quantity": 1
+    },
+    {
+     "name": "Opening and Closing Kit",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

@@ -1,0 +1,837 @@
+{
+ "folder": "3GWW6cRyT1qZwOh7",
+ "name": "Doji Sayaka",
+ "type": "character",
+ "img": "modules/l5r5e-compendia-sortilege/images/portraits/doji_sayaka_square.png",
+ "prototypeToken": {
+  "actorLink": true,
+  "disposition": 1,
+  "bar1": {
+   "attribute": "fatigue"
+  },
+  "bar2": {
+   "attribute": "strife"
+  },
+  "name": "Doji Sayaka",
+  "displayName": 30,
+  "width": 1,
+  "height": 1,
+  "texture": {
+   "src": "modules/l5r5e-compendia-sortilege/images/tokens/doji_sayaka_token.png",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "lockRotation": false,
+  "rotation": 0,
+  "alpha": 1,
+  "displayBars": 0,
+  "light": {
+   "negative": false,
+   "priority": 0,
+   "alpha": 0.5,
+   "angle": 360,
+   "bright": 0,
+   "color": null,
+   "coloration": 1,
+   "dim": 0,
+   "attenuation": 0.5,
+   "luminosity": 0.5,
+   "saturation": 0,
+   "contrast": 0,
+   "shadows": 0,
+   "animation": {
+    "type": null,
+    "speed": 5,
+    "intensity": 5,
+    "reverse": false
+   },
+   "darkness": {
+    "min": 0,
+    "max": 1
+   }
+  },
+  "sight": {
+   "enabled": false,
+   "range": 0,
+   "angle": 360,
+   "visionMode": "basic",
+   "color": null,
+   "attenuation": 0.1,
+   "brightness": 0,
+   "saturation": 0,
+   "contrast": 0
+  },
+  "detectionModes": {},
+  "occludable": {
+   "radius": 0
+  },
+  "ring": {
+   "enabled": false,
+   "colors": {
+    "ring": null,
+    "background": null
+   },
+   "effects": 0,
+   "subject": {
+    "scale": 1,
+    "texture": null
+   }
+  },
+  "turnMarker": {
+   "mode": 1,
+   "animation": null,
+   "src": null,
+   "disposition": false
+  },
+  "movementAction": null,
+  "flags": {},
+  "randomImg": false,
+  "appendNumber": false,
+  "prependAdjective": false,
+  "depth": 1
+ },
+ "_id": "5CAEASJK5cHcGRFI",
+ "system": {
+  "soft_locked": true,
+  "identity": {
+   "age": "",
+   "clan": "Crane",
+   "family": "Doji",
+   "female": null,
+   "marital_status": "",
+   "roles": "Courtier",
+   "school": "Daidoji Spymaster School",
+   "school_rank": 1,
+   "school_curriculum_journal": {}
+  },
+  "rings": {
+   "earth": 2,
+   "air": 3,
+   "water": 3,
+   "fire": 1,
+   "void": 1
+  },
+  "notes": "",
+  "description": "",
+  "social": {
+   "honor": 40,
+   "glory": 49,
+   "status": 35,
+   "ninjo": "",
+   "giri": "",
+   "bushido_tenets": {
+    "paramount": "",
+    "less_significant": ""
+   }
+  },
+  "skills": {
+   "artisan": {
+    "aesthetics": 0,
+    "composition": 0,
+    "design": 1,
+    "smithing": 0
+   },
+   "martial": {
+    "fitness": 0,
+    "melee": 0,
+    "ranged": 0,
+    "unarmed": 0,
+    "meditation": 0,
+    "tactics": 0
+   },
+   "scholar": {
+    "culture": 2,
+    "government": 1,
+    "medicine": 0,
+    "sentiment": 1,
+    "theology": 0
+   },
+   "social": {
+    "command": 0,
+    "courtesy": 1,
+    "games": 0,
+    "performance": 1
+   },
+   "trade": {
+    "commerce": 0,
+    "labor": 0,
+    "seafaring": 0,
+    "skulduggery": 1,
+    "survival": 0
+   }
+  },
+  "techniques": {
+   "kata": true,
+   "kiho": false,
+   "inversion": false,
+   "invocation": false,
+   "ritual": true,
+   "shuji": true,
+   "maho": false,
+   "ninjutsu": false,
+   "mantra": false,
+   "specificity": true
+  },
+  "endurance": 6,
+  "composure": 10,
+  "focus": 4,
+  "vigilance": 3,
+  "void_points": {
+   "max": 1,
+   "value": 0
+  },
+  "fatigue": {
+   "max": 6,
+   "value": 0
+  },
+  "strife": {
+   "max": 10,
+   "value": 0
+  },
+  "stance": "void",
+  "prepared": true,
+  "xp_total": 0,
+  "xp_spent": 0,
+  "xp_saved": 0,
+  "template": "core",
+  "twenty_questions": {
+   "template": "core",
+   "generated": true,
+   "step1": {
+    "clan": "Crane",
+    "ring": "air",
+    "skill": "culture",
+    "social_status": 35
+   },
+   "step2": {
+    "family": "Doji",
+    "ring": "water",
+    "skill1": "courtesy",
+    "skill2": "design",
+    "wealth": 8,
+    "social_glory": 44
+   },
+   "step3": {
+    "school": "Daidoji Spymaster School",
+    "roles": "Courtier",
+    "ring1": "air",
+    "ring2": "earth",
+    "skill1": "skulduggery",
+    "skill2": "government",
+    "skill3": "performance",
+    "skill4": "culture",
+    "skill5": "sentiment",
+    "allowed_techniques": {
+     "kata": true,
+     "kiho": false,
+     "inversion": false,
+     "invocation": false,
+     "ritual": true,
+     "shuji": true,
+     "maho": false,
+     "ninjutsu": false,
+     "mantra": false,
+     "specificity": true
+    },
+    "techniques": [
+     "rOlgMlOHnT3p7aIG",
+     "a8519t9KXMAL6tBV",
+     "pNvLI7ImoPeZPzwK"
+    ],
+    "school_ability": [
+     "QOLSA0AzMsLiCKZL"
+    ],
+    "equipment": [
+     "zcsgspz4VluSMeI0",
+     "K61XHG9GnFLieqjc",
+     "S1MG4qPHEV3N8XnO",
+     "Godzb965HVxKQKz8",
+     "WgEFEmKgAKGCXwR1",
+     "mQoivNq01qCi75jp"
+    ],
+    "social_honor": 30
+   },
+   "step4": {
+    "stand_out": "",
+    "ring": "water"
+   },
+   "step5": {
+    "social_giri": ""
+   },
+   "step6": {
+    "social_ninjo": ""
+   },
+   "step7": {
+    "clan_relations": "",
+    "skill": "none",
+    "social_add_glory": 5
+   },
+   "step8": {
+    "bushido": "",
+    "skill": "none",
+    "social_add_honor": 10,
+    "tenet_paramount": "",
+    "tenet_less_significant": "",
+    "item": []
+   },
+   "step9": {
+    "success": "",
+    "distinction": []
+   },
+   "step10": {
+    "difficulty": "",
+    "adversity": []
+   },
+   "step11": {
+    "calms": "",
+    "passion": []
+   },
+   "step12": {
+    "worries": "",
+    "anxiety": []
+   },
+   "step13": {
+    "most_learn": "",
+    "skill": "none",
+    "advantage": [],
+    "disadvantage": []
+   },
+   "step14": {
+    "first_sight": "",
+    "special_features": []
+   },
+   "step15": {
+    "stress": ""
+   },
+   "step16": {
+    "relations": "",
+    "item": []
+   },
+   "step17": {
+    "parents_pov": "",
+    "skill": "none",
+    "bond": []
+   },
+   "step18": {
+    "heritage_name": "",
+    "heritage_1": null,
+    "heritage_2": null,
+    "heritage_item": [],
+    "heritage_add_honor": 0,
+    "heritage_add_glory": 0,
+    "heritage_add_status": 0,
+    "skill": "none"
+   },
+   "step19": {
+    "firstname": "Sayaka"
+   },
+   "step20": {
+    "death": ""
+   }
+  },
+  "zeni": 400,
+  "money": {
+   "koku": 0,
+   "bu": 0,
+   "zeni": 0
+  },
+  "is_afflicted_or_compromised": false
+ },
+ "items": [
+  {
+   "name": "Ancestry Unearthed",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.rOlgMlOHnT3p7aIG",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628377283,
+    "modifiedTime": 1761628377283,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 216
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>A samurai’s ancestry often reveals a great deal about their political opportunities, assets, and probable allies in the Emerald Empire, for the rigid social strata allow little divergence. Any courtier can likely dredge up another samurai’s lineage from the dark corners of their mind, but some can recall it in an instant.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Scholar skill (earth) or Social skill (earth) check targeting a character, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(earth)(op): </span><span class=\"fontstyle3\">You know one sworn oath the character’s family took in the past, and whether or not they have broken or bent it.</span></p><p><span class=\"fontstyle2\">(earth)(op)(op): </span><span class=\"fontstyle3\">You know one secret of the character’s family that they would prefer be forgotten, and have perhaps even worked to bury.</span></p><p><span class=\"fontstyle2\">(earth)(op)(op): </span><span class=\"fontstyle3\">You know something the character does not even known about their own ancestry.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "earth",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "shuji"
+   },
+   "folder": "mubKEa3wApkpwHra",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "TRJwQyxgsiamxsXK",
+   "sort": 100000
+  },
+  {
+   "name": "Like a Ghost",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ninjutsu.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-ninjitsu-l5r-sortilege.Item.a8519t9KXMAL6tBV",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628377283,
+    "modifiedTime": 1761628377283,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 114
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Shinobi must move quickly and quietly, avoiding notice while scaling walls and obstacles, climbing over roofs, and hopping across gaps between buildings. The very best can seem to be in one location, only to “vanish” and reappear elsewhere a few moments later</em></span><em>.</em></p><p><span class=\"fontstyle0\"><strong>Activation:</strong> </span><span class=\"fontstyle2\">As a Movement and Scheme action, you may make a </span><span class=\"fontstyle0\">TN 2 Fitness ((air) or (water)) check</span><span class=\"fontstyle2\">. </span><span class=\"fontstyle0\">Effect: </span><span class=\"fontstyle2\">If you succeed, you may move one range band, plus one additional range band per two bonus successes. This movement ignores the effects of any terrain you pass through. You may also move up or down vertical surfaces or across gaps that could conceivably be jumped if your GM permits.</span></p><h4><span class=\"fontstyle3\">New Opportunities</span></h4><p><span class=\"fontstyle4\">(op)(op)</span><span class=\"fontstyle0\">: </span><span class=\"fontstyle2\">Your footfalls are so light as to be completely silent.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "skill": "fitness",
+    "difficulty": "2",
+    "technique_type": "ninjutsu"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "02FmkdKe1JH3zvuB",
+   "sort": 0
+  },
+  {
+   "name": "Striking as Air",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.pNvLI7ImoPeZPzwK",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628377283,
+    "modifiedTime": 1761628377283,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 177
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Not every stroke a warrior throws in battle is intended to kill—even if they all lead to that end goal. A skilled fighter can tell when an attack will not land and subtly shift it into a different sort of attack, meant to probe the enemy’s defenses or draw their guard out of position. By carefully placing attack after attack, a master of the blade can eventually whittle down their opponent’s options until none remain but death.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Martial Arts [Melee, Ranged, or Unarmed] (Air) check, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle2\">(air)(op)+: </span><span class=\"fontstyle3\">Reserve one of your rolled dice, plus one additional die per (op)(op) spent this way. These dice become dropped dice. When making a check with the same skill before the end of your next turn, you may roll one fewer (ring) per reserved (ring) and one fewer (skill) per reserved (skill), then add the reserved dice to your roll. These dice count as rolled dice, but are added set to the results they had when they were reserved.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "kata"
+   },
+   "folder": "eKn62n6zERrRUMNW",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "ksHkOLb5eN51X2zj",
+   "sort": 600000
+  },
+  {
+   "name": "Incisive Insight",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.school-abilities-l5r-sortilege.Item.QOLSA0AzMsLiCKZL",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628377283,
+    "modifiedTime": 1761628377283,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 90
+    },
+    "description": "<p><span class=\"fontstyle0\">Once per scene, when making a check for a Scheme action targeting another character, you may receive a number of strife up to your school rank to reduce the TN by that amount (to a minimum of 1).</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "school_ability"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "ih9Yqq967BewTzKV",
+   "sort": 0
+  },
+  {
+   "name": "Traveling Clothes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.zcsgspz4VluSMeI0",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628377283,
+    "modifiedTime": 1761628377283,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "2",
+    "zeni": "2 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000015",
+      "name": "Durable"
+     },
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     },
+     {
+      "id": "L5RCorePro000016",
+      "name": "Subtle"
+     }
+    ],
+    "armor": {
+     "physical": 2,
+     "supernatural": 0
+    }
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "FFKRcw0ynt8aTmSv",
+   "sort": 0
+  },
+  {
+   "name": "Ceremonial Clothes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.K61XHG9GnFLieqjc",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628377283,
+    "modifiedTime": 1761628377283,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p>Ceremonial clothing is any garment worn during an official ceremony, from a samurai’s court kimono to the accoutrement of the Imperial family. Ceremonial clothing is often richly decorated and offers little protection.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "4",
+    "zeni": "1 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000010",
+      "name": "Resplendent"
+     }
+    ],
+    "armor": {
+     "physical": 1,
+     "supernatural": 0
+    }
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "Qe2vbRSeknyHqgYQ",
+   "sort": 0
+  },
+  {
+   "name": "Wakizashi",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.S1MG4qPHEV3N8XnO",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628377283,
+    "modifiedTime": 1761628377283,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 233
+    },
+    "description": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "7",
+    "zeni": "15 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     }
+    ],
+    "category": "Swords",
+    "skill": "melee",
+    "readied": false,
+    "range": "0-1",
+    "damage": 3,
+    "deadliness": 5,
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "KniyZVRWYGNpZbBd",
+   "sort": 0
+  },
+  {
+   "name": "Sokutoki",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.Godzb965HVxKQKz8",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628377283,
+    "modifiedTime": 1761628377283,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 109
+    },
+    "description": "<p>The sokutoki is an incense box, often beautifully lacquered and decorated. Incense boxes are one example of various forms of shinobi tools disguised as or doubling as everyday objects. They are beautiful but not distractingly uncommon, and guards and nosy acquaintances are unlikely to check them, as it would be rude to handle an item so personal to someone else unless they offered it. A shinobi can load an incense box with blinding powder. Then, once they have maneuvered close to their target, they can discharge the powder through a tube into the target’s eyes with a quick, simple motion that is less dramatic and more accurate than flinging the powder from a pocket.</p><p data-start=\"750\" data-end=\"815\" data-is-last-node=\"\" data-is-only-node=\"\">(Cost: 2 bu. Rarity: 4. Qualities: Concealable, Prepare, Subtle.)</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "4",
+    "zeni": "2 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000005",
+      "name": "Concealable"
+     },
+     {
+      "id": "L5RCorePro000013",
+      "name": "Prepare"
+     },
+     {
+      "id": "L5RCorePro000016",
+      "name": "Subtle"
+     }
+    ]
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "kHzXWiHfbOraONxg",
+   "sort": 0
+  },
+  {
+   "name": "Disguise Kit",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.WgEFEmKgAKGCXwR1",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628377283,
+    "modifiedTime": 1761628377283,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 107
+    },
+    "description": "<p>Essentially a more practical and full-featured version of the makeup kit, a disguise kit allows a shinobi to alter their appearance radically. False mustaches and beards, hair extensions, prosthetics for ears, noses, and fingers, and concoctions for changing the appearance and texture of the skin by adding lesions or scars are all contained in a disguise kit. (Cost: 9 bu. Rarity: 6.)</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "6",
+    "zeni": "9 bu",
+    "properties": []
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "HdQBR0o9BQYPNgJl",
+   "sort": 0
+  },
+  {
+   "name": "Opening and Closing Kit",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "_id": "bY4vriSYiEdoSJD7",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "0",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "flags": {},
+   "_stats": {
+    "compendiumSource": "Item.mQoivNq01qCi75jp",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628377283,
+    "modifiedTime": 1761628377283,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   }
+  }
+ ],
+ "effects": [],
+ "sort": 0,
+ "ownership": {
+  "default": 0,
+  "7vKCnwOtrdD7lBip": 3
+ },
+ "flags": {},
+ "_stats": {
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null,
+  "coreVersion": "14.365",
+  "systemId": "l5r5e",
+  "systemVersion": "1.13.2",
+  "createdTime": 1761625698868,
+  "modifiedTime": 1761706200773,
+  "lastModifiedBy": "7vKCnwOtrdD7lBip"
+ }
+}

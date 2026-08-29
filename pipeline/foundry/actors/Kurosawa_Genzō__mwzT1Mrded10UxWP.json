@@ -1,0 +1,806 @@
+{
+ "folder": "3GWW6cRyT1qZwOh7",
+ "name": "Kurosawa Genzō",
+ "type": "character",
+ "img": "modules/l5r5e-compendia-sortilege/images/portraits/kurosawa_genzo_square.png",
+ "prototypeToken": {
+  "actorLink": true,
+  "disposition": 1,
+  "bar1": {
+   "attribute": "fatigue"
+  },
+  "bar2": {
+   "attribute": "strife"
+  },
+  "name": "Kurosawa Genzō",
+  "displayName": 30,
+  "width": 1,
+  "height": 1,
+  "texture": {
+   "src": "modules/l5r5e-compendia-sortilege/images/tokens/kurosawa_genzo_token.png",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "lockRotation": false,
+  "rotation": 0,
+  "alpha": 1,
+  "displayBars": 0,
+  "light": {
+   "negative": false,
+   "priority": 0,
+   "alpha": 0.5,
+   "angle": 360,
+   "bright": 0,
+   "color": null,
+   "coloration": 1,
+   "dim": 0,
+   "attenuation": 0.5,
+   "luminosity": 0.5,
+   "saturation": 0,
+   "contrast": 0,
+   "shadows": 0,
+   "animation": {
+    "type": null,
+    "speed": 5,
+    "intensity": 5,
+    "reverse": false
+   },
+   "darkness": {
+    "min": 0,
+    "max": 1
+   }
+  },
+  "sight": {
+   "enabled": false,
+   "range": 0,
+   "angle": 360,
+   "visionMode": "basic",
+   "color": null,
+   "attenuation": 0.1,
+   "brightness": 0,
+   "saturation": 0,
+   "contrast": 0
+  },
+  "detectionModes": {},
+  "occludable": {
+   "radius": 0
+  },
+  "ring": {
+   "enabled": false,
+   "colors": {
+    "ring": null,
+    "background": null
+   },
+   "effects": 0,
+   "subject": {
+    "scale": 1,
+    "texture": null
+   }
+  },
+  "turnMarker": {
+   "mode": 1,
+   "animation": null,
+   "src": null,
+   "disposition": false
+  },
+  "movementAction": null,
+  "flags": {},
+  "randomImg": false,
+  "appendNumber": false,
+  "prependAdjective": false,
+  "depth": 1
+ },
+ "_id": "mwzT1Mrded10UxWP",
+ "system": {
+  "soft_locked": true,
+  "identity": {
+   "age": "",
+   "clan": "River Region",
+   "family": "Military",
+   "female": null,
+   "marital_status": "",
+   "roles": "Bushi",
+   "school": "Worldly Rōnin Path",
+   "school_rank": 1,
+   "school_curriculum_journal": {}
+  },
+  "rings": {
+   "earth": 2,
+   "air": 2,
+   "water": 2,
+   "fire": 2,
+   "void": 2
+  },
+  "notes": "",
+  "description": "",
+  "social": {
+   "honor": 40,
+   "glory": 37,
+   "status": 5,
+   "ninjo": "",
+   "giri": "",
+   "bushido_tenets": {
+    "paramount": "",
+    "less_significant": ""
+   }
+  },
+  "skills": {
+   "artisan": {
+    "aesthetics": 0,
+    "composition": 0,
+    "design": 0,
+    "smithing": 0
+   },
+   "martial": {
+    "fitness": 1,
+    "melee": 1,
+    "ranged": 1,
+    "unarmed": 1,
+    "meditation": 0,
+    "tactics": 0
+   },
+   "scholar": {
+    "culture": 0,
+    "government": 1,
+    "medicine": 0,
+    "sentiment": 0,
+    "theology": 0
+   },
+   "social": {
+    "command": 2,
+    "courtesy": 0,
+    "games": 0,
+    "performance": 0
+   },
+   "trade": {
+    "commerce": 0,
+    "labor": 0,
+    "seafaring": 1,
+    "skulduggery": 0,
+    "survival": 0
+   }
+  },
+  "techniques": {
+   "kata": true,
+   "kiho": false,
+   "inversion": false,
+   "invocation": false,
+   "ritual": true,
+   "shuji": true,
+   "maho": false,
+   "ninjutsu": false,
+   "mantra": false,
+   "specificity": true
+  },
+  "endurance": 8,
+  "composure": 8,
+  "focus": 4,
+  "vigilance": 2,
+  "void_points": {
+   "max": 2,
+   "value": 0
+  },
+  "fatigue": {
+   "max": 8,
+   "value": 0
+  },
+  "strife": {
+   "max": 8,
+   "value": 0
+  },
+  "stance": "void",
+  "prepared": true,
+  "xp_total": 0,
+  "xp_spent": 0,
+  "xp_saved": 0,
+  "template": "pow",
+  "twenty_questions": {
+   "template": "pow",
+   "generated": true,
+   "step1": {
+    "clan": "River Region",
+    "ring": "water",
+    "skill": "seafaring",
+    "social_status": 5
+   },
+   "step2": {
+    "family": "Military",
+    "ring": "fire",
+    "skill1": "government",
+    "skill2": "command",
+    "wealth": 5,
+    "social_glory": 32
+   },
+   "step3": {
+    "school": "Worldly Rōnin Path",
+    "roles": "Bushi",
+    "ring1": "earth",
+    "ring2": "air",
+    "skill1": "command",
+    "skill2": "melee",
+    "skill3": "ranged",
+    "skill4": "fitness",
+    "skill5": "unarmed",
+    "allowed_techniques": {
+     "kata": true,
+     "kiho": false,
+     "inversion": false,
+     "invocation": false,
+     "ritual": true,
+     "shuji": true,
+     "maho": false,
+     "ninjutsu": false,
+     "mantra": false,
+     "specificity": true
+    },
+    "techniques": [
+     "skeRFViU7iirdPkB",
+     "vzyZwVERv5Q2kulT"
+    ],
+    "school_ability": [
+     "qPkbEDCCuso2IubI"
+    ],
+    "equipment": [
+     "zcsgspz4VluSMeI0",
+     "gBgokZXC3tEXIc3K",
+     "BhKwwnN5UHI5rZpp",
+     "S1MG4qPHEV3N8XnO",
+     "B47NklmcQInhydPH",
+     "VoaUrDhwwvP1TZnV"
+    ],
+    "social_honor": 30
+   },
+   "step4": {
+    "stand_out": "",
+    "ring": "void"
+   },
+   "step5": {
+    "social_giri": ""
+   },
+   "step6": {
+    "social_ninjo": ""
+   },
+   "step7": {
+    "clan_relations": "",
+    "skill": "none",
+    "social_add_glory": 5
+   },
+   "step8": {
+    "bushido": "",
+    "skill": "none",
+    "social_add_honor": 10,
+    "tenet_paramount": "",
+    "tenet_less_significant": "",
+    "item": []
+   },
+   "step9": {
+    "success": "",
+    "distinction": []
+   },
+   "step10": {
+    "difficulty": "",
+    "adversity": []
+   },
+   "step11": {
+    "calms": "",
+    "passion": []
+   },
+   "step12": {
+    "worries": "",
+    "anxiety": []
+   },
+   "step13": {
+    "most_learn": "",
+    "skill": "none",
+    "advantage": [],
+    "disadvantage": []
+   },
+   "step14": {
+    "first_sight": "",
+    "special_features": []
+   },
+   "step15": {
+    "stress": ""
+   },
+   "step16": {
+    "relations": "",
+    "item": []
+   },
+   "step17": {
+    "parents_pov": "",
+    "skill": "none",
+    "bond": []
+   },
+   "step18": {
+    "heritage_name": "",
+    "heritage_1": null,
+    "heritage_2": null,
+    "heritage_item": [],
+    "heritage_add_honor": 0,
+    "heritage_add_glory": 0,
+    "heritage_add_status": 0,
+    "skill": "none"
+   },
+   "step19": {
+    "firstname": "Genzō"
+   },
+   "step20": {
+    "death": ""
+   }
+  },
+  "zeni": 250,
+  "money": {
+   "koku": 0,
+   "bu": 0,
+   "zeni": 0
+  },
+  "is_afflicted_or_compromised": false
+ },
+ "items": [
+  {
+   "name": "Crescent Moon Style",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.skeRFViU7iirdPkB",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761631143207,
+    "modifiedTime": 1761631143207,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 175
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Striking first is valuable, but so is surviving. To defend without sacrificing offense, a bushi must be ready to retaliate swiftly after blocking or evading. With a quick shift, the bushi switches from defense to bring down their full force upon their enemy.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you perform Guard action (see page 264), you may spend </span><span class=\"fontstyle4\">(op) </span><span class=\"fontstyle3\">in the following way:</span></p><p><span class=\"fontstyle4\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">After a character at range 1–2 performs an Attack action targeting you or another character you are guarding, you may perform a Strike action with one readied Martial Arts [Melee or Unarmed] weapon targeting that character (if they are within your weapon’s range). This effect persists until the start of your next turn, or until you perform a Strike action this way.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "kata"
+   },
+   "folder": "eKn62n6zERrRUMNW",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "PaYLvC5yuSuZr084",
+   "sort": 1800000
+  },
+  {
+   "name": "All in Jest",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.vzyZwVERv5Q2kulT",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761631143207,
+    "modifiedTime": 1761631143207,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 220
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Veteran courtiers sometimes play off missteps as jokes. This underhanded but effective tactic puts the other person in a difficult position: press the issue and seem stubborn, or let it slide and give the courtier a pass.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Commerce (water), Courtesy (water), or Performance (water) check, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle2\">(water)(op)+: </span><span class=\"fontstyle3\">If you forfeited honor as part of the check in order to say something rude or appeal to your target’s base desires (greed, lust, laziness, etc.), regain 1 honor per (op) spent this way (see </span><span class=\"fontstyle2\">Forfeiting Social Attributes</span><span class=\"fontstyle3\">, on page 37).</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "water",
+    "skill": "commerce,courtesy,performance",
+    "difficulty": "",
+    "technique_type": "shuji"
+   },
+   "folder": "VUgIQroTFMSoeNI5",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "3Mv817EKUaSV3r8A",
+   "sort": 100000
+  },
+  {
+   "name": "School of Waves",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.school-abilities-l5r-sortilege.Item.qPkbEDCCuso2IubI",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761631143207,
+    "modifiedTime": 1761631143207,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 87
+    },
+    "description": "<p><span class=\"fontstyle0\">Choose one bonus curriculum skill; this skill henceforth counts as part of the Worldly Rōnin Path curriculum for you at all ranks. Each time your school rank increases, choose one additional bonus curriculum skill this way. When you make a check using one of your bonus curriculum skills, you may negate 1 (st) symbol.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "school_ability"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "PeeVdgdm0cBDk6ej",
+   "sort": 0
+  },
+  {
+   "name": "Traveling Clothes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.zcsgspz4VluSMeI0",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761631143207,
+    "modifiedTime": 1761631143207,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "2",
+    "zeni": "2 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000015",
+      "name": "Durable"
+     },
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     },
+     {
+      "id": "L5RCorePro000016",
+      "name": "Subtle"
+     }
+    ],
+    "armor": {
+     "physical": 2,
+     "supernatural": 0
+    }
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "ielfU5wzcLVtfHM5",
+   "sort": 0
+  },
+  {
+   "name": "Yari",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/bo.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.gBgokZXC3tEXIc3K",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761631143207,
+    "modifiedTime": 1761631143207,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 235
+    },
+    "description": "<p><span class=\"fontstyle0\">A long-shafted spear, the yari is one of the most common weapons in Rokugan. Between six and eight feet long, its shaft is made of hardwood and topped with a leaf-shaped spearhead. Since it is easy to make, the yari is a customary weapon of ashigaru, but also elite clan samurai such as the Daidoji heavy infantry.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "3",
+    "zeni": "5 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000011",
+      "name": "Wargear"
+     }
+    ],
+    "category": "Polearms",
+    "skill": "melee",
+    "readied": false,
+    "range": "2",
+    "damage": 5,
+    "deadliness": 3,
+    "grip_1": "N/A",
+    "grip_2": ""
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "kriVdjcIQ8cDeNwx",
+   "sort": 0
+  },
+  {
+   "name": "Katana",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.BhKwwnN5UHI5rZpp",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761631143207,
+    "modifiedTime": 1761631143207,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 232
+    },
+    "description": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "7",
+    "zeni": "20 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     }
+    ],
+    "category": "Swords",
+    "skill": "melee",
+    "readied": false,
+    "range": "1",
+    "damage": 4,
+    "deadliness": 5,
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "VCk9vkJ5IyFSDbjE",
+   "sort": 0
+  },
+  {
+   "name": "Wakizashi",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.S1MG4qPHEV3N8XnO",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761631143207,
+    "modifiedTime": 1761631143207,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 233
+    },
+    "description": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "7",
+    "zeni": "15 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     }
+    ],
+    "category": "Swords",
+    "skill": "melee",
+    "readied": false,
+    "range": "0-1",
+    "damage": 3,
+    "deadliness": 5,
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "eo2K5eUpKxWpSFHK",
+   "sort": 0
+  },
+  {
+   "name": "Mempō",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.B47NklmcQInhydPH",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761631143207,
+    "modifiedTime": 1761631143207,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "fields_of_victory",
+     "page": 91
+    },
+    "description": "<p>Many samurai wear a mempō, or mask, to cover their face on the battlefield. They use a mempō partially for both protection and intimidation. A mempō is crafted from iron or leather, covered with lacquer or clay, and painted to resemble a face. While some mempō may have human features, most showcase jagged oni teeth, a ferocious mouth, and a frightening expression. (Cost: 5 koku. Rarity: 4. Item Qualities: Ceremonial, Wargear.)</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "4",
+    "zeni": "5 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000011",
+      "name": "Wargear"
+     }
+    ]
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "xkFU8GXHObUbCLZY",
+   "sort": 0
+  },
+  {
+   "name": "Climbing Kit",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.VoaUrDhwwvP1TZnV",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761631143207,
+    "modifiedTime": 1761631143207,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "shadowlands",
+     "page": 106
+    },
+    "description": "<p>The warriors of the Crab Clan do a not-insignificant amount of climbing, and so the climbing kit is an important part of many samurai’s military gear. It typically includes a few coils of rope, a small hammer, an iron chisel, powdered chalk, and a handful of spikes, pitons, and other climbing ephemera. In addition, some climbers add special spiked bands that slip over their hands and feet for extra grip. (Cost: 2 bu. Rarity: 3.)</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "3",
+    "zeni": "2 bu",
+    "properties": []
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "C6b68dm3qjkCriBl",
+   "sort": 0
+  }
+ ],
+ "effects": [],
+ "sort": 0,
+ "ownership": {
+  "default": 0,
+  "7vKCnwOtrdD7lBip": 3
+ },
+ "flags": {},
+ "_stats": {
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null,
+  "coreVersion": "14.365",
+  "systemId": "l5r5e",
+  "systemVersion": "1.13.1",
+  "createdTime": 1761625735400,
+  "modifiedTime": 1761631170632,
+  "lastModifiedBy": "7vKCnwOtrdD7lBip"
+ }
+}

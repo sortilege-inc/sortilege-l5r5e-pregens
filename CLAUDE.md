@@ -130,6 +130,27 @@ title is held, never before.
 re-extract discards derived tiers. `./scripts/pipeline.sh` runs the chain correctly; use
 it rather than calling the steps by hand.
 
+## The Creator
+
+`creator/index.html` + `assets/creator.js` port the twenty-questions flow from
+titterpig-dashboard-web (`src/systems/l5r5e/chargen.js`, `src/lib/ai.js`). Keep the step
+order and the AI prompts in step with that repo — they are meant to ask the same questions
+in the same register.
+
+Two things to hold onto when editing it:
+
+- **It exports this repo's source format.** The final step must keep emitting a valid
+  `src/characters/<slug>.json`; if the schema changes in `scripts/extract_characters.py`,
+  change `toSourceJson()` with it. The proof is a round trip: export, drop into
+  `src/characters/`, run `./scripts/pipeline.sh`, and the gates must pass.
+- **School names differ between the two data sets.** The chargen data says "Asahina
+  Artificer"; the compendium roll says "Asahina Artificer School". `rollName()` resolves to
+  the compendium spelling, because that is what the build's school-roll gate and the
+  coverage ledger key off. Two need explicit aliases: "Isawa Tensai" (the compendium's
+  typo) and "Wandering Blade".
+
+No API key is ever committed. The creator reads one from `localStorage` only.
+
 ## Never author rules text
 
 Content references are names; the build resolves them to the compendium's own verbatim

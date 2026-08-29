@@ -3,6 +3,7 @@
  "name": "Nasu Kogo",
  "folder_label": "Nasu Kogo (Shoshuro Shadoweaver)",
  "campaign": "The Bushi Oni",
+ "status": null,
  "bucket": "Shugenja",
  "accent": "#5b398e",
  "identity": {

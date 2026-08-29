@@ -1,0 +1,293 @@
+{
+ "slug": "iuchi-temur",
+ "name": "Iuchi Temur",
+ "folder_label": "Iuchi Temur",
+ "campaign": null,
+ "status": "draft",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Unicorn",
+  "family": "",
+  "school": "Iuchi Meishodo Master School",
+  "role": "Shugenja",
+  "age": ""
+ },
+ "portrait": "src/portraits/iuchi-temur.webp",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Unicorn",
+     "ring": "water",
+     "skill": "survival",
+     "social_status": 30
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Iuchi",
+     "ring": "air",
+     "skill1": "theology",
+     "skill2": "meditation",
+     "wealth": 6,
+     "social_glory": 40
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Iuchi Meishōdō Master",
+     "roles": "Shugenja",
+     "ring1": "earth",
+     "ring2": "water",
+     "skill1": "aesthetics",
+     "skill2": "design",
+     "skill3": "theology",
+     "social_honor": 40
+    },
+    "picks": {
+     "techniques": [
+      "Commune with the Spirits",
+      "Well of Desire"
+     ],
+     "school_ability": [
+      "The Way of Names"
+     ],
+     "equipment": [
+      "Ceremonial Clothes",
+      "Traveling Clothes",
+      "Wakizashi",
+      "Daikyū",
+      "Calligraphy Set"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "social_add_honor": 10
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {},
+    "picks": {
+     "distinction": [
+      "Keen Smell"
+     ]
+    }
+   },
+   "step10": {
+    "answers": {},
+    "picks": {
+     "adversity": [
+      "Nerve Damage"
+     ]
+    }
+   },
+   "step11": {
+    "answers": {},
+    "picks": {
+     "passion": [
+      "Gourmet"
+     ]
+    }
+   },
+   "step12": {
+    "answers": {},
+    "picks": {
+     "anxiety": [
+      "Obtuse"
+     ]
+    }
+   },
+   "step13": {
+    "answers": {
+     "skill": "medicine"
+    },
+    "picks": {
+     "disadvantage": [
+      "Superstition"
+     ]
+    }
+   },
+   "step18": {
+    "answers": {
+     "heritage_add_honor": 0,
+     "heritage_add_glory": 0,
+     "heritage_add_status": 0
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Temur"
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Iuchi Meishodo Master School",
+   "foundry_id": "fdosNCueCOWFGuGx",
+   "foundry_name": "Iuchi Temur",
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 1,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 0,
+     "design": 1,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 2
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 45,
+    "status": 30,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "",
+     "less_significant": ""
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 10,
+    "focus": 3,
+    "vigilance": 3,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Commune with the Spirits",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Well of Desire",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "The Way of Names",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Daikyū",
+     "quantity": 1
+    },
+    {
+     "name": "Ceremonial Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Calligraphy Set",
+     "quantity": 1
+    },
+    {
+     "name": "Unicorn Warhorse",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

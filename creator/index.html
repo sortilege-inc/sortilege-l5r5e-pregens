@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator — Sortilege L5R Pregens</title>
+<meta name="description" content="Build a Legend of the Five Rings 5th Edition character through the Game of Twenty Questions, and export it straight into the archive.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="../index.html">Sortilege L5R Pregens</a>
+  <a href="../index.html">Home</a>
+  <a href="../characters/index.html">Characters</a>
+  <a href="index.html" class="active">Creator</a>
+  <a href="../admin/index.html">Coverage</a>
+</nav>
+
+<div class="wrap wide">
+  <header class="masthead" style="padding-bottom:1rem">
+    <div class="cartouche">
+      <div class="eyebrow">The Game of Twenty Questions</div>
+      <h1>Creator</h1>
+    </div>
+    <p class="sub">Answer the twenty questions and the archive gains a samurai — exported in this repo's own source format, ready for the build.</p>
+  </header>
+
+  <div class="progress-wrap">
+    <div class="progress" id="progress"></div>
+    <span class="small muted" id="progress-label"></span>
+  </div>
+
+  <div class="creator">
+    <aside class="creator-nav">
+      <div id="steps"></div>
+    </aside>
+
+    <main class="creator-step">
+      <div class="step-n" id="step-n"></div>
+      <h2 id="step-title"></h2>
+      <p class="step-desc" id="step-desc"></p>
+      <div id="step-body"></div>
+      <div class="step-foot">
+        <button type="button" class="btn ghost" id="prev">‹ Back</button>
+        <button type="button" class="btn" id="next">Next ›</button>
+      </div>
+      <details class="ai-settings">
+        <summary>AI suggestions</summary>
+        <p class="muted small">Narrative fields can draft themselves — press <kbd>Tab</kbd> in an empty field, or use the Suggest button. Calls Anthropic's Messages API directly from your browser with the key below; the key is stored in this browser only and is never committed or sent anywhere else.</p>
+        <input type="password" id="ai-key" placeholder="sk-ant-… (stored in this browser only)" autocomplete="off">
+      </details>
+    </main>
+
+    <aside class="creator-wip">
+      <div class="wip-card" id="wip"></div>
+    </aside>
+  </div>
+</div>
+
+<footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
+
+<script src="../data/catalog.js"></script>
+<script src="../data/coverage.js"></script>
+<script src="../data/chargen/clans.js"></script>
+<script src="../data/chargen/families.js"></script>
+<script src="../data/chargen/schools.js"></script>
+<script src="../data/chargen/heritages.js"></script>
+<script src="../assets/creator.js"></script>
+</body>
+</html>

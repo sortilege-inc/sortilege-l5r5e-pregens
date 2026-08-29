@@ -146,7 +146,7 @@ def schema(cx):
     CREATE INDEX catalog_norm ON catalog(sub_type, norm);
     CREATE TABLE character(
       slug TEXT PRIMARY KEY, name TEXT, clan TEXT, family TEXT, school TEXT,
-      school_norm TEXT, role TEXT, bucket TEXT, campaign TEXT, accent TEXT,
+      school_norm TEXT, role TEXT, bucket TEXT, campaign TEXT, status TEXT, accent TEXT,
       portrait TEXT, concept TEXT, summary TEXT, tier_count INTEGER,
       xp_min INTEGER, xp_max INTEGER);
     CREATE TABLE tier(
@@ -228,11 +228,12 @@ def load_characters(cx):
     for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
         c = json.load(open(path))
         tiers = c["tiers"]
-        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 16) + ")", (
+        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 17) + ")", (
             c["slug"], c["name"], c["identity"].get("clan"), c["identity"].get("family"),
             c["identity"].get("school"), norm(c["identity"].get("school")),
             c["identity"].get("role"), c.get("bucket"), c.get("campaign"),
-            c.get("accent"), c.get("portrait"), c.get("concept"), c.get("summary"),
+            c.get("status"), c.get("accent"), c.get("portrait"),
+            c.get("concept"), c.get("summary"),
             len(tiers), min(t["xp"] for t in tiers), max(t["xp"] for t in tiers)))
         for idx, t in enumerate(tiers):
             tid += 1
@@ -394,7 +395,8 @@ def emit(cx):
         biggest = max(biggest, size)
         roster.append({k: c[k] for k in
                        ("slug", "name", "clan", "family", "school", "role", "bucket",
-                        "campaign", "portrait", "tier_count", "xp_min", "xp_max")})
+                        "campaign", "status", "portrait", "tier_count",
+                        "xp_min", "xp_max")})
 
     n1 = write(os.path.join(SITEDATA, "roster.js"), "L5R_ROSTER", roster)
 
@@ -611,6 +613,7 @@ PAGE_STUB = """<!DOCTYPE html>
   <a class="brand" href="../index.html">Sortilege L5R Pregens</a>
   <a href="../index.html">Home</a>
   <a href="index.html" class="active">Characters</a>
+  <a href="../creator/index.html">Creator</a>
   <a href="../admin/index.html">Coverage</a>
 </nav>
 
@@ -665,6 +668,11 @@ def emit_pages(cx):
     """One thin stub per character; all the rendering lives in assets/sheet.js."""
     out = os.path.join(ROOT, "characters")
     os.makedirs(out, exist_ok=True)
+    # drop stubs for characters whose source is gone, or coverage.py will
+    # (rightly) fail on a page with no character behind it
+    for stale in glob.glob(os.path.join(out, "*.html")):
+        if os.path.basename(stale) != "index.html":
+            os.remove(stale)
     cx.row_factory = sqlite3.Row
     n = 0
     for c in cx.execute("SELECT * FROM character ORDER BY slug"):

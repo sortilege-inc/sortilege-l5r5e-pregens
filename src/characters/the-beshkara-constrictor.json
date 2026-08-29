@@ -1,0 +1,427 @@
+{
+ "slug": "the-beshkara-constrictor",
+ "name": "The Beshkara Constrictor",
+ "folder_label": "The Beshkara Constrictor",
+ "campaign": null,
+ "status": "draft",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Shinomen Forest",
+  "family": "Hunter",
+  "school": "Shinomen Naga Seer Tradition",
+  "role": "",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "pow",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Shinomen Forest",
+     "ring": "earth",
+     "skill": "survival",
+     "social_status": 3
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Hunter Upbringing",
+     "ring": "water",
+     "skill1": "labor",
+     "skill2": "survival",
+     "social_glory": 30
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Shinomen Naga Seer Tradition",
+     "ring1": "earth",
+     "ring2": "water",
+     "skill1": "performance",
+     "skill2": "meditation",
+     "skill3": "courtesy",
+     "skill4": "melee",
+     "skill5": "ranged",
+     "social_honor": 55
+    },
+    "picks": {
+     "techniques": [
+      "Crescent Moon Style",
+      "Weight of Duty"
+     ],
+     "school_ability": [
+      "Bend Perception"
+     ],
+     "equipment": [
+      "Personal Pearl (Sacred)",
+      "Naga Armor",
+      "Traveling pack",
+      "Naginata",
+      "Yumi",
+      "Quiver of Arrow"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "stand_out": "Meditative insight yields creative solutions.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Selected to serve as an intermediary when the astradhari first entered the forests. Has a destiny to track and remove all tainted beings from the forests."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "She is fascinated by the humans, and seeks to travel with and observe their ways."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Is adept at initiating contact without causing panic.",
+     "skill": "culture",
+     "social_add_glory": 0
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "bushido": "She is curious and respectful about it, but does not understand it.",
+     "social_add_honor": 10,
+     "tenet_paramount": "Sincerity",
+     "tenet_less_significant": "Courage"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Successfully negotiating the first peaceful contact between the Naga and the Astradhari, establishing protocols that prevented bloodshed and created the foundation for ongoing cultural exchange."
+    },
+    "picks": {
+     "distinction": [
+      "Large Stature"
+     ]
+    }
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "There is something, potentially an oni, that she has never been able to hunt, and that she believes hunts her instead."
+    },
+    "picks": {
+     "adversity": [
+      "Stalked by [Creature]"
+     ]
+    }
+   },
+   "step11": {
+    "answers": {
+     "calms": "A cold swim is the most refreshing and rejuvenating thing."
+    },
+    "picks": {
+     "passion": [
+      "Bathing"
+     ]
+    }
+   },
+   "step12": {
+    "answers": {
+     "worries": "A sibling of theirs has succumbed to Jigoku's tainted corruption, and become a monstrous being."
+    },
+    "picks": {
+     "anxiety": [
+      "Fallen Ancestor"
+     ]
+    }
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "The creature that stalks her has taught her awareness of her surroundings."
+    },
+    "picks": {
+     "advantage": [
+      "Expert Tracker"
+     ]
+    }
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Carries her sibling's sacred pearl, in hope of a greater future."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "She instinctively moves to higher ground where she can see all approaches, a defensive habit developed from being constantly hunted."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "The Naga elders view her work with surface-dwellers as necessary but suspect her growing sympathy for human ways. Among the clans, she's known primarily to the Phoenix and Dragon as a reliable contact for forest matters, though most samurai find her unsettling. She has cordial relationships with monks and traveling scholars who approach the forest with proper respect."
+    },
+    "picks": {
+     "item": [
+      "Herbal Medicines"
+     ]
+    }
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "The party encountered her while investigating the oni's trail into the Shinomen Forest, where her expertise in tracking tainted creatures proved invaluable to their mission.",
+     "skill": "medicine"
+    },
+    "picks": {
+     "bond": [
+      "Protector and Ward"
+     ]
+    }
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "Her sibling (before their corruption) - they were raised together by the community, with her sibling being groomed as the primary guardian while she was trained as the diplomatic backup.",
+     "heritage_add_honor": 0,
+     "heritage_add_glory": 0,
+     "heritage_add_status": 0
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "The Beshkara Constrictor"
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "One day, the thing that stalks her will catch her unawares."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Shinomen Naga Seer Tradition",
+   "foundry_id": "17P6RunUFwDsleJl",
+   "foundry_name": "The Beshkara Constrictor",
+   "rings": {
+    "air": 1,
+    "earth": 3,
+    "fire": 1,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 65,
+    "glory": 30,
+    "status": 3,
+    "ninjo": "She is fascinated by the humans, and seeks to travel with and observe their ways.",
+    "giri": "Selected to serve as an intermediary when the astradhari first entered the forests. Has a destiny to track and remove all tainted beings from the forests.",
+    "bushido_tenets": {
+     "paramount": "Sincerity",
+     "less_significant": "Courage"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 12,
+    "focus": 2,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Crescent Moon Style",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Weight of Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Bend Perception",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Large Stature",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "earth",
+     "types": "Physical"
+    },
+    {
+     "name": "Stalked by [Creature]",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Interpersonal, Mental, Spiritual"
+    },
+    {
+     "name": "Bathing",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "water",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Fallen Ancestor",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "void",
+     "types": "Interpersonal, Spiritual"
+    },
+    {
+     "name": "Expert Tracker",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "air",
+     "types": "Mental, Physical"
+    }
+   ],
+   "titles": [],
+   "bonds": [
+    {
+     "name": "Protector and Ward",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0
+    }
+   ],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Naginata",
+     "quantity": 1
+    },
+    {
+     "name": "Yumi",
+     "quantity": 1
+    },
+    {
+     "name": "Naga Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Personal Pearl (Sacred)",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Quiver of Arrow",
+     "quantity": 1
+    },
+    {
+     "name": "Sibling's Sacred Pearl",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Herbal Medicines",
+     "quantity": 1
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "slug": "jinrai",
+ "name": "Jinrai",
+ "folder_label": "Jinrai",
+ "campaign": null,
+ "status": "draft",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Rural Farmland Region",
+  "family": "Military",
+  "school": "Mystic of the Mountain",
+  "role": "Monk",
+  "age": ""
+ },
+ "portrait": "src/portraits/jinrai.webp",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "pow",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "Rural Farmland Region",
+     "ring": "earth",
+     "skill": "fitness",
+     "social_status": 5
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Military",
+     "ring": "fire",
+     "skill1": "government",
+     "skill2": "command",
+     "wealth": 1,
+     "social_glory": 34
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Mystic of the Mountain",
+     "roles": "Monk",
+     "ring1": "void",
+     "ring2": "air",
+     "skill1": "unarmed",
+     "skill2": "melee",
+     "skill3": "survival",
+     "skill4": "theology",
+     "social_honor": 40
+    },
+    "picks": {
+     "techniques": [
+      "The Great Silence",
+      "Stirring the Embers",
+      "Cleansing Rite",
+      "Artisan’s Appraisal"
+     ],
+     "school_ability": [
+      "Unexpected Wisdom"
+     ],
+     "equipment": [
+      "Traveling Clothes",
+      "Nunchaku",
+      "Chandu"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "social_add_honor": 10
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_add_honor": 0,
+     "heritage_add_glory": 0,
+     "heritage_add_status": 0
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Jinrai"
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Mystic of the Mountain",
+   "foundry_id": "Tzc9DXEict08KLuS",
+   "foundry_name": "Jinrai",
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 1,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 39,
+    "status": 5,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "",
+     "less_significant": ""
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 6,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "The Great Silence",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Stirring the Embers",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Cleansing Rite",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Artisan’s Appraisal",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Unexpected Wisdom",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Nunchaku",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Chandu",
+     "quantity": 1
+    },
+    {
+     "name": "Journal",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Pouch of Ivory Kingdom Spices",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

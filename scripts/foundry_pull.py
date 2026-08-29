@@ -25,7 +25,7 @@ ACTOR_DIR = os.path.join(OUT, "actors")
 PORTRAIT_DIR = os.path.join(OUT, "portraits")
 HOST = os.environ.get("FOUNDRY_HOST", "https://foundry.sortilege.online")
 # Foundry's stand-in art, not a portrait
-PLACEHOLDER = re.compile(r"(mystery-man|icons/svg/)", re.I)
+PLACEHOLDER = re.compile(r"(mystery-man|icons/svg/|assets/icons/)", re.I)
 SOURCES = os.path.join(ROOT, "src", "foundry_sources.json")
 
 
@@ -193,7 +193,7 @@ def main():
                 "path": path, "root": name,
                 "bucket": path[1] if len(path) > 1 else None,
                 "character": path[2] if len(path) > 2 else r.get("name"),
-                "campaign": root.get("campaign"),
+                "campaign": root.get("campaign"), "status": root.get("status"),
                 "color": ch[-1].get("color"), "sort": r.get("sort", 0),
             }, force)
             index.append(entry)

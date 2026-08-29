@@ -1,0 +1,245 @@
+{
+ "slug": "kurosawa-genzo",
+ "name": "Kurosawa Genzō",
+ "folder_label": "Kurosawa Genzō",
+ "campaign": null,
+ "status": "draft",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "River Region",
+  "family": "Military",
+  "school": "Worldly Rōnin Path",
+  "role": "Bushi",
+  "age": ""
+ },
+ "portrait": "src/portraits/kurosawa-genzo.webp",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "pow",
+  "generated": true,
+  "steps": {
+   "step1": {
+    "answers": {
+     "clan": "River Region",
+     "ring": "water",
+     "skill": "seafaring",
+     "social_status": 5
+    },
+    "picks": {}
+   },
+   "step2": {
+    "answers": {
+     "family": "Military",
+     "ring": "fire",
+     "skill1": "government",
+     "skill2": "command",
+     "wealth": 5,
+     "social_glory": 32
+    },
+    "picks": {}
+   },
+   "step3": {
+    "answers": {
+     "school": "Worldly Rōnin Path",
+     "roles": "Bushi",
+     "ring1": "earth",
+     "ring2": "air",
+     "skill1": "command",
+     "skill2": "melee",
+     "skill3": "ranged",
+     "skill4": "fitness",
+     "skill5": "unarmed",
+     "social_honor": 30
+    },
+    "picks": {
+     "techniques": [
+      "Crescent Moon Style",
+      "All in Jest"
+     ],
+     "school_ability": [
+      "School of Waves"
+     ],
+     "equipment": [
+      "Traveling Clothes",
+      "Yari",
+      "Katana",
+      "Wakizashi",
+      "Mempō",
+      "Climbing Kit"
+     ]
+    }
+   },
+   "step4": {
+    "answers": {
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "social_add_glory": 5
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "social_add_honor": 10
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_add_honor": 0,
+     "heritage_add_glory": 0,
+     "heritage_add_status": 0
+    },
+    "picks": {}
+   },
+   "step19": {
+    "answers": {
+     "firstname": "Genzō"
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Worldly Rōnin Path",
+   "foundry_id": "mwzT1Mrded10UxWP",
+   "foundry_name": "Kurosawa Genzō",
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 1,
+     "unarmed": 1,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 2,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 1,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 40,
+    "glory": 37,
+    "status": 5,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "",
+     "less_significant": ""
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Crescent Moon Style",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "All in Jest",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "School of Waves",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Yari",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Mempō",
+     "quantity": 1
+    },
+    {
+     "name": "Climbing Kit",
+     "quantity": 1
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

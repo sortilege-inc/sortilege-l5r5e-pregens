@@ -13,6 +13,7 @@
   <a class="brand" href="../index.html">Sortilege L5R Pregens</a>
   <a href="../index.html">Home</a>
   <a href="index.html" class="active">Characters</a>
+  <a href="../creator/index.html">Creator</a>
   <a href="../admin/index.html">Coverage</a>
 </nav>
 
@@ -33,6 +34,11 @@
     <select id="role"><option value="">All</option></select>
     <label for="campaign">Campaign</label>
     <select id="campaign"><option value="">All</option></select>
+    <div class="seg" id="statusfilter">
+      <button data-status="" class="active">All</button>
+      <button data-status="finished">Finished</button>
+      <button data-status="draft">Drafts</button>
+    </div>
     <span class="chip" id="shown"></span>
   </div>
 
@@ -50,6 +56,7 @@
       clan = document.getElementById("clan"),
       role = document.getElementById("role"),
       campaign = document.getElementById("campaign");
+  var statusFilter = "";
 
   function fill(sel, key) {
     var vals = {};
@@ -66,6 +73,8 @@
       if (clan.value && c.clan !== clan.value) return false;
       if (role.value && c.role !== role.value) return false;
       if (campaign.value && c.campaign !== campaign.value) return false;
+      if (statusFilter === "draft" && c.status !== "draft") return false;
+      if (statusFilter === "finished" && c.status === "draft") return false;
       if (!term) return true;
       return [c.name, c.school, c.clan, c.family, c.role, c.campaign]
         .join(" ").toLowerCase().indexOf(term) >= 0;
@@ -75,6 +84,17 @@
       list.length + " of " + chars.length;
   }
   [q, clan, role, campaign].forEach(function (e) { e.addEventListener("input", draw); });
+  Array.prototype.forEach.call(
+    document.querySelectorAll("#statusfilter button"), function (b) {
+      b.addEventListener("click", function () {
+        statusFilter = b.getAttribute("data-status");
+        Array.prototype.forEach.call(
+          document.querySelectorAll("#statusfilter button"), function (o) {
+            o.classList.toggle("active", o === b);
+          });
+        draw();
+      });
+    });
   draw();
 })();
 </script>

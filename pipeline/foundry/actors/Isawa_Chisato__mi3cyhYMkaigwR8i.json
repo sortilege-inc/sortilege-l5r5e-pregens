@@ -1,0 +1,828 @@
+{
+ "folder": "3GWW6cRyT1qZwOh7",
+ "name": "Isawa Chisato",
+ "type": "character",
+ "img": "modules/l5r5e-compendia-sortilege/images/portraits/isawa_chisato_square.png",
+ "prototypeToken": {
+  "actorLink": true,
+  "disposition": 1,
+  "bar1": {
+   "attribute": "fatigue"
+  },
+  "bar2": {
+   "attribute": "strife"
+  },
+  "name": "Isawa Chisato",
+  "displayName": 30,
+  "width": 1,
+  "height": 1,
+  "texture": {
+   "src": "modules/l5r5e-compendia-sortilege/images/tokens/isawa_chisato_token.png",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "lockRotation": false,
+  "rotation": 0,
+  "alpha": 1,
+  "displayBars": 0,
+  "light": {
+   "negative": false,
+   "priority": 0,
+   "alpha": 0.5,
+   "angle": 360,
+   "bright": 0,
+   "color": null,
+   "coloration": 1,
+   "dim": 0,
+   "attenuation": 0.5,
+   "luminosity": 0.5,
+   "saturation": 0,
+   "contrast": 0,
+   "shadows": 0,
+   "animation": {
+    "type": null,
+    "speed": 5,
+    "intensity": 5,
+    "reverse": false
+   },
+   "darkness": {
+    "min": 0,
+    "max": 1
+   }
+  },
+  "sight": {
+   "enabled": false,
+   "range": 0,
+   "angle": 360,
+   "visionMode": "basic",
+   "color": null,
+   "attenuation": 0.1,
+   "brightness": 0,
+   "saturation": 0,
+   "contrast": 0
+  },
+  "detectionModes": {},
+  "occludable": {
+   "radius": 0
+  },
+  "ring": {
+   "enabled": false,
+   "colors": {
+    "ring": null,
+    "background": null
+   },
+   "effects": 0,
+   "subject": {
+    "scale": 1,
+    "texture": null
+   }
+  },
+  "turnMarker": {
+   "mode": 1,
+   "animation": null,
+   "src": null,
+   "disposition": false
+  },
+  "movementAction": null,
+  "flags": {},
+  "randomImg": false,
+  "appendNumber": false,
+  "prependAdjective": false,
+  "depth": 1
+ },
+ "_id": "mi3cyhYMkaigwR8i",
+ "system": {
+  "soft_locked": true,
+  "identity": {
+   "age": "",
+   "clan": "Phoenix",
+   "family": "Isawa",
+   "female": null,
+   "marital_status": "",
+   "roles": "Shugenja",
+   "school": "Isawa Tensai School",
+   "school_rank": 1,
+   "school_curriculum_journal": {}
+  },
+  "rings": {
+   "earth": 1,
+   "air": 2,
+   "water": 1,
+   "fire": 3,
+   "void": 3
+  },
+  "notes": "",
+  "description": "",
+  "social": {
+   "honor": 60,
+   "glory": 49,
+   "status": 30,
+   "ninjo": "",
+   "giri": "",
+   "bushido_tenets": {
+    "paramount": "",
+    "less_significant": ""
+   }
+  },
+  "skills": {
+   "artisan": {
+    "aesthetics": 0,
+    "composition": 0,
+    "design": 0,
+    "smithing": 0
+   },
+   "martial": {
+    "fitness": 0,
+    "melee": 0,
+    "ranged": 0,
+    "unarmed": 0,
+    "meditation": 1,
+    "tactics": 0
+   },
+   "scholar": {
+    "culture": 0,
+    "government": 0,
+    "medicine": 0,
+    "sentiment": 1,
+    "theology": 2
+   },
+   "social": {
+    "command": 0,
+    "courtesy": 1,
+    "games": 0,
+    "performance": 0
+   },
+   "trade": {
+    "commerce": 0,
+    "labor": 0,
+    "seafaring": 0,
+    "skulduggery": 0,
+    "survival": 1
+   }
+  },
+  "techniques": {
+   "kata": false,
+   "kiho": false,
+   "inversion": false,
+   "invocation": true,
+   "ritual": true,
+   "shuji": true,
+   "maho": false,
+   "ninjutsu": false,
+   "mantra": false,
+   "specificity": true
+  },
+  "endurance": 8,
+  "composure": 4,
+  "focus": 5,
+  "vigilance": 2,
+  "void_points": {
+   "max": 3,
+   "value": 0
+  },
+  "fatigue": {
+   "max": 8,
+   "value": 0
+  },
+  "strife": {
+   "max": 4,
+   "value": 0
+  },
+  "stance": "void",
+  "prepared": true,
+  "xp_total": 0,
+  "xp_spent": 0,
+  "xp_saved": 0,
+  "template": "core",
+  "twenty_questions": {
+   "template": "core",
+   "generated": true,
+   "step1": {
+    "clan": "Phoenix",
+    "ring": "void",
+    "skill": "theology",
+    "social_status": 30
+   },
+   "step2": {
+    "family": "Isawa",
+    "ring": "void",
+    "skill1": "meditation",
+    "skill2": "theology",
+    "wealth": 5,
+    "social_glory": 44
+   },
+   "step3": {
+    "school": "Isawa Tensai School",
+    "roles": "Shugenja",
+    "ring1": "fire",
+    "ring2": "fire",
+    "skill1": "sentiment",
+    "skill2": "courtesy",
+    "skill3": "survival",
+    "skill4": "none",
+    "skill5": "none",
+    "allowed_techniques": {
+     "kata": false,
+     "kiho": false,
+     "inversion": false,
+     "invocation": true,
+     "ritual": true,
+     "shuji": true,
+     "maho": false,
+     "ninjutsu": false,
+     "mantra": false,
+     "specificity": true
+    },
+    "techniques": [
+     "2iB4EK0I42kk83V3",
+     "XewEd8234reCEyUc",
+     "YNquxCeVzw7ekMag",
+     "1lVY0jhJAeEa4Byg"
+    ],
+    "school_ability": [
+     "ScvwTrKIJfjr4u3r"
+    ],
+    "equipment": [
+     "Cq1koK56k9dvLfMh",
+     "zcsgspz4VluSMeI0",
+     "Rex7fGo6R1KuUhQJ",
+     "DhMU7Z6UsxB7CSvR",
+     "S1MG4qPHEV3N8XnO"
+    ],
+    "social_honor": 50
+   },
+   "step4": {
+    "stand_out": "",
+    "ring": "air"
+   },
+   "step5": {
+    "social_giri": ""
+   },
+   "step6": {
+    "social_ninjo": ""
+   },
+   "step7": {
+    "clan_relations": "",
+    "skill": "none",
+    "social_add_glory": 5
+   },
+   "step8": {
+    "bushido": "",
+    "skill": "none",
+    "social_add_honor": 10,
+    "tenet_paramount": "",
+    "tenet_less_significant": "",
+    "item": []
+   },
+   "step9": {
+    "success": "",
+    "distinction": []
+   },
+   "step10": {
+    "difficulty": "",
+    "adversity": []
+   },
+   "step11": {
+    "calms": "",
+    "passion": []
+   },
+   "step12": {
+    "worries": "",
+    "anxiety": []
+   },
+   "step13": {
+    "most_learn": "",
+    "skill": "none",
+    "advantage": [],
+    "disadvantage": []
+   },
+   "step14": {
+    "first_sight": "",
+    "special_features": []
+   },
+   "step15": {
+    "stress": ""
+   },
+   "step16": {
+    "relations": "",
+    "item": []
+   },
+   "step17": {
+    "parents_pov": "",
+    "skill": "none",
+    "bond": []
+   },
+   "step18": {
+    "heritage_name": "",
+    "heritage_1": null,
+    "heritage_2": null,
+    "heritage_item": [],
+    "heritage_add_honor": 0,
+    "heritage_add_glory": 0,
+    "heritage_add_status": 0,
+    "skill": "none"
+   },
+   "step19": {
+    "firstname": "Chisato"
+   },
+   "step20": {
+    "death": ""
+   }
+  },
+  "zeni": 250,
+  "money": {
+   "koku": 0,
+   "bu": 0,
+   "zeni": 0
+  },
+  "is_afflicted_or_compromised": false
+ },
+ "items": [
+  {
+   "name": "Threshold Barrier",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-rituals-l5r-sortilege.Item.2iB4EK0I42kk83V3",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628860257,
+    "modifiedTime": 1761628860257,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 213
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The ritualist wards an entryway against beings of a certain sort, causing them to fail to observe the entryway or making them mentally repulsed by their efforts to enter it.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 2 Theology check </span><span class=\"fontstyle3\">using (air), (earth), (fire), (water), or (void) targeting a threshold, gate, or other entryway at range 0–1.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, the threshold is barred against a particular type of entity, based on the ring you chose, for one hour, plus additional hours equal to your bonus successes. When an entity of this type attempts to enter, it must resist with a </span><span class=\"fontstyle2\">TN 3 Meditation (void) check </span><span class=\"fontstyle3\">or be repelled by the spiritual barrier. Whether it succeeds or fails, you immediately become aware of its attempted entry. The particular type of being is based on the ring you chose, as follows:</span></p><ul><li><p><span class=\"fontstyle2\">(air): </span><span class=\"fontstyle3\">Ethereal Otherworldly beings such as spirits and ghosts.</span></p></li><li><p><span class=\"fontstyle2\">(earth): </span><span class=\"fontstyle3\">Living Tainted beings.</span></p></li><li><p><span class=\"fontstyle2\">(fire): </span><span class=\"fontstyle3\">Undead beings with corporeal form.</span></p></li><li><p><span class=\"fontstyle2\">(water): </span><span class=\"fontstyle3\">Wild animals.</span></p></li><li><p><span class=\"fontstyle2\">(void): </span><span class=\"fontstyle3\">Humans.</span></p></li></ul><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Instead of protecting a threshold, you may protect the entirety of a sealed area that extends a number of range bands around you no greater than your bonus successes.</span></p><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">If any beings of the type you are attempting to seal the threshold against have passed through the threshold within the last twenty-four hours, you become aware of their passage.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "theology",
+    "difficulty": "2",
+    "technique_type": "ritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "O0vHxLJFaywLb1qh",
+   "sort": 0
+  },
+  {
+   "name": "Borrowed Courage",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.XewEd8234reCEyUc",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628860257,
+    "modifiedTime": 1761628860257,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "fields_of_victory",
+     "page": 99
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>A skilled leader’s task is to guide their forces to victory, and sometimes, this means misleading them away from defeat. When an army is demoralized, when the odds are harsh, when the foe truly is stronger—these are the times a leader may need to spin a tale of the enemy’s weakness, of coming allies, or of a secret plan to guarantee success. The line between falsehood and truth may be dim or bright; regardless, sometimes warriors need hope to struggle on, even if that hope is forlorn.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 4 Performance (air) check </span><span class=\"fontstyle3\">targeting an army or a number of characters who can hear you up to your ranks in Sentiment. You may stake up to 3 honor to reduce the TN by that amount (to a minimum of 1) to embellish the truth.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you spread a powerful rumor of your foe’s weakness, of allies certain to arrive, or of some other hidden advantage that should ensure victory. The first time your target receives panic or strife during the next scene, they reduce the amount they receive by your ranks in Performance, to a minimum of 0. Whether you succeed or fail, if your side loses the battle, you lose your staked honor (as your boasts proved false). Additionally, there might be narrative social ramifications should individuals remember the lies you told.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(air)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">If you fail, nobody remembers exactly what you said, so there are no narrative social consequences for your fabrication.</span></p><p><span class=\"fontstyle5\">(air)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Add 1 kept (ring) set to (op) to the first Scheme action check you make during the next mass battle your army fights.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "skill": "performance",
+    "difficulty": "4",
+    "technique_type": "shuji"
+   },
+   "folder": "uXh7bFxBSFiGnaaB",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "Ba7IATekYEDbi6AO",
+   "sort": 700000
+  },
+  {
+   "name": "Truth Burns through Lies",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.YNquxCeVzw7ekMag",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628860257,
+    "modifiedTime": 1761628860257,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 219
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The courtier rapidly extrapolates, imagining the ramifications of a story and conjecturing what might have gone unsaid. If a loose thread exists in the account, they can find it, and that first thread can become the unraveling of the most cunning duplicity.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When making a Scholar skill (fire) check to assess a character’s story, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle2\">(fire)(op): </span><span class=\"fontstyle3\">If there is a single statement upon which the character’s story hinges, you determine what it is and what you would need to do to verify or disprove it.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "fire",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "shuji"
+   },
+   "folder": "OtOFYSBinJabn79K",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "S4sj2SjMrsImegyJ",
+   "sort": 1300000
+  },
+  {
+   "name": "Cleansing Rite",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-rituals-l5r-sortilege.Item.1lVY0jhJAeEa4Byg",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628860257,
+    "modifiedTime": 1761628860257,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 212
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The ritualist sanctifies a person or group, anointing them with sacred substances that drive out unholy presences and malign sorcery.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 3 Theology (void) check </span><span class=\"fontstyle3\">targeting up to five characters to remove spiritual contaminants from the targets before they spread. Note that this cannot remove a Shadowlands Taint disadvantage once it has taken hold, but it can prevent this spiritual contamination from taking root after a character is exposed.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, remove the Afflicted condition from the target.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(void)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">If one or more targets is an Otherworldly being, you become aware of it after completing the ritual—but you do not know which target.</span></p><p><span class=\"fontstyle5\">(void)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Choose one additional target per (op) spent this way.</span></p><p><span class=\"fontstyle2\">(void)(op)+: </span><span class=\"fontstyle3\">Instead of targeting characters, you may target an area that encompasses a number of range bands around you equal to (op) spent this way. Remove the Defiled terrain quality from this area. If it is a deeply unhallowed place that has long been the domain of evil, the Defiled quality returns after one day, plus additional days equal to your bonus successes.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "theology",
+    "difficulty": "3",
+    "technique_type": "ritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "NPxvbMsRCfYNRmsm",
+   "sort": 0
+  },
+  {
+   "name": "Elemental Inspiration",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.school-abilities-l5r-sortilege.Item.ScvwTrKIJfjr4u3r",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628860257,
+    "modifiedTime": 1761628860257,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "fields_of_victory",
+     "page": 79
+    },
+    "description": "<p><span class=\"fontstyle0\">Choose one: Air, Earth, Water, or Fire. This is your </span><span class=\"fontstyle2\">inspired element</span><span class=\"fontstyle0\">. When making a check to activate an invocation of your inspired element, add a number of rolled (ring) set to (op) results equal to your school rank. When making a check to activate an invocation of your inspired element, you trigger spiritual backlash (see page 190 of the core rulebook) only if you keep four or more dice containing (st) symbols (instead of three or more).</span></p><p><span class=\"fontstyle0\">When making a check to activate an invocation not of your inspired element, you trigger spiritual backlash if you keep two or more dice containing (st) symbols (instead of three or more).</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "school_ability"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "E9ZUz3Axy3Eco0hg",
+   "sort": 0
+  },
+  {
+   "name": "Sanctified Robes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.Cq1koK56k9dvLfMh",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628860257,
+    "modifiedTime": 1761628860257,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p><span class=\"fontstyle0\">The vestments of shugenja, shrine keepers, and other religious figures are blessed by kami and thus grant mystical protection. Traditionally, such robes consist of a white garment called </span><span class=\"fontstyle2\">jōe </span><span class=\"fontstyle0\">(literally, “pure cloth”) and a peaked hat, but they can be simpler, such as a white haori top and red hakama bottoms, or even an elaborate kimono.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "7",
+    "zeni": "4 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     }
+    ],
+    "armor": {
+     "physical": 1,
+     "supernatural": 3
+    }
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "5tDE0LJNckq4GrdS",
+   "sort": 0
+  },
+  {
+   "name": "Traveling Clothes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.zcsgspz4VluSMeI0",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628860257,
+    "modifiedTime": 1761628860257,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "2",
+    "zeni": "2 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000015",
+      "name": "Durable"
+     },
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     },
+     {
+      "id": "L5RCorePro000016",
+      "name": "Subtle"
+     }
+    ],
+    "armor": {
+     "physical": 2,
+     "supernatural": 0
+    }
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "XoHZWO5zHdfx3GpV",
+   "sort": 0
+  },
+  {
+   "name": "Traveling pack",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.Rex7fGo6R1KuUhQJ",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628860257,
+    "modifiedTime": 1761628860257,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 245
+    },
+    "description": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "1",
+    "zeni": "10 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ]
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "Mg9wbcJemyKCD2lR",
+   "sort": 0
+  },
+  {
+   "name": "Scroll satchel",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.DhMU7Z6UsxB7CSvR",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628860257,
+    "modifiedTime": 1761628860257,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 60
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "3",
+    "zeni": "1 bu",
+    "properties": []
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "L7Hdde5KZLZjsqzW",
+   "sort": 0
+  },
+  {
+   "name": "Wakizashi",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.S1MG4qPHEV3N8XnO",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628860257,
+    "modifiedTime": 1761628860257,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 233
+    },
+    "description": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "7",
+    "zeni": "15 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     }
+    ],
+    "category": "Swords",
+    "skill": "melee",
+    "readied": false,
+    "range": "0-1",
+    "damage": 3,
+    "deadliness": 5,
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "fWN7scZVK0PLDtRD",
+   "sort": 0
+  }
+ ],
+ "effects": [],
+ "sort": 0,
+ "ownership": {
+  "default": 0,
+  "7vKCnwOtrdD7lBip": 3
+ },
+ "flags": {},
+ "_stats": {
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null,
+  "coreVersion": "14.365",
+  "systemId": "l5r5e",
+  "systemVersion": "1.13.1",
+  "createdTime": 1761625719592,
+  "modifiedTime": 1761631202553,
+  "lastModifiedBy": "7vKCnwOtrdD7lBip"
+ }
+}

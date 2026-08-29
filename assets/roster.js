@@ -20,6 +20,7 @@
         : '<div class="initial">' + esc(c.name.charAt(0)) + "</div>";
       return '<a class="pcard" href="' + esc(prefix) + esc(c.slug) + '.html">' +
         '<div class="frame">' + art +
+        (c.status === "draft" ? '<span class="draftbadge">Draft</span>' : "") +
         '<span class="tiercount">' + c.tier_count +
         (c.tier_count === 1 ? " tier" : " tiers") + "</span></div>" +
         '<span class="nm">' + esc(c.name) + "</span>" +

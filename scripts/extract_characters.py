@@ -273,6 +273,7 @@ def main():
             "name": display,
             "folder_label": char,
             "campaign": campaign,
+            "status": entries[0].get("status"),
             "bucket": entries[0].get("bucket"),
             "accent": entries[0].get("color"),
             "identity": {

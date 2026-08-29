@@ -11,6 +11,7 @@ Served as a buildless static site (GitHub Pages, works from `file://` too).
 ```
 index.html                 landing page: headline coverage + roster
 characters/index.html      searchable roster (clan / role / campaign)
+creator/index.html         the Game of Twenty Questions as a wizard
 characters/<slug>.html     generated stub — three tabs, all rendered by assets/sheet.js:
                            Dossier (with school + title curricula) · Twenty Questions · Play
 play/<slug>-<xp>xp.html    GENERATED — a playable sheet per character per XP tier
@@ -20,6 +21,7 @@ assets/
   sheet.js                 character sheet + XP timeline + between-tier changelog
   roster.js                the card-grid renderer (not to be confused with data/roster.js)
   admin.js                 coverage ledger: tabs, filters, used/unused table
+  creator.js               the 22-step chargen wizard + AI suggestions
   play/                    the Portents & Fortunes character sheet, reused as-is
                            (sheet.js / sheet.css / l5rdata.js); scripts/build.py's
                            sheet_from_tier() is the only translation layer
@@ -30,6 +32,7 @@ data/catalog.js            GENERATED — window.L5R_CATALOG: the coverage denomi
 data/coverage.js           GENERATED — window.L5R_COVERAGE: what is used, by whom
 data/twenty_questions.js   GENERATED — window.L5R_20Q: the official question wording
                            and page references, from the l5r5e system's own en.json
+data/chargen/*.js          clan / family / school / heritage mechanics for the Creator
 src/characters/<slug>.json SOURCE OF TRUTH — hand-editable character definitions
 src/portraits/             character art referenced by src/characters/*.json
 pipeline/foundry/          raw Foundry pulls (actors + compendium catalog)
@@ -157,3 +160,30 @@ character sheet. Getting there needed two things that are easy to get wrong and 
 written up in [CLAUDE.md](CLAUDE.md): a title's curriculum purchases are nested inside the
 title item rather than sitting in `actor.items`, and a title's own `xp_used` is a rollup
 of those nested items rather than a price paid on top of them.
+
+## The Creator
+
+`creator/index.html` walks the Game of Twenty Questions as a 22-step wizard: side nav with
+completion ticks, a live work-in-progress panel computing rings, skills, honor, glory,
+status and wealth as you answer, and a draft auto-saved to this browser.
+
+The step list, the flow and the AI prompts follow
+[titterpig-dashboard-web](../Titterpig%20Utilities/titterpig-dashboard-web)
+(`src/systems/l5r5e/chargen.js`, `src/lib/ai.js`) so both surfaces ask the same questions
+in the same order and suggest in the same register.
+
+**AI suggestions.** Narrative fields draft themselves — <kbd>Tab</kbd> in an empty field,
+or the Suggest button — by calling Anthropic's Messages API directly from the browser with
+a per-field system prompt plus the character so far as context. The key lives in
+`localStorage` for that browser only; nothing is committed and no key ships with the site.
+
+**It exports into this repo.** The final step emits a `src/characters/<slug>.json` in
+exactly the source format the build consumes: drop it in, run `./scripts/pipeline.sh`, and
+the character gets a dossier, a coverage entry and a playable sheet, with every technique,
+peculiarity and item name resolved to the compendium's verbatim rules text. School names
+are resolved to the compendium's spelling on the way out, so the school-roll gate passes.
+
+Mechanics for clans, families, schools and heritages come from `data/chargen/*.js` (the
+dashboard's ingested DSL data, slimmed to the chargen fields). Everything else — the
+peculiarities, items and techniques you pick from — comes from this repo's own compendium
+catalog, so there is one source of truth for rules text.

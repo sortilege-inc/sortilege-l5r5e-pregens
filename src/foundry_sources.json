@@ -4,6 +4,12 @@
   {
    "folder": "General",
    "campaign": null
+  },
+  {
+   "folder": "Draft",
+   "campaign": null,
+   "status": "draft",
+   "_why": "work-in-progress characters; badged as drafts on the roster"
   }
  ],
  "actors": [
@@ -64,6 +70,14 @@
   "tonbo-asahi": {
    "identity.school": "Dragonfly Grace of the Spirits School",
    "_why": "Foundry records 'Dragonfly Grace of the Spirits'; the compendium roll has ' School'"
+  },
+  "isawa-chisato": {
+   "identity.school": "Isawai Tensai School",
+   "_why": "the COMPENDIUM has the typo here: the school is 'Isawa Tensai School' in print, but the School Curriculum pack spells it 'Isawai'. Mapped to the pack's spelling so it counts against the roll; fix it in Foundry and this correction goes away."
+  },
+  "iuchi-temur": {
+   "identity.school": "Iuchi Meishodo Master School",
+   "_why": "actor records 'Iuchi Meishōdō Master'; the roll has ' School' on the end"
   }
  },
  "portraits": {
@@ -80,7 +94,12 @@
   "asahina-jujiro": "src/portraits/asahina-jujiro.webp",
   "shinjo-harunobu": "src/portraits/shinjo-harunobu.webp",
   "togashi-rensho": "src/portraits/togashi-rensho.webp",
-  "tonbo-asahi": "src/portraits/tonbo-asahi.webp"
+  "tonbo-asahi": "src/portraits/tonbo-asahi.webp",
+  "doji-sayaka": "src/portraits/doji-sayaka.webp",
+  "isawa-chisato": "src/portraits/isawa-chisato.webp",
+  "iuchi-temur": "src/portraits/iuchi-temur.webp",
+  "jinrai": "src/portraits/jinrai.webp",
+  "kurosawa-genzo": "src/portraits/kurosawa-genzo.webp"
  },
  "derive_tiers": [
   "doji-setsuna"

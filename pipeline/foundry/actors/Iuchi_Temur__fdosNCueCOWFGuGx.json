@@ -1,0 +1,805 @@
+{
+ "folder": "3GWW6cRyT1qZwOh7",
+ "name": "Iuchi Temur",
+ "type": "character",
+ "img": "modules/l5r5e-compendia-sortilege/images/portraits/iuchi_temur_square.png",
+ "prototypeToken": {
+  "actorLink": true,
+  "disposition": 1,
+  "bar1": {
+   "attribute": "fatigue"
+  },
+  "bar2": {
+   "attribute": "strife"
+  },
+  "name": "Iuchi Temur",
+  "displayName": 30,
+  "width": 1,
+  "height": 1,
+  "texture": {
+   "src": "modules/l5r5e-compendia-sortilege/images/tokens/iuchi_temur_token.png",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "lockRotation": false,
+  "rotation": 0,
+  "alpha": 1,
+  "displayBars": 0,
+  "light": {
+   "negative": false,
+   "priority": 0,
+   "alpha": 0.5,
+   "angle": 360,
+   "bright": 0,
+   "color": null,
+   "coloration": 1,
+   "dim": 0,
+   "attenuation": 0.5,
+   "luminosity": 0.5,
+   "saturation": 0,
+   "contrast": 0,
+   "shadows": 0,
+   "animation": {
+    "type": null,
+    "speed": 5,
+    "intensity": 5,
+    "reverse": false
+   },
+   "darkness": {
+    "min": 0,
+    "max": 1
+   }
+  },
+  "sight": {
+   "enabled": false,
+   "range": 0,
+   "angle": 360,
+   "visionMode": "basic",
+   "color": null,
+   "attenuation": 0.1,
+   "brightness": 0,
+   "saturation": 0,
+   "contrast": 0
+  },
+  "detectionModes": {},
+  "occludable": {
+   "radius": 0
+  },
+  "ring": {
+   "enabled": false,
+   "colors": {
+    "ring": null,
+    "background": null
+   },
+   "effects": 0,
+   "subject": {
+    "scale": 1,
+    "texture": null
+   }
+  },
+  "turnMarker": {
+   "mode": 1,
+   "animation": null,
+   "src": null,
+   "disposition": false
+  },
+  "movementAction": null,
+  "flags": {},
+  "randomImg": false,
+  "appendNumber": false,
+  "prependAdjective": false,
+  "depth": 1
+ },
+ "_id": "fdosNCueCOWFGuGx",
+ "system": {
+  "soft_locked": false,
+  "identity": {
+   "age": "",
+   "clan": "Unicorn",
+   "family": "",
+   "female": null,
+   "marital_status": "",
+   "roles": "Shugenja",
+   "school": "Iuchi Meishōdō Master",
+   "school_rank": 1,
+   "school_curriculum_journal": {}
+  },
+  "rings": {
+   "earth": 2,
+   "air": 2,
+   "water": 3,
+   "fire": 1,
+   "void": 2
+  },
+  "notes": "",
+  "description": "",
+  "social": {
+   "honor": 50,
+   "glory": 45,
+   "status": 30,
+   "ninjo": "",
+   "giri": "",
+   "bushido_tenets": {
+    "paramount": "",
+    "less_significant": ""
+   }
+  },
+  "skills": {
+   "artisan": {
+    "aesthetics": 1,
+    "composition": 0,
+    "design": 1,
+    "smithing": 0
+   },
+   "martial": {
+    "fitness": 0,
+    "melee": 0,
+    "ranged": 0,
+    "unarmed": 0,
+    "meditation": 1,
+    "tactics": 0
+   },
+   "scholar": {
+    "culture": 0,
+    "government": 0,
+    "medicine": 0,
+    "sentiment": 0,
+    "theology": 2
+   },
+   "social": {
+    "command": 0,
+    "courtesy": 0,
+    "games": 0,
+    "performance": 0
+   },
+   "trade": {
+    "commerce": 0,
+    "labor": 0,
+    "seafaring": 0,
+    "skulduggery": 0,
+    "survival": 1
+   }
+  },
+  "techniques": {
+   "kata": false,
+   "kiho": false,
+   "inversion": false,
+   "invocation": true,
+   "ritual": true,
+   "shuji": true,
+   "maho": false,
+   "ninjutsu": false,
+   "mantra": false,
+   "specificity": true
+  },
+  "endurance": 6,
+  "composure": 10,
+  "focus": 3,
+  "vigilance": 3,
+  "void_points": {
+   "max": 2,
+   "value": 0
+  },
+  "fatigue": {
+   "max": 6,
+   "value": 0
+  },
+  "strife": {
+   "max": 10,
+   "value": 0
+  },
+  "stance": "void",
+  "prepared": true,
+  "xp_total": 0,
+  "xp_spent": 0,
+  "xp_saved": 0,
+  "template": "core",
+  "twenty_questions": {
+   "template": "core",
+   "generated": true,
+   "step1": {
+    "clan": "Unicorn",
+    "ring": "water",
+    "skill": "survival",
+    "social_status": 30
+   },
+   "step2": {
+    "family": "Iuchi",
+    "ring": "air",
+    "skill1": "theology",
+    "skill2": "meditation",
+    "wealth": 6,
+    "social_glory": 40
+   },
+   "step3": {
+    "school": "Iuchi Meishōdō Master",
+    "roles": "Shugenja",
+    "ring1": "earth",
+    "ring2": "water",
+    "skill1": "aesthetics",
+    "skill2": "design",
+    "skill3": "theology",
+    "skill4": "none",
+    "skill5": "none",
+    "allowed_techniques": {
+     "kata": false,
+     "kiho": false,
+     "inversion": false,
+     "invocation": true,
+     "ritual": true,
+     "shuji": true,
+     "maho": false,
+     "ninjutsu": false,
+     "mantra": false,
+     "specificity": true
+    },
+    "techniques": [
+     "r9DyFb62vtLwexbW",
+     "DE7tPCTvvSVptjRj"
+    ],
+    "school_ability": [
+     "CAr1w8KmAu1CGBrY"
+    ],
+    "equipment": [
+     "K61XHG9GnFLieqjc",
+     "zcsgspz4VluSMeI0",
+     "S1MG4qPHEV3N8XnO",
+     "sjVz7tI11BkNAA7t",
+     "MWzx5Wiu6xcCWc9J",
+     "egcoMt1svZLNy8Qh"
+    ],
+    "social_honor": 40
+   },
+   "step4": {
+    "stand_out": "",
+    "ring": "void"
+   },
+   "step5": {
+    "social_giri": ""
+   },
+   "step6": {
+    "social_ninjo": ""
+   },
+   "step7": {
+    "clan_relations": "",
+    "skill": "none",
+    "social_add_glory": 5
+   },
+   "step8": {
+    "bushido": "",
+    "skill": "none",
+    "social_add_honor": 10,
+    "tenet_paramount": "",
+    "tenet_less_significant": "",
+    "item": []
+   },
+   "step9": {
+    "success": "",
+    "distinction": [
+     "Y6XA7s9S2oQSnRCM"
+    ]
+   },
+   "step10": {
+    "difficulty": "",
+    "adversity": [
+     "XP5G0ohTS5i6p8f1"
+    ]
+   },
+   "step11": {
+    "calms": "",
+    "passion": [
+     "GKp5XvNaO9PAtks9"
+    ]
+   },
+   "step12": {
+    "worries": "",
+    "anxiety": [
+     "LkUeeW564hNbYdUQ"
+    ]
+   },
+   "step13": {
+    "most_learn": "",
+    "skill": "medicine",
+    "advantage": [],
+    "disadvantage": [
+     "2fgVtTp5P432DjTU"
+    ]
+   },
+   "step14": {
+    "first_sight": "",
+    "special_features": []
+   },
+   "step15": {
+    "stress": ""
+   },
+   "step16": {
+    "relations": "",
+    "item": []
+   },
+   "step17": {
+    "parents_pov": "",
+    "skill": "none",
+    "bond": []
+   },
+   "step18": {
+    "heritage_name": "",
+    "heritage_1": null,
+    "heritage_2": null,
+    "heritage_item": [],
+    "heritage_add_honor": 0,
+    "heritage_add_glory": 0,
+    "heritage_add_status": 0,
+    "skill": "none"
+   },
+   "step19": {
+    "firstname": "Temur"
+   },
+   "step20": {
+    "death": ""
+   },
+   "autoCompleteListName": "step2.family",
+   "autoCompleteListSelectedIndex": "1"
+  },
+  "zeni": 300,
+  "money": {
+   "koku": 0,
+   "bu": 0,
+   "zeni": 0
+  },
+  "is_afflicted_or_compromised": false
+ },
+ "items": [
+  {
+   "name": "Commune with the Spirits",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-rituals-l5r-sortilege.Item.r9DyFb62vtLwexbW",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628827557,
+    "modifiedTime": 1761628827557,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 212
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The ritualist centers their mind on one of the Elements, appealing to the spirits in their environment and seeking their counsel or boon. Priests and laypeople are able to use this ritual to receive less specific guidance from the spirits, such as a leaf that falls to the ground pointing in the direction of the person or thing they are seeking.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity or Support action, you may make a </span><span class=\"fontstyle2\">TN 1 Theology check </span><span class=\"fontstyle3\">using (air), (earth), (fire), (water), or (void) to appeal to nearby spirits of that Element (appeal to the departed, such as ancestor spirits, and other non-elemental supernatural presences, if using (void)) for aid.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, choose and receive one of the following boons from the spirit or spirits you contacted:</span></p><ul><li><p><span class=\"fontstyle2\">- Sense the Kami: </span><span class=\"fontstyle3\">Detect all spirits and uses of their magic by shugenja within a number of range bands equal to the ring you used plus your bonus successes.</span></p></li><li><p><span class=\"fontstyle2\">- Spiritual Knowledge: </span><span class=\"fontstyle3\">Learn one fact the spirits know about the area.</span></p></li><li><p><span class=\"fontstyle2\">- Elemental Gift: </span><span class=\"fontstyle3\">The kami deliver a small amount of the Element in question to you. For instance, a prayer to a water kami might cause it to begin raining lightly, for a short time, but it might also cause you to run across a stream, or even find groundwater. In contrast, a prayer to fire kami might bring forth a small shower of sparks, while a prayer to an air kami might elicit a gust of wind. Praying to an earth kami might cause you to stumble across a large stone, or find a small patch of arable ground amid a wasteland. Prayers to the ancestors may allow the petitioner to find something that belonged to an ancestor in a time of need.</span></p></li></ul><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Reduce the TN of your next check to interact with or appeal to kami or supernatural presences of this Element by 1.</span></p><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">If you succeed, receive one additional boon per </span><span class=\"fontstyle6\">(op) </span><span class=\"fontstyle3\">spent this way. Each boon can only be received one time per activation.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "theology",
+    "difficulty": "1",
+    "technique_type": "ritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "Up3GLLI4bJ4uWc9M",
+   "sort": 0
+  },
+  {
+   "name": "Well of Desire",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.DE7tPCTvvSVptjRj",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628827557,
+    "modifiedTime": 1761628827557,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 221
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Bribery is considered to be corruption in Rokugan, yet gift exchanges and gift giving is a time-honored tradition. The shrewdest courtiers can engineer scenarios in which their targets cannot refuse their gifts without tarnishing their reputations. Thus, the recipient of such a poisoned gift might find it preferable to owe the courtier a favor than to be shamed in public.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Courtesy (water) check to present a gift to a target, you may spend </span><span class=\"fontstyle4\">(op) </span><span class=\"fontstyle3\">as follows:</span></p><p><span class=\"fontstyle2\">(water)(op): </span><span class=\"fontstyle3\">To refuse your gift, your target must forfeit glory equal to your Water Ring. Additionally, if the gift is something that the target desires, the target also must suffer strife equal to its rarity to refuse it. If your target accepts the gift, reduce the TN of your next Social skill check targeting them by the rarity of the item (to a minimum of 1).</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "water",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "shuji"
+   },
+   "folder": "VUgIQroTFMSoeNI5",
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "PyykQ8HR4pv90hHJ",
+   "sort": 1400000
+  },
+  {
+   "name": "The Way of Names",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.school-abilities-l5r-sortilege.Item.CAr1w8KmAu1CGBrY",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628827557,
+    "modifiedTime": 1761628827557,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 83
+    },
+    "description": "<p><span class=\"fontstyle0\">As a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 2 Design check </span><span class=\"fontstyle0\">using any ring to bind a spirit to an inanimate vessel, creating a meishōdō talisman for one invocation of that Element that you have learned. While you have the talisman in your possession, reduce the TN of checks to activate that invocation by 1. You can give the talisman to another shugenja, allowing them to perform that invocation even if they have not learned it and reducing the TN to activate it by 1, but the talisman ceases to function after a number of uses equal to your school rank. You can sustain a number of meishōdō talismans up to your school rank. You can only have one meishōdō talisman for any single invocation.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "school_ability"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "Xfi6b624gOJluGYf",
+   "sort": 0
+  },
+  {
+   "name": "Ceremonial Clothes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.K61XHG9GnFLieqjc",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628827557,
+    "modifiedTime": 1761628827557,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p>Ceremonial clothing is any garment worn during an official ceremony, from a samurai’s court kimono to the accoutrement of the Imperial family. Ceremonial clothing is often richly decorated and offers little protection.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "4",
+    "zeni": "1 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000010",
+      "name": "Resplendent"
+     }
+    ],
+    "armor": {
+     "physical": 1,
+     "supernatural": 0
+    }
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "DQ82Lc5TjXnsN4BK",
+   "sort": 0
+  },
+  {
+   "name": "Traveling Clothes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.zcsgspz4VluSMeI0",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628827557,
+    "modifiedTime": 1761628827557,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "2",
+    "zeni": "2 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000015",
+      "name": "Durable"
+     },
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     },
+     {
+      "id": "L5RCorePro000016",
+      "name": "Subtle"
+     }
+    ],
+    "armor": {
+     "physical": 2,
+     "supernatural": 0
+    }
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "wjxywATGHVrf5qOo",
+   "sort": 0
+  },
+  {
+   "name": "Wakizashi",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.S1MG4qPHEV3N8XnO",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628827557,
+    "modifiedTime": 1761628827557,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 233
+    },
+    "description": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "7",
+    "zeni": "15 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     }
+    ],
+    "category": "Swords",
+    "skill": "melee",
+    "readied": false,
+    "range": "0-1",
+    "damage": 3,
+    "deadliness": 5,
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "6tp11fZoZ1AAPCif",
+   "sort": 0
+  },
+  {
+   "name": "Daikyū",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/bow.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.sjVz7tI11BkNAA7t",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628827557,
+    "modifiedTime": 1761628827557,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 236
+    },
+    "description": "<p><span class=\"fontstyle0\">Daikyū are large composite bows designed to be fired from horseback. Conventionally around six feet long, these elegant weapons are constructed by gluing thin layers of wood, horn, leather, and sinew together. Daikyū differ from other bows in that they have an asymmetric shape. Their grip is about two-thirds of the way from the top, making the top curve longer than the bottom. This allows the bows to be fired easily from horseback in either direction. Each daikyū is made for a custom fit for a specific user.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "6",
+    "zeni": "6 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000011",
+      "name": "Wargear"
+     }
+    ],
+    "category": "Bows",
+    "skill": "ranged",
+    "readied": false,
+    "range": "3-5",
+    "damage": 6,
+    "deadliness": 4,
+    "grip_1": "N/A",
+    "grip_2": ""
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "b3kCRjtKF2F6Ui7E",
+   "sort": 0
+  },
+  {
+   "name": "Calligraphy Set",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.MWzx5Wiu6xcCWc9J",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628827557,
+    "modifiedTime": 1761628827557,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 242
+    },
+    "description": "<p>These ornate boxes contain items a practiced calligrapher needs to craft books, letters, scrolls, and other written communications. It consists of a small wooden box that contains a variety of brushes, inkstones, and pigments; a small bowl for water; and a small bag of sand for drying. Calligraphers and scribes customarily carry a calligraphy set, as so do some samurai and courtiers who prefer to write their own correspondence. (Cost: 1 bu. Rarity: 3.)</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "3",
+    "zeni": "1 bu",
+    "properties": []
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "_id": "uJktgeWjioYTgZzV",
+   "sort": 0
+  },
+  {
+   "name": "Unicorn Warhorse",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "_id": "HjueBBBEW8jZmFC2",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "0",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0,
+    "7vKCnwOtrdD7lBip": 3
+   },
+   "flags": {},
+   "_stats": {
+    "compendiumSource": "Item.egcoMt1svZLNy8Qh",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.1",
+    "createdTime": 1761628827557,
+    "modifiedTime": 1761628827557,
+    "lastModifiedBy": "7vKCnwOtrdD7lBip"
+   }
+  }
+ ],
+ "effects": [],
+ "sort": 0,
+ "ownership": {
+  "default": 0,
+  "7vKCnwOtrdD7lBip": 3
+ },
+ "flags": {},
+ "_stats": {
+  "compendiumSource": null,
+  "duplicateSource": null,
+  "exportSource": null,
+  "coreVersion": "14.365",
+  "systemId": "l5r5e",
+  "systemVersion": "1.13.2",
+  "createdTime": 1761624931296,
+  "modifiedTime": 1762138294421,
+  "lastModifiedBy": "7vKCnwOtrdD7lBip"
+ }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jinrai — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Jinrai</span>
+  <a href="../characters/jinrai.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "jinrai-0xp",
+ "name": "Jinrai",
+ "clan": "Rural Farmland Region",
+ "family": "Military",
+ "school": "Mystic of the Mountain",
+ "role": "Monk",
+ "rank": 1,
+ "portrait": "../src/portraits/jinrai.webp",
+ "rings": {
+  "air": 2,
+  "earth": 2,
+  "fire": 2,
+  "water": 1,
+  "void": 3
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 6,
+  "focus": 4,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 3,
+   "start": 3
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 50,
+  "glory": 39,
+  "status": 5
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 1,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 1,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 0,
+  "government": 1,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 1,
+  "command": 1,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 1
+ },
+ "bushido": {
+  "paramount": "",
+  "less": ""
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "The Great Silence",
+   "tag": "Kiho",
+   "kind": "kiho",
+   "text": "<p><span class=\"fontstyle0\"><em>The monk swirls their hands in a spiral, pulling noise inward and stealing even the reverberations that sounds make through the air. Lies die on the lips unspoken, and prayers never reach the spirits for whom they were intended. Skilled practitioners often maintain this technique, twisting the wind around them to steal away pernicious words and wicked prayers alike.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Scheme and Support action, you may activate this kihō, you may make a </span><span class=\"fontstyle2\">TN 1 Theology (air) check </span><span class=\"fontstyle3\">to create an area of silence around you.</span></p><p><span class=\"fontstyle2\"><strong>Enhancement Effect:</strong> </span><span class=\"fontstyle3\">If you succeed, this kihō activates. While this kihō is active, increase the TN of Scheme action checks targeting you by one plus your ranks in Command.</span></p><p><span class=\"fontstyle2\"><strong>Burst Effect:</strong> </span><span class=\"fontstyle3\">If you have two or more bonus successes, characters at range 0–3 suffer the Silenced condition (see page 273) and cannot hear. This effect persists until the beginning of your next turn.</span></p>"
+  },
+  {
+   "name": "Stirring the Embers",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<p><span class=\"fontstyle0\"><em>A good leader does not just compensate for the weaknesses of comrades, but also fosters their innate strengths. The courtier reminds an ally of one of their finer qualities, sparking their pride to get them to fight more fiercely or speak with greater conviction.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When making a Social skill (fire) check targeting one or more characters, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle4\">(fire)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Choose a target and one of their known distinctions per (op) spent this way. Until the end of the scene, when that advantage applies to a check, the target may reroll up to three dice (instead of two).</span></p>"
+  },
+  {
+   "name": "Cleansing Rite",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<p><span class=\"fontstyle0\"><em>The ritualist sanctifies a person or group, anointing them with sacred substances that drive out unholy presences and malign sorcery.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 3 Theology (void) check </span><span class=\"fontstyle3\">targeting up to five characters to remove spiritual contaminants from the targets before they spread. Note that this cannot remove a Shadowlands Taint disadvantage once it has taken hold, but it can prevent this spiritual contamination from taking root after a character is exposed.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, remove the Afflicted condition from the target.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(void)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">If one or more targets is an Otherworldly being, you become aware of it after completing the ritual—but you do not know which target.</span></p><p><span class=\"fontstyle5\">(void)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Choose one additional target per (op) spent this way.</span></p><p><span class=\"fontstyle2\">(void)(op)+: </span><span class=\"fontstyle3\">Instead of targeting characters, you may target an area that encompasses a number of range bands around you equal to (op) spent this way. Remove the Defiled terrain quality from this area. If it is a deeply unhallowed place that has long been the domain of evil, the Defiled quality returns after one day, plus additional days equal to your bonus successes.</span></p>"
+  },
+  {
+   "name": "Artisan’s Appraisal",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<p><span class=\"fontstyle0\"><em>The courtier looks at an object but sees its maker. Each thumbprint tells a story about the hand that crafted the piece; every subtle choice reveals something about the desires that linger in the artist’s mind.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When assessing an object or performance with an Artisan skill (air), Performance (air), or Games (air) check, you may spend </span><span class=\"fontstyle4\"> </span><span class=\"fontstyle3\">in the following ways:</span></p><p><span class=\"fontstyle4\">(air)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Choose a ring; learn the value of that ring for the creator or performer and all advantages and disadvantages attached to that ring that are not of the curse type.</span></p><p><span class=\"fontstyle2\">(air)(op): </span><span class=\"fontstyle3\">If the creator or performer is an NPC, learn their demeanor.</span></p>"
+  },
+  {
+   "name": "Unexpected Wisdom",
+   "tag": "School Ability",
+   "kind": "school_ability",
+   "text": "<p><span class=\"fontstyle0\">You are a wealth of wisdom, which you can dispense a number of times per game session equal to your school rank. On your turn or at any appropriate time during a narrative scene, you may dispense a small bit of wisdom to a character who can hear you and has not benefitted from this ability this scene. The next time a character, including yourself, employs that wisdom they may reduce the TN of that check by 1 and may negate a number of (st) up to your ranks in Sentiment or Theology (your choice).</span></p>"
+  }
+ ],
+ "peculiarities": [],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Nunchaku",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 4,
+   "deadliness": 2,
+   "grips": "Snaring",
+   "rarity": "6",
+   "text": "<p><span class=\"fontstyle0\">Originally hailing from the Islands of Spice and Silk, nunchaku have been used in certain Rokugani martial arts schools for centuries. Adapted from a simple threshing tool, nunchaku consist of two wood or iron rods connected by a short length of chain or rope</span>.</p>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>"
+  },
+  {
+   "name": "Chandu",
+   "kind": "Item",
+   "qualities": [
+    "Forbidden"
+   ],
+   "rarity": "6",
+   "text": "<p>Opium prepared for smoking is known as chandu. It is boiled and strained, then cooled into a crystalline block and wrapped in a dry leaf. To smoke chandu requires a number of tools and a special pipe made from nonreactive materials, often ceramic or jade. Because opium heightens one’s tactile sensations, opium pipes are made with interesting ridged textures for the imbiber to fixate on as they achieve their high.</p><p data-start=\"503\" data-end=\"1024\">Preparing chandu requires deft hands and skill, as the drug must be heated until the resin softens, shaped into a pellet, and then dropped with tweezers into the pipe bowl. Opium dens employ servants to do this for patrons, but rōnin who wish to use opium on their own must learn how. Opium makes users especially light sensitive, so chandu is smoked in the dark. Contrary to popular belief, chandu does not eliminate pain, but simply alters the user’s perception so that the pain is bearable or the user no longer cares.</p><p data-start=\"1026\" data-end=\"1572\" data-is-last-node=\"\" data-is-only-node=\"\">Chandu is legal in Rokugan, but its recreational use is frowned upon by polite society. A person who uses opium infrequently may not become addicted; such a user may be able to cease for months without suffering withdrawal. However, with enough use addiction takes hold, and it becomes nearly impossible to function without a dose. Although opium is important in Rokugani medicine, without proper care, it can just as easily destroy the user as help heal them. (Cost: 4 bu per use. Rarity: 6. Qualities: Forbidden [outside of a medical context].)</p>"
+  },
+  {
+   "name": "Journal",
+   "kind": "Item",
+   "rarity": "0"
+  },
+  {
+   "name": "Pouch of Ivory Kingdom Spices",
+   "kind": "Item",
+   "rarity": "0"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>
