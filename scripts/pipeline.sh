@@ -37,6 +37,9 @@ for p in sorted(glob.glob('src/characters/*.json')):
         json.dump(d, open(p, 'w'), indent=1, ensure_ascii=False)
 PY
 
+# promotions are recorded in the manifest, so they survive a --force re-extract
+python3 scripts/promote.py --apply
+
 # build once so derive_tiers has the curriculum table, then reconstruct tiers
 # for characters Foundry only holds at a single point, then build for real
 python3 scripts/build.py > /dev/null

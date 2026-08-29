@@ -68,6 +68,7 @@ def main():
     # --- integrity ---------------------------------------------------------
     schools = {r["norm"] for r in cx.execute(
         "SELECT norm FROM catalog WHERE pack LIKE '%school-curriculum%'")}
+    # character.school_norm is already alias-resolved by scripts/build.py
     for r in cx.execute("SELECT slug, school, school_norm FROM character"):
         if r["school"] and r["school_norm"] not in schools:
             fail.append(f"{r['slug']}: school {r['school']!r} is not on the compendium roll")

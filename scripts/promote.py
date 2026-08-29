@@ -1,0 +1,105 @@
+#!/usr/bin/env python3
+"""Promote a draft character out of draft status (or send one back).
+
+Characters become drafts two ways: they sit in Foundry's `Draft` folder, or the
+Creator made them (it only ever writes drafts). Both are derived, so clearing the
+flag on the source file alone would not survive the next `--force` re-extract.
+Promotion is therefore recorded in src/foundry_sources.json and re-applied by
+scripts/pipeline.sh on every run.
+
+    python3 scripts/promote.py doji-sayaka          # promote
+    python3 scripts/promote.py doji-sayaka --demote # back to draft
+    python3 scripts/promote.py --list               # who is a draft right now
+"""
+import argparse, glob, json, os, sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SOURCES = os.path.join(ROOT, "src", "foundry_sources.json")
+SRC = os.path.join(ROOT, "src", "characters")
+
+
+def load_sources():
+    return json.load(open(SOURCES))
+
+
+def save_sources(d):
+    json.dump(d, open(SOURCES, "w"), indent=1, ensure_ascii=False)
+
+
+def apply_promotions():
+    """Clear `status` on every promoted slug. Called by the pipeline after extract."""
+    d = load_sources()
+    promoted = set((d.get("promoted") or {}).get("slugs") or [])
+    changed = []
+    for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
+        doc = json.load(open(path))
+        if doc["slug"] in promoted and doc.get("status"):
+            doc["status"] = None
+            json.dump(doc, open(path, "w"), indent=1, ensure_ascii=False)
+            changed.append(doc["slug"])
+    return changed
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("slug", nargs="?")
+    ap.add_argument("--demote", action="store_true", help="send a character back to draft")
+    ap.add_argument("--list", action="store_true", help="list current drafts")
+    ap.add_argument("--apply", action="store_true",
+                    help="re-apply the promoted list to the sources (used by pipeline.sh)")
+    args = ap.parse_args()
+
+    if args.apply:
+        for s in apply_promotions():
+            print(f"   promoted {s}")
+        return
+
+    docs = {}
+    for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
+        doc = json.load(open(path))
+        docs[doc["slug"]] = (path, doc)
+
+    if args.list or not args.slug:
+        drafts = [s for s, (_, d) in docs.items() if d.get("status") == "draft"]
+        promoted = (load_sources().get("promoted") or {}).get("slugs") or []
+        print(f"drafts ({len(drafts)}):")
+        for s in drafts:
+            print("   " + s)
+        print(f"\npromoted ({len(promoted)}):")
+        for s in promoted:
+            print("   " + s)
+        if not args.slug:
+            print("\nUsage: python3 scripts/promote.py <slug> [--demote]")
+        return
+
+    if args.slug not in docs:
+        sys.exit(f"no character source named {args.slug!r}")
+    path, doc = docs[args.slug]
+
+    d = load_sources()
+    d.setdefault("promoted", {"slugs": []})
+    slugs = d["promoted"].setdefault("slugs", [])
+
+    if args.demote:
+        if args.slug in slugs:
+            slugs.remove(args.slug)
+        doc["status"] = "draft"
+        json.dump(doc, open(path, "w"), indent=1, ensure_ascii=False)
+        save_sources(d)
+        print(f"{doc['name']} is a draft again.")
+    else:
+        if doc.get("status") != "draft" and args.slug not in slugs:
+            print(f"{doc['name']} is not a draft — nothing to promote.")
+            return
+        if args.slug not in slugs:
+            slugs.append(args.slug)
+            slugs.sort()
+        doc["status"] = None
+        json.dump(doc, open(path, "w"), indent=1, ensure_ascii=False)
+        save_sources(d)
+        print(f"{doc['name']} promoted out of draft.")
+    print("Run ./scripts/pipeline.sh to rebuild.")
+
+
+if __name__ == "__main__":
+    main()

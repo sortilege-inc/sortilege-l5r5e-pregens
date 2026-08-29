@@ -20,7 +20,8 @@
 (function () {
   "use strict";
 
-  var LS_DRAFT = "sortilege.l5r.creator.draft";
+  var LS_DRAFT = "sortilege.l5r.creator.draft";      // legacy single draft
+  var LS_DRAFTS = "sortilege.l5r.creator.drafts";    // { activeId, drafts: {} }
   var LS_KEY = "sortilege.l5r.creator.apiKey";
   var MODEL = "claude-haiku-4-5-20251001";
 
@@ -120,22 +121,137 @@
         mentor: { name: "", path: null, granted: null, skill: "", text: "" },
         first_impression: "", accoutrement: "", stress_reaction: "",
         relationships: "", parent_opinion: { description: "", skill: null },
-        heritage: null, death: ""
+        heritage: null, heritage_table: null, heritage_sub: null, death: ""
       },
       starting_item: "", campaign: "", notes: ""
     };
   }
 
-  var C = load() || newCharacter();
+  // The draft store. Every character the Creator makes is a draft and stays one
+  // until it is deliberately promoted, so the store is the whole working set —
+  // visible, switchable, and never silently overwritten.
+  var STORE = loadStore();
+  var C = activeChar();
   var step = 0;
 
-  function load() {
-    try { return JSON.parse(localStorage.getItem(LS_DRAFT)); } catch (e) { return null; }
+  function newId() {
+    return "d" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
   }
+
+  function loadStore() {
+    var st = null;
+    try { st = JSON.parse(localStorage.getItem(LS_DRAFTS)); } catch (e) { /* ignore */ }
+    if (st && st.drafts) return st;
+    // migrate the old single-draft key, so an in-progress character survives
+    var legacy = null;
+    try { legacy = JSON.parse(localStorage.getItem(LS_DRAFT)); } catch (e) { /* ignore */ }
+    var id = newId();
+    var drafts = {};
+    drafts[id] = { id: id, updated: Date.now(), character: legacy || newCharacter() };
+    return { activeId: id, drafts: drafts };
+  }
+
+  function activeChar() {
+    var d = STORE.drafts[STORE.activeId];
+    if (!d) {
+      var ids = Object.keys(STORE.drafts);
+      STORE.activeId = ids[0];
+      d = STORE.drafts[STORE.activeId];
+    }
+    return d.character;
+  }
+
+  function persist() {
+    try { localStorage.setItem(LS_DRAFTS, JSON.stringify(STORE)); } catch (e) { /* private mode */ }
+  }
+
   function save() {
-    try { localStorage.setItem(LS_DRAFT, JSON.stringify(C)); } catch (e) { /* private mode */ }
+    var d = STORE.drafts[STORE.activeId];
+    if (d) { d.character = C; d.updated = Date.now(); }
+    persist();
     renderWip();
     renderNav();
+    renderDrafts();
+  }
+
+  function draftLabel(d) {
+    var c = d.character || {};
+    return c.name || "Unnamed draft";
+  }
+  function draftProgress(c) {
+    var saved = C, n;
+    C = c;
+    n = STEPS.filter(function (s) { return s.id !== "export" && s.done(); }).length;
+    C = saved;
+    return n;
+  }
+
+  function switchDraft(id) {
+    if (!STORE.drafts[id]) return;
+    STORE.activeId = id;
+    C = STORE.drafts[id].character;
+    step = 0;
+    persist();
+    render();
+  }
+  function addDraft() {
+    var id = newId();
+    STORE.drafts[id] = { id: id, updated: Date.now(), character: newCharacter() };
+    switchDraft(id);
+  }
+  function removeDraft(id) {
+    var d = STORE.drafts[id];
+    if (!d) return;
+    if (!confirm("Delete “" + draftLabel(d) + "”? This cannot be undone.")) return;
+    delete STORE.drafts[id];
+    if (!Object.keys(STORE.drafts).length) { addDraft(); return; }
+    if (STORE.activeId === id) STORE.activeId = Object.keys(STORE.drafts)[0];
+    C = activeChar();
+    persist();
+    render();
+  }
+  function duplicateDraft(id) {
+    var src = STORE.drafts[id];
+    if (!src) return;
+    var nid = newId();
+    var copy = JSON.parse(JSON.stringify(src.character));
+    copy.name = (copy.name || "Unnamed") + " (copy)";
+    STORE.drafts[nid] = { id: nid, updated: Date.now(), character: copy };
+    switchDraft(nid);
+  }
+
+  function renderDrafts() {
+    var ids = Object.keys(STORE.drafts).sort(function (a, b) {
+      return STORE.drafts[b].updated - STORE.drafts[a].updated;
+    });
+    el("drafts").innerHTML =
+      '<span class="drafts-label">Drafts</span>' +
+      ids.map(function (id) {
+        var d = STORE.drafts[id];
+        var c = d.character || {};
+        var n = draftProgress(c);
+        return '<span class="draftchip' + (id === STORE.activeId ? " active" : "") +
+          '" data-id="' + id + '">' +
+          '<button type="button" class="dc-open" data-id="' + id + '">' +
+          esc(draftLabel(d)) +
+          '<span class="dc-meta">' + esc(c.school || c.clan || "no clan yet") +
+          " · " + n + "/21</span></button>" +
+          '<button type="button" class="dc-x" data-id="' + id + '" title="Delete">×</button>' +
+          "</span>";
+      }).join("") +
+      '<button type="button" class="draftnew" id="draft-new">+ New</button>' +
+      '<button type="button" class="draftnew" id="draft-dup">Duplicate</button>';
+
+    Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-open"), function (b) {
+      b.addEventListener("click", function () { switchDraft(b.getAttribute("data-id")); });
+    });
+    Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-x"), function (b) {
+      b.addEventListener("click", function (e) {
+        e.stopPropagation(); removeDraft(b.getAttribute("data-id"));
+      });
+    });
+    el("draft-new").addEventListener("click", addDraft);
+    el("draft-dup").addEventListener("click", function () { duplicateDraft(STORE.activeId); });
   }
 
   /* ---------------------------------------------------------- AI */
@@ -612,24 +728,112 @@
       } },
 
     { id: "heritage", n: 18, label: "Heritage", title: "Family Heritage",
-      desc: "Roll d10 (or pick) from the heritage table. The result tells you something about your family's past, and may carry bonuses or items.",
+      desc: "Roll d10 (or pick) on a heritage table. The result says something about your family's past, and usually carries a modifier and a second roll. The core Samurai table is the default; most supplements offer a replacement table you may use instead.",
       done: function () { return has(C.answers.heritage); },
       render: function (body) {
-        var table = (HERITAGES.samurai || {}).entries || [];
-        if (!table.length) return needs(body, "No heritage table loaded.");
+        var keys = Object.keys(HERITAGES);
+        if (!keys.length) return needs(body, "No heritage tables loaded.");
+
+        label(body, "Heritage table");
+        var tabs = document.createElement("div");
+        tabs.className = "choicerow";
+        tabs.innerHTML = keys.map(function (k) {
+          var t = HERITAGES[k];
+          var unencoded = t.form === "unencoded";
+          return '<button type="button" class="choice' +
+            (k === C.answers.heritage_table ? " active" : "") +
+            (unencoded ? " disabled" : "") + '" data-v="' + esc(k) + '"' +
+            (unencoded ? " disabled title=\"Named in the book but not encoded in the DSL corpus\"" : "") +
+            ">" + esc(t.name.replace(/^New Samurai Heritages?\s*/i, "")
+                        .replace(/Table$/, "").trim() || t.name) +
+            '<span class="ch-n">' + (unencoded ? "—" : t.entries.length) + "</span></button>";
+        }).join("");
+        Array.prototype.forEach.call(tabs.querySelectorAll(".choice"), function (b) {
+          if (b.disabled) return;
+          b.addEventListener("click", function () {
+            C.answers.heritage_table = b.getAttribute("data-v");
+            C.answers.heritage = null;
+            C.answers.heritage_sub = null;
+            save(); render();
+          });
+        });
+        body.appendChild(tabs);
+
+        var key = C.answers.heritage_table || keys.filter(function (k) {
+          return HERITAGES[k].form !== "unencoded";
+        })[0];
+        C.answers.heritage_table = key;
+        var table = HERITAGES[key];
+        var src = document.createElement("p");
+        src.className = "muted small";
+        src.innerHTML = "<strong>" + esc(table.name) + "</strong> — " +
+          table.entries.length + " entries · <code>" + esc(table.source) + "</code>";
+        body.appendChild(src);
+
         var roll = document.createElement("button");
-        roll.type = "button"; roll.className = "btn"; roll.textContent = "Roll d10";
+        roll.type = "button"; roll.className = "btn ghost"; roll.textContent = "Roll d10";
         roll.addEventListener("click", function () {
-          var e = table[Math.floor(Math.random() * table.length)];
-          C.answers.heritage = e.name; save(); render();
+          var e = table.entries[Math.floor(Math.random() * table.entries.length)];
+          C.answers.heritage = e.name;
+          C.answers.heritage_sub = null;
+          save(); render();
         });
         body.appendChild(roll);
-        pickList(body, table.map(function (e) {
-          return { value: e.name, label: e.roll + ". " + e.name,
-                   meta: Object.keys(e.modifiers || {}).map(function (k) {
-                     return cap(k) + " " + (e.modifiers[k] > 0 ? "+" : "") + e.modifiers[k];
-                   }).join(" · ") };
-        }), C.answers.heritage, function (v) { C.answers.heritage = v; save(); });
+
+        // full entry cards — the point of the step is reading these
+        var list = document.createElement("div");
+        list.className = "heritage-list";
+        list.innerHTML = table.entries.map(function (e) {
+          var active = e.name === C.answers.heritage;
+          var mods = Object.keys(e.modifiers || {}).map(function (k2) {
+            return k2 === "note" ? e.modifiers[k2] : k2 + " " + e.modifiers[k2];
+          }).join(" · ");
+          return '<button type="button" class="heritage' + (active ? " active" : "") +
+            '" data-v="' + esc(e.name) + '">' +
+            '<span class="h-roll">' + esc(e.roll || "—") + "</span>" +
+            '<span class="h-body"><span class="h-name">' + esc(e.name) + "</span>" +
+            (e.description ? '<span class="h-desc">' + esc(e.description) + "</span>" : "") +
+            (mods ? '<span class="h-mod">' + esc(mods) + "</span>" : "") +
+            (e.effect ? '<span class="h-eff">' + esc(e.effect) + "</span>" : "") +
+            (e.sub_table
+              ? '<span class="h-sub">' + esc(e.sub_table.die) + ": " +
+                e.sub_table.ranges.map(function (r) {
+                  return "<em>" + esc(r.range) + "</em> " + esc(r.text);
+                }).join(" · ") + "</span>"
+              : "") +
+            "</span></button>";
+        }).join("");
+        Array.prototype.forEach.call(list.querySelectorAll(".heritage"), function (b) {
+          b.addEventListener("click", function () {
+            C.answers.heritage = b.getAttribute("data-v");
+            C.answers.heritage_sub = null;
+            save(); render();
+          });
+        });
+        body.appendChild(list);
+
+        // second roll, where the chosen entry has one
+        var chosen = table.entries.filter(function (e) {
+          return e.name === C.answers.heritage;
+        })[0];
+        if (chosen && chosen.sub_table) {
+          label(body, "Second roll — " + chosen.sub_table.die);
+          var subRoll = document.createElement("button");
+          subRoll.type = "button"; subRoll.className = "btn ghost";
+          subRoll.textContent = "Roll " + chosen.sub_table.die;
+          subRoll.addEventListener("click", function () {
+            var r = chosen.sub_table.ranges[
+              Math.floor(Math.random() * chosen.sub_table.ranges.length)];
+            C.answers.heritage_sub = r.range + " — " + r.text;
+            save(); render();
+          });
+          body.appendChild(subRoll);
+          pickList(body, chosen.sub_table.ranges.map(function (r) {
+            return { value: r.range + " — " + r.text, label: r.text, meta: r.range };
+          }), C.answers.heritage_sub, function (v) {
+            C.answers.heritage_sub = v; save();
+          });
+        }
       } },
 
     { id: "final-name", n: 19, label: "Name", title: "Your Character's Name",
@@ -731,6 +935,7 @@
       slug: slugify(C.name),
       name: C.name,
       campaign: C.campaign || null,
+      // the Creator only ever writes drafts; see the Promote button
       status: "draft",
       identity: {
         clan: C.clan, family: C.family, school: C.school,
@@ -754,7 +959,11 @@
           step15: { answers: { stress: a.stress_reaction }, picks: {} },
           step16: { answers: { relations: a.relationships }, picks: {} },
           step17: { answers: { parents_pov: a.parent_opinion.description }, picks: {} },
-          step18: { answers: { heritage_name: a.heritage }, picks: {} },
+          step18: { answers: {
+            heritage_name: a.heritage,
+            heritage_table: (HERITAGES[a.heritage_table] || {}).name || a.heritage_table,
+            heritage_sub: a.heritage_sub
+          }, picks: {} },
           step20: { answers: { death: a.death }, picks: {} }
         }
       },
@@ -805,12 +1014,23 @@
       body.appendChild(warn);
     }
 
+    var complete = missing.length === 0;
+
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.innerHTML = "Everything the Creator saves is a <strong>draft</strong>. " +
+      "Promotion is a separate, deliberate act — either here once every question " +
+      "is answered, or later with <code>python3 scripts/promote.py &lt;slug&gt;</code>.";
+    body.appendChild(note);
+
     var row = document.createElement("div");
     row.className = "choicerow";
-    row.innerHTML = '<button type="button" class="btn" id="dl">Download ' +
-      esc(doc.slug || "character") + '.json</button>' +
+    row.innerHTML = '<button type="button" class="btn" id="dl">Download draft</button>' +
       '<button type="button" class="btn" id="cp">Copy JSON</button>' +
-      '<button type="button" class="btn ghost" id="reset">Start over</button>';
+      '<button type="button" class="btn promote" id="promote"' +
+      (complete ? "" : " disabled title=\"Answer every question first\"") +
+      ">Promote &amp; download</button>" +
+      '<button type="button" class="btn ghost" id="reset">Delete this draft</button>';
     body.appendChild(row);
 
     var pre = document.createElement("pre");
@@ -818,13 +1038,25 @@
     pre.textContent = JSON.stringify(doc, null, 1);
     body.appendChild(pre);
 
-    row.querySelector("#dl").addEventListener("click", function () {
-      var blob = new Blob([JSON.stringify(doc, null, 1)], { type: "application/json" });
+    function download(d) {
+      var blob = new Blob([JSON.stringify(d, null, 1)], { type: "application/json" });
       var a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
-      a.download = (doc.slug || "character") + ".json";
+      a.download = (d.slug || "character") + ".json";
       document.body.appendChild(a); a.click(); a.remove();
       setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+    }
+    row.querySelector("#dl").addEventListener("click", function () { download(doc); });
+    row.querySelector("#promote").addEventListener("click", function () {
+      if (!complete) return;
+      // promotion is the one way a character leaves draft status
+      var promoted = JSON.parse(JSON.stringify(doc));
+      promoted.status = null;
+      download(promoted);
+      alert("Promoted. Save it as src/characters/" + promoted.slug +
+            ".json and run ./scripts/pipeline.sh.\n\nIf you have already committed " +
+            "it as a draft, add the slug with:\n  python3 scripts/promote.py " +
+            promoted.slug);
     });
     row.querySelector("#cp").addEventListener("click", function () {
       navigator.clipboard.writeText(JSON.stringify(doc, null, 1)).then(function () {
@@ -833,8 +1065,7 @@
       });
     });
     row.querySelector("#reset").addEventListener("click", function () {
-      if (!confirm("Discard this draft and start a new character?")) return;
-      C = newCharacter(); step = 0; save(); render();
+      removeDraft(STORE.activeId);
     });
   }
 
@@ -911,6 +1142,7 @@
     el("next").disabled = step === STEPS.length - 1;
     renderNav();
     renderWip();
+    renderDrafts();
     window.scrollTo({ top: 0, behavior: "instant" });
   }
 

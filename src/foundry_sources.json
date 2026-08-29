@@ -71,10 +71,6 @@
    "identity.school": "Dragonfly Grace of the Spirits School",
    "_why": "Foundry records 'Dragonfly Grace of the Spirits'; the compendium roll has ' School'"
   },
-  "isawa-chisato": {
-   "identity.school": "Isawai Tensai School",
-   "_why": "the COMPENDIUM has the typo here: the school is 'Isawa Tensai School' in print, but the School Curriculum pack spells it 'Isawai'. Mapped to the pack's spelling so it counts against the roll; fix it in Foundry and this correction goes away."
-  },
   "iuchi-temur": {
    "identity.school": "Iuchi Meishodo Master School",
    "_why": "actor records 'Iuchi Meishōdō Master'; the roll has ' School' on the end"
@@ -104,5 +100,16 @@
  "derive_tiers": [
   "doji-setsuna"
  ],
- "_derive_tiers_comment": "characters Foundry holds at one point only; scripts/derive_tiers.py rebuilds their earlier XP tiers"
+ "_derive_tiers_comment": "characters Foundry holds at one point only; scripts/derive_tiers.py rebuilds their earlier XP tiers",
+ "school_aliases": {
+  "_comment": "character school name -> the compendium's School Curriculum spelling. Use this where the COMPENDIUM is wrong: the source file keeps the printed spelling and the gate still resolves.",
+  "Isawa Tensai School": {
+   "roll_name": "Isawai Tensai School",
+   "_why": "Fields of Victory p.79 prints 'Isawa Tensai School' (3 occurrences; 'Isawai' appears nowhere in the book). The l5r5e Foundry system's own core-journal-school-curriculum pack titles it 'Isawai Tensai School', and l5r5e-compendia-sortilege mirrors that. Upstream system bug; delete this alias once it is fixed."
+  }
+ },
+ "promoted": {
+  "_comment": "slugs promoted out of draft. The Draft folder and the Creator both mark characters as drafts; promotion is the deliberate act of saying one is finished, and is recorded here so a re-extract cannot silently undo it. Use scripts/promote.py.",
+  "slugs": []
+ }
 }

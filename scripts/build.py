@@ -222,15 +222,30 @@ def load_catalog(cx):
     return len(rows), missing, len(curriculum), len(title_cur)
 
 
+def school_aliases():
+    """Character school name -> compendium spelling, for entries the compendium
+    gets wrong. The source file keeps the printed spelling; only the match bends."""
+    src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+    out = {}
+    for name, spec in (src.get("school_aliases") or {}).items():
+        if name.startswith("_"):
+            continue
+        out[norm(name)] = norm(spec["roll_name"] if isinstance(spec, dict) else spec)
+    return out
+
+
 def load_characters(cx):
+    ALIASES = school_aliases()
     unresolved = []
     tid = 0
     for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
         c = json.load(open(path))
         tiers = c["tiers"]
+        snorm = norm(c["identity"].get("school"))
+        snorm = ALIASES.get(snorm, snorm)
         cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 17) + ")", (
             c["slug"], c["name"], c["identity"].get("clan"), c["identity"].get("family"),
-            c["identity"].get("school"), norm(c["identity"].get("school")),
+            c["identity"].get("school"), snorm,
             c["identity"].get("role"), c.get("bucket"), c.get("campaign"),
             c.get("status"), c.get("accent"), c.get("portrait"),
             c.get("concept"), c.get("summary"),
@@ -693,8 +708,10 @@ def check_schools(cx):
         "SELECT slug, school, school_norm FROM character WHERE school IS NOT NULL").fetchall()
     roll = {r[0]: r[1] for r in cx.execute(
         "SELECT norm, name FROM catalog WHERE pack LIKE '%school-curriculum%'")}
+    aliases = school_aliases()
     off = []
     for slug, school, snorm in rows:
+        snorm = aliases.get(snorm, snorm)
         if snorm in roll:
             continue
         near = difflib.get_close_matches(snorm, list(roll), n=1, cutoff=0.75)
