@@ -111,5 +111,12 @@
  "promoted": {
   "_comment": "slugs promoted out of draft. The Draft folder and the Creator both mark characters as drafts; promotion is the deliberate act of saying one is finished, and is recorded here so a re-extract cannot silently undo it. Use scripts/promote.py.",
   "slugs": []
+ },
+ "title_aliases": {
+  "_comment": "campaign-renamed titles -> the compendium title whose curriculum they use. The character keeps its own name; only the curriculum lookup is redirected.",
+  "Personal Advisor to Miya Misato": {
+   "curriculum_from": "Advisor",
+   "_why": "an Advisor title (Emerald Empire p.249) with a campaign-specific name. Corroborated by cost: the character's title records xp_cost 36, which is the Advisor title's cost."
+  }
  }
 }

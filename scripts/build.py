@@ -222,6 +222,21 @@ def load_catalog(cx):
     return len(rows), missing, len(curriculum), len(title_cur)
 
 
+def title_aliases():
+    """Campaign-renamed title -> the compendium title supplying its curriculum.
+
+    A table keeps its own name on the sheet; only the curriculum lookup moves.
+    """
+    src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+    out = {}
+    for name, spec in (src.get("title_aliases") or {}).items():
+        if name.startswith("_"):
+            continue
+        target = spec["curriculum_from"] if isinstance(spec, dict) else spec
+        out[norm(name)] = norm(target)
+    return out
+
+
 def school_aliases():
     """Character school name -> compendium spelling, for entries the compendium
     gets wrong. The source file keeps the printed spelling; only the match bends."""
@@ -428,15 +443,19 @@ def emit(cx):
                    ("rings", "skills", "social", "derived", "money", "advancements")},
                 **{k: content.get(k, []) for k in CATEGORY_SUBTYPE},
             })
+        talias = title_aliases()
         held = {norm(e["name"]) for t in tiers for e in t.get("titles", [])}
         title_curricula = {}
         for tn in held:
+            # a renamed title borrows its curriculum from the compendium title
+            lookup = talias.get(tn, tn)
             entries = [dict(r) for r in cx.execute(
                 "SELECT title, ordinal, kind, grp, label, prereq, ability, status_award"
-                " FROM title_curriculum WHERE title_norm=? ORDER BY ordinal", (tn,))]
+                " FROM title_curriculum WHERE title_norm=? ORDER BY ordinal", (lookup,))]
             if entries:
                 title_curricula[tn] = {
                     "title": entries[0]["title"],
+                    "aliased_from": entries[0]["title"] if lookup != tn else None,
                     "ability": entries[0]["ability"],
                     "status_award": entries[0]["status_award"],
                     "entries": [{"kind": e["kind"], "group": e["grp"],

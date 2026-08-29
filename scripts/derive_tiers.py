@@ -10,8 +10,10 @@ are still recoverable, because the actor records what was bought and what it cos
     (twenty questions / school); anything with `xp_used > 0` was purchased.
   * a purchased technique that appears on the school's curriculum is placed at
     that curriculum rank.
-  * a purchased technique that does NOT appear on the school curriculum is title
-    curriculum: it is placed with the title whose `xp_used_total` accounts for it.
+  * a purchased technique that does NOT appear on the school curriculum is placed
+    by its own `bought_at_rank`. Do not read a title's `xp_used_total` as a count
+    of techniques — it is the XP of whatever is nested inside that title, which
+    may be a single ring increase (Personal Advisor's is one Earth 2->3 at 9 XP).
   * titles get a tier of their own when fully paid (`xp_used == xp_cost`).
   * a title's own `xp_used` is a ROLLUP of the curriculum items nested inside it,
     not a separate price — counting both double-counts the title.

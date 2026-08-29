@@ -344,6 +344,10 @@
           : "") + "</h3>";
 
       var meta = [];
+      // a campaign-renamed title says whose curriculum it is actually using
+      if (cur && cur.aliased_from) {
+        meta.push("Curriculum: <strong>" + esc(cur.aliased_from) + "</strong>");
+      }
       if (cur && cur.ability) meta.push("Title ability: <strong>" + esc(cur.ability) + "</strong>");
       if (cur && cur.status_award) meta.push("Status award " + esc(cur.status_award));
       var metaHtml = meta.length
