@@ -327,6 +327,50 @@ def twenty_question_labels():
     return {"parts": parts, "questions": questions, "fields": fields}
 
 
+def heritage_coverage():
+    """Which heritage-table entry each character took, where that is determinable.
+
+    Question 18's answer is recorded as free prose on most actors ("Named after
+    her great-aunt, who perished..."), not as a table entry, so a character is
+    matched only when its text actually names an entry. Everything else is
+    reported as unmatched rather than guessed at.
+    """
+    path = os.path.join(ROOT, "data", "chargen", "heritages.js")
+    if not os.path.exists(path):
+        return {}
+    raw = open(path).read()
+    tables = json.loads(raw[raw.index("=") + 1:].rstrip().rstrip(";"))
+
+    lookup = []
+    for key, t in tables.items():
+        for e in t["entries"]:
+            if e["name"]:
+                lookup.append((key, e["name"], norm(e["name"])))
+
+    used, unmatched = collections.defaultdict(list), []
+    for src in sorted(glob.glob(os.path.join(SRC, "*.json"))):
+        c = json.load(open(src))
+        step = ((c.get("twenty_questions") or {}).get("steps") or {}).get("step18") or {}
+        text = (step.get("answers") or {}).get("heritage_name")
+        if not text:
+            continue
+        n = norm(text)
+        hit = [(k, name) for k, name, en in lookup if en and en in n]
+        if hit:
+            used[hit[0][0] + "::" + hit[0][1]].append(
+                {"slug": c["slug"], "name": c["name"]})
+        else:
+            unmatched.append({"slug": c["slug"], "name": c["name"],
+                              "text": text[:160]})
+    return {
+        "tables": {k: {"name": t["name"], "source": t.get("source"),
+                       "entries": [{"roll": e["roll"], "name": e["name"]}
+                                   for e in t["entries"]]}
+                   for k, t in tables.items()},
+        "used": used, "unmatched": unmatched,
+    }
+
+
 def emit(cx):
     """Write the site's data files.
 
@@ -439,6 +483,8 @@ def emit(cx):
                {"used": used, "customs": customs, "schools": schools})
     write(os.path.join(SITEDATA, "twenty_questions.js"), "L5R_20Q",
           twenty_question_labels())
+    write(os.path.join(SITEDATA, "heritage_coverage.js"), "L5R_HERITAGE_COVERAGE",
+          heritage_coverage())
     return (n1, n2, n3, biggest), docs
 
 

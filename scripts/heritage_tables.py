@@ -6,14 +6,20 @@ line — the core Samurai table plus a replacement table in most supplements.
 The dashboard's ingested data carries only the core one, with its sub-tables
 dropped, so this reads the DSL sources directly.
 
-The corpus states them three different ways, so the parser handles all three:
+Every table is now stated in the spec's canonical form:
 
-  1. HERITAGE_TABLE { <roll> ^"Name" DEF { MODIFIERS {...} SUB_TABLE "1d10" {...} } }
-     — core chargen. The richest form: roll number, modifiers, full sub-table.
-  2. ENTRIES { #id ^"Name (Roll 2-3)" DEF { ^"Description"/^"Modifier"/^"Effect" STRING } }
-     — Courts of Stone, Children of the Five Winds, Shadowlands, Fields of Victory.
-  3. ^"Name (roll 1)" DEF { # Modifier: ... / # Other: ... }
-     — Writ of the Wilds, Celestial Realms: the content lives in comments.
+    HERITAGE_TABLE {
+        <roll|roll-range> [#anchor] ^"Name" DEF {
+            MODIFIERS { ^"Glory" "+3" }
+            EFFECT { "..." }
+            SUB_TABLE "1d10" { "1-2" "..." }
+        }
+    }
+
+The `entries` and `comments` readers below are kept only as a safety net: if a
+table ever regresses to prose, the parser still reads it and the form is
+reported as something other than "core", which is the signal to fix the corpus
+rather than to widen the parser.
 
 Writes data/chargen/heritages.js (window.L5R_HERITAGES).
 
@@ -110,11 +116,16 @@ def parse_table(name, body, source):
     if m:
         inner, _ = block(body, m.end() - 1)
         pos = 0
-        for em in re.finditer(r'(?P<roll>\d+)\s+\^"(?P<name>[^"]+)"\s+DEF\s*\{', inner):
+        for em in re.finditer(
+                r'(?P<roll>\d+)\s+(?:#\S+\s+)?\^"(?P<name>[^"]+)"\s+DEF\s*\{', inner):
             ebody, end = block(inner, em.end() - 1)
+            props = parse_strings(ebody)
             entries.append({
-                "roll": em.group("roll"), "name": clean(em.group("name")),
-                "description": comment_text(ebody.split("MODIFIERS")[0]),
+                # a multi-roll entry states its span in PROPERTIES
+                "roll": props.get("Roll Range") or em.group("roll"),
+                "name": clean(em.group("name")),
+                "description": comment_text(
+                    re.split(r"PROPERTIES|MODIFIERS", ebody)[0]),
                 "modifiers": parse_modifiers(ebody),
                 "effect": parse_effect(ebody),
                 "sub_table": parse_sub_table(ebody),

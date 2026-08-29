@@ -46,8 +46,11 @@
     { key: "titles", label: "Titles", subs: ["title"] },
     { key: "gear", label: "Equipment", subs: ["weapon", "armor", "item"] },
     { key: "bonds", label: "Bonds", subs: ["bond"] },
-    { key: "other", label: "Other", subs: ["property", "item_pattern", "signature_scroll"] }
+    { key: "other", label: "Other", subs: ["property", "item_pattern", "signature_scroll"] },
+    { key: "heritage", label: "Heritages" }
   ];
+
+  var HCOV = window.L5R_HERITAGE_COVERAGE || {};
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -90,10 +93,31 @@
       });
   }
 
+  // Question 18 rolls on one of seven heritage tables, so the ledger tracks
+  // which entry on which table each character actually took.
+  function heritageRows() {
+    var rows = [];
+    Object.keys(HCOV.tables || {}).forEach(function (key) {
+      var t = HCOV.tables[key];
+      t.entries.forEach(function (e) {
+        var who = (HCOV.used || {})[key + "::" + e.name] || [];
+        rows.push({
+          uuid: key + "::" + e.name,
+          name: e.name,
+          kind: t.name,
+          rank: e.roll,
+          book: (t.source || "").replace(/^l5r5e-0\.4-|\.ttrpg$/g, ""),
+          by: who.map(function (w) { return { slug: w.slug, xp: null }; })
+        });
+      });
+    });
+    return rows;
+  }
+
   function rowsFor(section) {
-    return section.key === "schools"
-      ? schoolRows()
-      : catalogRows(section.subs, section.packFilter);
+    if (section.key === "schools") return schoolRows();
+    if (section.key === "heritage") return heritageRows();
+    return catalogRows(section.subs, section.packFilter);
   }
 
   /* ---------------------------------------------------------- state */
@@ -167,14 +191,17 @@
   function renderTable(rows) {
     if (!rows.length) return '<p class="muted">Nothing matches those filters.</p>';
     var isSchools = state.section === "schools";
+    var isHeritage = state.section === "heritage";
     return '<table class="cov-table"><thead><tr>' +
-      "<th></th><th>Name</th><th>" + (isSchools ? "Clan" : "Kind") + "</th>" +
+      "<th></th><th>Name</th><th>" +
+      (isSchools ? "Clan" : isHeritage ? "Table" : "Kind") + "</th>" +
       "<th>Source</th><th>First used by</th></tr></thead><tbody>" +
       rows.map(function (r) {
         return '<tr class="' + (r.by.length ? "used" : "") + '">' +
           '<td><span class="dot ' + (r.by.length ? "on" : "off") + '"></span></td>' +
           '<td class="nm">' + esc(r.name) +
-          (r.rank ? ' <span class="muted small">Rank ' + esc(r.rank) + "</span>" : "") +
+          (r.rank ? ' <span class="muted small">' +
+            (isHeritage ? "roll " : "Rank ") + esc(r.rank) + "</span>" : "") +
           "</td>" +
           "<td>" + esc(r.kind || "—") + "</td>" +
           "<td>" + esc(book(r.book)) + "</td>" +
@@ -215,6 +242,8 @@
         state.section = b.getAttribute("data-section");
         state.book = state.kind = "";
         draw();
+        document.getElementById("extras").innerHTML =
+          renderHeritageGaps() + renderSchoolGaps() + renderCustoms();
       });
     });
   }
@@ -238,6 +267,21 @@
         return '<p><strong><a href="../characters/' + esc(slug) + '.html">' +
           esc(c ? c.name : slug) + "</a></strong> — " +
           byChar[slug].map(function (x) { return esc(x.name); }).join(", ") + "</p>";
+      }).join("");
+  }
+
+  // characters whose Question 18 answer is prose rather than a table entry
+  function renderHeritageGaps() {
+    var un = HCOV.unmatched || [];
+    if (state.section !== "heritage" || !un.length) return "";
+    return '<h2 class="section-h"><span class="kanji">問</span>Heritage recorded as prose' +
+      '<span class="en">' + un.length + "</span></h2>" +
+      '<p class="muted small">These characters answered Question 18 with their own ' +
+      "wording rather than naming a table entry, so they cannot be counted against a " +
+      "table. Nothing is inferred from the text." + "</p>" +
+      un.map(function (u) {
+        return '<p><strong><a href="../characters/' + esc(u.slug) + '.html">' +
+          esc(u.name) + "</a></strong> — <span class=\"muted\">" + esc(u.text) + "</span></p>";
       }).join("");
   }
 
@@ -281,7 +325,8 @@
       });
     });
     draw();
-    document.getElementById("extras").innerHTML = renderSchoolGaps() + renderCustoms();
+    document.getElementById("extras").innerHTML =
+      renderHeritageGaps() + renderSchoolGaps() + renderCustoms();
   }
 
   if (document.readyState === "loading") {
