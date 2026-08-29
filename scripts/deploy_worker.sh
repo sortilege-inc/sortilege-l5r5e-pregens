@@ -11,13 +11,15 @@ cd "$(dirname "$0")/.."
 ROOT="$PWD"
 
 [ -f .env ] || { echo "no .env here"; exit 1; }
-KEY_LINE=$(grep '^ANTHROPIC_API_KEY=' .env || true)
-[ -n "$KEY_LINE" ] || { echo "no ANTHROPIC_API_KEY in .env"; exit 1; }
+grep -q '^ANTHROPIC_API_KEY=' .env || { echo "no ANTHROPIC_API_KEY in .env"; exit 1; }
 
 cd worker
 
-echo "==> setting the secret (value piped from .env; not displayed)"
-printf '%s' "${KEY_LINE#ANTHROPIC_API_KEY=}" | npx wrangler secret put ANTHROPIC_API_KEY
+# Piped straight out of .env: the value never lands in a variable, an argument,
+# or the terminal. Wrangler reads the secret from stdin.
+echo "==> setting the secret (piped from .env; never displayed)"
+grep '^ANTHROPIC_API_KEY=' ../.env | cut -d= -f2- | tr -d '\r\n' \
+  | npx wrangler secret put ANTHROPIC_API_KEY
 
 echo
 echo "==> deploying"

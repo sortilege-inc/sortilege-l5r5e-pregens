@@ -2,6 +2,12 @@ name = "sortilege-l5r-creator-ai"
 main = "src/index.js"
 compatibility_date = "2026-08-29"
 
+# Serve at <name>.<subdomain>.workers.dev. This defaults to true, but stating it
+# makes the route part of the deploy rather than something that has to already
+# be attached — a Worker can exist, with its secret set, and still answer 404
+# (Cloudflare error 1042) if no route points at it.
+workers_dev = true
+
 [vars]
 # Comma-separated origins allowed to call this Worker. The first is the
 # fallback CORS origin. The Creator is served from GitHub Pages; keep the
