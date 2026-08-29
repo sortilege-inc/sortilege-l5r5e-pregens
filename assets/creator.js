@@ -146,7 +146,11 @@
         relationships: "", parent_opinion: { description: "", skill: null },
         heritage: null, heritage_table: null, heritage_sub: null, death: ""
       },
-      starting_item: "", campaign: "", notes: ""
+      starting_item: "", campaign: "", notes: "",
+      // Loose concept material. Feeds every AI suggestion and is deliberately
+      // NOT exported — it is scaffolding for making the character, not part of
+      // the finished one.
+      concept: ""
     };
   }
 
@@ -374,22 +378,76 @@
   };
 
   function aiKey() {
-    try { return localStorage.getItem(LS_KEY) || null; } catch (e) { return null; }
+    try {
+      var k = localStorage.getItem(LS_KEY);
+      if (k) return k;
+    } catch (e) { /* private mode */ }
+    // .env's key, loaded only when this page is served locally
+    return window.L5R_LOCAL_AI_KEY || null;
+  }
+
+  // The published site must never request the key file — it does not exist
+  // there, and asking for it would be both a 404 and the wrong intent.
+  function loadLocalKey(done) {
+    var h = location.hostname;
+    var local = h === "localhost" || h === "127.0.0.1" || h === "" || h === "[::1]";
+    if (!local || window.L5R_LOCAL_AI_KEY) return done();
+    var el = document.createElement("script");
+    el.src = "../data/ai-key.local.js";
+    el.onload = done;
+    el.onerror = done;      // absent is normal; the Creator just asks for a key
+    document.head.appendChild(el);
   }
   function aiAvailable() { return !!aiKey(); }
 
+  // Everything the draft holds at the moment of the call — the current step's
+  // selection included, since every widget writes to C before this runs. A
+  // suggestion is only as good as what it knows the character already is.
   function characterContext() {
     var b = [];
-    if (C.clan) b.push("Clan: " + C.clan);
-    if (C.family) b.push("Family: " + C.family);
-    if (C.school) b.push("School: " + C.school + (C.role ? " (" + C.role + ")" : ""));
-    if (C.bushido.paramount) b.push("Paramount tenet: " + C.bushido.paramount);
-    if (C.bushido.lesser) b.push("Lesser tenet: " + C.bushido.lesser);
-    if (C.answers.giri) b.push("Giri: " + C.answers.giri);
-    if (C.answers.ninjo) b.push("Ninjō: " + C.answers.ninjo);
-    if (C.answers.standout_quality) b.push("Standout quality: " + C.answers.standout_quality);
-    if (C.distinctions.length) b.push("Distinctions: " + C.distinctions.join(", "));
-    if (C.adversities.length) b.push("Adversities: " + C.adversities.join(", "));
+    var a = C.answers;
+    function add(k, v) { if (v !== null && v !== undefined && v !== "") b.push(k + ": " + v); }
+
+    if (C.concept) b.push("Concept the player is holding:\n" + C.concept + "\n");
+    add("Mode", (MODES.filter(function (m) { return m.key === mode(); })[0] || {}).book);
+    add("Name", C.name);
+    if (isCore()) {
+      add("Clan", C.clan);
+      add("Family", C.family);
+    } else {
+      add("Region", C.region);
+      add("Upbringing", C.upbringing);
+    }
+    add("School", C.school + (C.role ? " (" + C.role + ")" : ""));
+
+    var d = computed();
+    b.push("Rings: " + RINGS.map(function (r) {
+      return cap(r) + " " + d.rings[r];
+    }).join(", "));
+    var sk = Object.keys(d.skills).filter(function (k) { return d.skills[k]; })
+      .map(function (k) { return (SKILL_LABEL[k] || cap(k)) + " " + d.skills[k]; });
+    if (sk.length) b.push("Skills: " + sk.join(", "));
+    b.push("Honor " + d.honor + ", Glory " + d.glory + ", Status " + d.status);
+
+    add("Standout ring", C.standout_ring && cap(C.standout_ring));
+    add("Standout quality", a.standout_quality);
+    add("Giri (duty)", a.giri);
+    add("Ninjō (desire)", a.ninjo);
+    add("Clan relationship", a.clan_relationship.text);
+    add("Paramount tenet", C.bushido.paramount);
+    add("Lesser tenet", C.bushido.lesser);
+    add("Distinctions", C.distinctions.join(", "));
+    add("Adversities", C.adversities.join(", "));
+    add("Passions", C.passions.join(", "));
+    add("Anxieties", C.anxieties.join(", "));
+    add("Mentor", a.mentor.name + (a.mentor.text ? " — " + a.mentor.text : ""));
+    add("First impression", a.first_impression);
+    add("Stress reaction", a.stress_reaction);
+    add("Relationships", a.relationships);
+    add("Starting item", C.starting_item);
+    add("Parent's opinion", a.parent_opinion.description);
+    add("Heritage", a.heritage + (a.heritage_sub ? " — " + a.heritage_sub : ""));
+    add("Vision of death", a.death);
     return b.join("\n");
   }
 
@@ -433,8 +491,10 @@
     row.className = "ai-row";
     row.innerHTML = '<button type="button" class="ai-btn">Suggest</button>' +
       '<span class="ai-hint">' +
-      (aiAvailable() ? "Tab in an empty field for an AI suggestion"
-                     : "Set an API key below to enable AI suggestions") +
+      (aiAvailable()
+        ? "Tab in an empty field for an AI suggestion" +
+          (window.L5R_LOCAL_AI_KEY ? " · key from .env" : "")
+        : "Set an API key below to enable AI suggestions") +
       '</span><span class="ai-status" aria-live="polite"></span>';
     input.insertAdjacentElement("afterend", row);
     var status = row.querySelector(".ai-status");
@@ -634,6 +694,21 @@
           : "Questions 1 and 2 become <strong>region</strong> and <strong>upbringing</strong>, " +
             "and the clan-relationship question is dropped — these characters have no clan.";
         body.appendChild(note);
+
+        label(body, "Concept");
+        var hint = document.createElement("p");
+        hint.className = "muted small";
+        hint.innerHTML = "Anything loose you are holding about this character — a " +
+          "premise, an image, a line of dialogue, a role at the table. Every AI " +
+          "suggestion is given this as context. <strong>It is not exported</strong>: " +
+          "it shapes the character without becoming part of it.";
+        body.appendChild(hint);
+        var ta = document.createElement("textarea");
+        ta.rows = 5;
+        ta.placeholder = "A duellist who has never drawn in anger; the family owes a debt no one will name…";
+        ta.value = C.concept || "";
+        ta.addEventListener("input", function () { C.concept = ta.value; save(); });
+        body.appendChild(ta);
       } },
 
     { id: "clan", n: 1,
@@ -1098,6 +1173,8 @@
       portrait: null,
       concept: a.first_impression || null,
       summary: null,
+      // C.concept is deliberately absent: it informs the making of the
+      // character and is not part of the finished one.
       notes: C.notes || "",
       twenty_questions: {
         template: isCore() ? "core" : "pow", generated: false,
@@ -1322,7 +1399,12 @@
       if (step < STEPS.length - 1) { step++; render(); }
     });
     var k = el("ai-key");
-    k.value = aiKey() || "";
+    var stored = null;
+    try { stored = localStorage.getItem(LS_KEY); } catch (e) { /* private mode */ }
+    k.value = stored || "";
+    if (!stored && window.L5R_LOCAL_AI_KEY) {
+      k.placeholder = "using ANTHROPIC_API_KEY from .env (local only)";
+    }
     k.addEventListener("change", function () {
       try {
         if (k.value.trim()) localStorage.setItem(LS_KEY, k.value.trim());
@@ -1333,9 +1415,11 @@
     render();
   }
 
+  function boot() { loadLocalKey(init); }
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
+    document.addEventListener("DOMContentLoaded", boot);
   } else {
-    init();
+    boot();
   }
 })();

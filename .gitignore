@@ -14,3 +14,7 @@ node_modules/
 # Raw actor portraits pulled from Foundry (18 MB, re-fetchable with
 # scripts/foundry_pull.py). The web-sized art lives in src/portraits/.
 pipeline/foundry/portraits/
+
+# Local-only Anthropic key for the Creator, generated from .env by scripts/build.py.
+# Never publish a key with a static site.
+data/ai-key.local.js

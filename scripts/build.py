@@ -342,6 +342,32 @@ def twenty_question_labels():
     return {"parts": parts, "questions": questions, "fields": fields}
 
 
+def emit_local_key():
+    """Hand the Creator the .env Anthropic key, for local use only.
+
+    data/ai-key.local.js is gitignored, so it exists on this machine and never
+    on the published site — and the Creator only requests it when the page is
+    served from localhost or opened from disk. A key must not ship with a
+    static site that anyone can view source on.
+    """
+    dest = os.path.join(SITEDATA, "ai-key.local.js")
+    key = None
+    env = os.path.join(ROOT, ".env")
+    if os.path.exists(env):
+        for line in open(env):
+            line = line.strip()
+            if line.startswith("ANTHROPIC_API_KEY="):
+                key = line.split("=", 1)[1].strip()
+    if not key:
+        if os.path.exists(dest):
+            os.remove(dest)
+        return False
+    with open(dest, "w") as f:
+        f.write("// Local convenience only — gitignored, never published.\n")
+        f.write("window.L5R_LOCAL_AI_KEY = %s;\n" % json.dumps(key))
+    return True
+
+
 def archive_drafts(docs):
     """Enough of each draft character for the Creator to pick it up.
 
@@ -539,6 +565,7 @@ def emit(cx):
           heritage_coverage())
     write(os.path.join(SITEDATA, "drafts.js"), "L5R_ARCHIVE_DRAFTS",
           archive_drafts(docs))
+    emit_local_key()
     return (n1, n2, n3, biggest), docs
 
 
@@ -842,6 +869,9 @@ def main():
     print("site data:  roster.js %.1f KB | catalog.js %.1f KB | coverage.js %.1f KB"
           " | largest character %.1f KB" % tuple(s / 1024 for s in sizes))
     print(f"pages:      {npages} character stubs, {nplay} playable sheets")
+    print("local AI key: " + ("data/ai-key.local.js written from .env (gitignored)"
+                              if os.path.exists(os.path.join(SITEDATA, "ai-key.local.js"))
+                              else "no ANTHROPIC_API_KEY in .env — Creator will ask for one"))
     if off_roll:
         print(f"SCHOOLS off the compendium roll ({len(off_roll)}):")
         for slug, school, near in off_roll:
