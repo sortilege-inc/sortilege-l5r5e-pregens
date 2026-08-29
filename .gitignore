@@ -18,3 +18,6 @@ pipeline/foundry/portraits/
 # Local-only Anthropic key for the Creator, generated from .env by scripts/build.py.
 # Never publish a key with a static site.
 data/ai-key.local.js
+
+# Wrangler local state (account cache, build tmp)
+worker/.wrangler/
