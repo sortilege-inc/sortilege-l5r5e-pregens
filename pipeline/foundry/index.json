@@ -17,7 +17,8 @@
    "campaign": null,
    "color": "#fbf541",
    "sort": 0,
-   "file": "actors/Aarav_0_XP__F5KInxHO1tSvc1KF.json"
+   "file": "actors/Aarav_0_XP__F5KInxHO1tSvc1KF.json",
+   "portrait": "pipeline/foundry/portraits/aarav.png"
   },
   {
    "uuid": "Actor.Rd0ybxfqy3eSxSAQ",
@@ -35,7 +36,8 @@
    "campaign": null,
    "color": "#fbf541",
    "sort": 0,
-   "file": "actors/Aarav_36_XP_Astradhari__Rd0ybxfqy3eSxSAQ.json"
+   "file": "actors/Aarav_36_XP_Astradhari__Rd0ybxfqy3eSxSAQ.json",
+   "portrait": "pipeline/foundry/portraits/aarav.png"
   },
   {
    "uuid": "Actor.ekaguEV9oUfUZ9E5",
@@ -53,7 +55,8 @@
    "campaign": null,
    "color": "#fbf541",
    "sort": 0,
-   "file": "actors/Aarav_57_XP_Astradhari_Rank_2__ekaguEV9oUfUZ9E5.json"
+   "file": "actors/Aarav_57_XP_Astradhari_Rank_2__ekaguEV9oUfUZ9E5.json",
+   "portrait": "pipeline/foundry/portraits/aarav.png"
   },
   {
    "uuid": "Actor.s4k9f0SUcWTel4ci",
@@ -71,7 +74,8 @@
    "campaign": null,
    "color": "#492886",
    "sort": 0,
-   "file": "actors/Hiruma_Kaede_0_XP__s4k9f0SUcWTel4ci.json"
+   "file": "actors/Hiruma_Kaede_0_XP__s4k9f0SUcWTel4ci.json",
+   "portrait": "pipeline/foundry/portraits/hiruma-kaede.png"
   },
   {
    "uuid": "Actor.xRpcwXitGcOO6hQP",
@@ -89,7 +93,8 @@
    "campaign": null,
    "color": "#492886",
    "sort": 0,
-   "file": "actors/Hiruma_Kaede_107_XP_Gunsō_Rank_4__xRpcwXitGcOO6hQP.json"
+   "file": "actors/Hiruma_Kaede_107_XP_Gunsō_Rank_4__xRpcwXitGcOO6hQP.json",
+   "portrait": "pipeline/foundry/portraits/hiruma-kaede.png"
   },
   {
    "uuid": "Actor.1zj26dnVkxVx8cjc",
@@ -107,7 +112,8 @@
    "campaign": null,
    "color": "#492886",
    "sort": 0,
-   "file": "actors/Hiruma_Kaede_165_XP_Gunsō_Rank_5__1zj26dnVkxVx8cjc.json"
+   "file": "actors/Hiruma_Kaede_165_XP_Gunsō_Rank_5__1zj26dnVkxVx8cjc.json",
+   "portrait": "pipeline/foundry/portraits/hiruma-kaede.png"
   },
   {
    "uuid": "Actor.qasH08OepZgjiTfv",
@@ -125,7 +131,8 @@
    "campaign": null,
    "color": "#492886",
    "sort": 0,
-   "file": "actors/Hiruma_Kaede_21_XP_Rank_2__qasH08OepZgjiTfv.json"
+   "file": "actors/Hiruma_Kaede_21_XP_Rank_2__qasH08OepZgjiTfv.json",
+   "portrait": "pipeline/foundry/portraits/hiruma-kaede.png"
   },
   {
    "uuid": "Actor.53TxZNvkvH299bkh",
@@ -143,7 +150,8 @@
    "campaign": null,
    "color": "#492886",
    "sort": 0,
-   "file": "actors/Hiruma_Kaede_216_XP_General_Rank_5__53TxZNvkvH299bkh.json"
+   "file": "actors/Hiruma_Kaede_216_XP_General_Rank_5__53TxZNvkvH299bkh.json",
+   "portrait": "pipeline/foundry/portraits/hiruma-kaede.png"
   },
   {
    "uuid": "Actor.l4VWZnBMThDd2yR6",
@@ -161,7 +169,8 @@
    "campaign": null,
    "color": "#492886",
    "sort": 0,
-   "file": "actors/Hiruma_Kaede_279_XP_General_Rank_6__l4VWZnBMThDd2yR6.json"
+   "file": "actors/Hiruma_Kaede_279_XP_General_Rank_6__l4VWZnBMThDd2yR6.json",
+   "portrait": "pipeline/foundry/portraits/hiruma-kaede.png"
   },
   {
    "uuid": "Actor.kyq8x7TCCC3lKy6I",
@@ -179,7 +188,8 @@
    "campaign": null,
    "color": "#492886",
    "sort": 0,
-   "file": "actors/Hiruma_Kaede_50_XP_Rank_3__kyq8x7TCCC3lKy6I.json"
+   "file": "actors/Hiruma_Kaede_50_XP_Rank_3__kyq8x7TCCC3lKy6I.json",
+   "portrait": "pipeline/foundry/portraits/hiruma-kaede.png"
   },
   {
    "uuid": "Actor.T8Lx3NypuCOqLcpc",
@@ -197,7 +207,8 @@
    "campaign": null,
    "color": "#492886",
    "sort": 0,
-   "file": "actors/Hiruma_Kaede_74_XP_Gunsō_Rank_3__T8Lx3NypuCOqLcpc.json"
+   "file": "actors/Hiruma_Kaede_74_XP_Gunsō_Rank_3__T8Lx3NypuCOqLcpc.json",
+   "portrait": "pipeline/foundry/portraits/hiruma-kaede.png"
   },
   {
    "uuid": "Actor.87l78AncRTk6DMWJ",
@@ -215,7 +226,8 @@
    "campaign": null,
    "color": "#e70d0d",
    "sort": 0,
-   "file": "actors/Ikoma_no_Hosokawa_Ota_0_XP__87l78AncRTk6DMWJ.json"
+   "file": "actors/Ikoma_no_Hosokawa_Ota_0_XP__87l78AncRTk6DMWJ.json",
+   "portrait": "pipeline/foundry/portraits/ikoma-no-hosokawa-ota.png"
   },
   {
    "uuid": "Actor.uddhC4czlnyZAYjJ",
@@ -233,7 +245,8 @@
    "campaign": null,
    "color": null,
    "sort": 0,
-   "file": "actors/Isawa_Yukiko_44_XP_Awakened_Soul__uddhC4czlnyZAYjJ.json"
+   "file": "actors/Isawa_Yukiko_44_XP_Awakened_Soul__uddhC4czlnyZAYjJ.json",
+   "portrait": "pipeline/foundry/portraits/isawa-yukiko.png"
   },
   {
    "uuid": "Actor.o6nJImFmnkUzcWPZ",
@@ -251,7 +264,8 @@
    "campaign": null,
    "color": null,
    "sort": 0,
-   "file": "actors/Isawa_Yukiko_74_XP_Awakened_Soul_Rank_2__o6nJImFmnkUzcWPZ.json"
+   "file": "actors/Isawa_Yukiko_74_XP_Awakened_Soul_Rank_2__o6nJImFmnkUzcWPZ.json",
+   "portrait": "pipeline/foundry/portraits/isawa-yukiko.png"
   },
   {
    "uuid": "Actor.tQeesrhaKZHRa5lB",
@@ -269,7 +283,8 @@
    "campaign": null,
    "color": null,
    "sort": 0,
-   "file": "actors/Isawa_Yukiko_98_XP_Awakened_Soul_Rank_3_Copy__tQeesrhaKZHRa5lB.json"
+   "file": "actors/Isawa_Yukiko_98_XP_Awakened_Soul_Rank_3_Copy__tQeesrhaKZHRa5lB.json",
+   "portrait": "pipeline/foundry/portraits/isawa-yukiko.png"
   },
   {
    "uuid": "Actor.1couuYrLcG6efybt",
@@ -287,7 +302,8 @@
    "campaign": null,
    "color": "#5b398e",
    "sort": 0,
-   "file": "actors/Nasu_Kogo_0_XP__1couuYrLcG6efybt.json"
+   "file": "actors/Nasu_Kogo_0_XP__1couuYrLcG6efybt.json",
+   "portrait": "pipeline/foundry/portraits/nasu-kogo.png"
   },
   {
    "uuid": "Actor.yQLM5kLHqFdrhfVd",
@@ -305,7 +321,8 @@
    "campaign": null,
    "color": "#5b398e",
    "sort": 0,
-   "file": "actors/Nasu_Kogo_20_XP_Rank_2__yQLM5kLHqFdrhfVd.json"
+   "file": "actors/Nasu_Kogo_20_XP_Rank_2__yQLM5kLHqFdrhfVd.json",
+   "portrait": "pipeline/foundry/portraits/nasu-kogo.png"
   },
   {
    "uuid": "Actor.JVNV6v1nBOODVBs9",
@@ -323,7 +340,8 @@
    "campaign": null,
    "color": "#5b398e",
    "sort": 0,
-   "file": "actors/Nasu_Kogo_33_XP_Interpreter_Rank_2__JVNV6v1nBOODVBs9.json"
+   "file": "actors/Nasu_Kogo_33_XP_Interpreter_Rank_2__JVNV6v1nBOODVBs9.json",
+   "portrait": "pipeline/foundry/portraits/nasu-kogo.png"
   },
   {
    "uuid": "Actor.HhUYx9efAco0z2SQ",
@@ -341,7 +359,8 @@
    "campaign": null,
    "color": "#5b398e",
    "sort": 0,
-   "file": "actors/Nasu_Kogo_63_XP_Interpreter_Rank_3__HhUYx9efAco0z2SQ.json"
+   "file": "actors/Nasu_Kogo_63_XP_Interpreter_Rank_3__HhUYx9efAco0z2SQ.json",
+   "portrait": "pipeline/foundry/portraits/nasu-kogo.png"
   },
   {
    "uuid": "Actor.X6mcVfFgcs8OzILh",
@@ -359,7 +378,8 @@
    "campaign": null,
    "color": "#83cecc",
    "sort": 0,
-   "file": "actors/Tsume_Kunimichi_0_XP__X6mcVfFgcs8OzILh.json"
+   "file": "actors/Tsume_Kunimichi_0_XP__X6mcVfFgcs8OzILh.json",
+   "portrait": "pipeline/foundry/portraits/tsume-kunimichi.png"
   },
   {
    "uuid": "Actor.ZZ1PguzJan2hK0u0",
@@ -377,7 +397,8 @@
    "campaign": null,
    "color": "#83cecc",
    "sort": 0,
-   "file": "actors/Tsume_Kunimichi_20_XP_Rank_2__ZZ1PguzJan2hK0u0.json"
+   "file": "actors/Tsume_Kunimichi_20_XP_Rank_2__ZZ1PguzJan2hK0u0.json",
+   "portrait": "pipeline/foundry/portraits/tsume-kunimichi.png"
   },
   {
    "uuid": "Actor.mk4X2a3CKwKeFJbs",
@@ -395,7 +416,8 @@
    "campaign": null,
    "color": "#83cecc",
    "sort": 0,
-   "file": "actors/Tsume_Kunimichi_49_XP_Rank_3__mk4X2a3CKwKeFJbs.json"
+   "file": "actors/Tsume_Kunimichi_49_XP_Rank_3__mk4X2a3CKwKeFJbs.json",
+   "portrait": "pipeline/foundry/portraits/tsume-kunimichi.png"
   },
   {
    "uuid": "Actor.MuW0K9mF1N9oJfVy",
@@ -413,7 +435,8 @@
    "campaign": null,
    "color": "#83cecc",
    "sort": 0,
-   "file": "actors/Tsume_Kunimichi_92_XP_Master_Saboteur_Rank_3__MuW0K9mF1N9oJfVy.json"
+   "file": "actors/Tsume_Kunimichi_92_XP_Master_Saboteur_Rank_3__MuW0K9mF1N9oJfVy.json",
+   "portrait": "pipeline/foundry/portraits/tsume-kunimichi.png"
   },
   {
    "uuid": "Actor.Ize23PRZWy4PPiGS",
@@ -429,7 +452,8 @@
    "campaign": "Portents & Fortunes",
    "color": null,
    "sort": 0,
-   "file": "actors/Togashi_Norikage__Ize23PRZWy4PPiGS.json"
+   "file": "actors/Togashi_Norikage__Ize23PRZWy4PPiGS.json",
+   "portrait": "pipeline/foundry/portraits/togashi-norikage.png"
   },
   {
    "uuid": "Actor.WCy4gy20ScafOA8e",
@@ -445,7 +469,8 @@
    "campaign": "Imperfect Land",
    "color": null,
    "sort": 0,
-   "file": "actors/Togashi_Renshō__WCy4gy20ScafOA8e.json"
+   "file": "actors/Togashi_Renshō__WCy4gy20ScafOA8e.json",
+   "portrait": "pipeline/foundry/portraits/togashi-rensho.png"
   },
   {
    "uuid": "Actor.LW8UWcA0siitWpec",
@@ -461,7 +486,8 @@
    "campaign": "Imperfect Land",
    "color": null,
    "sort": 0,
-   "file": "actors/Tonbo_Asahi__LW8UWcA0siitWpec.json"
+   "file": "actors/Tonbo_Asahi__LW8UWcA0siitWpec.json",
+   "portrait": "pipeline/foundry/portraits/tonbo-asahi.png"
   },
   {
    "uuid": "Actor.Q9Nd6vhG4PMG0aXZ",
@@ -477,7 +503,8 @@
    "campaign": "The Fragile Peace",
    "color": null,
    "sort": 0,
-   "file": "actors/Doji_Setsuna__Q9Nd6vhG4PMG0aXZ.json"
+   "file": "actors/Doji_Setsuna__Q9Nd6vhG4PMG0aXZ.json",
+   "portrait": "pipeline/foundry/portraits/doji-setsuna.jpeg"
   },
   {
    "uuid": "Actor.d2MPs8wj7KsCV5w7",
@@ -493,7 +520,8 @@
    "campaign": "The Fragile Peace",
    "color": null,
    "sort": 0,
-   "file": "actors/Shinjō_Anzu_0_XP__d2MPs8wj7KsCV5w7.json"
+   "file": "actors/Shinjō_Anzu_0_XP__d2MPs8wj7KsCV5w7.json",
+   "portrait": "pipeline/foundry/portraits/shinjo-anzu.png"
   },
   {
    "uuid": "Actor.JmyWJBtsDzEzhsey",
@@ -509,7 +537,8 @@
    "campaign": "The Fragile Peace",
    "color": null,
    "sort": 0,
-   "file": "actors/Shinjō_Anzu_104_XP__JmyWJBtsDzEzhsey.json"
+   "file": "actors/Shinjō_Anzu_104_XP__JmyWJBtsDzEzhsey.json",
+   "portrait": "pipeline/foundry/portraits/shinjo-anzu.png"
   },
   {
    "uuid": "Actor.MFYn0Td7dR7U9zZk",
@@ -525,7 +554,8 @@
    "campaign": "The Fragile Peace",
    "color": null,
    "sort": 0,
-   "file": "actors/Asahina_Jûjirô_50_XP__MFYn0Td7dR7U9zZk.json"
+   "file": "actors/Asahina_Jûjirô_50_XP__MFYn0Td7dR7U9zZk.json",
+   "portrait": "pipeline/foundry/portraits/asahina-jujiro.png"
   },
   {
    "uuid": "Actor.VEf4nAHO0O9A2jIu",
@@ -541,7 +571,8 @@
    "campaign": "The Fragile Peace",
    "color": null,
    "sort": 0,
-   "file": "actors/Shinjō_Harunobu__VEf4nAHO0O9A2jIu.json"
+   "file": "actors/Shinjō_Harunobu__VEf4nAHO0O9A2jIu.json",
+   "portrait": "pipeline/foundry/portraits/shinjo-harunobu.png"
   }
  ],
  "campaigns": {

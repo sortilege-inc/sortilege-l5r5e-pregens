@@ -80,6 +80,23 @@ def main():
                             " WHERE custom=0 AND catalog_uuid IS NULL LIMIT 20"):
             fail.append(f"{r['slug']}: {r['category']} {r['name']!r} resolves to nothing")
 
+    # Every item type present on a pulled actor must be one the extractor
+    # handles. This is the check that would have caught signature_scroll being
+    # dropped: the other gates only ever look at what was already extracted.
+    handled = {"technique", "peculiarity", "title", "bond", "signature_scroll",
+               "weapon", "armor", "item", "advancement"}
+    on_actors = collections.Counter()
+    for path in glob.glob(os.path.join(ROOT, "pipeline", "foundry", "actors", "*.json")):
+        for i in json.load(open(path)).get("items", []):
+            on_actors[i["type"]] += 1
+    for t, n in sorted(on_actors.items()):
+        if t not in handled:
+            fail.append(f"actor item type {t!r} ({n} items) is not extracted — "
+                        "silent content drop")
+    print(f"actor item types: {len(on_actors)} kinds, "
+          f"{sum(on_actors.values())} items, all handled"
+          if all(t in handled for t in on_actors) else "")
+
     pages = {os.path.basename(p)[:-5] for p in
              glob.glob(os.path.join(ROOT, "characters", "*.html"))} - {"index"}
     slugs = {r["slug"] for r in cx.execute("SELECT slug FROM character")}

@@ -16,12 +16,16 @@ Idempotent: re-fetches only missing files unless --force.
 
 Env: FOUNDRY_API (relay API key) from .env at the repo root.
 """
-import json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
+import json, os, re, sys, time, unicodedata, urllib.error, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://foundryrestapi.com"
 OUT = os.path.join(ROOT, "pipeline", "foundry")
 ACTOR_DIR = os.path.join(OUT, "actors")
+PORTRAIT_DIR = os.path.join(OUT, "portraits")
+HOST = os.environ.get("FOUNDRY_HOST", "https://foundry.sortilege.online")
+# Foundry's stand-in art, not a portrait
+PLACEHOLDER = re.compile(r"(mystery-man|icons/svg/)", re.I)
 SOURCES = os.path.join(ROOT, "src", "foundry_sources.json")
 
 
@@ -67,6 +71,14 @@ def pick_client():
     return live[0]["clientId"]
 
 
+def slugify_name(name):
+    """Character display name -> the slug scripts/extract_characters.py will use."""
+    n = re.sub(r"^(?P<n>.*?)\s*\(.*\)\s*$", r"\g<n>", (name or "").strip())
+    n = unicodedata.normalize("NFKD", n)
+    n = "".join(c for c in n if not unicodedata.combining(c))
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", n.lower())).strip("-")
+
+
 def slug(name):
     s = re.sub(r"[^\w\- ]", "", (name or "unnamed")).strip().replace(" ", "_")
     return (s or "unnamed")[:80]
@@ -92,6 +104,36 @@ def chain(fid):
     return list(reversed(out))
 
 
+def fetch_portrait(actor_doc, slug, force):
+    """Save the actor's own portrait, served straight off the Foundry host.
+
+    This is the default art for a character; src/foundry_sources.json's
+    `portraits` map overrides it when a better image exists locally.
+    """
+    img = (actor_doc or {}).get("img") or ""
+    if not img or img.startswith("data:") or PLACEHOLDER.search(img):
+        return None
+    ext = os.path.splitext(img)[1] or ".png"
+    dest = os.path.join(PORTRAIT_DIR, slug + ext)
+    if os.path.exists(dest) and not force:
+        return dest
+    os.makedirs(PORTRAIT_DIR, exist_ok=True)
+    url = f"{HOST}/{urllib.parse.quote(img)}"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "curl/8.0"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            data = r.read()
+        if not data:
+            return None
+        with open(dest, "wb") as f:
+            f.write(data)
+        print(f"   portrait {slug}{ext}  ({len(data)/1024:.0f} KB)", flush=True)
+        return dest
+    except Exception as e:
+        print(f"   portrait FAIL {slug}: {e}", flush=True)
+        return None
+
+
 def fetch(entry, force):
     """Fetch one actor to disk; returns its index record."""
     eid = entry["id"]
@@ -99,11 +141,20 @@ def fetch(entry, force):
     fpath = os.path.join(ACTOR_DIR, fname)
     entry["file"] = os.path.join("actors", fname)
     if os.path.exists(fpath) and not force:
+        # the actor is already on disk; still make sure its portrait is
+        data = json.load(open(fpath))
+        art = fetch_portrait(data, slugify_name(entry["character"]), force)
+        if art:
+            entry["portrait"] = os.path.relpath(art, ROOT)
         return entry, True
     try:
         doc = api("/get", {"uuid": entry["uuid"]})
+        data = doc.get("data", doc)
         with open(fpath, "w") as f:
-            json.dump(doc.get("data", doc), f, indent=1, ensure_ascii=False)
+            json.dump(data, f, indent=1, ensure_ascii=False)
+        art = fetch_portrait(data, slugify_name(entry["character"]), force)
+        if art:
+            entry["portrait"] = os.path.relpath(art, ROOT)
         return entry, True
     except Exception as e:
         print(f"   FAIL {entry['uuid']}: {e}", flush=True)

@@ -25,11 +25,18 @@ SITEDATA = os.path.join(ROOT, "data")
 # category in a tier -> catalog subType it resolves against
 CATEGORY_SUBTYPE = {
     "techniques": "technique", "peculiarities": "peculiarity",
-    "titles": "title", "bonds": "bond", "gear": ("weapon", "armor", "item"),
+    "titles": "title", "bonds": "bond",
+    # a title's granted ability: the actor files it as signature_scroll, the
+    # compendium keeps it in Title Abilities as a technique
+    "signature_scrolls": ("signature_scroll", "technique"),
+    "gear": ("weapon", "armor", "item"),
 }
 SCHOOL_CLAN_RE = re.compile(r"^(?P<name>.*?)\s*\[(?P<clan>[^\]]+)\]\s*$")
 # "Scorn of [One Group]" -> "Scorn of"; the bracket is the player's choice
 OPEN_ENDED_RE = re.compile(r"\s*\[[^\]]+\]\s*$")
+# "Voice of Authority" on an actor vs "Voice of Authority (Emerald Magistrate)"
+# in the compendium — the qualifier names the title that granted it
+QUALIFIED_RE = re.compile(r"^(?P<stem>.*?)\s*\((?P<qual>[^)]+)\)\s*$")
 
 # --- school curriculum journals -------------------------------------------
 # Each curriculum page is a <blockquote>Book p.N</blockquote> followed by a
@@ -203,6 +210,21 @@ def load_characters(cx):
                                 row = cx.execute(
                                     "SELECT uuid FROM catalog WHERE norm=? AND sub_type IN (%s)"
                                     % ",".join("?" * len(subs)), (stem, *subs)).fetchone()
+                        if not row:
+                            # The compendium may qualify the name by the title that
+                            # grants it ("Voice of Authority (Emerald Magistrate)").
+                            # Only accept it when this character holds that title.
+                            held = {norm(x["name"]) for x in t.get("titles", [])}
+                            cands = cx.execute(
+                                "SELECT uuid, name FROM catalog WHERE sub_type IN (%s)"
+                                " AND norm LIKE ? || '%%'" % ",".join("?" * len(subs)),
+                                (*subs, n)).fetchall()
+                            for cand in cands:
+                                qm = QUALIFIED_RE.match(cand[1])
+                                if qm and norm(qm.group("stem")) == n \
+                                        and norm(qm.group("qual")) in held:
+                                    row = cand
+                                    break
                         if row:
                             uuid = row[0]
                         else:
@@ -378,6 +400,35 @@ def _plain(html):
     return html or ""
 
 
+def _scroll_for(tier, title_name):
+    """The title ability a tier carries for one title, if any.
+
+    The actor files it as a signature_scroll named plainly ("Voice of Authority");
+    the compendium qualifies it by title ("Voice of Authority (Emerald Magistrate)"),
+    so match on either.
+    """
+    want = norm(title_name)
+    for e in tier.get("signature_scrolls", []):
+        m = QUALIFIED_RE.match(e.get("name") or "")
+        if m and norm(m.group("qual")) == want:
+            return e
+    # a single unqualified ability on a tier with one title belongs to it
+    scrolls = tier.get("signature_scrolls", [])
+    if len(scrolls) == 1 and len(tier.get("titles", [])) == 1:
+        return scrolls[0]
+    return None
+
+
+def ability_for(tier, title_name):
+    e = _scroll_for(tier, title_name)
+    return QUALIFIED_RE.sub(r"\g<stem>", e["name"]).strip() if e else None
+
+
+def ability_text(tier, title_name):
+    e = _scroll_for(tier, title_name)
+    return _plain(e.get("description")) if e else None
+
+
 def sheet_from_tier(char, tier):
     """Adapt one XP tier to the shape assets/play/sheet.js expects.
 
@@ -443,7 +494,9 @@ def sheet_from_tier(char, tier):
         "money": money_str,
         "techniques": [simple(e, "technique") for e in tier.get("techniques", [])],
         "peculiarities": [simple(e, "peculiarity") for e in tier.get("peculiarities", [])],
-        "titles": [{"name": e["name"], "text": _plain(e.get("description"))}
+        "titles": [{"name": e["name"], "text": _plain(e.get("description")),
+                    "ability": ability_for(tier, e["name"]),
+                    "abilityText": ability_text(tier, e["name"])}
                    for e in tier.get("titles", [])],
         "bonds": [{"name": e["name"], "text": _plain(e.get("description"))}
                   for e in tier.get("bonds", [])],

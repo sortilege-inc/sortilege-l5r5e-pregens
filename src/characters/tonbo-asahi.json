@@ -12,7 +12,7 @@
   "role": "Courtier",
   "age": ""
  },
- "portrait": null,
+ "portrait": "src/portraits/tonbo-asahi.webp",
  "concept": null,
  "summary": null,
  "notes": "",
@@ -399,6 +399,7 @@
    ],
    "titles": [],
    "bonds": [],
+   "signature_scrolls": [],
    "gear": [
     {
      "name": "Wakizashi",

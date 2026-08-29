@@ -21,6 +21,13 @@ CATALOG = os.path.join(ROOT, "pipeline", "foundry", "catalog", "index.json")
 OUT = os.path.join(ROOT, "src", "characters")
 
 RINGS = ["air", "earth", "fire", "water", "void"]
+# Every actor item type must land in one of the tier's categories. A type that
+# appears on an actor and is not listed here is a silent content drop, so
+# tier_from_actor refuses rather than quietly skipping it.
+HANDLED_ITEM_TYPES = {
+    "technique", "peculiarity", "title", "bond", "signature_scroll",
+    "weapon", "armor", "item", "advancement",
+}
 # School Curriculum entries are titled "<School> [Clan]"; when that whole string
 # is pasted into an actor's school field the suffix has to come back off.
 SCHOOL_CLAN_RE = re.compile(r"^(?P<name>.*?)\s*\[[^\]]+\]\s*$")
@@ -55,11 +62,36 @@ def load_catalog():
     return idx
 
 
-def ref(item, idx):
+# "Voice of Authority" on an actor vs "Voice of Authority (Emerald Magistrate)"
+# in the compendium — the qualifier names the title that granted the ability
+QUALIFIED_RE = re.compile(r"^(?P<stem>.*?)\s*\((?P<qual>[^)]+)\)\s*$")
+
+
+def qualified_match(idx, subtypes, name, held_titles):
+    """Resolve an ability the compendium qualifies by its granting title.
+
+    Only accepted when the character actually holds that title, so a
+    "(Daimyo)" variant is never mistaken for the "(Emerald Magistrate)" one.
+    """
+    n = norm(name)
+    for sub in subtypes:
+        for cand_norm, cand_name in (idx.get(sub) or {}).items():
+            m = QUALIFIED_RE.match(cand_name)
+            if m and norm(m.group("stem")) == n and norm(m.group("qual")) in held_titles:
+                return cand_name
+    return None
+
+
+def ref(item, idx, held_titles=()):
     """A content reference: canonical name if the catalog has it, else inline custom."""
     t = item["type"]
     sysd = item.get("system", {})
     canon = idx.get(t, {}).get(norm(item["name"]))
+    if not canon and t == "signature_scroll":
+        # the system files title abilities here; the compendium keeps them
+        # among the techniques, qualified by title
+        canon = qualified_match(idx, ("technique", "signature_scroll"),
+                                item["name"], held_titles)
     out = {"name": canon or item["name"]}
     # Purchase record: character-specific, not catalog data, so it lives here.
     # scripts/derive_tiers.py needs it to tell starting kit from bought content.
@@ -135,6 +167,13 @@ def tier_from_actor(actor, idx):
     items = collections.defaultdict(list)
     for i in actor["items"]:
         items[i["type"]].append(i)
+    unknown = set(items) - HANDLED_ITEM_TYPES
+    if unknown:
+        raise SystemExit(
+            f"{actor['name']}: unhandled item type(s) {sorted(unknown)} — add them to "
+            "HANDLED_ITEM_TYPES and to a tier category, or they are dropped silently")
+
+    held_titles = {norm(i["name"]) for i in items["title"]}
 
     advancements = [{
         "label": a["name"],
@@ -165,6 +204,9 @@ def tier_from_actor(actor, idx):
         "peculiarities": [ref(i, idx) for i in items["peculiarity"]],
         "titles": [ref(i, idx) for i in items["title"]],
         "bonds": [ref(i, idx) for i in items["bond"]],
+        # the system files a title's granted ability under signature_scroll
+        "signature_scrolls": [ref(i, idx, held_titles)
+                              for i in items["signature_scroll"]],
         "gear": [ref(i, idx) for i in items["weapon"] + items["armor"] + items["item"]],
         "advancements": advancements,
     }

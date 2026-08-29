@@ -12,7 +12,7 @@
   "role": "Monk",
   "age": ""
  },
- "portrait": null,
+ "portrait": "src/portraits/togashi-rensho.webp",
  "concept": null,
  "summary": null,
  "notes": "",
@@ -360,6 +360,7 @@
    ],
    "titles": [],
    "bonds": [],
+   "signature_scrolls": [],
    "gear": [
     {
      "name": "Bō",

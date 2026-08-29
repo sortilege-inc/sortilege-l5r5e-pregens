@@ -40,6 +40,7 @@
     { key: "techniques", label: "Techniques", kanji: "技" },
     { key: "peculiarities", label: "Advantages & Disadvantages", kanji: "性" },
     { key: "titles", label: "Titles", kanji: "位" },
+    { key: "signature_scrolls", label: "Title Abilities", kanji: "権" },
     { key: "bonds", label: "Bonds", kanji: "絆" },
     { key: "gear", label: "Equipment", kanji: "具" }
   ];

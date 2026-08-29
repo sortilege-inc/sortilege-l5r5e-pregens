@@ -10,3 +10,7 @@ __pycache__/
 
 # Node
 node_modules/
+
+# Raw actor portraits pulled from Foundry (18 MB, re-fetchable with
+# scripts/foundry_pull.py). The web-sized art lives in src/portraits/.
+pipeline/foundry/portraits/

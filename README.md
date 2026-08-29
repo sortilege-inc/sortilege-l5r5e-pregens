@@ -73,6 +73,19 @@ elsewhere in the world (several may share one `character`, becoming its XP tiers
 `campaigns` tagged by slug, `portraits` by slug, `corrections` for fields the Foundry
 record has wrong, and `derive_tiers` for characters Foundry holds at a single point.
 
+Portraits: `foundry_pull.py` saves each actor's own art to `pipeline/foundry/portraits/`
+(gitignored — 18 MB of originals, re-fetchable). The web-sized image in `src/portraits/`
+is what the site serves, named by the `portraits` map in the manifest.
+
+## Nothing gets dropped silently
+
+`scripts/extract_characters.py` refuses to run on an actor carrying an item type it does
+not handle, and `scripts/coverage.py` fails if any type present on a pulled actor is not
+extracted. This exists because it happened: Doji Setsuna carries a `signature_scroll`
+item — the Emerald Magistrate's title ability, "Voice of Authority" — and an earlier
+version of the extractor collected eight item types and quietly ignored the ninth. Every
+other gate passed, because they only ever checked what had already been extracted.
+
 ### `.env`
 
 ```

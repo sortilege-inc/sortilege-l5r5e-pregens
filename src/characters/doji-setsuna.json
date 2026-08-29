@@ -390,6 +390,7 @@
      }
     }
    ],
+   "signature_scrolls": [],
    "gear": [
     {
      "name": "Wakizashi",
@@ -701,6 +702,7 @@
      }
     }
    ],
+   "signature_scrolls": [],
    "gear": [
     {
      "name": "Wakizashi",
@@ -1049,6 +1051,7 @@
      }
     }
    ],
+   "signature_scrolls": [],
    "gear": [
     {
      "name": "Wakizashi",
@@ -1430,6 +1433,15 @@
       "source": "",
       "page": 0
      }
+    }
+   ],
+   "signature_scrolls": [
+    {
+     "name": "Voice of Authority (Emerald Magistrate)",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 2
     }
    ],
    "gear": [
@@ -1862,6 +1874,15 @@
       "source": "",
       "page": 0
      }
+    }
+   ],
+   "signature_scrolls": [
+    {
+     "name": "Voice of Authority (Emerald Magistrate)",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 2
     }
    ],
    "gear": [

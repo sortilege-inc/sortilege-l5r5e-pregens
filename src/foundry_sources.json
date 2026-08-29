@@ -78,7 +78,9 @@
   "doji-setsuna": "src/portraits/doji-setsuna.webp",
   "shinjo-anzu": "src/portraits/shinjo-anzu.webp",
   "asahina-jujiro": "src/portraits/asahina-jujiro.webp",
-  "shinjo-harunobu": "src/portraits/shinjo-harunobu.webp"
+  "shinjo-harunobu": "src/portraits/shinjo-harunobu.webp",
+  "togashi-rensho": "src/portraits/togashi-rensho.webp",
+  "tonbo-asahi": "src/portraits/tonbo-asahi.webp"
  },
  "derive_tiers": [
   "doji-setsuna"

@@ -30,6 +30,8 @@ DB = os.path.join(ROOT, "pipeline", "l5r.sqlite")
 
 # "Government +1 (1 -> 2)" / "Fire +1 (1 -> 2)"
 ADV_RE = re.compile(r"^(?P<what>.*?)\s*\+1\s*\((?P<from>\d+)\s*->\s*(?P<to>\d+)\)\s*$")
+# "Voice of Authority (Emerald Magistrate)" — the qualifier is the granting title
+QUALIFIED_RE = re.compile(r"^(?P<stem>.*?)\s*\((?P<qual>[^)]+)\)\s*$")
 
 
 def norm(s):
@@ -66,6 +68,9 @@ def rewind(tier):
     t["advancements"] = []
     for cat in ("techniques", "peculiarities", "titles", "bonds"):
         t[cat] = [e for e in t.get(cat, []) if not purchased(e)]
+    # A title ability is granted by its title, never bought and never starting
+    # kit, so it appears only once that title is held.
+    t["signature_scrolls"] = []
     t["xp"] = 0
     t["rank"] = 1
     t["label"] = None
@@ -155,8 +160,21 @@ def main():
         tiers.append(t)
         state = copy.deepcopy(t)
 
+    scrolls = final.get("signature_scrolls", [])
+
+    def scroll_for(title_name):
+        want = norm(title_name)
+        for e in scrolls:
+            m = QUALIFIED_RE.match(e.get("name") or "")
+            if m and norm(m.group("qual")) == want:
+                return e
+        return None
+
     for title in titles_done:
         state["titles"] = state.get("titles", []) + [title]
+        granted = scroll_for(title["name"])
+        if granted:
+            state["signature_scrolls"] = state.get("signature_scrolls", []) + [granted]
         spent += title.get("xp_used") or 0
         t = copy.deepcopy(state)
         t.update({"xp": spent, "rank": max_rank, "label": title["name"],
@@ -179,9 +197,10 @@ def main():
     print()
     print("   derived chain:")
     for t in tiers:
-        print("     %-28s %4s XP  rank %s  %2d tech  %2d titles%s" % (
+        print("     %-28s %4s XP  rank %s  %2d tech  %2d titles  %2d abilities%s" % (
             t.get("label") or "(starting)", t["xp"], t.get("rank"),
             len(t.get("techniques", [])), len(t.get("titles", [])),
+            len(t.get("signature_scrolls", [])),
             "" if t.get("reconstructed") else "   <- Foundry record"))
     if spent != final["xp"]:
         print(f"\n   NOTE: recorded purchases total {spent} XP but the actor's "
