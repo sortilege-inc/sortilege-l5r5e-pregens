@@ -1,0 +1,884 @@
+[
+ {
+  "name": "Agasha Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761630003237,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 105
+   },
+   "description": "<p>The Agasha family of the Dragon are not only priests or shugenja of the kami, but also skilled smiths. To them, blacksmithing is a sacred art—a way to honor and commune with the spirits. Weapons crafted by Agasha swordsmiths are made with countless prayers and whispered invocations, and some claim the spirits themselves guide the forging.</p><p data-start=\"422\" data-end=\"570\">After you perform a successful Attack action check using a bladed weapon produced in the Agasha pattern, the target suffers 1 supernatural damage.</p><p data-start=\"572\" data-end=\"606\">XP Cost: 6<br data-start=\"582\" data-end=\"585\">Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 6,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000034",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JAa2Z4J49ZgKeVmR",
+  "sort": 0
+ },
+ {
+  "name": "Akodo Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761632178602,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 93
+   },
+   "description": "<p>The Akodo are renowned for their regal bearing and influence throughout Rokugan. Weapons or armor crafted by the Akodo family bear the characteristic family mark and elegant looping inlay. Because of this association, any equipment made in the Akodo pattern inspires trust in those who respect the family.</p><p data-start=\"391\" data-end=\"588\">The Akodo pattern can be applied to a weapon or a set of armor. A character carrying or wearing one or more items made in the Akodo pattern increases the discipline of any army they command by 5.</p><p data-start=\"590\" data-end=\"624\">XP Cost: 6<br data-start=\"600\" data-end=\"603\">Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 6,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000022",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "S6PjhCchLR0XamD4",
+  "sort": 0
+ },
+ {
+  "name": "Burning Watter Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761632673676,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 93
+   },
+   "description": "<p>While the secret of blasting powder is one of the Empire’s most closely guarded, some artisans dare experiment further. The Burning Water pattern uses rare ingredients that still react when wet, allowing unscrupulous saboteurs to employ blasting powder in the rain or even underwater—making destructive devices even harder to detect.</p><p data-start=\"430\" data-end=\"558\">Blasting powder made in the Burning Water pattern has its damage reduced by 1. However, it can be used when wet or underwater.</p><p data-start=\"560\" data-end=\"594\">XP Cost: 6<br data-start=\"570\" data-end=\"573\">Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 6,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000023",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "9yoWxKsS4wprKCDH",
+  "sort": 0
+ },
+ {
+  "name": "Concealment Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761632767040,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 93
+   },
+   "description": "<p>While most samurai wear their colors proudly, some see the value in armor camouflaged to their environment. The Badger Clan, accustomed to fighting in close quarters against large numbers, often exploit such armor, as do members of the Crab Clan, who frequently face foes for whom honor is wasted.</p><p data-start=\"388\" data-end=\"743\">Armor crafted using the Concealment pattern gains the Wargear quality and loses the Ceremonial and Resplendent qualities; it cannot regain them. Its supernatural resistance is reduced by 1 (minimum 0). While the wearer is in Obscuring terrain, the TN of Attack action checks targeting them is increased by an additional 1 (total +2).</p><p data-start=\"745\" data-end=\"779\">XP Cost: 6<br data-start=\"755\" data-end=\"758\">Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 6,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000024",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "qM77VZArPSRxC2NL",
+  "sort": 0
+ },
+ {
+  "name": "Deadly Fangs Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761633556491,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "<p>Lion armies often include ashigaru forces whose veterans wield polearms crafted to impale and hold fast against attackers. Few foes escape the needlelike points when these weapons are firmly planted.</p><p data-start=\"309\" data-end=\"432\">A polearm made using the Deadly Fangs pattern gains the Cumbersome quality and increases its deadliness by 1.</p><p data-start=\"434\" data-end=\"589\">If an entire cohort is equipped with polearms using the Deadly Fangs pattern, its leader reduces the TN of the Reinforce action by 1 (minimum 1).</p><p data-start=\"591\" data-end=\"625\">XP Cost: 7<br data-start=\"601\" data-end=\"604\">Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 7,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000025",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dAe9fsFLMb39Kc9q",
+  "sort": 0
+ },
+ {
+  "name": "Fearsome Snarl Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761633600961,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "<p>Less a formal pattern and more a set of motifs, the Fearsome Snarl pattern appears on many Rokugani samurai armaments. Whether depicted as a swooping crane, a roaring lion, or a menacing crab, it conveys a clear and intimidating message to all enemies.</p><p data-start=\"353\" data-end=\"516\">The Fearsome Snarl pattern can be applied to a weapon or set of armor. It loses the Concealable quality (if it has it) and gains the Wargear quality.</p><p data-start=\"518\" data-end=\"552\">XP Cost: 3<br data-start=\"528\" data-end=\"531\">Rarity Modifier: +1</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000026",
+   "rarity_modifier": 1
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mFVSpZlOx1ViPMA9",
+  "sort": 0
+ },
+ {
+  "name": "Ghostlands Yodhaniya Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761633747600,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 117
+   },
+   "description": "<p><strong data-start=\"88\" data-end=\"120\">Ghostlands Yodhaniya Pattern</strong><br data-start=\"120\" data-end=\"123\">The Ghostlands hunters of the Ivory Kingdoms, known as the Yodhaniya, spend most of their lives hunting within the Tainted domain of the rakshasa. The dense, haunted rainforest makes weaponry like urumi (whip swords) difficult to wield, so most Yodhaniya favor blunt weapons such as gada (maces). Their weaponsmiths have learned to strengthen these weapons without adding extra weight, and they imbue them with coral and gold to enhance their effectiveness against Tainted creatures.</p><p data-start=\"610\" data-end=\"680\">A blunt weapon crafted using the Ghostlands Yodhaniya pattern gains:</p><ul data-start=\"681\" data-end=\"818\"><li data-start=\"681\" data-end=\"707\"><p data-start=\"683\" data-end=\"707\"><strong data-start=\"683\" data-end=\"705\">+1 Physical Damage</strong></p></li><li data-start=\"708\" data-end=\"755\"><p data-start=\"710\" data-end=\"755\"><strong data-start=\"710\" data-end=\"753\">+1 Additional Damage vs. Tainted Beings</strong></p></li><li data-start=\"756\" data-end=\"818\"><p data-start=\"758\" data-end=\"818\"><strong data-start=\"758\" data-end=\"816\">Ignore the Cumbersome quality while in Defiled terrain</strong></p></li></ul><p data-start=\"820\" data-end=\"862\"><strong data-start=\"820\" data-end=\"832\">XP Cost:</strong> 6<br data-start=\"834\" data-end=\"837\"><strong data-start=\"837\" data-end=\"857\">Rarity Modifier:</strong> +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 6,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000032",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gINN2ITlMoS3iyko",
+  "sort": 0
+ },
+ {
+  "name": "Ichirō Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761633869781,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "<p>In wartime, the mass production of weapons and armor is a top priority for the Great Clans, especially when equipping thousands of ashigaru. The Badger Clan has become renowned for their special forging techniques, which allow them to produce durable equipment quickly and inexpensively. Named for the Ichirō smith who perfected the technique, the Ichirō pattern is synonymous with efficient, mass-produced gear.</p><p data-start=\"523\" data-end=\"537\">Effects:</p><ul data-start=\"538\" data-end=\"860\"><li data-start=\"538\" data-end=\"628\"><p data-start=\"540\" data-end=\"628\">Weapons or armor produced with the Ichirō pattern halve their price (rounding up).</p></li><li data-start=\"629\" data-end=\"780\"><p data-start=\"631\" data-end=\"780\">Such items lose the Ceremonial and Resplendent qualities, if they would otherwise have them, and cannot gain these qualities in the future.</p></li><li data-start=\"781\" data-end=\"860\"><p data-start=\"783\" data-end=\"860\">Ichirō pattern items are crafted in half the normal time (rounding up).</p></li></ul><p data-start=\"862\" data-end=\"916\">XP Cost: 4<br data-start=\"876\" data-end=\"879\">Rarity Modifier: –1 (minimum 1)</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 4,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000027",
+   "rarity_modifier": -1
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "rnaXxegs5zsvebej",
+  "sort": 0
+ },
+ {
+  "name": "Kakita Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761634156828,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 109
+   },
+   "description": "<p>Kakita swordsmiths are renowned across Rokugan for their exquisite craftsmanship. While only a rare few blades are deemed worthy to bear the title of “Kakita blade,” all weapons produced in this tradition are exceptionally sharp without sacrificing durability.</p><p data-start=\"348\" data-end=\"362\">Effects:</p><ul data-start=\"363\" data-end=\"437\"><li data-start=\"363\" data-end=\"437\"><p data-start=\"365\" data-end=\"437\">A bladed weapon crafted in the Kakita Pattern gains +1 Deadliness.</p></li></ul><p data-start=\"439\" data-end=\"481\">XP Cost: 6<br data-start=\"453\" data-end=\"456\">Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 6,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000017",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wSrQKJEvNZwigf9s",
+  "sort": 0
+ },
+ {
+  "name": "Kenzō Blade",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761634343653,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 109
+   },
+   "description": "<p>The Kenzō smithy is one of the premier smithies in Crane lands. Founded centuries ago by Ashidaka Kenzō, this smithy produces wondrous dueling weapons for the Kakita family. Indeed, Kenzō blades—nearly every weapon that has come out of the Kenzō smithy has been a sword of one kind or another—are considered to be among the finest dueling weapons in Rokugan. Kenzō blades are both beautiful and extremely deadly.</p><p data-start=\"484\" data-end=\"617\">A weapon produced in the Kenzō smithy gains +1 deadliness, –1 damage, and the Resplendent quality.<br data-start=\"582\" data-end=\"585\">XP Cost: 8 Rarity Modifier: +5</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 8,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000018",
+   "rarity_modifier": 5
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NzfHAjTCjj8phW8M",
+  "sort": 0
+ },
+ {
+  "name": "Kökejin’s Heart of the Wind Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761634421278,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 117
+   },
+   "description": "<p>Along the Sand Road, the way of the horse is the way of life. Those who design weapons there do so not only with mounted combat in mind, but as the default. A particular master crafter named Kökejin, a mysterious woman who lives in the small oasis city of Süüdriin Gazar, or the Land of Shade, is said to make the sharpest, most versatile spears in all of the Burning Sands. Rumors say the khan himself outfits his best warriors with the deadly weapons of Kökejin.</p><p data-start=\"523\" data-end=\"757\">A polearm made using the Kökejin’s Heart of the Wind pattern gains the Razor-Edged and Durable item qualities. Additionally, its wielder treats this weapon’s damage value as 2 higher while mounted.<br data-start=\"720\" data-end=\"723\">XP Cost: 8<br data-start=\"733\" data-end=\"736\">Rarity Modifier: +5</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 8,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000033",
+   "rarity_modifier": 5
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Mdw7BmjjxZLPBNZw",
+  "sort": 0
+ },
+ {
+  "name": "Mountain Silk Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761634573258,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "<p>Most beings who know of the Badger think only of their expertise in sumai. More cultured individuals also know of the clan’s expertise in silk, and eagerly seek out the raw material so it can be used in their own creations. Like the Badger and the mountains that surround them, this silk is hardy and tough, even when crafted into elegant robes fit for the finest courts. It instills in its wearers the quiet strength of rock that has endured for countless years.</p><p data-start=\"520\" data-end=\"966\">When a character wearing armor made with mountain silk succeeds at a check to resist a critical strike, they add one bonus success. Armor with physical resistance 2 or lower made using mountain silk loses the Cumbersome quality (if it has it) and gains the Durable quality. Armor with physical resistance 3 or higher made using mountain silk gains the Durable quality and reduces its physical resistance by 1.<br data-start=\"929\" data-end=\"932\">XP Cost: 6<br data-start=\"942\" data-end=\"945\">Rarity Modifier: +3</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 6,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000028",
+   "rarity_modifier": 3
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "SwsM28zdvutLRu9E",
+  "sort": 0
+ },
+ {
+  "name": "Screaming Fire Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761634626658,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "<p>While blasting powder is frightening enough, some variant mixtures include alchemical items from gaijin lands designed to emit terrible shrieks and thunderclaps when used. Even veteran soldiers become alarmed and prone to flee when the air itself assaults their senses.</p><p data-start=\"325\" data-end=\"657\" data-is-only-node=\"\">Blasting powder fashioned using the screaming fire pattern has its damage reduced by 2. When it causes an army to receive 1 or more panic during a Mass Battle, that army receives that amount of panic plus 3 instead. Additionally, the area it affects becomes Imbalanced (All Elements) for 1 week.<br data-start=\"620\" data-end=\"623\">XP Cost: 6<br data-start=\"633\" data-end=\"636\">Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 6,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000029",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "oneDB8L0d1HLhfqW",
+  "sort": 0
+ },
+ {
+  "name": "Shirogane Jade Inlay",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761634699298,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 109
+   },
+   "description": "<p>Kuni Shirogane was a weaponsmith renowned for his beautiful and deadly weapons. During his long career, Shirogane developed a process to make a jade-infused resin that could be applied to suitably crafted weapons and armor to protect an individual against the terrors of the Shadowlands. Items forged to use this jade resin are typically heavily engraved with ornate designs into which the resin is poured. As the item is exposed to Shadowlands Taint, the jade slowly turns to muck, requiring another application of the resin. While it seems inconvenient to some, Shirogane jade inlay has protected the lives and souls of many Crab warriors.</p><p data-start=\"697\" data-end=\"1202\" data-is-only-node=\"\">Weapons and armor designed for Shirogane jade inlay gain the Sacred quality. Armor so altered loses 1 point of physical resistance, and weapons lose 1 point of deadliness. Should the item become Damaged, the jade is chipped away as well and must be reapplied. When this happens, the item loses the Sacred quality until a smith applies more jade resin by making a TN 3 Smithing (Earth) check as a downtime activity. This process consumes one finger of jade per attempt.<br data-start=\"1165\" data-end=\"1168\">XP Cost: 3<br data-start=\"1178\" data-end=\"1181\">Rarity Modifier: +2</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000019",
+   "rarity_modifier": 2
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "VNelO7nYzwQsN7xF",
+  "sort": 0
+ },
+ {
+  "name": "Spirit of the Qamarist Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761635225653,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 117
+   },
+   "description": "<p>Those who hail from the Cradle of the World—the +amarist Caliphate—come from a culture of spiritual and military might. The warriors and religious leaders of this iron-willed empire are familiar with the dangerous supernatural beings and creatures that exist across the world. Several great Qamarist alchemists have discovered a way to treat armor to increase its supernatural resistances to fend off such entities.</p><p data-start=\"463\" data-end=\"583\" data-is-last-node=\"\" data-is-only-node=\"\">Armor made using the Spirit of the Qamarist pattern gains +1 supernatural resistance.<br data-start=\"548\" data-end=\"551\">XP Cost: 5<br data-start=\"561\" data-end=\"564\">Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 5,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000031",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XDMJU5cwWXshkw7U",
+  "sort": 0
+ },
+ {
+  "name": "Toriyama's Endurance Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761635323657,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "<p>When a fire broke out in Toshi Ranbo’s archive, scholars feared that centuries of knowledge would be lost, but were surprised to discover that many of the earliest tomes, scrolls, or other literary artifacts were undamaged while later volumes had burned or been irreparably damaged by smoke. That the volumes remained intact was due in part to the scientific advancements of the ancient wartime scholar Toriyama. When Toriyama was assigned to Toshi Ranbo’s library in the city’s early days, he feared that the city might be sacked and the library put to the flame, for wars already raged around that region. As such, he developed new, more enduring inks and painstakingly researched chemicals that could slow the burning of a scroll (without ruining the contents). After the fire in the library centuries later, Toriyama’s methods were rediscovered and propagated, and are still taught to scribes and archivists today.</p><p data-start=\"966\" data-end=\"1149\" data-is-last-node=\"\" data-is-only-node=\"\">Parchment and scrolls that are made with Toriyama’s endurance pattern gain the Durable item quality, but only against the effects of fire and water.<br data-start=\"1114\" data-end=\"1117\">XP Cost: 3<br data-start=\"1127\" data-end=\"1130\">Rarity Modifier: +3</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000030",
+   "rarity_modifier": 3
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "2QYRKJGEnf45v0Gx",
+  "sort": 0
+ },
+ {
+  "name": "Uchema’s Technique",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761635466059,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 109
+   },
+   "description": "<p>Uchema’s technique is a style of armorsmithing used to produce specialty armor for scouts and siege engineers. A suit of armor made using Uchema’s technique can be anything from a simple suit of ashigaru armor to a splendid, heavy suit of ō-yoroi. With careful tailoring and clever use of lacing and straps, an armorsmith can use the technique to make a suit of armor more flexible and easier to wear. A warrior wearing a suit made with Uchema’s technique can run, climb, bend, leap, and otherwise move as if they were wearing simple clothing rather than bulky armor.</p><p data-start=\"615\" data-end=\"766\" data-is-last-node=\"\" data-is-only-node=\"\">A suit of armor made using Uchema’s technique loses the Cumbersome quality and loses 1 point of physical resistance.<br data-start=\"731\" data-end=\"734\">XP Cost: 4<br data-start=\"744\" data-end=\"747\">Rarity Modifier: +3</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 4,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000020",
+   "rarity_modifier": 3
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "8HnK6qkbWFbij9XO",
+  "sort": 0
+ },
+ {
+  "name": "Ujik Horsebow Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761635738269,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 107
+   },
+   "description": "<p>The Ujik people of the western steppes boast a unique style of composite bow, one with a greater recurve and a long “bridge” to support the resting bowstring. When the drawn string is released, it strikes against the bridge with a loud crack, providing a boost in velocity and a greater punch. This sound, along with the tendency for Ujik-made arrows to whistle, has earned Ujik-style bows the nickname screeching bows among the other peoples along the Sand Road.</p><p>A bow made with the Ujik horsebow pattern gains +1 damage and the Snaring item quality due to its additional punching force. It loses the Durable item quality (and can never gain it), and if it is exposed to significant moisture, it gains the Damaged item quality.</p><p>XP Cost: 4</p><p>Rarity Modifier: +3</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 4,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000035",
+   "rarity_modifier": 3
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "tnYF6Np97zDHnkPu",
+  "sort": 0
+ },
+ {
+  "name": "Utsuko Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761635902548,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 107
+   },
+   "description": "<p>According to legend, when the Ki-Rin Clan divided Itself into the five hordes to explore the lands beyond Rokugan, Iuchi asked Shinjo to forbid his eldest daughter, Meiko, from following him south with the Green Horde. Meiko begged Shinjo to send her south with her father, but instead, Meiko accompanied the Purple Horde with Utaku Shiko. During this time, she built upon the knowledge that her father had acquired, refining the art that would evolve into meishōdō. But it was her great-granddaughter, Iuchi Utsuko, who would complete her life’s work, developing patterns for a more stable talisman.</p><p></p><p>Artisans whose talismans utilize one of Iuchi Utsuko’s patterns can create superior divine vessels for enshrined spirits to thrive within, or more perfect prisons for spirits that would otherwise terrorize the countryside.</p><p></p><p>After it is used to capture a spirit, a meishōdō talisman with the Utsuko pattern increases its stability by its creator’s Void ring.</p><p>XP Cost: 3</p><p>Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000036",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0ii1muDDROvZfYHV",
+  "sort": 0
+ },
+ {
+  "name": "Watered Steel Pattern",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761635988308,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 107
+   },
+   "description": "<p>Named for the alternating patterns of light and dark bands inherent in the metal, which is said to resemble ripples in a watery surface, watered steel is a unique type of metal forged in the lands beyond the Sand Road. Watered steel is made primarily in the Caliphate via a secretive process that is protected by order of the caliph. Attempts to reproduce the steel have failed, leading many blacksmiths to believe there is more to this craft than mere pattern welding. Watered steel is prized in weaponry for its superior ability to hold an edge, its extreme tensile strength and flexibility, and its resistance to the elements.</p><p data-start=\"677\" data-end=\"962\">An item made primarily of watered steel gains the Durable and Resplendent item qualities; if it is a weapon that already has the Durable item quality, it instead gains +1 deadliness. Additionally, Razor-Edged weapons made of watered steel gain the Hewing item quality (see page 116).</p><p data-start=\"964\" data-end=\"1039\" data-is-last-node=\"\" data-is-only-node=\"\">Armor cannot be made from watered steel.<br data-start=\"1004\" data-end=\"1007\">XP Cost: 8<br data-start=\"1017\" data-end=\"1020\">Rarity Modifier: +6</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 8,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000037",
+   "rarity_modifier": 6
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XCVxG2lhNmup7O4h",
+  "sort": 0
+ },
+ {
+  "name": "Yasunori Steel",
+  "type": "item_pattern",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item_pattern.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147954913,
+   "modifiedTime": 1761636067486,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 109
+   },
+   "description": "<p>Decades ago, Kenru Yasunori, a Crab swordsmith, developed a new steel alloy while tinkering in his forge. Quite by accident, they discovered that a mix of various ores and refined metals made a steel that is both lightweight and strong but lacks the beauty of traditional Rokugani steel. Soon they began creating massive two-handed swords and axes for use in defending the Wall. Yasunori steel weapons are popular among Crab samurai who appreciate a sturdy, well-made blade and care little for aesthetics.</p><p data-start=\"553\" data-end=\"792\">A weapon made from Yasunori steel loses the Ceremonial, Cumbersome, and Resplendent qualities (and can never gain any of these). It gains the Durable quality; if the weapon already has the Durable quality, it gains +1 deadliness instead.</p><p data-start=\"794\" data-end=\"826\" data-is-last-node=\"\" data-is-only-node=\"\">XP Cost: 5<br data-start=\"804\" data-end=\"807\">Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 5,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "linked_property_id": "L5RCorePro000021",
+   "rarity_modifier": 4
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Wx7GtYpDPwPDagva",
+  "sort": 0
+ }
+]

@@ -1,0 +1,2312 @@
+[
+ {
+  "name": "Advisor",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761158595910,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 249
+   },
+   "description": "<p><span class=\"fontstyle0\">Advisors serve daimyō, Emerald Magistrates, generals, and other notables with their minds and their words, giving them guidance, ideas, and counsel as requested. A great leader must have access to far more information than any one person can reasonably know, and therefore they employ various specialists and experts who keep them up to speed on dozens of vital topics. As a result, many military strategies, legal precedents, and trade deals are penned by advisors in the name of the one they serve, and these people wield great power as a result.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Daimyō, Emerald Magistrates, military leaders, high-ranking courtiers, and other individuals of import can appoint Advisors, and do so at their discretion.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10 (to a minimum of 40)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Skilled Attendant</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Commerce</p></td><td><p>Skill</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Design</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000018\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000018\">(shuji) Fanning the Flames</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000008\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000008\">(shuji) Feigned Opening</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000017\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000017\">(shuji) Stonewall Tactics</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 36,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "rBEqtkndCEoys0gp",
+  "sort": 0
+ },
+ {
+  "name": "Animal Handler",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761151988741,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 134
+   },
+   "description": "<p><span class=\"fontstyle0\">Humans are socially flexible creatures and can bond with members of many other species, from the pet dogs, cats, and birds kept in many places to the hunting eagles trained by Ujik nomads to the war elephants trained in the Ivory Kingdoms. A character who is especially adept in handling animals might even be able to command one on the hunt or in battle, fighting side by side with their beast companion.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">The GM, after a character has taken sufficient narrative steps to tame and train a suitable animal. At the bare minimum, this should involve making a successful Survival check as a downtime activity with a TN equal to the animal’s combat conflict ranks. One method of obtaining an animal companion is through the Animal Bond passion found in the core rulebook.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+0</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+5</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Instinctive Command</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Trade Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Martial Arts [Unarmed]</p></td><td><p>Skill</p></td></tr><tr><td><p>Medicine</p></td><td><p>Skill</p></td></tr><tr><td><p>Sentiment</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000096\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000096\">(shuji) Call to Ride</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000095\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000095\">(shuji) Incite Wrath</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000011\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000011\">(shuji) Touchstone of Courage</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "P5PMpHd0pCSDUeEA",
+  "sort": 0
+ },
+ {
+  "name": "Ashigaru",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761163837940,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 131
+   },
+   "description": "<p><span class=\"fontstyle0\">Though samurai represent the pinnacle of martial prowess in Rokugan, even the mightiest among them can be felled by a wall of yari or a cloud of arrows. Ashigaru, soldiers from the peasant class, make up the front line of Great Clan armies, surrounding samurai who stray too far from their own lines or turning the tide in wars of attrition.</span></p><p><span class=\"fontstyle0\">For some, ashigaru is a temporary title granted in times of necessity. For others it is a death sentence. But for many peasant soldiers, serving as an ashigaru is a career, an honor, and a way to better their status in life by entering the lowest rung of the </span><span class=\"fontstyle2\">buke </span><span class=\"fontstyle0\">class. Some of the Great Clans, including the Lion, offer better training and equipment to their foot soldiers than other clans do, as well as more recognition. An ashigaru who serves with distinction can gain a small share of the glory of battle, and even be called up to permanently serve as a guard or scout. It is not uncommon for ashigaru families to serve a daimyō across multiple generations, having found pride and purpose in their service.</span></p><p><span class=\"fontstyle3\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">Any samurai officer. You must survive at least one mass battle to receive this title.</span></p><p><span class=\"fontstyle3\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+5 (to a maximum of 29)</span></p><p><span class=\"fontstyle3\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+3 (to a maximum of 19)</span></p><p><span class=\"fontstyle3\"><strong>Title Ability:</strong> </span><span class=\"fontstyle0\">A Thousand Stinging Cuts</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000066\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000066\">(kata) Thicket's Embrace Style</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000031\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000031\">(shuji) Slippery Maneuvers</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 20,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "IPNvMGfnYDEu5W2k",
+  "sort": 0
+ },
+ {
+  "name": "Astradhari",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761165922706,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 187
+   },
+   "description": "<p><span class=\"fontstyle0\">Those who wield astras, the celestial implements blessed by the gods, have been given exceptional powers. These heroes and villains are much rarer than they were in ancient times, but they still exist today. The ability to summon such items requires the influence of a god or intense study under a mentor from the Ivory Kingdoms. If a person can find a sage willing to teach them, they may be able to learn how to summon one of these powerful artifacts, but no sage is willing to teach just anyone these sacred and secret methods. A character must complete tests and trials, which differ depending on the sage in question, to prove their worthiness of wielding such intense power.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong>\u001c</span><span class=\"fontstyle0\">An Ivory Kingdoms High Sage (­such a person may only be chosen by the GM).</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong>\u001c+0</span><span class=\"fontstyle0\"> (+25 in the Ivory Kingdoms, to a maximum of 65)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Sacred Mantras</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-rituals\">(ritual) Rank 1-3 Rituals</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-mantra.Item.L5RCoreMan000001\" data-pack=\"l5r5e.core-techniques-mantra\" data-type=\"Item\" data-id=\"L5RCoreMan000001\">(mantra) Summon Mantra : [One Implement]</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000011\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000011\">(shuji) Touchstone of Courage</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 36,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ZxQWnpKClMvn208X",
+  "sort": 0
+ },
+ {
+  "name": "Awakened Soul",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761163335022,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 142
+   },
+   "description": "<p><span class=\"fontstyle0\">Most Rokugani believe in reincarnation, the passage of the soul into a new form after the death of the body. Shinseism in particular emphasizes the importance of reincarnation and the role it plays within the cosmology, but even among those who favor other religious traditions, few argue that existence ends at death. While the specifics of how and why reincarnation occurs vary by doctrine, most religious accounts agree that memory is erased upon death, in the afterlife, or during the process of the return to life.</span></p><p><span class=\"fontstyle0\">Yet some things can persist even across lifetimes. Some people are capable of connecting with the lives of past people, entities, and existences as an extension of their own being - beings that by all account seem to be their past lives. The Togashi Tattooed Order is one organization dedicated to those who again and again reincarnate and seek a particular destiny, but other spiritualists claim to have memories of their past lives as well, and the phenomenon can occur within individuals unrelated to any religious group.</span></p><p><span class=\"fontstyle0\">Memories of one's past lives generally begin murky, but may become clearer in physical proximity to individuals, artifacts, or places important to those beings. These visions and senses can be terrifying and disorienting at first, but when they occur, it is often of vital importance to both past and present self. Indeed, some work cannot be completed in a single lifetime.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">The GM. Even more than usual, this title is only available if it is narratively appropriate to the campaign.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+0</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Wisdom of Countless Lifetimes</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Meditation</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kiho.Item.L5RCoreKih000038\" data-pack=\"l5r5e.core-techniques-kiho\" data-type=\"Item\" data-id=\"L5RCoreKih000038\">(kiho) Eternal Mind’s Gate</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000035\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000035\">(ritual) Trance of Lives Past</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 44,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "lwnOHnIHVy5M9wUb",
+  "sort": 0
+ },
+ {
+  "name": "Bond with a spirit",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761152847407,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 140
+   },
+   "description": "<p><span class=\"fontstyle0\">There are a handful of individuals within Rokugan who have the opportunity to bond with a supernatural entity, such as an elemental kami, an animal spirit, or another such being. Usually when this happens, a shugenja has communed with a particular spirit over a long period of time. Occasionally, however, a spirit becomes fascinated with or bonded to a non-shugenja and offers them abilities (and challenges) they might not normally experience.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A spirit or other supernatural entity.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5 (to a maximum of 40)</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+5 (to a maximum of 40)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Spiritual Protector</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Aesthetics</p></td><td><p>Skill</p></td></tr><tr><td><p>Games</p></td><td><p>Skill</p></td></tr><tr><td><p>Meditation</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-invocations\">(invocation) Rank 1 Spirit's Elements Invocations</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000002\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000002\">(ritual) Commune with the Spirits</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000022\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000022\">(ritual) Blessing of Fertile Fields</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 25,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4RDBOUc6Jh2B6j15",
+  "sort": 0
+ },
+ {
+  "name": "Castellan",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761156859685,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 128
+   },
+   "description": "<p><span class=\"fontstyle0\">While a daimyō presides over one or more castles, daily management of a fortification invariably falls to one of their subordinates. A castellan is generally one of their daimyō’s most trusted agents, for they see to the safety and readiness of the daimyō’s primary holding. To serve in this role, a character must not just be trustworthy and loyal, but also learned in topics from logistics and wartime defenses, to the cultural expectations of entertaining guests from the highest echelons of society.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A daimyō after putting the character in charge of the day-to-day management of a castle. A castle can have a single castellan.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5 (to a maximum of 30)</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10 (to a maximum of 60)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Every Stone Has its Place</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Design</p></td><td><p>Skill</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000020\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000020\">(shuji) Rallying Cry</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000031\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000031\">(shuji) Slippery Maneuvers</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000011\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000011\">(shuji) Touchstone of Courage</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 20,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "n9VJ47z1AZF97tWK",
+  "sort": 0
+ },
+ {
+  "name": "Clan Magistrate",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761158753833,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 249
+   },
+   "description": "<p><span class=\"fontstyle0\">Clan magistrates are similar to Emerald Magistrates but have a jurisdiction confined to the lands and holdings of their parent clan. More specialized (and lower-ranking) types of clan magistrates, called regional or municipal magistrates, have jurisdictions that are further restricted to a specific area or a particular town or city. Most crimes in the Empire are investigated by clan magistrates, although they often work with Emerald Magistrates operating in their clan’s territory. This is particularly true in cases of serious crimes with Empire-wide implications, such as treason or use of illegal magic. Having a clan magistrate work with Emerald Magistrates conducting an investigation in their territory allows a clan’s leadership to ensure that their interests are represented and to keep tabs on what the Emerald Magistrates may be up to in their lands.</span></p><p><span class=\"fontstyle0\">Clan magistrates generally patrol their jurisdictions on a regular basis, inspecting travelers’ papers to ensure they are in proper order. They also oversee the collection of taxes, including designated levies on the production of food and other commodities by commoners and tariffs on goods sold or traded by merchants.</span></p><p><span class=\"fontstyle0\">Several clans maintain specialized groups of clan magistrates, such as the Asako Inquisitors of the Phoenix, the Kuroiban (“Black Watch”) of the Scorpion, and the Kuni Purifiers of the Crab. Each of these groups deals primarily with illegal and blasphemous magics and incursions into the Empire by the Shadowlands.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Clan champions, daimyō, and other leaders within a clan may appoint magistrates to enforce the law within the clan’s territories and among its vassals.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10 (to a minimum of 45)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Justice of the Champion</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Fitness</p></td><td><p>Skill</p></td></tr><tr><td><p>Martial Arts [Melee]</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000029\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000029\">(kata) Coiling Serpent Style</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000006\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000006\">(shuji) Prey on the Weak</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000023\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000023\">(shuji) Truth Burns through Lies</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 30,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "VNDkeby0AYH9T54s",
+  "sort": 0
+ },
+ {
+  "name": "Covert Agent",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761156967574,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 128
+   },
+   "description": "<p><span class=\"fontstyle0\">There are countless ways in which a samurai might become an asset of someone other than their sworn lord. Sometimes, even samurai who believed their loyalty to Bushidō unshakable discover that they cannot serve both their lord and their conscience. Sometimes, covert agents are embedded in enemy courts and swear false loyalty in service of their true lord. And,</span> <span class=\"fontstyle0\">of course, some samurai are not so high-minded in their treachery. Blackmail, bribery, revenge, jealousy, fear, and even hope for a better world can all sway human hearts from the hard path of Bushidō. However should a character become a covert agent, they now serve a secret purpose, and must quickly develop new skills to stay one step ahead—or face disgrace and a brutal demise.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Any individual who gives the character a task that requires them to act against the interests of their sworn lord (or falsely enter the service of another lord).</span></p><p><span class=\"fontstyle2\"><strong>Honor Award:</strong> </span><span class=\"fontstyle0\">-10 (to a minimum of 25)</span></p><p><span class=\"fontstyle2\"><strong>Immediate Effects:</strong> </span><span class=\"fontstyle0\">Gain the Dark Secret disadvantage.</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Practiced Prevaricator</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Meditation</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000005\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000005\">(ninjutsu) Artful Alibi</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000002\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000002\">(shuji) Cadence</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000006\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000006\">(ninjutsu) Cunning Distraction</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000012\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000012\">(ninjutsu) To Float or Sink</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000013\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000013\">(ninjutsu) What's Yours is Mine</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 20,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "o2Tln3MDsyWHyZjP",
+  "sort": 0
+ },
+ {
+  "name": "Daimyō",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761162263673,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 250
+   },
+   "description": "<p><span class=\"fontstyle0\">Daimyō are provincial rulers who oversee the day-today rule of vast swaths of the Emerald Empire. They are responsible for collecting taxes and, to expedite this process, for the general infrastructure of their realm and wellbeing of their citizens. Ultimately, however, it is rare for even the clan champion or Emperor to question a particular daimyō so long as their taxes are paid in full, on time. Thus, they are afforded a great deal of leeway in the rule of their domains. Some seek to better the lives of the commoners and samurai they oversee; others callously exploit these people to advance their personal ambitions.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Clan champions, the Emperor, and other high-ranking officials in the Imperial hierarchy can appoint Daimyō, and do so when a previous Daimyō retires or passes away, or when they see fit to change the ruler of a province.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+20 (to a minimum of 55)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Voice of Authority</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Culture</p></td><td><p>SKill</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Tactics</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000037\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000037\">(shuji) Courtier’s Resolve</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000034\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000034\">(shuji) Shallow Waters</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000026\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000026\">(shuji) Stirring the Embers</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 36,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Jh7MDfdGwPdKal1r",
+  "sort": 0
+ },
+ {
+  "name": "Deathseeker",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761164027822,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 132
+   },
+   "description": "<p><span class=\"fontstyle0\">Some call them Deathseekers because these samurai appear to charge headlong toward their deaths, heedless of any danger. Others believe that the mantle of Deathseeker is a punishment for those who have failed their lords. On the contrary, the Deathseeker tradition is a type of warrior’s pilgrimage undertaken voluntarily by Lion Clan samurai who have suffered failure or disgrace and who wish to redeem themselves through action. Those who walk this path of atonement take on the burden of greatest risk so that other samurai might be spared, but they try to survive as long as possible to continue serving their clans.</span></p><p><span class=\"fontstyle0\">The Deathseeker tradition is controversial even within the Lion Clan, and not all lords will allow their samurai to take Kirifu’s oath, as it is called. Those who do become Deathseekers forsake their previous station and relinquish their titles and belongings, including daishō. They paint their faces ghostly white to inspire fear in their enemies.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">Disgraced Lion Clan samurai may take this title upon themselves, pending approval from the GM.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">–25 (to a minimum of 20)</span></p><p><span class=\"fontstyle2\"><strong>Immediate Effects:</strong> </span><span class=\"fontstyle0\">You give up any positions you hold and your worldly possessions, save one weapon and a set of ceremonial robes, are returned to your family.</span></p><p><strong>Title Ability:</strong> <span class=\"fontstyle2\">Kirifu’s Oath</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Labor</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-3 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000038\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000038\">(shuji) A Samurai’s Fate</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000086\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000086\">(shuji) Moment of Glory</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 8,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "rCI7t1ehsfhDyYUe",
+  "sort": 0
+ },
+ {
+  "name": "Doomhunter",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761152120882,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 134
+   },
+   "description": "<p><span class=\"fontstyle0\">Among the Unicorn Clan, there is one person whose role is entirely unique: the Doomhunter. A slayer of immortals, the Doomhunter is both a hero and a pariah—one who walks a path fraught with danger, regarded by their peers with apprehension and even fear.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">The previous Doomhunter, upon their retirement or impending death (see page 59).</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+20</span></p><p><strong>Title Ability:</strong> <span class=\"fontstyle2\">Slayer of Immortals</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Skulduggery</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-rituals\">(ritual) Rank 1-2 Rituals</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000002\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000002\">(ninjutsu) Skulk</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000006\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000006\">(kata) Soul Sunder</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 28,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "zerlMXHcD55MBWs9",
+  "sort": 0
+ },
+ {
+  "name": "Dreaded Enforcer",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761157104408,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 129
+   },
+   "description": "<p><span class=\"fontstyle0\">In the noblest and most honorable of courts, there are still those whose hearts bear the stains of wicked deeds. Even a daimyō who would never give voice to an order to have a lesser lord killed, or a political rival’s relative captured to ensure their compliance, might tolerate a subordinate who takes such actions of their own volition (provided it remained deniable). Within the Scorpion Clan, such individuals act relatively openly. Within the traditionalist Crane or Lion Clan, such an individual might be a magistrate whose investigations are always perfectly legal—and brutal to the full extent of the law. The role of such individuals varies greatly by clan, region, and individual lord, but the fundamental truth remains the same: these agents wield fear against those who oppose their sworn master.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A lord after they assign the character to assassinate or otherwise remove someone of Status 60 or higher—and the character succeeds!</span></p><p><span class=\"fontstyle2\"><strong>Honor Award:</strong> </span><span class=\"fontstyle0\">-10 (to a minimum of 5)</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">-20 (to a minimum of 15)</span></p><p><span class=\"fontstyle2\"><strong>Immediate Effects:</strong> </span><span class=\"fontstyle0\">Gain the Whispers of Cruelty disadvantage.</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Merciless Eyes</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Medicine</p></td><td><p>Skill</p></td></tr><tr><td><p>Skulduggery</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000007\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000007\">(ninjutsu) Deceitful Strike</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000008\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000008\">(ninjutsu) Like a Ghost</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000009\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000009\">(ninjutsu) Silent Elimination</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000011\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000011\">(ninjutsu) Stillness of Death</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 40,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "rXvZ6yed22CPu9om",
+  "sort": 0
+ },
+ {
+  "name": "Elemental Guard",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761164117514,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 132
+   },
+   "description": "<p><span class=\"fontstyle0\">Although all shugenja know the spiritual risks of invoking the elemental kami on the battlefield, there are some threats that are so grave, such as those posed by the Shadowlands, that the Council of Elemental Masters sanction the formation of shugenja units in battle. During these times, the Elemental Guards of Air, Earth, Fire, and Water are called upon to protect the Empire. Each Guard specializes in a particular element, joining their voices together in prayer to call forth hurricanes, earthquakes, wildfires, and tsunami.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">An Elemental Master.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Wrath of the Elements</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Medicine</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000027\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000027\">(ritual) Beseech Shiba's Calm</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000008\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000008\">(kata) Tactical Assessment</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000007\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000007\">(kata) Warrior’s Resolve</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 20,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RxFYULAsUBZNpXAy",
+  "sort": 0
+ },
+ {
+  "name": "Elemental Legionnaire",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761164205321,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 133
+   },
+   "description": "<p><span class=\"fontstyle0\">Although the shugenja of the Elemental Guards can call forth the very fury of nature, their complex invocations leave them vulnerable to attack. In battle, the Elemental Legions of Air, Earth, Fire, and Water are sworn to protect their corresponding Elemental Guard.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">A daimyō of the Shiba family or the Phoenix Clan Champion, with permission from a member of the Elemental Council.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Strength of the Elements</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Medicine</p></td><td><p>Skill</p></td></tr><tr><td><p>Smithing</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-3 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000076\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000076\">(shuji) Great Anvil's Measure</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000086\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000086\">(shuji) Moment of Glory</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XtxTmmE0YNUSItpr",
+  "sort": 0
+ },
+ {
+  "name": "Emerald Magistrate",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761151774964,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 305
+   },
+   "description": "<p><span class=\"fontstyle0\">Emerald Magistrates are agents of the Emperor’s Law, warrior-sages who dispense wisdom and justice.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">The Emerald Champion, the Emperor, and other high-ranking officials in the office of the Emerald Champion can appoint Emerald Magistrates, and do so when a samurai proves worthy of the post or when the need arises for more arbiters of the Emperor’s Justice.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+15 (to a maximum of 40)</span></p><p><strong>Title Ability:</strong> Voice of Authority</p><h2>Curriculum</h2><table><tbody><tr><td><p>Trade Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Fitness</p></td><td><p>Skill</p></td></tr><tr><td><p>Martial Arts [Choose One]</p></td><td><p>Skill</p></td></tr><tr><td><p>Performance</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1–2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000026\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000026\">(kata) Open-Hand Style</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000034\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000034\">(shuji) Shallow Waters</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 30,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wJaOsQLVZi3JQrmy",
+  "sort": 0
+ },
+ {
+  "name": "Esteemed Negotiator",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761157307093,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 129
+   },
+   "description": "<p><span class=\"fontstyle0\">When the Great Clans of Rokugan stand at the precipice of conflict, they often call upon renowned mediators. The Deer Clan is well-known for its counselors, but they are hardly the only group that serves this role in the Emerald Empire. Daimyō in need of impartial mediators often turn to the Brotherhood of Shinsei, the Togashi Order, and other organizations known for their great wisdom or unconventional perspective, such as the Asako, Ide, Asahina, and Yogo families. To be called upon as an outside mediator is a great honor, and those who become renowned at defusing mounting conflicts are ever in demand in the Emerald Empire.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A daimyō or other individual of status 50 or higher who requests the character specifically as a mediator for a political problem (and the character’s lord assents to this assignment).</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10 (to a minimum of 65)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Calming Words</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Sentiment</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1–3 Earth Shūji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000013\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000013\">(ritual) The Ties that Bind</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000012\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000012\">(ritual) Treaty Signing</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 34,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "FyKBz0Zox4hAjV42",
+  "sort": 0
+ },
+ {
+  "name": "Forester",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761163418228,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 142
+   },
+   "description": "<p><span class=\"fontstyle0\">Though plenty of peasants in Rokugan chop and use lumber, to be a recognized forester like that of the Isawa Foresters is considered a great honor. Foresters must carefully observe the area in which they intend to harvest trees and mark each tree that is not home to a spirit. For each tree a sanctioned forester cuts, two trees are planted to offset the imbalance. Foresters carefully maintain the natural order of forests, some even going so far as to become traveling foresters who seek out villages, towns, and even palaces and teach the inhabitants how to carefully select trees based on a variety of natural and spiritual factors often specific to the region.</span></p><p><span class=\"fontstyle0\">Foresters are respected for their niche relationship with nature and specialized cultivation skills.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A daimyō or another sanctioned forester.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5 (to a minimum of 20)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Blessing of the Trees</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Sentiment</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-invocations\">(invocation) Rank 1-2 Earth & Water Invocations</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1-3 Shūji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "e8gFbIjJIdgHg1aF",
+  "sort": 0
+ },
+ {
+  "name": "General",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761164337065,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 133
+   },
+   "description": "<p><span class=\"fontstyle0\">The pinnacle of military command, a general serves as the mastermind behind all aspects of their army, seeing the will of their daimyō done through intricate planning and masterful stratagems. But there is more to a general’s duties. A general must lead by example; the expectations they have of their troops must be mirrored in their own actions. Their voice must electrify the souls of those under their command, inspiring them to charge enthusiastically to what may be their deaths. Their combat mastery must be without flaw. Their decorum and personal honor must be beyond reproach.</span></p><p><span class=\"fontstyle0\">Though it is a high honor to be given command, it can also be burdensome. Leadership is often a weary, isolating task. On their shoulders rest the will of their lord and the security of their homeland.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">A clan or family daimyō with a status of 60 or higher, often following a great military achievement by the character.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+25 (to a maximum of 85)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Superior Command</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-rituals\">(ritual) Rank 1-3 Rituals</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1-4 Shuji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 50,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mHaV3dj76eYzJyGb",
+  "sort": 0
+ },
+ {
+  "name": "Ghostlands Warrior",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761165768631,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 186
+   },
+   "description": "<p><span class=\"fontstyle0\">Those who hunt and live in the vinechoked, Tainted forests of the Ghostlands know all too well what one must do to survive in a place where the very air threatens to change you, where twisting, malignant vines crawl and cling to every surface, and your allies may turn out to be shapeshifting monsters. The Yodhaniya of the Ivory Kingdoms are the only people to willingly spend most of their lives in the Ghostlands, leaving only sparingly to cleanse themselves between the Pillars of Purity (­see page 202 for more information). These fierce and cunning warriors have mastered the ability to see through illusions and deception, which is critical in a landscape that constantly shifts and morphs, teeming with vile creatures that change their form on a whim.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A member of the Yodhaniya of the Ivory Kingdoms.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong>\u001c+0 (+10</span><span class=\"fontstyle0\"> in the Ivory Kingdoms, to a maximum of 50)</span></p><p><strong>Title Ability:</strong> Eyes of the Yodhaniya</p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Medicine</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kiho.Item.L5RCoreKih000003\" data-pack=\"l5r5e.core-techniques-kiho\" data-type=\"Item\" data-id=\"L5RCoreKih000003\">(kiho) Earth Needs No Eyes</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000009\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000009\">(kata) Soaring Slice</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000018\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000018\">(ritual) Cleansing of Coral and Gold (Ivory Kingdoms Region)</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 36,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "I8NHZTqzEnkHPfq5",
+  "sort": 0
+ },
+ {
+  "name": "Gunsō",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761162472297,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 250
+   },
+   "description": "<p><span class=\"fontstyle0\">While the vast majority of soldiers in a Rokugani army are ashigaru and conscripts, many samurai are called to military service, either in the armies of their own clan or in the Imperial Legions. When samurai do take to the field, they often these serve in leadership positions. While each lord's forces have their own structure and character, common titles are used throughout Rokugan to indicate similar levels of authority. When a lord gathers a large force for battle, they may nominate one or more gunsō to command the kashira who lead individual units.</span></p><p><span class=\"fontstyle0\">A gunsō is responsible for all aspects of battle readiness for the troops under their command, including the troops’ training, discipline, and equipment. When battle begins, gunsō direct their troops in accordance with commands from their superiors, meaning they have to maintain good awareness not only of their own unit but also of the broader battle unfolding around them. Perhaps most importantly, gunsō are expected to display conspicuous leadership during battle, leading their troops from the front and rallying their soldiers, keeping them in the fight even as losses mount and their morale begins to waver.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A daimyō may assign a samurai a rank within their military forces, and samurai serving within the military rank structure may be promoted by a superior officer.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5 (to a minimum of 20)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Lead from the Front</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-4 Kata</a></p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000020\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000020\">(shuji) Rallying Cry</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000026\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000026\">(shuji) Stirring the Embers</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000011\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000011\">(shuji) Touchstone of Courage</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "2R7nNp7NWNLkVs5j",
+  "sort": 0
+ },
+ {
+  "name": "Harvester",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761151129607,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 128
+   },
+   "description": "<p><span class=\"fontstyle0\">Even those among the Crab who are most fervently devoted to destroying the creatures of the Shadowlands recognize value in obtaining specimens—both living and dead—for study by anatomists and other scholars. Harvesters are samurai skilled in traversing and surviving the Shadowlands, who also undertake the profoundly dangerous task of collecting and returning such specimens for research. Unsurprisingly, Harvesters are most commonly found among the Hiruma. Individuals or small groups of Harvesters hunt and trap smaller Tainted creatures; occasionally, larger groups of Harvesters, often supported by detachments of Crab bushi and Kuni shugenja, set out to collect bigger (and correspondingly more dangerous) monstrosities.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Hiruma or Kuni officials.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10 (to a maximum of 45)</span></p><p><strong>Title Ability:</strong> Capture Evil</p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Smithing</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-rituals\">(ritual) Rank 1-2 Rituals</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000002\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000002\">(ninjutsu) Skulk</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 20,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "HYc6PFynCAqH3Jiu",
+  "sort": 0
+ },
+ {
+  "name": "Imperial Peacekeeper",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761152229093,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 135
+   },
+   "description": "<p><span class=\"fontstyle0\">Although the Imperial families—the Otomo, the Miya, and the Seppun—are directly tasked with much of the mediation between clans needed to keep the Emerald Empire from fracturing into warring states, they sometimes bring outsiders into their ranks to serve as Imperial peacekeepers. This offers many advantages: members of the Great Clans are sometimes not as enmeshed in the internal politics of the Imperial Court, and they have regional expertise that may be key to negotiations. Members of Minor Clans are in some ways even better suited to the role, as they often have no stake at all in regional conflicts far from their own homes. Imperial peacekeepers serve on specific assignments for members of the Imperial families when needed, returning to their other duties when there is no crisis for them to mediate.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A member of the Otomo, Miya, or Seppun family with a status of 65 or higher.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> By Imperial Command</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Sentiment</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1-2 Earth Shuji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000037\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000037\">(ritual) Cultural Exchange</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000016\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000016\">(shuji) Pillar of Calm</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 18,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4M2ErOWKRTxAqYsW",
+  "sort": 0
+ },
+ {
+  "name": "In Service to a Lord",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761165456250,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 185
+   },
+   "description": "<p><span class=\"fontstyle0\">To be in the service of a lord as a rōnin or peasant is a fantastic honor. \u0013or a rōnin, this is one step closer to being admitted into a family or clan and regaining lost status. For a peasant, being seen as valuable enough to perform missions directly for a lord is a recognition of outstanding courage and skill, setting them apart. Working for a lord, however, does not necessarily mean one is accepted as anything more than skilled or useful, and to be in such a position</span> <span class=\"fontstyle0\">has a way of drawing unwanted attention from other rōnin or peasants. Though a rōnin might enjoy the opportunity to prove their worth and climb socially, working for a lord does not guarantee the lord’s protection or respect. Additionally, a lord can very easily back out of payment for any reason, leaving a rōnin or peasant with no recourse and nothing to show for their efforts.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Daimyō, advisors, and other individuals of import who can assign titles to individuals on their lord’s behalf.</span></p><p><span class=\"fontstyle2\"><strong>Status award:</strong>\u001c+10</span><span class=\"fontstyle0\"> (­to a maximum of 35)</span></p><p><strong>Title Ability:</strong> Privileged Position</p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000009\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000009\">(shuji) Wolf’s Proposal</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000066\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000066\">(shuji) Fluent Bargaining</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "7dX5TS7dEgO9Df86",
+  "sort": 0
+ },
+ {
+  "name": "Interpreter",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761152356757,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 135
+   },
+   "description": "<p><span class=\"fontstyle0\">Although many within Rokugan live their entire lives without thinking of the Empire’s neighbors, the truth is that many other civilizations touch upon the Emerald Empire in one way or another. Some, such as the Ivory Kingdoms, have contact by way of the shared danger that is the Shadowlands. Others, such as the Seikitsu of the northern mountains, exist much nearer geographically to Rokugan but are deeply distinct in culture and way of life. And as human cultures have different languages and customs, interpreters are often required to assist in situations where these groups interact.</span></p><p><span class=\"fontstyle0\">Interpreters are expected to become fluent not only in the languages of the people they study but also in the practices and cultural touchstones of those groups. They must be able not only to translate but also to transliterate, understanding and conveying intent beyond the literal meaning of the words. This makes becoming an excellent interpreter a challenging process, requiring not only language skills but also keen insight into human nature.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">The GM, after a character has gained an initial familiarity with another culture and desires to learn more.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+5</span></p><p><span class=\"fontstyle2\"><strong>Special:</strong> </span><span class=\"fontstyle0\">A character who has completed this title can be assigned it again for a new group. The new instance of the title counts as a different title, which can be completed again, conferring benefits for the new group selected.</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Linguistic Liaison</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Composition</p></td><td><p>Skill</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1 Shuji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000037\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000037\">(ritual) Cultural Exchange</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000041\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000041\">(ritual) Traveler's Experience</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 12,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "avi2rxCnyjDDegEw",
+  "sort": 0
+ },
+ {
+  "name": "Kenshinzen",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761157502717,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 130
+   },
+   "description": "<p><span class=\"fontstyle0\">The most legendary of living duelists in all of Rokugan, the kenshinzen are an order within the Kakita Duelist tradition who have achieved a rank of mastery over iaidō that few can even conceive, drawing their swords with a fluid speed the swiftest eye can hardly track. These artists of the sword are highly sought-after as yōjimbō, advisors, and generals, and any duelist who faces a kenshinzen lightly is sure to taste defeat.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Two existing kenshinzen, after witnessing the character defeating a kenshinzen in a duel. The character must also have an honor attribute of 65 or higher.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+20 (to a maximum of 75)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> A Single Moment</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Sentiment</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1–5 Close Combat Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1–5 Void Shūji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000001\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000001\">(ritual) Tea Ceremony</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "lpnPeiGkwaS9a0nL",
+  "sort": 0
+ },
+ {
+  "name": "Kyuden Asako Shieldbearer",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761157602640,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 130
+   },
+   "description": "<p><span class=\"fontstyle0\">Training in venerable weapons that others might view as archaic, the Shieldbearers of Kyūden Asako are skilled martial artists who maintain a tradition older than the Emerald Empire itself. The Shieldbearers’ unorthodox fighting style makes them difficult for many samurai to engage individually or as a unit, and their ancient tradition has proven its worth each time it has been tested by attacks upon their home.</span></p><p><span class=\"fontstyle0\">Occasionally, Shieldbearers are assigned to other lords in the Phoenix Clan and even beyond, for their unique tactics and keen understanding of defensive fighting make them excellent yōjimbō and unusual but effective unit leaders.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">The commander of the Kyūden Asako Shieldbearers when the character joins their ranks.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+5 (to a maximum of 55)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Time-Tested Defense</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Martial Arts [Melee]</p></td><td><p>Skill</p></td></tr><tr><td><p>Martial Arts [Ranged]</p></td><td><p>Skill</p></td></tr><tr><td><p>Meditation</p></td><td><p>Skill</p></td></tr><tr><td><p>Tactics</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1–3 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000004\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000004\">(ritual) Cleansing Rite</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 40,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "uNfhiOMaLb2WD7GN",
+  "sort": 0
+ },
+ {
+  "name": "Lion's Pride Warrior",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761164425827,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 133
+   },
+   "description": "<p><span class=\"fontstyle0\">Descended from a group of bandits who broke away from their gangs and followed Lady Matsu after she reformed, the Lion’s Pride is among the most renowned Matsu samurai. Membership must be offered by the matriarchs of the unit, and only the most elite Matsu samurai are permitted to join.</span></p><p><span class=\"fontstyle0\">The Lion’s Pride are functionally a small family unto themselves. In a communal keep located at Bishomen Seidō, they live together, train together, and share the lessons of their founder. They choose which battles they fight, and on whose side; not even daimyō can compel them, so their presence in an army is considered a sign of the general’s rectitude. In battle they fight as one, an unstoppable force of the Matsu family’s best and brightest. Their martial deeds fill the Ikoma histories, and they are famous throughout Rokugan for their victories.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">An existing member of the Lion’s Pride.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+20 (to a maximum of 59)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Fury of Matsu</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Sentiment</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-3 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000038\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000038\">(shuji) A Samurai’s Fate</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000085\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000085\">(shuji) Battle of No Escape</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yLOnUGLikwb3fms1",
+  "sort": 0
+ },
+ {
+  "name": "Master Artisan",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761157925637,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 130
+   },
+   "description": "<p><span class=\"fontstyle0\">Once in a generation perhaps, a human’s art touches the divine, stirring the world itself with its clarity of purpose. There are numerous fables of Kakita artisans whose final masterworks changed the course of history, and every artist’s tradition claims some number whose works reached these heights, establishing their creators as masters among masters. The Sevenfold Palace is one location that produces some number of Master Artisans, but there are other schools and facilities in Rokugan whose students often lay claim to this title. To take on</span> <span class=\"fontstyle0\">the title of Master Artisan is to begin this elusive pursuit—to reach the realization that mastery of an art is not the end of their journey, but the beginning.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Someone of status 75 or higher after the character performs a great artistic feat for them.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+30 (to a maximum of 80)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Inspired Creations</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Artisan Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Medicine</p></td><td><p>Skill</p></td></tr><tr><td><p>Meditation</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000043\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000043\">(shuji) All Arts Are One</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000011\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000011\">(ritual) Formal Tea Ceremony</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 60,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "otFm1l3cZybu1Ct6",
+  "sort": 0
+ },
+ {
+  "name": "Master Saboteur",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761164529169,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 134
+   },
+   "description": "<p><span class=\"fontstyle0\">Akodo wrote that destroying fortifications mostly serves the satisfaction of generals who have had to besiege them, for earthworks should, when possible, be captured intact. However, the Kami of warfare knew the value of disabling key defenses to make fortresses indefensible, and wrote extensively of the use of sappers. To this day in Rokugan, sappers remain a critical part of most battles near fortifications, for an extended siege can easily ruin an entire campaign. Each generation of saboteurs trains the next, and only once a trainee has proven themselves in front of a number of their mentors are they accepted as a peer.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">Three other master saboteurs, who are usually members of a general’s command staff or found leading specialized clandestine units.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">None</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Ender of Works</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Trade Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Martial Arts [Unarmed]</p></td><td><p>Skill</p></td></tr><tr><td><p>Medicine</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-ninjutsu\">(ninjutsu) Rank 1-2 Ninjutsu</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000030\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000030\">(ritual) Imbue Thunder</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000018\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000018\">(ninjutsu) Wreak Havoc</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 40,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yzpY08fb3yQ3IcO9",
+  "sort": 0
+ },
+ {
+  "name": "Monastic Acolyte",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761162607995,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 251
+   },
+   "description": "<p><span class=\"fontstyle0\">Most monks in Rokugan belong to either the Brotherhood of Shinsei or the Order of Ten Thousand Fortunes, having entered the order while young and making it their life’s work. There is, however, a separate category of monks who are retired samurai. While they still generally enter one of these two orders, these individuals have spent their life in service to their clan as a bushi, courtier, artisan, or shugenja. Even samurai who spend time as a sensei, instructing and guiding a younger generation of samurai, eventually reach a point at which their age begins to make such service difficult. Many then put aside their clan affiliation, shave their head, and become a monk, living out their remaining days in quiet introspection and contemplation.</span></p><p><span class=\"fontstyle0\">More militant samurai may prefer to meet a glorious end in battle, but there is no shame in retiring to become a monk. Without the intensive training young monks receive, such retired samurai seldom perfect the kihō commonly associated with monks. Nevertheless, such individuals are greatly revered, being sought by younger samurai for their guidance and wisdom.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Most monasteries accept anyone as a monk, as long as they take the required vows and shave their head. A samurai who becomes a monk leaves their old life behind, including both their clan and family identity, and takes a new name.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">Your status becomes 25.</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Enlightened</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Aesthetics</p></td><td><p>Skill</p></td></tr><tr><td><p>Composition</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kiho.Item.L5RCoreKih000001\" data-pack=\"l5r5e.core-techniques-kiho\" data-type=\"Item\" data-id=\"L5RCoreKih000001\">(kiho) Cleansing Spirit</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kiho.Item.L5RCoreKih000017\" data-pack=\"l5r5e.core-techniques-kiho\" data-type=\"Item\" data-id=\"L5RCoreKih000017\">(kiho) Ki Protection</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kiho.Item.L5RCoreKih000022\" data-pack=\"l5r5e.core-techniques-kiho\" data-type=\"Item\" data-id=\"L5RCoreKih000022\">(kiho) Still the Elements</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "T0u0FgH4yejVfQzg",
+  "sort": 0
+ },
+ {
+  "name": "Moon cultist",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761152969478,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 140
+   },
+   "description": "<p><span class=\"fontstyle0\">Acolytes of Lord Moon come in all manner of forms, from the lowliest </span><span class=\"fontstyle2\">hinin </span><span class=\"fontstyle0\">to members of Imperial families. All a person needs to do to become a diligent servant of the hungry father is practice their faith unquestioningly and remind others that there is perfection in chaos.</span></p><p><span class=\"fontstyle3\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Another moon cultist.</span></p><p><span class=\"fontstyle3\"><strong>Disadvantage:</strong> </span><span class=\"fontstyle0\">Dark Secret (see page 132 of the core rulebook).</span></p><p><span class=\"fontstyle3\"><strong>Honor Award:</strong> </span><span class=\"fontstyle0\">–5 (to a minimum of 15)</span></p><p><span class=\"fontstyle3\"><strong>Title Ability:</strong> Swallow the Light</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Composition</p></td><td><p>Skill</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Fitness</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-invocations\">(invocation) Rank 1-2 Water Invocations</a></p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-invocations.Item.L5RCoreInv000052\" data-pack=\"l5r5e.core-techniques-invocations\" data-type=\"Item\" data-id=\"L5RCoreInv000052\">(invocation) Hands of the Tides</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000010\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000010\">(ritual) Whispers to the Moon (Moon Cultist)</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 30,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xokBRzFzjupdBrMb",
+  "sort": 0
+ },
+ {
+  "name": "Perfect Land Sect Member",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761165618950,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 186
+   },
+   "description": "<p><span class=\"fontstyle0\">Anyone who hears the chant of the Perfect Land and earnestly accepts the Little Teacher into their life could be considered a member of the Perfect Land Sect. However, unless a person joins a small, regional Perfect Land Sect community, they must impress Hige and the other sect leaders in order to join it formally. Simply finding the main body of the sect is a challenge, and a potential member cannot be accepted until they prove the purity of their commitment to the cause. The Perfect Land Sect’s leadership is supremely cautious and skeptical of outsiders, and with good reason. The Empire doesn’t like the heretical and dangerous ideas of the sect and is constantly seeking to exterminate the movement.</span></p><p><span class=\"fontstyle0\">If someone manages to find and make a place for themself among the sect’s members, they may find a loyal and supportive community, even if it comes with the cost of hard work and constant travel. If they join a more regional community, they may find opportunities for leadership or autonomy beyond what their station would allow them outside the sect. Being part of the sect gives members a renewed sense of purpose as they work together to help bring each other out of their challenging livelihoods and toward a common goal of Heavenly peace.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A leader of the Perfect Land Sect.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> -5</span><span class=\"fontstyle0\"> (­to a minimum of 15)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Trustworthy Cadence</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Fitness</p></td><td><p>Skill</p></td></tr><tr><td><p>Labor</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1-2 Water Shuji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000070\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000070\">(shuji) Roar of Encouragement</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000020\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000020\">(shuji) Rallying Cry</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Ku1V98MU6pUnUu76",
+  "sort": 0
+ },
+ {
+  "name": "Poet of War",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761164610255,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 134
+   },
+   "description": "<p><span class=\"fontstyle0\">In battle, a force’s morale can be of greater importance than their armament. A troop in high spirits works more cohesively as a group, resists the terror of battle, and attacks with the strength and ferocity of a much larger force. Generals value the ability of bards to put fire into the veins of their warriors, and will often bring criers, heralds, and signalers with their army into battle—individuals called “poets of war” in the famous third century poem of the same name by Akodo Shunryu. The most brave and dedicated bards in the Empire, they demonstrate as much ferocity on the battlefield as any warrior, and have drunk deep the military histories of Rokugan, absorbing centuries of combat lore into their very being. During battle, they charge forth with the samurai, screaming legends of their accomplished ancestors across the field, steeling the souls of the warriors around them.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">A general or other officer with status 50 or higher.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10 (to a maximum of 55)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> The Hand of Our Ancestors</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Composition</p></td><td><p>Skill</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Sentiment</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1-2 Fire Shuji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000072\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000072\">(shuji) Borrowed Courage</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000082\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000082\">(shuji) Coursing March Chant</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 20,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wDBvhuCIhh9fK7p4",
+  "sort": 0
+ },
+ {
+  "name": "Priest",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761162710641,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 251
+   },
+   "description": "<p><span class=\"fontstyle0\">When the term “priest” is used to describe a samurai, it is natural to think of shugenja, those rare and powerful individuals who are able to invoke the elemental kami directly and cause them to manifest potent effects in the Realm of Mortals. Most priests, however, are not shugenja. Rather, they are sincere in their devotion to and reverence for the kami, but their communion with the spirits is subtler. By no means does this diminish them or their importance, however. For most spiritual purposes, samurai seek the guidance and assistance of these priests. Such individuals offer prayers and devotions to the kami—and may, from time to time, even be rewarded with minor blessings by the spirits. They also conduct many of the rituals important to samurai and commoners alike, such as blessing fields and sanctifying ritual spaces, performing weddings and funerals, and crafting charms and talismans blessed by their favored deities.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Most priests train for their role from a young age. In rare cases, an individual who has shown a particular devotion to or affinity for the kami may take up duties at a shrine or temple, where the head priest assigns their title.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10 (to a minimum of 40)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Servant of the Kami</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Composition</p></td><td><p>Skill</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-rituals\">(ritual) Rank 1-5 Rituals</a></p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000014\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000014\">(shuji) Civility Foremost</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000041\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000041\">(shuji) Rouse the Soul</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "6gIU3n75xwNACtlm",
+  "sort": 0
+ },
+ {
+  "name": "Quartermaster",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761164709702,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 135
+   },
+   "description": "<p><span class=\"fontstyle0\">It is no secret that a well-supplied army will defeat an ill-equipped one nearly every time. An army can lose before a single sword is drawn, defeated by logistical delays resulting in hunger or inadequate shelter. It is the heavy responsibility of the quartermaster to ensure that their fellow soldiers have access to food, water, weapons, armor, and anything else required by terrain, weather, or circumstances of war. The quartermaster must have an organized, efficient mind and steely determination to acquire everything needed for their army. This is especially true when the army travels through enemy territory or conducts a prolonged siege. Though a quartermaster may not share in the immediate, bloody glory of the soldiers at the front, every general knows who else they owe credit to at the end of a successful battle.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">Clan or castle daimyō, army general, or other officer of sufficient rank.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5 (to a maximum of 35)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Procurement and Supply</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Trade Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Tactics</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1-2 Air Shuji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1-2 Water Shuji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000075\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000075\">(shuji) Fortress of Necessity</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3EKpvQErarn6eUrz",
+  "sort": 0
+ },
+ {
+  "name": "Renowned Warrior",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761164783385,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 135
+   },
+   "description": "<p><span class=\"fontstyle0\">Most samurai who serve on the battlefield are not driven by a desire for monetary recompense, but this does not mean that they are not motivated by rewards. Recognition by one’s daimyō or commander is highly sought-after, and a choice word of praise from an individual of sufficient influence can spread quickly through a province or even across the entire Empire.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">A daimyō or army commander with status 60 or higher after you have been part of a mass battle in which your cohort was the one to complete at least one strategic objective.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+5</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5 (to a maximum of 40)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Behold the Legend</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Performance</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000003\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000003\">(kata) Heartpiercing Strike</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000079\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000079\">(shuji) Righteous Example</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 16,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xHC30O7D0ctKCQC6",
+  "sort": 0
+ },
+ {
+  "name": "Scarlet Banners Ranger",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761152483587,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 136
+   },
+   "description": "<p><span class=\"fontstyle0\">Tasked with guarding the great city of Khanbulak, the Scarlet Banners are garrisoned in the city and serve as enforcers of the law there and across large swaths of the surrounding region. While many of the Scarlet Banners’ leaders see the posting as a waste of the talents of some of the Unicorn’s most skilled fast cavalry, the job is not without its rigors. Members of the Scarlet Banners must be able to ride into small towns across Unicorn lands, mediate disputes between commoners, understand and enforce the law, and do so without any expectation of immediate backup from Khanbulak. Most members of the Scarlet Banners are more than capable of operating in a unit of two to three, or with only their steed as a partner.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A leader within the White Horde of status 55 or higher.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Master of the Lariat</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Trade Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Sentiment</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000089\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000089\">(shuji) Cunning Omission</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000090\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000090\">(kata) Thunderbolt Style</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "F3EeR0GESQ8Xm3rZ",
+  "sort": 0
+ },
+ {
+  "name": "Seven fold Palace Acolyte",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761158479633,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 131
+   },
+   "description": "<p><span class=\"fontstyle0\">The Seven Fold Palace serves as a proving ground for skilled artisans of the blade, of armor, and of other arts as well. Apprentices and journeyman artists toil ceaselessly amidst the pristine grounds, each someday hoping to achieve the vaunted rank of Master Artisan. The life of an aspirant is not easy, filled with long hours and harsh judgment for failed works, but the opportunity to learn is also unparalleled in Rokugan. Few succeed in the quest to become a Master Artisan, and yet there is never any shortage of new students willing to hurl themselves into this crucible of learning.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">One of the masters of the Seven Fold Palace after the character begins studying there.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+5 (to a maximum of 35)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> First, Forge Yourself</span><br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p><h2>Curriculum</h2><table><tbody><tr><td><p>Trade Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Aesthetics</p></td><td><p>Skill</p></td></tr><tr><td><p>Design</p></td><td><p>Skill</p></td></tr><tr><td><p>Fitness</p></td><td><p>Skill</p></td></tr><tr><td><p>Meditation</p></td><td><p>Skill</p></td></tr><tr><td><p>Smithing</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000003\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000003\">(shuji) Artisan’s Appraisal</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 36,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "BzbW5CaXjHsWB1kx",
+  "sort": 0
+ },
+ {
+  "name": "Spirit Caller",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761164928679,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 136
+   },
+   "description": "<p><span class=\"fontstyle0\">Many in Rokugan venerate their ancestors and call upon their wisdom through prayer or by studying writings left by the departed. A blessed few have the ability to reach through the veil of the Spirit Realms and make direct contact with their ancestors. Best exemplified by those of the Kitsu family bloodline, these gifted individuals can speak to a </span><span class=\"fontstyle2\">shiryō </span><span class=\"fontstyle0\">(blessed ancestor spirit) or, through extensive training, allow the soul of the departed to enter their body and speak through them. While bonded in this way, they can perceive the memories of this venerated ancestor, and in turn, the spirit may look again into the Mortal Realm and impart words of wisdom to those in need. Through the Spirit Caller, an entire family’s knowledge and skills from time immemorial can be accessed, and secrets thought long lost can again be brought to light.</span></p><p><span class=\"fontstyle3\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">An instructor of a Kitsu school or other appropriate spiritual leader.</span></p><p><span class=\"fontstyle3\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+15 (to a maximum of 40)</span></p><p><span class=\"fontstyle3\"><strong>Title Ability:</strong> Eyes of the Ancestors</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Meditation</p></td><td><p>Skill</p></td></tr><tr><td><p>Performance</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-rituals\">(ritual) Rank 1-2 Rituals</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000010\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000010\">(shuji) Ancestry Unearthed</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000083\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000083\">(shuji) Preserve Strength</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 38,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xfpJlIrGPYkfQHR4",
+  "sort": 0
+ },
+ {
+  "name": "Spirits hunter",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761166033601,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "deathly_turns",
+    "page": 21
+   },
+   "description": "<p><span class=\"fontstyle0\">Lady Mazoku occasionally elevates mortals to assist her in work in the Mortal Realm, detecting and banishing spirits who seek to do harm. While some mortals dedicate their lives to serving her, for most, it is part-time work at best. A character who has completed this title is one of her trusted agents. The character has privileges in certain realms of the dead (Meido, Gaki-dō, or Tōshigoku) and abilities when dealing with their denizens, but lives most of their life in their normal station.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Lady Mazoku</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Celestial Influence</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-rituals\">(ritual) Rank 1 Rituals</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 12,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "lZJkN5BP4gBizJ2n",
+  "sort": 0
+ },
+ {
+  "name": "Spy",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761162957725,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 252
+   },
+   "description": "<p><span class=\"fontstyle0\">Being designated a spy is problematic for many samurai. By definition, a spy uses deception and subterfuge to gather information, and they may even employ more sinister methods, such as blackmail or extortion, to achieve assigned objectives. Such nefarious and underhanded methods naturally fly in the face of the Bushidō tenets of Sincerity, Righteousness, and Honor. Indeed, some particularly honorable samurai will commit seppuku before acceding to their lord’s wish for them to act as a spy, no matter how great the need. That said, many samurai have fewer qualms and accept the harm to their honor if that is the duty assigned to them by their superiors.</span></p><p><span class=\"fontstyle0\">In reality, most spies do little more than simply observe and report on events and happenings of interest to their superiors. Some, however, go on to develop more sophisticated methods and techniques, including using stealth and disguises to enter places that are otherwise off-limits to them, and communicating crucial and sensitive information by means of complex ciphers and codes.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Daimyō, clan champions, magistrates, and clandestine organizations surreptitiously task a samurai with acting as a spy. Unlike other titles, of course, this is never announced publicly.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">–5</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Ears Everywhere</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Sentiment</p></td><td><p>Skill</p></td></tr><tr><td><p>Skulduggery</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1-5 Air Shuji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000034\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000034\">(shuji) Shallow Waters</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-ninjutsu.Item.L5RCoreNin000002\" data-pack=\"l5r5e.core-techniques-ninjutsu\" data-type=\"Item\" data-id=\"L5RCoreNin000002\">(ninjutsu) Skulk</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cCPQHxEpNH8s9XVE",
+  "sort": 0
+ },
+ {
+  "name": "Student of Names",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761152679741,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 136
+   },
+   "description": "<p><span class=\"fontstyle0\">When Iuchi set out from Rokugan, he discovered that spirits of other lands had different values, desires, and observable traits than the spirits of his homeland of Rokugan. However, despite these spirits’ wide variety of natures and properties—they could be anything from ancestral spirits to cosmic guardians to diabolical tricksters—all of them seemed to have one thing in common: a true name. With this name, Iuchi could not merely request a spirit’s attention but demand it. He could not only make contracts with a spirit but wield its power as his own or bind the spirit within a talisman.</span></p><p><span class=\"fontstyle0\">For a people constantly on the move, like Iuchi’s, this method made it possible to bring spiritual power with them wherever they went on their long journeys. A master of meishōdō can invoke spirits in more traditional ways, via offerings and contracts, when they desire to, relying on their training in the Way of Names only when dealing with especially dangerous beings. Most hold the use of true names in reserve, for few spirits like to be commanded, and sealed or not, an angry spirit poses a threat that can last generations.</span></p><p><span class=\"fontstyle0\">While meishōdō was not the only sorcerous art Iuchi mastered, it was surely the greatest achievement that he passed down to the Unicorn Clan. While only a few in Rokugan have had a chance to learn Iuchi’s method, it can be taught to those willing to learn it.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A shugenja trained in Iuchi’s method who has a status of 55 or higher, such as the daimyō of the Iuchi family, one of its promising scions, or the ancient and mysterious Grandfather Iuchi.</span> <br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"><span class=\"fontstyle0\"><strong>Other Requirements:</strong> </span><span class=\"fontstyle2\">A character must be capable of performing invocations to receive this title, and they cannot be a member of the Iuchi Meishōdō Master school.</span></p><p><span class=\"fontstyle0\"><strong>Status Award:</strong> </span><span class=\"fontstyle2\">+5</span></p><p><span class=\"fontstyle0\"><strong>Glory Award:</strong> </span><span class=\"fontstyle2\">+10</span></p><p><span class=\"fontstyle0\"><strong>Title Ability:</strong> Meishōdō Secrets</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-invocations\">(invocation) Rank 1-2 Invocations</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000040\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000040\">(ritual) Spiritual Survey</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000005\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000005\">(ritual) Threshold Barrier</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 12,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "tBhou5Ge715R09Y4",
+  "sort": 0
+ },
+ {
+  "name": "Sumai Master",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761165023169,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 136
+   },
+   "description": "<p><span class=\"fontstyle0\">Many samurai, especially of the Badger and Crab Clans, practice sumai, a test of physical and mental strength. Sumai can become an important part of a samurai’s life, not only as a way to demonstrate their prowess to their fellow samurai, but also as a connection to the very spirit of their clan. True masters of the art are some of the finest duelists in the Empire. Their skills can fell opponents in matches and enemies on battlefields alike.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">An existing sumai master, once you have proven your ability to them.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10 (to a maximum of 50)</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10 (to a minimum of 35)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Unsurpassed Soul</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Martial Arts [Unarmed]</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000026\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000026\">(ritual) Beseech Hida's Might</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000065\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000065\">(kata) Fierce Badger Style</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 30,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "LqFKfMGhmbT5OM6x",
+  "sort": 0
+ },
+ {
+  "name": "Sword Saint",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761165187609,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 136
+   },
+   "description": "<p><span class=\"fontstyle0\">The kensei, or sword-saint, is a living master of the sword whose preternatural skills are hailed throughout the Empire. While </span><span class=\"fontstyle2\">kenshinzen </span><span class=\"fontstyle0\">duelists epitomize the highest level of </span><span class=\"fontstyle2\">iaidō</span><span class=\"fontstyle0\">, the sword-saint embodies the purest form of </span><span class=\"fontstyle2\">kenjutsu</span><span class=\"fontstyle0\">, or swordsmanship more broadly. To witness a single strike of a kensei is to experience a moment of spiritual clarity—their bond with their blade is considered sacred. A true sword-saint might come along once per generation, and past precedent maintains that only one person may bear the title at a given time. Students of the Heart of the Katana dōjō in Lion lands devote their lives to the sword with the hope of one day being anointed as a sword-saint.</span></p><p><span class=\"fontstyle3\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">A clan champion or the Emperor. Alternately, the title can be assigned by an existing swordsaint who is slain by the character in an honorable duel to the death.</span></p><p><span class=\"fontstyle0\"><strong>Glory Award:</strong> </span><span class=\"fontstyle2\">+20 (to a maximum of 100)</span></p><p><span class=\"fontstyle0\"><strong>Title Ability:</strong> Invincible Blade</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Arts [Melee]</p></td><td><p>Skill</p></td></tr><tr><td><p>Meditation</p></td><td><p>Skill</p></td></tr><tr><td><p>Smithing</p></td><td><p>Skill</p></td></tr><tr><td><p>Tactics</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-5 Close Combat Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000006\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000006\">(kata) Soul Sunder</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000087\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000087\">(shuji) Victory Without a Sword</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "L9FaEU81ejG2BoF8",
+  "sort": 0
+ },
+ {
+  "name": "Temple Abbot",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761163498272,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 143
+   },
+   "description": "<p><span class=\"fontstyle0\">Those who preside over a monastery are sometimes called abbots, though a fair number of monasteries have no firm power structure to begin with. Those that do revere these temple leaders as wise and deeply committed to their faith and traditions. Some temple abbots step down from their positions to avoid attachment to power, while others leave temporarily to travel and seek out new monks or to better seek out Enlightenment. Regardless of whether an abbot is actively tending to a temple, any abbot, current or former, in good standing is well respected in Rokugan.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A monastic order or by a abbot who is passing down the responsibility.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10 (to a minimum of 30).</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Soothing Cadence</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Meditation</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000004\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000004\">(ritual) Cleansing Rite</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kiho.Item.L5RCoreKih000025\" data-pack=\"l5r5e.core-techniques-kiho\" data-type=\"Item\" data-id=\"L5RCoreKih000025\">(kiho) Rejuvenating Breath</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000011\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000011\">(shuji) Touchstone of Courage</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 36,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "P06Dy3aMBy5QDM5K",
+  "sort": 0
+ },
+ {
+  "name": "The Damned",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761150925524,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 128
+   },
+   "description": "<p><span class=\"fontstyle0\">One of the tragic realities faced by the Crab is that death isn’t necessarily the worst outcome of confronting the Shadowlands. Even if they survive battle relatively unscathed physically, many become afflicted with the Taint of Jigoku. For most Rokugani, becoming Tainted is so abhorrent that even seppuku seems preferable to the slow, creeping corruption that twists their body and imperils their soul. However, some samurai have duties they cannot so easily abandon. As such, the Crab allow the Tainted to serve, eventually moving those too suffused with the essence of Fu Leng to the Damned, a legion based in a fortress located close to the Wall—the so-called Barracks of the Damned. The existence of the Damned is not exactly a secret, but neither are the Crab quick to speak of them, particularly to outsiders.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Kuni daimyō or other officials. Note that you must possess at least one Shadowlands Taint disadvantage to receive this title.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">–20 (to a maximum of 30)</span></p><p><span class=\"fontstyle2\"><strong>Immediate Effects:</strong> </span><span class=\"fontstyle0\">Gain the Ferocity disadvantage.</span></p><p><strong>Title Ability:</strong> Tainted Warrior</p><p></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Medicine</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000003\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000003\">(kata) Heartpiercing Strike</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000020\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000020\">(shuji) Rallying Cry</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 20,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fkUdPcUNS1yv7sbd",
+  "sort": 0
+ },
+ {
+  "name": "Twenty-Goblin Crab",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761151318848,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 128
+   },
+   "description": "<p><span class=\"fontstyle0\">At one time, the character was a rōnin, eking out a meager existence on the fringes of Rokugani society with no lord to provide for them. Now, however, they are an accepted member of the Hida family of the Crab after completing a harrowing Twenty Goblin Winter. By slaying and bringing back the heads of twenty goblins from the Shadowlands, they earned a place among the Crab. As far as their comrades are concerned, they have always been one of the Crab—even if they can’t forget the long, bitter days of being cursed and reviled by “proper” samurai of the Empire as an honorless rōnin dog.</span> </p><p><span class=\"fontstyle0\"><strong>Assigned By:</strong> </span><span class=\"fontstyle2\">Hida daimyō or other officials.</span></p><p><span class=\"fontstyle0\"><strong>Status Award:</strong> </span><span class=\"fontstyle2\">+15 (to a minimum of 30 and a maximum of 40), officially become samurai and member of Crab Clan.</span></p><p><span class=\"fontstyle0\"><strong>Title Ability:</strong> Goblin Killer</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-2 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000021\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000021\">(kata) Thunderclap Strike</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000017\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000017\">(shuji) Stonewall Tactics</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 20,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "MCx1peE1pYCXJMfN",
+  "sort": 0
+ },
+ {
+  "name": "War College Graduate",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761165281612,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 137
+   },
+   "description": "<p><span class=\"fontstyle0\">The Lion Clan contains many of the finest tacticians in the Emerald Empire. But even among this formidable pool of military minds, there are the elite: the graduates of the Akodo War College. The oldest military institution in Rokugan, the Akodo War College has a curriculum based on the philosophies of Akodo, refined over one thousand years to near perfection. The academy is especially renowned for its instruction concerning mass warfare and leading armies. Students endure rigid structure and grueling training drills year-round, honing their bodies and minds with studies of battle, siegecraft, and Bushidō. By the end of their training, the graduates of the Akodo War College are impeccable leaders and immaculate warriors, paragons bred for one purpose: victory.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">An instructor at the Akodo War College.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+5 (to a maximum of 60)</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10 (to a maximum of 40)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Learned from History</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Culture</p></td><td><p>Skill</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-3 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-shuji\">(shuji) Rank 1-3 Shuji</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000023\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000023\">(ritual) Beseech Akodo's Judgment</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 36,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "YBOs1d32TYtaWDx5",
+  "sort": 0
+ },
+ {
+  "name": "White Guard Veteran",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761152736843,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 137
+   },
+   "description": "<p><span class=\"fontstyle0\">The White Guard comprise the most elite cavalry unit within the White Horde of the Unicorn Clan. They are known for the power of their heavily armored riders and steeds and their willingness to face long odds with grim determination. Members of the White Guard are trained to stand firm even against supernatural foes, for one of their duties is hunting the Moto who were lost to the Shadowlands alongside the dreaded Moto Tsume.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">A leader within the White Horde of status 60 or higher.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+15</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Unrelenting and Inevitable</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p>Theology</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000038\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000038\">(shuji) A Samurai’s Fate</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000083\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000083\">(kata) Stalking Leopard Style</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000084\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000084\">(kata) Sudden Downpour Style</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 32,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4s9416zuxrT4hyUR",
+  "sort": 0
+ },
+ {
+  "name": "Winter Court Champion",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761158054008,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 131
+   },
+   "description": "<p><span class=\"fontstyle0\">Each year at the Winter Court, samurai take the opportunity to prove themselves, participating in numerous challenges, games, and tests. While these events are in many ways backdrop for the bargains and machinations on the grand stage of politics, they are hardly unimportant. Becoming a Winter Court Champion offers a character more than just the accolades of the court for the remainder of the proceedings. It also gives them unparalleled access to the authorities of Rokugan, including the Imperial Court, which is usually sealed away in Otosan Uchi behind high walls of stone and higher walls of bureaucracy. Thus, winning a contest at a Winter Court can be a unique opportunity to advance their clan’s agenda—and one’s own agenda within the clan!</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">The Emperor or one of their chosen agents after a character wins one of the major contests at a Winter Court.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+20 (to a maximum of 75)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Accustomed to Attention</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Artisan Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000003\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000003\">(shuji) Artisan’s Appraisal</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000011\" data-pack=\"l5r5e.core-techniques-rituals\" data-type=\"Item\" data-id=\"L5RCoreRit000011\">(ritual) Formal Tea Ceremony</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000052\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000052\">(shuji) Fun and Games</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000047\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000047\">(shuji) Offend the Sensibilities</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000050\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000050\">(shuji) Spiteful Loss</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 16,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GoZFlsrb9wKpJnyh",
+  "sort": 0
+ },
+ {
+  "name": "Witch Hunter",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761151607346,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 129
+   },
+   "description": "<p><span class=\"fontstyle0\">Because of the diffuse structure of the family, the Kuni are known as much for their order of Witch Hunters as they are for their schools. Garbed in dark robes and daubed with imposing makeup to hide their faces from evil spirits, the members of this group seek out mahō-tsukai and any who dare to practice the foul art of mahō within Rokugan. While the Kuni would generally accept anyone with the skills needed (shugenja primarily, but rarely, other mystics or experienced hunters of mahō-tsukai), in recent years, only members of the Crab Clan have sought out this solemn duty. Most are from the Kuni Purifier School. Witch Hunters operate with little oversight, each doing what they deem necessary to defend Rokugan against these threats. Any Witch Hunter can elevate another to the task, though few do so unless their apprentice has proven themself time and again, and faced horrors that would shatter any soul still harboring doubts or uncertainties.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Another Witch Hunter.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10 (to a minimum of 30)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Bane of Sorcerers</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Skulduggery</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-4 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-rituals\">(ritual) Rank 1-5 Rituals</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000012\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000012\">(shuji) Honest Assessment</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 45,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "AY2nGPMMLd4Hziiz",
+  "sort": 0
+ },
+ {
+  "name": "Yojimbo",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761163052236,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 252
+   },
+   "description": "<p><span class=\"fontstyle0\">Yōjimbō are dedicated bodyguards, appointed to protect a specific individual at any cost. While any samurai should willingly lay down their life to protect their lord, a yōjimbō is their master’s last line of defense. They are also likely to serve as their proxy in duels of honor, and have the grim task of acting as their lord’s second should they need to commit seppuku, decapitating them to end their suffering. Most follow their master even into death, should they not have the chance to die in their service.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Daimyō, Emerald Magistrates, military leaders, high-ranking courtiers, and other individuals of import can appoint yōjimbō, and do so at their discretion.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10 (to a minimum of 40)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> No Sacrifice Too Great</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Medicine</p></td><td><p>Skill</p></td></tr><tr><td><p>Sentiment</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000023\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000023\">(kata) Iaijutsu Cut: Crossing Blade</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000022\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000022\">(kata) Iaijutsu Cut: Rising Blade</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000007\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000007\">(kata) Warrior’s Resolve</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 36,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yBe5JpvbH49dXSxo",
+  "sort": 0
+ },
+ {
+  "name": "Yōkai Hunter",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761163648944,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 143
+   },
+   "description": "<p><span class=\"fontstyle0\">There are some monks who shed the tradition of pacifism and seek out malevolent or hazardous yōkai and other supernatural entities in order to eliminate or free them. These monks are no stranger to the danger of hunting the unknown, and there is little else more unpredictable than a yōkai no human has ever encountered before. Such hunters travel the lands of Rokugan in search of such beings in order to right what they perceive as unnatural. Others among these hunters, though, are driven by compassion rather than aggression, as some believe that to become a yōkai is to suffer greatly spiritually. To save these entities from such suffering with the correct rituals and cleansing may save them from an endless stay in the Realm of Waiting.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">By another Yōkai Hunter.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Commune with the Changed</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p>Survival</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kiho.Item.L5RCoreKih000030\" data-pack=\"l5r5e.core-techniques-kiho\" data-type=\"Item\" data-id=\"L5RCoreKih000030\">(kiho) Blistering Retribution</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000070\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000070\">(kata) Swallow’s Dart Style</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000071\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000071\">(kata) Tiger’s Lunge Style</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 36,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gfU45IxZ9M5MuY25",
+  "sort": 0
+ },
+ {
+  "name": "Yoriki",
+  "type": "title",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/title.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147623424,
+   "modifiedTime": 1761163187866,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 253
+   },
+   "description": "<p><span class=\"fontstyle0\">Because magistrates are relatively few in number, they make extensive use of a variety of retainers and assistants. These include yoriki: samurai who function as permanent deputies. Generally, a magistrate may have one or two yoriki, but if needed, and their status permits it, they may have as many as a dozen. Yoriki have some of the same duties as their patron magistrate, such as investigating crimes, gathering testimony (and, in the case of yoriki working with Kitsuki Investigators, physical evidence), overseeing the torture of offenders to obtain confessions, and applying punishments. Their authority to engage in these tasks is usually limited with respect to offenders who are samurai, however, and is more broadly applicable to commoners. Yoriki report regularly to their patron magistrate.</span></p><p><span class=\"fontstyle0\">Yoriki are normally drawn from the clan of the magistrate they serve, although some Emerald Magistrates employ rōnin as yoriki to remove any appearance of bias. Particularly competent yoriki may be considered \"magistrates in training.\"</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong> </span><span class=\"fontstyle0\">Magistrates of all kinds directly appoint their own yoriki as their needs require.</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+5 (to a minimum of 35)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Take Them Alive</span><br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p><h2>Curriculum</h2><table><tbody><tr><td><p>Social Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Government</p></td><td><p>Skill</p></td></tr><tr><td><p>Martial Arts [Melee]</p></td><td><p>Skill</p></td></tr><tr><td><p>Skulduggery</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-3 Kata</a></p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000018\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000018\">(shuji) Fanning the Flames</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000034\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000034\">(shuji) Shallow Waters</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 24,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "advancements": [],
+   "xp_used_total": 0
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ug7sFDAKX937pDGQ",
+  "sort": 0
+ }
+]

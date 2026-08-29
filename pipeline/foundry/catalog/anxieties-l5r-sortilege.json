@@ -1,0 +1,1892 @@
+[
+ {
+  "name": "Accustomed to Luxury",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356299069,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 246
+   },
+   "description": "<p><em>Architect Kaiu Ken’ichi refused to follow the family tradition to live and sleep on the construction site of his first building. “I will sleep in this castle on a futon, in fineries, and by the fire. Why should I spend a week frozen on a scratchy straw mat?”</em></p><p><em>Without this connection to his own work, he failed to notice the loose stone that fell and crushed him. His mother, Tomoko, used that stone as his grave marker.</em></p><p><strong>Effects:</strong> The following apply to a character with the Accustomed to Luxury anxiety:</p><ul><li><p>-  You live a life of luxury and chafe at the idea of abiding the accommodations of your lessers or sleeping in the wilderness.</p></li><li><p>- After performing a check that requires you to remain in unacceptable accommodations for an extended period (such as a Survival (earth) check to set up a campsite or a Commerce (earth) check to make arrangements to stay at a rural inn), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "U41sS1l0Ub5xw6SO",
+  "sort": 0
+ },
+ {
+  "name": "Addiction",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356250030,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 131
+   },
+   "description": "<p><em>The smoke curled in pleasing patterns above my head. I drew another lungful from the pipe, feeling the acrid burn in my throat and chest. A searing warmth made my cheeks flush, and I exhaled.</em></p><p><em>“Chasing the Dragon,” they called it. Funny. It doesn’t feel like I’m chasing anything. It feels like I’m standing still, and the universe is rushing all around me like a storm. But afterward, the dragon always catches up to me.</em></p><p><strong>Effects:</strong> The following apply to a character with the Addiction anxiety:</p><ul><li><p>-  Choose an addictive substance or experience; deprivation from this substance or experience for more than three days causes shakes, chills, distraction, or even more violent physical symptoms that become increasingly difficult to conceal.</p></li><li><p>-  After performing a check to resist the substance or experience (such as a Fitness (earth) check to suppress signs of your addiction during long absences of the substance (or experience) or a Meditation (earth) check to resist pursuing the experience or substance), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "akt0IVH4eNLfFnva",
+  "sort": 0
+ },
+ {
+  "name": "Animal Signs",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356216348,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 96
+   },
+   "description": "<p><em>When the two rōnin saw the black cat, Junko ran after it while Eijiro remained still and stiff as a board. “Stop chasing the beast!” Eijiro shouted.</em></p><p><em>“But black cats are lucky,” Junko’s voice said from behind a building.</em></p><p><em>“Yes, but causing it to run away chases the good luck away!”</em></p><p><em>“Really?” Junko’s voice said, somewhere behind some wagons. “I’ve never heard of that.”</em></p><p><em>“Yes!” he hissed. “Now get back here!”</em></p><p><em>“Aww.” Junko sighed. “You just don’t like cats.”</em></p><p><em>“Both can be true at the same time!” He jumped slightly at a small, black shadow streaking across his path.</em></p><p><strong>Effects:</strong> The following apply to a character with the Animal Signs anxiety:</p><ul><li><p>-  You assign supernatural meaning to animal behavior. Not all of this behavior portends doom or bad luck, however, so you have a broad range of knowledge on superstitions and methods of fortune-telling related to animals.</p></li><li><p>-  After performing a check to interpret the actions of an animal (such as a Survival (void) check to see if the caw of a crow portends good luck or bad, or a Medicine (void) check to see if a rat’s behavior signifies the presence of a plague), you receive 3 strife. If this is the first time this has occurred this scene, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "anxiety",
+   "types": "Mental, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "SICF8xzymSqAxTlh",
+  "sort": 0
+ },
+ {
+  "name": "Battle Trauma",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356160637,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 131
+   },
+   "description": "<p><em>The thousand cuts I have borne<br>And the thousand I have delivered<br>Paint my dreams in red<br>Broad brushstrokes to draw pictures<br>I cannot put to paper.<br>Do my ears ring from old age<br>Or is that steel’s song and the warrior’s cry<br>Gone so long ago<br>But never gone?</em></p><p><strong>Effects:</strong> The following apply to a character with the Battle Trauma anxiety:</p><ul><li><p>-  At the start of a duel, skirmish, or mass battle, your hands shake, your body tenses up, or your mind might even lock down. You can act normally, but your unsettled state is obvious to everyone around you, and others may try to exploit it.</p></li><li><p>-  After performing a check related to battle (such as a Martial Arts [Melee] (fire) check to strike down a foe or a Tactics (fire) check to generate initiative), you receive 3 strife. (Your GM can choose not to inflict this strife after the you have taken a few turns and thematically overcome your trauma.) If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "anxiety",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "jlSq86lbglLrHXp8",
+  "sort": 0
+ },
+ {
+  "name": "Belligerent",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356105535,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 85
+   },
+   "description": "<p><em>“Matsu-san, no! We are guests here.” The courtier looked on in horror as Matsu Chiyoko gripped her blade as if to draw it.</em></p><p><em>“They should have remembered their duties as hosts, then, instead of insulting me,” Chiyoko retorted, before returning her attention to the Crane samurai in front of her. “I challenge you, for your insult! If you would belittle my courage, I dare you to prove your own.”</em></p><p><strong>Effects:</strong> The following apply to a character with the Belligerent anxiety:</p><ul><li><p>-  You find it nearly impossible to keep your cool when provoked, and may even look for an excuse to fight with people you consider deserving of a good thrashing. Delicate social situations can easily spiral out of control when you suspect the other party of giving offense.</p></li><li><p>-  After performing a check to respond to provocation without resorting to violence or threats (such as a Performance (earth) check to calmly sing a song that was originally composed to paint your lineage in an unflattering light or a Meditation (earth) check to stay in formation when you spot a rival across the battlefield), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wvuk5eu1WLfAdU9n",
+  "sort": 0
+ },
+ {
+  "name": "Braggart",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356055002,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 85
+   },
+   "description": "<p><em>“…And that is how I defeated the bandits who plagued Gentle River Village.” Ikoma Daisuke looked around the court, expecting an impressed audience within the teahouse. Instead, they seemed impatient, even bored. </em></p><p><em>“You must do better than defeating rōnin and peasants to be counted a warrior among the Crab,” sneered a burly Hida sitting across the room from him.</em></p><p><em>“Bandits! Speak to me when you have felled monsters.”</em></p><p><strong>Effects:</strong> The following apply to a character with the Braggart anxiety:</p><ul><li><p>-  You can’t resist an opportunity to share your great deeds with others, and you grow distressed when your audience isn’t impressed by your accomplishments.</p></li><li><p>-  After performing a check to share your past deeds with others without emphasizing your own accomplishments or trying to impress your audience with your story (such as a Courtesy (water) check to allow a superior to take credit for your deeds or a Performance (water) check when recounting a tale in which you played a part), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XAaPJi8DbxEpBLMv",
+  "sort": 0
+ },
+ {
+  "name": "Claustrophobia",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356007662,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 247
+   },
+   "description": "<p><em>“We can escape through here!” Her companion pointed down the narrow, crowded, suffocating alleyway. Her heart beat against her chest. Her vision refused to focus on their escape.</em></p><p><em>“Go on ahead. I will fend them off.”</em></p><p><em>“You are outnumbered twelve to one!”</em></p><p><em>I understand swords, she thought. I under stand blood and death. Her companion slid his way through the alleyway as their pursuers rounded the corner. I hope I will live long enough to understand my fear.</em></p><p><strong>Effects:</strong> The following apply to a character with the Claustrophobia anxiety:</p><ul><li><p>-  You are intensely afraid of being enclosed in a small space or a space without an easy exit. You avoid entering such places if at all possible, and you feel anxious and distracted while in such a place.</p></li><li><p>-  After making a check that requires to you enter an enclosed space (such as a Fitness (water) check to crawl through a narrow passage or a Survival (water) check to investigate a cave), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "y12p9AVoFL6591Q4",
+  "sort": 0
+ },
+ {
+  "name": "Coming Storm",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355953068,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 73
+   },
+   "description": "<p><em>The Sugahara family had always been unlucky. Dating back generations, their children had always been born sickly and often perished in even mild winters. Every other year or so some calamity struck their harvest, leaving all others unscathed. Two summers in a row, a basan, an angry rooster spirit, burned down their coops, scattering their chickens all over the forest.</em></p><p><em>The young adults of the family had difficulties in matters of love, as other villagers did not want to risk whatever curse followed the Sugahara around. Yasu knew that some catastrophe was always around the corner for her family, and she constantly worried over it.</em></p><p><strong>Effects:</strong> The following apply to a character with the Coming Storm anxiety:</p><ul><li><p>-  Your family has endured some great hardship, such as a natural disaster, mistreatment by occupying forces, high susceptibility to illness, or recurring bad luck. As a result, you and your family are constantly vigilant for this same type of hardship and are wary of the bad fortune that will inevitably befall you.</p></li><li><p>-  When performing a check that involves planning or preparation for securing your or your family’s well-being (such as a Medicine (void) check to sense a specific ailment or a Command (void) check to warn others of the risk that your family hardship may occur again soon), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "PZTr6P8PgiNn7ktK",
+  "sort": 0
+ },
+ {
+  "name": "Conspiracy",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355903824,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 91
+   },
+   "description": "<p><em>“Why is she never seen out during the day?”</em></p><p><em>“Genjirō, you know the family keeps Lady Kaguya out of the sun because she burns so easily.”</em></p><p><em>“No, it’s because she feeds off the light of the moon.”</em></p><p><em>His friend sighed. “Moon people don’t exist, you know.”</em></p><p><em>“They do! They eat the dreams of their lovers, causing terrible nightmares.”</em></p><p><em>“Wait, does she eat dreams or moonlight?”</em></p><p><em>“You aren’t listening! If our lady’s bride-to-be isn’t human, we have to warn her. Now, moon people have a crescent-shaped birthmark on their—”</em></p><p><em>“We are not sneaking into Lady Kaguya’s bedroom to search her body! Do you want your head chopped off?”</em></p><p><strong>Effects:</strong> The following apply to a character with the Conspiracy anxiety:</p><ul><li><p>- You are plagued by the knowledge that there are greater plots in the world than what most others can see. Everywhere, treacherous schemes wait to ruin the lives of good people, and you cannot help but warn others of these awful machinations.</p></li><li><p>- After performing a check to interact with an unfamiliar authority figure (such as a Courtesy (earth) check to be properly deferential or a Government (earth) check to remember an authority figure’s specific role), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wBeHgMqK2BL7fX6I",
+  "sort": 0
+ },
+ {
+  "name": "Cynicism",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355833310,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 131
+   },
+   "description": "<p><em>“This is ridiculous,” Onishi scoffed. “Powder makes for fine fireworks, granted. But you’re telling me that barrels of the stuff will bring down the fortification around that castle? Do I look like a child, ready to believe grandfather’s stories? Please. It will never work.”</em></p><p><em>“Look, just help me get the barrels into the wagon,” Genda replied, pushing another barrel into place.</em></p><p><em>“Fine, but I still think it’s a terrible idea, which will do nothing but get us all killed.”</em></p><p><strong>Effects:</strong> The following apply to a character with the Cynicism anxiety:</p><ul><li><p>-  When faced with a truly novel or unconventional idea, you always look for ways it can fail, and others must persuade you that it could work before you will try it (even if it is your idea).</p></li><li><p>-  After performing a check to think unconventionally (such as a Performance (fire) check to improvise during a performance or a Tactics (fire) check to develop a new strategy on the fly), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "nFikHJkXQEEwG6Sw",
+  "sort": 0
+ },
+ {
+  "name": "Dark Secret",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355781252,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 132
+   },
+   "description": "<p><em>“I’m sorry that you saw that, Megumi-chan,” Kayoko said, her voice as soft as spider’s silk, her hands stained scarlet with blood.</em></p><p><em>A scream hung in Megumi’s throat, refusing to emerge. She could only stare in wide-eyed horror as Kayoko stepped closer.</em></p><p><em>“Power requires sacrifice, Megumi dear. That urchin has given her life for a higher purpose, and I have saved her from a lifetime of suffering. The power that I have gained will keep us all safe.”</em></p><p><em>Megumi tried to run, but her mind seemed disconnected from her body. Her pulse raced with the impulse to flee, but her legs would not obey.</em></p><p><em>Kayoko glided ever closer. “I can’t have you telling anyone, of course. I’m sure you understand…”</em></p><p><strong>Effects:</strong> The following apply to a character with the Dark Secret anxiety:</p><ul><li><p>-  You have a dark secret that, if exposed, could bring ruin upon your house and disgrace your ancestors and descendants alike. If the details of this secret become public, your glory value decreases dramatically, as if you had lost staked glory (by 10 to 20). Depending on the secret, your status value might also decrease considerably (by 5 to 10), as if you had lost staked status.</p></li><li><p>-  After performing a check to assert your will over yourself or others (such as a Command (void) check to order troops to fight to the bitter end or a Meditation (void) check to find inner peace), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "bd12LEtxVlmVVckt",
+  "sort": 0
+ },
+ {
+  "name": "Delusions of Grandeur",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355718515,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 132
+   },
+   "description": "<p><em>“Do not be wary of those who take risks with titles and lands; rather be wary of those who have nothing to lose. And above all, be most wary of those who say they are destined for greatness, for they will build a ladder to Heaven on the corpses of those around them.”</em></p><p><em>– Analects of Nabeshima</em></p><p><strong>Effects:</strong> The following apply to a character with the Delusions of Grandeur anxiety:</p><ul><li><p>-  You believe yourself destined for greatness, and nothing will dissuade you from your fixation upon this goal. When you are presented with a chance to advance your glory, you must attempt to pursue it.</p></li><li><p>-  After performing a check that requires facing your humble place in an uncaring universe (such as a Labor (void) check to eke out a living in the fields or a Meditation (void) check to contemplate your place in the cosmos), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "HyfRDt7Y1VM9H0ja",
+  "sort": 0
+ },
+ {
+  "name": "Disdain for Urban Sprawl",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355676330,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 96
+   },
+   "description": "<p><em>Agasha Etsu held her sleeve against her face. “I prefer the clean mountain air.”</em></p><p><em>“The thick scent of corruption disturbed Etsu-san’s senses,” Kitsuki Moriko said, lowering her voice in a mocking tone. “She surveyed the scene, seeing evil reflected in the eyes of the people before her.”</em></p><p><em>“Please stop narrating me into your investigator stories.” The older woman sighed.</em></p><p><em>“As the darkness swallowed the City of the Rich Frog, Etsu-san hardened her gaze, determined to pierce the shadows to illuminate the truth.”</em></p><p><em>“We’re standing in broad daylight!” Etsu took a deep breath, trying to summon patience from the ground beneath her. Moriko, in her own way, was only pointing out Etsu’s folly. If they were to solve this mystery, she had to overcome her annoyance at this busy, chaotic city.</em></p><p><strong>Effects:</strong> The following apply to a character with the Disdain for Urban Sprawl anxiety:</p><ul><li><p>-  You do not like dense urban areas (though small towns are fine) due to a lack of plentiful nature, the crowds of people, the pace of life, or other reasons. You are not necessarily “wild,” “feral,” or “uncivilized” and may even be knowledgeable about city life. It simply brings you no joy.</p></li><li><p>-  After performing a check to overcome some facet of city life (such as a Government (earth) check to recall a burdensome or complicated local city law or a Tactics (earth) check fighting in the tight, cluttered alleyways of a city), you receive 3 strife. If this is the first time this has occurred this scene, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "QYQw9WLJSAHBvi2U",
+  "sort": 0
+ },
+ {
+  "name": "Eyes of Many",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355604242,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 73
+   },
+   "description": "<p><em>“If you live worrying about the eyes and thoughts of others, your life is no longer your own.”</em></p><p><em>– Youta, Mystic of the Mountain</em></p><p><strong>Effects:</strong> The following apply to a character with the Eyes of Many anxiety:</p><ul><li><p>-  You are constantly worried that others are watching and judging you, whether maliciously or not. You are unable to relax in crowded places, and you tend to worry about your impressions on strangers more than most other people would.</p></li><li><p>- After performing a check in a crowded place or where two or more strangers are actively listening to you (such as a Courtesy (air) check to tell your employer your mission went very well when it did not in front of their other retainers or a Fitness (air) check to avoid notice), you suffer 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Sw9LFYlxdkwGFCfu",
+  "sort": 0
+ },
+ {
+  "name": "Failure",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355542883,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 74
+   },
+   "description": "<p><em>Rina couldn’t handle letting her mothers down again. She scaled the cliffside, the blood from her scraped-up hands smearing over the rock. She could see the top now, only a hundred feet above her. She could taste success, see the approval in her mothers' eyes... Then a handhold crumbled under her grip, and she began plummeting to the ground.</em></p><p><em>Rina woke with a start, her body covered in a thin sheen of sweat. I can’t fail, I can’t, I can’t, she thought to herself as she shook away the dream.</em></p><p><strong>Effects:</strong> The following apply to a character with the Failure anxiety:</p><ul><li><p>-  You are constantly worried about failing those to whom you have a commitment, such as family, friends, allies, a mentor, or a master. The thought of letting someone down when you have made a promise induces panic in you that manifests physically and can only be soothed by taking a step closer to accomplishing your goals.</p></li><li><p>-  After performing a check that shirks your obligations or works against keeping a promise you made (such as a Courtesy (water) check to socialize pleasantly with no purpose when you have a duty to uphold or a Games (water) check to gamble needlessly), you suffer 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4HcCZjcitSLCbJtE",
+  "sort": 0
+ },
+ {
+  "name": "Fallen Ancestor",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356439431,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 98
+   },
+   "description": "<p><em>“This is unacceptable.” The powerful samurai stood, almost posing, as the last sunlight filtered through into Kaiu Namio’s room. “You are a pitiful excuse for a Crab, let alone a Kaiu. Your works collapse. Your weapons fail.” Namio had heard it all before. Endlessly. All his life. His cheeks burned in shame.</em></p><p><em>The figure turned, and the light shifted as it passed through its clothing. “You know what you need to do to regain honor for yourself and your family. Our family.”</em></p><p><em>It beckoned to a pile of papers. “All of my records are there. All I have learned of the ways others were too stubborn to accept. You need but use them, and the power I possessed will be yours.”</em></p><p><em>Namio reached for one and began to read.</em></p><p><strong>Effects:</strong> The following apply to a character with the Fallen Ancestor anxiety:</p><ul><li><p>- Your ancestor fell to Jigoku’s seductive call, giving their name to an oni or committing a terrible atrocity. Now their spirit calls to you from Jigoku’s maw, tempting you into following them down the same dark path.</p></li><li><p>- After performing a check that involves the spirits or your family history (such as a Theology (void) check to perform a family ritual or a Sentiment (void) check to show mercy to a wounded opponent), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "uTLuhlJtWYiM2fTf",
+  "sort": 0
+ },
+ {
+  "name": "False Identity",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355447990,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 247
+   },
+   "description": "<p><em>“Why did you write your name with these characters?” the scribe said.</em></p><p><em>The woman covered her mouth to hide her nervous smile. “Yes, sorry. My mother always said the family never had any skill with calligraphy.”</em></p><p><em>The scribe frowned and blinked. “Wasn’t she a famous calligrapher?”</em></p><p><em>“Oh? Of course! I was being modest. Ha ha.” She snatched the scroll away from the scribe. “Never mind. I don’t need the family records, Master Goichi.”</em></p><p><em>“It’s Giichi.”</em></p><p><strong>Effects:</strong> The following apply to a character with the False Identity anxiety:</p><ul><li><p>-  You have an elaborate false identity that you have maintained over a long period of time. Many of the people you interact with regularly know you by this identity, and you may even have a family that does not know the truth.</p></li><li><p>-  After performing a check to maintain your false identity (such as a Courtesy (air) check to lie about your past or a Skulduggery (air) check to surreptitiously hide evidence of the truth), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mk73Ct6l32VmjMSd",
+  "sort": 0
+ },
+ {
+  "name": "Fear of [Common Creature]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355391580,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 105
+   },
+   "description": "<p><em>Ikoma Eijiro howled. The cat joined in, staring up at the man balancing on a bale of rice.</em></p><p><em>“What is wrong with you?” Junko said, after running around the corner. “Dummy-sama.”</em></p><p><em>“Junko! Help! I don’t want to hurt it, but…” Eijiro pulled out his katana, gingerly poking at the cat.</em></p><p><em>“Please get it away from me!”</em></p><p><em>“Yaaaarrl!”</em></p><p><em>Junko snatched the orange and white animal into her arms, and it immediately turned liquid, stretching and purring. She turned the cat around, upside-down, and tummy up. “It doesn’t look like a kami. Cats are good luck. They catch mice. They guard farms.”</em></p><p><em>“My family thought so too. It sat on my head! And bit me!”</em></p><p><em>Eijiro nervously rubbed his ear. Junko almost laughed, but saw… genuine fear in Eijiro’s eyes, fear he usually reserved for his family.</em></p><p><em>“Can you stop scaring Eijiro-sama?” she said to the cat, who stared at her wide-eyed. “No? Then time for you to go, little kitty.”</em></p><p><em>Eijiro knelt on the bale and placed his hands together, head bowed, dropping his katana onto the ground.</em></p><p><em>“Thank you, Junko-san. I owe you one. Thank you!”</em></p><p><strong>Effects:</strong> The following apply to a character with the Fear of [Common Creature] anxiety:</p><ul><li><p>-  You have an irrational fear of a creature that is commonly found in Rokugan. When you perceive such a creature, whether or not it is actually there, you become unnerved and your decision-making suffers.</p></li><li><p>-  After performing a check to make choices while in the presence of your feared creature (such as a Medicine (earth) check to recall how to treat a particular type of wound or a Courtesy (earth) check to act reasonably during a negotiation), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "uIPcpIEoHKhoDQHF",
+  "sort": 0
+ },
+ {
+  "name": "Fear of Death",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355298531,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 132
+   },
+   "description": "<p><em>There are few crimes worse in the mind of the Rokugani than cowardice, which is seen as a violation of no fewer than three tenets of the Code of Bushidō: Yū, Meiyo, and Chūgi. To help them teach the lessons of cowardice, Rokugan’s storytellers have many fables at their disposal: tales of courageous heroes brought low by cowardly allies, histories in which the fall of an entire noble house hinges upon a failure of courage, and more.</em></p><p><strong>Effects:</strong> The following apply to a character with the Fear of Death anxiety:</p><ul><li><p>-  You cannot voluntarily choose to die or sacrifice your life (including committing seppuku when honor demands it), and if there is a chance you could live, you must always pursue it.</p></li><li><p>-  After performing a check to risk your life or accept your mortality (such as a Meditation (earth) check to find inner tranquility before battle or a Tactics (earth) check to hold a position against long odds), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mjsfXGRv9ip0vn9n",
+  "sort": 0
+ },
+ {
+  "name": "Fear of Mediocrity",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355247040,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 106
+   },
+   "description": "<p><em>“I have climbed the highest peaks in my quest: the Wrath of the Kami, Tenkenniyoru Yama, the Iron Mountain, the Northern Wall Mountains… Nothing!</em></p><p><em>Each tincture from a flower. Each tea from an herb. Each poultice from bark. Nothing. The answer must be out there.”</em></p><p><em>- letters from Agasha AriNaga regarding an elixir of immortality</em></p><p><em>“Falling up a mountain like AriNaga, to be immortalized as a fool.”</em></p><p><em>- old Agasha saying</em></p><p><strong>Effects:</strong> The following apply to a character with the Fear of Mediocrity anxiety:</p><ul><li><p>-  Your fear of amounting to nothing causes you to seize up when faced with the need to innovate on the fly.</p></li><li><p>-  After performing a check to adapt to an unexpected situation (such as a Survival (fire) check to find shelter when your tent is destroyed or a Culture (fire) check to unexpectedly interact in an appropriate manner with someone of a higher status), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "TVReYB8XXXDEQUkr",
+  "sort": 0
+ },
+ {
+  "name": "Fear of Poison",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355158309,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 106
+   },
+   "description": "<p><em>Yasuki Fusao could still smell the vile, stale bile when his cousin vomited on him on purpose. They had exchanged no words then and no words since. Her disgusting message was clear: your poison failed to kill me and now the stink lies on you.</em></p><p><em>A servant placed the afternoon tea on the table, and Fusao grabbed his wrist. “Did you drink this?”</em></p><p><em>“Pardon, Lord Yasuki?” the servant said, perplexed.</em></p><p><em>“Drink.”</em></p><p><em>The servant sighed and poured the water into the teapot. He looked on unperturbed, and Fusao fidgeted while the tea steeped. Finally, the servant poured the tea into the cup and took a sip.</em></p><p><em>“All of it,” Fusao said.</em></p><p><em>“The tea in the cup or the teapot, Lord Yasuki?”</em></p><p><em>“Yes.”</em></p><p><em>The servant had drunk so much tea in the past year, he swore he was made of it. And yet, still no sign of poisonous retribution from Lord Yasuki’s assassination attempt. Perhaps that was punishment enough.</em></p><p><strong>Effects:</strong> The following apply to a character with the Fear of Poison anxiety:</p><ul><li><p>-  You have a fear of being poisoned by others. You would rather go hungry than accept food or drink from anyone you do not trust completely, unless you witness that food being consumed by someone else first. When you are offered food or drink by others you do not trust, you cannot help but wonder if they are secretly plotting your demise.</p></li><li><p>-  After performing a check to interact with someone you do not completely trust who has offered you food or drink (such as a Sentiment (air) check to try to determine some else’s intentions or a Games (air) check to play a game well against someone who has offered you food), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "HbMcN6TiCPXRw2LJ",
+  "sort": 0
+ },
+ {
+  "name": "Fear of Stagnation",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355072696,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 74
+   },
+   "description": "<p><em>“Stillness is for the dead.”</em></p><p><em>- Asuga, Wandering Rōnin</em></p><p><strong>Effects:</strong> The following apply to a character with the Fear of Stagnation anxiety:</p><ul><li><p>-  Staying in one place for too long frustrates and unsettles you. You also have a fear of relational commitments that tie you to one place, and you much prefer to keep moving forward. You find it difficult to have work that requires you to stay in one location for an extended period of time, and doing so causes you to become irritable.</p></li><li><p>-  After performing a check to continue a task you have spent a lot of time on (such as a Labor (earth) check to work on the same project for more than two days or a Courtesy (earth) check to make arrangements to stay yet another night in the same city), you receive 3 strife and gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "7fXjmEGYr4AMo4ME",
+  "sort": 0
+ },
+ {
+  "name": "Ferocity",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761355014957,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 132
+   },
+   "description": "<p><em>With a cry like an enraged animal, Hida Amoro threw himself into the throng of bandits. They were vicious, yet untrained, and did not expect the attack. What followed was a whirlwind of relentless, merciless violence, as Amoro moved faster than many of us could follow, utterly taking the bandits apart. We hung back and let Amoro do his work. We’d served with him long enough to know to stay out of the way when the red fury was upon him.</em></p><p><strong>Effects:</strong> The following apply to a character with the Ferocity anxiety:</p><ul><li><p>-  When you strike, you have trouble holding back your power, and you tend to lash out even when a subtler approach would be more appropriate. When you defeat a minion NPC, the minion is always killed, even if you would prefer to incapacitate them.</p></li><li><p>-  After performing a check to intentionally hold back or apply force subtly (such as a Games (air) check to manipulate your opponent or a Martial Arts [Melee] (air) check to strike a precise blow), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "anxiety",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "MTQxfQGaQaPlSLZ1",
+  "sort": 0
+ },
+ {
+  "name": "Impatience",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354948320,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 133
+   },
+   "description": "<p><em>Historians tell the story of the Battle of Thunder Plain in 1005, when the Iuchi family daimyō, in his impatience to attack a Kaiu village of the Crab Clan, brought his cavalry across the plain held sacred by the Order of Osano-wo. The order, the most martial order of the Brotherhood of Shinsei, attacked the Unicorn cavalry with polearms. When the Iuchi daimyō called upon the Fortunes for defense, the kami showed their disfavor by refusing to respond. The cavalry were soundly defeated, and they were forced to retreat back to Unicorn lands.</em></p><p><strong>Effects:</strong> The following apply to a character with the Impatience anxiety:</p><ul><li><p>-  You find it difficult to repress yourself, and when you are forced to wait, it causes you palpable discomfort. If given the choice between seizing an opportunity and waiting for a better moment, you strive to seize the opportunity despite risks that might be mitigated if you act later.</p></li><li><p>-  After performing a check to strategically weigh your options (such as a Government (earth) check to think of a historical anecdote related to your situation or a Tactics (earth) check to identify the right moment to strike), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "W0F4k54R8wphkCDE",
+  "sort": 0
+ },
+ {
+  "name": "Intolerance",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354886047,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 133
+   },
+   "description": "<p><em>“Savages!” Matsu Agetoki threw his helmet across his tent in frustration. “Our clan is expected to sully itself by marrying one of our finest lords to one of those Unicorn gaijin? How are we expected to bear such an insult?”</em></p><p><em>Matsu Seijuro knew better than to interrupt his brother at a time like this, and yet: “We do as we are commanded. The Emperor wants this match.”</em></p><p><em>“Does he indeed?” Agetoki whirled around to face Seijuro. “Then I wonder if he seeks to weaken us, through infection.”</em></p><p><strong>Effects:</strong> The following apply to a character with the Intolerance anxiety:</p><ul><li><p>-  A particular hate festers within you for a group of people (or even supernatural beings), and it overwhelms your better judgment when you are faced with members or representatives of this group. Choose one group of people or supernatural beings to be your hated enemies. When you are in the presence of these beings (and even when they are mentioned), your enmity is evident to all who observe you.</p></li><li><p>-  After performing a check to interact with a member of the chosen group (such as a Commerce (water) check to bargain with someone from a family that once wronged your own or a Composition (water) check to translate from the language of a group of foreigners you dislike due to a battle you fought against their people), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "le3SjId7bjQOS4aV",
+  "sort": 0
+ },
+ {
+  "name": "Irrepressible Flirtation",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354809500,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 134
+   },
+   "description": "<p><em>“So I snuck through the estate to her ladyship’s apartments and waited for the servants to leave before reciting the poem I had devised in her honor. You can imagine my embarrassment when it was not Lady Fujiko’s voice that answered me from behind the curtains.”</em></p><p><em>The patrons of the inn hung on my every word. One of them rushed over and put a fresh bowl of wine in my hand. “What did you do?”</em></p><p><em>“Well,” I said, taking a long sip of the wine, “I introduced myself to the lady who was there.”</em></p><p><strong>Effects:</strong> The following apply to a character with the Irrepressible Flirtation anxiety:</p><ul><li><p>-  You find it difficult to pass up the chance to flirt with people you find attractive, and when someone you find attractive flirts with you, you cannot help but return their advances with your own flirtation. Your interest is obvious to all onlookers.</p></li><li><p>-  After performing a check to interact with (or ignore) someone you are interested in without exceeding propriety (such as a Courtesy (earth) check to make appropriate small talk or a Sentiment (earth) check to know how to tread cautiously in a social scene), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1fnZPG6QkfmeeIGm",
+  "sort": 0
+ },
+ {
+  "name": "Isolation",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354646608,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 103
+   },
+   "description": "<p><em>“I find myself unsatisfied with only knowing people.</em></p><p><em>I want to care,” Daimyō Shika Renji explained. “Such a pathetic human compulsion. I long to stab someone, or love them. Both, perhaps. These feelings are unavoidable, so we Deer lock them away, then redirected them somewhere safe. In the meantime, we cannot help but feel isolated from ourselves and others. We become a collection of masks crafted for a singular purpose. There is Renji the compassionate, Renji the unifier, Renji the protector. All lies. I fear if these masks were to break, there might be nothing underneath.”</em></p><p><strong>Effects:</strong> The following apply to a character with the Isolation anxiety:</p><ul><li><p>-  To best serve your clan’s interests, you must ignore your own needs. You cannot sympathize with the people you intend to bring harm. Likewise, you cannot help people for selfish reasons. Your clan requires you to focus on the larger picture and to remove your individual wants from the equation. You are a tool for a greater purpose. The temptation to form genuine human connections is strong, and it can pull you away from your life’s mission.</p></li><li><p>-  After performing a check related to interacting with people you care for (such as a Command (earth) check to issue orders to family members or a Sentiment (earth) check to recall the feelings of your friends concerning a particular subject), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "zO7PZitJqT3j6Yyk",
+  "sort": 0
+ },
+ {
+  "name": "Jealousy",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354589099,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 134
+   },
+   "description": "<p><em>The story is told of Shiba Shikitora, a Phoenix Clan courtier in Otosan Uchi during the reign of Hantei XXXI, who was so incensed by her rival, a court poet named Kakita Sanuki, that she would try to outdo her in all things. If Sanuki presented a poem, Shikitora would present one on the following night in an effort to be the most praiseworthy. If Sanuki wore a beautiful kimono, then the one worn by Shikitora must be ten times as lovely. Sanuki’s heart was broken due to an ill-fated love, and she threw herself from the roof of the Imperial Palace. Everyone was saddened by this and spoke admiringly of the late poet who had died for love. Shiba Shikitora threw herself from a roof twice as high on the next day.</em></p><p><strong>Effects:</strong> The following apply to a character with the Jealousy anxiety:</p><ul><li><p>-  You cannot voluntarily pass up an opportunity to one-up a rival or demonstrate your superiority over someone in the eyes of others.</p></li><li><p>-  After performing a check to compete with someone to demonstrate your excellence (such as a Performance (air) check to convince an audience of something before a rival can or a Smithing (air) check to refine a weapon to perfection before presenting it as a gift to your lord), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "anxiety",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "6YxLXeo0sGVBzoPY",
+  "sort": 0
+ },
+ {
+  "name": "Loathing for Peasants",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354523835,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 247
+   },
+   "description": "<p><em>The lord had ordered the villages moved out of sight of his castle. He detested the ugly, thatched roofs. Soon the villages starved, and the taxes dwindled. The lord refused to eat any food handled by a peasant, so he hired attendants of noble lineage to feed him. His coffers shrank from paying their stipends. Eventually, the lord died without even a single bu in his possession. He left the world poorer than any bonge and more forgotten than any hinin.</em></p><p><strong>Effects:</strong> The following apply to a character with the Peasant Loathing anxiety:</p><ul><li><p>-  You find peasants to be repugnant, and even being around them makes your skin crawl. You do your best to avoid interacting with peasants, and your disgust is difficult to hide.</p></li><li><p>- After performing a check that requires you to interact with peasants (such as a Culture (water) check to observe the customs of farmers or a Courtesy (water) check to question a village leader), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fpLTd4kBViPVvv2R",
+  "sort": 0
+ },
+ {
+  "name": "Loneliness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356751639,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 248
+   },
+   "description": "<p><em>A stalk of barley,<br>Plucked by a starving farmer,<br>Quickly forgotten.</em></p><p><strong>Effects:</strong> The following apply to a character with the Loneliness anxiety:</p><ul><li><p>- You derive energy and pleasure from social interactions, and being alone makes you uncomfortable or morose. You look for excuses to avoid being alone and find it difficult to turn down any social engagement.</p></li><li><p>- After performing a check that requires you to be alone (such as a Composition (void) check to write a letter declining an invitation to the theater or a Meditation (void) check to spend a prolonged time in dedicated introspection), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yc64FF9SMsQEjs4R",
+  "sort": 0
+ },
+ {
+  "name": "Materialism",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354461857,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 134
+   },
+   "description": "<p><em>“All lust is grief, and born of too great an attachment to this world, even as the shadow follows the shape. We grasp at it like monkeys trying to snatch at the moon’s reflection on the surface of water.”</em></p><p><em>– Tao of Shinsei</em></p><p><strong>Effects:</strong> The following apply to a character with the Materialism anxiety:</p><ul><li><p>- You are obsessed with physical possessions and objects, despite what the Tao of Shinsei says about such material earthly bonds. You cannot refuse gifts of rarity 3 or higher.</p></li><li><p>- After performing a check to give up a physical object in your possession or other thing of value (such as a Government (void) check to find a way to sacrifice a holding to gain a political advantage over a rival), you suffer 3 strife. If this is the first time this has occurred this scene, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gTGHEeH86956q9y5",
+  "sort": 0
+ },
+ {
+  "name": "Meekness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354411305,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 134
+   },
+   "description": "<p><em>“Do you have something to add, Takeshiro?” Abbot Kenzo looked up from the scrolls he was transcribing to where the young initiate was sweeping the floor.</em></p><p><em>Takeshiro became focused upon a particularly dirty section of the chamber. He tried to respond, yet all that came out was a strangled mumble. He had wanted to point out the rainwater that had begun to drip from the patchy roof and was in danger of wetting the ancient scrolls, but he could not work up the courage.</em></p><p><em>“Hmm,” the abbot nodded. “I thought not.”</em></p><p><strong>Effects:</strong> The following apply to a character with the Meekness anxiety:</p><ul><li><p>- You are extremely shy, and you struggle to stand up for yourself. You cannot interrupt people of higher status, and you find it very hard to assert yourself over anyone, including people of lower status.</p></li><li><p>-  After performing a check to stand out or get what you need (such as a Command (fire) check to inspire troops under your command or a Government (fire) check to assess your rights on a matter), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "pdNzmwmzt441hEph",
+  "sort": 0
+ },
+ {
+  "name": "Obtuse",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356622307,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 98
+   },
+   "description": "<p><em>Hida Shion looked out over the field, filled with plants. Flowers, actually, more than she’d ever seen before. It was spring, and suddenly flowers were everywhere. Even here, just north of the Wall, there were flowers. Children ran among them, playing. Couples made their way through them slowly, enjoying the fragrances and smiling at the life all around them. Tomorrow it would all be cleared to make way for a new dōjō, something actually useful. Shion picked up one of the purple petals, then snorted and dropped it to the ground.</em></p><p><strong>Effects:</strong> The following apply to a character with the Obtuse anxiety:</p><ul><li><p>- Try as you may, you just cannot enjoy art, poetry, music, or other such needless frivolities. Subtlety is lost on you, beauty is something you don’t comprehend, art is a waste of resources, and anything but the purely functional is meaningless in your eyes. Your dour presence can be overwhelming in social settings, and you generally forget social niceties unless reminded.</p></li><li><p>- After performing a check to analyze or react to the emotions of others (such as a Design (air) check to compliment someone’s garb or a Sentiment (air) to decode a double meaning in someone else’s speech), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "LkUeeW564hNbYdUQ",
+  "sort": 0
+ },
+ {
+  "name": "Omen of Bad Luck",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354339871,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 92
+   },
+   "description": "<p><em>The shape of the deathly white daikon resembled a woman. The stalks that should have been strong and green were thin, wispy, and black, like hair.</em></p><p><em>“Did...it just move?” Momoe whispered.</em></p><p><em>“Throw it away,” her friend said. “It’s obviously gone bad.”</em></p><p><em>“No, this looks like the onryō that killed my family.”</em></p><p><em>“Momoe, don’t be silly. Onryō only kill those who have done wrong—” The group’s laughter died down. Her friends turned their gaze and quietly shuffled away.</em></p><p><strong>Effects:</strong> The following apply to a character with the Omen of Bad Luck anxiety:</p><ul><li><p>- Omens of bad luck seem to follow you wherever you go. Even if bad luck rarely befalls you, others see these signs and tend to respond negatively to them (and to you).</p></li><li><p>- After performing a check to interact with someone (such as a Commerce (water) check to trade for goods with a superstitious merchant or a Government (water) check to gather information from people who have witnessed one of your bad omens), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul><p></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "8VTZvFOQ0SLZPrcy",
+  "sort": 0
+ },
+ {
+  "name": "Painful Honesty",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354247870,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 135
+   },
+   "description": "<p><em>A popular, if bawdy, song at many roadside inns in Rokugan, “The Honest Husband” is the story of a staunch-hearted farmer who can never tell a lie. The song progresses through several verses where he is faced with questions from his wife about her weight, the attractiveness of her sister, and other increasingly risky (and risqué) situations. The song’s refrain of “you know I love you, dearest, but I cannot tell a lie” has become on its own a catchphrase, used jokingly when a person is asked difficult questions.</em></p><p><strong>Effects:</strong> The following apply to a character with the Painful Honesty anxiety:</p><ul><li><p>-  You are tormented by internal conflict when you lie or allow a lie to pass. You cannot make claims you know to be false, although you can say technically truthful things that imply untruths, if politeness or circumstances demand it.</p></li><li><p>-  After you make a check to mislead someone else (such as a Courtesy (air) check to falsely besmirch someone’s reputation or a Command (air) check to manipulate an underling), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JeVAZvXZnfqtSNIW",
+  "sort": 0
+ },
+ {
+  "name": "Paranoia",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354186485,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 135
+   },
+   "description": "<p><em>“A person who sees enemies everywhere is always blind to their truest enemy, for that enemy is behind their eyes.”</em></p><p><em>–Tao of Shinsei</em></p><p><strong>Effects:</strong> The following apply to a character with the Paranoia anxiety:</p><ul><li><p>-  In every shadow, you see assassins, and in every smile, you see a rival in pursuit of your undoing. This fear makes it very hard for you to rely upon others, and it might distract you from real threats. You cannot relax unless you have confirmed vital information (such as your current safety) for yourself.</p></li><li><p>-  After performing a check to identify danger in your environment (such as a Government (water) check to know the political currents in a court or a Sentiment (water) check to sense if someone’s intentions toward you are hostile), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "anxiety",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "EbLpNeP8a7zoulaH",
+  "sort": 0
+ },
+ {
+  "name": "Perfectionism",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354128199,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 135
+   },
+   "description": "<p><em>In the Imperial Palace at Otosan Uchi, in a room entirely dedicated to this purpose, a painting is on display. It is not a mounted screen but rather a simple length of paper, tacked on a piece of wood. It depicts the morning mist rising from the Bay of the Golden Sun, with fisherfolk heading out for the day’s catch. It is a sublime work of art, although unfinished…and it is also the most valuable painting in all of Rokugan. It is the sole surviving painting of Master Jun. It was the painting he was working on when he died. None of Jun’s other paintings exist, because as soon as he would finish one, he would reflect upon some imperfection or flaw in the work, and burn it.</em></p><p><strong>Effects:</strong> The following apply to a character with the Perfectionism anxiety:</p><ul><li><p>-  Anything short of perfection in your work is unacceptable to you, and you have been known to create works of beauty only to cast them aside over some perceived flaw. You cannot help but try to improve any work in which you identify a flaw, even if it means informing someone of higher status of an error they have made.</p></li><li><p>-  After performing a check in which you must interact with an imperfect or unfinished work (such as an Aesthetics (water) check to improve an existing piece of art or a Composition (water) check to translate a work without losing any of the nuance present in the original language), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "anxiety",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "URN7G6kfWsLX9Dbe",
+  "sort": 0
+ },
+ {
+  "name": "Phobia",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761354028106,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 136
+   },
+   "description": "<p><em>Lord Shosuro Kosugi was said to have been terrified of black crows, having been plagued by recurring dreams of a black crow as a harbinger of his death. He stationed archers all around his castle and in specially built hunting blinds for miles around his lands, with standing orders for any black crow to be shot on sight. It is said that he was found dead in his chambers, his face twisted into a rictus of terror. On the floor of the room was a single black feather.</em></p><p><strong>Effects:</strong> The following apply to a character with the Phobia anxiety:</p><ul><li><p>-  Choose something mundane. You have a debilitating fear of this thing. You cannot speak its name. In its presence, you cannot hide your fear, and you attempt to flee if at all possible.</p></li><li><p>-  After performing a check to deal with your phobia (such as a Courtesy (water) check to talk pleasantly about the subject or a Survival (water) check to identify it as the thing you fear), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "anxiety",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "O4B6CP5FHJtpn3Jv",
+  "sort": 0
+ },
+ {
+  "name": "Reformed Maho-Tsukai",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761356600515,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 99
+   },
+   "description": "<p><em>I remember my past. It was always filled with heat. Flames roared in my eyes, blood dripped from my knives, the air itself burned as things not of the Mortal Realm did my bidding. I know my present. It is simple, isolated, penitent. I see those who died at my hand when I look across the fields, their eyes piercing my soul with each hateful stare. I hear whispers in the night, plots from those who sacrificed at my side but now want only to carve me as we once did to our captives. I can feel tendrils of power seeking me out, Witch Hunters and others who can never forgive what I was or accept I have changed. I do not believe I have a future in this life. Perhaps, after many hundreds of passages around the Celestial Wheel, I may be allowed to reincarnate as a human again. Perhaps.</em></p><p><strong>Effects:</strong> The following apply to a character with the Reformed Mahō-Tsukai adversity:</p><ul><li><p>- Once you were a mahō-tsukai who wielded dreadful blood magics under the tutelage of the Bloodspeakers or your own occult study. But that was then. You have since seen the error of your ways and live a life of atonement. You’ve done everything you can to bury your past, but a bell cannot be unrung, and now and again it still catches up with you. The consequences of the atrocities you committed still find you out, oni you summoned still seek you, and the tsukai with whom you once consorted will stop at nothing to silence you. We cannot outrun our shadows; sooner or later, you known that yours will claim their due. If the details of this your terrible past life become public, your glory value decreases dramatically, as if you had lost staked glory (by 30 to 40). Your status value also decreases considerably by the same amount, as if you had lost staked status.</p></li><li><p>- After performing a check that reminds you of your former life (such as a Courtesy (water) check to speak pleasantly with a priest or religious scholar or a Meditation (water) check to calm yourself when witnessing the aftermath of a blood magic sacrifice), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "BUzdzZay79KqTjai",
+  "sort": 0
+ },
+ {
+  "name": "Softheartedness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761353959520,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 136
+   },
+   "description": "<p><em>“Go,” I said, breaking the bandit’s bow over my knee.</em></p><p><em>“Leave. I never want to see you in our lands again.”</em></p><p><em>The bandit, barely more than a boy, looked nervously at Utatsu, who scowled and leaned heavily on his spear. The young bandit looked back to me. </em></p><p><em>“Go on. Get out of here,” I repeated. He didn’t require more urging, and he scampered down the road as fast has his skinny legs could carry him.</em></p><p><em>“You should have killed him,” Utatsu grumbled.</em></p><p><em>“Robbing people at arrow point is not a boy’s prank.”</em></p><p><em>“I’ve had my fill of killing,” I said. “If I had struck him down, he would not have learned anything. This way, he has a chance.”</em></p><p><em>Utatsu shook his head at my folly as we headed back to the village.</em></p><p><strong>Effects:</strong> The following apply to a character with the Softheartedness anxiety:</p><ul><li><p>-  If given the choice to kill someone or show mercy, you always spare their life, even if it is not in your interest to let them live.</p></li><li><p>-  After performing a check that addresses or involves killing others or letting them die (such as a Government (fire) check to estimate the burden a war would place on the common people or a Martial Arts [Ranged] (fire) check to shoot to kill), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "I9vpHAkk4Lg7QJrO",
+  "sort": 0
+ },
+ {
+  "name": "Superstition",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761353886911,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 136
+   },
+   "description": "<p><em>“A great deal of folk wisdom revolves around death. Peasants will avoid the number four because the pronunciation is close to one of the words that means ‘death.’  Chopsticks should never be stuck upright in rice, as this mimics the placement of a ceremonial bowl upon the altar at a funeral. And one should never, ever write a person’s name in red ink, as the names on grave markers always are painted in red.”</em></p><p><em>–Observances of Empire, by Moto Kojiro</em></p><p><strong>Effects:</strong> The following apply to a character with the Superstition anxiety:</p><ul><li><p>-  When faced with signs of the supernatural, you become visibly agitated, and you attempt to leave the scene, appease the being or phenomenon in question, or acquire supernatural protection of some kind.</p></li><li><p>-  After performing a check to interact with or learn about a supernatural being or phenomenon (such as a Meditation (void) check to perceive the presence of a supernatural being or a Theology (void) check to know a supernatural being’s designs or desires), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "anxiety",
+   "types": "Mental, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "2fgVtTp5P432DjTU",
+  "sort": 0
+ },
+ {
+  "name": "Tip of the Tongue",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761353820823,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 97
+   },
+   "description": "<p><em>Orghina sucked her teeth in frustration. She knew the Rokugani word. Except the Rokugani word refused to leap from her mind and down her tongue, and the Rokugani merchant smiling politely in front of her would not have any idea what the Ujik equivalent meant.</em></p><p><em>“Are you looking for dried fish?” the merchant said.</em></p><p><em>Orghina shook her head. “No, it’s not food.”</em></p><p><em>“A netsuke?”</em></p><p><em>“No, you don’t wear it!”</em></p><p><em>“Ah! Of course, I have a set of tantō you might like.”</em></p><p><em>“No! You don’t…nothing that stabs.”</em></p><p><em>The merchant then went on a litany of Rokugani nouns as Orghina sat down on a stool, head in her hands.</em></p><p><strong>Effects:</strong> The following apply to a character with the Tip of the Tongue anxiety:</p><ul><li><p>-  You know more than one language, perhaps several, and are fluent in all of them. So fluent that your mind mixes and matches words from all of them. While it does not hinder you socially, you find this frustrating when you cannot come up with that word you definitely know.</p></li><li><p>-  After performing a check to communicate that requires you to bridge cultural, religious, philosophical, or regional differences (such as a Courtesy (air) check to use veiled wordplay or metaphors to smooth out a dispute between the samurai and bonge or a Theology (air) check to explain an equivalent religious idea from another culture), you receive 3 strife. If this is the first time this has occurred this scene, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "SUMU4sHoppE2zn9G",
+  "sort": 0
+ },
+ {
+  "name": "Uncleanliness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761353742185,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 92
+   },
+   "description": "<p><em>The two samurai argued over tea. “Rie-san, we must press onward.”</em></p><p><em>“This is a journey. We should enjoy the simple pleasures, Etsuko-san.”</em></p><p><em>The bathhouse attendant, Sumiye, smiled as she poured tea. Inwardly, she seethed at the dust covering the samurai’s kimono. No wonder I can’t keep this place clean.</em></p><p><em>“I will prepare the onsen, samurai-sama,” she said.</em></p><p><em>“Yes!” the one called Rie shouted, slamming their hand on the table. The dust exploded off their kimono and drifted onto the once-pristine floor.</em></p><p><em>Sumiye smiled, bowed, and shuffled off to keep herself from screaming.</em></p><p><strong>Effects:</strong> The following apply to a character with the Uncleanliness anxiety:</p><ul><li><p>- Uncleanliness in places and on things that could be clean causes you physical and mental distress. Though the forest is meant to be dirty because it is natural, your kimono is meant to be pristine and clean.</p></li><li><p>- After performing a check to interact with a person, place, or thing that is unclean (such as a Skulduggery (air) check to sneak down a filthy alleyway or a Sentiment (air) check to focus on learning something from a dirt-covered peasant), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "anxiety",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Rxwviu47vUtmZ0vg",
+  "sort": 0
+ },
+ {
+  "name": "Vanity",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761353639538,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 92
+   },
+   "description": "<p><em>“Do you think I should use the rabbit or the manjū?”</em></p><p><em>His attendant suppressed a sigh. “Lord Kitsuki, would not a decorative netsuke be seen as frivolous?”</em></p><p><em>“Nonsense. I am attending the court of the Emperor. I must look my best.” He held the rabbit-shaped ivory container from its cord by his side. “Ugh, it looks so plain.”</em></p><p><em>He frowned. “I know! My uncle has a mirror-lid netsuke. It is intricate, prized, and ostentatious. Get it from him. Even if you have to steal it.”</em></p><p><em>The servant smiled and bowed as she left, even though she daydreamed of Lord Kitsuki swallowing and choking on the netsuke.</em></p><p><strong>Effects:</strong> The following apply to a character with the Vanity anxiety:</p><ul><li><p>- You are hyperfocused on your physical appearance, and you truly believe you should be adored for your beauty.</p></li><li><p>- After performing a check in which your physical appearance is in jeopardy or is being challenged (such as a Courtesy (void) check to explain your plan to someone you perceive as more beautiful than you or a Survival (void) check to perform sweat-inducing labor in order to make camp), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "lexSTZ14vbYADlLv",
+  "sort": 0
+ },
+ {
+  "name": "Web of Lies",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147578358,
+   "modifiedTime": 1761353416033,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 103
+   },
+   "description": "<p><em>Shika Kado felt his breath hitch in his throat. To his left was Akodo Hoshi, the man Kado had told to mistrust the Matsu family. To his right, Matsu Kagami, the woman Kado had encouraged to romance Akodo Hoshi. Kado had intended not to see them again, but here they were at the same wedding. His foot unconsciously tapped as he considered all of the possible excuses for leaving.</em></p><p><em>“Matchmaker!” Kagami grinned as she approached him. “Are you responsible for this happy union?”</em></p><p><em>“The Fortunes are. I just connected the threads,” Kado replied, unsure if he should force a smile. In his periphery, Kado was sure Hoshi was looking their way. “Unfortunately, I am feeling ill.”</em></p><p><em>“You do look pale.”</em></p><p><em>“Yes.” Kado’s voice faltered. “I have no doubt I do.”</em></p><p>Effects: The following apply to a character with the Web of Lies anxiety:</p><ul><li><p>-  You must be ever mindful of your elaborate, deceitful plots. You must know who was told what lie, which lies contradict each other, and what people are likely to say to one another. The more lies, the more intricate the web grows. One slip of the tongue could cause it all to implode, as you face a constant risk of contradicting yourself.</p></li><li><p>-  After performing a check to deceive someone you have deceived before (such as a Courtesy (air) check to convince someone that you are a member of a clan when other clan members have never heard of you or a Skulduggery (air) check to convince the victim of one of your previous cons that you didn’t mean to steal their money), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "anxiety",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "C5scwpeEaftsDAQc",
+  "sort": 0
+ }
+]

@@ -1,0 +1,366 @@
+{
+ "slug": "ikoma-no-hosokawa-ota",
+ "name": "Ikoma no Hosokawa Ota",
+ "folder_label": "Ikoma no Hosokawa Ota (Yogo Penitent)",
+ "bucket": "Bushi",
+ "accent": "#e70d0d",
+ "identity": {
+  "clan": "Lion",
+  "family": "Yogo",
+  "school": "Yogo Penitent Order",
+  "role": "Bushi",
+  "age": ""
+ },
+ "portrait": "src/portraits/ikoma-no-hosokawa-ota.png",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "step1": {
+   "clan": "Scorpion",
+   "ring": "air",
+   "skill": "skulduggery",
+   "social_status": 35
+  },
+  "step2": {
+   "family": "Yogo",
+   "ring": "void",
+   "skill1": "composition",
+   "skill2": "theology",
+   "wealth": 4,
+   "social_glory": 39
+  },
+  "step3": {
+   "school": "Yogo Penitent Order",
+   "roles": "Bushi",
+   "ring1": "void",
+   "ring2": "air",
+   "skill1": "fitness",
+   "skill2": "melee",
+   "skill3": "unarmed",
+   "skill4": "meditation",
+   "skill5": "none",
+   "allowed_techniques": {
+    "kata": true,
+    "kiho": true,
+    "inversion": false,
+    "invocation": false,
+    "ritual": true,
+    "shuji": false,
+    "maho": false,
+    "ninjutsu": false,
+    "mantra": false,
+    "specificity": true
+   },
+   "techniques": [
+    "L5RCoreKat000027",
+    "L5RCoreKih000008",
+    "L5RCoreRit000003",
+    "L5RCoreRit000005"
+   ],
+   "school_ability": [
+    "L5RCoreSch000091"
+   ],
+   "equipment": [
+    "L5RCoreWea000027",
+    "L5RCoreWea000035",
+    "L5RCoreWea000019",
+    "L5RCoreArm000009",
+    "L5RCoreIte000032"
+   ],
+   "social_honor": 40
+  },
+  "step4": {
+   "stand_out": "He is grounded and responds to provocations; he does not react to them. Responses are always considered, although sometimes that consideration occurs in fractions of a second.",
+   "ring": "earth"
+  },
+  "step5": {
+   "social_giri": "Ikoma Kenji sought out the Yogo monastery. He has felt cornered by his beloved brother, who refuses to recognize reality, and Kenji needs an ally who can help him overcome his aversion to conflict; and if needed, initiate that conflict."
+  },
+  "step6": {
+   "social_ninjo": "Ota longs to be a peacemaker, but does not have the liberty to contest his lord's framing nor leave his lord's service to serve others more in keeping with his desire."
+  },
+  "step7": {
+   "clan_relations": "Ota no longer has a relationship with the Scorpion clan; when the monastery released him into Ikoma Kenji's service, he was released fully. That doesn't mean the Scorpion won't try to reinsert themselves someday, however. But Kenji had the Hosokawa formally adopt Ota and bring him into the Lion clan legally.",
+   "skill": "culture",
+   "social_add_glory": 0
+  },
+  "step8": {
+   "bushido": "Ota believes that bushido is something that must be strived for, and must be failed at.",
+   "skill": "none",
+   "social_add_honor": 10,
+   "tenet_paramount": "Compassion",
+   "tenet_less_significant": "Honor",
+   "item": []
+  },
+  "step9": {
+   "success": "Upon grieving his greatest humiliation, Ota dedicated himself to the monastic arts, and found excellence in the practice of air kiho; even though he is no longer bound to the Yogo, he knows that should he even have need, he need but ask.",
+   "distinction": [
+    "L5RCoreDis000040"
+   ]
+  },
+  "step10": {
+   "difficulty": "The other Hosokawa do not know who Ota was, and the reasons for adoption were made opaque to them, but they cannot help but believe there is a darkness there, and sometimes they can see that darkness in Ota's eyes.",
+   "adversity": [
+    "L5RCoreAdv000046"
+   ]
+  },
+  "step11": {
+   "calms": "Ota delights in selecting and preparing a gift that is a perfect match for the recipient.",
+   "passion": [
+    "L5RCorePas000009"
+   ]
+  },
+  "step12": {
+   "worries": "Ota remembers burying his sister alive. He tries not to. But part of him cannot shake the horror, and he refuses to allow himself to be similarly trapped.",
+   "anxiety": [
+    "L5RCoreAnx000027"
+   ]
+  },
+  "step13": {
+   "most_learn": "Yogo Kitohime never asked what Ota had done. Never judged him. She knew his burden intimately, like he knew hers. She focused him on the present, not the past.",
+   "skill": "none",
+   "advantage": [
+    "L5RCoreDis000055"
+   ],
+   "disadvantage": []
+  },
+  "step14": {
+   "first_sight": "The bold golden sash with fine details in red thread that is tied to Ota's yari matches the sash he wears, and is unusual for the Hosokawa.",
+   "special_features": [
+    "L5RCoreIte000107"
+   ]
+  },
+  "step15": {
+   "stress": "Ota refuses to be touched by others while disregulated or in physiological distress."
+  },
+  "step16": {
+   "relations": "We discussed the Ikoma, Hosokawa and Yogo; the rest we can figure out in the story. The lion helm indicates his association with the Ikoma family.",
+   "item": [
+    "L5RCoreIte000084"
+   ]
+  },
+  "step17": {
+   "parents_pov": "As a child, Yogo Ota didn't get to see much theater, but what little he witnessed sparked his imagination and he and his sister made many of their own productions around their home.",
+   "skill": "performance",
+   "bond": []
+  },
+  "step18": {
+   "heritage_name": "Uncle Ota was an accomplished polearm master, who was delighted to teach what he could to his young namesake. He left on his lord's business when Ota was a young teen, and never returned.",
+   "heritage_1": 8,
+   "heritage_2": 3,
+   "heritage_item": [
+    "L5RCoreKat000054"
+   ],
+   "heritage_add_honor": -5,
+   "heritage_add_glory": 0,
+   "heritage_add_status": 0,
+   "skill": "none"
+  },
+  "step19": {
+   "firstname": "Ota"
+  },
+  "step20": {
+   "death": "Ota hopes that his death is fated before he is forced into doing something irreversible and terrible on behalf of his lord."
+  },
+  "autoCompleteListName": "step3.roles",
+  "autoCompleteListSelectedIndex": "1"
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Yogo Penitent Order",
+   "foundry_id": "87l78AncRTk6DMWJ",
+   "foundry_name": "Ikoma no Hosokawa Ota 0 XP",
+   "rings": {
+    "air": 3,
+    "earth": 2,
+    "fire": 1,
+    "water": 1,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 39,
+    "status": 35,
+    "ninjo": "Ota longs to be a peacemaker, but does not have the liberty to contest his lord's framing nor leave his lord's service to serve others more in keeping with his desire.",
+    "giri": "Ikoma Kenji sought out the Yogo monastery. He has felt cornered by his beloved brother, who refuses to recognize reality, and Kenji needs an ally who can help him overcome his aversion to conflict; and if needed, initiate that conflict.",
+    "bushido_tenets": {
+     "paramount": "Compassion",
+     "less_significant": "Honor"
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 6,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Veiled Menace Style",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Air Fist",
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Divination",
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Threshold Barrier",
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Oath of Sacrifice",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Snapping Branch Strike",
+     "kind": "kata",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Support of the Yogo",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Interpersonal",
+     "custom": true,
+     "description": "<ul><li><p><span class=\"fontstyle0\">You have proven yourself to a particular group, which is willing to help you when doing so will not damage its reputation. Its members will offer you their hospitality, including meals, a place to rest, and medical attention if they have a healer. They will also grant you access to their other facilities, such as libraries, smithies, or stables. Confer with the GM to select a campaign-appropriate group when choosing this advantage.</span></p><p></p></li><li><p><span class=\"fontstyle0\">When performing a check to interact with the members of the chosen group that relies on your rapport (such as a Command [Water] check to issue them orders or a Performance [Water] check to cause an audience of them to desire something), you may reroll up to two dice.</span></p></li></ul>",
+     "source_reference": {
+      "source": "core_rulebook",
+      "page": 110
+     },
+     "xp_cost": 3
+    },
+    {
+     "name": "Whispers of Doom",
+     "kind": "adversity",
+     "ring": "void",
+     "types": "Infamy, Interpersonal"
+    },
+    {
+     "name": "Generosity",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Claustrophobia",
+     "kind": "anxiety",
+     "ring": "water",
+     "types": "Mental"
+    },
+    {
+     "name": "Ardent Leader",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Dark Secret",
+     "kind": "anxiety",
+     "ring": "void",
+     "types": "Interpersonal"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Yari",
+     "quantity": 1
+    },
+    {
+     "name": "Shuriken",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Common Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Golden Sash",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "core_rulebook",
+      "page": 236
+     },
+     "rarity": "1",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Animal Helm",
+     "quantity": 1
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

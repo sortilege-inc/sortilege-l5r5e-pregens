@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coverage Ledger — Sortilege L5R Pregens</title>
+<meta name="description" content="What of Legend of the Five Rings 5th Edition the pregen archive has put into play, and what it has not.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="../index.html">Sortilege L5R Pregens</a>
+  <a href="../index.html">Home</a>
+  <a href="../characters/index.html">Characters</a>
+  <a href="index.html" class="active">Coverage</a>
+</nav>
+
+<div class="wrap wide">
+  <header class="masthead">
+    <div class="cartouche">
+      <div class="eyebrow">Admin</div>
+      <h1>The Coverage Ledger</h1>
+    </div>
+    <p class="sub">Everything the compendium contains, and whether anyone in the archive has picked it up yet.</p>
+  </header>
+
+  <div class="seg" id="tabs" style="flex-wrap:wrap;margin-bottom:1rem"></div>
+  <div class="covergrid" id="headline"></div>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Search by name…">
+    <label for="f-book">Source</label>
+    <select id="f-book"></select>
+    <label for="f-kind">Kind</label>
+    <select id="f-kind"></select>
+    <div class="seg" id="status">
+      <button data-status="all" class="active">All</button>
+      <button data-status="used">Used</button>
+      <button data-status="unused">Unused</button>
+    </div>
+    <span class="chip" id="count"></span>
+  </div>
+
+  <div id="table"></div>
+  <div id="extras" style="margin-top:2.5rem"></div>
+</div>
+
+<footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
+
+<script src="../data/roster.js"></script>
+<script src="../data/catalog.js"></script>
+<script src="../data/coverage.js"></script>
+<script src="../assets/admin.js"></script>
+</body>
+</html>

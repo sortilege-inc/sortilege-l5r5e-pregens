@@ -1,0 +1,12 @@
+# Secrets — never commit
+.env
+
+# Generated build-time store; rebuild with scripts/build.py
+pipeline/l5r.sqlite
+
+# Local python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/

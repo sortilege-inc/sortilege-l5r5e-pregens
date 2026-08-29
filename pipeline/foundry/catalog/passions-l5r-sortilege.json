@@ -1,0 +1,1976 @@
+[
+ {
+  "name": "Ancestry",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761243840013,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 83
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“…Son of Matsu Hoshiko, who was the daughter of Matsu Jirō, who inherited the title from Matsu Kaoru, his aunt, and not from his direct forebears. And so we continue tracing the line from Matsu Kaoru, who was the daughter of—”</em></span></p><p><span class=\"fontstyle0\"><em>“How can you remember all of this?” the young girl asked in wonderment.</em></span></p><p><span class=\"fontstyle0\"><em>The tutor looked at her and smiled, and answered simply, “How can I not?”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Ancestry passion:</span></p><ul><li><p><span class=\"fontstyle3\">- The recollection of lineages comes easily to you. You know your own family history as far back as it has been recorded, and can swiftly recall the lineages of notable figures in Rokugan’s history. With a few contextual cues, you can deduce the ancestry of those you meet and remember the great deeds of their forebears.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to recall or determine the family history of another character (such as a Government (earth) check to remember a past daimyō of a family, or a Command (earth) check to remind a subordinate of the expectations their ancestors would have of them), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vmi5jM78l3aEYxFC",
+  "sort": 4100000
+ },
+ {
+  "name": "Animal Bond",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761239802429,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 111
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The rat ran down the length of the dungeon corridor until it came to the cell at the end. Clenched in its mouth was an iron ring, from which hung several keys.</em></span></p><p><span class=\"fontstyle0\"><em>“Good boy, Genki,” said Sorata, stretching his fingers out beneath the heavy wooden door of his cell. “Give them here. The innkeeper should have donated that meal to me, to give luck to his establishment! Imagine! Calling the magistrate. On me!”</em></span></p><p><span class=\"fontstyle0\"><em>The rat pushed the keys within reach, and Sorata pulled them quickly beneath the door. “Yes, yes,” Sorata continued as the rat squeaked. “I’m sure I have a few crumbs of cheese for you. Just give me a moment.”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Animal Bond passion:</span></p><ul><li><p><span class=\"fontstyle3\">- Reciprocating your interest, a small, mundane animal of some kind has attached itself to you. Choose one silhouette 0 or 1 animal; it follows you around wherever you go and generally acts as your companion. It can be cajoled to do what you want, but it might need incentives (usually food) to perform difficult tasks on demand. If you are granted an animal as part of your starting outfit, that animal can be your companion (regardless of the usual size restrictions).</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to interact with an animal (such as a Medicine (earth) check to mend its injuries or a Survival (earth) check to calm it), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mw5gUp2wRGjTrncM",
+  "sort": 100000
+ },
+ {
+  "name": "Armament",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761239785466,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 111
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“The craftsmanship on this truly is exquisite,” Ikoma Eiji said, examining the spear on the table before him. The weapon had an eight-foot shaft of strong wood, surmounted by a two-foot blade carved with intricate symbols.</em></span></p><p><span class=\"fontstyle0\"><em>“Great Fortunes! Do you realize what this is? These carvings…” he ran his finger along the crest engraved into the metal of the blade. “This is Kotoku, the ancestral weapon of the Daidoji family!”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Armament passion:</span></p><ul><li><p><span class=\"fontstyle3\">- Unless the piece comes from outside of the Emerald Empire, you know the name of any weapon or piece of armor you encounter, are aware of its function, and have a rudimentary understanding of how to equip and wield it.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to make or study arms or armor (such as a Smithing (earth) check to polish a suit of armor or a Tactics (earth) check to know how to arrange a proper spear formation), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "n4XQNJt4H0hrftsW",
+  "sort": 200000
+ },
+ {
+  "name": "Attention",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761243558337,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 70
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The thrill of having all eyes turn to you is like lightning in the veins. In those moments, the rush of exhilaration is all that matters.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Attention passion:</span></p><ul><li><p><span class=\"fontstyle3\">- At the start of each scene, you can always determine the most effective way to gain the attention of those around you.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to capture someone’s attention (such as a Performance (fire) check to entice a wealthy merchant with hints of future riches or a Games (fire) check to draw a crowd with a daring move), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "lyxcpmFM0M02k8GQ",
+  "sort": 3800000
+ },
+ {
+  "name": "Bathing",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241287420,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 90
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Rie sighed, a loud exhalation of tension bordering on an ecstatic prayer to the Heavens, the woes of the road drifting away as their body slipped into the warm water. Their companion approached and, unceremoniously, plopped down next to them. “Etsuko-san!” said Rie. “You can’t just sit down without washing first: it’s uncouth!”</em></span></p><p><span class=\"fontstyle0\"><em>The woman frowned. “If you love the formalities of </em></span><span class=\"fontstyle2\"><em>onsen </em></span><span class=\"fontstyle0\"><em>so much, you should reincarnate as a bathhouse attendant.”</em></span></p><p><span class=\"fontstyle0\"><em>Rie couldn’t help but smile. “Imagine being able to bathe whenever we want. The heimin working here must be truly blessed.”</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Bathing passion:</span></p><ul><li><p><span class=\"fontstyle2\">- You are familiar with all of the nuances of bathhouses and the traditions of bathing, and are talented at overhearing gossip in such places.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check while bathing (such as a Sentiment (water) check to eavesdrop on a conversation or a Composition (water) check to ponder how to improve a poem), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yg3JI4QLVCDoN5KB",
+  "sort": 2200000
+ },
+ {
+  "name": "Bonsai",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241824356,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 243
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“No, don’t clip that.” He swatted her hand out of the way.</em></span></p><p><span class=\"fontstyle0\"><em>“But the branch is out of place.”</em></span></p><p><span class=\"fontstyle0\"><em>“Nature does not think in terms of ‘out of place.’ It simply is.”</em></span></p><p><span class=\"fontstyle0\"><em>“Then why do we spend all this time trimming these things? By our very action we go against nature.”</em></span></p><p><span class=\"fontstyle0\"><em>“Ah, see, you think we are apart from nature. We do bonsai to remember that we are not.”</em></span></p><p></p><p><span class=\"fontstyle0\">The following apply to a character with the Bonsai passion:</span></p><ul><li><p><span class=\"fontstyle0\">- You know a great deal about the art of bonsai, including the tools and techniques used in its practice. You can judge the quality of a bonsai tree and tell when a piece has been neglected.</span></p></li><li><p><span class=\"fontstyle0\">- After performing a check to interact with a bonsai piece (such as an Aesthetics (air) check to prune or maintain a tree or a Sentiment (air) check to identify someone’s emotional response to a bonsai work) you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "M4TbCIDhP4jsrikC",
+  "sort": 3100000
+ },
+ {
+  "name": "Brushwork",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761239866569,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 111
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>There are few arts more respected in Rokugan than those of the calligrapher and painter. The grace and precision of the brush, able to capture life or thought upon paper, is a discipline that few master. The greatest practitioners of the brush are revered for more than just the works they produce; they are admired for their mastery of self, the inward focus on achievement through great effort.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Brushwork passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You can identify the signature styles of numerous different schools and individual artists, as well as common motifs and techniques.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to study or practice brushwork (such as an Aesthetics (air) check to assess a painting’s qualities and artist or a Composition (air) check to add the finishing touches to a letter written in calligraphy), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "passion",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Q5OE5qzPYY5KsAwk",
+  "sort": 300000
+ },
+ {
+  "name": "Charity",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761243271309,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 103
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“That’s a Crane samurai?!” Shōichirō said. “That one?! Whose clothes are torn and stained?”</em></span></p><p><span class=\"fontstyle0\"><em>Hina nodded. “Kakita Sakura. Said to have met the spirits of those she killed and her heart turned away from the blood and blade.”</em></span></p><p><span class=\"fontstyle0\"><em>“She still carries her katana, though.”</em></span></p><p><span class=\"fontstyle0\"><em>“Of course. She’s not stupid.” Hina shoved her friend toward Sakura, and the samurai turned and looked him straight in the eyes, her steely gaze never wavering.</em></span></p><p><span class=\"fontstyle0\"><em>“I-I-we-we.” Shōichirō fell to his knees, clutching at Sakura’s frayed coat. “Kakita-sama. My farms. My village. The soil is harsh and the weather poor. It’s as if the kami themselves are angry.”</em></span></p><p><span class=\"fontstyle0\"><em>Sakura plucked an ivory netsuke from her obi and pressed it into Shōichirō’s hands, while lifting him up. “Let’s find a merchant to pay a fair price for this. But promise me one thing.”</em></span></p><p><span class=\"fontstyle0\"><em>“Y-y-yes. Anything.”</em></span></p><p><span class=\"fontstyle0\"><em>“Take what money you need, but whatever you have left over, give to someone else in need.”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Charity passion:</span></p><ul><li><p><span class=\"fontstyle3\">- Your charitable nature makes those who have witnessed or heard of your generosity more likely to accept your reasonable requests for aid, even if giving you aid does not directly benefit the other party.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check with which your charitable history is a benefit (such as a Courtesy (water) check to convince a peasant that you’re on their side or a Labor (water) check to determine the best way to benefit the most amount of people with your physical efforts), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "naSigzXW0oSEGUMh",
+  "sort": 4300000
+ },
+ {
+  "name": "City [Choose One]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241899625,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 243
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>They walked through the gates of Toshi no Aida ni Kawa, and Kitsuki Moriko immediately embraced a man with loud shouts and laughs. Her companion shuddered. He looked about the street, muddy and crowded with horses, dogs, and people all intermingling.</em></span></p><p><span class=\"fontstyle0\"><em>Moriko returned, holding something white and soft wrapped in a cloth. “Here, try some.”</em></span></p><p><span class=\"fontstyle0\"><em>“Tofu?”</em></span></p><p><span class=\"fontstyle0\"><em>“Cheese. Curdled milk from a goat.” She smiled.</em></span></p><p><span class=\"fontstyle0\"><em>“Isn’t this city wonderful?”</em></span></p><p><span class=\"fontstyle0\"><em>“Yes. Lovely,” he said as he struggled to suppress his gag reflex.</em></span></p><p></p><p><span class=\"fontstyle0\">The following apply to a character with the City passion:</span></p><ul><li><p><span class=\"fontstyle0\">- You know a particular city extremely well and have extensive practical knowledge about it. You know as much about the city as any lifelong resident, including the popular locations, dangerous or disreputable areas, and open secrets.</span></p></li><li><p><span class=\"fontstyle0\">- After performing a check to learn or share knowledge of the particular city (such as a Courtesy (water) check to befriend a local resident or a Culture (water) check to find an establishment offering a particular service), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3fu7oMITP5DsEXSq",
+  "sort": 3000000
+ },
+ {
+  "name": "Creatures",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241027177,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 97
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Doji Kaagi leaned forward eagerly as the wizened scout’s words faded into the air. “Tell me more, please,” he asked. “How many horns did the beast have, and was it really taller than a pagoda?</em></span><span class=\"fontstyle2\"><em>”</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Creatures passion:</span></p><ul><li><p><span class=\"fontstyle2\">- You are fascinated by strange creatures, monsters, </span><span class=\"fontstyle0\">bakemono</span><span class=\"fontstyle2\">, and other such oddities. You can easily identify such creatures and know them by heart. Tales of monsters and local horror folklore transfix you, and you are always eager to build your wealth of monster lore further.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check to study or hear tales of odd creatures (such as a Culture (fire) check to wonder about new creatures or a Performance (fire) check to entice someone to offer you a tale of encounters with Shadowlands monsters), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "IpDbkqKc8UuVeko5",
+  "sort": 3900000
+ },
+ {
+  "name": "Curiosity",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761239931477,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 112
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“A curious mind is a blessing. Yet, one should be careful, when following the object of one’s whims of the moment, that the object does not become like the shining lure used to catch fish in a river. The fish who chases the lure ends up over rice.”</em></span></p><p><span class=\"fontstyle2\"><em>– </em></span><span class=\"fontstyle3\"><em>Analects of Nabeshima</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Curiosity passion:</span></p><ul><li><p><span class=\"fontstyle2\">- The first time you attempt a new task and fail, you always think of another route you could take to try to overcome or learn more about the problem.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check to seek answers to an intriguing question (such as a Medicine (fire) check to create a new chemical concoction or a Theology (fire) check to try to determine the metaphysical underpinnings of a particular kami’s behavior), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JTGzJlJ2se8UfXfh",
+  "sort": 400000
+ },
+ {
+  "name": "Daredevil",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761239996945,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 112
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“Those who fear to act have already failed. Lose your fear, and gain the world.”</em></span></p><p><span class=\"fontstyle2\"><em>–</em></span><span class=\"fontstyle3\"><em>Tao of Shinsei</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Daredevil passion:</span></p><ul><li><p><span class=\"fontstyle2\">- You can risk your life without consideration or hesitation, even if the potential consequences are obvious and dire.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check to risk your life (such as a Fitness (fire) check to resist a critical strike or a Games (fire) check to win a contest in a flashy and physically risky way), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "passion",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4UQNdVGSXB4PbMnS",
+  "sort": 500000
+ },
+ {
+  "name": "Decorum",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241635135,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 100
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“When dining with the Imperial family, it is imperative that you do not spear your food like you have done. Any motion resembling that of a weapon is unacceptable,” Yasuki Masaru explained, gesturing.</em></span></p><p><span class=\"fontstyle0\"><em>“What?” Hida Kotone grunted. “Do they think I’ll assassinate them with chopsticks?” She chuckled. “I probably could, actually. Ack—” Kotone dug a hand into her armor and pulled out a rag, onto which she loudly blew her nose.</em></span></p><p><span class=\"fontstyle0\"><em>Masaru watched in terror. “You cannot do that.”</em></span></p><p><span class=\"fontstyle0\"><em>Kotone sniffed. “What?”</em></span></p><p><span class=\"fontstyle0\"><em>“Blow your nose in front of company!”</em></span></p><p><span class=\"fontstyle0\"><em>“What can I do, Masaru? All you say is don’t do this, don’t do that.”</em></span></p><p><span class=\"fontstyle0\"><em>“If you could,” Masaru cringed, “be conveniently absent this evening?”</em></span></p><p><span class=\"fontstyle0\"><em>Kotone slapped his shoulder. “That is what I’ve been waiting to hear. There’s an oni, or something...”</em></span></p><p><span class=\"fontstyle0\"><em>“Of course,” Masaru nodded. “I will let them know.”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Decorum passion:</span></p><ul><li><p><span class=\"fontstyle3\">- Polite society is your natural habitat. Etiquette, traditions, and all of the subtle courtly minutiae are second nature to you.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to ensure that you or your allies adhere to all the strictures of courtly etiquette (such as a Command (water) check to be formally polite to your guests or a Culture (water) check to ascertain who is adhering to court etiquette during an audience and who is making a fool of themself), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dk2aUWTebzmU93Ha",
+  "sort": 2800000
+ },
+ {
+  "name": "Enlightenment",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240060808,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 112
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>For some, the Tao of Shinsei is like a road map left by the great teacher but written in a code that must be deciphered. For others, it is a process of abandoning the self and freeing the soul of all illusions, to see the universe as it is. Yet others claim that there is no Enlightenment, only an endless process of insight and awakening, an opening of doors that only lead to more doors to be opened: the goal is the journey itself.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Enlightenment passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You feel no attachment to mundane items and earthly titles; you cannot be tempted with material wealth or the promise of power.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to detach yourself from material concerns (such as a Meditation (void) check to contemplate your place in the universe or a Survival (void) check to exist in harmony with your environment), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "passion",
+   "types": "Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wNBBc9GtWDyVn502",
+  "sort": 600000
+ },
+ {
+  "name": "Fashion",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240132058,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 112
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Akodo Fudai stood before the polished mirror as the tailors worked around him, wheeling and turning like birds in a flock. Silk was layered upon silk, and patterned with fine brocade etching out flowers and trees. It was a flattering effect, and he would be certain to cut a dashing figure at the Crane’s Winter Court.</em></span></p><p><span class=\"fontstyle0\"><em>I despise the Crane, he thought, but even I must admit, they know how to make a fine kimono.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Fashion passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You always know the current trends in your home region, and you can identify what is in vogue (and how to take advantage of that fact) in a new place after spending one or more scenes there.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to interact with clothes, jewelry, or other worn works of art (such as a Culture (fire) check to theorize about what others might wear at the next Winter Court or a Design (fire) check to create a stunning work), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "DtADwQoBT5xTn40Y",
+  "sort": 700000
+ },
+ {
+  "name": "Festivals",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241332292,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 90
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The people of Mura Higashi Chushin claim it was the favorite village of Akodo Tenjin and thus have an annual festival that draws scholars, papermakers, inkmakers, and poets from all across Rokugan. A local festival custom is to read aloud obscene or bawdy poems laced with innuendos disguised as love songs or celebrations of the Emperor; these are met with cheers or good-natured insults. All is forgiven and forgotten at the end of the festival when the poems are burned to amuse the kami.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Festivals passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You can always find the best activities at festivals, and you never have an issue finding someone in a crowded place.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to interact at a festival (such as a Skulduggery (fire) check to determine where clandestine dealings are happening or a Courtesy (fire) check to ensure a guest has a good time), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "S5wZ20h6W7FGR7pe",
+  "sort": 2500000
+ },
+ {
+  "name": "Fortune-Telling",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240210428,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 112
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“For the second time this month, the constellation of the Flying Carp was obscured by a darkness without apparent source, and the moon appeared to have a golden cast to its light, with the Five Sisters glowing brightly directly above. This portends misfortune. Any child born under this inauspicious sign will surely come to a sad end.”</em></span></p><p><span class=\"fontstyle2\"><em>– From the diary of Imperial Astrologer Seppun Seimei</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Fortune-Telling passion:</span> </p><ul><li><p><span class=\"fontstyle0\">- You can identify any common portents (such as constellations and other stellar phenomena, the cracks in oracle bones, the appearance of certain animals, and various other signs of things to come), along with their implications for the future.</span></p></li><li><p><span class=\"fontstyle0\">- After performing a check to discern the future (such as a Survival (void) check to look for small omens in your earthly environs or a Theology (void) check to perform a divination by reading the stars), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "passion",
+   "types": "Mental, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "jhtElWdZeQNJloZf",
+  "sort": 800000
+ },
+ {
+  "name": "Generosity",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240274647,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 113
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>During the sixth month of the year after the biannual collection of taxes, the city of Ryokō Owari Toshi celebrates the Days of Generosity. As the festival begins, the head priest of the local temple draws a name in a lottery. The person whose name is drawn becomes “King of Generosity” and “rules” over the festival.</em></span></p><p><span class=\"fontstyle0\"><em>The festival is marked by gift giving and drunkenness. The festival king decides who the best gift giver is on each of the celebration’s three days. That person receives a portion of the “king’s purse,” a collection of coins given to the festival king to pay him for blessing the giver with a prosperous year ahead.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Generosity passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You can always identify a proper gift for a particular person that does not risk giving offense or slighting them publicly.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to acquire or give a gift (such as a Design (water) check to select an item that complements someone’s wardrobe or a Commerce (water) check to find and select a gift at a market), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "bvb90GLa9nJkkUun",
+  "sort": 900000
+ },
+ {
+  "name": "Glorious Deeds",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761244552053,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 83
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“Even should a samurai evade death on the battlefield and survive to see their great-grandchildren come of age, one day they will pass. Such is the way of mortals. But the stories that people tell of that samurai—those may live forever.” The Ikoma historian gave his sibling a shrewd look.</em></span></p><p><span class=\"fontstyle0\"><em>“But you did not come to listen to the lectures I have for students, I suspect. You want to be the subject of my next lecture. Tell me of your accomplishments, and I will make sure they are recorded in the family histories.”</em></span></p><p><span class=\"fontstyle0\"><em>With that prompting, the eager bushi launched into a story about their efforts in the recent conflict, and they were not silent until late into the night.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Glorious Deeds passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You find risking your life to be a simple matter, as long as there is a witness to remember your bravery. No threat or challenge deters you if you might be remembered for it, making even the most daunting tasks easy ones for which to prepare.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to improve your reputation or gain fame as a great samurai (such as a Performance (fire) check to impress a court with your new melody, or a Tactics (fire) check to execute a daring raid on the enemy), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "passion",
+   "types": "Martial, Social"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "B9fnpC0enRx8DeSO",
+  "sort": 4200000
+ },
+ {
+  "name": "Gossip",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240324030,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 113
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The courts of Rokugan are a battlefield as deadly as any in war. The weapons are rumor, and innuendo, and sharpened tongues. The wrong word in the right ear can spell the end of a career, a loss of standing, or even a loss of life.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Gossip passion:</span></p><ul><li><p><span class=\"fontstyle3\">- At the start of each scene, you can always identify the character present who will know the juiciest rumors (besides yourself, obviously).</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to spread or receive rumors (such as a Courtesy (air) check to cast someone in a certain light when telling a story about them or a Culture (air) check to read people’s current anxieties from the subtle ways they obey or break etiquette), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "jLL99CM2R1tRcsEg",
+  "sort": 1000000
+ },
+ {
+  "name": "Gourmet",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241956862,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 243
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Near Higashi Chushin Mura, a farmer by the name of Daichi produces a sumptuous variety of </em></span><span class=\"fontstyle2\"><em>tsukemono</em></span><span class=\"fontstyle0\"><em>. His newer daikon comes with the simple flavors of salt and vinegar, but his older varieties of tsukemono have complex tastes, summoning memories of earth and the sea. The cucumbers have the deep, rich flavors of </em></span><span class=\"fontstyle2\"><em>shōyu</em></span><span class=\"fontstyle0\"><em>, for example. Generals make a point to purchase his pickled plums; their tartness provides an exhilarating spark to overcome sluggishness in the morning.</em></span></p><p></p><p><span class=\"fontstyle0\">The following apply to a character with the Gourmet passion:</span></p><ul><li><p><span class=\"fontstyle0\">- You can identify regional variations in cuisine and know a great deal about techniques of food preparation. You can always identify the ingredients in a dish, including those that are potentially dangerous.</span></p></li><li><p><span class=\"fontstyle0\">- After performing a check involving high-quality food (such as a Culture (water) check to locate a place to dine in an unfamiliar city or a Labor (water) check to prepare a fine meal), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GKp5XvNaO9PAtks9",
+  "sort": 3200000
+ },
+ {
+  "name": "History",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240389053,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 113
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“A samurai is no more than the sum of their memories; an Empire no more than the sum of its history.”</em></span></p><p><span class=\"fontstyle2\"><em>– </em></span><span class=\"fontstyle3\"><em>Analects of Nabeshima</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the History passion:</span></p><ul><li><p><span class=\"fontstyle2\">- After a short time spent studying it, you can discern the era and context of any object, structure, or text you encounter—or else you know for certain that no chronicler of the Emerald Empire has encountered this thing before.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check to remember a historical anecdote (such as a Government (earth) check to draw parallels to past events or a Smithing (earth) check to know about past uses of and trends in the creation of tools and artifacts), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "skvnIwolYl1RVkNv",
+  "sort": 1100000
+ },
+ {
+  "name": "Honest Work",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761243614169,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 70
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“The feel of earth under your fingers mixed with the sweat of a hard day’s toil with the hot sun bearing down on you, your muscles aching from your efforts. Little else in this world is so satisfying as working with your hands, earning your keep. Samurai know nothing of the feeling of pride after planting a whole field of rice by oneself. I pity them.”</em></span></p><p><span class=\"fontstyle2\"><em>– Michi, the farmer</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Honest Work passion:</span></p><ul><li><p><span class=\"fontstyle2\">- You are always able to determine how much work is needed to complete a physical, hands-on task, and your work on such tasks is always markedly better than that of others due to your eye for detail.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check that requires physical labor (such as a Labor (earth) check to till a field or a Smithing (earth) check to fix a damaged tool), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "X0L61mBoCrqIy0cK",
+  "sort": 3700000
+ },
+ {
+  "name": "Horse Racing",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241091409,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 94
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Ichi’s parents gasped as she leapt from the boulder to land on the back of an unbridled horse. One moment she stood between them. The next moment she had crossed the field to “talk” with the horse.</em></span></p><p><span class=\"fontstyle0\"><em>The beast shot across the field, galloping in great, thunderous strides. Her parents ran after her, knowing they would never be able to catch them. That horse had been bred and trained for speed. Ichi’s screams echoed across the air, and for a moment, their hearts leapt to their throats, until they realized the screams were of joy.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Horse Racing passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You do not enjoy just the speed of racing but also the bond of horse and rider coming together in competition. You (and your horse) understand how racing requires skill, perception, and endurance.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to push your horse or steed to its limits (such as a Fitness (air) check to duck and weave on the polo field or a Survival (air) check to get your horse to rush down a frightening or dangerous path), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "passion",
+   "types": "Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cAJTrtLVjgLqsRwE",
+  "sort": 4500000
+ },
+ {
+  "name": "Hot Pot",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241159279,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 94
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Möngke sat on his horse—back aching, stomach growling—as the night grew deeper. It had been a long, dusty journey. His stomach growled again, but this time in anticipation: of the fiery bite of chili; the heady, back-of-the-throat warmth of herbs; and the satisfying aroma of meaty fats. Urging his horse faster and faster, he finally came across the encampment, flew into his family’s yurt, and slid in front of the hot pot, bowl already in hand.</em></span></p><p><span class=\"fontstyle0\"><em>“Möngke travels on his stomach!” his aunts and uncles laughed. “His nose will always bring him back home.”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Hot Pot passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You know how to prepare a good, hearty, flavorful meal in a communal environment. You can identify the meats, tubers, vegetables, and spices to make hot pot, as well as what might spoil or be poisonous to the meal. Because of the strong associations, you can also recall memories connected to sharing hot pot with friends and family.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check involving the preparation of a communal meal of hot pot (such as a Labor (earth) check to stretch limited rations into a satisfying meal or a Courtesy (earth) check to make a guest feel disarmed and at ease over dinner), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "WOcP34kHfJDLnn2W",
+  "sort": 4600000
+ },
+ {
+  "name": "Ikebana",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240443828,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 113
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The art of flower arranging is practiced by many nobles of Rokugan. It is considered a subtle and beautiful form of expression, one that follows traditions and methods that go back centuries. The art reaches its zenith in the creation of a story garden, in which an ikebana master carefully arranges flowers to relate a particular tale, which unfolds for the visitor as they wander the garden paths.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Ikebana passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You can always identify a plant by any of its parts, and you know its physical properties and its </span><span class=\"fontstyle5\">hanakotoba </span><span class=\"fontstyle3\">(“language of flowers”) meaning.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check related to flower arrangement (such as an Aesthetics (water) check to rearrange or improve an ikebana piece or a Survival (water) check to acquire flowers from a marketplace), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cSjfbDp5jWBP5BMo",
+  "sort": 1200000
+ },
+ {
+  "name": "Kabuki",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241408931,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 90
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Junko’s laughter didn’t startle the professional entertainers on the stage, but it did cause the audience to shuffle a little, a drastic sign of chaos for the proud people of Meiyo Gisei Toshi. Eijiro covered his face and hers with his kimono sleeve and whispered, “Shhh, Junko; this is a serious story.”</em></span></p><p><span class=\"fontstyle0\"><em>“What?” she replied, a little too loudly. “It’s funny. A man in love with a horse? So stupid.”</em></span></p><p><span class=\"fontstyle0\"><em>“No, it’s a story about loyalty. The horse represents—”</em></span></p><p><span class=\"fontstyle0\"><em>Junko roared again with laughter, and Eijiro tried to sink into his kimono. </em></span><span class=\"fontstyle2\"><em>I liked you better when you were grumpy all the time, </em></span><span class=\"fontstyle0\"><em>he thought.</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Kabuki passion:</span></p><ul><li><p><span class=\"fontstyle2\">- You are a seasoned viewer of (or participant in) Kabuki, and you have many connections in the world of theater.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check to engage with Kabuki (such as a Culture (air) check to make an insightful comment about a performance or a Performance (air) check to put on an impromptu show to distract someone), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "sFtNK634VY0Z4J9y",
+  "sort": 2400000
+ },
+ {
+  "name": "Kintsugi",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761243474207,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 104
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Mirumoto Kinshichirō did not cry then. As a child, he carelessly dropped this bowl, one that had been in his family for generations, a gift supposedly blessed by the actual Kami Togashi. His parents berated him, and he carried the guilt all throughout his adolescence. He even decided to study with the Agasha mystics, but his parents cared so little, they let him leave.</em></span></p><p><span class=\"fontstyle0\"><em>They did not realize that hidden in his belongings, a box contained the pieces of the bowl, carefully wrapped in a cloth. This box remined by his side as he studied, until Kinshichirō had to make his masterpiece. The bowl had broken into seven pieces, exactly the number of his siblings plus him, yet when he unfolded the cloth, he noted he only had six. The despair he felt only lasted for a little while.</em></span></p><p><span class=\"fontstyle0\"><em>When Kinshichirō returned home, he unveiled the bowl. He had joined the cracks with gold, and the missing space filled with a singular piece of jade with the family mon. His siblings welcomed him back, so he finally allowed the tears to flow.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Kintsugi passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You have a particular fondness and skill for kintsugi, the art of mending broken pottery with gold or other similar substances.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to mend an object with kintsugi or interact with a piece of kintsugi-repaired pottery (such as a Culture (earth) check to recall the name of a particular practitioner of kintsugi by their artist’s mark on a piece of pottery or a Labor (earth) check to produce a breathtaking piece), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "passion",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "pVo3SUK4ZeNQUwye",
+  "sort": 4400000
+ },
+ {
+  "name": "Knotwork",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761243748227,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": 7
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>A sailor’s knots differ from those used by a priest to tie consecrated cords, but each holds a kind of prayer.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to you:</span></p><ul><li><p><span class=\"fontstyle3\">- You can identify and tie dozens of different knots, and know their appropriate uses and the meanings each one carries.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to interact with a knot (such as a Design (air) check to add a decorative knot to your garb or a Seafaring (air) check to secure your vessel’s rigging), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wc5W3FbbkWTivDOT",
+  "sort": 4000000
+ },
+ {
+  "name": "Kyūdō",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241480561,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 90
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Wood yields with a snap</em></span></p><p><span class=\"fontstyle0\"><em>Arrows sing in soft snowfalls</em></span></p><p><span class=\"fontstyle0\"><em>Blood sullies the end</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Kyūdō passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You are familiar with most forms of archery and are able to identify the relative skill of anyone who wields a bow simply by how they hold it.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to participate in the art of </span><span class=\"fontstyle0\">kyūdō </span><span class=\"fontstyle3\">(such as a Smithing (void) check to examine and attune to a bow or a Games (void) check to enlighten another on a particular technique), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "passion",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "bUbm8m6R9x8i6nAt",
+  "sort": 2300000
+ },
+ {
+  "name": "Local Flare for {Region}",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241708032,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 100
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“You absolutely must visit the coastline. There is a small village that prides itself on its paper making. To display this craft, they adorn their every dock and ship with the most beautiful lanterns. The view at night is fantastic.</em></span></p><p><span class=\"fontstyle0\"><em>“If that is not enough to convince you, there is a cliffside brewery overlooking the village. The path to its door is steep, and the sea mist is bitter cold, but it makes the finest sake I have tasted. The Winter Court is splendid, but you must explore beyond its gates if you want something truly breathtaking.”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Local Flare for [Region] passion:</span></p><ul><li><p><span class=\"fontstyle3\">- Your knowledge extends beyond the court to the surrounding lands. You are familiar with secret scenic hideaways, undiscovered talent, and intriguing local customs within the region. Every clan boasts incredible palaces, but such settings can grow tiresome. A change of scenery works wonders for one’s spirit.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to remember information about the specific region you have chosen (such as a Culture (earth) check to know what is currently going on in the region or a Sentiment (earth) check to recall the attitudes and opinions of local inhabitants), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "l4VweBTiP2yMJu1y",
+  "sort": 2700000
+ },
+ {
+  "name": "Military History",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761242016588,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 244
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The samurai bowed his head. “I did not expect Matsu to strike so soon in the morning.”</em></span></p><p><span class=\"fontstyle0\"><em>“You thought her lazy, undisciplined, unable to wake before a sunrise?” his sister said.</em></span></p><p><span class=\"fontstyle0\"><em>“No, but...” He shook his head. “Who would do such a thing?”</em></span></p><p><span class=\"fontstyle0\"><em>She looked at him with contempt while a scribe held out a pile of folding books in his arms. “Little brother, you should have known that we used the very same tactic against the Lion a generation ago.”</em></span></p><p></p><p><span class=\"fontstyle0\">The following apply to a character with the Military History passion:</span></p><ul><li><p><span class=\"fontstyle0\">- You can quickly identify historical or traditional military ploys from memory and can almost always suggest an appropriate tactic for the situation at hand based on a similar historical situation.</span></p></li><li><p><span class=\"fontstyle0\">- After performing a check related to your knowledge of military history (such as a Command (earth) check to bolster troops’ resolve with a story of a similar historical battle or a Tactics (earth) check to prepare a defense based on the attacker’s known strategies), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "tbbvTa6qbbbHM39G",
+  "sort": 3400000
+ },
+ {
+  "name": "Navigator",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761242074579,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 244
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The family records described her as a wandering ghost. Hunters would constantly find her dirty and disheveled, lost in the lands near Shiro Daidoji. Her letters describe a different person. With a wolf’s spirit, she had explored the plains, mountains, and rivers surrounding her family’s lands unafraid. Far from being lost, she had communed with the earth and water. She had brought these skills to bear when she led her harriers to push back the armies of the Lion at Shiro Shiba.</em></span></p><p></p><p><span class=\"fontstyle0\">The following apply to a character with the Navigator passion:</span></p><ul><li><p><span class=\"fontstyle0\">- You can quickly make sense of even the most archaic, poor, or unfamiliar maps, and you always know which direction is north.</span></p></li><li><p><span class=\"fontstyle0\">- After performing a check to navigate (such as a Seafaring (fire) check to chart a formerly unknown route at sea or a Survival (fire) check to extrapolate your location in the wilderness based on the stars), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XDd8AAQbqMCxOZiD",
+  "sort": 3500000
+ },
+ {
+  "name": "Passion for [Foreign Performing Art Form]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761191642717,
+   "modifiedTime": 1761243683319,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 71
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The gaijin from the Ivory Kingdoms play their own manner of </em></span><span class=\"fontstyle2\"><em>gagaku </em></span><span class=\"fontstyle0\"><em>music, which is said to have soothing tones. In particular, it is said that these gaijin have their own style of </em></span><span class=\"fontstyle2\"><em>komabue </em></span><span class=\"fontstyle0\"><em>flute, which may charm snakes and command sleepers to move in accordance with the player’s wishes.</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Passion for [Foreign Performing Art Form] distinction:</span></p><ul><li><p><span class=\"fontstyle2\">- You are skilled in some foreign artistry, such as puppetry, miming, a foreign dance or theater form, or the playing of a foreign instrument; you can also recognize all common forms of the art and know intricate details about its history. Confer with the GM to select a campaign-appropriate art form when choosing this passion.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check that relates to your talent (such as a Performance (air) check to impress a stranger or a Design (air) check to refine your craft or method), you may reroll up to two dice.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "distinction",
+   "types": "Fame, Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "nfWsCkvlyMd6XwuH",
+  "sort": 1500000
+ },
+ {
+  "name": "Playfulness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240517793,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 114
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The warriors had been drinking most of the evening. It had been a long day, and the respite was welcome.</em></span></p><p><span class=\"fontstyle0\"><em>Todoma, the largest of the group and well in his cups, clumsily laid his sword upon the table they shared, knocking over a few drinks in the process. Over the sounds of protest, he declared. “From this day forward, I shall call my blade ‘Heaven Cutter’!” </em></span></p><p><span class=\"fontstyle0\"><em>Oriko slapped her friend on the back and replied “Oh? You should hear what it calls you!” The assembled warriors roared with laughter, which, in the end, even Todoma joined.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Playfulness passion:</span></p><ul><li><p><span class=\"fontstyle3\">- When you say something untoward to someone of lower or equal status, they write it off as your playful nature instead of being significantly angered or saddened by it.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to gently mock or chide someone (such as a Composition (air) check to find the parts of a rival’s poem that you can echo with parody in your next piece or a Courtesy (air) check to tease someone with a clever pun on their name), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "9gUB2fooC5Gd4pSO",
+  "sort": 1300000
+ },
+ {
+  "name": "Pot Stirrer",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241761116,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 101
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“I don’t care what anyone </em></span><span class=\"fontstyle2\"><em>else </em></span><span class=\"fontstyle0\"><em>says about you, Kakita-san. </em></span><span class=\"fontstyle3\"><em>I </em></span><span class=\"fontstyle0\"><em>respect you.”</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Pot Stirrer passion:</span></p><ul><li><p><span class=\"fontstyle2\">- After spending a few minutes studying a room, you can extrapolate who might have a grudge against whom, which two people are on edge around each other, and other social pressure points you could exploit.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check to stir up social chaos (such as a Courtesy (fire) check to incite anger in someone about a perceived insult or a Theology (fire) check to encourage two people to argue about the finer points of their religious beliefs), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NIxp5tTZ0SQJVuhV",
+  "sort": 2900000
+ },
+ {
+  "name": "Provocation",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240578978,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 114
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>A popular pastime at Winter Court, the game of Sadane is a test of quick thinking and sharp tongues in which two contestants take turns exchanging politely worded insults. Each insult must be a new contribution to the argument; no repetitions or thematic restatements are permitted. The criticisms continue until one participant admits defeat or merely is at a loss for words. Losing one’s temper is considered a major breach of etiquette, as is saying anything overtly impolite.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Provocation passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You can always identify a point of sensitivity that you can push upon in another person—though not whether they will take your comment as slightly aggressive banter or a grave insult.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to get a rise out of someone (such as a Courtesy (fire) check to call someone by an aggravating nickname or a Command (fire) check to get a group of soldiers passionate and angry enough to storm an enemy position), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "8x86XbwBTg0yvWOy",
+  "sort": 1400000
+ },
+ {
+  "name": "Religious Study",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241552317,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 91
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“I am no one,” the monk said. “I pray. I meditate. I chant.”</em></span></p><p><span class=\"fontstyle0\"><em>“You teach. You helped a father overcome his grief. The magistrate changed because of your petition. The Pale Blade turned herself in to the authorities.”</em></span></p><p><span class=\"fontstyle0\"><em>The monk shrugged. “Grief fades over time. The magistrate already had a good heart. The Pale Blade was quite reasonable for a murderer.”</em></span></p><p><span class=\"fontstyle0\"><em>Shirō knelt and pressed his forehead to the ground. “Please let me study under you.”</em></span></p><p><span class=\"fontstyle0\"><em>The monk sighed and looked over Shirō’s emaciated form. “Let us get you something to eat. Feed the body to feed the soul.”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Religious Study passion:</span></p><ul><li><p><span class=\"fontstyle3\">- After you spend a short time studying a religious object, text, ritual, or other observance, you are able to discern its purpose and determine what religion it belongs to (unless the religion has not been chronicled by anyone in the Emerald Empire).</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to contemplate an aspect of religion (such as a Meditation (void) check to ponder the meaning of a particular passage of the Tao of Shinsei or a Composition (void) check to write down your thoughts about a religious ritual you witnessed), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "passion",
+   "types": "Mental, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "UwZmUCNXmHnfSnus",
+  "sort": 2600000
+ },
+ {
+  "name": "Researcher",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761242135232,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 244
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Asako Akitoshi inhaled the scent of twine, ink, and paper.</em></span></p><p><span class=\"fontstyle0\"><em>“May I help you?” the bookbinder asked.</em></span></p><p><span class=\"fontstyle0\"><em>“I am looking for a book, written by Tendō.”</em></span></p><p><span class=\"fontstyle0\"><em>“Phoenix samurai, you risk much coming to Ryoko Owari Toshi.”</em></span></p><p><span class=\"fontstyle0\"><em>His eyes gleamed. “But I have been searching for this book for two years.”</em></span></p><p><span class=\"fontstyle0\"><em>The bookbinder reached underneath the counter, not for her dagger, but for </em></span><span class=\"fontstyle2\"><em>The Work, the Water</em></span><span class=\"fontstyle0\"><em>. “It may not leave this shop.”</em></span></p><p><span class=\"fontstyle0\"><em>Akitoshi immediately sat on a child’s stool in the corner, the book in his lap, his eyes already far away.</em></span></p><p></p><p><span class=\"fontstyle0\">The following apply to a character with the Researcher passion:</span></p><ul><li><p><span class=\"fontstyle0\">- You can cite the most authoritative works on most topics from memory and are never at a loss for where to begin researching a matter.</span></p></li><li><p><span class=\"fontstyle0\">- After performing a check to research a topic (such as a Culture (air) check to locate a particular poem or a Medicine (air) check to find all known records of a mysterious illness), you remove 3 strife</span>.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cE8xDMqYEvvKa4Ok",
+  "sort": 3600000
+ },
+ {
+  "name": "Rock Gardening",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761242186920,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 244
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Doji Kentarō allowed a tiny grin to sneak into his lips. He placed the stone—round, smooth, a comforting weight in his palm—gently in the middle of the rock garden. Though it stood out among the smaller, polished pebbles, it also belonged, a dark-gray shape amid the light-gray sea. </em></span><span class=\"fontstyle2\"><em>This stone is like me to my family.</em></span></p><p></p><p><span class=\"fontstyle0\">The following apply to a character with the Rock Gardening passion:</span></p><ul><li><p><span class=\"fontstyle0\">- You know the proper methods of arranging a rock garden (</span><span class=\"fontstyle2\">karesansui</span><span class=\"fontstyle0\">) according to popular manuals on the topic, and you can explain the symbolism and significance of different arrangements and features.</span></p></li><li><p><span class=\"fontstyle0\">- After performing a check related to rock gardening (such as an Aesthetics (void) check to detect a hidden meaning in a rock garden’s arrangement or a Meditation (void) check to make sense of events while reflecting on a rock garden), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1D5aWCLbcMu94F1W",
+  "sort": 3300000
+ },
+ {
+  "name": "Sake",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240634567,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 114
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>In the lands of the Crane Clan, the village of Sakura no Yuki famously brews a very rare sake, known as Cherry Blossom Snow. Despite its flawless clarity, this sake features the subtle scent and flavor of cherries. The recipe for producing it is a closely guarded secret known only to the master brewers of the village and the daimyō of the Asahina family, on whose land the village lies.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Sake passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You can identify regional variations in sake and other alcohol, and you know a great deal about the various processes involved in making sake. It takes you twice as much alcohol as it does anyone else to become intoxicated.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to interact with the fine art of fermented beverages (such as a Courtesy (water) check to serve alcohol according to proper procedure in a social setting or a Labor (water) check to ferment rice), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "passion",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ztGH4pZHZ0hwLV0M",
+  "sort": 1600000
+ },
+ {
+  "name": "Secrets",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240721253,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 115
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>There is no thrill to compare to having a secret. It’s a thrill so delicious, it must be shared, for what is the purpose of knowing what no one else knows, if no one knows you know it? Especially in an Empire as concerned with seeming and public face as Rokugan, secrets are both currency and delight to many in the courts.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Secrets passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You never forget a secret you have heard, and you instinctively know if something you have heard is common knowledge or information someone wants concealed (even if you do not know who or why).</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to acquire or preserve a secret (such as a Meditation (void) check to resist efforts to pry a secret from you or a Sentiment (void) check to have a hunch about whether someone is concealing a dreadful secret), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Yspo6m0TGxwmwHkI",
+  "sort": 1700000
+ },
+ {
+  "name": "Stargazing",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761241224373,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 94
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Rashid held the astrolabe aloft and lined it up with the North Star. “Children, with this you can determine direction and—”</em></span></p><p><span class=\"fontstyle0\"><em>He spun around and saw no children in sight. He sighed. </em></span><span class=\"fontstyle2\"><em>I could be unlocking the mysteries of the heavens right now, revealing empyrean wonders</em></span><span class=\"fontstyle0\"><em>, he thought.</em></span></p><p><span class=\"fontstyle0\"><em>Suppressed childish giggles clued Rashid in to their presence in the garden. He sighed again, wandered over, and saw them all lying on their backs, hands outstretched, reaching for the stars.</em></span></p><p><span class=\"fontstyle0\"><em>He chuckled and lay next to the children, listening to them rename the stars to their design.</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Stargazing passion:</span></p><ul><li><p><span class=\"fontstyle2\">- You can use the stars not only to navigate but also to tell the time, be it hour or season. You also know many astrological myths and stories related to heavenly phenomena such as meteor showers, supernovae, comets, and constellations.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check to recall an astronomical fact (such as a Theology (void) check to interpret whether a specific comet means doom or blessing or a Composition (void) check to layer double meaning into a poem using a reference to a constellation), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "passion",
+   "types": "Mental, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "PxLv6DOkQ8VIZOlW",
+  "sort": 4700000
+ },
+ {
+  "name": "Stories",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240784065,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 115
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>A person with the ability to weave a tale by a fireside will often find that they need no coin for food or drink, and, if the stories are particularly good, an innkeeper may offer a room (or at least a bale of hay in the stable) in return for entertaining the customers for an evening. A storyteller must be careful to choose the right stories for a particular audience, however. Tales considered by the locals to be scandalous or insulting may result in the necessity of a quick exit.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Stories passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You can recall any story you have been told, including the details that others would gloss over or forget.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to recall or tell a story (such as a Performance (earth) check to spin a tale to hearten comrades or a Theology (earth) check to recite a passage from the Tao of Shinsei or Akodo’s </span><span class=\"fontstyle5\">Leadership </span><span class=\"fontstyle3\">that is applicable to your situation), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yVDBpNIn1K2sXDKz",
+  "sort": 1800000
+ },
+ {
+  "name": "Tea",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240842278,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 115
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“Without the bastions of civility that are teahouses, the Empire would surely collapse into chaos.”</em></span></p><p><span class=\"fontstyle2\"><em>– Kakita Yoshi, Daimyō of the Kakita Family</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Tea passion:</span></p><ul><li><p><span class=\"fontstyle2\">- You can identify regional variations in tea, and you know a great deal about the process of preparing and drying leaves. In the wilderness, you can acquire the natural ingredients required to make rustic teas of various sorts with relative ease.</span></p></li><li><p><span class=\"fontstyle2\">- After performing a check to interact with tea (such as a Medicine (void) check to brew a tea with ingredients that help the body recover from illness or a Performance (void) check to perform a tea ceremony that helps the recipients contemplate their state in life), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "passion",
+   "types": "Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wiz5rooMR3tqtULe",
+  "sort": 1900000
+ },
+ {
+  "name": "Travel",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240899668,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 115
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The old man sat heavily on the stool outside the constabulary office. He removed his straw hat, wiped his brow with his sleeve, and returned the hat to his head. His eyes, shaded by the wide brim, looked out at Yūka. The young girl smiled.</em></span></p><p><span class=\"fontstyle0\"><em>“Young lady, I have been from one side of Rokugan to the other—from Khanbulak to the Islands of Silk and Spice—and I have seen amazing sights. I will tell you this: in all my travels, I have become convinced of three things.” He counted them off on gnarled fingers. “All crows are black, it always rains when you don’t want it to, and Rokugan’s greatest treasure—a prize without equal—is its people.”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Travel passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You are not unsettled by foreign customs, and you can comfortably fit in even in strange environments.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to travel to a new location or interact with a novel thing (such as a Survival (water) check to try to identify a new plant, animal, or phenomenon, or a Seafaring (water) check to travel by boat), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "passion",
+   "types": "Mental, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "7keAIKn0N8wjEsGa",
+  "sort": 2000000
+ },
+ {
+  "name": "Wordplay",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147493310,
+   "modifiedTime": 1761240951106,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 116
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The language of Rokugan is particularly suited for wordplay. Words that sound alike can have different meanings depending on the character used to write them, and they can sound close to other words altogether, allowing for puns of intricately layered complexity. On top of that, Rokugani poets play with symbolism, metaphor, and simile, adding another layer of meaning. Crafting a clever construction of verbal legerdemain is a prized skill, and one that can ensure one’s favor in the right circles.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Wordplay passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You can always identify rhetorical and literary patterns in the works of others when reading or listening to them.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to interpret or create a play on words (such as a Composition (air) check to write a poem with a perfectly executed poetic pun or a Performance (air) check to subtly imply something to your audience via a double meaning), you remove 3 strife.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "passion",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "QPLHN6JrL4Jshp4P",
+  "sort": 2100000
+ }
+]

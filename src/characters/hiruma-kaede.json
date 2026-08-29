@@ -1,0 +1,2888 @@
+{
+ "slug": "hiruma-kaede",
+ "name": "Hiruma Kaede",
+ "folder_label": "Hiruma Kaede (Hida Defender)",
+ "bucket": "Bushi",
+ "accent": "#492886",
+ "identity": {
+  "clan": "Crab",
+  "family": "Hiruma",
+  "school": "Hida Defender School",
+  "role": "Bushi",
+  "age": ""
+ },
+ "portrait": "src/portraits/hiruma-kaede.png",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "step1": {
+   "clan": "Crab",
+   "ring": "earth",
+   "skill": "fitness",
+   "social_status": 30
+  },
+  "step2": {
+   "family": "Hiruma",
+   "ring": "air",
+   "skill1": "skulduggery",
+   "skill2": "survival",
+   "wealth": 3,
+   "social_glory": 39
+  },
+  "step3": {
+   "school": "Hida Defender School",
+   "roles": "Bushi",
+   "ring1": "void",
+   "ring2": "fire",
+   "skill1": "melee",
+   "skill2": "fitness",
+   "skill3": "survival",
+   "skill4": "command",
+   "skill5": "tactics",
+   "allowed_techniques": {
+    "kata": true,
+    "kiho": false,
+    "inversion": false,
+    "invocation": false,
+    "ritual": true,
+    "shuji": true,
+    "maho": false,
+    "ninjutsu": false,
+    "mantra": false,
+    "specificity": true
+   },
+   "techniques": [
+    "aKTfAZXbHo77kHOq",
+    "ERExWdY04GNvu3p0"
+   ],
+   "school_ability": [
+    "7LHxYqmpqMUETLEq"
+   ],
+   "equipment": [
+    "sPKkavq6O0SoxiPj",
+    "zcsgspz4VluSMeI0",
+    "ElFJfEcGvWe6A5yU",
+    "BhKwwnN5UHI5rZpp",
+    "n8xA05Fb9WpXg3oo",
+    "CW6h0NSzTEhimQXw",
+    "S1MG4qPHEV3N8XnO",
+    "Rex7fGo6R1KuUhQJ"
+   ],
+   "social_honor": 40
+  },
+  "step4": {
+   "stand_out": "Careful observation of physical phenomena.",
+   "ring": "earth"
+  },
+  "step5": {
+   "social_giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall."
+  },
+  "step6": {
+   "social_ninjo": "Longs to travel Rokugan, or possibly even beyond."
+  },
+  "step7": {
+   "clan_relations": "She has commanded her clan's respect.",
+   "skill": "none",
+   "social_add_glory": 5
+  },
+  "step8": {
+   "bushido": "Bushido maintains order and strength.",
+   "skill": "none",
+   "social_add_honor": 10,
+   "tenet_paramount": "Courage",
+   "tenet_less_significant": "Sincerity",
+   "item": []
+  },
+  "step9": {
+   "success": "Held a section of the Kaiu wall against a trio of trolls.",
+   "distinction": [
+    "ZtoejR7hmjZ0aE8k"
+   ]
+  },
+  "step10": {
+   "difficulty": "She struggles to stand up for herself.",
+   "adversity": [
+    "TP83fjX8gnxELunG"
+   ]
+  },
+  "step11": {
+   "calms": "Travel, particularly into the wilderness, fills her with peace.",
+   "passion": [
+    "7keAIKn0N8wjEsGa"
+   ]
+  },
+  "step12": {
+   "worries": "She thinks back on the horrors she has witnessed, the men who have died... and she doesn't feel anything. And she's concerned about what that says about her.",
+   "anxiety": [
+    "jlSq86lbglLrHXp8"
+   ]
+  },
+  "step13": {
+   "most_learn": "Hida Nao. She trained under Nao, and the training was fierce, and some failed, but Kaede discovered her power.",
+   "skill": "none",
+   "advantage": [
+    "trppadBbshGjbSP2"
+   ],
+   "disadvantage": []
+  },
+  "step14": {
+   "first_sight": "Her armor and clothing do not match, but appear to be of varying age and provenance.",
+   "special_features": [
+    "6J25vJx1tVirgXf1"
+   ]
+  },
+  "step15": {
+   "stress": "Sullen resentment."
+  },
+  "step16": {
+   "relations": "Has once done a joint patrol with the Unicorn clan, alongside the outrider Shinjo Tomiko.\n\nHas a grudging respect for the Dragon clan's Kitsuki investigators.",
+   "item": [
+    "PsmRwhHYBz0daKi5"
+   ]
+  },
+  "step17": {
+   "parents_pov": "Kaede was an obedient and quiet child. They had hoped military service would anchor her, but they worry that she's become too hardened.",
+   "skill": "courtesy",
+   "bond": []
+  },
+  "step18": {
+   "heritage_name": "She was named after her relative, who had broken through ranks of hellish creatures and claimed land far from the Kaiu Wall, and held it for three weeks.",
+   "heritage_1": 9,
+   "heritage_2": 9,
+   "heritage_item": [],
+   "heritage_add_honor": -5,
+   "heritage_add_glory": 0,
+   "heritage_add_status": 0,
+   "skill": "tactics"
+  },
+  "step19": {
+   "firstname": "Kaede"
+  },
+  "step20": {
+   "death": "She will die at the hands of a stranger she meets on a road, far from Crab lands."
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Hida Defender School",
+   "foundry_id": "s4k9f0SUcWTel4ci",
+   "foundry_name": "Hiruma Kaede 0 XP",
+   "rings": {
+    "air": 2,
+    "earth": 3,
+    "fire": 2,
+    "water": 1,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 2,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "Longs to travel Rokugan, or possibly even beyond.",
+    "giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Earth",
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Lord Hida’s Grip (Crab)",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Way of the Crab",
+     "kind": "school_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Light Sleeper",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Physical"
+    },
+    {
+     "name": "Encompassing Duty",
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Mental"
+    },
+    {
+     "name": "Travel",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Battle Trauma",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Paragon of Courage",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Mental, Virtue"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Club",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Tetsubō",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Kamayari",
+     "quantity": 1
+    },
+    {
+     "name": "Lacquered Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Kubi Bukuro",
+     "quantity": 1
+    }
+   ],
+   "advancements": []
+  },
+  {
+   "xp": 21,
+   "label": "Rank 2",
+   "rank": 2,
+   "school": "Hida Defender School",
+   "foundry_id": "qasH08OepZgjiTfv",
+   "foundry_name": "Hiruma Kaede 21 XP (Rank 2)",
+   "rings": {
+    "air": 2,
+    "earth": 3,
+    "fire": 2,
+    "water": 1,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 2,
+     "melee": 2,
+     "ranged": 2,
+     "unarmed": 1,
+     "meditation": 0,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "Longs to travel Rokugan, or possibly even beyond.",
+    "giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Earth",
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Lord Hida’s Grip (Crab)",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Way of the Crab",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Appreciate the Scenery",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Honest Assessment",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Rushing Avalanche Style",
+     "kind": "kata",
+     "rank": 2
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Light Sleeper",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Physical"
+    },
+    {
+     "name": "Encompassing Duty",
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Mental"
+    },
+    {
+     "name": "Travel",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Battle Trauma",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Paragon of Courage",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Mental, Virtue"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Club",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Tetsubō",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Kamayari",
+     "quantity": 1
+    },
+    {
+     "name": "Lacquered Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Kubi Bukuro",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Martial Arts [Ranged] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    }
+   ]
+  },
+  {
+   "xp": 50,
+   "label": "Rank 3",
+   "rank": 3,
+   "school": "Hida Defender School",
+   "foundry_id": "kyq8x7TCCC3lKy6I",
+   "foundry_name": "Hiruma Kaede 50 XP (Rank 3)",
+   "rings": {
+    "air": 2,
+    "earth": 3,
+    "fire": 2,
+    "water": 1,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 2,
+     "melee": 2,
+     "ranged": 2,
+     "unarmed": 1,
+     "meditation": 0,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 3,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "Longs to travel Rokugan, or possibly even beyond.",
+    "giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Earth",
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Lord Hida’s Grip (Crab)",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Way of the Crab",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Appreciate the Scenery",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Honest Assessment",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Rushing Avalanche Style",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Staggering Shot",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Touchstone of Courage",
+     "kind": "shuji",
+     "rank": 3
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Light Sleeper",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Physical"
+    },
+    {
+     "name": "Encompassing Duty",
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Mental"
+    },
+    {
+     "name": "Travel",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Battle Trauma",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Paragon of Courage",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Mental, Virtue"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Club",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Tetsubō",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Kamayari",
+     "quantity": 1
+    },
+    {
+     "name": "Lacquered Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Kubi Bukuro",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Martial Arts [Ranged] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Void +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Labor +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Composition +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "composition",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": false
+    }
+   ]
+  },
+  {
+   "xp": 74,
+   "label": "Gunsō, Rank 3",
+   "rank": 3,
+   "school": "Hida Defender School",
+   "foundry_id": "T8Lx3NypuCOqLcpc",
+   "foundry_name": "Hiruma Kaede 74 XP (Gunsō, Rank 3)",
+   "rings": {
+    "air": 2,
+    "earth": 3,
+    "fire": 2,
+    "water": 1,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 2,
+     "melee": 2,
+     "ranged": 2,
+     "unarmed": 1,
+     "meditation": 0,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 4,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "Longs to travel Rokugan, or possibly even beyond.",
+    "giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Earth",
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Lord Hida’s Grip (Crab)",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Way of the Crab",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Appreciate the Scenery",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Honest Assessment",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Rushing Avalanche Style",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Staggering Shot",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Touchstone of Courage",
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
+     "name": "Lead from the Front",
+     "kind": "title_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Light Sleeper",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Physical"
+    },
+    {
+     "name": "Encompassing Duty",
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Mental"
+    },
+    {
+     "name": "Travel",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Battle Trauma",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Paragon of Courage",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Mental, Virtue"
+    }
+   ],
+   "titles": [
+    {
+     "name": "Gunsō"
+    }
+   ],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Club",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Tetsubō",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Kamayari",
+     "quantity": 1
+    },
+    {
+     "name": "Lacquered Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Kubi Bukuro",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Martial Arts [Ranged] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Void +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Labor +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Composition +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "composition",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": false
+    }
+   ]
+  },
+  {
+   "xp": 107,
+   "label": "Gunsō, Rank 4",
+   "rank": 4,
+   "school": "Hida Defender School",
+   "foundry_id": "xRpcwXitGcOO6hQP",
+   "foundry_name": "Hiruma Kaede 107 XP (Gunsō, Rank 4)",
+   "rings": {
+    "air": 2,
+    "earth": 3,
+    "fire": 2,
+    "water": 1,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 3,
+     "melee": 3,
+     "ranged": 2,
+     "unarmed": 1,
+     "meditation": 0,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 4,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 2,
+     "seafaring": 1,
+     "skulduggery": 1,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "Longs to travel Rokugan, or possibly even beyond.",
+    "giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Earth",
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Lord Hida’s Grip (Crab)",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Way of the Crab",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Appreciate the Scenery",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Honest Assessment",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Rushing Avalanche Style",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Staggering Shot",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Touchstone of Courage",
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
+     "name": "Lead from the Front",
+     "kind": "title_ability",
+     "rank": 1
+    },
+    {
+     "name": "Great Anvil's Measure",
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Improvised Assault",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Iron in the Mountains Style",
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Iron Shell Style",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Wanderer's Resolve",
+     "kind": "shuji",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Light Sleeper",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Physical"
+    },
+    {
+     "name": "Encompassing Duty",
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Mental"
+    },
+    {
+     "name": "Travel",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Battle Trauma",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Paragon of Courage",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Mental, Virtue"
+    }
+   ],
+   "titles": [
+    {
+     "name": "Gunsō"
+    }
+   ],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Club",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Tetsubō",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Kamayari",
+     "quantity": 1
+    },
+    {
+     "name": "Lacquered Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Kubi Bukuro",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Martial Arts [Ranged] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Void +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Labor +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Composition +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "composition",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": false
+    },
+    {
+     "label": "Fitness +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "fitness",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Seafaring +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "seafaring",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Labor +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    }
+   ]
+  },
+  {
+   "xp": 165,
+   "label": "Gunsō, Rank 5",
+   "rank": 5,
+   "school": "Hida Defender School",
+   "foundry_id": "1zj26dnVkxVx8cjc",
+   "foundry_name": "Hiruma Kaede 165 XP (Gunsō, Rank 5)",
+   "rings": {
+    "air": 2,
+    "earth": 4,
+    "fire": 2,
+    "water": 3,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 3,
+     "melee": 3,
+     "ranged": 2,
+     "unarmed": 1,
+     "meditation": 2,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 3,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 4,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 2,
+     "seafaring": 1,
+     "skulduggery": 1,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "Longs to travel Rokugan, or possibly even beyond.",
+    "giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 12,
+    "composure": 14,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Earth",
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Lord Hida’s Grip (Crab)",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Way of the Crab",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Appreciate the Scenery",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Honest Assessment",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Rushing Avalanche Style",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Staggering Shot",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Touchstone of Courage",
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
+     "name": "Lead from the Front",
+     "kind": "title_ability",
+     "rank": 1
+    },
+    {
+     "name": "Great Anvil's Measure",
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Improvised Assault",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Iron in the Mountains Style",
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Iron Shell Style",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Wanderer's Resolve",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Striking as Void",
+     "kind": "kata",
+     "rank": 5
+    },
+    {
+     "name": "Eyeless Sight Shot",
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Battle in the Mind",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Foreseen Need",
+     "kind": "shuji",
+     "rank": 4
+    },
+    {
+     "name": "A Samurai’s Fate",
+     "kind": "shuji",
+     "rank": 4
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Light Sleeper",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Physical"
+    },
+    {
+     "name": "Encompassing Duty",
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Mental"
+    },
+    {
+     "name": "Travel",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Battle Trauma",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Paragon of Courage",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Mental, Virtue"
+    }
+   ],
+   "titles": [
+    {
+     "name": "Gunsō"
+    }
+   ],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Club",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Tetsubō",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Kamayari",
+     "quantity": 1
+    },
+    {
+     "name": "Lacquered Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Kubi Bukuro",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Martial Arts [Ranged] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Void +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Labor +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Composition +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "composition",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": false
+    },
+    {
+     "label": "Fitness +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "fitness",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Seafaring +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "seafaring",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Labor +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Earth +1 (3 -> 4)",
+     "type": "ring",
+     "skill": null,
+     "ring": "earth",
+     "at_rank": 4,
+     "xp": 12,
+     "in_curriculum": false
+    },
+    {
+     "label": "Water +1 (1 -> 2)",
+     "type": "ring",
+     "skill": null,
+     "ring": "water",
+     "at_rank": 4,
+     "xp": 6,
+     "in_curriculum": false
+    },
+    {
+     "label": "Water +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "water",
+     "at_rank": 4,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Government +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Meditation +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Meditation +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Government +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 6,
+     "in_curriculum": true
+    }
+   ]
+  },
+  {
+   "xp": 216,
+   "label": "General, Rank 5",
+   "rank": 5,
+   "school": "Hida Defender School",
+   "foundry_id": "53TxZNvkvH299bkh",
+   "foundry_name": "Hiruma Kaede 216 XP (General, Rank 5)",
+   "rings": {
+    "air": 2,
+    "earth": 4,
+    "fire": 2,
+    "water": 3,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 3,
+     "melee": 3,
+     "ranged": 3,
+     "unarmed": 2,
+     "meditation": 3,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 4,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 4,
+     "courtesy": 1,
+     "games": 3,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 2,
+     "seafaring": 1,
+     "skulduggery": 1,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "Longs to travel Rokugan, or possibly even beyond.",
+    "giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 12,
+    "composure": 14,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Earth",
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Lord Hida’s Grip (Crab)",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Way of the Crab",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Appreciate the Scenery",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Honest Assessment",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Rushing Avalanche Style",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Staggering Shot",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Touchstone of Courage",
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
+     "name": "Lead from the Front",
+     "kind": "title_ability",
+     "rank": 1
+    },
+    {
+     "name": "Great Anvil's Measure",
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Improvised Assault",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Iron in the Mountains Style",
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Iron Shell Style",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Wanderer's Resolve",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Striking as Void",
+     "kind": "kata",
+     "rank": 5
+    },
+    {
+     "name": "Eyeless Sight Shot",
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Battle in the Mind",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Foreseen Need",
+     "kind": "shuji",
+     "rank": 4
+    },
+    {
+     "name": "A Samurai’s Fate",
+     "kind": "shuji",
+     "rank": 4
+    },
+    {
+     "name": "Superior Command",
+     "kind": "title_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Light Sleeper",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Physical"
+    },
+    {
+     "name": "Encompassing Duty",
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Mental"
+    },
+    {
+     "name": "Travel",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Battle Trauma",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Paragon of Courage",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Mental, Virtue"
+    }
+   ],
+   "titles": [
+    {
+     "name": "Gunsō"
+    },
+    {
+     "name": "General"
+    }
+   ],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Club",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Tetsubō",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Kamayari",
+     "quantity": 1
+    },
+    {
+     "name": "Lacquered Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Kubi Bukuro",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Martial Arts [Ranged] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Void +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Labor +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Composition +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "composition",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": false
+    },
+    {
+     "label": "Fitness +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "fitness",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Seafaring +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "seafaring",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Labor +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Earth +1 (3 -> 4)",
+     "type": "ring",
+     "skill": null,
+     "ring": "earth",
+     "at_rank": 4,
+     "xp": 12,
+     "in_curriculum": false
+    },
+    {
+     "label": "Water +1 (1 -> 2)",
+     "type": "ring",
+     "skill": null,
+     "ring": "water",
+     "at_rank": 4,
+     "xp": 6,
+     "in_curriculum": false
+    },
+    {
+     "label": "Water +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "water",
+     "at_rank": 4,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Government +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Meditation +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Meditation +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Government +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 6,
+     "in_curriculum": true
+    }
+   ]
+  },
+  {
+   "xp": 279,
+   "label": "General, Rank 6",
+   "rank": 6,
+   "school": "Hida Defender School",
+   "foundry_id": "l4VWZnBMThDd2yR6",
+   "foundry_name": "Hiruma Kaede 279 XP (General, Rank 6)",
+   "rings": {
+    "air": 2,
+    "earth": 4,
+    "fire": 2,
+    "water": 3,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 2,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 3,
+     "melee": 3,
+     "ranged": 3,
+     "unarmed": 2,
+     "meditation": 3,
+     "tactics": 5
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 4,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 3
+    },
+    "social": {
+     "command": 4,
+     "courtesy": 1,
+     "games": 3,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 2,
+     "seafaring": 1,
+     "skulduggery": 1,
+     "survival": 3
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "Longs to travel Rokugan, or possibly even beyond.",
+    "giri": "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 12,
+    "composure": 14,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Earth",
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Lord Hida’s Grip (Crab)",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Way of the Crab",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Appreciate the Scenery",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Honest Assessment",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Rushing Avalanche Style",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Staggering Shot",
+     "kind": "kata",
+     "rank": 2
+    },
+    {
+     "name": "Touchstone of Courage",
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
+     "name": "Lead from the Front",
+     "kind": "title_ability",
+     "rank": 1
+    },
+    {
+     "name": "Great Anvil's Measure",
+     "kind": "shuji",
+     "rank": 2
+    },
+    {
+     "name": "Improvised Assault",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Iron in the Mountains Style",
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Iron Shell Style",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Wanderer's Resolve",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Striking as Void",
+     "kind": "kata",
+     "rank": 5
+    },
+    {
+     "name": "Eyeless Sight Shot",
+     "kind": "kata",
+     "rank": 4
+    },
+    {
+     "name": "Battle in the Mind",
+     "kind": "kata",
+     "rank": 3
+    },
+    {
+     "name": "Foreseen Need",
+     "kind": "shuji",
+     "rank": 4
+    },
+    {
+     "name": "A Samurai’s Fate",
+     "kind": "shuji",
+     "rank": 4
+    },
+    {
+     "name": "Superior Command",
+     "kind": "title_ability",
+     "rank": 1
+    },
+    {
+     "name": "Falling Heavens Shot",
+     "kind": "kata",
+     "rank": 5
+    },
+    {
+     "name": "Pin the Fan",
+     "kind": "kata",
+     "rank": 5
+    },
+    {
+     "name": "Void Embrace Style",
+     "kind": "kata",
+     "rank": 5
+    },
+    {
+     "name": "Rouse the Soul",
+     "kind": "shuji",
+     "rank": 5
+    },
+    {
+     "name": "The Immovable Hand of Peace",
+     "kind": "shuji",
+     "rank": 5
+    },
+    {
+     "name": "The Mountain Does Not Fall",
+     "kind": "mastery_ability",
+     "rank": 6
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Light Sleeper",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Physical"
+    },
+    {
+     "name": "Encompassing Duty",
+     "kind": "adversity",
+     "ring": "earth",
+     "types": "Mental"
+    },
+    {
+     "name": "Travel",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Battle Trauma",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Mental, Physical"
+    },
+    {
+     "name": "Paragon of Courage",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Mental, Virtue"
+    }
+   ],
+   "titles": [
+    {
+     "name": "Gunsō"
+    },
+    {
+     "name": "General"
+    }
+   ],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Club",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Tetsubō",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Kamayari",
+     "quantity": 1
+    },
+    {
+     "name": "Lacquered Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Kubi Bukuro",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Martial Arts [Ranged] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Ranged] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "ranged",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Void +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Labor +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Composition +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "composition",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": false
+    },
+    {
+     "label": "Fitness +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "fitness",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Seafaring +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "seafaring",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Labor +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "labor",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Melee] +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "melee",
+     "ring": "void",
+     "at_rank": 3,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Earth +1 (3 -> 4)",
+     "type": "ring",
+     "skill": null,
+     "ring": "earth",
+     "at_rank": 4,
+     "xp": 12,
+     "in_curriculum": false
+    },
+    {
+     "label": "Water +1 (1 -> 2)",
+     "type": "ring",
+     "skill": null,
+     "ring": "water",
+     "at_rank": 4,
+     "xp": 6,
+     "in_curriculum": false
+    },
+    {
+     "label": "Water +1 (2 -> 3)",
+     "type": "ring",
+     "skill": null,
+     "ring": "water",
+     "at_rank": 4,
+     "xp": 9,
+     "in_curriculum": false
+    },
+    {
+     "label": "Government +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Meditation +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Meditation +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "meditation",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Government +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "government",
+     "ring": "void",
+     "at_rank": 4,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Aesthetics +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "aesthetics",
+     "ring": "void",
+     "at_rank": 5,
+     "xp": 2,
+     "in_curriculum": false
+    },
+    {
+     "label": "Survival +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "survival",
+     "ring": "void",
+     "at_rank": 5,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Theology +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "theology",
+     "ring": "void",
+     "at_rank": 5,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Tactics +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "tactics",
+     "ring": "void",
+     "at_rank": 5,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Tactics +1 (3 -> 4)",
+     "type": "skill",
+     "skill": "tactics",
+     "ring": "void",
+     "at_rank": 5,
+     "xp": 8,
+     "in_curriculum": true
+    },
+    {
+     "label": "Tactics +1 (4 -> 5)",
+     "type": "skill",
+     "skill": "tactics",
+     "ring": "void",
+     "at_rank": 5,
+     "xp": 10,
+     "in_curriculum": true
+    },
+    {
+     "label": "Theology +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "theology",
+     "ring": "void",
+     "at_rank": 5,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Theology +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "theology",
+     "ring": "void",
+     "at_rank": 5,
+     "xp": 6,
+     "in_curriculum": true
+    },
+    {
+     "label": "Aesthetics +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "aesthetics",
+     "ring": "void",
+     "at_rank": 5,
+     "xp": 4,
+     "in_curriculum": false
+    }
+   ]
+  }
+ ]
+}

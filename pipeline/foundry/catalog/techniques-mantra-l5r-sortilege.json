@@ -1,0 +1,88 @@
+[
+ {
+  "name": "Countering Mantra",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147849113,
+   "modifiedTime": 1761275349944,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 99
+   },
+   "description": "<p><span class=\"fontstyle0\"><strong>Activation:</strong> </span><span class=\"fontstyle2\">When a character you can perceive makes a check to use a celestial implement, if you have a readied celestial implement of your own, you may immediately make a </span><span class=\"fontstyle0\">TN 5 Theology check </span><span class=\"fontstyle2\">targeting that character to attempt to counter their implement’s effects. If your celestial implement’s element matches the </span><span class=\"fontstyle0\">counter element </span><span class=\"fontstyle2\">of the target’s implement, the TN is 2 instead.</span></p><p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">If you succeed, your target’s implement is </span><span class=\"fontstyle3\">dispelled</span><span class=\"fontstyle2\">. Your target counts as having failed the check to use it, with a shortfall equal to your ranks in Theology, and they do not apply any of its boons to the check.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 4,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "theology",
+   "difficulty": "5",
+   "technique_type": "mantra"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wRG952uD4IVgzJLm",
+  "sort": 0
+ },
+ {
+  "name": "Summoning Mantra : [One Implement]",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147849113,
+   "modifiedTime": 1761275298271,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 99
+   },
+   "description": "<p><span class=\"fontstyle0\"><strong>Activation:</strong> </span><span class=\"fontstyle2\">As a Support action, you may make a </span><span class=\"fontstyle0\">TN 3 Theology check </span><span class=\"fontstyle2\">to call forth one celestial implement. The ring of the check is determined by the divinity whose implement you are summoning.</span></p><p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">If you succeed, you </span><span class=\"fontstyle3\">summon </span><span class=\"fontstyle2\">and </span><span class=\"fontstyle3\">augment </span><span class=\"fontstyle2\">one readied item that becomes the celestial implement. Then, you must stake honor equal to two times your honor rank on upholding the implement’s restriction while you have the implement (see page 99). The implement persists until the end of the scene or until it is </span><span class=\"fontstyle0\">dispelled</span><span class=\"fontstyle2\">, at which point the blessing ends. If you break the implement’s restriction during this time, you lose your staked honor and the implement is </span><span class=\"fontstyle3\">dispelled</span><span class=\"fontstyle2\">. You cannot summon this implement again this scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "theology",
+   "difficulty": "4",
+   "technique_type": "mantra"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "27ldKe5bDFhiCf07",
+  "sort": 0
+ }
+]

@@ -1,0 +1,2354 @@
+[
+ {
+  "name": "Afflicted",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Afflicted",
+    "type": "image",
+    "src": "icons/svg/sun.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "63ltXx5LNl5py22h",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Afflicted",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.271</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "E0p5f7n1D3j5xruM",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RzTfXotZOVpC6cZn",
+  "sort": 0
+ },
+ {
+  "name": "Bleeding",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Bleeding",
+    "type": "image",
+    "src": "icons/svg/blood.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "ND2160kDrUnhI8W4",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Bleeding",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.271</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "9RhJietESs5OSC9q",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vgIlrcdOf9f14Isu",
+  "sort": 0
+ },
+ {
+  "name": "Burning",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Burning",
+    "type": "image",
+    "src": "icons/svg/fire.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "dqgPbprH9ss3oNYA",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Burning",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.272</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "1Uo5gu8dOSkcNWMt",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dliv6B0JV4VeYSji",
+  "sort": 0
+ },
+ {
+  "name": "Centered",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Centered",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "rNRsfPMu2EdK9DDu",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Centered",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Children of the Five Winds p.133</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "tqGxJhIlsWjnauhA",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ixN85bgsQFN82bhA",
+  "sort": 0
+ },
+ {
+  "name": "Compromised",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Compromised",
+    "type": "image",
+    "src": "icons/svg/terror.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "wiHPgK091wsZ0Ljd",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Compromised",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.272</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "GXzXegf0EhLHyI17",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "7wPA4SWoVoVT3w4N",
+  "sort": 0
+ },
+ {
+  "name": "Dazed",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Dazed",
+    "type": "image",
+    "src": "icons/svg/eye.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "dCSKz7zJrffu2lKF",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Dazed",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.272</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "615Uy123V1EVk800",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "bUNaT07TlggzUnSQ",
+  "sort": 0
+ },
+ {
+  "name": "Disoriented",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Disoriented",
+    "type": "image",
+    "src": "icons/svg/daze.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "0az6BjVd4SlCj60c",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Disoriented",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.272</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "YItTVIXWEjehd718",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "59BuA43vHulBkLr3",
+  "sort": 0
+ },
+ {
+  "name": "Dying [X Rounds]",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Dying [X Rounds]",
+    "type": "image",
+    "src": "icons/svg/skull.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "BadTbPSxQbkC5HYJ",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Dying [X Rounds]",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.272</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "n9X2Yt1jM0lIqy50",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cddM8sYYPIJYbWrX",
+  "sort": 0
+ },
+ {
+  "name": "Emboldened",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Emboldened",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "E32fvbbFYcQgNudp",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Emboldened",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Children of the Five Winds p.133</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "ZCevD4Cy3AfKGput",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Xa6Vdd8krwu7eceG",
+  "sort": 0
+ },
+ {
+  "name": "Enraged",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Enraged",
+    "type": "image",
+    "src": "icons/svg/lightning.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "fdh4kB8nYgXiLx6l",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Enraged",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.272</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "14BNbyr7v7dF8Waz",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3ZP9HBdmOMQEmiUx",
+  "sort": 0
+ },
+ {
+  "name": "Exhausted",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Exhausted",
+    "type": "image",
+    "src": "icons/svg/sleep.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "BVlkDjLBLRq4mhJu",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Exhausted",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.272</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "2i9FKxCK8N1Yhjyd",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fDCjOz3DET6LILEg",
+  "sort": 0
+ },
+ {
+  "name": "Illness: Coughing Illness",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Illness: Coughing Illness",
+    "type": "image",
+    "src": "icons/svg/poison.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "ncgkLT2kfZsDElhC",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Illness: Coughing Illness",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Writ of the Wild p.141</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "6jCY9vWVIcp0krUZ",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "F1Pu9Bw0JQKzaq4V",
+  "sort": 0
+ },
+ {
+  "name": "Illness: Fire Rash",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Illness: Fire Rash",
+    "type": "image",
+    "src": "icons/svg/fire.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "Io5yHloT1xjF9v04",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Illness: Fire Rash",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Writ of the Wild p.141</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "Ga43V5o0hfqGxKOi",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Ip2bJD1MFFQfyqFW",
+  "sort": 0
+ },
+ {
+  "name": "Illness: Gut Sickness",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Illness: Gut Sickness",
+    "type": "image",
+    "src": "icons/svg/poison.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "yEFKATKZ98Czzh5x",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Illness: Gut Sickness",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Writ of the Wild p.141</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "obTPqocMHumXncU1",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "z75bN3APUnmCqlCk",
+  "sort": 0
+ },
+ {
+  "name": "Illness: Oozing Sore Disease",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Illness: Oozing Sore Disease",
+    "type": "image",
+    "src": "icons/svg/eye.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "CD30DjMGvYhfsh4Q",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Illness: Oozing Sore Disease",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Writ of the Wild p.140</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "ItB0pUXV5XmzDU3Y",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4sXPAiHIkeXH326I",
+  "sort": 0
+ },
+ {
+  "name": "Illness: Unsteady Illness",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Illness: Unsteady Illness",
+    "type": "image",
+    "src": "icons/svg/daze.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "f1Dif4SzlFRt7Fkv",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Illness: Unsteady Illness",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Writ of the Wild p.141</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "kQbtYwHQhvgpTOMh",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "imgs4dDfa6DovJAy",
+  "sort": 0
+ },
+ {
+  "name": "Immobilized",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Immobilized",
+    "type": "image",
+    "src": "icons/svg/net.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "6MBwYWNBPsxZXtH6",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Immobilized",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.272</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "CPm6WbK9sz6tmfgt",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Abj26r4OlhksOhVP",
+  "sort": 0
+ },
+ {
+  "name": "Incapacitated",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Incapacitated",
+    "type": "image",
+    "src": "icons/svg/downgrade.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "bCVxrhW5hgvCWwzt",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Incapacitated",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.272</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "1zLnU4Z7QGIEpf3e",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "aLCmMzE8isVwtzQt",
+  "sort": 0
+ },
+ {
+  "name": "Intoxicated",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Intoxicated",
+    "type": "image",
+    "src": "icons/svg/poison.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "PUzyWej6xwc0egAv",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Intoxicated",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.273</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "LLn5JY0vEMiDQmL5",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Efs9fpp1h7sQC3e3",
+  "sort": 0
+ },
+ {
+  "name": "Possessed",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Possessed",
+    "type": "image",
+    "src": "icons/svg/terror.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "fsVvaqL6aXt1IHes",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Possessed",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Children of the Five Winds p.133</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "K0xy5ikdmzSeeIXY",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "qBpZxd2A4jqZ9hbV",
+  "sort": 0
+ },
+ {
+  "name": "Prone",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Prone",
+    "type": "image",
+    "src": "icons/svg/falling.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "5nSWpxMKGiWHO9GI",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Prone",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.273</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "USBPALau11unwzbG",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "lfY8ZHe88lOW8pD6",
+  "sort": 0
+ },
+ {
+  "name": "Silenced",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Silenced",
+    "type": "image",
+    "src": "icons/svg/silenced.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "cCSkqubrPy4RHL0N",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Silenced",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.273</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "6DRxeBJ232KyaVfF",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1a4I6IwqWCfk9EAu",
+  "sort": 0
+ },
+ {
+  "name": "Unconscious",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Unconscious",
+    "type": "image",
+    "src": "icons/svg/unconscious.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "pIzqgAtZ2W7dHNNX",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Unconscious",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.273</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "Dt6wJKWGPbG1CYa2",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "9VZg1M5gnw34fQNI",
+  "sort": 0
+ },
+ {
+  "name": "Wounded",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Wounded",
+    "type": "image",
+    "src": "icons/svg/degen.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "lsQhmn6GQms00JKY",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Wounded",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.273</blockquote>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "bcipHX5XdxdZ9M8y",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148055935,
+   "modifiedTime": 1761148055935,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "u06HESYHuQ7FYXUQ",
+  "sort": 0
+ }
+]

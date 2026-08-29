@@ -1,0 +1,1402 @@
+[
+ {
+  "name": "Agility of Legend [Armor]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761664843234,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 104
+   },
+   "description": "<p>When you make a check to resist a critical strike while wearing this armor, you may spend. If you do, a number of characters up to spent this way, of your choice, may immediately move up to 2 range bands.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Mkz9g6IlR94lGLm5",
+  "sort": 0
+ },
+ {
+  "name": "Animal Transformation [Projectile]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761664977326,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>Choose an animal profile (such as Elegant Pit Viper, on page 236). When you make a Martial Arts (ranged) check using this implement, you may spend. After resolving success or failure, the implement is dispelled as it transforms into a number of the chosen animals with total less than or equal to \u0002 spent this way times two. These animals are hostile to any targets of the check, and they persist until the end of the scene, or until they are slain.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vY4unumOLGuQfu9K",
+  "sort": 0
+ },
+ {
+  "name": "Aura of Power [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665027608,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 101
+   },
+   "description": "<p>When performing a Support action check using this implement, you may spend to choose one additional target per spent this way.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Z3nI9QetTrsVww3e",
+  "sort": 0
+ },
+ {
+  "name": "Beguile the Senses [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665097140,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 101
+   },
+   "description": "<p>When you make an Attack or Scheme action check using this implement, you may spend \u0002+ to cause each target with vigilance lower than or equal to \u0002 spent this way to suffer one of the following conditions, based on the implement’s element: Fire (Dazed), Air (Disoriented), Earth (Immobilized), Water (Exhausted), Void (Unconscious). After the check is resolved, the implement is dispelled.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "kHKv9ORJgx6J8lpI",
+  "sort": 0
+ },
+ {
+  "name": "Binding [Projectile]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665169706,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>When you perform an Attack action check using this implement, you may spend \u0002\u0002 to cause the target to suffer the Immobilized condition. Each time the target would remove this condition, they must make a TN 5 Theology check; if they fail, they do not remove the condition, instead.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Rx5PCX4mtFXf89tK",
+  "sort": 0
+ },
+ {
+  "name": "Blessed Revitalization [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665244745,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 101
+   },
+   "description": "<p>When you make a Support action check using this implement, you may spend to have each target remove one of the following conditions, based on the implement’s element: Fire (Silenced), Air (Dying), Earth (Exhausted), Water (Enraged or Burning), Void (Afflicted or Dying). After the check is resolved, the implement is dispelled.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "5ZJWOZeK7Y24Zfze",
+  "sort": 0
+ },
+ {
+  "name": "Burst of Force [Armor]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665332170,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 104
+   },
+   "description": "<p>When you make a check to resist a critical strike while wearing this armor, you may spend. If you do so during a skirmish, each character at range 1–3 of you suffers supernatural damage equal to your bonus successes on the check and is pushed one range band away from you. If you do so during a mass battle, the enemy army suffers attrition and panic equal to your bonus successes. After the check is resolved, the implement is dispelled.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "uMyd5lo29OOKocU7",
+  "sort": 0
+ },
+ {
+  "name": "Celestial Step [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665410706,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>When you make a Movement action check using this item, you may spend \u0002\u0002 to teleport the distance you would move as part of the action instead of moving conventionally. You ignore the effects of terrain and obstruction while teleporting, and you can reach locations you otherwise could not this way, but you still must be able to perceive your destination.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gjMNkXvD4ggsCsJD",
+  "sort": 0
+ },
+ {
+  "name": "Cosmic Devastation [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665471780,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>When you make an Attack action check using this implement, you may spend \u0002+ to cause each target with vigilance lower than or equal to spent this way to suffer one of the following conditions, based on the implement’s element: Fire (Burning), Air (Silenced), Earth (Lightly Wounded [One Ring of Target’s Choice]), Water (Bleeding), Void (Dying [5 rounds]). After the check is resolved, the implement is dispelled.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "krZEk0n9qzVpbIh3",
+  "sort": 0
+ },
+ {
+  "name": "Deadly Venom [Projectile]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665572768,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>When you make an Attack action check using this implement, you may spend; if you do and you succeed at the check, you cause the target to suffer the Dying (3 rounds) condition. Then, this implement is dispelled.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ROURcL1P6c7NWpGF",
+  "sort": 0
+ },
+ {
+  "name": "Defensive [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665662038,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>When you make a check to resist an effect or to use the Countering Mantra technique, if this implement is readied, reduce the TN by 2.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "kHV2lvRXSAw1aITm",
+  "sort": 0
+ },
+ {
+  "name": "Detonation [Projectile]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665749967,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>When you make a Martial Arts (ranged) check using this implement, you may spend \u0002+. In a skirmish, each character within a number of range bands equal to \u0002 spent this way suffers supernatural damage equal to the weapon’s base damage plus spent this way and is hurled one range band away from the point of impact. In a mass battle, the target cohort leader suffers the damage, and the enemy army suffers attrition and panic equal to \u0002 spent this way. After the check is resolved, the implement is dispelled.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "E9d1013eGYORSGmZ",
+  "sort": 0
+ },
+ {
+  "name": "Duplication [Projectile]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665827473,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>When you make a check to summon this implement, you may spend \u0002+ to summon that many additional copies of it. When you perform an Attack action check with this implement, you may spend \u0002 up to the number of copies at range 0–1 of the target to increase any damage you inflict by 1 per spent this way.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NykgYjPstPwATzZq",
+  "sort": 0
+ },
+ {
+  "name": "Earthshaker [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665897188,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>When you make an Attack or Scheme action check using this implement, you may spend to add one terrain quality, remove one terrain quality, or both from the surrounding area, based on the implement’s element: Fire (add Dangerous, remove Obscuring), Air (add Obscuring, remove Entangling), Earth (add Entangling, remove Imbalanced [One Element, chosen by you]), Water (add Imbalanced [One Element, chosen by you], remove Dangerous), Void (add or remove Hallowed [One Element, chosen by you]). After the check is resolved, the implement is dispelled.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "I7D6TlfWGTY1AtCP",
+  "sort": 0
+ },
+ {
+  "name": "Flurry [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761665957948,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>When performing an Attack or Scheme action check with this implement, you may spend to choose one additional target per spent this way. This target’s vigilance cannot be higher than the highest among the original targets.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xojlfhXjywrOo1ts",
+  "sort": 0
+ },
+ {
+  "name": "Fortress Breaker [Projectile]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761666045628,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>When you perform an Attack action check using this implement, you may spend \u0002\u0002. If you do during a skirmish, your target’s armor receives the Destroyed condition. If you do during a mass battle, each fortification occupied by a target is annihilated and no longer provides any benefit. The enemy army suffers attrition equal to your bonus successes, and each leader in the fortification suffers a critical strike with severity equal to your bonus successes. After the check is resolved, the implement is dispelled, and you suffer the Exhausted condition.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JQlcxFLYlqqMHT5J",
+  "sort": 0
+ },
+ {
+  "name": "Grand Inspiration [Utility Object]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761666119113,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 104
+   },
+   "description": "<p>When you make a Support action check using this implement, you may spend. If you do so in a skirmish, increase each target’s composure by 1 per spent this way until the end of the scene. If you do so in a mass battle, increase your army’s discipline by 1 per spent this way.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wezBTzuJSiV568x6",
+  "sort": 0
+ },
+ {
+  "name": "Harm Returned [Armor]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761666268433,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 104
+   },
+   "description": "<p>When you make a check to resist an effect or critical strike while wearing this armor, you may spend. If you do, the attacker suffers a critical strike with the same severity as the one you suffered (before reductions) or the same effect.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "8k7bjMOJ0i32CL7f",
+  "sort": 0
+ },
+ {
+  "name": "Illusions Shattered [Utility Object]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761666491662,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 104
+   },
+   "description": "<p>When you make a Support action check using this implement, you may spend \u0002+ to remove up to one ongoing supernatural effect (such as a persistent effect of a kihō, mahō, invocation, mantra, or celestial implement) from a target of your check per \u0002 spent this way.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ZRsoCgoGeFxdJj0Q",
+  "sort": 0
+ },
+ {
+  "name": "Independence [Melee Weapon]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761666568382,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>This implement moves and fights even when you are not holding it in your hand. As long as this implement is at range 0–4 of you, you may treat it as readied and wield it. As a Support action, you may make it move a number of range bands equal to your ranks in Meditation. Once per round when you perform an Attack action check using a different weapon, you may spend \u0002+. Choose a character in range of this celestial implement with vigilance lower than spent this way; that character suffers physical damage equal to the celestial implement’s base damage.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xWxTWHsQ6Z3KBdPO",
+  "sort": 0
+ },
+ {
+  "name": "Inexorable [Melee Weapon]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761667064788,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>When you perform an Attack action check using this implement, you may spend to ignore your target’s resistances.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yM6Uw3rvIQl9EcXO",
+  "sort": 0
+ },
+ {
+  "name": "Inviolable [Armor]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761667216672,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 104
+   },
+   "description": "<p>When you make a check to resist a critical strike while wearing this armor, you may spend. If you succeed at the check to resist, and the critical strike would otherwise be reduced to a severity of \u0002 spent or lower, you do not suffer it instead.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1E66VpYoNpsLTn61",
+  "sort": 0
+ },
+ {
+  "name": "Mark of Doom [Utility Object]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761667541719,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 104
+   },
+   "description": "<p>When you make a Scheme action check using this implement, you may spend \u0002+ to reduce the TN of the next Attack action check targeting one of your targets by 1 per \u0002 spent this way.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "BeZhsWboKvvMen07",
+  "sort": 0
+ },
+ {
+  "name": "Obliteration [Projectile]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761667650899,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>When you perform an Attack action check using this implement, you may spend \u0002\u0002. If you do and the check inflicts a critical strike, if the target fails their check to resist the critical strike, they are slain outright unless they spend 1 Void point. After the check is resolved, the implement is dispelled, and you suffer the Exhausted condition.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mO3Vkvyk53hyvvTE",
+  "sort": 0
+ },
+ {
+  "name": "Overwhelming Force [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761667739423,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>When performing an Attack action check using this implement, you may spend \u0002+. If you do, the next time your target would make a check to resist an effect, they automatically count as failing with a shortfall equal to \u0002 spent this way.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "P9fpCO8iCts3J8ae",
+  "sort": 0
+ },
+ {
+  "name": "Overwhelming Radiance [Armor]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761147986724,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": "104"
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1mb1IDEwMKGsQWhj",
+  "sort": 0
+ },
+ {
+  "name": "Resounding Arrival [Melee Weapon]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761667824224,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>When you make a check to summon this implement, you may spend \u0002+. If you do so during a skirmish, each character at range 1–3 of you suffers supernatural damage equal to \u0002 spent this way and receives that much strife. If you do so in a mass battle, the enemy army suffers that much attrition and panic.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "J74QbELfRA7TKH2p",
+  "sort": 0
+ },
+ {
+  "name": "Resounding Rhetoric [Utility Object]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761667893698,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 104
+   },
+   "description": "<p>When you make a Support action check using this implement, you may spend \u0002+. If you do so in a skirmish, you may choose any number of other characters at range 0–1 to remove fatigue and strife equal to \u0002 spent this way. If you do so in a mass battle, you may remove attrition and panic from your army equal to \u0002 spent this way. After the check is resolved, the implement is dispelled and you suffer the Exhausted condition.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "KI6e84QmussWu2MV",
+  "sort": 0
+ },
+ {
+  "name": "Returning [Projectile]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761667976428,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>When you perform a Martial Arts [Ranged] check using this implement, you may spend \u0002+; if you spend \u0002 equal to the number of range bands between you and your target, the projectile returns to your hand unless it was dispelled.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "9xsX34CR5KdTJaev",
+  "sort": 0
+ },
+ {
+  "name": "Rising Power [Melee Weapon]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668056529,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>When you make an Attack action check using this implement, you may spend \u0002+. If you fail the check, you may reserve a number of dropped dice equal to \u0002 spent this way. On your next Martial Arts [Melee] check using the implement, add those dice as kept dice. This effect persists until the reserved dice are used or until the end of the scene.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "jY6O5SlK1flhW0JD",
+  "sort": 0
+ },
+ {
+  "name": "Root of Language [Utility Object]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668138029,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 104
+   },
+   "description": "<p>If you have this implement readied and are using or holding it, then when you make a check to read, understand, or interact with a piece of text or spoken language, you may spend to gain an understanding of that language until your implement is dispelled.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "pvNjFtGLwjreppRw",
+  "sort": 0
+ },
+ {
+  "name": "Shifting Shape [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668178998,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>When you summon this implement or make a check using it, you may spend \u0002 to change it to a different object of the same form (see Form, on page 101).</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "V1dGUpv3IfRXRnsf",
+  "sort": 0
+ },
+ {
+  "name": "Soothing Words [Utility Object]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668216148,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 105
+   },
+   "description": "<p>When you make a Scheme or Support action check using this item, you may spend \u0002+ to remove 1 strife from your target per spent this way. Reduce the TN of your next Scheme or Support action check targeting them by 1 per strife removed this way. After the check is resolved, the implement is dispelled.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "VSIzr9hzngJcY2Tz",
+  "sort": 0
+ },
+ {
+  "name": "Subterranean Secrets [Utility Object]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668274752,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 105
+   },
+   "description": "<p>When you make a Movement action check using this implement, you may spend \u0002+ to create a tunnel through the ground to a location within a number of range bands equal to spent this way. If you use this during a mass battle, you may create a fortification (see page 276 of the core rulebook) that reduces attrition by your ranks in Theology and has a difficulty value equal to bspent this way</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xiI8KUaxMXzesnNw",
+  "sort": 0
+ },
+ {
+  "name": "Transfiguration [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668306072,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>When you summon this implement or make a check using it, you may spend \u0002\u0002 to change it to a different object of a different form (see Form, on page 101).</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "zxFdhseKuRsaqkEn",
+  "sort": 0
+ },
+ {
+  "name": "Unassuming [General]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668324492,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 102
+   },
+   "description": "<p>When you summon this implement or make a check using it, you may spend \u0002 to cause it to lose the Resplendent quality and gain the Subtle quality</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "YjjFig2hFfTeTa0W",
+  "sort": 0
+ },
+ {
+  "name": "Unerring [Projectile]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668375592,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 103
+   },
+   "description": "<p>When performing an Attack action check using this implement, you may spend \u0002. If you do, the target cannot defend against damage caused by the action unless they spend 1 Void point.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1Rle43ERgzRgkGJK",
+  "sort": 0
+ },
+ {
+  "name": "Unleashed Fury [Melee Weapon]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668409692,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 104
+   },
+   "description": "<p>When you make an Attack action check using this implement, you may spend \u0002+ to choose one additional target per \u0002 spent this way at range 0–2 of another target (even if they are not within the weapon’s range). This target’s vigilance cannot be higher than the highest among the original targets.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "6qmpulcqeDKoZrPj",
+  "sort": 0
+ },
+ {
+  "name": "Unlimited Negation [Utility Object]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668447237,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 105
+   },
+   "description": "<p>When you make a check to use the Countering Mantra technique, you may spend \u0002 to use it to counter any supernatural effect ­such as an effect of a kihō, mahō, or invocation) instead of only the effect of a celestial implement.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Kb1xFWUiOzJCBFYj",
+  "sort": 0
+ },
+ {
+  "name": "Vitality [Utility Object]",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147986724,
+   "modifiedTime": 1761668486812,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 105
+   },
+   "description": "<p>When you make a Support action check targeting another character, you may spend \u0002+ to reduce the TN of their checks to resist effects by 1 per spent this way. This effect persists until the end of that character’s next turn.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RzP5FcS2Swz1k456",
+  "sort": 0
+ }
+]

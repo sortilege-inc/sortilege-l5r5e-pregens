@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sortilege L5R Pregens</title>
+<meta name="description" content="A pre-generated character for every school in Legend of the Five Rings 5th Edition — each one playable at several XP tiers.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/l5r.css">
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="index.html">Sortilege L5R Pregens</a>
+  <a href="index.html" class="active">Home</a>
+  <a href="characters/index.html">Characters</a>
+  <a href="admin/index.html">Coverage</a>
+</nav>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="cartouche">
+      <div class="eyebrow">Legend of the Five Rings · 5th Edition</div>
+      <h1>The Pregen Archive</h1>
+    </div>
+    <p class="sub">A finished, playable samurai for every school in Rokugan — each one shown at the XP tiers they pass through, from freshly gempuku'd to seasoned.</p>
+    <p class="kicker">Sortilege · <span id="hero-count">—</span></p>
+  </header>
+
+  <div class="flourish"></div>
+
+  <div class="col">
+    <p class="lede">Every character here exists to be picked up and played. Each is built to a real school, from the compendium's own rules text, and each carries a timeline: the same samurai at 0 XP, at 20, at 90, at 279 — so a table can start wherever it likes and a Game Master can see exactly what changed between one rank and the next.</p>
+    <p>The archive doubles as a coverage exercise. The aim is not only one character per school, but between them a working demonstration of as much of the game as possible — every technique, advantage, disadvantage, title, and piece of gear put in someone's hands at least once. The <a href="admin/index.html">coverage ledger</a> tracks how far along that is, honestly and in public.</p>
+  </div>
+
+  <div class="covergrid" id="headline"></div>
+
+  <h2 class="section-h" style="max-width:790px;margin-left:auto;margin-right:auto"><span class="kanji">人</span>The Characters<span class="en">Roster</span></h2>
+  <div class="pgrid" id="roster"></div>
+</div>
+
+<footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
+
+<script src="data/roster.js"></script>
+<script src="data/catalog.js"></script>
+<script src="data/coverage.js"></script>
+<script src="assets/roster.js"></script>
+<script>
+(function () {
+  var chars = window.L5R_ROSTER || [];
+  var cov = window.L5R_COVERAGE || {};
+  var cat = window.L5R_CATALOG || [];
+  var schools = cov.schools || [];
+  var covered = schools.filter(function (s) { return s.slug; }).length;
+
+  document.getElementById("hero-count").textContent =
+    covered + " of " + schools.length + " schools built";
+
+  function tile(k, v, total) {
+    var pct = total ? Math.round((v / total) * 100) : 0;
+    return '<div class="cov"><span class="k">' + k + '</span>' +
+      '<div class="v">' + v + (total ? ' <small>/ ' + total + '</small>' : '') + '</div>' +
+      (total ? '<div class="bar"><i style="width:' + pct + '%"></i></div>' : '') + '</div>';
+  }
+  var used = cov.used || {};
+  function count(pred) {
+    var t = 0, u = 0;
+    cat.forEach(function (e) {
+      if (!pred(e)) return;
+      t++; if (used[e.uuid]) u++;
+    });
+    return [u, t];
+  }
+  var ABILITY_PACKS = /(school-abilities|mastery-abilities|title-abilities)/;
+  var tech = count(function (e) {
+    return e.sub_type === "technique" && !ABILITY_PACKS.test(e.pack);
+  });
+  var pec = count(function (e) { return e.sub_type === "peculiarity"; });
+  var gear = count(function (e) { return ["weapon", "armor", "item"].indexOf(e.sub_type) >= 0; });
+  document.getElementById("headline").innerHTML =
+    tile("Schools", covered, schools.length) +
+    tile("Characters", chars.length, 0) +
+    tile("XP tiers", chars.reduce(function (a, c) { return a + c.tier_count; }, 0), 0) +
+    tile("Techniques", tech[0], tech[1]) +
+    tile("Advantages &amp; Disadvantages", pec[0], pec[1]) +
+    tile("Equipment", gear[0], gear[1]);
+
+  document.getElementById("roster").innerHTML =
+    window.renderRoster(chars, "characters/");
+})();
+</script>
+</body>
+</html>

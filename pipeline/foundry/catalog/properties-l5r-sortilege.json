@@ -1,0 +1,1437 @@
+[
+ {
+  "name": "Agasha Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761359019642,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 105
+   },
+   "description": "<p>The Agasha family of the Dragon are not only priests or shugenja of the kami, but also skilled smiths. To them, blacksmithing is a sacred art, a way in which they worship and honor the spirits. Weapons crafted by Agasha swordsmiths are made with countless prayers and whispers, and some say the spirits have a hand in their creation.</p><p>After you perform a successful Attack action check using a bladed weapon produced in the Agasha pattern, the target suffers 1 supernatural damage.</p><p>XP Cost: 6 Rarity Modifier: +4 </p><p>New Techniques</p><p>Just like the techniques included in the Legend of the Five Rings Roleplaying Game Core Rulebook, the new techniques here can be selected by a character who meets the prerequisites.</p><p>Air Invocations</p><p>The following invocations represent an expanded capacity for utilizing the mind-muddling and wily abili\u0002ties associated with Air invocations.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "DKHIrX2Vv83YARaX",
+  "sort": 0
+ },
+ {
+  "name": "Akodo Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761359137871,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 93
+   },
+   "description": "<p>The Akodo are known for their regal bearing and status throughout Rokugan. A weapon or piece of armor crafted by the Akodo family bears the characteristic family mark and looping inlay. As a result of its association with the regal family, any equipment made by an Akodo elicits an implicit trust in anyone who trusts that family. The Akodo pattern can be applied to a weapon or set of armor. A character carrying or wearing one or more items made in the Akodo pattern increases the discipline of any army of which they are the commander by 5. </p><p>XP Cost: 6 Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "9n61TW7OosURkpmY",
+  "sort": 0
+ },
+ {
+  "name": "Burning Watter Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761359186011,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 93
+   },
+   "description": "<p>While the secret of blasting powder is one of the greatest in the Empire, there are even more secretive artisans who dare experiment with its formula. One alteration uses rarer ingredients that still react when wet, allowing dishonorable saboteurs to use blasting powder in the rain or against structures that are underwater (making destructive items even more difficult to detect). Blasting powder fashioned using the burning water pattern has its damage reduced by 1. Blasting powder fashioned using the burning water pattern can be used when wet or even underwater.</p><p>XP Cost: 6 Rarity Modifier: +4</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cSTzx9o4fPzcPrHi",
+  "sort": 0
+ },
+ {
+  "name": "Ceremonial",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761473714776,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 240
+   },
+   "description": "<p>Ceremonial equipment is indicative of the wearer’s rank. It can be brought into many contexts in which similar items might not be allowed. Rarely, a character might be loaned a Ceremonial item to provide them with authority during a task.</p><p data-start=\"240\" data-end=\"425\">While wearing one or more Ceremonial items openly, reduce TN of checks to convince others of your real or assumed identity as the known owner of that item (or one of their allies) by 1.</p><p data-start=\"427\" data-end=\"571\" data-is-last-node=\"\" data-is-only-node=\"\">At the end of any scene in which you use a Ceremonial item of a character with higher status without their permission, you must forfeit 3 honor.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "sJZpYhppyFwofacb",
+  "sort": 0
+ },
+ {
+  "name": "Concealable",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761473755285,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 240
+   },
+   "description": "<p>Some weapons and armor are easy to hide on one’s person, due to size or deliberate design.</p><p data-start=\"92\" data-end=\"458\">Unless explicitly worn openly or revealed for use, a Concealable item is assumed to be hidden. When observing the wearer of a hidden item, a character must succeed at a TN 3 Design (Air) or Smithing (Air) check to discern that the wearer is armed or armored. If the onlooker succeeds with two or more bonus successes, they also determine the type of the hidden item.</p><p data-start=\"460\" data-end=\"623\">Concealable armor can be worn under loose-fitting clothes, but you can only benefit from the resistance and qualities of one set of armor at a time (see page 238).</p><p data-start=\"625\" data-end=\"764\" data-is-last-node=\"\" data-is-only-node=\"\">Concealable weapons can also be drawn more quickly in combat. As part of an Attack action, you may ready or sheathe one Concealable weapon.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "IP9YwxAHhoKDTi1u",
+  "sort": 0
+ },
+ {
+  "name": "Concealment Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761359281550,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 93
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JuwTP9aL9e6Ni9ah",
+  "sort": 0
+ },
+ {
+  "name": "Cumbersome",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761473860560,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 240
+   },
+   "description": "<p>This item is heavy or unwieldy, and impossible to conceal on one’s person.</p><p data-start=\"199\" data-end=\"332\">While wearing Cumbersome armor, increase the TN of your checks to maneuver in your environment (such as Movement action checks) by 1.</p><p data-start=\"334\" data-end=\"429\">If you moved this turn, increase the TN of Attack action checks using a Cumbersome weapon by 1.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000005",
+     "name": "Concealable"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Xiq0wMhLUaDI8MfF",
+  "sort": 0
+ },
+ {
+  "name": "Damaged",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761473898407,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 240
+   },
+   "description": "<p>Samurai must carefully maintain their kit in the field, for routine wear and tear will eventually ruin nearly any tool. While many samurai have staff to assist with such matters, most battle-tested samurai have learned at least the basics needed to keep their equipment functional.</p><p data-start=\"394\" data-end=\"472\">If a weapon or tool becomes Damaged, increase the TN of checks to use it by 1.</p><p data-start=\"474\" data-end=\"560\">If armor becomes Damaged, reduce all resistances it provides by 2 (to a minimum of 0).</p><p data-start=\"562\" data-end=\"719\">If a Damaged item becomes Damaged again, it loses Damaged and becomes Destroyed instead. If it becomes Destroyed for any other reason, it also loses Damaged.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GBxDSUcOGbpCFf39",
+  "sort": 0
+ },
+ {
+  "name": "Deadly Fangs Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761361320295,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "<p><em>Lion armies often include ashigaru forces, their vetrans armed with especially deadly polearms forged to hold fast against attackers. Few enemies can avoid becoming impaled on the needlelike points when these polearms are firmly planted. A polearm made in the deadly fangs pattern gains the Cumbersome quality and increases its deadliness by 1.If an entire cohort is equipped with polearms with the deadly fangs pattern, its leader reduces the TN of the Reinforce action by 1 (to a minimum of 1).</em></p><p><strong>XP Cost: 7 Rarity Modifier: +4</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gnkcSZ5fEbZrQfBs",
+  "sort": 0
+ },
+ {
+  "name": "Destroyed",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761361441775,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 240
+   },
+   "description": "<p><em>Extreme events or long use without maintenance can shatter, tear, or otherwise render an item nonfunctional. Such an item is broken and cannot be used for its intended function. It might still be usable as an improvised weapon or tool, at the GM’s discretion.</em></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "CwDoO8iHmBxhLe9p",
+  "sort": 0
+ },
+ {
+  "name": "Durable",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761473936165,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 240
+   },
+   "description": "<p>Items crafted to last can endure damage that would destroy less well-made works.</p><p data-start=\"150\" data-end=\"299\">If a Durable item would become Damaged, it loses Durable instead. If a Durable item would be Destroyed, it loses Durable and becomes Damaged instead.</p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000003",
+     "name": "Damaged"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "F8U4oUg4UtEPPTDx",
+  "sort": 0
+ },
+ {
+  "name": "Fearsome Snarl Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761361480454,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000005",
+     "name": "Concealable"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Cxb1a5q1oJr9X79a",
+  "sort": 0
+ },
+ {
+  "name": "Forbidden",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761361535839,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 240
+   },
+   "description": "<p><em>Rokugani laws are unforgiving, and many things are con\u0002traband. This includes many illicit substances, heretical art or literature, and foreign items that have not been transported through strictly regulated trade routes. At the end of any scene in which you used a Forbidden item openly in public, you must forfeit 3 glory.</em></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "QerZcmkWe0SHeCq1",
+  "sort": 0
+ },
+ {
+  "name": "Ghostlands Yodhaniya Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761361638260,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 117
+   },
+   "description": "<p><em>The Ghostlands hunters of the Ivory Kingdoms, known as the Yodhaniya, spend most of their spend most of their lives hunting within the Tainted domain of the rakshasa. </em></p><p><em>The dense growth within the haunted rainforest makes weaponry like urumi (whip swords) difficult to handle, so most Yodhaniya use blunt weapons like gada, or maces. </em></p><p><em>Their weaponsmiths have learned to make these weapons stronger without adding additional weight and have imbued them with coral and gold to make them highly effective against Tainted creatures. </em></p><p><em>A blunt weapon made using the Ghost\u0002lands Yodhaniya pattern gains +1 physical damage. It also gains +1 additional damage against Tainted beings and the wielder ignores the Cumbersome quality while in Defiled terrain.</em> </p><p><strong>XP Cost: 6 </strong></p><p><strong>Rarity Modifier: +4</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "YnXFo3QeedxFrir1",
+  "sort": 0
+ },
+ {
+  "name": "Hewing",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761361828974,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 116
+   },
+   "description": "<p>This weapon is specifically designed to bypass or break through shields and armor. When you make an Attack action check with a Hewing weapon, you may spend as follows:</p><ul><li><p>- This attack ignores any TN bonuses from an opponent’s shield.</p></li><li><p>-  Decrease the target’s physical resistance by 1 for each spent this way </p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "7MjUodhiza0CirsN",
+  "sort": 0
+ },
+ {
+  "name": "Ichirō Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761361872354,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "MZ8yFFkLODPIZaLk",
+  "sort": 0
+ },
+ {
+  "name": "Kakita Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761362081795,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 109
+   },
+   "description": "<p><em>Kakita swordsmiths are known across Rokugan for their finely crafted weapons. While hardly one sword in a generation is deemed worth to bear the name “Kakita blade,” all of their works have an exquisitely sharp edge with no sacrifice to the weapon’s sturdiness.A bladed weapon produced in the Kakita Pattern gains +1 deadliness.</em> </p><p><strong>XP Cost: 6 Rarity Modifier: +4</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Zzt01RTKIGwmzclw",
+  "sort": 0
+ },
+ {
+  "name": "Kenzō Blade",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761362030694,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 109
+   },
+   "description": "<p><em>The Kenzō smithy is one of the premier smithies in the Crane lands. Founded centuries ago by Ashidaka Kenzō, this smithy produces wondrous dueling weap\u0002ons for the Kakita family. Indeed, Kenzō blades—nearly every weapon that has come out of the Kenzō smithy has been a sword of one kind or another—are considered to be among the finest dueling weapons in Rokugan. Kenzō blades are both beautiful and extremely deadly.A weapon produced in the Kenzō smithy gains +1 deadliness, –1 damage, and the Resplendent quality.</em></p><p><strong>XP Cost: 8 Rarity Modifier: +5</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RAzRiXl1O44Y6USq",
+  "sort": 0
+ },
+ {
+  "name": "Kökejin’s Heart of the Wind Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761362238710,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 117
+   },
+   "description": "<p><em>Along the Sand Road, the way of the horse is the way of life. Those who design weapons there do so not only with mounted combat in mind, but as the default. A particular master crafter named Kökejin, a mysterious woman who lives in the small oasis city of Süüdriin Gazar, or the Land of Shade, is said to make the sharp\u0002est, most versatile spears in all of the Burning Sands. </em></p><p><em>Rumors say the khan himself outfits his best warriors with the deadly weapons of Kökejin.A polearm made using the Kökejin’s Heart of the Wind pattern gains the Razor-Edged and Durable item qualities. Additionally, its wielder treats this weapon’s damage value as 2 higher while mounted.</em> </p><p><strong>XP Cost: 8 </strong></p><p><strong>Rarity Modifier: +5</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "PTWuvRzFpfSOeK6G",
+  "sort": 0
+ },
+ {
+  "name": "Mountain Silk Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761362257626,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NxQhLQTcO93LrfjK",
+  "sort": 0
+ },
+ {
+  "name": "Mundane",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761362368606,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 240
+   },
+   "description": "<p><em>Mundane items are objects that are found in all contexts of daily life, and are permitted to anyone in most social contexts (within reason). After all, people in many walks of life need tools like knives, walking sticks, and wheat threshers, even if these items can be utilized to deadly effect by someone sufficiently determined.</em></p><p><em>Wearing a Mundane item openly has no additional effects, though onlookers still take note of the fact that you are armed if the item could be used as a weapon.</em></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "OaS6Y9gCfRZt5jNx",
+  "sort": 0
+ },
+ {
+  "name": "Prepare",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761362325706,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 240
+   },
+   "description": "<p><em>This item must be reloaded, reset, or otherwise prepared after use. After you use this item, you cannot use it again until it has been prepared. As a Support action, while it is readied, you may prepare this item for use.</em></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "y7KeaWS7svCgbJdi",
+  "sort": 0
+ },
+ {
+  "name": "Razor-Edged",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761362542294,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 241
+   },
+   "description": "<p><em>Some weapons are particularly sharp, and thus brittle, and must be carefully honed to keep functioning at their best. The traditional Rokugani katana is one such weapon—its keen edge lets it hew off limbs more easily than other swords, but it is also more susceptible to damage if swung carelessly at armored foes. </em></p><p><em>When you succeed at an Attack action check that deals damage to a target using a Razor-Edged item, if the damage dealt is reduced to 0 before they defend, this item becomes Damaged.</em></p><p>When you make an Attack action check with a Razor-Edged weapon, you may spend  as follows:</p><ul><li><p>- Treat the deadliness of this weapon as 1 higher per spent this way</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "z7aezVbjAlxQXx9U",
+  "sort": 0
+ },
+ {
+  "name": "Resplendent",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761362595954,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 241
+   },
+   "description": "<p><em>An item with the Resplendent quality is embellished to attract attention to its presenter or wearer. While wearing one or more Resplendent items, if you would be awarded 1 or more glory, you receive that amount of glory plus 1 instead.</em></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "b997J2Nal1XCK9k3",
+  "sort": 0
+ },
+ {
+  "name": "Sacred",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761362878602,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 241
+   },
+   "description": "<p><em>Items with the Sacred quality are imbued with purifying power—often in the form of jade, the mystical stone said to be the tears shed by Amaterasu, the goddess of the sun and protector against the terror of the night. </em></p><p><em>Such items are anathema to the denizens of the Shadowlands and other horrors that prey upon humanity. When an Otherworldly being makes an Attack or Intrigue action check targeting the wearer of one or more Sacred items, increase the TN by 1. While you are carrying one or more Sacred items, if you would gain the Afflicted condition, you must choose one of those items to become Damaged instead. Sacred weapons ignore all resistances possessed by Otherworldly and Tainted being</em></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000008",
+     "name": "Unholy"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "qy3lcVHr0gXSTOOA",
+  "sort": 0
+ },
+ {
+  "name": "Screaming Fire Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761362949203,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "<p><em>While blasting powder is frightening enough, some variant mixtures include alchemical items from gaijin lands designed to emit terrible shrieks and thunderclaps when used. Even veteran soldiers become alarmed and prone to flee when the air itself assaults their senses. Blasting powder fashioned using the screaming fire pattern has its damage reduced by 2. When it causes an army to receive 1 or more panic during a Mass Battle, that army receives that amount of panic plus 3 instead. Additionally, the area it affects becomes Imbalanced (All Elements) for 1 week.</em></p><p><strong>XP Cost: 6 Rarity Modifier: +4</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "AL70yJxRNZElylSK",
+  "sort": 0
+ },
+ {
+  "name": "Shirogane Jade Inlay",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363044277,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 109
+   },
+   "description": "<p><em>Kuni Shirogane was a weaponsmith renowned for his beautiful and deadly weapons. During his long career, Shirogane developed a process to make a jade-infused resin that could be applied to suitably crafted weap\u0002ons and armor to protect an individual against the terrors of the Shadowlands. Items forged to use this jade resin are typically heavily engraved with ornate designs into which the resin is poured. As the item is exposed to Shadowlands Taint, the jade slowly turns to muck, requiring another application of the resin. While it seems inconvenient to some, Shirogane jade inlay has protected the lives and souls of many Crab warriors.</em></p><p><em>Weapons and armor designed for Shirogane jade inlay gain the Sacred quality. Armor so altered loses 1 point of physical resistance, and weapons lose 1 point of deadliness. Should the item become Damaged, the jade is chipped away as well and must be reapplied. When this happens, the item loses the Sacred quality until a smith applies more jade resin by making a TN 3 Smithing (Earth) check as a downtime activity. This process consumes one finger of jade per attempt.</em></p><p><strong>XP Cost: 3 Rarity Modifier: +2</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "9GWu4HfZ8tSBCMJU",
+  "sort": 0
+ },
+ {
+  "name": "Snaring",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363101612,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 241
+   },
+   "description": "<p>Flexible or, in some cases, harshly curved weapons are excellent for snaring, grabbing, and disarming. When performing an Attack action with a Snaring weapon, you may spend as follows:</p><ul><li><p>- One target of the attack with vigilance lower than or equal to the  spent this way suffers the Immobilized condition.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "sZT5WIYfAH1kKPhd",
+  "sort": 0
+ },
+ {
+  "name": "Spirit of the Qamarist Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363199493,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 117
+   },
+   "description": "<p><em>Those who hail from the Cradle of the World—the +amarist Caliphate—come from a culture of spiritual and military might. The warriors and religious leaders of this iron-willed empire are familiar with the dangerous supernatural beings and creatures that exist across the world. Several great Qamarist alchemists have discovered a way to treat armor to increase its supernatural resistances to fend off such entities. Armor made using the Spirit of the Qamarist pattern gains +1 supernatural resistance.</em></p><p><strong>XP Cost: 5 </strong></p><p><strong>Rarity Modifier: +4</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "k84keZFrcK3jIgWl",
+  "sort": 0
+ },
+ {
+  "name": "Subtle",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363217612,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 241
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "tEJ02W05JKXNNSFt",
+  "sort": 0
+ },
+ {
+  "name": "Toriyama's Endurance Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363320148,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 94
+   },
+   "description": "<p><em>When a fire broke out in Toshi Ranbo’s archive, scholars feared that centuries of knowledge would be lost, but were surprised to discover that many of the earliest tomes, scrolls, or other literary artifacts were undamaged while later volumes had burned or been irreparably damaged by smoke. That the volumes remained intact was due in part to the scientific advancements of the ancient wartime scholar Toriyama. When Toriyama was assigned to Toshi Ranbo’s library in the city’s early days, he feared that the city might be sacked and the library put to the flame, for wars already raged around that region. As such, he developed new, more enduring inks and painstakingly researched chemicals that could slow the burning of a scroll (without ruining the contents). After the fire in the library centuries later, Toriyama’s methods were rediscovered and propagated, and are still taught to scribes and archivists today. Parchment and scrolls that are made with Toriyama’s endurance pattern gain the Durable item quality, but only against the effects of fire and water.</em> </p><p><strong>XP Cost: 3 Rarity Modifier: +3</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "SvLUlgLWJpYjiiJI",
+  "sort": 0
+ },
+ {
+  "name": "Uchema’s Technique",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363398836,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 109
+   },
+   "description": "<p><em>Uchema’s technique is a style of armorsmithing used to produce specialty armor for scouts and siege engi\u0002neers. A suit of armor made using Uchema’s technique can be anything from a simple suit of ashigaru armor to a splendid, heavy suit of ō-yoroi. With careful tailoring and clever use of lacing and straps, an armorsmith can use the technique to make a suit of armor more flexible and easier to wear. A warrior wearing a suit made with Uchema’s technique can run, climb, bend, leap, and otherwise move as if they were wearing simple clothing rather than bulky armor. </em></p><p><em>A suit of armor made using Uchema’s technique loses the Cumbersome quality and loses 1 point of physical resistance.</em></p><p><strong>XP Cost: 4 Rarity Modifier: +3</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JjrZcvt945zd3PFQ",
+  "sort": 0
+ },
+ {
+  "name": "Ujik Horsebow Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363517040,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 107
+   },
+   "description": "<p><em>The Ujik people of the western steppes boast a unique style of composite bow, one with a greater recurve and a long “bridge” to support the resting bowstring. When the drawn string is released, it strikes against the bridge with a loud crack, providing a boost in velocity and a greater punch. This sound, along with the tendency for Ujik-made arrows to whistle, has earned Ujik\u0002style bows the nickname screeching bows among the other peoples along the Sand Road. </em></p><p><em>A bow made with the Ujik horsebow pattern gains +1 damage and the Snaring item quality due to its additional punching force. It loses the Durable item quality (and can never gain it), and if it is exposed to significant moisture, it gains the Damaged item quality.</em></p><p><strong>XP Cost: 4</strong></p><p><strong>Rarity Modifier: +3</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "k5WRyVvTA62i0PpX",
+  "sort": 0
+ },
+ {
+  "name": "Unholy",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363593445,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 241
+   },
+   "description": "<p><em>Some physical artifacts carry a dreadful miasma. They may have been tainted by direct exposure to the power of the Shadowlands or by foul rituals, but some are made with obsidian, said to be the shed blood of Onno\u0002tangu, the god of the moon and ancient foe of the Kami. </em></p><p><em>After a character suffers a critical strike from an Unholy weapon, they suffer the Afflicted condition. At the end of each scene in which you use an Unholy item, you suffer the Afflicted condition. Unholy weapons ignore all resistances possessed by Otherworldly beings.</em></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "7Wg1ZvnYRurLKa7v",
+  "sort": 0
+ },
+ {
+  "name": "Utsuko Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363685405,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 107
+   },
+   "description": "<p><em>According to legend, when the Ki-Rin Clan divided itself into the five hordes to explore the lands beyond Rokugan, Iuchi asked Shinjo to forbid his eldest daughter, Meiko, from following him south with the Green Horde. Meiko begged Shinjo to send her south with her father, but instead, Meiko accompanied the Purple Horde with Utaku Shiko. During this time, she built upon the knowledge that her father had acquired, refining the art that would evolve into meishōdō. But it was her great-grand\u0002daughter, Iuchi Utsuko, who would complete her life’s work, developing patterns for a more stable talisman. </em></p><p><em>Artisans whose talismans utilize one of Iuchi Utsuko’s patterns can create superior divine vessels for enshrined spirits to thrive within, or more perfect prisons for spirits that would otherwise terrorize the countryside.After it is used to capture a spirit, a meishōdō talisman with the Utsuko pattern increases its stability by its creator’s Void ring.</em> </p><p><strong>XP Cost: 3</strong></p><p><strong>Rarity Modifier: +4</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "5wpO8RcdS7EkwB42",
+  "sort": 0
+ },
+ {
+  "name": "Wargear",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363781035,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 241
+   },
+   "description": "<p><em>Implements seen in battle and few other contexts—items with the Wargear quality—are decidedly inappropriate for most social contexts. Wargear makes people nervous, which impedes efforts at diplomacy. Whenever another character suffers 1 or more strife  due to the actions of someone wearing one or more Wargear items, they suffer that amount plus 1 instead. Even the fiercest warrior cannot get by with arms and armor alone, and humans use many tools to make their lives more comfortable, edifying, and enjoyable. Rokugani samurai often carry some of the following items, depending on their specific needs, duties, and passions.</em></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "8EiWpSdh2WEqNXhR",
+  "sort": 0
+ },
+ {
+  "name": "Watered Steel Pattern",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363876201,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 107
+   },
+   "description": "<p><em>Named for the alternating patterns of light and dark bands inherent in the metal, which is said to resemble ripples in a watery surface, watered steel is a unique type of metal forged in the lands beyond the Sand Road. Watered steel is made primarily in the Caliphate via a secretive process that is protected by order of the caliph. Attempts to reproduce the steel have failed, leading many blacksmiths to believe there is more to this craft than mere pattern welding. Watered steel is prized in weaponry for its superior ability to hold an edge, its extreme tensile strength and flexibility, and its resistance to the elements.</em></p><p><em>An item made primarily of watered steel gains the Durable and Resplendent item qualities; if it is a weapon that already has the Durable item quality, it instead gains +1 deadliness. Additionally, Razor-Edged weapons made of watered steel gain the Hewing item quality. Armor cannot be made from watered steel.</em></p><p><strong>XP Cost: 8</strong></p><p><strong>Rarity Modifier: +6</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "YKVxJUWS3jQ0xjUB",
+  "sort": 0
+ },
+ {
+  "name": "Yasunori Steel",
+  "type": "property",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/property.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147998834,
+   "modifiedTime": 1761363948416,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 109
+   },
+   "description": "<p><em>Decades ago, Kenru Yasunori, a Crab swordsmith, developed a new steel alloy while tinkering in his forge. Quite by accident, they discovered that a mix of various ores and refined metals made a steel that is both lightweight and strong but lacks the beauty of traditional Rokugani steel. Soon they began creating mas\u0002sive two-handed swords and axes for use in defending the Wall. Yasunori steel weapons are popular among Crab samurai who appreciate a sturdy, well-made blade and care little for aesthetics. </em></p><p><em>A weapon made from Yasunori steel loses the Ceremonial, Cumbersome, and Resplendent qualities (and can never gain any of these). It gains the Durable quality; if the weapon already has the Durable quality, it gains +1 deadliness instead.</em> </p><p><strong>XP Cost: 5 Rarity Modifier: +4</strong></p>",
+   "parent_id": null,
+   "items": [],
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    },
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3mjTfww6RZ0uozs9",
+  "sort": 0
+ }
+]

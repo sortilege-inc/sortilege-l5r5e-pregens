@@ -1,0 +1,836 @@
+{
+ "slug": "isawa-yukiko",
+ "name": "Isawa Yukiko",
+ "folder_label": "Isawa Yukiko (Ishiken Initiate)",
+ "bucket": "Ishiken",
+ "accent": null,
+ "identity": {
+  "clan": "Phoenix",
+  "family": "Isawa",
+  "school": "Ishiken Initiate School",
+  "role": "Sage",
+  "age": ""
+ },
+ "portrait": "src/portraits/isawa-yukiko.png",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "core",
+  "generated": true,
+  "step1": {
+   "clan": "Phoenix",
+   "ring": "void",
+   "skill": "theology",
+   "social_status": 30
+  },
+  "step2": {
+   "family": "Isawa",
+   "ring": "fire",
+   "skill1": "meditation",
+   "skill2": "theology",
+   "wealth": 3,
+   "social_glory": 39
+  },
+  "step3": {
+   "school": "Ishiken Initiate SchoolSage",
+   "roles": "Sage",
+   "ring1": "void",
+   "ring2": "water",
+   "skill1": "fitness",
+   "skill2": "sentiment",
+   "skill3": "meditation",
+   "skill4": "none",
+   "skill5": "none",
+   "allowed_techniques": {
+    "kata": false,
+    "kiho": false,
+    "inversion": true,
+    "invocation": false,
+    "ritual": true,
+    "shuji": true,
+    "maho": false,
+    "ninjutsu": false,
+    "mantra": false,
+    "specificity": true
+   },
+   "techniques": [
+    "2AUf2kuJdMWvY13L",
+    "JUOu5wKW90qDj9BG",
+    "vzyZwVERv5Q2kulT"
+   ],
+   "school_ability": [
+    "fwNLwyKgWpWlq9nd"
+   ],
+   "equipment": [
+    "Cq1koK56k9dvLfMh",
+    "S1MG4qPHEV3N8XnO",
+    "0ZcXEpZP8WC9KVUv",
+    "DhMU7Z6UsxB7CSvR",
+    "Rex7fGo6R1KuUhQJ"
+   ],
+   "social_honor": 30
+  },
+  "step4": {
+   "stand_out": "While everyone around her recognizes Yukiko as a prodigy, she herself is grounded and practical, treating her intuitive grasp of the elements and the void matter-of-factly and unworthy of comment.",
+   "ring": "earth"
+  },
+  "step5": {
+   "social_giri": "To fulfill her role as the reincarnated Little Teacher, with all the baggage and expectations that comes with that."
+  },
+  "step6": {
+   "social_ninjo": "To be allowed to just be a child—to play, to make mistakes, to eat sweets without it being a \"lesson,\" to not carry the weight of destiny for just one day."
+  },
+  "step7": {
+   "clan_relations": "Yukiko sees Righteousness as being what each situation demands; the idea of firm rules for morality are non-sensical to her.",
+   "skill": "aesthetics",
+   "social_add_glory": 0
+  },
+  "step8": {
+   "bushido": "There is honor in every station under the heavens.",
+   "skill": "labor",
+   "social_add_honor": 0,
+   "tenet_paramount": "Compassion",
+   "tenet_less_significant": "Righteousness",
+   "item": []
+  },
+  "step9": {
+   "success": "At age six Yukiko performed the \"Sight Beyond Existence\" inversion for the first time. She did it without difficulty, and explained the method to the astonished shugenja that observed her in terms that appeared to be quoting the Little Teacher; something she was unfamiliar with. It was this action that saw her adopted into the Isawa and formally intitiated in the ishiken school.",
+   "distinction": [
+    "5Qio83HbgDCmEtDu"
+   ]
+  },
+  "step10": {
+   "difficulty": "She was a foundling, and was raised by a woman named Tomoe in a small river village. Tomoe found Yukiko's mannerisms and pronouncements strange but charming. This humble upbringing gave Yukiko a grounded perspective that clashes with Phoenix clan expectations. She doesn't understand why people make such a fuss over her abilities, speaks too casually with superiors, and has peasant habits (like eating with her hands or preferring to sit on the floor) that horrify the clan's more traditionalist members. Some Phoenix nobles see her common upbringing as a stain on her destiny, though Yukiko only remembers Tomoe's kindness and doesn't understand why anyone cares.",
+   "adversity": [
+    "Nu8iglY7oRI9xOCU"
+   ]
+  },
+  "step11": {
+   "calms": "What truly brings Yukiko joy is the simple act of giving—whether it's sharing her taiyaki with younger students, using her void sight to help someone find a lost item, or teaching others what comes so naturally to her. She doesn't see her gifts as something to hoard or leverage for status; she genuinely wants to help people and feels happiest when she can make someone else's burden lighter. This manifests in both grand gestures (once she spent weeks helping a lesser shugenja understand a technique they struggled with) and tiny ones (she anonymously leaves small paper cranes she's folded in places where sad people sit). Her generosity is so instinctive that she's often confused when people react with suspicion or try to repay her—in her mind, having more than you need means you should share.",
+   "passion": [
+    "YcIds62Xnv80M4NI"
+   ]
+  },
+  "step12": {
+   "worries": "Despite being constantly surrounded by teachers, minders, and observers, Yukiko is profoundly lonely. Other children are frightened by her abilities or resentful of the attention she receives. Adults treat her either as a sacred relic to be preserved or a phenomenon to be studied—never as a person. She has her doll Hana, but Hana doesn't talk back. She has memories from her past life, but those belong to someone else. Sometimes, late at night, she cries silently because she can't remember the last time someone just... talked to her. Just talked, the way Tomoe used to, about nothing important. This loneliness makes her desperately attached to the few people who show her genuine warmth, and terrified of losing them.",
+   "anxiety": [
+    "1bGugd8gqAN0Gixk"
+   ]
+  },
+  "step13": {
+   "most_learn": "When Isawa Ujina adopted her, it was mostly to provide safety and structure, and the power of the Isawa family and the Phoenix clan. But custody of Yukiko was immediately handed over to Gensho, an abbot from the Brotherhood of Shinsei. He treated Yukiko as a peer, helping her learn but also holding her accountable.",
+   "skill": "none",
+   "advantage": [
+    "OD04fLQXqB1f8SK8"
+   ],
+   "disadvantage": []
+  },
+  "step14": {
+   "first_sight": "Yukiko's eyes are grey, and at moments will flash entirely white.",
+   "special_features": [
+    "leCuFyIgjeuf9fJi"
+   ]
+  },
+  "step15": {
+   "stress": "When she is under extreme stress, she will seem to dissociate. At times she will speak, but with words seemingly not her own. She often does not recall what was said during these moments."
+  },
+  "step16": {
+   "relations": "Isawa Ujina - Her formal adoptive father; views her as his duty and legacy, though they have little personal warmth between them. He provided a finger of jade to assist with spiritual protection.\nAbbot Gensho - Her true mentor and guardian from the Brotherhood of Shinsei; treats her as a person first, prodigy second.\nTomoe - The peasant woman who raised her from infancy to age six; Yukiko still loves her and doesn't understand why she can't visit.",
+   "item": [
+    "DPc5XLaPHWGkcNs5"
+   ]
+  },
+  "step17": {
+   "parents_pov": "Tomoe saw past the eerie pronouncements to the little girl who needed bedtime stories and who cried when birds fell from their nests. When the Isawa family came to claim Yukiko after her demonstration of void techniques, Tomoe wept but didn't fight it—she'd always known the child was destined for something beyond a river village. She still prays to the Fortunes that someone, somewhere, is making sure her little Yuki-chan is eating properly.",
+   "skill": "games",
+   "bond": []
+  },
+  "step18": {
+   "heritage_name": "Yukiko was written on the bundle that was found with the baby; the provenance of the name is unknown.",
+   "heritage_1": 3,
+   "heritage_2": 8,
+   "heritage_item": [],
+   "heritage_add_honor": 0,
+   "heritage_add_glory": 5,
+   "heritage_add_status": 0,
+   "skill": "design"
+  },
+  "step19": {
+   "firstname": "Yukiko"
+  },
+  "step20": {
+   "death": "Yukiko doesn't concern herself with death. She just hopes that, in the next life, she was go a little longer before discovery."
+  }
+ },
+ "tiers": [
+  {
+   "xp": 44,
+   "label": "Awakened Soul",
+   "rank": 1,
+   "school": "Ishiken Initiate School",
+   "foundry_id": "uddhC4czlnyZAYjJ",
+   "foundry_name": "Isawa Yukiko 44 XP (Awakened Soul)",
+   "rings": {
+    "air": 1,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 0,
+     "design": 1,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 5,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 2,
+     "theology": 3
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 1,
+     "games": 1,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 30,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "To be allowed to just be a child—to play, to make mistakes, to eat sweets without it being a \"lesson,\" to not carry the weight of destiny for just one day.",
+    "giri": "To fulfill her role as the reincarnated Little Teacher, with all the baggage and expectations that comes with that.",
+    "bushido_tenets": {
+     "paramount": "Compassion",
+     "less_significant": "Righteousness"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 3,
+    "vigilance": 2,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Sight beyond Existence",
+     "kind": "inversion",
+     "rank": 1
+    },
+    {
+     "name": "Divination",
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "All in Jest",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Way of the Void",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Wisdom of Countless Lifetimes",
+     "kind": "title_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Portentous Birth",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Interpersonal, Spiritual"
+    },
+    {
+     "name": "Adopted Peasant",
+     "kind": "adversity",
+     "ring": "fire",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Generosity",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Loneliness",
+     "kind": "anxiety",
+     "ring": "void",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Support of Brotherhood of Shinsei",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Interpersonal",
+     "custom": true,
+     "description": "<p><span class=\"fontstyle0\"><em>Akodo Emi avoided the rōnin’s stroke narrowly, sweeping at his feet to gain distance. He was good, yet she could beat him. But not quickly, and time was her true enemy tonight.</em></span></p><p><span class=\"fontstyle0\"><em>Suddenly, a hail of slingstones clattered across the ground near the rōnin’s feet. Down the street rushed several figures wearing the Mon of the Sparrow.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Support of [One Group] distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- You have proven yourself to a particular group, which is willing to help you when doing so will not damage its reputation. Its members will offer you their hospitality, including meals, a place to rest, and medical attention if they have a healer. They will also grant you access to their other facilities, such as libraries, smithies, or stables. Confer with the GM to select a campaign-appropriate group when choosing this advantage.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check to interact with the members of the chosen group that relies on your rapport (such as a Command (water) check to issue them orders or a Performance (water) check to cause an audience of them to desire something), you may reroll up to two dice.</span></p></li></ul>",
+     "source_reference": {
+      "source": "core_rulebook",
+      "page": 110
+     },
+     "xp_cost": 3
+    }
+   ],
+   "titles": [
+    {
+     "name": "Awakened Soul"
+    }
+   ],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Bō",
+     "quantity": 1
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1
+    },
+    {
+     "name": "Scroll satchel",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Hana [Doll]",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Finger of Jade",
+     "quantity": 1
+    }
+   ],
+   "advancements": []
+  },
+  {
+   "xp": 74,
+   "label": "Awakened Soul, Rank 2",
+   "rank": 2,
+   "school": "Ishiken Initiate School",
+   "foundry_id": "o6nJImFmnkUzcWPZ",
+   "foundry_name": "Isawa Yukiko 74 XP (Awakened Soul, Rank 2)",
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 4
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 0,
+     "design": 1,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 5,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 2,
+     "theology": 3
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 1,
+     "games": 1,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 30,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "To be allowed to just be a child—to play, to make mistakes, to eat sweets without it being a \"lesson,\" to not carry the weight of destiny for just one day.",
+    "giri": "To fulfill her role as the reincarnated Little Teacher, with all the baggage and expectations that comes with that.",
+    "bushido_tenets": {
+     "paramount": "Compassion",
+     "less_significant": "Righteousness"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 4
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Sight beyond Existence",
+     "kind": "inversion",
+     "rank": 1
+    },
+    {
+     "name": "Divination",
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "All in Jest",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Way of the Void",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Wisdom of Countless Lifetimes",
+     "kind": "title_ability",
+     "rank": 1
+    },
+    {
+     "name": "One Within the Void",
+     "kind": "inversion",
+     "rank": 1
+    },
+    {
+     "name": "Nature’s Touch",
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Tea Ceremony",
+     "kind": "ritual",
+     "rank": 2
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Portentous Birth",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Interpersonal, Spiritual"
+    },
+    {
+     "name": "Adopted Peasant",
+     "kind": "adversity",
+     "ring": "fire",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Generosity",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Loneliness",
+     "kind": "anxiety",
+     "ring": "void",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Support of Brotherhood of Shinsei",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Interpersonal",
+     "custom": true,
+     "description": "<p><span class=\"fontstyle0\"><em>Akodo Emi avoided the rōnin’s stroke narrowly, sweeping at his feet to gain distance. He was good, yet she could beat him. But not quickly, and time was her true enemy tonight.</em></span></p><p><span class=\"fontstyle0\"><em>Suddenly, a hail of slingstones clattered across the ground near the rōnin’s feet. Down the street rushed several figures wearing the Mon of the Sparrow.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Support of [One Group] distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- You have proven yourself to a particular group, which is willing to help you when doing so will not damage its reputation. Its members will offer you their hospitality, including meals, a place to rest, and medical attention if they have a healer. They will also grant you access to their other facilities, such as libraries, smithies, or stables. Confer with the GM to select a campaign-appropriate group when choosing this advantage.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check to interact with the members of the chosen group that relies on your rapport (such as a Command (water) check to issue them orders or a Performance (water) check to cause an audience of them to desire something), you may reroll up to two dice.</span></p></li></ul>",
+     "source_reference": {
+      "source": "core_rulebook",
+      "page": 110
+     },
+     "xp_cost": 3
+    }
+   ],
+   "titles": [
+    {
+     "name": "Awakened Soul"
+    }
+   ],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Bō",
+     "quantity": 1
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1
+    },
+    {
+     "name": "Scroll satchel",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Hana [Doll]",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Finger of Jade",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Air +1 (1 -> 2)",
+     "type": "ring",
+     "skill": null,
+     "ring": "air",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": false
+    },
+    {
+     "label": "Void +1 (3 -> 4)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 12,
+     "in_curriculum": false
+    }
+   ]
+  },
+  {
+   "xp": 98,
+   "label": "Awakened Soul, Rank 3) (Copy",
+   "rank": 3,
+   "school": "Ishiken Initiate School",
+   "foundry_id": "tQeesrhaKZHRa5lB",
+   "foundry_name": "Isawa Yukiko 98 XP (Awakened Soul, Rank 3) (Copy)",
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 4
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 1,
+     "design": 1,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 5,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 2,
+     "theology": 3
+    },
+    "social": {
+     "command": 3,
+     "courtesy": 1,
+     "games": 1,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 30,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "To be allowed to just be a child—to play, to make mistakes, to eat sweets without it being a \"lesson,\" to not carry the weight of destiny for just one day.",
+    "giri": "To fulfill her role as the reincarnated Little Teacher, with all the baggage and expectations that comes with that.",
+    "bushido_tenets": {
+     "paramount": "Compassion",
+     "less_significant": "Righteousness"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 4
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Sight beyond Existence",
+     "kind": "inversion",
+     "rank": 1
+    },
+    {
+     "name": "Divination",
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "All in Jest",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Way of the Void",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Wisdom of Countless Lifetimes",
+     "kind": "title_ability",
+     "rank": 1
+    },
+    {
+     "name": "One Within the Void",
+     "kind": "inversion",
+     "rank": 1
+    },
+    {
+     "name": "Nature’s Touch",
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Tea Ceremony",
+     "kind": "ritual",
+     "rank": 2
+    },
+    {
+     "name": "All Arts Are One",
+     "kind": "shuji",
+     "rank": 3
+    },
+    {
+     "name": "Fires of Purity",
+     "kind": "invocation",
+     "rank": 2
+    },
+    {
+     "name": "The Lotus Blooms",
+     "kind": "inversion",
+     "rank": 2
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Portentous Birth",
+     "kind": "distinction",
+     "ring": "fire",
+     "types": "Interpersonal, Spiritual"
+    },
+    {
+     "name": "Adopted Peasant",
+     "kind": "adversity",
+     "ring": "fire",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Generosity",
+     "kind": "passion",
+     "ring": "water",
+     "types": "Interpersonal"
+    },
+    {
+     "name": "Loneliness",
+     "kind": "anxiety",
+     "ring": "void",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Support of Brotherhood of Shinsei",
+     "kind": "distinction",
+     "ring": "water",
+     "types": "Interpersonal",
+     "custom": true,
+     "description": "<p><span class=\"fontstyle0\"><em>Akodo Emi avoided the rōnin’s stroke narrowly, sweeping at his feet to gain distance. He was good, yet she could beat him. But not quickly, and time was her true enemy tonight.</em></span></p><p><span class=\"fontstyle0\"><em>Suddenly, a hail of slingstones clattered across the ground near the rōnin’s feet. Down the street rushed several figures wearing the Mon of the Sparrow.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Support of [One Group] distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- You have proven yourself to a particular group, which is willing to help you when doing so will not damage its reputation. Its members will offer you their hospitality, including meals, a place to rest, and medical attention if they have a healer. They will also grant you access to their other facilities, such as libraries, smithies, or stables. Confer with the GM to select a campaign-appropriate group when choosing this advantage.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check to interact with the members of the chosen group that relies on your rapport (such as a Command (water) check to issue them orders or a Performance (water) check to cause an audience of them to desire something), you may reroll up to two dice.</span></p></li></ul>",
+     "source_reference": {
+      "source": "core_rulebook",
+      "page": 110
+     },
+     "xp_cost": 3
+    }
+   ],
+   "titles": [
+    {
+     "name": "Awakened Soul"
+    }
+   ],
+   "bonds": [],
+   "gear": [
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Bō",
+     "quantity": 1
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1
+    },
+    {
+     "name": "Scroll satchel",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Hana [Doll]",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Finger of Jade",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Air +1 (1 -> 2)",
+     "type": "ring",
+     "skill": null,
+     "ring": "air",
+     "at_rank": 1,
+     "xp": 6,
+     "in_curriculum": false
+    },
+    {
+     "label": "Void +1 (3 -> 4)",
+     "type": "ring",
+     "skill": null,
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 12,
+     "in_curriculum": false
+    },
+    {
+     "label": "Command +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 4,
+     "in_curriculum": true
+    },
+    {
+     "label": "Composition +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "composition",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Command +1 (2 -> 3)",
+     "type": "skill",
+     "skill": "command",
+     "ring": "void",
+     "at_rank": 2,
+     "xp": 6,
+     "in_curriculum": true
+    }
+   ]
+  }
+ ]
+}

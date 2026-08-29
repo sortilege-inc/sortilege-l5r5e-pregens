@@ -1,0 +1,3698 @@
+[
+ {
+  "name": "Adopted Peasant",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761193588256,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 245
+   },
+   "description": "<p><em>Even though she sat with the rest of her adopted family, she had never felt so invisible.</em></p><p><em>“This is why we sweep the shrine of dirt. Any foreign intrusion violates its sanctity,” her brother said.</em></p><p><em>Takako bowed her head ever so slightly. “Yes, but priests also sprinkle salt in the corners. So a foreign intrusion can sometimes strengthen its purity.”</em></p><p><em>Her brother tensed up. The rest of her family refused to look at her. This transgression will not be forgotten.</em></p><p></p><p>The following apply to a character with the Adopted Peasant adversity:</p><ul><li><p>- Although adopted by a samurai family, you were born a peasant. Other samurai who know this fact are likely to look down upon you and may use this fact against you socially.</p></li><li><p>- When you make a check to deal authoritatively or collegially with a samurai who knows of your peasant birth (such as a Command (fire) check to give an order to a subordinate or a Courtesy (fire) check to impugn another’s honor), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you regain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "2bPrBcyXEsRvGPnn",
+  "sort": 0
+ },
+ {
+  "name": "Allergy",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761232143341,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 245
+   },
+   "description": "<p><em>“Damnable flowers!” The soldiers found the field beautiful, the bright colors taking their minds off the battle ahead, but as for the general, he sneezed instead. “I should order them to cut down the blooms.” His second knelt. “If that is your wish, though morale is high, my lord. ”The general sighed. “No, let them enjoy...these accursed things.</em></p><p></p><p>The following apply to a character with the Allergy adversity:</p><ul><li><p>- Choose a common natural substance. You have a strong allergy to it, and exposure causes severe discomfort or even a life-threatening reaction.</p></li><li><p>- When you make a check that exposes you to the source of your allergy (such as a Fitness (air) check to run through a swarm of bees or a Courtesy (air) check to sample a dish containing your allergen without offending your host), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you regain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "U5jXpIYiQaQClfQR",
+  "sort": 0
+ },
+ {
+  "name": "Benten’s Curse",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761195503582,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 116
+   },
+   "description": "<p><em>One of the more popular tales of the rakugoka, the professional storytellers of Rokugan, is that of the Artless Artist. A comedic tale, it is the story of a court artist who was utterly lacking in any genuine talent and had such an unpleasant demeanor that nobody would ever love him. The telling of the tale varies from performance to performance, with the rakugoka spinning unique and outrageous recountings of the artist’s misadventures tailored to the tastes of their particular audience.</em></p><p></p><p>The following apply to a character with the Benten’s Curse adversity:</p><ul><li><p>- Your romantic efforts are always stymied by circumstances, and your gestures to get the romantic attention of others are usually misinterpreted.</p></li><li><p>- When you make a check to express your admiration to someone (such as an Aesthetics (air) check to find the right poem to read to express your feelings or a Courtesy (air) check to tell someone your feelings without exceeding propriety), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wx0TwgTwrxGMVd1g",
+  "sort": 0
+ },
+ {
+  "name": "Bishamon’s Curse",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761198641885,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 117
+   },
+   "description": "<p><em>A straightforward samurai is a well-honed blade, valued for its purity of purpose and dependability when called upon. A blunt samurai, however, is like a blunt blade: valued by none, and never called upon; left as only a reminder of its former utility.”</em></p><div><p><em>–Akodo’s Leadership</em></p><p></p><p>The following apply to a character with the Bishamon’s Curse adversity:</p><ul><li><p>- You find it very difficult to lift heavy objects,  and it takes you twice as long as others to regain your stamina after hard labor.</p></li><li><p>- When you make a check that relies on recovering quickly (such as a Fitness (water) check to recover from exhaustion or the Gravely Wounded condition or a Martial Arts (unarmed)  (water) check to train for an extended period of time), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul></div>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "S0aHy1o1EU4oPiBM",
+  "sort": 0
+ },
+ {
+  "name": "Bitter Betrothal",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761199579976,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 117
+   },
+   "description": "<p><em>“My husband returns home tonight,” she said in a low whisper, passing the bag of coins beneath the table to the men seated across from her. Nobody in this inn knew her face, yet she still felt the need for caution. </em></p><p><em>“He will be traveling via the eastern road.”</em></p><p><em>“It shall be done,” said the leader. Without further word, he and his companions rose from the table and left the inn. The room seemed somehow lighter without them in it. Soon, she would be rid of him.</em></p><p></p><p>The following apply to a character with the Bitter Betrothal adversity</p><ul><li><p>- Something significantly complicates your relationship with your betrothed or spouse. As a result, they often undermine your efforts, whether out of malice, negligence, or an incompatible set of goals.</p></li><li><p>- When you make a check that requires the collaboration of your betrothed or spouse (such as a Courtesy (water) check to make a polite request to their family for political backing or a Culture (water) check to know the proper thing to do at a social function involving their relatives), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul><p></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "p1cGWR2i5WrGtIKb",
+  "sort": 0
+ },
+ {
+  "name": "Blackmailed by [Character’s Name]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761199901818,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 117
+   },
+   "description": "<p><em>“I know of your misdeeds,” the letter simply said. Otomo Kotsuyone laughed, knowing the would-be blackmailer was surely listening. “My memory dims somewhat, the older I get. Would you care to remind me which ones?”</em></p><p></p><p>The following apply to a character with the Blackmailed by [Character’s Name] adversity:</p><ul><li><p>- Someone has incriminating information on you, which they use to try and force you to help them even when doing so may damage your reputation. You must share with them what knowledge you have about a given person, item, location, or situation, whether through a face-to-face meeting or through written correspondence. You must also arrange for introductions on their behalf with exclusive members of society or places of business.</p></li><li><p>- When performing a check to evade complying with the character who is blackmailing you (such as a Courtesy (air) check to nominally tell them what they want without giving away key pieces of information or a Performance (air) check to pretend as though you will go through with something they have demanded of you), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3aStCCtOECo0ZEvf",
+  "sort": 0
+ },
+ {
+  "name": "Blindness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761200224847,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 118
+   },
+   "description": "<div><p><em>Though Muika could not see the faces of the Shosuro’s guests, she could tell by their voices whether or not they had been truly invited. It was a perfect arrangement for the spymaster.</em></p><p></p><p>The following apply to a character with the Blindness adversity:</p><ul><li><p>- You are unable to see out of either eye. Your lack of sight does not mean you cannot perceive your surroundings (using your other senses), but you cannot observe things that can be perceived only by sight.</p></li><li><p>- When you make a check for which sight is an asset that cannot easily be replaced by other senses (such as a Sentiment (water) check to identify someone’s hostile intentions from across a noisy room or a Martial Arts [Ranged] (water) check to hit a moving target with an arrow), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul></div>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0clGEhhTEXx3iZ39",
+  "sort": 0
+ },
+ {
+  "name": "Blood Feud",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761201612507,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 83
+   },
+   "description": "<p><em>\"Thank you for welcoming me within your house, Shiba-sama. It is a generous host who allows in a weary guest without so much as inquiring of their name!” The Unicorn samurai bowed deeply.</em></p><p><em>“It is no trouble,” responded the Phoenix lord. “I welcome all under my roof unless they have done me or mine wrong, and no one has done such a thing since the passing of Moto Batjargal.”Moto Jochi found his stay with the Phoenix considerably more fraught after that exchange, and he soon decided to continue his travels, despite his weariness.</em></p><p></p><p>The following apply to a character with the Blood Feud adversity:</p><ul><li><p>- Your bloodline is locked in a deadly struggle with another family or group, which makes members of that group hostile when they learn your affiliation. They may bar you from their courts and homes, refuse to meet with you, or even challenge you to duels over slights in which you had no personal involvement. Confer with the GM to select a campaign-appropriate family or group when choosing this disadvantage. Note that the family lines that participate in a given feud are much smaller than a full Great Clan family—this adversity represents a feud with a group such as the descendants of a specific Kakita lord, rather than the entire Kakita family.</p></li><li><p>- When performing a check to interact with the chosen group or family that relies on their goodwill toward members of your family (such as a Courtesy (water) check to seek hospitality on the road while traveling on family business, or a Performance (water) check to impress them with a song attributed to you under your family name), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Social"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "01io2Zq58C61UaUt",
+  "sort": 0
+ },
+ {
+  "name": "Bluntness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761203763170,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 118
+   },
+   "description": "<p><em>“You look terrible, my lord.”</em></p><p></p><p>The following apply to a character with the Bluntness adversity:</p><ul><li><p>- You have difficulty expressing things indirectly, and you overlook insinuations and implications in the statements of others unless they are pointed out to you directly.</p></li><li><p>- When you make a check to create or interpret subtext (such as a Design (air) check to select a wardrobe that conveys the proper subtle message to your intended recipient or a Sentiment (air) check to read someone’s unstated feelings), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "HQ0jlXlXHIWo1buy",
+  "sort": 0
+ },
+ {
+  "name": "Bullheaded",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761204143139,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 71
+   },
+   "description": "<p><em>To have the drive to always move forward in pursuit of one’s goals, regardless of the trials and setbacks and pain, is to be blessed with a great strength, and also to be clouded by one’s own single-minded purpose. </em></p><p></p><p>The following apply to a character with the Bullheaded adversity:</p><ul><li><p>- When you are pursuing a goal directly related to your ninjō, you have a difficult time focusing on anything unrelated to that goal. Your bullheaded nature often creates barriers to your own success when the most direct path isn’t the best one. </p></li><li><p>- When you make a check related to your goal or ninjō that requires planning, subtlety, or nuance (such as a Culture (earth) check to recall the proper way to introduce yourself to someone you perceive as an enemy or a Courtesy (earth) check to reason with a merchant who is standing in the way of your goal), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "C5Hraih6KBGzvDRl",
+  "sort": 0
+ },
+ {
+  "name": "Clumsiness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761204499856,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 118
+   },
+   "description": "<p><em>\"Oh my. I am terribly sorry, sir.” Kitsune Sōren tried in vain to help brush piles of shrimp and noodles in chili oil from the kimono of the disturbingly large Crab Clan samurai while desperately trying to recall the man’s name. </em></p><p><em>“I didn’t see the server there, you see, and I’m afraid that I rose at the wrong moment, and…”The Crab samurai stood, towering over the Fox Clan samurai. Noodles hung from his hair.</em></p><p><em>“Oh, my.” </em></p><p></p><p>The following apply to a character with the Clumsiness adversity:</p><ul><li><p>- You are physically imprecise when dealing with tasks that require notable dexterity (or any physical task, really). At the GM’s discretion, you periodically drop items, make a mess of precise crafting efforts, or slip and fall onto people.</p></li><li><p>- When you make a check that requires precise motor skills (such as a Fitness (fire) check to vault over an obstacle or a Design (fire) check to create an intricate piece of jewelry), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "o3FUSjxtOwTzIKw7",
+  "sort": 0
+ },
+ {
+  "name": "Cognitive Lapses",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761205047076,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 118
+   },
+   "description": "<p><em>There are cases of samurai who have suffered a killing blow to the head, yet recovered, who are changed by the experience. Some display all manner of odd behaviors, such as forgetting old skills or acquaintances, or dramatic shifts in taste and perception. Others lose themselves, suffering gaps in their memory where the part of themselves they’ve lost takes control of their bodies. </em></p><p><em>In very few of these instances is the culprit an evil spirit who has slipped in through a wound or because of the Shadowlands Taint. Still, one must be vigilant. </em></p><p><em>– Medicine by Agasha Shio </em></p><p></p><p>The following apply to a character with the Cognitive Lapses adversity:</p><ul><li><p>- At the GM’s discretion, you sometimes lose your ability to focus or think consciously. Your body continues to act during these times according to your general instincts, and it does not undertake actions you would not consciously perform, but you do not form coherent memories of these times. After you suffer such a lapse that lasts for more than a few brief moments at the GM’s choice, you gain 1 Void point.</p></li><li><p>- When you make a check for which you must recall anything that happened during a period of cognitive lapse (such as a Meditation (void) check to understand your past decisions or a Sentiment (void) check to guess what you might have said to someone based on their reaction to you), you must choose and reroll two dice containing (su)or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Mental, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "tBKdLBuQjqGgypsu",
+  "sort": 0
+ },
+ {
+  "name": "Cursed Lineage",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761232257632,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 245
+   },
+   "description": "<p><em>There are many reasons for the end of the </em><span class=\"fontstyle0\">—— </span><em>family name. The shame alone for the assassination of the Emperor placed a dark mark on the ——. Misfortune, however, followed the —— at every turn. Offerings at the family graves rotted instantly. The ink on their contracts refused to dry. Any sake they stored turned to vinegar. To escape their fate, they scratched their names from every record. And thus, the short reign of the —— family ended and vanished into obscurity.</em></p><p></p><p>The following apply to a character with the Cursed Lineage adversity:</p><ul><li><p>- Your family carries a curse. Decide with the GM how this curse manifests.</p></li><li><p>- When making a check that does or could invoke the curse (such as a Culture (void) check to understand your family history or a Theology (void) check to seek your ancestors’ blessing), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you regain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vdOq6N2pcnKazM6k",
+  "sort": 0
+ },
+ {
+  "name": "Daikoku’s Curse",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761205688703,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 119
+   },
+   "description": "<p><em>Daidoji Shingen let Hiramichi Anjiro lean a bit heavier upon him as they worked their way through the narrow streets back to the docks where their ship was berthed. The first mate was drunk, and although the captain would normally have let him sleep it off, Shingen felt that perhaps it was better to begin their departure. No one in the gambling den could have possibly thought that they had any money left between them, but it never hurt to be careful.</em></p><p><em>“I still can’t believe it, Anjiro-kun. I have never seen anybody lose like that before. Do you realize the odds on that last roll? You literally only had one way to lose, and yet you found it. You are a veritable Oracle of Misfortune.” Anjiro only sighed.</em></p><p></p><p>The following apply to a character with the Daikoku’s Curse adversity:</p><ul><li><p>- When you gamble or speculate on the value of goods, even if you receive short-term gains, events conspire such that you always end up as poor (if not poorer) as when you started.</p></li><li><p>- When you make a check to gain or preserve wealth (such as a Commerce(water) check to haggle for a good price on an item or a Skulduggery (water) check to find a fence for stolen items), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XuKAMuBgBoU4nDzQ",
+  "sort": 0
+ },
+ {
+  "name": "Damaged Heart or Organ",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761206021452,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 119
+   },
+   "description": "<p><em>“My lord, your heart!” </em></p><p><em>Akodo Yasuteru shook the servant’s hand from his shoulder. He could cut the man down for daring to touch him. A younger Yasuteru might have done so. But he was so tired. He sat. </em></p><p></p><p>The following apply to a character with the Damaged Heart or Organ adversity:</p><ul><li><p>- Your heart or another vital organ is weak due to physical trauma or illness, and you can only engage in strenuous activity for half as long as other characters before needing to rest.</p></li><li><p>- When you make a check to undertake strenuous activity over a long period of time (such as a Fitness (earth) check to march for a long time or a Smithing (earth) check to hammer plates back onto a damaged piece of armor), you must choose and reroll two dice containing (su)or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0BR5j23qkYfJidM2",
+  "sort": 0
+ },
+ {
+  "name": "Deafness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761206618420,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 119
+   },
+   "description": "<p><em>A tap on her shoulder drew Masa around to watch her commander’s lips. “Masa,” Hida Tomonatsu said. “I need to get a message to the scouts on the ground, but there is no way they will hear me through all this noise. Tell them to retreat.” </em></p><p><em>Masa nodded, stepped to the edge, and waved her hand until Hiruma Takakage waved in response, down below. Then, her hands flew in a flurry of Hiruma Hand Talk. “Hida-sama says ‘retreat.’ Is it very noisy right now?” </em></p><p><em>“Very,” Takakage signed back.</em> </p><p></p><p>The following apply to a character with the Deafness adversity:</p><ul><li><p>- You are unable to hear, although you can perceive your surroundings through other senses.</p></li><li><p>- When you make a check for which auditory cues are very useful (such as a Sentiment (air) check to discern if someone is being sincere or a Courtesy (air) check to pick up rumors via eavesdropping on someone’s faraway conversation), you must choose and reroll two dice containing (su) or (ex). After resolving the check, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "kQc0arVP1FrDNTpR",
+  "sort": 0
+ },
+ {
+  "name": "Debt to [Person or Organization]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761207985339,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 71
+   },
+   "description": "<p><em>The number kept climbing no matter what Shou did. He had thought working at the geisha house would help him work off the debt his brother had dumped on his parents when he died, but the matron of the house always seemed to find something to charge Shou for. His small corner of the back room, food, the ink for his letters, the ribbon for his hair… He had only wanted to lessen his parents’ struggles, but now he was no better than his brother.</em> </p><p></p><p>The following apply to a character with the  Debt to [Person or Organization] adversity:</p><ul><li><p>- You are in terrible debt to a person or organization. If you do not make regular payments to your debtor or fail to fulfill your obligations, they will certainly hunt you down and make you pay, in one way or another… </p></li><li><p>- When you make a check related to dodging or worsening your debt (such as making a Commerce (water) check to purchase something unnecessary or a Courtesy (water) check to convince someone to give you a loan), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "x3Mx71n3BUzN43QB",
+  "sort": 0
+ },
+ {
+  "name": "Demon Wound",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761208570713,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 97
+   },
+   "description": "<p><em>It burns. Even after I stabbed it and it collapsed onto me, its last, fetid breaths entering my ear. Even after the scars faded to thin, almost invisible lines. Each night, each patrol, it comes back like boiling oil dripping onto my flesh.</em></p><p><em>It may be dead, but it lives in my skin.</em> </p><p></p><p>The following apply to a character with the Demon Wound adversity:</p><ul><li><p>- You were wounded by an oni, and while the scar isn’t Tainted (or perhaps even isn’t visible anymore), it causes you to suffer from terrible nightmares. </p></li><li><p>-  When you make a check that involves your wound (such as a Fitness (earth) check to get a good night’s sleep while in the Shadowlands or a Meditation (earth) check to refrain from crying out in pain while near an oni), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Scar, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vbr4mYXwim1PRspz",
+  "sort": 0
+ },
+ {
+  "name": "Despised in [City]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761232298815,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 246
+   },
+   "description": "<p><em>\"We cannot go to Toshi no Meiyo Gisei.”</em></p><p><em>“What? Shinji, it’s merely two days from here,” Ichirō said. The handsome man shook his head, but a grin escaped his lips. “No, no. I...caused a bit of trouble there. Let’s say a woman was involved. Then a man. Then a jealous wife. Next a jealous husband. And lastly, the magistrate.”Ichirō threw his sword down into the dirt. “Damn it, Shinji. At this rate, we will have to sleep in the dirt.”</em></p><p></p><p>The following apply to a character with the Despised in [City] adversity:</p><ul><li><p>- You are infamous among the residents of a particular city (chosen with the GM). People within this city resist cooperating with you and may actively hinder your activities within the city.</p></li><li><p>- When performing a check to gain assistance or cooperation from a resident of the city that despises you (such as a Courtesy (water) check to learn the latest sake house rumors or a Commerce (water) check to purchase goods within the city), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you regain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Fame, Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vrOjwdBq3bPniZ5c",
+  "sort": 0
+ },
+ {
+  "name": "Discomfiting Countenance",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761214151596,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 120
+   },
+   "description": "<p>The rōnin strode forward, and my hand tightened upon the hilt of my katana. If he wanted a duel, he would have it. No masterless wretch could ever stand against me. He stopped a few yards away and reached up with long-fingered hands to unfasten the mempō from his helmet. As the facial armor was removed, I saw his pale skin, marked by a wide, deep-red birthmark that ran from just above his right eye down to his jawline—and in that instance, I knew that he was Muramatsu Kibe—the Cinnabar Swordsman.</p><p>A duel would not be so easy a matter, after all.</p><p></p><p>The following apply to a character with the Discomfiting Countenance adversity:</p><ul><li><p>- Characters of lower status must generally be respectful of you to your face, but characters of higher status might try to use your looks as a way of attacking your character. Additionally, you are extremely memorable, and you find it difficult to act subtly without being remembered.</p></li><li><p>- When you make a check to get someone to trust your word (such as a Courtesy (air) check to make someone believe a lie or a Performance (air) check to present a story as genuine) you must choose and reroll two dice containing (su) or (ex) After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wvmAKgOScwBVBveU",
+  "sort": 0
+ },
+ {
+  "name": "Disdain for Compassion",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761232427275,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 120
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“We Brothers of the Boar are very loyal samurai, indeed! Loyal to money, loyal to our bellies, loyal to ourselves, and what higher virtue could there be, brothers, eh?”</em></span></p><p><span class=\"fontstyle2\"><em>- The Rōnin Kujira</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Disdain for Compassion adversity:</span></p><ul><li><p><span class=\"fontstyle2\">- You no longer believe in the tenet of Compassion, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.</span></p></li><li><p><span class=\"fontstyle2\">- When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing </span><span class=\"fontstyle5\">(su) </span><span class=\"fontstyle2\">or (ex). After resolving the check, if you failed, you gain 1 Void point.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Flaw, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "WLiIHkS6o7pS2u9y",
+  "sort": 0
+ },
+ {
+  "name": "Disdain for Courage",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761232445812,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 120
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“We Brothers of the Boar are very loyal samurai, indeed! Loyal to money, loyal to our bellies, loyal to ourselves, and what higher virtue could there be, brothers, eh?”</em></span></p><p><span class=\"fontstyle2\"><em>- The Rōnin Kujira</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Disdain for Courage adversity:</span></p><ul><li><p><span class=\"fontstyle2\">- You no longer believe in the tenet of Courage, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.</span></p></li><li><p><span class=\"fontstyle2\">- When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing </span><span class=\"fontstyle5\">(su) </span><span class=\"fontstyle2\">or (ex). After resolving the check, if you failed, you gain 1 Void point.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Flaw, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "iQFOOGHQcjPKhcWR",
+  "sort": 0
+ },
+ {
+  "name": "Disdain for Courtesy",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761214298954,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 120
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Flaw, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0C4ngqWevazDoTKZ",
+  "sort": 0
+ },
+ {
+  "name": "Disdain for Duty and Loyalty",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761232458683,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 120
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“We Brothers of the Boar are very loyal samurai, indeed! Loyal to money, loyal to our bellies, loyal to ourselves, and what higher virtue could there be, brothers, eh?”</em></span></p><p><span class=\"fontstyle2\"><em>- The Rōnin Kujira</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Disdain for Duty and Loyalty adversity:</span></p><ul><li><p><span class=\"fontstyle2\">- You no longer believe in the tenet of Duty and Loyalty, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.</span></p></li><li><p><span class=\"fontstyle2\">- When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing </span><span class=\"fontstyle5\">(su) </span><span class=\"fontstyle2\">or (ex). After resolving the check, if you failed, you gain 1 Void point.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Flaw, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Okgp8EigRjXzhijt",
+  "sort": 0
+ },
+ {
+  "name": "Disdain for Honor",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761232468377,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 120
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“We Brothers of the Boar are very loyal samurai, indeed! Loyal to money, loyal to our bellies, loyal to ourselves, and what higher virtue could there be, brothers, eh?”</em></span></p><p><span class=\"fontstyle2\"><em>- The Rōnin Kujira</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Disdain for Honor adversity:</span></p><ul><li><p><span class=\"fontstyle2\">- You no longer believe in the tenet of Honor, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.</span></p></li><li><p><span class=\"fontstyle2\">- When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing </span><span class=\"fontstyle5\">(su) </span><span class=\"fontstyle2\">or (ex). After resolving the check, if you failed, you gain 1 Void point.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Flaw, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vLGRboOCO84fZrow",
+  "sort": 0
+ },
+ {
+  "name": "Disdain for Righteousness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761232479948,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 120
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“We Brothers of the Boar are very loyal samurai, indeed! Loyal to money, loyal to our bellies, loyal to ourselves, and what higher virtue could there be, brothers, eh?”</em></span></p><p><span class=\"fontstyle2\"><em>- The Rōnin Kujira</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Disdain for Righteousness adversity:</span></p><ul><li><p><span class=\"fontstyle2\">- You no longer believe in the tenet of Righteousness, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.</span></p></li><li><p><span class=\"fontstyle2\">- When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing </span><span class=\"fontstyle5\">(su) </span><span class=\"fontstyle2\">or (ex). After resolving the check, if you failed, you gain 1 Void point.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Flaw, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xRPOQonc1iH98tvq",
+  "sort": 0
+ },
+ {
+  "name": "Disdain for Sincerity",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761232493111,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 120
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“We Brothers of the Boar are very loyal samurai, indeed! Loyal to money, loyal to our bellies, loyal to ourselves, and what higher virtue could there be, brothers, eh?”</em></span></p><p><span class=\"fontstyle2\"><em>- The Rōnin Kujira</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Disdain for Sincerity adversity:</span></p><ul><li><p><span class=\"fontstyle2\">- You no longer believe in the tenet of Sincerity, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.</span></p></li><li><p><span class=\"fontstyle2\">- When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing </span><span class=\"fontstyle5\">(su) </span><span class=\"fontstyle2\">or (ex). After resolving the check, if you failed, you gain 1 Void point.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Flaw, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0BfFYKStFWNbsWaM",
+  "sort": 0
+ },
+ {
+  "name": "Ebisu’s Curse",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761222397694,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 120
+   },
+   "description": "<p><em>“And the harvest?” Doji Kiseki concealed her worry behind a fan. </em></p><p><em>The farmer, already prostrate before his lord, pressed his forehead to the floor. “Most of the rice was ruined before the harvest, my lord. And we’ve discovered that the bushels already removed to storage have also succumbed to some kind of rotting blight.” </em></p><p><em>“Is nothing salvageable?” Kiseki’s voice was barely a whisper.</em></p><p><em>“We’re trying, my lord.”</em></p><p></p><p>The following apply to a character with the Ebisu’s Curse adversity:</p><ul><li><p>- Characters of lower status automatically distrust you, viewing you as a distant overlord who cannot possibly be competent at practical labor or understand their daily struggles (whether or not either of these is a fair assessment).</p></li><li><p>- When you make a check to interact with laborers or partake in their work (such as a Commerce (earth) check to mass produce items or a Labor (earth) check to dig a ditch), you must choose and reroll two dice containing  (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "14E6xpYVIZXuXrNl",
+  "sort": 0
+ },
+ {
+  "name": "Elemental Deficiency (Air)",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761224217445,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 93
+   },
+   "description": "<p><em>Asahina Sora threw the calligraphy brush onto the tiled  stone, the clattering echoing across the courtyard, ink slashing on its way. “I am wasting time. I have people to manage and letters to write.” </em></p><p><em>Their teacher sighed. “How do you intend to write letters without any knowledge of calligraphy?”</em></p><p><em>“I care nothing of how pretty my characters are. If someone can read my letters, that should suffice.”</em></p><p><em>“Scribes will be able to discern your thoughts and temperament from your calligraphy. It is essential you learn how to hide that.”</em></p><p><em>Sora pointed at their scroll. “Discern those, then.” Their teacher calmly walked over to the ink marks on the tiles. “Impatient. Stubborn. Messy.”</em></p><p></p><p>The following apply to a character with the Elemental Deficiency (Air) adversity: </p><ul><li><p>- For one reason or another, you lack a fundamental connection with the element of Air. You tend to have trouble in areas associated with the element, and you have a very poor relationship with air kami. </p></li><li><p>- When performing a check to align yourself with the element of Air or interact with air kami (such as a Theology (air) check to invoke the kami or a Courtesy (air) check to appropriately respond to a religious rite), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Mental, Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "EhvBiCY2lvoagCOs",
+  "sort": 0
+ },
+ {
+  "name": "Elemental Deficiency (Earth)",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761224440685,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 93
+   },
+   "description": "<p><em>“Where are they?” Matsu Makoto gripped their bok￾ken and stormed out of the training area. Their shouts echoed throughout the castle. Servants glanced upward as they scurried away.</em></p><p><em>“I’m up here, sensei! You can see the clouds sail across the sky.”Tsunade lay on their back on the roof, their bokken by their side. At least Tsunade didn’t lose it this time, Makoto thought. “You are supposed to be at practice.” </em></p><p><em>“Do you think humans might learn to fly one day?”</em></p><p><em>Maybe if I throw you over the castle walls, my dear sister’s child. Makoto sighed.</em></p><p></p><p>The following apply to a character with the Elemental Deficiency (Earth) adversity:</p><ul><li><p>- For one reason or another, you lack a funda￾mental connection with the element of Earth. You tend to have trouble in areas associated with the element, and you have a very poor relationship with earth kami. </p></li><li><p>- When performing a check to align yourself with the element of Earth or interact with earth kami (such as a Theology (earth) check to invoke the kami or a Fitness (earth) check to hold a position while praying or contemplating), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Mental, Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3cOjIgmlZShky9cH",
+  "sort": 0
+ },
+ {
+  "name": "Elemental Deficiency (Fire)",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761224608000,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 94
+   },
+   "description": "<p><em>Moto Chizue sat in her tent, staring at her attendant, Tadao. He had stayed by her side for decades, in pal\u0002aces and on the field. Never had she met a person so dedicated, humble, and loyal. He deserved a title, wealth, and respect.</em></p><p><em>“I cannot give you that promotion,” Chizue said.</em></p><p><em>“You belong with me, not in a faraway command.”</em></p><p><em>Tadao bowed, pressing his head to the mat. “I understand, Moto-sama.” He didn’t know how to express his relief. Never had his mind been so clear than when executing his lady’s orders.</em></p><p></p><p>The following apply to a character with the Elemental Deficiency (Fire) adversity:</p><ul><li><p>- For one reason or another, you lack a fundamental connection with the element of Fire. You tend to have trouble in areas associated with the element, and you have a very poor relationship with fire kami.</p></li><li><p>When performing a check to align yourself with the element of Fire or interact  with fire kami (such as a Theology [Fire] check to invoke the kami or a Performance [Fire] check to expound upon complex theories), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Mental, Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "aYvvitux1aP5qcfh",
+  "sort": 0
+ },
+ {
+  "name": "Elemental Deficiency (Water)",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761224767693,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 94
+   },
+   "description": "<p>A caretaker dropped Daidoji Hanae in the bath as a baby. At the age of four, she slipped into a nearby river and almost drowned. After her coma, she became temperamental and stubborn, and she could not focus on her studies. Upon her coming of age, her parents named her Umiko in order to counter her lack of affinity with water. This did nothing, and Umiko spent her time in the mountains, which gave rise to the rumor that a troll lived in the hills.</p><p></p><p>The following apply to a character with the Elemental Deficiency (Water) adversity: </p><ul><li><p>- For one reason or another, you lack a fundamental connection with the element of Water. You tend to have trouble in areas associated with the element, and you have a very poor relationship with water kami. </p></li><li><p>- When performing a check to align yourself with the element of Water or interact with water kami (such as a Theology (water) check to invoke the kami or a Meditation (water) check to understand your own desires), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Mental, Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0mWt5HTbPfGhKPt9",
+  "sort": 0
+ },
+ {
+  "name": "Encompassing Duty",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761225000491,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 72
+   },
+   "description": "<p><em>“I will lay down my life for my family. Nothing will stand in the way of that.”</em></p><p><em>– Aina, Ashigaru of the Lion</em></p><p></p><p>The following apply to a character with the Encompassing Duty adversity:</p><ul><li><p>- You have a duty to something: your family, a friend, a cause, or some other person or ideal. This duty should manifest into at least one discernible goal, one you can work out with the GM. A goal may be to provide for your family, rescue a friend, or achieve a similar aim. You have a difficult time relaxing or focusing on tasks that do not somehow advance your goal, and this may manifest in several ways, including frustration, anger, worry, or nervousness. </p></li><li><p>- Whenever you make a check related to overcoming something that could hinder you in achieving your duty (such as a Meditation (earth) check to keep a cool head in an ambush or a Courtesy (earth) check to reason with a stubborn shopkeeper), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "TP83fjX8gnxELunG",
+  "sort": 0
+ },
+ {
+  "name": "Fractured Spine",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761225315685,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 120
+   },
+   "description": "<p><em>Moto stories tell of the famous Khan Who Rode a  Cart, Yesegei Khan. Although he could not sit a horse without excruciating pain due to an injury from a fall as a boy, Moto Yesegai was brilliant and well-loved by his people. His cart, drawn by a white camel, was a welcome sight anywhere across the Moto steppe, and people would flock to his yurt wherever it roamed to partake of his wisdom.</em> </p><p></p><p>The following apply to a character with the Fractured Spine adversity:</p><ul><li><p>- You have suffered major trauma to the spine, and harsh impacts cause you to be shot through with agonizing pain. You can lift and carry only half the weight that someone of your strength normally could.</p></li><li><p>- When you make a check to resist harm or exhaustion (such as a Fitness (earth) check to shrug off further injury or a Labor (earth) check to carry heavy objects as part of building a structure), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "DwAW0zvqMylYtRUi",
+  "sort": 0
+ },
+ {
+  "name": "Fukurokujin’s Curse",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761225445361,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 121
+   },
+   "description": "<p><em>“Study is like sailing against a current; a boat must forge ahead, lest it be swept downstream. But those without a boat must go where the current takes them; not all people are made to be sailors.”</em></p><p><em>– Analects of Nabeshima</em></p><p></p><p>The following apply to a character with the Fukurokujin’s Curse adversity:</p><ul><li><p>- It takes you twice as long to gain a grasp of an academic field of study as it does another character.</p></li><li><p>- When you make a check to extrapolate how to do something in a field of study (such as a Medicine (fire) check to guess how to treat an unfamiliar aliment based on its symptoms or a Survival (fire) check to guess an unknown creature’s qualities based on its physiology), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Mental, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Z7o7bt36jfogFlrw",
+  "sort": 0
+ },
+ {
+  "name": "Gaijin Name, Culture, or Appearance",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761450715833,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 121
+   },
+   "description": "<p><em>The Crane courtier bowed deeply, a thin, insincere smile upon his face. “I bring a thousand wishes for a glorious future from the Crane to the great Shinjo Aru…Arutan…”</em></p><p><em>“Altansarnai,” the Unicorn Champion corrected him. The courtier bowed further. “I apologize, Shinjo\u0002sama. A…lovely name, but one that falls oddly upon my tongue.”</em></p><p><em>“It is from the Ujik tongue. It means ‘golden rose.’” Altansarnai gestured for the courtier to join her where she was seated. We are still foreign to them, she thought, and they will never let us forget it.</em></p><p></p><p>The following apply to a character with the Gaijin Name, Culture, or Appearance adversity:</p><ul><li><p>- People of higher and equal status tend to assume that you are uneducated at best and a barbarian at worst, while people of lower status respond to you with fear.</p></li><li><p>- When you make a check to inspire others who do not share your culture or background (such as a Command (fire) check to rally troops or a Commerce (fire) check to create a product that people desire), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal (Culture) or Physical (Appearance), Interpersonal (Name), Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "FCw1pfvIVYoe5yyk",
+  "sort": 0
+ },
+ {
+  "name": "Haunting",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761226346871,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 122
+   },
+   "description": "<p><em>The tale is told of Toritaka Kanoshi, a young samurai of the Falcon Clan, whose father was betrayed and murdered by a family friend. The ghost of the father appeared to the young man and bade him to avenge his murder, but Kanoshi refused to believe that the spirit was truly that of the elder Toritaka. The father’s ghost followed Kanoshi around for years, creating a great commotion that only his son could hear. In the end, nearly driven mad by the torment, Kanoshi finally obeyed the ghost’s wishes and brought the murderer to justice. Satisfied, his father was finally at rest, and he haunted Kanoshi no more.</em></p><p></p><p>The following apply to a character with the Haunted adversity:</p><ul><li><p>- The spirit has their own agenda (determined by the GM), which interferes with yours at inopportune times.</p></li><li><p>- When you make a check to defy the will of the spirit haunting you (such as a Meditation (void) check to find solace in meditation or a Skulduggery (void) check to perform disreputable acts to survive), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "kc6gGspWMQATYqIO",
+  "sort": 0
+ },
+ {
+  "name": "Horrible Scar",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761226537190,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 72
+   },
+   "description": "<p>Hibiki rose from a fitful sleep, his body aching from the prior night. Walking over to the basin of water he stared for a moment at his reflection, shocked by the awful gash that cut across his jaw. “Well,” his partner, Kyo, said from across the room, “I suppose you still have your beaming personality.” Hibiki swore and threw the basin at Kyo. </p><p></p><p>The following apply to a character with the Horrible Scar adversity: </p><ul><li><p>- You have gained an awful scar through your travels and it hinders your interactions with others. People stare at you, treat you unfairly, and otherwise judge you for your appearance. </p></li><li><p>- When you perform a check to interact socially with a stranger (such as a Courtesy (air) check to request information or a Sentiment (air) check to calm someone down), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "tPjzEue7209cSD8o",
+  "sort": 0
+ },
+ {
+  "name": "Hunted by Chikusho-Do",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761226747676,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 246
+   },
+   "description": "<p><em>Kazuya drew his father’s bow, but his thin, smooth hands shook, the arrow tip wobbling—unsure, unfocused. He thought of his father’s hands: strong, thick, and calloused from war. He thought of his father’s body, blood pooling in the snow.</em></p><p><em>He heard the boar grunt, but to him, it screamed for his blood. If we both die here, there will be no one to lead the family.</em></p><p><em>Kazuya saw the eyes of the boar reflecting the fading torchlight as it charged.</em></p><p></p><p>The following apply to a character with the Hunted by Chikushō-dō adversity:</p><ul><li><p>- Animals dislike you and show it in a variety of ways. Dogs bark in your presence, </p></li></ul><p>cats hiss, and wild animals flee from you or become aggressive.</p><ul><li><p>- When performing a check to interact with an animal (such as a Survival (earth) check to calm a frightened horse or a Fitness (earth) check to go unnoticed by a hungry wolf), you must choose and reroll two dice showing (su) or (ex)results. After resolving the check, if you failed, you regain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Elkan5JdWKusR08X",
+  "sort": 0
+ },
+ {
+  "name": "Incurable Illness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761226959356,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 122
+   },
+   "description": "<p><em>The next morning, as we prepared our horses for the long ride ahead, Moto Ryoichi was wracked by one of his coughing fits. As was his preference, I deliberately paid no attention, turning my gaze to the proper fitting of my mount’s reins. Out of the corner of my eye, however, I saw Ryoichi pull a white silk kerchief away from his mouth, spotted red with blood. My concern overcame our long-standing agreement. “Ryoichi-san.”</em></p><p><em>He waved away any further inquiry. “I’m fine,” he croaked, his throat raw from coughing. “We have a long day ahead. We should get on with it.”</em></p><p></p><p>The following apply to a character with the Incurable Illness adversity:</p><ul><li><p>- Periodically, if you push yourself too hard, you are afflicted by especially violent fits that significantly restrict your activity for a brief period of time.</p></li><li><p>- When you make a check to remain active for long periods of time (such as a Labor (earth) check to plow a field or a Survival (earth) check to build a shelter), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "QSGgttZiyeA76rXV",
+  "sort": 0
+ },
+ {
+  "name": "Insomniac",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761227285671,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 104
+   },
+   "description": "<p><em>Nighttime mind flutters</em></p><p><em>Cicadas cry to come home</em></p><p><em>Yet they never rest</em></p><p></p><p>The following apply to a character with the Insomniac adversity:</p><ul><li><p>- You have difficulty falling and staying asleep. You recover only half the normal amount after a night’s rest.</p></li><li><p>- When you make a check that requires intense focus (such as a Government (void) check to sense the best way to approach a politically charged situation or a Smithing (void) check to attune to a weapon you are making), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void points</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Ie2rWgNun66fBOAS",
+  "sort": 0
+ },
+ {
+  "name": "Jurōjin’s Curse",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761227489961,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 123
+   },
+   "description": "<p><em>The battle was won; the castle had been taken. I found Kitsu Tsuyoshi seated on a tree stump in the courtyard. Fires burned here and there, and the bodies of the bandits who had occupied the castle lay broken and bloody all around us, along with more than a few of our own bushi. </em></p><p><em>“You charged the gate alone,” I said. “You fought your way in and opened the way for the rest of us. It was the bravest thing I have ever witnessed, Tsuyoshi-san.” </em></p><p><em>The samurai raised his head to regard me wearily. “It’s not bravery, Kodaga-san,” he said with a slight shrug. “I have always known that I will die young. So why struggle against it?”</em></p><p></p><p>The following apply to a character with the Jurojin’s Curse adversity:</p><ul><li><p>- Poison and disease seem to strike you more easily, and it takes you twice as long as normal to recover from disease and injury.</p></li><li><p>- When you make a check to sustain yourself (such as a Fitness (void) check to resist a critical injury or a Survival (void) check to live in harmony with a natural environment), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "2JSkdzG6eRE9hNyP",
+  "sort": 0
+ },
+ {
+  "name": "Kisshōten’s Curse",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761227702411,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 123
+   },
+   "description": "<p><em>“Children are but a reflection of their parents.”</em></p><p><em>– Tao of Shinsei</em></p><p></p><p>The following apply to a character with the Kisshōten’s Curse adversity:</p><ul><li><p>- Children instinctively dislike you and are obstinate in the face of your demands. Your own children (if you have any) are unlucky in matters of health, beauty, an happiness.</p></li><li><p>- When performing a check for which you need to communicate with children (such as a Command (water) check to order them around or a Performance (water) check to entertain them), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "OdLNm0go5mlJUoxB",
+  "sort": 0
+ },
+ {
+  "name": "Lackluster",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761228012956,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 101
+   },
+   "description": "<p><em>\"So—did you like it?”</em></p><p><em>Doji Eiko stared at the young poet. “It was pretty.” Kei nodded and waited. After a long pause, “…just pretty, then?”</em></p><p><em>“Yes, pretty. Otherwise, it was…” Eiko shrugged, “inoffensive?”</em> </p><p></p><p>The following apply to a character with the Lackluster adversity:</p><ul><li><p>- Try as you might, you cannot distinguish yourself within the court. Your talents or appearance cannot compete with those of the people around you. As a result, you are hardly noticed. When you try to leverage your reputation, even if people recognize who you are due to your glory or actions, they take far more interest in your companions than they do in you. </p></li><li><p>-  When performing a check to impress others or perform better than those around you (such as an Aesthetics (fire) check to create a new painting or a Performance (fire) check to perform a role in a play that moves your audience to tears), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "kSPoRSuKHmkJnKur",
+  "sort": 0
+ },
+ {
+  "name": "Lost Arm or Lost Hand",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761278589922,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 123
+   },
+   "description": "<p>“Turn and face me, dog!” Takeda stiffened and turned. Akodo Shinpei stalked through the fire toward him.</p><p>“Back again, little Lion?” sneered the rōnin. “I took your arm when we last crossed swords. Are you so eager to lose the other?”</p><p>“I lost an arm, but at least I still have my honor,” Shinpei growled. He drew his sword. It shone in the firelight. “Die on my blade, cur, and if you do it with courage, perhaps you can regain some of yours.”</p><p></p><p>The following apply to a character with the Lost Arm or Lost Hand adversity:</p><ul><li><p>- You have only one usable hand or arm. You cannot wield weapons in a two-handed grip or hold anything in your missing hand. If you are missing only the hand, you can strap items to the arm for use.</p></li><li><p>- When you make a check for which having two hands is very valuable (such as a Martial Arts (unarmed)(fire) check to grapple a foe into submission or a Survival (fire) check to leap onto a galloping horse’s back), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "KWvyQm54X7CjDj45",
+  "sort": 0
+ },
+ {
+  "name": "Lost Eye",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761229131452,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 124
+   },
+   "description": "<p><em>Johei poured the water from the kettle and it missed the cup, splashing onto the table. Ayame looked over the table at him, her gaze flicking briefly to his bandaged eye socket before snapping away.“It’s no trouble for me to pour it,” Ayame offered. “My thanks. But adaptation is natural for humans. I learned to be a Crane when I joined your family, and I’ll learn this, too.” Johei raised the kettle again and moved it until it clicked audibly against the cup. Then he poured. “I don’t relish the idea of doing it again, but losing my eye was a small price to secure our future.”</em></p><p></p><p>The following apply to a character with the Lost Eye adversity:</p><ul><li><p>-  You have only one eye. Your field of vision is narrower, and your depth perception is somewhat diminished.</p></li><li><p>-  When you make a check for which your reduced ability to observe a wide field or discern the exact distance to faraway objects would cause difficulties (such as a Tactics (water) check to spot incoming threats or a Martial Arts (ranged) (water) check to hit targets while moving), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Esx89ROPGgsHbhw3",
+  "sort": 0
+ },
+ {
+  "name": "Lost Family History",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761229449059,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 95
+   },
+   "description": "<p><em>Iuchi Ryomaru cleaned the headstones with water and bitterly pulled at the weeds. This family graveyard had been left uncared for, a sign of his failures. With the pulling of each weed, he wished the Fortunes would help him find the missing poems, journals, and histories of his great-great-grandparents’ generation. He had journeyed to Otosan Uchi, the Miya Library, the Izaku Library, and Khanbulak searching for copies of their lost texts. He had dedicated his whole life to the search, unwittingly neglecting his duties at the graveyard.</em></p><p></p><p>The following apply to a character with the Lost Family History adversity:</p><ul><li><p>- At some point, your family had an important historical record, whether scrolls and books, songs and poems, or a family genealogical chart or registry. Some event or catastrophe caused your family to lose these records. Your family may still have other records, so perhaps only a certain set has been lost.</p></li><li><p>- When you make a check to recall or find something related to your lost history (such as a Culture (earth) check to remember if your family ever dealt directly with a Hantei family member or a Skulduggery (earth) check to remember if your family has ever dealt with a criminal organization), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Material"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "aqRuOErMpIK16plH",
+  "sort": 0
+ },
+ {
+  "name": "Lost Fingers",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761231064611,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 124
+   },
+   "description": "<p><em>The weathered old Crab held up his hands, and the children gasped. “Can’t count to ten without taking off my shoes, but at least I still have more fingers than teeth,” he chuckled. “Each of my fingers told a story as it left me. This one? A goblin’s teeth, as I pried it off my lord’s leg. This one? One of the great war machines on the Wall misfired…” The children stared, every eye wide, as the old Crab wove his stories of glory and hardship in their never-ending war.</em> </p><p></p><p>The following apply to a character with the Lost Fingers adversity:</p><ul><li><p>- You have fewer functional digits on one of your hands than most people. Checks to craft new items take you twice as long as they would take a character with their full complement of fingers.</p></li><li><p>-  When you make a check for which you must maintain a precise grip with both hands at once (such as a Design (fire) check to weave cloth or a Martial Arts (fire) check to draw your blade quickly), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GVibmLuufCCyLPYh",
+  "sort": 0
+ },
+ {
+  "name": "Lost Leg",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761231243491,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 124
+   },
+   "description": "<p><em>After Hiruma Noriko lost her leg while rescuing Asahina Setsuna from a tragic venture into the Shadowlands, the grateful artificer sought to repay the hero. The two collaborated on countless designs to help the warrior return to the field, Setsuna’s mystical skill guided by Noriko’s practical knowledge. The resulting prosthetic, beautifully lacquered and inscribed with countless protective charms, still remains in the armory of Carpenter Castle, and has inspired many similar devices over the centuries.</em> </p><p></p><p>The following apply to a character with the Lost Leg adversity:</p><ul><li><p>-  You have one fewer leg than most people. You use a crutch, cane, or other support to walk, and standing takes more effort than it does for people with two legs. Traveling by walking takes you twice as long as it does others without some form of compensatory tool.</p></li><li><p>- When you make a check for which you must reposition yourself quickly or maintain your balance (such as a Fitness (water) check to move across difficult ground quickly or a Seafaring (water) check to operate a boat in difficult conditions such as a storm), you must choose and reroll two dice containing (su) or (ex) After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "qa0SXpciKHR3F32C",
+  "sort": 0
+ },
+ {
+  "name": "Lost Memories",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761232258865,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 124
+   },
+   "description": "<p><em>Utsuro bowed as he accepted the bowl, then sat back and ate with gusto. The simple food she brought him seemed to make him so happy. “You eat like you’ve never had rice balls before,” she laughed. “I don’t remember,” Utsuro reminded her. “Perhaps I haven’t!” </em></p><p><em>“I’ll bring you something else tomorrow,” she said, standing to go. “Yue,” said Utsuro. “My memories will come back some day.” </em></p><p><em>“I’m sure they will,” she said. Utsuro bowed again, and she went back to her home, climbed upon her table and lifted down the basket from the beams of her roof. She stared down at the robe Utsuro had been wearing when she found him, with its chrysanthemum crest. “But not too soon, I hope.”</em> </p><p></p><p>The following apply to a character with the Lost Memories adversity:</p><ul><li><p>-  There is a period of your life that you cannot remember at all. The less important this period is to your identity, the longer it should be (for example, a single day lost might be sufficient if the character committed a terrible act during that time and struggles to understand how or why, whereas a full decade of lost memories might be insufficient if they are not especially foundational to who the character is). The play\u0002er and GM should work together to determine the amount and importance of memories lost. Skills and abilities acquired during the lost time are largely retained, even if the character does not remember the act of developing them.</p></li><li><p>- When you make a check for which you must recall information you learned during the period of lost memories (such as a Culture (void) check to intuit how to behave in a particular situation similar or related to one you encountered during that time or a Meditation (void) check to understand your past decisions), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Mental, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mWLNuEIWlmt35f37",
+  "sort": 0
+ },
+ {
+  "name": "Lost Name",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761273044115,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 97
+   },
+   "description": "<p><em>Kuni Kazu sat in contemplation. She closed her eyes and calmed her heart. Sleep had been difficult of late, and she knew it would not improve while traveling. Kazu knew why, but that didn’t help. She also knew she could never tell anyone of it or seek outside aid. This was her own personal demon, she thought, almost with a laugh—a laugh she knew would turn to screams if she allowed it to happen. </em></p><p><em>Kazu could hear it now, soft whispers in her head. She could even see the letters of its words carved into the blackness behind her eyelids. With each day, the voice grew louder, the letters brighter. One day, she would hear only its voice, see only those letters. Or she would destroy it as she had so many other dangers.  And that day, she knew, was coming soon.</em></p><p></p><p>The following apply to a character with the Lost Name adversity:</p><ul><li><p>- Your name is no longer your own, and it now belongs to an oni. Perhaps it was stolen from you, taken in a moment of weakness. Or perhaps you gave it willingly in exchange for fell power. But now the oni knows your every secret, hears your every thought, and can see the world through your eyes. You are both bonded now, and it will surely end you if you cannot sever the connection.</p></li><li><p>- When you make a check that involves personal convictions (such as a Meditation (void) check as part of your quest for Enlightenment or a Survival (void) check to create a spiritually harmonious rock garden), you must choose and reroll two dice showing (su) or (ex)  results. After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "OB9xW7sW7JYTQYBX",
+  "sort": 0
+ },
+ {
+  "name": "Maimed Arm",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761273633624,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 125
+   },
+   "description": "<p><em>The samurai kept her arm tucked in her kimono. Her left sleeve flapped empty in the breeze, a testament to her folly—and resilience.</em></p><p></p><p>The following apply to a character with the Maimed Arm adversity:</p><ul><li><p>- Your right or left arm is injured (your choice at the time the disadvantage is assigned), making it much harder to perform activities that involve use of that arm. You can use the arm, but gripping anything tightly causes you pain, and you might need a sling to help the arm heal properly.</p></li><li><p>-  When you make a check for which you need to use two hands at once (such as a Design (fire) check to sew a new kimono or a Martial Arts (melee) (fire) check to overwhelm a foe with a powerful overhead slice), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "BUdmYV82FFppmXo1",
+  "sort": 0
+ },
+ {
+  "name": "Maimed Visage",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761273516124,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 125
+   },
+   "description": "<p><em>“You have a villain’s look about you. Why should we believe you’re a magistrate of the Emperor’s justice?” The magistrate sighed. “You’re right. These scars do tell a story about me, and one you should heed. But you haven’t asked what the story is, have you? “When I was young, I served my lord as a yōjimbō. In my first battle, I took a slash meant for his throat. You can read the degree of my loyalty in these scars. Now, if I would suffer such a wound without complaint, do you really think I’d allow your foolishness to stand in the way of justice?”</em></p><p></p><p>The following apply to a character with the Maimed Visage adversity:</p><ul><li><p>- You have been struck in the face, causing a very noticeable and difficult-to-disguise sign of your altercation. Your injury is disquieting to many, and speaking causes you some pain, hampering your social endeavors that hinge on subtle implication and manipulation.</p></li><li><p>- When you make a check to subtly convince others of something or speak an implication (such as a Commerce (air) check to sell an item at a higher price than usual or a Courtesy (air) check to insult someone by implication), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0IHLrL3L8lr004EY",
+  "sort": 0
+ },
+ {
+  "name": "Many Mouths",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761274045460,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 72
+   },
+   "description": "<p><em>The evening air was cool on his neck as Noki stepped inside. Around the table, the glistening eyes and pursed lips of his children glowed in the light of a dim flame. The children scrambled, hand and foot, to swarm around him, clamoring for attention.</em></p><p><em>“Sadako would not stop crying today.”</em></p><p><em>“Yuki slapped me, father!”</em></p><p><em>“I want to see the cherry blossoms again. When will it be spring?”</em></p><p><em>The circle fell silent as he produced a small stone jar and, cupping it with both hands, brought it reverently to the table. Each of the children produced a small wooden bowl and held it, their hunger palpable in the darkness of the hovel. With a sigh, Noki removed the lid of the jar, took in the scent of jasmine, and ladled a mouthful into each child’s bowl. In moments, each bowl was empty yet again.</em></p><p><em>“That’s all for now. We’ll need the rest for tomorrow morning.”</em></p><p></p><p>The following apply to a character with the Many Mouths adversity: </p><ul><li><p>- You have been saddled with the responsibility to provide food and shelter for many dependents (such as children, elders, or gravely ill loved ones) beyond your means. As a result, you are constantly looking for ways to provide for them, but nothing you do is ever enough to offer more than temporary respite.</p></li><li><p>-  When you perform a check related to providing food, money, or care for yourself or your dependents (such as a Labor (earth) check to produce food or a Sentiment (earth) check to soothe your loved ones), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "MWZX6kqZ29F75BGs",
+  "sort": 0
+ },
+ {
+  "name": "Momoku",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761274249197,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 126
+   },
+   "description": "<p><em>A favorite shadow-puppet play often performed during the fall harvest season, The Hungry Ghostsfeatures an old man who lives in a haunted house, yet cannot see the ghosts that surround him. The ghosts continually eat his food and frighten his guests, but the old man remains oblivious.</em></p><p><em>Some puppeteers have run afoul of the law while performing this play, making the old man appear a bit too much like the local lord, and the ghosts resemble problems plaguing the local region—problems that the lord seems incapable of seeing.</em> </p><p></p><p>The following apply to a character with the Momoku adversity:</p><ul><li><p>- You do not detect supernatural presences even when they make themselves evident to everyone else, and you are blissfully unaware of the ripples in reality such entities and phenomena create. You can still discern effects they have on the physical world, but only when they become quite obvious.</p></li><li><p>-  When you make a check to understand or appeal to otherworldly powers (such as a Games (void) check to put your faith in the power of the universe or a Theology (void) check to call upon the cosmic energy around you), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "zJ3n72e7sEElK3l4",
+  "sort": 0
+ },
+ {
+  "name": "Muteness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761274364877,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 126
+   },
+   "description": "<p><em>The Quiet Monks of Kaitō Province take vows of silence upon entering the monastery. They devote themselves to silent contemplation of the Tao and the mysteries of the elements.</em></p><p></p><p>The following apply to a character with the Muteness adversity:</p><ul><li><p>- You are physically or psychologically unable to produce intelligible spoken words. You can still make yourself understood through signing, gestures, and meaningful looks.</p></li><li><p>-  When you make a check for which you must make your tone of voice understood by others (such as a Command (air) check to convey nuanced information to others or a Performance (air) check to impersonate someone convincingly), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Physical or Mental, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "WIECJK8MIQSw46yM",
+  "sort": 0
+ },
+ {
+  "name": "Nerve Damage",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761274544461,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 126
+   },
+   "description": "<p><em>Matsu Makoto sat with a perfect stillness of impatience. “How long until I can fight again?”Kitsu Hanae looked over the wound on her arm. </em></p><p><em>“It’s healing well externally. No infection. But inside, it’s hard to tell. You might never regain full sensitivity, or it might slowly return over months or years. Patience is the only remedy now.”</em></p><p><em>Makoto grumbled at the same non-answer Hanae had given yesterday. “How long until I can start training with my left hand, then?”</em></p><p></p><p>The following apply to a character with the Nerve Damage adversity:</p><ul><li><p>- You have no feeling in certain parts of your body.</p></li><li><p>- When you make a check for which physical sensitivity is helpful (such as an Aesthetics (air) check to delicately paint glaze onto a ceramic piece or a Fitness  (air) check to maintain your posture exactly while moving), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Physical, Scar"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XP5G0ohTS5i6p8f1",
+  "sort": 0
+ },
+ {
+  "name": "Out of Shape",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761275192172,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 105
+   },
+   "description": "<p><em>“Initiates always ask why they have to do so-called meaningless tasks: carrying water in buckets up the hill, pulling carts for the farmers as if oxen, or carry\u0002ing stone by hand for construction. ‘We have animals, engineers, machines for all that. I’m here to improve my mind, my soul,’ they say.</em></p><p><em>Enlightenment is a hard path, testing the spirit at every turn. You will stumble. You will fall. You will get back up again and climb once more. If your body cannot handle lifting a rock, if you cannot be like the oxen who tills the soil for simple grass, how can you expect to know the universe?”</em></p><p><em>- Togashi Kyogi, from their treatise, “To Fall is To Fly”</em></p><p></p><p>The following apply to a character with the Out of Shape adversity:</p><ul><li><p>-  You have neglected your physical fitness, whether by choice or due to a health issue. Regardless, you become noticeably more winded than others during physical activities.</p></li><li><p>- When you make a check that requires physical exertion (such as a Martial Arts (melee) (earth) check to outlast your opponent in a duel or a Performance (earth) check to recite a very long, taxing poem), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3zMwLNUpxKxNEvYS",
+  "sort": 0
+ },
+ {
+  "name": "Overconfidence in Charm",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761278532605,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 101
+   },
+   "description": "<p><em>Ikoma Rikuto slid the door to the sake house open with enough force to grab everyone’s attention. “I am Ikoma Rikuto, the greatest singer you have never heard!” he proclaimed to the patrons as he entered. “My jealous brother banished me from the Ikoma Bard School! But now you lucky people shall hear the voice he tried to hide!”</em></p><p></p><p>The following apply to a character with the Overconfidence in Charm adversity:</p><ul><li><p>- You overestimate yourself dramatically in the chosen capacity. While truly talented people may worry that they fail to meet expectations even when they do, you are blissfully confident about some talent you do not possess. When faced with reality, you may entrench yourself in your delusion or take a devastating blow to your ego.</p></li><li><p>- When performing a check for which you need to leverage the capacity about which you are overconfident (such as a Fitness (earth) check to run for several li without stopping or a Composition (fire) check to draft an exciting new poem that will awe courtiers at Winter Court), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "uRIhr4a23grhyVCY",
+  "sort": 0
+ },
+ {
+  "name": "Overconfidence in Creativity",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761278523120,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 101
+   },
+   "description": "<p><em>Ikoma Rikuto slid the door to the sake house open with enough force to grab everyone’s attention. “I am Ikoma Rikuto, the greatest singer you have never heard!” he proclaimed to the patrons as he entered. “My jealous brother banished me from the Ikoma Bard School! But now you lucky people shall hear the voice he tried to hide!”</em></p><p></p><p>The following apply to a character with the Overconfidence in Creativity adversity:</p><ul><li><p>- You overestimate yourself dramatically in the chosen capacity. While truly talented people may worry that they fail to meet expectations even when they do, you are blissfully confident about some talent you do not possess. When faced with reality, you may entrench yourself in your delusion or take a devastating blow to your ego.</p></li><li><p>- When performing a check for which you need to leverage the capacity about which you are overconfident (such as a Fitness (earth) check to run for several li without stopping or a Composition (fire) check to draft an exciting new poem that will awe courtiers at Winter Court), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fU6GNpPzngka8dzo",
+  "sort": 0
+ },
+ {
+  "name": "Overconfidence in Spiritual Sensitivity",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761278509657,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 101
+   },
+   "description": "<p><em>Ikoma Rikuto slid the door to the sake house open with enough force to grab everyone’s attention. “I am Ikoma Rikuto, the greatest singer you have never heard!” he proclaimed to the patrons as he entered. “My jealous brother banished me from the Ikoma Bard School! But now you lucky people shall hear the voice he tried to hide!”</em></p><p></p><p>The following apply to a character with the Overconfidence in Spiritual Sensitivity adversity:</p><ul><li><p>- You overestimate yourself dramatically in the chosen capacity. While truly talented people may worry that they fail to meet expectations even when they do, you are blissfully confident about some talent you do not possess. When faced with reality, you may entrench yourself in your delusion or take a devastating blow to your ego.</p></li><li><p>- When performing a check for which you need to leverage the capacity about which you are overconfident (such as a Fitness (earth) check to run for several li without stopping or a Composition (fire) check to draft an exciting new poem that will awe courtiers at Winter Court), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yQUqHm7hAOzR3LIS",
+  "sort": 0
+ },
+ {
+  "name": "Overconfidence in Subtlety",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761278493169,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 101
+   },
+   "description": "<p><em>Ikoma Rikuto slid the door to the sake house open with enough force to grab everyone’s attention. “I am Ikoma Rikuto, the greatest singer you have never heard!” he proclaimed to the patrons as he entered. “My jealous brother banished me from the Ikoma Bard School! But now you lucky people shall hear the voice he tried to hide!”</em></p><p></p><p>The following apply to a character with the Overconfidence in Subtlety adversity:</p><ul><li><p>- You overestimate yourself dramatically in the chosen capacity. While truly talented people may worry that they fail to meet expectations even when they do, you are blissfully confident about some talent you do not possess. When faced with reality, you may entrench yourself in your delusion or take a devastating blow to your ego.</p></li><li><p>- When performing a check for which you need to leverage the capacity about which you are overconfident (such as a Fitness (earth) check to run for several li without stopping or a Composition (fire) check to draft an exciting new poem that will awe courtiers at Winter Court), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GneqCR3qSBc8HD4w",
+  "sort": 0
+ },
+ {
+  "name": "Overconfidence in Toughness",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761278474904,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 101
+   },
+   "description": "<p><em>Ikoma Rikuto slid the door to the sake house open with enough force to grab everyone’s attention. “I am Ikoma Rikuto, the greatest singer you have never heard!” he proclaimed to the patrons as he entered. “My jealous brother banished me from the Ikoma Bard School! But now you lucky people shall hear the voice he tried to hide!”</em></p><p></p><p>The following apply to a character with the Overconfidence in Toughness adversity:</p><ul><li><p>- You overestimate yourself dramatically in the chosen capacity. While truly talented people may worry that they fail to meet expectations even when they do, you are blissfully confident about some talent you do not possess. When faced with reality, you may entrench yourself in your delusion or take a devastating blow to your ego.</p></li><li><p>- When performing a check for which you need to leverage the capacity about which you are overconfident (such as a Fitness (earth) check to run for several li without stopping or a Composition (fire) check to draft an exciting new poem that will awe courtiers at Winter Court), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0R70yrYPxyRsoVH8",
+  "sort": 0
+ },
+ {
+  "name": "Penalty",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761275775638,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 95
+   },
+   "description": "<p><em>Asahina Sora knelt on the padded cushion, holding aloft this year’s scroll. Moto Chizue unrolled the scroll to examine Sora’s calligraphy. Chizue did not actually care about the calligraphy itself, but Sora’s brushwork had improved. She also did not care about the con\u0002tents of the scroll; it had the usual flowery apology and praise of Chizue’s eloquence. She only cared about the process itself, a yearly reminder of Sora humiliating her at Otosan Uchi, and how they had to continue this apology for the next ten years.</em></p><p></p><p>The following apply to a character with the Penalty adversity:</p><ul><li><p>- You or your family have been charged with a minor offense, expressed as a fine or penalty you must pay to the aggrieved party over an extended period of time. The penalty is not necessarily the consequence of a crime; it could instead be part of an agreement for recompense to avoid further legal interference. The penalty most likely does not involve money and requires delivering material or symbolic goods, such as providing a magnificent horse or writing a set of humbling sutras.</p></li><li><p>- When you make a check to avoid fulfilling the terms of the penalty (such as a Performance (fire) check to publicly petition the aggrieved party to temporarily waive the penalty or a Theology (fire) check to elicit a sign from the kami indicating how to absolve yourself of the penalty), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Infamy, Social"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "l1canPBByR91r6Rw",
+  "sort": 0
+ },
+ {
+  "name": "Pursued by [Individual or Group]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761275902348,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 72
+   },
+   "description": "<p><em>Aishwarya paused on her horse to look back at the city, a place she had called home for the whole of her life. She realized she might never see her siblings or grand￾mother again. Aishwarya choked back tears that tried to come. No, I will not mourn, not now. She gave her horse a soft kick and rode toward the mountains, away from her duty. A horn blared behind her.</em> </p><p></p><p>The following apply to a character with the Pursued by [Individual or Group] adversity:</p><ul><li><p>- You are running from a pursuer who wishes to capture or kill you. It is only a matter of time until your past returns to hunt you down; you are constantly on guard and watching for agents who seek you out. You have difficulty relaxing in public spaces, as your pursuer could be around any corner. Work with your GM to determine the nature of your pursuer. </p></li><li><p>- When you make a check that draws attention to you in public (such as a Commerce (water) check to trade goods at a market or a Courtesy (water) check to win the favor of a court), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "OqLaiE1CdGYFkv5t",
+  "sort": 0
+ },
+ {
+  "name": "Sailor’s Tongue",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761278381094,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": 7
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>“Err, maybe forget you heard that last bit about the oar and the octopus, eh Doji-san?”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to you:</span></p><ul><li><p><span class=\"fontstyle3\">- Your speech is often punctuated by a combative tone or idioms that others find difficult to understand or even vulgar.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check to speak politely (such as a Courtesy (air) check to pay a compliment at court or a Culture (air) check to know if something is rude to discuss), you must choose and reroll two dice containin </span><span class=\"fontstyle5\">(su) </span><span class=\"fontstyle3\">or (ex). After resolving the check, if you failed, you gain 1 Void point.</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JeGc04rBbfGEQCLM",
+  "sort": 0
+ },
+ {
+  "name": "Schism in Status",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761438106321,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 96
+   },
+   "description": "<p><em>“Isawa Yasu may be respected among shugenja as an ishiken,” the courtiers at Otosan Uchi say, “but to give their heart to a forbidden love in such a blatant way incomprehensible.”</em></p><p><em>Perhaps Yasu’s dedication to wearing that favored comb in their hair all the time may raise some eyebrows, but the harsh gossip outweighs any real offense. They refuse to allow the rumors to weaken their heart; Yasu finds strength in their lingering love, even if it makes their life in court difficult.</em></p><p></p><p>The following apply to a character with the Schism in Status adversity:</p><ul><li><p>- You have a vastly lower status with a specific social group, either imagined or actual. The members of this group treat you as if your status value were 20 points lower. While your feelings toward this group may be friendly, neutral, or antagonistic, it has no bearing on how they perceive you. You can try to improve the relationship by reducing the status gap, but it does not change your overall status value.</p></li><li><p>- When you make a check to convince a member of this social group to listen to you (such as a Courtesy (water) check to convince some artists to allow you to join their studio or a Commerce (water) check to make a trade with a set of merchants), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Infamy, Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "8WcLwum8zniyMiwq",
+  "sort": 0
+ },
+ {
+  "name": "Scorn of [One Group]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761279621152,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 127
+   },
+   "description": "<p><em>“Hatsumon cannot assume the command,” Utaku Kamoko growled. No “-sama,” not even a “-san,” and certainly not “Utaku Hatsumon,” not after his crime of riding one of the sacred Utaku steeds.“With Shinjo Reki’s death, Hatsumon Noyan is thehighest ranked officer present,” soothed Ide Ujiyasu. “The command is his.” </em></p><p><em>“So be it,”Kamoko snarled, and stalked from the tent. The entire Shiotome contingent left the encampment the next day.</em></p><p></p><p>The following apply to a character with the Scorn of [One Group] adversity:</p><ul><li><p>-  You have earned the ire of a particular group, which has seriously damaged your ability to work with its members or enlist their help. You have been barred from entering their facilities, and they refuse to meet or communicate with you directly. Confer with the GM to select a campaign-appropriate group when choosing this disadvantage.</p></li><li><p>-  When performing a check to interact with the chosen group that relies on your rapport with its members (such as a Courtesy (water) check to persuade them to do something or a Performance (water) check to impress a group of them), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "phzQyXvNxw7HVrgQ",
+  "sort": 0
+ },
+ {
+  "name": "Shadowlands Taint (Air)",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761279770408,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 127
+   },
+   "description": "<p><em>The Obsidian Journal is a secret text, written hundreds  of years ago by Kuni Shunsuke, a Crab Clan samurai who made forbidden journeys into the Shadowlands  and wrote of what he saw there.</em></p><p><em>By the end of his journal, he wrote: “Even now, I know that the fingers of shadow have reached too deeply within me, for although I am surrounded by family and clan, I feel no kinship. They seem distant to me, as if viewed through a glass. I wonder how much of myself is truly left.”</em></p><p><em>That was the final entry of the Obsidian Journal. Kuni Shunsuke committed seppuku to silence the call of the Shadowlands.</em></p><p></p><p>The following apply to a character with the Shadowlands Taint (Air) adversity:</p><ul><li><p>-  You are a Tainted being. You have trouble sympathizing with other humans, but you can understand the emotions of corrupted beings easily.</p></li><li><p>-  When you make a check to show compassion for other human beings (such as a Composition (air) check to edit a work for emotional refinement or a Courtesy (air) check to say something difficult without harming the recipient’s feelings), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Curse, Interpersonal, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "eEg9b6rmnSBA5HqG",
+  "sort": 0
+ },
+ {
+  "name": "Shadowlands Taint (Earth)",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761279926632,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 127
+   },
+   "description": "<p><em>“The swordsman bled from two dozen cuts, each of which would have brought down any samurai. Finally, one last spear from our bushi found his chest, and he died.“I swear to you, he did die. I am sure of that. Yet I can scarcely bring myself to write what we witnessed next, as his corpse dragged itself up to stand and face us again. It was only through use of a torch that we were finally able to put an end to him.”</em></p><p><em>– The Obsidian Journal</em></p><p></p><p>Effects: The following apply to a character with the Shadowlands Taint (Earth) adversity:</p><ul><li><p>- You are a Tainted being. Your ability to feel physical sensations is significantly diminished, and when you perish, your body rises as a Zombie Peasant (see page 321), which pursues your last goal with bestial purpose before turning on anyone else nearby.</p></li><li><p>- When you make a check that relies upon physical sensitivity (such as a Design (earth) check to repair a damaged item or a Martial Arts (unarmed)(earth) check to grapple with a foe), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Curse, Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NtmTwRspwa9Fs4Cf",
+  "sort": 0
+ },
+ {
+  "name": "Shadowlands Taint (Fire)",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761280199077,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 128
+   },
+   "description": "<p><em>“Sakori is lost to us. During our recent excursions, she gradually grew more and more obsessed with the thought of using the enemy’s own power against him. She pored over every scrap of knowledge we acquired, following it down ever-darker paths. “I was brought news this morning that she was gone. She has been found nowhere within the castle, and none along the Wall have reported seeing her. Her bed was not slept in. I can only assume that she’s out there somewhere, in the Shadowlands, drawn further away from who she once was with every step.”</em></p><p><em>– The Obsidian Journal</em></p><p></p><p>The following apply to a character with the Shadowlands Taint (Fire) adversity:</p><ul><li><p>-  You are a Tainted being. You can identify Shadowlands creatures and forces, you know how to turn them to destructive ends, and you are drawn inexorably to such forbidden powers.</p></li><li><p>-  When you make a check to foresee possible negative outcomes of your actions (such as a Government (fire) check to extrapolate whether your actions could lead to great destruction or a Theology (fire) check to know whether the powers you are dealing with are likely to destroy you in the end), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Curse, Mental, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "zqOYbTwhOoaOTiv2",
+  "sort": 0
+ },
+ {
+  "name": "Shadowlands Taint (Void)",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761280353117,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 128
+   },
+   "description": "<p><em>“We sent a patrol out yesterday. Only Akihiro returned. He says that one by one, his comrades fell to a series of mishaps. Ome was bitten by a snake. Yayoi fell from a precipice. Kanbei drowned in quicksand. It was as if fate had abandoned each of them, save Akihiro.</em></p><p><em>“He will bear closer watching.”</em></p><p><em>– The Obsidian Journal</em></p><p></p><p>The following apply to a character with the Shadowlands Taint (Void) adversity:</p><ul><li><p>-  You are a Tainted being. Each time you spend your last Void point, someone near you suffers a misfortune as the woven cord of fate frays.</p></li><li><p>-  When you make a check to discern your future (such as a Government (void) check to know whether a course of action is likely to end in tragedy or a Seafaring (void) check to detect the arrival of a storm before it hits), you must choose and reroll two dice containing (su) or  (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Curse, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dikAycYeIMg8hGrI",
+  "sort": 0
+ },
+ {
+  "name": "Shadowlands Taint (Water)",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761352488191,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 128
+   },
+   "description": "<p><em>“A man was killed trying to get over the Wall today. At least, it appeared to be a man. When our soldiers cut him down, his blood was putrescence itself, flowing like poison from his body, and those whom it touched fell ill. “Five guards are now struck by this grave sickness, and our monks tend to them as best they can.”</em></p><p><em>– The Obsidian Journal</em></p><p></p><p>The following apply to a character with the Shadowlands Taint (Water) adversity:</p><ul><li><p>- You are a Tainted being. When your blood is spilled (such as after you suffer the Bleeding condition), foulness spills forth. Anyone who touches it suffers the Afflicted condition.</p></li><li><p>- When you make a check to heal others or deal with food (such as a Medicine (water) check to prepare treatments for a disease or a Survival (water) check to forage for food), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Curse, Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0frVHD0dWHggw5sz",
+  "sort": 0
+ },
+ {
+  "name": "Shadowlands Taint [Blasphemous Appetites]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761352472580,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 100
+   },
+   "description": "<p><em>I can feel it. Stronger now, stronger than yesterday. Soon it will be stronger than I am.“I see those around me and cannot see anything about them. Their faces are obscured, and their voices muffled, as if under a cloth. All are as puppets…except the wounded. Their torn flesh. Their bloodied limbs. Only long meditation can clear my head, and I fear one day that will not be enough. I must end it, before it ends me.”</em></p><p><em>–The Obsidian Journal</em></p><p></p><p>The following apply to a character with the Shadowlands Taint [Blasphemous Appetites] adversity:</p><ul><li><p>- You are a Tainted being. Your appearance now includes fetid breath, bleeding gums, and jagged, discolored teeth. You have a near uncontrollable hunger for raw meat: the bloodier, the better. You aren’t particular over the species and may even devour carrion or small chunks of obsidian if especially ravenous. Once sated with such delights, you remove all strife.</p></li><li><p>- When you make a check to notice details about those you care about (such as a Sentiment (water) check to detect the emotional state of a friend or a Medicine (water) check to determine their physical state), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Curse, Mental, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XQk6mGnfzxCn18dz",
+  "sort": 0
+ },
+ {
+  "name": "Shadowlands Taint [Distorted Limbs]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761352462491,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 99
+   },
+   "description": "<p><em>“We on the Wall watch to the south, but not enough of us watch each other. My fellow Kuni do this for those known to be Tainted, especially those in the Barracks of the Damned, but this is a task all of us must take on. I chastise myself as well as our clan in this. “The only sign was when his weapons fell and struck the parapet stones. We could only gasp as he leapt over the side and crawled, limbs akimbo like a spider, headfirst down the Wall to disappear into the darkness at the bottom.”</em></p><p><em>–The Obsidian Journal</em></p><p></p><p>The following apply to a character with the Shadowlands Taint [Distorted Limbs]  adversity:</p><ul><li><p>- You are a Tainted being. One or more of your limbs or digits grew longer but became less powerful. You are able to reach things in narrow gaps and can climb faster than normal.</p></li><li><p>- When you make a check that calls on your physical prowess (such as a Fitness (earth) check to survive a fall or a Labor (earth) check to exert yourself in the field), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Curse, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "u2PNV06bpVmlo3BJ",
+  "sort": 0
+ },
+ {
+  "name": "Shadowlands Taint [Kansen Whispers]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761352435088,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 99
+   },
+   "description": "<p><em>\"I was called to examine the sleeping Hiruma, who returned several weeks ago from a long patrol. She was loudly crying out in opposition to something, an argument of which we could hear only one side. Such was her fervor that it took several of her comrades to hold her down, and her face was wet with tears and sweat. Nearly an hour later, she collapsed, nodding her head. “The next I heard of her was when a visiting Crane took offense at her words. Both died soon after.”</em></p><p><em>–The Obsidian Journal</em></p><p></p><p>The following apply to a character with the Shadowlands Taint [Kansen Whispers] adversity:</p><ul><li><p>- You are a Tainted being. The kansen speak to you each night, filling your dreams with secrets of Rokugani history concerning betrayals, foolish decisions, and many, many lies. Each morning, you awaken filled with anger at your society, but can you never remember the details of the revealed knowledge.</p></li><li><p>- When you make a check to use subtlety in your communications (such as a Courtesy (air) check to convey a double-meaning in court or a Composition (air) check refine your letter declining an important invitation), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Curse, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "neQEA3mseNlMYIb8",
+  "sort": 0
+ },
+ {
+  "name": "Shadowlands Taint [One with the Darkness]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761352424637,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 100
+   },
+   "description": "<p><em>“The report was simple: one of the patrol had simply vanished in the night. No signs of struggle, no cries for help. Only what remained of a jade finger, now a puddle of dark tar. Why its owner did not report this days earlier, when the patrol could have safely returned, is unknown. “Others of the patrol were lost on the way back, the butchery displayed horrible in the extreme. What is worse is that two peasants in a nearby village were found today. The same claw marks marred their flesh.”</em></p><p><em>–The Obsidian Journal</em></p><p></p><p>The following apply to a character with the Shadowlands Taint [One with the Darkness] adversity:</p><ul><li><p>- You are a Tainted being. When fully covered by shadows or in an unlit location, you cannot be detected. You are also able to conceal nonphysical effects of the Taint from any detection.</p></li><li><p>- When you make a check to intuit meaning (such as a Courtesy (void) check to seek a hidden threat in a message or a Survival (void) check to sense what crops will grow best next season), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Curse, Physical, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "D57FSGf26c26sVjA",
+  "sort": 0
+ },
+ {
+  "name": "Shadowlands Taint [Unnatural Skin]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761352412319,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 100
+   },
+   "description": "<p><em>“Long before I set out past the Wall, I had a friend. A good one. We had our gempuku the same day. We were Crab, we knew of the Taint, and we knew of our duty should it appear in us.“He went missing in for weeks. When I broke into his hovel, I found only a huddled mass of pale, gristly flesh, shot through with thick chitin. It took me long minutes to find the head and remove it.”</em></p><p><em>–The Obsidian Journal</em></p><p></p><p>The following apply to a character with the Shadowlands Taint [Unnatural Skin] adversity:</p><ul><li><p>- You are a Tainted being. Your skin is leathery and thick and may even take on the coloration of a corpse. Your skin is treated as concealed armor (see page 237 of the core rulebook).</p></li><li><p>- When you make a check requiring rapid movements (such as a Fitness (fire) check to vault over a falling log or a Martial Arts (unarmed) (fire) check to strike swiftly), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Curse, Physical"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NKh9ijN8Zd9cPu7t",
+  "sort": 0
+ },
+ {
+  "name": "Skepticism",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761281824866,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 246
+   },
+   "description": "<p><em>A wise leader trusts their people. The farmer, after all, knows how to till and replenish the soil. It is his duty. A sailor understands her ocean. Even a beggar has a place in society, to teach us humility. To think existence has no point, to question one’s place in the world, assumes a lack of trust in the natural order of things.</em></p><p><em>– Oi no Yama, Kodaido</em></p><p></p><p>The following apply to a character with the Skepticism adversity:</p><ul><li><p>- You do not believe in the divinity of the Kami, the existence of spirits, or the veracity of the Celestial Order. If discovered, this constitutes grave blasphemy and might even be a crime against the Emperor.</p></li><li><p>- When you make a check that relies on the existence of the Spirit Realms (such as a Medicine (void) check to diagnose a malady of the soul or a Theology (void) check to detect the presence of a kami), you must choose and reroll two dice showing (su) or (ex) results. After resolving the check, if you failed, you regain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Mental, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3A1ygXw8lOcH5SLs",
+  "sort": 0
+ },
+ {
+  "name": "Stained Lineage",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761284473216,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 73
+   },
+   "description": "<p><em>It did not matter that Mizuho never met their uncle,  or that they rarely saw their father. “Those men are liars, cheats!” It did not matter than their mother had died of disease. “I heard she sabotaged her health out of shame!”</em></p><p><em>It did not matter that Mizuho spent every day working hard in the village, caring for their siblings. “I heard one is actually their child!” It did not matter </em></p><p><em>what Mizuho did: they could not escape their family’s reputation. </em></p><p></p><p>The following apply to a character with the Stained Lineage adversity:</p><ul><li><p>- Your family has a bad reputation. Whether this reputation is hyperbole or truth, most people in your region know about your family’s history and know you belong to that family. These people make negative assumptions about your character, even when given evidence to the contrary. Even if you aren’t awful currently, it’s in your blood, and they believe you will live up to your family reputation one day. </p></li><li><p>-  When making a check to interact with anyone from your home region (such as a Commerce (void) check to attempt trade in the open market without drawing much attention or a Courtesy (void) check to warn others of an incoming disaster), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Mental"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ywbyzuRQHJIhCHfM",
+  "sort": 0
+ },
+ {
+  "name": "Stalked by [Creature]",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761284694950,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 105
+   },
+   "description": "<p><em>The two bushi huddled together in the base of an ancient tree for warmth in the haunted forest of Hito\u0002kage Tani. They had heard rumors of a monster and wanted to test their mettle.</em></p><p><em>“If you say one word about a bath…” Etsuko mut\u0002tered with gritted teeth.</em></p><p><em>“Let’s just defeat the monster quickly so we can go have a—” Agasha Rie clamped their mouth shut with a clack of teeth.</em></p><p><em>Etsuko did not chide her friend, who ached from the last tussle with the monster. No major injuries, but the thing had been powerful, as if the earth itself had come alive. Fighting bandits is one thing. The bushi understood humans. This, however, made them prey.With a roar, the creature burst out from underneath, knocking Rie into the dirt.</em></p><p></p><p>The following apply to a character with the Stalked by (creature) adversity:</p><ul><li><p>-  You believe a creature of some kind is stalking you, whether or not that is true. The creature may be mundane or supernatural, and its obsession with hunting you makes being in the wilderness dangerous.</p></li><li><p>-  When you make a check that requires patience while in the wilderness (such as a Skulduggery (earth) check to build a trap to protect your camp or a Fitness (earth) check to stay calm while fleeing from the beast), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal, Mental, Spiritual"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "umhWdmlV1fkhNInV",
+  "sort": 0
+ },
+ {
+  "name": "Sworn Enemy",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761284840176,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 129
+   },
+   "description": "<p><em>\"As soon as a person leaves their house, they have seven enemies.”</em></p><p><em>– Tao of Shinse</em>i</p><p></p><p>The following apply to a character with the Sworn Enemy adversity:</p><ul><li><p>-  You and the GM should select or create a character to be your sworn enemy. Your sworn enemy exists within the world and periodically meddles in your affairs, directly or indirectly, at the GM’s discretion. If your sworn enemy perishes, you must either remove this disadvantage, acquire a new sworn enemy (perhaps someone who hates you because of your role in the demise of the previous one), or find a way for your deceased foe to continue playing a role in your life.</p></li><li><p>-  When you make a check to remain rational in the presence of this person you hate (such as a Courtesy (earth) check to interact with this person without being provocative or a Meditation (earth) check to stay stoic in the face of their insults), you must choose and reroll two dice containing (su)or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "BB5HVzYruWcQHh4Y",
+  "sort": 0
+ },
+ {
+  "name": "Unsavory Past",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761352378659,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 102
+   },
+   "description": "<p><em>Kakita Hisa walked quietly into the courtyard. Her hair was impeccably styled, her new kimono folded perfectly, and her pose and stride measured and deliberate: the perfect picture of decorum. But a hush descended on the bystanders all the same. Eyes darted to the blade at her belt, and when she turned her back, gossipy courtiers flicked their fans to hide their mouths as they whispered, “Have you heard what happened during her gempuku…”</em></p><p></p><p>The following apply to a character with the Unsavory Past adversity:</p><ul><li><p>- Your servants and old acquaintances know all manner of gossip and embarrassing stories about you. Foolish, unsavory, or even bloody actions of your youth come back to haunt you. You have aged and changed, but knowledge of your history lingers within your family lands, and old associations continue to cause you problems.</p></li><li><p>- When performing a check by which your past may come back to haunt you (such as a Games (water) check to relax and play an enjoyable game with people who know your penchant for cheating or a Tactics (water) check to lead troops who know that you once fled the battlefield in terror), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1UepzjUO9y6VFo25",
+  "sort": 0
+ },
+ {
+  "name": "Whispers of Cruelty",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761286108175,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 129
+   },
+   "description": "<p><em>“The Peace of the Unicorn is restored to these lands!” The commander’s voice boomed from within his golden mask. Standing on his stirrups, he was as tall as the thatch-roofed houses around him. The peasants of the village fell to their knees. </em></p><p><em>“Please, Moto-sama!” begged the village head. “Spare us your terrible wrath! We are but heimin; we did not mean to offer succor to the Lion, but we had no choice.” </em></p><p><em>Juro sat in his saddle once more, his jaw clenching beneath his mask. No matter how often I try, he thought, they still only see the terrible warlord.</em></p><p></p><p>The following apply to a character with the Whispers of Cruelty adversity:</p><ul><li><p>- You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you will act in a ruthless and destructive manner, and they act accordingly.</p></li><li><p>- When you make a check to attempt to calm others (such as a Courtesy (earth) check to convince someone to cooperate with you or a Command (earth) check to get someone to accept your authority calmly), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "peculiarity_type": "adversity",
+   "types": "Infamy, Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "TCRRIFdKGaR71YAK",
+  "sort": 0
+ },
+ {
+  "name": "Whispers of Doom",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761286257506,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 129
+   },
+   "description": "<p><em>Orphaned by the time she was six, Doji Hatsuhina was raised by her bachelor uncle, who also died when the girl was twelve. Finishing her schooling at the academies of Shizuka Toshi, Hatsuhina was betrothed to Seppun Hakemoto, a captain in the Imperial Guard, who died later that year. She was betrothed again, this time to a young Bayushi son of the Scorpion Champion, who was murdered as part of the often\u0002lethal politics of his clan. She was not betrothed a third time.</em></p><p></p><p>The following apply to a character with the Whispers of Doom adversity:</p><ul><li><p>- You are well-known, but not for the right reasons. Characters who do not know you personally always assume that those around you will perish or meet bad ends, even if you survive to spread your ill fortune further.</p></li><li><p>- When you make a check to dispel someone’s false preconceptions (such as a Courtesy (void) check to get someone to question their decision or a Command (void) check to get someone to see the pointlessness of their position), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "peculiarity_type": "adversity",
+   "types": "Infamy, Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3gEYR7aaYY5vctYO",
+  "sort": 0
+ },
+ {
+  "name": "Whispers of Failure",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761286383640,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 130
+   },
+   "description": "<p><em>“Some say failure is the true death of a samurai, but I have lived many years, and so I do not think this is so. Failure is a hard vine to uproot from the minds of others once it has sprouted, true. But what is most vital is uprooting it within your own mind. In this way, a samurai sets aside failure, and thus conquers regret. Only then can the seeds of success flourish.”</em></p><p></p><p>The following apply to a character with the Whispers of Failure adversity:</p><ul><li><p>-  You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you are incompetent, and they do not trust you with important tasks.</p></li><li><p>- When you make a check to get others to follow your lead (such as a Command (fire) check to lead a charge or a Performance (fire) check to inspire others), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "peculiarity_type": "adversity",
+   "types": "Infamy, Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "jaHtH7EosRYSLhnR",
+  "sort": 0
+ },
+ {
+  "name": "Whispers of Poverty",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761286536312,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 130
+   },
+   "description": "<p><em>A certain samurai of the Phoenix Clan so embarrassed his mother that she let it be known that no longer would she pay his gambling debts, nor support his dissolute lifestyle in Otosan Uchi. The samurai fell on hard times, and was forced to marry into a merchant’s family to replenish his purse. Now flush with koku, the samurai still found that those who saw him spoke behind their fans, “Oh, there goes Empty-Purse-san, the Pauper Samurai,” so for all his new wealth he still  had not regained his honor. </em></p><p><em>– “Gossip Twice-Told,” by Otomo no </em></p><p><em>Hoji (true identity unknown)</em> </p><p></p><p>The following apply to a character with the Whispers of Poverty adversity:</p><ul><li><p>- You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you don’t have financial solvency and won’t be able to muster resources quickly.</p></li><li><p>-  When you make a check to acquire items quickly or make trade deals (such as a Command (Water) check to win over troops under your command with the promise of rewards or a Commerce (water) check to secure a large supply of a commodity or service), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "peculiarity_type": "adversity",
+   "types": "Infamy, Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ZtMGBdHab0iM0trl",
+  "sort": 0
+ },
+ {
+  "name": "Whispers of Treachery",
+  "type": "peculiarity",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147551723,
+   "modifiedTime": 1761286705675,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 130
+   },
+   "description": "<p><em>Bayushi Kyo groaned. “We’re doing this again? Now?”Kuni Mamoru stood firm as he put the finishing touches on the warding barrier. “You have been acting suspiciously of late. Even more so than usual—the stories about you don’t do justice to the depths of your deceit.”“I don’t suppose you’d be willing to take my word that it’s for the greater good?”</em></p><p></p><p>The following apply to a character with the Whispers of Treachery adversity:</p><ul><li><p>-  You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you will plant poison in their tea or a knife in their back at the first opportunity.</p></li><li><p>-  When you make a check to get others to trust you (such as a Courtesy (air) check to convince someone of your sincerity or a Skulduggery (air) check to steal from someone who is aware of your presence), you must choose and reroll two dice containing (su)or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 0,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "peculiarity_type": "adversity",
+   "types": "Infamy, Interpersonal"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4zP7FhP73eWVXkRN",
+  "sort": 0
+ }
+]

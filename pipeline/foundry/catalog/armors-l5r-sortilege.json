@@ -1,0 +1,1211 @@
+[
+ {
+  "name": "Ashigaru Armor",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761484504504,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 239
+   },
+   "description": "<p>Cheap, lightweight, and easy to acquire, ashigaru armor is issued to the peasant soldiery. Possessing neither the beauty nor the fine craftsmanship of lacquered or plated armor, ashigaru armor consists of light plates sewn together to protect the head, torso, and upper legs. It is occasionally paired with a light helmet. Although it does not protect as well as heavier armor, it is lightweight, flexible, and inexpensive as armor goes.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "5 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ],
+   "armor": {
+    "physical": 3,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "pk0DJcUiOeHz6akG",
+  "sort": 0
+ },
+ {
+  "name": "Ceremonial Clothes",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761484557528,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 239
+   },
+   "description": "<p>Ceremonial clothing is any garment worn during an official ceremony, from a samurai’s court kimono to the accoutrement of the Imperial family. Ceremonial clothing is often richly decorated and offers little protection.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "4",
+   "zeni": "1 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    }
+   ],
+   "armor": {
+    "physical": 1,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "K61XHG9GnFLieqjc",
+  "sort": 0
+ },
+ {
+  "name": "Common Clothes",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761484645568,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 239
+   },
+   "description": "<p>Rokugani clothing runs the gamut from the simple trousers and smocks worn by peasants, to the broad-shouldered haori worn by traditionalist samurai, to the noble’s embroidered silk kimono.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "1",
+   "zeni": "1 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ],
+   "armor": {
+    "physical": 1,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vYOT19tl8uiIDt14",
+  "sort": 0
+ },
+ {
+  "name": "Concealed Armor",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761436377054,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 239
+   },
+   "description": "<p><span class=\"fontstyle0\">Used by cautious courtiers, shinobi, and anyone else who fears assassination, concealed armor is a kimono, keikogi, or other garment with thin bamboo or metal plates sewn inside to turn an unexpected blade or arrow.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "4",
+   "zeni": "5 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000005",
+     "name": "Concealable"
+    }
+   ],
+   "armor": {
+    "physical": 2,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vDEAuVf0o5GwmVsB",
+  "sort": 0
+ },
+ {
+  "name": "Firefighter's Coat",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761484797823,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 112
+   },
+   "description": "<p>Shinobi arsonists usually wear heavy quilted robe tops when attacking enemy territory to reduce the likelihood they catch fire or suffer burns. Firefighters wear this type of coat as well; firefighters in Otosan Uchi were the first to wear it.<br data-start=\"330\" data-end=\"333\">While wearing a firefighter’s coat, a character ignores the effects of Dangerous terrain created by fire and treats their resistance against flames (physical and supernatural) as 4.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 2,
+   "rarity": "4",
+   "zeni": "6 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    }
+   ],
+   "armor": {
+    "physical": 2,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "bMmhIumSN2luAUDO",
+  "sort": 0
+ },
+ {
+  "name": "Inconspicuous garb",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761147977219,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": "80"
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": "1",
+   "rarity": "3",
+   "zeni": "3 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    }
+   ],
+   "armor": {
+    "physical": "",
+    "supernatural": ""
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cvWQlgoDtN5sxTiT",
+  "sort": 0
+ },
+ {
+  "name": "Lacquered Armor",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761426107760,
+   "lastModifiedBy": "vYhZFFusozcUeDZP"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 239
+   },
+   "description": "<p><span class=\"fontstyle0\">Heavier than ashigaru armor, lacquered armor is worn by samurai who desire a good mix of protection and grandeur, and is just at home at war as at a martial ceremony. These suits are made of thick leather or steel plates stitched or riveted to a leather backing. They protect the torso, head, upper arms, and groin, and the legs above the knee. They can also include a helmet and mask, though these are not considered integral.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 2,
+   "rarity": "6",
+   "zeni": "25 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ],
+   "armor": {
+    "physical": 4,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "sPKkavq6O0SoxiPj",
+  "sort": 0
+ },
+ {
+  "name": "Mirror Armor",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761485091180,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 103
+   },
+   "description": "<p>A specialized type of riding armor, mirror armor consists of four rounded metal discs that are buffed and polished to a mirror shine, then integrated into a tunic made of overlapping metal and leather scales. They are accompanied by a rounded helm. The mirror plates are believed to not only protect the wearer from arrows but also to blind malicious spirits, deflecting their attention.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "8",
+   "zeni": "40 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ],
+   "armor": {
+    "physical": 3,
+    "supernatural": 1
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yeeojiP4iqwLjq6p",
+  "sort": 0
+ },
+ {
+  "name": "Naga Armor",
+  "type": "armor",
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "_id": "vzYW4MLBipi9POAt",
+  "system": {
+   "source_reference": {
+    "source": "",
+    "page": 0
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "0",
+   "zeni": "0",
+   "properties": [],
+   "armor": {
+    "physical": 2,
+    "supernatural": 1
+   }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "flags": {},
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761510010178,
+   "modifiedTime": 1761510014796,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  }
+ },
+ {
+  "name": "O-yoroi",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761485185981,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 105
+   },
+   "description": "<p>Ō-yoroi, also known as great armor or Wall armor, is the heaviest armor worn by Crab samurai and possibly the heaviest armor in Rokugan. These are huge, boxy, often ornate suits used by high-ranking Crab officers and powerful samurai assigned to Wall duty. The armor features all the components of lighter, lesser armor, but on a grander scale. Massive sode cover the wearer’s arms nearly to the wrist, thick iron plates and countless steel scales are laced together then lacquered to provide unparalleled protection, and outsized crests decorate the conical helmets with their monstrous masks.</p><p data-start=\"671\" data-end=\"843\">All this protection and glory comes at a price, however. Since these suits were designed to serve on the Wall, nearly all their protection is focused on the wearer’s front.</p><p data-start=\"845\" data-end=\"1030\">While you wear ō-yoroi, if you are suffering the Disoriented, Dazed, or Immobilized condition, treat your physical resistance as 3, as your foes can strike at your lightly armored back.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 3,
+   "rarity": "8",
+   "zeni": "60 Koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    },
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ],
+   "armor": {
+    "physical": 6,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "VBhNLt8Qnf6fnqwj",
+  "sort": 0
+ },
+ {
+  "name": "Plated Armor",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761485364256,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 239
+   },
+   "description": "<p>Also known as great armor, suits of plated armor are among the heaviest worn by samurai. Not as ornate as lacquered armor and somewhat more restrictive but also notably more protective, plated armor is composed of numerous small steel and leather plates connected by rivets, woven silk cords, leather straps, or chains. The plates are attached to a leather or cloth backing and worn over silk clothing, which provides added protection from piercing attacks thanks to its tensile strength.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 2,
+   "rarity": "8",
+   "zeni": "40 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    },
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ],
+   "armor": {
+    "physical": 5,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "IuUbLUpJwbA6ZxrC",
+  "sort": 0
+ },
+ {
+  "name": "Robes of Judgment",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761485522896,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 97
+   },
+   "description": "<p>The signature garb of the shugenja of Emma-Ō, robes of judgment are white, sanctified robes with sode shoulder guards sewn into the sleeves at the shoulder. Unlucky symbols mark the back and sleeves, ensuring that only the shugenja of Emma-Ō will don them. More information on shugenja of Emma-Ō can be found on page 150 of the Legend of the Five Rings Roleplaying Game sourcebook Emerald Empire. (Cost: 10 koku. Rarity: 9. Qualities: Ceremonial, Cumbersome, Wargear.)</p><p data-start=\"550\" data-end=\"652\">A robe of judgment is armor that provides its wearer with the following: (Physical 1, Supernatural 4).</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "9",
+   "zeni": "10",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ],
+   "armor": {
+    "physical": 1,
+    "supernatural": 4
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "uw0730nv817jKyPc",
+  "sort": 0
+ },
+ {
+  "name": "Sailor's garb",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761147977219,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": "9"
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": "1",
+   "rarity": "2",
+   "zeni": "1 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    },
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    }
+   ],
+   "armor": {
+    "physical": "1",
+    "supernatural": ""
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "VF0EyCGpQSral9Qi",
+  "sort": 0
+ },
+ {
+  "name": "Sanctified Robes",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761404639028,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 239
+   },
+   "description": "<p><span class=\"fontstyle0\">The vestments of shugenja, shrine keepers, and other religious figures are blessed by kami and thus grant mystical protection. Traditionally, such robes consist of a white garment called </span><span class=\"fontstyle2\">jōe </span><span class=\"fontstyle0\">(literally, “pure cloth”) and a peaked hat, but they can be simpler, such as a white haori top and red hakama bottoms, or even an elaborate kimono.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "7",
+   "zeni": "4 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    }
+   ],
+   "armor": {
+    "physical": 1,
+    "supernatural": 3
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Cq1koK56k9dvLfMh",
+  "sort": 0
+ },
+ {
+  "name": "Shark leather armor",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761147977219,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": "9"
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": "2",
+   "rarity": "7",
+   "zeni": "25 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    }
+   ],
+   "armor": {
+    "physical": "2",
+    "supernatural": ""
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XJzlD9i8aydAj7HW",
+  "sort": 0
+ },
+ {
+  "name": "Sleeping Garb",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761147977219,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": "239"
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": "1",
+   "rarity": "2",
+   "zeni": "1 koku",
+   "properties": [],
+   "armor": {
+    "physical": "",
+    "supernatural": ""
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "x1DzEBa0dWORkO9C",
+  "sort": 0
+ },
+ {
+  "name": "Stealth Clothing",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761485782741,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 112
+   },
+   "description": "<p>Shinobi usually dress similarly to the people around them, disguising themselves as bushi, priests, farmers, or whatever type of person best helps them blend in. However, when hiding in plain sight is not an option, such as on wilderness scouting missions or when infiltrating a town or castle under cover of night, a shinobi wears special camouflage. This outfit consists of a cloth mask made of two three-foot rectangular pieces of fabric tied around the upper and lower head to leave the eyes visible, a short robe with a couple of hidden pockets, loose pants, and thick, soft tabi (socks padded for quiet movement).</p><p data-start=\"710\" data-end=\"1120\">This apparel is reversible. One side is dyed a dark color to blend in with darkness and mask blood or other stains; it is commonly rust red, but almost any dark hue (other than black, which blends poorly with most shadows) will do. The other side is a brighter color that matches the daytime surroundings of the mission: blue when operating near water, brown or green for forests, white for snow, and so forth.</p><p data-start=\"1122\" data-end=\"1314\">While a character is wearing stealth clothing set to the appropriate side and in Obscuring terrain, they increase the TN of Attack checks targeting them by an additional 1 (for a total of +2).</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "7",
+   "zeni": "4 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    },
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    }
+   ],
+   "armor": {
+    "physical": 2,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "51tvEnnzS0vsONDq",
+  "sort": 0
+ },
+ {
+  "name": "Tatami Gusoku",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761485841215,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 106
+   },
+   "description": "<p>Tatami gusoku is a type of lightweight “folding” armor worn by Crab scouts and skirmishers. A typical suit consists of an armored jacket called a tatami katabira and a folding helmet called a tatami kabuto. Other bits of armor, particularly gauntlets, leg armor, and different helmets can also be worn with the suit. The tatami katabira consists of dozens of karuta: square and rectangular metal plates of various sizes stitched together with chainmail and sewn to a thick cloth or leather backing. Both the jacket and helmet can be folded up and easily stored for travel or hidden away in an emergency.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "4",
+   "zeni": "7 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ],
+   "armor": {
+    "physical": 3,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "U2y2AqYa7Fahz9rF",
+  "sort": 0
+ },
+ {
+  "name": "The Golden Obi of the Sun Goddess [Blessed Treasure]",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761485948301,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 97
+   },
+   "description": "<p>A sash believed to have been worn by the Sun Goddess herself, the Golden Obi was brought to Ningen-dō by the Kami Shiba. The Isawa guarded it as a sacred relic for generations, until it eventually passed into the hands of Isawa Moshi and became one of the Centipede Clan’s most prized possessions. The golden silk of the sash appears mundane, but in the light of the sun, it glows brightly, as if the threads were lit from within. It is not known what powers the obi possesses, but the person who carries it is believed to enjoy the blessing of Lady Sun. (Cost: Priceless. Rarity: 10. Qualities: Ceremonial, Resplendent, Sacred.)</p><p data-start=\"704\" data-end=\"945\">Armor of the Sun Goddess: The Golden Obi of the Sun Goddess is armor with the following resistances: (Physical 3, Supernatural 6). Additionally, while wearing it, you are immune to the damaging effects of fire, both supernatural and mundane.</p><p data-start=\"947\" data-end=\"1175\">The Golden Obi of the Sun Goddess has the following Fire invocations sealed within it: Amaterasu’s Gaze (page 108); Armor of Radiance (page 202 of the core rulebook); Fires of Purity (page 108); Heart of the Lady Sun (page 108).</p><p data-start=\"1177\" data-end=\"1351\">Sealed Invocations: Once per scene, you may activate one of the Obi’s sealed invocations by making a Theology check as normal, treating the TN as 1 lower (to a minimum of 1).</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    },
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    }
+   ],
+   "armor": {
+    "physical": 3,
+    "supernatural": 6
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "hw5cBhavQS790Rke",
+  "sort": 0
+ },
+ {
+  "name": "Tosei-Gusoku",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761486020585,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 106
+   },
+   "description": "<p>Tosei-gusoku is a new style of protection recently developed by Crab armorers. Vaguely resembling a suit of gaijin armor, a tosei-gusoku uses large, contoured steel plates laced together and worn over a chain or ringmail coat. Plated gauntlets, iron greaves, a kabuto-like helmet, and a four-piece haidate of laced steel plates completes the suit. Thanks to the shape of the plates and the clever use of hinges and laces, a tosei-gusoku provides better defense against ranged weapons than more common suits of armor.</p><p data-start=\"613\" data-end=\"995\">Despite the utility and improved protection a tosei-gusoku offers, it remains unpopular among Crab samurai. Due to its deviance from normal traditions of armor making and the fact that it tends to be drab and utilitarian rather than lovingly decorated like most armor, many more traditional-minded samurai consider this suit fit only for ashigaru, rōnin, and samurai of a poor lord.</p><p data-start=\"997\" data-end=\"1152\">While wearing tosei-gusoku, treat your physical resistance as 2 higher when reducing damage from projectile attacks (such as Martial Arts [Ranged] checks).</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 2,
+   "rarity": "8",
+   "zeni": "50 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    },
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ],
+   "armor": {
+    "physical": 4,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vwP8PY8cisU3r7VQ",
+  "sort": 0
+ },
+ {
+  "name": "Traveling Clothes",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761426147314,
+   "lastModifiedBy": "vYhZFFusozcUeDZP"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 239
+   },
+   "description": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "2",
+   "zeni": "2 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    },
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    },
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    }
+   ],
+   "armor": {
+    "physical": 2,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "zcsgspz4VluSMeI0",
+  "sort": 0
+ },
+ {
+  "name": "Unicorn Barding",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761486092940,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 103
+   },
+   "description": "<p>While most Rokugani war ponies are hindered in full barding, Unicorn barding utilizes several innovations to make armor lighter and more comfortable for the horse wearing it. Most barding is made from laminated plates set over a tent of padded cloth and includes a unique face covering similar to the war masks of samurai armor. Unicorn barding is generally considered superior, owing to better coverage, elaborate designs, and the care taken to ensure each piece of custom-made armor is comfortably fitted to the horse. Expensive and time-intensive to don, a suit of full Unicorn barding has become a status symbol for wealthy lords, worn more frequently in festivals and parades than for warfare.</p><p data-start=\"775\" data-end=\"851\">Unicorn barding can be worn only by horses, ponies, and other equine mounts.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "8",
+   "zeni": "65 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ],
+   "armor": {
+    "physical": 2,
+    "supernatural": 0
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "L1y6jc5kOikVlTvV",
+  "sort": 0
+ },
+ {
+  "name": "Yuki: The Ancestral Armor of the Unicorn Clan [Blessed Treasure]",
+  "type": "armor",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/armor.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147977219,
+   "modifiedTime": 1761486162890,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 105
+   },
+   "description": "<p>Yuki is an awakened suit of midnight-purple lacquered riding armor, adorned in white fur and gilded, modified to fit the current Unicorn Clan Champion.</p><ul><li><p data-start=\"256\" data-end=\"632\">-  Quirk: Yuki becomes impossible to remove while the armor senses danger is near.<br data-start=\"337\" data-end=\"340\">• Profile: Physical 6, Supernatural 2, Ceremonial, Cumbersome, Durable, Sacred, Wargear.</p></li><li><p data-start=\"256\" data-end=\"632\">-  Sealed Invocation: Yuki has Nature’s Touch (core rulebook, page 194) sealed within it, which the wearer may activate once per game session as an action, using Fitness (Air) instead of Theology (Air).</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    },
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    },
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ],
+   "armor": {
+    "physical": 6,
+    "supernatural": 2
+   }
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "k29aQLuBmlB4WBGe",
+  "sort": 0
+ }
+]

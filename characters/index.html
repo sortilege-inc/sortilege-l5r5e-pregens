@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Characters — Sortilege L5R Pregens</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="../index.html">Sortilege L5R Pregens</a>
+  <a href="../index.html">Home</a>
+  <a href="index.html" class="active">Characters</a>
+  <a href="../admin/index.html">Coverage</a>
+</nav>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="cartouche">
+      <div class="eyebrow">The Roster</div>
+      <h1>Characters</h1>
+    </div>
+    <p class="sub">Each is a complete build at every XP tier it has reached. Open one and use the timeline to move through its career.</p>
+  </header>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Search name, school, clan, family…">
+    <label for="clan">Clan</label>
+    <select id="clan"><option value="">All</option></select>
+    <label for="role">Role</label>
+    <select id="role"><option value="">All</option></select>
+    <span class="chip" id="shown"></span>
+  </div>
+
+  <div class="pgrid" id="roster"></div>
+</div>
+
+<footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
+
+<script src="../data/roster.js"></script>
+<script src="../assets/roster.js"></script>
+<script>
+(function () {
+  var chars = window.L5R_ROSTER || [];
+  var q = document.getElementById("q"),
+      clan = document.getElementById("clan"),
+      role = document.getElementById("role");
+
+  function fill(sel, key) {
+    var vals = {};
+    chars.forEach(function (c) { if (c[key]) vals[c[key]] = 1; });
+    Object.keys(vals).sort().forEach(function (v) {
+      var o = document.createElement("option"); o.value = o.textContent = v; sel.appendChild(o);
+    });
+  }
+  fill(clan, "clan"); fill(role, "role");
+
+  function draw() {
+    var term = q.value.trim().toLowerCase();
+    var list = chars.filter(function (c) {
+      if (clan.value && c.clan !== clan.value) return false;
+      if (role.value && c.role !== role.value) return false;
+      if (!term) return true;
+      return [c.name, c.school, c.clan, c.family, c.role]
+        .join(" ").toLowerCase().indexOf(term) >= 0;
+    });
+    document.getElementById("roster").innerHTML = window.renderRoster(list, "");
+    document.getElementById("shown").textContent =
+      list.length + " of " + chars.length;
+  }
+  [q, clan, role].forEach(function (e) { e.addEventListener("input", draw); });
+  draw();
+})();
+</script>
+</body>
+</html>

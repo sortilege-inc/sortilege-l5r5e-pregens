@@ -1,0 +1,5212 @@
+[
+ {
+  "name": "Alchemy Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 114
+   },
+   "description": "<p><em>This kit is only available as a whole item when in the Qamarist Caliphate, though individual components may be bought for slightly more elsewhere in the world. Used by the Qamarists in their practice of medicine and other sciences, alchemical kits contain both mundane and rare items, such as charcoal and gold dust, that can be combined to perform special rituals that can heal and improve (if only temporarily) living creatures’ bodies.</em> </p><p>(Cost for components: 10 koku. Rarity: 1–9. Qualities: Vary.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "0",
+   "zeni": "10 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "AqxibbrzjI6DqUTe",
+  "sort": 2300000
+ },
+ {
+  "name": "Amigasa",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 106
+   },
+   "description": "<p><em>The easiest way to conceal one’s face from both the sun and prying eyes is to wear a hat. The amigasa, a traditional hat made of straw and woven rushes, is an appropriate addition to various outfits. Folding the amigasa allows a shinobi to carry a concealed item in it without having a bulge in their clothing or carrying a bag, which guards at a checkpoint may be inclined to search. On wilderness missions, an amigasa doubles as a net to help the shinobi catch fish and frogs to eat. </em></p><p><em>An even larger variant of this hat, shaped like a bas\u0002ket with a small window in front, is worn by a mendicant order of Shinseist monks in order to represent the unimportance of the self. While the basket version is an excellent way to conceal one’s face, it has fallen out of favor among shinobi since the release of a Kabuki play featuring a ninja using it as a disguise. (Cost: 4 zeni. Rarity: 2.)</em></p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "4 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "bCLiYXd2HRwmYeQ9",
+  "sort": 8000000
+ },
+ {
+  "name": "Animal Helm",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 90
+   },
+   "description": "<p><em>Favored by samurai and warriors who wish to flaunt their prowess in battle, the animal helm is a visible display of a samurai’s ferocity. This helmet is crafted to closely resemble the head of a dangerous animal, a roaring lion’s head being the obvious favorite of the Lion. While such headgear offers little additional protection, it does bolster the courage of warriors who see their leader proudly wearing one, as they know that even if the leader falls, the fighting spirit of the animal continues on. </em></p><p><em>When a character who wears an animal helm while leading an army or cohort in a mass battle is removed via the Cut Off the Head strategic objective, reduce the panic the cohort receives by half (rounding up). (Cost: 1 koku. Rarity: 5. Item Qualities: Wargear.)</em></p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "5",
+   "zeni": "1 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "CBfjio4mVPszUJOO",
+  "sort": 2700000
+ },
+ {
+  "name": "Arrows",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 236
+   },
+   "description": "<p>When used with a bow, these arrows modify the weapon’s profile as follows:</p><ul><li><p>- Willow-Leaf: Standard Rokugani arrows. As long as a character has a quiver (see page 244), they do not need to track the relatively common willow-leaf arrows individually.</p></li><li><p>- Armor-Piercing: Ignore up to 2 points of the target’s physical resistance.</p></li><li><p>- Flesh-Cutter: Deadliness +2.</p></li><li><p>-  Humming-Bulb: Damage –2, Deadliness –2. These arrows produce a loud noise audible at range 0–4 of the archer and of the path the arrow travels.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "1",
+   "zeni": "0",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "EeFYS0VcAEdEh7nZ",
+  "sort": 3400000
+ },
+ {
+  "name": "Arrows : Fire-Blossom",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 97
+   },
+   "description": "<p>Damage -1. After being fired, the arrow radiates bright light at range 0–4 of its position until the end of the scene. (Cost: 5 bu. Rarity: 6.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "6",
+   "zeni": "5 Bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gx0kSXgxVMD1jd19",
+  "sort": 9000000
+ },
+ {
+  "name": "Arrows : Hamaya",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 97
+   },
+   "description": "<p>Damage +3 and Deadliness +3 when used against an Otherworldly being. (Cost: 1 koku. Rarity: 8.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "8",
+   "zeni": "1 Koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "d4gsSRddsZ334yW5",
+  "sort": 8300000
+ },
+ {
+  "name": "Arrows : Soul-Star",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 97
+   },
+   "description": "<p>Soul-Star: Damage +1. Has an additional benefit based on its element. (Cost: 2 koku. Rarity: 8).</p><ul><li><p>-  Air: The area at range 0–3 of the arrow’s point of impact becomes Obscuring terrain until the end of the wielder’s next turn.</p></li><li><p>-  Earth: An Otherworldly being struck by this arrow must make a TN 3 Fitness check (Air 2, Water 4) or receive 4 strife and suffer the Immobilized and Silenced conditions until the end of the wielder’s next turn. </p></li><li><p>-  Fire: The area at range 0–3 of the arrow’s point of impact becomes Dangerous terrain. If the arrow inflicts a critical strike upon an Otherworldly being, it suffers the Burning condition. </p></li><li><p>-  Water: arrow’s point of impact becomes The area at range 0–3 of the Entangling terrain until the end of the scene.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "8",
+   "zeni": "2 Koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "9uto6WHOG98dh0Li",
+  "sort": 2000000
+ },
+ {
+  "name": "Astrolabe",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": 9
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "30 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0HSMwoi36vP6aQMm",
+  "sort": 300000
+ },
+ {
+  "name": "Astrolabe",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": "102"
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": "0",
+   "rarity": "8",
+   "zeni": "1 Koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "hxbEzXxAzhMrhLMX",
+  "sort": 9300000
+ },
+ {
+  "name": "Bamboo Cane",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 107
+   },
+   "description": "<p>A hollow bamboo cane can be used in self-defense or to complement a disguise as a traveler or beggar. Its interior can double as a blowgun. It can also con\u0002ceal objects, messages, or a flexible weapon, perhaps a rope or chain with a hook to aid in climbing or to entangle an enemy. Some canes even have mechani\u0002cal catches that allow them to hide a thin spear blade within their length.</p><p>A bamboo cane can be wielded as a bokken (see page 231 of the core rulebook). (Cost: 6 bu. Rarity: 6. Qualities: Concealable, Mundane.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "6",
+   "zeni": "6 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000005",
+     "name": "Concealable"
+    },
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4N9aY6l8tiMT0nOl",
+  "sort": 1600000
+ },
+ {
+  "name": "Banner of Amaterasu [Blessed Treasure]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/blessed.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 92
+   },
+   "description": "<p>After Hantei won the Tournament of the Kami and was named the first Emperor of the Emerald Empire, he commanded his siblings to go forth and unite the peoples of Rokugan under one rule. Akodo crafted a great uma-jirushi that seemed to capture the rays of his divine mother, Amaterasu, within it, heralding his arrival like the rising of the morning sun. Some believed the banner was also a reminder of the match between Akodo and Hantei, and how the reflection of the sun on Hantei’s blade stilled Akodo’s own sword.</p><p>Under this banner, Akodo’s growing Lion Clan marched to battle, pacifying and unifying peoples wherever he went. The Lion Clan also used it during the War against Fu Leng, but since then, the banner has become a sacred relic and has rarely been used in battle.</p><p>Awakened Item: The Banner of Amaterasu is a nemuranai. As such, it has the Durable and Sacred item qualities. A character wielding this banner adds a kept  set to an  result when making Command checks.</p><ul><li><p>-  Quirk: While the banner is exposed to direct sunlight, all friendly forces hear battlefield orders in the voice of their first martial instructor.</p></li><li><p>- Sealed Invocation: The banner has the Courage of Seven Thunders invocation within it, which the wielder may perform once per session using the Command skill instead of Theology.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    },
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1VkVMg5UJ5lNUoVO",
+  "sort": 800000
+ },
+ {
+  "name": "Battlefield Heirloom",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 90
+   },
+   "description": "<p>Handed down from generation to generation, a battlefield heirloom is a relic from a famous battle—one that a revered ancestor fought in many years ago, if not centuries. This prized possession can be almost anything small, such as a fragment of a cracked mempō (faceplate), a broken arrowhead, or the tassel of a gunbai.</p><p>Once per game session, a character with a battlefield heirloom may reflect on the item as a Support action. If they do, they increase their composure (and their army’s discipline, during a mass battle) by 2 until the end of the scene.</p><p>As battlefield heirlooms are unique, they cannot be purchased as normal, and are usually handed down from ancestors or found by soldiers who fought at particularly momentous battles in Rokugan’s history. The GM is the final arbiter of what qualifies as a battlefield heirloom.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "GM dependant",
+   "zeni": "GM dependant",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "i8GEqb23Z6zW10Kd",
+  "sort": 9400000
+ },
+ {
+  "name": "Battlefield Medical Pack",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 90
+   },
+   "description": "<p>Specifically outfitted with needle and thread for stitching wounds, as well as tinctures to clean the wounds and numb pain, the suture kit is carried by many units on the battlefield to assist their fellow soldiers. This small, clothbound kit is about the size of a pocket book and contains everything one might need to sew up a minor wound or staunch bleeding long enough to seek assistance from a medic.</p><p>Once per scene as a Support action, a character with a battlefield medical pack may remove the Bleeding condition from another character at range 0–1. (Cost: 2 bu. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "3",
+   "zeni": "2 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1DTnTGvqod6roNfF",
+  "sort": 600000
+ },
+ {
+  "name": "Blasting Powder (1 charge)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 90
+   },
+   "description": "<p>A rare substance known only to the learned, blasting powder is a chemical concoction created from a number of common ingredients in extremely specific proportions. Discovered centuries ago, it has been heavily researched and developed by the Agasha family. Blasting powder’s only legitimate uses are for fireworks, flares, and other such devices, and it is viewed as something sacred, a dangerous power best left to priests and others who can use it for its proper ends, such as the invocation of the Kami. However, the Kuni and Kaiu families have also taken a great interest in this substance, hoping to create devices to slay Shadowlands creatures resistant to traditional arms, and over time, knowledge of its composition has slipped to other organizations in Rokugan. Thus far it has never been used against human targets, or so says the official record.</p><p>A single charge of blasting powder can be used to make dozens of fireworks or flares, but it must be handled carefully. If a charge of blasting powder is ignited by a stray spark, the charge explodes and each character at range 0–2 suffers 10 physical damage, items at range 0–2 gain the Damaged quality, and each character at range 0–4 suffers the Disoriented condition. (Cost: 20 koku. Rarity: 9. Ceremonial, Forbidden to non-shugenja.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "9",
+   "zeni": "20 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "BgOKoAJfjHLN9oQJ",
+  "sort": 2600000
+ },
+ {
+  "name": "Bottle of Sake",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>Sake, a wine made from fermented rice, is popular throughout Rokugan and is readily available at any inn. The quality of sake varies widely depending on the maker and the seller. (Cost: 1 bu. Rarity: 1.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "1",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Qd4Ta1MvCoRDa8q8",
+  "sort": 5700000
+ },
+ {
+  "name": "Bowyer’s Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>A bowyer’s kit is a small tool kit used to maintain bows and arrows. It typically includes a selection of small hand tools, spare string, some feathers, wax, bamboo fibers, arrowheads, and other items needed to keep a bow and arrows in working order. (Cost: 2 bu. Rarity: 1.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "1",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "tG7X8Z9xUd7qNCIo",
+  "sort": 10900000
+ },
+ {
+  "name": "Brilliant Flare",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 90
+   },
+   "description": "<p>Flares are essentially fireworks designed for use in battlefield signaling. Pioneered in Rokugan by the Kaiu family, flares come in numerous colors and are available to most commanders who seek them out.</p><p data-start=\"287\" data-end=\"479\" data-is-last-node=\"\" data-is-only-node=\"\">As a Support action, a character may make a TN 3 Martial Arts (Ranged) check to fire a flare. The flare is generally visible to all characters at range 0–6. (Cost: 1 koku. Rarity: 6. Wargear.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "6",
+   "zeni": "1 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "h7m9LErLUMwz5ABv",
+  "sort": 9100000
+ },
+ {
+  "name": "Calligraphy Set",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>These ornate boxes contain items a practiced calligrapher needs to craft books, letters, scrolls, and other written communications. It consists of a small wooden box that contains a variety of brushes, inkstones, and pigments; a small bowl for water; and a small bag of sand for drying. Calligraphers and scribes customarily carry a calligraphy set, as so do some samurai and courtiers who prefer to write their own correspondence. (Cost: 1 bu. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "MWzx5Wiu6xcCWc9J",
+  "sort": 4900000
+ },
+ {
+  "name": "Candles of the Moth",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 96
+   },
+   "description": "<p>One of the many crafts of Moth shugenja, candles of the Moth are made from a special wax that is imbued with the essence of Yume-dō, the Realm of Dreams, via a process known only to the Moth Clan. When one of these candles is lit, its light creates a “bubble” in which Yume-dō overlaps with Ningen-dō, allowing the shugenja to observe the collective dreams of those slumbering nearby or to converse with denizens of the Realm of Dreams. What can be seen extends only to the edge of the bubble; the dreams and denizens cannot stray beyond the candle’s light. (Cost: 10 koku. Rarity: 9. Qualities: Ceremonial, Sacred, Subtle.)</p><p data-start=\"688\" data-end=\"797\">Activation: Once per scene as a Support action, you may make a TN 3 Theology (Air) check to light the candle.</p><p data-start=\"799\" data-end=\"1176\" data-is-last-node=\"\" data-is-only-node=\"\">“Effect: If you succeed, the area at range 0–4 of the candle’s position becomes a place of power connected to Yume-dō (see Places of Power, starting on page 138). The area moves with the candle, but the effect only persists until the end of the scene, at which point the candle becomes unusable. The candle cannot be snuffed out or stifled once lit, even by supernatural means.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "9",
+   "zeni": "10 Koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    },
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yDhPHgrTmpjOUzdc",
+  "sort": 12000000
+ },
+ {
+  "name": "Ceremonial Tea Set",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 105
+   },
+   "description": "<p>A traveling tea set is all well and good for lending a touch of civilization to the mess tent in a military camp, but no courtier of means would dream of using so mundane a set for a formal tea ceremony. The arrangement of dishes and the presentation of traditional foods and sweets in the tea ceremony follows a strict order meant to convey an austere aesthetic with items that nevertheless obviously cost a fortune. The trays, chopsticks, and dishes in such a tea set are far too delicate to move long distances in a traveling warrior’s pack.</p><p data-start=\"601\" data-end=\"1123\">The most important items in the tea set are the tea bowls. Tea bowls are expected to be the pièce de résistance of the tea set, and to express the potter’s artistic genius despite their simplicity. A tea bowl must look understated but should betray a wealth of technical expertise and care in construction. The most prized tea bowls come from potters foreign to Rokugan, highlighting their owner’s worldly grace and access to expensive imported luxuries. As the sword is to the soldier, so the tea bowl is to the courtier.</p><p data-start=\"1125\" data-end=\"1343\" data-is-last-node=\"\" data-is-only-node=\"\">When performing a Tea Ceremony or Formal Tea Ceremony ritual using a ceremonial tea set, the character adds one kept  die set to an  result to the check. (Cost: 7 koku. Rarity: 8. Qualities: Ceremonial, Resplendent.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "8",
+   "zeni": "7 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4MmOJTOljogawEqu",
+  "sort": 1500000
+ },
+ {
+  "name": "Chandu",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 116
+   },
+   "description": "<p>Opium prepared for smoking is known as chandu. It is boiled and strained, then cooled into a crystalline block and wrapped in a dry leaf. To smoke chandu requires a number of tools and a special pipe made from nonreactive materials, often ceramic or jade. Because opium heightens one’s tactile sensations, opium pipes are made with interesting ridged textures for the imbiber to fixate on as they achieve their high.</p><p data-start=\"503\" data-end=\"1024\">Preparing chandu requires deft hands and skill, as the drug must be heated until the resin softens, shaped into a pellet, and then dropped with tweezers into the pipe bowl. Opium dens employ servants to do this for patrons, but rōnin who wish to use opium on their own must learn how. Opium makes users especially light sensitive, so chandu is smoked in the dark. Contrary to popular belief, chandu does not eliminate pain, but simply alters the user’s perception so that the pain is bearable or the user no longer cares.</p><p data-start=\"1026\" data-end=\"1572\" data-is-last-node=\"\" data-is-only-node=\"\">Chandu is legal in Rokugan, but its recreational use is frowned upon by polite society. A person who uses opium infrequently may not become addicted; such a user may be able to cease for months without suffering withdrawal. However, with enough use addiction takes hold, and it becomes nearly impossible to function without a dose. Although opium is important in Rokugani medicine, without proper care, it can just as easily destroy the user as help heal them. (Cost: 4 bu per use. Rarity: 6. Qualities: Forbidden [outside of a medical context].)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "6",
+   "zeni": "4 bu per use",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "oQHIROJsfy80tM0o",
+  "sort": 10300000
+ },
+ {
+  "name": "Chopsticks",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>Chopsticks are the primary Rokugani eating utensils. Sold in pairs, these slender utensils are normally made of wood or bamboo, although some wealthy individuals use chopsticks of ivory, bone, or metal instead. (Cost: 1 zeni. Rarity: 1.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "1",
+   "zeni": "1 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "PmBVpU4pqpGssbGw",
+  "sort": 5500000
+ },
+ {
+  "name": "Climbing Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 106
+   },
+   "description": "<p>The warriors of the Crab Clan do a not-insignificant amount of climbing, and so the climbing kit is an important part of many samurai’s military gear. It typically includes a few coils of rope, a small hammer, an iron chisel, powdered chalk, and a handful of spikes, pitons, and other climbing ephemera. In addition, some climbers add special spiked bands that slip over their hands and feet for extra grip. (Cost: 2 bu. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "2 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "VoaUrDhwwvP1TZnV",
+  "sort": 6700000
+ },
+ {
+  "name": "Cooking Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 114
+   },
+   "description": "<p>May contain chefs’ knives (not suitable as weapons) with sharpening rod, bamboo skewers, a grinder and pestle, cooking chopsticks, bowls, strainers, a bamboo mat, and a ladle. Some kits may come with seasonings and preservatives, like miso or soy paste, vinegar, and dried kelp. Especially valuable kits may include a vial of pressed oil. The kit is usually carried in a container that doubles as cookware, such as a round wok or a square cast-iron pot with a drop lid. (Cost: 2 koku. Rarity: 2. Qualities: Mundane.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "2",
+   "zeni": "2 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "qbPHjOtpfjDtUNyR",
+  "sort": 10600000
+ },
+ {
+  "name": "Daikoku's Mallet",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 96
+   },
+   "description": "<p>Believed to be the personal mallet of the Fortune of Wealth, this plain wooden hammer is said to have the ability to “tap out” anything the user desires, hammering it out of thin air. Gold, steel, bridges, palaces, and even living things can be “hammered” into reality by Daikoku’s Mallet. Some scholars believe the resulting objects are pulled from the Spirit Realms, while others believe they are constructed by disturbing the Void. However, anything created by the mallet vanishes at the sound of a temple bell, as the summoned object becomes “alms for Daikoku.”</p><p data-start=\"672\" data-end=\"965\">Legends say that a Yasuki once used the mallet to hammer a palace out of thin air to win the heart of their beloved, but when a passing monk rang a bowl bell begging for alms, the palace vanished, and the Yasuki along with it. (Cost: Priceless. Rarity: 10. Qualities: Durable, Sacred, Subtle.)</p><p data-start=\"967\" data-end=\"1070\">Earth Empowerment: Reduce the TN of your checks to activate Earth invocations by 1 (to a minimum of 1).</p><p data-start=\"1072\" data-end=\"1217\">Activation: Once per game session as a Movement and Support action, you may make a TN 5 Smithing (Earth) check targeting a position at range 0–6.</p><p data-start=\"1219\" data-end=\"1432\">Effects: If you succeed, you summon an item or structure of silhouette 0–5 (subject to GM’s approval). This object remains until a bell is tolled at range 0–5 of it, at which point it vanishes or crumbles to dust.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    },
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    },
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XM3eqVobIA0KQ7Re",
+  "sort": 6900000
+ },
+ {
+  "name": "Daishō Stand",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>This is a small, collapsible wooden stand used to display a samurai’s daishō. There is a particular etiquette to displaying the daishō on a rack that speaks to an individual’s ease or readiness to fight. If the swords are displayed with their pommels facing right, this means that the individual is ready to fight, as they can easily draw the swords from the rack with their right hand. If they are displayed with the pommels facing left, this means that the individual is less ready to fight but still guarded. If the pommels are facing left and the tsuba are on the inside of the rack arm, making drawing the swords impossible in one motion, this means that the individual is completely at ease. (Cost: 1 koku. Rarity: 4.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "4",
+   "zeni": "1 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NhJrbDJsf58MVMg4",
+  "sort": 5200000
+ },
+ {
+  "name": "Demon Mask",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 107
+   },
+   "description": "<p>These intimidating masks are not a particularly common tool for shinobi, but those who don them do so for several reasons: it protects and obscures the face, it intimidates foes, and like the imposing masks of many suits of samurai armor, it sends a strong message of the wearer’s intentions. Rumors say that some demon masks are actually made from the severed and collected faces of oni, allowing an individual who wears one to access demonic powers at great peril to the purity of their soul. However, if such wicked artifacts truly exist, surely they were swept up long ago by the Kuni Witch Hunters or the Scorpion Kuroiban and hidden away from mortal hands.</p><p data-start=\"741\" data-end=\"1270\">A demon mask grants the wearer the following additional unarmed profile: Horned head butt (Martial Arts [Unarmed], Range 0, Damage 3, Deadliness 2). (Cost: 1 koku. Rarity 5. Qualities: Forbidden.) This profile reflects a mundane article, but if the GM wished to introduce a true demon mask into their story, they could use the rules for nemuranai from page 307 of the core rulebook, substituting a mahō technique for an Invocation and the Unholy quality for the Sacred quality, and obviously, such an item would be nearly unique.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "5",
+   "zeni": "1 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "EUfHoFpwDmEO90Oq",
+  "sort": 3300000
+ },
+ {
+  "name": "Dice and Cup",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>These are used to play a variety of dice games throughout Rokugan. Gambling is extremely popular in the Emerald Empire, but it is largely frowned upon by samurai. Organized gambling is controlled largely by various criminal syndicates and is often a source of corruption among local officials. (Cost: 25 zeni. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "25 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "E858D1xWNLerKmfI",
+  "sort": 3200000
+ },
+ {
+  "name": "Dice Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 114
+   },
+   "description": "<p>Gambling, especially dice games, are a common pastime of rōnin. One of the most popular, Fortunes and Winds, uses a special set of dice with unique faces. Impromptu gambling tends to spring up when rōnin meet, but due to lack of trust, most participants bring their own dice sets. Loaded dice are among the most popular wares purchased by city-based rōnin and are perfectly legal to own, though one should take care not to be caught with them at a gambling session. (Cost: 6 zeni. Rarity: 2. Qualities: Concealable, Mundane.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "6 zeni",
+   "properties": [
+    {
+     "id": "L5RCorePro000005",
+     "name": "Concealable"
+    },
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "MFJBtS09Hew04lM7",
+  "sort": 4800000
+ },
+ {
+  "name": "Disguise Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 107
+   },
+   "description": "<p>Essentially a more practical and full-featured version of the makeup kit, a disguise kit allows a shinobi to alter their appearance radically. False mustaches and beards, hair extensions, prosthetics for ears, noses, and fingers, and concoctions for changing the appearance and texture of the skin by adding lesions or scars are all contained in a disguise kit. (Cost: 9 bu. Rarity: 6.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "6",
+   "zeni": "9 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "WgEFEmKgAKGCXwR1",
+  "sort": 6800000
+ },
+ {
+  "name": "Divination Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>Popular among both superstitious peasants and the mystical shugenja, divination kits are used to tell the future or otherwise commune with the Spirit Realms. A divination kit may contain special coins, sticks, bones, or other small items with metaphysical import. Diviners use these kits by casting their coins or sticks on the ground and reading the patterns they create for any omens or portents. (Cost: 1 bu. Rarity: 4.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "4",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "MydO8IhxEChqVaII",
+  "sort": 5000000
+ },
+ {
+  "name": "Engineer's Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 107
+   },
+   "description": "<p>These kits provide an architect, civil engineer, siege engineer, or builder with a set of basic tools for surveying and building. These tool kits typically include measuring and surveying tools, rolls of parchment for making plans, various drafting implements, and an assortment of carpenters’ and masons’ tools. (Cost: 3 bu. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "3 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xFAWMoykfSYWIScE",
+  "sort": 11700000
+ },
+ {
+  "name": "Finger of Jade",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>A finger of jade is a length of the precious green stone worn about the neck on a thong to ward off the corrupting effects of the Taint. Bit by bit, the finger of jade is consumed by this process. (Cost: 1 koku. Rarity: 6. Qualities: Sacred.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "6",
+   "zeni": "1 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "DPc5XLaPHWGkcNs5",
+  "sort": 3000000
+ },
+ {
+  "name": "Fishing kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 115
+   },
+   "description": "<p>May contain fishing line, glass floaters, small nets, miso paste (for curing), and wrapping paper in a straw basket. Some fishing kits may include a hemp tether, tiny collar, and padded glove which are used for handling a cormorant bird trained to dive for fish, a practice known as ukai. Gyotaku fishing kits include charcoal ink and rice paper, which are used to make an impression of the caught fish to serve as proof of one’s catch. (Cost: 1 koku. Rarity: 3. Qualities: Mundane.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "1 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "tB7ewm3ZbRO3wqCM",
+  "sort": 10800000
+ },
+ {
+  "name": "Fishing Rod and Line",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": 9
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "1",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "J9pJuMxK4drWN3vI",
+  "sort": 4500000
+ },
+ {
+  "name": "Folding Fan",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 105
+   },
+   "description": "<p>Rokugan invented the folding fan to cope with the combination of hot, humid summers and stifling courtly attire. While it is customary to offer a guest a fan from one’s own household when receiving them, nearly every samurai carries their own fan, made of cypress strips tied together with thread. Both all-wood fans (hiōgi) and wood-and-paper fans (kawahori-ōgi) are popular at court. Rich courtiers often commission renowned artists to adorn their fans with art or calligraphy, while daring artisans create their own. The gossip circles speak well of a courtier who appears at court with a striking design that complements their attire. While it is considered impolite to comment on another samurai’s outfit in their presence, the same is not true of their fan. Interrogating the provenance and detail of the fan has thus become a polite way for courtiers to flatter or fence with one another in the context of casual conversation. And, of course, fans make it easy to obscure one’s mouth—thus rendering anything one says deniable according to the rules of Rokugani etiquette. (Cost: 1 koku. Rarity: 3. Qualities: Resplendent.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "3",
+   "zeni": "1 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "hrZFpHNBdUpQtKjf",
+  "sort": 9200000
+ },
+ {
+  "name": "Fox Pipe [Blessed Treasure]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 105
+   },
+   "description": "<p>The common superstition among Fox Clan samurai that one must never discuss secrets when one can smell smoke might be owed to the belief in “pipe foxes,” ethereal spirits said to live within smoking pipes enchanted for this purpose. Such smoking pipes, which appear as ordinary kiseru that incorporate fox carvings on the bowl, are created as the result of a pact between a trickster spirit and a shugenja. Smoking the pipe causes an ethereal fox to rise from the bowl, ready to do the bidding of the smoker. This spirit is sent to spy on others unnoticed, reporting back to the smoker whatever it has heard. Folktales abound of lost fox pipes eventually making their way to market shops, where they are unknowingly purchased and the foxes within accidentally discovered. This is the origin of the Fox Clan colloquialism “To smoke up a fox,” meaning to discover something useful in something believed to be useless.</p><p data-start=\"1012\" data-end=\"1275\">Awakened Item: Fox Pipes are nemuranai. As such, they have the Durable and Sacred item qualities. When a Fox Pipe casts its sealed invocation, the TN is decreased by 1, you may target a position at Range 0–4, and it lasts until you have finished smoking the pipe.</p><ul><li><p data-start=\"1277\" data-end=\"1389\">- Quirk: Smoking from this pipe causes a fox made of smoke to rise from the pipe, ready to spy for the smoker.</p></li><li><p data-start=\"1391\" data-end=\"1661\">-  Sealed Invocation: This pipe has Secrets on the Wind (core rulebook, page 194) sealed within it. The invocation may be activated once per game session as an action by smoking the pipe and using Courtesy (Air) instead of Theology (Air) on the check made to activate it.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "nC8mi8RLQhnRTLI0",
+  "sort": 10200000
+ },
+ {
+  "name": "Games",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>These are small, portable, sturdy versions of games made to be taken on long journeys. Go, shōgi, and other games popular among bushi and courtiers are the ones most likely to be found in a travel-sized set, but there are as many different types of travel games as there are full-sized versions. (Cost: 1 bu. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "3",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "D94gG5sNYETWI6JF",
+  "sort": 2900000
+ },
+ {
+  "name": "Herbal Medicines",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 107
+   },
+   "description": "<p>Shinobi often must keep strange schedules. On castle missions, they sometimes stay up all night to gather information or harass foes after spending a day working in disguise. In the wilderness, they must remain alert for long periods of time when working as scouts or sentries. Herbal medicines, kept in pill form in small medicine cases or as tea brews, allow the shinobi to stave off hunger, thirst, drowsiness, or pain.</p><p data-start=\"512\" data-end=\"790\">At the end of a scene, a character with the Exhausted condition may use one dose of herbal medicine to remove strife and fatigue as if they were not Exhausted. They cannot benefit from this effect again until they remove the Exhausted condition. (Cost: 1 bu per dose. Rarity 5.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "5",
+   "zeni": "1 bu per dose",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1pTkf5gCBin24vP1",
+  "sort": 900000
+ },
+ {
+  "name": "Horo (Arrow Cloak)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 102
+   },
+   "description": "<p>One of the oldest antiarrow innovations in Rokugan is the inflating arrow cloak, which is essentially a flexible, wicker-framed sail made of high-thread-count silk. Attached to a horseback rider at the waist and shoulders, the arrow cloak fills with air as the horse gallops, puffing out into a balloon shape. Arrows either bounce off the billowing cloak or are caught by the cloth before they can reach the rider. The arrow cloak has become a symbol of battlefield messengers and Imperial Heralds alike, but while it grants the rider significant protection from ranged attacks, it also makes them a target, as there is significant prestige in being the archer who killed an arrow cloak wearer.</p><p data-start=\"775\" data-end=\"984\">While wearing a deployed horo, treat your physical resistance against arrows and similar missiles as 5. While riding on horseback or otherwise mounted, increase this resistance to 6. (Cost: 5 koku. Rarity: 6.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "6",
+   "zeni": "5 Koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xhOpfX4Fd3r8wzQl",
+  "sort": 11900000
+ },
+ {
+  "name": "Invisible Ink",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 107
+   },
+   "description": "<p>Certain inks are visible only under specific circumstances: when exposed to a flame of a certain heat, when the surface they are written on is dipped in a specific chemical, or when held up against the light. Shinobi frequently use such inks to conceal secret messages on paper that appears to hold only mundane information. (Cost: 6 bu per inkwell. Rarity: 8.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "8",
+   "zeni": "6 bu per inkwell",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "KTVWzxhPeX4QHCUi",
+  "sort": 4700000
+ },
+ {
+  "name": "Jade Petal Tea [Blessed Treasure]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/blessed.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 113
+   },
+   "description": "<p>One of the only medicines known to combat the Taint, jade petal tea is not a true tea, but instead a tincture made from rice shōchū and a special flower known as a jade lotus. These flowers are grown in Crab lands using water infused with jade powder, resulting in edible petals containing the jade’s spiritual properties. The considerable time and expense involved makes jade petal tea a rare medicine. When consumed, grants temporary resistance to the Shadowlands Taint and suppresses its effects.</p><p data-start=\"599\" data-end=\"1043\">Kuni Wardens carefully control production and distribution of the tea and maintain records of all in the Emerald Empire to whom they provide it to. This is done both to monitor its effects on those suffering from the Taint and to ensure there are no Tainted individuals outside of their records. There are frequent attempts to steal tea supplies, and the Kuni are ruthless in tracking down and punishing anyone caught with illicit quantities.</p><p data-start=\"1045\" data-end=\"1313\">Effects: After you consume jade petal tea, remove the Afflicted condition. Additionally, you ignore all of your Shadowlands Taint disadvantages. This effect persists until you suffer the Afflicted condition, or for one week in narrative time (whichever comes first).</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Qa52qHkY2DstWEJy",
+  "sort": 5600000
+ },
+ {
+  "name": "Journal of observations",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 67
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "3",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NzpCgpcL29WBIRpZ",
+  "sort": 5300000
+ },
+ {
+  "name": "Kubi Bukuro",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>These are simple net bags used to carry the severed head of an enemy, which is considered both a trophy and a good omen. Lion Clan samurai use them to carry their trophies without touching dead flesh, but the Kuni family uses them for collecting samples of Shadowlands creatures for study.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "2 zeni",
+   "properties": [
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "6J25vJx1tVirgXf1",
+  "sort": 1900000
+ },
+ {
+  "name": "Lantern (Personal)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 102
+   },
+   "description": "<p>Lanterns of all shapes and sorts are common throughout the Empire, and the craft of lantern making is considered one of Rokugan’s greatest arts. The most typical personal lantern consists of a bamboo frame with paper stretched over the ribs to protect the candle within from the wind. Lanterns can be mounted on staves, carried by handles, hung from hooks, set to rest on stilts, or even designed to float on water. They can also be shaped like fantastic animals, painted, or formed from patterned paper. Metal or wooden lanterns are common as well, if a bit pricier. (Cost: 1 bu. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "1 Bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "SVej7MdcH80jlKwh",
+  "sort": 6200000
+ },
+ {
+  "name": "Leadership Scrolls [Blessed Treasure]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/blessed.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 92
+   },
+   "description": "<p>Akodo wrote several copies of his masterwork, Leadership, and some of those original scrolls still survive to this day. Each is a priceless relic deeply venerated by the Lion Clan and only retrieved from heavily guarded alcoves in the Akodo War College with the special permission of its headmaster. Other copies are thought to exist elsewhere, and periodically, one is discovered far underneath the ruins of an ancient castle or resting by a tree near a forgotten battlefield.</p><p data-start=\"575\" data-end=\"894\">$ Effects: Each scroll has the Durable and Sacred item qualities. As a support action, a character may spend one Void point and read from the scroll. If they do, they may use the Tactics skill instead of the skill they would normally use when making Social skill checks. This effect persists until the end of the scene.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    },
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "EhU6RW0Mcr7GAU3O",
+  "sort": 3500000
+ },
+ {
+  "name": "Lucky Cricket",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 242
+   },
+   "description": "<p>Very popular among the Mantis Clan, a small live cricket in an ornate metal cage is thought to bring good.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "4",
+   "zeni": "4 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "HWWwvmNeHwYLWmfl",
+  "sort": 3900000
+ },
+ {
+  "name": "Makeup Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 105
+   },
+   "description": "<p>In Rokugani courts, wearing makeup is common for samurai of all genders. The most common type of makeup is powdered rouge, applied to the cheeks to simulate the blush of health even when the wearer is exhausted, hungover, or ill. Courtly makeup also involves oshiroi (white rice powder) layered on the face and neck, shaved eyebrows replaced with smudges of dark powder higher on the forehead, and bright-red lipstick. While some people, such as geisha and members of certain traditionalist institutions, still adhere to this regimen from day to day, modern courtiers in most courts do not usually wear the full complement of classic makeup, instead choosing the elements that they feel best suit their own personality and style. Appearing at court in traditional makeup, though, is a reliable way to impress older and more conservative courtiers. (Cost: 1–3 bu. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "2",
+   "zeni": "1-3 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0aj9k3mEVe6m2twa",
+  "sort": 500000
+ },
+ {
+  "name": "Makibishi",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 107
+   },
+   "description": "<p>Makibishi, or caltrops, are small sharp objects scattered on the ground to deter a pursuer. Sometimes they are made of four to nine iron points in a star shape, but a handful of water chestnuts can work in a pinch.</p><p data-start=\"300\" data-end=\"544\">As an Attack and Support action, a character may scatter a handful of makibishi targeting a patch of ground at range 0–2. The terrain at range 0–1 from the point of impact gains the Dangerous terrain quality. (Cost: 1 bu per handful. Rarity 4.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "4",
+   "zeni": "1 bu per handful",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "grpaEI8BdL5GMNQQ",
+  "sort": 8900000
+ },
+ {
+  "name": "Mari (Ball)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 106
+   },
+   "description": "<p>One cannot play ball without a mari, or deerskin ball. Ball games, their rules dating back hundreds of years, are a popular way for courtiers to get exercise and have fun. In team games, two sides of twelve to sixteen players each must keep the mari in the air between them as they attempt to knock it through a goal at one or the other side of the field. In noncompetitive games, a circle of players attempts to keep the mari in the air by kicking it up and between one another. Exhibitions of skill with the mari are a popular activity at outdoor festivals and parties. (Cost: 5 zeni. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "3",
+   "zeni": "5 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "uTVdCvRLZO7xrPHd",
+  "sort": 11200000
+ },
+ {
+  "name": "Mason's Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 115
+   },
+   "description": "<p>May contain an assortment of chisels (not suitable as weapons), chalk, hammers, and measuring implements. Most Rokugani masonry is “dry stone,” meaning that there is no mortar binding the stones together, and the stones rely on interlocking friction to remain intact. Even so, some kits may include ingredients for mortar, and those that do also include trowels. (Cost: 2 koku. Rarity 5. Qualities: Mundane.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "5",
+   "zeni": "2 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ax6I2zXDleoIeONm",
+  "sort": 7900000
+ },
+ {
+  "name": "Medicine Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 243
+   },
+   "description": "<p>This is a simple first aid kit that contains all the necessary items to treat many kinds of injuries. A typical kit contains needle and thread, cloth bandages, herbal disinfectants, various balms and tinctures, and other healing items. (Cost: 1 bu. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "oQQOw1zKQsRJH6rt",
+  "sort": 10400000
+ },
+ {
+  "name": "Mempō",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 91
+   },
+   "description": "<p>Many samurai wear a mempō, or mask, to cover their face on the battlefield. They use a mempō partially for both protection and intimidation. A mempō is crafted from iron or leather, covered with lacquer or clay, and painted to resemble a face. While some mempō may have human features, most showcase jagged oni teeth, a ferocious mouth, and a frightening expression. (Cost: 5 koku. Rarity: 4. Item Qualities: Ceremonial, Wargear.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "4",
+   "zeni": "5 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "B47NklmcQInhydPH",
+  "sort": 2400000
+ },
+ {
+  "name": "Metsubushi",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 107
+   },
+   "description": "<p>The term metsubushi refers to any kind of tool or substance used to distract an enemy or impair their senses, most commonly blinding powder made from sand, lime, ash, or pepper. Blinding powder stings the eyes, causes sneezing and crying, making it hard for the victim to see or fight. Another type of metsubushi comprises mixtures of flammable substances that explode in distracting bursts of flame or catch clothes on fire when they strike a target. An eggshell emptied and then filled with such substances is ideal for throwing as a smoke bomb, or it can be attached to the end of a rope or chain in place of a weight for a particularly disorienting blow.</p><p data-start=\"744\" data-end=\"976\">As an Attack and Support action, a character may throw a metsubushi, targeting a patch of ground at range 0–3. The terrain at range 0–2 from the point of impact gains the Obscuring terrain quality. (Cost: 6 zeni per dose. Rarity 5.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "5",
+   "zeni": "6 zeni per dose",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ZDTYGgUzNp3yf6vY",
+  "sort": 7500000
+ },
+ {
+  "name": "Mineral-Oil Lamp",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 102
+   },
+   "description": "<p>Most Rokugani personal lanterns use a candle as their light source, while standing and stone lanterns use rapeseed or sardine oil with a pith wick. Alchemists of the Qamarist Caliphate have used a refined oil made from coal and certain clays since long ago, and while only the purest of such oil burns clean enough to be used indoors, the resulting mineral-oil lamps burn brighter and longer than those that use whale or rapeseed oil. A mere vial of the “glass naphtha” can cost a farmer’s yearly wage in Rokugan, and alchemists of several clans are secretly trying to reproduce it. (Cost: 6 koku. Rarity: 8.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "8",
+   "zeni": "6 Koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "CmEqPmcln9Nhingf",
+  "sort": 2800000
+ },
+ {
+  "name": "Mizugumo (Water Spider)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 108
+   },
+   "description": "<p>A mizugumo consists of five air bladders made of animal hide and pine resin and strung together. To use a mizugumo as a flotation device, the shinobi places it on the water’s surface underneath their torso and paddles with their arms and legs. The item’s name comes from the shinobi’s appearance while using it: the shinobi skates along the water’s surface like the Rokugani fishing spider.</p><p data-start=\"476\" data-end=\"678\">While using a mizugumo, a character reduce the TN of their checks to swim by 2. At the GM’s discretion, they can also wield weapons while swimming that they otherwise could not. (Cost: 3 bu. Rarity: 6.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "6",
+   "zeni": "3 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GmDA0mdxkv7wyidT",
+  "sort": 3600000
+ },
+ {
+  "name": "Modified Scabbard",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 108
+   },
+   "description": "<p>Shinobi sometimes alter knives’ or swords’ sheaths to do double duty as another weapon or tool. Adding extra space lets the shinobi hide secret messages, money, or other items best kept concealed. Giving the scabbard a removable end allows the shinobi to use it as a blowgun or as a snorkel when hiding underwater. Loading a knife’s sheath with metsubushi can make it easier and more efficient to throw into an enemy’s eyes. Up to one small item (such as one dose of metsubushi, a small blade, or one handful of makibishi) can be hidden within a modified scabbard. While hidden this way the item has the Concealable quality. (Cost: 2 koku. Rarity: 6. Qualities: Mundane.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "6",
+   "zeni": "2 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "zvOU1uDGIW6bBQWg",
+  "sort": 12200000
+ },
+ {
+  "name": "Mono Imi Fuda (Taboo Plaque)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 106
+   },
+   "description": "<p>The rules of purity and impurity are a constant concern for all Rokugani. A state of impurity, brought on by contamination (for example, with illness, death, or certain bodily fluids including blood) blocks an individual from participating in certain Fortunist or Shinseist rites until a priest or monk can perform a ritual of purification. The state is considered highly contagious; it can spread to another individual who comes too close.</p><p data-start=\"526\" data-end=\"1100\">A mono imi fuda, or taboo plaque, is a spike-shaped wooden object with sacred inscriptions that both warn off people who see the plaque and help to block the spread of impure energies. The plaques are inscribed and blessed by a religious figure, then hung from a person’s hat or driven into the ground to demarcate the impure space. In the absence of a properly trained cleric, these objects are considered a good first line of defense against impurity for most people. Their efficacy against truly potent creatures of evil, however, depends on the skill of their creator.</p><p data-start=\"1102\" data-end=\"1361\">Some mono imi fuda have the Sacred quality, but others are shoddily made or insufficiently blessed. A character may make a TN 3 Theology (Air) check to assess whether a particular taboo plaque possesses this quality. (Cost: 8 bu. Rarity 6. Qualities: Sacred.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "6",
+   "zeni": "8 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "HKzRjGuxT43HHneu",
+  "sort": 3800000
+ },
+ {
+  "name": "Musical Instrument",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 243
+   },
+   "description": "<p>Rokugani musical traditions are rich and varied. Many people in the Empire can at least pick out a simple tune on a flute or drum. Instruments also include the shamisen, biwa, and koto. Many courtiers carry an instrument to display their talents, and drums are popular among the samurai class for signaling troops and sending messages. (Cost: 1–5 bu. Rarity: 2–6.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "2-6",
+   "zeni": "1-5 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ILnckMHopQBHOVb7",
+  "sort": 4200000
+ },
+ {
+  "name": "Norimono (Planquin)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 106
+   },
+   "description": "<p>One popular means of transport is the norimono, or noble palanquin. A norimono consists of a small covered chamber in which a single passenger may recline on a soft surface, shadowed on the left and right by curtains. The chamber is suspended from two beams that extend to the front and rear. Four or more tireless servants bear the norimono on their shoulders. A norimono looks more expensive and decadent than the faster horse- or ox-drawn cart, but it is in fact cheaper and more reliable. Animals require pasture, which is not always easy to find, and wheeled vehicles can sustain damage on rough roads that sturdy humans navigate with ease. The norimono also allows the occupant to conceal their identity or show off their opulence at their discretion. (Cost: 12 koku. Rarity: 7. Qualities: Resplendent.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 18,
+   "rarity": "7",
+   "zeni": "12 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "v1akdhwxfhxSHIF0",
+  "sort": 11500000
+ },
+ {
+  "name": "Obsidian Ink [Blessed Treasure]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/blessed.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 113
+   },
+   "description": "<p>Obsidian inksticks, which contain pulverized obsidian in addition to the usual ingredients, are insidiously visually identical to ordinary inksticks. When mixed with water on an inkstone, the resulting obsidian ink temporarily bestows the spiritual properties of obsidian on any scroll, canvas, or other surface. But when blood is used instead of water, the resulting ink attracts kansen and imbues mahō rituals with even greater power.<br data-start=\"513\" data-end=\"516\">Effects: When preparing an a ward containing an invocation (see Prepared Invocations on page 190 of the core rulebook), if you use obsidian ink, you may receive up to 3 strife to add that many kept  showing  results. Additionally, you may use this ink mixed with blood to prepare a ward containing a mahō technique as if it were an invocation. If you do, you may suffer up to 3 strife to add that many kept  showing   results.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "30VmvPZzCl2Wp2EK",
+  "sort": 1300000
+ },
+ {
+  "name": "Omamori",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 243
+   },
+   "description": "<p>Omamori are protective charms, sold at many shrines across the Emerald Empire, often in the form of a small envelope or bag containing a written or inscribed prayer to a particular kami (often one of the great Fortunes, but occasionally others). Most examples provide protection against ill fortune of a specific variety such as illness or accidents, or encourage good luck in some sphere, such as farming, travel, or marriage, but are never put to the test in any rigorous manner—the kami move by paths unseen by mortal eyes, after all, and it is hard to determine if a talisman was truly responsible for one’s safety.</p><p data-start=\"705\" data-end=\"986\">Shugenja and other powerful servants of the kami are capable of creating especially efficacious protective charms. These frequently contain appeals to the seven Great Fortunes (such as the three listed here), but can also offer other protections by appealing to different powers.</p><p data-start=\"988\" data-end=\"1792\">An omamori might contain one of the following blessings:<br data-start=\"1044\" data-end=\"1047\">$ Boon of Fukurokujin: Fukurokujin, Fortune of Wisdom, illuminates the truth even when tricksters seek to obscure it. Once per game session, the wearer may spend 1 Void point to remove a condition or persistent effect caused by a Scheme action.<br data-start=\"1291\" data-end=\"1294\">$ Boon of Bishamon: Bishamon promises glory at arms to the bold, and draws the eyes of the powerful to those who prove their strength. Once per game session, when the wearer receives a glory award, the wearer may spend 1 Void point to increase that award by 3.<br data-start=\"1554\" data-end=\"1557\">$ Boon of Benten: Benten watches over artists and lovers, guiding them in their endeavors. Once per game session, after rolling dice, the wearer may spend 1 Void point to add a kept  set to an  result to an Artisan or Social check.</p><p data-start=\"1794\" data-end=\"2050\">The kami can be a bit jealous in their stewardship, however. While a character can theoretically wear multiple protective charms at once, they cannot benefit from any of these blessings while they are wearing more than one omamori. (Cost: 5 bu. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "5 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0NOVr1ts31yjFDFD",
+  "sort": 400000
+ },
+ {
+  "name": "Omamori (Boon of Hotei)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 97
+   },
+   "description": "<p>The Fortune of Contentment makes all things endurable. Once per game, the wearer may spend 1 Void point to remove strife from themself equal to their focus value. (Cost: 5 bu. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "5 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dFRgiKgSmy60rW3v",
+  "sort": 8400000
+ },
+ {
+  "name": "Omamori (Boon of Jurojin)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 97
+   },
+   "description": "<p>The Fortune of Longevity ensures that joy is long lasting and that sadness is only brief. Once per game session, when the wearer suffers the Enraged, Intoxicated, or Exhausted condition, they may spend 1 Void point to remove the condition before it affects them. (Cost: 5 bu. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "5 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gEqid0GH7bsx7zJp",
+  "sort": 8800000
+ },
+ {
+  "name": "Omamori (Boon of Kisshoten)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 97
+   },
+   "description": "<p>The Fortune of Happiness, Fertility, and Beauty makes it easier to present one’s best face. Once per game session, the wearer may spend 1 Void point. If they do, they count as having the Dangerous Allure or Kisshōten’s Blessing advantage (their choice) until the end of the scene (see pages 103 and 108 of the core rulebook, respectively). (Cost: 5 bu. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "5 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mIyF7TdRC4gaoSMY",
+  "sort": 10100000
+ },
+ {
+  "name": "Opening and Closing Tools",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 108
+   },
+   "description": "<p>When social engineering fails, there’s always breaking and entering. An opening and closing kit includes pliers, drills, oil, a hammer, spikes, and cutting or sawing implements used for breaking into sealed locations. It also contains iron clamps of various sizes in a bracket shape with spiked ends; these can hold a door closed and require a pursuer to spend time forcing the door while a shinobi escapes. (Cost: 5 bu. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "3",
+   "zeni": "5 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wBlDcqgEtXYaj028",
+  "sort": 11600000
+ },
+ {
+  "name": "Performer's Boat",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 106
+   },
+   "description": "<p>A portable boat consists of a number of wooden panels that can be stacked and transported easily in a compact box. When the shinobi needs to cross water, they disassemble the box and slot the wooden pieces into one another to create a small raft and oar. (Cost: 3 koku. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 8,
+   "rarity": "6",
+   "zeni": "20 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JzJeMnyTU1ZawYxg",
+  "sort": 4600000
+ },
+ {
+  "name": "Personal Pearl (Sacred)",
+  "type": "item",
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "_id": "YhW0dN4ceeviU0r4",
+  "system": {
+   "source_reference": {
+    "source": "",
+    "page": 0
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "0",
+   "zeni": "0",
+   "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 7300000,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "flags": {},
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761510045639,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  }
+ },
+ {
+  "name": "Personal Seal or Chop",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 243
+   },
+   "description": "<p>A personal chop is used by samurai to verify their identity and sign documents, among other official business. Each one is a unique design that is registered with the Miya family. Using another samurai’s chop is considered both an insult and a serious crime. (Cost: 4 bu. Rarity: 6. Qualities: Ceremonial.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "6",
+   "zeni": "4 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "UU5eQKPBQZ9ilOTF",
+  "sort": 7400000
+ },
+ {
+  "name": "Pillow Book",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 243
+   },
+   "description": "<p>This is a small, loosely bound, cheaply made book written in a genre some samurai consider insufficiently serious, such as romance, adventure, or poetry. A pillow book can also be an account of a famous person’s life or an adaptation of a diary. Occasionally, important literary or academic works are converted to pillow books to make them more portable. (Cost: 3 zeni. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "3 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cc1Cmo80jo8onjc8",
+  "sort": 8200000
+ },
+ {
+  "name": "Poison (One Vial)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 244
+   },
+   "description": "<p>In the courts of the Emerald Empire, the wheels of politics are sometimes turned by unsavory means. Members of the Scorpion Clan are certainly not above using poison to weaken or eliminate political rivals—not that one could ever prove their culpability—and many samurai turn to such measures in times of desperation or fear. (Cost: 30 zeni for one dose. Rarity: 5. Qualities: Forbidden.)</p><p data-start=\"482\" data-end=\"1061\">Three poisons found in Rokugan are:<br data-start=\"517\" data-end=\"520\">$ Noxious Poison: A catchall term for a wide variety of deadly compounds (many of which have perfectly legitimate uses in medicine and other trades), these sorts of poisons often act by attacking the heart, organs, or brain directly.<br data-start=\"753\" data-end=\"756\">– When a character ingests noxious poison, the character suffers a critical strike with severity 10. The poisoner may spend  on their check to deliver the poison to increase the severity by 1 per  spent this way.<br data-start=\"970\" data-end=\"973\">– When noxious poison is applied to a weapon, increase that weapon’s deadliness by +4.</p><p data-start=\"1063\" data-end=\"1509\">$ Fire Biter: A poison that wracks victims with searing pain, fire biter is easily identified by its bitter taste, which makes it difficult to disguise its presence in food or drink.<br data-start=\"1245\" data-end=\"1248\">– When a character ingests fire biter, the character suffers 5 strife and the Dazed and Exhausted conditions.<br data-start=\"1357\" data-end=\"1360\">– When fire biter is applied to a weapon, after a target suffers a critical strike from the weapon, they suffer the Dazed and Exhausted conditions.</p><p data-start=\"1511\" data-end=\"1962\" data-is-last-node=\"\" data-is-only-node=\"\">$ Night Milk: A favorite of the Shosuro family, night milk is a dizzying concoction that must be injected or otherwise delivered directly into the bloodstream.<br data-start=\"1670\" data-end=\"1673\">– When night milk is introduced into a character’s bloodstream, the character suffers 5 fatigue and the Disoriented and Prone conditions.<br data-start=\"1810\" data-end=\"1813\">– When night milk is applied to a weapon, after a target suffers a critical strike from the weapon, they suffer the Disoriented and Prone conditions.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "5",
+   "zeni": "30 zeni",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "SNTCLZ2aScPEddId",
+  "sort": 6100000
+ },
+ {
+  "name": "Poppy Tea",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 116
+   },
+   "description": "<p>The cheapest form of consumable opium, poppy tea is an herbal infusion of poppy straw and dried poppy pods. The dried pods contain both seeds and an opium paste, which give the resulting tea its narcotic effect. While the tea has many medicinal purposes, it is primarily used to achieve an opium high and dull pain sensations. It was banned by Imperial decree in the tenth century. (Cost: 6 bu per cup. Rarity: 7. Qualities: Forbidden [outside of a medical context].)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "7",
+   "zeni": "6 bu per cup",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Y2hT3X68D5GDSuCp",
+  "sort": 7100000
+ },
+ {
+  "name": "Portable Boat",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 108
+   },
+   "description": "<p>A portable boat consists of a number of wooden panels that can be stacked and transported easily in a compact box. When the shinobi needs to cross water, they disassemble the box and slot the wooden pieces into one another to create a small raft and oar. (Cost: 3 koku. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 3,
+   "rarity": "2",
+   "zeni": "3 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "jj2c6gDgkGqECJUD",
+  "sort": 9700000
+ },
+ {
+  "name": "Prayer Rug",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 102
+   },
+   "description": "<p>One of the most important personal effects for those who worship the Nameless Prophet, the prayer rug is a thick carpet that is used for kneeling upon during daily prayers. Such rugs come in a wide variety of patterns, but all incorporate religious symbology of the Qamarist faith, aiding the user in their prayers. (Cost: 2 koku. Rarity: 9.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "9",
+   "zeni": "2 Koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "AXUgAUuvI34fjdFS",
+  "sort": 2200000
+ },
+ {
+  "name": "Quiver of Arrow",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 244
+   },
+   "description": "<p>A quiver is a cloth or leather container used to carry arrows. Worn at the waist or slung over the shoulder, a standard quiver can hold sixty or more arrows. There are also quivers or equivalent carrying pouches for crossbow quarrels, blowgun darts, stones, and other ammunition, and they function in the same manner.</p><p data-start=\"414\" data-end=\"678\">As long as a character has a quiver of arrows available, they are assumed not to run out of standard ammunition. Further, the character is assumed to refill the quiver at reasonable opportunities, such as when visiting a guard outpost or a castle with an armory.</p><p data-start=\"680\" data-end=\"1009\">If a character goes an especially long time without having a reasonable opportunity to refill their quiver, the GM may state that the quiver is running low, with only 3 standard pieces of ammunition remaining; the character then gains 1 Void point. The character still possesses any special arrows they had prior to this point.</p><p data-start=\"1011\" data-end=\"1245\" data-is-last-node=\"\" data-is-only-node=\"\">A depleted quiver can be refilled by visiting a location where the character can acquire ammunition, or by making ammunition using the Survival skill if the character has the proper supplies (see page 169). (Cost: 20 zeni. Rarity: 1.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "1",
+   "zeni": "20 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fH0gDPMITb6BDQuT",
+  "sort": 8700000
+ },
+ {
+  "name": "Rope (By the Foot)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 244
+   },
+   "description": "<p>Rope is made from a variety of materials and is used for tasks as varied as binding enemies, restraining livestock, climbing, and rigging sailing vessels. Low-quality ropes are made of hemp and tend to be both rough and stiff. Higher-quality ropes are made of hair, silk, or more exotic fibers. (Cost: 5–20 zeni per foot. Rarity: 1.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "1",
+   "zeni": "5-20 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ulHPyrbmaoI8PPqh",
+  "sort": 11400000
+ },
+ {
+  "name": "Rope Ladder",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 108
+   },
+   "description": "<p>A rope ladder consists of rungs joined by braided cloth or hair with hooks at one end that folds up easily for portability. It can be a great way for shinobi to extract a target who lacks a spy’s expertise in climbing. Some resourceful shinobi even learn to use rope ladders as weapons. Shinobi can cast a rope ladder at an enemy to entangle or distract them, or they can use it to tie up an incapacitated foe.</p><p>A rope ladder may be used as a thrown weapon with the following profile: (Martial Arts [Ranged], Range 1–2, Damage 0, Deadliness 0, Snaring). (Cost: 2 bu. Rarity 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "2 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "I85iWDAmI0jBXDNP",
+  "sort": 4100000
+ },
+ {
+  "name": "Saihai",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 91
+   },
+   "description": "<p>Used for nonverbally communicating orders to troops, the saihai, or war baton, doubles as a status symbol for commanding officers. This item is a lacquered wooden rod with a tassel made of brightly colored ribbons or horsehair at its head. It is hung by a small loop from the waist. The saihai makes it easy to signal troop movements from mid-range. Traditionally, commanders brandish their saihai to signal charging and offensive maneuvers, as complex signals are difficult to convey at a distance.</p><p>During a mass battle, if an army’s commander carries a saihai, increase the army’s discipline by 2. (Cost: 4 bu. Rarity: 3. Item Qualities: Ceremonial, Wargear.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "3",
+   "zeni": "4 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000002",
+     "name": "Ceremonial"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "j8FRgJKDuSnnKDf1",
+  "sort": 9500000
+ },
+ {
+  "name": "Sake Cup",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p>These are small wood, porcelain, or metal cups used for drinking sake. In many areas of the Empire, it is customary for a guest to bring their own cup to gatherings and official functions. Wealthy or influential people tend to carry ornately decorated cups made from expensive materials to better impress fellow drinkers. (Cost: 1 bu. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ADt0NNh4SBqqQuRZ",
+  "sort": 2100000
+ },
+ {
+  "name": "Sand Clock",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 102
+   },
+   "description": "<p>Personal timepieces have become status symbols among the Rokugani elite, as traditional water clocks are larger, more common, and less expensive. The most prized timepieces are sand clocks, the best examples of which come from al-Zawira. They consist of two glass-bulb ampoules partially filled with powdered marble or ash, expertly measured so that it takes a certain amount of time for sand to pass from one bulb to the other. The glassblowing techniques required to make the sand clock are not exclusive to the artisans of the Caliphate, but access to better materials, the skill required to make smaller examples, and the artistic</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "6",
+   "zeni": "2 Koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4zNpNDs3lIqiL28q",
+  "sort": 1800000
+ },
+ {
+  "name": "Sapper's Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 107
+   },
+   "description": "<p>A sapper’s kit includes basic tools to help sappers and miners in their work undermining and destroying fortifications. It typically includes a small shovel, small pickax, flint and steel for lighting fires, a bucket, a small amount of pitch, a coil of rope or chain, and an assortment of other common building tools used in demolitions. (Cost: 1 bu. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ZXx1TQY2DsHY1QoH",
+  "sort": 7600000
+ },
+ {
+  "name": "Sashimono",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 91
+   },
+   "description": "<p>Clan mon and armor are essential for soldiers to tell friend from foe in the heat of battle, but sashimono—small, square banners attached by poles to soldiers’ armor—help commanders and tacticians better discern the tide of battle. A soldier’s armor is designed with a fitted clasp at the back of the cuirass for a sashimono pole to slot into. Each sashimono is plainly decorated and dyed with easily discernible colors so that commanders can recognize their soldiers at a glance. (Cost: 6 bu. Rarity: 2. Item Qualities: Wargear.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "6 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1KOowfKcy1cCXBN0",
+  "sort": 700000
+ },
+ {
+  "name": "Scroll satchel",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 60
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "3",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "DhMU7Z6UsxB7CSvR",
+  "sort": 3100000
+ },
+ {
+  "name": "Sekihitsu",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 109
+   },
+   "description": "<p>A sekihitsu is a pencil made of soapstone, graphite, or chalk. It lets a shinobi blaze trails or write secret messages to others on the same mission. The shinobi may also jab the pencil into a vital point, using it as a weapon of last resort if caught undertaking skulduggery.</p><p data-start=\"351\" data-end=\"522\" data-is-last-node=\"\" data-is-only-node=\"\">A sekihitsu may be used as a weapon with the following profile: (Martial Arts [Unarmed], Range 0, Damage 0, Deadliness 4, Concealable, Mundane). (Cost: 3 zeni. Rarity: 1.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "1",
+   "zeni": "3 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "SBMCrUGSkI7SLY44",
+  "sort": 5900000
+ },
+ {
+  "name": "Shikomizue",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 116
+   },
+   "description": "<p>Favored by those who wish to conceal the fact that they are armed, the shikomizue is a special sword mount that is indistinguishable from a wooden cane, walking stick, musical instrument, or other such mundane item. What appears to be a harmless, everyday object is actually a sheath for a blade or chain. This allows the carrier to avoid suspicion while bringing their blade into places weapons are not normally allowed, such as tea houses, temples, or even courts.</p><p>Weapons of this nature are considered violations of the Bushidō tenets of Courtesy (Rei), Righteousness (Gi), and Honor (Meiyo); as such, clan samurai view them as suitable only for honorless dogs.</p><p>A person using a shikomizue selects one sword they own to custom fit to it. This weapon gains the Concealable and Subtle item qualities while sheathed in the shikomizue. (Cost: 2 koku. Rarity: 7. Qualities: Forbidden, Subtle.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "7",
+   "zeni": "2 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    },
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "2BvOWOqH9yUUY7g6",
+  "sort": 1100000
+ },
+ {
+  "name": "Smithy's Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 107
+   },
+   "description": "<p>This kit is necessarily larger and more complex, infinitely less portable than smaller kits like those used by sappers and bowyers. It includes a variety of metalworking tools, specialty tools for weapon or armor making depending on the user’s specialty, a small anvil, a portable forge, a crucible, and numerous hammers, tongs, pliers, and blacksmithing tools.</p><p data-start=\"443\" data-end=\"523\" data-is-last-node=\"\" data-is-only-node=\"\">A smithy’s kit is Cumbersome and has a silhouette of 1. (Cost: 3 bu. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 2,
+   "rarity": "3",
+   "zeni": "3 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000006",
+     "name": "Cumbersome"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "lXnxYrokKRwfMMQE",
+  "sort": 9900000
+ },
+ {
+  "name": "Smoke Arrows",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 107
+   },
+   "description": "<p>Smoke arrows, also called smoking-bulb arrows, are modified humming-bulb arrows created by Crab armorers for signaling. They are tipped with a perforated, egg-shaped head filled with a mixture of alchemical substances that, when jostled, emit a thin cloud of smoke in a variety of colors depending on the specific mixture. Archers can fire these arrows high into the air, using the smoke trails to signal other units up and down the Wall. Depending on the smoke color, they can indicate breaches of varying severity, calls for reinforcements, or that victory was achieved.</p><p data-start=\"644\" data-end=\"742\" data-is-last-node=\"\" data-is-only-node=\"\">Smoke arrows modify a bow’s profile as follows: Damage –2, Deadliness –2. (Cost: 3 bu. Rarity: 4.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "4",
+   "zeni": "3 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "lxbuEuOnEIVvXSZn",
+  "sort": 10000000
+ },
+ {
+  "name": "Smoking Pipe",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 91
+   },
+   "description": "<p>Crafted from reeds or carved from fine wood, the smoking pipe is a staple for many soldiers, who fill it with tobacco, opium, or other substances to calm themselves both before and after battle. The benefits are purely psychological but well understood throughout the clan armies. Unfortunately, the relentless horrors of combat have pushed many ashigaru and even bushi to a nearly incapacitating addiction to the calming effects of opium.</p><p data-start=\"511\" data-end=\"535\" data-is-last-node=\"\" data-is-only-node=\"\">(Cost: 1 bu. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "UofUjI1niZbJWNeY",
+  "sort": 6300000
+ },
+ {
+  "name": "Sokutoki",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 109
+   },
+   "description": "<p>The sokutoki is an incense box, often beautifully lacquered and decorated. Incense boxes are one example of various forms of shinobi tools disguised as or doubling as everyday objects. They are beautiful but not distractingly uncommon, and guards and nosy acquaintances are unlikely to check them, as it would be rude to handle an item so personal to someone else unless they offered it. A shinobi can load an incense box with blinding powder. Then, once they have maneuvered close to their target, they can discharge the powder through a tube into the target’s eyes with a quick, simple motion that is less dramatic and more accurate than flinging the powder from a pocket.</p><p data-start=\"750\" data-end=\"815\" data-is-last-node=\"\" data-is-only-node=\"\">(Cost: 2 bu. Rarity: 4. Qualities: Concealable, Prepare, Subtle.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "4",
+   "zeni": "2 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000005",
+     "name": "Concealable"
+    },
+    {
+     "id": "L5RCorePro000013",
+     "name": "Prepare"
+    },
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Godzb965HVxKQKz8",
+  "sort": 3700000
+ },
+ {
+  "name": "Spices",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p>Spices are important both for flavoring food and as a trade commodity throughout Rokugan. While some important varieties are native to the Emerald Empire, such as wasabi and sanshō pepper, many are imported from abroad. Depending on their provenance and rarity, spices can be extremely expensive. Much blood has been spilled by various factions in attempts to control the spice trade.</p><p>(Cost: 1–5 bu per small bottle. Rarity: 5–7.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "5-7",
+   "zeni": "1-5 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "22nbBbFVRB0Sy0K9",
+  "sort": 1000000
+ },
+ {
+  "name": "Spyglass",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 107
+   },
+   "description": "<p>Spyglasses are wondrous devices brought to the Crab lands by foreign mercenaries. At their most basic, spyglasses are long brass tubes full of polished glass lenses. Some are heavy enough to require a tripod for use, while others are collapsible and small enough to fit in a pouch or pocket. No matter their size, all spyglasses do the same thing: make objects far away easier to see. While rare and expensive, these items are gaining popularity among Crab officers and scouts.</p><p>A common spyglass allows a user to see small items with great clarity and detail at up to range 5. Larger versions can let the user see clearly to range 6, while smaller versions may only be useful out to range 4. What a spyglass can and cannot see is ultimately left to the game master’s discretion.</p><p>(Cost: 2 koku. Rarity: 5.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "5",
+   "zeni": "2 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "2UDc2SovBx5EeHh1",
+  "sort": 1200000
+ },
+ {
+  "name": "Sweets (Four Servings)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p>These are candies, small cakes, and other confections that are popular during the Empire’s many festival seasons. Typical Rokugani sweets are made from bean curd or honeyed rice, but a few gaijin treats made from exotic and foreign ingredients are produced here and there throughout Rokugan. This is especially true in the Unicorn lands.</p><p>(Cost: 1 bu. Rarity: 1.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "1",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Vg4mdYIlajLRTqwH",
+  "sort": 6400000
+ },
+ {
+  "name": "Tailor's Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 115
+   },
+   "description": "<p>May contain cloth patches of linen or homespun cotton (and rarely silk), hemp thread, sewing needles, and dye tablets. Some kits include cleaning powder, a small seam ripper, and a collapsing bamboo drying rod; to clean a kimono, the garment must be deconstructed, each cloth panel must be washed and dried separately, and then the panels must be sewn back together.</p><p data-start=\"438\" data-end=\"484\" data-is-last-node=\"\" data-is-only-node=\"\">(Cost: 3 koku. Rarity: 5. Qualities: Mundane.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "5",
+   "zeni": "3 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "uQ5kSkhueYENyN1D",
+  "sort": 11100000
+ },
+ {
+  "name": "Taketaba",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 107
+   },
+   "description": "<p>Taketaba are covered mobile platforms designed to give archers and crossbow users cover on the battlefield. While they vary in size and construction depending on their use and the materials at hand, a common taketaba is a wheeled platform large enough for several warriors armed with bows or crossbows. The front of the platform is covered in thick planks or bundles of bamboo.</p><p data-start=\"449\" data-end=\"473\" data-is-last-node=\"\" data-is-only-node=\"\">(Cost: 4 bu. Rarity: 4.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "4",
+   "zeni": "4 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xPhSre6dhw6MwPSi",
+  "sort": 11800000
+ },
+ {
+  "name": "Talisman of the Sun [Blessed Treasure]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 104
+   },
+   "description": "<p>During the Ki-Rin Clan’s overthrow of the undead Sun Kings in Rempet alongside al-Qamari, a brave samurai heard a voice crying out to be freed from its prison. The source of these cries was a talisman of braided metal, bearing a jewel that shone like fire. The voice promised to aid its rescuers if only it could feel the sun again.</p><p data-start=\"397\" data-end=\"790\">It is said that after the Sun Kings’ defeat, Iuchi made many attempts to free the imprisoned spirit from the talisman, as did his daughter and grandson after him, but to no avail. The Talisman of the Sun is now a treasure resting in Gatherer of Winds Castle, one of its many mysteries, brought out from its ornate container each morning by the seneschals to bask in the light of the sunrise.</p><p data-start=\"792\" data-end=\"1254\" data-is-last-node=\"\" data-is-only-node=\"\">The Talisman of the Sun is a meishōdō talisman that contains the following invocations from the core rulebook: <em data-start=\"903\" data-end=\"934\">By the Light of the Lord Moon</em> (page 192), <em data-start=\"947\" data-end=\"967\">Hands of the Tides</em> (page 208), and <em data-start=\"984\" data-end=\"1006\">Wings of the Phoenix</em> (page 206). After the talisman is used to cast an invocation, it cannot cast another until it has basked in sunlight for at least one minute. It does not have a stability value (see Stability, page 106)—for now, the spirit is trapped indefinitely.</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Vhs1b3b4tyulSqBW",
+  "sort": 6500000
+ },
+ {
+  "name": "TaraiBune",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": 9
+   },
+   "description": "",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 3,
+   "rarity": "4",
+   "zeni": "1 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "aVPZAJgB3t4fH48Q",
+  "sort": 7800000
+ },
+ {
+  "name": "Tate",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 107
+   },
+   "description": "<p>Tate are a type of large, semiportable protection used by warriors in the field. They are simple constructions consisting of a few thick wooden planks nailed together and painted or engraved with a clan or army’s livery. Carried into battle, tate are set up by propping a support plank behind them at an angle.</p><p>Once in place, tate provide ample cover for archers, crossbow wielders, and other warriors who need respite from flying arrows and debris. A single tate provides cover for one individual, but multiple tate can be arranged to shelter larger groups.</p><p>A character can set up a tate as a Support action. Once set, increase the TN of all Attack action checks with projectiles (such as Martial Arts [Ranged] checks) targeting a character behind it by 2.</p><p>Cost: 3 bu | Rarity: 3</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "3 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "p8noQOHwUyP0DteY",
+  "sort": 10500000
+ },
+ {
+  "name": "Tattoo Needles",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p>Extremely popular among the Dragon Clan, these are steel or bamboo needles used to apply tattoos. Tattoo needles are ordinarily part of a kit that includes needles, various pigments, and other tools used by tattoo artists in their work. Widespread not only in the Dragon Clan, tattoos are also prevalent among the Empire’s numerous criminal cartels, which use them both to identify members of specific cartels and to record individuals’ criminal exploits. (Cost: 1 bu per set. Rarity: 4.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "4",
+   "zeni": "1 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "zYeMyDOTz9VJ7eMn",
+  "sort": 12100000
+ },
+ {
+  "name": "Tea Set (Portable)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p>The tea ceremony is exceptionally important in Rokugani society. These small, portable tea sets are designed to withstand rough handling and travel. They allow samurai to enjoy the harmony and relaxation of the tea ceremony even when they are far from home. (Cost: 1 koku. Rarity: 6.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "6",
+   "zeni": "1 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "jQi9eV0DgISv1Qpt",
+  "sort": 9600000
+ },
+ {
+  "name": "Tent (Chomchong)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p>Chomchong are large, elaborate, portable homes popular with the Unicorn Clan. Sturdy and well protected from the elements, these tents can accommodate up to a dozen people in relative comfort. They are also used to house small noble families in as much luxury as can be afforded in the field. Chomchong take quite a bit of time to set up and tear down, and carrying them requires several oxen and a large wagon. (Cost: 20 koku. Rarity: 7.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 2,
+   "rarity": "7",
+   "zeni": "20 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "qwIGSQk50D9lavPg",
+  "sort": 10700000
+ },
+ {
+  "name": "Tent (Small)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p>These basic shelters are just big enough to keep two individuals warm and dry in the wilderness. They are extremely easy to set up and take down, pack down relatively small, and can be carried on a person’s back, in a cart, or slung over a horse. (Cost: 1 koku. Rarity: 3.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "1 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NRIt0W5GSuiD40lL",
+  "sort": 5100000
+ },
+ {
+  "name": "Tent (Yurt)",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p>Bigger than basic tents but not as big or luxurious as chomchong, yurts were brought to Rokugan from the far-off steppes by the Unicorn Clan. Made from thick leather or canvas with a felt floor, a yurt can house a group of four indefinitely in relative comfort. They are heavy and awkward to build or take down, and require either a horse or oxen dedicated to carting them around. (Cost: 10 koku. Rarity: 5.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 2,
+   "rarity": "5",
+   "zeni": "10 koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "IrCnlQn7q828HPaz",
+  "sort": 4400000
+ },
+ {
+  "name": "Tenugui",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 109
+   },
+   "description": "<p>A tenugui is a rectangular cloth, usually around three feet by one foot. Shinobi customarily carry one or two extra cloths to replace part of a damaged mask, to filter water, or even to ensnare and choke out a sentry. (Cost: 3 zeni. Rarity: 2.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "2",
+   "zeni": "3 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0BLHRNXfwgyqIAQ3",
+  "sort": 200000
+ },
+ {
+  "name": "Tetsubishi",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 91
+   },
+   "description": "<p>A type of caltrop welded together in the shape of sharp-spined stars the size of a fist or larger, tetsubishi are a type of iron makibishi designed to be scattered on the battlefield in front of fortifications as a defense. They may also be used to delay pursuers. While their sharp edges may pierce the soles of unsuspecting samurai’s boots, these mass-produced weapons are especially effective at penetrating the hooves of horses used by cavalry and mounted infantry.</p><p data-start=\"473\" data-end=\"732\" data-is-last-node=\"\" data-is-only-node=\"\">As an Attack and Support action, a character may scatter a handful of tetsubishi targeting a patch of ground at range 0–2. The terrain at range 0–1 from the point of impact gains the Dangerous and Ensnaring terrain quality. (Cost: 5 bu per handful. Rarity: 4)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "4",
+   "zeni": "5 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4OCDJyLlEF5F7feH",
+  "sort": 1700000
+ },
+ {
+  "name": "The Anvil of Despair [Concealed Horror]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/cursed.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 111
+   },
+   "description": "<p>Among the foulest artifacts to exist in Rokugan, the Anvil of Despair is also one of the most infamous. Its creator, Agasha Ryuden, used iron extracted from oni blood and sacrificed the entire Boar Clan to give it birth. Any item forged on this anvil awakens cursed and malicious, eventually corrupting its wielder. It played an invisible hand in shaping Rokugan’s history, and none can say how many evil blades have been hammered into being on its cursed back.</p><p data-start=\"465\" data-end=\"703\"><strong data-start=\"465\" data-end=\"477\">Effects:</strong> The Anvil requires a proper sacrifice for mahō (see p. 224 of the core rulebook) each time you wish to perform a Smithing check using it. Any weapon forged on the Anvil of Despair gains +2 deadliness and the Unholy quality.</p><p data-start=\"705\" data-end=\"742\" data-is-last-node=\"\" data-is-only-node=\"\"><strong data-start=\"705\" data-end=\"724\">Unmasking Form:</strong> Honor’s Challenge</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 3,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    },
+    {
+     "id": "L5RCorePro000008",
+     "name": "Unholy"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "In7VHLB9Zl1HqL2i",
+  "sort": 4300000
+ },
+ {
+  "name": "The Black Pearls of Fu Leng [Concealed Horror]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/cursed.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 111
+   },
+   "description": "<p>When a particularly pure pearl or gemstone is exposed to the Taint, it easily picks up spiritual impurities. After being heavily exposed to corruption, especially by direct contact with the power of the Shadowlands, such a treasure becomes twisted and treacherous. Mahō users can offer these Black Pearls of Fu Leng to attract swarms of malicious kansen from miles around.</p><p data-start=\"376\" data-end=\"642\">Effects: While wielding a Black Pearl of Fu Leng, you may use mahō without making a proper sacrifice (see page 224 of the core rulebook). When you perform a check to activate a mahō technique without a proper sacrifice, add two kept  dice showing   results.</p><p data-start=\"644\" data-end=\"679\" data-is-last-node=\"\" data-is-only-node=\"\">Unmasking Form: Bend Principles</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    },
+    {
+     "id": "L5RCorePro000008",
+     "name": "Unholy"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "kSCnJsmzrcfiaXBi",
+  "sort": 9800000
+ },
+ {
+  "name": "The Claws of the Kitsu [Blessed Treasure]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/blessed.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 92
+   },
+   "description": "<p>The Claws of the Kitsu are both venerated relics and reminders of Akodo’s horrible mistake in slaying almost the entirety of the kitsu race. These claws have grown sharper and harder over the centuries and give off a soft golden glow under moonlight. Few remain, as some enemies of the Lion seek to eliminate the last vestiges of the kitsu from Rokugan.</p><ul><li><p data-start=\"357\" data-end=\"465\">- Awakened Item: Each Claw of the Kitsu is a nemuranai and so has the Durable and Sacred item qualities.</p></li><li><p data-start=\"467\" data-end=\"563\">- Quirk: While carried in a pouch or wrapped cloth, a claw struggles as if trying to escape.</p></li><li><p data-start=\"565\" data-end=\"755\" data-is-last-node=\"\" data-is-only-node=\"\">- Sealed Invocation: Each Claw of the Kitsu has the <em data-start=\"619\" data-end=\"640\">Vapor of Nightmares</em> invocation within it, which the wielder may perform once per session using the Courtesy skill instead of Theology.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    },
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "HymsLRYAhG9gqDHk",
+  "sort": 4000000
+ },
+ {
+  "name": "The Henge-Okurimono [Concealed Horror]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/cursed.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 111
+   },
+   "description": "<p>Created by a mahō-tsukai, the cursed “shape-shifting gifts” are seemingly mundane household items, each depicting a different animal: the hawk hairpins, the silver origami cat, the wolf kimono, the boar sandals, and the dog fan. These trinkets can change their wearer into their depicted animal and back again, but each time, the user suffers gradually more Taint, until they are trapped in a monstrous version of their animal form, unable to change back.</p><p data-start=\"459\" data-end=\"1125\">Effects: Each henge-okurimono depicts an animal (all of which can be found on page 325 of the core rulebook). Once per game session as a Support action, you may use a henge-okurimono to curse and augment your body, transforming it into that of the animal depicted in the artwork. While in this form, you use its ring values, derived attributes, abilities, and advantages with the physical or social type, but you use your own skill ranks and advantages with the mental or spiritual types. This effect persists until you choose to end it or are rendered unconscious, at which point your form reverts to its original state and you suffer the Afflicted condition.</p><p data-start=\"1127\" data-end=\"1465\">Do not remove any fatigue or strife you suffered in the alternate form when you return to your original; if this causes your fatigue to exceed your endurance (or your strife to exceed your composure when it did not in your alternate form), you suffer a critical strike with severity 5 (or you become Compromised, in the case of strife).</p><p data-start=\"1467\" data-end=\"1503\" data-is-last-node=\"\" data-is-only-node=\"\">Unmasking Form: Panicked Retreat</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    },
+    {
+     "id": "L5RCorePro000008",
+     "name": "Unholy"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "tahKO5CHkgFATgIK",
+  "sort": 11000000
+ },
+ {
+  "name": "The horagai of Sacred Rains",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 96
+   },
+   "description": "<article class=\"text-token-text-primary w-full focus:outline-none [--shadow-height:45px] has-data-writing-block:pointer-events-none has-data-writing-block:-mt-(--shadow-height) has-data-writing-block:pt-(--shadow-height) [&amp;:has([data-writing-block])&gt;*]:pointer-events-auto scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]\" tabindex=\"-1\" dir=\"auto\" data-turn-id=\"request-68fcdd32-5d68-8321-856a-99e8100c840e-46\" data-testid=\"conversation-turn-204\" data-scroll-anchor=\"true\" data-turn=\"assistant\"><div class=\"text-base my-auto mx-auto pb-10 [--thread-content-margin:--spacing(4)] thread-sm:[--thread-content-margin:--spacing(6)] thread-lg:[--thread-content-margin:--spacing(16)] px-(--thread-content-margin)\"><div class=\"[--thread-content-max-width:40rem] thread-lg:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn\" tabindex=\"-1\"><div class=\"flex max-w-full flex-col grow\"><div data-message-author-role=\"assistant\" data-message-id=\"7ef009f6-fcd5-460f-affd-2a2d606eac59\" dir=\"auto\" class=\"min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal [.text-message+&amp;]:mt-1\" data-message-model-slug=\"gpt-5-mini\"><div class=\"flex w-full flex-col gap-1 empty:hidden first:pt-[1px]\"><div class=\"markdown prose dark:prose-invert w-full break-words dark markdown-new-styling\"><p data-start=\"0\" data-end=\"495\">Held by the tribe of Isawa long before the fall of the Kami, the Horagai of Sacred Rains is a conch shell trumpet connected to blessed Tengoku. Blowing the trumpet for a longer duration increases the amount of water called forth. Legends describe one of the horagai’s wielders standing atop a mountain and summoning a torrent of rains from the sky, blowing until their lungs were empty. The resulting flood devastated many villages and carried the wielder far away, never to be seen again.</p><p data-start=\"497\" data-end=\"572\">Cost: Priceless | Rarity: 10 | Qualities: Resplendent, Sacred</p><p data-start=\"574\" data-end=\"683\">Water Empowerment: Reduce the TN of your checks to activate Water invocations by 1 (to a minimum of 1).</p><p data-start=\"685\" data-end=\"836\">Activation: Once per game session as a Movement and Support action, you may make a TN 5 Theology (Water) check targeting a position at range 0–6.</p><p data-start=\"838\" data-end=\"1248\" data-is-last-node=\"\" data-is-only-node=\"\">Effects: If you succeed, you summon pure water from the heavens. The target position and a number of range bands around it equal to your bonus successes become Ensnaring terrain. During subsequent turns, so long as you have not stopped blowing, you may receive 2 fatigue to continue to blow the horn as a Movement and Support action, causing the area to continue to flood with effects determined by the GM.</p></div></div></div></div><div class=\"z-0 flex min-h-[46px] justify-start\"><p></p></div><div class=\"mt-3 w-full empty:hidden\"><div class=\"text-center\"><p></p></div></div></div></div></article><div aria-hidden=\"true\" data-edge=\"true\" class=\"pointer-events-none h-px w-px\"><p></p></div>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    },
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "46yRrn7Nv0cpueOD",
+  "sort": 1400000
+ },
+ {
+  "name": "The Jade Cups of Taira [Blessed Treasure]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/blessed.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 112
+   },
+   "description": "<p>Most of the disgraced rōnin Taira’s creations are lost and forgotten, but his jade cups are still remembered. These appear as ordinary sake cups, but upon closer inspection, their interior is almost invisibly lined with white jade. It is not known how many Taira made, but now and again, one appears in a market or among a daimyō’s prized possessions.</p><p data-start=\"359\" data-end=\"471\">Awakened Item: The Cups of Taira are a nemuranai. As such, they have the Durable and Sacred qualities.</p><ul data-start=\"473\" data-end=\"687\" data-is-last-node=\"\" data-is-only-node=\"\"><li data-start=\"473\" data-end=\"569\"><p data-start=\"475\" data-end=\"569\">Quirk: The cups glow when Otherworldly creatures are nearby (at range 0–3, if relevant).</p></li><li data-start=\"570\" data-end=\"687\" data-is-last-node=\"\"><p data-start=\"572\" data-end=\"687\" data-is-last-node=\"\">Sealed Invocation: Once per scene, you may perform the Jurojin’s Balm invocation using your Medicine skill.</p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000014",
+     "name": "Sacred"
+    },
+    {
+     "id": "L5RCorePro000015",
+     "name": "Durable"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "evFNXiD4VWWx2wrs",
+  "sort": 8600000
+ },
+ {
+  "name": "The Porcelain Mask of Fu Leng [Concealed Horror]",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/cursed.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 111
+   },
+   "description": "<p>As it is described only in thirdhand accounts of Shosuro’s final words, it is not certain that the Porcelain Mask of Fu Leng even exists. It is said that when donned, the mask seals itself to the wearer’s face, detaching only after death. It can change its visage to any face the user imagines, and through its eyes, the mask reveals horrors normally hidden to mortals. If this artifact does exist, then surely its foolish owners were lost to what nightmares the mask reveals.</p><p data-start=\"484\" data-end=\"498\">Effects:</p><ul data-start=\"499\" data-end=\"1219\"><li data-start=\"499\" data-end=\"675\"><p data-start=\"501\" data-end=\"675\">Once you don the mask, it cannot be removed until your death (or another exceptional event), and you are assigned one Shadowlands Taint disadvantage of the GM’s choice.</p></li><li data-start=\"676\" data-end=\"1003\"><p data-start=\"678\" data-end=\"1003\">While wearing the mask, as a Support action, you may augment yourself, shifting the mask into an illusion of any face you wish to present; any other character must make a TN 4 Sentiment check (Earth 5, Fire 2) to find a flaw in your facade. This effect persists until you are rendered unconscious or will it to end.</p></li><li data-start=\"1004\" data-end=\"1219\"><p data-start=\"1006\" data-end=\"1219\">While wearing the mask, as a Scheme action, you may scry for supernatural presences, causing them to glow with sickly purple light that only you can perceive. This effect persists until the end of the scene.</p></li></ul><p data-start=\"1221\" data-end=\"1258\" data-is-last-node=\"\" data-is-only-node=\"\">Unmasking Form: Expose an Opening</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "10",
+   "zeni": "0",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    },
+    {
+     "id": "L5RCorePro000008",
+     "name": "Unholy"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "OmioQduCc4PZimBv",
+  "sort": 5400000
+ },
+ {
+  "name": "Thievery Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 116
+   },
+   "description": "<p>Thieves are reviled in Rokugan, and anyone caught thieving suffers harsh punishment. In the tenth century, several thieves were publicly boiled alive to deter stealing. Since then, so-called “thievery kits” have been forbidden by Imperial law. Such kits contain implements associated with burglary, like thin-picks for lifting wooden barricades on gates and doors, grappling hooks for climbing, and padded sandals for walking noiselessly. Sticks of melting wax are also included, as a common burglary deterrent is sealing a door with wax so that a person can tell if the door has been opened. Lockpicks are less common in thievery kits, since locksmithing is an uncommon skill and usually only daimyō can afford locks—still, some kits may carry various types of lockpicks. A thievery kit is designed to be concealable and overlooked, masquerading as a different object altogether. (Cost: 2 koku. Rarity: 6. Qualities: Concealable, Forbidden, Subtle.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "6",
+   "zeni": "2 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000005",
+     "name": "Concealable"
+    },
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    },
+    {
+     "id": "L5RCorePro000016",
+     "name": "Subtle"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "c4aRUhc17S5WseUX",
+  "sort": 8100000
+ },
+ {
+  "name": "Travel Rations",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 114
+   },
+   "description": "<p>In a land so vast, it is no small wonder that the Rokugani have developed significant food-preservation techniques to facilitate lengthy travels. Most travel foods are prepared so as to be easily stored and carried, as well as to last for long periods without spoiling.</p><p data-start=\"273\" data-end=\"621\">The typical traveling ration is a portion of uncooked husked rice, dried or pickled vegetables, and a small portion of a flavoring agent, such as dried seaweed or bonito flakes. Wealthy travelers may spring for a small paper container of sanshō, ground berries of the prickly ash plant that lend a peppery, minty, slightly acidic flavor to foods.</p><p data-start=\"623\" data-end=\"877\">Other common traveling foods include onigiri, or rice balls, which are commonly carried in bamboo sheaths by travelers for a quick meal. Onigiri are made of cooked sticky rice wrapped around a plum or fish filling and hand-molded into a circular shape.</p><p data-start=\"879\" data-end=\"1259\">Vinegared rice, used in sushi, is a common preserving element for fish. Indeed, sushi began as a preserving technique in which thin layers of fish were sandwiched between two layers of sushi rice, the vinegar acting as a pickling agent. Fish is also smoked or dried and then packaged into small boxes with miso paste (fermented soybean paste), which also acts as a preservative.</p><p data-start=\"1261\" data-end=\"1673\">Sometimes seaweed or soy sprouts are ground and mixed with barley and salt to make hishio, a thick paste used to pickle vegetables or fish for travel. The paste is scraped off, and the pickled food is eaten alone or in stews. Adding water to the hishio paste results in soy sauce (shoyu), which serves as a salty condiment. Aged and “brewed” shoyu is prized, but it is usually only affordable for clan samurai.</p><p data-start=\"1675\" data-end=\"1963\">Beans are an especially important travel food, as they are relatively lightweight when dried and last for long periods of time, but plump up into hearty, morale-restoring stews when cooked. Black and green beans are the most common, as are soybeans, broad beans, and sweet adzuki beans.</p><p data-start=\"1965\" data-end=\"2205\" data-is-last-node=\"\" data-is-only-node=\"\">In some regions, ropes used to secure goods are made from edible fibrous tuber stalks that are “dried” with miso. These ropes are completely edible and can be chopped and boiled when necessary. (Cost: 1–3 bu. Rarity: 1. Qualities: Mundane.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "1",
+   "zeni": "1-3 bu",
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "aI8nQnJjlcdmZzWg",
+  "sort": 7700000
+ },
+ {
+  "name": "Traveling Board Games",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 103
+   },
+   "description": "<p>Games of luck and skill are popular throughout the world, and traveling versions are often carried on long trips. The most common are contained within hinged boxes, many of which fold out into a game board and contain the pieces required by the game. The most sophisticated may even use magnets to keep pieces from falling off the board, although these are exceptional examples.</p><p data-start=\"382\" data-end=\"623\" data-is-last-node=\"\" data-is-only-node=\"\">Most are simple games like Go; shōgi; sugoroku; or ones from distant lands, like hounds and jackals or senet. For some, playing a game can be a means to relax on a stressful trip, or even akin to personal meditation. (Cost: 1 bu. Rarity: 4.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "4",
+   "zeni": "1 Bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "SD2rtej8NWGtplXc",
+  "sort": 6000000
+ },
+ {
+  "name": "Traveling pack",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "1",
+   "zeni": "10 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Rex7fGo6R1KuUhQJ",
+  "sort": 5800000
+ },
+ {
+  "name": "Traveling Rations",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p>Traveling rations consist of a mix of preserved foods sufficient to keep an individual fed and healthy while on the road. They typically consist of a mix of dried fish, rice balls wrapped in paper, water or tea, pickled vegetables, and other hardy foods that can withstand exposure to the elements. (Cost: 5 zeni per meal. Rarity: 1.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "1",
+   "zeni": "5 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "004v2mcQ5U4AOt0l",
+  "sort": 100000
+ },
+ {
+  "name": "Uchitake",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 109
+   },
+   "description": "<p>An uchitake (lighter), which consists of a short bamboo tube full of coals, aids in starting fires quickly and efficiently. Arson is one of a spy’s oldest and most reliable weapons. As an Attack action, a character with an uchitake can start a fire at a point at range 0–2, and if the flames catch somewhere flammable, they spread quickly, creating terrain with the Dangerous and Obscuring qualities. If a person is standing at the target point (or the coals are shot directly at them), they must resist with a TN 2 Fitness check [Water 1, Air 4] or suffer the Burning condition. (Cost: 12 zeni. Rarity: 3. Qualities: Forbidden.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "3",
+   "zeni": "12 zeni",
+   "properties": [
+    {
+     "id": "L5RCorePro000009",
+     "name": "Forbidden"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "YT1JcFluXXN7ZbyY",
+  "sort": 7200000
+ },
+ {
+  "name": "Uma-Jirushi",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 91
+   },
+   "description": "<p>Resembling a soldier’s sashimono banner, the massive, heraldic uma-jirushi banner sets a daimyō or general apart as they ride into battle. While some uma-jirushi may simply be larger, more ornate sashimono, some daimyō contract artisans to create elaborate, three-dimensional shapes or even entreat shugenja to add elemental flourishes (such as a perpetual, slow-burning flame or a constant gust of wind) to make their banner stand out.</p><p data-start=\"440\" data-end=\"748\" data-is-last-node=\"\" data-is-only-node=\"\">When making a Command check, a leader in a mass battle who displays a personal uma-jirushi adds one kept  set to . Should the bearer of an uma-jirushi be killed via the Cut Off the Head or Challenge action, their army receives 4 additional panic. (Cost: 3 koku. Rarity: 7. Qualities: Resplendent, Wargear.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "7",
+   "zeni": "3 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000010",
+     "name": "Resplendent"
+    },
+    {
+     "id": "L5RCorePro000011",
+     "name": "Wargear"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "uaCKNEXDlq1OI3wO",
+  "sort": 11300000
+ },
+ {
+  "name": "Umbrella",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<h6 class=\"sr-only\">ChatGPT said:</h6><div class=\"text-base my-auto mx-auto pb-10 [--thread-content-margin:--spacing(4)] thread-sm:[--thread-content-margin:--spacing(6)] thread-lg:[--thread-content-margin:--spacing(16)] px-(--thread-content-margin)\"><div class=\"[--thread-content-max-width:40rem] thread-lg:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn\" tabindex=\"-1\"><div class=\"flex max-w-full flex-col grow\"><div data-message-author-role=\"assistant\" data-message-id=\"ed3a57af-35be-4a1f-9a16-57ca69f6be8e\" dir=\"auto\" class=\"min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal [.text-message+&amp;]:mt-1\" data-message-model-slug=\"gpt-5-mini\"><div class=\"flex w-full flex-col gap-1 empty:hidden first:pt-[1px]\"><div class=\"markdown prose dark:prose-invert w-full break-words dark markdown-new-styling\"><p data-start=\"0\" data-end=\"287\" data-is-last-node=\"\" data-is-only-node=\"\">Normally made of wicker and silk, umbrellas keep both the sun and the rain off of those who carry them. Stories tell of umbrellas being used as improvised weapons by masters of the sword, though such fantastical feats would prove difficult for most to replicate. (Cost: 2 bu. Rarity: 4.)</p></div></div></div></div></div></div>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "4",
+   "zeni": "2 bu",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dKaTaweDrsav6h7c",
+  "sort": 8500000
+ },
+ {
+  "name": "Weaver's Kit",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 115
+   },
+   "description": "<p>May contain weaving hooks, framing reeds, dyes, inks, and bamboo lacquer. Some weaver’s kits contain shaving knives or other implements to help shave bamboo strips or cut straw. (Cost: 1 koku. Rarity: 3. Qualities: Mundane.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 1,
+   "rarity": "3",
+   "zeni": "1 koku",
+   "properties": [
+    {
+     "id": "L5RCorePro000012",
+     "name": "Mundane"
+    }
+   ]
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "VkIBEwJlje7xZIFL",
+  "sort": 6600000
+ },
+ {
+  "name": "Whetstone",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 245
+   },
+   "description": "<p>Whetstones are portable grinding stones used to sharpen most bladed weapons, save for a samurai’s katana and wakizashi, which must be sharpened by an accomplished weaponsmith or professional polisher. (Cost: 1 zeni. Rarity: 1.)</p>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "1",
+   "zeni": "1 zeni",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "BATzC4lRlST0oRed",
+  "sort": 2500000
+ },
+ {
+  "name": "Word of the Prophet",
+  "type": "item",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/item.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147943029,
+   "modifiedTime": 1762136066687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 103
+   },
+   "description": "<article class=\"text-token-text-primary w-full focus:outline-none [--shadow-height:45px] has-data-writing-block:pointer-events-none has-data-writing-block:-mt-(--shadow-height) has-data-writing-block:pt-(--shadow-height) [&amp;:has([data-writing-block])&gt;*]:pointer-events-auto scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]\" tabindex=\"-1\" dir=\"auto\" data-turn-id=\"request-68fcdd32-5d68-8321-856a-99e8100c840e-60\" data-testid=\"conversation-turn-232\" data-scroll-anchor=\"true\" data-turn=\"assistant\"><div class=\"text-base my-auto mx-auto pb-10 [--thread-content-margin:--spacing(4)] thread-sm:[--thread-content-margin:--spacing(6)] thread-lg:[--thread-content-margin:--spacing(16)] px-(--thread-content-margin)\"><div class=\"[--thread-content-max-width:40rem] thread-lg:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn\" tabindex=\"-1\"><div class=\"flex max-w-full flex-col grow\"><div data-message-author-role=\"assistant\" data-message-id=\"d51d0c20-3afc-429e-aff0-91e863cccf37\" dir=\"auto\" class=\"min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal [.text-message+&amp;]:mt-1\" data-message-model-slug=\"gpt-5-mini\"><div class=\"flex w-full flex-col gap-1 empty:hidden first:pt-[1px]\"><div class=\"markdown prose dark:prose-invert w-full break-words dark markdown-new-styling\"><p data-start=\"0\" data-end=\"764\" data-is-last-node=\"\" data-is-only-node=\"\">While the <em data-start=\"10\" data-end=\"31\">Word of the Prophet</em> is an illuminated tome that is banned within Rokugani borders, countless copies of it circulate along the Sand Road, and some have even made their way within the Emerald Empire’s borders. The book, a collection of Qamarist stories, is the basis of worship for the Qamarist faith. It contains not only the story of the Nameless Prophet but also an extensive appendix of notes, discussions, and arguments by noted scholars. Although the contents are usually the same in each book, no two copies are identical, varying in their elaborate decorations, notes, and inscribed interpretations. When passed down as family heirlooms, they often contain family trees and mementos of family ancestors from long past. (Cost: 15 koku. Rarity: 9.)</p></div></div></div></div><div class=\"z-0 flex min-h-[46px] justify-start\"><p></p></div><div class=\"mt-3 w-full empty:hidden\"><div class=\"text-center\"><p></p></div></div></div></div></article><div aria-hidden=\"true\" data-edge=\"true\" class=\"pointer-events-none h-px w-px\"><p></p></div>",
+   "parent_id": null,
+   "items": [],
+   "equipped": false,
+   "quantity": 1,
+   "weight": 0,
+   "rarity": "9",
+   "zeni": "15 Koku",
+   "properties": []
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XYxApLa7glcf2bex",
+  "sort": 7000000
+ }
+]

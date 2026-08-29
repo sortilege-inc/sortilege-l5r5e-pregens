@@ -1,0 +1,374 @@
+{
+ "root": "General",
+ "client": "fvtt_e9eb258bff37c0c2",
+ "actors": [
+  {
+   "uuid": "Actor.F5KInxHO1tSvc1KF",
+   "id": "F5KInxHO1tSvc1KF",
+   "name": "Aarav 0 XP",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Aarav (Ivory Kingdoms Sage)"
+   ],
+   "bucket": "Bushi",
+   "character": "Aarav (Ivory Kingdoms Sage)",
+   "color": "#fbf541",
+   "sort": 0,
+   "file": "actors/Aarav_0_XP__F5KInxHO1tSvc1KF.json"
+  },
+  {
+   "uuid": "Actor.Rd0ybxfqy3eSxSAQ",
+   "id": "Rd0ybxfqy3eSxSAQ",
+   "name": "Aarav 36 XP (Astradhari)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Aarav (Ivory Kingdoms Sage)"
+   ],
+   "bucket": "Bushi",
+   "character": "Aarav (Ivory Kingdoms Sage)",
+   "color": "#fbf541",
+   "sort": 0,
+   "file": "actors/Aarav_36_XP_Astradhari__Rd0ybxfqy3eSxSAQ.json"
+  },
+  {
+   "uuid": "Actor.ekaguEV9oUfUZ9E5",
+   "id": "ekaguEV9oUfUZ9E5",
+   "name": "Aarav 57 XP (Astradhari, Rank 2)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Aarav (Ivory Kingdoms Sage)"
+   ],
+   "bucket": "Bushi",
+   "character": "Aarav (Ivory Kingdoms Sage)",
+   "color": "#fbf541",
+   "sort": 0,
+   "file": "actors/Aarav_57_XP_Astradhari_Rank_2__ekaguEV9oUfUZ9E5.json"
+  },
+  {
+   "uuid": "Actor.s4k9f0SUcWTel4ci",
+   "id": "s4k9f0SUcWTel4ci",
+   "name": "Hiruma Kaede 0 XP",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Hiruma Kaede (Hida Defender)"
+   ],
+   "bucket": "Bushi",
+   "character": "Hiruma Kaede (Hida Defender)",
+   "color": "#492886",
+   "sort": 0,
+   "file": "actors/Hiruma_Kaede_0_XP__s4k9f0SUcWTel4ci.json"
+  },
+  {
+   "uuid": "Actor.xRpcwXitGcOO6hQP",
+   "id": "xRpcwXitGcOO6hQP",
+   "name": "Hiruma Kaede 107 XP (Gunsō, Rank 4)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Hiruma Kaede (Hida Defender)"
+   ],
+   "bucket": "Bushi",
+   "character": "Hiruma Kaede (Hida Defender)",
+   "color": "#492886",
+   "sort": 0,
+   "file": "actors/Hiruma_Kaede_107_XP_Gunsō_Rank_4__xRpcwXitGcOO6hQP.json"
+  },
+  {
+   "uuid": "Actor.1zj26dnVkxVx8cjc",
+   "id": "1zj26dnVkxVx8cjc",
+   "name": "Hiruma Kaede 165 XP (Gunsō, Rank 5)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Hiruma Kaede (Hida Defender)"
+   ],
+   "bucket": "Bushi",
+   "character": "Hiruma Kaede (Hida Defender)",
+   "color": "#492886",
+   "sort": 0,
+   "file": "actors/Hiruma_Kaede_165_XP_Gunsō_Rank_5__1zj26dnVkxVx8cjc.json"
+  },
+  {
+   "uuid": "Actor.qasH08OepZgjiTfv",
+   "id": "qasH08OepZgjiTfv",
+   "name": "Hiruma Kaede 21 XP (Rank 2)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Hiruma Kaede (Hida Defender)"
+   ],
+   "bucket": "Bushi",
+   "character": "Hiruma Kaede (Hida Defender)",
+   "color": "#492886",
+   "sort": 0,
+   "file": "actors/Hiruma_Kaede_21_XP_Rank_2__qasH08OepZgjiTfv.json"
+  },
+  {
+   "uuid": "Actor.53TxZNvkvH299bkh",
+   "id": "53TxZNvkvH299bkh",
+   "name": "Hiruma Kaede 216 XP (General, Rank 5)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Hiruma Kaede (Hida Defender)"
+   ],
+   "bucket": "Bushi",
+   "character": "Hiruma Kaede (Hida Defender)",
+   "color": "#492886",
+   "sort": 0,
+   "file": "actors/Hiruma_Kaede_216_XP_General_Rank_5__53TxZNvkvH299bkh.json"
+  },
+  {
+   "uuid": "Actor.l4VWZnBMThDd2yR6",
+   "id": "l4VWZnBMThDd2yR6",
+   "name": "Hiruma Kaede 279 XP (General, Rank 6)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Hiruma Kaede (Hida Defender)"
+   ],
+   "bucket": "Bushi",
+   "character": "Hiruma Kaede (Hida Defender)",
+   "color": "#492886",
+   "sort": 0,
+   "file": "actors/Hiruma_Kaede_279_XP_General_Rank_6__l4VWZnBMThDd2yR6.json"
+  },
+  {
+   "uuid": "Actor.kyq8x7TCCC3lKy6I",
+   "id": "kyq8x7TCCC3lKy6I",
+   "name": "Hiruma Kaede 50 XP (Rank 3)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Hiruma Kaede (Hida Defender)"
+   ],
+   "bucket": "Bushi",
+   "character": "Hiruma Kaede (Hida Defender)",
+   "color": "#492886",
+   "sort": 0,
+   "file": "actors/Hiruma_Kaede_50_XP_Rank_3__kyq8x7TCCC3lKy6I.json"
+  },
+  {
+   "uuid": "Actor.T8Lx3NypuCOqLcpc",
+   "id": "T8Lx3NypuCOqLcpc",
+   "name": "Hiruma Kaede 74 XP (Gunsō, Rank 3)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Hiruma Kaede (Hida Defender)"
+   ],
+   "bucket": "Bushi",
+   "character": "Hiruma Kaede (Hida Defender)",
+   "color": "#492886",
+   "sort": 0,
+   "file": "actors/Hiruma_Kaede_74_XP_Gunsō_Rank_3__T8Lx3NypuCOqLcpc.json"
+  },
+  {
+   "uuid": "Actor.87l78AncRTk6DMWJ",
+   "id": "87l78AncRTk6DMWJ",
+   "name": "Ikoma no Hosokawa Ota 0 XP",
+   "subType": "character",
+   "path": [
+    "General",
+    "Bushi",
+    "Ikoma no Hosokawa Ota (Yogo Penitent)"
+   ],
+   "bucket": "Bushi",
+   "character": "Ikoma no Hosokawa Ota (Yogo Penitent)",
+   "color": "#e70d0d",
+   "sort": 0,
+   "file": "actors/Ikoma_no_Hosokawa_Ota_0_XP__87l78AncRTk6DMWJ.json"
+  },
+  {
+   "uuid": "Actor.uddhC4czlnyZAYjJ",
+   "id": "uddhC4czlnyZAYjJ",
+   "name": "Isawa Yukiko 44 XP (Awakened Soul)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Ishiken",
+    "Isawa Yukiko (Ishiken Initiate)"
+   ],
+   "bucket": "Ishiken",
+   "character": "Isawa Yukiko (Ishiken Initiate)",
+   "color": null,
+   "sort": 0,
+   "file": "actors/Isawa_Yukiko_44_XP_Awakened_Soul__uddhC4czlnyZAYjJ.json"
+  },
+  {
+   "uuid": "Actor.o6nJImFmnkUzcWPZ",
+   "id": "o6nJImFmnkUzcWPZ",
+   "name": "Isawa Yukiko 74 XP (Awakened Soul, Rank 2)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Ishiken",
+    "Isawa Yukiko (Ishiken Initiate)"
+   ],
+   "bucket": "Ishiken",
+   "character": "Isawa Yukiko (Ishiken Initiate)",
+   "color": null,
+   "sort": 0,
+   "file": "actors/Isawa_Yukiko_74_XP_Awakened_Soul_Rank_2__o6nJImFmnkUzcWPZ.json"
+  },
+  {
+   "uuid": "Actor.tQeesrhaKZHRa5lB",
+   "id": "tQeesrhaKZHRa5lB",
+   "name": "Isawa Yukiko 98 XP (Awakened Soul, Rank 3) (Copy)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Ishiken",
+    "Isawa Yukiko (Ishiken Initiate)"
+   ],
+   "bucket": "Ishiken",
+   "character": "Isawa Yukiko (Ishiken Initiate)",
+   "color": null,
+   "sort": 0,
+   "file": "actors/Isawa_Yukiko_98_XP_Awakened_Soul_Rank_3_Copy__tQeesrhaKZHRa5lB.json"
+  },
+  {
+   "uuid": "Actor.1couuYrLcG6efybt",
+   "id": "1couuYrLcG6efybt",
+   "name": "Nasu Kogo 0 XP",
+   "subType": "character",
+   "path": [
+    "General",
+    "Shugenja",
+    "Nasu Kogo (Shoshuro Shadoweaver)"
+   ],
+   "bucket": "Shugenja",
+   "character": "Nasu Kogo (Shoshuro Shadoweaver)",
+   "color": "#5b398e",
+   "sort": 0,
+   "file": "actors/Nasu_Kogo_0_XP__1couuYrLcG6efybt.json"
+  },
+  {
+   "uuid": "Actor.yQLM5kLHqFdrhfVd",
+   "id": "yQLM5kLHqFdrhfVd",
+   "name": "Nasu Kogo 20 XP (Rank 2)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Shugenja",
+    "Nasu Kogo (Shoshuro Shadoweaver)"
+   ],
+   "bucket": "Shugenja",
+   "character": "Nasu Kogo (Shoshuro Shadoweaver)",
+   "color": "#5b398e",
+   "sort": 0,
+   "file": "actors/Nasu_Kogo_20_XP_Rank_2__yQLM5kLHqFdrhfVd.json"
+  },
+  {
+   "uuid": "Actor.JVNV6v1nBOODVBs9",
+   "id": "JVNV6v1nBOODVBs9",
+   "name": "Nasu Kogo 33 XP (Interpreter, Rank 2)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Shugenja",
+    "Nasu Kogo (Shoshuro Shadoweaver)"
+   ],
+   "bucket": "Shugenja",
+   "character": "Nasu Kogo (Shoshuro Shadoweaver)",
+   "color": "#5b398e",
+   "sort": 0,
+   "file": "actors/Nasu_Kogo_33_XP_Interpreter_Rank_2__JVNV6v1nBOODVBs9.json"
+  },
+  {
+   "uuid": "Actor.HhUYx9efAco0z2SQ",
+   "id": "HhUYx9efAco0z2SQ",
+   "name": "Nasu Kogo 63 XP (Interpreter, Rank 3)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Shugenja",
+    "Nasu Kogo (Shoshuro Shadoweaver)"
+   ],
+   "bucket": "Shugenja",
+   "character": "Nasu Kogo (Shoshuro Shadoweaver)",
+   "color": "#5b398e",
+   "sort": 0,
+   "file": "actors/Nasu_Kogo_63_XP_Interpreter_Rank_3__HhUYx9efAco0z2SQ.json"
+  },
+  {
+   "uuid": "Actor.X6mcVfFgcs8OzILh",
+   "id": "X6mcVfFgcs8OzILh",
+   "name": "Tsume Kunimichi 0 XP",
+   "subType": "character",
+   "path": [
+    "General",
+    "Shinobi",
+    "Tsume Kunimichi"
+   ],
+   "bucket": "Shinobi",
+   "character": "Tsume Kunimichi",
+   "color": "#83cecc",
+   "sort": 0,
+   "file": "actors/Tsume_Kunimichi_0_XP__X6mcVfFgcs8OzILh.json"
+  },
+  {
+   "uuid": "Actor.ZZ1PguzJan2hK0u0",
+   "id": "ZZ1PguzJan2hK0u0",
+   "name": "Tsume Kunimichi 20 XP (Rank 2)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Shinobi",
+    "Tsume Kunimichi"
+   ],
+   "bucket": "Shinobi",
+   "character": "Tsume Kunimichi",
+   "color": "#83cecc",
+   "sort": 0,
+   "file": "actors/Tsume_Kunimichi_20_XP_Rank_2__ZZ1PguzJan2hK0u0.json"
+  },
+  {
+   "uuid": "Actor.mk4X2a3CKwKeFJbs",
+   "id": "mk4X2a3CKwKeFJbs",
+   "name": "Tsume Kunimichi 49 XP (Rank 3)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Shinobi",
+    "Tsume Kunimichi"
+   ],
+   "bucket": "Shinobi",
+   "character": "Tsume Kunimichi",
+   "color": "#83cecc",
+   "sort": 0,
+   "file": "actors/Tsume_Kunimichi_49_XP_Rank_3__mk4X2a3CKwKeFJbs.json"
+  },
+  {
+   "uuid": "Actor.MuW0K9mF1N9oJfVy",
+   "id": "MuW0K9mF1N9oJfVy",
+   "name": "Tsume Kunimichi 92 XP (Master Saboteur, Rank 3)",
+   "subType": "character",
+   "path": [
+    "General",
+    "Shinobi",
+    "Tsume Kunimichi"
+   ],
+   "bucket": "Shinobi",
+   "character": "Tsume Kunimichi",
+   "color": "#83cecc",
+   "sort": 0,
+   "file": "actors/Tsume_Kunimichi_92_XP_Master_Saboteur_Rank_3__MuW0K9mF1N9oJfVy.json"
+  }
+ ]
+}

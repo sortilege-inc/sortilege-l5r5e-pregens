@@ -1,0 +1,1220 @@
+{
+ "folder": "YT8yxMEegHzlgMXB",
+ "name": "Ikoma no Hosokawa Ota 0 XP",
+ "type": "character",
+ "img": "modules/l5r5e-compendia-sortilege/images/portraits/ikoma_no_hosokawa_ota-portrait.png",
+ "prototypeToken": {
+  "actorLink": true,
+  "disposition": 1,
+  "bar1": {
+   "attribute": "fatigue"
+  },
+  "bar2": {
+   "attribute": "strife"
+  },
+  "name": "Ikoma no Hosokawa Ota 0 XP",
+  "displayName": 30,
+  "width": 1,
+  "height": 1,
+  "texture": {
+   "src": "modules/l5r5e-compendia-sortilege/images/tokens/ikoma_no_hosokawa_ota-token.png",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "lockRotation": true,
+  "rotation": 0,
+  "alpha": 1,
+  "displayBars": 40,
+  "light": {
+   "negative": false,
+   "priority": 0,
+   "alpha": 0.5,
+   "angle": 360,
+   "bright": 0,
+   "color": null,
+   "coloration": 1,
+   "dim": 0,
+   "attenuation": 0.5,
+   "luminosity": 0.5,
+   "saturation": 0,
+   "contrast": 0,
+   "shadows": 0,
+   "animation": {
+    "type": null,
+    "speed": 5,
+    "intensity": 5,
+    "reverse": false
+   },
+   "darkness": {
+    "min": 0,
+    "max": 1
+   }
+  },
+  "sight": {
+   "enabled": false,
+   "range": 0,
+   "angle": 360,
+   "visionMode": "basic",
+   "color": null,
+   "attenuation": 0.1,
+   "brightness": 0,
+   "saturation": 0,
+   "contrast": 0
+  },
+  "detectionModes": {},
+  "occludable": {
+   "radius": 0
+  },
+  "ring": {
+   "enabled": false,
+   "colors": {
+    "ring": null,
+    "background": null
+   },
+   "effects": 0,
+   "subject": {
+    "scale": 1,
+    "texture": null
+   }
+  },
+  "turnMarker": {
+   "mode": 1,
+   "animation": null,
+   "src": null,
+   "disposition": false
+  },
+  "movementAction": null,
+  "flags": {},
+  "randomImg": false,
+  "appendNumber": false,
+  "prependAdjective": false,
+  "depth": 1
+ },
+ "system": {
+  "soft_locked": true,
+  "identity": {
+   "age": "",
+   "clan": "Lion",
+   "family": "Yogo",
+   "female": null,
+   "marital_status": "",
+   "roles": "Bushi",
+   "school": "Yogo Penitent Order",
+   "school_rank": 1,
+   "school_curriculum_journal": {}
+  },
+  "rings": {
+   "earth": 2,
+   "air": 3,
+   "water": 1,
+   "fire": 1,
+   "void": 3
+  },
+  "notes": "",
+  "description": "",
+  "social": {
+   "honor": 45,
+   "glory": 39,
+   "status": 35,
+   "ninjo": "Ota longs to be a peacemaker, but does not have the liberty to contest his lord's framing nor leave his lord's service to serve others more in keeping with his desire.",
+   "giri": "Ikoma Kenji sought out the Yogo monastery. He has felt cornered by his beloved brother, who refuses to recognize reality, and Kenji needs an ally who can help him overcome his aversion to conflict; and if needed, initiate that conflict.",
+   "bushido_tenets": {
+    "paramount": "Compassion",
+    "less_significant": "Honor"
+   }
+  },
+  "skills": {
+   "artisan": {
+    "aesthetics": 0,
+    "composition": 1,
+    "design": 0,
+    "smithing": 0
+   },
+   "martial": {
+    "fitness": 1,
+    "melee": 1,
+    "ranged": 0,
+    "unarmed": 1,
+    "meditation": 1,
+    "tactics": 0
+   },
+   "scholar": {
+    "culture": 1,
+    "government": 0,
+    "medicine": 0,
+    "sentiment": 0,
+    "theology": 1
+   },
+   "social": {
+    "command": 0,
+    "courtesy": 0,
+    "games": 0,
+    "performance": 1
+   },
+   "trade": {
+    "commerce": 0,
+    "labor": 0,
+    "seafaring": 0,
+    "skulduggery": 1,
+    "survival": 0
+   }
+  },
+  "techniques": {
+   "kata": true,
+   "kiho": true,
+   "inversion": false,
+   "invocation": false,
+   "ritual": true,
+   "shuji": false,
+   "maho": false,
+   "ninjutsu": false,
+   "mantra": false,
+   "specificity": true
+  },
+  "endurance": 6,
+  "composure": 6,
+  "focus": 4,
+  "vigilance": 2,
+  "void_points": {
+   "max": 3,
+   "value": 3
+  },
+  "fatigue": {
+   "max": 6,
+   "value": 0
+  },
+  "strife": {
+   "max": 6,
+   "value": 0
+  },
+  "stance": "void",
+  "prepared": true,
+  "xp_total": 0,
+  "xp_spent": 0,
+  "xp_saved": 0,
+  "template": "core",
+  "twenty_questions": {
+   "template": "core",
+   "generated": true,
+   "step1": {
+    "clan": "Scorpion",
+    "ring": "air",
+    "skill": "skulduggery",
+    "social_status": 35
+   },
+   "step2": {
+    "family": "Yogo",
+    "ring": "void",
+    "skill1": "composition",
+    "skill2": "theology",
+    "wealth": 4,
+    "social_glory": 39
+   },
+   "step3": {
+    "school": "Yogo Penitent Order",
+    "roles": "Bushi",
+    "ring1": "void",
+    "ring2": "air",
+    "skill1": "fitness",
+    "skill2": "melee",
+    "skill3": "unarmed",
+    "skill4": "meditation",
+    "skill5": "none",
+    "allowed_techniques": {
+     "kata": true,
+     "kiho": true,
+     "inversion": false,
+     "invocation": false,
+     "ritual": true,
+     "shuji": false,
+     "maho": false,
+     "ninjutsu": false,
+     "mantra": false,
+     "specificity": true
+    },
+    "techniques": [
+     "L5RCoreKat000027",
+     "L5RCoreKih000008",
+     "L5RCoreRit000003",
+     "L5RCoreRit000005"
+    ],
+    "school_ability": [
+     "L5RCoreSch000091"
+    ],
+    "equipment": [
+     "L5RCoreWea000027",
+     "L5RCoreWea000035",
+     "L5RCoreWea000019",
+     "L5RCoreArm000009",
+     "L5RCoreIte000032"
+    ],
+    "social_honor": 40
+   },
+   "step4": {
+    "stand_out": "He is grounded and responds to provocations; he does not react to them. Responses are always considered, although sometimes that consideration occurs in fractions of a second.",
+    "ring": "earth"
+   },
+   "step5": {
+    "social_giri": "Ikoma Kenji sought out the Yogo monastery. He has felt cornered by his beloved brother, who refuses to recognize reality, and Kenji needs an ally who can help him overcome his aversion to conflict; and if needed, initiate that conflict."
+   },
+   "step6": {
+    "social_ninjo": "Ota longs to be a peacemaker, but does not have the liberty to contest his lord's framing nor leave his lord's service to serve others more in keeping with his desire."
+   },
+   "step7": {
+    "clan_relations": "Ota no longer has a relationship with the Scorpion clan; when the monastery released him into Ikoma Kenji's service, he was released fully. That doesn't mean the Scorpion won't try to reinsert themselves someday, however. But Kenji had the Hosokawa formally adopt Ota and bring him into the Lion clan legally.",
+    "skill": "culture",
+    "social_add_glory": 0
+   },
+   "step8": {
+    "bushido": "Ota believes that bushido is something that must be strived for, and must be failed at.",
+    "skill": "none",
+    "social_add_honor": 10,
+    "tenet_paramount": "Compassion",
+    "tenet_less_significant": "Honor",
+    "item": []
+   },
+   "step9": {
+    "success": "Upon grieving his greatest humiliation, Ota dedicated himself to the monastic arts, and found excellence in the practice of air kiho; even though he is no longer bound to the Yogo, he knows that should he even have need, he need but ask.",
+    "distinction": [
+     "L5RCoreDis000040"
+    ]
+   },
+   "step10": {
+    "difficulty": "The other Hosokawa do not know who Ota was, and the reasons for adoption were made opaque to them, but they cannot help but believe there is a darkness there, and sometimes they can see that darkness in Ota's eyes.",
+    "adversity": [
+     "L5RCoreAdv000046"
+    ]
+   },
+   "step11": {
+    "calms": "Ota delights in selecting and preparing a gift that is a perfect match for the recipient.",
+    "passion": [
+     "L5RCorePas000009"
+    ]
+   },
+   "step12": {
+    "worries": "Ota remembers burying his sister alive. He tries not to. But part of him cannot shake the horror, and he refuses to allow himself to be similarly trapped.",
+    "anxiety": [
+     "L5RCoreAnx000027"
+    ]
+   },
+   "step13": {
+    "most_learn": "Yogo Kitohime never asked what Ota had done. Never judged him. She knew his burden intimately, like he knew hers. She focused him on the present, not the past.",
+    "skill": "none",
+    "advantage": [
+     "L5RCoreDis000055"
+    ],
+    "disadvantage": []
+   },
+   "step14": {
+    "first_sight": "The bold golden sash with fine details in red thread that is tied to Ota's yari matches the sash he wears, and is unusual for the Hosokawa.",
+    "special_features": [
+     "L5RCoreIte000107"
+    ]
+   },
+   "step15": {
+    "stress": "Ota refuses to be touched by others while disregulated or in physiological distress."
+   },
+   "step16": {
+    "relations": "We discussed the Ikoma, Hosokawa and Yogo; the rest we can figure out in the story. The lion helm indicates his association with the Ikoma family.",
+    "item": [
+     "L5RCoreIte000084"
+    ]
+   },
+   "step17": {
+    "parents_pov": "As a child, Yogo Ota didn't get to see much theater, but what little he witnessed sparked his imagination and he and his sister made many of their own productions around their home.",
+    "skill": "performance",
+    "bond": []
+   },
+   "step18": {
+    "heritage_name": "Uncle Ota was an accomplished polearm master, who was delighted to teach what he could to his young namesake. He left on his lord's business when Ota was a young teen, and never returned.",
+    "heritage_1": 8,
+    "heritage_2": 3,
+    "heritage_item": [
+     "L5RCoreKat000054"
+    ],
+    "heritage_add_honor": -5,
+    "heritage_add_glory": 0,
+    "heritage_add_status": 0,
+    "skill": "none"
+   },
+   "step19": {
+    "firstname": "Ota"
+   },
+   "step20": {
+    "death": "Ota hopes that his death is fated before he is forced into doing something irreversible and terrible on behalf of his lord."
+   },
+   "autoCompleteListName": "step3.roles",
+   "autoCompleteListSelectedIndex": "1"
+  },
+  "zeni": 200,
+  "money": {
+   "koku": 0,
+   "bu": 0,
+   "zeni": 0
+  },
+  "is_afflicted_or_compromised": false
+ },
+ "items": [
+  {
+   "_id": "iaL78jjo2jYFYHTW",
+   "name": "Veiled Menace Style",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 181
+    },
+    "description": "<p><span class=\"fontstyle0\"><strong>Activation</strong>: </span><span class=\"fontstyle2\">When you make a <strong>Martial Arts [Melee]</strong> or <strong>Martial Arts [Unarmed] Attack</strong> action check using a weapon in a one-handed grip, you may spend (op)</span><span class=\"fontstyle3\"> </span><span class=\"fontstyle2\">in the following way:</span></p><p></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle0\"><strong>+</strong>: </span><span class=\"fontstyle2\">If you succeed, choose one unaware or Disoriented target of your action. That target suffers a critical strike with severity equal to your weapon’s deadliness plus 1 per (op)</span><span class=\"fontstyle3\"> </span><span class=\"fontstyle2\">spent this way beyond the first.</span> </p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "kata"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "QhJ6csGpdmDydWVy",
+   "name": "Air Fist",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kiho.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 183
+    },
+    "description": "<p><span class=\"fontstyle0\"><strong>Activation</strong>: </span><span class=\"fontstyle2\">As an Attack and Support action, you may make a </span><span class=\"fontstyle0\"><strong>TN 1 Martial Arts [Unarmed] (air) check</strong> </span><span class=\"fontstyle2\">to empower your unarmed blows. When you perform this action, you may choose one other character at range 0–1 as the target for the burst effect.</span></p><p></p><p><span class=\"fontstyle0\"><strong>Enhancement Effect</strong>: </span><span class=\"fontstyle2\">If you succeed, this kihō activates. While this kihō is active, treat the maximum range of your punch and kick unarmed weapon profiles (see page 237) as equal to your (air) Ring.</span></p><p></p><p><span class=\"fontstyle0\"><strong>Burst Effect</strong>: </span><span class=\"fontstyle2\">If you have two or more bonus successes, you deal physical damage to the target equal to your (air) Ring. Your target must make a </span><span class=\"fontstyle0\"><strong>TN 4 Fitness check ((earth) 5, (fire) 2)</strong> </span><span class=\"fontstyle2\">or be pushed 1 range band away from you, plus a number of range bands equal to their shortfall.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "skill": "unarmed",
+    "difficulty": "1",
+    "technique_type": "kiho"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "fGuePVCWOhqtHRSx",
+   "name": "Divination",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 212
+    },
+    "description": "<p><span class=\"fontstyle0\"><strong>Activation</strong>: </span><span class=\"fontstyle2\">As a downtime activity, you may make a </span><span class=\"fontstyle0\"><strong>TN 2 Theology (void) check</strong> </span><span class=\"fontstyle2\">targeting one character to see glimpses of their future.</span> </p><p><span class=\"fontstyle0\"><strong>Effects</strong>: </span><span class=\"fontstyle2\">If you succeed, choose one of the following omens that you see in the target’s near future:</span></p><p></p><p><span class=\"fontstyle0\"><strong>Omen of the Azure Dragon</strong>: </span><span class=\"fontstyle2\">The next time the target performs a check using a skill from the Artisan skill group this game session, the target adds a kept (ring)</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle2\">set to an (op)(st)</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle2\">result.</span></p><p><span class=\"fontstyle0\"><strong>Omen of the Black Tortoise</strong>: </span><span class=\"fontstyle2\">The next time the target performs a check using a skill from the Scholar skill group this game session, the target adds a kept (ring)</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle2\">set to an (op)(st)</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle2\">result.</span></p><p><span class=\"fontstyle0\"><strong>Omen of the White Tiger</strong>: </span><span class=\"fontstyle2\">The next time the target performs a check using a skill from the Martial skill group this game session, the target adds a kept (ring)</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle2\">set to an (op)(st)</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle2\">result.</span></p><p><span class=\"fontstyle0\"><strong>Omen of the Vermilion Bird</strong>: </span><span class=\"fontstyle2\">The next time the target performs a check using a skill from the Social skill group this game session, the target adds a kept (ring)</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle2\">set to an (op)(st)</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle2\">result.</span></p><p><span class=\"fontstyle0\"><strong>Omen of the Weaver and the Cowherd</strong>: </span><span class=\"fontstyle2\">The next time the target performs a check using a skill from the Trade skill group this game session, the target adds a kept (ring)</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle2\">set to an (op)(st)</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle2\">result.</span></p><p></p><p><span class=\"fontstyle2\">If you fail, the GM chooses one of the above omens instead. The target cannot receive another divination until the next game session.</span></p><p></p><h3><span class=\"fontstyle5\">New Opportunities</span></h3><p><span class=\"fontstyle4\">(op)</span><span class=\"fontstyle0\">: </span><span class=\"fontstyle2\">If you fail, an additional omen appears to you after the first. Choose one of the above omens in addition to the one the GM chose.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "theology",
+    "difficulty": "2",
+    "technique_type": "ritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "ZdxOBYQpll2QQ5OY",
+   "name": "Threshold Barrier",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 213
+    },
+    "description": "<p><span class=\"fontstyle0\"><strong>Activation</strong>: </span><span class=\"fontstyle2\">As a downtime activity, you may make a </span><span class=\"fontstyle0\"><strong>TN 2 Theology check</strong> </span><span class=\"fontstyle2\">using (air), (earth), (fire), (water), or (void) targeting a threshold, gate, or other entryway at range 0–1.</span></p><p></p><p><span class=\"fontstyle0\"><strong>Effects</strong>: </span><span class=\"fontstyle2\">If you succeed, the threshold is barred against a particular type of entity, based on the ring you chose, for one hour, plus additional hours equal to your bonus successes. When an entity of this type attempts to enter, it must resist with a </span><span class=\"fontstyle0\"><strong>TN 3 Meditation (void) check</strong> </span><span class=\"fontstyle2\">or be repelled by the spiritual barrier. Whether it succeeds or fails, you immediately become aware of its attempted entry. The particular type of being is based on the ring you chose, as follows:</span></p><p></p><ul><li><p><span class=\"fontstyle0\">(air): </span><span class=\"fontstyle2\">Ethereal Otherworldly beings such as spirits and ghosts.</span></p></li><li><p><span class=\"fontstyle0\">(earth): </span><span class=\"fontstyle2\">Living Tainted beings.</span></p></li><li><p><span class=\"fontstyle0\">(fire): </span><span class=\"fontstyle2\">Undead beings with corporeal form.</span></p></li><li><p><span class=\"fontstyle0\">(water): </span><span class=\"fontstyle2\">Wild animals.</span></p></li><li><p><span class=\"fontstyle0\">(void): </span><span class=\"fontstyle2\">Humans.</span></p></li></ul><p></p><h3><span class=\"fontstyle4\">New Opportunities</span></h3><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle0\">: </span><span class=\"fontstyle2\">Instead of protecting a threshold, you may protect the entirety of a sealed area that extends a number of range bands around you no greater than your bonus successes.</span></p><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle0\">: </span><span class=\"fontstyle2\">If any beings of the type you are attempting to seal the threshold against have passed through the threshold within the last twenty-four hours, you become aware of their passage.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "theology",
+    "difficulty": "2",
+    "technique_type": "ritual"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "ebQnuDUim3qYWhva",
+   "name": "Oath of Sacrifice",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "fields_of_victory",
+     "page": 81
+    },
+    "description": "<p><span class=\"fontstyle0\">Once per scene, after you defend against damage or suffer a critical strike, you may </span><span class=\"fontstyle2\"><strong>unleash</strong> </span><span class=\"fontstyle0\">your current kihō. Immediately end its enhancement effect, then resolve its burst effect as if you had a number of bonus successes equal to your school rank plus the amount of fatigue you received or the severity of the critical strike you suffered. If the burst effect has one or more targets, you may choose appropriate targets in range.</span></p><p><span class=\"fontstyle0\">If you have used this ability already this scene, you may spend 1 Void point to use it again this scene (you can do this any number of times, provided you have Void points to spend).</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "school_ability"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "uO8CGCAA7hMYcPqE",
+   "name": "Yari",
+   "type": "weapon",
+   "sort": 2700000,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/bo.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "235"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "3",
+    "zeni": "5 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000011",
+      "name": "Wargear"
+     }
+    ],
+    "category": "Polearms",
+    "skill": "melee",
+    "readied": false,
+    "range": "2",
+    "damage": "5",
+    "deadliness": "3",
+    "grip_1": "N/A",
+    "grip_2": ""
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "gexmHWWXy4v7uzOo",
+   "name": "Shuriken",
+   "type": "weapon",
+   "sort": 3500000,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/kusarigama.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "237"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "6",
+    "zeni": "1 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000005",
+      "name": "Concealable"
+     }
+    ],
+    "category": "Specialist Weapons",
+    "skill": "unarmed",
+    "readied": false,
+    "range": "",
+    "damage": "2",
+    "deadliness": "4",
+    "grip_1": "(stab or slash): -, (thrown): Martial Arts [Ranged], Range 1-3",
+    "grip_2": "N/A"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "I6a8Bhpfv9Z34kpP",
+   "name": "Knife",
+   "type": "weapon",
+   "sort": 1900000,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/knife.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "234"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "1",
+    "zeni": "1 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     },
+     {
+      "id": "L5RCorePro000005",
+      "name": "Concealable"
+     },
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ],
+    "category": "Hand Weapons",
+    "skill": "melee",
+    "readied": false,
+    "range": "",
+    "damage": "2",
+    "deadliness": "4",
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "9tUjD3z2PaeS1dHD",
+   "name": "Common Clothes",
+   "type": "armor",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": "239"
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": "1",
+    "rarity": "1",
+    "zeni": "1 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ],
+    "armor": {
+     "physical": "1",
+     "supernatural": ""
+    }
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "5ggzvbK5TALhfHrj",
+   "name": "Traveling pack",
+   "type": "item",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 245
+    },
+    "description": "<p><span class=\"fontstyle0\">When a character’s starting outfit refers to a traveling pack, it refers to an assortment of items carried within a </span><span class=\"fontstyle2\">furoshiki</span><span class=\"fontstyle0\">, or decorative wrapping cloth.</span></p><p><span class=\"fontstyle0\">Traveling packs consist of the following:</span></p><p></p><p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any <strong>three</strong> other items of the player’s choice that are rarity 4 or lower.</span></p><p></p><h3>GM NOTE: </h3><p>Please add the 3 other items separately into your outfit/inventory. <br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "1",
+    "zeni": "10 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ]
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "FKkIgozHEzXu3W2D",
+   "name": "Support of the Yogo",
+   "type": "peculiarity",
+   "sort": 4100000,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 110
+    },
+    "description": "<ul><li><p><span class=\"fontstyle0\">You have proven yourself to a particular group, which is willing to help you when doing so will not damage its reputation. Its members will offer you their hospitality, including meals, a place to rest, and medical attention if they have a healer. They will also grant you access to their other facilities, such as libraries, smithies, or stables. Confer with the GM to select a campaign-appropriate group when choosing this advantage.</span></p><p></p></li><li><p><span class=\"fontstyle0\">When performing a check to interact with the members of the chosen group that relies on your rapport (such as a Command [Water] check to issue them orders or a Performance [Water] check to cause an audience of them to desire something), you may reroll up to two dice.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "water",
+    "peculiarity_type": "distinction",
+    "types": "Interpersonal"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "xWWSIBWebachE6i5",
+   "name": "Whispers of Doom",
+   "type": "peculiarity",
+   "sort": 5800000,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 129
+    },
+    "description": "<ul><li><p><span class=\"fontstyle0\">You are well-known, but not for the right reasons. Characters who do not know you personally always assume that those around you will perish or meet bad ends, even if you survive to spread your ill fortune further.</span></p><p></p></li><li><p><span class=\"fontstyle0\">When you make a check to dispel someone’s false preconceptions (such as a Courtesy [Void] check to get someone to question their decision or a Command [Void] check to get someone to see the pointlessness of their position), you must choose and reroll two dice containing (su)</span><span class=\"fontstyle3\"> </span><span class=\"fontstyle0\">or (ex). After resolving the check, if you failed, you gain 1 Void point.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "peculiarity_type": "adversity",
+    "types": "Infamy, Interpersonal"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "h0eEKcQUBnalbdQY",
+   "name": "Generosity",
+   "type": "peculiarity",
+   "sort": 900000,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 113
+    },
+    "description": "<ul><li><p><span class=\"fontstyle0\">You can always identify a proper gift for a particular person that does not risk giving offense or slighting them publicly.</span></p><p></p></li><li><p><span class=\"fontstyle0\">After performing a check to acquire or give a gift (such as a Design [Water] check to select an item that complements someone’s wardrobe or a Commerce [Water] check to find and select a gift at a market), you remove 3 strife.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "water",
+    "peculiarity_type": "passion",
+    "types": "Interpersonal"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "m7WWBK3cshFL00r6",
+   "name": "Claustrophobia",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "emerald_empire",
+     "page": 247
+    },
+    "description": "<ul><li><p><span class=\"fontstyle0\">You are intensely afraid of being enclosed in a small space or a space without an easy exit. You avoid entering such places if at all possible, and you feel anxious and distracted while in such a place.</span></p><p></p></li><li><p><span class=\"fontstyle0\">After making a check that requires to you enter an enclosed space (such as a Fitness [Water] check to crawl through a narrow passage or a Survival [Water] check to investigate a cave), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "water",
+    "peculiarity_type": "anxiety",
+    "types": "Mental"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "lDkMgIXp4iCXturx",
+   "name": "Ardent Leader",
+   "type": "peculiarity",
+   "sort": 5600000,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "path_of_waves",
+     "page": 68
+    },
+    "description": "<ul><li><p><span class=\"fontstyle3\" style=\"color:rgb(36,32,33);\">You speak with a confidence that most find hard to ignore, and people are more likely to hear what you have to say, even if they are of a higher status than you. This does not mean that those who hear you will heed you, however, and your words may still have undesired consequences.</span></p><p></p></li><li><p><span class=\"fontstyle3\" style=\"color:rgb(36,32,33);\">When you make a check for which your ardent leadership applies (such as a Tactics [Fire] check to deploy a group of peasants or a Courtesy [Fire] check to excite someone into believing in your plan), </span><span class=\"fontstyle0\">you may reroll up to two dice.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "fire",
+    "peculiarity_type": "distinction",
+    "types": "Interpersonal, Mental"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "Hy3wEVMOsHRw8Loz",
+   "name": "Golden Sash",
+   "type": "item",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 236
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "1",
+    "zeni": "0",
+    "properties": []
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "bzzDJd2PkVEBuDbA",
+   "name": "Animal Helm",
+   "type": "item",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/army_cohort.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "fields_of_victory",
+     "page": 90
+    },
+    "description": "<p><span class=\"fontstyle0\">When a character who wears an animal helm while leading an army or cohort in a mass battle is removed via the Cut Off the Head strategic objective, reduce the panic the cohort receives by half (rounding up).</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "5",
+    "zeni": "1 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000011",
+      "name": "Wargear"
+     }
+    ]
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "0yNCqK6UhySiXpbL",
+   "name": "Snapping Branch Strike",
+   "type": "technique",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "path_of_waves",
+     "page": 90
+    },
+    "description": "<p><span class=\"fontstyle2\"><strong>Activation</strong>: </span><span class=\"fontstyle3\">As an Attack and Support action using a readied blunt weapon or polearm, you may make a </span><span class=\"fontstyle2\"><strong>TN 3 Fitness (earth) check</strong> </span><span class=\"fontstyle3\">targeting one character at range 0–1.</span></p><p></p><p><span class=\"fontstyle2\"><strong>Effects</strong>: </span><span class=\"fontstyle3\">If you succeed, your target suffers physical damage equal to 5 plus your bonus successes with deadliness 2.</span></p><p></p><h3><span class=\"fontstyle4\">New Opportunities</span></h3><p><span class=\"fontstyle5\">(op)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Your target must resist with a </span><span class=\"fontstyle2\"><strong>TN 4 Fitness check ((air) 2, (water) 5)</strong> </span><span class=\"fontstyle3\">or be pushed 1 range band away from you per </span><span class=\"fontstyle5\">(op)(op) </span><span class=\"fontstyle3\">spent this way.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "earth",
+    "skill": "fitness",
+    "difficulty": "3",
+    "technique_type": "kata"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "_id": "EPQQWwLAAi0Y0p7v",
+   "name": "Dark Secret",
+   "type": "peculiarity",
+   "sort": 100001,
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.14.0",
+    "lastModifiedBy": "7vKCnwOtrdD7lBip",
+    "createdTime": 1787691476713,
+    "modifiedTime": 1787691476713
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 132
+    },
+    "description": "<ul><li><p><span class=\"fontstyle0\">You have a dark secret that, if exposed, could bring ruin upon your house and disgrace your ancestors and descendants alike. If the details of this secret become public, your glory value decreases dramatically, as if you had lost staked glory (by 10 to 20). Depending on the secret, your status value might also decrease considerably (by 5 to 10), as if you had lost staked status.</span></p><p></p></li><li><p><span class=\"fontstyle0\">After performing a check to assert your will over yourself or others (such as a Command [Void] check to order troops to fight to the bitter end or a Meditation [Void] check to find inner peace), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "peculiarity_type": "anxiety",
+    "types": "Interpersonal"
+   },
+   "folder": null,
+   "ownership": {
+    "default": 0
+   }
+  }
+ ],
+ "effects": [],
+ "ownership": {
+  "default": 0,
+  "7vKCnwOtrdD7lBip": 3
+ },
+ "flags": {},
+ "_stats": {
+  "compendiumSource": "Compendium.l5r5e-compendia-sortilege.pregens-l5r-sortilege.Actor.87l78AncRTk6DMWJ",
+  "duplicateSource": null,
+  "exportSource": null,
+  "coreVersion": "14.365",
+  "systemId": "l5r5e",
+  "systemVersion": "1.14.0",
+  "createdTime": 1787691476713,
+  "modifiedTime": 1787691481037,
+  "lastModifiedBy": "7vKCnwOtrdD7lBip"
+ },
+ "_id": "87l78AncRTk6DMWJ",
+ "sort": 100000
+}

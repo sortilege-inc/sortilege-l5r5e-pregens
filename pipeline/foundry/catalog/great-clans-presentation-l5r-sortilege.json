@@ -1,0 +1,688 @@
+[
+ {
+  "name": "The Crab Clan",
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: The Crab Clan",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/clans/crab.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "rR424cJUF2b8KIHG",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "The Crab Clan",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>THE CRAB CLAN</h1>\n<p><em><strong>“Courage. Duty. Sacrifice.”</strong></em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<iframe src=\"https://www.youtube-nocookie.com/embed/YZm6Zjwzehg\" width=\"560\" height=\"315\" sandbox=\"allow-scripts allow-forms\"></iframe>\n<table style=\"height:155px;width:80%\" border=\"0\">\n<tbody>\n<tr style=\"height:155px\">\n<td style=\"width:100%;height:155px;text-align:justify\">\n<p>The Crab stand out in any gathering of samurai, given a wide berth both for their stature and for their gruff, brusque manners.</p>\n<p>The defenders of the Empire have little time or inclination to practice social niceties; they stand guard upon the Kaiu Wall, an enduring symbol of tenacity against the horrors of the Shadowlands.</p>\n<p>Often, the members of this clan grumble that their duty is taken for granted, that their fine and honorable samurai succumb to the horrifying Taint while the effete and the careless play at games in an Empire kept safe by the spilled blood of the Crab. .</p>\n</td>\n</tr>\n</tbody>\n</table>\n\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>CRAB CLAN FAMILIES</h1>\n<p>(Core p.49)</p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Hida Family</h2>\n<p style=\"text-align:justify\"><em>The Hida family stands guard against the Shadowlands, its task an eternal vigil to keep the Empire safe from the dark forces of Jigoku. Like the family’s founder, the Kami Hida, they are large and strong, tough and enduring, with little patience for the weaknesses of others. Their harsh duty makes the Hida exceedingly pragmatic, with little time for the polite fictions of court. They bitterly bear the mocking condescension concerning their manners and dress from the clans they shield.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Hiruma Family</h2>\n<p style=\"text-align:justify\"><em>The Hiruma are the eyes and ears of the Crab beyond the Wall, warning of attacks and staging spoiling raids on the unending hordes, a desperate and unrewarding task. The warnings facilitated by the skills of the Hiruma allow the Crab to respond quickly to any threat. Due to the ceaseless danger of the Shadowlands, the Hiruma rotate between service beyond the Wall and service inside the Empire, where they function as scouts, messengers, and yōjimbō (bodyguards). Slender and quick, the Hiruma are a contrast to the staunch Hida, relying instead on speed and precision.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Kaiu Family</h2>\n<p style=\"text-align:justify\"><em>Monuments to the skill of the Kaiu are everywhere in the Crab lands, from the vast Kaiu Wall itself to the armor and weapons used by those who stand guard over it. The Kaiu are responsible for the road network supporting the fortifications, the siege engines that crush and shatter the Shadowlands forces, and defensive works spread across the interior of the Crab holdings. There are very few problems that the Kaiu will not try to solve with applied engineering.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Kuni Family</h2>\n<p style=\"text-align:justify\"><em>No shugenja family is more feared in the Empire than the Kuni, who root out any sign of corruption. The Kuni use all means at their disposal in their hunt; even Hida samurai sometimes pale at their methods. The Kuni are willing to delve into the secrets of the Shadowlands using study, observation, and even dissection, even though such close contact with its dark creatures risks their very souls.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Yasuki Family</h2>\n<p style=\"text-align:justify\"><em>The slim and loquacious Yasuki do not fit the Crab stereotype, but they provide a vital service to their clan all the same. The first masters of markets in the Empire, the Yasuki use the tools of trade and industry to keep the Crab armies well equipped and fed, even if it means the occasional shady deal. The Yasuki trade network extends throughout the Empire; members of this family can be found just about anywhere, looking for the next arrangement.</em></p>\n</td>\n</tr>\n</tbody>\n</table>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "DTILJpPkPAptuCiq",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147642493,
+   "modifiedTime": 1761147642493,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "5EjAxXNjfRVOga2R",
+  "sort": 0
+ },
+ {
+  "name": "The Crane Clan",
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: The Crane Clan",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/clans/crane.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "wlyk8g3uXGgPEj0b",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "The Crane Clan",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>THE CRANE CLAN</h1>\n<p><em><strong>“There is a proper technique for all things.”</strong></em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<iframe src=\"https://www.youtube-nocookie.com/embed/w3sLSbzrQrM\" width=\"560\" height=\"315\" sandbox=\"allow-scripts allow-forms\"></iframe>\n<table style=\"height:155px;width:80%\" border=\"0\">\n<tbody>\n<tr style=\"height:155px\">\n<td style=\"width:100%;height:155px;text-align:justify\">\n<p>The Crane are the Left Hand of the Emperor, in service as the political aides to the throne.</p>\n<p>It’s traditional for the Hantei to choose a samurai from the Doji family as their spouse, more Emerald Champions have been Kakita than any other family, and the samurai of the Daidoji family serve as some of the finest shock troops in the Emerald Empire.</p>\n<p>Yet the Crane make their greatest contributions in culture: many of the finest poets and craftspeople hail from their academies, and their duelists have few rivals.</p>\n<p>The Crane are the masters of court, with the wealth and status to prove it.</p>\n</td>\n</tr>\n</tbody>\n</table>\n\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>CRANE CLAN FAMILIES</h1>\n<p>(Core p.50)</p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Asahina Family</h2>\n<p style=\"text-align:justify\"><em>The Asahina seek harmony and peace in all things, embodying a philosophy of compassion and pacifism that sets them apart even from their fellow Crane. Through art and prayer, they seek to calm and soothe the world around them and spread peace and accord throughout the Empire. The Asahina know that only through sacrifice can true peace be purchased, and it is a price they will pay to foster a better Empire.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Daidoji Family</h2>\n<p style=\"text-align:justify\"><em>The Daidoji are practical and hardworking Crane who compose the core of the clan’s standing military. Devoted to serving their clan, the Daidoji are its under-appreciated foundation—from the Iron Warriors who comprise the foundation of the Crane Clan’s armies, to the wary yōjimbō protecting the courtiers of the Doji, to the Daidoji Trading Council responsible for providing the raw materials and wealth for Crane arts. The selfless efforts of the Daidoji are fundamental to the defense of the Crane and the advancement of its goals.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Doji Family</h2>\n<p style=\"text-align:justify\"><em>The descendants of the Kami Doji have embodied the courtly arts and refined culture of the Empire since its dawn. No major court is complete without its contingent of Doji spreading art, friendship, and—until very recently—generous gifts. For courtly news and rumor, the Doji communication network is unrivaled. This network aids the Doji in keeping ahead of their rivals as much as their mastery of etiquette and art does. Rare are those who can afford to offend the Doji; rarer still are those who do so more than once.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Kakita Family</h2>\n<p style=\"text-align:justify\"><em>While the Doji seek excellence in all things, the Kakita tend to focus on a single skill, which they strive to master thoroughly. Whether this skill is the art of the sword or of the brush, they pursue it with a singular focus. The graceful Kakita usually exhibit the beauty of the Crane in a more athletic manner than do their Doji cousins. They are renowned as some of the finest duelists in the Empire, and graduates from their academy defend the honor of the Crane with sharp finality.</em></p>\n</td>\n</tr>\n</tbody>\n</table>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "uMFEULmwa4U1eebs",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147642493,
+   "modifiedTime": 1761147642493,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "a8EUmtMYDiSAl6u7",
+  "sort": 0
+ },
+ {
+  "name": "The Dragon Clan",
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: The Dragon Clan",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/clans/dragon.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "6LTOD1l7w54Hs026",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "The Dragon Clan",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>THE DRAGON CLAN</h1>\n<p><em><strong>“Find your own path.”</strong></em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<iframe src=\"https://www.youtube-nocookie.com/embed/qL36C_UbIzo\" width=\"560\" height=\"315\" sandbox=\"allow-scripts allow-forms\"></iframe>\n<table style=\"height:155px;width:80%\" border=\"0\">\n<tbody>\n<tr style=\"height:155px\">\n<td style=\"width:100%;height:155px;text-align:justify\">\n<p>For a thousand years, the Dragon Clan has watched over the others, recording the history of Rokugan. Aloof and enigmatic, the armies of the Dragon march only rarely, intervening in the clashes of the Great Clans for seemingly inscrutable reasons.</p>\n<p>From the strange and powerful Tattooed Monks of Togashi to the investigators who challenge the system of justice in the Empire, the Dragon seek to ensure the Empire does not become too self-focused and solipsistic.</p>\n<p>It falls to them to ensure that the future of the Empire transpires in an orderly and elegant manner</p>\n</td>\n</tr>\n</tbody>\n</table>\n\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>DRAGON CLAN FAMILIES</h1>\n<p>(Core p.51)</p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Agasha Family</h2>\n<p style=\"text-align:justify\"><em>The Agasha are ever evolving, like the elements in nature. Although founded by a pacifist, many of their techniques are invaluable in a fight. Once devoted to mysticism, they now combine it with the practical arts. Yet, perhaps change is only to be expected among the families of the Dragon. The Agasha have delved deeply into alchemy, metallurgy, and medicine. They blend the practical effects of chemistry and construction with the mystical effects of calling the spirits. It is a unique approach, and one that leads to the occasional spectacular disaster. However, they are rarely disheartened, as they often learn more from failure than they do from success.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Kitsuki Family</h2>\n<p style=\"text-align:justify\"><em>As befits the odd nature of their clan, even the courtiers of the Dragon are unusual: the samurai of the Kitsuki family are most well-known for their keen perception and their investigative techniques that rely upon physical evidence. They bring to the physical world the same attention to detail that the Agasha bring to spiritual matters. A small family, they serve the Empire as magistrates and the Dragon Clan as courtiers. In both roles, their eye for deception and knack for finding the truth serve them well.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Mirumoto Family</h2>\n<p style=\"text-align:justify\"><em>The Mirumoto samurai are renowned for their unique two-sword style, called niten or “Two-Heavens,” but they are more than mere warriors. The Mirumoto oversee the management and duties of the Dragon Clan, allowing the Togashi monks to pursue their eccentric paths on the way to Enlightenment. This makes the Mirumoto surprisingly practical and down-to-earth, willing to step in and help their region’s peasants when needed. As the largest family of their clan, the Mirumoto are the samurai whom most think of when they think of the Dragon, and they are the Dragon most often met outside of their lands.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Togashi Order</h2>\n<p style=\"text-align:justify\"><em>More a monastic order than a true family, the Togashi Order welcomes anyone willing to embrace their teachings and accomplish the challenges required to join, the first of which is finding one of the Togashi monasteries hidden high in the mountains. In truth, many of those able to find their way to the order were members of the order in a past life, returning to continue their training and spiritual journey under the guidance of the Dragon Clan Champion. To the rest of the Empire, the order is known for skill with kōan (contemplative riddles) and the martial arts, as well as for the beautiful and mystical tattoos that grant them supernatural abilities.</em></p>\n</td>\n</tr>\n</tbody>\n</table>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "XLV5HyNZzAe51V2t",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147642493,
+   "modifiedTime": 1761147642493,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "qwoIHMkdECO5ddOS",
+  "sort": 0
+ },
+ {
+  "name": "The Lion Clan",
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: The Lion Clan",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/clans/lion.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "Z8wfBDMY5ryBDhqN",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "The Lion Clan",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>THE LION CLAN</h1>\n<p><em><strong>“For my ancestors!”</strong></em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<iframe src=\"https://www.youtube-nocookie.com/embed/8dBF8gSyod4\" width=\"560\" height=\"315\" sandbox=\"allow-scripts allow-forms\"></iframe>\n<table style=\"height:155px;width:80%\" border=\"0\">\n<tbody>\n<tr style=\"height:155px\">\n<td style=\"width:100%;height:155px;text-align:justify\">\n<p>To be a samurai is to live and breathe Bushidō, but to be a Lion is to exemplify it to all others. The Lion’s roar heralds the call to battle and honor.</p>\n<p>For centuries, the Lion have dominated the military tactics and strategy of the Empire, pioneering new techniques and battle methods that other clans take years to adopt.</p>\n<p>Now, this clan’s samurai seek to apply the wisdom of their ancestors to the trials of the modern era.</p>\n</td>\n</tr>\n</tbody>\n</table>\n\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>LION CLAN FAMILIES</h1>\n<p>(Core p.52)</p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Akodo Family</h2>\n<p style=\"text-align:justify\"><em>The Akodo are the master strategists and tacticians of the Empire; no one understands war better. The Akodo embody the discipline and control of the Lion Clan, always weighing several options in order to strike at the perfect time. They are warrior-scholars seeking to understand war and battle in all its complexity; no part of the martial disciplines is too small for their study and no part too large to evade their understanding. “No army led by an Akodo has ever known defeat” is a well-known adage, and no Akodo will allow it to become untrue.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Ikoma Family</h2>\n<p style=\"text-align:justify\"><em>The Ikoma are the finest storytellers in the Empire. Their proud voices extol the virtues of Bushidō and, thus, the Lion Clan. They serve as the memory not only of the Lion Clan, but of the Empire as a whole; no fact is considered historical truth if it is not part of the Ikoma histories. The Ikoma courtiers are the expressive face of the Lion; their bards openly show the emotion Lion samurai must hide. Boasts, tears, and stories are the tools the Ikoma use to advance the Lion in the courts.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Kitsu Family</h2>\n<p style=\"text-align:justify\"><em>All samurai venerate their ancestors, but the Kitsu bloodline, which mingled with otherworldly beings, produces members who can part the veil to speak with them. The Kitsu are known for being traditional and conservative, even among the Lion. All Kitsu answer to the ancestors. Those without the talent to speak to spirits keep genealogies, tend to the tombs and shrines, and otherwise honor the noble dead.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Matsu Family</h2>\n<p style=\"text-align:justify\"><em>The Matsu are the courageous, implacable heart of the Lion. As the largest family in the Empire, the Matsu fill the ranks of the vast Lion armies. Founded by Lady Matsu, one of the greatest of all samurai in the early Empire, they retain many matriarchal traditions in her honor, including several elite military units that are exclusively female. The Matsu exemplify the harsh militarism of Bushidō. Due to their numbers, they are the Lion most well-known in popular culture. Fiery, honorable, unrelenting: while the stereotype of the Lion exaggerates these traits, they are all part of the Matsu character.</em></p>\n</td>\n</tr>\n</tbody>\n</table>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "yHUoHnQly0575b8q",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147642493,
+   "modifiedTime": 1761147642493,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dZs1sgG2rHpjLuB1",
+  "sort": 0
+ },
+ {
+  "name": "The Phoenix Clan",
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: The Phoenix Clan",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "0M0dAbeaw0Hd2sn8",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "The Phoenix Clan",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>THE PHOENIX CLAN</h1>\n<p><em><strong>“Master the elements and be reborn.”</strong></em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<iframe src=\"https://www.youtube-nocookie.com/embed/1HnJW4MJkkI\" width=\"560\" height=\"315\" sandbox=\"allow-scripts allow-forms\"></iframe>\n<table style=\"height:155px;width:80%\" border=\"0\">\n<tbody>\n<tr style=\"height:155px\">\n<td style=\"width:100%;height:155px;text-align:justify\">\n<p>Other clans guard the Empire’s borders, even the Empire’s future, but the Phoenix guard the Empire’s soul.</p>\n<p>It is the duty of the Phoenix to keep safe the myriad religious paths of the Empire, defining them and arbitrating their differences.</p>\n<p>Scholars of the Tao and servants of the spirits are found among the Phoenix’s ranks more than in any other clan; the wisdom the Phoenix have gleaned from both traditions has led them to foster peace and understanding among the other clans, even if it means sacrificing themselves in the process.</p>\n</td>\n</tr>\n</tbody>\n</table>\n\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>PHOENIX CLAN FAMILIES</h1>\n<p>(Core p.53)</p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Asako Family</h2>\n<p style=\"text-align:justify\"><em>The Asako are a quiet family, viewed as being content to follow their scholarly and philosophical pursuits while the Isawa drive the goals of the Phoenix. The Asako prize knowledge, but they prize wisdom even more, and they use their studies to advance their spiritual evolution as well as their political agendas. The Asako serve as courtiers for the Phoenix, and they are much in demand as court scholars and tutors across the Empire.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Isawa Family</h2>\n<p style=\"text-align:justify\"><em>The Elemental Masters who sit on the Council of Five are the true rulers of the Phoenix, and these masters are almost always drawn from the Isawa. As one of the oldest shugenja families in the Empire, the Isawa have had centuries to learn to commune with the spirits and the most effective ways to request their blessings. Some might confuse authority with arrogance, but at heart, they are pious and dutiful, devoted to ensuring harmony and balance.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Kaito Family</h2>\n<p style=\"text-align:justify\"><em>The small Kaito family has been given the task of safeguarding the many shrines scattered across the Phoenix holdings, from small altars sheltered by a single tree to massive sanctuaries. To fulfill their responsibilities, the Kaito have mastered the use of charmed arrows and prayers to protect the shrines from spiritual foes, and practical archery to fend off more mortal dangers. The Kaito are rarely seen outside the Phoenix lands, as they have so many tasks within, but they occasionally make pilgrimages to visit other shrines.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Shiba Family</h2>\n<p style=\"text-align:justify\"><em>The Shiba family descends from the Kami Shiba and provides the Phoenix with a champion, but it bent the knee to the Isawa family early in its history and has dutifully served it ever since. The Shiba focus on keeping the Phoenix Clan safe and rely first and foremost on diplomacy before resorting to force. They are expected to be learned in scholarly ways as well as in the warrior arts, and they understand the shugenja they serve better than do most bushi families.</em></p>\n</td>\n</tr>\n</tbody>\n</table>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "JbGd0pZZI7BOW1tb",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147642493,
+   "modifiedTime": 1761147642493,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "QGAxskqgM6cDNSXh",
+  "sort": 0
+ },
+ {
+  "name": "The Scorpion Clan",
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: The Scorpion Clan",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "KQYkCDOs4DWZDdfg",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "The Scorpion Clan",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>THE SCORPION CLAN</h1>\n<p><em><strong>“I will be your villain, Hantei.”</strong></em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<iframe src=\"https://www.youtube-nocookie.com/embed/mN_RDMtT28w\" width=\"560\" height=\"315\" sandbox=\"allow-scripts allow-forms\"></iframe>\n<table style=\"height:155px;width:80%\" border=\"0\">\n<tbody>\n<tr style=\"height:155px\">\n<td style=\"width:100%;height:155px;text-align:justify\">\n<p>From behind their masks and veils, the Scorpion smile grimly at the performance of their duty, for it is their sacrifice to be hated even as they execute it perfectly.</p>\n<p>What other clan could perform the role of loyal villain? It was the Scorpion Kami’s contention that enemies need not be external to the Empire, and thus, the Scorpion fight fire with fire.</p>\n<p>They keep all clans united in hatred against them, yet divided so that no one clan can challenge the line to whom they owe undying loyalty: the Hantei. </p>\n</td>\n</tr>\n</tbody>\n</table>\n\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>SCORPION CLAN FAMILIES</h1>\n<p>(Core p.54)</p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Bayushi Family</h2>\n<p style=\"text-align:justify\"><em>The motto of the Scorpion Clan’s primary lineage, “I can swim,” comes from a cautionary tale about their treacherous nature. Charming, ruthless, deceitful, and vicious, the Bayushi appear as the villains they claim to be. They are the sinister side of power, using the arts of blackmail, poison, and seduction to control the enemies of the Empire, all while dancing a fine line to avoid falling to true villainy themselves. For the Bayushi, the means are justified by the ends: a stable and prosperous Empire.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Shosuro Family</h2>\n<p style=\"text-align:justify\"><em>When the Shosuro family is known to outsiders, it is for their acting talent and theatrical skills. Little does the Empire realize how fully the Shosuro embrace their roles; many of the finest Scorpion spies are Shosuro living as other people among the clans. While they are master entertainers, they are often asked to turn their skills in acrobatics, acting, and other arts to darker and bloodier ends for their clan.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Soshi Family</h2>\n<p style=\"text-align:justify\"><em>The Soshi are often overlooked, and that is how they prefer things to be. They are most effective when unseen, offering up prayers in silence for the Scorpion. The Soshi live for subtlety: the gentle nudge, the whispered word that sets everything into motion. Sometimes this comes at a price, however, for their preference for acting at the perfect moment often makes them exceedingly cautious and prone to excessive planning and information gathering.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Yogo Family</h2>\n<p style=\"text-align:justify\"><em>The Yogo family is the most unfortunate family in the Empire: each scion of their line is cursed to betray the one they love the most. They try to ignore the curse by burying themselves in their work and devotion to duty above all. To try to lift this curse, they have relentlessly studied prayers of protection and especially wards, through which they have mastered many techniques to identify and fight evil magic. The Yogo are the most diligent and unappreciated servants of the Scorpion.</em></p>\n</td>\n</tr>\n</tbody>\n</table>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "IVtGiIE0UZ38Z1sY",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147642493,
+   "modifiedTime": 1761147642493,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RDwzWfdBStPRbaI8",
+  "sort": 0
+ },
+ {
+  "name": "The Unicorn Clan",
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: The Unicorn Clan",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "fpv6HUj2DfbMmLR1",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "The Unicorn Clan",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>THE UNICORN CLAN</h1>\n<p><em><strong>“One cannot capture the wind.”</strong></em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<iframe src=\"https://www.youtube-nocookie.com/embed/2uuYUgfSBzE\" width=\"560\" height=\"315\" sandbox=\"allow-scripts allow-forms\"></iframe>\n<table style=\"height:155px;width:80%\" border=\"0\">\n<tbody>\n<tr style=\"height:155px\">\n<td style=\"width:100%;height:155px;text-align:justify\">\n<p>The Clan of the Wind spent hundreds of years outside the Empire, returning in a glorious cavalry charge that shook the other clans to their core.</p>\n<p>The barbaric ways they adopted in their exile continue to shock and disgust the other clans, yet the Unicorn remain fierce in their duty and unwavering in their honor.</p>\n<p>Of all the clans, they are best suited to uncovering foreign manipulation and infiltration, for they faced innumerable horrors and traitors in their wandering years.</p>\n</td>\n</tr>\n</tbody>\n</table>\n\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h1>UNICORN CLAN FAMILIES</h1>\n<p>(Core p.55)</p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Ide Family</h2>\n<p style=\"text-align:justify\"><em>The Ide tirelessly serve as diplomats, couriers, and merchants across Rokugan. While they are Unicorn through and through, the Ide have learned to blend their foreign customs with the traditions of the Empire to better treat with their cousins. The Ide work to radiate calm and competence, seeking to build alliances and friendships throughout the Empire.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Iuchi Family</h2>\n<p style=\"text-align:justify\"><em>The Iuchi are a priestly family, whose practices stretch back to the time before the Unicorn returned to Rokugan. Iuchi shugenja practice a unique form of sorcery known as meishōdō, the art of using talismans and names to manipulate the spirits. Their history makes them more open to exploring different mystical paths than are those bound by centuries of tradition.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Moto Family</h2>\n<p style=\"text-align:justify\"><em>The Moto are considered to be the least civilized of the Unicorn families by the standards of the Empire. From their stocky builds and the heavy beards of their men, to their style of dress, the Moto seem foreign and strange to Rokugani samurai. Indeed, the Moto have no use for the soft trappings of what some call civilization; they are nomadic warriors seeking the next battle, and they embrace that harsh life. While their heritage and culture are often questioned in Rokugan, their bravery is not. </em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Shinjo Family</h2>\n<p style=\"text-align:justify\"><em>The Shinjo are the core of the Unicorn, the clan of explorers who followed their Kami, Shinjo, into the dangerous world beyond the Empire. This love of discovery has not left the Shinjo, and they travel widely when they can. They administrate and lead the Unicorn, working to keep all of the parts of the clan yoked together. Master equestrians and scouts, the Shinjo pursue peace, but never flinch from the prospect of war.</em></p>\n</td>\n</tr>\n</tbody>\n</table>\n<table style=\"margin-left:auto;margin-right:auto;width:80%;height:24px\" border=\"0\">\n<tbody>\n<tr>\n<td style=\"width:100%;text-align:center\">\n<h2 style=\"text-align:justify\">The Utaku Family</h2>\n<p style=\"text-align:justify\"><em>No other Unicorn family has so deeply and spiritually embraced Bushidō as the Utaku, who embody it in their elite Battle Maidens, the Shiotome. The matriarchal Utaku allow only their women to ride to war; the Utaku men serve afoot as infantry and in the stables and households, making them unusual among their own clan. There is no finer heavy cavalry in the Empire than the Battle Maidens, and no finer equerries than Utaku men.</em></p>\n</td>\n</tr>\n</tbody>\n</table>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "oXqrG7gv1v7mePNQ",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147642493,
+   "modifiedTime": 1761147642493,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "i5FLDzCrOSMOgxq5",
+  "sort": 0
+ }
+]

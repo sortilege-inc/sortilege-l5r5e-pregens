@@ -1,0 +1,1969 @@
+{
+ "folder": "dvGRX9ivYI2Kb0GB",
+ "name": "Aarav 57 XP (Astradhari, Rank 2)",
+ "type": "character",
+ "img": "modules/l5r5e-compendia-sortilege/images/portraits/aarav_square.png",
+ "prototypeToken": {
+  "actorLink": true,
+  "disposition": 1,
+  "bar1": {
+   "attribute": "fatigue"
+  },
+  "bar2": {
+   "attribute": "strife"
+  },
+  "name": "Aarav 0 XP",
+  "displayName": 30,
+  "width": 1,
+  "height": 1,
+  "texture": {
+   "src": "modules/l5r5e-compendia-sortilege/images/tokens/aarav_token.png",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "lockRotation": false,
+  "rotation": 0,
+  "alpha": 1,
+  "displayBars": 0,
+  "light": {
+   "negative": false,
+   "priority": 0,
+   "alpha": 0.5,
+   "angle": 360,
+   "bright": 0,
+   "color": null,
+   "coloration": 1,
+   "dim": 0,
+   "attenuation": 0.5,
+   "luminosity": 0.5,
+   "saturation": 0,
+   "contrast": 0,
+   "shadows": 0,
+   "animation": {
+    "type": null,
+    "speed": 5,
+    "intensity": 5,
+    "reverse": false
+   },
+   "darkness": {
+    "min": 0,
+    "max": 1
+   }
+  },
+  "sight": {
+   "enabled": false,
+   "range": 0,
+   "angle": 360,
+   "visionMode": "basic",
+   "color": null,
+   "attenuation": 0.1,
+   "brightness": 0,
+   "saturation": 0,
+   "contrast": 0
+  },
+  "detectionModes": {},
+  "occludable": {
+   "radius": 0
+  },
+  "ring": {
+   "enabled": false,
+   "colors": {
+    "ring": null,
+    "background": null
+   },
+   "effects": 0,
+   "subject": {
+    "scale": 1,
+    "texture": null
+   }
+  },
+  "turnMarker": {
+   "mode": 1,
+   "animation": null,
+   "src": null,
+   "disposition": false
+  },
+  "movementAction": null,
+  "flags": {},
+  "randomImg": false,
+  "appendNumber": false,
+  "prependAdjective": false,
+  "depth": 1
+ },
+ "system": {
+  "soft_locked": true,
+  "identity": {
+   "age": "",
+   "clan": "The Sheelavaan of Bhavyatapura",
+   "family": "Fallen Noble (Gaijin)",
+   "female": null,
+   "marital_status": "",
+   "roles": "Bushi",
+   "school": "Ivory Kingdoms Sage Tradition",
+   "school_rank": 2,
+   "school_curriculum_journal": {}
+  },
+  "rings": {
+   "earth": 2,
+   "air": 2,
+   "water": 2,
+   "fire": 2,
+   "void": 2
+  },
+  "notes": "",
+  "description": "",
+  "social": {
+   "honor": 50,
+   "glory": 33,
+   "status": 0,
+   "ninjo": "Regain his home; he seeks to reconquer his homeland.",
+   "giri": "Aarav's family was betrayed, his brothers executed; he fled east.",
+   "bushido_tenets": {
+    "paramount": "",
+    "less_significant": ""
+   }
+  },
+  "skills": {
+   "artisan": {
+    "aesthetics": 0,
+    "composition": 0,
+    "design": 0,
+    "smithing": 0
+   },
+   "martial": {
+    "fitness": 1,
+    "melee": 1,
+    "ranged": 4,
+    "unarmed": 2,
+    "meditation": 1,
+    "tactics": 0
+   },
+   "scholar": {
+    "culture": 1,
+    "government": 0,
+    "medicine": 0,
+    "sentiment": 0,
+    "theology": 1
+   },
+   "social": {
+    "command": 3,
+    "courtesy": 1,
+    "games": 0,
+    "performance": 0
+   },
+   "trade": {
+    "commerce": 0,
+    "labor": 0,
+    "seafaring": 1,
+    "skulduggery": 0,
+    "survival": 0
+   }
+  },
+  "techniques": {
+   "kata": true,
+   "kiho": true,
+   "inversion": false,
+   "invocation": false,
+   "ritual": true,
+   "shuji": false,
+   "maho": false,
+   "ninjutsu": false,
+   "mantra": false,
+   "specificity": true
+  },
+  "endurance": 8,
+  "composure": 8,
+  "focus": 4,
+  "vigilance": 2,
+  "void_points": {
+   "max": 2,
+   "value": 0
+  },
+  "fatigue": {
+   "max": 8,
+   "value": 0
+  },
+  "strife": {
+   "max": 8,
+   "value": 0
+  },
+  "stance": "void",
+  "prepared": true,
+  "xp_total": 57,
+  "xp_spent": 0,
+  "xp_saved": 0,
+  "template": "pow",
+  "twenty_questions": {
+   "template": "pow",
+   "generated": true,
+   "step1": {
+    "clan": "The Sheelavaan of Bhavyatapura",
+    "ring": "air",
+    "skill": "courtesy",
+    "social_status": 0
+   },
+   "step2": {
+    "family": "Fallen Noble (Gaijin)",
+    "ring": "fire",
+    "skill1": "ranged",
+    "skill2": "command",
+    "wealth": 0,
+    "social_glory": 28
+   },
+   "step3": {
+    "school": "Ivory Kingdoms Sage Tradition",
+    "roles": "Bushi",
+    "ring1": "void",
+    "ring2": "earth",
+    "skill1": "melee",
+    "skill2": "unarmed",
+    "skill3": "meditation",
+    "skill4": "theology",
+    "skill5": "command",
+    "allowed_techniques": {
+     "kata": true,
+     "kiho": true,
+     "inversion": false,
+     "invocation": false,
+     "ritual": true,
+     "shuji": false,
+     "maho": false,
+     "ninjutsu": false,
+     "mantra": false,
+     "specificity": true
+    },
+    "techniques": [
+     "qFpqm3GpkCEAu6z2",
+     "5jLb6bvrYkwlkSc8",
+     "2iB4EK0I42kk83V3"
+    ],
+    "school_ability": [
+     "xQRMG49wGf3rL3YS"
+    ],
+    "equipment": [
+     "Cq1koK56k9dvLfMh",
+     "zcsgspz4VluSMeI0",
+     "tSwkJCF7OSXTVnvY",
+     "sjVz7tI11BkNAA7t",
+     "Rex7fGo6R1KuUhQJ",
+     "XsYJV8qKMImJ6PD0",
+     "7OWReYbIMfTvNrqv"
+    ],
+    "social_honor": 50
+   },
+   "step4": {
+    "stand_out": "Gregarious and charming.",
+    "ring": "water"
+   },
+   "step5": {
+    "social_giri": "Aarav's family was betrayed, his brothers executed; he fled east."
+   },
+   "step6": {
+    "social_ninjo": "Regain his home; he seeks to reconquer his homeland."
+   },
+   "step7": {
+    "clan_relations": "Aarav is famously handsome and kind, and a warrior of great prowess.",
+    "skill": "none",
+    "social_add_glory": 5
+   },
+   "step8": {
+    "bushido": "Aarav is unfamiliar with Bushido.",
+    "skill": "seafaring",
+    "social_add_honor": 0,
+    "tenet_paramount": "",
+    "tenet_less_significant": "",
+    "item": []
+   },
+   "step9": {
+    "success": "Survived the palace coup, and led his tutor's children to safety.",
+    "distinction": [
+     "qzkQyP8jGDoLiItw"
+    ]
+   },
+   "step10": {
+    "difficulty": "He is unused to having to negotiate, to working with people who don't have to obey him.",
+    "adversity": [
+     "FCw1pfvIVYoe5yyk"
+    ]
+   },
+   "step11": {
+    "calms": "Challenging himself, pushing himself.",
+    "passion": [
+     "B9fnpC0enRx8DeSO"
+    ]
+   },
+   "step12": {
+    "worries": "Doubts about his fate to rule; perhaps the downfall of his family was karma?",
+    "anxiety": [
+     "TVReYB8XXXDEQUkr"
+    ]
+   },
+   "step13": {
+    "most_learn": "The love of his life, Riya, is in another city. He is afraid that to visit her prematurely will bring danger to her, but their love has opened his eyes to the world in a way that he had previously been blind to.",
+    "skill": "none",
+    "advantage": [
+     "Vi9SQaa3y48ob8Hp"
+    ],
+    "disadvantage": []
+   },
+   "step14": {
+    "first_sight": "His signet ring bears a tiger and his family's sigil.",
+    "special_features": [
+     "lh0BUCh3cKO0BUnn"
+    ]
+   },
+   "step15": {
+    "stress": "He exercises strenuously, or practices archery."
+   },
+   "step16": {
+    "relations": "His family's former vassals are scattered in exile or hiding in submission. Some noble houses have sworn fealty to the usurper, while others wait for a sign that restoration is possible.\n\nAs a foreign prince in Rokugan, he occupies an awkward position - too noble to ignore, but without the local connections that grant true influence. His royal blood means little here.\n\n",
+    "item": [
+     "uaCKNEXDlq1OI3wO"
+    ]
+   },
+   "step17": {
+    "parents_pov": "Aarav has gathered a small group of mercenaries. They travel together, and he is trying to convince them to build their strength to help him return to power.",
+    "skill": "culture",
+    "bond": [
+     "ItUUhYTr7vst11ZH"
+    ]
+   },
+   "step18": {
+    "heritage_name": "Raised in a royal suzerain's household, with servants and private tutors.",
+    "heritage_1": null,
+    "heritage_2": null,
+    "heritage_item": [],
+    "heritage_add_honor": 0,
+    "heritage_add_glory": 0,
+    "heritage_add_status": 0,
+    "skill": "none"
+   },
+   "step19": {
+    "firstname": "Aarav"
+   },
+   "step20": {
+    "death": "He should die in an act of glorious heroism, defending his people."
+   }
+  },
+  "zeni": 0,
+  "is_afflicted_or_compromised": false,
+  "money": {
+   "koku": 0,
+   "bu": 0,
+   "zeni": 0
+  }
+ },
+ "items": [
+  {
+   "name": "Earth Needs No Eyes",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kiho.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 182
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The monk who waits and listens sees much, even without eyes. Sending out waves of their own energy and letting the ki of the life around them flow back into their body through the ground, the monk feels the reverberations of everything moving nearby, from the thunderous breaths of a warrior in battle to the footsteps of the tiniest ants.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may activate this kihō. When you do so, you may make a </span><span class=\"fontstyle2\">TN 1 Meditation (earth) check </span><span class=\"fontstyle3\">to gain an awareness of your surroundings.</span></p><p><span class=\"fontstyle2\"><strong>Enhancement Effect:</strong> </span><span class=\"fontstyle3\">If you succeed, this kihō activates. While this kihō is active, you can use vibrations through the earth to “see” a number of range bands in all directions equal to your Earth Ring. While this kihō is active, increase your vigilance by your Earth Ring.</span></p><p><span class=\"fontstyle2\"><strong>Burst Effect:</strong> </span><span class=\"fontstyle3\">If you succeed with three or more bonus successes, you instantly become aware of all living creatures and objects touching the ground within a number of range bands equal to your Earth Ring plus your bonus successes.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "earth",
+    "skill": "meditation",
+    "difficulty": "1",
+    "technique_type": "kiho"
+   },
+   "folder": "oiyt4mxXCjcQfVkN",
+   "_id": "uETgIC0W5FEcjg8P",
+   "sort": 200000,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Cleansing Spirit",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kiho.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 182
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The monk centers their ki, then reaches out and touches another character, counterbalancing their turbulent energies with the stillness of the monk’s own soul. This restores the character’s spirit, driving out poison, disease, and even the grip of evil spirits, provided they have not yet taken root in the character’s soul.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, may make a </span><span class=\"fontstyle2\">TN 1 Theology (earth) check </span><span class=\"fontstyle3\">to bolster your spiritual resilience. When you perform this action, you may choose one other character at range 0–1 as the target for the burst effect.</span></p><p><span class=\"fontstyle2\"><strong>Enhancement Effect:</strong> </span><span class=\"fontstyle3\">If you succeed, this kihō activates. While this kihō is active, reduce the TN of all your checks to resist poison, disease, mahō, the Defiled terrain quality, and the effects of Otherworldly and Tainted beings by your Earth Ring.</span></p><p><span class=\"fontstyle2\"><strong>Burst Effect:</strong> </span><span class=\"fontstyle3\">If you have two or more bonus successes, remove one of the following conditions from your target: Afflicted, Bleeding, Dazed, Disoriented, Dying, Fatigued, or Intoxicated.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "earth",
+    "skill": "theology",
+    "difficulty": "1",
+    "technique_type": "kiho"
+   },
+   "folder": "oiyt4mxXCjcQfVkN",
+   "_id": "UR46j72c7FpeAzXp",
+   "sort": 100000,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Threshold Barrier",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 213
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The ritualist wards an entryway against beings of a certain sort, causing them to fail to observe the entryway or making them mentally repulsed by their efforts to enter it.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 2 Theology check </span><span class=\"fontstyle3\">using (air), (earth), (fire), (water), or (void) targeting a threshold, gate, or other entryway at range 0–1.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, the threshold is barred against a particular type of entity, based on the ring you chose, for one hour, plus additional hours equal to your bonus successes. When an entity of this type attempts to enter, it must resist with a </span><span class=\"fontstyle2\">TN 3 Meditation (void) check </span><span class=\"fontstyle3\">or be repelled by the spiritual barrier. Whether it succeeds or fails, you immediately become aware of its attempted entry. The particular type of being is based on the ring you chose, as follows:</span></p><ul><li><p><span class=\"fontstyle2\">(air): </span><span class=\"fontstyle3\">Ethereal Otherworldly beings such as spirits and ghosts.</span></p></li><li><p><span class=\"fontstyle2\">(earth): </span><span class=\"fontstyle3\">Living Tainted beings.</span></p></li><li><p><span class=\"fontstyle2\">(fire): </span><span class=\"fontstyle3\">Undead beings with corporeal form.</span></p></li><li><p><span class=\"fontstyle2\">(water): </span><span class=\"fontstyle3\">Wild animals.</span></p></li><li><p><span class=\"fontstyle2\">(void): </span><span class=\"fontstyle3\">Humans.</span></p></li></ul><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Instead of protecting a threshold, you may protect the entirety of a sealed area that extends a number of range bands around you no greater than your bonus successes.</span></p><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">If any beings of the type you are attempting to seal the threshold against have passed through the threshold within the last twenty-four hours, you become aware of their passage.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "theology",
+    "difficulty": "2",
+    "technique_type": "ritual"
+   },
+   "folder": null,
+   "_id": "LMtRRV0CIP1kLBEa",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Gift of Inner Power",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "path_of_waves",
+     "page": 58
+    },
+    "description": "<p><span class=\"fontstyle0\">You can infuse other characters with your inner energy. After you perform a check to activate one of your kihō, you can receive fatigue up to your school rank and choose another character at range 0–1. If you do, that character gains the enhancement effect of your kihō in your stead ­you may still resolve the burst effect, if able). This effect persists a number of rounds equal to the amount of fatigue you received this way plus your ranks in Meditation. Only one character can benefit from your kihō at a time.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "school_ability"
+   },
+   "folder": null,
+   "_id": "UPi9bcT1y1OxANBa",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Sanctified Robes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p><span class=\"fontstyle0\">The vestments of shugenja, shrine keepers, and other religious figures are blessed by kami and thus grant mystical protection. Traditionally, such robes consist of a white garment called </span><span class=\"fontstyle2\">jōe </span><span class=\"fontstyle0\">(literally, “pure cloth”) and a peaked hat, but they can be simpler, such as a white haori top and red hakama bottoms, or even an elaborate kimono.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "7",
+    "zeni": "4 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     }
+    ],
+    "armor": {
+     "physical": 1,
+     "supernatural": 3
+    }
+   },
+   "folder": null,
+   "_id": "XSE1kwZ3Jg03zDVl",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Traveling Clothes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "2",
+    "zeni": "2 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000015",
+      "name": "Durable"
+     },
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     },
+     {
+      "id": "L5RCorePro000016",
+      "name": "Subtle"
+     }
+    ],
+    "armor": {
+     "physical": 2,
+     "supernatural": 0
+    }
+   },
+   "folder": null,
+   "_id": "9UGJHCFnHstK23Bv",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Talwar",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "path_of_waves",
+     "page": 113
+    },
+    "description": "<p><span class=\"fontstyle0\">The Ivory Kingdoms sidearm is the </span><span class=\"fontstyle2\">talwar</span><span class=\"fontstyle0\">, or “single-edged sword.” A curved saber with one sharp edge and a cross-guarded hilt with a knuckle-bow, it is designed to be wielded in a specialized one-handed grip. The sword’s hilt is bulb shaped, requiring that the sword be held differently than those forged by Rokugani. This and the blade’s unusual balance means that talwar fighting requires special training; attempting</span> <span class=\"fontstyle0\">to use the sword as one might a Rokugani blade can break the talwar or injure one’s wrist. However, when a talwar is wielded correctly, the wider cutting tip at the end of its blade affords it more cutting power, making this sidearm an especially deadly weapon.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 2,
+    "rarity": "8",
+    "zeni": "35 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000006",
+      "name": "Cumbersome"
+     },
+     {
+      "id": "L5RCorePro000015",
+      "name": "Durable"
+     },
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     }
+    ],
+    "category": "Swords",
+    "skill": "melee",
+    "readied": false,
+    "range": "1",
+    "damage": 4,
+    "deadliness": 6,
+    "grip_1": "",
+    "grip_2": "N/A"
+   },
+   "folder": null,
+   "_id": "d7E3SBwW5YAF4OQA",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Daikyū",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/bow.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 236
+    },
+    "description": "<p><span class=\"fontstyle0\">Daikyū are large composite bows designed to be fired from horseback. Conventionally around six feet long, these elegant weapons are constructed by gluing thin layers of wood, horn, leather, and sinew together. Daikyū differ from other bows in that they have an asymmetric shape. Their grip is about two-thirds of the way from the top, making the top curve longer than the bottom. This allows the bows to be fired easily from horseback in either direction. Each daikyū is made for a custom fit for a specific user.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "6",
+    "zeni": "6 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000011",
+      "name": "Wargear"
+     }
+    ],
+    "category": "Bows",
+    "skill": "ranged",
+    "readied": false,
+    "range": "3-5",
+    "damage": 6,
+    "deadliness": 4,
+    "grip_1": "N/A",
+    "grip_2": ""
+   },
+   "folder": null,
+   "_id": "oG181kZO4HSJHdY4",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Traveling pack",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 245
+    },
+    "description": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "1",
+    "zeni": "10 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ]
+   },
+   "folder": null,
+   "_id": "6KsaNt3DADOuiKWM",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Map (Ivory Kingdoms)",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "_id": "gjkCp3gmHuJgZh9p",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "<p><span class=\"fontstyle0\">Showing the route from the Ivory Kingdoms to the Sand Road</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "0",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Gunbai",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/knife.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "fields_of_victory",
+     "page": 91
+    },
+    "description": "<p><span class=\"fontstyle0\">The gunbai, a leader or commander’s war fan, is a staple of samurai officers for communicating orders to their troops at a distance. Each gunbai is unique, as are the gestures the officers use to communicate orders to their troops. With a flick of the wrist, an officer may order their troops to fall back or to charge into the fray. Often gilded with metal, a gunbai is used to convey urgent tactical shifts and defensive moves.</span></p><p><span class=\"fontstyle0\">A gunbai can be wielded as a one-handed Martial Arts [Melee] weapon with the following profile: Range 1, Damage 2, Deadliness 2.</span></p><p><span class=\"fontstyle0\">During a skirmish, a character with a gunbai readied can perform shūji targeting characters who can see them at range 0–6 (as opposed to the usual auditory range restriction of range 0–4).</span></p><p><span class=\"fontstyle0\">During a mass battle, for each of an army’s leaders equipped with a gunbai, the army increases its discipline by 2.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "4",
+    "zeni": "3 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000011",
+      "name": "Wargear"
+     }
+    ],
+    "category": "Hand Weapons",
+    "skill": "melee",
+    "readied": false,
+    "range": "1",
+    "damage": 2,
+    "deadliness": 2,
+    "grip_1": "",
+    "grip_2": "N/A"
+   },
+   "folder": null,
+   "_id": "oAtymtgLLB65XGgC",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Blessed Lineage",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 103
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>“Perhaps you’d like to match your words with your steel,” the woman growled, her hands resting upon the hilts of her swords. “You will learn a hard lesson: nobody insults Mirumoto Ohatsu with impunity.”</em></span></p><p><span class=\"fontstyle0\"><em>The man she faced smiled in return.</em></span></p><p><span class=\"fontstyle0\"><em>“I certainly did not intend to offend you in any way, Ohatsu-san. Please allow me to introduce myself. I am Miya Matsuo. Perhaps you have heard of my cousin, the Imperial Herald?”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Blessed Lineage distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- Characters with status of 50 or higher understand that they might suffer a loss of prestige if they harm you, and thus do not choose to kill you as their first option, even if you are a political obstacle they would otherwise eliminate without hesitation.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check for which your esteemed lineage is a benefit (such as a Command (void) check to challenge someone’s perception of a situation or a Government (void) check to know the likelihood of a political eventuality), you may reroll up to two dice.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "peculiarity_type": "distinction",
+    "types": "Interpersonal, Spiritual"
+   },
+   "folder": "IUiFldkrNPsCUg0n",
+   "_id": "Hnvbt4ZRoV5Z9Alf",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Gaijin Name, Culture, or Appearance",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 121
+    },
+    "description": "<p><em>The Crane courtier bowed deeply, a thin, insincere smile upon his face. “I bring a thousand wishes for a glorious future from the Crane to the great Shinjo Aru…Arutan…”</em></p><p><em>“Altansarnai,” the Unicorn Champion corrected him. The courtier bowed further. “I apologize, Shinjo\u0002sama. A…lovely name, but one that falls oddly upon my tongue.”</em></p><p><em>“It is from the Ujik tongue. It means ‘golden rose.’” Altansarnai gestured for the courtier to join her where she was seated. We are still foreign to them, she thought, and they will never let us forget it.</em></p><p></p><p>The following apply to a character with the Gaijin Name, Culture, or Appearance adversity:</p><ul><li><p>- People of higher and equal status tend to assume that you are uneducated at best and a barbarian at worst, while people of lower status respond to you with fear.</p></li><li><p>- When you make a check to inspire others who do not share your culture or background (such as a Command (fire) check to rally troops or a Commerce (fire) check to create a product that people desire), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "fire",
+    "peculiarity_type": "adversity",
+    "types": "Interpersonal (Culture) or Physical (Appearance), Interpersonal (Name), Mental"
+   },
+   "folder": null,
+   "_id": "EvKmyYyjlN0hqoEj",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Glorious Deeds",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "fields_of_victory",
+     "page": 83
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>“Even should a samurai evade death on the battlefield and survive to see their great-grandchildren come of age, one day they will pass. Such is the way of mortals. But the stories that people tell of that samurai—those may live forever.” The Ikoma historian gave his sibling a shrewd look.</em></span></p><p><span class=\"fontstyle0\"><em>“But you did not come to listen to the lectures I have for students, I suspect. You want to be the subject of my next lecture. Tell me of your accomplishments, and I will make sure they are recorded in the family histories.”</em></span></p><p><span class=\"fontstyle0\"><em>With that prompting, the eager bushi launched into a story about their efforts in the recent conflict, and they were not silent until late into the night.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Glorious Deeds passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You find risking your life to be a simple matter, as long as there is a witness to remember your bravery. No threat or challenge deters you if you might be remembered for it, making even the most daunting tasks easy ones for which to prepare.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to improve your reputation or gain fame as a great samurai (such as a Performance (fire) check to impress a court with your new melody, or a Tactics (fire) check to execute a daring raid on the enemy), you remove 3 strife.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "fire",
+    "peculiarity_type": "passion",
+    "types": "Martial, Social"
+   },
+   "folder": null,
+   "_id": "cJ4xoSJFAXXTiJaZ",
+   "sort": 4200000,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Fear of Mediocrity",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "writ_of_the_wild",
+     "page": 106
+    },
+    "description": "<p><em>“I have climbed the highest peaks in my quest: the Wrath of the Kami, Tenkenniyoru Yama, the Iron Mountain, the Northern Wall Mountains… Nothing!</em></p><p><em>Each tincture from a flower. Each tea from an herb. Each poultice from bark. Nothing. The answer must be out there.”</em></p><p><em>- letters from Agasha AriNaga regarding an elixir of immortality</em></p><p><em>“Falling up a mountain like AriNaga, to be immortalized as a fool.”</em></p><p><em>- old Agasha saying</em></p><p><strong>Effects:</strong> The following apply to a character with the Fear of Mediocrity anxiety:</p><ul><li><p>-  Your fear of amounting to nothing causes you to seize up when faced with the need to innovate on the fly.</p></li><li><p>-  After performing a check to adapt to an unexpected situation (such as a Survival (fire) check to find shelter when your tent is destroyed or a Culture (fire) check to unexpectedly interact in an appropriate manner with someone of a higher status), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "fire",
+    "peculiarity_type": "anxiety",
+    "types": "Interpersonal, Mental"
+   },
+   "folder": null,
+   "_id": "3XpPGOFDHcbW2YYx",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Benten’s Blessing",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 102
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Daidoji Shingen sauntered down the gangplank from the dock to his waiting vessel, a broad smile spreading across his face. His crew gathered around their returning captain.</em></span></p><p><span class=\"fontstyle0\"><em>“We have safe harbor here, and a fine market in which to sell our cargo. Start offloading.” The crew cheered, and set to work. Shingen’s first mate, Hiramichi Anjiro, remained behind, scratching his head idly.</em></span></p><p><span class=\"fontstyle0\"><em>“I don’t know how you managed that, Captain.” Shingen winked. “Let’s just say that the lady of the palace was kindly disposed toward a wayward sea captain.”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Benten’s Blessing distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- After interacting with a character for one or more scenes, you know with certainty whether they are open to your romantic aspirations or if they are categorically uninterested.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check for which the favor of the Fortune Benten is a benefit (such as an Aesthetics (air) check to say something insightful about a piece of art or a Courtesy (air) check to convince someone of your positive qualities), you may reroll up to two dice.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "peculiarity_type": "distinction",
+    "types": "Interpersonal, Spiritual"
+   },
+   "folder": null,
+   "_id": "bFseY8QgqxVvf0bv",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Signet Ring (Royal Family)",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "_id": "O0PRmGF2NLPnW91L",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "0",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Uma-Jirushi",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "fields_of_victory",
+     "page": 91
+    },
+    "description": "<p>Resembling a soldier’s sashimono banner, the massive, heraldic uma-jirushi banner sets a daimyō or general apart as they ride into battle. While some uma-jirushi may simply be larger, more ornate sashimono, some daimyō contract artisans to create elaborate, three-dimensional shapes or even entreat shugenja to add elemental flourishes (such as a perpetual, slow-burning flame or a constant gust of wind) to make their banner stand out.</p><p data-start=\"440\" data-end=\"748\" data-is-last-node=\"\" data-is-only-node=\"\">When making a Command check, a leader in a mass battle who displays a personal uma-jirushi adds one kept  set to . Should the bearer of an uma-jirushi be killed via the Cut Off the Head or Challenge action, their army receives 4 additional panic. (Cost: 3 koku. Rarity: 7. Qualities: Resplendent, Wargear.)</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "7",
+    "zeni": "3 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000010",
+      "name": "Resplendent"
+     },
+     {
+      "id": "L5RCorePro000011",
+      "name": "Wargear"
+     }
+    ]
+   },
+   "folder": null,
+   "_id": "joHoinUSDP5MONUD",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Wanderers Fellowship",
+   "type": "bond",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/bond.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "path_of_waves",
+     "page": 191
+    },
+    "description": "<p><span class=\"fontstyle0\">With no lord, rōnin have nobody to rely upon and none to protect save themself, making their way through the world like waves rolling across the shore. But even the most independent-minded humans desire a degree of companionship, and there is a certain stability to be found in numbers. As a result, many rōnin form warrior bands, groups that work, fight, suffer, and laugh together. These bonds can become as tight as the tremendously strong bonds of family in Rokugan, or even stronger. In desperate circumstances, this bond can get a rōnin on their feet and back into the fight, helping them to fight on through the pain or face overwhelming odds to save their comrades in arms.</span></p><ul><li><p><span class=\"fontstyle0\">- Other members of your fellowship watch out for your safety (if not always your dignity, especially when it comes to telling embarrassing stories). They help you with modest favors (offering you a cut in on a job they have taken on, giving you an introduction to someone hiring rōnin, buying your sake when your purse is empty and theirs is less empty), and generally expect you to reciprocate such favors.</span></p></li><li><p><span class=\"fontstyle0\">- Those with whom your fellowship has worked before are generally inclined to regard you in the same way they do your fellows—if they are rowdy or well-behaved, they will assume the same of you. Your actions also reflect upon members of your fellowship, and if you step out of line such that it endangers the group’s reputation, they intervene to set you on the right path—or to remove you from the group, if you will not repent.</span></p></li><li><p><span class=\"fontstyle0\">- If your bond rank is 3 or higher, your fellowship’s bonds of loyalty are extremely deep, and other members will accept dangerous jobs with you without question, join your side in battles that do not pay, and perhaps even buy your sake without reminding you about it three times in the next week.</span></p></li></ul><p></p><p><span class=\"fontstyle3\"><strong>Bond Ability:</strong> Sworn to Duty and to Death</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "bond_type": "Wanderers Fellowship"
+   },
+   "folder": null,
+   "_id": "7PxvqKQsS62o4F5u",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Astradhari",
+   "type": "title",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/title.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "path_of_waves",
+     "page": 187
+    },
+    "description": "<p><span class=\"fontstyle0\">Those who wield astras, the celestial implements blessed by the gods, have been given exceptional powers. These heroes and villains are much rarer than they were in ancient times, but they still exist today. The ability to summon such items requires the influence of a god or intense study under a mentor from the Ivory Kingdoms. If a person can find a sage willing to teach them, they may be able to learn how to summon one of these powerful artifacts, but no sage is willing to teach just anyone these sacred and secret methods. A character must complete tests and trials, which differ depending on the sage in question, to prove their worthiness of wielding such intense power.</span></p><p><span class=\"fontstyle2\"><strong>Assigned By:</strong>\u001c</span><span class=\"fontstyle0\">An Ivory Kingdoms High Sage (­such a person may only be chosen by the GM).</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong>\u001c+0</span><span class=\"fontstyle0\"> (+25 in the Ivory Kingdoms, to a maximum of 65)</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Sacred Mantras</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Scholar Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Courtesy</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-rituals\">(ritual) Rank 1-3 Rituals</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-mantra.Item.L5RCoreMan000001\" data-pack=\"l5r5e.core-techniques-mantra\" data-type=\"Item\" data-id=\"L5RCoreMan000001\">(mantra) Summon Mantra : [One Implement]</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000011\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000011\">(shuji) Touchstone of Courage</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+    "parent_id": null,
+    "items": [
+     {
+      "_id": "zBqj30Ddq6zx6JwI",
+      "name": "Summoning Mantra : [One Implement]",
+      "type": "technique",
+      "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+      "system": {
+       "source_reference": {
+        "source": "path_of_waves",
+        "page": 99
+       },
+       "description": "<p><span class=\"fontstyle0\"><strong>Activation:</strong> </span><span class=\"fontstyle2\">As a Support action, you may make a </span><span class=\"fontstyle0\">TN 3 Theology check </span><span class=\"fontstyle2\">to call forth one celestial implement. The ring of the check is determined by the divinity whose implement you are summoning.</span></p><p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">If you succeed, you </span><span class=\"fontstyle3\">summon </span><span class=\"fontstyle2\">and </span><span class=\"fontstyle3\">augment </span><span class=\"fontstyle2\">one readied item that becomes the celestial implement. Then, you must stake honor equal to two times your honor rank on upholding the implement’s restriction while you have the implement (see page 99). The implement persists until the end of the scene or until it is </span><span class=\"fontstyle0\">dispelled</span><span class=\"fontstyle2\">, at which point the blessing ends. If you break the implement’s restriction during this time, you lose your staked honor and the implement is </span><span class=\"fontstyle3\">dispelled</span><span class=\"fontstyle2\">. You cannot summon this implement again this scene.</span></p>",
+       "parent_id": {
+        "item_id": "slVzE4astJV5pCuj",
+        "actor_id": "ck89NNl4ychGHqk6"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 3,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 0,
+       "ring": "void",
+       "skill": "theology",
+       "difficulty": "4",
+       "technique_type": "mantra"
+      },
+      "effects": [],
+      "folder": "ZqK5mkxmk1m0OYyi",
+      "sort": 100000,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "13.350",
+       "systemId": "l5r5e",
+       "systemVersion": "1.13.1",
+       "createdTime": 1761352308071,
+       "modifiedTime": 1761453512788,
+       "lastModifiedBy": "7vKCnwOtrdD7lBip",
+       "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-mantra-l5r-sortilege.Item.27ldKe5bDFhiCf07",
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "Fvom8uuk66cNL2oX",
+      "name": "Touchstone of Courage",
+      "type": "technique",
+      "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+      "system": {
+       "source_reference": {
+        "source": "core_rulebook",
+        "page": 217
+       },
+       "description": "<p><span class=\"fontstyle0\"><em>Armies are rarely routed in the field; instead, most collapse when morale becomes impossible to maintain. As panic rises in the ranks, soldiers look to leaders to set an example. The character does just this, speaking to the importance of duty to bring their troops back from the edge of chaos.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may make a </span><span class=\"fontstyle2\">TN 4 Command (earth) check </span><span class=\"fontstyle3\">targeting any number of characters (or your cohort during a mass battle).</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed during an intrigue, duel, or skirmish conflict, each target increases their composure by your Earth Ring. This effect persists until the end of the scene. If you succeed during a mass battle, increase your army’s discipline by your Earth Ring plus your bonus successes. This effect persists until the end of the scene.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(earth)(op)(op): </span><span class=\"fontstyle3\">During an intrigue, duel, or skirmish, each target removes strife equal to your Earth Ring.</span></p><p><span class=\"fontstyle2\">(earth)(op)(op): </span><span class=\"fontstyle3\">During a mass battle, your army removes panic equal to your Earth Ring.</span></p>",
+       "parent_id": {
+        "item_id": "slVzE4astJV5pCuj",
+        "actor_id": "ck89NNl4ychGHqk6"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 3,
+       "xp_cost": 3,
+       "rank": 3,
+       "bought_at_rank": 0,
+       "ring": "earth",
+       "skill": "command",
+       "difficulty": "4",
+       "technique_type": "shuji"
+      },
+      "effects": [],
+      "folder": "mubKEa3wApkpwHra",
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "13.350",
+       "systemId": "l5r5e",
+       "systemVersion": "1.13.1",
+       "createdTime": 1761352295244,
+       "modifiedTime": 1761352295244,
+       "lastModifiedBy": "7vKCnwOtrdD7lBip",
+       "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.fFxQOBXLb9ol9owk",
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "JrihRjfrW94HzNzf",
+      "name": "Blessing of Fertile Fields",
+      "type": "technique",
+      "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+      "system": {
+       "source_reference": {
+        "source": "celestial_realms",
+        "page": 110
+       },
+       "description": "<p><span class=\"fontstyle0\"><em>The ritualist spends several hours praying to the local kami and spreading offerings around the perimeter of the fields, working to boost the harvest’s yield, protect it from pests, and ward off excessive flooding and heat.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 2 Theology (earth) </span><span class=\"fontstyle3\">or </span><span class=\"fontstyle2\">Survival (earth) check </span><span class=\"fontstyle3\">targeting the fields of a settlement.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, all fields within the settlement are protected from pests and excessive flooding and heat until the next harvest.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(earth)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">All affected fields will produce a more bountiful yield at the next harvest.</span></p><p><span class=\"fontstyle5\">(earth)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">All affected fields within range 6 gain the Hallowed (earth) terrain quality until the end of the next harvest.</span></p>",
+       "parent_id": {
+        "item_id": "slVzE4astJV5pCuj",
+        "actor_id": "ck89NNl4ychGHqk6"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 3,
+       "xp_cost": 3,
+       "rank": 2,
+       "bought_at_rank": 0,
+       "ring": "earth",
+       "skill": "theology",
+       "difficulty": "2",
+       "technique_type": "ritual"
+      },
+      "effects": [],
+      "folder": "yZMrCWHlp17L1KvU",
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "13.350",
+       "systemId": "l5r5e",
+       "systemVersion": "1.13.1",
+       "createdTime": 1761352292011,
+       "modifiedTime": 1761352292011,
+       "lastModifiedBy": "7vKCnwOtrdD7lBip",
+       "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-rituals-l5r-sortilege.Item.oXWIoerKyyQu5Sz9",
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "h39pS5zYn4A5qRpy",
+      "name": "Imbue Thunder",
+      "type": "technique",
+      "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+      "system": {
+       "source_reference": {
+        "source": "fields_of_victory",
+        "page": 98
+       },
+       "description": "<p><span class=\"fontstyle0\"><em>Fireworks are the sacred domain of specifically trained priests and spiritual artisans, and many among the Agasha and Asahina specialize in creating beautiful alchemical displays for festivals and other cultural events. These same techniques could, of course, be used to create blasting powder, but meddling in the domain of priests for purposes of waging war would surely constitute some form of blasphemy.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">To perform this ritual, you must first assemble the proper ingredients (charred wood, salt of earth, pollen that burns) in the proper proportions. One full set of materials costs 10 koku and has a rarity of 6, and is consumed by the process. Once per session as a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 4 Medicine check </span><span class=\"fontstyle3\">to properly mix the ingredients to create blasting powder.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you create ten brilliant flares (see 90), plus ten per two bonus successes, or one blasting powder charge (see page 90), plus one per two bonus successes.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">When used in a skirmish, the charge inflicts the Dazed condition on all characters at range 0–4.</span></p><p><span class=\"fontstyle5\">(air)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">When used in a skirmish, increase the charge’s range band by 1.</span></p><p><span class=\"fontstyle5\">(earth)(op)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">When used, the charge inflicts 2 additional damage (or attrition) per (op)(op) spent this way.</span></p><p><span class=\"fontstyle5\">(fire)(op)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">When used, the charge inflicts 2 additional strife (or panic) per</span><span class=\"fontstyle5\"> (op)(op) </span><span class=\"fontstyle3\">spent this way.</span></p><p><span class=\"fontstyle5\">(water)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">When used in a skirmish, the charge inflicts the Bleeding condition on all characters at range 0–2.</span></p><p><span class=\"fontstyle5\">(void)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">When used, the charge frightens away all kami in the radius of effect (or across the entire battlefield, in a mass battle). The affected area becomes Imbalanced (All Elements) terrain. This effect persists for 1 day.</span></p>",
+       "parent_id": {
+        "item_id": "slVzE4astJV5pCuj",
+        "actor_id": "ck89NNl4ychGHqk6"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 3,
+       "xp_cost": 3,
+       "rank": 4,
+       "bought_at_rank": 0,
+       "ring": "void",
+       "skill": "medicine",
+       "difficulty": "4",
+       "technique_type": "ritual"
+      },
+      "effects": [],
+      "folder": "yZMrCWHlp17L1KvU",
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "13.350",
+       "systemId": "l5r5e",
+       "systemVersion": "1.13.1",
+       "createdTime": 1761352292011,
+       "modifiedTime": 1761352292011,
+       "lastModifiedBy": "7vKCnwOtrdD7lBip",
+       "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-rituals-l5r-sortilege.Item.f8WU7PSiafXzmdwm",
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "QqNMiRasenXjQ9se",
+      "name": "Martial Arts [Ranged] +1 (1 -> 2)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "slVzE4astJV5pCuj",
+        "actor_id": "ck89NNl4ychGHqk6"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 4,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "ranged"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "13.350",
+       "systemId": "l5r5e",
+       "systemVersion": "1.13.1",
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "ksnIhxnHSQPZYlQ4",
+      "name": "Martial Arts [Ranged] +1 (2 -> 3)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "slVzE4astJV5pCuj",
+        "actor_id": "ck89NNl4ychGHqk6"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 6,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "ranged"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "13.350",
+       "systemId": "l5r5e",
+       "systemVersion": "1.13.1",
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "AJRoZth99Fjqp5ZT",
+      "name": "Martial Arts [Ranged] +1 (3 -> 4)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "slVzE4astJV5pCuj",
+        "actor_id": "ck89NNl4ychGHqk6"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 8,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "ranged"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "13.350",
+       "systemId": "l5r5e",
+       "systemVersion": "1.13.1",
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     },
+     {
+      "_id": "ruDvkuaNdc9x4xTi",
+      "name": "Command +1 (2 -> 3)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "system": {
+       "source_reference": {
+        "source": "",
+        "page": 0
+       },
+       "description": "",
+       "parent_id": {
+        "item_id": "slVzE4astJV5pCuj",
+        "actor_id": "ck89NNl4ychGHqk6"
+       },
+       "items": {},
+       "in_curriculum": true,
+       "xp_used": 6,
+       "xp_cost": 3,
+       "rank": 1,
+       "bought_at_rank": 1,
+       "ring": "void",
+       "advancement_type": "skill",
+       "skill": "command"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+       "default": 0,
+       "7vKCnwOtrdD7lBip": 3
+      },
+      "flags": {},
+      "_stats": {
+       "coreVersion": "13.350",
+       "systemId": "l5r5e",
+       "systemVersion": "1.13.1",
+       "lastModifiedBy": null,
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "in_curriculum": false,
+    "xp_used": 36,
+    "xp_cost": 36,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancements": [],
+    "xp_used_total": 36
+   },
+   "folder": "I2rwBj7BiWeoLjs4",
+   "_id": "slVzE4astJV5pCuj",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Sacred Mantras",
+   "type": "technique",
+   "img": "systems/l5r5e/assets/icons/items/signature_scroll.svg",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "<p><span class=\"fontstyle0\">You can purchase mantra techniques ­(see page 98).</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "title_ability"
+   },
+   "effects": [],
+   "folder": "PoN6CFb2kn4QXmpV",
+   "flags": {},
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "_id": "eWBabiLBV1KpjKIe",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Countering Mantra",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/mantra.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "path_of_waves",
+     "page": 99
+    },
+    "description": "<p><span class=\"fontstyle0\"><strong>Activation:</strong> </span><span class=\"fontstyle2\">When a character you can perceive makes a check to use a celestial implement, if you have a readied celestial implement of your own, you may immediately make a </span><span class=\"fontstyle0\">TN 5 Theology check </span><span class=\"fontstyle2\">targeting that character to attempt to counter their implement’s effects. If your celestial implement’s element matches the </span><span class=\"fontstyle0\">counter element </span><span class=\"fontstyle2\">of the target’s implement, the TN is 2 instead.</span></p><p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">If you succeed, your target’s implement is </span><span class=\"fontstyle3\">dispelled</span><span class=\"fontstyle2\">. Your target counts as having failed the check to use it, with a shortfall equal to your ranks in Theology, and they do not apply any of its boons to the check.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 4,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "skill": "theology",
+    "difficulty": "5",
+    "technique_type": "mantra"
+   },
+   "folder": null,
+   "_id": "q9TcK4z7hKkqU32t",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Ki Protection",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kiho.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 186
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The monk touches the injured individual, feeling the flow of their ki and using their own to gently correct its flow. While the monk sustains this kihō, their touch continues to heal, though repeating the effort numerous times is quite draining.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Movement and Support action, you may make a </span><span class=\"fontstyle2\">TN 1 Meditation (water) check. </span><span class=\"fontstyle3\">You may choose one character at range 0–1 as the target for the burst effect.</span></p><p><span class=\"fontstyle2\"><strong>Enhancement Effect:</strong> </span><span class=\"fontstyle3\">If you succeed, this kihō activates. While this kihō is active, when you perform the Calming Breath action, you may remove 2 fatigue instead of 1. While this kihō is active, after you perform an action, you may spend 1 Void point to remove fatigue equal to your ranks in Medicine from one other character at range 0–1.</span></p><p><span class=\"fontstyle2\"><strong>Burst Effect:</strong> </span><span class=\"fontstyle3\">If you have 2 or more bonus successes, your target removes fatigue equal to your ranks in Medicine plus your bonus successes. Each target cannot be affected by this effect again until the end of the scene.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "water",
+    "skill": "meditation",
+    "difficulty": "1",
+    "technique_type": "kiho"
+   },
+   "folder": "QDDc8ION49xOpZlz",
+   "_id": "eQBoH3CsYAsSzhZc",
+   "sort": 200000,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "The Great Silence",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kiho.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 184
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The monk swirls their hands in a spiral, pulling noise inward and stealing even the reverberations that sounds make through the air. Lies die on the lips unspoken, and prayers never reach the spirits for whom they were intended. Skilled practitioners often maintain this technique, twisting the wind around them to steal away pernicious words and wicked prayers alike.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Scheme and Support action, you may activate this kihō, you may make a </span><span class=\"fontstyle2\">TN 1 Theology (air) check </span><span class=\"fontstyle3\">to create an area of silence around you.</span></p><p><span class=\"fontstyle2\"><strong>Enhancement Effect:</strong> </span><span class=\"fontstyle3\">If you succeed, this kihō activates. While this kihō is active, increase the TN of Scheme action checks targeting you by one plus your ranks in Command.</span></p><p><span class=\"fontstyle2\"><strong>Burst Effect:</strong> </span><span class=\"fontstyle3\">If you have two or more bonus successes, characters at range 0–3 suffer the Silenced condition (see page 273) and cannot hear. This effect persists until the beginning of your next turn.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "air",
+    "skill": "theology",
+    "difficulty": "1",
+    "technique_type": "kiho"
+   },
+   "folder": "14mqHW9V9phioNbT",
+   "_id": "hyXxxJy32sX8JyHr",
+   "sort": 150000,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Bellow of Resolve",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "path_of_waves",
+     "page": 92
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>A well-timed word of encouragement or shout of warning can get a fighter back on their feet at a crucial moment, which can mean the difference between life and death on the battlefield.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">Once per scene as a Support action, you may make a </span><span class=\"fontstyle2\">TN 2 Command (earth) check </span><span class=\"fontstyle3\">targeting one Compromised or Incapacitated character.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed and your target is Compromised, they remove strife until their strife is equal to their composure minus 1.</span></p><p><span class=\"fontstyle3\">If you succeed and your target is Incapacitated, they remove fatigue until their fatigue is equal to their endurance minus 1.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(earth)(op)(op): </span><span class=\"fontstyle3\">You may use this technique one additional time this scene.</span></p><p><span class=\"fontstyle2\">(earth)(op)(op)(op): </span><span class=\"fontstyle3\">This technique instead targets any number of Compromised and Incapacitated characters of your choice in the scene.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "earth",
+    "skill": "command",
+    "difficulty": "2",
+    "technique_type": "shuji"
+   },
+   "folder": "mubKEa3wApkpwHra",
+   "_id": "hMrofpEVip5wxeg2",
+   "sort": 100013,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Landslide Strike",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "path_of_waves",
+     "page": 89
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Lashing out at the foe’s legs, the warrior forces their enemy to either abandon their stance or be knocked from their feet. This tactic is especially effective on uneven ground, as the enemy must watch their footing or risk even further injury.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Attack and Scheme action, you may make a </span><span class=\"fontstyle2\">Martial Arts [Melee] ((earth) </span><span class=\"fontstyle3\">or </span><span class=\"fontstyle2\">(water)) check </span><span class=\"fontstyle3\">targeting one character in your weapon’s range. The TN is equal to the target’s vigilance. If your target is in Dangerous, Entangling, or Obscuring terrain, the TN is 1 instead.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, your target must choose one of the following:</span></p><ul><li><p><span class=\"fontstyle3\">- Receive fatigue equal to your ranks in Fitness and the Prone condition.</span></p></li><li><p><span class=\"fontstyle3\">- Switch to a different stance of their choice and suffer the Immobilized condition.</span></p></li></ul><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">If your weapon has the Cumbersome quality, choose one additional target with vigilance lower than or equal to your original target’s vigilance per (op)(op) spent this way.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 2,
+    "bought_at_rank": 1,
+    "ring": "earth",
+    "skill": "melee",
+    "difficulty": "@T:vigilance",
+    "technique_type": "kata"
+   },
+   "folder": "9wUKvhOffK3VQ1xA",
+   "_id": "jtJGTpR0TYC6KimM",
+   "sort": 900000,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Fitness +1 (0 -> 1)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "ylHpYvWOmiOAEPG9",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 2,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "fitness"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Martial Arts [Unarmed] +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "1QwQBcPU1VflaH9g",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 4,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "unarmed"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  }
+ ],
+ "effects": [],
+ "flags": {},
+ "_stats": {
+  "compendiumSource": "Compendium.l5r5e-compendia-sortilege.pregens-l5r-sortilege.Actor.UM9xu81oG2ZO7y5k",
+  "duplicateSource": null,
+  "exportSource": null,
+  "coreVersion": "14.365",
+  "systemId": "l5r5e",
+  "systemVersion": "1.13.4",
+  "createdTime": 1779050452328,
+  "modifiedTime": 1787691390031,
+  "lastModifiedBy": "7vKCnwOtrdD7lBip"
+ },
+ "ownership": {
+  "default": 0,
+  "7vKCnwOtrdD7lBip": 3
+ },
+ "_id": "ekaguEV9oUfUZ9E5",
+ "sort": 150000
+}

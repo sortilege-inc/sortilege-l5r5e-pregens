@@ -1,0 +1,1450 @@
+{
+ "folder": "SqXvyGSFC0yUpkEH",
+ "name": "Tsume Kunimichi 20 XP (Rank 2)",
+ "type": "character",
+ "img": "modules/l5r5e-compendia-sortilege/images/portraits/tsume_kunimichi_square.png",
+ "prototypeToken": {
+  "actorLink": true,
+  "disposition": 1,
+  "bar1": {
+   "attribute": "fatigue"
+  },
+  "bar2": {
+   "attribute": "strife"
+  },
+  "name": "Tsume Kunimichi 0 XP",
+  "displayName": 30,
+  "width": 1,
+  "height": 1,
+  "texture": {
+   "src": "modules/l5r5e-compendia-sortilege/images/tokens/tsume_kunimichi_token.png",
+   "anchorX": 0.5,
+   "anchorY": 0.5,
+   "fit": "contain",
+   "scaleX": 1,
+   "scaleY": 1,
+   "tint": "#ffffff",
+   "alphaThreshold": 0.75
+  },
+  "lockRotation": false,
+  "rotation": 0,
+  "alpha": 1,
+  "displayBars": 0,
+  "light": {
+   "negative": false,
+   "priority": 0,
+   "alpha": 0.5,
+   "angle": 360,
+   "bright": 0,
+   "color": null,
+   "coloration": 1,
+   "dim": 0,
+   "attenuation": 0.5,
+   "luminosity": 0.5,
+   "saturation": 0,
+   "contrast": 0,
+   "shadows": 0,
+   "animation": {
+    "type": null,
+    "speed": 5,
+    "intensity": 5,
+    "reverse": false
+   },
+   "darkness": {
+    "min": 0,
+    "max": 1
+   }
+  },
+  "sight": {
+   "enabled": false,
+   "range": 0,
+   "angle": 360,
+   "visionMode": "basic",
+   "color": null,
+   "attenuation": 0.1,
+   "brightness": 0,
+   "saturation": 0,
+   "contrast": 0
+  },
+  "detectionModes": {},
+  "occludable": {
+   "radius": 0
+  },
+  "ring": {
+   "enabled": false,
+   "colors": {
+    "ring": null,
+    "background": null
+   },
+   "effects": 0,
+   "subject": {
+    "scale": 1,
+    "texture": null
+   }
+  },
+  "turnMarker": {
+   "mode": 1,
+   "animation": null,
+   "src": null,
+   "disposition": false
+  },
+  "movementAction": null,
+  "flags": {},
+  "randomImg": false,
+  "appendNumber": false,
+  "prependAdjective": false,
+  "depth": 1
+ },
+ "system": {
+  "soft_locked": true,
+  "identity": {
+   "age": "",
+   "clan": "Crane",
+   "family": "Tsume",
+   "female": null,
+   "marital_status": "",
+   "roles": "Shinobi",
+   "school": "Daidoji Harrier School",
+   "school_rank": 2,
+   "school_curriculum_journal": {}
+  },
+  "rings": {
+   "earth": 1,
+   "air": 3,
+   "water": 2,
+   "fire": 2,
+   "void": 2
+  },
+  "notes": "",
+  "description": "",
+  "social": {
+   "honor": 40,
+   "glory": 44,
+   "status": 45,
+   "ninjo": "To see the rigid hierarchy that keeps the common people suffering finally brought low. Kunimichi has witnessed too much injustice perpetuated by the celestial order - peasants starving while nobles feast, talented individuals held back by birth, and the Emperor's divine mandate used to justify cruelty. He longs for a world where merit and compassion matter more than bloodline and divine favor. This desire constantly puts him at odds with his official duties, as he must publicly support the very system he secretly works to undermine.",
+   "giri": "Daidoji Masahiro, a regional administrator who oversees border territories and trade routes. Kunimichi's official duty is to serve as an advance scout and intelligence gatherer, traveling ahead of diplomatic missions to assess threats and gather information about local conditions. His reputation for thoroughness and discretion makes him invaluable for sensitive assignments where the Crane need eyes and ears in unfriendly territory.",
+   "bushido_tenets": {
+    "paramount": "Righteousness",
+    "less_significant": "Duty and Loyalty"
+   }
+  },
+  "skills": {
+   "artisan": {
+    "aesthetics": 0,
+    "composition": 0,
+    "design": 1,
+    "smithing": 1
+   },
+   "martial": {
+    "fitness": 2,
+    "melee": 1,
+    "ranged": 2,
+    "unarmed": 1,
+    "meditation": 1,
+    "tactics": 0
+   },
+   "scholar": {
+    "culture": 1,
+    "government": 0,
+    "medicine": 1,
+    "sentiment": 0,
+    "theology": 0
+   },
+   "social": {
+    "command": 0,
+    "courtesy": 1,
+    "games": 0,
+    "performance": 1
+   },
+   "trade": {
+    "commerce": 1,
+    "labor": 0,
+    "seafaring": 1,
+    "skulduggery": 1,
+    "survival": 0
+   }
+  },
+  "techniques": {
+   "kata": true,
+   "kiho": false,
+   "inversion": false,
+   "invocation": false,
+   "ritual": true,
+   "shuji": true,
+   "maho": false,
+   "ninjutsu": false,
+   "mantra": false,
+   "specificity": true
+  },
+  "endurance": 6,
+  "composure": 6,
+  "focus": 5,
+  "vigilance": 3,
+  "void_points": {
+   "max": 2,
+   "value": 0
+  },
+  "fatigue": {
+   "max": 6,
+   "value": 0
+  },
+  "strife": {
+   "max": 6,
+   "value": 0
+  },
+  "stance": "void",
+  "prepared": true,
+  "xp_total": 21,
+  "xp_spent": 0,
+  "xp_saved": 0,
+  "template": "core",
+  "twenty_questions": {
+   "template": "core",
+   "generated": true,
+   "step1": {
+    "clan": "Crane",
+    "ring": "air",
+    "skill": "culture",
+    "social_status": 35
+   },
+   "step2": {
+    "family": "Tsume",
+    "ring": "water",
+    "skill1": "courtesy",
+    "skill2": "design",
+    "wealth": 8,
+    "social_glory": 44
+   },
+   "step3": {
+    "school": "Daidoji Harrier School",
+    "roles": "Shinobi",
+    "ring1": "air",
+    "ring2": "fire",
+    "skill1": "fitness",
+    "skill2": "skulduggery",
+    "skill3": "melee",
+    "skill4": "ranged",
+    "skill5": "medicine",
+    "allowed_techniques": {
+     "kata": true,
+     "kiho": false,
+     "inversion": false,
+     "invocation": false,
+     "ritual": true,
+     "shuji": true,
+     "maho": false,
+     "ninjutsu": false,
+     "mantra": false,
+     "specificity": true
+    },
+    "techniques": [
+     "tKw2dMxzwVBuWOaT",
+     "pNvLI7ImoPeZPzwK"
+    ],
+    "school_ability": [
+     "bCg2D67yA5yoON9g"
+    ],
+    "equipment": [
+     "Rex7fGo6R1KuUhQJ",
+     "zcsgspz4VluSMeI0",
+     "vYOT19tl8uiIDt14",
+     "BhKwwnN5UHI5rZpp",
+     "n8xA05Fb9WpXg3oo",
+     "S1MG4qPHEV3N8XnO",
+     "5Lr1CNs1uvX7J38y"
+    ],
+    "social_honor": 30
+   },
+   "step4": {
+    "stand_out": "Kunimichi has clear vision about what his capabilities and limitations are.",
+    "ring": "void"
+   },
+   "step5": {
+    "social_giri": "Daidoji Masahiro, a regional administrator who oversees border territories and trade routes. Kunimichi's official duty is to serve as an advance scout and intelligence gatherer, traveling ahead of diplomatic missions to assess threats and gather information about local conditions. His reputation for thoroughness and discretion makes him invaluable for sensitive assignments where the Crane need eyes and ears in unfriendly territory."
+   },
+   "step6": {
+    "social_ninjo": "To see the rigid hierarchy that keeps the common people suffering finally brought low. Kunimichi has witnessed too much injustice perpetuated by the celestial order - peasants starving while nobles feast, talented individuals held back by birth, and the Emperor's divine mandate used to justify cruelty. He longs for a world where merit and compassion matter more than bloodline and divine favor. This desire constantly puts him at odds with his official duties, as he must publicly support the very system he secretly works to undermine."
+   },
+   "step7": {
+    "clan_relations": "Kunimichi genuinely respects the Daidoji family's values of hard work and practical service, but he's grown increasingly disillusioned with how the Crane's political maneuvering serves only the elite. He sees some of the Tsume and Daidoji good people trapped in a corrupt system, and his Kolat activities are partly motivated by a desire to free them from the endless cycle of serving the ungrateful Doji, and above them, Hantei XXXVIII. ",
+    "skill": "meditation",
+    "social_add_glory": 0
+   },
+   "step8": {
+    "bushido": "Kunimichi views Bushido as a beautiful philosophy corrupted by those in power. The ideals of Courage, Honor, and Compassion resonate with him deeply, but he's seen how Duty and Loyalty are weaponized to keep people obedient to unjust rulers. He believes true honor lies in serving the greater good of all people, not blindly following orders from divine autocrats. ",
+    "skill": "none",
+    "social_add_honor": 10,
+    "tenet_paramount": "Righteousness",
+    "tenet_less_significant": "Duty and Loyalty",
+    "item": []
+   },
+   "step9": {
+    "success": "Using carefully placed explosive charges to sink a trading vessel which was carrying a shipment of weapons intended for a Lion clan vassal who was becoming too powerful for Crane political interests. Kunimichi posed as a dock worker, and on the night before departure, he placed small but precisely calculated charges that went off more than a day later, while the ship was en route, sinking it.",
+    "distinction": [
+     "DWrZtBuyK83Ah3a7"
+    ]
+   },
+   "step10": {
+    "difficulty": "While learning to craft more sophisticated charges, an experimental mixture detonated prematurely, leaving his arm permanently weakened and scarred. Though he's adapted his techniques and become much more careful, the injury serves as a constant reminder of the dangers in his work. The physical limitation affects his ability to use certain weapons and perform some manual tasks, forcing him to rely more on precision and planning than raw capability.",
+    "adversity": [
+     "BUdmYV82FFppmXo1"
+    ]
+   },
+   "step11": {
+    "calms": "Kunimichi finds deep satisfaction in taking something that appears ruined and transforming it into something more beautiful than before. The careful, meditative process of examining cracks, mixing the precious metal, and slowly rebuilding broken pieces mirrors his hopes for society itself.",
+    "passion": [
+     "pVo3SUK4ZeNQUwye"
+    ]
+   },
+   "step12": {
+    "worries": "Hypervigilance about being discovered by authorities or enemy agents. Kunimichi constantly scans crowds for familiar faces, analyzes every interaction for signs of suspicion, and maintains multiple exit strategies from any location. This paranoid awareness has saved his life several times, but it also exhausts him mentally and makes it difficult to form genuine relationships.",
+    "anxiety": [
+     "Sw9LFYlxdkwGFCfu"
+    ]
+   },
+   "step13": {
+    "most_learn": "Yuki, a geisha who operates in the entertainment districts of Otosan Uchi. On the surface, she appears to be merely an accomplished entertainer skilled in poetry, music, and conversation. However, she is actually a high-ranking Kolat agent who first introduced Kunimichi to the conspiracy's philosophy during what appeared to be routine visits to a tea house. Through seemingly casual conversations about poetry and philosophy, she taught him to see the inherent contradictions in the Celestial Order and showed him how the rigid hierarchy perpetuates suffering. Her lessons in reading people, managing multiple identities, and maintaining perfect composure under pressure have been invaluable to his survival as a double agent. To any observer, their relationship appears to be that of a samurai seeking cultured entertainment, making it the perfect cover for their true mentorship.",
+    "skill": "performance",
+    "advantage": [],
+    "disadvantage": [
+     "p1cGWR2i5WrGtIKb"
+    ]
+   },
+   "step14": {
+    "first_sight": "The careful way he holds his left arm - not protectively, but with a stiffness that suggests old injury. Those observant enough notice that he unconsciously favors his right side when reaching for items or gesturing. The scarring is mostly hidden by his clothing. Some interpret this as the mark of a dedicated warrior who has seen real action, which actually enhances his reputation for experience.",
+    "special_features": [
+     "xFAWMoykfSYWIScE"
+    ]
+   },
+   "step15": {
+    "stress": "Kunimichi becomes eerily calm and methodical when under pressure. Years of managing explosives and maintaining his cover identity have taught him that panic leads to fatal mistakes. He speaks more quietly, moves more deliberately, and his eyes become constantly mobile as he assesses threats and escape routes. To most observers, this controlled response makes him appear calm, though those who know him well recognize it as a sign that he's operating in 'mission mode' and may be preparing for violence."
+   },
+   "step16": {
+    "relations": "His marriage to Sodona Akemi is a constant source of tension in his life. Arranged to strengthen ties between the Crane and a Phoenix vassal family, their union is politically useful but personally hollow. Akemi is intelligent and dutiful but finds Kunimichi's frequent absences and emotional distance frustrating. She suspects he's hiding something but attributes it to typical masculine stoicism rather than his true secret. Their shared home is polite but cold, and both maintain their duties while privately resenting the arrangement.\n\nAdditionally, he maintains a professional relationship with Yasuki Toshiro, a Crab merchant who occasionally supplies the Crane with specialty goods. Unknown to most, Toshiro is actually a Kolat sympathizer who provides Kunimichi with hard-to-acquire materials for his sabotage work, disguised as legitimate trade goods. Toshiro gave him a carved jade medallion that identifies the bearer as someone he will do business with, no questions asked. Can be used to acquire unusual materials or arrange discreet meetings.",
+    "item": [
+     "gg11bRZvs9Obf8RV"
+    ]
+   },
+   "step17": {
+    "parents_pov": "His parents, Tsume Jiro and Tsume Mariko, would describe Kunimichi as 'their dutiful but distant son.' They're immensely proud of his reputation for completing difficult assignments and his marriage to a Phoenix family, seeing both as bringing honor to the Tsume name.  His father respects his dedication to duty but privately wishes Kunimichi would request safer assignments and focus on building a proper family with his wife. They see him as someone who gives everything to his obligations but takes little joy from life, though they assume this is simply the burden of serving the clan in dangerous times.",
+    "skill": "unarmed",
+    "bond": []
+   },
+   "step18": {
+    "heritage_name": "He is named after his ancestor that was the most recent known link to the Imperial family.",
+    "heritage_1": 9,
+    "heritage_2": 3,
+    "heritage_item": [],
+    "heritage_add_honor": 0,
+    "heritage_add_glory": 0,
+    "heritage_add_status": 10,
+    "skill": "smithing"
+   },
+   "step19": {
+    "firstname": "Kunimichi"
+   },
+   "step20": {
+    "death": "Kunimichi is not under any illusions. Most likely, he dies by his own hand in an accident; next most likely is that the conspiracy is betrayed and he is executed."
+   }
+  },
+  "zeni": 400,
+  "money": {
+   "koku": 0,
+   "bu": 0,
+   "zeni": 0
+  },
+  "is_afflicted_or_compromised": false
+ },
+ "items": [
+  {
+   "name": "Skulk",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ninjutsu.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 226
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Shinobi are known for walking silently from shadow to shadow, moving like phantoms. Some of this relies upon agility and speed, of course, but veterans in the art of stealth know that using a crowd or another visual distraction to walk unnoticed can be as effective as the most complex acrobatics.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you perform an Initiative or Attack check using Air, you may spend (op) as follows:</span></p><p><span class=\"fontstyle4\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">If you are in Obscuring terrain, a crowd, or otherwise concealed from sight, one character with vigilance lower than or equal to your ranks in Skulduggery loses sight of you.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "ninjutsu"
+   },
+   "folder": null,
+   "_id": "keHWXNoLgzRtZ5aB",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Striking as Air",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 177
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Not every stroke a warrior throws in battle is intended to kill—even if they all lead to that end goal. A skilled fighter can tell when an attack will not land and subtly shift it into a different sort of attack, meant to probe the enemy’s defenses or draw their guard out of position. By carefully placing attack after attack, a master of the blade can eventually whittle down their opponent’s options until none remain but death.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Martial Arts [Melee, Ranged, or Unarmed] (Air) check, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle2\">(air)(op)+: </span><span class=\"fontstyle3\">Reserve one of your rolled dice, plus one additional die per (op)(op) spent this way. These dice become dropped dice. When making a check with the same skill before the end of your next turn, you may roll one fewer (ring) per reserved (ring) and one fewer (skill) per reserved (skill), then add the reserved dice to your roll. These dice count as rolled dice, but are added set to the results they had when they were reserved.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "kata"
+   },
+   "folder": "eKn62n6zERrRUMNW",
+   "_id": "mUvtCHSJldGYh9YA",
+   "sort": 600000,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Explosive Arrival",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "fields_of_victory",
+     "page": 74
+    },
+    "description": "<p><span class=\"fontstyle0\">After you perform an Attack action against a target who is Dazed or unaware of your presence, that target receives strife equal to your school rank. If your target is an enemy leader’s cohort in a mass battle, the enemy army also receives that much panic</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 0,
+    "rank": 1,
+    "bought_at_rank": 0,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "school_ability"
+   },
+   "folder": null,
+   "_id": "spzZ3RaOtm9nfjqb",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Traveling pack",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 245
+    },
+    "description": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 0,
+    "rarity": "1",
+    "zeni": "10 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ]
+   },
+   "folder": null,
+   "_id": "7hlTL5jPSY8ImOyg",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Traveling Clothes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "2",
+    "zeni": "2 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000015",
+      "name": "Durable"
+     },
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     },
+     {
+      "id": "L5RCorePro000016",
+      "name": "Subtle"
+     }
+    ],
+    "armor": {
+     "physical": 2,
+     "supernatural": 0
+    }
+   },
+   "folder": null,
+   "_id": "xdSfinJ5ORpikoPL",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Common Clothes",
+   "type": "armor",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 239
+    },
+    "description": "<p>Rokugani clothing runs the gamut from the simple trousers and smocks worn by peasants, to the broad-shouldered haori worn by traditionalist samurai, to the noble’s embroidered silk kimono.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "1",
+    "zeni": "1 bu",
+    "properties": [
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ],
+    "armor": {
+     "physical": 1,
+     "supernatural": 0
+    }
+   },
+   "folder": null,
+   "_id": "iukXDHT0I5V0JwDq",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Katana",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 232
+    },
+    "description": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "7",
+    "zeni": "20 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     }
+    ],
+    "category": "Swords",
+    "skill": "melee",
+    "readied": false,
+    "range": "1",
+    "damage": 4,
+    "deadliness": 5,
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null,
+   "_id": "fKBPLc4nL3YzxMKj",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Knife",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/knife.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 234
+    },
+    "description": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "1",
+    "zeni": "1 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     },
+     {
+      "id": "L5RCorePro000005",
+      "name": "Concealable"
+     },
+     {
+      "id": "L5RCorePro000012",
+      "name": "Mundane"
+     }
+    ],
+    "category": "Hand Weapons",
+    "skill": "melee",
+    "readied": false,
+    "range": "0",
+    "damage": 2,
+    "deadliness": 4,
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null,
+   "_id": "snKxhEqEWzbiAuL1",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Wakizashi",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 233
+    },
+    "description": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "7",
+    "zeni": "15 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000002",
+      "name": "Ceremonial"
+     },
+     {
+      "id": "L5RCorePro000001",
+      "name": "Razor-Edged"
+     }
+    ],
+    "category": "Swords",
+    "skill": "melee",
+    "readied": false,
+    "range": "0-1",
+    "damage": 3,
+    "deadliness": 5,
+    "grip_1": "",
+    "grip_2": "Deadliness +2"
+   },
+   "folder": null,
+   "_id": "zrL6Mf7U96EYVZ9c",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Shuriken",
+   "type": "weapon",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/weapons/kusarigama.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 237
+    },
+    "description": "<p><span class=\"fontstyle0\">Favored by shinobi, shuriken are small metal discs with a sharpened edge that come in a dizzying array of sizes and styles. They are designed mainly to distract, but shuriken can also be coated with toxins for lethality, and any cutting edge can kill if used properly.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 6,
+    "weight": 1,
+    "rarity": "6",
+    "zeni": "1 koku",
+    "properties": [
+     {
+      "id": "L5RCorePro000005",
+      "name": "Concealable"
+     }
+    ],
+    "category": "Specialist Weapons",
+    "skill": "unarmed",
+    "readied": false,
+    "range": "0",
+    "damage": 2,
+    "deadliness": 4,
+    "grip_1": "(stab or slash): -, (thrown): Martial Arts [Ranged], Range 1-3",
+    "grip_2": "N/A"
+   },
+   "folder": null,
+   "_id": "GCI5YQBhSinJC2DP",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Famously Reliable",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 104
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>When the lord came to see how the smith was proceeding on his sword, he found the smithy a shambles, the river running through the forge, and the smith with his robes tied up around his middle.</em></span></p><p><span class=\"fontstyle0\"><em>“Tsi-san,” said the great lord. “I trust my sword will be ready tomorrow, as we agreed?”</em></span></p><p><span class=\"fontstyle0\"><em>“Of course, great lord,” said the smith, bowing low. “This is only a minor setback.”</em></span></p><p><span class=\"fontstyle2\"><em>– The Trials of Tsi Wenfu, </em></span><span class=\"fontstyle3\"><em>author unknown</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Famously Reliable distinction:</span></p><ul><li><p><span class=\"fontstyle2\">- Other people have heard of you for your remarkable adherence to your oaths and responsibilities, even over and above most samurai, and they believe it by default unless given evidence to the contrary.</span></p></li><li><p><span class=\"fontstyle2\">- When performing a check for which you need to leverage your reputation for keeping your oaths and bargains (such as a Command (earth) check to calm a panicked soldier or a Performance (earth) check to relate a tale that inspires patience), you may reroll up to two dice.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "earth",
+    "peculiarity_type": "distinction",
+    "types": "Fame, Interpersonal"
+   },
+   "folder": null,
+   "_id": "BiFblteudFeNptBj",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Maimed Arm",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 125
+    },
+    "description": "<p><em>The samurai kept her arm tucked in her kimono. Her left sleeve flapped empty in the breeze, a testament to her folly—and resilience.</em></p><p></p><p>The following apply to a character with the Maimed Arm adversity:</p><ul><li><p>- Your right or left arm is injured (your choice at the time the disadvantage is assigned), making it much harder to perform activities that involve use of that arm. You can use the arm, but gripping anything tightly causes you pain, and you might need a sling to help the arm heal properly.</p></li><li><p>-  When you make a check for which you need to use two hands at once (such as a Design (fire) check to sew a new kimono or a Martial Arts (melee) (fire) check to overwhelm a foe with a powerful overhead slice), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "fire",
+    "peculiarity_type": "adversity",
+    "types": "Physical, Scar"
+   },
+   "folder": null,
+   "_id": "VqEONklsb3eP1cek",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Kintsugi",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "writ_of_the_wild",
+     "page": 104
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Mirumoto Kinshichirō did not cry then. As a child, he carelessly dropped this bowl, one that had been in his family for generations, a gift supposedly blessed by the actual Kami Togashi. His parents berated him, and he carried the guilt all throughout his adolescence. He even decided to study with the Agasha mystics, but his parents cared so little, they let him leave.</em></span></p><p><span class=\"fontstyle0\"><em>They did not realize that hidden in his belongings, a box contained the pieces of the bowl, carefully wrapped in a cloth. This box remined by his side as he studied, until Kinshichirō had to make his masterpiece. The bowl had broken into seven pieces, exactly the number of his siblings plus him, yet when he unfolded the cloth, he noted he only had six. The despair he felt only lasted for a little while.</em></span></p><p><span class=\"fontstyle0\"><em>When Kinshichirō returned home, he unveiled the bowl. He had joined the cracks with gold, and the missing space filled with a singular piece of jade with the family mon. His siblings welcomed him back, so he finally allowed the tears to flow.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Kintsugi passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You have a particular fondness and skill for kintsugi, the art of mending broken pottery with gold or other similar substances.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to mend an object with kintsugi or interact with a piece of kintsugi-repaired pottery (such as a Culture (earth) check to recall the name of a particular practitioner of kintsugi by their artist’s mark on a piece of pottery or a Labor (earth) check to produce a breathtaking piece), you remove 3 strife.</span></p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "earth",
+    "peculiarity_type": "passion",
+    "types": "Mental, Physical"
+   },
+   "folder": null,
+   "_id": "EWDiAeWLaZjmSoXv",
+   "sort": 4400000,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Eyes of Many",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "path_of_waves",
+     "page": 73
+    },
+    "description": "<p><em>“If you live worrying about the eyes and thoughts of others, your life is no longer your own.”</em></p><p><em>– Youta, Mystic of the Mountain</em></p><p><strong>Effects:</strong> The following apply to a character with the Eyes of Many anxiety:</p><ul><li><p>-  You are constantly worried that others are watching and judging you, whether maliciously or not. You are unable to relax in crowded places, and you tend to worry about your impressions on strangers more than most other people would.</p></li><li><p>- After performing a check in a crowded place or where two or more strangers are actively listening to you (such as a Courtesy (air) check to tell your employer your mission went very well when it did not in front of their other retainers or a Fitness (air) check to avoid notice), you suffer 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "air",
+    "peculiarity_type": "anxiety",
+    "types": "Mental"
+   },
+   "folder": null,
+   "_id": "yciipjMkJlMUHx0B",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Bitter Betrothal",
+   "type": "peculiarity",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "core_rulebook",
+     "page": 117
+    },
+    "description": "<p><em>“My husband returns home tonight,” she said in a low whisper, passing the bag of coins beneath the table to the men seated across from her. Nobody in this inn knew her face, yet she still felt the need for caution. </em></p><p><em>“He will be traveling via the eastern road.”</em></p><p><em>“It shall be done,” said the leader. Without further word, he and his companions rose from the table and left the inn. The room seemed somehow lighter without them in it. Soon, she would be rid of him.</em></p><p></p><p>The following apply to a character with the Bitter Betrothal adversity</p><ul><li><p>- Something significantly complicates your relationship with your betrothed or spouse. As a result, they often undermine your efforts, whether out of malice, negligence, or an incompatible set of goals.</p></li><li><p>- When you make a check that requires the collaboration of your betrothed or spouse (such as a Courtesy (water) check to make a polite request to their family for political backing or a Culture (water) check to know the proper thing to do at a social function involving their relatives), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul><p></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 0,
+    "xp_cost": 3,
+    "rank": 0,
+    "bought_at_rank": 0,
+    "ring": "water",
+    "peculiarity_type": "adversity",
+    "types": "Interpersonal"
+   },
+   "folder": null,
+   "_id": "L1wTDYUBM0LxJ00v",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Engineer's Kit",
+   "type": "item",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "shadowlands",
+     "page": 107
+    },
+    "description": "<p>These kits provide an architect, civil engineer, siege engineer, or builder with a set of basic tools for surveying and building. These tool kits typically include measuring and surveying tools, rolls of parchment for making plans, various drafting implements, and an assortment of carpenters’ and masons’ tools. (Cost: 3 bu. Rarity: 3.)</p>",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "3",
+    "zeni": "3 bu",
+    "properties": []
+   },
+   "folder": null,
+   "_id": "7XbQR8ppsOsKNZI6",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Jade Medallion",
+   "type": "item",
+   "img": "systems/l5r5e/assets/icons/items/item.svg",
+   "_id": "Yid6hGjzDmIANQee",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "equipped": false,
+    "quantity": 1,
+    "weight": 1,
+    "rarity": "4",
+    "zeni": "0",
+    "properties": []
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Commerce +1 (0 -> 1)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "ecetqON7ZMrfG2vC",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 2,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "commerce"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Swift Scouting",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/ninjutsu.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "fields_of_victory",
+     "page": 105
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The line between a shinobi and a scout is mostly one of their current assignment. Yet, while traditional scouting can take days or weeks, sufficiently experienced survivalists who have lived in the wilds can undertake scouting missions much more quickly than typical observers. Shinobi must often spend long periods of time traveling Rokugan, hiding in the wilderness, or spying on targets on the road. As a result, many are intimately familiar with the sorts of environments found in those types of locations and can quickly sweep an area to identify the points of interest inside it. Especially skilled shinobi are likely to leave traps behind for enemy scouts or forces in the area.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity, or once per scene as a Movement and Support action, you may make a </span><span class=\"fontstyle2\">TN 3 Survival (water) check </span><span class=\"fontstyle3\">to scout the terrain around you. If you activate this technique in an urban environment or on the ocean, use Skulduggery or Seafaring instead, respectively.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you discover all terrain qualities of the area around you (several miles in all direction during downtime, or the entire area in which the scene is occurring), as well as any fortifications in the area. Characters with vigilance lower than your Air Ring plus your bonus successes do not detect you during this time.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(water)(op)(op) </span><span class=\"fontstyle2\">(<em>Downtime</em> or <em>Mass Battle</em>): </span><span class=\"fontstyle3\">If you succeed, you may choose one part of the area (a single battle zone, if using the rules for battle zones) and add one of the following terrain qualities to that area: Confining, Dangerous, Entangling, Obscuring.</span></p><p><span class=\"fontstyle2\">(water)(op)(op) (<em>Other Scene</em>): </span><span class=\"fontstyle3\">If you succeed, you may choose a position in the area you scouted. Up to three range bands surrounding that position gain one of the following terrain qualities: Confining, Dangerous, Entangling, Obscuring.</span></p><p><span class=\"fontstyle5\">(water)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">You discover the location and composition of any enemy forces in the area led by characters with Air Ring lower than your vigilance plus (op) spent this way.</span></p><p><span class=\"fontstyle5\">(water)(op)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">During your next turn, if you perform an action targeting an enemy cohort, ignore any fortification it is occupying. You may resolve effects as if you were inside that fortification.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "water",
+    "skill": "survival",
+    "difficulty": "3",
+    "technique_type": "ninjutsu"
+   },
+   "folder": null,
+   "_id": "MUN3KFo9yKsYpUrN",
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Trip the Leg",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "court_of_stones",
+     "page": 113
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>The bushi’s spear flashes out, aiming low to trip up their opponent and send the unlucky foe crashing to the ground.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Attack action using one readied polearm, you may make a </span><span class=\"fontstyle2\">TN 2 Martial Arts [Melee] check </span><span class=\"fontstyle3\">targeting one character at range 1–2.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, your target suffers the Prone condition.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(op): </span><span class=\"fontstyle3\">If you succeed, the target receives 2 fatigue and 2 strife.</span></p><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">If your target’s vigilance is lower than or equal to </span><span class=\"fontstyle5\">(op) </span><span class=\"fontstyle3\">spent this way, they suffer the Disoriented condition.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "air",
+    "skill": "melee",
+    "difficulty": "2",
+    "technique_type": "kata"
+   },
+   "folder": "9wUKvhOffK3VQ1xA",
+   "_id": "YjqOETRzDOSM41vZ",
+   "sort": 2400000,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Cautious Tread",
+   "type": "technique",
+   "flags": {},
+   "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+   "effects": [],
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "system": {
+    "source_reference": {
+     "source": "children_of_the_five_winds",
+     "page": 108
+    },
+    "description": "<p><span class=\"fontstyle0\"><em>Horses and camels are excellent mounts, but their long legs make them somewhat more vulnerable to certain kinds of terrain than their human riders. A skillful handler knows how to lead their mount around the most dangerous spots, whether holes dug by rodents in the plains, swampy terrain, or chasms in the desert.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Movement action check while riding a mount, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)(op): </span><span class=\"fontstyle3\">Choose one of the following terrain qualities: Dangerous, Entangling, or Obscuring. You and your mount ignore its effects. This effect persists until the end of your next turn.</span></p>",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 3,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "skill": "",
+    "difficulty": "",
+    "technique_type": "kata"
+   },
+   "folder": "eKn62n6zERrRUMNW",
+   "_id": "irtb17I29dSwWLcT",
+   "sort": 1400000,
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Seafaring +1 (0 -> 1)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "wv8HGRwUM2KZUg92",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": false,
+    "xp_used": 2,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "seafaring"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Martial Arts [Ranged] +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "oZXN9FIjRiXUBrFA",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 4,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "ranged"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  },
+  {
+   "name": "Fitness +1 (1 -> 2)",
+   "type": "advancement",
+   "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+   "_id": "qiTULqsYN1pVTz2T",
+   "system": {
+    "source_reference": {
+     "source": "",
+     "page": 0
+    },
+    "description": "",
+    "parent_id": null,
+    "items": [],
+    "in_curriculum": true,
+    "xp_used": 4,
+    "xp_cost": 3,
+    "rank": 1,
+    "bought_at_rank": 1,
+    "ring": "void",
+    "advancement_type": "skill",
+    "skill": "fitness"
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "flags": {},
+   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.365",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.4",
+    "lastModifiedBy": null,
+    "createdTime": null,
+    "modifiedTime": null
+   },
+   "ownership": {
+    "default": 0
+   }
+  }
+ ],
+ "effects": [],
+ "flags": {},
+ "_stats": {
+  "compendiumSource": "Compendium.l5r5e-compendia-sortilege.pregens-l5r-sortilege.Actor.vTYfHWoU0jadfya1",
+  "duplicateSource": null,
+  "exportSource": null,
+  "coreVersion": "14.365",
+  "systemId": "l5r5e",
+  "systemVersion": "1.13.4",
+  "createdTime": 1779050417703,
+  "modifiedTime": 1787691631708,
+  "lastModifiedBy": "7vKCnwOtrdD7lBip"
+ },
+ "ownership": {
+  "default": 0,
+  "7vKCnwOtrdD7lBip": 3
+ },
+ "_id": "ZZ1PguzJan2hK0u0",
+ "sort": 200000
+}

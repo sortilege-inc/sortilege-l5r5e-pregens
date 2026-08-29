@@ -1,0 +1,690 @@
+[
+ {
+  "name": "Accursed Summoning",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761273311094,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 118
+   },
+   "description": "<p><span class=\"fontstyle2\"><em>The mahō-tsukai spills blood and recites a foul prayer to summon a chosen oni and bind it to their will. The oni appears caught in an invisible prison, unable to act except at the summoner’s direction.</em></span></p><p><span class=\"fontstyle0\"><strong>Activation:</strong> </span><span class=\"fontstyle2\">As a downtime activity action, you may make a </span><span class=\"fontstyle0\">Theology (void) check </span><span class=\"fontstyle2\">with TN equal to the oni’s Intrigue rank.</span></p><p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">If you succeed, you </span><span class=\"fontstyle3\">summon </span><span class=\"fontstyle2\">the desired oni and </span><span class=\"fontstyle3\">bind </span><span class=\"fontstyle2\">it to your will, unable to act without your consent. If you fail, you </span><span class=\"fontstyle3\">summon </span><span class=\"fontstyle2\">the desired oni (or a different one, at the GM’s discretion) but it breaks free of your control and curses you, causing you to suffer the Afflicted condition. If you have 3 or more kept (st) results, the summoned oni </span><span class=\"fontstyle3\">scries </span><span class=\"fontstyle2\">and learns your name.</span></p><h4><span class=\"fontstyle5\">New Opportunities:</span></h4><p><span class=\"fontstyle4\">(op)</span><span class=\"fontstyle2\">+</span><span class=\"fontstyle0\">: </span><span class=\"fontstyle2\">The sight of the oni instills primal terror in any onlookers. Each character who can see the oni and is within range 3 suffers a number of strife equal to </span><span class=\"fontstyle4\">(op) </span><span class=\"fontstyle2\">spent this way.</span></p><p><span class=\"fontstyle4\">(op)(op)</span><span class=\"fontstyle0\">: </span><span class=\"fontstyle2\">The oni instills a Shadowlands Taint disadvantage of your choice upon anyone within a range equal to the number of your rings with the Shadowlands Taint disadvantage attached.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "theology",
+   "difficulty": "@T:intrigueRank",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NFND9NcuM2omMQpD",
+  "sort": 0
+ },
+ {
+  "name": "Bind the Undead",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761273439910,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 118
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The mahō-tsukai draws on the power of Jigoku to extend their will over the animated dead (such as skeletons or zombies). These undead then act as the mahō-tsukai commands, mimicking gestures or following simple instructions. They can attack a target or follow the mahō-tsukai like a squad of troops follows their leader. A smaller number of undead allows the practitioner greater control, and a single undead being can act naturally enough to infiltrate a town or castle, if the practitioner remains nearby and sustains the necessary concentration.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Scheme action, you may make a </span><span class=\"fontstyle2\">TN 2 Theology (fire) check </span><span class=\"fontstyle3\">targeting a number of undead creatures up to your Earth Ring at range 0–4. You can only choose undead creatures with combat rank 3 or lower this way.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle0\">bind </span><span class=\"fontstyle3\">each target to your will. They can now act only under your control, via simple voice commands. You can issue straightforward commands with your allocated five words per turn, or you can issue more complex commands if you dedicate your action to giving a command. If you are killed or become Unconscious due to a critical strike, all bound undead under your control cease to function, slumping to the ground as inanimate corpses. Whether you succeed or fail, an area encompassing 1 range band around each target’s position gains the Defiled terrain quality.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">One undead creature you choose becomes a revenant (see page 18) in addition to becoming bound.</span></p><p><span class=\"fontstyle2\">(op)+: </span><span class=\"fontstyle3\">Treat the maximum range of the technique as 1 higher per (op) spent this way.</span></p><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Treat the maximum combat rank of an undead creature you can bind as 1 higher per (op) spent this way. If you bind an intelligent undead creature this way and later lose control of it, it reverts to its own goals instead of becoming inanimate.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 2,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "skill": "theology",
+   "difficulty": "2",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mIgPNMxgeuiwUqPl",
+  "sort": 0
+ },
+ {
+  "name": "Commune with Evil",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761273602466,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 118
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The practitioner detects any malevolent supernatural entities in the area, senses their desires, and makes a bargain for an unholy blessing.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a downtime activity action, you may make a </span><span class=\"fontstyle2\">TN 1 Theology (void) check</span><span class=\"fontstyle3\">.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle0\">scry </span><span class=\"fontstyle3\">for the presence of any Otherworldly or Tainted beings at range 0–6.</span></p><h4><span class=\"fontstyle0\">New Opportunities</span></h4><p><span class=\"fontstyle3\">(op): </span><span class=\"fontstyle4\">If there are any such beings, they accept your offering, and they </span><span class=\"fontstyle5\">augment </span><span class=\"fontstyle4\">you with an unholy blessing that increases the value of the ring you used for the check by 1. You can only have one unholy blessing at a time, and it persists until the end of the scene.</span></p><p><span class=\"fontstyle3\">(op)(op)(op)+: </span><span class=\"fontstyle4\">If you receive an unholy blessing, it temporarily increases the ring’s value by an additional 1 per </span><span class=\"fontstyle2\">(op)(op)(op) </span><span class=\"fontstyle4\">spent this way.</span></p><p><span class=\"fontstyle3\">(op)+: </span><span class=\"fontstyle4\">If you receive an unholy blessing, it persists for 1 additional round per (op) spent this way.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "theology",
+   "difficulty": "1",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XXHWw0ydoD5ktFR3",
+  "sort": 0
+ },
+ {
+  "name": "Dark Reflection",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761273683574,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 119
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The mahō-tsukai must obtain an obsidian mirror, pool of Tainted water, or other corrupted reflective surface. By appealing to kansen, the practitioner makes the object becomes a divinatory tool for a time. The practitioner can receive visual answers to questions or spy on a person or area. Kansen are willing to play this “game,” but the accuracy of images may not be reliable.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may make a </span><span class=\"fontstyle2\">TN 2 Theology (water) check </span><span class=\"fontstyle3\">targeting a person, object, or location you have encountered before.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle0\">scry </span><span class=\"fontstyle3\">upon a chosen person or location. However, the image is distorted: one minor detail within it, of the GM’s choosing, is always incorrect, reflecting instead the fears or desires of the mahō-tsukai.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">You </span><span class=\"fontstyle0\">bind </span><span class=\"fontstyle3\">the kansen within the object permanently. The object gains the Unholy quality and retains its divinatory properties after the initial use. As a Support action, a character may give the object an offering of blood to show the chosen object, person, or location again.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "skill": "theology",
+   "difficulty": "2",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Ijg6Q9pWmvTCnEQs",
+  "sort": 0
+ },
+ {
+  "name": "Entreat the Shadow Steed",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761273788694,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 119
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The mahō-tsukai compels the kansen to fetch a suitable mount. The onikage rises from the ground as a skeletal mount, or an undead horse with decaying flesh comes galloping across the Shadowlands.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may make a </span><span class=\"fontstyle2\">TN 2 Theology (earth) check</span><span class=\"fontstyle3\">. This technique can be used only in the Shadowlands, or near a place where the corpse of a horse might be found, such as an ancient or recent battlefield.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle0\">summon </span><span class=\"fontstyle3\">an onikage (see page 23) and </span><span class=\"fontstyle0\">bind </span><span class=\"fontstyle3\">it to your will. It obeys your commands, allowing you to ride it as per the </span><span class=\"fontstyle2\">Mounts and Riding </span><span class=\"fontstyle3\">rules on page 326 of the core rulebook. It reacts violently if others try to ride it.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">The equine creature retains enough flesh to pass as a living horse; characters with vigilance 3 or lower do not notice its undead status.</span></p><p><span class=\"fontstyle5\">(op)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Other characters whom you designate can also ride the onikage.</span></p><p><span class=\"fontstyle5\">(op)(op)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Summon one additional onikage per (op)(op)(op) spent this way.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 2,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "skill": "theology",
+   "difficulty": "2",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "sAOqvGdrvfygIEOJ",
+  "sort": 0
+ },
+ {
+  "name": "Fiend's Retreat",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761273869185,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 119
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>This technique allows its user to exchange positions with an unsuspecting character, leaving them to meet a miserable end. The blade descends, but the sorcerer’s flesh twists like wax and melts to foul muck, revealing some unfortunate whom the mahō-tsukai left to meet the judgment they so richly deserve.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">Once per scene, as an Attack and Movement action or as an out-of-turn action when you are targeted by an attack, you may make a </span><span class=\"fontstyle2\">Theology (air) check </span><span class=\"fontstyle3\">targeting one character at range 2–3. The target must be Incapacitated or a minion NPC, and the TN of the check is equal to the target’s vigilance.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle0\">curse </span><span class=\"fontstyle3\">the target, forcing them to exchange physical locations with you. The target becomes the target of any attacks that were targeting you.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Choose one additional character at range 0–1 to move and one additional target per (op) spent this way.</span></p><p><span class=\"fontstyle2\">(op): </span><span class=\"fontstyle3\">Increase the maximum range by 1 per (op) spent this way.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 3,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "skill": "theology",
+   "difficulty": "@T:vigilance",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Elx5d8ZAKobc1PHY",
+  "sort": 0
+ },
+ {
+  "name": "Grip of Anguish",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761274634112,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 224
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The mahō-tsukai calls for the kansen afflicting their victim to wreak sickness and agony upon them. The victim is tormented by nausea, pain, and feverish delusions.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Attack action, you may make a </span><span class=\"fontstyle2\">Theology (water) check </span><span class=\"fontstyle3\">targeting one living being at range 0–2. The TN of the check is equal to the target’s vigilance.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle4\">curse </span><span class=\"fontstyle3\">your target, causing them to suffer supernatural damage equal to your Water Ring plus the number of your rings with a Shadowlands Taint disadvantage attached.</span></p><h4><span class=\"fontstyle0\">New Opportunities</span></h4><p><span class=\"fontstyle3\">(water)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle4\">One target must resist with a </span><span class=\"fontstyle2\">TN 3 Fitness check ((earth) 1, (fire) 4) </span><span class=\"fontstyle4\">or suffer one of the following conditions of your choice: Dazed, Disoriented, Silenced.</span></p><p><span class=\"fontstyle3\">(water)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle4\">Treat the maximum range of the technique as 1 higher per (op) spent this way.</span></p><p><span class=\"fontstyle2\">(water)(op)+: </span><span class=\"fontstyle4\">Choose one additional target per (op) spent this way.</span></p><p><span class=\"fontstyle3\">(water)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle4\">One target must resist with a </span><span class=\"fontstyle2\">TN 3 Fitness check ((earth) 1, (fire) 4) </span><span class=\"fontstyle4\">or suffer one of the following conditions of your choice: Bleeding, Immobilized, or Lightly Wounded.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "skill": "theology",
+   "difficulty": "@T:vigilance",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "lwbnSkhvc5OXmNis",
+  "sort": 0
+ },
+ {
+  "name": "Incite Haunting",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761274479042,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 224
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Kansen are kami twisted by the power of Fu Leng, and they need little prompting to cause harm. Directing them toward a target with a vile rite and profane words that seem to warp the air, the mahō-tsukai afflicts a poor soul with a spiritual malady that can fester and bloom, fueling darker curses still. Spiritualists can perceive kansen as wretched, ghostly figures, clinging to their victim and dragging them inexorably toward a wretched end wrought by their worst nature.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Attack and Scheme action, you may make a </span><span class=\"fontstyle2\">Theology check </span><span class=\"fontstyle3\">targeting one character at range 0–1. This check uses any ring of your choice, and the TN of the check is equal to the target’s vigilance.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle4\">curse </span><span class=\"fontstyle3\">your target, causing them to suffer the Afflicted condition. If you fail, the target rebuffs your efforts. If your shortfall is 2 or higher, the target also becomes aware of your attempted malediction.</span></p><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle6\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Treat the maximum range of the technique as 1 higher per (op) spent this way.</span></p><p><span class=\"fontstyle2\">(op)+: </span><span class=\"fontstyle3\">Choose one additional target per (op) spent this way.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "theology",
+   "difficulty": "@T:vigilance",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GsIvHMI0O2s07ypl",
+  "sort": 0
+ },
+ {
+  "name": "Mark of Desecration",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761274774227,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 225
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The mahō-tsukai performs the rite upon a corpse or group of corpses, placing ominous masks over their faces and whispering dark words into their dead ears. The dead are dragged to their feet by the kansen possessing them, moving with the jerking, unnatural gait of an ill-made puppet.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may make a </span><span class=\"fontstyle2\">TN 2 Theology (earth) check </span><span class=\"fontstyle3\">targeting a number of corpses up to your Earth Ring at range 0–3.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle4\">summon </span><span class=\"fontstyle3\">a </span><span class=\"fontstyle2\">Zombie Peasant </span><span class=\"fontstyle3\">(see page 321) from each target. If you succeed, you </span><span class=\"fontstyle4\">curse </span><span class=\"fontstyle3\">an area encompassing 1 range band around each target’s position, which gains the Defiled terrain quality (see page 267).</span></p><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle6\">(earth)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Choose one additional target per (op) spent this way.</span></p><p><span class=\"fontstyle6\">(earth)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">Increase each zombie’s endurance by 1 per </span><span class=\"fontstyle6\">(op) </span><span class=\"fontstyle3\">spent this way.</span></p><p><span class=\"fontstyle6\">(earth)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Once per round, one zombie may use your skill ranks instead of its own for a check.</span></p><p><span class=\"fontstyle6\">(earth)(op)(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">One target who was a warrior in life per (op)(op) spent this way rises as a </span><span class=\"fontstyle2\">Bushi Skeleton </span><span class=\"fontstyle3\">(see page 318).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "skill": "theology",
+   "difficulty": "2",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "EPI7wsKOJZaQBylC",
+  "sort": 0
+ },
+ {
+  "name": "Shape the Flesh",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761274007261,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 120
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The mahō-tsukai transforms their body, taking on a demonic aspect. Ragged wings or a glistening carapace sprouts from their flesh, or their form flows like befouled water, extending unnaturally. They might even fade into living shadow, becoming a creature of pure obscurity that shrugs off even the holiest of talismans and prayers.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may make a </span><span class=\"fontstyle2\">TN 4 Theology check</span><span class=\"fontstyle3\">.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle0\">augment </span><span class=\"fontstyle3\">and </span><span class=\"fontstyle0\">curse </span><span class=\"fontstyle3\">yourself in one of the following ways, depending on the ring you used:</span></p><ul><li><p><span class=\"fontstyle2\">- Talons and Fangs (fire): </span><span class=\"fontstyle3\">The damage and deadliness of your Unarmed profile become 6, and it gains the Unholy quality.</span></p></li><li><p><span class=\"fontstyle2\">- Thick Hide (earth): </span><span class=\"fontstyle3\">Your physical resistance becomes 7.</span></p></li><li><p><span class=\"fontstyle2\">- Wings (air): </span><span class=\"fontstyle3\">You gain flight; you can move vertically and ignore the negative effects of terrain.</span></p></li><li><p><span class=\"fontstyle2\">- Malleable Form (water): </span><span class=\"fontstyle3\">The maximum range of your unarmed and melee attacks becomes 3.</span></p></li><li><p><span class=\"fontstyle2\">- Shadowy Form (void): </span><span class=\"fontstyle3\">Your supernatural resistance becomes 7. You count as an Otherworldly being.</span></p></li></ul><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle6\">(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Once before the end of the scene, as an action, you may perform this technique again with a different ring and maintain both effects.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 4,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "theology",
+   "difficulty": "4",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Rl7TgS2pI3w4h9FW",
+  "sort": 0
+ },
+ {
+  "name": "Sinful Whispers",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761274858589,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 225
+   },
+   "description": "<p><span class=\"fontstyle0\">The kansen assail the victim’s mind, murmuring dark things that slowly erode their concentration, making them more receptive to the words of the mahō-tsukai and less able to think coherently.</span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Attack and Scheme action, you may make a </span><span class=\"fontstyle2\">Theology (air) check </span><span class=\"fontstyle3\">targeting one character with the Afflicted condition at range 0–4. The TN of the check is equal to the target’s vigilance.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle4\">curse </span><span class=\"fontstyle3\">your target, sapping their will; they must answer your questions honestly (and find doing so unremarkable at the time). This effect persists for a number of rounds equal to your Air Ring.</span></p><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle6\">(air)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">The target does not remember what you asked, even if prompted to think about the conversation later.</span></p><p><span class=\"fontstyle2\">(air)(op)(op)(op): </span><span class=\"fontstyle3\">You may give the target a single simple order. The target may ignore that order, but receives 2 strife at the end of each scene in which they disregard it. When the target becomes Compromised, they must unmask and attempt to fulfill the order until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "skill": "theology",
+   "difficulty": "@T:vigilance",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Wlqbwh2FX0QpEUDU",
+  "sort": 0
+ },
+ {
+  "name": "Spiritual Shackles",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761274117919,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 120
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>Mahō-tsukai deal constantly with powerful, dangerous beings, and those who live long enough learn that kansen can only be trusted to be untrustworthy—but deceit can be repaid in kind. Other spirits might also seek to wreak vengeance upon mahō-tsukai, from the hungering ghosts called gaki to wrathful ancestor spirits, and it pays to have protection against such beings. The mahō-tsukai uses trickery and sheer will on a kansen or other spirit, sealing it within an object.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Attack and Intrigue action, you may make a </span><span class=\"fontstyle2\">Theology (air) check </span><span class=\"fontstyle3\">targeting one Otherworldly being at range 0–1. The TN of this check is equal to the target’s vigilance and is reduced by 2 if the target is also a Tainted being.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle0\">bind </span><span class=\"fontstyle3\">the spirit inside an object of silhouette 1 or less at range 0–2. If the being you bound is Tainted, the object gains the Unholy quality. If you fail, the spirit </span><span class=\"fontstyle0\">curses </span><span class=\"fontstyle3\">you, and you suffer the Afflicted condition.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(op): </span><span class=\"fontstyle3\">The object gains one other quality of your choice from the following list: Concealable, Durable, Resplendent, Subtle.</span></p><p><span class=\"fontstyle2\">(op): </span><span class=\"fontstyle3\">As an action, the holder of the object may release the bound being to importune one mahō (or invocation, if you have bound an elemental spirit) without paying the usual costs or making the usual TN adjustments (see </span><span class=\"fontstyle2\">Importune Invocations </span><span class=\"fontstyle3\">on page 189 and </span><span class=\"fontstyle2\">Importune Mahō </span><span class=\"fontstyle3\">on page 225 of the core rulebook).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "air",
+   "skill": "theology",
+   "difficulty": "@T:vigilance",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Y0Uj2wGFlR118osA",
+  "sort": 0
+ },
+ {
+  "name": "Spread Corruption",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761274222417,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 120
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The practitioner channels their inner corruption into their skin, so that their touch becomes contagious. Anyone or anything they touch is assailed by the foul influence of the Shadowlands, which seeks any gap in their spiritual fortitude that it can grasp.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may make a </span><span class=\"fontstyle2\">TN 2 Theology (fire) check</span><span class=\"fontstyle3\">.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle0\">augment </span><span class=\"fontstyle3\">your touch with a corrupting influence. Anyone whose skin you touch (such as with an unarmed attack) is </span><span class=\"fontstyle0\">cursed</span><span class=\"fontstyle3\">, and they must resist with a </span><span class=\"fontstyle2\">TN 4 Fitness </span><span class=\"fontstyle3\">or </span><span class=\"fontstyle2\">Meditation check ((earth) 2, (fire) 5) </span><span class=\"fontstyle3\">or suffer fatigue equal to their shortfall and the Afflicted condition. This effect persists until the end of the scene.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">After you touch someone, the effect is delayed for three rounds, or about a minute in narrative time.</span></p><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">While this effect persists, any ground you walk on becomes Defiled terrain (see </span><span class=\"fontstyle2\">Terrain </span><span class=\"fontstyle3\">on page 267 of the core rulebook).</span></p><p><span class=\"fontstyle5\">(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Increase the severity of any critical strike you inflict with your unarmed attack profiles by 2 for each of your rings with the Shadowlands Taint disadvantage.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 2,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "skill": "theology",
+   "difficulty": "2",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XlWCiLnWOvzsQ08c",
+  "sort": 0
+ },
+ {
+  "name": "Sword of Blood",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761275105216,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 121
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The mahō-tsukai draws blood from an open wound, the vital fluid swirling up to their outstretched palm and congealing into a deadly weapon.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may make a </span><span class=\"fontstyle2\">TN 2 Theology (water) check</span><span class=\"fontstyle3\">. Performing this technique requires a source of blood, such as a corpse or nearby foe with the Bleeding condition. If the mahō-tsukai uses their own blood, they receive 3 fatigue.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle0\">summon </span><span class=\"fontstyle3\">a weapon of your choosing made of blood. It has the Unholy quality (see page 241 of the core rulebook).</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">You may </span><span class=\"fontstyle0\">summon </span><span class=\"fontstyle3\">a pair of identical weapons instead of a single weapon.</span></p><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">At the end of each of your turns, you may transform the weapon into a different weapon.</span></p><p><span class=\"fontstyle2\">(op)(op): </span><span class=\"fontstyle3\">You may immediately perform a Strike action using the weapon you summoned.</span></p><p><span class=\"fontstyle5\">(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">After you inflict a critical strike on another character with this weapon, remove fatigue from yourself equal to the severity of the critical strike (after the check to resist).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 2,
+   "bought_at_rank": 0,
+   "ring": "water",
+   "skill": "theology",
+   "difficulty": "2",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1z7daBKGkPA7TL8Q",
+  "sort": 0
+ },
+ {
+  "name": "Twisted Summons",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761275186223,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 121
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The mahō-tsukai calls forth an abomination from Jigoku, giving it a temporary cage of flesh from which to wreak carnage upon the Mortal Realm. The being that comes forth is a fused horror, an agglomeration of multiple corpses twisted into unnatural form.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Intrigue and Support action, you may make a </span><span class=\"fontstyle2\">TN 3 Theology (earth) check </span><span class=\"fontstyle3\">to call upon a foul spirit to target a number of corpses at range 0–2, reshaping them into an abominable body for its use.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle0\">summon </span><span class=\"fontstyle3\">an Undead Horror (see page 19) and </span><span class=\"fontstyle0\">bind </span><span class=\"fontstyle3\">it to your will. However, the summoned creature is one not easily kept shackled; if you become Compromised or Incapacitated, it breaks the binding and sets off on its own to devour the living and absorb the dead. Whether you succeed or fail, an area at range 0–2 of your target becomes Defiled terrain.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">The Undead Horror absorbs up to two additional corpses at range 0–2 for each (op) spent this way. Increase its endurance by 2 for each corpse it absorbs. For every five corpses the monster absorbs this way, increase its silhouette by 1.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 3,
+   "bought_at_rank": 0,
+   "ring": "earth",
+   "skill": "theology",
+   "difficulty": "3",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "WH3E5jRCpRftnBzB",
+  "sort": 0
+ },
+ {
+  "name": "Unholy Fervor",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/maho.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147818622,
+   "modifiedTime": 1761274985625,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 225
+   },
+   "description": "<p><span class=\"fontstyle0\"><em>The kansen bite and tear the flesh of the victim, wracking them with pain that transforms into mindless fury.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may make a </span><span class=\"fontstyle2\">Theology (Fire) check </span><span class=\"fontstyle3\">targeting one character at range 0–3. The TN of this check is equal to the target’s vigilance.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, you </span><span class=\"fontstyle4\">curse </span><span class=\"fontstyle3\">the target with blinding fury; they suffer the Enraged condition. If you succeed, you </span><span class=\"fontstyle4\">augment </span><span class=\"fontstyle3\">the target's corruption; they may treat each of their Shadowlands Taint disadvantages as an advantage that apply to any checks using its ring. This effect persists until the end of the scene.</span></p><h4><span class=\"fontstyle5\">New Opportunities</span></h4><p><span class=\"fontstyle6\">(fire)(op)</span><span class=\"fontstyle3\">: Each target receives strife equal to your Fire Ring and removes that much fatigue.</span></p><p><span class=\"fontstyle2\">(fire)(op)+: </span><span class=\"fontstyle3\">Choose one additional target per</span><span class=\"fontstyle6\"></span><span class=\"fontstyle3\">spent this way.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "fire",
+   "skill": "theology",
+   "difficulty": "@T:vigilance",
+   "technique_type": "maho"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Y36kLAUCpuiSxSD7",
+  "sort": 0
+ }
+]

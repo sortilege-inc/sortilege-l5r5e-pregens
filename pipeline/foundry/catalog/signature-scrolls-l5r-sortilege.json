@@ -1,0 +1,122 @@
+[
+ {
+  "name": "Hasegawa’s Denial",
+  "type": "signature_scroll",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/signature_scroll.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148007394,
+   "modifiedTime": 1761636861576,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 108
+   },
+   "description": "<p>Ugawari Hasegawa was a famous Crab shugenja who discovered a way to enhance his offensive scrolls and control the movement of demons on the battlefield. He was known for being able to herd oni around during combat, leading them into traps and killing zones with a few well-placed blasts of magic. At the end of a long and successful life, Hasegawa finally recorded his secrets for posterity so that future shugenja could use his techniques in defense of the Wall and the Crab Clan.</p><p data-start=\"529\" data-end=\"838\" data-is-last-node=\"\" data-is-only-node=\"\">Prerequisites: Crab Clan shugenja, school rank 3<br data-start=\"577\" data-end=\"580\">XP Cost to gain use of scroll: 3 XP<br data-start=\"615\" data-end=\"618\">New Effects: After the shugenja successfully uses an invocation to smite a target, the area at range 0–3 of the target becomes Dangerous terrain for Tainted beings. This effect persists until the start of your next turn.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0kuR2g9mZRzKsKsx",
+  "sort": 0
+ },
+ {
+  "name": "Ichi’s Second Sight",
+  "type": "signature_scroll",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/signature_scroll.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148007394,
+   "modifiedTime": 1761637003666,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 108
+   },
+   "description": "<p>Ages ago, there lived a Witch Hunter named Kuni Ichi who was legendary for his ability to spot mahō-tsukai, hidden demons, and Tainted individuals. As he aged, however, Ichi’s eyes grew milky, and his sight began to fade. Not one to take this lying down, Ichi developed an enhancement to requests to the kami for aid in divination that allowed him to see infernal presences despite his failing eyesight.</p><p data-start=\"451\" data-end=\"779\" data-is-last-node=\"\" data-is-only-node=\"\">Prerequisites: Witch Hunter, Crab Clan<br data-start=\"489\" data-end=\"492\">XP Cost to gain use of scroll: 3 XP<br data-start=\"527\" data-end=\"530\">New Effects: After the shugenja successfully uses an invocation to scry, any Supernatural or Tainted beings they perceive as part of the invocation glow faintly with an aura visible to the shugenja, even through smoke, mist, fog, or obscured vision.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "45v4tGkdqGYWHSSG",
+  "sort": 0
+ },
+ {
+  "name": "Maikara’s Rebuke",
+  "type": "signature_scroll",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/signature_scroll.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148007394,
+   "modifiedTime": 1761637074462,
+   "lastModifiedBy": "CUA2aQnJGOzKKKXL"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 108
+   },
+   "description": "<p>Yasuki Maikara was a wandering shugenja famous for her fearlessness, her passion, and the strength of her devotion. She often disappeared for weeks at a time into the Shadowlands in search of particularly dangerous oni. While she sometimes traveled with a rōnin companion named Shintaro, she mostly traveled alone with only her fervor to protect her. During one of her longer forays among the oni, Maikara developed a way to augment her calls to the kami even in these kansen-infested regions. These enhancements had some surprising and often explosive effects creatures from Jigoku, and she made sure she spread her techniques far and wide before she disappeared into the Shadowlands forever at the ripe old age of 120.</p><p data-start=\"768\" data-end=\"1047\" data-is-last-node=\"\" data-is-only-node=\"\">Prerequisites: Shugenja<br data-start=\"791\" data-end=\"794\">XP Cost to gain use of scroll: 3 XP<br data-start=\"829\" data-end=\"832\">New Effects: After the shugenja successfully uses a Fire invocation to smite a target, that target treats the next attack targeting them as having the Sacred quality. This effect persists until the end of the scene.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 3,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RUhijbJ0iwXANvBY",
+  "sort": 0
+ }
+]

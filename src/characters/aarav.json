@@ -1,0 +1,807 @@
+{
+ "slug": "aarav",
+ "name": "Aarav",
+ "folder_label": "Aarav (Ivory Kingdoms Sage)",
+ "bucket": "Bushi",
+ "accent": "#fbf541",
+ "identity": {
+  "clan": "The Sheelavaan of Bhavyatapura",
+  "family": "Fallen Noble (Gaijin)",
+  "school": "Ivory Kingdoms Sage Tradition",
+  "role": "Bushi",
+  "age": ""
+ },
+ "portrait": "src/portraits/aarav.png",
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {
+  "template": "pow",
+  "generated": true,
+  "step1": {
+   "clan": "The Sheelavaan of Bhavyatapura",
+   "ring": "air",
+   "skill": "courtesy",
+   "social_status": 0
+  },
+  "step2": {
+   "family": "Fallen Noble (Gaijin)",
+   "ring": "fire",
+   "skill1": "ranged",
+   "skill2": "command",
+   "wealth": 0,
+   "social_glory": 28
+  },
+  "step3": {
+   "school": "Ivory Kingdoms Sage Tradition",
+   "roles": "Bushi",
+   "ring1": "void",
+   "ring2": "earth",
+   "skill1": "melee",
+   "skill2": "unarmed",
+   "skill3": "meditation",
+   "skill4": "theology",
+   "skill5": "command",
+   "allowed_techniques": {
+    "kata": true,
+    "kiho": true,
+    "inversion": false,
+    "invocation": false,
+    "ritual": true,
+    "shuji": false,
+    "maho": false,
+    "ninjutsu": false,
+    "mantra": false,
+    "specificity": true
+   },
+   "techniques": [
+    "qFpqm3GpkCEAu6z2",
+    "5jLb6bvrYkwlkSc8",
+    "2iB4EK0I42kk83V3"
+   ],
+   "school_ability": [
+    "xQRMG49wGf3rL3YS"
+   ],
+   "equipment": [
+    "Cq1koK56k9dvLfMh",
+    "zcsgspz4VluSMeI0",
+    "tSwkJCF7OSXTVnvY",
+    "sjVz7tI11BkNAA7t",
+    "Rex7fGo6R1KuUhQJ",
+    "XsYJV8qKMImJ6PD0",
+    "7OWReYbIMfTvNrqv"
+   ],
+   "social_honor": 50
+  },
+  "step4": {
+   "stand_out": "Gregarious and charming.",
+   "ring": "water"
+  },
+  "step5": {
+   "social_giri": "Aarav's family was betrayed, his brothers executed; he fled east."
+  },
+  "step6": {
+   "social_ninjo": "Regain his home; he seeks to reconquer his homeland."
+  },
+  "step7": {
+   "clan_relations": "Aarav is famously handsome and kind, and a warrior of great prowess.",
+   "skill": "none",
+   "social_add_glory": 5
+  },
+  "step8": {
+   "bushido": "Aarav is unfamiliar with Bushido.",
+   "skill": "seafaring",
+   "social_add_honor": 0,
+   "tenet_paramount": "",
+   "tenet_less_significant": "",
+   "item": []
+  },
+  "step9": {
+   "success": "Survived the palace coup, and led his tutor's children to safety.",
+   "distinction": [
+    "qzkQyP8jGDoLiItw"
+   ]
+  },
+  "step10": {
+   "difficulty": "He is unused to having to negotiate, to working with people who don't have to obey him.",
+   "adversity": [
+    "FCw1pfvIVYoe5yyk"
+   ]
+  },
+  "step11": {
+   "calms": "Challenging himself, pushing himself.",
+   "passion": [
+    "B9fnpC0enRx8DeSO"
+   ]
+  },
+  "step12": {
+   "worries": "Doubts about his fate to rule; perhaps the downfall of his family was karma?",
+   "anxiety": [
+    "TVReYB8XXXDEQUkr"
+   ]
+  },
+  "step13": {
+   "most_learn": "The love of his life, Riya, is in another city. He is afraid that to visit her prematurely will bring danger to her, but their love has opened his eyes to the world in a way that he had previously been blind to.",
+   "skill": "none",
+   "advantage": [
+    "Vi9SQaa3y48ob8Hp"
+   ],
+   "disadvantage": []
+  },
+  "step14": {
+   "first_sight": "His signet ring bears a tiger and his family's sigil.",
+   "special_features": [
+    "lh0BUCh3cKO0BUnn"
+   ]
+  },
+  "step15": {
+   "stress": "He exercises strenuously, or practices archery."
+  },
+  "step16": {
+   "relations": "His family's former vassals are scattered in exile or hiding in submission. Some noble houses have sworn fealty to the usurper, while others wait for a sign that restoration is possible.\n\nAs a foreign prince in Rokugan, he occupies an awkward position - too noble to ignore, but without the local connections that grant true influence. His royal blood means little here.\n\n",
+   "item": [
+    "uaCKNEXDlq1OI3wO"
+   ]
+  },
+  "step17": {
+   "parents_pov": "Aarav has gathered a small group of mercenaries. They travel together, and he is trying to convince them to build their strength to help him return to power.",
+   "skill": "culture",
+   "bond": [
+    "ItUUhYTr7vst11ZH"
+   ]
+  },
+  "step18": {
+   "heritage_name": "Raised in a royal suzerain's household, with servants and private tutors.",
+   "heritage_1": null,
+   "heritage_2": null,
+   "heritage_item": [],
+   "heritage_add_honor": 0,
+   "heritage_add_glory": 0,
+   "heritage_add_status": 0,
+   "skill": "none"
+  },
+  "step19": {
+   "firstname": "Aarav"
+  },
+  "step20": {
+   "death": "He should die in an act of glorious heroism, defending his people."
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Ivory Kingdoms Sage Tradition",
+   "foundry_id": "F5KInxHO1tSvc1KF",
+   "foundry_name": "Aarav 0 XP",
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 1,
+     "unarmed": 1,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 2,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 1,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 33,
+    "status": 0,
+    "ninjo": "Regain his home; he seeks to reconquer his homeland.",
+    "giri": "Aarav's family was betrayed, his brothers executed; he fled east.",
+    "bushido_tenets": {
+     "paramount": "",
+     "less_significant": ""
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Earth Needs No Eyes",
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Cleansing Spirit",
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Threshold Barrier",
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Gift of Inner Power",
+     "kind": "school_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Blessed Lineage",
+     "kind": "distinction",
+     "ring": "void",
+     "types": "Interpersonal, Spiritual"
+    },
+    {
+     "name": "Gaijin Name, Culture, or Appearance",
+     "kind": "adversity",
+     "ring": "fire",
+     "types": "Interpersonal (Culture) or Physical (Appearance), Interpersonal (Name), Mental"
+    },
+    {
+     "name": "Glorious Deeds",
+     "kind": "passion",
+     "ring": "fire",
+     "types": "Martial, Social"
+    },
+    {
+     "name": "Fear of Mediocrity",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Benten’s Blessing",
+     "kind": "distinction",
+     "ring": "air",
+     "types": "Interpersonal, Spiritual"
+    }
+   ],
+   "titles": [],
+   "bonds": [
+    {
+     "name": "Wanderers Fellowship"
+    }
+   ],
+   "gear": [
+    {
+     "name": "Talwar",
+     "quantity": 1
+    },
+    {
+     "name": "Daikyū",
+     "quantity": 1
+    },
+    {
+     "name": "Gunbai",
+     "quantity": 1
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Map (Ivory Kingdoms)",
+     "quantity": 1,
+     "custom": true,
+     "description": "<p><span class=\"fontstyle0\">Showing the route from the Ivory Kingdoms to the Sand Road</span>.</p>",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Signet Ring (Royal Family)",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Uma-Jirushi",
+     "quantity": 1
+    }
+   ],
+   "advancements": []
+  },
+  {
+   "xp": 36,
+   "label": "Astradhari",
+   "rank": 1,
+   "school": "Ivory Kingdoms Sage Tradition",
+   "foundry_id": "Rd0ybxfqy3eSxSAQ",
+   "foundry_name": "Aarav 36 XP (Astradhari)",
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 4,
+     "unarmed": 1,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 3,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 1,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 33,
+    "status": 0,
+    "ninjo": "Regain his home; he seeks to reconquer his homeland.",
+    "giri": "Aarav's family was betrayed, his brothers executed; he fled east.",
+    "bushido_tenets": {
+     "paramount": "",
+     "less_significant": ""
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Earth Needs No Eyes",
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Cleansing Spirit",
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Threshold Barrier",
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Gift of Inner Power",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Sacred Mantras",
+     "kind": "title_ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Blessed Lineage",
+     "kind": "distinction",
+     "ring": "void",
+     "types": "Interpersonal, Spiritual"
+    },
+    {
+     "name": "Gaijin Name, Culture, or Appearance",
+     "kind": "adversity",
+     "ring": "fire",
+     "types": "Interpersonal (Culture) or Physical (Appearance), Interpersonal (Name), Mental"
+    },
+    {
+     "name": "Glorious Deeds",
+     "kind": "passion",
+     "ring": "fire",
+     "types": "Martial, Social"
+    },
+    {
+     "name": "Fear of Mediocrity",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Benten’s Blessing",
+     "kind": "distinction",
+     "ring": "air",
+     "types": "Interpersonal, Spiritual"
+    }
+   ],
+   "titles": [
+    {
+     "name": "Astradhari"
+    }
+   ],
+   "bonds": [
+    {
+     "name": "Wanderers Fellowship"
+    }
+   ],
+   "gear": [
+    {
+     "name": "Talwar",
+     "quantity": 1
+    },
+    {
+     "name": "Daikyū",
+     "quantity": 1
+    },
+    {
+     "name": "Gunbai",
+     "quantity": 1
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Map (Ivory Kingdoms)",
+     "quantity": 1,
+     "custom": true,
+     "description": "<p><span class=\"fontstyle0\">Showing the route from the Ivory Kingdoms to the Sand Road</span>.</p>",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Signet Ring (Royal Family)",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Uma-Jirushi",
+     "quantity": 1
+    }
+   ],
+   "advancements": []
+  },
+  {
+   "xp": 57,
+   "label": "Astradhari, Rank 2",
+   "rank": 2,
+   "school": "Ivory Kingdoms Sage Tradition",
+   "foundry_id": "ekaguEV9oUfUZ9E5",
+   "foundry_name": "Aarav 57 XP (Astradhari, Rank 2)",
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 4,
+     "unarmed": 2,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 3,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 1,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 33,
+    "status": 0,
+    "ninjo": "Regain his home; he seeks to reconquer his homeland.",
+    "giri": "Aarav's family was betrayed, his brothers executed; he fled east.",
+    "bushido_tenets": {
+     "paramount": "",
+     "less_significant": ""
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Earth Needs No Eyes",
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Cleansing Spirit",
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Threshold Barrier",
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Gift of Inner Power",
+     "kind": "school_ability",
+     "rank": 1
+    },
+    {
+     "name": "Sacred Mantras",
+     "kind": "title_ability",
+     "rank": 1
+    },
+    {
+     "name": "Countering Mantra",
+     "kind": "mantra",
+     "rank": 4
+    },
+    {
+     "name": "Ki Protection",
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "The Great Silence",
+     "kind": "kiho",
+     "rank": 1
+    },
+    {
+     "name": "Bellow of Resolve",
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Landslide Strike",
+     "kind": "kata",
+     "rank": 2
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Blessed Lineage",
+     "kind": "distinction",
+     "ring": "void",
+     "types": "Interpersonal, Spiritual"
+    },
+    {
+     "name": "Gaijin Name, Culture, or Appearance",
+     "kind": "adversity",
+     "ring": "fire",
+     "types": "Interpersonal (Culture) or Physical (Appearance), Interpersonal (Name), Mental"
+    },
+    {
+     "name": "Glorious Deeds",
+     "kind": "passion",
+     "ring": "fire",
+     "types": "Martial, Social"
+    },
+    {
+     "name": "Fear of Mediocrity",
+     "kind": "anxiety",
+     "ring": "fire",
+     "types": "Interpersonal, Mental"
+    },
+    {
+     "name": "Benten’s Blessing",
+     "kind": "distinction",
+     "ring": "air",
+     "types": "Interpersonal, Spiritual"
+    }
+   ],
+   "titles": [
+    {
+     "name": "Astradhari"
+    }
+   ],
+   "bonds": [
+    {
+     "name": "Wanderers Fellowship"
+    }
+   ],
+   "gear": [
+    {
+     "name": "Talwar",
+     "quantity": 1
+    },
+    {
+     "name": "Daikyū",
+     "quantity": 1
+    },
+    {
+     "name": "Gunbai",
+     "quantity": 1
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Map (Ivory Kingdoms)",
+     "quantity": 1,
+     "custom": true,
+     "description": "<p><span class=\"fontstyle0\">Showing the route from the Ivory Kingdoms to the Sand Road</span>.</p>",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Signet Ring (Royal Family)",
+     "quantity": 1,
+     "custom": true,
+     "description": "",
+     "source_reference": {
+      "source": "",
+      "page": 0
+     },
+     "rarity": "0",
+     "zeni": "0",
+     "properties": []
+    },
+    {
+     "name": "Uma-Jirushi",
+     "quantity": 1
+    }
+   ],
+   "advancements": [
+    {
+     "label": "Fitness +1 (0 -> 1)",
+     "type": "skill",
+     "skill": "fitness",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 2,
+     "in_curriculum": true
+    },
+    {
+     "label": "Martial Arts [Unarmed] +1 (1 -> 2)",
+     "type": "skill",
+     "skill": "unarmed",
+     "ring": "void",
+     "at_rank": 1,
+     "xp": 4,
+     "in_curriculum": true
+    }
+   ]
+  }
+ ]
+}

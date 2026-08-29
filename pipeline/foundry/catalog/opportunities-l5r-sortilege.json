@@ -1,0 +1,1374 @@
+[
+ {
+  "name": "Against Tainted Threats Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Against Tainted Threats Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "IXTOQ099QVfSKyes",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Against Tainted Threats Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Shadowlands p.131</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><p><strong>(op)(op) :</strong> Confronted with the horrors of the Taint, you remain alert and able to discern a weakness in your foe. Reduce the TN of your next check made to oppose or harm a Tainted character by 1, as you examine the threat before you and formulate an appropriate response.</p><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><p><strong>(op)(op) :</strong> You are able to weather such terrible things as the revelation of a secret mahō-tsukai or the summoning of an oni. The next time you suffer strife this scene, you suffer 2 fewer strife, to a minimum of 0.</p><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><p><strong>(op)+ :</strong> The righteous fury you display can cow even the most terrible of Tainted fiends. Each Tainted being in the scene gains 1 strife, plus 1 additional strife for every   spent. If you are unaware if another character is Tainted, the GM should record this strife secretly.</p><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><p><strong>(op) :</strong> You adapt yourself to better fight the corrupted power before you. Once before the end of current the game session you may either reduce the TN of a check to resist a Tainted power, such as a mahō technique, assailing you by 1 or increase the TN of another character’s check to target or affect you with such a power by 1.</p><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><p><strong>(op)(op)</strong> or <strong>(op)(op)(op) : </strong>If the character spends (op)(op), they discern that the kami have fled, as well as the type of disturbance (mahō, kansen, or similar).</p><br /><p>If the character spends <strong>(op)(op)(op)</strong>, they can also determine the total combat (bushi) threat rating of all Tainted beings that caused the kami to flee</p>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "Tx0LnMirgsCnRmpv",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dojdUrRdrYUXLXJW",
+  "sort": 0
+ },
+ {
+  "name": "Conflict and Martial Skills Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Conflict and Martial Skills Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "xddZKM9PffTPDVMD",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Conflict and Martial Skills Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.328</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><ul><li><strong>(op) :</strong> Add a kept (ring) set to an (op) result to your next Martial skill check.</li><li><strong>(op)+ :</strong> During a Movement action check, up to 1 range band of any distance you move per (op) spent this way may be along a vertical surface.</li><li><strong>(op)(op) :</strong> Increase the TN of the next Martial Arts [Ranged] check targeting you before the start of your next turn by 2.</li></ul><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><ul><li><strong>(op) :</strong> During a Movement action, ignore one terrain quality (see page 267) of your choice.</li><li><strong>(op)+ :</strong> Reduce the severity of the next critical strike you suffer before the start of your next turn by 1 per  spent this way.</li><li><strong>(op)(op) :</strong> Do not apply one of your disadvantages to checks until the end of your next turn.</li></ul><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><ul><li><strong>(op) :</strong> Choose another character in the scene; increase the TN of the next check they make before the end of their next turn by 1 if it does not include you as a target.</li><li><strong>(op)+ :</strong> During an Attack action check, increase the TN of the next check the target makes to resist a critical strike they suffer before the start of your next turn by 1 per  spent this way.</li><li><strong>(op)(op) :</strong> Other characters must receive 2 strife to choose you as the target of their Attack and Scheme actions until the start of your next turn.</li></ul><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><ul><li><strong>(op) :</strong> Remove 1 fatigue.</li><li><strong>(op)+ :</strong> During an Attack action check, ignore 1 point of target’s physical resistance per  spent this way.</li><li><strong>(op)(op) :</strong> Move 1 range band.</li></ul><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><ul><li><strong>(op) :</strong> During the next Attack action check you make before the end of your next turn, ignore one terrain quality (see page 267) of your choice.</li><li><strong>(op)+ :</strong> During a Support action check, increase your Initiative value by 1 per (op) spent this way.</li><li><strong>(op)(op) :</strong> Ignore the effects of one condition you are suffering until the end of your next turn.</li></ul>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "eO5kmKkGGwJ7zqgI",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "j6OK27CNlSKttylA",
+  "sort": 0
+ },
+ {
+  "name": "Contested Territory Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Contested Territory Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "0nrAafra59kvTQHk",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Contested Territory Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Fields of Victory p.139</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><ul><li><strong>(op) :</strong> You discern subtle signs of incoming trouble and can take steps to avoid it. The next time you enter a conflict scene this session, you may add a kept die showing (op) to your Initiative check.</li><li><strong>(op)(op) or (op)(op)(op) :</strong> You create a clever disguise or ruse to get the jump on potential foes. The next time you enter a conflict scene this game session, after Initiative has been determined, choose one character in the scene. On that character’s next check, they must reroll all results containing (su) symbols.</li></ul><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><ul><li><strong>(op) :</strong> Not even the chaos of war or the strangeness of foreign lands can faze you. Reduce the TN of the next check you make to deal with an unfamiliar situation or opponent by 1.</li><li><strong>(op) :</strong> You hold fast to the thought of home while in distant locales and dangerous situations. You may remove 1 strife for each condition you are currently suffering.</li></ul><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><ul><li><strong>(op)(op) :</strong> A clever theory fills in the gaps in your knowledge. You may immediately attempt a Scholar skill check of your choice to learn about your current situation or an NPC who is present, lowering the TN by 1 (to a minimum of 1).</li><li><strong>(op)+ :</strong> As you incite your allies to great fervor, any number of them may remove 1 strife for each (op) you spend. For each character affected, you receive 1 strife as you let your passion overtake you.</li></ul><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><ul><li><strong>(op)(op)+ :</strong> Your charm wins over even enemies. For each (op) (op) spent, one hostile character within the scene becomes friendlier toward you. What exactly that means depends on context, it may defuse an imminent conflict, or encourage your foes to try to take you alive, but it won’t stop bloodshed altogether once blades have been drawn.</li><li><strong>(op)(op) :</strong> With cunning, you flow smoothly from one conclusion to the next. You learn of one key feature, fortification, or terrain quality present in the surrounding area, and whether or not enemies have passed through recently.</li></ul><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><ul><li><strong>(op)+ :</strong> In all things, one can find balance, even in a duel of words or blades. You and a hostile character of the GM’s choice in the same scene each recover 2 strife for each (op) spent in this way.</li><li><strong>(op)(op) :</strong> You find serenity amid adversity. You discover a neutral meeting place, protective legal precedent, or similar safe haven applicable to your situation.</li></ul>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "aawmMEHVyWnjbx4N",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "hr6CkacxPEH7bS4L",
+  "sort": 0
+ },
+ {
+  "name": "During Downtime Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: During Downtime Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "By3IUL3XmqXklSmS",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "During Downtime Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.329</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><ul><li><strong>(op)+ :</strong> Learn a detail about one person in your company (such as an advantage or disadvantage of their choice) per (op) spent this way. You can learn only one detail about each person this way in a single downtime scene.</li><li><strong>(op)(op) :</strong> Perform your downtime activity without letting one or more others of your choice know that you did.</li></ul><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><ul><li><strong>(op)+ :</strong> Another character in your company may remove 1 strife or fatigue per (op) spent this way.</li><li><strong>(op)(op) :</strong> Memorize a small but vital detail from to your activity; you can recall it later without a check.</li></ul><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><ul><li><strong>(op)+ :</strong> Assist one other character per (op) spent this way with their next downtime activity check this session.</li><li><strong>(op)(op) :</strong> Energize another character in your company with your efforts; they may perform 1 additional downtime action this downtime (to a maximum of 2).</li></ul><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><ul><li><strong>(op)+ :</strong> Remove 1 strife or fatigue per (op) spent this way.</li><li><strong>(op)(op) :</strong> Make a new friend while undertaking your downtime activity.</li></ul><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><ul><li><strong>(op)+ :</strong> Reserve 1 dropped die from your check, to a maximum of your ranks in the skill you used. Add that die to your next check with the same skill as a kept die instead of rolling it.</li><li><strong>(op)(op) :</strong> Have a brief premonition of a possible future event while undertaking your downtime activity.</li></ul>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "2ftj3n55OKLgekAn",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "379yxTYeai8BFwIo",
+  "sort": 0
+ },
+ {
+  "name": "Espionage Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Espionage Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "vKAaEYeXuDEJYIHI",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Espionage Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Court of Stones p.133</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><p><strong>(op)+ :</strong> Your subtlety allows you to step out of sight of people, whether by hiding in a crowd or within convenient terrain. Designate a number of Minion NPCs equal to (op) spent this way or a single Adversary NPC with vigilance lower than or equal to  spent this way. Those characters lose sight of you (and do not notice your absence unless actively looking for you).</p><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><p><strong>(op)+ :</strong> You locate an excellent hiding place, either a place where no one questions your cover identity or a concealed location no one checks. While hiding in this location, you reduce the TN of your checks to avoid notice by (op) spent this way.</p><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><p><strong>(op)(op)(op) :</strong> A stray motion of yours catches the attention of a person or creature—but unexpectedly, they are sympathetic or helpful to you when they notice you. Who are they, and how do they offer to help? Do they think you are someone you’re not?</p><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><p><strong>(op) :</strong> You observe a clue or hint that indicates to you that information about your target or goal might also be found elsewhere. The GM reveals another viable avenue for espionage on the same subject, unrelated to your current operation.</p><br /><br /><h2>(Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><p><strong>(op) :</strong> Your understanding of stealth clues you in on the possibility that you are not the first spy to pass this way. The GM reveals whether another spy has traversed your location and, if so, what trace they unwittingly left behind.</p>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "yZRuOOnuImqneVVm",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "F9MIFZICSczhRXpX",
+  "sort": 0
+ },
+ {
+  "name": "General Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: General Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "WMzZ3j1dFsYFuYIx",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "General Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.328</blockquote><br /><h2>All</h2><ul><li><strong>(op) :</strong> If you failed, determine the easiest way to accomplish the task you were attempting (skill and approach).</li><li><strong>(op)+ :</strong> Remove 1 strife you gained from this check per (op) spent this way.</li><li><strong>(op)(op) :</strong> Provide assistance to the next character to attempt a check to accomplish something similar.</li></ul><br /><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><ul><li><strong>(op) :</strong> Learn another character in the scene’s demeanor (if an NPC) and current strife.</li><li><strong>(op)+ :</strong> Act subtly to attract minimal attention in your efforts. Extra (op) makes the attempt even subtler.</li><li><strong>(op)(op) :</strong> Notice an interesting detail about a character in the scene, such as an advantage or disadvantage. At the GM’s discretion, you may establish a new detail for an NPC.</li></ul><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><ul><li><strong>(op) :</strong> Reassure another character in the scene with your presence, allowing them to remove 2 strife.</li><li><strong>(op)+ :</strong> Act carefully to minimize consequences of failure or other dangers that could arise from the task. Extra (op) makes the attempt even safer.</li><li><strong>(op)(op) :</strong> Suddenly recall an important piece of information not directly related to the task. At the GM’s discretion, you may establish a small preparatory action you took earlier, such as bringing along a common useful item.</li></ul><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><ul><li><strong>(op) :</strong> Inflame another character in the scene with your presence, causing them to receive 2 strife.</li><li><strong>(op)+ :</strong> Perform the task in a flashy way, drawing attention to yourself. Extra (op) attracts even more notice.</li><li><strong>(op)(op) :</strong> Notice something missing or out of place in the vicinity that is not directly related to the task. At the GM’s discretion, you may establish an absence, such as a lack of shoes outside indicating the occupant’s absence.</li></ul><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><ul><li><strong>(op) :</strong> Remove 2 strife from yourself.</li><li><strong>(op)+ :</strong> Perform the task efficiently, completing it more quickly or saving supplies. Extra (op) further reduces the time or materials expended.</li><li><strong>(op)(op) :</strong> Spot an interesting physical detail present in your environment not directly related to your check. At the GM’s discretion, you may establish a piece of terrain or a mundane object nearby.</li></ul><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><ul><li><strong>(op) :</strong> Choose a ring other than Void. Reduce the TN of your next check by 1 if it uses that ring.</li><li><strong>(op)+ :</strong> Feel a chill down your spine, notice a sudden silence, or detect another sign of the supernatural if there is a spiritual disturbance in the scene. Extra (op) gives an increasingly precise location for the supernatural occurrence.</li><li><strong>(op)(op) :</strong> Gain spiritual insight into the nature of the universe or your own heart. At the GM’s discretion, you may establish a fact about your character that has not been previously revealed but relates to the situation.</li></ul>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "nwC9Z6G5Ip2fo3rO",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "PpLo1oHEh8PWFTS7",
+  "sort": 0
+ },
+ {
+  "name": "In Shadowlands Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: In Shadowlands Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "jSrVyNMpr8xyXAdw",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "In Shadowlands Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Shadowlands p.130</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><p><strong>(op)+ :</strong> You detect a subtle sign in your environment that lets you get your bearings, such as a stream that runs slightly less Tainted than the environment around it or the growths on the twisted trees that point toward the Festering Pit. This landmark helps guide you for one scene, plus one additional scene in the Shadowlands per (op) spent this way.</p><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><p><strong>(op)(op) :</strong> Your resolute nature steels you against the unstable environment of the Shadowlands. You count your vigilance as 1 higher the next time you seek to notice or avoid a hazardous situation or creature.</p><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><p><strong>(op)+ :</strong> You spur your comrades on with pleasing encouragement or biting criticism. One other character in the scene per (op) you spend this way reduces their next TN to resist physical hardship or the influence of the Shadowlands by 1.</p><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><p><strong>(op)(op)+ :</strong> By luck or careful scavenging, you are able to find a useful item not yet corrupted by the Shadowlands. Such items have a maximum rarity of 3, plus 1 for each additional (op)(op) spent. The GM should modify this depending on the exact nature of the item as well.</p><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><p><strong>(op)(op)(op) :</strong> Though Jigoku’s power weighs heavily upon them, you are undeterred. By drawing on memories of the un-Tainted lands north of the wall, you can keep yourself focused and ignore all (st) results on your next check.</p>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "99ewsiawBCbkrIS2",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cPi9pLryCvcrEuw5",
+  "sort": 0
+ },
+ {
+  "name": "Initiative Check Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Initiative Check Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "ece7EH3lqrpGnxWq",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Initiative Check Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.329</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><p><strong>(op) :</strong> On an Initiative check, assess one foe’s weakness. Learn one of their disadvantages of that foe’s choice.</p><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><p><strong>(op) :</strong> On an Initiative check, choose another character’s disadvantage you know. They do not apply that disadvantage to their checks this scene.</p><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><p><strong>(op) :</strong> On an Initiative check, use your focus instead of your vigilance for your initiative when surprised.</p><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><p><strong>(op) :</strong> On an Initiative check, assess the qualities of all terrain in the scene (see page 267).</p><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><p><strong>(op) :</strong> On an Initiative check, sense if there is an Otherworldly being in the scene.</p>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "ViHbvqzyIkkFDk2C",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "S1z6kKSXEPFcayRz",
+  "sort": 0
+ },
+ {
+  "name": "Invocations Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Invocations Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "NxnYO4KtZM4ihaIM",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Invocations Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.191</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><ul><li><strong>(op)(op)+ :</strong> Choose one additional target per (op)(op) spent this way.</li><li><strong>(op)+ :</strong> Treat the maximum range of this technique as 1 higher per (op) spent this way.</li><li><strong>(op) :</strong> Reduce the TN of the next Movement action check you make by 1. This effect persists until the end of your next turn.</li><li><strong>(op)(op)+ :</strong> If this technique can target characters other than you, choose additional target per (op)(op) spent this way..</li><li><strong>(op)(op)+ :</strong> If this technique targets all characters in an area, choose 1 character in range to exclude as a target per <strong>(op)(op)</strong> spent this way.</li></ul><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><ul><li><strong>(op) :</strong> Increase your physical resistance by 1. This effect persists until the end of the beginning of your next turn. </li><li><strong>(op)+ :</strong> If this technique can target characters other than you, choose additional target per (op) spent this way.</li><li><strong>(op)+ :</strong> Treat the maximum range of this technique as 1 higher per (op) spent this way.</li><li><strong>(op) :</strong> This effect inflicts physical damage instead of supernatural damage.</li><li><strong>(op) :</strong> The damage inflicted by this technique has the Sacred quality (see page 241).</li></ul><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><ul><li><strong>(op)+ :</strong> Treat the maximum range of this technique as 1 higher per (op) spent this way</li><li><strong>(op)+ :</strong> If this technique can target characters other than you, choose additional target per (op) spent this way</li><li><strong>(op) :</strong> Reduce the TN of the next Attack action check you make by 1. This effect persists until the end of your next turn.</li><li><strong>(op)+ :</strong> Increase the TN of checks to resist this effect by 1 per (op) spent this way.</li><li><strong>(op)(op)+ :</strong> One target per (op)(op) spent this way must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer the Burning condition.</li></ul><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><ul><li><strong>(op) :</strong> Increase your supernatural resistance by 1 until the end of your next turn.</li><li><strong>(op)+ :</strong> If this technique can target characters other than you, choose additional target per (op) spent this way.</li><li><strong>(op)(op)+ :</strong> Treat the maximum or minimum range of this technique as 1 higher or lower per (op)(op) spent this way.</li><li><strong>(op)(op) :</strong> Remove 1 fatigue from the target or yourself.</li><li><strong>(op) : </strong>Reduce the TN of the next Support action check you make by 1. This effect persists until the end of your next turn.</li></ul>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "3D5UgWhImL2zVjwf",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ZNXhh9drLyIFhNpp",
+  "sort": 0
+ },
+ {
+  "name": "Mass Battles Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Mass Battles Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "YVngqaZUF6CNug6S",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Mass Battles Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Fields of Victory p.138</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><ul><li><strong>(op)+ :</strong> Choose an allied leader other than yourself. Reduce the TN of that leader’s next check for a Scheme action by 1 per (op) spent this way. This persists until the end of the scene.</li><li><strong>(op)(op) :</strong> Choose a leader in a fortification. That leader’s cohort loses the benefits of the fortification until the beginning of your next turn.</li></ul><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><ul><li><strong>(op)+ :</strong> Remove 1 panic from your army per (op) spent this way.</li><li><strong>(op)(op) :</strong> Choose an allied leader other than yourself. That leader’s cohort cannot be targeted by Attack actions until the beginning of your next turn.</li></ul><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><ul><li><strong>(op)+ :</strong> The enemy army suffers 1 panic per (op) spent this way.</li><li><strong>(op)+ :</strong> When performing an Attack action against the cohort of an enemy leader with vigilance lower than or equal to (op) spent this way, after its effects are resolved, inflict a critical strike with severity equal to the deadliness of one of your weapons on that leader.</li></ul><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><ul><li><strong>(op)+ :</strong> Choose an allied leader other than yourself. Reduce the TN of that leader’s next check for a Movement action by 1 per (op) spent this way.</li><li><strong>(op)(op) :</strong> Choose an enemy leader. That leader’s cohort cannot perform Movement actions until the beginning of your next turn.</li></ul><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><ul><li><strong>(op)+ :</strong> Your army and each enemy army suffer 2 attrition per (op) spent this way. </li><li><strong>(op)(op) :</strong> When you perform a Support action, after its effects are resolved, you may immediately perform a Challenge action targeting an enemy cohort’s leader.</li><li><strong>(op)(op) :</strong> Increase the army’s strength and discipline by 3. This persists until the end of the scene.</li></ul>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "7FNrtivEfofIZTb9",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vpf0VC1RflZ1dbWk",
+  "sort": 0
+ },
+ {
+  "name": "Negotiations Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Negotiations Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "xfzLMwQKmrNEe5qH",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Negotiations Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Court of Stones p.132</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><p><strong>(op)(op)+ :</strong> Your careful verbal trap ensnares someone in a position in which they must either give up ground or give you a boon. They must offer you a minor concession unrelated to your current social objective unless they give up 1 momentum point per (op)(op) spent this way.</p><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><p><strong>(op)(op)(op) :</strong> Your uncompromising dedication to your bottom line stalls the conversation. Choose a character in the scene: that character cannot gain momentum points toward any social objective until the end of your next turn.</p><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><p><strong>(op)(op) :</strong> You set someone else on the defense with fast-paced questions and demands. Choose a demand or statement another character in the scene has made. Their player (or the GM, for NPCs) must tell you any hidden motivations behind that demand or statement.</p><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><p><strong>(op)(op) :</strong> You break the tension with a well-timed joke or clever comment. You may ask one personal question of a character in the scene with a different social objective. The question must be unrelated to the subject of the negotiations. If the character answers honestly, they gain 1 momentum point toward their current objective and may ask you a personal question in turn. If they do, you gain 1 momentum point toward your current objective.</p><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><p><strong>(op)(op)(op) :</strong> You briefly shake someone’s conviction with a deep insight into their character or circumstances, causing them to speak without certainty. Until the end of your next turn, any momentum points they score are added to your current social objective instead of to their own.</p>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "RliV3HW6qYoylDsk",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "LXYClkrH8H240hIX",
+  "sort": 0
+ },
+ {
+  "name": "Romance Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Romance Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "AS2XjsU8fVaeHazY",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Romance Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Court of Stones p.132</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><p><strong>(op)(op) :</strong> The conversation turns to mutual friends or acquaintances. Name a character you and your intended both know. They must tell you what they think of that character, revealing one of that person’s advantages or disadvantages.</p><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><p><strong>(op)(op) :</strong> An offhand comment reveals that you and your intended share some common ground: an odd hobby, a favorite actor, or a core belief. Make three suggestions to your intended’s player; they must tell you which one it is. You and your intended may each remove 2 strife.</p><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><p><strong>(op)(op) :</strong> A detail of your appearance catches your intended’s interest. Their player must tell you which of your physical attributes they find most captivating. You and your intended each receive 1 strife, and you each reduce the TN of your next Social skill check by 1.</p><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><p><strong>(op)(op) :</strong> Your interaction is pleasant enough that your intended, not you, suggests another meeting within the next day or two. They offer you several options for the next time you and they spend personal time together; choose whichever you like the best, and don’t be late.</p><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><p><strong>(op)(op)(op) :</strong> Due to circumstances beyond your control—a gust of wind or an earth tremor, perhaps—you and your intended find yourselves unexpectedly aware of one another! Your intended decides what kind of contact it was, from a fateful meeting of the eyes to a brush of your hands against one another as you both reach for a dropped scroll. They also decide how they react, although they will not blame you for anything untoward (after all, it wasn’t your fault).</p>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "3pM8Cr7eutBQMAzg",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "pniloYg15ykgYb01",
+  "sort": 0
+ },
+ {
+  "name": "Skill Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: Skill Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "Ci85t6xP4Vx5E4ae",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "Skill Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Core Rulebook p.329</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><ul><li><strong>(op) Artisan :</strong> If you succeed, add the Resplendent or Subtle quality to an item you are refining.</li><li><strong>(op) Scholar :</strong> Learn a something about a character who created or used the item you are studying (such as one of their advantages or disadvantages of the GM’s choice that affected their creation or use of the item).</li><li><strong>(op) Social :</strong> Learn if the honor, glory, or status attribute of a character in the scene is higher, lower, or equal to yours.</li><li><strong>(op) Trade :</strong> Convince a buyer to pay an additional 10% for an item you are selling.</li></ul><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><ul><li><strong>(op) Artisan :</strong> If you succeed, add the Durable quality to an item that you are restoring.</li><li><strong>(op) Scholar :</strong> Remember a place where you can research or study the topic you were attempting to recall.</li><li><strong>(op) Social :</strong> Increase the TN of the next Social check another character makes before the end of the scene by 1.</li><li><strong>(op) Trade :</strong> Reduce the TN of the next check another character makes with the same skill before the end of the scene by 1.</li></ul><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><ul><li><strong>(op) Artisan :</strong> If you succeed, make one additional copy of the item you are creating.</li><li><strong>(op) Scholar :</strong> Extrapolate the motivations or desires of another character in the scene or wider situation.</li><li><strong>(op) Social :</strong> Reduce the TN of the next Social check another character makes before the end of the scene by 1.</li><li><strong>(op) Trade :</strong> Unusual inspiration strikes; add a kept Ring Dice set to an (op) result to the next check you make with another skill.</li></ul><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><ul><li><strong>(op) Artisan :</strong> Add a kept Ring Dice set to an (op) result to the next Artisan skill check you make before the end of the game session.</li><li><strong>(op) Scholar :</strong> Spot a unique or identifying quality, aspect, or ability of something that you are identifying.</li><li><strong>(op) Social :</strong> Add a kept Ring Dice set to an (op) result to your next Social check before the end of the scene.</li><li><strong>(op) Trade :</strong> Convince a seller to give you an additional 10% discount for an item you are buying.</li></ul><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><ul><li><strong>(op) Artisan :</strong> Reduce the TN of the next check you make using the item you are attuning yourself to by 1.</li><li><strong>(op) Scholar :</strong> Intuit whether you can learn anything of value from your current course of inquiry.</li><li><strong>(op) Social :</strong> Discern the objective of another character in the scene.</li><li><strong>(op) Trade :</strong> Reduce any effect you have on your environment (and physical traces of your efforts) to a minimum.</li></ul>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "A1HiH9FlNJtxT55t",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "WOpra0mZn4S2py1M",
+  "sort": 0
+ },
+ {
+  "name": "While Tainted Use",
+  "folder": null,
+  "flags": {},
+  "pages": [
+   {
+    "name": "Figure: While Tainted Use",
+    "type": "image",
+    "src": "systems/l5r5e/assets/icons/social.svg",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "ehVO1oOeujWx6NWz",
+    "system": {},
+    "image": {},
+    "text": {
+     "format": 1
+    },
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   },
+   {
+    "name": "While Tainted Use",
+    "type": "text",
+    "title": {
+     "show": false,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<blockquote>Shadowlands p.131</blockquote><br /><h2>(air) Air (Precision, Stealth, Subtlety, Trickery, Detail, Emotion)</h2><p><strong>(op)(op) :</strong> Your newfound cunning is able to redirect attention away from you, potentially concealing your Tainted nature or letting you avoid scrutiny. The TN of the next check made to scrutinize you or your actions is increased by 1.</p><br /><br /><h2>(earth) Earth (Caution, Calm, Thoroughness, Memory, Defense)</h2><p><strong>(op)(op) :</strong> No mortal concern can slow you, as you already endure worse than most can even imagine. For the rest of the scene, whenever you suffer fatigue reduce the value suffered by 2, to a minimum of 0.</p><br /><br /><h2>(fire) Fire (Creativity, Intimidation, Attention, Motivation, Insight, Absence)</h2><p><strong>(op)(op) :</strong> The furious power of Jigoku flows through you, granting you unnatural might. Add 1 kept (ring) showing a (st) result to the next Martial Arts check you make. This effect persists until the start of their next turn.</p><br /><br /><h2>(water) Water (Efficiency, Flexibility, Friendliness, Environmental awareness)</h2><p><strong>(op)(op) :</strong> You briefly become fluid in mind or body, shaking off disorientation or even injury. You remove one of the following conditions: Dazed, Disoriented, Immobilized, Intoxicated, Lightly Wounded, or Prone.</p><br /><br /><h2>(void) Void (Instinct, Inscrutability, Mystery, the Supernatural)</h2><p><strong>(op)+ :</strong> The unnatural insights of the kansen voice themselves wordlessly to you, granting knowledge you could not possibly have known otherwise. You learn something relevant to the current situation, appropriate in scope to the number of (op) spent. For each (op) spent in this way, you receive 1 strife due to the unnatural means by which you gained this knowledge.</p>"
+    },
+    "_stats": {
+     "compendiumSource": null,
+     "duplicateSource": null,
+     "exportSource": null,
+     "coreVersion": "13.350",
+     "systemId": "l5r5e",
+     "systemVersion": "1.13.1",
+     "lastModifiedBy": null,
+     "createdTime": null,
+     "modifiedTime": null
+    },
+    "_id": "HZ3UTbfmM8uRzWYz",
+    "system": {},
+    "image": {},
+    "video": {
+     "controls": true,
+     "volume": 0.5
+    },
+    "src": null,
+    "category": null,
+    "sort": 0,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    }
+   }
+  ],
+  "categories": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761148069792,
+   "modifiedTime": 1761148069792,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "5C5n4lCAYJNzDYIZ",
+  "sort": 0
+ }
+]

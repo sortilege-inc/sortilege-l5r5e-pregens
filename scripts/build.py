@@ -1,0 +1,418 @@
+#!/usr/bin/env python3
+"""Build: repo character sources + Foundry catalog -> SQLite -> static site data.
+
+    src/characters/*.json  ─┐
+                            ├─> data/l5r.sqlite ─> site/data/*.js
+    data/foundry/catalog/  ─┘
+
+The SQLite database is the build-time store: it is where the coverage joins
+happen. Nothing at runtime touches it — the served site is plain HTML + the
+generated data/*.js files, so it works on GitHub Pages and from file://.
+
+Rules text is never authored here. Every non-custom content reference resolves
+to the compendium's own verbatim description; an unresolvable reference is a
+build error, not a silent drop.
+"""
+import collections, difflib, glob, json, os, re, sqlite3, sys, unicodedata
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC = os.path.join(ROOT, "src", "characters")
+CATDIR = os.path.join(ROOT, "pipeline", "foundry", "catalog")
+DB = os.path.join(ROOT, "pipeline", "l5r.sqlite")
+SITEDATA = os.path.join(ROOT, "data")
+
+# category in a tier -> catalog subType it resolves against
+CATEGORY_SUBTYPE = {
+    "techniques": "technique", "peculiarities": "peculiarity",
+    "titles": "title", "bonds": "bond", "gear": ("weapon", "armor", "item"),
+}
+SCHOOL_CLAN_RE = re.compile(r"^(?P<name>.*?)\s*\[(?P<clan>[^\]]+)\]\s*$")
+
+# --- school curriculum journals -------------------------------------------
+# Each curriculum page is a <blockquote>Book p.N</blockquote> followed by a
+# table whose <th> rows open a rank and whose <td><td> rows are the entries.
+SRC_RE = re.compile(r"<blockquote>(.*?)</blockquote>", re.S)
+SRC_PAGE_RE = re.compile(r"^(?P<book>.*?)\s*p\.\s*(?P<page>\d+)", re.S)
+RANK_RE = re.compile(r"<th[^>]*>.*?Rank\s*(\d+).*?</th>", re.S | re.I)
+CELL_RE = re.compile(r"<td[^>]*>(.*?)</td>\s*<td[^>]*>(.*?)</td>", re.S)
+ROW_RE = re.compile(r"<tr[^>]*>(.*?)</tr>", re.S)
+TAG_RE = re.compile(r"<[^>]+>")
+PREFIX_RE = re.compile(r"^\((?P<grp>[^)]+)\)\s*")
+
+
+def strip_tags(h):
+    import html as _html
+    return re.sub(r"\s+", " ", _html.unescape(TAG_RE.sub("", h or ""))).strip()
+
+
+def parse_curriculum(doc):
+    """-> (book, page, [{rank, label, kind, group, prereq}])"""
+    page = next((p for p in doc.get("pages", []) if p.get("type") == "text"), None)
+    if not page:
+        return None, None, []
+    content = ((page.get("text") or {}).get("content")) or ""
+    book = pageno = None
+    m = SRC_RE.search(content)
+    if m:
+        sm = SRC_PAGE_RE.match(strip_tags(m.group(1)))
+        if sm:
+            book = sm.group("book").strip()
+            pageno = int(sm.group("page"))
+    entries, rank = [], None
+    for row in ROW_RE.findall(content):
+        rm = RANK_RE.search("<tr>" + row + "</tr>")
+        if rm:
+            rank = int(rm.group(1))
+            continue
+        cm = CELL_RE.search(row)
+        if not cm or rank is None:
+            continue
+        label, kind = strip_tags(cm.group(1)), strip_tags(cm.group(2))
+        prereq = "(prereq)" in label
+        label = label.replace("(prereq)", "").strip()
+        gm = PREFIX_RE.match(label)
+        entries.append({"rank": rank, "kind": kind, "prereq": prereq,
+                        "group": gm.group("grp") if gm else None,
+                        "label": PREFIX_RE.sub("", label).strip()})
+    return book, pageno, entries
+
+
+def norm(s):
+    s = unicodedata.normalize("NFKD", s or "")
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", "", s.lower())
+
+
+def book(src):
+    return (src or "").strip() or None
+
+
+def schema(cx):
+    cx.executescript("""
+    DROP TABLE IF EXISTS catalog;
+    DROP TABLE IF EXISTS character;
+    DROP TABLE IF EXISTS tier;
+    DROP TABLE IF EXISTS tier_content;
+    CREATE TABLE catalog(
+      uuid TEXT PRIMARY KEY, pack TEXT, pack_label TEXT, doc_type TEXT,
+      sub_type TEXT, name TEXT, norm TEXT, kind TEXT, ring TEXT, rank INTEGER,
+      source_book TEXT, source_page INTEGER, clan TEXT, xp_cost INTEGER,
+      description TEXT, data TEXT);
+    CREATE INDEX catalog_norm ON catalog(sub_type, norm);
+    CREATE TABLE character(
+      slug TEXT PRIMARY KEY, name TEXT, clan TEXT, family TEXT, school TEXT,
+      school_norm TEXT, role TEXT, bucket TEXT, accent TEXT, portrait TEXT,
+      concept TEXT, summary TEXT, tier_count INTEGER, xp_min INTEGER, xp_max INTEGER);
+    CREATE TABLE tier(
+      id INTEGER PRIMARY KEY, slug TEXT, idx INTEGER, xp INTEGER, label TEXT,
+      rank INTEGER, school TEXT, foundry_id TEXT, rings TEXT, skills TEXT,
+      social TEXT, derived TEXT, money TEXT, advancements TEXT);
+    CREATE TABLE tier_content(
+      tier_id INTEGER, slug TEXT, category TEXT, name TEXT, norm TEXT,
+      custom INTEGER, catalog_uuid TEXT, meta TEXT);
+    CREATE INDEX tc_norm ON tier_content(norm);
+    DROP TABLE IF EXISTS curriculum;
+    CREATE TABLE curriculum(
+      school_norm TEXT, school TEXT, rank INTEGER, kind TEXT, grp TEXT,
+      label TEXT, norm TEXT, prereq INTEGER);
+    CREATE INDEX cur_school ON curriculum(school_norm);
+    """)
+
+
+def load_catalog(cx):
+    index = json.load(open(os.path.join(CATDIR, "index.json")))
+    full = {}
+    for path in glob.glob(os.path.join(CATDIR, "*.json")):
+        if os.path.basename(path) == "index.json":
+            continue
+        pack = "l5r5e-compendia-sortilege." + os.path.basename(path)[:-5]
+        for doc in json.load(open(path)):
+            full[(pack, norm(doc["name"]))] = doc
+    rows, missing, curriculum = [], 0, []
+    for pack, v in index.items():
+        for e in v["entries"]:
+            doc = full.get((pack, norm(e["name"])))
+            sysd = (doc or {}).get("system", {}) or {}
+            sr = sysd.get("source_reference") or {}
+            m = SCHOOL_CLAN_RE.match(e["name"])
+            if "school-curriculum" in pack and doc:
+                cbook, cpage, centries = parse_curriculum(doc)
+                sr = {"source": cbook, "page": cpage}
+                sname = m.group("name") if m else e["name"]
+                for ce in centries:
+                    curriculum.append((norm(sname), sname, ce["rank"], ce["kind"],
+                                       ce["group"], ce["label"], norm(ce["label"]),
+                                       1 if ce["prereq"] else 0))
+            if doc is None:
+                missing += 1
+            # School Curriculum names carry a "[Clan]" suffix; the display name and
+            # the norm both drop it, so a character's school matches exactly.
+            display = m.group("name") if m else e["name"]
+            rows.append((
+                e["uuid"], pack, v["label"], v["type"], e["subType"] or v["type"],
+                display, norm(display),
+                sysd.get("technique_type") or sysd.get("peculiarity_type")
+                or sysd.get("category"),
+                sysd.get("ring"), sysd.get("rank"), book(sr.get("source")),
+                sr.get("page"), m.group("clan") if m else None, sysd.get("xp_cost"),
+                sysd.get("description"), json.dumps(sysd, ensure_ascii=False),
+            ))
+    cx.executemany("INSERT INTO catalog VALUES (" + ",".join("?" * 16) + ")", rows)
+    cx.executemany("INSERT INTO curriculum VALUES (?,?,?,?,?,?,?,?)", curriculum)
+    return len(rows), missing, len(curriculum)
+
+
+def load_characters(cx):
+    unresolved = []
+    tid = 0
+    for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
+        c = json.load(open(path))
+        tiers = c["tiers"]
+        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 15) + ")", (
+            c["slug"], c["name"], c["identity"].get("clan"), c["identity"].get("family"),
+            c["identity"].get("school"), norm(c["identity"].get("school")),
+            c["identity"].get("role"), c.get("bucket"), c.get("accent"),
+            c.get("portrait"), c.get("concept"), c.get("summary"),
+            len(tiers), min(t["xp"] for t in tiers), max(t["xp"] for t in tiers)))
+        for idx, t in enumerate(tiers):
+            tid += 1
+            cx.execute("INSERT INTO tier VALUES (" + ",".join("?" * 14) + ")", (
+                tid, c["slug"], idx, t["xp"], t.get("label"), t.get("rank"),
+                t.get("school"), t.get("foundry_id"),
+                *[json.dumps(t.get(k), ensure_ascii=False) for k in
+                  ("rings", "skills", "social", "derived", "money", "advancements")]))
+            for cat, sub in CATEGORY_SUBTYPE.items():
+                subs = sub if isinstance(sub, tuple) else (sub,)
+                for entry in t.get(cat, []):
+                    n = norm(entry["name"])
+                    uuid = None
+                    if not entry.get("custom"):
+                        row = cx.execute(
+                            "SELECT uuid FROM catalog WHERE norm=? AND sub_type IN (%s)"
+                            % ",".join("?" * len(subs)), (n, *subs)).fetchone()
+                        if row:
+                            uuid = row[0]
+                        else:
+                            unresolved.append((c["slug"], cat, entry["name"]))
+                    cx.execute("INSERT INTO tier_content VALUES (?,?,?,?,?,?,?,?)", (
+                        tid, c["slug"], cat, entry["name"], n,
+                        1 if entry.get("custom") else 0, uuid,
+                        json.dumps(entry, ensure_ascii=False)))
+    return unresolved
+
+
+def emit(cx):
+    """Write the site's data files.
+
+    Split per character on purpose: a single characters.js was 781 KB at six
+    characters, which would be ~14 MB at 110. Index pages load only the small
+    roster; a character page loads only its own file.
+    """
+    os.makedirs(SITEDATA, exist_ok=True)
+    chardir = os.path.join(SITEDATA, "characters")
+    os.makedirs(chardir, exist_ok=True)
+    for stale in glob.glob(os.path.join(chardir, "*.js")):
+        os.remove(stale)
+
+    def write(path, varname, obj):
+        with open(path, "w") as f:
+            f.write(f"window.{varname} = ")
+            json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
+            f.write(";\n")
+        return os.path.getsize(path)
+
+    cx.row_factory = sqlite3.Row
+    curricula = collections.defaultdict(list)
+    for r in cx.execute("SELECT * FROM curriculum ORDER BY school_norm, rank"):
+        curricula[r["school_norm"]].append(
+            {"rank": r["rank"], "kind": r["kind"], "group": r["grp"],
+             "label": r["label"], "prereq": bool(r["prereq"])})
+
+    roster, biggest = [], 0
+    for c in cx.execute("SELECT * FROM character ORDER BY name"):
+        src = json.load(open(os.path.join(SRC, c["slug"] + ".json")))
+        tiers = []
+        for t in cx.execute("SELECT * FROM tier WHERE slug=? ORDER BY idx", (c["slug"],)):
+            content = collections.defaultdict(list)
+            for r in cx.execute("SELECT * FROM tier_content WHERE tier_id=?", (t["id"],)):
+                entry = json.loads(r["meta"])
+                if r["catalog_uuid"]:
+                    cat = cx.execute(
+                        "SELECT kind,ring,rank,source_book,source_page,description,data"
+                        " FROM catalog WHERE uuid=?", (r["catalog_uuid"],)).fetchone()
+                    entry["description"] = cat["description"]
+                    entry["source"] = {"book": cat["source_book"], "page": cat["source_page"]}
+                    entry["uuid"] = r["catalog_uuid"]
+                    # only the mechanical fields a sheet renders; not the whole blob
+                    d = json.loads(cat["data"])
+                    for k in ("damage", "deadliness", "range", "grip_1", "grip_2", "skill",
+                              "category", "armor", "rarity", "zeni", "properties",
+                              "xp_cost", "types"):
+                        if d.get(k) not in (None, "", [], {}):
+                            entry.setdefault(k, d[k])
+                content[r["category"]].append(entry)
+            tiers.append({
+                "xp": t["xp"], "label": t["label"], "rank": t["rank"],
+                "school": t["school"], "foundry_id": t["foundry_id"],
+                **{k: json.loads(t[k]) for k in
+                   ("rings", "skills", "social", "derived", "money", "advancements")},
+                **{k: content.get(k, []) for k in CATEGORY_SUBTYPE},
+            })
+        doc = {**{k: c[k] for k in c.keys() if k != "school_norm"},
+               "twenty_questions": src.get("twenty_questions", {}),
+               "notes": src.get("notes", ""),
+               "curriculum": curricula.get(c["school_norm"], []),
+               "tiers": tiers}
+        size = write(os.path.join(chardir, c["slug"] + ".js"), "L5R_CHARACTER", doc)
+        biggest = max(biggest, size)
+        roster.append({k: c[k] for k in
+                       ("slug", "name", "clan", "family", "school", "role", "bucket",
+                        "portrait", "tier_count", "xp_min", "xp_max")})
+
+    n1 = write(os.path.join(SITEDATA, "roster.js"), "L5R_ROSTER", roster)
+
+    # the denominator, metadata only (no long rules text) — ledger + landing tiles
+    cat = [dict(r) for r in cx.execute(
+        "SELECT uuid,pack,pack_label,doc_type,sub_type,name,kind,ring,rank,"
+        "source_book,source_page,clan,xp_cost FROM catalog ORDER BY sub_type,name")]
+    n2 = write(os.path.join(SITEDATA, "catalog.js"), "L5R_CATALOG", cat)
+
+    used = collections.defaultdict(list)
+    for r in cx.execute(
+        "SELECT c.uuid uuid, tc.slug slug, MIN(t.xp) xp FROM tier_content tc"
+        " JOIN catalog c ON c.uuid = tc.catalog_uuid"
+        " JOIN tier t ON t.id = tc.tier_id GROUP BY c.uuid, tc.slug"):
+        used[r["uuid"]].append({"slug": r["slug"], "xp": r["xp"]})
+    customs = [dict(r) for r in cx.execute(
+        "SELECT slug,category,name,MIN(meta) meta FROM tier_content"
+        " WHERE custom=1 GROUP BY slug,category,name")]
+    schools = [dict(r) for r in cx.execute(
+        "SELECT c.uuid uuid, c.name name, c.clan clan, c.source_book source_book,"
+        " c.source_page source_page,"
+        " (SELECT ch.slug FROM character ch WHERE ch.school_norm = c.norm LIMIT 1) slug"
+        " FROM catalog c WHERE c.pack LIKE '%school-curriculum%' ORDER BY c.name")]
+    n3 = write(os.path.join(SITEDATA, "coverage.js"), "L5R_COVERAGE",
+               {"used": used, "customs": customs, "schools": schools})
+    return n1, n2, n3, biggest
+
+
+PAGE_STUB = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{name} — Sortilege L5R Pregens</title>
+<meta name="description" content="{name} — {school}. A Legend of the Five Rings 5th Edition pregenerated character, shown at {tiers} XP tiers.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="../index.html">Sortilege L5R Pregens</a>
+  <a href="../index.html">Home</a>
+  <a href="index.html" class="active">Characters</a>
+  <a href="../admin/index.html">Coverage</a>
+</nav>
+
+<div class="wrap">
+  <div class="sheet-head">
+    <div class="portrait" id="portrait-target"></div>
+    <div class="ident">
+      <h1 id="char-name"></h1>
+      <p class="school-line" id="school-line"></p>
+      <div class="tagrow" id="char-chips"></div>
+    </div>
+  </div>
+
+  <div class="timeline-section">
+    <div class="tl-label">Progression — select an XP tier</div>
+    <div class="tl-track" id="timeline"></div>
+  </div>
+
+  <div id="changelog-target"></div>
+  <div id="stats-target"></div>
+  <div id="duty-target"></div>
+  <div id="skills-target"></div>
+  <div id="content-target"></div>
+</div>
+
+<footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
+
+<script src="../data/characters/{slug}.js"></script>
+<script src="../assets/sheet.js"></script>
+</body>
+</html>
+"""
+
+
+def emit_pages(cx):
+    """One thin stub per character; all the rendering lives in assets/sheet.js."""
+    out = os.path.join(ROOT, "characters")
+    os.makedirs(out, exist_ok=True)
+    cx.row_factory = sqlite3.Row
+    n = 0
+    for c in cx.execute("SELECT * FROM character ORDER BY slug"):
+        with open(os.path.join(out, c["slug"] + ".html"), "w") as f:
+            f.write(PAGE_STUB.format(name=c["name"], slug=c["slug"],
+                                     school=c["school"] or "", tiers=c["tier_count"]))
+        n += 1
+    return n
+
+
+def check_schools(cx):
+    """Every character's school should match a School Curriculum entry exactly.
+
+    A near-miss is nearly always a typo in the source record, and a typo here
+    silently costs a school in the coverage count — so name them loudly.
+    """
+    rows = cx.execute(
+        "SELECT slug, school, school_norm FROM character WHERE school IS NOT NULL").fetchall()
+    roll = {r[0]: r[1] for r in cx.execute(
+        "SELECT norm, name FROM catalog WHERE pack LIKE '%school-curriculum%'")}
+    off = []
+    for slug, school, snorm in rows:
+        if snorm in roll:
+            continue
+        near = difflib.get_close_matches(snorm, list(roll), n=1, cutoff=0.75)
+        off.append((slug, school, roll[near[0]] if near else None))
+    return off
+
+
+def main():
+    os.makedirs(os.path.dirname(DB), exist_ok=True)
+    if os.path.exists(DB):
+        os.remove(DB)
+    cx = sqlite3.connect(DB)
+    schema(cx)
+    ncat, missing, ncur = load_catalog(cx)
+    unresolved = load_characters(cx)
+    off_roll = check_schools(cx)
+    cx.commit()
+    sizes = emit(cx)
+    npages = emit_pages(cx)
+    cx.commit()
+
+    print(f"catalog:    {ncat} entries ({missing} without full text yet)"
+          f", {ncur} curriculum rows")
+    print(f"characters: {cx.execute('SELECT COUNT(*) FROM character').fetchone()[0]}"
+          f", tiers {cx.execute('SELECT COUNT(*) FROM tier').fetchone()[0]}"
+          f", content refs {cx.execute('SELECT COUNT(*) FROM tier_content').fetchone()[0]}")
+    print("site data:  roster.js %.1f KB | catalog.js %.1f KB | coverage.js %.1f KB"
+          " | largest character %.1f KB" % tuple(s / 1024 for s in sizes))
+    print(f"pages:      {npages} character stubs")
+    if off_roll:
+        print(f"SCHOOLS off the compendium roll ({len(off_roll)}):")
+        for slug, school, near in off_roll:
+            print(f"    {slug}: {school!r}" +
+                  (f"  — did you mean {near!r}?" if near else "  — no close match"))
+    if unresolved:
+        print(f"UNRESOLVED references ({len(unresolved)}) — not in catalog and not marked custom:")
+        for u in unresolved[:20]:
+            print("   ", u)
+        sys.exit(1)
+    print("DONE_MARKER build ok")
+
+
+if __name__ == "__main__":
+    main()

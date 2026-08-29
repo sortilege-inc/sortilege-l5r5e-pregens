@@ -1,0 +1,4732 @@
+[
+ {
+  "name": "A Grain of Truth",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761343733221,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 97
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene after you succeed on a Social skill check, you may choose a kihō with a prerequisite up to your school rank (whether you know it or not). You gain the benefits of its Enhancement Effect (see </span><span class=\"fontstyle2\">Kihō </span><span class=\"fontstyle0\">on page 183 of the core rulebook) as if you had successfully activated it. This effect persists until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "anMDAodmxAuldkme",
+  "sort": 0
+ },
+ {
+  "name": "Akilah's Teachings",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346533938,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 56
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round after an Attack action check against you fails, if you have a shield readied and the attack is at range 0–1, you may </span><span class=\"fontstyle2\">shield bash</span><span class=\"fontstyle0\">. If you do, the target suffers physical damage equal to your ranks in Fitness plus your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "OPlpEc22doOa4o1i",
+  "sort": 0
+ },
+ {
+  "name": "Architect of Tranquility",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761343482926,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 94
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene after you succeed at an Artisan skill check, you may choose a number of characters in the scene equal to your school rank. Each chosen character removes 3 strife.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GUrm3GUhhcQIuK9R",
+  "sort": 0
+ },
+ {
+  "name": "Badger's Hold",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761341802682,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 76
+   },
+   "description": "<p><span class=\"fontstyle0\">After you succeed at an Attack action check using the Martial Arts [Unarmed] skill, if the target is Immobilized or Prone (see pages 272–273 of the core rulebook), they also receive fatigue equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "C6HZJ0E1FG8bFf8e",
+  "sort": 0
+ },
+ {
+  "name": "Bend Perception",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334655239,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 98
+   },
+   "description": "<p><span class=\"fontstyle0\">When you choose this school, determine what illusion your character has perfected with your GM. Your character can seemlessly switch between their true form and this alternate form within a matter of seconds. When using this school ability, you can still use your true form’s features, such as your tail. Any character witnessing you do so sees something narratively appropriate based on your illusion. A character must make a </span><span class=\"fontstyle2\">TN 6 Theology or Survival ((void) 5) check </span><span class=\"fontstyle0\">to see beyond your illusion.</span></p><p><span class=\"fontstyle0\">Additionally, you increase the damage dealt by your tail by your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vjUg4veFbItCqNzH",
+  "sort": 0
+ },
+ {
+  "name": "Blazing Tears of Lady Sun",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761345304936,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 86
+   },
+   "description": "<p><span class=\"fontstyle0\">Damage inflicted by your Fire invocations is treated as having the Sacred item quality. Items you augment or summon with Fire invocations have the Sacred quality. When you affect a non-Tainted human character with a Fire invocation, it does not deal damage to the target or inflict negative conditions. Instead, the character removes fatigue equal to your school rank plus the damage you would have dealt otherwise. Each character can only remove fatigue with this school ability once per scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vNGPkpCTyBCuPfmJ",
+  "sort": 0
+ },
+ {
+  "name": "Blessing of the Fortunes",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761347281304,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 237
+   },
+   "description": "<p><span class=\"fontstyle0\">You have gained the goodwill of the Fortune you serve, who grants you certain invocations. When you make a check to use an invocation you learned this way, add additional bonus successes equal to your school rank. </span></p><p><span class=\"fontstyle0\">Select a Fortune to be the primary object of your veneration and choose one appropriate invocation (see the sidebar </span><span class=\"fontstyle2\">The Fortunes and their Blessings</span><span class=\"fontstyle0\">) for which you meet the rank prerequisite. You learn that invocation (without paying its XP cost).</span></p><p><span class=\"fontstyle0\">Each time your school rank increases, you gain one additional invocation this way.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GuuwjVw6u56WbKqy",
+  "sort": 0
+ },
+ {
+  "name": "Blood of the Kami",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349474132,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 69
+   },
+   "description": "<p><span class=\"fontstyle0\">You have one mystical tattoo that empowers your kihō, and gain more as your school rank increases. When you make a check to activate a kihō linked to one of your mystical tattoos, if you succeed, add additional bonus successes equal to your school rank.</span></p><p><span class=\"fontstyle0\">Select a natural motif for your first tattoo and choose one kihō for which you meet the prerequisites that are linked to the tattoo. If you have not learned it, you learn that kihō (without paying its XP cost). You cannot choose the same kihō multiple times this way. </span></p><p><span class=\"fontstyle0\">Each time your school rank increases, you gain one additional tattoo this way</span>.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "B5Njc59tSrqUHrj0",
+  "sort": 0
+ },
+ {
+  "name": "Born in the Saddle",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761351183374,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 85
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, before rolling dice, you may declare that you are directing your horse (who must be present) to aid in a task and describe how its efforts help in those circumstances. Reduce the TN of the check by your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "PrwzWKVRGo6CjScC",
+  "sort": 0
+ },
+ {
+  "name": "Calm Counsel",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761333829622,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 86
+   },
+   "description": "<p><span class=\"fontstyle0\">After a friendly character at range 0–4 receives strife, you may impose the Centered condition on that character (see page 133). You can use this school ability a number of times per scene up to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XjVpLsCWHE92pKN5",
+  "sort": 0
+ },
+ {
+  "name": "Celestial Alignment",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761345179390,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 85
+   },
+   "description": "<p><span class=\"fontstyle0\">As a Support action, you may make a </span><span class=\"fontstyle2\">TN 2 Meditation (void) check </span><span class=\"fontstyle0\">to draw one of the Spirit Realms closer to your current location. A number of range bands around your current position up to your school rank become a place of power of the realm you choose (see page 138 for more information). This effect persists until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ZKnGHI0cr2MUhFaV",
+  "sort": 0
+ },
+ {
+  "name": "Claws of the Crab",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761343816624,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 98
+   },
+   "description": "<p><span class=\"fontstyle0\">When you successfully perform the Guard action (page 264 of the core rulebook), When you make a check to perform the Guard action, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle3\">+: </span><span class=\"fontstyle0\">If you succeed, you may guard one additional character in range per (op) spent this way. You can spend a maximum number of (op) this way up to your school rank</span>.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NRRavsiPJXyFm07e",
+  "sort": 0
+ },
+ {
+  "name": "Creative Execution",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346606211,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 57
+   },
+   "description": "<p><span class=\"fontstyle0\">When making a check to perform a ritual, you may receive fatigue up to your school rank to add that many kept (ring) set to (op) results.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "9IWsFzyfsR9I9Jlc",
+  "sort": 0
+ },
+ {
+  "name": "Disarming Demeanor",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761331878350,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 84
+   },
+   "description": "<p><span class=\"fontstyle0\">When you perform a Support action check, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle3\">+: </span><span class=\"fontstyle0\">Choose one character in the scene with vigilance lower than your school ranks plus (op) spent this way. You treat that character’s focus and vigilance each as 1 lower until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "l4ISUrygrCcS4Z5k",
+  "sort": 0
+ },
+ {
+  "name": "Disciple of Darkness",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761343389199,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 93
+   },
+   "description": "<p><span class=\"fontstyle0\">When you perform a check to hide, move stealthily, or deceive others as to your true identity, you may suffer a number of strife up to your school rank to choose that many characters targeted by the check. Treat each chosen character’s vigilance as 1 lower while resolving the check.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "y1D6uwOD9tZ75Q7v",
+  "sort": 0
+ },
+ {
+  "name": "Drilled Precision",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761341563217,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 73
+   },
+   "description": "<p><span class=\"fontstyle0\">When making an Attack or Movement action check, you may remove an amount of strife from yourself up to your school rank. For each strife you remove this way, add one kept (ring) set to (op) to the check and receive 1 fatigue</span><span class=\"fontstyle3\">.</span> <br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "If3YRRAqA5PuVnZw",
+  "sort": 0
+ },
+ {
+  "name": "Dunestrider",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334003750,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 88
+   },
+   "description": "<p><span class=\"fontstyle0\">At the start of each scene, choose one of the following terrain qualities: Dangerous, Entangling, Imbalanced, or Obscuring. Each friendly character within a number of range bands equal to your school rank ignores the negative effects of that terrain quality.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1OF3T4FFL6Z6XKCP",
+  "sort": 0
+ },
+ {
+  "name": "Effortless Aim",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761351875589,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "deathly_turns",
+    "page": 25
+   },
+   "description": "<p><span class=\"fontstyle0\">When making a check using a bow, add a number of kept (ring) set to an (op) result equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GBtTFghhl5CBD6tH",
+  "sort": 0
+ },
+ {
+  "name": "Elemental Inspiration",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342092062,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 79
+   },
+   "description": "<p><span class=\"fontstyle0\">Choose one: Air, Earth, Water, or Fire. This is your </span><span class=\"fontstyle2\">inspired element</span><span class=\"fontstyle0\">. When making a check to activate an invocation of your inspired element, add a number of rolled (ring) set to (op) results equal to your school rank. When making a check to activate an invocation of your inspired element, you trigger spiritual backlash (see page 190 of the core rulebook) only if you keep four or more dice containing (st) symbols (instead of three or more).</span></p><p><span class=\"fontstyle0\">When making a check to activate an invocation not of your inspired element, you trigger spiritual backlash if you keep two or more dice containing (st) symbols (instead of three or more).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ScvwTrKIJfjr4u3r",
+  "sort": 0
+ },
+ {
+  "name": "Elemental Transmutation",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349148889,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 66
+   },
+   "description": "<p><span class=\"fontstyle0\">When performing an invocation, you may choose a different ring with which to make the check. While using this school ability, you cannot activate (op) of the original Element of the invocation, but you can activate( op) for the new Element. You can use this school ability a number of times per game session up to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0x1oybWv7qzxgB8b",
+  "sort": 0
+ },
+ {
+  "name": "Embrace the Void",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761347353427,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 238
+   },
+   "description": "<p><span class=\"fontstyle0\">When you spend a Void point to Seize the Moment (see page 36 of the core rulebook), you may also treat your ranks in the skill you are using as being equal to your school rank. If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add one kept (ring) set to an (op) result instead.</span> <br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Bp5LzNCt300jd5mE",
+  "sort": 0
+ },
+ {
+  "name": "Every Stone Serves",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761345114161,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 84
+   },
+   "description": "<p><span class=\"fontstyle0\">Reduce the TN of your checks for downtime activities that alter your environment (such as checks to redecorate a room, build a fence, or erect a fortification) by your school rank (to a minimum of 1). When you succeed at such a check, you may choose a number of mundane terrain qualities equal to your school rank and add or remove those terrain qualities from the area you affect.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "2mtCLc8CldOOvjac",
+  "sort": 0
+ },
+ {
+  "name": "Evolution of the Wilds",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334898186,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 101
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a check to employ an unconvential solution (subject to GM discretion) reduce the TN of that check by your school rank</span>.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "46bFrfqOQEMNKDqQ",
+  "sort": 0
+ },
+ {
+  "name": "Explosive Arrival",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761341643327,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 74
+   },
+   "description": "<p><span class=\"fontstyle0\">After you perform an Attack action against a target who is Dazed or unaware of your presence, that target receives strife equal to your school rank. If your target is an enemy leader’s cohort in a mass battle, the enemy army also receives that much panic</span>.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "bCg2D67yA5yoON9g",
+  "sort": 0
+ },
+ {
+  "name": "Eye of the Storm",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/mantis.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761331660087,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": 6
+   },
+   "description": "<p><span class=\"fontstyle0\">When an invocation technique you perform would affect \"each character\" or \"each other character\" at a specified range, you may exclude a number of characters up to your school rank from all effects of the invocation except for spiritual backlash (see page 190 of the core rulebook).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dkaZ0lHNaJXHKCSK",
+  "sort": 0
+ },
+ {
+  "name": "Eyes of Yotogi",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342926606,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 94
+   },
+   "description": "<p><span class=\"fontstyle0\">Otherworldly beings treat your vigilance as being increased by your school rank. When you make a check to search for Otherworldly beings, or make an Initiative check in a conflict against them, if you succeed, add bonus successes equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Wsob97HJQPqAB6zH",
+  "sort": 0
+ },
+ {
+  "name": "Favor of the Ancestors",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349675800,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 72
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, you may importune one invocation (see </span><span class=\"fontstyle2\">Importune Invocations</span><span class=\"fontstyle0\">, on page 189) with a school rank prerequisite up to your school rank without making the sacrifices usually required and without the usual TN increase.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4DxPSQ5c7xh9ctJH",
+  "sort": 0
+ },
+ {
+  "name": "Field Medicine",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342600862,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 90
+   },
+   "description": "<p><span class=\"fontstyle0\">When you perform a Medicine check to remove fatigue or a condition from a friendly character, that character removes additional fatigue up to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "DkBXJ7vbJ0NMCxow",
+  "sort": 0
+ },
+ {
+  "name": "Flesh of the Elements",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761344422774,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 80
+   },
+   "description": "<p><span class=\"fontstyle0\">You can have a number of additional potions with prepared invocations (see page 190 of the core rulebook) equal to your school rank. When you spend a downtime activity creating a potion, you may make a number of supplemental checks after the first to create additional potions equal to your school rank, but each check must be for a different invocation.</span> <br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "uxWG5FRqBg8B79Bb",
+  "sort": 0
+ },
+ {
+  "name": "Flickering Flame Skirmisher",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761347723687,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 58
+   },
+   "description": "<p><span class=\"fontstyle0\">After performing an Attack action, you may change your stance. If you do, increase the TN of Attack checks by creatures of silhouette 3 or larger targeting you by your school rank until the start of your next turn.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "UCmn6VATPV85EZEw",
+  "sort": 0
+ },
+ {
+  "name": "Flurry of Steel",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346720295,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 59
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene when performing an Attack action, you may choose a number of additional enemies up to your school rank in range of your weapon as targets for that Attack action.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "eZcwlSem8NLtyDJq",
+  "sort": 0
+ },
+ {
+  "name": "Fox Spirit",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761347447588,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 239
+   },
+   "description": "<p><span class=\"fontstyle0\">Your true form is that of a large fox with up to eight tails if you are a full-blooded kitsune, or a human with certain vulpine traits if you possess human ancestry as well. </span></p><p><span class=\"fontstyle0\">As a Scheme and Support action, you may transform between your human and true forms, or into another silhouette 1 or 2 natural creature at the GM’s discretion (you cannot mimic specific individuals). Observers with vigilance lower than or equal to your school rank plus your ranks in Performance do not detect any flaws in your façade. However, certain key features persist across all of your forms. If you become Compromised, your disguise slips, subtly revealing your true tails, ears, feet, or shadow</span>.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "OB0m8Ar6ygKQgtwP",
+  "sort": 0
+ },
+ {
+  "name": "Gaze into Shadow",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761348095410,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 60
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, when you make a check targeting or involving a Tainted being, you may choose a number of your kept dice up to your school rank containing (st) symbols. Set each of these dice to a (su) result. You cannot use this ability if you are unsure if a being is Tainted or not.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "a2XuToYZTUNW1Qpm",
+  "sort": 0
+ },
+ {
+  "name": "Gift of Inner Power",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346663291,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 58
+   },
+   "description": "<p><span class=\"fontstyle0\">You can infuse other characters with your inner energy. After you perform a check to activate one of your kihō, you can receive fatigue up to your school rank and choose another character at range 0–1. If you do, that character gains the enhancement effect of your kihō in your stead ­you may still resolve the burst effect, if able). This effect persists a number of rounds equal to the amount of fatigue you received this way plus your ranks in Meditation. Only one character can benefit from your kihō at a time.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xQRMG49wGf3rL3YS",
+  "sort": 0
+ },
+ {
+  "name": "Gift of Musubi-no-Kami",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761343555322,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 95
+   },
+   "description": "<p><span class=\"fontstyle0\">You may perform The Ties that Bind ritual as an action, instead of as a downtime activity. When you make a check to perform this ritual, you may add kept (ring) set to (op) results equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "9Eh7tiPViqYmm3Xt",
+  "sort": 0
+ },
+ {
+  "name": "Hands of Earth and Sky",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342868566,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 93
+   },
+   "description": "<p><span class=\"fontstyle0\">When you perform an invocation that targets at least one other character, if you succeed, you may </span><span class=\"fontstyle2\"><strong>nourish</strong> </span><span class=\"fontstyle0\">or </span><span class=\"fontstyle2\"><strong>drain</strong></span><span class=\"fontstyle0\">:</span></p><p><span class=\"fontstyle0\">If you </span><span class=\"fontstyle2\"><strong>nourish</strong></span><span class=\"fontstyle0\">, you may receive fatigue up to your school rank. One target removes fatigue equal to the amount you received.</span></p><p><span class=\"fontstyle0\">If you </span><span class=\"fontstyle2\"><strong>drain</strong></span><span class=\"fontstyle0\">, you may remove an amount of fatigue from yourself up to your school rank. One target receives fatigue equal to the amount you removed.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4ujHZmqI68IM1Fm8",
+  "sort": 0
+ },
+ {
+  "name": "Heart of the Lion",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349595460,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 71
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, after you perform a check using a Social skill that targets one or more characters, you may </span><span class=\"fontstyle2\"><strong>agitate</strong> </span><span class=\"fontstyle0\">or </span><span class=\"fontstyle2\"><strong>console</strong></span><span class=\"fontstyle0\">:</span></p><p><span class=\"fontstyle0\">If you </span><span class=\"fontstyle2\"><strong>agitate</strong></span><span class=\"fontstyle0\">, transfer strife up to twice your school rank from yourself to your targets (divided among them as you choose).</span></p><p><span class=\"fontstyle0\">If you </span><span class=\"fontstyle2\"><strong>console</strong></span><span class=\"fontstyle0\">, transfer strife up to twice your school rank from your targets (divided among them as you choose) to yourself.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mzvqJ1XGzRxmUBSG",
+  "sort": 0
+ },
+ {
+  "name": "Heroic Charge",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761351240721,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 86
+   },
+   "description": "<p><span class=\"fontstyle0\">When you succeed at an Attack action check, add bonus successes equal to the number of range bands you have moved this round, to a maximum of your school rank. During a duel or mass battle, if you are mounted on your steed, you always count as having moved a number of range bands equal to your school rank this turn.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3EYqgCtCPZMaKVrU",
+  "sort": 0
+ },
+ {
+  "name": "Hide of Iron",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761341867128,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 77
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session when you make a check to craft, improve, or maintain a weapon or set of armor, you may receive an amount of fatigue up to your school rank to reroll that many dice.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "l6a2zgIjuT68sKtq",
+  "sort": 0
+ },
+ {
+  "name": "Incisive Insight",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761343134528,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 90
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, when making a check for a Scheme action targeting another character, you may receive a number of strife up to your school rank to reduce the TN by that amount (to a minimum of 1).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "QOLSA0AzMsLiCKZL",
+  "sort": 0
+ },
+ {
+  "name": "Just as Predicted",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/imperial.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761347164571,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 235
+   },
+   "description": "<p><span class=\"fontstyle0\">At the beginning of a game session or as a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 1 Theology check </span><span class=\"fontstyle0\">using any ring. If you succeed, choose a number of kept dice up to your school rank to reserve. Until the end of the game session or the next downtime scene, when any character makes a skill check using the chosen ring, you may replace one or more kept dice with the same number of reserved dice of the same type.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4wMLMJi9hKHFb1aB",
+  "sort": 0
+ },
+ {
+  "name": "Keen Senses",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334714530,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 99
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a check to perceive or investigate your surroundings, decrease the TN of that check by a number equal to your school rank (to a minimum of 1).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "7X1GRCSVxcUh3hnM",
+  "sort": 0
+ },
+ {
+  "name": "Kitsuki’s Method",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349220801,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 67
+   },
+   "description": "<p><span class=\"fontstyle0\">When performing a check to investigate with any skill (see </span><span class=\"fontstyle2\">The Art of Investigation</span><span class=\"fontstyle0\">, on page 170), you may treat your ranks in the skill you are using as being equal to your school rank. If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add a kept (ring) set to an (op) result instead.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ys7G4EJTYDpGLJEQ",
+  "sort": 0
+ },
+ {
+  "name": "Laughter Makes the Home",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334579222,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 97
+   },
+   "description": "<p><span class=\"fontstyle0\">The first time you make a successful Social check against another character in a scene, you may reduce the TN of all subsequent Social checks against that character by 1 (to a minimum of 1) for the remainder of the scene.</span></p><p><span class=\"fontstyle0\">This effect does not stack with itself, but can be used on multiple characters.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "WaOJKjr170YSySzL",
+  "sort": 0
+ },
+ {
+  "name": "Masterful Builder",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761347779391,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 59
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, when making a check to use an item you personally crafted, you may add a number of kept (ring) set to (op) results equal to your school rank.</span> <br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "x7BMTD7JKx6UvjRZ",
+  "sort": 0
+ },
+ {
+  "name": "Matsu’s Fury",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349733379,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 73
+   },
+   "description": "<p><span class=\"fontstyle0\">After you suffer a critical strike or unmask, you may suffer the Enraged condition to remove an amount of fatigue from yourself equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "IouCNdWHJyJL8DxH",
+  "sort": 0
+ },
+ {
+  "name": "May the Spirits Show the Path",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334510529,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 96
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene if you would fail a Social check, you may immediately make a </span><span class=\"fontstyle2\">TN 5 Theology check</span><span class=\"fontstyle0\">, with the TN being reduced by a number equal to your school rank (to a minimum of 1). If you succeed, you may change any kept (ring) on that Social check to (su) results instead.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "theology",
+   "difficulty": "5",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4pPiXU255J3S232V",
+  "sort": 0
+ },
+ {
+  "name": "Mazoku's Authority",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761351719238,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "deathly_turns",
+    "page": 24
+   },
+   "description": "<p><span class=\"fontstyle0\">When you perform an Attack or Scheme action check targeting an Otherworldly being, if you succeed, add a number of bonus successes equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fKyVv79NA0Wep49g",
+  "sort": 0
+ },
+ {
+  "name": "Methodical Observation",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334078045,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 89
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene when you make a Scholar skill check, you may reserve a number of dropped dice up to your school rank. Until the end of the scene, when you make a non-Scholar skill check, after choosing dice, you may add up to one of these reserved dice as a kept die.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "BWefJo8kH5FJgQuO",
+  "sort": 0
+ },
+ {
+  "name": "Mind of Calm",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334800353,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 100
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene you may make a </span><span class=\"fontstyle2\">TN 6 Meditation check </span><span class=\"fontstyle0\">to study someone else’s technique of a category and rank you have available to you. This check is reduced by your school rank, to a minimum of 1. If you succeed, you can replicate that technique until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Y2vLedV5LMDIz9fQ",
+  "sort": 0
+ },
+ {
+  "name": "Moment of Certainty",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761331793384,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 83
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene after you defend against damage, you may roll a number of skill dice equal to the fatigue you received this way. Choose a number of those dice up to your school rank and reserve them. Until the end of the scene, when you perform an Attack action check, after choosing kept dice, you may add one of the dice you reserved this way as an additional kept die.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "TQXjhUNS4VFnv0hT",
+  "sort": 0
+ },
+ {
+  "name": "Move as the Wind",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334375931,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 92
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a Movement action check or make a check to travel at speed in narrative time, if you succeed, you may suffer up to 2 fatigue to add that many bonus successes.</span></p><p><span class=\"fontstyle0\">After you remove fatigue at the end of a scene, you may remove additional fatigue up to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "t8iitbaUlAkKXTsc",
+  "sort": 0
+ },
+ {
+  "name": "Mystical Script",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761350887123,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 81
+   },
+   "description": "<p><span class=\"fontstyle0\">You can have a number of additional wards with prepared invocations (see page 190) up to your school rank. Decoding or using one of your wards requires any other character to make a Theology (void) check with TN equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Bf3YOfb5I6oJvn3s",
+  "sort": 0
+ },
+ {
+  "name": "Natural Balance",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761333904675,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 87
+   },
+   "description": "<p><span class=\"fontstyle0\">When you succeed on a check to activate an invocation, if it is the first invocation of that element you have activated this scene, you may add a number of bonus successes or kept dice set to (op) equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "OiQIi2zqiV1I9WXw",
+  "sort": 0
+ },
+ {
+  "name": "Naturally Attuned",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346169115,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 52
+   },
+   "description": "<p><span class=\"fontstyle0\">As a downtime activity, you may select any number of invocations with total school rank prerequisites equal to double your school rank. You can perform these invocations as if you knew them.</span></p><p><span class=\"fontstyle0\">While making a check to activate an invocation, if you become Compromised, you suffer spiritual backlash.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "7iZewS5wnNDBRUru",
+  "sort": 0
+ },
+ {
+  "name": "Necessary Actions",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/imperial.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761347061260,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 234
+   },
+   "description": "<p><span class=\"fontstyle0\">You never forfeit honor or glory in order to lie or deceive for the good of the Emperor and Empire (in your opinion). However, you must forfeit twice as much honor or glory to lie for your personal gain (again, in your opinion).</span></p><p><span class=\"fontstyle0\">When a character stakes or forfeits an amount of honor or glory in order to act against your desires, you may force them to increase that amount by your school rank.</span> <br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NWhYn5Lgc76uZZu5",
+  "sort": 0
+ },
+ {
+  "name": "Oath of Sacrifice",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342234162,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 81
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, after you defend against damage or suffer a critical strike, you may </span><span class=\"fontstyle2\">unleash </span><span class=\"fontstyle0\">your current kihō. Immediately end its enhancement effect, then resolve its burst effect as if you had a number of bonus successes equal to your school rank plus the amount of fatigue you received or the severity of the critical strike you suffered. If the burst effect has one or more targets, you may choose appropriate targets in range.</span></p><p><span class=\"fontstyle0\">If you have used this ability already this scene, you may spend 1 Void point to use it again this scene (you can do this any number of times, provided you have Void points to spend).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ZZILDQ794YcYp6B7",
+  "sort": 0
+ },
+ {
+  "name": "One with the Elements",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349870070,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 75
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene when making the check to activate an invocation technique, before rolling dice, you may reduce the TN of the check by your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "B4HWYpGCOR9ex5fs",
+  "sort": 0
+ },
+ {
+  "name": "One with the Pride",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342155178,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 80
+   },
+   "description": "<p><span class=\"fontstyle0\">Increase each of your bonded animals’ endurance, composure, and ranks in Martial skill group by an amount equal to your school rank (its skill ranks still cannot exceed 5). If a bonded animal is a minion, it becomes an adversary instead.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "rFGNOs6U7aEm3yvg",
+  "sort": 0
+ },
+ {
+  "name": "Piercing Insight",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761345949485,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 49
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, in a skirmish, when you inflict a critical strike on a character at range 2–5 or a character at range 2–5 inflicts a critical strike on you, you may increase or decrease the severity by your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JctZ6OD6bROVg0vO",
+  "sort": 0
+ },
+ {
+  "name": "Procedure and Protocol",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761343251243,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 91
+   },
+   "description": "<p><span class=\"fontstyle0\">When you cause a character to receive strife as a result of a check using a social approach, that character suffers additional strife equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "l3MWXTYlzmL4j247",
+  "sort": 0
+ },
+ {
+  "name": "Professional Saboteur",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761347557004,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 240
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session at the beginning of a scene, you may reveal that an NPC in that scene is the target of your current assignment. The GM then decides what your assignment entails, such as sabotaging the target’s current activities, framing them for a crime, killing them, or even making sure they survive to play their part in a long and sinister plot. Until the end of the session, when you make a skill check targeting the chosen NPC, you may reroll a number of dice up to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fZGqIS3s64UNjRLA",
+  "sort": 0
+ },
+ {
+  "name": "Resourceful Artistry",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346232673,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 53
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session when performing a downtime activity to craft, you may scavenge supplies for your craft worth an amount of koku equal to your school rank. This might include finding plants to make paints, wood for carvings, horsehair for brushes, or convincing peasants to give you parchment, ink, or other supplies</span>.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Zel1SyjYiellIp8p",
+  "sort": 0
+ },
+ {
+  "name": "Risk and Reward",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346038154,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 50
+   },
+   "description": "<p><span class=\"fontstyle0\">You have an uncanny sense for dangerous situations. Your vigilance and focus are increased by your school rank, unless you are Compromised.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "mFWKgHTJAfKpVftK",
+  "sort": 0
+ },
+ {
+  "name": "Sacred Arrows",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761350077411,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 77
+   },
+   "description": "<p><span class=\"fontstyle0\">As an action, you may </span><span class=\"fontstyle2\">augment </span><span class=\"fontstyle0\">one of your arrows with a prayer to the kami. Make the check to perform one invocation you know, reducing the TN by your school rank, and record the result. The arrow gains the Sacred quality, and remains infused with the invocation until the end of the scene. After you perform an Attack action using the arrow (or fire it at a location, at the GM’s discretion), you may resolve the effects of the invocation from the place the arrow landed. You may spend (op)+ to delay resolving the effects of the invocation for 1 round per (op) spent this way, and may spend (op)(op) from a failed check to affect one target of the attack that you missed.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "q7RsM940vJ3dVt8b",
+  "sort": 0
+ },
+ {
+  "name": "Sacred Art of Steel",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342505675,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 89
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session when you make a check to craft, improve, or maintain a weapon, you may add a number of kept (ring) set to (op) results equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "U3cYTvR72XkqIviY",
+  "sort": 0
+ },
+ {
+  "name": "Sailor’s Fortune",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/mantis.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761331474263,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": 5
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round when making a Trade skill check, if you are not Compromised, you may receive a number of strife up to your school rank to reroll that many rolled dice</span>.<br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "QaPXserZukT5NZmP",
+  "sort": 0
+ },
+ {
+  "name": "School of Waves",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761351302245,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 87
+   },
+   "description": "<p><span class=\"fontstyle0\">Choose one bonus curriculum skill; this skill henceforth counts as part of the Worldly Rōnin Path curriculum for you at all ranks. Each time your school rank increases, choose one additional bonus curriculum skill this way. When you make a check using one of your bonus curriculum skills, you may negate 1 (st) symbol.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "qPkbEDCCuso2IubI",
+  "sort": 0
+ },
+ {
+  "name": "Seer of the Lords of Death",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346463880,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 55
+   },
+   "description": "<p><span class=\"fontstyle0\">You can channel rituals in the same way as invocations (see page 189 of the core rulebook). Once per scene, when you channel you may receive fatigue up to your school rank. If you do, you may immediately make another check to perform an invocation of the same element using the reserved dice from your channel. For each fatigue received this way, you may add one kept die set to an (op) result</span>.<br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wfkcqwmSqEgV5Gv7",
+  "sort": 0
+ },
+ {
+  "name": "Sharpened Ki",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342766873,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 92
+   },
+   "description": "<p><span class=\"fontstyle0\">Your kihō that affect your unarmed attack profiles also apply to weapons you wield in a one-handed grip. When you succeed on a check to activate a kihō that affects your unarmed attack profiles or a weapon you wield in a one-handed grip, add bonus successes equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Ya5eF4me12KnzWvX",
+  "sort": 0
+ },
+ {
+  "name": "Signature Weapon",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761345844881,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 48
+   },
+   "description": "<p><span class=\"fontstyle0\">Choose a signature weapon category (or unarmed) with GM approval. When using a weapon from this category for an Attack action or Performance check, roll one additional skill die. Additionally, when making such a check you may suffer fatigue up to your school rank to alter that many results of your kept dice to (op) results.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RZPOLt8GeOasyqbl",
+  "sort": 0
+ },
+ {
+  "name": "Soul of Ceremony",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761344704883,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 81
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a check to perform a ritual, you may add kept (ring) set to (op) results equal to your school rank. You may spend these (op) as if the ritual were also a Social skill check of your choice (such as to activate a shūji, etc.).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "H8vtQiyu5kDQjmK3",
+  "sort": 0
+ },
+ {
+  "name": "Speaking in Silence",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761348363723,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 64
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene when making a check to persuade or influence someone, you may add a number of kept (ring) set to a (op) results equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vLsQWSzp5Wi05EaD",
+  "sort": 0
+ },
+ {
+  "name": "Speed of Heaven",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/imperial.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761347218209,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 236
+   },
+   "description": "<p><span class=\"fontstyle0\">When you succeed on an Initiative check during a skirmish or duel, add bonus successes equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "6HQbR0kcSY92LVuS",
+  "sort": 0
+ },
+ {
+  "name": "Spiritual Artisan",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761348245281,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 62
+   },
+   "description": "<p><span class=\"fontstyle0\">When making a check to mystically </span><span class=\"fontstyle2\">summon </span><span class=\"fontstyle0\">an illusion or to </span><span class=\"fontstyle2\">summon</span><span class=\"fontstyle0\">, </span><span class=\"fontstyle2\">augment</span><span class=\"fontstyle0\">, or </span><span class=\"fontstyle2\">awaken </span><span class=\"fontstyle0\">an object, you may add a number of kept (ring) set to (op) results equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dGFY1ZVAzo3jxD2A",
+  "sort": 0
+ },
+ {
+  "name": "Stand as the Mountain",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761341487726,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 72
+   },
+   "description": "<p><span class=\"fontstyle0\">After you channel an invocation, increase your physical and supernatural resistances by an amount equal to the number of dice you reserved, to a maximum of your school rank. This effect persists until the start of your next turn.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "6bKVniMsAQFQBHPG",
+  "sort": 0
+ },
+ {
+  "name": "Steed of the Kami",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761345633518,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 88
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a check to handle, calm, or instruct an animal or beast, you may negate a number of (st) results equal to your school rank.</span></p><p><span class=\"fontstyle0\">Additionally, once per scene as a Support action, you may make a </span><span class=\"fontstyle3\">TN 2 Survival (water) </span><span class=\"fontstyle0\">or </span><span class=\"fontstyle3\">Theology (water) check</span><span class=\"fontstyle0\">. If you succeed, you discover a ridable animal with a (bushi) conflict rank of 3 or lower and that is appropriate to the environment. It is friendly toward you and gives you all of the benefits of a mount (see page 326 of the core rulebook), but its Water Ring is increased by your bonus successes (to a maximum value of 6).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "2BG01OgPd03Wp2v8",
+  "sort": 0
+ },
+ {
+  "name": "Sudden Nightfall",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761345492004,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 87
+   },
+   "description": "<p><span class=\"fontstyle0\">You do not suffer any ill effects of Obscuring terrain as a result of darkness (see page 267 of the core rulebook). When you perform an Attack or Scheme action check against a target in terrain that is Obscuring due to darkness, reduce the TN by your school rank (to a minimum of 1).</span></p><p><span class=\"fontstyle0\">As a Support action, you may target a position at range 0–2 and </span><span class=\"fontstyle2\">summon </span><span class=\"fontstyle0\">a cloud of supernatural darkness there. An area around the target position extending a number of range bands equal to your Air Ring become Obscuring terrain. This effect persists a number of rounds equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "a06K6G42WcqlCnxQ",
+  "sort": 0
+ },
+ {
+  "name": "Suppressing Blows",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342700855,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 91
+   },
+   "description": "<p><span class=\"fontstyle0\">When you perform an Attack action check using Martial Arts [Melee] or Martial Arts [Unarmed], you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle0\">+: One character per (op) spent this way who is in range of the weapon you used suffers the Silenced condition. You can spend a maximum number of (op) this way up to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "bvfdUR07mkG88XFm",
+  "sort": 0
+ },
+ {
+  "name": "Swirling Desert Wind",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761351128194,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 84
+   },
+   "description": "<p><span class=\"fontstyle0\">When performing an Attack action during a skirmish or mass battle, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle0\">: Choose an enemy other than your target whom you can perceive. Increase the TN of that enemy’s Attack checks targeting you by your school rank until the start of your next turn.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gDt9OZrfoW8wsRP0",
+  "sort": 0
+ },
+ {
+  "name": "Sympathetic Bearing",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761341934949,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 78
+   },
+   "description": "<p><span class=\"fontstyle0\">After you make a check for Initiative (or enter the scene, for a narrative scene), you may choose another character in the scene. That character removes strife equal to your school rank, and you reduce the TN of your next Social skill check targeting that character by 2.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wWg1FnsTzwHPW3Cv",
+  "sort": 0
+ },
+ {
+  "name": "Tactical Cover",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346096548,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 51
+   },
+   "description": "<p><span class=\"fontstyle0\">While you are in Obscuring terrain, you may treat your physical resistance as increased by your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "39DnmaYJgX0Nb15i",
+  "sort": 0
+ },
+ {
+  "name": "The Body is a Shrine",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761344938036,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 83
+   },
+   "description": "<p><span class=\"fontstyle0\">When you are in the presence of a kami (such as an elemental kami or other Supernatural being the GM deems appropriate), you may make a </span><span class=\"fontstyle2\">TN 4 Courtesy check </span><span class=\"fontstyle0\">using a ring associated with the kami’s element (its highest ring) or one of its elements (if it has multiple highest rings). If you fail, you suffer 3 fatigue and 3 strife and cannot attempt to act as a vessel again this session.</span></p><p><span class=\"fontstyle0\">If you succeed, you convince the kami to use your body as a vessel. This grants you the following: </span></p><ul><li><p><span class=\"fontstyle0\">- Any time you make a check using one of the kami’s elements, you may reroll a number of dice up to your school rank.</span></p></li><li><p><span class=\"fontstyle0\">- Any time you make a check using one of the kami’s opposing elements, increase the TN by 1 and add one kept (ring) set to (op)</span><span class=\"fontstyle2\">.</span></p></li><li><p><span class=\"fontstyle0\">- If you unmask, the kami is released (see </span><span class=\"fontstyle2\">Releasing Kami</span><span class=\"fontstyle0\">).</span></p></li></ul>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "g1i95G94Y4ByOZCd",
+  "sort": 0
+ },
+ {
+  "name": "The Horse Lord's Favor",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761333729982,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 85
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a check to craft, improve, or maintain an item, you may imprint it with the Horse Lord’s Favor, giving it one of your advantages or disadvantages. If the item is a meishōdō talisman, you may instead give the item an advantage or disadvantage from its sealed spirit. While an item with your Horse Lord’s Favor adorns a horse or a creature with the Loyal Steed ability, the horse or creature is Otherworldly and possesses the chosen advantage or disadvantage. If the item is a meishōdō talisman, the horse or creature may perform any techniques it contains. You can sustain a number of items with your Horse Lord’s Favor up to your school rank. </span></p><p><span class=\"fontstyle0\">Additionally, when you perform a Medicine check to remove fatigue or a condition from a horse or other equine creature, add bonus successes equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "rgXYvoup22LKWLxy",
+  "sort": 0
+ },
+ {
+  "name": "The Kami’s Whisper",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761350291506,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 80
+   },
+   "description": "<p><span class=\"fontstyle0\">While you are performing an invocation technique or channeling, characters with a vigilance lower than or equal to your school rank plus one cannot detect any physical sign that you are in the act of invoking the spirits. They can still observe effects of the invocation, however. </span></p><p><span class=\"fontstyle0\">Increase the TN of Theology checks to detect or study your supernatural activities by your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "nOgBSfb9hGHcRw2X",
+  "sort": 0
+ },
+ {
+  "name": "The Path of Shadows",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761350223720,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 79
+   },
+   "description": "<p><span class=\"fontstyle0\">While performing an Attack action against a target who is Compromised, Incapacitated, Unconscious, or unaware of your presence, treat the damage and deadliness of your weapon as being increased by your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0fik4QCDLYIKSG75",
+  "sort": 0
+ },
+ {
+  "name": "The Way of Names",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761351040409,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 83
+   },
+   "description": "<p><span class=\"fontstyle0\">As a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 2 Design check </span><span class=\"fontstyle0\">using any ring to bind a spirit to an inanimate vessel, creating a meishōdō talisman for one invocation of that Element that you have learned. While you have the talisman in your possession, reduce the TN of checks to activate that invocation by 1. You can give the talisman to another shugenja, allowing them to perform that invocation even if they have not learned it and reducing the TN to activate it by 1, but the talisman ceases to function after a number of uses equal to your school rank. You can sustain a number of meishōdō talismans up to your school rank. You can only have one meishōdō talisman for any single invocation.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "CAr1w8KmAu1CGBrY",
+  "sort": 0
+ },
+ {
+  "name": "Thunderous Courage",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761341731749,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 75
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene after you perform a Support action, you may choose any number of characters within a number of range bands equal to your ranks in Command. Each chosen character treats their composure as increased by your school rank. This effect persists until the end of the scene.</span></p><p><span class=\"fontstyle0\">During a mass battle, if you are a leader, your army treats its discipline as increased by your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "h06i2KrRTjgHXCat",
+  "sort": 0
+ },
+ {
+  "name": "Traces of Passage",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342408384,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 88
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene as a Support action, you may </span><span class=\"fontstyle2\">scry </span><span class=\"fontstyle0\">to detect any supernatural abilities used at range 0 –3 in the last day (such as invocations, mahō, and kihō). Reduce the TN of your checks to investigate this phenomenon by your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1vS6Dn3V6OJA5uF4",
+  "sort": 0
+ },
+ {
+  "name": "Typhoon in the Bamboo Grove",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761343619245,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 96
+   },
+   "description": "<p><span class=\"fontstyle0\">When making a Martial Arts [Melee] or Fitness check, you may spend (op)(op) to cause a number of characters no greater than your school rank and within range of your readied weapon to suffer the Dazed condition.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "HGPRfL9w7lkBw3LF",
+  "sort": 0
+ },
+ {
+  "name": "Unexpected Wisdom",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346364665,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 54
+   },
+   "description": "<p><span class=\"fontstyle0\">You are a wealth of wisdom, which you can dispense a number of times per game session equal to your school rank. On your turn or at any appropriate time during a narrative scene, you may dispense a small bit of wisdom to a character who can hear you and has not benefitted from this ability this scene. The next time a character, including yourself, employs that wisdom they may reduce the TN of that check by 1 and may negate a number of (st) up to your ranks in Sentiment or Theology (your choice).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "5hM4EMFW8OmOTiEM",
+  "sort": 0
+ },
+ {
+  "name": "Unity of Horse and Rider",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334176536,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 90
+   },
+   "description": "<p><span class=\"fontstyle0\">When you spend a Void to </span><span class=\"fontstyle2\"><strong>seize the moment</strong> </span><span class=\"fontstyle0\">during a check using a bow, you may negate (st) symbols up to your school rank. If you succeed, gain bonus successes equal to the number of (st) symbols you negated. </span></p><p><span class=\"fontstyle0\">Additionally, while you are riding your steed, all of your Martial Arts [Ranged] and Performance skill checks have unskilled </span><span class=\"fontstyle2\"><strong>assistance</strong></span><span class=\"fontstyle0\">.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "YstAUJiQtYnzCl7m",
+  "sort": 0
+ },
+ {
+  "name": "Vendor of Strange Wares",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761350960141,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 82
+   },
+   "description": "<p><span class=\"fontstyle0\">Ignore the Forbidden quality when acquiring and handling items. When acquiring, selling, or gifting an item, you may treat its rarity as reduced or increased by your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xn1AeLiCt3dZ07Gb",
+  "sort": 0
+ },
+ {
+  "name": "Victory before Honor",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761343331008,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 92
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene when performing a check, you may stake an amount of honor no greater than your school rank to re-roll a number of dice equal to twice the amount of honor staked. For each re-rolled die result that does not contain a (su) or (ex), you forfeit one staked honor</span>.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "HlfyWyp5a4p0ibxT",
+  "sort": 0
+ },
+ {
+  "name": "Vigilance of Mind",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761348306311,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 63
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, when another character within range of one of your readied melee weapons would suffer physical damage, you may </span><span class=\"fontstyle2\">intercept</span><span class=\"fontstyle0\">. If you do, you may suffer fatigue up to your school rank to reduce the damage the target suffers by twice that amount.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0m2LvBqLU6uJIY1t",
+  "sort": 0
+ },
+ {
+  "name": "Voice of the Emperor",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/imperial.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346952958,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 233
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, after a character at range 0–4 succeeds on an Attack or Scheme action check, you may cause them to receive strife equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "kptJwb1d5vCN0Vv4",
+  "sort": 0
+ },
+ {
+  "name": "Warded Shikigami",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761342979812,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 95
+   },
+   "description": "<p><span class=\"fontstyle0\">You can have a number of additional shikigami (see page 115) up to your school rank. Once per scene, after you perform an action, you may instruct one of your shikigami to perform an action, for which it benefits from your assistance.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XbnDQge0Wr645X9y",
+  "sort": 0
+ },
+ {
+  "name": "Warden of the Five Winds",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761334305790,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 91
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a check to perform the Guard action, you gain a bonus success if you or your target is mounted on a steed. Additionally, when you succeed on a check to perform the Guard action, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle3\">+: </span><span class=\"fontstyle0\">Give a target at range 0–3 the Emboldened condition (see page 133). You can spend a maximum number of (op) this way up to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ecwfWI6YBVSsqrni",
+  "sort": 0
+ },
+ {
+  "name": "Way of the Carp",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761348160206,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 61
+   },
+   "description": "<p><span class=\"fontstyle0\">As a downtime activity, if you have access to a market, you may acquire a number of items up to your school rank of rarity 4 or lower, or a single item of up to rarity 4 plus your school rank. You do not need to make a check or expend money to acquire these items, nor do you need to forfeit or stake honor or glory for the act of acquiring them, even if they are not befitting of your station or Forbidden (though displaying them openly later is a different matter). The GM can still apply rarity adjustments as usual based on the specifics of the market available.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Qxtt2S5rLdywYV25",
+  "sort": 0
+ },
+ {
+  "name": "Way of the Crab",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761347664029,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 57
+   },
+   "description": "<p><span class=\"fontstyle0\">Ignore the Cumbersome quality of armor you wear.</span></p><p><span class=\"fontstyle0\">Once per round, before making a check to resist a critical strike, you may reduce the severity of that critical strike by the physical resistance of your armor plus your school rank (to a minimum of 0).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "7LHxYqmpqMUETLEq",
+  "sort": 0
+ },
+ {
+  "name": "Way of the Crane",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761348406325,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 65
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, you may increase or decrease the severity of a critical strike you inflict by an amount up to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ikj00mjHGH2kzgV6",
+  "sort": 0
+ },
+ {
+  "name": "Way of the Dragon",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349365787,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 68
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round during a duel or skirmish when you are targeted by an Attack check with a melee weapon, you may use one of your weapons readied in a one-handed grip (or one of your hands, if it is empty) to </span><span class=\"fontstyle2\"><strong>ward</strong> </span><span class=\"fontstyle0\">or </span><span class=\"fontstyle2\"><strong>trap</strong></span><span class=\"fontstyle0\">.</span></p><p><span class=\"fontstyle0\">If you </span><span class=\"fontstyle2\"><strong>ward</strong></span><span class=\"fontstyle0\">, the attacker must reroll dice containing </span><span class=\"fontstyle3\">(su) </span><span class=\"fontstyle0\">or (ex) up to your school rank.</span></p><p><span class=\"fontstyle0\">If you </span><span class=\"fontstyle2\"><strong>trap</strong></span><span class=\"fontstyle0\">, reduce the TN of your next Attack check against the attacker this scene by your school rank (to a minimum of 1).</span></p><p><span class=\"fontstyle0\">You cannot choose this weapon for Attack actions until the end of your next turn.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "keuMlO28Uoz6UDOq",
+  "sort": 0
+ },
+ {
+  "name": "Way of the Lion",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349530596,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 70
+   },
+   "description": "<p><span class=\"fontstyle0\">When you succeed at an Attack or Support action check, you may remove an amount of strife from yourself up to your school rank. For each strife you remove this way, add that one bonus success to the check and receive 1 fatigue.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "DZi3uZ7n1MqJzUFW",
+  "sort": 0
+ },
+ {
+  "name": "Way of the Phoenix",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349939894,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 76
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, when a character at range 0–3 makes a check that contains 1 or more (st) symbols, you may negate all of those (st) symbols. Then, that character removes strife and fatigue equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4onn6qKseUxM0hq6",
+  "sort": 0
+ },
+ {
+  "name": "Way of the Scorpion",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761343079263,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 89
+   },
+   "description": "<p><span class=\"fontstyle0\">When you exploit a target’s disadvantage (see </span><span class=\"fontstyle2\">Turning Advantages and Disadvantages</span><span class=\"fontstyle0\">, page 100 of the core rulebook) as part of an Initiative check for a duel or an Attack action, you do not need to spend a Void point, and you may reroll additional dice up to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Y5zONkz2MtCjWmE2",
+  "sort": 0
+ },
+ {
+  "name": "Way of the Tortoise [Tortoise]",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761352059483,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "gm_kit",
+    "page": 9
+   },
+   "description": "<p><span class=\"fontstyle0\">You never need to stake glory to publicly use a Trade skill, so long as you are doing so as part of your duty to your clan. Once per scene, you may add a number of kept (ring) set to (op) results equal to your school rank to a check to interact with one or more gaijin, peasants, merchants, burakumin, or any other character with status of 20 or lower.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "r78P5DKFJIkLSkNV",
+  "sort": 0
+ },
+ {
+  "name": "Way of the Void",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/school_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761344804604,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 82
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a check using your Void Ring, after rolling dice, you may receive a number of fatigue up to your school rank. If you do, you may </span><span class=\"fontstyle2\"><strong>pull</strong> </span><span class=\"fontstyle0\">or </span><span class=\"fontstyle2\"><strong>push</strong></span><span class=\"fontstyle0\">: </span></p><p><span class=\"fontstyle0\">If you </span><span class=\"fontstyle2\"><strong>pull</strong></span><span class=\"fontstyle0\">, choose a number of dice with non-blank results equal to the fatigue you received, and alter each to a blank result.</span></p><p><span class=\"fontstyle0\">If you </span><span class=\"fontstyle2\"><strong>push</strong></span><span class=\"fontstyle0\">, choose a number of dice with blank results equal to the fatigue you received, and alter each to a non-blank result of your choice.</span> </p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fwNLwyKgWpWlq9nd",
+  "sort": 0
+ },
+ {
+  "name": "Weakness Is My Strength",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761350155503,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 78
+   },
+   "description": "<p><span class=\"fontstyle0\">When you exploit a target’s disadvantage (see </span><span class=\"fontstyle2\">Turning Advantages and Disadvantages</span><span class=\"fontstyle0\">, page 100) as part of a Scheme action, you do not need to spend a Void point, and you may reroll additional dice up to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "48BuZaAuBkmJpkXL",
+  "sort": 0
+ },
+ {
+  "name": "Well Traveled",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/imperial.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761346886467,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 232
+   },
+   "description": "<p><span class=\"fontstyle0\">You always know which way is north, and you are always able to find a landmark useful for navigation. When making a check to recall or ascertain geographical, political, or societal information, you may add a number of kept (ring) set to (op) or (su) results equal to your school rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "570svcJqR18A6Tyt",
+  "sort": 0
+ },
+ {
+  "name": "Wisdom of the Ages",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147752956,
+   "modifiedTime": 1761349813530,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 74
+   },
+   "description": "<p><span class=\"fontstyle0\">When performing a Scholar skill check, you may treat your ranks in the skill as being equal to your school rank. If your ranks in that Scholar skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add one kept (ring) set to an (op) result instead.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 1,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "school_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ZTLkTXmaPJgBAL0x",
+  "sort": 0
+ }
+]

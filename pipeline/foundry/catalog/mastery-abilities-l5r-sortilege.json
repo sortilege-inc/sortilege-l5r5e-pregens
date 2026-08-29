@@ -1,0 +1,4732 @@
+[
+ {
+  "name": "A Bottomless Ocean",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761351324854,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 87
+   },
+   "description": "<p><span class=\"fontstyle0\">You can increase your bonus curriculum skills to rank 6 (paying 12 XP per skill raised from rank 5 to rank 6 this way).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GiZ7dTnrPtFwdVsq",
+  "sort": 0
+ },
+ {
+  "name": "A Friend in Every City",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761350995275,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 82
+   },
+   "description": "<p><span class=\"fontstyle0\">As a downtime activity in any place of human habitation, you may make a </span><span class=\"fontstyle2\">TN 4 Commerce (water) check </span><span class=\"fontstyle0\">to find a merchant with whom you (or your relatives) have done business. If you succeed, you find this individual and gain the Ally advantage for them (see page 101), which predisposes them to assist you in various ways.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "dP5Ij3XWHFAN8Hxa",
+  "sort": 0
+ },
+ {
+  "name": "A Gift of Fate",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346497939,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 55
+   },
+   "description": "<p><span class=\"fontstyle0\">The Lords of Death have seen fit to bestow upon you knowledge of the possible future and the power to shape it. Once per game session on your turn, you may choose one ritual for which you meet the prerequisites. This does not need to be a ritual you have purchased. You are immediately able to perform that ritual as a single action instead of a downtime activity.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "aEXIRblqpPtpPKGJ",
+  "sort": 0
+ },
+ {
+  "name": "A Master of Study",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334837465,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 100
+   },
+   "description": "<p><span class=\"fontstyle0\">Choose one technique category your school does not already have available to it. That technique type is now available to you.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "VRqErrIFRBEmY73f",
+  "sort": 0
+ },
+ {
+  "name": "Akodo’s Final Lesson",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349551849,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 70
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session during a skirmish or mass battle, after you fail a check, you may attempt the check again, treating the TN as 1.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "m5yzxm4tRkcJIb37",
+  "sort": 0
+ },
+ {
+  "name": "All Part of the Plan",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346068833,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 50
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene when you make a check to resist (see page 26 of the core rulebook), you may spend 1 Void Point to automatically succeed. If you do, you may immediately perform an action.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "BYxtrEwMuP5rRWwq",
+  "sort": 0
+ },
+ {
+  "name": "An Arrow Loosed",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761352011879,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "deathly_turns",
+    "page": 25
+   },
+   "description": "<p>Once per game session, before making a check with a bow, you may declare your confidence in a shot and stake up to 6 glory upon hitting your mark. Reduce the TN of the check by that amount. If you succeed, you recover your staked glory. If succeeding in the shot would cause you to receive a glory award (such as if you were competing with another skilled archer, or felled a dangerous beast on the hunt), you receive that amount of glory plus 3 instead. If you fail, you lose your staked glory.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "FVl1yr3mA23bIQk2",
+  "sort": 0
+ },
+ {
+  "name": "Ashidaka's Method",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342543525,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 89
+   },
+   "description": "<p><span class=\"fontstyle0\">When you create a new weapon, you may apply two different patterns that you know to it (instead of one).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "7agDRuglFrhF9vLP",
+  "sort": 0
+ },
+ {
+  "name": "Attuned Invocation",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342122523,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 79
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, when making a check to activate an invocation of your inspired element, you may spend 1 Void point. If you do, you may keep any number of your rolled dice (instead of a number up to your ring value).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "8ZjKPhGklFAr2LO6",
+  "sort": 0
+ },
+ {
+  "name": "Blessings of the Emperor",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/imperial.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347007988,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 233
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene as a Scheme action, you may make a </span><span class=\"fontstyle2\">TN 4 Command (air) check </span><span class=\"fontstyle0\">targeting a number of characters in the scene up to your glory rank. If you succeed, until the end of the scene, the targets must forfeit honor equal to twice their honor rank and glory equal to twice their glory rank before choosing you as the target of an Attack action, and increase the TN of their Attack actions targeting you by 2. This effect persists until the end of the scene, or until you attack an affected character or their allies.</span></p><p><span class=\"fontstyle3\">(op)</span><span class=\"fontstyle0\">+: Choose one ally per (op) spent this way. The effects of this ability also apply to targets’ attacks against the chosen allies.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GbjD7ZvlyR8QkHCw",
+  "sort": 0
+ },
+ {
+  "name": "Blood of the Dragon",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349505093,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 69
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, while you are benefiting from the enhancement effect of a kihō linked to one of your tattoos, when you activate a different kihō, you may spend 1 Void point. If you do, you may maintain both enhancement effects until the end of the scene or until you activate another kihō.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "AsW5k3FUVkNTAX56",
+  "sort": 0
+ },
+ {
+  "name": "Born to Survive",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334931810,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 101
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene when you would suffer an amount of damage that would cause you to exceed your endurance threshold, you may instead suffer that amount of strife instead.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "H90CCx1WlNiHQSCb",
+  "sort": 0
+ },
+ {
+  "name": "Bound in Ink",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761350917793,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 81
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, when you are targeted by an invocation or mahō technique, you may resist with a </span><span class=\"fontstyle2\">TN 4 Composition check</span><span class=\"fontstyle0\">. If you succeed, you absorb the invocation or mahō, nullifying all of its effects and creating a ward containing it (see page 190).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "KLwVZpdqNeku625q",
+  "sort": 0
+ },
+ {
+  "name": "Cool Heads Prevail",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761333859253,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 86
+   },
+   "description": "<p><span class=\"fontstyle0\">Friendly Centered characters at range 0–4 from you treat their composure and endurance as increased by your ranks in Courtesy.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "f5aLqMkvzSDc6US7",
+  "sort": 0
+ },
+ {
+  "name": "Crack Not a Single Twig",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346132358,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 51
+   },
+   "description": "<p><span class=\"fontstyle0\">You have mastered the ability to adapt to your environment. At the start of a scene, you may choose any number of mundane terrain effects. You ignore the effects of these terrain qualities. (Other characters do not ignore them when making checks against you.) This effect persists until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "upMk6rolbiKm3y6N",
+  "sort": 0
+ },
+ {
+  "name": "Curse of Musubi-no-Kami",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343585676,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 95
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, after successfully performing the Ties that Bind ritual, you may spend 1 Void point to catch a glimpse of all major future consequences of the relationship identified by the ritual. You also learn of one other relationship between your target and another character that will guarantee that the consequences you predict will not come to pass.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "YQ08Q3HrArufWk60",
+  "sort": 0
+ },
+ {
+  "name": "Demon, Begone!",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761350122050,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 77
+   },
+   "description": "<p><span class=\"fontstyle0\">As an action, you may make a </span><span class=\"fontstyle2\">TN 3 Meditation (void) check </span><span class=\"fontstyle0\">by plucking the string of a bow you are wielding, targeting each Otherworldly being within a number of range bands equal to your ranks in Meditation. </span></p><p><span class=\"fontstyle0\">If you succeed, each target suffers strife equal to your ranks in Meditation plus your bonus successes.</span></p><p><span class=\"fontstyle3\">(op)</span><span class=\"fontstyle0\">: Each target must resist with a </span><span class=\"fontstyle2\">TN 3 Meditation (void) check </span><span class=\"fontstyle0\">or treat its physical and supernatural resistances as 0. This effect persists until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "l1eRo3XxAQQ8AdEP",
+  "sort": 0
+ },
+ {
+  "name": "Divine Protection",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346687120,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 58
+   },
+   "description": "<p><span class=\"fontstyle0\">You can perform the Threshold Barrier ritual as an action. When a Tainted being enters an area you have warded against it with this ritual, it suffers supernatural damage equal to your ranks in Meditation and the Prone condition.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "nkeHm4u9Ft95m4AX",
+  "sort": 0
+ },
+ {
+  "name": "Echoes of Ancient Days",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343766496,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 97
+   },
+   "description": "<p><span class=\"fontstyle0\">When you use your school ability, you may choose a number of characters up to your ranks in Performance who can hear you. Each chosen character also gains the benefits of the kihō's enhancement effect as long as it persists on you.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "CIOuQjMDfyaXpoft",
+  "sort": 0
+ },
+ {
+  "name": "Elemental Charmer",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346193696,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 52
+   },
+   "description": "<p><span class=\"fontstyle0\">You may importune invocations without making an offering.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "1YoGDzoRYvPpeR3N",
+  "sort": 0
+ },
+ {
+  "name": "Emerald Explorer",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/imperial.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346926069,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 232
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene as a Support action, you may make a </span><span class=\"fontstyle2\">TN 1 Survival (earth) check </span><span class=\"fontstyle0\">targeting one character in the scene. If you succeed on the check, that character and an additional number of characters you choose equal to your bonus successes ignore all negative effects of terrain qualities until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "47V44a9b1vTAIKH3",
+  "sort": 0
+ },
+ {
+  "name": "Empathic Transfer",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342897782,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 93
+   },
+   "description": "<p><span class=\"fontstyle0\">When you </span><span class=\"fontstyle2\"><strong>nourish</strong></span><span class=\"fontstyle0\">, you may remove one condition the target is suffering by transferring it to yourself. When you </span><span class=\"fontstyle2\"><strong>drain</strong></span><span class=\"fontstyle0\">, you may remove one condition you are suffering by transferring it to one of your targets.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xUgnkYgZrk4P5Gdb",
+  "sort": 0
+ },
+ {
+  "name": "Empty Soul Ki",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342343139,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 81
+   },
+   "description": "<p><span class=\"fontstyle0\">When you defend against damage, if all your Void Points are spent, treat your physical and supernatural resistances as being equal to your Void ring.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "eCGvp8qSqePT7mVe",
+  "sort": 0
+ },
+ {
+  "name": "Essence of Emptiness",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761344846986,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 82
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, after a character rolls dice, you may receive 3 fatigue to alter any number of their rolled dice to blank results.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "hEVOrrmusfs8na77",
+  "sort": 0
+ },
+ {
+  "name": "Experiment and Adapt",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349181273,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 66
+   },
+   "description": "<p><span class=\"fontstyle0\">Increase your supernatural resistance against Air, Earth, Fire, and Water invocations by your ranks in Theology. After another character performs an Air, Earth, Fire, or Water invocation targeting you, you may spend 1 Void Point to immediately perform that invocation, even if you have not learned it.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JfHSubMRgnpTDhg1",
+  "sort": 0
+ },
+ {
+  "name": "Experimental Concotion",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761344658508,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 80
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session as a Support action, you may make a </span><span class=\"fontstyle2\">TN 4 Medicine (water) check </span><span class=\"fontstyle0\">to combine two of your potions that share at least one invocation effect keyword (</span><span class=\"fontstyle3\">mend, purify, smite, </span><span class=\"fontstyle0\">etc.) If you succeed, the two potions become a single concoction with both properties; when this concoction is used, resolve the effects of both of the prepared invocations that are part of it. A concoction cannot be combined with another potion or concoction.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "ZnxzlusOivuU2H2l",
+  "sort": 0
+ },
+ {
+  "name": "Favor of the Fortunes",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347314094,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 237
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, you may importune one invocation without making the sacrifices usually required and without the usual TN increase. You use the Meditation skill in place of the skill check normally required to use the invocation (you must still use the ring required for the invocation).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "tLKsqwEkEP2R1735",
+  "sort": 0
+ },
+ {
+  "name": "Favored Counselor",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761344755397,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 81
+   },
+   "description": "<p><span class=\"fontstyle0\">When making a check to perform a ritual, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle3\">+: </span><span class=\"fontstyle0\">One participant in the ritual with vigilance lower than or equal to (op) spent this way feels especially indebted to you. You gain the Ally [that character] advantage (see page 101 of the core rulebook).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XGOzsLWOEixCXksR",
+  "sort": 0
+ },
+ {
+  "name": "Foreseen in the Stars",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/imperial.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347192955,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 235
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session, you may spend 1 Void point to reveal that you have foreseen an event in the current scene. You may retroactively declare one or more preparations you have taken, subject to the GM’s approval. If any preparations would require a skill check, such as the preparation of a ward, you make the check when you use this ability.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "SKEx8PbXbZoZ7jOk",
+  "sort": 0
+ },
+ {
+  "name": "Fortitude of the Cradle",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346566910,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 56
+   },
+   "description": "<p><span class=\"fontstyle0\">You may shield bash after you defend against damage, even if the check was successful. After you shield bash, your target must resist with a </span><span class=\"fontstyle2\">TN 4 Fitness ((air) 3, (water) 5) check </span><span class=\"fontstyle0\">or suffer the Disoriented and Prone conditions.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gZEKRTPeULSm5OL9",
+  "sort": 0
+ },
+ {
+  "name": "Healer's Hands",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342623653,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 90
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a check to remove a condition from another character, you may receive 2 fatigue to treat the TN as 1.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "jwLhp24UI3AkAeFF",
+  "sort": 0
+ },
+ {
+  "name": "Heart of the Dragon",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349413169,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 68
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, when performing an Attack action check, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle0\">: Perform a Strike action with a readied weapon you have not used for an Attack action this turn.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cj3sDMRdEMCODbBS",
+  "sort": 0
+ },
+ {
+  "name": "Hunter of the Supernatural",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761351828305,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "deathly_turns",
+    "page": 24
+   },
+   "description": "<p>When making a check targeting an Otherworldly being, you may seize one of its advantages (see page 101 of the core rulebook) by receiving 2 fatigue instead of spending 1 Void point. If you do, your target receives strife equal to your ranks in Command.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "oHyn1qg3tBX4HMj2",
+  "sort": 0
+ },
+ {
+  "name": "I Will Always Return",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761351211934,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 85
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session, you may call out for your steed. At the beginning of the following round, your horse arrives, regardless of any barriers that might normally have prevented it from reaching your location. If your steed has recently been slain, its spirit will possess the closest horse to you and come to your aid regardless, such is its loyalty to you.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fb1x90ho8uVnt3Km",
+  "sort": 0
+ },
+ {
+  "name": "Ingenious Design",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347802660,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 59
+   },
+   "description": "<p><span class=\"fontstyle0\">When you construct an item, you may add or remove one quality from the item. You must describe to the GM how the item possesses (or lacks) the usual quality, and the GM is the final arbiter of whether an addition (or subtraction) is appropriate.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "xXwxuMgqamK8IChy",
+  "sort": 0
+ },
+ {
+  "name": "Insufferable Genius",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349846525,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 74
+   },
+   "description": "<p><span class=\"fontstyle0\">After you succeed at a check to acquire or remember information, you may spend 1 Void point and choose any number of characters with whom you can communicate. You must describe how the knowledge you acquired helps each character you choose. Each of those characters reduces the TN of their next check by 1 (to a minimum of 1) and suffers 1 strife.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "5z0C3ZW6i0tqmZeE",
+  "sort": 0
+ },
+ {
+  "name": "Killing Grip",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761341832922,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 76
+   },
+   "description": "<p><span class=\"fontstyle0\">When you inflict a critical strike on a target, if the target is Immobilized or Prone, you may receive 3 fatigue to increase the severity of the critical strike by two times your ranks in Fitness.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "DCelc34Ub1iJ7aRV",
+  "sort": 0
+ },
+ {
+  "name": "Kingdom of Paper and Ink",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343036229,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 95
+   },
+   "description": "<p><span class=\"fontstyle0\">When one of your shikigami performs an action, it may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle0\">+: Another one of your shikigami at range 0–3 of you may perform an action. Increase the (op) cost of this ability by (op) for each of your shikigami that has acted this turn.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "a9Ft7pc91VHZ8mDe",
+  "sort": 0
+ },
+ {
+  "name": "Lay of the Land",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334037017,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 88
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session as a Support action or during a narrative scene, you may change which terrain quality your school ability affects. While you are in terrain with the quality chosen for your school ability, you may add up to two bonus successes to each check you make.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "o46hgjNMDNQeTZA1",
+  "sort": 0
+ },
+ {
+  "name": "Legendary Endurance",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334400314,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 92
+   },
+   "description": "<p><span class=\"fontstyle0\">Increase your endurance by your ranks in Survival. While you are riding a mount, increase the endurance of that mount by your ranks in Survival.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cBXAVfrGFE6JbCIo",
+  "sort": 0
+ },
+ {
+  "name": "Lesson of the Hawk",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761345977387,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 49
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, when performing an Attack action check, you may spend 1 Void Point to have your target treat their physical resistance as 0.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "6ucMr5fTwlgWsmJe",
+  "sort": 0
+ },
+ {
+  "name": "Lion’s Pride",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349636193,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 71
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session as a Support action, you may attempt to convince everyone in the scene of the glorious reputation of one character, embellishing the truth as needed, by making a </span><span class=\"fontstyle2\">TN 5 Performance (fire) check </span><span class=\"fontstyle0\">targeting one character. The TN of this check is 6 if you target yourself, and 4 if you target another Lion Clan character.</span></p><p><span class=\"fontstyle0\">If you succeed, reduce the TN of all of the character’s Social skill checks by 3 until the end of the scene, and the TN of all of the character’s other checks by 1.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "6Pf02QpGqWxxjWGD",
+  "sort": 0
+ },
+ {
+  "name": "Little Truths",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761350199961,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 78
+   },
+   "description": "<p><span class=\"fontstyle0\">When you perform a check targeting another character to which one of your advantages or disadvantages applies, you may choose another advantage or disadvantage that shares a type with it (see </span><span class=\"fontstyle2\">Advantages and Disadvantages</span><span class=\"fontstyle0\">, on page 99). Unless they have clear evidence to the contrary, the target comes to believe that you have the advantage or disadvantage you chose instead of the one you actually have. If the target attempts to seize or exploit this false advantage or disadvantage (see page 101), their check automatically counts as failing with a shortfall of 3. They suffer 3 strife and the Disoriented condition.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wMQQZ2aWgY8JPHuI",
+  "sort": 0
+ },
+ {
+  "name": "Logical Conclusion",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334111321,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 89
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session when making a non-Scholar skill check, instead of rolling a number of skill dice equal to your ranks in the skill used on the check, you may roll a number of skill dice equal to one of your Scholar skills of your choice.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "sahdsoPSe0DvruCE",
+  "sort": 0
+ },
+ {
+  "name": "Majesty of the Throne",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/imperial.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347123047,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 234
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, as a Scheme action, you may make a </span><span class=\"fontstyle2\">Command (water) check </span><span class=\"fontstyle0\">targeting any number of characters at range 0–5 of you. The TN of this check is equal to the highest status rank among your targets. If you succeed, all targets suffer the Dazed and Disoriented conditions.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "8jLIVLEFH3JEJtUg",
+  "sort": 0
+ },
+ {
+  "name": "Master of Beasts",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761345708084,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 88
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game as a Support action, you may </span><span class=\"fontstyle2\">summon </span><span class=\"fontstyle0\">a number of animals equal to your Water Ring that are (bushi) conflict rank 3 or lower. These animals appear from the local environment. They are friendly to you and do their best to fulfill your commands. These animals stay to assist you until the end of the scene. If an animal becomes Compromised or incapacitated, it flees back into the wilds. The GM is the final arbiter over what types of animals, if any, are available in a given environment, as well as whether animals remain after the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3ybzGkz21Zeokwwg",
+  "sort": 0
+ },
+ {
+  "name": "Master of Elements",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349894280,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 75
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, after you perform an invocation, you may spend 1 Void point to switch to any other stance and perform another invocation that shares no action types with the first invocation (Attack, Support, etc.).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "kC60I6PycukDppgK",
+  "sort": 0
+ },
+ {
+  "name": "Measured Force",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761331826665,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 83
+   },
+   "description": "<p><span class=\"fontstyle0\">When you use your school ability to add kept dice to a check, you may add a number of your reserved dice up to your ranks in Fitness (instead of only one).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "KXgB6E8mMVircj4g",
+  "sort": 0
+ },
+ {
+  "name": "Ninth Tail Ascension",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347516071,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 239
+   },
+   "description": "<p><span class=\"fontstyle0\">Your true form now has nine tails. While you are in your true form, your supernatural resistance and physical resistance each increase by 2, and when you make a skill check, you may alter the result of one die containing (su) to a result containing (ex). While you are in your true form, your Attack action checks gain the following new opportunity:</span></p><p><span class=\"fontstyle2\">(op)(op)</span><span class=\"fontstyle0\">: After resolving this action, if your target is Incapacitated or Unconscious, you devour or banish their body or soul, instantly killing them.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RRWaQg4g3S5A0GUA",
+  "sort": 0
+ },
+ {
+  "name": "One With the Shadows",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343458485,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 93
+   },
+   "description": "<p><span class=\"fontstyle0\">When you perform a check to use a Ninjitsu </span><span class=\"fontstyle2\">technique, you may add two kept (ring) set to an (op) result to your check. You may do this 3 times per session.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "LeqfL2IhiVA5aaoE",
+  "sort": 0
+ },
+ {
+  "name": "One with the Void",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347377540,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 238
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, you may use one kihō technique you do not know. You may use the Meditation skill in place of the skill check normally required to use the kihō (you must still use the ring required for the kihō).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "EObLuzxo9ov1hPsf",
+  "sort": 0
+ },
+ {
+  "name": "Post Facto",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343285433,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 91
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session as a Scheme and Support action, you may make a </span><span class=\"fontstyle2\">TN 3 Government (earth) check</span><span class=\"fontstyle0\">. If you succeed, you reveal a huge legal loophole or arcane precedent that legally justifies the actions of you and your allies during the scene. Others can refuse to accept your logic, but must forfeit honor equal to your ranks in Government plus your bonus successes to do so.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "p40yx4ZifcnSsjty",
+  "sort": 0
+ },
+ {
+  "name": "Procession of Seasons",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761333971996,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 87
+   },
+   "description": "<p><span class=\"fontstyle0\">After you resolve the effects of an invocation, if you have successfully activated at least one (air) invocation, one (earth) invocation, one (fire) invocation, and one (water) invocation during this scene, you may have a number of characters in the scene up to your ranks in Survival each remove half their strife and half their fatigue (rounded up). You may use this ability only once per scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vPdxytUfzkKv67LC",
+  "sort": 0
+ },
+ {
+  "name": "Purge the Wicked",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761348125591,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 60
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session, you may spend 1 Void point to wield an invocation against all the wicked in your sight. Instead of affecting its usual targets, the next invocation technique you perform targets each Tainted being in range.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "afqz4EFLWaUs70oD",
+  "sort": 0
+ },
+ {
+  "name": "Reflexive Strike",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334750662,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 99
+   },
+   "description": "<p><span class=\"fontstyle0\">During a skirmish, if an opponent within range 0-1 of you attempts to move away from you, you may spend 1 Void point to immediately make two Strike actions against that opponent. Each action is resolved separately.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "zkIT5bMe3AIBpPaw",
+  "sort": 0
+ },
+ {
+  "name": "Rending Jaws of the Lion",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349772364,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 73
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, when performing an Attack action check while Enraged, you may spend 1 Void point to alter each kept die containing (su) to a result containing (ex).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vH7GFf211RLCdEpS",
+  "sort": 0
+ },
+ {
+  "name": "Reputation Sentinel",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334339113,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 91
+   },
+   "description": "<p><span class=\"fontstyle0\">You may use the Guard action during intrigues. When you do, increase the TN of Scheme action checks against the guarded target by 1, plus an additional 1 per two bonus successes.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Amm0WRjopdy8qetS",
+  "sort": 0
+ },
+ {
+  "name": "Resilient Readiness",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342463188,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 88
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a check to investigate a supernatural phenomenon, you may spend</span><span class=\"fontstyle2\"> (op) </span><span class=\"fontstyle0\">as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle0\">+: Increase your resistance against that phenomenon (such as a specific invocation, kihō, mahō, or NPC ability) by an amount equal to the (op) you spend this way. This effect persists until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "TuuxvDlLvBRQrH0E",
+  "sort": 0
+ },
+ {
+  "name": "Rippling Flame",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761345332651,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 86
+   },
+   "description": "<p><span class=\"fontstyle0\">While performing a Fire invocation, you may spend a Void point to target additional characters equal to your ranks in Theology or to increase the maximum range of the technique by 1 range band.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "T2VbcMS8XrUGUdNk",
+  "sort": 0
+ },
+ {
+  "name": "Sacred Fist",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342731145,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 91
+   },
+   "description": "<p><span class=\"fontstyle0\">All of your kihō gain the following additional burst effect: If you have 3 or more bonus successes, your unarmed attack profiles gain the Sacred quality until the end of your next turn.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "debHNQJlMtJJsg64",
+  "sort": 0
+ },
+ {
+  "name": "Scaled Hide",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334681683,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 98
+   },
+   "description": "<p><span class=\"fontstyle0\">When you defend against damage, you may treat your physical resistance and supernatural resistance as equal to your ranks in Fitness.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "D6Za9o1JC6l8bP0A",
+  "sort": 0
+ },
+ {
+  "name": "Scouring Sirocco",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761351153754,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 84
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, after you inflict the Incapacitated condition on a target (or defeat a minion NPC), you may perform a Strike action against a different target.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fXUvWHmujDXXZeM5",
+  "sort": 0
+ },
+ {
+  "name": "Sensing the Breeze",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761351265567,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 86
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, after you defend against damage, you may move 1 range band and you may switch to a different stance.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "rJCbhsTFwh6pvGNh",
+  "sort": 0
+ },
+ {
+  "name": "Shadow Assassin",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761345543266,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 87
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene as an Attack and Movement action, you may </span><span class=\"fontstyle2\">summon </span><span class=\"fontstyle0\">a shadow assassin. The shadow has no corporeal form and cannot be harmed. At the end of each of your turns, you may perform a Strike action using one of your readied weapons targeting any character in the scene who is in Obscuring terrain (or other darkness, at the GM’s discretion), regardless of range. Damage dealt this way is supernatural. This effect persists until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vZaMH8ziwaYEpcMR",
+  "sort": 0
+ },
+ {
+  "name": "Shell of the Tortoise [Tortoise]",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761352105067,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "gm_kit",
+    "page": 9
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session as an action, you may invoke the shell of the Tortoise: the Emperor’s remit to operate as you deem necessary. Until the end of the scene, treat your status as 90, and other characters must forfeit honor and glory equal to the difference between your status rank and their status rank to accuse you of wrongdoing related to the acquisition or transport of goods, illicit or otherwise.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "3yaht3hoAKzWgzgG",
+  "sort": 0
+ },
+ {
+  "name": "Slayer’s Slash",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347745374,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 58
+   },
+   "description": "<p><span class=\"fontstyle0\">Increase the severity of critical strikes you inflict on targets of silhouette 3 or larger by your ranks in Survival.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "hqd9x8wXq9diEm8A",
+  "sort": 0
+ },
+ {
+  "name": "Smiling Mountain Tradition",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334606928,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 97
+   },
+   "description": "<p><span class=\"fontstyle0\">You may train Social skills up to rank 6 (paying 12 XP per skill raised from rank 5 to rank 6 in this way).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "JUZiiAXVfc0mQN7C",
+  "sort": 0
+ },
+ {
+  "name": "Soul of Deepest Stones",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761341516948,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 72
+   },
+   "description": "<p><span class=\"fontstyle0\">When you successfully make a check to </span><span class=\"fontstyle2\">augment </span><span class=\"fontstyle0\">or </span><span class=\"fontstyle2\">mend </span><span class=\"fontstyle0\">a target, add a number of bonus successes equal to your ranks in Fitness.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "GFDxUR77ckU3OGEH",
+  "sort": 0
+ },
+ {
+  "name": "Spirit of the Sacred Horse",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334236922,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 90
+   },
+   "description": "<p><span class=\"fontstyle0\">Any steed you ride gains + 4 endurance, +2 composure, +1 vigilance, and the Resplendent item quality. When you spend 1 or more Void points during a Martial Arts [Ranged] or Performance check, an item you have equipped gains the Sacred and Hewing (page 116) item qualities, and you add a number of kept (ring) set to (op) results equal to your Void ring.</span> <br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "651rcSNUEV9NHNdJ",
+  "sort": 0
+ },
+ {
+  "name": "Spreading Chaos",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761341682592,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 74
+   },
+   "description": "<p><span class=\"fontstyle0\">After you use your school ability during a duel or skirmish, your target and each other character friendly to them at range 0–3 suffers the Dazed condition. After you use your school ability in a mass battle, the leader of the cohort you targeted suffers the Dazed condition.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RWE04T8QwscECTIm",
+  "sort": 0
+ },
+ {
+  "name": "Spy Network",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343167461,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 90
+   },
+   "description": "<p><span class=\"fontstyle0\">As a downtime activity in any place of human habitation, you may make a TN 4 Skulduggery check to find an agent of the Daidoji spy network. If you succeed, you find this individual among the inhabitants of the city and gain the Ally advantage for them (see page 101 of the core rulebook). If you succeed with 2 or more bonus successes, the individual may occupy a low-to-mid-level position in a household or organization of your choosing.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "5opR5Wwug8OC99YK",
+  "sort": 0
+ },
+ {
+  "name": "Stand of Honor",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349966497,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 76
+   },
+   "description": "<p><span class=\"fontstyle0\">At the end of your turn, you may spend 1 Void point to prepare to fend off advancing foes; this effect persists until the start of your next turn. When an enemy enters the range of one of your readied weapons, you may immediately make a Strike action using that weapon and targeting that enemy; if you succeed, the target suffers the Immobilized condition in addition to any other effects.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "yA6t2LXvVIIndqzd",
+  "sort": 0
+ },
+ {
+  "name": "Stir the Slumbering Spirit",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761348279914,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 62
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session as a downtime activity, you may make a </span><span class=\"fontstyle2\">TN 4 Artisan (void) check </span><span class=\"fontstyle0\">to </span><span class=\"fontstyle3\">awaken </span><span class=\"fontstyle0\">an item’s spirit. If you succeed, until the end of the game session, it becomes a nemuranai (see page 307) with a sealed invocation of your choice based on the item’s history. The GM is the final arbiter of the appropriateness of any invocation selected this way.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "rd2THcK7UNyYFfFE",
+  "sort": 0
+ },
+ {
+  "name": "Stories as Tall as the Mountain",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346408921,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 54
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene as a Scheme action you may make a </span><span class=\"fontstyle2\">TN 4 Performance ((air) </span><span class=\"fontstyle0\">or </span><span class=\"fontstyle2\">(earth)) check </span><span class=\"fontstyle0\">targeting a number of minion NPCs up to your ranks in Performance. If you succeed, each target decides that their actions really are unwise and leaves the scene, if able.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "F1LX5GEVKDaR4m6k",
+  "sort": 0
+ },
+ {
+  "name": "Storm Lord’s Gambit",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/mantis.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761331606317,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": 5
+   },
+   "description": "<p><span class=\"fontstyle0\">You may receive 1 additional strife to use your Sailor’s Fortune ability on any check instead of only a Trade skill check.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4T6ihKo4fFyM8K1e",
+  "sort": 0
+ },
+ {
+  "name": "Storm Surge",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/mantis.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761331697247,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "the_mantis_clan",
+    "page": 6
+   },
+   "description": "<p><span class=\"fontstyle0\">When you perform an invocation that </span><span class=\"fontstyle2\">smites </span><span class=\"fontstyle0\">one or more targets, treat each target’s supernatural resistance as 1 lower per kept (st) symbol on the check.</span> <br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "MuA9kw6XSP2Wxgtx",
+  "sort": 0
+ },
+ {
+  "name": "Strength of a Thousand Ancestors",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349709023,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 72
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session, as a Support action, you may </span><span class=\"fontstyle2\">summon </span><span class=\"fontstyle0\">the spirit of an ancestor to possess you until the end of the scene. While possessed, you count as an Otherworldly being and use the profile of the ancestor (a non-specific human NPC profile such as the </span><span class=\"fontstyle3\">Venerable Provincial Daimyō </span><span class=\"fontstyle0\">on page 315, or, at the GM’s discretion, a PC with up to 180 XP that you have created in advance). Your character does not remember any time they spend possessed.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "nUSORxfBtzK7Ah8d",
+  "sort": 0
+ },
+ {
+  "name": "Strike First, Strike Last",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343106277,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 89
+   },
+   "description": "<p><span class=\"fontstyle0\">When you inflict a critical strike during a duel or skirmish, treat the deadliness of your weapon as increased by the difference between your initiative and your target's initiative (subtracting the lower of the two initiative values from the higher).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "s7JsihIVifwzJ0RX",
+  "sort": 0
+ },
+ {
+  "name": "Strike with No Thought",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761348492832,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 65
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, as an Attack and Movement action, you may make a </span><span class=\"fontstyle2\">Martial Arts [Melee] (void) check </span><span class=\"fontstyle0\">targeting one character at range 2–3 using a sheathed katana or wakizashi. The TN of this check is equal to your target’s vigilance.</span></p><p><span class=\"fontstyle0\">You immediately move to range 1 of your target and draw the weapon you used. If you succeed, your target suffers a critical strike with severity equal to the deadliness of your weapon plus your bonus successes.</span></p><p><span class=\"fontstyle3\">(op)</span><span class=\"fontstyle0\">+: One character of your choice at range 0–2 of your target per (op) spent this way suffers the Dazed and Disoriented conditions.</span></p><p><span class=\"fontstyle3\">(op)(op)</span><span class=\"fontstyle0\">+: Treat the maximum range of this technique as 1 higher per (op)(op) spent this way.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "KMfFB7qXBYNMt7gL",
+  "sort": 0
+ },
+ {
+  "name": "Strike Without Shadow",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761341600977,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 73
+   },
+   "description": "<p><span class=\"fontstyle0\">When you succeed at an Attack or Movement action check, you may spend 1 Void point to add bonus successes equal to your ranks in Fitness.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "boUj3oT7liyUj0ON",
+  "sort": 0
+ },
+ {
+  "name": "Student of Many Courts",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761331928458,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 84
+   },
+   "description": "<p><span class=\"fontstyle0\">One per scene as a Support action, you may make a </span><span class=\"fontstyle2\">TN 3 Culture ((fire) </span><span class=\"fontstyle0\">or </span><span class=\"fontstyle2\">(water)) check </span><span class=\"fontstyle0\">targeting any number of other characters in the scene. If you succeed and you chose Fire, each character gains the Emboldened condition (see page 133). If you succeed and you chose Water, each character removes 3 strife.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "IdhPKqZKBDyKkRvi",
+  "sort": 0
+ },
+ {
+  "name": "Sudden Clarity",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343511678,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 94
+   },
+   "description": "<p><span class=\"fontstyle0\">When you use your school ability, you may remove one or more of the following conditions from each chosen character: Dazed, Disoriented, Enraged, Exhausted, Intoxicated. Additionally, each chosen character removes 3 fatigue.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Cik9iE5rqtKesHUp",
+  "sort": 0
+ },
+ {
+  "name": "Surge of Brilliance",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346307728,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 53
+   },
+   "description": "<p><span class=\"fontstyle0\">When you craft an item, you may increase or decrease its rarity by up to your ranks in the skill you used to craft it. Once per game session when you make a check to create, refine, adapt, restore, or attune to an item, the check takes an action rather than a downtime activity.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "jcrP2KpiDUlOO1cP",
+  "sort": 0
+ },
+ {
+  "name": "Swift Creation",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346627474,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 57
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene you may perform a ritual that uses the Medicine skill as an action as if it were a downtime activity.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "zYTVXMXdB6EA5W43",
+  "sort": 0
+ },
+ {
+  "name": "Temple of the Heart",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761345071376,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 83
+   },
+   "description": "<p><span class=\"fontstyle0\">You may keep two kami within you at once instead of one. All effects of </span><span class=\"fontstyle2\"><strong>The Body Is a Shrine</strong> </span><span class=\"fontstyle0\">still apply. If two kami share an element, the effects do not stack for that element.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "XZPRFQ4SFmrGESjT",
+  "sort": 0
+ },
+ {
+  "name": "Tenacity of the Forge",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761341904608,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 77
+   },
+   "description": "<p><span class=\"fontstyle0\">When you create a new set of armor, you may apply two different patterns you know to it (instead of one).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "wJit6pw4ib1C4nPG",
+  "sort": 0
+ },
+ {
+  "name": "The Clouds Part",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/imperial.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347240114,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 236
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per round, you may spend 1 Void point to add bonus successes equal to your honor rank to a successful Attack or Support action check.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "R9UpSHz0fMyJKRSy",
+  "sort": 0
+ },
+ {
+  "name": "The Effortless Path",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342808114,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 92
+   },
+   "description": "<p><span class=\"fontstyle0\">When making a check to active a kihō, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle0\">: If you succeed on this check, after you activate the kihō, you may perform a Strike action with a weapon you have readied in a one-handed grip.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vcmRT1GvIY47VhlR",
+  "sort": 0
+ },
+ {
+  "name": "The Eyes Betray the Heart",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761349273111,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 67
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene when performing a skill check to investigate, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle0\">+: You may reserve up to one dropped die per (op) spent this way. The next time you perform a check to interact with the person or thing you were investigating (such as a check targeting that person or a check to use that object), you may add any number of these reserved dice as kept dice. Then, remove any unused reserved dice.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RRJ3NkrYO5I1krar",
+  "sort": 0
+ },
+ {
+  "name": "The Final Silence",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761350258293,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 79
+   },
+   "description": "<p><span class=\"fontstyle0\">As an Attack and Movement action, you may make a </span><span class=\"fontstyle2\">TN 4 Martial Arts [Unarmed] (air) check </span><span class=\"fontstyle0\">targeting any number of minion NPCs at range 0–4.</span></p><p><span class=\"fontstyle0\">If you succeed during a narrative scene, you silently kill all targets over the course of a few minutes. If you succeed during a conflict scene, at the end of each of your turns, you may silently kill one of these targets at range 0–2 (in addition to your other actions).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "J1aKHQSJhCgEmUHd",
+  "sort": 0
+ },
+ {
+  "name": "The Flower Binds the Room",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761345143277,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 84
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session, you can use your school ability on any check (action or downtime activity) to alter your environment (such as a check to reposition a painting to change the atmosphere of a room or a check to obscure a trap with sand). When you do, you may also add or remove one supernatural terrain quality from the area you affect.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "T6o3klJqwDO5GQt0",
+  "sort": 0
+ },
+ {
+  "name": "The Herd Flourishes Together",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342002775,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 78
+   },
+   "description": "<p><span class=\"fontstyle0\">When you make a Social skill check, you may spend (op) as follows:</span></p><p><span class=\"fontstyle3\">(op)(op): </span><span class=\"fontstyle0\">Choose another character’s social objective that you know. You may transfer any number of momentum points you have accrued to the completion of their objective. After that character completes their objective, you gain the Support of [That Character's Group] advantage (see page 110 of the core rulebook) if you do not have it already</span>.</p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "syMv4fmFRNfXif2e",
+  "sort": 0
+ },
+ {
+  "name": "The Lady’s Grace",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761348384296,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 64
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, you may spend 1 Void point to reduce your strife to 0. When you do, each friendly character in the scene may reduce their strife by your honor rank.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "imoLqOLriBWrwx9F",
+  "sort": 0
+ },
+ {
+  "name": "The Lowest Bow",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343668670,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 96
+   },
+   "description": "<p><span class=\"fontstyle0\">When performing an Attack action using Martial Arts [Melee], you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(op)</span><span class=\"fontstyle3\">+: </span><span class=\"fontstyle0\">Choose one character other than your target at range 2 with vigilance lower than or equal to (op) spent this way. That character suffers a critical strike with severity equal to your weapon's deadliness plus your ranks in Martial Arts [Melee].</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "C1LUjfRqb9LKNjbQ",
+  "sort": 0
+ },
+ {
+  "name": "The Mountain Does Not Fall",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347695242,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 57
+   },
+   "description": "<p><span class=\"fontstyle0\">At the beginning of your turn, you may spend 1 Void point. If you do, ignore all of your conditions, terrain, and negative persistent effects of techniques and abilities. Do not apply your disadvantages to checks. If you would die, you cling to life for a few moments longer instead (but still die when the effect ends). This effect persists until the end of your next turn.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vmlw8mJ2texEEQ39",
+  "sort": 0
+ },
+ {
+  "name": "The Noble Heart Shines Through",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761333793665,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "children_of_the_five_winds",
+    "page": 85
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per scene, you may spend 1 Void point to target any non-Shadowlands creature of silhouette 3 or greater, giving the target the Loyal Steed ability—it can be ridden by a human-sized (silhouette 2 or lower) rider—until the end of the scene. When you do, you may make a Courtesy (water) or Theology (void) check with a TN equal to the target’s vigilance. If you succeed on the check, the target is favorable toward you and willing to be ridden. Horses of the Blessed Herd—the Utaku steeds—are immune to this mastery ability.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "rFPngVD6TEZr6CtW",
+  "sort": 0
+ },
+ {
+  "name": "The Spirits Unbound",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/unicorn.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761351081794,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 83
+   },
+   "description": "<p><span class=\"fontstyle0\">At the end of your turn, you may spend 1 or more Void points to unleash the powers within an equal number of your meishōdō talismans, destroying these talismans and freeing the entities within. You may immediately perform each of the invocations for which the talismans were created, reducing the TN by 3.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "NMEqjMi0USXIWaX1",
+  "sort": 0
+ },
+ {
+  "name": "The Standing Death",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343863218,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 98
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session, when you perform the Challenge action (see page 263 of the core rulebook), you may choose up to 6 additional characters who can hear you as targets. These targets must have status lower than or equal to your original target's. If you succeed, each target must fight you in a clash one at a time in an order of their choosing (or flee the battle). Each clash lasts one round. After each clash, you regain fatigue equal to your Earth Ring. Until all of these clashes have concluded (or you have been killed), none of your targets can perform Attack or Scheme actions outside of their individual clashes.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gswgHpPejrdGdOlH",
+  "sort": 0
+ },
+ {
+  "name": "To Tread the Sword",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crane.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761348326958,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 63
+   },
+   "description": "<p><span class=\"fontstyle0\">When you use the Guard action, instead of guarding one character, you may choose to guard a number of other characters in range up to your ranks in Martial Arts [Melee].</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "vBZIUfFXYX7xrgCd",
+  "sort": 0
+ },
+ {
+  "name": "Tower of Ivory",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761346747660,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 59
+   },
+   "description": "<p><span class=\"fontstyle0\">After you defend against damage, increase your physical resistance by 1. This effect can stack a number of times equal to your ranks in Meditation and persists until the end of the scene.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "0cJYlMCpBB0cR0iJ",
+  "sort": 0
+ },
+ {
+  "name": "Treasures of the Carp",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761348200799,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 61
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per game session, you may give away one item in your possession to reduce the TN of the next Social skill check you make targeting the recipient by an amount equal to the rarity of the item. For each point by which this would reduce the TN below 1, add a kept (ring) set to an (op) result to your check.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4u7TQuHCQHDlbkve",
+  "sort": 0
+ },
+ {
+  "name": "Unbreakable Resolve",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761341769969,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 75
+   },
+   "description": "<p><span class=\"fontstyle0\">Compromised characters affected by your school ability can keep a number of dice containing </span><span class=\"fontstyle2\">(st) </span><span class=\"fontstyle0\">up to your ranks in Command.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "h9r7RsKbPZbEjKe1",
+  "sort": 0
+ },
+ {
+  "name": "Unseen Blade",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/ronin.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761345915504,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "path_of_waves",
+    "page": 48
+   },
+   "description": "<p><span class=\"fontstyle0\">When you perform an Attack action, you may spend (op) as follows:</span></p><p><span class=\"fontstyle0\">(op)(op)+: Chose a character in range of the weapon you used with vigilance lower than your original target. If you succeed, that character suffers physical damage equal to your weapon’s base damage plus your ranks in Fitness.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "fD0Dz24r6iyUsE13",
+  "sort": 0
+ },
+ {
+  "name": "Usher in the New Age",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761347623455,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "emerald_empire",
+    "page": 240
+   },
+   "description": "<p><span class=\"fontstyle0\">As a downtime activity, you may overcome or bypass an NPC's guards or other security measures in order to gain access to them. Make a </span><span class=\"fontstyle2\">Skulduggery (air) check </span><span class=\"fontstyle0\">targeting the NPC, with a TN equal to their highest conflict rank. If you succeed and the chosen NPC is a minion or an adversary the GM deems non-essential to the campaign plot, you accomplish your goal, such as assassinating the NPC or delivering an effective threat, in a method of your choosing (subject to the GM’s approval). If the NPC is an important adversary, you confront the NPC alone, likely beginning a conflict scene.</span></p><p><span class=\"fontstyle3\">(op)(op)</span><span class=\"fontstyle0\">: Your efforts go completely unnoticed by anyone except possibly the target.</span></p><p>(op)(op)<span class=\"fontstyle0\">: If you kill the target, their death appears to be the result of an accident or natural causes (although a skilled investigator may still uncover the truth).</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "Unf9lStxj0NSbtS4",
+  "sort": 0
+ },
+ {
+  "name": "Victory is the Greatest Honor",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761343359219,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "court_of_stones",
+    "page": 92
+   },
+   "description": "<p><span class=\"fontstyle0\">Once per session after failing a Martial or Social check, you may stake up to again, adding equal to the honor staked. If you fail, you forfeit all honor staked. If you succeed, you instead gain 1 honor and 1 glory.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "DJvkO9qMKeP1NJg2",
+  "sort": 0
+ },
+ {
+  "name": "Walk the Hidden Ways",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761345221375,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "celestial_realms",
+    "page": 85
+   },
+   "description": "<p><span class=\"fontstyle0\">When you use your school ability in a place already linked to a particular realm, such as a place of power, you may move yourself and a number of characters up to your ranks in Meditation into that realm fully, leaving the Mortal Realm entirely.</span></p><p><span class=\"fontstyle0\">As a Support action, you may make a </span><span class=\"fontstyle2\">TN 2 Meditation (void) check </span><span class=\"fontstyle0\">to return yourself and a number of characters up to your ranks in Meditation to the Mortal Realm.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "4XSdaoJ3xkhm0ZHp",
+  "sort": 0
+ },
+ {
+  "name": "Whispers of the Kami",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/techs/mastery_ability.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761334542754,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "writ_of_the_wild",
+    "page": 96
+   },
+   "description": "<p><span class=\"fontstyle0\">You may spend 1 Void point to use your school ability an additional time this scene. You may do this multiple times.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "cgGrIonSkXERmqAY",
+  "sort": 0
+ },
+ {
+  "name": "With the Soul of a Lion",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/lion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342186147,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "fields_of_victory",
+    "page": 80
+   },
+   "description": "<p><span class=\"fontstyle0\">After you perform an Attack action, each of your bonded animals may perform an Attack action against the same target, if able. If your attack action did not succeed, reduce the TN of each of your bonded animals’ Attack action check by 2.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "rGxHq8ssNiVXnbIC",
+  "sort": 0
+ },
+ {
+  "name": "World of Shadows",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/clans/scorpion.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761350335762,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "core_rulebook",
+    "page": 80
+   },
+   "description": "<p><span class=\"fontstyle0\">You may spend 1 Void point to attempt to establish that something in the scene has been an illusion all along. This could be an object, image of a person, or other illusory phenomenon you could </span><span class=\"fontstyle2\">summon </span><span class=\"fontstyle0\">with an invocation.</span></p><p><span class=\"fontstyle0\">You must make the check to </span><span class=\"fontstyle2\">summon </span><span class=\"fontstyle0\">this illusion using an invocation, with adjustments to the TN for plausibility determined by the GM. If you succeed, you reveal that the thing you chose is in fact an illusion you wove, and has been for at least a few moments. If you fail, your character clearly did not think to set up an illusion—the object is as it appears. </span></p><p><span class=\"fontstyle0\">As with all matters, the GM has final say over acceptable uses of this ability.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "gnSXoozlPjsCu2mP",
+  "sort": 0
+ },
+ {
+  "name": "Yotogi's Piercing Gaze",
+  "type": "technique",
+  "flags": {},
+  "img": "systems/l5r5e/assets/icons/items/technique.svg",
+  "effects": [],
+  "_stats": {
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null,
+   "coreVersion": "13.350",
+   "systemId": "l5r5e",
+   "systemVersion": "1.13.1",
+   "createdTime": 1761147736696,
+   "modifiedTime": 1761342952982,
+   "lastModifiedBy": "7vKCnwOtrdD7lBip"
+  },
+  "system": {
+   "source_reference": {
+    "source": "shadowlands",
+    "page": 94
+   },
+   "description": "<p><span class=\"fontstyle0\">You can perceive beings that are normally invisible to human sight, such as spirits and characters concealed by supernatural abilities. When you deal damage to an Otherwordly being, you ignore an amount of its resistance up to your ranks in Meditation.</span></p>",
+   "parent_id": null,
+   "items": [],
+   "in_curriculum": false,
+   "xp_used": 0,
+   "xp_cost": 0,
+   "rank": 6,
+   "bought_at_rank": 0,
+   "ring": "void",
+   "skill": "",
+   "difficulty": "",
+   "technique_type": "mastery_ability"
+  },
+  "folder": null,
+  "ownership": {
+   "default": 0,
+   "7vKCnwOtrdD7lBip": 3
+  },
+  "_id": "RTF58fkd30ep1E7y",
+  "sort": 0
+ }
+]
