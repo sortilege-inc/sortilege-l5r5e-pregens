@@ -398,7 +398,7 @@
     el.onerror = done;      // absent is normal; the Creator just asks for a key
     document.head.appendChild(el);
   }
-  function aiAvailable() { return !!aiKey(); }
+  function aiAvailable() { return !!aiKey() || !!window.L5R_AI_PROXY; }
 
   // Everything the draft holds at the moment of the call — the current step's
   // selection included, since every widget writes to C before this runs. A
@@ -451,34 +451,50 @@
     return b.join("\n");
   }
 
+  // Two routes to a suggestion. A key in this browser calls Anthropic directly;
+  // otherwise the request goes to the Worker, which holds the key server-side.
+  // The published site has no key of its own and must never be given one.
   function aiSuggest(fieldKey) {
     var key = aiKey();
-    if (!key) return Promise.reject(new Error("No API key set."));
-    return fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        "x-api-key": key,
-        "anthropic-version": "2023-06-01",
-        "anthropic-dangerous-direct-browser-access": "true"
-      },
-      body: JSON.stringify({
-        model: MODEL, max_tokens: 256,
-        system: PROMPTS[fieldKey] || PROMPTS["default"],
-        messages: [{
-          role: "user",
-          content: "Existing draft for context:\n" + characterContext() +
-            "\n\nSuggest a single " + fieldKey.replace(/_/g, " ") + " for this character."
-        }]
-      })
-    }).then(function (r) {
+    var proxy = window.L5R_AI_PROXY || "";
+    if (!key && !proxy) return Promise.reject(new Error("No API key set."));
+
+    var system = PROMPTS[fieldKey] || PROMPTS["default"];
+    var user = "Existing draft for context:\n" + characterContext() +
+      "\n\nSuggest a single " + fieldKey.replace(/_/g, " ") + " for this character.";
+
+    var req = key
+      ? fetch("https://api.anthropic.com/v1/messages", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+            "x-api-key": key,
+            "anthropic-version": "2023-06-01",
+            "anthropic-dangerous-direct-browser-access": "true"
+          },
+          body: JSON.stringify({
+            model: MODEL, max_tokens: 256, system: system,
+            messages: [{ role: "user", content: user }]
+          })
+        })
+      : fetch(proxy, {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ system: system, user: user })
+        });
+
+    return req.then(function (r) {
       if (!r.ok) {
         return r.text().then(function (t) {
-          throw new Error("AI request failed (" + r.status + "): " + t.slice(0, 200));
+          var msg = t;
+          try { msg = JSON.parse(t).error || t; } catch (e) { /* plain text */ }
+          throw new Error("AI request failed (" + r.status + "): " +
+                          String(msg).slice(0, 200));
         });
       }
       return r.json();
     }).then(function (d) {
+      if (typeof d.text === "string") return d.text;      // via the Worker
       return (d.content || []).filter(function (b) { return b.type === "text"; })
         .map(function (b) { return b.text; }).join("").trim();
     });
@@ -493,7 +509,9 @@
       '<span class="ai-hint">' +
       (aiAvailable()
         ? "Tab in an empty field for an AI suggestion" +
-          (window.L5R_LOCAL_AI_KEY ? " · key from .env" : "")
+          (aiKey()
+            ? (window.L5R_LOCAL_AI_KEY ? " · key from .env" : "")
+            : " · via the shared proxy")
         : "Set an API key below to enable AI suggestions") +
       '</span><span class="ai-status" aria-live="polite"></span>';
     input.insertAdjacentElement("afterend", row);

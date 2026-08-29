@@ -566,6 +566,9 @@ def emit(cx):
     write(os.path.join(SITEDATA, "drafts.js"), "L5R_ARCHIVE_DRAFTS",
           archive_drafts(docs))
     emit_local_key()
+    proxy = ((json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+              .get("ai_proxy") or {}).get("url") or "")
+    write(os.path.join(SITEDATA, "ai-proxy.js"), "L5R_AI_PROXY", proxy)
     return (n1, n2, n3, biggest), docs
 
 
@@ -869,6 +872,9 @@ def main():
     print("site data:  roster.js %.1f KB | catalog.js %.1f KB | coverage.js %.1f KB"
           " | largest character %.1f KB" % tuple(s / 1024 for s in sizes))
     print(f"pages:      {npages} character stubs, {nplay} playable sheets")
+    proxy_url = ((json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+                  .get("ai_proxy") or {}).get("url") or "")
+    print("AI proxy:   " + (proxy_url or "not set — published Creator will ask for a key"))
     print("local AI key: " + ("data/ai-key.local.js written from .env (gitignored)"
                               if os.path.exists(os.path.join(SITEDATA, "ai-key.local.js"))
                               else "no ANTHROPIC_API_KEY in .env — Creator will ask for one"))

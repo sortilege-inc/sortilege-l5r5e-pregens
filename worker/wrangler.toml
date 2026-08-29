@@ -1,0 +1,24 @@
+name = "sortilege-l5r-creator-ai"
+main = "src/index.js"
+compatibility_date = "2026-08-29"
+
+[vars]
+# Comma-separated origins allowed to call this Worker. The first is the
+# fallback CORS origin. The Creator is served from GitHub Pages; keep the
+# localhost entry for the local preview server (scripts note: python3 -m
+# http.server 8412).
+ALLOWED_ORIGIN = "https://sortilege-inc.github.io,http://localhost:8412"
+
+# The only model this Worker will call, and the ceiling it will allow. The
+# Worker is not a general-purpose LLM endpoint: it exists to answer one
+# narrative field at a time for the character creator.
+MODEL = "claude-haiku-4-5-20251001"
+MAX_TOKENS = "400"
+
+# Per-IP rate limit, requests per minute. Suggestions are one-at-a-time and
+# human-paced; anything faster is not a person filling in a character sheet.
+RATE_PER_MIN = "12"
+
+# ANTHROPIC_API_KEY is a SECRET and is deliberately absent from this file.
+# Set it yourself, from your own shell:
+#   npx wrangler secret put ANTHROPIC_API_KEY

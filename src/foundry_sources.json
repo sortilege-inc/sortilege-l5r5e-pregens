@@ -118,5 +118,9 @@
    "curriculum_from": "Advisor",
    "_why": "an Advisor title (Emerald Empire p.249) with a campaign-specific name. Corroborated by cost: the character's title records xp_cost 36, which is the Advisor title's cost."
   }
+ },
+ "ai_proxy": {
+  "_comment": "deployed URL of worker/ — the Anthropic shim the published Creator calls. Empty until deployed; the Creator then asks for a pasted key instead.",
+  "url": ""
  }
 }
