@@ -342,6 +342,33 @@ def twenty_question_labels():
     return {"parts": parts, "questions": questions, "fields": fields}
 
 
+def archive_drafts(docs):
+    """Enough of each draft character for the Creator to pick it up.
+
+    Drafts exist in two places — Foundry's Draft folder, and the Creator's own
+    browser storage — and a draft that only shows in one of them is a draft the
+    author cannot find. This is the archive half, so the Creator can list both.
+    """
+    out = []
+    for c in docs:
+        if c.get("status") != "draft":
+            continue
+        t = c["tiers"][0]
+        out.append({
+            "slug": c["slug"], "name": c["name"], "campaign": c.get("campaign"),
+            "portrait": c.get("portrait"),
+            "identity": {"clan": c.get("clan"), "family": c.get("family"),
+                         "school": c.get("school"), "role": c.get("role")},
+            "rings": t.get("rings"),
+            "social": {k: (t.get("social") or {}).get(k)
+                       for k in ("honor", "glory", "status", "giri", "ninjo",
+                                 "bushido_tenets")},
+            "peculiarities": [e["name"] for e in t.get("peculiarities", [])],
+            "twenty_questions": c.get("twenty_questions", {}),
+        })
+    return out
+
+
 def heritage_coverage():
     """Which heritage-table entry each character took, where that is determinable.
 
@@ -471,11 +498,13 @@ def emit(cx):
         docs.append(doc)
         size = write(os.path.join(chardir, c["slug"] + ".js"), "L5R_CHARACTER", doc)
         biggest = max(biggest, size)
-        roster.append({k: c[k] for k in
-                       ("slug", "name", "clan", "family", "school", "role", "bucket",
-                        "campaign", "status", "portrait", "tier_count",
-                        "xp_min", "xp_max")})
+        if c["status"] != "draft":
+            roster.append({k: c[k] for k in
+                           ("slug", "name", "clan", "family", "school", "role", "bucket",
+                            "campaign", "status", "portrait", "tier_count",
+                            "xp_min", "xp_max")})
 
+    # the roster is the finished archive; drafts live in the Creator until promoted
     n1 = write(os.path.join(SITEDATA, "roster.js"), "L5R_ROSTER", roster)
 
     # the denominator, metadata only (no long rules text) — ledger + landing tiles
@@ -486,17 +515,21 @@ def emit(cx):
 
     used = collections.defaultdict(list)
     for r in cx.execute(
-        "SELECT c.uuid uuid, tc.slug slug, MIN(t.xp) xp FROM tier_content tc"
+        "SELECT c.uuid uuid, tc.slug slug, MIN(t.xp) xp,"
+        " (SELECT ch.status FROM character ch WHERE ch.slug = tc.slug) status"
+        " FROM tier_content tc"
         " JOIN catalog c ON c.uuid = tc.catalog_uuid"
         " JOIN tier t ON t.id = tc.tier_id GROUP BY c.uuid, tc.slug"):
-        used[r["uuid"]].append({"slug": r["slug"], "xp": r["xp"]})
+        used[r["uuid"]].append({"slug": r["slug"], "xp": r["xp"],
+                                "draft": r["status"] == "draft"})
     customs = [dict(r) for r in cx.execute(
         "SELECT slug,category,name,MIN(meta) meta FROM tier_content"
         " WHERE custom=1 GROUP BY slug,category,name")]
     schools = [dict(r) for r in cx.execute(
         "SELECT c.uuid uuid, c.name name, c.clan clan, c.source_book source_book,"
         " c.source_page source_page,"
-        " (SELECT ch.slug FROM character ch WHERE ch.school_norm = c.norm LIMIT 1) slug"
+        " (SELECT ch.slug FROM character ch WHERE ch.school_norm = c.norm LIMIT 1) slug,"
+        " (SELECT ch.status FROM character ch WHERE ch.school_norm = c.norm LIMIT 1) status"
         " FROM catalog c WHERE c.pack LIKE '%school-curriculum%' ORDER BY c.name")]
     n3 = write(os.path.join(SITEDATA, "coverage.js"), "L5R_COVERAGE",
                {"used": used, "customs": customs, "schools": schools})
@@ -504,6 +537,8 @@ def emit(cx):
           twenty_question_labels())
     write(os.path.join(SITEDATA, "heritage_coverage.js"), "L5R_HERITAGE_COVERAGE",
           heritage_coverage())
+    write(os.path.join(SITEDATA, "drafts.js"), "L5R_ARCHIVE_DRAFTS",
+          archive_drafts(docs))
     return (n1, n2, n3, biggest), docs
 
 

@@ -740,3 +740,17 @@ p.cur-meta{ margin:0 0 0.5rem; }
   border-top:1px dashed var(--edge-soft); font-size:0.84rem; color:var(--ink-soft);
 }
 .h-sub em{ color:var(--crimson); font-style:normal; font-family:var(--caps); font-size:0.9em; }
+h3.cur-title.active{ color:var(--crimson); }
+h3.cur-title.active::before{ content:"❖ "; color:var(--crimson); font-size:0.8em; }
+.cur-prog.active{ color:var(--crimson); }
+table.cur-table tr.cur-past td{ opacity:0.72; }
+.stepnav.skipped{ opacity:0.35; }
+.stepnav.skipped .sn-l::after{ content:" — n/a"; font-size:0.9em; }
+.drafts-archive{ margin-left:0.6rem; padding-left:0.8rem; border-left:1px solid var(--edge); }
+.archivechip{
+  appearance:none; cursor:pointer; text-align:left; border:1px dashed var(--gold-soft);
+  background:var(--paper); border-radius:2px; padding:0.3rem 0.6rem;
+  font-family:var(--disp); font-size:1rem; color:var(--ink-2);
+}
+.archivechip:hover{ border-color:var(--crimson); color:var(--sumi); }
+.archivechip.open{ border-style:solid; border-color:var(--jade); }

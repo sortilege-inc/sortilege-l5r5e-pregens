@@ -56,6 +56,28 @@
   var SCHOOLS = window.L5R_SCHOOLS || [];
   var HERITAGES = window.L5R_HERITAGES || {};
   var CATALOG = window.L5R_CATALOG || [];
+  var REGIONS = window.L5R_REGIONS || [];
+  var UPBRINGINGS = window.L5R_UPBRINGINGS || [];
+  var ARCHIVE = window.L5R_ARCHIVE_DRAFTS || [];
+
+  // Core builds a samurai from clan and family. Path of Waves and Writ of the
+  // Wilds replace those two questions with region and upbringing, and drop the
+  // clan-relationship beat, since those characters have no clan.
+  var MODES = [
+    { key: "core", label: "Samurai", book: "Core Rulebook" },
+    { key: "pow", label: "Ronin", book: "Path of Waves" },
+    { key: "wow", label: "Wilds", book: "Writ of the Wilds" }
+  ];
+  function mode() { return C.mode || "core"; }
+  function isCore() { return mode() === "core"; }
+  function originSet() {
+    var src = mode() === "wow" ? "writ-of-wilds" : "path-of-waves";
+    var list = (mode() === "wow" ? UPBRINGINGS : REGIONS);
+    var scoped = list.filter(function (x) {
+      return (x.source || "").indexOf(src) >= 0;
+    });
+    return scoped.length ? scoped : list;
+  }
   var ROLL = (window.L5R_COVERAGE || {}).schools || [];
 
   // The chargen data and the compendium spell schools differently ("Asahina
@@ -109,7 +131,8 @@
 
   function newCharacter() {
     return {
-      name: "", clan: null, family: null, school: null, role: null,
+      name: "", mode: "core", clan: null, family: null, school: null, role: null,
+      region: null, upbringing: null,
       standout_ring: null,
       rings: { air: 1, earth: 1, fire: 1, water: 1, "void": 1 },
       skills: {},
@@ -220,6 +243,66 @@
     switchDraft(nid);
   }
 
+  // A draft pulled from Foundry is hydrated into a local one so it can be
+  // carried on with. Only what the wizard asks about comes across; the rest of
+  // the character stays in the archive file until it is exported again.
+  function hydrate(a) {
+    var c = newCharacter();
+    var tq = (a.twenty_questions || {}).steps || {};
+    function ans(step, key) {
+      return ((tq[step] || {}).answers || {})[key] || "";
+    }
+    c.name = a.name;
+    c.mode = (a.twenty_questions || {}).template === "pow" ? "pow" : "core";
+    c.clan = a.identity.clan;
+    c.family = a.identity.family;
+    c.school = a.identity.school;
+    c.role = a.identity.role;
+    c.campaign = a.campaign || "";
+    c.standout_ring = ans("step4", "ring") || null;
+    c.answers.standout_quality = ans("step4", "stand_out");
+    c.answers.giri = (a.social || {}).giri || ans("step5", "social_giri");
+    c.answers.ninjo = (a.social || {}).ninjo || ans("step6", "social_ninjo");
+    c.answers.clan_relationship.text = ans("step7", "clan_relations");
+    var tenets = (a.social || {}).bushido_tenets || {};
+    c.bushido.paramount = tenets.paramount ||
+      ans("step8", "tenet_paramount") || null;
+    c.bushido.lesser = tenets.less_significant ||
+      ans("step8", "tenet_less_significant") || null;
+    c.answers.first_impression = ans("step14", "first_sight");
+    c.answers.stress_reaction = ans("step15", "stress");
+    c.answers.relationships = ans("step16", "relations");
+    c.answers.parent_opinion.description = ans("step17", "parents_pov");
+    c.answers.heritage = ans("step18", "heritage_name") || null;
+    c.answers.death = ans("step20", "death");
+    // peculiarities land in whichever bucket the catalog says they belong to
+    (a.peculiarities || []).forEach(function (n) {
+      var e = CATALOG.filter(function (x) {
+        return x.sub_type === "peculiarity" && normName(x.name) === normName(n);
+      })[0];
+      var bucket = { distinction: "distinctions", adversity: "adversities",
+                     passion: "passions", anxiety: "anxieties" }[e && e.kind];
+      if (bucket && c[bucket].indexOf(n) < 0) c[bucket].push(n);
+    });
+    return c;
+  }
+
+  function openArchiveDraft(slug) {
+    var a = ARCHIVE.filter(function (x) { return x.slug === slug; })[0];
+    if (!a) return;
+    var existing = Object.keys(STORE.drafts).filter(function (id) {
+      return STORE.drafts[id].fromArchive === slug;
+    })[0];
+    if (existing) { switchDraft(existing); return; }
+    if (!confirm("Open “" + a.name + "” from the archive as a working draft?\n\n" +
+                 "It is copied into this browser; the archive file is not changed. " +
+                 "Export when you are done.")) return;
+    var id = newId();
+    STORE.drafts[id] = { id: id, updated: Date.now(), fromArchive: slug,
+                         character: hydrate(a) };
+    switchDraft(id);
+  }
+
   function renderDrafts() {
     var ids = Object.keys(STORE.drafts).sort(function (a, b) {
       return STORE.drafts[b].updated - STORE.drafts[a].updated;
@@ -240,7 +323,20 @@
           "</span>";
       }).join("") +
       '<button type="button" class="draftnew" id="draft-new">+ New</button>' +
-      '<button type="button" class="draftnew" id="draft-dup">Duplicate</button>';
+      '<button type="button" class="draftnew" id="draft-dup">Duplicate</button>' +
+      (ARCHIVE.length
+        ? '<span class="drafts-label drafts-archive">From Foundry</span>' +
+          ARCHIVE.map(function (a) {
+            var open = Object.keys(STORE.drafts).some(function (id) {
+              return STORE.drafts[id].fromArchive === a.slug;
+            });
+            return '<button type="button" class="archivechip' +
+              (open ? " open" : "") + '" data-slug="' + esc(a.slug) + '">' +
+              esc(a.name) + '<span class="dc-meta">' +
+              esc(a.identity.school || a.identity.clan || "—") +
+              (open ? " · opened" : "") + "</span></button>";
+          }).join("")
+        : "");
 
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-open"), function (b) {
       b.addEventListener("click", function () { switchDraft(b.getAttribute("data-id")); });
@@ -252,6 +348,9 @@
     });
     el("draft-new").addEventListener("click", addDraft);
     el("draft-dup").addEventListener("click", function () { duplicateDraft(STORE.activeId); });
+    Array.prototype.forEach.call(el("drafts").querySelectorAll(".archivechip"), function (b) {
+      b.addEventListener("click", function () { openArchiveDraft(b.getAttribute("data-slug")); });
+    });
   }
 
   /* ---------------------------------------------------------- AI */
@@ -516,12 +615,47 @@
         i.type = "text"; i.value = C.name || ""; i.placeholder = "Working name";
         i.addEventListener("input", function () { C.name = i.value; save(); });
         body.appendChild(i);
+
+        label(body, "Character mode");
+        choice(body, MODES.map(function (m) {
+          return [m.key, m.label + " — " + m.book];
+        }), mode(), function (v) {
+          if (v === C.mode) return;
+          C.mode = v;
+          // the first two questions differ by mode, so their answers cannot carry
+          C.clan = C.family = C.region = C.upbringing = null;
+          C.school = C.role = null;
+          save(); render();
+        });
+        var note = document.createElement("p");
+        note.className = "muted small";
+        note.innerHTML = isCore()
+          ? "A samurai of a Great or Minor Clan. Questions 1 and 2 are clan and family."
+          : "Questions 1 and 2 become <strong>region</strong> and <strong>upbringing</strong>, " +
+            "and the clan-relationship question is dropped — these characters have no clan.";
+        body.appendChild(note);
       } },
 
-    { id: "clan", n: 1, label: "Clan", title: "Choose Your Clan",
-      desc: "Every samurai belongs to a clan. The clan you choose shapes your culture, politics, and starting skills.",
-      done: function () { return has(C.clan); },
+    { id: "clan", n: 1,
+      label: function () { return isCore() ? "Clan" : "Region"; },
+      title: function () { return isCore() ? "Choose Your Clan" : "Choose Your Region"; },
+      desc: function () {
+        return isCore()
+          ? "Every samurai belongs to a clan. The clan you choose shapes your culture, politics, and starting skills."
+          : "These characters come from the wider world rather than a clan. Pick the region that shaped you: where you grew up, what you saw, what was scarce or abundant.";
+      },
+      done: function () { return isCore() ? has(C.clan) : has(C.region); },
       render: function (body) {
+        if (!isCore()) {
+          var regions = originSet();
+          pickList(body, regions.map(function (r) {
+            return { value: r.name, label: r.name,
+                     meta: [r.ring_increase, r.skill_increase || r.skill_increases,
+                            r.glory != null ? "Glory " + r.glory : null]
+                       .filter(Boolean).join(" · ") };
+          }), C.region, function (v) { C.region = v; save(); });
+          return;
+        }
         var items = CLANS.map(function (c) {
           return { value: c.clan_short_name || c.name, label: c.name,
                    meta: [ringLine(c.ring_bonus), skillLine(c.skill_bonus),
@@ -534,10 +668,28 @@
         });
       } },
 
-    { id: "family", n: 2, label: "Family", title: "Choose Your Family",
-      desc: "Within your clan, choose a family. Each emphasises a different ring or set of skills, and sets your starting wealth and glory.",
-      done: function () { return has(C.family); },
+    { id: "family", n: 2,
+      label: function () { return isCore() ? "Family" : "Upbringing"; },
+      title: function () { return isCore() ? "Choose Your Family" : "Choose Your Upbringing"; },
+      desc: function () {
+        return isCore()
+          ? "Within your clan, choose a family. Each emphasises a different ring or set of skills, and sets your starting wealth and glory."
+          : "Your upbringing — craftsperson, hunter, temple acolyte, fallen noble, and so on. It grants ring and skill bonuses, sets your starting wealth, and adjusts your Status.";
+      },
+      done: function () { return isCore() ? has(C.family) : has(C.upbringing); },
       render: function (body) {
+        if (!isCore()) {
+          pickList(body, UPBRINGINGS.map(function (u) {
+            return { value: u.name, label: u.name,
+                     meta: [u.ring_increase, u.skill_increases,
+                            u.starting_wealth,
+                            u.status_modification != null
+                              ? "Status " + (u.status_modification > 0 ? "+" : "") +
+                                u.status_modification : null]
+                       .filter(Boolean).join(" · ") };
+          }), C.upbringing, function (v) { C.upbringing = v; save(); });
+          return;
+        }
         if (!C.clan) return needs(body, "Choose a clan first.");
         var items = familiesOf(C.clan).map(function (f) {
           return { value: f.name, label: f.name,
@@ -939,14 +1091,16 @@
       status: "draft",
       identity: {
         clan: C.clan, family: C.family, school: C.school,
-        role: C.role, age: ""
+        role: C.role, age: "",
+        region: C.region || null, upbringing: C.upbringing || null
       },
+      mode: mode(),
       portrait: null,
       concept: a.first_impression || null,
       summary: null,
       notes: C.notes || "",
       twenty_questions: {
-        template: "core", generated: false,
+        template: isCore() ? "core" : "pow", generated: false,
         steps: {
           step4: { answers: { stand_out: a.standout_quality, ring: C.standout_ring }, picks: {} },
           step5: { answers: { social_giri: a.giri }, picks: {} },
@@ -1000,9 +1154,11 @@
 
   function renderExport(body) {
     var doc = toSourceJson();
-    var missing = STEPS.filter(function (s) {
+    var missing = activeSteps().filter(function (s) {
       return s.id !== "export" && !s.done();
-    }).map(function (s) { return s.label; });
+    }).map(function (s) {
+      return typeof s.label === "function" ? s.label() : s.label;
+    });
 
     if (missing.length) {
       var warn = document.createElement("p");
@@ -1071,23 +1227,34 @@
 
   /* ---------------------------------------------------------- shell */
 
+  // Path of Waves and Writ of the Wilds characters have no clan, so the
+  // clan-relationship question is dropped rather than asked emptily.
+  function activeSteps() {
+    return STEPS.filter(function (s) {
+      return !(s.id === "clan-tie" && !isCore());
+    });
+  }
+
   function renderNav() {
     el("steps").innerHTML = STEPS.map(function (s, i) {
+      var skip = s.id === "clan-tie" && !isCore();
       var done = s.id !== "export" && s.done();
       return '<button type="button" class="stepnav' + (i === step ? " active" : "") +
-        (done ? " done" : "") + '" data-i="' + i + '">' +
+        (done ? " done" : "") + (skip ? " skipped" : "") + '" data-i="' + i + '">' +
         '<span class="sn-n">' + (s.n || "·") + "</span>" +
-        '<span class="sn-l">' + esc(s.label) + "</span></button>";
+        '<span class="sn-l">' +
+        esc(typeof s.label === "function" ? s.label() : s.label) + "</span></button>";
     }).join("");
     Array.prototype.forEach.call(document.querySelectorAll(".stepnav"), function (b) {
       b.addEventListener("click", function () {
         step = Number(b.getAttribute("data-i")); render();
       });
     });
-    var done = STEPS.filter(function (s) { return s.id !== "export" && s.done(); }).length;
+    var live = activeSteps().filter(function (s) { return s.id !== "export"; });
+    var done = live.filter(function (s) { return s.done(); }).length;
     el("progress").innerHTML = '<i style="width:' +
-      Math.round((done / (STEPS.length - 1)) * 100) + '%"></i>';
-    el("progress-label").textContent = done + " of " + (STEPS.length - 1) + " answered";
+      Math.round((done / live.length) * 100) + '%"></i>';
+    el("progress-label").textContent = done + " of " + live.length + " answered";
   }
 
   function renderWip() {
@@ -1132,9 +1299,10 @@
 
   function render() {
     var s = STEPS[step];
+    function val(x) { return typeof x === "function" ? x() : x; }
     el("step-n").textContent = s.n === 0 ? "Begin" : "Question " + s.n;
-    el("step-title").textContent = s.title;
-    el("step-desc").innerHTML = s.desc;
+    el("step-title").textContent = val(s.title);
+    el("step-desc").innerHTML = val(s.desc);
     var body = el("step-body");
     body.innerHTML = "";
     s.render(body);

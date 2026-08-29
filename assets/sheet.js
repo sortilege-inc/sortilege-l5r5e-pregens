@@ -337,10 +337,17 @@
       });
 
       var spent = title.xp_used, cost = title.xp_cost;
-      var head = '<h3 class="cur-title">' + esc(title.name) +
+      // "Active" is the title still being worked through. A completed title is
+      // done, not current — the same reading the school curriculum uses, where
+      // cur-current is the rank you are at and cur-past is one you finished.
+      var complete = cost != null && spent != null && spent >= cost;
+      var active = cost != null && spent != null && spent < cost;
+      var head = '<h3 class="cur-title' + (active ? " active" : "") + '">' +
+        esc(title.name) +
         (spent != null && cost
-          ? ' <span class="cur-prog' + (spent >= cost ? " done" : "") + '">' +
-            spent + " / " + cost + " XP</span>"
+          ? ' <span class="cur-prog' + (complete ? " done" : " active") + '">' +
+            spent + " / " + cost + " XP · " + (complete ? "complete" : "active") +
+            "</span>"
           : "") + "</h3>";
 
       var meta = [];
@@ -407,7 +414,7 @@
 
       return head + metaHtml +
         '<div class="cur-wrap"><table class="cur-table"><tbody>' +
-        '<tr class="' + (spent >= cost ? "cur-current" : "") + '">' +
+        '<tr class="' + (active ? "cur-current" : complete ? "cur-past" : "") + '">' +
         '<td class="cur-rank">\u4f4d</td><td>' + cells + "</td></tr>" +
         (extra.length
           ? '<tr><td class="cur-rank">+</td><td>' + extra.map(function (n) {
