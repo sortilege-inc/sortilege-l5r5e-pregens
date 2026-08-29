@@ -74,7 +74,20 @@ discrepancy** — the first attempt missed the nested items and double-counted t
 `system.xp_spent` on the actor is unreliable (it read 84 here); compute spend from the
 items. `xp_total` is XP *earned*, and a character is normally not fully spent.
 
-### 4. Other traps in the actor record
+### 4. Curricula come from two different places
+
+- **School curricula** are JournalEntry documents in the School Curriculum pack: a
+  `<blockquote>Book p.N</blockquote>` followed by a table whose `<th>` rows open a rank.
+  This is the only source of a school's source book.
+- **Title curricula** are a table inside the *title item's own description HTML*, under an
+  `<h2>Curriculum</h2>` heading — single-tier, so no rank rows. The description also
+  carries `Title Ability:` and `Status Award:`, but the label and its value sit in
+  separate spans, so match them on the stripped plain text, not the markup.
+
+Both parse to 100% of their sets (110 schools, 55 titles). A campaign title that is not in
+the compendium has no curriculum; show what was bought toward it via `via` instead.
+
+### 5. Other traps in the actor record
 
 - **No `compendiumSource`.** Items are copied without provenance, so catalog resolution is
   by normalized *name*. Three fallbacks, in `scripts/build.py`: exact; open-ended stem

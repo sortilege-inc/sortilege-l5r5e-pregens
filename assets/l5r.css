@@ -527,3 +527,15 @@ dl.qa-body{ margin:0; }
   font-family:var(--caps); font-size:0.68rem; letter-spacing:0.14em;
   text-transform:uppercase; color:var(--crimson); display:block; margin-top:0.15rem;
 }
+
+/* title curriculum, under the school's */
+h3.cur-title{
+  font-family:var(--disp); font-weight:600; font-size:1.2rem; color:var(--sumi);
+  margin:1.4rem 0 0.2rem; display:flex; align-items:baseline; gap:0.7rem;
+}
+.cur-prog{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.12em;
+  font-size:0.68rem; color:var(--ink-dim);
+}
+.cur-prog.done{ color:var(--jade); }
+p.cur-meta{ margin:0 0 0.5rem; }

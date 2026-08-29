@@ -17,6 +17,17 @@
     artisan: "Artisan", martial: "Martial", scholar: "Scholar",
     social: "Social", trade: "Trade"
   };
+  // which group each skill belongs to, for curriculum "Skill Group" lines
+  var SKILL_GROUP_OF = {
+    aesthetics: "artisan", composition: "artisan", design: "artisan", smithing: "artisan",
+    fitness: "martial", melee: "martial", ranged: "martial", unarmed: "martial",
+    meditation: "martial", tactics: "martial",
+    culture: "scholar", government: "scholar", medicine: "scholar",
+    sentiment: "scholar", theology: "scholar",
+    command: "social", courtesy: "social", games: "social", performance: "social",
+    commerce: "trade", labor: "trade", seafaring: "trade",
+    skulduggery: "trade", survival: "trade"
+  };
   var SKILL_LABEL = {
     aesthetics: "Aesthetics", composition: "Composition", design: "Design", smithing: "Smithing",
     fitness: "Fitness", melee: "Martial Arts [Melee]", ranged: "Martial Arts [Ranged]",
@@ -223,7 +234,9 @@
       '<span class="en">' + esc(t.school || CHAR.school || "") + "</span></h2>" +
       '<p class="muted small">Ticked entries are ones this character has taken at this tier.</p>' +
       '<div class="cur-wrap"><table class="cur-table"><tbody>' + rows +
-      "</tbody></table></div></section>";
+      "</tbody></table></div>" +
+      titleCurriculumSection(t) +
+      "</section>";
   }
 
   /* ------------------------------------------------- twenty questions */
@@ -284,6 +297,131 @@
         esc((pow && part.title_pow) || part.title) + "</h2>" + rows;
     });
     return html;
+  }
+
+  /* ------------------------------------------------- title curriculum */
+
+  // A title carries its own curriculum, and its purchases are recorded against
+  // it (the `via` field), so what was actually taken toward it can be ticked
+  // the same way the school's curriculum is.
+  function renderTitleCurricula(t) {
+    var held = t.titles || [];
+    if (!held.length) return "";
+    var all = CHAR.title_curricula || {};
+
+    return held.map(function (title) {
+      var cur = all[normName(title.name)];
+
+      // what this character bought toward this title
+      var viaTech = {}, viaSkill = {}, viaGroup = {}, viaKind = {};
+      var viaMartial = false, bought = [];
+      (t.techniques || []).concat(t.signature_scrolls || []).forEach(function (e) {
+        if (e.via && normName(e.via) === normName(title.name)) {
+          viaTech[normName(e.name)] = true;
+          if (e.kind) viaKind[normName(e.kind)] = true;
+          bought.push(e.name);
+        }
+      });
+      (t.advancements || []).forEach(function (a) {
+        if (a.via && normName(a.via) === normName(title.name)) {
+          if (a.skill) {
+            viaSkill[normName(SKILL_LABEL[a.skill] || a.skill)] = true;
+            var grp = SKILL_GROUP_OF[a.skill];
+            if (grp) viaGroup[grp] = true;
+            if (grp === "martial" && /^(melee|ranged|unarmed)$/.test(a.skill)) {
+              viaMartial = true;
+            }
+          }
+          bought.push(a.label);
+        }
+      });
+
+      var spent = title.xp_used, cost = title.xp_cost;
+      var head = '<h3 class="cur-title">' + esc(title.name) +
+        (spent != null && cost
+          ? ' <span class="cur-prog' + (spent >= cost ? " done" : "") + '">' +
+            spent + " / " + cost + " XP</span>"
+          : "") + "</h3>";
+
+      var meta = [];
+      if (cur && cur.ability) meta.push("Title ability: <strong>" + esc(cur.ability) + "</strong>");
+      if (cur && cur.status_award) meta.push("Status award " + esc(cur.status_award));
+      var metaHtml = meta.length
+        ? '<p class="muted small cur-meta">' + meta.join(" &middot; ") + "</p>" : "";
+
+      if (!cur) {
+        // a campaign title with no compendium entry - show what was taken for it
+        return head + metaHtml +
+          '<p class="muted small">No compendium curriculum for this title; it is ' +
+          "campaign-specific. Taken toward it:</p>" +
+          (bought.length
+            ? '<div class="cur-wrap"><table class="cur-table"><tbody><tr>' +
+              '<td class="cur-rank">&mdash;</td><td>' +
+              bought.map(function (n) {
+                return '<span class="cur-entry taken">' + esc(n) + "</span>";
+              }).join("") + "</td></tr></tbody></table></div>"
+            : '<p class="muted small">Nothing yet.</p>');
+      }
+
+      // "Trade Skills" is satisfied by raising any trade skill; "Martial Arts
+      // [Choose One]" by raising any of the three martial arts.
+      function entryTaken(e) {
+        if (e.kind === "Technique") return !!viaTech[normName(e.label)];
+        if (e.kind === "Skill Group") {
+          var g = normName(e.label).replace(/skills?$/, "");
+          return !!viaGroup[g];
+        }
+        if (e.kind === "Skill") {
+          if (/chooseone/.test(normName(e.label))) return viaMartial;
+          return !!viaSkill[normName(e.label)];
+        }
+        // "(kata) Rank 1-2 Kata" is satisfied by taking a kata for this title
+        if (e.kind === "Tech. Grp.") return !!(e.group && viaKind[normName(e.group)]);
+        return false;
+      }
+
+      var cells = cur.entries.map(function (e) {
+        var taken = entryTaken(e);
+        return '<span class="cur-entry' + (taken ? " taken" : "") + '">' +
+          (e.group ? '<em>(' + esc(e.group) + ")</em> " : "") + esc(e.label) +
+          (e.prereq ? ' <span class="muted small">prereq</span>' : "") +
+          '<span class="cur-kind">' + esc(e.kind) + "</span></span>";
+      }).join("");
+
+      // Purchases toward the title that are not already a ticked curriculum
+      // line. "Performance +1 (0 -> 1)" satisfies the "Performance" line, so
+      // strip the "+1 (a -> b)" tail before comparing.
+      function advStem(n) {
+        return normName(String(n).replace(/\s*\+\d+\s*\(.*\)\s*$/, ""));
+      }
+      var extra = bought.filter(function (n) {
+        return !cur.entries.some(function (e) {
+          return entryTaken(e) && (normName(e.label) === advStem(n) ||
+                                   normName(e.label) === normName(n));
+        });
+      });
+
+      return head + metaHtml +
+        '<div class="cur-wrap"><table class="cur-table"><tbody>' +
+        '<tr class="' + (spent >= cost ? "cur-current" : "") + '">' +
+        '<td class="cur-rank">\u4f4d</td><td>' + cells + "</td></tr>" +
+        (extra.length
+          ? '<tr><td class="cur-rank">+</td><td>' + extra.map(function (n) {
+              return '<span class="cur-entry taken">' + esc(n) + "</span>";
+            }).join("") + "</td></tr>"
+          : "") +
+        "</tbody></table></div>";
+    }).join("");
+  }
+
+  function titleCurriculumSection(t) {
+    var html = renderTitleCurricula(t);
+    if (!html) return "";
+    var n = (t.titles || []).length;
+    return '<h2 class="section-h" style="margin-top:2.2rem">' +
+      '<span class="kanji">\u4f4d</span>Title Curriculum' +
+      '<span class="en">' + n + (n === 1 ? " title held" : " titles held") +
+      "</span></h2>" + html;
   }
 
   /* ---------------------------------------------------------- changelog */

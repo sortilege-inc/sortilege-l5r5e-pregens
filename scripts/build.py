@@ -50,9 +50,44 @@ TAG_RE = re.compile(r"<[^>]+>")
 PREFIX_RE = re.compile(r"^\((?P<grp>[^)]+)\)\s*")
 
 
+# A title's curriculum is a table inside its description, under an <h2>Curriculum</h2>
+# heading — single-tier, so no rank rows, but otherwise the same two-column shape.
+TITLE_CUR_RE = re.compile(r"<h2>\s*Curriculum\s*</h2>\s*(?P<table><table.*?</table>)",
+                          re.S | re.I)
+# Both labels and their values sit in separate spans, so match on the plain text
+TITLE_ABILITY_RE = re.compile(
+    r"Title Ability:\s*(?P<name>.*?)(?=\s*(?:Curriculum|Status Award:|Assigned By:|$))", re.I)
+STATUS_AWARD_RE = re.compile(
+    r"Status Award:\s*(?P<award>.*?)(?=\s*(?:Curriculum|Title Ability:|Assigned By:|$))", re.I)
+
+
 def strip_tags(h):
     import html as _html
     return re.sub(r"\s+", " ", _html.unescape(TAG_RE.sub("", h or ""))).strip()
+
+
+def parse_title(doc):
+    """-> (ability, status_award, [{ordinal, kind, group, label, prereq}])"""
+    html = (doc.get("system") or {}).get("description") or ""
+    m = TITLE_CUR_RE.search(html)
+    entries = []
+    if m:
+        for n, row in enumerate(ROW_RE.findall(m.group("table"))):
+            cm = CELL_RE.search(row)
+            if not cm:
+                continue
+            label, kind = strip_tags(cm.group(1)), strip_tags(cm.group(2))
+            prereq = "(prereq)" in label
+            label = label.replace("(prereq)", "").strip()
+            gm = PREFIX_RE.match(label)
+            entries.append({"ordinal": n, "kind": kind, "prereq": prereq,
+                            "group": gm.group("grp") if gm else None,
+                            "label": PREFIX_RE.sub("", label).strip()})
+    plain = strip_tags(html)
+    am = TITLE_ABILITY_RE.search(plain)
+    sm = STATUS_AWARD_RE.search(plain)
+    return (am.group("name").strip() if am else None,
+            sm.group("award").strip() if sm else None, entries)
 
 
 def parse_curriculum(doc):
@@ -127,6 +162,11 @@ def schema(cx):
       school_norm TEXT, school TEXT, rank INTEGER, kind TEXT, grp TEXT,
       label TEXT, norm TEXT, prereq INTEGER);
     CREATE INDEX cur_school ON curriculum(school_norm);
+    DROP TABLE IF EXISTS title_curriculum;
+    CREATE TABLE title_curriculum(
+      title_norm TEXT, title TEXT, ordinal INTEGER, kind TEXT, grp TEXT,
+      label TEXT, norm TEXT, prereq INTEGER, ability TEXT, status_award TEXT);
+    CREATE INDEX tcur_title ON title_curriculum(title_norm);
     """)
 
 
@@ -139,13 +179,20 @@ def load_catalog(cx):
         pack = "l5r5e-compendia-sortilege." + os.path.basename(path)[:-5]
         for doc in json.load(open(path)):
             full[(pack, norm(doc["name"]))] = doc
-    rows, missing, curriculum = [], 0, []
+    rows, missing, curriculum, title_cur = [], 0, [], []
     for pack, v in index.items():
         for e in v["entries"]:
             doc = full.get((pack, norm(e["name"])))
             sysd = (doc or {}).get("system", {}) or {}
             sr = sysd.get("source_reference") or {}
             m = SCHOOL_CLAN_RE.match(e["name"])
+            if "titles-" in pack and doc:
+                ability, award, tentries = parse_title(doc)
+                for ce in tentries:
+                    title_cur.append((norm(e["name"]), e["name"], ce["ordinal"],
+                                      ce["kind"], ce["group"], ce["label"],
+                                      norm(ce["label"]), 1 if ce["prereq"] else 0,
+                                      ability, award))
             if "school-curriculum" in pack and doc:
                 cbook, cpage, centries = parse_curriculum(doc)
                 sr = {"source": cbook, "page": cpage}
@@ -170,7 +217,9 @@ def load_catalog(cx):
             ))
     cx.executemany("INSERT INTO catalog VALUES (" + ",".join("?" * 16) + ")", rows)
     cx.executemany("INSERT INTO curriculum VALUES (?,?,?,?,?,?,?,?)", curriculum)
-    return len(rows), missing, len(curriculum)
+    cx.executemany("INSERT INTO title_curriculum VALUES (" + ",".join("?" * 10) + ")",
+                   title_cur)
+    return len(rows), missing, len(curriculum), len(title_cur)
 
 
 def load_characters(cx):
@@ -319,10 +368,26 @@ def emit(cx):
                    ("rings", "skills", "social", "derived", "money", "advancements")},
                 **{k: content.get(k, []) for k in CATEGORY_SUBTYPE},
             })
+        held = {norm(e["name"]) for t in tiers for e in t.get("titles", [])}
+        title_curricula = {}
+        for tn in held:
+            entries = [dict(r) for r in cx.execute(
+                "SELECT title, ordinal, kind, grp, label, prereq, ability, status_award"
+                " FROM title_curriculum WHERE title_norm=? ORDER BY ordinal", (tn,))]
+            if entries:
+                title_curricula[tn] = {
+                    "title": entries[0]["title"],
+                    "ability": entries[0]["ability"],
+                    "status_award": entries[0]["status_award"],
+                    "entries": [{"kind": e["kind"], "group": e["grp"],
+                                 "label": e["label"], "prereq": bool(e["prereq"])}
+                                for e in entries],
+                }
         doc = {**{k: c[k] for k in c.keys() if k != "school_norm"},
                "twenty_questions": src.get("twenty_questions", {}),
                "notes": src.get("notes", ""),
                "curriculum": curricula.get(c["school_norm"], []),
+               "title_curricula": title_curricula,
                "tiers": tiers}
         docs.append(doc)
         size = write(os.path.join(chardir, c["slug"] + ".js"), "L5R_CHARACTER", doc)
@@ -635,7 +700,7 @@ def main():
         os.remove(DB)
     cx = sqlite3.connect(DB)
     schema(cx)
-    ncat, missing, ncur = load_catalog(cx)
+    ncat, missing, ncur, ntcur = load_catalog(cx)
     unresolved = load_characters(cx)
     off_roll = check_schools(cx)
     cx.commit()
@@ -645,7 +710,7 @@ def main():
     cx.commit()
 
     print(f"catalog:    {ncat} entries ({missing} without full text yet)"
-          f", {ncur} curriculum rows")
+          f", {ncur} school + {ntcur} title curriculum rows")
     print(f"characters: {cx.execute('SELECT COUNT(*) FROM character').fetchone()[0]}"
           f", tiers {cx.execute('SELECT COUNT(*) FROM tier').fetchone()[0]}"
           f", content refs {cx.execute('SELECT COUNT(*) FROM tier_content').fetchone()[0]}")

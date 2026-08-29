@@ -12,7 +12,7 @@ Served as a buildless static site (GitHub Pages, works from `file://` too).
 index.html                 landing page: headline coverage + roster
 characters/index.html      searchable roster (clan / role / campaign)
 characters/<slug>.html     generated stub — three tabs, all rendered by assets/sheet.js:
-                           Dossier · Twenty Questions · Play
+                           Dossier (with school + title curricula) · Twenty Questions · Play
 play/<slug>-<xp>xp.html    GENERATED — a playable sheet per character per XP tier
 admin/index.html           the coverage ledger
 assets/
