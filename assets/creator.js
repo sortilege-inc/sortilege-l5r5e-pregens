@@ -155,6 +155,7 @@
   var STORE = loadStore();
   var C = activeChar();
   var step = 0;
+  var jumpToTop = false;
 
   function newId() {
     return "d" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
@@ -213,6 +214,7 @@
     STORE.activeId = id;
     C = STORE.drafts[id].character;
     step = 0;
+    jumpToTop = true;
     persist();
     render();
   }
@@ -1162,11 +1164,45 @@
         var sch = schoolByRollName(C.school);
         if (!sch) return;
         renderChoices(body, sch, "school");
+        var needsInspired = (sch.starting_techniques || []).some(function (g) {
+          return (g.options || []).some(function (o) { return INSPIRED.test(o); });
+        });
+        if (needsInspired) {
+          chooseGroup(body, "school.inspired", "Inspired element",
+                      { n: 1, options: inspiredOptions(sch), yield_value: 0 },
+                      null, false, function () {
+                        // the invocations on offer are the new element's now
+                        Object.keys(C.choices || {}).forEach(function (k) {
+                          if (k.indexOf("school.tech.") === 0) delete C.choices[k];
+                        });
+                      });
+        }
+        var inspired = chosen("school.inspired")[0] || null;
+
         (sch.starting_techniques || []).forEach(function (g, i) {
           if (g.kind !== "choose") return;
+          var opts = g.options, note = null;
+          if (g.options.length === 1 && INSTRUCTION.test(g.options[0])) {
+            var byRing = INSPIRED.test(g.options[0]) ? inspired : null;
+            if (INSPIRED.test(g.options[0]) && !byRing) {
+              note = "Choose an inspired element above and this list fills in.";
+              opts = [];
+            } else {
+              opts = expandInstruction(g.options[0], g.category, byRing);
+            }
+          }
+          if (!opts.length) {
+            label(body, cap(g.category || "Technique") + " — choose " + (g.n || 1));
+            var p = document.createElement("p");
+            p.className = "muted small";
+            p.textContent = note || g.options[0];
+            body.appendChild(p);
+            return;
+          }
           chooseGroup(body, "school.tech." + i,
-                      cap(g.category || "Technique"),
-                      { n: g.n || 1, options: g.options, yield_value: 1 },
+                      cap(g.category || "Technique") +
+                        (opts !== g.options && inspired ? " (" + inspired + ")" : ""),
+                      { n: g.n || 1, options: opts, yield_value: 1 },
                       null, true);
         });
       } },
@@ -1524,6 +1560,46 @@
 
   var TECH_TEXT = window.L5R_TECHNIQUE_TEXT || {};
 
+  /* Some starting techniques are written as an instruction rather than a list:
+     Isawa Tensai's is "Any one rank 1 invocation of your inspired element".
+     That is a real choice with a real set behind it, so expand it from the
+     compendium instead of showing the sentence as if it were a technique.
+
+     The inspired element is its OWN choice, not the +2 ring — the school
+     ability reads "Choose one: Air, Earth, Water, or Fire. This is your
+     inspired element" (Fields of Victory p.79), and the ring line is a separate
+     "+2 any one ring", Void included. */
+  var INSTRUCTION = /\bany one\b|\bchoose\b/i;
+  var INSPIRED = /inspired element/i;
+  var RANK_IN = /\brank (\d)\b/i;
+  var ELEMENTS = ["Air", "Earth", "Fire", "Water", "Void"];
+
+  // The elements a school ability offers, read from its own text.
+  function inspiredOptions(sch) {
+    var txt = sch && sch.school_ability && TECH_TEXT[normName(sch.school_ability)];
+    var plain = String(txt || "").replace(/<[^>]+>/g, " ");
+    var m = /Choose one:\s*([^.]+)\./i.exec(plain);
+    if (m) {
+      var found = ELEMENTS.filter(function (e) {
+        return new RegExp("\\b" + e + "\\b", "i").test(m[1]);
+      });
+      if (found.length) return found;
+    }
+    return ["Air", "Earth", "Fire", "Water"];
+  }
+
+  // The techniques an instruction actually stands for.
+  function expandInstruction(option, kind, ring) {
+    var m = RANK_IN.exec(option);
+    var rank = m ? Number(m[1]) : 1;
+    return CATALOG.filter(function (e) {
+      return e.sub_type === "technique" &&
+        String(e.kind || "").toLowerCase() === String(kind || "").toLowerCase() &&
+        e.rank === rank &&
+        (!ring || String(e.ring || "").toLowerCase() === String(ring).toLowerCase());
+    }).map(function (e) { return e.name; }).sort();
+  }
+
   /* One hover card, moved and refilled rather than one per button — a school
      step can carry twenty options and twenty always-present panels is twenty
      things to keep positioned. Follows the pointer's element, not the pointer. */
@@ -1571,7 +1647,7 @@
     btn.addEventListener("blur", hideTip);
   }
 
-  function chooseGroup(body, key, heading, spec, fmt, tips) {
+  function chooseGroup(body, key, heading, spec, fmt, tips, after) {
     var n = spec.n || 1;
     var yield_ = spec.yield_value != null ? spec.yield_value : 1;
     var picked = chosen(key).filter(function (o) { return spec.options.indexOf(o) >= 0; });
@@ -1600,6 +1676,8 @@
         // taking one past the limit drops the oldest, so the row never jams
         while (next.length > n) next.shift();
         setChosen(key, next);
+        // `after` may drop dependent picks; save again so the removal persists
+        if (after) { after(next); save(); }
         hideTip();
         render();
       });
@@ -1629,7 +1707,11 @@
       return chosen(c[0]).length >= (c[2].n || 1);
     });
     if (!ok || prefix !== "school" || !source) return ok;
-    return (source.starting_techniques || []).every(function (g, i) {
+    var groups = source.starting_techniques || [];
+    if (groups.some(function (g) {
+      return (g.options || []).some(function (o) { return INSPIRED.test(o); });
+    }) && !chosen("school.inspired").length) return false;
+    return groups.every(function (g, i) {
       return g.kind !== "choose" || chosen("school.tech." + i).length >= (g.n || 1);
     });
   }
@@ -1857,7 +1939,7 @@
     }).join("");
     Array.prototype.forEach.call(document.querySelectorAll(".stepnav"), function (b) {
       b.addEventListener("click", function () {
-        step = Number(b.getAttribute("data-i")); render();
+        goToStep(Number(b.getAttribute("data-i")));
       });
     });
     var live = activeSteps().filter(function (s) { return s.id !== "export"; });
@@ -1921,15 +2003,28 @@
     renderNav();
     renderWip();
     renderDrafts();
-    window.scrollTo({ top: 0, behavior: "instant" });
+    // Only a change of step returns to the top. render() also runs after every
+    // pick — choosing a skill used to throw you back to the masthead, which
+    // makes a five-choice step unusable.
+    if (jumpToTop) {
+      window.scrollTo({ top: 0, behavior: "instant" });
+      jumpToTop = false;
+    }
+  }
+
+  // Move to a step and return to the top, as opposed to re-rendering in place.
+  function goToStep(i) {
+    step = i;
+    jumpToTop = true;
+    render();
   }
 
   function init() {
     el("prev").addEventListener("click", function () {
-      if (step > 0) { step--; render(); }
+      if (step > 0) goToStep(step - 1);
     });
     el("next").addEventListener("click", function () {
-      if (step < STEPS.length - 1) { step++; render(); }
+      if (step < STEPS.length - 1) goToStep(step + 1);
     });
     var k = el("ai-key");
     var stored = null;
