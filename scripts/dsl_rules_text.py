@@ -312,6 +312,16 @@ def resolve(name, clan, idx):
     for c in cands:
         if norm(c) in idx:
             return idx[norm(c)], None
+    # The compendium and the corpus disagree about how to write a couple of
+    # Celestial Realms families. The compendium lists an arrow as
+    # "Arrows : Hamaya" and an omamori as "Omamori (Boon of Hotei)"; the corpus
+    # files them as "Hamaya Arrow" and "Boon of Hotei".
+    m = re.match(r"^Arrows\s*:\s*(.+)$", name)
+    if m and norm(m.group(1) + " Arrow") in idx:
+        return idx[norm(m.group(1) + " Arrow")], None
+    m = re.match(r"^Omamori \((.+)\)$", name)
+    if m and norm(m.group(1)) in idx:
+        return idx[norm(m.group(1))], None
     for q in QUALIFIED:
         if norm(q + name) in idx:
             return idx[norm(q + name)], None
