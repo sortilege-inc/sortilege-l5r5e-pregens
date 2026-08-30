@@ -1075,6 +1075,17 @@
       var q = search.value.trim().toLowerCase();
       var current = get();
       shown = all.filter(function (e) { return matches(e, q); });
+      // What is already taken goes first, as it does in every other picker —
+      // this list runs to 88 entries and the answer was otherwise below the
+      // fold, which reads as nothing being chosen.
+      var held = shown.filter(function (e) {
+        return !!current && normName(e.name) === normName(current);
+      });
+      if (held.length) {
+        shown = held.concat(shown.filter(function (e) {
+          return normName(e.name) !== normName(current);
+        }));
+      }
       var takeable = shown.filter(function (e) {
         return pecStatus(e, kinds).state !== "no";
       });
@@ -1135,6 +1146,7 @@
                        "\n\nTake it anyway? Nothing downstream will stop you.")) return;
           set(!!get() && normName(get()) === normName(e.name) ? null : e.name);
           draw();
+          list.scrollTop = 0;
         });
       });
     }
