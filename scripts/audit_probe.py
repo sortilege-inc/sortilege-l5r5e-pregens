@@ -16,14 +16,15 @@ spec = importlib.util.spec_from_file_location("ac", os.path.join(
 
 SRC = os.path.expanduser("~/Working/sources/l5r5e")
 CORPUS = os.path.expanduser("~/Working/Titterpig DSL/titterpig-dsl-l5r5e/0.4")
-def stream(t): return re.sub(r"[^a-z0-9]", "", t.lower())
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from audit_text import stream, strip_furniture
 
 MAP = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                   "audit_sources.json"), encoding="utf-8"))
 key = sys.argv[1]; want = int(sys.argv[2]) if len(sys.argv) > 2 else 6
 cfg = MAP[key]
-raw = "".join(open(f, encoding="utf-8", errors="replace").read()
-              for g in cfg["text"] for f in sorted(glob.glob(os.path.join(SRC, g))))
+raw = strip_furniture("".join(open(f, encoding="utf-8", errors="replace").read()
+              for g in cfg["text"] for f in sorted(glob.glob(os.path.join(SRC, g)))))
 BOOK = stream(raw)
 SYMBOL = re.compile(r"\((?:op|su|ex|st|ring|skill)\)|"
                     r"\b(?:opportunit(?:y|ies)|explosive\s+success(?:es)?|"

@@ -57,7 +57,8 @@ SOURCES = [
    ["Errata FAQ v20 2020-08-12.md", "core-md/*.md"], []),
 ]
 
-def stream(t): return re.sub(r"[^a-z0-9]", "", t.lower())
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from audit_text import stream, strip_furniture
 
 SYMBOL = re.compile(
     r"\((?:op|su|ex|st|ring|skill)\)"
@@ -110,7 +111,8 @@ def load_text(globs):
     out = []
     for g in globs:
         out.extend(sorted(glob.glob(os.path.join(SRC, g))))
-    return "".join(open(f, encoding="utf-8", errors="replace").read() for f in out), len(out)
+    raw = "".join(open(f, encoding="utf-8", errors="replace").read() for f in out)
+    return strip_furniture(raw), len(out)
 
 def corpus_paths(globs):
     out = []

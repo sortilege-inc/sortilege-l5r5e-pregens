@@ -147,10 +147,20 @@
         "</ul></div>";
     }
 
+    // Judgment calls deliberately NOT acted on. These are the ones where
+    // changing the corpus could do more harm than the drift does, or where the
+    // call is the owner's rather than mine.
+    var flagged = "";
+    if (s.notes.flagged && s.notes.flagged.length) {
+      flagged = '<div class="aflag"><h3>Flagged, not changed</h3><ul>' +
+        s.notes.flagged.map(function (f) { return "<li>" + esc(f) + "</li>"; }).join("") +
+        "</ul></div>";
+    }
+
     n.innerHTML = head + facts + files +
       assessment("Completeness", s.notes.completeness) +
       assessment("Correctness", s.notes.correctness) +
-      fixed + drift + ex + absent +
+      fixed + flagged + drift + ex + absent +
       '<p class="anext"><strong>What would settle it: </strong>' + esc(s.notes.next) + "</p>";
     return n;
   }

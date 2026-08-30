@@ -8,14 +8,24 @@
     },
     "correctness": {
       "verdict": "The best in the corpus by a wide margin. Three confirmed defects found and fixed; one open question about content that does not belong here.",
-      "confidence": "Moderate to high, for the 74% that could be judged",
-      "basis": "607 of 686 judgeable rules strings are printed in the book verbatim (88%). Fixed in this pass, each checked against the page first: the adversity filed as 'Blackmailed by [Name]' now reads 'Blackmailed by [Character's Name]' as the book prints it, which matters because a separate advantage 'Blackmail on [Name]' also exists; the Shadowlands Taint (Earth) adversity said a dead character's body 'rises as an undead creature' where the book names it — 'rises as a Zombie Peasant (see page 321)'; and the four Void-point uses of advantages had been compressed to telegraphic notes ('Convert own advantage to disadvantage if creates logical vulnerability') and are now the book's own sentences. Question 14's invented Demeanor effect was found and fixed on 2026-08-30, with ten drifted question titles and an invented Part structure. One defect remains open: 'Inversion' sits in core-techniques although its own comment says inversions are not in the Core Rulebook — where it should go is a call for you, not for me."
+      "confidence": "Moderate to high, and better supported than before",
+      "basis": "607 of 686 judgeable rules strings are printed in the book verbatim (88%). Fixed in this pass, each checked against the page first: the adversity filed as 'Blackmailed by [Name]' now reads 'Blackmailed by [Character's Name]' as the book prints it, which matters because a separate advantage 'Blackmail on [Name]' also exists; the Shadowlands Taint (Earth) adversity said a dead character's body 'rises as an undead creature' where the book names it — 'rises as a Zombie Peasant (see page 321)'; and the four Void-point uses of advantages had been compressed to telegraphic notes ('Convert own advantage to disadvantage if creates logical vulnerability') and are now the book's own sentences. Question 14's invented Demeanor effect was found and fixed on 2026-08-30, with ten drifted question titles and an invented Part structure. One defect remains open: 'Inversion' sits in core-techniques although its own comment says inversions are not in the Core Rulebook — where it should go is a call for you, not for me. Separately, a sample of the strings this method cannot judge was checked against the page images directly. Two complete school entries — Kaiu Engineer and Kitsuki Investigator — verify field for field: rings, the choose-five skill lists, honor, techniques available, starting techniques, starting outfit, all six curriculum ranks, and both abilities word for word, including the symbol notation. A third check on the Unspecified Deadliness list was also verbatim. On that sample the corpus's (op)/(su)/(st)/(ring) tokens are a faithful and consistent transcription of the printed glyphs, which is meaningful evidence that the 238 unjudgeable strings are not hiding a second population of errors. It is still a sample of three passages, not a measurement."
     },
     "next": "The 238 unjudgeable strings need the page images. A page-residue pass would settle the completeness question the compendium cannot. 'Inversion' needs a home.",
     "fixed": [
       "'Blackmailed by [Name]' -> 'Blackmailed by [Character's Name]' (core-adversities 0.4.1)",
       "Shadowlands Taint (Earth): 'an undead creature' -> 'a Zombie Peasant (see page 321)' (core-adversities 0.4.1)",
-      "The four Void-point uses of advantages restored to the book's wording, and the rule for when advantages may be turned — during Step 4, with the GM as final arbiter — added; it was absent entirely (core-character 0.4.3)"
+      "The four Void-point uses of advantages restored to the book's wording, and the rule for when advantages may be turned — during Step 4, with the GM as final arbiter — added; it was absent entirely (core-character 0.4.3)",
+      "The Void Points block in core-base stated the wrong rule for Shattering Parry: 'Reduce severity of a critical strike targeting you by your school rank'. The book says a character spends the point to intercept the attack with their weapon, potentially sacrificing it — reducing severity by school rank is the Crab school ability, not this. The corpus's own gm-screen-reference file described it correctly, so the corpus contradicted itself. All three Void point uses and all four ways of gaining one are now the book's text (core-base 0.4.1).",
+      "The same block invented a limit: it capped Void points gained from an adversity at once per scene. The book applies 'Once per scene' to anxieties only. Removed.",
+      "'Technique Activation' renamed to the book's heading, 'Techniques and Other Abilities'. The rule hash named shattering_parry_reduction described a mechanic that does not exist and was replaced rather than relabelled."
+    ],
+    "flagged": [
+      "'Inversion' sits in core-techniques as a category placeholder, and its own comment says inversions are not in the Core Rulebook — they appear in Celestial Realms and other supplements. Moving it, or deleting it, is a scope call. Logged, not touched.",
+      "'Iaijutsu Duel (to first blood)' is a name the converter coined; the book discusses duelling to first blood but prints no such heading. Harmless, but it is not a book name.",
+      "The corpus keeps page cross-references in 35 places and drops them elsewhere. There is no stated convention. Worth settling, because dropped cross-references are the single largest category of drift across the whole corpus.",
+      "The Repeated Injury sidebar (Core Rulebook p. 270) is absent from the corpus entirely — a character who would take a second scar disadvantage from recurring harm instead suffers Dying (5 rounds). Found by reading the page image; no text-based check could see it. Not added, because which entity should host a sidebar rule is a structural choice for you.",
+      "'Seize the Moment' had lost its timing — the book places the spend in Step 3 and the extra kept die in Step 5. Restored, but it is worth knowing that timing detail is the kind of thing the compression drops most often."
     ]
   },
   "path-of-waves": {
@@ -29,7 +39,10 @@
       "confidence": "Moderate",
       "basis": "Only 67 of 255 judgeable strings are verbatim (26%), and 124 of the 188 drifting strings share no long run with the book at all. Hand-checked examples: the corpus writes 'does not need to be purchased. You may immediately perform that ritual' where the book prints 'this does not need to be a ritual you have purchased. You are immediately able to perform that ritual'. Meaning survives; the wording is the converter's. Two item names carry corpus-added glosses — 'Lute (Biwa)' and 'Chandu (Smoking Opium)' where the book prints 'biwa' and 'Chandu'."
     },
-    "next": "Highest-value target after Core: worst verbatim rate, a real completeness gap, and it feeds the Creator."
+    "next": "Highest-value target after Core: worst verbatim rate, a real completeness gap, and it feeds the Creator.",
+    "flagged": [
+      "'Lute (Biwa)' and 'Chandu (Smoking Opium)' carry glosses the book does not print — it says 'biwa' and 'Chandu'. Deliberately left alone: the compendium calls the first 'Lute', so renaming the corpus to the book's word would break rules-text resolution. The gloss is doing real work as a bridge between the two vocabularies."
+    ]
   },
   "writ-of-the-wilds": {
     "completeness": {
@@ -94,7 +107,10 @@
       "confidence": "Low to moderate",
       "basis": "33 of 160 judgeable strings verbatim (21%). 106 of 127 drifting strings share no run with the book. Hand-checked: the komainu entries carry lines the corpus wrote itself ('Modified Manifest Earth Kami (core rulebook p.323)'), and a rewrite of the book's 'the komainu is, in all respects, a large stone statue'. The book text extracts cleanly, so this is the corpus's wording, not extraction damage — I verified that before concluding it."
     },
-    "next": "Decide whether corpus-authored annotation belongs in rules strings at all; it is the bulk of this book's drift."
+    "next": "Decide whether corpus-authored annotation belongs in rules strings at all; it is the bulk of this book's drift.",
+    "flagged": [
+      "Much of this book's drift is annotation the converter wrote itself ('Modified Manifest Earth Kami (core rulebook p.323)') sitting in rules strings rather than in comments. Whether that belongs in rules text at all is a convention question, not a defect to fix string by string."
+    ]
   },
   "five-winds": {
     "completeness": {
@@ -107,7 +123,10 @@
       "confidence": "Moderate",
       "basis": "77 of 253 judgeable strings verbatim (30%). Sampled drift is short declarative labels the corpus wrote — 'Accumulate momentum to establish a binding agreement between mortal and spirit', 'Drive out a spirit that has possessed a character' — which describe book procedures without quoting them. These are summaries, not errors, but they are also not rules text."
     },
-    "next": "Confirm the procedures themselves are carried somewhere, not only their summaries."
+    "next": "Confirm the procedures themselves are carried somewhere, not only their summaries.",
+    "flagged": [
+      "The drift here is short declarative labels the converter wrote to stand in for the book's procedures. Before treating these as errors, confirm the procedures themselves are carried somewhere — the labels may be legitimate index entries pointing at content that exists."
+    ]
   },
   "fields-of-victory": {
     "completeness": {
@@ -172,7 +191,10 @@
       "confidence": "None",
       "basis": "The file contains zero rules strings — its content is written as comments, which this audit does not read because comments are authoring notes elsewhere in the corpus. All 31 names are corpus-coined panel titles ('Dice Symbols Reference'), so the name check says nothing either. This file needs a different technique entirely."
     },
-    "next": "Decide whether comment-bodied reference panels are acceptable, or should be promoted to properties as the 2026-05-20 audit did for NPC abilities."
+    "next": "Decide whether comment-bodied reference panels are acceptable, or should be promoted to properties as the 2026-05-20 audit did for NPC abilities.",
+    "flagged": [
+      "This file's content is written as comments rather than properties, which is why it has zero rules strings and cannot be audited at all. The 2026-05-20 audit promoted 218 comment-as-data ability DEFs across the NPC files for exactly this reason; this file was not part of that sweep. Promoting it would make it auditable, but it is a structural change to a whole file and needs your sign-off."
+    ]
   },
   "daidoji-shin": {
     "completeness": {
