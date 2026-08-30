@@ -21,3 +21,7 @@ data/ai-key.local.js
 
 # Wrangler local state (account cache, build tmp)
 worker/.wrangler/
+
+# The composed DSL corpus (synthesist output), rebuilt with --refresh-dsl.
+# The corpus itself lives in ~/Working/Titterpig DSL/titterpig-dsl-l5r5e.
+pipeline/dsl/

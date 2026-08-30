@@ -2,6 +2,8 @@
 # The full chain, in the order the steps depend on each other.
 #   --pull   also re-fetch from Foundry (needs the world open and .env present)
 #   --force  re-extract character sources from the raw actors, discarding local edits
+#   --refresh-dsl  recompose the DSL corpus (rebuilds the synthesist) before
+#                  regenerating rules text
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -51,5 +53,12 @@ print(' '.join(json.load(open('src/foundry_sources.json')).get('derive_tiers', [
 done
 
 python3 scripts/build.py
+
+# rules text comes from the DSL corpus, not from Foundry: the compendium is the
+# catalog, the corpus is the rules. --refresh recomposes it via the synthesist.
+REFRESH=""
+[[ " $* " == *" --refresh-dsl "* ]] && REFRESH="--refresh"
+python3 scripts/dsl_rules_text.py $REFRESH
+
 echo
 python3 scripts/coverage.py

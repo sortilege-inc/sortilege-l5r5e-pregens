@@ -807,7 +807,7 @@
     var search = document.createElement("input");
     search.type = "search";
     search.className = "pec-search";
-    search.placeholder = "Filter " + all.length + " by name, ring, type, book, or text";
+    search.placeholder = "Filter " + all.length + " by name, ring, type, book, or rule text";
     var rand = document.createElement("button");
     rand.type = "button";
     rand.className = "btn ghost pec-random";
@@ -877,7 +877,13 @@
             (open[e.uuid] ? "Hide" : "Text") + "</button>" +
           (open[e.uuid]
             ? '<div class="pec-text">' +
-              (t.text || '<p class="muted">The compendium carries no text for this entry.</p>') +
+              (t.via
+                ? '<p class="pec-src">The rule is stated once, as <strong>' +
+                  esc(t.via) + "</strong>.</p>"
+                : "") +
+              (t.text || '<p class="muted">No effect recorded in the corpus.</p>') +
+              '<p class="pec-src">From the DSL corpus' +
+              (t.dsl && t.dsl !== e.name ? " as " + esc(t.dsl) : "") + ".</p>" +
               "</div>"
             : "") +
           "</div>";

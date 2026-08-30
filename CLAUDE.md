@@ -188,12 +188,49 @@ Red is advisory: the picker asks for confirmation and then lets you through, bec
 the GM outranks the tool. If a real prerequisite is ever encoded upstream, extend
 `pecStatus()` — do not hard-code a house rule there.
 
-`data/chargen/peculiarities.js` carries each entry's verbatim compendium text, keyed by
-**uuid**, because five Shadowlands Taint entries share a name. One known gap in the
-source: `Disdain for Courtesy` has an empty description in the compendium while its six
-siblings do not. That is a Foundry data defect, not a pipeline one.
-
 No API key is ever committed. The creator reads one from `localStorage` only.
+
+## Rules text comes from the DSL, not from Foundry
+
+Standing rule (Jordan, 2026-08-30). **The compendium is the catalog; the corpus is the
+rules.** Foundry says what exists, what it costs, which pack it is in, and it is what an
+actor's items resolve against. `~/Working/Titterpig DSL/titterpig-dsl-l5r5e/0.4` is what
+the text comes from.
+
+`scripts/dsl_rules_text.py` composes that corpus with **titterpig-synthesist** (errata
+files load last, so the output is corrected text), caches it in `pipeline/dsl/`
+(gitignored), and writes `data/chargen/peculiarities.js` — keyed by compendium **uuid**,
+because five Shadowlands Taint entries share a name. `./scripts/pipeline.sh` runs it;
+`--refresh-dsl` recomposes. It always rebuilds the synthesist first: a stale binary drops
+content silently and still exits 0.
+
+Why it matters, on one entry:
+
+| | |
+|---|---|
+| DSL | "You have proven yourself to someone, who is willing to help you (within reason)…" |
+| Foundry | a paragraph of flavour fiction, then "The following apply to a character with the Ally [Name] distinction: - You have proven yourself to **a someone**…" |
+
+The DSL states the effects alone, as a list, in consistent `[Ring]` notation. Foundry
+stores one HTML blob, and carries typos the corpus does not. Foundry also has
+`Disdain for Courtesy` with an **empty** description while its six siblings are fine; the
+DSL supplies it.
+
+**GATE:** all 253 compendium peculiarities must resolve to a DSL entity or the script
+exits 1 and names the strays. Three compendium entries are pre-expanded parametrics
+(`Paragon of <Tenet>` ×7, `Disdain for <Tenet>` ×7, `Overconfidence in <X>` ×5) that map
+to a single DSL rule; the UI names the parent it came from. Never fall back to Foundry's
+text to make the gate pass — fix the corpus or extend `PARAMETRIC`.
+
+**Still on Foundry text, and not yet converted:** everything on the *character* pages —
+technique, item, weapon, title, ability and bond descriptions, and the school curriculum
+journals. DSL coverage there is partial (titles 98%, weapons 93%, items 63%, techniques
+57%, curricula 36%), so switching them is a conversion job, not a swap. Do not half-do
+it: a straight swap would blank content.
+
+Walking the corpus: **DEFs nest**, inside blocks and inside other DEFs. Walking only the
+resolved JSON's top-level `entities` list finds 237 peculiarities; walking the whole
+document finds 256. Same shape of bug as the nested-actor-items one above.
 
 ## Never author rules text
 

@@ -812,4 +812,9 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .pec-text p{ margin:0.5rem 0; }
 .pec-text em{ color:var(--ink-soft); }
 .pec-text ul{ margin:0.4rem 0; padding-left:1.1rem; }
+.pec-src{
+  margin:0.3rem 0 0; font-family:var(--caps); text-transform:uppercase;
+  letter-spacing:0.09em; font-size:0.6rem; color:var(--ink-dim);
+}
+.pec-src strong{ color:var(--ink-soft); }
 .pec-text li{ margin:0.3rem 0; }
