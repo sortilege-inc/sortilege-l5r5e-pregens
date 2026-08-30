@@ -293,6 +293,15 @@ def as_html(parts):
     return "<ul>" + "".join("<li>" + html.escape(p) + "</li>" for p in parts) + "</ul>"
 
 
+# Some corpus keys qualify a name with the category it belongs to, where the
+# compendium carries the bare name: Path of Waves files a nemuranai boon as
+# ^"Armor Boon: Agility of Legend" while the compendium calls it "Agility of
+# Legend". Checked before relying on this: all 39 such entries match exactly one
+# corpus key, and no boon name occurs under two categories.
+QUALIFIED = ("General Boon: ", "Projectile Boon: ", "Melee Boon: ",
+             "Armor Boon: ", "Utility Boon: ")
+
+
 def resolve(name, clan, idx):
     """A catalog entry to its corpus node, and the parametric parent if any."""
     cands = variants(name)
@@ -303,6 +312,9 @@ def resolve(name, clan, idx):
     for c in cands:
         if norm(c) in idx:
             return idx[norm(c)], None
+    for q in QUALIFIED:
+        if norm(q + name) in idx:
+            return idx[norm(q + name)], None
     if name not in NOT_PARAMETRIC:
         for prefix, parent in PARAMETRIC.items():
             if name.startswith(prefix) and norm(parent) in idx:

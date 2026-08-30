@@ -40,18 +40,19 @@
   },
   "path-of-waves": {
     "completeness": {
-      "verdict": "Meaningful gap against the compendium — 48 entries carry no corpus rule.",
-      "confidence": "Moderate",
-      "basis": "143 of 191 compendium entries resolve (75%), the second-worst ratio of any book with a corpus file. Worth noting that this book supplies the Creator's alternate twenty-questions path, so gaps here surface in play."
+      "verdict": "Complete against the compendium; the gap was in the resolver, not the corpus.",
+      "confidence": "Moderate to high",
+      "basis": "This page previously reported 48 compendium entries with no corpus rule and called it a real gap. That was wrong: every one of the 48 is in the corpus. Thirty-nine are nemuranai boons that the corpus files under a qualified name — ^\"Armor Boon: Agility of Legend\" where the compendium says \"Agility of Legend\" — so name matching missed them. The resolver now tries the five boon qualifiers, checked first against the risk of collision: all 39 match exactly one corpus key and no boon name occurs under two categories. Eight more are improvised weapons whose rules the corpus states as a stat line rather than prose, which is the same settled situation as the core weapons. The ninth is the Wandering Blade journal entry. 182 of 191 now resolve, and the nine that do not are stat-line-only by design."
     },
     "correctness": {
       "verdict": "Pervasively reworded. Sampled cases preserve meaning but almost none are the book's sentence.",
       "confidence": "Moderate",
-      "basis": "Only 67 of 255 judgeable strings are verbatim (26%), and 124 of the 188 drifting strings share no long run with the book at all. Hand-checked examples: the corpus writes 'does not need to be purchased. You may immediately perform that ritual' where the book prints 'this does not need to be a ritual you have purchased. You are immediately able to perform that ritual'. Meaning survives; the wording is the converter's. Two item names carry corpus-added glosses — 'Lute (Biwa)' and 'Chandu (Smoking Opium)' where the book prints 'biwa' and 'Chandu'."
+      "basis": "Only 67 of 255 judgeable strings are verbatim (26%), and 124 of the 188 drifting strings share no long run with the book at all. Hand-checked examples: the corpus writes 'does not need to be purchased. You may immediately perform that ritual' where the book prints 'this does not need to be a ritual you have purchased. You are immediately able to perform that ritual'. Meaning survives; the wording is the converter's. Two item names carry corpus-added glosses — 'Lute (Biwa)' and 'Chandu (Smoking Opium)' where the book prints 'biwa' and 'Chandu'. Separately, three files wrote the opportunity symbol as the bare word OP rather than the corpus's (op) token — 183 occurrences across path-of-waves-techniques, path-of-waves-systems and gm-kit-mechanics. It was not a wording problem but a rendering one: 53 entries displayed a literal \"OP\" in the Creator and on character pages where every other entry shows the glyph. The token shapes were enumerated first (OP, OP+, OP OP, OP OP+, OP OP OP), none collides with an English word, and the rewrite changed notation only. Verified in the browser afterwards: zero entries still carry a bare OP."
     },
     "next": "Highest-value target after Core: worst verbatim rate, a real completeness gap, and it feeds the Creator.",
     "flagged": [
-      "'Lute (Biwa)' and 'Chandu (Smoking Opium)' carry glosses the book does not print — it says 'biwa' and 'Chandu'. Deliberately left alone: the compendium calls the first 'Lute', so renaming the corpus to the book's word would break rules-text resolution. The gloss is doing real work as a bridge between the two vocabularies."
+      "'Lute (Biwa)' and 'Chandu (Smoking Opium)' carry glosses the book does not print — it says 'biwa' and 'Chandu'. Deliberately left alone: the compendium calls the first 'Lute', so renaming the corpus to the book's word would break rules-text resolution. The gloss is doing real work as a bridge between the two vocabularies.",
+      "Path of Waves has almost no bespoke one-off blocks — its content sits in DEF properties — so the pattern that found six defects in the Core Rulebook does not transfer here. Its 175 drifting strings are the ordinary compression seen across every supplement, and sampling them found no substantive error. Judging them properly needs the Path of Waves page images, which do not exist yet; only the Core Rulebook has been rendered to PNG."
     ]
   },
   "writ-of-the-wilds": {

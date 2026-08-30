@@ -1,143 +1,145 @@
 {
-  "_comment": "Bespoke blocks checked against the page images, so the worklist stops re-listing finished work. A block belongs here only when every row or entry in it was compared field by field against the printed page named. Drift counts for these stay non-zero on purpose: the corpus states this content as structured properties while the book prints a table, so the strings differ from the page even when every value matches.",
-  "SWORDS": {
-    "pages": "230 (Table 5-1)",
-    "checked": "2026-08-30",
-    "result": "10 rows, every field, no differences"
-  },
-  "AXES": {
-    "pages": "230 (Table 5-1)",
-    "checked": "2026-08-30",
-    "result": "2 rows, no differences"
-  },
-  "BLUNT_WEAPONS": {
-    "pages": "230 (Table 5-1)",
-    "checked": "2026-08-30",
-    "result": "5 rows, no differences"
-  },
-  "HAND_WEAPONS": {
-    "pages": "230 (Table 5-1)",
-    "checked": "2026-08-30",
-    "result": "4 rows, no differences"
-  },
-  "POLEARMS": {
-    "pages": "230 (Table 5-1)",
-    "checked": "2026-08-30",
-    "result": "6 rows, no differences"
-  },
-  "BOWS": {
-    "pages": "237 (Table 5-2)",
-    "checked": "2026-08-30",
-    "result": "3 rows, no differences; the Unicorn bow is filed under its prose heading, Shinjo Horsebow, not the table's Horsebow"
-  },
-  "CROSSBOWS": {
-    "pages": "237 (Table 5-2)",
-    "checked": "2026-08-30",
-    "result": "1 row, no differences"
-  },
-  "SPECIALIST_WEAPONS": {
-    "pages": "237 (Table 5-2)",
-    "checked": "2026-08-30",
-    "result": "4 rows, no differences"
-  },
-  "UNARMED": {
-    "pages": "237 (unarmed profiles)",
-    "checked": "2026-08-30",
-    "result": "3 rows, no differences"
-  },
-  "ARMOR_TABLE": {
-    "pages": "239 (Table 5-3)",
-    "checked": "2026-08-30",
-    "result": "9 rows, no differences; qualities within a row run together without commas"
-  },
-  "CONDITION_DEFINITIONS": {
-    "pages": "271-273",
-    "checked": "2026-08-30",
-    "result": "16 conditions and both Wounded sub-forms; two clauses restored (Dying stabilizing, Unconscious defending), everything else correct"
-  },
-  "HERITAGE_TABLE": {
-    "pages": "96 (Table 2-1)",
-    "checked": "2026-08-30",
-    "result": "rewritten: nine of ten entries had fabricated sub-tables"
-  },
-  "TENETS": {
-    "pages": "chapter 7",
-    "checked": "2026-08-30",
-    "result": "rewritten: three tenets misnamed, two misspelled, seven invented clan attributions"
-  },
-  "DIFFICULTY_SCALE": {
-    "pages": "22 (Sample TNs)",
-    "checked": "2026-08-30",
-    "result": "rewritten: the scale was shifted one step across TN 1-6"
-  },
-  "USES": {
-    "pages": "36 (Spending Void Points)",
-    "checked": "2026-08-30",
-    "result": "rewritten: Shattering Parry stated the wrong mechanic"
-  },
-  "RECOVERY": {
-    "pages": "36 (Gaining Void Points)",
-    "checked": "2026-08-30",
-    "result": "rewritten: an invented once-per-scene limit on adversities"
-  },
-  "ADVANCEMENT_COSTS": {
-    "pages": "97 (Table 2-2)",
-    "checked": "2026-08-30",
-    "result": "rewritten: invented non-curriculum surcharges and an XP price for advantages"
-  },
-  "THRESHOLDS": {
-    "pages": "97",
-    "checked": "2026-08-30",
-    "result": "20/24/32/44/60, exact"
-  },
-  "QUALITY_DEFINITIONS": {
-    "pages": "240-241 (Item Qualities)",
-    "checked": "2026-08-30",
-    "result": "all 16 qualities, effects and descriptions, no differences"
-  },
-  "CANCELLING_PAIRS": {
-    "pages": "241 (Canceling Item Qualities)",
-    "checked": "2026-08-30",
-    "result": "all 6 pairs correct; the sidebar's two other rules are present as comments rather than rules text"
-  },
-  "TERRAIN_QUALITIES": {
-    "pages": "267 (Terrain Qualities)",
-    "checked": "2026-08-30",
-    "result": "all 6 qualities complete, including the Tainted and Otherworldly clauses and Obscuring's three sight rules"
-  },
-  "SOCIAL_OBJECTIVES": {
-    "pages": "255-256",
-    "checked": "2026-08-30",
-    "result": "all 4 objectives, completion, achievement and failure conditions, no differences"
-  },
-  "INVOCATION_OPPORTUNITIES": {
-    "pages": "191 (Table 4-1)",
-    "checked": "2026-08-30",
-    "result": "three opportunity costs were half the book's and are corrected; the other 17 rows match"
-  },
-  "GENERAL_OPPORTUNITIES": {
-    "pages": "328 (Table 8-1)",
-    "checked": "2026-08-30",
-    "result": "18 rows across six elements, no differences"
-  },
-  "CONFLICT_OPPORTUNITIES": {
-    "pages": "328 (Table 8-1)",
-    "checked": "2026-08-30",
-    "result": "15 rows across five elements, no differences"
-  },
-  "INITIATIVE_OPPORTUNITIES": {
-    "pages": "329 (Table 8-1 cont.)",
-    "checked": "2026-08-30",
-    "result": "5 rows, no differences"
-  },
-  "SKILL_OPPORTUNITIES": {
-    "pages": "329 (Table 8-1 cont.)",
-    "checked": "2026-08-30",
-    "result": "20 rows across five elements and four skill groups, no differences"
-  },
-  "DOWNTIME_OPPORTUNITIES": {
-    "pages": "329 (Table 8-1 cont.)",
-    "checked": "2026-08-30",
-    "result": "10 rows, no differences"
+  "_comment": "Bespoke blocks checked against the page images, so the worklist stops re-listing finished work. A block belongs here only when every row or entry in it was compared field by field against the printed page named. Drift counts for these stay non-zero on purpose: the corpus states this content as structured properties while the book prints a table, so the strings differ from the page even when every value matches. Keyed by source, since each book has its own blocks.",
+  "core": {
+    "SWORDS": {
+      "pages": "230 (Table 5-1)",
+      "checked": "2026-08-30",
+      "result": "10 rows, every field, no differences"
+    },
+    "AXES": {
+      "pages": "230 (Table 5-1)",
+      "checked": "2026-08-30",
+      "result": "2 rows, no differences"
+    },
+    "BLUNT_WEAPONS": {
+      "pages": "230 (Table 5-1)",
+      "checked": "2026-08-30",
+      "result": "5 rows, no differences"
+    },
+    "HAND_WEAPONS": {
+      "pages": "230 (Table 5-1)",
+      "checked": "2026-08-30",
+      "result": "4 rows, no differences"
+    },
+    "POLEARMS": {
+      "pages": "230 (Table 5-1)",
+      "checked": "2026-08-30",
+      "result": "6 rows, no differences"
+    },
+    "BOWS": {
+      "pages": "237 (Table 5-2)",
+      "checked": "2026-08-30",
+      "result": "3 rows, no differences; the Unicorn bow is filed under its prose heading, Shinjo Horsebow, not the table's Horsebow"
+    },
+    "CROSSBOWS": {
+      "pages": "237 (Table 5-2)",
+      "checked": "2026-08-30",
+      "result": "1 row, no differences"
+    },
+    "SPECIALIST_WEAPONS": {
+      "pages": "237 (Table 5-2)",
+      "checked": "2026-08-30",
+      "result": "4 rows, no differences"
+    },
+    "UNARMED": {
+      "pages": "237 (unarmed profiles)",
+      "checked": "2026-08-30",
+      "result": "3 rows, no differences"
+    },
+    "ARMOR_TABLE": {
+      "pages": "239 (Table 5-3)",
+      "checked": "2026-08-30",
+      "result": "9 rows, no differences; qualities within a row run together without commas"
+    },
+    "CONDITION_DEFINITIONS": {
+      "pages": "271-273",
+      "checked": "2026-08-30",
+      "result": "16 conditions and both Wounded sub-forms; two clauses restored (Dying stabilizing, Unconscious defending), everything else correct"
+    },
+    "HERITAGE_TABLE": {
+      "pages": "96 (Table 2-1)",
+      "checked": "2026-08-30",
+      "result": "rewritten: nine of ten entries had fabricated sub-tables"
+    },
+    "TENETS": {
+      "pages": "chapter 7",
+      "checked": "2026-08-30",
+      "result": "rewritten: three tenets misnamed, two misspelled, seven invented clan attributions"
+    },
+    "DIFFICULTY_SCALE": {
+      "pages": "22 (Sample TNs)",
+      "checked": "2026-08-30",
+      "result": "rewritten: the scale was shifted one step across TN 1-6"
+    },
+    "USES": {
+      "pages": "36 (Spending Void Points)",
+      "checked": "2026-08-30",
+      "result": "rewritten: Shattering Parry stated the wrong mechanic"
+    },
+    "RECOVERY": {
+      "pages": "36 (Gaining Void Points)",
+      "checked": "2026-08-30",
+      "result": "rewritten: an invented once-per-scene limit on adversities"
+    },
+    "ADVANCEMENT_COSTS": {
+      "pages": "97 (Table 2-2)",
+      "checked": "2026-08-30",
+      "result": "rewritten: invented non-curriculum surcharges and an XP price for advantages"
+    },
+    "THRESHOLDS": {
+      "pages": "97",
+      "checked": "2026-08-30",
+      "result": "20/24/32/44/60, exact"
+    },
+    "QUALITY_DEFINITIONS": {
+      "pages": "240-241 (Item Qualities)",
+      "checked": "2026-08-30",
+      "result": "all 16 qualities, effects and descriptions, no differences"
+    },
+    "CANCELLING_PAIRS": {
+      "pages": "241 (Canceling Item Qualities)",
+      "checked": "2026-08-30",
+      "result": "all 6 pairs correct; the sidebar's two other rules are present as comments rather than rules text"
+    },
+    "TERRAIN_QUALITIES": {
+      "pages": "267 (Terrain Qualities)",
+      "checked": "2026-08-30",
+      "result": "all 6 qualities complete, including the Tainted and Otherworldly clauses and Obscuring's three sight rules"
+    },
+    "SOCIAL_OBJECTIVES": {
+      "pages": "255-256",
+      "checked": "2026-08-30",
+      "result": "all 4 objectives, completion, achievement and failure conditions, no differences"
+    },
+    "INVOCATION_OPPORTUNITIES": {
+      "pages": "191 (Table 4-1)",
+      "checked": "2026-08-30",
+      "result": "three opportunity costs were half the book's and are corrected; the other 17 rows match"
+    },
+    "GENERAL_OPPORTUNITIES": {
+      "pages": "328 (Table 8-1)",
+      "checked": "2026-08-30",
+      "result": "18 rows across six elements, no differences"
+    },
+    "CONFLICT_OPPORTUNITIES": {
+      "pages": "328 (Table 8-1)",
+      "checked": "2026-08-30",
+      "result": "15 rows across five elements, no differences"
+    },
+    "INITIATIVE_OPPORTUNITIES": {
+      "pages": "329 (Table 8-1 cont.)",
+      "checked": "2026-08-30",
+      "result": "5 rows, no differences"
+    },
+    "SKILL_OPPORTUNITIES": {
+      "pages": "329 (Table 8-1 cont.)",
+      "checked": "2026-08-30",
+      "result": "20 rows across five elements and four skill groups, no differences"
+    },
+    "DOWNTIME_OPPORTUNITIES": {
+      "pages": "329 (Table 8-1 cont.)",
+      "checked": "2026-08-30",
+      "result": "10 rows, no differences"
+    }
   }
 }

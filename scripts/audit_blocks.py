@@ -11,7 +11,7 @@ This turns that population into a worklist: per block, how many of its strings
 are printed in the book, how many drift, and how many carry symbol notation and
 so cannot be settled without the page image.
 
-    python3 scripts/audit_blocks.py [core|all]
+    python3 scripts/audit_blocks.py [source-key]      # default: core
 """
 import collections, glob, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -19,9 +19,15 @@ from audit_text import stream, strip_furniture
 
 SRC = os.path.expanduser("~/Working/sources/l5r5e")
 CORPUS = os.path.expanduser("~/Working/Titterpig DSL/titterpig-dsl-l5r5e/0.4")
+SOURCES = json.load(open(os.path.join(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))), "scripts", "audit_sources.json"), encoding="utf-8"))
+KEY = next((a for a in sys.argv[1:] if not a.startswith("-")), "core")
+if KEY not in SOURCES:
+    sys.exit("unknown source '%s'; known: %s" % (KEY, ", ".join(sorted(SOURCES))))
+CFG = SOURCES[KEY]
 BOOK = stream(strip_furniture("".join(
     open(f, encoding="utf-8", errors="replace").read()
-    for f in sorted(glob.glob(SRC + "/core-md/*.md")))))
+    for g in CFG["text"] for f in sorted(glob.glob(os.path.join(SRC, g))))))
 
 SYMBOL = re.compile(r"\((?:op|su|ex|st|ring|skill)\)|"
                     r"\b(?:opportunit(?:y|ies)|explosive\s+success(?:es)?|"
@@ -33,7 +39,10 @@ counts = collections.Counter()
 stats = collections.defaultdict(lambda: [0, 0, 0])   # verbatim, drift, symbol
 where = collections.defaultdict(set)
 
-for path in sorted(glob.glob(CORPUS + "/l5r5e-0.4-core-*.ttrpg")):
+corpus_paths = []
+for g in CFG["corpus"]:
+    corpus_paths.extend(sorted(glob.glob(os.path.join(CORPUS, "l5r5e-0.4-" + g + ".ttrpg"))))
+for path in corpus_paths:
     base = os.path.basename(path).replace("l5r5e-0.4-", "").replace(".ttrpg", "")
     s = open(path, encoding="utf-8").read()
     for m in BLOCK.finditer(s):
@@ -60,7 +69,7 @@ for path in sorted(glob.glob(CORPUS + "/l5r5e-0.4-core-*.ttrpg")):
 # matches — and re-listing them would keep sending the sweep over finished work.
 done = {k: v for k, v in json.load(open(
     os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                 "src", "audit_verified.json"), encoding="utf-8")).items()
+                 "src", "audit_verified.json"), encoding="utf-8")).get(KEY, {}).items()
         if not k.startswith("_")}
 
 rare = [k for k in counts if counts[k] <= 2]
@@ -74,7 +83,7 @@ for k in rare:
     rows.append((d + y, k, v, d, y))
 rows.sort(reverse=True)
 
-print("Bespoke blocks in the core files, ranked by unverified content.")
+print("Bespoke blocks in %s, ranked by unverified content." % CFG["title"])
 print("'drift' is wording not printed in the book; 'symbols' cannot be judged")
 print("from text at all and needs the page image.\n")
 print("  %-26s %5s %7s %7s %8s  %s" % ("block", "ok", "drift", "symbols", "unver.", "file"))
