@@ -756,7 +756,27 @@
 
   // Tab (on an empty field) or the Suggest button asks Claude — same
   // affordance as the dashboard.
+  /* Which pick a suggestion for this field will be written against, if any.
+     Questions 9-12 ask the narrative half first and take the mechanical pick
+     after, so suggesting in the order the step reads gives the model nothing to
+     work from — and the answer comes back with no sign of the advantage in it.
+     Saying so on the button is the honest fix: the state is visible, and one
+     more click gets an answer that uses it. */
+  var USES_PICK = {
+    accomplishment: function () { return C.distinctions[0]; },
+    challenge: function () { return C.adversities[0]; },
+    peace: function () { return C.passions[0]; },
+    fear: function () { return C.anxieties[0]; }
+  };
+
   function wireAi(input, fieldKey, onChange) {
+    var pickFor = USES_PICK[fieldKey];
+    var pick = pickFor && pickFor();
+    var uses = pickFor
+      ? (pick
+          ? ' · <strong class="ai-uses">using ' + esc(pick) + "</strong>"
+          : ' · <span class="ai-uses none">nothing chosen below yet</span>')
+      : "";
     var row = document.createElement("div");
     row.className = "ai-row";
     row.innerHTML = '<button type="button" class="ai-btn">Suggest</button>' +
@@ -765,7 +785,7 @@
         ? "Tab in an empty field for an AI suggestion" +
           (aiKey()
             ? (window.L5R_LOCAL_AI_KEY ? " · key from .env" : "")
-            : " · via the shared proxy")
+            : " · via the shared proxy") + uses
         : "Set an API key below to enable AI suggestions") +
       '</span><span class="ai-status" aria-live="polite"></span>';
     input.insertAdjacentElement("afterend", row);
@@ -1251,6 +1271,8 @@
           set(!!get() && normName(get()) === normName(e.name) ? null : e.name);
           draw();
           list.scrollTop = 0;
+          // the AI hint above names the pick, so it has to be redrawn too
+          render();
         });
       });
     }

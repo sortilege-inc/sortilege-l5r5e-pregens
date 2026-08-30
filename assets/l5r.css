@@ -632,6 +632,8 @@ p.cur-meta{ margin:0 0 0.5rem; }
 }
 .ai-btn:hover{ background:var(--crimson-soft); }
 .ai-hint, .ai-status{ font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em; font-size:0.64rem; color:var(--ink-dim); }
+.ai-uses{ color:var(--jade); font-weight:600; }
+.ai-uses.none{ color:var(--crimson); font-weight:400; }
 .ai-settings{ margin-top:1.6rem; padding-top:1rem; border-top:1px dashed var(--gold-soft); }
 .ai-settings summary{ cursor:pointer; font-family:var(--caps); text-transform:uppercase; letter-spacing:0.16em; font-size:0.72rem; color:var(--crimson); }
 .ai-settings kbd{ font-family:var(--mono); font-size:0.85em; background:var(--paper-3); padding:0 0.25em; border-radius:2px; }
