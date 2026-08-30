@@ -564,10 +564,25 @@
      sentence should read as the deed, not as a gloss on the advantage. */
   function grants(kind, picked, want) {
     if (!picked) return "";
+    // Give the model what the advantage actually says. Naming it alone was not
+    // enough: a long concept note pulls hard, and a character whose concept is
+    // loud about one difficulty got answers about that difficulty while holding
+    // an unrelated adversity. The rules text plus an explicit precedence rule
+    // is what makes the pick win.
+    var rules = ruleTextFor(picked);
+    var plain = rules
+      ? String(rules).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
+      : "";
     return " This character has taken the " + kind + " \"" + picked + "\" for this " +
-      "question. The sentence must be " + want + ", so that the " + kind +
-      " reads as its consequence. Do not name the " + kind + " itself, and do not " +
-      "quote its rules text.";
+      "question" +
+      (plain ? ", which reads: " + plain.slice(0, 600) : "") + ". " +
+      "The sentence must be " + want + ", so that the " + kind + " reads as its " +
+      "consequence. Use the concept notes for the texture around it — the people, " +
+      "the place, the work — so that both show up in the same sentence wherever " +
+      "they can. Where they pull apart, the " + kind + " they actually took " +
+      "governs what the sentence is about, and the notes supply only the setting. " +
+      "Do not name the " + kind + " itself and do not quote its rules text — show " +
+      "it happening.";
   }
 
   var SETTING = "Legend of the Five Rings 5th Edition, a samurai drama RPG set in " +
@@ -1088,7 +1103,7 @@
   //   "no"   red    cannot be taken here
   //   "yes"  green  a stated condition, and this character meets it
   //   "open" amber  takeable, but it needs a subject naming
-  function pecStatus(e, kinds) {
+  function pecStatus(e, kinds, current) {
     if (kinds.indexOf(e.kind) < 0)
       return { state: "no",
                why: "Question asks for a " + kinds.join(" or ") + "." };
@@ -1098,6 +1113,11 @@
                why: "Instilled by the Afflicted condition, an oni, or a cursed " +
                     "mask. Never chosen at creation." };
 
+    // The one chosen for this very question is the answer, not a collision —
+    // it was being drawn struck through and red, reading as ineligible.
+    if (current && normName(current) === normName(e.name)) {
+      return { state: "plain", why: "" };
+    }
     var mine = heldPeculiarities().filter(function (h) {
       return normName(h) === normName(e.name);
     });
@@ -1211,13 +1231,13 @@
         }));
       }
       var takeable = shown.filter(function (e) {
-        return pecStatus(e, kinds).state !== "no";
+        return pecStatus(e, kinds, get()).state !== "no";
       });
       count.textContent = shown.length + " shown, " + takeable.length + " takeable";
       rand.disabled = !takeable.length;
 
       list.innerHTML = shown.map(function (e) {
-        var st = pecStatus(e, kinds);
+        var st = pecStatus(e, kinds, current);
         var t = PEC_TEXT[e.uuid] || {};
         var active = !!current && normName(e.name) === normName(current);
         var meta = [e.ring ? cap(e.ring) : null, t.types || null,
@@ -1264,7 +1284,7 @@
             return x.uuid === b.getAttribute("data-u");
           })[0];
           if (!e) return;
-          var st = pecStatus(e, kinds);
+          var st = pecStatus(e, kinds, current);
           if (st.state === "no" &&
               !confirm(e.name + " — " + st.why +
                        "\n\nTake it anyway? Nothing downstream will stop you.")) return;
@@ -1280,7 +1300,7 @@
     search.addEventListener("input", draw);
     rand.addEventListener("click", function () {
       var pool = shown.filter(function (e) {
-        return pecStatus(e, kinds).state !== "no";
+        return pecStatus(e, kinds, get()).state !== "no";
       });
       if (!pool.length) return;
       var e = pool[Math.floor(Math.random() * pool.length)];
