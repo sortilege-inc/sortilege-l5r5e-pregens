@@ -67,24 +67,30 @@
     return list && list.length ? list[Math.floor(Math.random() * list.length)] : null;
   }
 
-  /* A lord needs a name, and typing one is friction at exactly the moment the
-     question wants an answer. Rolls a family and a given name from the l5r5e
-     system's own tables, honouring what the character has already settled:
-     their own family if they have one, their clan's families if not, and the
-     gender toggle on the step. */
-  function rollLordName(gender) {
-    var fam = (NAMES.family || {}), given = (NAMES.given || {});
-    var byClan = fam.by_clan || {};
-    var family = C.family ||
-      pickFrom(byClan[C.clan] || []) ||
-      pickFrom([].concat.apply([], Object.keys(byClan).map(function (k) {
-        return byClan[k];
-      }))) ||
-      pickFrom(fam.vassal || []);
-    var pool = given[gender] || given.any || [];
+  /* Typing a Rokugani name is friction at exactly the moment a question wants
+     an answer, so the character and their lord can both roll one from the
+     l5r5e system's own tables. `family` is the family name to carry, or null
+     for a personal name alone — a rōnin or a gaijin has none.
+
+     NOT `rollName` — that name already belongs to the school-name resolver
+     above, and taking it made every roll return the character's school. */
+  function rollPersonalName(family, gender) {
+    var pool = (NAMES.given || {})[gender] || (NAMES.given || {}).any || [];
     var personal = pickFrom(pool);
     if (!personal) return null;
     return family ? family + " " + personal : personal;
+  }
+
+  // A lord is usually of the character's own family; failing that, of their
+  // clan; failing that, anyone. Resolved per roll, so the button gives variety.
+  function rollLordFamily() {
+    if (C.family) return C.family;
+    var byClan = (NAMES.family || {}).by_clan || {};
+    return pickFrom(byClan[C.clan] || []) ||
+      pickFrom([].concat.apply([], Object.keys(byClan).map(function (k) {
+        return byClan[k];
+      }))) ||
+      pickFrom((NAMES.family || {}).vassal || []);
   }
 
   // The corpus's wording for a question, for the mode in play. The wizard used
@@ -199,7 +205,7 @@
         relationships: "", parent_opinion: { description: "", skill: null },
         heritage: null, heritage_table: null, heritage_sub: null, death: ""
       },
-      starting_item: "", campaign: "", notes: "",
+      starting_item: "", campaign: "", notes: "", gender: "any",
       // clan/family/school choices the player resolved, keyed by what granted them
       choices: {},
       // Loose concept material. Feeds every AI suggestion and is deliberately
@@ -1129,10 +1135,7 @@
       desc: "Give your character a working name. You can change it later. L5R5e characters are samurai of Rokugan; the final name is conventionally &lt;Family&gt; &lt;Personal&gt;.",
       done: function () { return has(C.name); },
       render: function (body) {
-        var i = document.createElement("input");
-        i.type = "text"; i.value = C.name || ""; i.placeholder = "Working name";
-        i.addEventListener("input", function () { C.name = i.value; save(); });
-        body.appendChild(i);
+        ownNameSection(body);
 
         label(body, "Character mode");
         choice(body, MODES.map(function (m) {
@@ -1803,13 +1806,7 @@
     { id: "final-name", n: 19, label: "Name", title: function () { return qText(19) || "Your Character's Name"; },
       desc: "Settle on a final name. In Rokugan this is conventionally &lt;Family&gt; &lt;Personal&gt;, family name first.",
       done: function () { return has(C.name); },
-      render: function (body) {
-        var i = document.createElement("input");
-        i.type = "text"; i.value = C.name || "";
-        i.placeholder = C.family ? C.family + " …" : "Family Personal";
-        i.addEventListener("input", function () { C.name = i.value; save(); });
-        body.appendChild(i);
-      } },
+      render: ownNameSection },
 
     { id: "death", n: 20, label: "Death", title: function () { return qText(20) || "Vision of Death"; },
       desc: "How does your character die? A vision, premonition, or expectation of their end — not a prediction the game must honour, but a meaningful death the player invites.",
@@ -2100,35 +2097,36 @@
     return m ? m[1].toLowerCase() : null;
   }
 
-  // The lord's name: typed, or rolled from the system's tables.
-  function lordSection(body) {
-    label(body, "Your lord's name");
+  /* A name field with a gender toggle and a roll, used for the character and
+     for their lord. `family` is a function so the lord's can vary per roll
+     while the character's stays their own. */
+  function nameSection(body, opts) {
+    label(body, opts.heading);
 
     var row = document.createElement("div");
     row.className = "lord-row";
 
     var input = document.createElement("input");
     input.type = "text";
-    input.placeholder = "Name your lord, or roll one";
-    input.value = C.answers.lord_name || "";
-    input.addEventListener("input", function () {
-      C.answers.lord_name = input.value;
-      save();
-    });
+    input.placeholder = opts.placeholder || "";
+    input.value = opts.get() || "";
+    input.addEventListener("input", function () { opts.set(input.value); save(); });
     row.appendChild(input);
 
     var roll = document.createElement("button");
     roll.type = "button";
     roll.className = "btn ghost lord-roll";
     roll.textContent = "Roll";
-    roll.title = "A family and a personal name, from the l5r5e name tables";
+    roll.title = "A name from the l5r5e name tables";
     roll.addEventListener("click", function () {
-      var n = rollLordName(C.answers.lord_gender || "any");
+      var n = rollPersonalName(opts.family(), opts.gender() || "any");
       if (!n) return;
-      C.answers.lord_name = n;
+      opts.set(n);
       input.value = n;
       save();
       renderWip();
+      renderNav();
+      renderDrafts();
     });
     row.appendChild(roll);
     body.appendChild(row);
@@ -2138,26 +2136,55 @@
     [["any", "Any"], ["male", "Male"], ["female", "Female"]].forEach(function (o) {
       var b = document.createElement("button");
       b.type = "button";
-      b.className = "choice" +
-        ((C.answers.lord_gender || "any") === o[0] ? " active" : "");
+      b.className = "choice" + ((opts.gender() || "any") === o[0] ? " active" : "");
       b.textContent = o[1];
-      b.addEventListener("click", function () {
-        C.answers.lord_gender = o[0];
-        save();
-        render();
-      });
+      b.addEventListener("click", function () { opts.setGender(o[0]); save(); render(); });
       g.appendChild(b);
     });
     body.appendChild(g);
 
-    var note = document.createElement("p");
-    note.className = "muted small";
-    note.textContent = C.family
-      ? "Rolls within the " + C.family + " family, since that is the character's."
-      : (C.clan
-          ? "Rolls a family from the " + C.clan + " clan."
-          : "Choose a clan or family and the roll will stay within it.");
-    body.appendChild(note);
+    if (opts.note) {
+      var note = document.createElement("p");
+      note.className = "muted small";
+      note.textContent = opts.note;
+      body.appendChild(note);
+    }
+  }
+
+  // The character's own name: their family, and a personal name.
+  function ownNameSection(body) {
+    nameSection(body, {
+      heading: "Name",
+      placeholder: C.family ? C.family + " …" : "Family Personal",
+      get: function () { return C.name; },
+      set: function (v) { C.name = v; },
+      gender: function () { return C.gender; },
+      setGender: function (v) { C.gender = v; },
+      family: function () { return C.family || null; },
+      note: C.family
+        ? "Rolls a personal name under " + C.family + "."
+        : (isCore()
+            ? "Choose a family at question 2 and the roll will put it in front of the name."
+            : "These characters carry no family name, so the roll gives a personal name alone.")
+    });
+  }
+
+  // The lord's name at question 5.
+  function lordSection(body) {
+    nameSection(body, {
+      heading: "Your lord's name",
+      placeholder: "Name your lord, or roll one",
+      get: function () { return C.answers.lord_name; },
+      set: function (v) { C.answers.lord_name = v; },
+      gender: function () { return C.answers.lord_gender; },
+      setGender: function (v) { C.answers.lord_gender = v; },
+      family: rollLordFamily,
+      note: C.family
+        ? "Rolls within the " + C.family + " family, since that is the character's."
+        : (C.clan
+            ? "Rolls a family from the " + C.clan + " clan."
+            : "Choose a clan or family and the roll will stay within it.")
+    });
   }
 
   function ringPicker(body, current, onPick) {
