@@ -109,5 +109,35 @@
     "pages": "255-256",
     "checked": "2026-08-30",
     "result": "all 4 objectives, completion, achievement and failure conditions, no differences"
+  },
+  "INVOCATION_OPPORTUNITIES": {
+    "pages": "191 (Table 4-1)",
+    "checked": "2026-08-30",
+    "result": "three opportunity costs were half the book's and are corrected; the other 17 rows match"
+  },
+  "GENERAL_OPPORTUNITIES": {
+    "pages": "328 (Table 8-1)",
+    "checked": "2026-08-30",
+    "result": "18 rows across six elements, no differences"
+  },
+  "CONFLICT_OPPORTUNITIES": {
+    "pages": "328 (Table 8-1)",
+    "checked": "2026-08-30",
+    "result": "15 rows across five elements, no differences"
+  },
+  "INITIATIVE_OPPORTUNITIES": {
+    "pages": "329 (Table 8-1 cont.)",
+    "checked": "2026-08-30",
+    "result": "5 rows, no differences"
+  },
+  "SKILL_OPPORTUNITIES": {
+    "pages": "329 (Table 8-1 cont.)",
+    "checked": "2026-08-30",
+    "result": "20 rows across five elements and four skill groups, no differences"
+  },
+  "DOWNTIME_OPPORTUNITIES": {
+    "pages": "329 (Table 8-1 cont.)",
+    "checked": "2026-08-30",
+    "result": "10 rows, no differences"
   }
 }
