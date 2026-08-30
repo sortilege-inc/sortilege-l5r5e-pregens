@@ -782,6 +782,14 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .archivechip:hover{ border-color:var(--crimson); color:var(--sumi); }
 .archivechip.open{ border-style:solid; border-color:var(--jade); }
 
+.filtercheck{
+  display:flex; align-items:center; gap:0.5rem; cursor:pointer;
+  margin:0.6rem 0 0.2rem; font-family:var(--caps); text-transform:uppercase;
+  letter-spacing:0.1em; font-size:0.66rem; color:var(--ink-soft);
+}
+.filtercheck input{ accent-color:var(--crimson); cursor:pointer; margin:0; }
+.filtercheck .fc-n{ margin-left:auto; color:var(--ink-dim); font-size:0.62rem; }
+
 /* ---- clan / family / school choices ---------------------------------- */
 .choose-group{ align-items:center; }
 .choose-n{

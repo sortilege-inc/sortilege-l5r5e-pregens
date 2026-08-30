@@ -1171,15 +1171,48 @@
       desc: "Your school determines your starting techniques, your curriculum, your starting skills, and your starting honor and outfit.",
       done: function () { return has(C.school) && choicesMade(schoolByRollName(C.school), "school"); },
       render: function (body) {
-        var items = schoolsOf(C.clan).map(function (s) {
+        // Clan is a shortcut, not a rule. Cross-clan training happens, rōnin
+        // and gaijin schools have no clan at all, and the archive already holds
+        // characters trained outside their own clan — so the filter is a
+        // convenience the player can switch off.
+        var current = schoolByRollName(C.school);
+        var mine = schoolsOf(C.clan);
+        var outside = current && mine.indexOf(current) < 0;
+        if (outside) C.school_all = true;      // never hide the school in hand
+        var showAll = !!C.school_all;
+        var pool = showAll ? SCHOOLS : mine;
+
+        if (isCore() && C.clan && mine.length && mine.length < SCHOOLS.length) {
+          var row = document.createElement("label");
+          row.className = "filtercheck";
+          row.innerHTML = '<input type="checkbox"' + (showAll ? "" : " checked") + ">" +
+            "<span>Filter to " + esc(C.clan) + " schools</span>" +
+            '<span class="fc-n">' +
+              (showAll ? SCHOOLS.length + " shown" : mine.length + " of " + SCHOOLS.length) +
+            "</span>";
+          row.querySelector("input").addEventListener("change", function (e) {
+            C.school_all = !e.target.checked;
+            save(); render();
+          });
+          body.appendChild(row);
+          if (outside) {
+            var why = document.createElement("p");
+            why.className = "muted small";
+            why.textContent = current.name + " is not a " + C.clan +
+              " school, so the list is unfiltered to keep it in view.";
+            body.appendChild(why);
+          }
+        }
+
+        var items = pool.map(function (s) {
           return { value: rollName(s.name), label: rollName(s.name),
-                   meta: [(s.roles || []).join(", "), ringLine(s.ring_increase),
+                   meta: [showAll ? (s.clan || "No clan") : null,
+                          (s.roles || []).join(", "), ringLine(s.ring_increase),
                           s.starting_honor ? "Honor " + s.starting_honor : null,
                           s.school_ability].filter(Boolean).join(" · ") };
         });
         // show the draft's own school as selected even if it is spelled the
         // character source's way rather than the picker's
-        var current = schoolByRollName(C.school);
         pickList(body, items, current ? rollName(current.name) : C.school, function (v) {
           if (v !== C.school) {
             // the old school's picks are meaningless against a new one
