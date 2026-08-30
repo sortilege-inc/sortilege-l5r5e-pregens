@@ -13,6 +13,7 @@ Rules text is never authored here. Every non-custom content reference resolves
 to the compendium's own verbatim description; an unresolvable reference is a
 build error, not a silent drop.
 """
+import hashlib
 import collections, difflib, glob, json, os, re, sqlite3, sys, unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -891,6 +892,54 @@ def check_schools(cx):
     return off
 
 
+ASSET_REF = re.compile(r'(?P<attr>src|href)="(?P<path>[^"?]+\.(?:js|css))(?:\?v=[0-9a-f]+)?"')
+
+
+def stamp_assets():
+    """Fingerprint every local .js/.css reference with a hash of its contents.
+
+    The site is served as plain files with no cache headers, so a browser keeps
+    whatever it fetched last. That has already bitten twice — a stale
+    ai-proxy.js reporting no proxy, and a stale creator.js showing a school name
+    that no longer exists anywhere in the build. `?v=<hash>` makes the URL change
+    whenever the file does, so a rebuild is picked up and an unchanged file still
+    comes from cache.
+
+    Returns (pages rewritten, references stamped).
+    """
+    digests, pages, refs = {}, 0, 0
+
+    def digest(path):
+        if path not in digests:
+            try:
+                with open(path, "rb") as f:
+                    digests[path] = hashlib.sha256(f.read()).hexdigest()[:8]
+            except OSError:
+                digests[path] = None
+        return digests[path]
+
+    for html in sorted(glob.glob(os.path.join(ROOT, "*.html")) +
+                       glob.glob(os.path.join(ROOT, "*", "*.html"))):
+        text = open(html, encoding="utf-8").read()
+        base = os.path.dirname(html)
+        n = [0]
+
+        def sub(m):
+            target = os.path.normpath(os.path.join(base, m.group("path")))
+            d = digest(target)
+            if not d:
+                return m.group(0)                      # not a file we ship
+            n[0] += 1
+            return f'{m.group("attr")}="{m.group("path")}?v={d}"'
+
+        out = ASSET_REF.sub(sub, text)
+        refs += n[0]
+        if out != text:
+            open(html, "w", encoding="utf-8").write(out)
+            pages += 1
+    return pages, refs
+
+
 def main():
     os.makedirs(os.path.dirname(DB), exist_ok=True)
     if os.path.exists(DB):
@@ -914,6 +963,9 @@ def main():
     print("site data:  roster.js %.1f KB | catalog.js %.1f KB | coverage.js %.1f KB"
           " | largest character %.1f KB" % tuple(s / 1024 for s in sizes))
     print(f"pages:      {npages} character stubs, {nplay} playable sheets")
+    # last, so every emitted page gets stamped along with the hand-written ones
+    spages, srefs = stamp_assets()
+    print(f"cache:      {srefs} asset refs fingerprinted across {spages} pages")
     proxy_url = ((json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
                   .get("ai_proxy") or {}).get("url") or "")
     print("AI proxy:   " + (proxy_url or "not set — published Creator will ask for a key"))
