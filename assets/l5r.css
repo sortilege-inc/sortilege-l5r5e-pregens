@@ -1043,3 +1043,10 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .aex li{ margin-bottom:0.35rem; color:var(--ink-2); }
 
 .anext{ margin:1.1rem 0 0; padding-top:0.8rem; border-top:1px solid rgba(154,123,63,0.3); color:var(--ink-2); }
+.afixed{ margin:1rem 0; padding:0.75rem 1rem; background:rgba(79,125,92,0.12);
+  border-left:3px solid var(--jade); border-radius:2px; }
+.afixed h3{ font-size:0.95rem; margin:0 0 0.4rem; }
+.afixed ul{ margin:0; padding-left:1.2rem; }
+.afixed li{ margin-bottom:0.25rem; }
+.ascroll{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.ascroll .audittable{ min-width:640px; }

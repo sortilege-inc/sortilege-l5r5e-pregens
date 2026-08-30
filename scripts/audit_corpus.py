@@ -52,9 +52,9 @@ SOURCES = [
   ("daidoji-shin", "Daidoji Shin and Kasami (letter)", ["daidoji-shin-*"],
    ["L5R-Daidoji-Shin-and-Kasami-letter.md"], []),
   ("errata-2019", "Errata and FAQ (2019)", ["errata-faq-2019"],
-   ["Errata FAQ v20 2019-09-25.md"], []),
+   ["Errata FAQ v20 2019-09-25.md", "core-md/*.md"], []),
   ("errata-2020", "Errata and FAQ (2020)", ["errata-faq-2020"],
-   ["Errata FAQ v20 2020-08-12.md"], []),
+   ["Errata FAQ v20 2020-08-12.md", "core-md/*.md"], []),
 ]
 
 def stream(t): return re.sub(r"[^a-z0-9]", "", t.lower())
@@ -81,9 +81,11 @@ PROSE_PROPS = {
 }
 PROP = re.compile(r'\^"([^"]+)"\s+STRING\s+"((?:[^"\\]|\\.){25,})"')
 # names the corpus files things under, which the book has no duty to print
-SCAFFOLD = re.compile(r"^(Question \d+:|Part [IVX]+:)|"
+SCAFFOLD = re.compile(r"^(Question \d+:|Part [IVX]+:|FAQ:|Status \d)|"
+                      r"^[A-Za-z ]+ \d+([-\u2013]\d+)?$|"
                       r"(Bonus|Modifiers?|Progression|Thresholds?|Interaction|Pattern|"
-                      r"Contribution|Rules|Definitions?|Table|Scale|Recovery|Removal|Max)$")
+                      r"Contribution|Rules|Definitions?|Table|Scale|Recovery|Removal|Max|"
+                      r"Reference)$")
 
 def foothold(cs, book):
     """Longest leading run of a corpus string that the book actually prints.

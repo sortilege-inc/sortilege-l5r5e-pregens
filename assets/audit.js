@@ -65,7 +65,11 @@
       tb.appendChild(tr);
     });
     t.appendChild(tb);
-    document.getElementById("summary").appendChild(t);
+    // the table is wider than a phone; it scrolls inside its own box so the
+    // page body never scrolls sideways
+    var scroller = el("div", "ascroll");
+    scroller.appendChild(t);
+    document.getElementById("summary").appendChild(scroller);
   }
 
   function assessment(label, a) {
@@ -134,10 +138,19 @@
         }).join("") + "</ul></details>";
     }
 
+    // what this pass actually changed, so a reader can tell a live number from
+    // one that was already acted on
+    var fixed = "";
+    if (s.notes.fixed && s.notes.fixed.length) {
+      fixed = '<div class="afixed"><h3>Corrected in this pass</h3><ul>' +
+        s.notes.fixed.map(function (f) { return "<li>" + esc(f) + "</li>"; }).join("") +
+        "</ul></div>";
+    }
+
     n.innerHTML = head + facts + files +
       assessment("Completeness", s.notes.completeness) +
       assessment("Correctness", s.notes.correctness) +
-      drift + ex + absent +
+      fixed + drift + ex + absent +
       '<p class="anext"><strong>What would settle it: </strong>' + esc(s.notes.next) + "</p>";
     return n;
   }

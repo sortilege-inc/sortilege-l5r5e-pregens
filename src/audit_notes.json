@@ -1,6 +1,5 @@
 {
   "_comment": "Hand-written assessments for the site's Audit section. The numbers beside them are computed by scripts/audit_corpus.py; these are the judgments about what the numbers mean, including where the evidence does not support a judgment. Confidence is about THIS assessment, not about the corpus.",
-
   "core": {
     "completeness": {
       "verdict": "Probably complete for catalog-shaped content; unmeasured for everything else.",
@@ -8,13 +7,17 @@
       "basis": "421 of 495 compendium entries from this book resolve to a corpus rule. Most of the 74 that do not are gear whose rules the corpus states as a stat line rather than prose, plus 6 personal effects known to be absent and deferred by decision. But the compendium only enumerates catalog items — techniques, advantages, schools, titles, gear. It says nothing about whether the systems chapters, tables and procedures are whole, and nothing has yet checked the book page by page for content no entity claims."
     },
     "correctness": {
-      "verdict": "The best in the corpus by a wide margin, with two confirmed name defects.",
+      "verdict": "The best in the corpus by a wide margin. Three confirmed defects found and fixed; one open question about content that does not belong here.",
       "confidence": "Moderate to high, for the 74% that could be judged",
-      "basis": "602 of 685 judgeable rules strings are printed in the book verbatim (88%). Two name defects confirmed by hand: the adversity is filed as 'Blackmailed by [Name]' where the book prints 'Blackmailed by [Character's Name]' — and a separate advantage 'Blackmail on [Name]' exists, so the distinction matters; and 'Inversion' sits in core-techniques although its own comment says inversions are not in the Core Rulebook. Question 14's invented Demeanor effect was found and fixed on 2026-08-30, along with ten drifted question titles and an invented Part structure. Separately: I reported that all 28 conditions were missing their removal rules. That was wrong — the block is REMOVED_WHEN and my search was for 'Removed When'. Every condition the book gives a removal rule has one."
+      "basis": "607 of 686 judgeable rules strings are printed in the book verbatim (88%). Fixed in this pass, each checked against the page first: the adversity filed as 'Blackmailed by [Name]' now reads 'Blackmailed by [Character's Name]' as the book prints it, which matters because a separate advantage 'Blackmail on [Name]' also exists; the Shadowlands Taint (Earth) adversity said a dead character's body 'rises as an undead creature' where the book names it — 'rises as a Zombie Peasant (see page 321)'; and the four Void-point uses of advantages had been compressed to telegraphic notes ('Convert own advantage to disadvantage if creates logical vulnerability') and are now the book's own sentences. Question 14's invented Demeanor effect was found and fixed on 2026-08-30, with ten drifted question titles and an invented Part structure. One defect remains open: 'Inversion' sits in core-techniques although its own comment says inversions are not in the Core Rulebook — where it should go is a call for you, not for me."
     },
-    "next": "The 238 unjudgeable strings need the page images. A page-residue pass would settle the completeness question the compendium cannot."
+    "next": "The 238 unjudgeable strings need the page images. A page-residue pass would settle the completeness question the compendium cannot. 'Inversion' needs a home.",
+    "fixed": [
+      "'Blackmailed by [Name]' -> 'Blackmailed by [Character's Name]' (core-adversities 0.4.1)",
+      "Shadowlands Taint (Earth): 'an undead creature' -> 'a Zombie Peasant (see page 321)' (core-adversities 0.4.1)",
+      "The four Void-point uses of advantages restored to the book's wording, and the rule for when advantages may be turned — during Step 4, with the GM as final arbiter — added; it was absent entirely (core-character 0.4.3)"
+    ]
   },
-
   "path-of-waves": {
     "completeness": {
       "verdict": "Meaningful gap against the compendium — 48 entries carry no corpus rule.",
@@ -28,7 +31,6 @@
     },
     "next": "Highest-value target after Core: worst verbatim rate, a real completeness gap, and it feeds the Creator."
   },
-
   "writ-of-the-wilds": {
     "completeness": {
       "verdict": "Complete against the compendium.",
@@ -42,7 +44,6 @@
     },
     "next": "Do not draw conclusions here without the page images; nearly two fifths of the content is invisible to this method."
   },
-
   "emerald-empire": {
     "completeness": {
       "verdict": "Complete against the compendium.",
@@ -56,7 +57,6 @@
     },
     "next": "Sample twenty strings against the page before deciding whether this is cosmetic or substantive."
   },
-
   "courts-of-stone": {
     "completeness": {
       "verdict": "Complete against the compendium bar one entry.",
@@ -70,7 +70,6 @@
     },
     "next": "Low apparent risk, but the sample is too small to stand on."
   },
-
   "shadowlands": {
     "completeness": {
       "verdict": "Complete against the compendium.",
@@ -78,13 +77,12 @@
       "basis": "101 of 101 compendium entries resolve."
     },
     "correctness": {
-      "verdict": "Reworded throughout; one confirmed loss of specificity.",
-      "confidence": "Moderate",
-      "basis": "71 of 186 judgeable strings verbatim (38%). Confirmed: the Shadowlands Taint disadvantage says a dead character's body 'rises as an undead creature' where the book prints 'rises as a zombie peasant (see page 321)' — a named adversary with a statblock, generalised away. Other sampled drift is the same restructuring seen elsewhere ('Nourish: receive fatigue' for 'If you nourish, you may receive fatigue')."
+      "verdict": "Reworded throughout; no substantive error confirmed.",
+      "confidence": "Low to moderate",
+      "basis": "71 of 186 judgeable strings verbatim (38%). A correction to an earlier version of this page: the Shadowlands Taint defect reported here belongs to the Core Rulebook — the entity lives in core-adversities — and the passage it was compared against was a different rule in this book altogether, matched by accident. Nothing substantive has been confirmed wrong in these two files. Sampled drift is the restructuring seen everywhere else ('Nourish: receive fatigue' for 'If you nourish, you may receive fatigue'), on a sample of three strings."
     },
-    "next": "Check whether other named-adversary references have been generalised the same way."
+    "next": "Nothing here is confirmed either way. Sample twenty strings against the page before spending effort on this book."
   },
-
   "celestial-realms": {
     "completeness": {
       "verdict": "19 compendium entries carry no corpus rule.",
@@ -98,7 +96,6 @@
     },
     "next": "Decide whether corpus-authored annotation belongs in rules strings at all; it is the bulk of this book's drift."
   },
-
   "five-winds": {
     "completeness": {
       "verdict": "Near-complete against the compendium.",
@@ -112,7 +109,6 @@
     },
     "next": "Confirm the procedures themselves are carried somewhere, not only their summaries."
   },
-
   "fields-of-victory": {
     "completeness": {
       "verdict": "Near-complete against the compendium.",
@@ -122,11 +118,10 @@
     "correctness": {
       "verdict": "Second-best verbatim rate; drift is dominated by dropped page cross-references.",
       "confidence": "Moderate to high",
-      "basis": "174 of 264 judgeable strings verbatim (66%). Sampled drift diverges exactly where the book prints '(see page 114)' and the corpus omits it. The 80 names absent from the book are table row labels the corpus coined — 'Status 100', 'Status 90-99' — not missing content."
+      "basis": "174 of 264 judgeable strings verbatim (66%). Sampled drift diverges exactly where the book prints '(see page 114)' and the corpus omits it. The 47 names absent from the book are the converter's own table row labels — '4+ Bonus Successes', 'Hostile lands without resupply' for the book's 'If the army is in hostile lands without a path of resupply'. Checked: the content is present, the label is coined. Not missing content."
     },
     "next": "Decide the house rule on page cross-references; it would resolve most of this book's drift at a stroke."
   },
-
   "legacies-of-war": {
     "completeness": {
       "verdict": "Cannot be assessed — the compendium enumerates nothing for this book.",
@@ -140,7 +135,6 @@
     },
     "next": "Small enough to verify by hand end to end."
   },
-
   "mantis-clan": {
     "completeness": {
       "verdict": "Half the compendium's entries for this book carry no corpus rule.",
@@ -154,7 +148,6 @@
     },
     "next": "The 10 unresolved compendium entries are the concrete thing to chase here."
   },
-
   "gm-kit": {
     "completeness": {
       "verdict": "Complete against the compendium's three entries.",
@@ -168,7 +161,6 @@
     },
     "next": "Verify by hand if it matters; it is small enough to read."
   },
-
   "gm-screen": {
     "completeness": {
       "verdict": "Not assessable from the compendium.",
@@ -182,7 +174,6 @@
     },
     "next": "Decide whether comment-bodied reference panels are acceptable, or should be promoted to properties as the 2026-05-20 audit did for NPC abilities."
   },
-
   "daidoji-shin": {
     "completeness": {
       "verdict": "Not assessable from the compendium.",
@@ -196,7 +187,6 @@
     },
     "next": "Small enough to verify by hand."
   },
-
   "errata-2019": {
     "completeness": {
       "verdict": "Not assessable from the compendium.",
@@ -204,13 +194,12 @@
       "basis": "No compendium entries carry this source."
     },
     "correctness": {
-      "verdict": "Not assessable by this method — the reference is wrong for this file.",
-      "confidence": "None",
-      "basis": "An errata file names the entities it corrects, which come from the Core Rulebook, not from the errata document. Checking those names against the errata PDF is the wrong comparison, and it is why 9 of 11 names read as absent. Three rules strings is no sample at all."
+      "verdict": "Now measurable, and mostly tracking its targets.",
+      "confidence": "Low",
+      "basis": "This file is now compared against the Core Rulebook as well as the errata document, because an errata file names the Core entities it corrects. That fix took the absent-name count from 9 of 11 to zero. Three rules strings remains too small a sample to judge."
     },
     "next": "Re-run this file against Core plus the errata document together."
   },
-
   "errata-2020": {
     "completeness": {
       "verdict": "Not assessable from the compendium.",
@@ -218,10 +207,10 @@
       "basis": "No compendium entries carry this source."
     },
     "correctness": {
-      "verdict": "Not assessable by this method — same wrong reference as 2019.",
-      "confidence": "None",
-      "basis": "14 of 26 judgeable strings verbatim, but the 24 'absent' names are corpus-coined FAQ identifiers ('FAQ: NPC Void Points (2020)') that no book would print. The file's targets are Core entities. This number should not be read as a defect count."
+      "verdict": "Now measurable, and mostly tracking its targets.",
+      "confidence": "Low to moderate",
+      "basis": "Compared against Core plus the errata document, the absent-name count fell from 24 to 12, and all twelve that remain are names the converter prefixed onto real content — the book prints the playset 'Blood and Consequences' where the corpus files 'Optional Rule Playset: Blood and Consequences'. 14 of 26 judgeable strings verbatim."
     },
-    "next": "Re-run against Core plus the errata document. Errata correctness matters disproportionately: these files load last and overwrite everything before them."
+    "next": "Errata correctness matters more than the numbers suggest: these files load last and overwrite everything before them. Worth reading end to end by hand."
   }
 }
