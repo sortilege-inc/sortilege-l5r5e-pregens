@@ -711,10 +711,19 @@
   // Everything the draft holds at the moment of the call — the current step's
   // selection included, since every widget writes to C before this runs. A
   // suggestion is only as good as what it knows the character already is.
-  function characterContext() {
+  /* `omit` is the text of the field being replaced. "New suggestion" means
+     ignore what is in the box, and the box's own contents are part of this
+     context — without dropping them the model reads its own previous answer
+     back and stays in its orbit. */
+  function characterContext(omit) {
     var b = [];
     var a = C.answers;
-    function add(k, v) { if (v !== null && v !== undefined && v !== "") b.push(k + ": " + v); }
+    var skip = (omit || "").trim();
+    function add(k, v) {
+      if (v === null || v === undefined || v === "") return;
+      if (skip && String(v).trim() === skip) return;
+      b.push(k + ": " + v);
+    }
 
     if (C.concept) b.push("Concept the player is holding:\n" + C.concept + "\n");
     add("Mode", (MODES.filter(function (m) { return m.key === mode(); })[0] || {}).book);
@@ -772,7 +781,7 @@
   // Two routes to a suggestion. A key in this browser calls Anthropic directly;
   // otherwise the request goes to the Worker, which holds the key server-side.
   // The published site has no key of its own and must never be given one.
-  function aiSuggest(fieldKey) {
+  function aiSuggest(fieldKey, sourceText, current) {
     var key = aiKey();
     var proxy = window.L5R_AI_PROXY || "";
     if (!key && !proxy) return Promise.reject(new Error("No API key set."));
@@ -786,19 +795,37 @@
        character were the same image in different words. Two corrections: tell
        it what has already been offered, and send it in from a different angle. */
     var seen = (C.ai_history && C.ai_history[fieldKey]) || [];
-    var user = "Existing draft for context:\n" + characterContext() +
-      "\n\nSuggest a single " + fieldKey.replace(/_/g, " ") + " for this character." +
-      "\n\nApproach it as: " + ANGLES[Math.floor(Math.random() * ANGLES.length)] +
-      ". Write that, rather than gesturing at it." +
-      (seen.length
-        ? "\n\nYou have already offered these for this field and they were not " +
-          "taken:\n" + seen.map(function (t) { return "> " + t; }).join("\n") +
-          "\nGive something different in substance. Whatever activity, object, " +
-          "place or person those used, do not use it again — a character has more " +
-          "than one part to their life, and the concept notes are a starting point " +
-          "rather than the only material. Rewording an answer above does not count " +
-          "as a new one."
-        : "");
+    var user;
+    if (sourceText && sourceText.trim()) {
+      /* Rewriting what the player wrote. Their words are the content and the
+         only content: the angle rotation and the "do not repeat yourself" list
+         are both suppressed, because both exist to find NEW material and would
+         fight the text they were handed. */
+      user = "Existing draft for context:\n" + characterContext() +
+        "\n\nTHE PLAYER HAS WRITTEN THE ANSWER BELOW. This overrides every " +
+        "instruction about what to write about, including any advantage or " +
+        "disadvantage named above. Your job is only how it is written.\n\n" +
+        "Their text:\n" + sourceText.trim() + "\n\n" +
+        "Put that into the register described in your instructions. Keep every " +
+        "specific they gave — names, places, objects, relationships, the actual " +
+        "claim. Do not add a fact they did not write, do not drop one they did, " +
+        "and do not change the subject. If it is already in the register, return " +
+        "it close to unchanged rather than finding something to alter.";
+    } else {
+      user = "Existing draft for context:\n" + characterContext(current) +
+        "\n\nSuggest a single " + fieldKey.replace(/_/g, " ") + " for this character." +
+        "\n\nApproach it as: " + ANGLES[Math.floor(Math.random() * ANGLES.length)] +
+        ". Write that, rather than gesturing at it." +
+        (seen.length
+          ? "\n\nYou have already offered these for this field and they were not " +
+            "taken:\n" + seen.map(function (t) { return "> " + t; }).join("\n") +
+            "\nGive something different in substance. Whatever activity, object, " +
+            "place or person those used, do not use it again — a character has more " +
+            "than one part to their life, and the concept notes are a starting point " +
+            "rather than the only material. Rewording an answer above does not count " +
+            "as a new one."
+          : "");
+    }
 
     var req = key
       ? fetch("https://api.anthropic.com/v1/messages", {
@@ -854,44 +881,71 @@
 
   function wireAi(input, fieldKey, onChange) {
     var pickFor = USES_PICK[fieldKey];
-    var pick = pickFor && pickFor();
-    var uses = pickFor
-      ? (pick
-          ? ' · <strong class="ai-uses">using ' + esc(pick) + "</strong>"
-          : ' · <span class="ai-uses none">nothing chosen below yet</span>')
-      : "";
     var row = document.createElement("div");
     row.className = "ai-row";
-    row.innerHTML = '<button type="button" class="ai-btn">Suggest</button>' +
-      '<span class="ai-hint">' +
-      (aiAvailable()
-        ? "Tab in an empty field for an AI suggestion" +
-          (aiKey()
-            ? (window.L5R_LOCAL_AI_KEY ? " · key from .env" : "")
-            : " · via the shared proxy") + uses
-        : "Set an API key below to enable AI suggestions") +
-      '</span><span class="ai-status" aria-live="polite"></span>';
     input.insertAdjacentElement("afterend", row);
-    var status = row.querySelector(".ai-status");
 
-    function go() {
+    function hintText() {
+      if (!aiAvailable()) return "Set an API key below to enable AI suggestions";
+      var pick = pickFor && pickFor();
+      return "Tab in an empty field for an AI suggestion" +
+        (aiKey()
+          ? (window.L5R_LOCAL_AI_KEY ? " · key from .env" : "")
+          : " · via the shared proxy") +
+        (pickFor
+          ? (pick
+              ? ' · <strong class="ai-uses">using ' + esc(pick) + "</strong>"
+              : ' · <span class="ai-uses none">nothing chosen below yet</span>')
+          : "");
+    }
+
+    /* With text in the field there are two different things to want, and one
+       button cannot mean both: keep what I wrote and fix how it reads, or throw
+       it away and try again. Empty, only the second is possible. */
+    function paint() {
+      var has = !!(input.value && input.value.trim());
+      row.innerHTML = (has
+        ? '<button type="button" class="ai-btn" data-mode="from">Suggest from text</button>' +
+          '<button type="button" class="ai-btn ghosted" data-mode="new">New suggestion</button>'
+        : '<button type="button" class="ai-btn" data-mode="new">Suggest</button>') +
+        '<span class="ai-hint">' + hintText() + "</span>" +
+        '<span class="ai-status" aria-live="polite"></span>';
+      Array.prototype.forEach.call(row.querySelectorAll(".ai-btn"), function (b) {
+        b.addEventListener("click", function () { go(b.getAttribute("data-mode")); });
+      });
+    }
+
+    function go(mode) {
       if (!aiAvailable()) { el("ai-key").focus(); return; }
+      var source = mode === "from" ? input.value : "";
+      var status = row.querySelector(".ai-status");
+      Array.prototype.forEach.call(row.querySelectorAll(".ai-btn"), function (b) {
+        b.disabled = true;
+      });
       status.textContent = "…";
-      aiSuggest(fieldKey).then(function (text) {
+      aiSuggest(fieldKey, source, input.value).then(function (text) {
         input.value = text;
         onChange(text);
-        rememberSuggestion(fieldKey, text);
-        status.textContent = "";
+        // Only a fresh suggestion joins the "already offered" list; a rewrite of
+        // the player's own words is not an alternative that was turned down.
+        if (!source) rememberSuggestion(fieldKey, text);
+        paint();
       }).catch(function (e) {
-        status.textContent = "";
+        paint();
         alert(e.message);
       });
     }
-    row.querySelector(".ai-btn").addEventListener("click", go);
+
+    paint();
+    input.addEventListener("input", function () {
+      var has = !!(input.value && input.value.trim());
+      var showing = row.querySelectorAll(".ai-btn").length > 1;
+      if (has !== showing) paint();          // only when the pair must change
+    });
     input.addEventListener("keydown", function (e) {
       if (e.key === "Tab" && !e.shiftKey && (!input.value || e.altKey)) {
         e.preventDefault();
-        go();
+        go("new");
       }
     });
   }
