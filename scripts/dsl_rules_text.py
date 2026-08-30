@@ -27,6 +27,7 @@ Writes three things:
   * data/chargen/peculiarities.js   the Creator's picker text
   * data/chargen/techniques.js      hover text for the Creator's technique choices
   * data/chargen/clan_tenets.js     each Great Clan's paramount and lesser tenets
+  * data/chargen/questions.js       the twenty questions, as the corpus words them
   * pipeline/dsl/rules_text.json, keyed by catalog uuid, which scripts/build.py
     reads at its single description choke point so every dossier and play sheet
     follows.
@@ -47,6 +48,7 @@ SOURCES = os.path.join(ROOT, "src", "foundry_sources.json")
 PEC_OUT = os.path.join(ROOT, "data", "chargen", "peculiarities.js")
 TECH_OUT = os.path.join(ROOT, "data", "chargen", "techniques.js")
 TENET_OUT = os.path.join(ROOT, "data", "chargen", "clan_tenets.js")
+QUESTION_OUT = os.path.join(ROOT, "data", "chargen", "questions.js")
 # Not a table in l5r.sqlite: scripts/build.py deletes that database and rebuilds
 # it from scratch on every run, so anything written there is gone by the time the
 # build wants to read it.
@@ -352,6 +354,12 @@ def main():
         json.dump(pec, f, ensure_ascii=False, separators=(",", ":"))
         f.write(";\n")
 
+    questions = chargen_questions()
+    with open(QUESTION_OUT, "w") as f:
+        f.write("window.L5R_QUESTIONS = ")
+        json.dump(questions, f, ensure_ascii=False, separators=(",", ":"))
+        f.write(";\n")
+
     tenets = clan_tenets(corpus)
     with open(TENET_OUT, "w") as f:
         f.write("window.L5R_CLAN_TENETS = ")
@@ -370,6 +378,8 @@ def main():
           f"  ({stats['gap']} without)")
     print(f"            {len(pec)}/253 peculiarities -> "
           f"{os.path.relpath(PEC_OUT, ROOT)} ({os.path.getsize(PEC_OUT)/1024:.1f} KB)")
+    print(f"            {len(questions)} chargen questions -> "
+          f"{os.path.relpath(QUESTION_OUT, ROOT)}")
     print(f"            {len(tenets)} clans' bushidō tenets -> "
           f"{os.path.relpath(TENET_OUT, ROOT)}")
     print(f"            {len(tech)} techniques -> "
@@ -434,6 +444,42 @@ def clan_tenets(corpus):
             names = [n for n in names if n]
             if names:
                 out.setdefault(clan, {})[field] = names
+    return out
+
+
+# All three books now state a question the same way — ^"Question" INTEGER n
+# beside ^"Question Text" STRING "…" — so this reads the property rather than
+# parsing a DEF name. Path of Waves and Writ of the Wilds name their DEFs after
+# the mechanic ("Question 9: Distinction"); the name was never the question.
+QUESTION_FILES = {
+    "l5r5e-0.4-core-chargen.ttrpg": "core",
+    "l5r5e-0.4-path-of-waves-character.ttrpg": "pow",
+    "l5r5e-0.4-writ-of-wilds-mechanics.ttrpg": "wow",
+}
+QUESTION_PROPS = re.compile(
+    r'\^"Question"\s+INTEGER\s+(\d{1,2})\s+FIXED\s*\n\s*'
+    r'\^"Question Text"\s+STRING\s+"([^"]+)"')
+
+
+def chargen_questions():
+    """The twenty questions, worded as the corpus states them.
+
+    Read from the corpus source files rather than the resolved JSON, because
+    each of three books states its own version of the same numbered question and
+    only the file it came from says which mode it belongs to. Foundry's lang
+    file has its own wording; the corpus is the source of truth for mechanics,
+    and the questions are mechanics.
+    """
+    manifest = json.load(open(MANIFEST))
+    base = os.path.normpath(os.path.join(os.path.dirname(MANIFEST),
+                                         manifest["base_dir"]))
+    out = {}
+    for fname, mode in QUESTION_FILES.items():
+        path = os.path.join(base, fname)
+        if not os.path.exists(path):
+            continue
+        for n, text in QUESTION_PROPS.findall(open(path, encoding="utf-8").read()):
+            out.setdefault(n, {})[mode] = text.strip()
     return out
 
 

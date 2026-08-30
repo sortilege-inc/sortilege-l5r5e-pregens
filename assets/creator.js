@@ -60,6 +60,35 @@
   var UPBRINGINGS = window.L5R_UPBRINGINGS || [];
   var ARCHIVE = window.L5R_ARCHIVE_DRAFTS || [];
   var CLAN_TENETS = window.L5R_CLAN_TENETS || {};
+  var QUESTIONS = window.L5R_QUESTIONS || {};
+
+  // The corpus's wording for a question, for the mode in play. The wizard used
+  // to invent its own titles — "A Distinction" where the corpus asks "What Is
+  // Your Character's Greatest Accomplishment?" — which quietly turned a
+  // narrative question into a shopping trip. Path of Waves and Writ of the
+  // Wilds reword most of the twenty; where a mode says nothing, core stands.
+  /* Path of Waves and Writ of the Wilds reword most of the twenty, but at six
+     of them they ask something else entirely, and the wizard's step still does
+     the core thing:
+
+       4   core: how you stand out (a ring)   alt: what gets you into trouble
+       5   core: your lord and your duty      alt: your past and its effect
+       7   core: your tie to your clan        alt: what you are known for
+       14  core: what people notice first     alt: your most prized possession
+       17  core: what your parent thinks      alt: your group's shared history
+       18  core: your first notable ancestor  alt: who raised you
+
+     Titling those steps with the other book's question would ask one thing and
+     record another, so they keep the core wording until the step itself is
+     rebuilt for those modes. */
+  var MODE_DIVERGES = [4, 5, 7, 14, 17, 18];
+
+  function qText(n) {
+    var q = QUESTIONS[String(n)];
+    if (!q) return null;
+    if (MODE_DIVERGES.indexOf(n) >= 0) return q.core || null;
+    return q[mode()] || q.core || null;
+  }
 
   // Core builds a samurai from clan and family. Path of Waves and Writ of the
   // Wilds replace those two questions with region and upbringing, and drop the
@@ -134,6 +163,7 @@
       bushido: { paramount: null, lesser: null, attitude: null, skill: null },
       answers: {
         giri: "", ninjo: "", standout_quality: "",
+        accomplishment: "", challenge: "", peace: "", fear: "",
         clan_relationship: { path: null, skill: null, text: "" },
         mentor: { name: "", path: null, granted: null, skill: "", text: "" },
         first_impression: "", accoutrement: "", stress_reaction: "",
@@ -274,6 +304,12 @@
       ans("step8", "tenet_paramount") || null;
     c.bushido.lesser = tenets.less_significant ||
       ans("step8", "tenet_less_significant") || null;
+    // questions 9-12 are narrative in the book; the actor records the answers
+    // under these keys and the wizard used to drop all four on the floor
+    c.answers.accomplishment = ans("step9", "success");
+    c.answers.challenge = ans("step10", "difficulty");
+    c.answers.peace = ans("step11", "calms");
+    c.answers.fear = ans("step12", "worries");
     c.answers.first_impression = ans("step14", "first_sight");
     c.answers.stress_reaction = ans("step15", "stress");
     c.answers.relationships = ans("step16", "relations");
@@ -431,6 +467,10 @@
     first_impression: "L5R 5e character creation. Write a single sentence describing how this character first appears to a stranger: build, bearing, voice, dress, and a distinctive accoutrement they always carry.\n\n" + STYLE,
     stress_reaction: "L5R 5e character creation. Write a single sentence describing what this character does when pushed past their composure. Visible, physical, particular to them.\n\n" + STYLE,
     parent_opinion: "L5R 5e character creation. Write a single sentence reporting a parent or guardian's opinion of this character — what they are proud of, frustrated by, or worried about. Report it in the third person; do not write it as the parent speaking.\n\n" + STYLE,
+    accomplishment: "L5R 5e character creation. Write a single sentence naming this character's greatest accomplishment so far — a deed, not a trait, with a place or a person in it.\n\n" + STYLE,
+    challenge: "L5R 5e character creation. Write a single sentence describing what holds this character back the most in life. A standing difficulty they carry, not a mood.\n\n" + STYLE,
+    peace: "L5R 5e character creation. Write a single sentence describing the activity that most makes this character feel at peace — something they do for themselves, unrelated to duty.\n\n" + STYLE,
+    fear: "L5R 5e character creation. Write a single sentence describing the concern, fear, or foible that troubles this character most.\n\n" + STYLE,
     mentor_relationship: "L5R 5e character creation. Write a single sentence describing the relationship between this character and a mentor — what they were taught, and at what cost.\n\n" + STYLE,
     relationships: "L5R 5e character creation. Write a single sentence naming one or two people who matter to this character — a rival, an ally, a family member — and what stands between them.\n\n" + STYLE,
     death: "L5R 5e character creation. Write a single sentence describing the death this character would not regret — the ending they invite, not the one the GM must give them. Solemn and declarative, in the third person.\n\n" + STYLE,
@@ -496,6 +536,10 @@
     add("Clan relationship", a.clan_relationship.text);
     add("Paramount tenet", C.bushido.paramount);
     add("Lesser tenet", C.bushido.lesser);
+    add("Greatest accomplishment", a.accomplishment);
+    add("Greatest challenge", a.challenge);
+    add("At peace when", a.peace);
+    add("Troubled by", a.fear);
     add("Distinctions", C.distinctions.join(", "));
     add("Adversities", C.adversities.join(", "));
     add("Passions", C.passions.join(", "));
@@ -1088,7 +1132,7 @@
 
     { id: "clan", n: 1,
       label: function () { return isCore() ? "Clan" : "Region"; },
-      title: function () { return isCore() ? "Choose Your Clan" : "Choose Your Region"; },
+      title: function () { return qText(1) || (isCore() ? "Choose Your Clan" : "Choose Your Region"); },
       desc: function () {
         return isCore()
           ? "Every samurai belongs to a clan. The clan you choose shapes your culture, politics, and starting skills."
@@ -1129,7 +1173,7 @@
 
     { id: "family", n: 2,
       label: function () { return isCore() ? "Family" : "Upbringing"; },
-      title: function () { return isCore() ? "Choose Your Family" : "Choose Your Upbringing"; },
+      title: function () { return qText(2) || (isCore() ? "Choose Your Family" : "Choose Your Upbringing"); },
       desc: function () {
         return isCore()
           ? "Within your clan, choose a family. Each emphasises a different ring or set of skills, and sets your starting wealth and glory."
@@ -1172,7 +1216,7 @@
         renderChoices(body, find(FAMILIES, C.family), "family");
       } },
 
-    { id: "school", n: 3, label: "School", title: "Choose Your School",
+    { id: "school", n: 3, label: "School", title: function () { return qText(3) || "Choose Your School"; },
       desc: "Your school determines your starting techniques, your curriculum, your starting skills, and your starting honor and outfit.",
       done: function () { return has(C.school) && choicesMade(schoolByRollName(C.school), "school"); },
       render: function (body) {
@@ -1250,7 +1294,7 @@
         });
       } },
 
-    { id: "standout", n: 4, label: "Standout", title: "A Standout Quality",
+    { id: "standout", n: 4, label: "Standout", title: function () { return qText(4) || "A Standout Quality"; },
       desc: "Pick one ring to raise by +1, reflecting a moment from your character's past that defines what sets them apart from their peers.",
       done: function () { return has(C.standout_ring) && has(C.answers.standout_quality); },
       render: function (body) {
@@ -1259,17 +1303,17 @@
           "What sets them apart?")(body);
       } },
 
-    { id: "giri", n: 5, label: "Giri", title: "Giri (Duty)",
+    { id: "giri", n: 5, label: "Giri", title: function () { return qText(5) || "Giri (Duty)"; },
       desc: "Every samurai owes a duty. What is your giri, and to whom? Name the lord or institution you serve, and the obligation it places on your shoulders.",
       done: function () { return has(C.answers.giri); },
       render: textStep("giri", "answers.giri", "giri", "Whom do you serve, and how?") },
 
-    { id: "ninjo", n: 6, label: "Ninjō", title: "Ninjō (Desire)",
+    { id: "ninjo", n: 6, label: "Ninjō", title: function () { return qText(6) || "Ninjō (Desire)"; },
       desc: "Your ninjō is the thing your character wants for themselves, which lives in tension with their giri. A good ninjō can't be satisfied without compromising the duty.",
       done: function () { return has(C.answers.ninjo); },
       render: textStep("ninjo", "answers.ninjo", "ninjo", "What do they long for?") },
 
-    { id: "clan-tie", n: 7, label: "Clan Tie", title: "Relationship with Your Clan",
+    { id: "clan-tie", n: 7, label: "Clan Tie", title: function () { return qText(7) || "Relationship with Your Clan"; },
       desc: "How does your character relate to their clan? <strong>A) Embrace it</strong> — you exemplify the clan's ideals, +5 Glory. <strong>B) Diverge</strong> — you walk a different path, +1 rank in a skill of your choice.",
       done: function () { return has(C.answers.clan_relationship.path); },
       render: function (body) {
@@ -1290,7 +1334,7 @@
           "How do they carry, or resist, the clan's ideals?")(body);
       } },
 
-    { id: "bushido", n: 8, label: "Bushidō", title: "Tenets of Bushidō",
+    { id: "bushido", n: 8, label: "Bushidō", title: function () { return qText(8) || "Tenets of Bushidō"; },
       desc: "Select one tenet as paramount (the one you live by) and one as lesser (the one you struggle with). Then your attitude: <strong>A) Devoted</strong> — +10 Honor, or <strong>B) Nuanced</strong> — +1 rank in a skill.",
       done: function () {
         return has(C.bushido.paramount) && has(C.bushido.lesser) && has(C.bushido.attitude);
@@ -1337,27 +1381,55 @@
         }
       } },
 
-    { id: "distinction", n: 9, label: "Distinction", title: "A Distinction",
-      desc: "Select a distinction — a talent, a heritage, a hard-won skill. Something that sets your character apart.",
-      done: function () { return C.distinctions.length > 0; },
-      render: peculiarityStep("distinction", "distinctions") },
+    { id: "distinction", n: 9, label: "Distinction",
+      title: function () { return qText(9) || "A Distinction"; },
+      desc: function () {
+        return "Answer in your character's own history, then take the distinction that records it.";
+      },
+      done: function () { return has(C.answers.accomplishment) && C.distinctions.length > 0; },
+      render: function (body) {
+        textStep("distinction", "answers.accomplishment", "accomplishment", "What did they do?")(body);
+        label(body, "The distinction it earns them:");
+        peculiarityStep("distinction", "distinctions")(body);
+      } },
 
-    { id: "adversity", n: 10, label: "Adversity", title: "An Adversity",
-      desc: "Select an adversity — a hardship, weakness, or burden your character has overcome, or still bears.",
-      done: function () { return C.adversities.length > 0; },
-      render: peculiarityStep("adversity", "adversities") },
+    { id: "adversity", n: 10, label: "Adversity",
+      title: function () { return qText(10) || "An Adversity"; },
+      desc: function () {
+        return "Answer first, then take the adversity that carries it.";
+      },
+      done: function () { return has(C.answers.challenge) && C.adversities.length > 0; },
+      render: function (body) {
+        textStep("adversity", "answers.challenge", "challenge", "What holds them back?")(body);
+        label(body, "The adversity it reflects:");
+        peculiarityStep("adversity", "adversities")(body);
+      } },
 
-    { id: "passion", n: 11, label: "Passion", title: "A Passion",
-      desc: "Select a passion — something or someone your character cares about deeply.",
-      done: function () { return C.passions.length > 0; },
-      render: peculiarityStep("passion", "passions") },
+    { id: "passion", n: 11, label: "Passion",
+      title: function () { return qText(11) || "A Passion"; },
+      desc: function () {
+        return "Answer first, then take the passion that names it.";
+      },
+      done: function () { return has(C.answers.peace) && C.passions.length > 0; },
+      render: function (body) {
+        textStep("passion", "answers.peace", "peace", "What do they do for themselves?")(body);
+        label(body, "The passion it becomes:");
+        peculiarityStep("passion", "passions")(body);
+      } },
 
-    { id: "anxiety", n: 12, label: "Anxiety", title: "An Anxiety",
-      desc: "Select an anxiety — a fear or worry that haunts your character.",
-      done: function () { return C.anxieties.length > 0; },
-      render: peculiarityStep("anxiety", "anxieties") },
+    { id: "anxiety", n: 12, label: "Anxiety",
+      title: function () { return qText(12) || "An Anxiety"; },
+      desc: function () {
+        return "Answer first, then take the anxiety that names it.";
+      },
+      done: function () { return has(C.answers.fear) && C.anxieties.length > 0; },
+      render: function (body) {
+        textStep("anxiety", "answers.fear", "fear", "What troubles them?")(body);
+        label(body, "The anxiety it names:");
+        peculiarityStep("anxiety", "anxieties")(body);
+      } },
 
-    { id: "mentor", n: 13, label: "Mentor", title: "A Mentor",
+    { id: "mentor", n: 13, label: "Mentor", title: function () { return qText(13) || "A Mentor"; },
       desc: "Name a mentor and describe the relationship. Then choose: <strong>A)</strong> an additional advantage (distinction or passion), or <strong>B)</strong> an additional disadvantage plus +1 rank in a skill.",
       done: function () {
         var m = C.answers.mentor;
@@ -1402,19 +1474,19 @@
           "What were they taught, and at what cost?")(body);
       } },
 
-    { id: "appearance", n: 14, label: "Appearance", title: "First Impression",
+    { id: "appearance", n: 14, label: "Appearance", title: function () { return qText(14) || "First Impression"; },
       desc: "Describe your character's appearance and a distinctive accoutrement they always carry.",
       done: function () { return has(C.answers.first_impression); },
       render: textStep("appearance", "answers.first_impression", "first_impression",
         "How do they strike a stranger?") },
 
-    { id: "stress", n: 15, label: "Stress", title: "Stress Reaction",
+    { id: "stress", n: 15, label: "Stress", title: function () { return qText(15) || "Stress Reaction"; },
       desc: "How does your character react under duress? Pushed past their composure, do they rage, withdraw, scheme, freeze?",
       done: function () { return has(C.answers.stress_reaction); },
       render: textStep("stress", "answers.stress_reaction", "stress_reaction",
         "What happens when they break?") },
 
-    { id: "ties", n: 16, label: "Ties & Item", title: "Relationships & Starting Item",
+    { id: "ties", n: 16, label: "Ties & Item", title: function () { return qText(16) || "Relationships & Starting Item"; },
       desc: "Name a few people important to your character. Then pick a starting item of rarity 7 or lower.",
       done: function () { return has(C.starting_item); },
       render: function (body) {
@@ -1430,7 +1502,7 @@
         pickList(body, items, C.starting_item, function (v) { C.starting_item = v; save(); });
       } },
 
-    { id: "parent", n: 17, label: "Parent", title: "A Parent's Opinion",
+    { id: "parent", n: 17, label: "Parent", title: function () { return qText(17) || "A Parent's Opinion"; },
       desc: "Describe a parent or guardian and their opinion of your character. Then gain +1 rank in a skill you currently have at rank 0.",
       done: function () {
         return has(C.answers.parent_opinion.description) && has(C.answers.parent_opinion.skill);
@@ -1448,7 +1520,7 @@
         });
       } },
 
-    { id: "heritage", n: 18, label: "Heritage", title: "Family Heritage",
+    { id: "heritage", n: 18, label: "Heritage", title: function () { return qText(18) || "Family Heritage"; },
       desc: "Roll d10 (or pick) on a heritage table. The result says something about your family's past, and usually carries a modifier and a second roll. The core Samurai table is the default; most supplements offer a replacement table you may use instead.",
       done: function () { return has(C.answers.heritage); },
       render: function (body) {
@@ -1557,7 +1629,7 @@
         }
       } },
 
-    { id: "final-name", n: 19, label: "Name", title: "Your Character's Name",
+    { id: "final-name", n: 19, label: "Name", title: function () { return qText(19) || "Your Character's Name"; },
       desc: "Settle on a final name. In Rokugan this is conventionally &lt;Family&gt; &lt;Personal&gt;, family name first.",
       done: function () { return has(C.name); },
       render: function (body) {
@@ -1568,7 +1640,7 @@
         body.appendChild(i);
       } },
 
-    { id: "death", n: 20, label: "Death", title: "Vision of Death",
+    { id: "death", n: 20, label: "Death", title: function () { return qText(20) || "Vision of Death"; },
       desc: "How does your character die? A vision, premonition, or expectation of their end — not a prediction the game must honour, but a meaningful death the player invites.",
       done: function () { return has(C.answers.death); },
       render: textStep("death", "answers.death", "death", "The ending they would not regret…") },
