@@ -1,0 +1,22 @@
+{
+  "_comment": "Bespoke blocks checked against the page images, so the worklist stops re-listing finished work. A block belongs here only when every row or entry in it was compared field by field against the printed page named. Drift counts for these stay non-zero on purpose: the corpus states this content as structured properties while the book prints a table, so the strings differ from the page even when every value matches.",
+
+  "SWORDS":      {"pages": "230 (Table 5-1)", "checked": "2026-08-30", "result": "10 rows, every field, no differences"},
+  "AXES":        {"pages": "230 (Table 5-1)", "checked": "2026-08-30", "result": "2 rows, no differences"},
+  "BLUNT_WEAPONS": {"pages": "230 (Table 5-1)", "checked": "2026-08-30", "result": "5 rows, no differences"},
+  "HAND_WEAPONS":  {"pages": "230 (Table 5-1)", "checked": "2026-08-30", "result": "4 rows, no differences"},
+  "POLEARMS":      {"pages": "230 (Table 5-1)", "checked": "2026-08-30", "result": "6 rows, no differences"},
+  "BOWS":          {"pages": "237 (Table 5-2)", "checked": "2026-08-30", "result": "3 rows, no differences; the Unicorn bow is filed under its prose heading, Shinjo Horsebow, not the table's Horsebow"},
+  "CROSSBOWS":     {"pages": "237 (Table 5-2)", "checked": "2026-08-30", "result": "1 row, no differences"},
+  "SPECIALIST_WEAPONS": {"pages": "237 (Table 5-2)", "checked": "2026-08-30", "result": "4 rows, no differences"},
+  "UNARMED":       {"pages": "237 (unarmed profiles)", "checked": "2026-08-30", "result": "3 rows, no differences"},
+  "ARMOR_TABLE":   {"pages": "239 (Table 5-3)", "checked": "2026-08-30", "result": "9 rows, no differences; qualities within a row run together without commas"},
+  "CONDITION_DEFINITIONS": {"pages": "271-273", "checked": "2026-08-30", "result": "16 conditions and both Wounded sub-forms; two clauses restored (Dying stabilizing, Unconscious defending), everything else correct"},
+  "HERITAGE_TABLE": {"pages": "96 (Table 2-1)", "checked": "2026-08-30", "result": "rewritten: nine of ten entries had fabricated sub-tables"},
+  "TENETS":         {"pages": "chapter 7", "checked": "2026-08-30", "result": "rewritten: three tenets misnamed, two misspelled, seven invented clan attributions"},
+  "DIFFICULTY_SCALE": {"pages": "22 (Sample TNs)", "checked": "2026-08-30", "result": "rewritten: the scale was shifted one step across TN 1-6"},
+  "USES":           {"pages": "36 (Spending Void Points)", "checked": "2026-08-30", "result": "rewritten: Shattering Parry stated the wrong mechanic"},
+  "RECOVERY":       {"pages": "36 (Gaining Void Points)", "checked": "2026-08-30", "result": "rewritten: an invented once-per-scene limit on adversities"},
+  "ADVANCEMENT_COSTS": {"pages": "97 (Table 2-2)", "checked": "2026-08-30", "result": "rewritten: invented non-curriculum surcharges and an XP price for advantages"},
+  "THRESHOLDS":     {"pages": "97", "checked": "2026-08-30", "result": "20/24/32/44/60, exact"}
+}

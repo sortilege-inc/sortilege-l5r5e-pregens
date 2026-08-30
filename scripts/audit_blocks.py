@@ -13,7 +13,7 @@ so cannot be settled without the page image.
 
     python3 scripts/audit_blocks.py [core|all]
 """
-import collections, glob, os, re, sys
+import collections, glob, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from audit_text import stream, strip_furniture
 
@@ -54,11 +54,22 @@ for path in sorted(glob.glob(CORPUS + "/l5r5e-0.4-core-*.ttrpg")):
             else:
                 stats[kw][1] += 1
 
+# Blocks already compared against the page images. Their drift counts stay
+# non-zero on purpose — the corpus states a stat table as structured properties
+# while the book prints a table, so the strings differ even when every value
+# matches — and re-listing them would keep sending the sweep over finished work.
+done = {k: v for k, v in json.load(open(
+    os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                 "src", "audit_verified.json"), encoding="utf-8")).items()
+        if not k.startswith("_")}
+
 rare = [k for k in counts if counts[k] <= 2]
 rows = []
 for k in rare:
     v, d, y = stats[k]
     if v + d + y == 0:
+        continue
+    if k in done:
         continue
     rows.append((d + y, k, v, d, y))
 rows.sort(reverse=True)
@@ -71,5 +82,9 @@ tot_d = tot_y = 0
 for unver, k, v, d, y in rows:
     tot_d += d; tot_y += y
     print("  %-26s %5d %7d %7d %8d  %s" % (k, v, d, y, unver, ",".join(sorted(where[k]))))
-print("\n%d blocks carry text; %d drifting strings and %d symbol-bearing strings unverified"
+print("\n%d blocks still unverified; %d drifting and %d symbol-bearing strings in them."
       % (len(rows), tot_d, tot_y))
+print("%d blocks already checked against the page images (src/audit_verified.json):"
+      % len(done))
+for k in sorted(done):
+    print("  %-26s p. %-22s %s" % (k, done[k]["pages"], done[k]["result"]))
