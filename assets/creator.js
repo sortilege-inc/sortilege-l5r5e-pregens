@@ -633,6 +633,33 @@
     "default": "L5R 5e character creation suggestion. " + STYLE
   };
 
+  /* One of these is picked per call. They are ways in, not topics: the same
+     fact looks different depending on whether you catch it as an incident, a
+     habit, or something a third party noticed. */
+  var ANGLES = [
+    "a single incident, on a particular day, with someone else present",
+    "a standing habit — the thing they do every time, not once",
+    "what somebody else notices about them and has not said",
+    "a workaround they have built, and what it costs to maintain",
+    "the practical consequence at work, in the middle of their duty",
+    "something that happens when they are alone",
+    "a small thing they are unreasonably good or bad at because of it",
+    "the way it shapes who they will and will not be in a room with"
+  ];
+
+  // The last few suggestions per field, so the next one is asked to differ.
+  // Lives on the draft and is never exported — toSourceJson builds its own
+  // object and does not carry it.
+  function rememberSuggestion(fieldKey, text) {
+    if (!text) return;
+    C.ai_history = C.ai_history || {};
+    var list = C.ai_history[fieldKey] || [];
+    list.push(text);
+    while (list.length > 4) list.shift();
+    C.ai_history[fieldKey] = list;
+    save();
+  }
+
   function aiKey() {
     try {
       var k = localStorage.getItem(LS_KEY);
@@ -729,8 +756,24 @@
     // pick can name the pick and ask for the answer that produces it.
     var system = PROMPTS[fieldKey] || PROMPTS["default"];
     if (typeof system === "function") system = system();
+    /* Each call was independent, so every one landed on the same most obvious
+       intersection of the pick and the concept — three of five answers for one
+       character were the same image in different words. Two corrections: tell
+       it what has already been offered, and send it in from a different angle. */
+    var seen = (C.ai_history && C.ai_history[fieldKey]) || [];
     var user = "Existing draft for context:\n" + characterContext() +
-      "\n\nSuggest a single " + fieldKey.replace(/_/g, " ") + " for this character.";
+      "\n\nSuggest a single " + fieldKey.replace(/_/g, " ") + " for this character." +
+      "\n\nApproach it as: " + ANGLES[Math.floor(Math.random() * ANGLES.length)] +
+      ". Write that, rather than gesturing at it." +
+      (seen.length
+        ? "\n\nYou have already offered these for this field and they were not " +
+          "taken:\n" + seen.map(function (t) { return "> " + t; }).join("\n") +
+          "\nGive something different in substance. Whatever activity, object, " +
+          "place or person those used, do not use it again — a character has more " +
+          "than one part to their life, and the concept notes are a starting point " +
+          "rather than the only material. Rewording an answer above does not count " +
+          "as a new one."
+        : "");
 
     var req = key
       ? fetch("https://api.anthropic.com/v1/messages", {
@@ -812,6 +855,7 @@
       aiSuggest(fieldKey).then(function (text) {
         input.value = text;
         onChange(text);
+        rememberSuggestion(fieldKey, text);
         status.textContent = "";
       }).catch(function (e) {
         status.textContent = "";
