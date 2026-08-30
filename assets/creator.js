@@ -264,7 +264,8 @@
         mentor: { name: "", path: null, granted: null, skill: "", text: "",
                   gender: "any", association: "" },
         first_impression: "", accoutrement: "", stress_reaction: "",
-        relationships: "", parent_opinion: { description: "", skill: null },
+        relationships: "", people: [],
+        parent_opinion: { description: "", skill: null },
         heritage: null, heritage_table: null, heritage_sub: null, death: ""
       },
       starting_item: "", campaign: "", notes: "", gender: "any",
@@ -653,6 +654,10 @@
     group_history: "L5R 5e character creation, Path of Waves. Write a single sentence of shared history between this character and one other member of their group, answering the prompt they chose.\n\n" + STYLE,
     raised_by: "L5R 5e character creation, Path of Waves. Write a single sentence describing who raised this character and how they regard it.\n\n" + STYLE,
     mentor_relationship: "L5R 5e character creation. Write a single sentence describing the relationship between this character and a mentor — what they were taught, and at what cost.\n\n" + STYLE,
+    relationship_person: "L5R 5e character creation. Write a single sentence about " +
+      "one person in this character's life: who they are to each other, and what " +
+      "sits between them. A rival, an ally, a relative, a creditor, a former " +
+      "teacher — the relationship, not a description of the other person.\n\n" + STYLE,
     relationships: "L5R 5e character creation. Write a single sentence naming one or two people who matter to this character — a rival, an ally, a family member — and what stands between them.\n\n" + STYLE,
     death: "L5R 5e character creation. Write a single sentence describing the death this character would not regret — the ending they invite, not the one the GM must give them. Solemn and declarative, in the third person.\n\n" + STYLE,
     "default": "L5R 5e character creation suggestion. " + STYLE
@@ -781,7 +786,7 @@
   // Two routes to a suggestion. A key in this browser calls Anthropic directly;
   // otherwise the request goes to the Worker, which holds the key server-side.
   // The published site has no key of its own and must never be given one.
-  function aiSuggest(fieldKey, sourceText, current) {
+  function aiSuggest(fieldKey, sourceText, current, extra) {
     var key = aiKey();
     var proxy = window.L5R_AI_PROXY || "";
     if (!key && !proxy) return Promise.reject(new Error("No API key set."));
@@ -790,6 +795,9 @@
     // pick can name the pick and ask for the answer that produces it.
     var system = PROMPTS[fieldKey] || PROMPTS["default"];
     if (typeof system === "function") system = system();
+    // A field that exists more than once on a step — one per person at
+    // question 16 — says here which one it is.
+    if (extra) system = extra + "\n\n" + system;
     /* Each call was independent, so every one landed on the same most obvious
        intersection of the pick and the concept — three of five answers for one
        character were the same image in different words. Two corrections: tell
@@ -879,7 +887,8 @@
     fear: function () { return C.anxieties[0]; }
   };
 
-  function wireAi(input, fieldKey, onChange) {
+  function wireAi(input, fieldKey, onChange, opts) {
+    opts = opts || {};
     var pickFor = USES_PICK[fieldKey];
     var row = document.createElement("div");
     row.className = "ai-row";
@@ -923,7 +932,8 @@
         b.disabled = true;
       });
       status.textContent = "…";
-      aiSuggest(fieldKey, source, input.value).then(function (text) {
+      aiSuggest(fieldKey, source, input.value,
+                opts.extra && opts.extra()).then(function (text) {
         input.value = text;
         onChange(text);
         // Only a fresh suggestion joins the "already offered" list; a rewrite of
@@ -1963,16 +1973,26 @@
       desc: "Name a few people important to your character. Then pick a starting item of rarity 7 or lower.",
       done: function () { return has(C.starting_item); },
       render: function (body) {
-        textStep("ties", "answers.relationships", "relationships",
-          "Rivals, allies, family, lovers…")(body);
-        label(body, "Starting item");
-        var items = CATALOG.filter(function (e) {
-          return ["item", "weapon", "armor"].indexOf(e.sub_type) >= 0;
-        }).map(function (e) {
-          return { value: e.name, label: e.name,
-                   meta: [cap(e.sub_type), e.source_book].filter(Boolean).join(" · ") };
+        // Seed the first person from a relationships answer written before this
+        // step had structure, so an older draft is not silently emptied.
+        C.answers.people = C.answers.people || [];
+        if (!C.answers.people.length) {
+          C.answers.people.push({ name: "", gender: "any", association: "",
+                                  text: C.answers.relationships || "" });
+        }
+        C.answers.people.forEach(function (p, i) { personBlock(body, p, i); });
+
+        var add = document.createElement("button");
+        add.type = "button";
+        add.className = "btn ghost add-person";
+        add.textContent = "+ Another person";
+        add.addEventListener("click", function () {
+          C.answers.people.push({ name: "", gender: "any", association: "", text: "" });
+          save(); render();
         });
-        pickList(body, items, C.starting_item, function (v) { C.starting_item = v; save(); });
+        body.appendChild(add);
+
+        startingItemSection(body);
       } },
 
     { id: "parent", n: 17, label: "Parent", title: function () { return qText(17) || "A Parent's Opinion"; },
@@ -2566,6 +2586,271 @@
             ? "Rolls a " + m.association + " family in front of the name."
             : m.association + " is not a clan, so the roll gives a personal name alone.")
         : "Roll or name an association above and the name roll will follow it."
+    });
+  }
+
+  /* One person in the character's life, at question 16. Same controls as the
+     mentor — an association with its own roll, a name roll that follows it —
+     plus the relationship itself, with the usual suggestion. Any number of
+     these; they are distinct people and each keeps its own fields. */
+  function personBlock(body, person, index) {
+    var wrap = document.createElement("div");
+    wrap.className = "person";
+    body.appendChild(wrap);
+
+    var head = document.createElement("div");
+    head.className = "person-head";
+    head.innerHTML = '<span class="person-n">Person ' + (index + 1) + "</span>";
+    var del = document.createElement("button");
+    del.type = "button";
+    del.className = "person-x";
+    del.title = "Remove this person";
+    del.textContent = "×";
+    del.addEventListener("click", function () {
+      C.answers.people.splice(index, 1);
+      syncRelationships();
+      save();
+      render();
+    });
+    head.appendChild(del);
+    wrap.appendChild(head);
+
+    label(wrap, "Their clan or association");
+    var row = document.createElement("div");
+    row.className = "lord-row";
+    var assoc = document.createElement("input");
+    assoc.type = "text";
+    assoc.placeholder = "A clan, an order, a tradition — or roll one";
+    assoc.value = person.association || "";
+    assoc.addEventListener("input", function () {
+      person.association = assoc.value; syncRelationships(); save();
+    });
+    row.appendChild(assoc);
+    var rollA = document.createElement("button");
+    rollA.type = "button";
+    rollA.className = "btn ghost lord-roll";
+    rollA.textContent = "Roll";
+    rollA.addEventListener("click", function () {
+      var a = rollAssociation();
+      if (!a) return;
+      person.association = a; syncRelationships(); save(); render();
+    });
+    row.appendChild(rollA);
+    wrap.appendChild(row);
+
+    nameSection(wrap, {
+      heading: "Their name",
+      placeholder: "Name them, or roll one",
+      get: function () { return person.name; },
+      set: function (v) { person.name = v; syncRelationships(); },
+      gender: function () { return person.gender; },
+      setGender: function (v) { person.gender = v; },
+      family: function () { return familyForAssociation(person.association); },
+      note: person.association
+        ? (isClan(person.association)
+            ? "Rolls a " + person.association + " family in front of the name."
+            : person.association + " is not a clan, so the roll gives a personal name alone.")
+        : "Roll or name an association above and the name roll will follow it."
+    });
+
+    label(wrap, "The relationship");
+    var ta = document.createElement("textarea");
+    ta.rows = 2;
+    ta.placeholder = "What are they to each other, and what stands between them?";
+    ta.value = person.text || "";
+    ta.addEventListener("input", function () {
+      person.text = ta.value; syncRelationships(); save();
+    });
+    wrap.appendChild(ta);
+    wireAi(ta, "relationship_person", function (v) {
+      person.text = v; ta.value = v; syncRelationships(); save();
+    }, {
+      extra: function () {
+        var who = [person.name, person.association && ("of the " + person.association)]
+          .filter(Boolean).join(", ");
+        return who
+          ? "The person in question is " + who + ". Write the relationship between " +
+            "them and the character."
+          : "";
+      }
+    });
+  }
+
+  // A family of that association's clan, or null if it is not a clan.
+  function familyForAssociation(assoc) {
+    var byClan = (NAMES.family || {}).by_clan || {};
+    if (!assoc || !isClan(assoc)) return null;
+    var key = Object.keys(byClan).filter(function (k) {
+      return normName(k) === normName(assoc);
+    })[0];
+    return key ? pickFrom(byClan[key]) : null;
+  }
+
+  /* answers.relationships stays the exported answer and the one the rest of the
+     wizard reads, so the structured people are folded back into it whenever they
+     change rather than becoming a second source of truth. */
+  function syncRelationships() {
+    var people = C.answers.people || [];
+    if (!people.length) return;
+    C.answers.relationships = people.map(function (p) {
+      var who = [p.name, p.association && ("(" + p.association + ")")]
+        .filter(Boolean).join(" ");
+      return [who, p.text].filter(function (x) { return x && x.trim(); }).join(" — ");
+    }).filter(Boolean).join("\n");
+  }
+
+  /* The starting item. Filters by type and by rarity, because 261 pieces of
+     equipment in one alphabetical list is not a choice anyone can make, and two
+     ways to roll: flat, or weighted toward whatever one of the people above is
+     connected to — a gift has a provenance. */
+  var ITEM_TYPES = [["", "All"], ["item", "Items"], ["weapon", "Weapons"],
+                    ["armor", "Armour"]];
+  // In the weapons pack but not kit: a creature's natural attack, a siege
+  // engine, a chair swung in a brawl. Same exclusion the pregen generator uses.
+  var NOT_KIT_CATEGORIES = ["Unarmed profiles", "Siege Weapons", "Improvised Weapons"];
+
+  function isEquipment(e) {
+    return ["item", "weapon", "armor"].indexOf(e.sub_type) >= 0 &&
+      NOT_KIT_CATEGORIES.indexOf(e.category) < 0;
+  }
+
+  function itemRarity(e) {
+    var r = e.rarity != null ? e.rarity : (e.data && e.data.rarity);
+    r = parseInt(r, 10);
+    return isNaN(r) ? null : r;
+  }
+
+  /* How strongly an item belongs to a person's clan or association, so a gift
+     has a provenance. Matched on the association's name and, when it is a clan,
+     its families — "Kaiu no Oyumi" is a Crab thing because Kaiu is a Crab family.
+
+     The catalog gives little to work with: the equipment packs carry no clan
+     field, so only 1 to 3 of the 261 pieces match any given clan by name. The
+     weight is therefore large — a match has to be worth something for the button
+     to mean anything — and where nothing matches the roll is simply flat, which
+     the button says when it happens. */
+  var AFFINITY_WEIGHT = 40;
+
+  function affinityTokens(assoc) {
+    if (!assoc) return [];
+    var out = [assoc];
+    var byClan = (NAMES.family || {}).by_clan || {};
+    Object.keys(byClan).forEach(function (k) {
+      if (normName(k) === normName(assoc)) out = out.concat(byClan[k]);
+    });
+    return out.map(normName).filter(function (t) { return t.length > 3; });
+  }
+
+  function affinity(e, tokens) {
+    if (!tokens.length) return 1;
+    var hay = normName(e.name + " " + (e.source_book || "") + " " + (e.clan || ""));
+    return tokens.some(function (t) { return hay.indexOf(t) >= 0; })
+      ? AFFINITY_WEIGHT : 1;
+  }
+
+  function startingItemSection(body) {
+    label(body, "Starting item");
+
+    var state = C._item_filter || (C._item_filter = { type: "", rarity: 7 });
+    var pool = function () {
+      return CATALOG.filter(function (e) {
+        if (!isEquipment(e)) return false;
+        if (state.type && e.sub_type !== state.type) return false;
+        var r = itemRarity(e);
+        if (state.rarity && r != null && r > state.rarity) return false;
+        return true;
+      });
+    };
+
+    label(body, "Type");
+    choice(body, ITEM_TYPES, state.type, function (v) {
+      state.type = v; save(); render();
+    });
+
+    label(body, "Rarity at most");
+    choice(body, [["4", "4"], ["6", "6"], ["7", "7 (starting)"], ["9", "Any"]],
+      String(state.rarity), function (v) {
+        state.rarity = Number(v); save(); render();
+      });
+
+    var row = document.createElement("div");
+    row.className = "ai-row item-rolls";
+    var rand = document.createElement("button");
+    rand.type = "button";
+    rand.className = "btn ghost";
+    rand.textContent = "Choose at random";
+    rand.addEventListener("click", function () {
+      var p = pool();
+      if (!p.length) return;
+      C.starting_item = p[randomBelow(p.length)].name;
+      save(); render();
+    });
+    row.appendChild(rand);
+
+    var people = (C.answers.people || []).filter(function (p) {
+      return (p.name || p.association || "").trim();
+    });
+    if (people.length) {
+      var sel = document.createElement("select");
+      sel.className = "item-by";
+      sel.innerHTML = people.map(function (p, i) {
+        return '<option value="' + i + '">' +
+          esc(p.name || p.association) + "</option>";
+      }).join("");
+      var byBtn = document.createElement("button");
+      byBtn.type = "button";
+      byBtn.className = "btn ghost";
+      byBtn.textContent = "Random, weighted by";
+      byBtn.addEventListener("click", function () {
+        var who = people[Number(sel.value)] || people[0];
+        var p = pool();
+        if (!p.length) return;
+        var tokens = affinityTokens(who.association);
+        var matches = p.filter(function (e) {
+          return affinity(e, tokens) > 1;
+        }).length;
+        var weights = p.map(function (e) { return affinity(e, tokens); });
+        var total = weights.reduce(function (a, b) { return a + b; }, 0);
+        var roll = randomBelow(total), acc = 0, chosenItem = p[p.length - 1];
+        for (var i = 0; i < p.length; i++) {
+          acc += weights[i];
+          if (roll < acc) { chosenItem = p[i]; break; }
+        }
+        C.starting_item = chosenItem.name;
+        C._item_weighted = who.association
+          ? (matches
+              ? matches + " of " + p.length + " weighted toward " + who.association
+              : "nothing in this filter is tied to " + who.association +
+                " — rolled flat")
+          : "no association on that person — rolled flat";
+        save(); render();
+      });
+      row.appendChild(byBtn);
+      row.appendChild(sel);
+    }
+    body.appendChild(row);
+
+    if (C._item_weighted) {
+      var wn = document.createElement("p");
+      wn.className = "muted small";
+      wn.textContent = C._item_weighted;
+      body.appendChild(wn);
+    }
+
+    var p = pool();
+    var items = p.map(function (e) {
+      var r = itemRarity(e);
+      return { value: e.name, label: e.name,
+               meta: [cap(e.sub_type), r != null ? "Rarity " + r : null,
+                      e.source_book].filter(Boolean).join(" · ") };
+    });
+    var count = document.createElement("p");
+    count.className = "muted small";
+    count.textContent = items.length + " of " +
+      CATALOG.filter(isEquipment).length + " shown";
+    body.appendChild(count);
+    pickList(body, items, C.starting_item, function (v) {
+      C.starting_item = v; save();
     });
   }
 

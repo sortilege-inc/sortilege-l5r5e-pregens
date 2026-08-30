@@ -816,6 +816,30 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
   font-family:var(--caps); font-size:0.7rem; color:var(--ink-dim);
 }
 
+/* ---- question 16: one block per person -------------------------------- */
+.person{
+  border:1px solid var(--edge-soft); border-left:3px solid var(--gold-soft);
+  border-radius:2px; background:var(--paper-2);
+  padding:0.5rem 0.8rem 0.8rem; margin:0.6rem 0;
+}
+.person-head{ display:flex; align-items:center; gap:0.5rem; }
+.person-n{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.16em;
+  font-size:0.64rem; color:var(--crimson);
+}
+.person-x{
+  margin-left:auto; appearance:none; border:0; background:none; cursor:pointer;
+  color:var(--ink-dim); font-size:1.1rem; line-height:1; padding:0 0.2rem;
+}
+.person-x:hover{ color:var(--crimson); }
+.add-person{ margin:0.2rem 0 1.2rem; }
+.item-rolls{ flex-wrap:wrap; }
+.item-by{
+  font-family:var(--body); font-size:0.9rem; padding:0.3rem 0.4rem;
+  border:1px solid var(--edge); border-radius:2px; background:var(--paper);
+  color:var(--sumi);
+}
+
 .bio-body{ max-width:62ch; }
 .bio-body p{ margin:0 0 0.7rem; }
 

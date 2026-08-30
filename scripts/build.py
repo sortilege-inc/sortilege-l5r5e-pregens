@@ -581,7 +581,18 @@ def emit(cx):
     # the denominator, metadata only (no long rules text) — ledger + landing tiles
     cat = [dict(r) for r in cx.execute(
         "SELECT uuid,pack,pack_label,doc_type,sub_type,name,kind,ring,rank,"
-        "source_book,source_page,clan,xp_cost FROM catalog ORDER BY sub_type,name")]
+        "source_book,source_page,clan,xp_cost,data FROM catalog"
+        " ORDER BY sub_type,name")]
+    # rarity lives inside the system blob; the Creator filters equipment on it,
+    # and it is one small integer rather than a reason to ship the whole blob
+    for e in cat:
+        d = json.loads(e.pop("data") or "{}")
+        r = d.get("rarity")
+        e["rarity"] = int(r) if str(r).strip().lstrip("-").isdigit() else None
+        # category too: it is what separates a katana from a creature's Bite,
+        # and the Creator's starting-item list should not offer the second
+        if d.get("category"):
+            e["category"] = d["category"]
     n2 = write(os.path.join(SITEDATA, "catalog.js"), "L5R_CATALOG", cat)
 
     used = collections.defaultdict(list)
