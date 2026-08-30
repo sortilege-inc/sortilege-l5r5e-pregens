@@ -897,6 +897,13 @@
       var shown = items.filter(function (i) {
         return !q || (i.label + " " + (i.meta || "")).toLowerCase().indexOf(q) >= 0;
       });
+      // What is already chosen goes first. Opening a draft at School or Family
+      // otherwise showed a list scrolled to the top with the actual answer
+      // somewhere below the fold, which reads as nothing being chosen.
+      var picked = shown.filter(function (i) { return i.value === current; });
+      if (picked.length) {
+        shown = picked.concat(shown.filter(function (i) { return i.value !== current; }));
+      }
       list.innerHTML = shown.map(function (i) {
         return '<button type="button" class="pick' +
           (i.value === current ? " active" : "") + '" data-v="' + esc(i.value) + '">' +
@@ -908,6 +915,7 @@
           onPick(b.getAttribute("data-v"));
           current = b.getAttribute("data-v");
           draw();
+          list.scrollTop = 0;
         });
       });
     }
@@ -2609,7 +2617,18 @@
     // pick — choosing a skill used to throw you back to the masthead, which
     // makes a five-choice step unusable.
     if (jumpToTop) {
-      window.scrollTo({ top: 0, behavior: "instant" });
+      // The question, not the masthead. Scrolling the window to 0 put the
+      // Creator's title and the drafts bar back on screen every time, so each
+      // Next cost a scroll to get back to where you were reading.
+      var panel = document.querySelector(".creator-step");
+      var nav = document.querySelector(".topnav");
+      if (panel) {
+        var offset = (nav ? nav.getBoundingClientRect().height : 0) + 12;
+        var y = panel.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: Math.max(0, y), behavior: "instant" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
       jumpToTop = false;
     }
   }
