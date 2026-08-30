@@ -61,6 +61,31 @@
   var ARCHIVE = window.L5R_ARCHIVE_DRAFTS || [];
   var CLAN_TENETS = window.L5R_CLAN_TENETS || {};
   var QUESTIONS = window.L5R_QUESTIONS || {};
+  var NAMES = window.L5R_NAMES || {};
+
+  function pickFrom(list) {
+    return list && list.length ? list[Math.floor(Math.random() * list.length)] : null;
+  }
+
+  /* A lord needs a name, and typing one is friction at exactly the moment the
+     question wants an answer. Rolls a family and a given name from the l5r5e
+     system's own tables, honouring what the character has already settled:
+     their own family if they have one, their clan's families if not, and the
+     gender toggle on the step. */
+  function rollLordName(gender) {
+    var fam = (NAMES.family || {}), given = (NAMES.given || {});
+    var byClan = fam.by_clan || {};
+    var family = C.family ||
+      pickFrom(byClan[C.clan] || []) ||
+      pickFrom([].concat.apply([], Object.keys(byClan).map(function (k) {
+        return byClan[k];
+      }))) ||
+      pickFrom(fam.vassal || []);
+    var pool = given[gender] || given.any || [];
+    var personal = pickFrom(pool);
+    if (!personal) return null;
+    return family ? family + " " + personal : personal;
+  }
 
   // The corpus's wording for a question, for the mode in play. The wizard used
   // to invent its own titles — "A Distinction" where the corpus asks "What Is
@@ -166,6 +191,7 @@
         giri: "", ninjo: "", standout_quality: "",
         accomplishment: "", challenge: "", peace: "", fear: "",
         past: "", known_for: "", known_skill: null,
+        lord_name: "", lord_gender: "any",
         prized_possession: "", group_history: "", raised_by: "", raised_skill: null,
         clan_relationship: { path: null, skill: null, text: "" },
         mentor: { name: "", path: null, granted: null, skill: "", text: "" },
@@ -1342,6 +1368,7 @@
       render: function (body) {
         var alt = qAlt(5);
         if (!alt) {
+          lordSection(body);
           textStep("giri", "answers.giri", "giri", "Whom do you serve, and how?")(body);
           return;
         }
@@ -2071,6 +2098,66 @@
   function ringFromEffect(text) {
     var m = /\+1\s*(Air|Earth|Fire|Water|Void)/i.exec(text || "");
     return m ? m[1].toLowerCase() : null;
+  }
+
+  // The lord's name: typed, or rolled from the system's tables.
+  function lordSection(body) {
+    label(body, "Your lord's name");
+
+    var row = document.createElement("div");
+    row.className = "lord-row";
+
+    var input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = "Name your lord, or roll one";
+    input.value = C.answers.lord_name || "";
+    input.addEventListener("input", function () {
+      C.answers.lord_name = input.value;
+      save();
+    });
+    row.appendChild(input);
+
+    var roll = document.createElement("button");
+    roll.type = "button";
+    roll.className = "btn ghost lord-roll";
+    roll.textContent = "Roll";
+    roll.title = "A family and a personal name, from the l5r5e name tables";
+    roll.addEventListener("click", function () {
+      var n = rollLordName(C.answers.lord_gender || "any");
+      if (!n) return;
+      C.answers.lord_name = n;
+      input.value = n;
+      save();
+      renderWip();
+    });
+    row.appendChild(roll);
+    body.appendChild(row);
+
+    var g = document.createElement("div");
+    g.className = "choicerow lord-gender";
+    [["any", "Any"], ["male", "Male"], ["female", "Female"]].forEach(function (o) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "choice" +
+        ((C.answers.lord_gender || "any") === o[0] ? " active" : "");
+      b.textContent = o[1];
+      b.addEventListener("click", function () {
+        C.answers.lord_gender = o[0];
+        save();
+        render();
+      });
+      g.appendChild(b);
+    });
+    body.appendChild(g);
+
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = C.family
+      ? "Rolls within the " + C.family + " family, since that is the character's."
+      : (C.clan
+          ? "Rolls a family from the " + C.clan + " clan."
+          : "Choose a clan or family and the roll will stay within it.");
+    body.appendChild(note);
   }
 
   function ringPicker(body, current, onPick) {

@@ -27,16 +27,42 @@ def save_sources(d):
 
 
 def apply_promotions():
-    """Clear `status` on every promoted slug. Called by the pipeline after extract."""
+    """Clear `status` on every promoted slug, and land its concept as a bio.
+
+    Concept material is authoring context while a character is a draft — it
+    lives in `concepts` in the manifest, feeds the Creator's AI suggestions, and
+    is deliberately not part of the record. Promotion is the moment it becomes
+    part of the record: it is copied into the character's `bio`, raw, to be
+    edited into something narrative later.
+
+    Copied rather than moved, and never over an existing bio, so re-running the
+    pipeline cannot overwrite prose someone has since written.
+
+    Called by the pipeline after extract.
+    """
     d = load_sources()
     promoted = set((d.get("promoted") or {}).get("slugs") or [])
-    changed = []
+    concepts = {k: v for k, v in (d.get("concepts") or {}).items()
+                if not k.startswith("_")}
+    changed, bios = [], []
     for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
         doc = json.load(open(path))
-        if doc["slug"] in promoted and doc.get("status"):
+        if doc["slug"] not in promoted:
+            continue
+        dirty = False
+        if doc.get("status"):
             doc["status"] = None
-            json.dump(doc, open(path, "w"), indent=1, ensure_ascii=False)
+            dirty = True
             changed.append(doc["slug"])
+        concept = concepts.get(doc["slug"])
+        if concept and not (doc.get("bio") or "").strip():
+            doc["bio"] = concept
+            dirty = True
+            bios.append(doc["slug"])
+        if dirty:
+            json.dump(doc, open(path, "w"), indent=1, ensure_ascii=False)
+    for slug in bios:
+        print(f"   bio from concept: {slug}")
     return changed
 
 

@@ -561,6 +561,8 @@ def emit(cx):
         doc = {**{k: c[k] for k in c.keys() if k != "school_norm"},
                "twenty_questions": src.get("twenty_questions", {}),
                "notes": src.get("notes", ""),
+               # concept material, landed on promotion by scripts/promote.py
+               "bio": src.get("bio", ""),
                "curriculum": curricula.get(c["school_norm"], []),
                "title_curricula": title_curricula,
                "tiers": tiers}

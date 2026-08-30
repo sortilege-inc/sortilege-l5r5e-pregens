@@ -782,6 +782,14 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .archivechip:hover{ border-color:var(--crimson); color:var(--sumi); }
 .archivechip.open{ border-style:solid; border-color:var(--jade); }
 
+.bio-body{ max-width:62ch; }
+.bio-body p{ margin:0 0 0.7rem; }
+
+.lord-row{ display:flex; gap:0.5rem; align-items:stretch; margin:0.3rem 0 0.4rem; }
+.lord-row input{ flex:1 1 auto; margin:0; }
+.lord-roll{ white-space:nowrap; }
+.lord-gender{ margin-bottom:0.3rem; }
+
 /* ---- a question that offers stated options --------------------------- */
 .qopts{ display:grid; gap:0.35rem; margin:0.5rem 0 0.8rem; }
 .qopt{

@@ -181,6 +181,20 @@
       "</div></section>";
   }
 
+  // Concept material that became part of the record on promotion. Raw prose,
+  // meant to be edited into something narrative later, so it is rendered as
+  // paragraphs rather than dressed up.
+  function renderBio(bio) {
+    if (!bio || !String(bio).trim()) return "";
+    var paras = String(bio).split(/\n{2,}/).filter(function (p) { return p.trim(); });
+    return '<section><h2 class="section-h"><span class="kanji">伝</span>Bio' +
+      '<span class="en">From the concept notes</span></h2>' +
+      '<div class="bio-body">' +
+      paras.map(function (p) {
+        return "<p>" + esc(p.trim()).replace(/\n/g, "<br>") + "</p>";
+      }).join("") + "</div></section>";
+  }
+
   function renderDutyDesire(t) {
     var s = t.social || {};
     if (!s.giri && !s.ninjo) return "";
@@ -522,7 +536,7 @@
 
     el("changelog-target").innerHTML = renderChangelog(idx);
     el("stats-target").innerHTML = renderRings(t) + renderDerived(t);
-    el("duty-target").innerHTML = renderDutyDesire(t);
+    el("duty-target").innerHTML = renderBio(CHAR.bio) + renderDutyDesire(t);
     el("skills-target").innerHTML =
       '<h2 class="section-h"><span class="kanji">技能</span>Skills' +
       '<span class="en">Ring + Skill</span></h2>' + renderSkills(t);
