@@ -354,7 +354,7 @@ def main():
         json.dump(pec, f, ensure_ascii=False, separators=(",", ":"))
         f.write(";\n")
 
-    questions = chargen_questions()
+    questions = chargen_questions(corpus)
     with open(QUESTION_OUT, "w") as f:
         f.write("window.L5R_QUESTIONS = ")
         json.dump(questions, f, ensure_ascii=False, separators=(",", ":"))
@@ -461,7 +461,7 @@ QUESTION_PROPS = re.compile(
     r'\^"Question Text"\s+STRING\s+"([^"]+)"')
 
 
-def chargen_questions():
+def chargen_questions(corpus):
     """The twenty questions, worded as the corpus states them.
 
     Read from the corpus source files rather than the resolved JSON, because
@@ -479,7 +479,55 @@ def chargen_questions():
         if not os.path.exists(path):
             continue
         for n, text in QUESTION_PROPS.findall(open(path, encoding="utf-8").read()):
-            out.setdefault(n, {})[mode] = text.strip()
+            out.setdefault(n, {})[mode] = {"text": text.strip()}
+
+    # The Sample Pasts table replaces giri for these characters, and the
+    # synthesist's JSON serialiser drops a top-level TABLE — it survives into
+    # the merged .ttrpg and vanishes from the resolved JSON — so read it from
+    # the source file too.
+    pow_path = os.path.join(base, "l5r5e-0.4-path-of-waves-character.ttrpg")
+    if os.path.exists(pow_path) and "5" in out:
+        body = open(pow_path, encoding="utf-8").read()
+        m = re.search(r'TABLE\s+"Sample Pasts"\s*\{(.*?)\n    \}', body, re.S)
+        if m:
+            rows = [{"label": roll, "text": text} for roll, text in
+                    re.findall(r'"([\d\-]+)"\s+"([^"]+)"', m.group(1))]
+            die = re.search(r'ROLL\s+"([^"]+)"', m.group(1))
+            if rows:
+                out["5"].setdefault("pow", {"text": out["5"].get("wow", {}).get(
+                    "text", "What is your character's past and how does it affect them?")})
+                out["5"]["pow"]["table"] = {"die": die.group(1) if die else "d100",
+                                            "rows": rows}
+
+    # …and the choices each states, from the composed corpus, so a consumer can
+    # offer the question rather than only name it.
+    by_source = {v: k for k, v in QUESTION_FILES.items()}
+    for o in walk(corpus):
+        if not isinstance(o, dict) or o.get("kind") != "def":
+            continue
+        num = None
+        for prop in (o.get("properties") or []):
+            if prop.get("name") == "Question" and prop.get("value"):
+                num = str(prop["value"])
+        if not num:
+            continue
+        src = (o.get("sources") or [None])[0]
+        mode = QUESTION_FILES.get(src)
+        if not mode or num not in out or mode not in out[num]:
+            continue
+        entry = out[num][mode]
+        for prop in (o.get("properties") or []):
+            if prop.get("name") == "Gain" and prop.get("value"):
+                entry["gain"] = prop["value"]
+        for b in (o.get("blocks") or []):
+            kw = b.get("keyword")
+            if kw not in ("OPTIONS", "PROMPTS"):
+                continue
+            rows = [{"label": r.get("label"),
+                     "text": (r.get("cells") or [{}])[0].get("value", "")}
+                    for r in (b.get("rows") or []) if r.get("label")]
+            if rows:
+                entry[kw.lower()] = rows
     return out
 
 

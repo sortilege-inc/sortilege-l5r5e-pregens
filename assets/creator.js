@@ -67,27 +67,28 @@
   // Your Character's Greatest Accomplishment?" — which quietly turned a
   // narrative question into a shopping trip. Path of Waves and Writ of the
   // Wilds reword most of the twenty; where a mode says nothing, core stands.
-  /* Path of Waves and Writ of the Wilds reword most of the twenty, but at six
-     of them they ask something else entirely, and the wizard's step still does
-     the core thing:
-
-       4   core: how you stand out (a ring)   alt: what gets you into trouble
-       5   core: your lord and your duty      alt: your past and its effect
-       7   core: your tie to your clan        alt: what you are known for
-       14  core: what people notice first     alt: your most prized possession
-       17  core: what your parent thinks      alt: your group's shared history
-       18  core: your first notable ancestor  alt: who raised you
-
-     Titling those steps with the other book's question would ask one thing and
-     record another, so they keep the core wording until the step itself is
-     rebuilt for those modes. */
-  var MODE_DIVERGES = [4, 5, 7, 14, 17, 18];
-
+  /* Writ of the Wilds is a partial revision of Path of Waves — the corpus says
+     so in as many words: it gives its own Q1, Q2, Q5, Q6, Q7 and Q8 and leaves
+     the rest of that book's set alone. So a Wilds character falls back to Path
+     of Waves, and only then to core. */
+  function qFor(n) {
+    var q = QUESTIONS[String(n)] || {};
+    var m = mode();
+    if (m === "wow") return q.wow || q.pow || q.core || null;
+    if (m === "pow") return q.pow || q.core || null;
+    return q.core || null;
+  }
   function qText(n) {
-    var q = QUESTIONS[String(n)];
-    if (!q) return null;
-    if (MODE_DIVERGES.indexOf(n) >= 0) return q.core || null;
-    return q[mode()] || q.core || null;
+    var q = qFor(n);
+    return (q && q.text) || null;
+  }
+  // True when the mode asks a different question here, not a reworded one.
+  function qAlt(n) {
+    var m = mode();
+    if (m === "core") return null;
+    var q = QUESTIONS[String(n)] || {};
+    var mine = (m === "wow" ? (q.wow || q.pow) : q.pow);
+    return mine && mine !== q.core ? mine : null;
   }
 
   // Core builds a samurai from clan and family. Path of Waves and Writ of the
@@ -164,6 +165,8 @@
       answers: {
         giri: "", ninjo: "", standout_quality: "",
         accomplishment: "", challenge: "", peace: "", fear: "",
+        past: "", known_for: "", known_skill: null,
+        prized_possession: "", group_history: "", raised_by: "", raised_skill: null,
         clan_relationship: { path: null, skill: null, text: "" },
         mentor: { name: "", path: null, granted: null, skill: "", text: "" },
         first_impression: "", accoutrement: "", stress_reaction: "",
@@ -471,6 +474,11 @@
     challenge: "L5R 5e character creation. Write a single sentence describing what holds this character back the most in life. A standing difficulty they carry, not a mood.\n\n" + STYLE,
     peace: "L5R 5e character creation. Write a single sentence describing the activity that most makes this character feel at peace — something they do for themselves, unrelated to duty.\n\n" + STYLE,
     fear: "L5R 5e character creation. Write a single sentence describing the concern, fear, or foible that troubles this character most.\n\n" + STYLE,
+    past: "L5R 5e character creation, Path of Waves. This character has no lord; a past replaces giri. Write a single sentence naming what drives them and what it costs — an obligation, a pursuer, or a choice that still follows them.\n\n" + STYLE,
+    known_for: "L5R 5e character creation, Path of Waves. Write a single sentence describing what this character is known for where they have travelled, and to whom.\n\n" + STYLE,
+    prized_possession: "L5R 5e character creation, Path of Waves. Write a single sentence about the one possession that matters most when everything they own fits in a pack — what it is, and why this one.\n\n" + STYLE,
+    group_history: "L5R 5e character creation, Path of Waves. Write a single sentence of shared history between this character and one other member of their group, answering the prompt they chose.\n\n" + STYLE,
+    raised_by: "L5R 5e character creation, Path of Waves. Write a single sentence describing who raised this character and how they regard it.\n\n" + STYLE,
     mentor_relationship: "L5R 5e character creation. Write a single sentence describing the relationship between this character and a mentor — what they were taught, and at what cost.\n\n" + STYLE,
     relationships: "L5R 5e character creation. Write a single sentence naming one or two people who matter to this character — a rival, an ally, a family member — and what stands between them.\n\n" + STYLE,
     death: "L5R 5e character creation. Write a single sentence describing the death this character would not regret — the ending they invite, not the one the GM must give them. Solemn and declarative, in the third person.\n\n" + STYLE,
@@ -536,6 +544,11 @@
     add("Clan relationship", a.clan_relationship.text);
     add("Paramount tenet", C.bushido.paramount);
     add("Lesser tenet", C.bushido.lesser);
+    add("Past", a.past);
+    add("Known for", a.known_for);
+    add("Prized possession", a.prized_possession);
+    add("Shared history", a.group_history);
+    add("Raised by", a.raised_by);
     add("Greatest accomplishment", a.accomplishment);
     add("Greatest challenge", a.challenge);
     add("At peace when", a.peace);
@@ -1295,18 +1308,52 @@
       } },
 
     { id: "standout", n: 4, label: "Standout", title: function () { return qText(4) || "A Standout Quality"; },
-      desc: "Pick one ring to raise by +1, reflecting a moment from your character's past that defines what sets them apart from their peers.",
+      desc: function () {
+        return qAlt(4)
+          ? "Choose the temperament that gets your character into trouble, and out of it again. Each grants a different ring."
+          : "Pick one ring to raise by +1, reflecting a moment from your character's past that defines what sets them apart from their peers.";
+      },
       done: function () { return has(C.standout_ring) && has(C.answers.standout_quality); },
       render: function (body) {
-        ringPicker(body, C.standout_ring, function (r) { C.standout_ring = r; save(); });
+        var alt = qAlt(4);
+        if (alt && alt.options) {
+          // the ring is not free here: each temperament grants a stated one
+          optionRow(body, "q4.trouble", alt.options, function (label) {
+            var o = alt.options.filter(function (x) { return x.label === label; })[0];
+            C.standout_ring = o ? ringFromEffect(o.text) : null;
+            save();
+          });
+        } else {
+          ringPicker(body, C.standout_ring, function (r) { C.standout_ring = r; save(); });
+        }
         textStep("standout", "answers.standout_quality", "standout_quality",
-          "What sets them apart?")(body);
+          alt ? "What gets them into trouble?" : "What sets them apart?")(body);
       } },
 
     { id: "giri", n: 5, label: "Giri", title: function () { return qText(5) || "Giri (Duty)"; },
-      desc: "Every samurai owes a duty. What is your giri, and to whom? Name the lord or institution you serve, and the obligation it places on your shoulders.",
-      done: function () { return has(C.answers.giri); },
-      render: textStep("giri", "answers.giri", "giri", "Whom do you serve, and how?") },
+      desc: function () {
+        return qAlt(5)
+          ? "These characters have no lord, so a past replaces giri. It works the same way: something that drives them, and that their ninjō can run against."
+          : "Every samurai owes a duty. What is your giri, and to whom? Name the lord or institution you serve, and the obligation it places on your shoulders.";
+      },
+      done: function () {
+        return has(qAlt(5) ? C.answers.past : C.answers.giri);
+      },
+      render: function (body) {
+        var alt = qAlt(5);
+        if (!alt) {
+          textStep("giri", "answers.giri", "giri", "Whom do you serve, and how?")(body);
+          return;
+        }
+        var table = (QUESTIONS["5"] && QUESTIONS["5"].pow || {}).table;
+        if (table) {
+          label(body, "Sample pasts — " + table.die);
+          optionRow(body, "q5.past", table.rows.map(function (r) {
+            return { label: r.label, text: r.text };
+          }));
+        }
+        textStep("past", "answers.past", "past", "What drives them, and what does it cost?")(body);
+      } },
 
     { id: "ninjo", n: 6, label: "Ninjō", title: function () { return qText(6) || "Ninjō (Desire)"; },
       desc: "Your ninjō is the thing your character wants for themselves, which lives in tension with their giri. A good ninjō can't be satisfied without compromising the duty.",
@@ -1314,9 +1361,36 @@
       render: textStep("ninjo", "answers.ninjo", "ninjo", "What do they long for?") },
 
     { id: "clan-tie", n: 7, label: "Clan Tie", title: function () { return qText(7) || "Relationship with Your Clan"; },
-      desc: "How does your character relate to their clan? <strong>A) Embrace it</strong> — you exemplify the clan's ideals, +5 Glory. <strong>B) Diverge</strong> — you walk a different path, +1 rank in a skill of your choice.",
-      done: function () { return has(C.answers.clan_relationship.path); },
+      desc: function () {
+        return qAlt(7)
+          ? "These characters answer to no clan. What are they known for where they have been, and did it earn them standing or a skill learned the hard way?"
+          : "How does your character relate to their clan? <strong>A) Embrace it</strong> — you exemplify the clan's ideals, +5 Glory. <strong>B) Diverge</strong> — you walk a different path, +1 rank in a skill of your choice.";
+      },
+      done: function () {
+        if (qAlt(7)) return chosen("q7.known").length > 0 && has(C.answers.known_for);
+        return has(C.answers.clan_relationship.path);
+      },
       render: function (body) {
+        var alt7 = qAlt(7);
+        if (alt7) {
+          optionRow(body, "q7.known", alt7.options || []);
+          // the wicked branch grants a rank in a skill currently at 0
+          if (/skill/i.test(((alt7.options || []).filter(function (o) {
+                return o.label === chosen("q7.known")[0];
+              })[0] || {}).text || "")) {
+            label(body, "The skill it taught them (one currently at 0 ranks)");
+            skillPicker(body, C.answers.known_skill, function (sk) {
+              var was = C.answers.known_skill;
+              if (was) C.skills[was] = (C.skills[was] || 1) - 1;
+              C.answers.known_skill = sk;
+              C.skills[sk] = (C.skills[sk] || 0) + 1;
+              save();
+            });
+          }
+          textStep("known-for", "answers.known_for", "known_for",
+            "What are they known for, and to whom?")(body);
+          return;
+        }
         choice(body, [["A", "Embrace — +5 Glory"], ["B", "Diverge — +1 skill rank"]],
           C.answers.clan_relationship.path, function (v) {
             C.answers.clan_relationship.path = v; save(); render();
@@ -1475,10 +1549,41 @@
       } },
 
     { id: "appearance", n: 14, label: "Appearance", title: function () { return qText(14) || "First Impression"; },
-      desc: "Describe your character's appearance and a distinctive accoutrement they always carry.",
-      done: function () { return has(C.answers.first_impression); },
-      render: textStep("appearance", "answers.first_impression", "first_impression",
-        "How do they strike a stranger?") },
+      desc: function () {
+        return qAlt(14)
+          ? "When everything you own fits in a pack, one thing still matters more than the rest. Choose it from your outfit, or any item of rarity 5 or lower."
+          : "Describe your character's appearance and a distinctive accoutrement they always carry.";
+      },
+      done: function () {
+        return has(qAlt(14) ? C.answers.prized_possession : C.answers.first_impression);
+      },
+      render: function (body) {
+        var alt = qAlt(14);
+        if (!alt) {
+          textStep("appearance", "answers.first_impression", "first_impression",
+            "How do they strike a stranger?")(body);
+          return;
+        }
+        label(body, "The possession");
+        var items = CATALOG.filter(function (e) {
+          return ["item", "weapon", "armor"].indexOf(e.sub_type) >= 0 &&
+                 (e.rank == null || true);
+        }).map(function (e) {
+          return { value: e.name, label: e.name,
+                   meta: [cap(e.sub_type), e.source_book].filter(Boolean).join(" · ") };
+        });
+        pickList(body, items, chosen("q14.prized")[0] || null, function (v) {
+          setChosen("q14.prized", [v]);
+        });
+        if (alt.gain) {
+          var g = document.createElement("p");
+          g.className = "muted small";
+          g.textContent = alt.gain;
+          body.appendChild(g);
+        }
+        textStep("prized", "answers.prized_possession", "prized_possession",
+          "Why this one?")(body);
+      } },
 
     { id: "stress", n: 15, label: "Stress", title: function () { return qText(15) || "Stress Reaction"; },
       desc: "How does your character react under duress? Pushed past their composure, do they rage, withdraw, scheme, freeze?",
@@ -1503,11 +1608,29 @@
       } },
 
     { id: "parent", n: 17, label: "Parent", title: function () { return qText(17) || "A Parent's Opinion"; },
-      desc: "Describe a parent or guardian and their opinion of your character. Then gain +1 rank in a skill you currently have at rank 0.",
+      desc: function () {
+        return qAlt(17)
+          ? "Answered with the group and the GM. Choose a prompt, answer it together, and settle on a bond between you."
+          : "Describe a parent or guardian and their opinion of your character. Then gain +1 rank in a skill you currently have at rank 0.";
+      },
       done: function () {
+        if (qAlt(17)) return chosen("q17.history").length > 0 && has(C.answers.group_history);
         return has(C.answers.parent_opinion.description) && has(C.answers.parent_opinion.skill);
       },
       render: function (body) {
+        var alt = qAlt(17);
+        if (alt) {
+          optionRow(body, "q17.history", alt.prompts || []);
+          textStep("group-history", "answers.group_history", "group_history",
+            "Answer it — who, and what happened?")(body);
+          if (alt.gain) {
+            var g = document.createElement("p");
+            g.className = "muted small";
+            g.textContent = alt.gain;
+            body.appendChild(g);
+          }
+          return;
+        }
         textStep("parent", "answers.parent_opinion.description", "parent_opinion",
           "What do they say of their child?")(body);
         label(body, "Skill raised");
@@ -1521,9 +1644,30 @@
       } },
 
     { id: "heritage", n: 18, label: "Heritage", title: function () { return qText(18) || "Family Heritage"; },
-      desc: "Roll d10 (or pick) on a heritage table. The result says something about your family's past, and usually carries a modifier and a second roll. The core Samurai table is the default; most supplements offer a replacement table you may use instead.",
-      done: function () { return has(C.answers.heritage); },
+      desc: function () {
+        return qAlt(18)
+          ? "Most people know who raised them; some do not. Record the relationship, and the skill it left behind."
+          : "Roll d10 (or pick) on a heritage table. The result says something about your family's past, and usually carries a modifier and a second roll. The core Samurai table is the default; most supplements offer a replacement table you may use instead.";
+      },
+      done: function () {
+        if (qAlt(18)) return has(C.answers.raised_by) && has(C.answers.raised_skill);
+        return has(C.answers.heritage);
+      },
       render: function (body) {
+        var alt18 = qAlt(18);
+        if (alt18) {
+          textStep("raised", "answers.raised_by", "raised_by",
+            "Who raised them, and how do they feel about it?")(body);
+          label(body, "The skill it left them (one currently at 0 ranks)");
+          skillPicker(body, C.answers.raised_skill, function (sk) {
+            var was = C.answers.raised_skill;
+            if (was) C.skills[was] = (C.skills[was] || 1) - 1;
+            C.answers.raised_skill = sk;
+            C.skills[sk] = (C.skills[sk] || 0) + 1;
+            save();
+          });
+          return;
+        }
         var keys = Object.keys(HERITAGES);
         if (!keys.length) return needs(body, "No heritage tables loaded.");
 
@@ -1894,6 +2038,39 @@
       chooseGroup(body, c[0], c[1], c[2],
                   c[1] === "Ring" ? null : function (o) { return o; });
     });
+  }
+
+  /* Path of Waves and Writ of the Wilds replace six of the twenty outright.
+     These render the replacement where one applies, and are no-ops in core
+     mode. Each keeps its own answer field, so switching mode never silently
+     reinterprets an answer given to a different question. */
+
+  // A list of labelled options with their effect, as the corpus states them.
+  function optionRow(body, key, opts, onPick) {
+    var picked = chosen(key)[0] || null;
+    var wrap = document.createElement("div");
+    wrap.className = "qopts";
+    wrap.innerHTML = opts.map(function (o) {
+      return '<button type="button" class="qopt' +
+        (o.label === picked ? " active" : "") + '" data-v="' + esc(o.label) + '">' +
+        '<span class="qo-l">' + esc(o.label) + "</span>" +
+        '<span class="qo-t">' + esc(o.text) + "</span></button>";
+    }).join("");
+    Array.prototype.forEach.call(wrap.querySelectorAll(".qopt"), function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute("data-v");
+        setChosen(key, chosen(key)[0] === v ? [] : [v]);
+        if (onPick) onPick(chosen(key)[0] || null);
+        render();
+      });
+    });
+    body.appendChild(wrap);
+  }
+
+  // The ring an option grants: "+1 Fire" -> "fire".
+  function ringFromEffect(text) {
+    var m = /\+1\s*(Air|Earth|Fire|Water|Void)/i.exec(text || "");
+    return m ? m[1].toLowerCase() : null;
   }
 
   function ringPicker(body, current, onPick) {

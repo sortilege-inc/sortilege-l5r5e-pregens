@@ -782,6 +782,19 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .archivechip:hover{ border-color:var(--crimson); color:var(--sumi); }
 .archivechip.open{ border-style:solid; border-color:var(--jade); }
 
+/* ---- a question that offers stated options --------------------------- */
+.qopts{ display:grid; gap:0.35rem; margin:0.5rem 0 0.8rem; }
+.qopt{
+  appearance:none; cursor:pointer; text-align:left; display:block; width:100%;
+  border:1px solid var(--edge); border-radius:2px; background:var(--paper);
+  padding:0.45rem 0.7rem; transition:.12s;
+}
+.qopt:hover{ border-color:var(--gold); background:var(--paper-2); }
+.qopt.active{ border-color:var(--crimson); background:rgba(79,125,92,0.12); }
+.qopt.active .qo-l::before{ content:"\2713 "; color:var(--jade); font-weight:700; }
+.qo-l{ display:block; font-family:var(--disp); font-size:1.02rem; color:var(--sumi); }
+.qo-t{ display:block; margin-top:0.1rem; font-size:0.86rem; color:var(--ink-soft); }
+
 /* ---- dice symbols and ring icons in rules text ----------------------- */
 /* Same glyphs and colours as the play sheet, so a technique reads the same
    whether you are choosing it or using it. */
