@@ -782,6 +782,15 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .archivechip:hover{ border-color:var(--crimson); color:var(--sumi); }
 .archivechip.open{ border-style:solid; border-color:var(--jade); }
 
+/* ---- clan / family / school choices ---------------------------------- */
+.choose-group{ align-items:center; }
+.choose-n{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.12em;
+  font-size:0.64rem; color:var(--crimson); margin-left:0.5rem;
+}
+.choose-n.ok{ color:var(--jade); }
+.choose-n.ok::after{ content:" \2713"; }
+
 /* ---- advantage / disadvantage picker -------------------------------- */
 /* Colour carries meaning here: green = a stated condition this character
    meets, amber = takeable but needs a subject named, red = the rules or the

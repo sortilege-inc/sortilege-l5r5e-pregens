@@ -171,6 +171,23 @@ def schema(cx):
     """)
 
 
+def school_name_corrections():
+    """Upstream pack typos in school titles, fixed before anything sees them."""
+    src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+    return {k: v["to"] for k, v in (src.get("school_name_corrections") or {}).items()
+            if not k.startswith("_")}
+
+
+_SCHOOL_FIX = None
+
+
+def fix_school(name):
+    global _SCHOOL_FIX
+    if _SCHOOL_FIX is None:
+        _SCHOOL_FIX = school_name_corrections()
+    return _SCHOOL_FIX.get(name, name)
+
+
 def load_catalog(cx):
     index = json.load(open(os.path.join(CATDIR, "index.json")))
     full = {}
@@ -197,7 +214,7 @@ def load_catalog(cx):
             if "school-curriculum" in pack and doc:
                 cbook, cpage, centries = parse_curriculum(doc)
                 sr = {"source": cbook, "page": cpage}
-                sname = m.group("name") if m else e["name"]
+                sname = fix_school(m.group("name") if m else e["name"])
                 for ce in centries:
                     curriculum.append((norm(sname), sname, ce["rank"], ce["kind"],
                                        ce["group"], ce["label"], norm(ce["label"]),
@@ -207,6 +224,8 @@ def load_catalog(cx):
             # School Curriculum names carry a "[Clan]" suffix; the display name and
             # the norm both drop it, so a character's school matches exactly.
             display = m.group("name") if m else e["name"]
+            if pack.endswith("school-curriculum-l5r-sortilege") or "school-curriculum" in pack:
+                display = fix_school(display)
             rows.append((
                 e["uuid"], pack, v["label"], v["type"], e["subType"] or v["type"],
                 display, norm(display),

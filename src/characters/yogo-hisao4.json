@@ -9,7 +9,7 @@
  "identity": {
   "clan": "Scorpion",
   "family": "Yogo",
-  "school": "Yogo Preserver Schoo",
+  "school": "Yogo Preserver School",
   "role": "Shugenja",
   "age": null
  },
@@ -23,7 +23,7 @@
    "xp": 0,
    "label": null,
    "rank": 1,
-   "school": "Yogo Preserver Schoo",
+   "school": "Yogo Preserver School",
    "foundry_id": null,
    "foundry_name": null,
    "rings": {

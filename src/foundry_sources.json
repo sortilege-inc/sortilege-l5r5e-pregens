@@ -101,13 +101,6 @@
   "doji-setsuna"
  ],
  "_derive_tiers_comment": "characters Foundry holds at one point only; scripts/derive_tiers.py rebuilds their earlier XP tiers",
- "school_aliases": {
-  "_comment": "character school name -> the compendium's School Curriculum spelling. Use this where the COMPENDIUM is wrong: the source file keeps the printed spelling and the gate still resolves.",
-  "Isawa Tensai School": {
-   "roll_name": "Isawai Tensai School",
-   "_why": "Fields of Victory p.79 prints 'Isawa Tensai School' (3 occurrences; 'Isawai' appears nowhere in the book). The l5r5e Foundry system's own core-journal-school-curriculum pack titles it 'Isawai Tensai School', and l5r5e-compendia-sortilege mirrors that. Upstream system bug; delete this alias once it is fixed."
-  }
- },
  "promoted": {
   "_comment": "slugs promoted out of draft. The Draft folder and the Creator both mark characters as drafts; promotion is the deliberate act of saying one is finished, and is recorded here so a re-extract cannot silently undo it. Use scripts/promote.py.",
   "slugs": []
@@ -167,8 +160,19 @@
  },
  "school_corpus_aliases": {
   "_comment": "Compendium school name -> the DSL corpus's spelling, for scripts/generate_pregen.py. The reverse of school_aliases above: that one fixes a character whose school name differs from the compendium, this one bridges the compendium to the corpus.",
-  "Isawai Tensai School": "Isawa Tensai",
   "The Wandering Blade": "Wandering Blade",
-  "Yogo Preserver Schoo": "Yogo Preserver"
+  "Isawa Tensai School": "Isawa Tensai",
+  "Yogo Preserver School": "Yogo Preserver"
+ },
+ "school_name_corrections": {
+  "_comment": "The Foundry l5r5e system's core-journal-school-curriculum pack misspells two school titles, and l5r5e-compendia-sortilege mirrors it. Corrected at catalog load in scripts/build.py, so the site shows what the book prints and the compendium title never reaches a page. Verified against the source text in ~/Working/sources/l5r5e. Delete an entry once the upstream pack is fixed.",
+  "Isawai Tensai School": {
+   "to": "Isawa Tensai School",
+   "_why": "Fields of Victory p.79 prints 'Isawa Tensai' 3 times; 'Isawai' appears nowhere in the book, and nowhere in the DSL corpus."
+  },
+  "Yogo Preserver Schoo": {
+   "to": "Yogo Preserver School",
+   "_why": "Shadowlands prints 'Yogo Preserver School'; the pack title is truncated."
+  }
  }
 }

@@ -85,7 +85,6 @@
   // build's school-roll gate, the coverage ledger — keys off the compendium
   // name, so resolve to it here and show that name in the picker too.
   var SCHOOL_ALIAS = {
-    "isawatensai": "Isawai Tensai School",   // the compendium has the typo
     "wanderingblade": "The Wandering Blade"
   };
   var ROLL_BY_NORM = {};
@@ -141,6 +140,8 @@
         heritage: null, heritage_table: null, heritage_sub: null, death: ""
       },
       starting_item: "", campaign: "", notes: "",
+      // clan/family/school choices the player resolved, keyed by what granted them
+      choices: {},
       // Loose concept material. Feeds every AI suggestion and is deliberately
       // NOT exported — it is scaffolding for making the character, not part of
       // the finished one.
@@ -604,9 +605,22 @@
     var list = SCHOOLS.filter(function (s) { return s.clan === clan; });
     return list.length ? list : SCHOOLS;
   }
+  // A school arrives spelled three ways: the chargen data's ("Isawa Tensai"),
+  // the compendium's ("Isawai Tensai School" — its typo), and whatever the
+  // character source records ("Isawa Tensai School"). Match on all of them,
+  // ignoring case, accents and a trailing "School". A hydrated draft used to
+  // fail this and show its own school as unselected, with no choices offered.
+  function schoolKeys(name) {
+    var n = normName(name);
+    return [n, n.replace(/school$/, ""), normName(rollName(name))];
+  }
   function schoolByRollName(name) {
-    return SCHOOLS.filter(function (s) { return rollName(s.name) === name; })[0]
-      || find(SCHOOLS, name);
+    if (!name) return null;
+    var want = schoolKeys(name);
+    return SCHOOLS.filter(function (s) {
+      return schoolKeys(s.name).concat(schoolKeys(rollName(s.name)))
+        .some(function (k) { return k && want.indexOf(k) >= 0; });
+    })[0] || null;
   }
   function find(list, name) {
     return list.filter(function (x) { return x.name === name; })[0] || null;
@@ -621,18 +635,48 @@
     var honor = 0, glory = 0, status = 0, wealth = 0;
     var pending = [];
 
-    function addRing(obj) {
+    // A _choose is resolved by the player at the step that granted it; whatever
+    // is still unanswered goes on `pending` for the side panel to name.
+    function resolved(key, spec) {
+      var picked = ((C.choices || {})[key] || [])
+        .filter(function (o) { return spec.options.indexOf(o) >= 0; });
+      return picked.slice(0, spec.n || 1);
+    }
+    function addRing(obj, key) {
       if (!obj) return;
-      if (obj._choose) { pending.push({ type: "ring", opts: obj._choose.options }); return; }
+      if (obj._choose) {
+        var spec = obj._choose;
+        var picked = resolved(key, spec);
+        var by = spec.yield_value != null ? spec.yield_value : 1;
+        picked.forEach(function (o) {
+          var r = String(o).toLowerCase();
+          if (rings[r] != null) rings[r] += by;
+        });
+        if (picked.length < (spec.n || 1)) {
+          pending.push({ type: "ring", opts: spec.options,
+                         n: (spec.n || 1) - picked.length });
+        }
+        return;
+      }
       Object.keys(obj).forEach(function (k) {
         var r = k.toLowerCase();
         if (rings[r] != null) rings[r] += obj[k];
       });
     }
-    function addSkills(obj) {
+    function addSkills(obj, key) {
       if (!obj) return;
       if (obj._choose) {
-        pending.push({ type: "skill", n: obj._choose.n, opts: obj._choose.options });
+        var spec = obj._choose;
+        var picked = resolved(key, spec);
+        var by = spec.yield_value != null ? spec.yield_value : 1;
+        picked.forEach(function (o) {
+          var sk = SKILL_BY_LABEL[String(o).toLowerCase()] || String(o).toLowerCase();
+          skills[sk] = (skills[sk] || 0) + by;
+        });
+        if (picked.length < (spec.n || 1)) {
+          pending.push({ type: "skill", opts: spec.options,
+                         n: (spec.n || 1) - picked.length });
+        }
         return;
       }
       Object.keys(obj).forEach(function (k) {
@@ -643,17 +687,20 @@
 
     var clan = find(CLANS, C.clan) || find(CLANS, C.clan + " Clan");
     if (clan) {
-      addRing(clan.ring_bonus); addSkills(clan.skill_bonus);
+      addRing(clan.ring_bonus, "clan.ring_bonus");
+      addSkills(clan.skill_bonus, "clan.skill_bonus");
       status = clan.starting_status || 0;
     }
     var fam = find(FAMILIES, C.family);
     if (fam) {
-      addRing(fam.ring_increase); addSkills(fam.skill_increases);
+      addRing(fam.ring_increase, "family.ring_increase");
+      addSkills(fam.skill_increases, "family.skill_increases");
       glory = fam.glory || 0; wealth = fam.starting_wealth || 0;
     }
     var sch = schoolByRollName(C.school);
     if (sch) {
-      addRing(sch.ring_increase); addSkills(sch.starting_skills);
+      addRing(sch.ring_increase, "school.ring_increase");
+      addSkills(sch.starting_skills, "school.starting_skills");
       honor = sch.starting_honor || 0;
     }
     if (C.standout_ring && rings[C.standout_ring] != null) rings[C.standout_ring] += 1;
@@ -1037,9 +1084,14 @@
                      .filter(Boolean).join(" · ") };
         });
         pickList(body, items, C.clan, function (v) {
-          if (C.clan !== v) { C.family = null; C.school = null; C.role = null; }
+          if (C.clan !== v) {
+            C.family = null; C.school = null; C.role = null;
+            C.choices = {};
+          }
           C.clan = v; save(); render();
         });
+        var cl = find(CLANS, C.clan) || find(CLANS, C.clan + " Clan");
+        renderChoices(body, cl, "clan");
       } },
 
     { id: "family", n: 2,
@@ -1071,12 +1123,20 @@
                           f.starting_wealth ? f.starting_wealth + " koku" : null,
                           f.glory ? "Glory " + f.glory : null].filter(Boolean).join(" · ") };
         });
-        pickList(body, items, C.family, function (v) { C.family = v; save(); });
+        pickList(body, items, C.family, function (v) {
+          if (v !== C.family) {
+            Object.keys(C.choices || {}).forEach(function (k) {
+              if (k.indexOf("family.") === 0) delete C.choices[k];
+            });
+          }
+          C.family = v; save(); render();
+        });
+        renderChoices(body, find(FAMILIES, C.family), "family");
       } },
 
     { id: "school", n: 3, label: "School", title: "Choose Your School",
       desc: "Your school determines your starting techniques, your curriculum, your starting skills, and your starting honor and outfit.",
-      done: function () { return has(C.school); },
+      done: function () { return has(C.school) && choicesMade(schoolByRollName(C.school), "school"); },
       render: function (body) {
         var items = schoolsOf(C.clan).map(function (s) {
           return { value: rollName(s.name), label: rollName(s.name),
@@ -1084,11 +1144,29 @@
                           s.starting_honor ? "Honor " + s.starting_honor : null,
                           s.school_ability].filter(Boolean).join(" · ") };
         });
-        pickList(body, items, C.school, function (v) {
+        // show the draft's own school as selected even if it is spelled the
+        // character source's way rather than the picker's
+        var current = schoolByRollName(C.school);
+        pickList(body, items, current ? rollName(current.name) : C.school, function (v) {
+          if (v !== C.school) {
+            // the old school's picks are meaningless against a new one
+            Object.keys(C.choices || {}).forEach(function (k) {
+              if (k.indexOf("school.") === 0) delete C.choices[k];
+            });
+          }
           C.school = v;
           var s = schoolByRollName(v);
           C.role = s && s.roles ? s.roles[0] : null;
-          save();
+          save(); render();
+        });
+        var sch = schoolByRollName(C.school);
+        if (!sch) return;
+        renderChoices(body, sch, "school");
+        (sch.starting_techniques || []).forEach(function (g, i) {
+          if (g.kind !== "choose") return;
+          chooseGroup(body, "school.tech." + i,
+                      cap(g.category || "Technique"),
+                      { n: g.n || 1, options: g.options, yield_value: 1 });
         });
       } },
 
@@ -1426,6 +1504,91 @@
     });
     body.appendChild(wrap);
   }
+  /* Clan, family and school each hand out choices — "+1 Earth or Fire", "three
+     of these six skills", "two of these four shūji". computed() has always
+     spotted them and written a note in the side panel, but there was nowhere to
+     actually make one, so every character carried the note and none of the
+     ranks. These render the choice where it is granted and record the answer in
+     C.choices, keyed by the step and field that granted it. */
+
+  function chosen(key) {
+    return (C.choices && C.choices[key]) || [];
+  }
+
+  function setChosen(key, list) {
+    C.choices = C.choices || {};
+    C.choices[key] = list;
+    save();
+  }
+
+  function chooseGroup(body, key, heading, spec, fmt) {
+    var n = spec.n || 1;
+    var yield_ = spec.yield_value != null ? spec.yield_value : 1;
+    var picked = chosen(key).filter(function (o) { return spec.options.indexOf(o) >= 0; });
+    var suffix = yield_ > 1 ? " (+" + yield_ + " each)" : "";
+    label(body, heading + " — choose " + n + suffix);
+
+    var row = document.createElement("div");
+    row.className = "choicerow choose-group" +
+      (picked.length === n ? " done" : "");
+    row.innerHTML = spec.options.map(function (o) {
+      var on = picked.indexOf(o) >= 0;
+      return '<button type="button" class="choice' + (on ? " active" : "") +
+        '" data-v="' + esc(o) + '">' + esc(fmt ? fmt(o) : o) + "</button>";
+    }).join("") +
+      '<span class="choose-n' + (picked.length === n ? " ok" : "") + '">' +
+      picked.length + "/" + n + "</span>";
+
+    Array.prototype.forEach.call(row.querySelectorAll(".choice"), function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute("data-v");
+        var at = picked.indexOf(v);
+        var next = picked.slice();
+        if (at >= 0) next.splice(at, 1);
+        else if (spec.distinct === false || next.indexOf(v) < 0) next.push(v);
+        // taking one past the limit drops the oldest, so the row never jams
+        while (next.length > n) next.shift();
+        setChosen(key, next);
+        render();
+      });
+    });
+    body.appendChild(row);
+  }
+
+  // Every choice a source grants, as [key, heading, spec] triples.
+  function choicesFrom(source, prefix) {
+    var out = [];
+    if (!source) return out;
+    [["ring_bonus", "Ring"], ["ring_increase", "Ring"],
+     ["skill_bonus", "Skill"], ["skill_increases", "Skill"],
+     ["starting_skills", "Starting skill"]].forEach(function (pair) {
+      var v = source[pair[0]];
+      if (v && v._choose) {
+        out.push([prefix + "." + pair[0], pair[1], v._choose]);
+      }
+    });
+    return out;
+  }
+
+  // A step is not finished while a choice it granted is still open — that is
+  // exactly the state that used to slip through and leave ranks unassigned.
+  function choicesMade(source, prefix) {
+    var ok = choicesFrom(source, prefix).every(function (c) {
+      return chosen(c[0]).length >= (c[2].n || 1);
+    });
+    if (!ok || prefix !== "school" || !source) return ok;
+    return (source.starting_techniques || []).every(function (g, i) {
+      return g.kind !== "choose" || chosen("school.tech." + i).length >= (g.n || 1);
+    });
+  }
+
+  function renderChoices(body, source, prefix) {
+    choicesFrom(source, prefix).forEach(function (c) {
+      chooseGroup(body, c[0], c[1], c[2],
+                  c[1] === "Ring" ? null : function (o) { return o; });
+    });
+  }
+
   function ringPicker(body, current, onPick) {
     var wrap = document.createElement("div");
     wrap.className = "rings";
@@ -1531,10 +1694,14 @@
           void_points: d.rings["void"]
         },
         money: { zeni: 0, koku: d.wealth, bu: 0 },
-        techniques: refs((sch.starting_techniques || []).filter(function (t) {
-          return t.kind === "fixed";
-        }).map(function (t) { return t.name; }).concat(
-          sch.school_ability ? [sch.school_ability] : [])),
+        // Both halves: the techniques the school simply grants, and the ones the
+        // player chose from its lists. Only the fixed ones used to be exported,
+        // so every chosen kata, ritual and shūji was dropped on the way out.
+        techniques: refs((sch.starting_techniques || []).reduce(function (acc, t, i) {
+          if (t.kind === "fixed") return acc.concat([t.name]);
+          if (t.kind === "choose") return acc.concat(chosen("school.tech." + i));
+          return acc;
+        }, []).concat(sch.school_ability ? [sch.school_ability] : [])),
         peculiarities: refs(heldPeculiarities()),
         titles: [], bonds: [], signature_scrolls: [],
         gear: refs(C.starting_item ? [C.starting_item] : []),

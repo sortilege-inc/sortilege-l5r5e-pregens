@@ -96,6 +96,14 @@ the compendium has no curriculum; show what was bought toward it via `via` inste
   that title, so a `(Daimyo)` variant can't stand in).
 - **Twenty-questions picks are compendium ids**, not the actor's embedded item ids. Try
   the catalog first, then the actor's own items for bespoke content.
+- **Two school titles in the compendium are upstream typos**: `Isawai Tensai School`
+  (the book prints "Isawa Tensai", 3×; "Isawai" appears nowhere in it or in the corpus)
+  and `Yogo Preserver Schoo` (truncated). The Foundry l5r5e system's
+  core-journal-school-curriculum pack has them and l5r5e-compendia-sortilege mirrors it.
+  Fixed at catalog load via `school_name_corrections` in the manifest, so the compendium
+  spelling never reaches a page. Verified against `~/Working/sources/l5r5e`. **Foundry is
+  not a source of truth for mechanics** — when its data and the book disagree, the book
+  and the DSL corpus win, and the correction goes in the manifest with its evidence.
 - **School names come in dirty.** Some carry the curriculum journal's `[Clan]` suffix;
   some are missing the word "School". The `[Clan]` strip is automatic; anything else goes
   in `corrections` in `src/foundry_sources.json` so it survives a re-extract.
