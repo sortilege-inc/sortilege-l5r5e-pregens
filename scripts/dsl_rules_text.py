@@ -481,23 +481,17 @@ def chargen_questions(corpus):
         for n, text in QUESTION_PROPS.findall(open(path, encoding="utf-8").read()):
             out.setdefault(n, {})[mode] = {"text": text.strip()}
 
-    # The Sample Pasts table replaces giri for these characters, and the
-    # synthesist's JSON serialiser drops a top-level TABLE — it survives into
-    # the merged .ttrpg and vanishes from the resolved JSON — so read it from
-    # the source file too.
-    pow_path = os.path.join(base, "l5r5e-0.4-path-of-waves-character.ttrpg")
-    if os.path.exists(pow_path) and "5" in out:
-        body = open(pow_path, encoding="utf-8").read()
-        m = re.search(r'TABLE\s+"Sample Pasts"\s*\{(.*?)\n    \}', body, re.S)
-        if m:
-            rows = [{"label": roll, "text": text} for roll, text in
-                    re.findall(r'"([\d\-]+)"\s+"([^"]+)"', m.group(1))]
-            die = re.search(r'ROLL\s+"([^"]+)"', m.group(1))
-            if rows:
-                out["5"].setdefault("pow", {"text": out["5"].get("wow", {}).get(
-                    "text", "What is your character's past and how does it affect them?")})
-                out["5"]["pow"]["table"] = {"die": die.group(1) if die else "d100",
-                                            "rows": rows}
+    # The Sample Pasts table replaces giri for these characters. It is a
+    # top-level TABLE, which the synthesist now emits under "blocks".
+    for b in (corpus.get("blocks") or []):
+        if b.get("keyword") != "TABLE" or "Sample Pasts" not in (b.get("label") or ""):
+            continue
+        rows = [{"label": r.get("label"),
+                 "text": (r.get("cells") or [{}])[0].get("value", "")}
+                for r in (b.get("rows") or []) if r.get("label")]
+        if rows and "5" in out:
+            out["5"].setdefault("pow", {"text": out["5"].get("wow", {}).get("text", "")})
+            out["5"]["pow"]["table"] = {"die": "d100", "rows": rows}
 
     # …and the choices each states, from the composed corpus, so a consumer can
     # offer the question rather than only name it.
