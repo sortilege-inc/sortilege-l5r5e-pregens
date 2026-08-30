@@ -52,13 +52,14 @@ print(' '.join(json.load(open('src/foundry_sources.json')).get('derive_tiers', [
   python3 scripts/derive_tiers.py "$slug" --write | tail -3
 done
 
-python3 scripts/build.py
-
-# rules text comes from the DSL corpus, not from Foundry: the compendium is the
-# catalog, the corpus is the rules. --refresh recomposes it via the synthesist.
+# Rules text comes from the DSL corpus, not from Foundry: the compendium is the
+# catalog, the corpus is the rules. This needs the catalog and tier_content that
+# the build above just wrote, and the build below consumes what it writes — so it
+# sits between the two. --refresh-dsl recomposes the corpus via the synthesist.
 REFRESH=""
 [[ " $* " == *" --refresh-dsl "* ]] && REFRESH="--refresh"
 python3 scripts/dsl_rules_text.py $REFRESH
 
+python3 scripts/build.py
 echo
 python3 scripts/coverage.py

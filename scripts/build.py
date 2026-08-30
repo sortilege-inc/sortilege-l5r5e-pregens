@@ -19,6 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "src", "characters")
 CATDIR = os.path.join(ROOT, "pipeline", "foundry", "catalog")
 DB = os.path.join(ROOT, "pipeline", "l5r.sqlite")
+DSLTEXT = os.path.join(ROOT, "pipeline", "dsl", "rules_text.json")
 LANG = os.path.join(ROOT, "pipeline", "foundry", "lang", "en.json")
 SITEDATA = os.path.join(ROOT, "data")
 
@@ -473,6 +474,13 @@ def emit(cx):
             {"rank": r["rank"], "kind": r["kind"], "group": r["grp"],
              "label": r["label"], "prereq": bool(r["prereq"])})
 
+    # Rules text, resolved from the DSL corpus by scripts/dsl_rules_text.py.
+    # It lives in a file rather than this database because main() deletes and
+    # recreates the database on every run.
+    dsl_text = {}
+    if os.path.exists(DSLTEXT):
+        dsl_text = json.load(open(DSLTEXT))
+
     roster, biggest, docs = [], 0, []
     for c in cx.execute("SELECT * FROM character ORDER BY name"):
         src = json.load(open(os.path.join(SRC, c["slug"] + ".json")))
@@ -485,7 +493,15 @@ def emit(cx):
                     cat = cx.execute(
                         "SELECT kind,ring,rank,source_book,source_page,description,data"
                         " FROM catalog WHERE uuid=?", (r["catalog_uuid"],)).fetchone()
-                    entry["description"] = cat["description"]
+                    # Rules text comes from the DSL corpus; Foundry is the catalog,
+                    # not the rules. scripts/dsl_rules_text.py fills dsl_text and
+                    # gates every referenced entry, so a fall-through here is an
+                    # entry that ran the gate and has a stated exception.
+                    d = dsl_text.get(r["catalog_uuid"])
+                    entry["description"] = d["html"] if d else cat["description"]
+                    entry["text_source"] = "dsl" if d else "foundry"
+                    if d and d["via"]:
+                        entry["text_via"] = d["via"]
                     entry["source"] = {"book": cat["source_book"], "page": cat["source_page"]}
                     entry["uuid"] = r["catalog_uuid"]
                     # only the mechanical fields a sheet renders; not the whole blob

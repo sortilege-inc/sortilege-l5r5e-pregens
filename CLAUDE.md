@@ -222,15 +222,57 @@ exits 1 and names the strays. Three compendium entries are pre-expanded parametr
 to a single DSL rule; the UI names the parent it came from. Never fall back to Foundry's
 text to make the gate pass — fix the corpus or extend `PARAMETRIC`.
 
-**Still on Foundry text, and not yet converted:** everything on the *character* pages —
-technique, item, weapon, title, ability and bond descriptions, and the school curriculum
-journals. DSL coverage there is partial (titles 98%, weapons 93%, items 63%, techniques
-57%, curricula 36%), so switching them is a conversion job, not a swap. Do not half-do
-it: a straight swap would blank content.
+Character pages follow from the same place: `scripts/build.py` has exactly one
+description choke point, and it reads `pipeline/dsl/rules_text.json` there, so every
+dossier and play sheet gets corpus text. Each rendered entry carries `text_source`
+(`dsl` or `foundry`) so the origin is inspectable. **728 of 908 rendered entries are DSL
+text; techniques, peculiarities, titles, bonds and abilities are 100%.** The remaining
+180 are gear occurrences of the 25 entries in `dsl_text_exceptions`.
 
-Walking the corpus: **DEFs nest**, inside blocks and inside other DEFs. Walking only the
-resolved JSON's top-level `entities` list finds 237 peculiarities; walking the whole
-document finds 256. Same shape of bug as the nested-actor-items one above.
+The output goes to a *file*, not a table in `l5r.sqlite`: `build.py` deletes and
+recreates that database on every run, so anything written there is gone before the build
+reads it. `pipeline.sh` therefore runs build → `dsl_rules_text.py` → build.
+
+### Finding the text: four shapes, and one heuristic that must not come back
+
+The corpus stores rules text four ways, and reading only the first misses 355 names:
+
+1. **DEF nodes** — techniques, peculiarities, titles, schools
+2. **labelled ability blocks** — a school's `SCHOOL_ABILITY` / `MASTERY_ABILITY`, whose
+   name is the block's *label*, not a DEF name
+3. **named value-pairs in a table** — `^"Ashigaru Armor" "Physical 3, Wargear, …"`
+4. **Title Ability pairs** — `^"Title Ability" "Behold the Legend"` beside
+   `^"Title Ability Effect" "…"`; some books instead inline it as `"Name: effect"`, and
+   two state it only in a RULES label
+
+Also: **DEFs nest**, inside blocks and inside other DEFs. Walking only the resolved
+JSON's top-level `entities` list finds 237 peculiarities; walking the whole document
+finds 256. Same shape of bug as the nested-actor-items one above.
+
+`PROSE_PROPS` and `PROSE_BLOCKS` are **allowlists on purpose.** The first version took
+any property whose value was over 40 characters, and put *"Errata Note: Title ability
+Voice of Authority; Status Award +15 (floor 40). See 2019 errata for full text."* on the
+Emerald Magistrate title where its rule belonged. Do not reintroduce a length heuristic —
+the corpus's own bookkeeping (`Errata Note`, `Carryover From`, `Source Book`) is long
+prose too. `^"Glory"` is authoring syntax for a cross-reference and renders as the plain
+name.
+
+### What the corpus does not carry, and why
+
+25 referenced entries stay on Foundry text, each with a stated reason in
+`dsl_text_exceptions` in `src/foundry_sources.json`. The gate fails on anything not
+listed. Two different situations, and they must not be blurred:
+
+- **14 weapons + 1 item — settled.** The corpus states a weapon's rules as its stat line,
+  which the sheet already renders in its own columns. Foundry's description is flavour
+  ("As much a work of art as it is a weapon, the katana…"), not rules. Nothing is missing.
+- **4 entries — empty in Foundry too**, or authored in the module with no printed source.
+- **6 items — an OPEN GAP.** Calligraphy Set, Finger of Jade, Personal Seal or Chop,
+  Poison (One Vial), Quiver of Arrow, Traveling pack carry real mechanics ("Blanket, bowl,
+  chopsticks, four days of travel rations… and any three other items of rarity 4 or
+  lower"). Core Rulebook personal effects the corpus does not have. Their reason begins
+  `PENDING` and the script reports them on **every run** so they cannot read as settled.
+  The fix is to convert them into titterpig-dsl-l5r5e.
 
 ## Never author rules text
 
