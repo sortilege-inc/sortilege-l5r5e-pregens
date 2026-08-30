@@ -1166,7 +1166,8 @@
           if (g.kind !== "choose") return;
           chooseGroup(body, "school.tech." + i,
                       cap(g.category || "Technique"),
-                      { n: g.n || 1, options: g.options, yield_value: 1 });
+                      { n: g.n || 1, options: g.options, yield_value: 1 },
+                      null, true);
         });
       } },
 
@@ -1521,7 +1522,56 @@
     save();
   }
 
-  function chooseGroup(body, key, heading, spec, fmt) {
+  var TECH_TEXT = window.L5R_TECHNIQUE_TEXT || {};
+
+  /* One hover card, moved and refilled rather than one per button — a school
+     step can carry twenty options and twenty always-present panels is twenty
+     things to keep positioned. Follows the pointer's element, not the pointer. */
+  var tipEl = null;
+
+  function tipNode() {
+    if (!tipEl) {
+      tipEl = document.createElement("div");
+      tipEl.className = "rule-tip";
+      tipEl.setAttribute("role", "tooltip");
+      tipEl.hidden = true;
+      document.body.appendChild(tipEl);
+    }
+    return tipEl;
+  }
+
+  function showTip(target, title, html) {
+    var t = tipNode();
+    t.innerHTML = '<strong class="rt-name">' + esc(title) + "</strong>" + html;
+    t.hidden = false;
+    var r = target.getBoundingClientRect();
+    var w = Math.min(380, window.innerWidth - 24);
+    t.style.width = w + "px";
+    var left = Math.max(12, Math.min(r.left, window.innerWidth - w - 12));
+    var h = t.getBoundingClientRect().height;
+    // above the button when there is room, below when there is not
+    var top = r.top - h - 8;
+    if (top < 8) top = r.bottom + 8;
+    t.style.left = (left + window.scrollX) + "px";
+    t.style.top = (top + window.scrollY) + "px";
+  }
+
+  function hideTip() {
+    if (tipEl) tipEl.hidden = true;
+  }
+
+  // Attach the rules text of `name` to a button, on hover and on keyboard focus.
+  function wireTip(btn, name) {
+    var html = TECH_TEXT[normName(name)];
+    if (!html) return;
+    btn.classList.add("has-tip");
+    btn.addEventListener("mouseenter", function () { showTip(btn, name, html); });
+    btn.addEventListener("focus", function () { showTip(btn, name, html); });
+    btn.addEventListener("mouseleave", hideTip);
+    btn.addEventListener("blur", hideTip);
+  }
+
+  function chooseGroup(body, key, heading, spec, fmt, tips) {
     var n = spec.n || 1;
     var yield_ = spec.yield_value != null ? spec.yield_value : 1;
     var picked = chosen(key).filter(function (o) { return spec.options.indexOf(o) >= 0; });
@@ -1540,6 +1590,7 @@
       picked.length + "/" + n + "</span>";
 
     Array.prototype.forEach.call(row.querySelectorAll(".choice"), function (b) {
+      if (tips) wireTip(b, b.getAttribute("data-v"));
       b.addEventListener("click", function () {
         var v = b.getAttribute("data-v");
         var at = picked.indexOf(v);
@@ -1549,6 +1600,7 @@
         // taking one past the limit drops the oldest, so the row never jams
         while (next.length > n) next.shift();
         setChosen(key, next);
+        hideTip();
         render();
       });
     });

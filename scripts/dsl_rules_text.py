@@ -23,8 +23,9 @@ what comes out is corrected text. The composition is cached in pipeline/dsl/
     python3 scripts/dsl_rules_text.py
     python3 scripts/dsl_rules_text.py --refresh    # recompose the corpus first
 
-Writes two things:
+Writes three things:
   * data/chargen/peculiarities.js   the Creator's picker text
+  * data/chargen/techniques.js      hover text for the Creator's technique choices
   * pipeline/dsl/rules_text.json, keyed by catalog uuid, which scripts/build.py
     reads at its single description choke point so every dossier and play sheet
     follows.
@@ -43,6 +44,7 @@ CACHE = os.path.join(ROOT, "pipeline", "dsl", "l5r5e-resolved.json")
 DB = os.path.join(ROOT, "pipeline", "l5r.sqlite")
 SOURCES = os.path.join(ROOT, "src", "foundry_sources.json")
 PEC_OUT = os.path.join(ROOT, "data", "chargen", "peculiarities.js")
+TECH_OUT = os.path.join(ROOT, "data", "chargen", "techniques.js")
 # Not a table in l5r.sqlite: scripts/build.py deletes that database and rebuilds
 # it from scratch on every run, so anything written there is gone by the time the
 # build wants to read it.
@@ -317,7 +319,7 @@ def main():
     rows = [dict(r) for r in cx.execute(
         "SELECT uuid, sub_type, name, clan FROM catalog WHERE sub_type != 'character'")]
 
-    out, pec, gaps = {}, {}, []
+    out, pec, tech, gaps = {}, {}, {}, []
     stats = collections.Counter()
     for r in rows:
         e, parent = resolve(r["name"], r["clan"], idx)
@@ -332,6 +334,8 @@ def main():
             stats["gap"] += 1
             if r["uuid"] in used:
                 gaps.append((r["sub_type"], r["name"], why))
+        if r["sub_type"] in ("technique", "signature_scroll") and parts:
+            tech.setdefault(norm(r["name"]), as_html(parts))
         if r["sub_type"] == "peculiarity" and e:
             pec[r["uuid"]] = {"text": as_html(parts), "types": types_of(e),
                               "dsl": e.get("name"), "via": parent or ""}
@@ -346,10 +350,20 @@ def main():
         json.dump(pec, f, ensure_ascii=False, separators=(",", ":"))
         f.write(";\n")
 
+    # The Creator picks techniques by name from the chargen data, not by uuid,
+    # so this one is keyed by normalised name. It is what the school step shows
+    # on hover: you cannot choose between two shūji from their titles.
+    with open(TECH_OUT, "w") as f:
+        f.write("window.L5R_TECHNIQUE_TEXT = ")
+        json.dump(tech, f, ensure_ascii=False, separators=(",", ":"))
+        f.write(";\n")
+
     print(f"dsl text:   {stats['text']}/{stats['total']} catalog entries carry corpus prose"
           f"  ({stats['gap']} without)")
     print(f"            {len(pec)}/253 peculiarities -> "
           f"{os.path.relpath(PEC_OUT, ROOT)} ({os.path.getsize(PEC_OUT)/1024:.1f} KB)")
+    print(f"            {len(tech)} techniques -> "
+          f"{os.path.relpath(TECH_OUT, ROOT)} ({os.path.getsize(TECH_OUT)/1024:.1f} KB)")
 
     def excepted(sub_type, name):
         """A stated exception for this entry: by name, or for its whole class."""
