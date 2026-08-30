@@ -1,0 +1,117 @@
+{
+ "slug": "iuchi-nergui",
+ "name": "Iuchi Nergüi",
+ "folder_label": "Iuchi Nergüi",
+ "campaign": "Slow Tide Harbor",
+ "status": "draft",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": null,
+  "family": "Iuchi",
+  "school": "Ujik Diviner School",
+  "role": "Sage",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Ujik Diviner School",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 1,
+    "earth": 1,
+    "fire": 1,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 40,
+    "glory": 40,
+    "status": null,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 4,
+    "composure": 6,
+    "focus": 2,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [],
+   "advancements": []
+  }
+ ],
+ "needs_attention": [
+  "family ring: choose 1 of Air, Void",
+  "school starting skills: choose 3 of Command, Games, Meditation, Performance, Sentiment, Theology",
+  "invocation: choose 2 of Commune with the Spirits, Embrace of Kenro-Ji-Jin, Caress of Earth, Jurojin's Balm, Wall of Earth",
+  "invocation: choose 2 of Dance of Seasons, Heart of the Water Dragon, Dominion of Suijin, Inari's Blessing, Reflections of P'an Ku",
+  "shuji: choose 1 of Ancestry Unearthed",
+  "question 4: standout quality and its +1 ring",
+  "questions 9-12: distinction, adversity, passion, anxiety",
+  "question 13: mentor, and the extra advantage or disadvantage",
+  "question 18: heritage",
+  "giri and ninjo",
+  "starting outfit"
+ ]
+}

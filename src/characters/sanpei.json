@@ -1,0 +1,116 @@
+{
+ "slug": "sanpei",
+ "name": "Sanpei",
+ "folder_label": "Sanpei",
+ "campaign": "Slow Tide Harbor",
+ "status": "draft",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": null,
+  "family": null,
+  "school": "The Wandering Blade",
+  "role": "Bushi",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "The Wandering Blade",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 1,
+    "earth": 2,
+    "fire": 1,
+    "water": 1,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 35,
+    "glory": null,
+    "status": null,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 6,
+    "focus": 2,
+    "vigilance": 1,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [],
+   "advancements": []
+  }
+ ],
+ "needs_attention": [
+  "school ring: choose 1 of Air, Fire, Water, Void",
+  "school starting skills: choose 5 of Fitness, Martial Arts [Melee], Martial Arts [Ranged], Martial Arts [Unarmed], Meditation, Performance, Smithing",
+  "kata: choose 1 of Striking as Air, Striking as Earth, Striking as Water, Striking as Fire",
+  "shuji: choose 1 of Wanderer's Resolve",
+  "question 4: standout quality and its +1 ring",
+  "questions 9-12: distinction, adversity, passion, anxiety",
+  "question 13: mentor, and the extra advantage or disadvantage",
+  "question 18: heritage",
+  "giri and ninjo",
+  "starting outfit"
+ ]
+}

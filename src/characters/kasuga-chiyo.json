@@ -1,0 +1,116 @@
+{
+ "slug": "kasuga-chiyo",
+ "name": "Kasuga Chiyo",
+ "folder_label": "Kasuga Chiyo",
+ "campaign": "Slow Tide Harbor",
+ "status": "draft",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Tortoise",
+  "family": "Kasuga",
+  "school": "Kasuga Smuggler School",
+  "role": "Courtier",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Kasuga Smuggler School",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 1,
+    "water": 2,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 29,
+    "glory": 33,
+    "status": 25,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 4,
+    "composure": 6,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 9,
+    "bu": 0
+   },
+   "techniques": [],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [],
+   "advancements": []
+  }
+ ],
+ "needs_attention": [
+  "family ring: choose 1 of Earth, Water",
+  "school starting skills: choose 5 of Commerce, Culture, Courtesy, Martial Arts [Melee], Seafaring, Skulduggery",
+  "kata: choose 1 of Rushing Avalanche Style",
+  "shuji: choose 1 of Honest Assessment, Well of Desire",
+  "question 4: standout quality and its +1 ring",
+  "questions 9-12: distinction, adversity, passion, anxiety",
+  "question 13: mentor, and the extra advantage or disadvantage",
+  "question 18: heritage",
+  "giri and ninjo",
+  "starting outfit"
+ ]
+}

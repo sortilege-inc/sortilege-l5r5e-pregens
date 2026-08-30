@@ -359,7 +359,7 @@
       '<button type="button" class="draftnew" id="draft-new">+ New</button>' +
       '<button type="button" class="draftnew" id="draft-dup">Duplicate</button>' +
       (ARCHIVE.length
-        ? '<span class="drafts-label drafts-archive">From Foundry</span>' +
+        ? '<span class="drafts-label drafts-archive">From the archive</span>' +
           '<div class="archive-list">' +
           ARCHIVE.map(function (a) {
             var open = Object.keys(STORE.drafts).some(function (id) {

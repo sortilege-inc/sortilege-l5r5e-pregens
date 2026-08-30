@@ -1,0 +1,116 @@
+{
+ "slug": "kitsuki-nagiko",
+ "name": "Kitsuki Nagiko",
+ "folder_label": "Kitsuki Nagiko",
+ "campaign": "Slow Tide Harbor",
+ "status": "draft",
+ "bucket": null,
+ "accent": null,
+ "identity": {
+  "clan": "Dragon",
+  "family": "Kitsuki",
+  "school": "Kitsuki Investigator School",
+  "role": "Courtier",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Kitsuki Investigator School",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 1,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 6,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 6,
+    "bu": 0
+   },
+   "techniques": [],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [],
+   "advancements": []
+  }
+ ],
+ "needs_attention": [
+  "family ring: choose 1 of Air, Water",
+  "school starting skills: choose 5 of Culture, Government, Martial Arts [Melee], Medicine, Sentiment, Skulduggery, Survival",
+  "kata: choose 1 of Striking as Air, Tactical Assessment",
+  "shuji: choose 1 of Shallow Waters",
+  "question 4: standout quality and its +1 ring",
+  "questions 9-12: distinction, adversity, passion, anxiety",
+  "question 13: mentor, and the extra advantage or disadvantage",
+  "question 18: heritage",
+  "giri and ninjo",
+  "starting outfit"
+ ]
+}
