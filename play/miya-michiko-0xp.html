@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miya Michiko — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Miya Michiko</span>
+  <a href="../characters/miya-michiko.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "miya-michiko-0xp",
+ "name": "Miya Michiko",
+ "clan": "Imperial",
+ "family": "Miya",
+ "school": "Miya Cartographer School",
+ "role": "Artisan",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 4,
+  "earth": 2,
+  "fire": 2,
+  "water": 1,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 6,
+  "focus": 6,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 55,
+  "glory": 44,
+  "status": 40
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 1,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 1,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 2,
+  "government": 1,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 1,
+  "command": 0,
+  "courtesy": 1,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 1,
+  "skulduggery": 0,
+  "survival": 1
+ },
+ "bushido": {
+  "paramount": "Righteousness",
+  "less": "Courtesy"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "8 koku",
+ "techniques": [
+  {
+   "name": "Warrior’s Resolve",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>Once per scene, as a Support action, you may spend 1 Void Points to recover.</li><li>Remove fatigue equal to your Honor rank.</li></ul>"
+  },
+  {
+   "name": "Civility Foremost",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>As a Scheme action, make a Command or Courtesy (Earth) check targeting one character to claim protection for an individual of your choice by rights of honor. The TN of the check is equal to the target&#x27;s vigilance.</li><li>If you succeed, the target must forfeit honor equal to your Earth Ring plus your bonus successes and suffer that much strife to perform an Attack or Scheme action targeting the chosen individual. This effect persists until the end of the scene, or until the target performs an Attack or Scheme action.</li><li>Earth (op)+: Choose one additional target with vigilance lower than or equal to your first target&#x27;s vigilance per (op) spent this way.</li></ul>"
+  },
+  {
+   "name": "Well Traveled",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>You always know which way is north and can always find a useful navigation landmark. When making a check to recall or ascertain geographical, political, or societal information, add kept (ring) set to (op) or (su) results equal to your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Paragon of Compassion",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>Pick One: Compassion (Water), Courage (Fire), Courtesy (Air), Duty and Loyalty (Earth), Honor (Void), Righteousness (Void), Sincerity (Void). A character may have multiple instances of this advantage for different tenets. Each tenet counts as a separate advantage. You believe utterly in the chosen Bushidō tenet, and others instinctively discern that your actions are genuine when you act in accordance with it.</li><li>When performing a check for which you need to convince others of, or leverage your faith in, the Bushidō tenet (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Lost Name",
+   "tag": "Adversity",
+   "ring": "void",
+   "kind": "adversity",
+   "text": "<ul><li>You have lost your true name, whether through dark magic or spiritual crisis.</li><li>When you make a check that involves personal convictions (such as Meditation [Void] as part of your quest for Enlightenment or Survival [Void] to create a spiritually harmonious rock garden), you must choose and reroll two dice showing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Fortune-Telling",
+   "tag": "Passion",
+   "ring": "void",
+   "kind": "passion",
+   "text": "<ul><li>You can identify any common portents (such as constellations and other stellar phenomena, the cracks in oracle bones, the appearance of certain animals, and various other signs of things to come), along with their implications for the future.</li><li>After performing a check to discern the future (such as a Survival [Void] check to look for small omens in your earthly environs or a Theology [Void] check to perform a divination by reading the stars), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Fear of",
+   "tag": "Anxiety",
+   "ring": "earth",
+   "kind": "anxiety",
+   "text": "<ul><li>You have an irrational fear of a commonly found creature. When you perceive such a creature you become unnerved.</li><li>After performing a check to make choices while in the presence of your feared creature (such as Medicine [Earth] or Courtesy [Earth]), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Dangerous Allure",
+   "tag": "Distinction",
+   "ring": "fire",
+   "kind": "distinction",
+   "text": "<ul><li>You always make an impression, and NPCs remember your name and face after interacting with you for one or more scenes (unless you take pains to disguise yourself).</li><li>When performing a check for which your good looks are a benefit (such as a Command [Fire] check to get someone to act in spite of the possible consequences or a Performance [Fire] check to incite emotion in someone), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Yumi",
+   "kind": "Weapon",
+   "category": "Bows",
+   "skill": "ranged",
+   "range": "2-5",
+   "damage": 5,
+   "deadliness": 3,
+   "rarity": "3",
+   "text": "<p><span class=\"fontstyle0\">The yumi is perhaps the most common bow used by Rokugani samurai. Similar to the daikyū, it is a long, graceful bow made from a composite of horn, sinew, leather, and wood. Smaller than the daikyū, but only just, the yumi has an asymmetric grip, general shape, and long-range killing power similar to those of its larger cousin. Where the daikyū is a cavalry bow, however, the yumi is designed to be fired while standing.</span></p>"
+  },
+  {
+   "name": "Quiver of Arrow",
+   "kind": "Item",
+   "rarity": "1",
+   "text": "<p>A quiver is a cloth or leather container used to carry arrows. Worn at the waist or slung over the shoulder, a standard quiver can hold sixty or more arrows. There are also quivers or equivalent carrying pouches for crossbow quarrels, blowgun darts, stones, and other ammunition, and they function in the same manner.</p><p data-start=\"414\" data-end=\"678\">As long as a character has a quiver of arrows available, they are assumed not to run out of standard ammunition. Further, the character is assumed to refill the quiver at reasonable opportunities, such as when visiting a guard outpost or a castle with an armory.</p><p data-start=\"680\" data-end=\"1009\">If a character goes an especially long time without having a reasonable opportunity to refill their quiver, the GM may state that the quiver is running low, with only 3 standard pieces of ammunition remaining; the character then gains 1 Void point. The character still possesses any special arrows they had prior to this point.</p><p data-start=\"1011\" data-end=\"1245\" data-is-last-node=\"\" data-is-only-node=\"\">A depleted quiver can be refilled by visiting a location where the character can acquire ammunition, or by making ammunition using the Survival skill if the character has the proper supplies (see page 169). (Cost: 20 zeni. Rarity: 1.)</p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Calligraphy Set",
+   "kind": "Item",
+   "rarity": "3",
+   "text": "<p>These ornate boxes contain items a practiced calligrapher needs to craft books, letters, scrolls, and other written communications. It consists of a small wooden box that contains a variety of brushes, inkstones, and pigments; a small bowl for water; and a small bag of sand for drying. Calligraphers and scribes customarily carry a calligraphy set, as so do some samurai and courtiers who prefer to write their own correspondence. (Cost: 1 bu. Rarity: 3.)</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  },
+  {
+   "name": "Personal Seal or Chop",
+   "kind": "Item",
+   "qualities": [
+    "Ceremonial"
+   ],
+   "rarity": "6",
+   "text": "<p>A personal chop is used by samurai to verify their identity and sign documents, among other official business. Each one is a unique design that is registered with the Miya family. Using another samurai’s chop is considered both an insult and a serious crime. (Cost: 4 bu. Rarity: 6. Qualities: Ceremonial.)</p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

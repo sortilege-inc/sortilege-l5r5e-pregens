@@ -1,0 +1,247 @@
+{
+ "slug": "agasha-nobuo",
+ "name": "Agasha Nobuo",
+ "folder_label": "Agasha Nobuo",
+ "campaign": null,
+ "status": "draft",
+ "bucket": "generated",
+ "accent": null,
+ "identity": {
+  "clan": "Dragon",
+  "family": "Agasha",
+  "school": "Agasha Mystic School",
+  "role": "Shugenja",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Agasha Mystic School",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 1,
+    "earth": 2,
+    "fire": 3,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 2
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 1,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 40,
+    "glory": 37,
+    "status": 30,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Courtesy",
+     "less_significant": "Honor"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 4,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Tetsubō of Earth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Path to Inner Peace",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Jurōjin’s Balm",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Cleansing Rite",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Commune with the Spirits",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Elemental Transmutation",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Lucky Hunter",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "void"
+    },
+    {
+     "name": "Unsavory Past",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "water"
+    },
+    {
+     "name": "Provocation",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "fire"
+    },
+    {
+     "name": "Softheartedness",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "fire"
+    },
+    {
+     "name": "Friend of the brotherhood",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "void",
+     "via": "mentor"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Bō",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Scroll satchel",
+     "quantity": 1
+    },
+    {
+     "name": "Journal of observations",
+     "quantity": 1
+    }
+   ],
+   "advancements": [],
+   "generated": true,
+   "generated_choices": {
+    "standout_ring": "water",
+    "parent_skill": "Government",
+    "heritage": "Shamed by Defeat",
+    "heritage_table": "fields-of-victory-heritages",
+    "mentor_path": "A"
+   }
+  }
+ ],
+ "needs_attention": [
+  "heritage effect needs resolving: Choose one of the starting skills for your school in which your character has no ranks; gain +1 rank in that skill",
+  "starting outfit line has no catalog item: set of glass vials"
+ ]
+}

@@ -1,0 +1,200 @@
+{
+ "slug": "kitsune-osamu",
+ "name": "Kitsune Osamu",
+ "folder_label": "Kitsune Osamu",
+ "campaign": null,
+ "status": "draft",
+ "bucket": "generated",
+ "accent": null,
+ "identity": {
+  "clan": "Fox",
+  "family": "Kitsune",
+  "school": "Kitsune Impersonator Tradition",
+  "role": "Courtier",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Kitsune Impersonator Tradition",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 3,
+    "earth": 3,
+    "fire": 2,
+    "water": 1,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 2
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 1,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 30,
+    "glory": 40,
+    "status": 33,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Duty and Loyalty",
+     "less_significant": "Righteousness"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 2,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 2,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Nature’s Touch",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Token of Memory",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Commune with the Spirits",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Fox Spirit",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Famously Neutral",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "earth"
+    },
+    {
+     "name": "Elemental Deficiency (Water)",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "water"
+    },
+    {
+     "name": "Horse Racing",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "air"
+    },
+    {
+     "name": "Disdain for Urban Sprawl",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "earth"
+    },
+    {
+     "name": "Pot Stirrer",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "fire",
+     "via": "mentor"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [],
+   "advancements": [],
+   "generated": true,
+   "generated_choices": {
+    "standout_ring": "earth",
+    "parent_skill": "Government",
+    "heritage": "Right Hand of the Emperor",
+    "heritage_table": "fields-of-victory-heritages",
+    "mentor_path": "A"
+   }
+  }
+ ],
+ "needs_attention": [
+  "heritage effect needs resolving: Gain the Support of [One Group] distinction The group chosen must be the Seppun, Otomo, or Miya family, or the Imperial Legions",
+  "starting outfit line has no catalog item: Take the starting outfit of any one other school as appropriate to your false identity"
+ ]
+}

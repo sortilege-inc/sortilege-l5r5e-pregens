@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shinji — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Shinji</span>
+  <a href="../characters/shinji.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "shinji-0xp",
+ "name": "Shinji",
+ "clan": null,
+ "family": null,
+ "school": "Laughing Mountain Hearthstone Tradition",
+ "role": "Courtier",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 1,
+  "fire": 3,
+  "water": 1,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 4,
+  "focus": 5,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 4
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 28,
+  "glory": 43,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 1,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 0,
+  "command": 1,
+  "courtesy": 0,
+  "games": 1,
+  "performance": 1,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Courtesy",
+  "less": "Compassion"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Truth Burns through Lies",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When making a Scholar skill (Fire) check to assess a character&#x27;s story, you may spend (op) in the following way:</li><li>Fire (op): If there is a single statement upon which the character&#x27;s story hinges, you determine what it is and what you would need to do to verify or disprove it.</li></ul>"
+  },
+  {
+   "name": "Sensational Distraction",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When making a Social skill (Fire) check targeting one or more characters, you may spend (op) in the following way:</li><li>Fire (op)+: When interacting with other characters, the target treats their vigilance as 1 lower per (op) spent this way; when interacting with you, the target treats their vigilance as 1 higher per (op) spent this way. This effect persists until the end of the scene.</li></ul>"
+  },
+  {
+   "name": "Laughter Makes the Home",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>The first time you make a successful Social check against another character in a scene, you may reduce the TN of all subsequent Social checks against that character by 1 (to a minimum of 1) for the remainder of the scene. This effect does not stack with itself, but can be used on multiple characters.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Dead Eyes",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<ul><li>Your gaze is unnervingly calm, even in the face of horrors.</li><li>When performing a check that relies on avoiding fear or exuberant emotions (such as Meditation [Earth] to avoid running from a monstrous oni or Sentiment [Earth] to avoid being caught up in a raucous crowd), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Scorn of",
+   "tag": "Adversity",
+   "ring": "water",
+   "kind": "adversity",
+   "text": "<ul><li>You have earned the ire of a particular group, which has seriously damaged your ability to work with its members or enlist their help. You have been barred from entering their facilities, and they refuse to meet or communicate with you directly. Confer with the GM to select a campaign-appropriate group when choosing this disadvantage.</li><li>When performing a check to interact with the chosen group that relies on your rapport with its members (such as a Courtesy [Water] check to persuade them to do something or a Performance [Water] check to impress a group of them), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Provocation",
+   "tag": "Passion",
+   "ring": "fire",
+   "kind": "passion",
+   "text": "<ul><li>You can always identify a point of sensitivity that you can push upon in another person — though not whether they will take your comment as slightly aggressive banter or a grave insult.</li><li>After performing a check to get a rise out of someone (such as a Courtesy [Fire] check to call someone by an aggravating nickname or a Command [Fire] check to get a group of soldiers passionate and angry enough to storm an enemy position), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Materialism",
+   "tag": "Anxiety",
+   "ring": "void",
+   "kind": "anxiety",
+   "text": "<ul><li>You are obsessed with physical possessions and objects, despite what the Tao of Shinsei says about such material earthly bonds. You cannot refuse gifts of rarity 3 or higher.</li><li>After performing a check to give up a physical object in your possession or other thing of value (such as a Government [Void] check to find a way to sacrifice a holding to gain a political advantage over a rival), you suffer 3 strife. If this is the first time this has occurred this scene, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Enlightenment",
+   "tag": "Passion",
+   "ring": "void",
+   "kind": "passion",
+   "text": "<ul><li>You feel no attachment to mundane items and earthly titles; you cannot be tempted with material wealth or the promise of power.</li><li>After performing a check to detach yourself from material concerns (such as a Meditation [Void] check to contemplate your place in the universe or a Survival [Void] check to exist in harmony with your environment), you remove 3 strife.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Bō",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "1-2",
+   "damage": 6,
+   "deadliness": 2,
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "2",
+   "text": "<p><span class=\"fontstyle0\">The bō, a humble staff, is a versatile weapon found throughout Rokugan. Roughly six feet long and made from sturdy hardwood, it is carried by travelers who need both a walking stick and an inconspicuous weapon.</span></p>"
+  },
+  {
+   "name": "Tekken",
+   "kind": "Weapon",
+   "category": "Specialist Weapons",
+   "skill": "unarmed",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 3,
+   "grips": "N/A",
+   "qualities": [
+    "Concealable",
+    "Durable"
+   ],
+   "rarity": "4",
+   "text": "<ul><li>Category: Specialist</li><li>Skill: Martial Arts [Unarmed]</li><li>Range: 0</li><li>Damage: 2</li><li>Deadliness: 3</li><li>Grips: 1-hand: -</li><li>Qualities: [&quot;Concealable&quot;,&quot;Durable&quot;]</li><li>Rarity: 4</li><li>Cost: 3 bu</li></ul>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

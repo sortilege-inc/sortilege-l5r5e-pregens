@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ide Emiko — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Ide Emiko</span>
+  <a href="../characters/ide-emiko.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "ide-emiko-0xp",
+ "name": "Ide Emiko",
+ "clan": "Unicorn",
+ "family": "Ide",
+ "school": "Ide Emissary School",
+ "role": "Courtier",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 2,
+  "fire": 2,
+  "water": 3,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 10,
+  "focus": 4,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 10
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 50,
+  "glory": 45,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 1,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 1,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 1,
+  "government": 1,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 1,
+  "games": 0,
+  "performance": 0,
+  "commerce": 1,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 2
+ },
+ "bushido": {
+  "paramount": "Courtesy",
+  "less": "Duty and Loyalty"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "9 koku",
+ "techniques": [
+  {
+   "name": "Glorious Entrance",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>Activation: When you enter a scene, you may make a Performance (Fire) check. TN equals the difference between the glory rank of the character in the scene with the highest glory and your glory rank (minimum 1).</li><li>If you succeed, reduce the TN of Scheme and Support action checks you make by 1. Persists for one round plus one additional round for every two bonus successes.</li><li>Opportunities: (op)(op)+: When you receive a glory award, increase the amount by 1 plus 1 per additional (op)(op) spent this way. (op)(op): You gain the Emboldened condition.</li></ul>"
+  },
+  {
+   "name": "Stirring the Embers",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When making a Social skill (Fire) check targeting one or more characters, you may spend (op) in the following way:</li><li>Fire (op)+: Choose a target and one of their known distinctions per (op) spent this way. Until the end of the scene, when that advantage applies to a check, the target may reroll up to three dice (instead of two).</li></ul>"
+  },
+  {
+   "name": "Disarming Demeanor",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>When you perform a Support action check, you may spend (op) as follows: (op)+: Choose one character in the scene with vigilance lower than your school ranks plus (op) spent this way. You treat that character&#x27;s focus and vigilance each as 1 lower until end of scene.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Dead Eyes",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<ul><li>Your gaze is unnervingly calm, even in the face of horrors.</li><li>When performing a check that relies on avoiding fear or exuberant emotions (such as Meditation [Earth] to avoid running from a monstrous oni or Sentiment [Earth] to avoid being caught up in a raucous crowd), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Lost Arm or Lost Hand",
+   "tag": "Adversity",
+   "ring": "fire",
+   "kind": "adversity",
+   "text": "<ul><li>You have only one usable hand or arm. You cannot wield weapons in a two-handed grip or hold anything in your missing hand. If you are missing only the hand, you can strap items to the arm for use.</li><li>When you make a check for which having two hands is very valuable (such as a Martial Arts [Unarmed] [Fire] check to grapple a foe into submission or a Survival [Fire] check to leap onto a galloping horse&#x27;s back), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Enlightenment",
+   "tag": "Passion",
+   "ring": "void",
+   "kind": "passion",
+   "text": "<ul><li>You feel no attachment to mundane items and earthly titles; you cannot be tempted with material wealth or the promise of power.</li><li>After performing a check to detach yourself from material concerns (such as a Meditation [Void] check to contemplate your place in the universe or a Survival [Void] check to exist in harmony with your environment), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Cynicism",
+   "tag": "Anxiety",
+   "ring": "fire",
+   "kind": "anxiety",
+   "text": "<ul><li>When faced with a truly novel or unconventional idea, you always look for ways it can fail, and others must persuade you that it could work before you will try it (even if it is your idea).</li><li>After performing a check to think unconventionally (such as a Performance [Fire] check to improvise during a performance or a Tactics [Fire] check to develop a new strategy on the fly), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Well Connected",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You have an extensive network of contacts across Rokugan.</li><li>When performing a check for which your connections are a benefit (such as Courtesy [Water] to impress someone at court or Government [Water] to identify a useful contact), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Ceremonial Clothes",
+   "kind": "Armor",
+   "physical": 1,
+   "qualities": [
+    "Ceremonial",
+    "Resplendent"
+   ],
+   "rarity": "4",
+   "text": "<p>Physical 1, Ceremonial Resplendent, Rarity 4, 1 koku</p>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Journal of observations",
+   "kind": "Item",
+   "rarity": "3"
+  },
+  {
+   "name": "Calligraphy Set",
+   "kind": "Item",
+   "rarity": "3",
+   "text": "<p>These ornate boxes contain items a practiced calligrapher needs to craft books, letters, scrolls, and other written communications. It consists of a small wooden box that contains a variety of brushes, inkstones, and pigments; a small bowl for water; and a small bag of sand for drying. Calligraphers and scribes customarily carry a calligraphy set, as so do some samurai and courtiers who prefer to write their own correspondence. (Cost: 1 bu. Rarity: 3.)</p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

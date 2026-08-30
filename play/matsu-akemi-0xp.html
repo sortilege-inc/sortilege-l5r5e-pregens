@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matsu Akemi — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Matsu Akemi</span>
+  <a href="../characters/matsu-akemi.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "matsu-akemi-0xp",
+ "name": "Matsu Akemi",
+ "clan": "Lion",
+ "family": "Matsu",
+ "school": "Matsu Berserker School",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 1,
+  "earth": 3,
+  "fire": 2,
+  "water": 2,
+  "void": 2
+ },
+ "derived": {
+  "endurance": 10,
+  "composure": 10,
+  "focus": 3,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 10
+  },
+  "fatigue": {
+   "max": 10
+  },
+  "void": {
+   "max": 2,
+   "start": 2
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 55,
+  "glory": 44,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 2,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 1,
+  "tactics": 1,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 2,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 1,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 1
+ },
+ "bushido": {
+  "paramount": "Honor",
+  "less": "Courage"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "5 koku",
+ "techniques": [
+  {
+   "name": "Spinning Blades Style",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>When you make a Martial Arts [Melee] or Martial Arts [Unarmed] Attack action check, if you have a second readied weapon you did not use for the attack, you may spend (op):</li><li>+(op): You must spend (op) equal to your target&#x27;s Vigilance to activate this technique. You use your second readied weapon against one target, inflicting physical damage equal to its base damage. If that target is Dazed, increase this damage by your ranks in the skill you used.</li></ul>"
+  },
+  {
+   "name": "Stirring the Embers",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When making a Social skill (Fire) check targeting one or more characters, you may spend (op) in the following way:</li><li>Fire (op)+: Choose a target and one of their known distinctions per (op) spent this way. Until the end of the scene, when that advantage applies to a check, the target may reroll up to three dice (instead of two).</li></ul>"
+  },
+  {
+   "name": "Matsu’s Fury",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>After you suffer a critical strike or unmask, you may suffer the Enraged condition to remove an amount of fatigue from yourself equal to your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Scrounger",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You are always able to find something to fill your belly and sustain you, though sometimes the only option is repulsive.</li><li>When performing a check for which your resourceful nature applies (such as a Labor [Water] check to find useful items or an Aesthetics [Water] check to find inspiration), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Blindness",
+   "tag": "Adversity",
+   "ring": "water",
+   "kind": "adversity",
+   "text": "<ul><li>You are unable to see out of either eye. Your lack of sight does not mean you cannot perceive your surroundings (using your other senses), but you cannot observe things that can be perceived only by sight.</li><li>When you make a check for which sight is an asset that cannot easily be replaced by other senses (such as a Sentiment [Water] check to identify someone&#x27;s hostile intentions from across a noisy room or a Martial Arts [Ranged] [Water] check to hit a moving target with an arrow), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Ikebana",
+   "tag": "Passion",
+   "ring": "water",
+   "kind": "passion",
+   "text": "<ul><li>You can always identify a plant by any of its parts, and you know its physical properties and its hanakotoba (&quot;language of flowers&quot;) meaning.</li><li>After performing a check related to flower arrangement (such as an Aesthetics [Water] check to rearrange or improve an ikebana piece or a Survival [Water] check to acquire flowers from a marketplace), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Coming Storm",
+   "tag": "Anxiety",
+   "ring": "void",
+   "kind": "anxiety",
+   "text": "<ul><li>Your family has endured great recurring hardship. You are constantly vigilant for the same type of calamity.</li><li>When performing a check involving planning for your or your family&#x27;s well-being (such as Medicine [Void] to sense ailment or Command [Void] to warn of risk), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Hot Pot",
+   "tag": "Passion",
+   "ring": "earth",
+   "kind": "passion",
+   "text": "<ul><li>You can prepare hearty communal meals and identify ingredients.</li><li>After performing a check involving the preparation of a communal meal, you remove 3 strife.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Ashigaru Armor",
+   "kind": "Armor",
+   "physical": 3,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "3",
+   "text": "<p>Physical 3, Wargear, Rarity 3, 5 koku</p>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Katana",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Nodachi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1-2",
+   "damage": 5,
+   "deadliness": 6,
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "8",
+   "text": "<p><span class=\"fontstyle0\">Larger than katana, nodachi are long and lethal swords more at home on the battlefield than in a city or at court. Roughly six feet long, these blades are relatively rare due to the skill and strength needed to wield them effectively. There are those who prize the raw force of these blades, however, such as members of the Matsu school. Too large to be worn at the waist, nodachi are normally worn on the back and drawn over the shoulder or even carried into battle by a samurai’s attendant</span>.</p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Yumi",
+   "kind": "Weapon",
+   "category": "Bows",
+   "skill": "ranged",
+   "range": "2-5",
+   "damage": 5,
+   "deadliness": 3,
+   "rarity": "3",
+   "text": "<p><span class=\"fontstyle0\">The yumi is perhaps the most common bow used by Rokugani samurai. Similar to the daikyū, it is a long, graceful bow made from a composite of horn, sinew, leather, and wood. Smaller than the daikyū, but only just, the yumi has an asymmetric grip, general shape, and long-range killing power similar to those of its larger cousin. Where the daikyū is a cavalry bow, however, the yumi is designed to be fired while standing.</span></p>"
+  },
+  {
+   "name": "Quiver of Arrow",
+   "kind": "Item",
+   "rarity": "1",
+   "text": "<p>A quiver is a cloth or leather container used to carry arrows. Worn at the waist or slung over the shoulder, a standard quiver can hold sixty or more arrows. There are also quivers or equivalent carrying pouches for crossbow quarrels, blowgun darts, stones, and other ammunition, and they function in the same manner.</p><p data-start=\"414\" data-end=\"678\">As long as a character has a quiver of arrows available, they are assumed not to run out of standard ammunition. Further, the character is assumed to refill the quiver at reasonable opportunities, such as when visiting a guard outpost or a castle with an armory.</p><p data-start=\"680\" data-end=\"1009\">If a character goes an especially long time without having a reasonable opportunity to refill their quiver, the GM may state that the quiver is running low, with only 3 standard pieces of ammunition remaining; the character then gains 1 Void point. The character still possesses any special arrows they had prior to this point.</p><p data-start=\"1011\" data-end=\"1245\" data-is-last-node=\"\" data-is-only-node=\"\">A depleted quiver can be refilled by visiting a location where the character can acquire ammunition, or by making ammunition using the Survival skill if the character has the proper supplies (see page 169). (Cost: 20 zeni. Rarity: 1.)</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

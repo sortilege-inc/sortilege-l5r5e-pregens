@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mirumoto Daisuke — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Mirumoto Daisuke</span>
+  <a href="../characters/mirumoto-daisuke.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "mirumoto-daisuke-0xp",
+ "name": "Mirumoto Daisuke",
+ "clan": "Dragon",
+ "family": "Mirumoto",
+ "school": "Mirumoto Taoist Blade School",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 2,
+  "fire": 2,
+  "water": 2,
+  "void": 2
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 8,
+  "focus": 4,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 8
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 2,
+   "start": 2
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 51,
+  "glory": 41,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 1,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 1,
+  "meditation": 1,
+  "tactics": 1,
+  "culture": 0,
+  "government": 1,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 1,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 1
+ },
+ "bushido": {
+  "paramount": "Sincerity",
+  "less": "Courtesy"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "5 koku",
+ "techniques": [
+  {
+   "name": "Iaijutsu Cut: Rising Blade",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>As an Attack action using one sheathed Razor-Edged weapon, you may make a Martial Arts [Melee] check targeting one character at range 0-1. The TN of this check is equal to the target&#x27;s vigilance.</li><li>You draw and ready the sheathed weapon in a one-handed grip.</li><li>If you succeed, deal physical damage equal to the weapon&#x27;s deadliness. Target cannot defend against this damage if they are Compromised.</li><li>(op): Ready one other sheathed Razor-Edged weapon.</li></ul>"
+  },
+  {
+   "name": "Striking as Water",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>When you make a Martial Arts [Melee, Ranged, or Unarmed] (Water) Attack action check, you may spend (op):</li><li>Water +(op): Your target treats their physical resistance as 1 lower per (op) spent this way. Persists until end of your next turn.</li></ul>"
+  },
+  {
+   "name": "Water Fist",
+   "tag": "Kiho",
+   "kind": "kiho",
+   "text": "<ul><li>As an Attack and Support action, make a TN 1 Martial Arts [Unarmed] (Water) check. You may choose one character at range 0-3 who shares a contact surface with you as the target for the burst effect.</li><li>Your Attack checks using Punch or Kick ignore an amount of target&#x27;s physical resistance up to two times your Water Ring. You may spend 1 Void Points to perform an unarmed attack through any solid surface your target is touching, as long as you are both in contact with the same surface at range 0 to your Water Ring.</li><li>If you succeed: Target suffers physical damage equal to your Water Ring.</li></ul>"
+  },
+  {
+   "name": "Sharpened Ki",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>Your kihō that affect your unarmed attack profiles also apply to weapons you wield in a one-handed grip. When you succeed on a check to activate a kihō that affects your unarmed attack profiles or a weapon you wield in a one-handed grip, add bonus successes equal to your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Well Connected",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You have an extensive network of contacts across Rokugan.</li><li>When performing a check for which your connections are a benefit (such as Courtesy [Water] to impress someone at court or Government [Water] to identify a useful contact), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Penalty",
+   "tag": "Adversity",
+   "ring": "fire",
+   "kind": "adversity",
+   "text": "<ul><li>You or your family must pay recompense for a minor offense over an extended period.</li><li>When you make a check to avoid fulfilling the penalty&#x27;s terms, you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Kintsugi",
+   "tag": "Passion",
+   "ring": "earth",
+   "kind": "passion",
+   "text": "<ul><li>You have a particular fondness and skill for kintsugi, the art of mending broken pottery with gold or similar.</li><li>After performing a check to mend an object with kintsugi or interact with a piece of kintsugi-repaired pottery (such as Culture [Earth] or Labor [Earth]), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Isolation",
+   "tag": "Anxiety",
+   "ring": "earth",
+   "kind": "anxiety",
+   "text": "<ul><li>You feel profoundly isolated from those you care about.</li><li>After performing a check related to interacting with people you care for (such as Command [Earth] to issue orders to family members or Sentiment [Earth] to recall the feelings of your friends concerning a subject), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Famously Honest",
+   "tag": "Distinction",
+   "ring": "air",
+   "kind": "distinction",
+   "text": "<ul><li>Other people have heard of you for your honesty, and they believe you by default unless given evidence to the contrary.</li><li>When performing a check for which you can leverage your reputation for telling the truth (such as a Command [Air] check to convince someone of a statement&#x27;s veracity, or a Commerce [Air] check to sell an item at an inflated price), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

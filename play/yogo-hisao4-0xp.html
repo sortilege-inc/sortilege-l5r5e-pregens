@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yogo Hisao4 — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Yogo Hisao4</span>
+  <a href="../characters/yogo-hisao4.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "yogo-hisao4-0xp",
+ "name": "Yogo Hisao4",
+ "clan": "Scorpion",
+ "family": "Yogo",
+ "school": "Yogo Preserver Schoo",
+ "role": "Shugenja",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 2,
+  "fire": 2,
+  "water": 2,
+  "void": 2
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 8,
+  "focus": 4,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 8
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 2,
+   "start": 2
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 38,
+  "glory": 44,
+  "status": 35
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 1,
+  "composition": 1,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 0,
+  "ranged": 1,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 2,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 1,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Honor",
+  "less": "Duty and Loyalty"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "4 koku",
+ "techniques": [
+  {
+   "name": "By the Light of the Lord Moon",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Scheme action, make a TN 2 Theology (Air) check targeting an area at range 0-2.</li><li>If you succeed, you scry for each hidden character and concealed object (secret compartments, trap doors, concealed weapons) in the targeted area, revealing it with a luminous outline only you can perceive. Only reveals mundane concealment.</li><li>Air +(op): Reveal up to one magically concealed object per (op) spent this way.</li><li>Air (op)(op)+: Choose one additional character at range 0-1 per (op)(op) spent this way who can also see the objects.</li></ul>"
+  },
+  {
+   "name": "Embrace of Kenro-Ji-Jin",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 2 Theology (Earth) check targeting yourself.</li><li>If you succeed, you augment yourself with the ability to stick to earthen surfaces, traversing even vertical surfaces made of earth or stone. Persists for one round, plus additional rounds equal to bonus successes (or one minute in narrative).</li><li>Earth (op): This effect persists until end of the scene instead.</li><li>Earth (op): You can pass through solid earth as if it was water when you move. Supernatural resistance against Earth invocations, kihō, and mahō equal to your Earth Ring.</li><li>Earth (op)(op): Effects also apply to metal. Physical resistance against metal weapons equal to your Earth Ring.</li></ul>"
+  },
+  {
+   "name": "Yari of Air",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 1 Theology (Air) check to summon a spear made of swirling wind into your hand.</li><li>If you succeed, you summon and ready a Yari made of wind, visible only by a wispy outline. It has the Concealable quality. When you make an Attack or Support action check using the invisible spear, during Step 5: Choose Kept Dice, add a kept (ring) set to an (ex)(st) result. The spear persists until the end of any turn in which it leaves your grip or until the end of the encounter.</li><li>Air (op): The weapon you summon can be any kind of melee or ranged weapon instead of a spear.</li><li>Air (op): After performing this action, you may immediately perform a Guard action using the weapon you summoned.</li><li>Air (op)(op): You may summon a pair of weapons instead of a single weapon.</li></ul>"
+  },
+  {
+   "name": "Craft Shikigami (Shugenja)",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>Type: Ritual</li><li>Subtype: Shugenja Ritual</li><li>Rank: 2</li><li>Activation: As a downtime activity using a consecrated vessel of silhouette 0 or smaller, make an Artisan skill (Void) check. You choose the TN (minimum 1).</li><li>Choose a number of invocations you know up to the TN. Create a shikigami with those invocations sealed within it. While shikigami exists, you cannot use those invocations but it can. Maximum one shikigami at a time (Yogo Preserver school ability modifies this).</li><li>Opportunities: (op): Add one of your advantages and one disadvantage to shikigami. (op): Shikigami has different form of same silhouette. (op)+: Increase silhouette by 1 per (op). (op)+: Choose one skill; shikigami has ranks equal to (op) spent. (op)+: Increase endurance or composure by 2 per (op).</li></ul>"
+  },
+  {
+   "name": "Threshold Barrier",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>As a downtime activity, make a TN 2 Theology check using Air, Earth, Fire, Water, or Void targeting a threshold, gate, or other entryway at range 0-1.</li><li>If you succeed, the threshold is barred against a particular entity type based on the ring chosen for one hour, plus additional hours equal to your bonus successes. When an entity of that type attempts to enter, it must resist with a TN 3 Meditation (Void) check or be repelled. Whether it succeeds or fails, you immediately become aware of its attempted entry. Entity types by ring: Air — Ethereal Otherworldly beings such as spirits and ghosts. Earth — Living Tainted beings. Fire — Undead beings with corporeal form. Water — Wild animals. Void — Humans.</li><li>(op): Instead of protecting a threshold, you may protect the entirety of a sealed area extending a number of range bands around you no greater than your bonus successes.</li><li>(op): If any beings of the type you are sealing the threshold against have passed through the threshold within the last twenty-four hours, you become aware of their passage.</li></ul>"
+  },
+  {
+   "name": "Warded Shikigami",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>You can have a number of additional shikigami up to your school rank. Once per scene, after you perform an action, you may instruct one of your shikigami to perform an action, for which it benefits from your assistance.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Ally",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You have proven yourself to someone, who is willing to help you (within reason). They are open to sharing what they know about most topics, whether via a face-to-face meeting or written correspondence. They are also willing to arrange introductions for you with people they know.</li><li>When performing a check that benefits from your close relationship with the character (such as a Courtesy [Water] check to requisition an item through them or a Sentiment [Water] check to read their emotions), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Lost Name",
+   "tag": "Adversity",
+   "ring": "void",
+   "kind": "adversity",
+   "text": "<ul><li>You have lost your true name, whether through dark magic or spiritual crisis.</li><li>When you make a check that involves personal convictions (such as Meditation [Void] as part of your quest for Enlightenment or Survival [Void] to create a spiritually harmonious rock garden), you must choose and reroll two dice showing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Bathing",
+   "tag": "Passion",
+   "ring": "water",
+   "kind": "passion",
+   "text": "<ul><li>Familiar with bathhouse nuances and traditions.</li><li>After performing a check while bathing, you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Irrepressible Flirtation",
+   "tag": "Anxiety",
+   "ring": "earth",
+   "kind": "anxiety",
+   "text": "<ul><li>You find it difficult to pass up the chance to flirt with people you find attractive, and when someone you find attractive flirts with you, you cannot help but return their advances with your own flirtation. Your interest is obvious to all onlookers.</li><li>After performing a check to interact with (or ignore) someone you are interested in without exceeding propriety (such as a Courtesy [Earth] check to make appropriate small talk or a Sentiment [Earth] check to know how to tread cautiously in a social scene), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Seasoned",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>You are older and more worldly than most of your fellows and have learned a few things along the way. While you do not start with additional experience, your experience expenditures might reflect revealing aspects of yourself you have held back to avoid overshadowing your younger companions. You have met members of many cultures and organizations, and you know how to properly behave in almost any city in Rokugan and perhaps even beyond. You also know many other older people, and the number and variety of your acquaintances often surprises your younger companions.</li><li>When performing a check for which your hard-earned wisdom is an advantage (such as a Courtesy [Void] check to impart wisdom to an impetuous comrade or a Theology [Void] check to intuit whether a spirit will appreciate your offering), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Sanctified Robes",
+   "kind": "Armor",
+   "physical": 1,
+   "supernatural": 3,
+   "qualities": [
+    "Ceremonial"
+   ],
+   "rarity": "7",
+   "text": "<p>Physical 1 Supernatural 3, Ceremonial, Rarity 7, 4 koku</p>"
+  },
+  {
+   "name": "Concealed Armor",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Concealable"
+   ],
+   "rarity": "4",
+   "text": "<p>Physical 2, Concealable, Rarity 4, 5 koku</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Bō",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "1-2",
+   "damage": 6,
+   "deadliness": 2,
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "2",
+   "text": "<p><span class=\"fontstyle0\">The bō, a humble staff, is a versatile weapon found throughout Rokugan. Roughly six feet long and made from sturdy hardwood, it is carried by travelers who need both a walking stick and an inconspicuous weapon.</span></p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

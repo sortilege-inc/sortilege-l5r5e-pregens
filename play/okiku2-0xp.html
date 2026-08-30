@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Okiku2 — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Okiku2</span>
+  <a href="../characters/okiku2.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "okiku2-0xp",
+ "name": "Okiku2",
+ "clan": null,
+ "family": null,
+ "school": "Ujik Nomad Tradition",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 1,
+  "earth": 3,
+  "fire": 1,
+  "water": 2,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 10,
+  "focus": 2,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 10
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 35,
+  "glory": 45,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 1,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 1,
+  "melee": 0,
+  "ranged": 1,
+  "unarmed": 1,
+  "meditation": 0,
+  "tactics": 1,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 1,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Honor",
+  "less": "Courage"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Call to Ride",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>Activation: As a Support action, you can make a TN 1 Survival (Water) check targeting your mount or animal companion, provided it is within range 5 of you.</li><li>If you succeed, your mount or animal companion immediately moves up to 2 range bands toward you, plus 1 additional per two bonus successes. If it is a mount and ends at range 0, you can immediately mount it.</li><li>Opportunities: (op)(op): Increase TN of Attack action checks targeting you and your mount/companion by 1 until end of your next turn. (op)(op): If you perform a Maneuver action after mounting, you may move up to 2 range bands instead of 1.</li></ul>"
+  },
+  {
+   "name": "Protection of the Flock",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>Activation: As a downtime activity, you may make a TN 2 Survival (Fire) check targeting a number of animals up to your ranks in Survival.</li><li>If you succeed, you fortify targets against disease and hardship. Until end of next scene, they use your ranks in Medicine for any checks they make to resist effects.</li><li>Opportunities: (op): Target an additional number of animals equal to your ranks in Medicine. (op): If you succeed, each target gains the Emboldened condition.</li></ul>"
+  },
+  {
+   "name": "Move as the Wind",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>When you make a Movement action check or check to travel at speed in narrative time, if you succeed, you may suffer up to 2 fatigue to add that many bonus successes. After you remove fatigue at end of scene, you may remove additional fatigue up to your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Well Connected in {City}",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You have an extensive network of contacts in a particular city.</li><li>When performing a check to gather information, find items for sale or loan, or interact with people from the chosen city (such as Commerce [Water] to buy or sell something or Culture [Water] to learn current events generating gossip), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Maimed Visage",
+   "tag": "Adversity",
+   "ring": "air",
+   "kind": "adversity",
+   "text": "<ul><li>You have been struck in the face, causing a very noticeable and difficult-to-disguise sign of your altercation. Your injury is disquieting to many, and speaking causes you some pain, hampering your social endeavors that hinge on subtle implication and manipulation.</li><li>When you make a check to subtly convince others of something or speak an implication (such as a Commerce [Air] check to sell an item at a higher price than usual or a Courtesy [Air] check to insult someone by implication), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Researcher",
+   "tag": "Passion",
+   "ring": "air",
+   "kind": "passion",
+   "text": "<ul><li>You are a dedicated researcher with a talent for finding information.</li><li>After performing a check to research a topic (such as Culture [Air] to locate a particular poem or Medicine [Air] to find records of a mysterious illness), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Belligerent",
+   "tag": "Anxiety",
+   "ring": "earth",
+   "kind": "anxiety",
+   "text": "<ul><li>You find it nearly impossible to keep your cool when provoked, and may even look for an excuse to fight with people you consider deserving of a good thrashing.</li><li>After performing a check to respond to provocation without resorting to violence or threats (such as a Performance [Earth] check to calmly sing a song that was originally composed to paint your lineage in an unflattering light or a Meditation [Earth] check to stay in formation when you spot a rival across the battlefield), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Scrappy",
+   "tag": "Distinction",
+   "ring": "fire",
+   "kind": "distinction",
+   "text": "<ul><li>You have experience street fighting and brawling. You know how to stealthily employ dishonorable tactics.</li><li>When performing a check during combat to use dishonorable tactics (such as a Sentiment [Fire] check to determine how to offend someone or a Martial Arts [Fire] check to unnerve your foe), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Scimitar",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 5,
+   "grips": "N/A",
+   "qualities": [
+    "Durable",
+    "Razor-Edged"
+   ],
+   "rarity": "8",
+   "text": "<p><span class=\"fontstyle0\">Perhaps the most common among foreign-designed swords found in Rokugan, scimitars were brought from the Burning Sands to the Emerald Empire by the Unicorn Clan. Often carried in place of the katana by those warriors, scimitars are heavy swords with a long, broad, curving blade. They possess a deadly cutting edge thanks to the extra surface area provided by their curvature.</span></p>"
+  },
+  {
+   "name": "Horsebow",
+   "kind": "Weapon",
+   "category": "Bows",
+   "skill": "ranged",
+   "range": "2-4",
+   "damage": 4,
+   "deadliness": 5,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "4",
+   "text": "<p><span class=\"fontstyle0\">Among the Unicorn Clan’s many adopted weapons is a small, sturdy bow used by the nomadic peoples of the steppes far to the west. Called the Shinjo horsebow in Rokugan, this weapon is a compact bow designed to be fired from the back of a moving horse. It is a shortrange weapon intended for raiding and cavalry attacks</span>.</p>"
+  },
+  {
+   "name": "Quiver of Arrow",
+   "kind": "Item",
+   "rarity": "1",
+   "text": "<p>A quiver is a cloth or leather container used to carry arrows. Worn at the waist or slung over the shoulder, a standard quiver can hold sixty or more arrows. There are also quivers or equivalent carrying pouches for crossbow quarrels, blowgun darts, stones, and other ammunition, and they function in the same manner.</p><p data-start=\"414\" data-end=\"678\">As long as a character has a quiver of arrows available, they are assumed not to run out of standard ammunition. Further, the character is assumed to refill the quiver at reasonable opportunities, such as when visiting a guard outpost or a castle with an armory.</p><p data-start=\"680\" data-end=\"1009\">If a character goes an especially long time without having a reasonable opportunity to refill their quiver, the GM may state that the quiver is running low, with only 3 standard pieces of ammunition remaining; the character then gains 1 Void point. The character still possesses any special arrows they had prior to this point.</p><p data-start=\"1011\" data-end=\"1245\" data-is-last-node=\"\" data-is-only-node=\"\">A depleted quiver can be refilled by visiting a location where the character can acquire ammunition, or by making ammunition using the Survival skill if the character has the proper supplies (see page 169). (Cost: 20 zeni. Rarity: 1.)</p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Tent (Yurt)",
+   "kind": "Item",
+   "rarity": "5",
+   "text": "<p>Bigger than basic tents but not as big or luxurious as chomchong, yurts were brought to Rokugan from the far-off steppes by the Unicorn Clan. Made from thick leather or canvas with a felt floor, a yurt can house a group of four indefinitely in relative comfort. They are heavy and awkward to build or take down, and require either a horse or oxen dedicated to carting them around. (Cost: 10 koku. Rarity: 5.)</p>"
+  },
+  {
+   "name": "Travel Rations",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p>In a land so vast, it is no small wonder that the Rokugani have developed significant food-preservation techniques to facilitate lengthy travels. Most travel foods are prepared so as to be easily stored and carried, as well as to last for long periods without spoiling.</p><p data-start=\"273\" data-end=\"621\">The typical traveling ration is a portion of uncooked husked rice, dried or pickled vegetables, and a small portion of a flavoring agent, such as dried seaweed or bonito flakes. Wealthy travelers may spring for a small paper container of sanshō, ground berries of the prickly ash plant that lend a peppery, minty, slightly acidic flavor to foods.</p><p data-start=\"623\" data-end=\"877\">Other common traveling foods include onigiri, or rice balls, which are commonly carried in bamboo sheaths by travelers for a quick meal. Onigiri are made of cooked sticky rice wrapped around a plum or fish filling and hand-molded into a circular shape.</p><p data-start=\"879\" data-end=\"1259\">Vinegared rice, used in sushi, is a common preserving element for fish. Indeed, sushi began as a preserving technique in which thin layers of fish were sandwiched between two layers of sushi rice, the vinegar acting as a pickling agent. Fish is also smoked or dried and then packaged into small boxes with miso paste (fermented soybean paste), which also acts as a preservative.</p><p data-start=\"1261\" data-end=\"1673\">Sometimes seaweed or soy sprouts are ground and mixed with barley and salt to make hishio, a thick paste used to pickle vegetables or fish for travel. The paste is scraped off, and the pickled food is eaten alone or in stews. Adding water to the hishio paste results in soy sauce (shoyu), which serves as a salty condiment. Aged and “brewed” shoyu is prized, but it is usually only affordable for clan samurai.</p><p data-start=\"1675\" data-end=\"1963\">Beans are an especially important travel food, as they are relatively lightweight when dried and last for long periods of time, but plump up into hearty, morale-restoring stews when cooked. Black and green beans are the most common, as are soybeans, broad beans, and sweet adzuki beans.</p><p data-start=\"1965\" data-end=\"2205\" data-is-last-node=\"\" data-is-only-node=\"\">In some regions, ropes used to secure goods are made from edible fibrous tuber stalks that are “dried” with miso. These ropes are completely edible and can be chopped and boiled when necessary. (Cost: 1–3 bu. Rarity: 1. Qualities: Mundane.)</p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+{
+ "slug": "kakita-hisao",
+ "name": "Kakita Hisao",
+ "folder_label": "Kakita Hisao",
+ "campaign": null,
+ "status": "draft",
+ "bucket": "generated",
+ "accent": null,
+ "identity": {
+  "clan": "Crane",
+  "family": "Kakita",
+  "school": "Kakita Duelist School",
+  "role": "Bushi",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Kakita Duelist School",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 5,
+    "earth": 2,
+    "fire": 1,
+    "water": 1,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 1,
+     "design": 1,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 2,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 39,
+    "status": 35,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Righteousness",
+     "less_significant": "Courtesy"
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 6,
+    "focus": 6,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 7,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Iaijutsu Cut: Rising Blade",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Weight of Duty",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Way of the Crane",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Ebisu’s Blessing",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "earth"
+    },
+    {
+     "name": "Nerve Damage",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "air"
+    },
+    {
+     "name": "Daredevil",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "fire"
+    },
+    {
+     "name": "Obtuse",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "air"
+    },
+    {
+     "name": "Large Stature",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "earth",
+     "via": "mentor"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Ceremonial Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Yari",
+     "quantity": 1
+    },
+    {
+     "name": "Quiver of Arrow",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    }
+   ],
+   "advancements": [],
+   "generated": true,
+   "generated_choices": {
+    "standout_ring": "air",
+    "parent_skill": "Composition",
+    "heritage": "Lost Banner",
+    "heritage_table": "new-samurai-heritages-table",
+    "mentor_path": "A"
+   }
+  }
+ ],
+ "needs_attention": [
+  "heritage effect needs resolving: Gain Indomitable Will distinction (can exceed normal advantage limits at creation)",
+  "starting outfit line has no catalog item: an attendant or Rokugani pony"
+ ]
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kitsu Tadashi — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Kitsu Tadashi</span>
+  <a href="../characters/kitsu-tadashi.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "kitsu-tadashi-0xp",
+ "name": "Kitsu Tadashi",
+ "clan": "Lion",
+ "family": "Kitsu",
+ "school": "Kitsu Medium School",
+ "role": "Shugenja",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 1,
+  "fire": 1,
+  "water": 3,
+  "void": 3
+ },
+ "derived": {
+  "endurance": 4,
+  "composure": 8,
+  "focus": 3,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 8
+  },
+  "fatigue": {
+   "max": 4
+  },
+  "void": {
+   "max": 3,
+   "start": 3
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 50,
+  "glory": 35,
+  "status": 35
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 2,
+  "tactics": 1,
+  "culture": 1,
+  "government": 1,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 2,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Honor",
+  "less": "Compassion"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "4 koku",
+ "techniques": [
+  {
+   "name": "Biting Steel",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 2 Theology (Fire) check targeting one weapon at range 0-1.</li><li>If you succeed, you augment the weapon with blazing energy. Increase the weapon&#x27;s base damage by your Fire Ring. Persists for one round, plus additional rounds equal to bonus successes.</li><li>Fire (op): After performing this action, if you have the enhanced weapon readied, immediately perform a Strike action with it.</li><li>Fire +(op): While the effect persists, increase the weapon&#x27;s deadliness by 1 per (op) spent this way.</li><li>Fire (op)(op): This effect persists until end of the scene instead.</li></ul>"
+  },
+  {
+   "name": "The Rushing Wave",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Movement action, make a TN 2 Theology (Water) check targeting one character at range 0-1. Must have a large source of water nearby.</li><li>If you succeed during a skirmish, you summon a rushing waterspout that propels the target. The target may immediately move 1 range band, plus additional range bands equal to bonus successes.</li><li>If you succeed during a narrative or downtime scene, you summon a gentle current that doubles the target&#x27;s speed across or through water. Persists until end of scene.</li></ul>"
+  },
+  {
+   "name": "Commune with the Spirits",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>As a downtime activity or Support action, make a TN 1 Theology check using Air, Earth, Fire, Water, or Void to appeal to nearby spirits of that Element (appeal to the departed, such as ancestor spirits, and other non-elemental supernatural presences if using Void) for aid.</li><li>If you succeed, choose and receive one of the following boons: (1) Sense the Kami — Detect all spirits and uses of their magic by shugenja within a number of range bands equal to the ring you used plus your bonus successes. (2) Spiritual Knowledge — Learn one fact the spirits know about the area. (3) Elemental Gift — The kami deliver a small amount of the Element in question to you (e.g., rain from water kami, sparks from fire kami, a gust from air kami, a stone from earth kami, or a found ancestor&#x27;s belonging from Void).</li><li>(op): Reduce the TN of your next check to interact with or appeal to kami or supernatural presences of this Element by 1.</li><li>(op)+: If you succeed, receive one additional boon per (op) spent this way. Each boon can only be received one time per activation.</li></ul>"
+  },
+  {
+   "name": "Cleansing Rite",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>As a downtime activity, make a TN 3 Theology (Void) check targeting up to five characters to remove spiritual contaminants from the targets before they spread. Note: this cannot remove a Shadowlands Taint disadvantage once it has taken hold, but it can prevent this spiritual contamination from taking root after a character is exposed.</li><li>If you succeed, remove the Afflicted condition from the target.</li><li>Void (op)(op): If one or more targets is an Otherworldly being, you become aware of it after completing the ritual — but you do not know which target.</li><li>Void (op)+: Choose one additional target per (op) spent this way.</li><li>Void (op)+: Instead of targeting characters, you may target an area encompassing a number of range bands around you equal to (op) spent this way. Remove the Defiled terrain quality from this area. If it is a deeply unhallowed place that has long been the domain of evil, the Defiled quality returns after one day, plus additional days equal to your bonus successes.</li></ul>"
+  },
+  {
+   "name": "Ancestry Unearthed",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When you make a Scholar skill (Earth) or Social skill (Earth) check targeting a character, you may spend (op) as follows:</li><li>Earth (op): You know one sworn oath the character&#x27;s family took in the past, and whether or not they have broken or bent it.</li><li>Earth (op)(op): You know one secret of the character&#x27;s family that they would prefer be forgotten, and have perhaps even worked to bury.</li><li>Earth (op)(op)(op): You know something the character does not even know about their own ancestry.</li></ul>"
+  },
+  {
+   "name": "Favor of the Ancestors",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>Once per scene, you may importune one invocation (see Importune Invocations, on page 189) with a school rank prerequisite up to your school rank without making the sacrifices usually required and without the usual TN increase.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Sixth Sense",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>You have an instinctive sense of supernatural beings, and you can feel the presence of spirits and similar entities even when they have not chosen to reveal themselves. This feeling is ominous in the presence of beings with evil intentions and neutral when the beings are simply going about their business as usual.</li><li>When performing a check for which you need to follow your hunches (such as a Meditation [Void] check to generate initiative during a duel or a Theology [Void] check to detect a snarl in the invisible threads of the universe), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Muteness",
+   "tag": "Adversity",
+   "ring": "air",
+   "kind": "adversity",
+   "text": "<ul><li>You are physically or psychologically unable to produce intelligible spoken words. You can still make yourself understood through signing, gestures, and meaningful looks.</li><li>When you make a check for which you must make your tone of voice understood by others (such as a Command [Air] check to convey nuanced information to others or a Performance [Air] check to impersonate someone convincingly), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Ancestry",
+   "tag": "Passion",
+   "ring": "earth",
+   "kind": "passion",
+   "text": "<ul><li>The recollection of lineages comes easily to you. You know your own family history as far back as it has been recorded, and can swiftly recall the lineages of notable figures in Rokugan&#x27;s history.</li><li>After performing a check to recall or determine the family history of another character (such as a Government [Earth] check to remember a past daimyo of a family, or a Command [Earth] check to remind a subordinate of the expectations their ancestors would have of them), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Fear of Mediocrity",
+   "tag": "Anxiety",
+   "ring": "fire",
+   "kind": "anxiety",
+   "text": "<ul><li>Your fear of amounting to nothing causes you to seize up when faced with the need to innovate on the fly.</li><li>After performing a check to adapt to an unexpected situation (such as Survival [Fire] or Culture [Fire]), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Paragon of Honor",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>Pick One: Compassion (Water), Courage (Fire), Courtesy (Air), Duty and Loyalty (Earth), Honor (Void), Righteousness (Void), Sincerity (Void). A character may have multiple instances of this advantage for different tenets. Each tenet counts as a separate advantage. You believe utterly in the chosen Bushidō tenet, and others instinctively discern that your actions are genuine when you act in accordance with it.</li><li>When performing a check for which you need to convince others of, or leverage your faith in, the Bushidō tenet (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Sanctified Robes",
+   "kind": "Armor",
+   "physical": 1,
+   "supernatural": 3,
+   "qualities": [
+    "Ceremonial"
+   ],
+   "rarity": "7",
+   "text": "<p>Physical 1 Supernatural 3, Ceremonial, Rarity 7, 4 koku</p>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Bō",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "1-2",
+   "damage": 6,
+   "deadliness": 2,
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "2",
+   "text": "<p><span class=\"fontstyle0\">The bō, a humble staff, is a versatile weapon found throughout Rokugan. Roughly six feet long and made from sturdy hardwood, it is carried by travelers who need both a walking stick and an inconspicuous weapon.</span></p>"
+  },
+  {
+   "name": "Scroll satchel",
+   "kind": "Item",
+   "rarity": "3"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moshi Machiko — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Moshi Machiko</span>
+  <a href="../characters/moshi-machiko.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "moshi-machiko-0xp",
+ "name": "Moshi Machiko",
+ "clan": "Centipede",
+ "family": "Moshi",
+ "school": "Moshi Sun Sentinel School",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 2,
+  "fire": 4,
+  "water": 1,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 12,
+  "composure": 6,
+  "focus": 6,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 12
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 50,
+  "glory": 40,
+  "status": 35
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 1,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 1,
+  "meditation": 1,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 1,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 1,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Sincerity",
+  "less": "Honor"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "3 koku",
+ "techniques": [
+  {
+   "name": "Armor of Radiance",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 2 Theology (Fire) check targeting one set of armor at range 0-1.</li><li>If you succeed, you augment the target armor, enveloping it in blinding radiance and searing heat (that do not affect the wearer). When a character at range 0-1 of the wearer begins their turn, they suffer Burning and Dazed. Persists for one round, plus additional rounds equal to bonus successes.</li><li>Fire (op): The armor gains the Wargear quality.</li><li>Fire (op)(op): This effect persists until end of the scene instead.</li></ul>"
+  },
+  {
+   "name": "Biting Steel",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 2 Theology (Fire) check targeting one weapon at range 0-1.</li><li>If you succeed, you augment the weapon with blazing energy. Increase the weapon&#x27;s base damage by your Fire Ring. Persists for one round, plus additional rounds equal to bonus successes.</li><li>Fire (op): After performing this action, if you have the enhanced weapon readied, immediately perform a Strike action with it.</li><li>Fire +(op): While the effect persists, increase the weapon&#x27;s deadliness by 1 per (op) spent this way.</li><li>Fire (op)(op): This effect persists until end of the scene instead.</li></ul>"
+  },
+  {
+   "name": "Extinguish",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 3 Theology (Fire) check targeting up to three mundane sources of fire at range 0-3.</li><li>If you succeed, you summon the fire kami&#x27;s energy into yourself. Extinguish each target flame and remove 1 fatigue per target source of fire extinguished.</li><li>Fire (op)(op): Also end all persistent effects from other Fire invocations and flame-based supernatural effects in the area.</li></ul>"
+  },
+  {
+   "name": "Katana of Fire",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 1 Theology (Fire) check to summon forth a blade of flame.</li><li>If you succeed, you summon and ready a Katana made of fire. It has the Wargear quality. Damage inflicted with this weapon is supernatural rather than physical. Persists until the end of any turn in which it leaves your grip or until end of scene.</li><li>Fire (op): The weapon can be any kind of melee weapon instead of a katana.</li><li>Fire (op): You may immediately perform a Strike action using the weapon.</li><li>Fire (op): You may summon and ready a pair of weapons instead.</li><li>Fire (op): After you perform an Attack action with the weapon, each target must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer Burning.</li></ul>"
+  },
+  {
+   "name": "Cleansing Rite",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>As a downtime activity, make a TN 3 Theology (Void) check targeting up to five characters to remove spiritual contaminants from the targets before they spread. Note: this cannot remove a Shadowlands Taint disadvantage once it has taken hold, but it can prevent this spiritual contamination from taking root after a character is exposed.</li><li>If you succeed, remove the Afflicted condition from the target.</li><li>Void (op)(op): If one or more targets is an Otherworldly being, you become aware of it after completing the ritual — but you do not know which target.</li><li>Void (op)+: Choose one additional target per (op) spent this way.</li><li>Void (op)+: Instead of targeting characters, you may target an area encompassing a number of range bands around you equal to (op) spent this way. Remove the Defiled terrain quality from this area. If it is a deeply unhallowed place that has long been the domain of evil, the Defiled quality returns after one day, plus additional days equal to your bonus successes.</li></ul>"
+  },
+  {
+   "name": "Commune with the Spirits",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>As a downtime activity or Support action, make a TN 1 Theology check using Air, Earth, Fire, Water, or Void to appeal to nearby spirits of that Element (appeal to the departed, such as ancestor spirits, and other non-elemental supernatural presences if using Void) for aid.</li><li>If you succeed, choose and receive one of the following boons: (1) Sense the Kami — Detect all spirits and uses of their magic by shugenja within a number of range bands equal to the ring you used plus your bonus successes. (2) Spiritual Knowledge — Learn one fact the spirits know about the area. (3) Elemental Gift — The kami deliver a small amount of the Element in question to you (e.g., rain from water kami, sparks from fire kami, a gust from air kami, a stone from earth kami, or a found ancestor&#x27;s belonging from Void).</li><li>(op): Reduce the TN of your next check to interact with or appeal to kami or supernatural presences of this Element by 1.</li><li>(op)+: If you succeed, receive one additional boon per (op) spent this way. Each boon can only be received one time per activation.</li></ul>"
+  },
+  {
+   "name": "Blazing Tears of Lady Sun",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>Damage inflicted by your Fire invocations is treated as having the Sacred item quality. Items you augment or summon with Fire invocations have the Sacred quality. When you affect a non-Tainted human with a Fire invocation, it does not deal damage or inflict negative conditions. Instead, the character removes fatigue equal to your school rank plus the damage you would have dealt. Each character can only benefit once per scene.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Syncretic Philosophy",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>Exposed to many cultures and philosophies, you understand the nuances of personal moral stances.</li><li>When performing a check to appeal to someone&#x27;s ethics, morality, or philosophy, you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Overconfidence in Toughness",
+   "tag": "Adversity",
+   "ring": "earth",
+   "kind": "adversity",
+   "text": "<ul><li>You are overconfident in a particular capacity, which blinds you to your limitations.</li><li>When performing a check for which you need to leverage the capacity about which you are overconfident (such as Fitness [Earth] to run several li or Composition [Fire] to draft an exciting poem), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Secrets",
+   "tag": "Passion",
+   "ring": "void",
+   "kind": "passion",
+   "text": "<ul><li>You never forget a secret you have heard, and you instinctively know if something you have heard is common knowledge or information someone wants concealed (even if you do not know who or why).</li><li>After performing a check to acquire or preserve a secret (such as a Meditation [Void] check to resist efforts to pry a secret from you or a Sentiment [Void] check to have a hunch about whether someone is concealing a dreadful secret), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "False Identity",
+   "tag": "Anxiety",
+   "ring": "air",
+   "kind": "anxiety",
+   "text": "<ul><li>You are living under a false identity, and the constant deception weighs on you.</li><li>After performing a check to maintain your false identity (such as Courtesy [Air] to lie about your past or Skulduggery [Air] to hide evidence of the truth), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Urbane and Worldly",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>Your experience traveling abroad has prepared you to expertly emulate and adapt to unfamiliar customs.</li><li>When observing an unfamiliar cultural practice (such as a Performance [Void] check to emulate local customs or a Commerce [Void] check to feign awareness during negotiation), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Sanctified Robes",
+   "kind": "Armor",
+   "physical": 1,
+   "supernatural": 3,
+   "qualities": [
+    "Ceremonial"
+   ],
+   "rarity": "7",
+   "text": "<p>Physical 1 Supernatural 3, Ceremonial, Rarity 7, 4 koku</p>"
+  },
+  {
+   "name": "Katana",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Bō",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "1-2",
+   "damage": 6,
+   "deadliness": 2,
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "2",
+   "text": "<p><span class=\"fontstyle0\">The bō, a humble staff, is a versatile weapon found throughout Rokugan. Roughly six feet long and made from sturdy hardwood, it is carried by travelers who need both a walking stick and an inconspicuous weapon.</span></p>"
+  },
+  {
+   "name": "Scroll satchel",
+   "kind": "Item",
+   "rarity": "3"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+{
+ "slug": "akodo-sora",
+ "name": "Akodo Sora",
+ "folder_label": "Akodo Sora",
+ "campaign": null,
+ "status": "draft",
+ "bucket": "generated",
+ "accent": null,
+ "identity": {
+  "clan": "Lion",
+  "family": "Akodo",
+  "school": "Akodo Soldier School",
+  "role": "Bushi",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Akodo Soldier School",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 2,
+    "earth": 1,
+    "fire": 3,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 1,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 2,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 49,
+    "status": 35,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Compassion",
+     "less_significant": "Righteousness"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Water",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Pelting Hail Style",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "kata",
+     "rank": 1
+    },
+    {
+     "name": "Drilled Precision",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Paragon of Honor",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "void"
+    },
+    {
+     "name": "Momoku",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "void"
+    },
+    {
+     "name": "Gossip",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "air"
+    },
+    {
+     "name": "Intolerance",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "water"
+    },
+    {
+     "name": "Knowledgeable Wilderness Guide",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "void",
+     "via": "mentor"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Ashigaru Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Yari",
+     "quantity": 1
+    },
+    {
+     "name": "Nodachi",
+     "quantity": 1
+    },
+    {
+     "name": "Yoroi-Doshi",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 1
+    },
+    {
+     "name": "Battlefield Medical Pack",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    }
+   ],
+   "advancements": [],
+   "generated": true,
+   "generated_choices": {
+    "standout_ring": "fire",
+    "parent_skill": "Theology",
+    "heritage": "At One with Nature",
+    "heritage_table": "new-samurai-heritages-dragon",
+    "mentor_path": "A"
+   }
+  }
+ ],
+ "needs_attention": [
+  "heritage effect needs resolving: roll 1d10 on its sub-table",
+  "starting outfit line has no catalog item: yumi (bow) with quiver of arrows"
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "slug": "naoki2",
+ "name": "Naoki2",
+ "folder_label": "Naoki2",
+ "campaign": null,
+ "status": "draft",
+ "bucket": "generated",
+ "accent": null,
+ "identity": {
+  "clan": null,
+  "family": null,
+  "school": "School of Leaves",
+  "role": "Shinobi",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "School of Leaves",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 1,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 21,
+    "glory": 40,
+    "status": 35,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Honor",
+     "less_significant": "Compassion"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 6,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Whispers of Court",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Skulk",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ninjutsu",
+     "rank": 1
+    },
+    {
+     "name": "Deadly Sting",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ninjutsu",
+     "rank": 1
+    },
+    {
+     "name": "Tactical Cover",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Blood of Osano-Wo",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "fire"
+    },
+    {
+     "name": "Insomniac",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "void"
+    },
+    {
+     "name": "Stories",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "earth"
+    },
+    {
+     "name": "Web of Lies",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "air"
+    },
+    {
+     "name": "Karmic Tie",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "void",
+     "via": "mentor"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Kusarifundo",
+     "quantity": 1
+    },
+    {
+     "name": "Shuriken",
+     "quantity": 3
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 3
+    },
+    {
+     "name": "Astrolabe",
+     "quantity": 1
+    }
+   ],
+   "advancements": [],
+   "generated": true,
+   "generated_choices": {
+    "standout_ring": "earth",
+    "parent_skill": "Command",
+    "heritage": "A Little Too Close to Heaven",
+    "heritage_table": "courts-of-stone-heritages",
+    "mentor_path": "A"
+   }
+  }
+ ],
+ "needs_attention": [
+  "heritage effect needs resolving: roll 1d10 on its sub-table",
+  "starting outfit line has no catalog item: any two items of rarity 4 or lower"
+ ]
+}

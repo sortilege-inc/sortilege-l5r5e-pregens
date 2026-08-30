@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junko — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Junko</span>
+  <a href="../characters/junko.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "junko-0xp",
+ "name": "Junko",
+ "clan": null,
+ "family": null,
+ "school": "Qamarist Shield Bearer Tradition",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 1,
+  "earth": 2,
+  "fire": 1,
+  "water": 1,
+  "void": 3
+ },
+ "derived": {
+  "endurance": 6,
+  "composure": 6,
+  "focus": 2,
+  "vigilance": 1
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 6
+  },
+  "void": {
+   "max": 3,
+   "start": 3
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 50,
+  "glory": 40,
+  "status": 25
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 1,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 1,
+  "tactics": 1,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 1,
+  "command": 1,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Honor",
+  "less": "Righteousness"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Crescent Moon Style",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>When you perform Guard action, you may spend (op):</li><li>(op): After a character at range 1-2 performs an Attack action targeting you or another character you are guarding, you may perform a Strike action with one readied Martial Arts [Melee or Unarmed] weapon targeting that character (if within weapon&#x27;s range). Persists until start of your next turn, or until you perform a Strike action this way.</li></ul>"
+  },
+  {
+   "name": "Courtier’s Resolve",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>Once per scene as a Support action, you may spend 1 Void point to recover from strife.</li><li>Remove strife equal to your glory rank.</li></ul>"
+  },
+  {
+   "name": "Akilah's Teachings",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>Once per round after an Attack action check against you fails, if you have a shield readied and the attack is at range 0-1, you may shield bash. If you do, the target suffers physical damage equal to your ranks in Fitness plus your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Lucky Hunter",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>You are exceptionally fortunate in hunting or fishing and can always identify the best spots.</li><li>When performing a check related to hunting, trapping, or fishing (such as a Survival [Void] check to locate hiding quarry or a Seafaring [Void] check to determine best fishing time), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Lackluster",
+   "tag": "Adversity",
+   "ring": "fire",
+   "kind": "adversity",
+   "text": "<ul><li>You struggle to stand out or impress others.</li><li>When performing a check to impress others or perform better than those around you (such as Aesthetics [Fire] to create a painting or Performance [Fire] to perform a role that moves the audience), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Researcher",
+   "tag": "Passion",
+   "ring": "air",
+   "kind": "passion",
+   "text": "<ul><li>You are a dedicated researcher with a talent for finding information.</li><li>After performing a check to research a topic (such as Culture [Air] to locate a particular poem or Medicine [Air] to find records of a mysterious illness), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Accustomed to Luxury",
+   "tag": "Anxiety",
+   "ring": "earth",
+   "kind": "anxiety",
+   "text": "<ul><li>You are accustomed to the finest accommodations and find anything less deeply distressing.</li><li>After performing a check that requires you to remain in unacceptable accommodations (such as Survival [Earth] to set up a campsite or Commerce [Earth] to stay at a rural inn), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Knowledgeable Wilderness Guide",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>You are very comfortable in a particular wilderness environment (Mountain, Forest, Plains, or Coastal). You always know which way is north and can identify signs of creatures that dwell in those areas.</li><li>When performing a check for which your experience as a wilderness guide in your selected environment is a benefit (such as Survival [Void] or Sentiment [Void]), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Lacquered Armor",
+   "kind": "Armor",
+   "physical": 4,
+   "qualities": [
+    "Ceremonial",
+    "Cumbersome",
+    "Wargear"
+   ],
+   "rarity": "6",
+   "text": "<p>Physical 4, Ceremonial Cumbersome Wargear, Rarity 6, 25 koku</p>"
+  },
+  {
+   "name": "Yari",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "2",
+   "damage": 5,
+   "deadliness": 3,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "3",
+   "text": "<p><span class=\"fontstyle0\">A long-shafted spear, the yari is one of the most common weapons in Rokugan. Between six and eight feet long, its shaft is made of hardwood and topped with a leaf-shaped spearhead. Since it is easy to make, the yari is a customary weapon of ashigaru, but also elite clan samurai such as the Daidoji heavy infantry.</span></p>"
+  },
+  {
+   "name": "Ichirō Sapper Ax",
+   "kind": "Weapon",
+   "category": "Axes",
+   "skill": "melee",
+   "range": "1",
+   "damage": 3,
+   "deadliness": 4,
+   "grips": "N/A",
+   "qualities": [
+    "Durable"
+   ],
+   "rarity": "2",
+   "text": "<ul><li>Category: Axe</li><li>Skill: Martial Arts [Melee]</li><li>Range: 1</li><li>Damage: 3</li><li>Deadliness: 4</li><li>Grips: 1-hand: -; 1-hand (Blunt): Damage +2, Deadliness -3</li><li>Qualities: [&quot;Durable&quot;]</li><li>Rarity: 2</li><li>Cost: 3 koku</li><li>Special: Counts as an axe when wielded with its standard 1-hand profile, and as a blunt weapon when wielded with its blunt profile.</li></ul>"
+  },
+  {
+   "name": "Scimitar",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 5,
+   "grips": "N/A",
+   "qualities": [
+    "Durable",
+    "Razor-Edged"
+   ],
+   "rarity": "8",
+   "text": "<p><span class=\"fontstyle0\">Perhaps the most common among foreign-designed swords found in Rokugan, scimitars were brought from the Burning Sands to the Emerald Empire by the Unicorn Clan. Often carried in place of the katana by those warriors, scimitars are heavy swords with a long, broad, curving blade. They possess a deadly cutting edge thanks to the extra surface area provided by their curvature.</span></p>"
+  },
+  {
+   "name": "Qamarist Heavy Shield",
+   "kind": "Weapon",
+   "category": "Shields",
+   "skill": "melee",
+   "range": "0",
+   "damage": 4,
+   "deadliness": 2,
+   "grips": "N/A",
+   "qualities": [
+    "Durable",
+    "Cumbersome",
+    "Wargear"
+   ],
+   "rarity": "9",
+   "text": "<p>Massive shields covering two-thirds of a warrior&#x27;s body, produced by Qamarist master crafters and alchemists. Wards against both physical and supernatural attacks.</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  },
+  {
+   "name": "Lantern (Personal)",
+   "kind": "Item",
+   "rarity": "2",
+   "text": "<ul><li>Price: 1 bu</li><li>Rarity: 2</li><li>Bamboo-framed lantern with paper stretched over ribs to protect the candle within. Can be mounted on staves, carried by handles, hung from hooks, set to rest on stilts, or designed to float on water.</li></ul>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

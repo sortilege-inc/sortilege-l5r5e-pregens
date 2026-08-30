@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sachiko — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Sachiko</span>
+  <a href="../characters/sachiko.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "sachiko-0xp",
+ "name": "Sachiko",
+ "clan": null,
+ "family": null,
+ "school": "Mercenary Ninja Training",
+ "role": "Shinobi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 1,
+  "fire": 1,
+  "water": 2,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 4,
+  "composure": 6,
+  "focus": 3,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 4
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 20,
+  "glory": 40,
+  "status": 27
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 1,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 1,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 1,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 1,
+  "survival": 1
+ },
+ "bushido": {
+  "paramount": "Righteousness",
+  "less": "Compassion"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Skulk",
+   "tag": "Ninjutsu",
+   "kind": "ninjutsu",
+   "text": "<ul><li>When you perform an Initiative or Attack check using Air, you may spend (op) as follows:</li><li>(op): If you are in Obscuring terrain, a crowd, or otherwise concealed from sight, one character with vigilance lower than or equal to your ranks in Skulduggery loses sight of you.</li></ul>"
+  },
+  {
+   "name": "Cadence",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When you make a Social skill (Air) check, you may spend (op) in the following ways:</li><li>Air (op): Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who possesses this technique.</li><li>Air (op)(op): Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who does not possess this technique.</li></ul>"
+  },
+  {
+   "name": "Disciple of Darkness",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>When you perform a check to hide, move stealthily, or deceive others as to your true identity, you may suffer a number of strife up to your school rank to choose that many characters targeted by the check. Treat each chosen character&#x27;s vigilance as 1 lower while resolving the check.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Kuge Lineage",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<ul><li>You descend from a kuge family with hereditary authority.</li><li>When performing a check for which your hereditary authority is a benefit (such as Command [Earth] to silence a buke samurai or Government [Earth] to cite familiarity with Imperial family practices), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Cursed Lineage",
+   "tag": "Adversity",
+   "ring": "void",
+   "kind": "adversity",
+   "text": "<ul><li>Your family line is cursed, and the curse manifests when you delve into your heritage.</li><li>When making a check that does or could invoke the curse (such as Culture [Void] to understand your family history or Theology [Void] to seek your ancestors&#x27; blessing), you must choose and reroll two dice showing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Fashion",
+   "tag": "Passion",
+   "ring": "fire",
+   "kind": "passion",
+   "text": "<ul><li>You always know the current trends in your home region, and you can identify what is in vogue (and how to take advantage of that fact) in a new place after spending one or more scenes there.</li><li>After performing a check to interact with clothes, jewelry, or other worn works of art (such as a Culture [Fire] check to theorize about what others might wear at the next Winter Court or a Design [Fire] check to create a stunning work), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Vanity",
+   "tag": "Anxiety",
+   "ring": "void",
+   "kind": "anxiety",
+   "text": "<ul><li>You are hyperfocused on your physical appearance.</li><li>After performing a check where your appearance is in jeopardy, you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Ardent Leader",
+   "tag": "Distinction",
+   "ring": "fire",
+   "kind": "distinction",
+   "text": "<ul><li>You speak with confidence that most find hard to ignore, and people are more likely to hear what you have to say, even if they are of higher status.</li><li>When you make a check for which your ardent leadership applies (such as a Tactics [Fire] check to deploy peasants or a Courtesy [Fire] check to excite someone into believing your plan), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Kusarifundo",
+   "kind": "Weapon",
+   "category": "Specialist Weapons",
+   "skill": "melee",
+   "range": "1",
+   "damage": 2,
+   "deadliness": 2,
+   "grips": "Snaring",
+   "qualities": [
+    "Concealable"
+   ],
+   "rarity": "5",
+   "text": "<ul><li>Category: Specialist</li><li>Skill: Martial Arts [Melee]</li><li>Range: 1</li><li>Damage: 2</li><li>Deadliness: 2</li><li>Grips: 1-hand: -; 2-hand: Snaring</li><li>Qualities: [&quot;Concealable&quot;]</li><li>Rarity: 5</li><li>Cost: 4 bu</li></ul>"
+  },
+  {
+   "name": "Kama",
+   "kind": "Weapon",
+   "category": "Specialist Weapons",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 3,
+   "grips": "N/A",
+   "qualities": [
+    "Concealable"
+   ],
+   "rarity": "4",
+   "text": "<p>The kama is another weapon adapted from an agricultural implement: in this case, a standard sickle used for harvesting rice. It consists of a short, roughly foot-long wooden haft topped by a long, curved sickle blade.</p><p data-start=\"300\" data-end=\"385\">Kama are often used in pairs, sometimes linked at the handles by a length of chain.</p>"
+  },
+  {
+   "name": "Shuriken",
+   "kind": "Weapon",
+   "category": "Specialist Weapons",
+   "skill": "unarmed",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "N/A",
+   "qualities": [
+    "Concealable"
+   ],
+   "rarity": "6",
+   "text": "<p><span class=\"fontstyle0\">Favored by shinobi, shuriken are small metal discs with a sharpened edge that come in a dizzying array of sizes and styles. They are designed mainly to distract, but shuriken can also be coated with toxins for lethality, and any cutting edge can kill if used properly.</span></p>"
+  },
+  {
+   "name": "Stealth Clothing",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Forbidden",
+    "Subtle"
+   ],
+   "rarity": "7",
+   "text": "<ul><li>Physical Resistance: 2</li><li>Qualities: [&quot;Forbidden&quot;,&quot;Subtle&quot;]</li><li>Rarity: 7</li><li>Cost: 4 bu</li><li>Special: Reversible (dark/bright sides). While in Obscuring terrain with appropriate side shown, increase TN of Attack checks targeting you by additional 1 (total +2).</li></ul>"
+  },
+  {
+   "name": "Common Clothes",
+   "kind": "Armor",
+   "physical": 1,
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p>Physical 1, Mundane, Rarity 1, 1 bu</p>"
+  },
+  {
+   "name": "Tenugui",
+   "kind": "Item",
+   "rarity": "2",
+   "text": "<ul><li>Category: Shinobi Item</li><li>Cost: 3 zeni</li><li>Rarity: 2</li></ul>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+{
+ "slug": "shika-akemi2",
+ "name": "Shika Akemi2",
+ "folder_label": "Shika Akemi2",
+ "campaign": null,
+ "status": "draft",
+ "bucket": "generated",
+ "accent": null,
+ "identity": {
+  "clan": "Deer",
+  "family": "Shika",
+  "school": "Shika Matchmaker School",
+  "role": "Courtier",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Shika Matchmaker School",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 4,
+    "earth": 1,
+    "fire": 1,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 1
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 32,
+    "status": 30,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Duty and Loyalty"
+    }
+   },
+   "derived": {
+    "endurance": 4,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 4,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "The Ties that Bind",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "ritual",
+     "rank": 1
+    },
+    {
+     "name": "Yari of Air",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Tempest of Air",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Blessed Wind",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Gift of Musubi-no-Kami",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Scrappy",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "fire"
+    },
+    {
+     "name": "Blood Feud",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "water"
+    },
+    {
+     "name": "Tea",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "void"
+    },
+    {
+     "name": "Phobia",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "water"
+    },
+    {
+     "name": "Paragon of Courtesy",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "air",
+     "via": "mentor"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Ceremonial Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Tea Set (Portable)",
+     "quantity": 1
+    }
+   ],
+   "advancements": [],
+   "generated": true,
+   "generated_choices": {
+    "standout_ring": "air",
+    "parent_skill": "Performance",
+    "heritage": "Unusual Name Origin",
+    "heritage_table": "samurai-heritage-table",
+    "mentor_path": "A"
+   }
+  }
+ ],
+ "needs_attention": [
+  "heritage effect needs resolving: roll 1d10 on its sub-table"
+ ]
+}

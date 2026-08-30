@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isamu2 — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Isamu2</span>
+  <a href="../characters/isamu2.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "isamu2-0xp",
+ "name": "Isamu2",
+ "clan": null,
+ "family": null,
+ "school": "Voice of the Wilds",
+ "role": "Shugenja",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 1,
+  "earth": 2,
+  "fire": 1,
+  "water": 1,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 6,
+  "composure": 6,
+  "focus": 2,
+  "vigilance": 1
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 6
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 38,
+  "glory": 40,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 1,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 1,
+  "command": 0,
+  "courtesy": 0,
+  "games": 1,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Honor",
+  "less": "Sincerity"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Divination",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a downtime activity, make a TN 2 Theology (Void) check targeting one character to see glimpses of their future.</li><li>If you succeed, choose one of the following omens in the target&#x27;s near future: (1) Omen of the Azure Dragon — The next time the target performs a check using an Artisan skill this game session, the target adds a kept (ring) set to an (su)(st) result. (2) Omen of the Black Tortoise — Same for a Scholar skill check. (3) Omen of the White Tiger — Same for a Martial skill check. (4) Omen of the Vermilion Bird — Same for a Social skill check. (5) Omen of the Weaver and the Cowherd — Same for a Trade skill check. If you fail, the GM chooses one of the above omens instead. The target cannot receive another divination until the next game session.</li><li>(op): If you fail, an additional omen appears to you after the first. Choose one of the above omens in addition to the one the GM chose.</li></ul>"
+  },
+  {
+   "name": "Rustling of Leaves",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When you make a Social skill (Air) check to spread a rumor, you may spend (op) in the following way:</li><li>Air (op)+: Increase the TN of any check to trace the rumor back to you by 2 per (op) spent this way.</li></ul>"
+  },
+  {
+   "name": "Sensational Distraction",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When making a Social skill (Fire) check targeting one or more characters, you may spend (op) in the following way:</li><li>Fire (op)+: When interacting with other characters, the target treats their vigilance as 1 lower per (op) spent this way; when interacting with you, the target treats their vigilance as 1 higher per (op) spent this way. This effect persists until the end of the scene.</li></ul>"
+  },
+  {
+   "name": "Naturally Attuned",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>As a downtime activity, you may select any number of invocations with total school rank prerequisites equal to double your school rank. You can perform these invocations as if you knew them. While making a check to activate an invocation, if you become Compromised, you suffer spiritual backlash.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Precise Memory",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<ul><li>You can recall anything you have read or heard within the current game session exactly, and you often dredge up older facts with much greater ease than others.</li><li>When performing a check for which you must recall details precisely (such as a Games [Earth] check to recall the opening moves of a classic defensive strategy in shōgi or a Government [Earth] check to remember the specifics of a historical event), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Cursed Lineage",
+   "tag": "Adversity",
+   "ring": "void",
+   "kind": "adversity",
+   "text": "<ul><li>Your family line is cursed, and the curse manifests when you delve into your heritage.</li><li>When making a check that does or could invoke the curse (such as Culture [Void] to understand your family history or Theology [Void] to seek your ancestors&#x27; blessing), you must choose and reroll two dice showing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Hot Pot",
+   "tag": "Passion",
+   "ring": "earth",
+   "kind": "passion",
+   "text": "<ul><li>You can prepare hearty communal meals and identify ingredients.</li><li>After performing a check involving the preparation of a communal meal, you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Accustomed to Luxury",
+   "tag": "Anxiety",
+   "ring": "earth",
+   "kind": "anxiety",
+   "text": "<ul><li>You are accustomed to the finest accommodations and find anything less deeply distressing.</li><li>After performing a check that requires you to remain in unacceptable accommodations (such as Survival [Earth] to set up a campsite or Commerce [Earth] to stay at a rural inn), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Festivals",
+   "tag": "Passion",
+   "ring": "fire",
+   "kind": "passion",
+   "text": "<ul><li>Can always find the best activities at festivals and never has trouble finding someone in a crowd.</li><li>After performing a check to interact at a festival, you remove 3 strife.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Bokken",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 3,
+   "deadliness": 3,
+   "grips": "Damage +2",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "3",
+   "text": "<p><span class=\"fontstyle0\">Bokken are swords carved of wood rather than forged of metal. Generally used as a training weapon, a bokken still can be deadly in a skilled warrior’s hands. A properly shaped bokken can be used for Iaijutsu Cut techniques despite lacking the Razor-Edged quality</span>.</p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Modified Scabbard",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "6",
+   "text": "<ul><li>Category: Shinobi Item</li><li>Cost: 2 koku</li><li>Rarity: 6</li><li>Qualities: [&quot;Mundane&quot;]</li><li>Special: Up to one small item (metsubushi dose, small blade, or handful of makibishi) can be hidden within. While hidden, item has Concealable quality.</li></ul>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

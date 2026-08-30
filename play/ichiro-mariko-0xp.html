@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ichirō Mariko — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Ichirō Mariko</span>
+  <a href="../characters/ichiro-mariko.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "ichiro-mariko-0xp",
+ "name": "Ichirō Mariko",
+ "clan": "Badger",
+ "family": "Ichirō",
+ "school": "Ichirō Grappler School",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 1,
+  "earth": 4,
+  "fire": 2,
+  "water": 2,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 12,
+  "composure": 12,
+  "focus": 3,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 12
+  },
+  "fatigue": {
+   "max": 12
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 50,
+  "glory": 32,
+  "status": 25
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 2,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 2,
+  "meditation": 0,
+  "tactics": 1,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 1,
+  "courtesy": 0,
+  "games": 1,
+  "performance": 1,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 1
+ },
+ "bushido": {
+  "paramount": "Duty and Loyalty",
+  "less": "Honor"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "3 koku",
+ "techniques": [
+  {
+   "name": "Fierce Badger Style",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>Type: Kata</li><li>Subtype: Close Combat Kata</li><li>Rank: 2</li><li>Activation: When you make a Martial Arts [Unarmed] check targeting a character at range 0</li><li>Opportunities: (op)+: If the target is Immobilized, they receive 1 strife per (op) spent this way. (op)+: If the target&#x27;s silhouette and vigilance both are lower than or equal to (op) spent this way, the target is thrown 2 range bands in a direction of your choice and suffers 3 fatigue.</li></ul>"
+  },
+  {
+   "name": "Honest Assessment",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>As a Support action, make a TN 2 Courtesy (Earth) check to appraise the weaknesses of a character.</li><li>If you succeed, choose one of the target&#x27;s known disadvantages. The target does not apply that disadvantage to their checks until the end of the scene.</li><li>Earth (op)+: Choose one additional disadvantage per (op) spent this way.</li><li>Earth (op)(op): Reduce the TN of the target&#x27;s next skill check using the ring the disadvantage is attached to by 2.</li></ul>"
+  },
+  {
+   "name": "Badger's Hold",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>After you succeed at an Attack action check using the Martial Arts [Unarmed] skill, if the target is Immobilized or Prone, they also receive fatigue equal to your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Sea Legs",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You never get seasick, and can maintain your balance easily on a rocking ship. You always feel slightly disconcerted on stable ground, however.</li><li>When performing a check to stay balanced on a shifting surface (MA [Ranged] [Water] bow shot during boarding, Seafaring [Water] to adjust sails in a storm), may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Disdain for Courtesy",
+   "tag": "Adversity",
+   "ring": "air",
+   "kind": "adversity",
+   "text": "<ul><li>Choose one tenet: Compassion (Water), Courage (Fire), Courtesy (Air), Duty and Loyalty (Earth), Honor (Void), Righteousness (Void), or Sincerity (Void). A character may have multiple instances of this disadvantage for different tenets. You no longer believe in the chosen tenet of Bushidō, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.</li><li>When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "City",
+   "tag": "Passion",
+   "ring": "water",
+   "kind": "passion",
+   "text": "<ul><li>You have a deep love for a particular city and know its secrets.</li><li>After performing a check to learn or share knowledge of the particular city (such as Courtesy [Water] to befriend a local or Culture [Water] to find an establishment), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Ferocity",
+   "tag": "Anxiety",
+   "ring": "air",
+   "kind": "anxiety",
+   "text": "<ul><li>When you strike, you have trouble holding back your power, and you tend to lash out even when a subtler approach would be more appropriate. When you defeat a minion NPC, the minion is always killed, even if you would prefer to incapacitate them.</li><li>After performing a check to intentionally hold back or apply force subtly (such as a Games [Air] check to manipulate your opponent or a Martial Arts [Melee] [Air] check to strike a precise blow), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Keen Smell",
+   "tag": "Distinction",
+   "ring": "fire",
+   "kind": "distinction",
+   "text": "<ul><li>You always remember scents you have experienced before, and you can identify by smell things that others would certainly overlook.</li><li>When performing a check for which you need to use your sense of smell (such as a Labor [Fire] check to experiment with a new recipe or a Survival [Fire] check to determine if a plant is poisonous based on its smell), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Ashigaru Armor",
+   "kind": "Armor",
+   "physical": 3,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "3",
+   "text": "<p>Physical 3, Wargear, Rarity 3, 5 koku</p>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Katana",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Ichirō Sapper Ax",
+   "kind": "Weapon",
+   "category": "Axes",
+   "skill": "melee",
+   "range": "1",
+   "damage": 3,
+   "deadliness": 4,
+   "grips": "N/A",
+   "qualities": [
+    "Durable"
+   ],
+   "rarity": "2",
+   "text": "<ul><li>Category: Axe</li><li>Skill: Martial Arts [Melee]</li><li>Range: 1</li><li>Damage: 3</li><li>Deadliness: 4</li><li>Grips: 1-hand: -; 1-hand (Blunt): Damage +2, Deadliness -3</li><li>Qualities: [&quot;Durable&quot;]</li><li>Rarity: 2</li><li>Cost: 3 koku</li><li>Special: Counts as an axe when wielded with its standard 1-hand profile, and as a blunt weapon when wielded with its blunt profile.</li></ul>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

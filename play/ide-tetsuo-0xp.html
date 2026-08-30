@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ide Tetsuo — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Ide Tetsuo</span>
+  <a href="../characters/ide-tetsuo.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "ide-tetsuo-0xp",
+ "name": "Ide Tetsuo",
+ "clan": "Unicorn",
+ "family": "Ide",
+ "school": "Ide Trader School",
+ "role": "Courtier",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 2,
+  "fire": 2,
+  "water": 3,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 10,
+  "focus": 4,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 10
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 45,
+  "glory": 37,
+  "status": 33
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 1,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 1,
+  "games": 1,
+  "performance": 1,
+  "commerce": 2,
+  "labor": 1,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 2
+ },
+ "bushido": {
+  "paramount": "Courage",
+  "less": "Sincerity"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "9 koku",
+ "techniques": [
+  {
+   "name": "Tributaries of Trade",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>Once per scene as a Scheme and Support action, make a TN 1 Commerce (Water) skill check to establish that you acquired a chosen item earlier. From a narrative standpoint, you procured this gift during your last opportunity (or sent an attendant to retrieve it) but are only revealing it now.</li><li>If you succeed, you produce an item with a rarity less than or equal to 1 plus your bonus successes. You must still pay the price of the item.</li><li>Water (op)+: Reduce the price you must pay for the item by one-quarter per (op) spent this way (to a minimum of one-quarter of the original price).</li></ul>"
+  },
+  {
+   "name": "Cadence",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When you make a Social skill (Air) check, you may spend (op) in the following ways:</li><li>Air (op): Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who possesses this technique.</li><li>Air (op)(op): Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who does not possess this technique.</li></ul>"
+  },
+  {
+   "name": "Vendor of Strange Wares",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<ul><li>Ignore the Forbidden quality when acquiring and handling items.</li><li>When acquiring, selling, or gifting an item, you may treat its rarity as reduced or increased by your school rank.</li></ul>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Friend of the Nezumi",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You have earned the trust and friendship of the nezumi, the ratfolk who dwell near the Kaiu Wall.</li><li>When performing a check to interact with nezumi or one that relates to your status with them (such as Courtesy [Water] to help locate a secret tunnel near the Wall or Performance [Water] to convince a tribe to follow your lead), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Overconfidence in Subtlety",
+   "tag": "Adversity",
+   "ring": "air",
+   "kind": "adversity",
+   "text": "<ul><li>You are overconfident in a particular capacity, which blinds you to your limitations.</li><li>When performing a check for which you need to leverage the capacity about which you are overconfident (such as Fitness [Earth] to run several li or Composition [Fire] to draft an exciting poem), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Attention",
+   "tag": "Passion",
+   "ring": "fire",
+   "kind": "passion",
+   "text": "<ul><li>At the start of each scene, you can determine the most effective way to gain attention.</li><li>After performing a check to capture attention (such as a Performance [Fire] check to entice a merchant or a Games [Fire] check to draw a crowd), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Phobia",
+   "tag": "Anxiety",
+   "ring": "water",
+   "kind": "anxiety",
+   "text": "<ul><li>Choose something mundane. You have a debilitating fear of this thing. You cannot speak its name. In its presence, you cannot hide your fear, and you attempt to flee if at all possible.</li><li>After performing a check to deal with your phobia (such as a Courtesy [Water] check to talk pleasantly about the subject or a Survival [Water] check to identify it as the thing you fear), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Stargazing",
+   "tag": "Passion",
+   "ring": "void",
+   "kind": "passion",
+   "text": "<ul><li>You can navigate by stars and know astrological myths.</li><li>After performing a check to recall an astronomical fact, you remove 3 strife.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Yumi",
+   "kind": "Weapon",
+   "category": "Bows",
+   "skill": "ranged",
+   "range": "2-5",
+   "damage": 5,
+   "deadliness": 3,
+   "rarity": "3",
+   "text": "<p><span class=\"fontstyle0\">The yumi is perhaps the most common bow used by Rokugani samurai. Similar to the daikyū, it is a long, graceful bow made from a composite of horn, sinew, leather, and wood. Smaller than the daikyū, but only just, the yumi has an asymmetric grip, general shape, and long-range killing power similar to those of its larger cousin. Where the daikyū is a cavalry bow, however, the yumi is designed to be fired while standing.</span></p>"
+  },
+  {
+   "name": "Quiver of Arrow",
+   "kind": "Item",
+   "rarity": "1",
+   "text": "<p>A quiver is a cloth or leather container used to carry arrows. Worn at the waist or slung over the shoulder, a standard quiver can hold sixty or more arrows. There are also quivers or equivalent carrying pouches for crossbow quarrels, blowgun darts, stones, and other ammunition, and they function in the same manner.</p><p data-start=\"414\" data-end=\"678\">As long as a character has a quiver of arrows available, they are assumed not to run out of standard ammunition. Further, the character is assumed to refill the quiver at reasonable opportunities, such as when visiting a guard outpost or a castle with an armory.</p><p data-start=\"680\" data-end=\"1009\">If a character goes an especially long time without having a reasonable opportunity to refill their quiver, the GM may state that the quiver is running low, with only 3 standard pieces of ammunition remaining; the character then gains 1 Void point. The character still possesses any special arrows they had prior to this point.</p><p data-start=\"1011\" data-end=\"1245\" data-is-last-node=\"\" data-is-only-node=\"\">A depleted quiver can be refilled by visiting a location where the character can acquire ammunition, or by making ammunition using the Survival skill if the character has the proper supplies (see page 169). (Cost: 20 zeni. Rarity: 1.)</p>"
+  },
+  {
+   "name": "Calligraphy Set",
+   "kind": "Item",
+   "rarity": "3",
+   "text": "<p>These ornate boxes contain items a practiced calligrapher needs to craft books, letters, scrolls, and other written communications. It consists of a small wooden box that contains a variety of brushes, inkstones, and pigments; a small bowl for water; and a small bag of sand for drying. Calligraphers and scribes customarily carry a calligraphy set, as so do some samurai and courtiers who prefer to write their own correspondence. (Cost: 1 bu. Rarity: 3.)</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  },
+  {
+   "name": "Journal of observations",
+   "kind": "Item",
+   "rarity": "3"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

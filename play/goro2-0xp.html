@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goro2 — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Goro2</span>
+  <a href="../characters/goro2.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "goro2-0xp",
+ "name": "Goro2",
+ "clan": null,
+ "family": null,
+ "school": "Ujik Diviner School",
+ "role": "Sage",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 1,
+  "earth": 1,
+  "fire": 1,
+  "water": 2,
+  "void": 3
+ },
+ "derived": {
+  "endurance": 4,
+  "composure": 6,
+  "focus": 2,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 4
+  },
+  "void": {
+   "max": 3,
+   "start": 3
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 40,
+  "glory": 37,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 1,
+  "command": 1,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 1,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Courtesy",
+  "less": "Righteousness"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Wall of Earth",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 2 Theology (Earth) check targeting two positions at range 0-2.</li><li>If you succeed, you summon a wall of earth between the two target points that is range 1 in thickness and range 3 in height. Each character standing where the wall erupts must resist with a TN 2 Fitness check (Air 1, Water 3) or suffer physical damage equal to your Earth Ring and Prone. The wall endures as long as a mundane construction of the same material.</li><li>Earth (op): The wall counts as terrain with one quality: Dangerous, Entangling, or Obscuring.</li><li>Earth +(op): Treat maximum range as 1 higher per (op) spent this way.</li><li>Earth (op)(op): Summon an Outpost fortification instead of a wall.</li><li>Earth (op)(op)(op): Summon a Fortress fortification instead.</li><li>Earth (op)(op)(op)(op): Summon a Castle fortification instead.</li></ul>"
+  },
+  {
+   "name": "Embrace of Kenro-Ji-Jin",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 2 Theology (Earth) check targeting yourself.</li><li>If you succeed, you augment yourself with the ability to stick to earthen surfaces, traversing even vertical surfaces made of earth or stone. Persists for one round, plus additional rounds equal to bonus successes (or one minute in narrative).</li><li>Earth (op): This effect persists until end of the scene instead.</li><li>Earth (op): You can pass through solid earth as if it was water when you move. Supernatural resistance against Earth invocations, kihō, and mahō equal to your Earth Ring.</li><li>Earth (op)(op): Effects also apply to metal. Physical resistance against metal weapons equal to your Earth Ring.</li></ul>"
+  },
+  {
+   "name": "Inari’s Blessing",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 2 Theology (Water) check targeting one position at range 1.</li><li>If you succeed, you summon a meal at the target position that can feed a number of people up to your Water Ring plus bonus successes.</li><li>Water (op): The meal is particularly fortifying. Any character who partakes during downtime removes fatigue equal to your Water Ring.</li><li>Water +(op): The meal can feed people equal to your Water Ring plus bonus successes times (op) spent this way instead.</li></ul>"
+  },
+  {
+   "name": "Heart of the Water Dragon",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 3 Theology (Water) check targeting one character at range 0-2.</li><li>If you succeed, you augment your target with spiritual fluidity. The target gains supernatural resistance equal to your Water Ring and removes 1 fatigue at the end of each round. Persists for one round, plus additional rounds equal to bonus successes. Each target cannot be affected by this invocation again until end of scene.</li><li>Water (op)(op): When the target succeeds on a check to resist the effect of a kihō, Mahō, or invocation, the character who used the technique must also make the check to resist that effect, or suffer the effect themself.</li></ul>"
+  },
+  {
+   "name": "Ancestry Unearthed",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When you make a Scholar skill (Earth) or Social skill (Earth) check targeting a character, you may spend (op) as follows:</li><li>Earth (op): You know one sworn oath the character&#x27;s family took in the past, and whether or not they have broken or bent it.</li><li>Earth (op)(op): You know one secret of the character&#x27;s family that they would prefer be forgotten, and have perhaps even worked to bury.</li><li>Earth (op)(op)(op): You know something the character does not even know about their own ancestry.</li></ul>"
+  },
+  {
+   "name": "Seer of the Lords of Death",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>You can channel rituals in the same way as invocations. Once per scene, when you channel you may receive fatigue up to your school rank. If you do, you may immediately make another check to perform an invocation of the same element using the reserved dice from your channel. For each fatigue received this way, you may add one kept die set to an (op) result.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Ardent Leader",
+   "tag": "Distinction",
+   "ring": "fire",
+   "kind": "distinction",
+   "text": "<ul><li>You speak with confidence that most find hard to ignore, and people are more likely to hear what you have to say, even if they are of higher status.</li><li>When you make a check for which your ardent leadership applies (such as a Tactics [Fire] check to deploy peasants or a Courtesy [Fire] check to excite someone into believing your plan), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Maimed Arm",
+   "tag": "Adversity",
+   "ring": "fire",
+   "kind": "adversity",
+   "text": "<ul><li>Your right or left arm is injured (your choice at the time the disadvantage is assigned), making it much harder to perform activities that involve use of that arm. You can use the arm, but gripping anything tightly causes you pain, and you might need a sling to help the arm heal properly.</li><li>When you make a check for which you need to use two hands at once (such as a Design [Fire] check to sew a new kimono or a Martial Arts [Melee] [Fire] check to overwhelm a foe with a powerful overhead slice), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Fortune-Telling",
+   "tag": "Passion",
+   "ring": "void",
+   "kind": "passion",
+   "text": "<ul><li>You can identify any common portents (such as constellations and other stellar phenomena, the cracks in oracle bones, the appearance of certain animals, and various other signs of things to come), along with their implications for the future.</li><li>After performing a check to discern the future (such as a Survival [Void] check to look for small omens in your earthly environs or a Theology [Void] check to perform a divination by reading the stars), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Fear of",
+   "tag": "Anxiety",
+   "ring": "earth",
+   "kind": "anxiety",
+   "text": "<ul><li>You have an irrational fear of a commonly found creature. When you perceive such a creature you become unnerved.</li><li>After performing a check to make choices while in the presence of your feared creature (such as Medicine [Earth] or Courtesy [Earth]), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Light Sleeper",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You wake at the slightest disturbance, always alert even in slumber.</li><li>When performing a check that calls on rapidly recovering from sleep (such as Survival [Water] to detect a threatening sound while dozing or Fitness [Water] to react even when someone else is standing watch), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Sanctified Robes",
+   "kind": "Armor",
+   "physical": 1,
+   "supernatural": 3,
+   "qualities": [
+    "Ceremonial"
+   ],
+   "rarity": "7",
+   "text": "<p>Physical 1 Supernatural 3, Ceremonial, Rarity 7, 4 koku</p>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Nagae Yari",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "2",
+   "damage": 5,
+   "deadliness": 2,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "2",
+   "text": "<ul><li>Category: Polearm</li><li>Skill: Martial Arts [Melee]</li><li>Range: 2</li><li>Damage: 5</li><li>Deadliness: 2</li><li>Grips: 2-hand: -</li><li>Qualities: [&quot;Wargear&quot;]</li><li>Rarity: 2</li><li>Cost: 1 koku</li><li>Special: Before performing an Attack action check using a nagae yari, a character may choose to suffer the Immobilized condition. If they do and succeed on the check, they add 2 bonus successes.</li></ul>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  },
+  {
+   "name": "Tea Set (Portable)",
+   "kind": "Item",
+   "rarity": "6",
+   "text": "<p>The tea ceremony is exceptionally important in Rokugani society. These small, portable tea sets are designed to withstand rough handling and travel. They allow samurai to enjoy the harmony and relaxation of the tea ceremony even when they are far from home. (Cost: 1 koku. Rarity: 6.)</p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arata — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Arata</span>
+  <a href="../characters/arata.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "arata-0xp",
+ "name": "Arata",
+ "clan": null,
+ "family": null,
+ "school": "Artisan of the Roads",
+ "role": "Artisan",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 1,
+  "earth": 2,
+  "fire": 2,
+  "water": 1,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 6,
+  "focus": 3,
+  "vigilance": 1
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 35,
+  "glory": 40,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 1,
+  "design": 1,
+  "smithing": 1,
+  "fitness": 0,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 1,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 1,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Courage",
+  "less": "Duty and Loyalty"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Whispers of Court",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>As a Scheme action, make a Courtesy (Air) check targeting each character in the scene. The TN of this check is equal to the lowest vigilance among your targets.</li><li>If you succeed, you create a rumor that sweeps across the room like a storm. Everyone in the scene hears it, and characters with vigilance lower than your bonus successes even come to give it some credence. If spreading a rumor is your social objective in an intrigue, you score rhetorical points equal to your Air Ring plus your bonus successes.</li><li>Air (op): Learn one other rumor that is spreading in the current scene.</li></ul>"
+  },
+  {
+   "name": "Fanning the Flames",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When making a Social skill (Fire) check targeting one or more characters, you may spend (op) in the following way:</li><li>Fire (op)+: One target gains the Dazed condition per (op) spent this way.</li><li>Fire (op)(op)+: One target gains the Enraged condition per (op)(op) spent this way.</li></ul>"
+  },
+  {
+   "name": "Resourceful Artistry",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>Once per game session when performing a downtime activity to craft, you may scavenge supplies for your craft worth an amount of koku equal to your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Jurojin’s Blessing",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>You do not contract mundane diseases, and you recover from poisons and supernatural maladies in half the time it would take someone else.</li><li>When performing a check for which you need to survive and remain vital (such as a Fitness [Void] check to resist spiritual contamination or a Survival [Void] check to get by on bare minimum supplies), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Skepticism",
+   "tag": "Adversity",
+   "ring": "void",
+   "kind": "adversity",
+   "text": "<ul><li>You doubt the existence of the Spirit Realms, which hinders your spiritual endeavors.</li><li>When you make a check that relies on the existence of the Spirit Realms (such as Medicine [Void] to diagnose a malady of the soul or Theology [Void] to detect a kami&#x27;s presence), you must choose and reroll two dice showing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Pot Stirrer",
+   "tag": "Passion",
+   "ring": "fire",
+   "kind": "passion",
+   "text": "<ul><li>You enjoy stirring up social chaos and watching the results unfold.</li><li>After performing a check to stir up social chaos (such as Courtesy [Fire] to incite anger about a perceived insult or Theology [Fire] to encourage two people to argue about religious beliefs), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Jealousy",
+   "tag": "Anxiety",
+   "ring": "air",
+   "kind": "anxiety",
+   "text": "<ul><li>You cannot voluntarily pass up an opportunity to one-up a rival or demonstrate your superiority over someone in the eyes of others.</li><li>After performing a check to compete with someone to demonstrate your excellence (such as a Performance [Air] check to convince an audience of something before a rival can or a Smithing [Air] check to refine a weapon to perfection before presenting it as a gift to your lord), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Small Stature",
+   "tag": "Distinction",
+   "ring": "air",
+   "kind": "distinction",
+   "text": "<ul><li>You can fit into small spaces, can hide behind other people, are hard to spot in a crowd, and sometimes need assistance reaching objects on high shelves.</li><li>When performing a check for which being small is helpful (such as a Fitness [Air] check to resist a critical strike by evading or a Skulduggery [Air] check to pick someone&#x27;s pocket), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Folding Half-Bow",
+   "kind": "Weapon",
+   "category": "Bows",
+   "skill": "ranged",
+   "range": "2-3",
+   "damage": 4,
+   "deadliness": 3,
+   "rarity": "5",
+   "text": "<ul><li>Category: Bow</li><li>Skill: Martial Arts [Ranged]</li><li>Range: 2-3</li><li>Damage: 4</li><li>Deadliness: 3</li><li>Grips: 2-hand: -</li><li>Rarity: 5</li><li>Cost: 3 koku</li><li>Special: While folded, has Concealable quality and cannot be fired. As a Support action, prepare for use.</li></ul>"
+  },
+  {
+   "name": "Omamori",
+   "kind": "Item",
+   "rarity": "2",
+   "text": "<p>Omamori are protective charms, sold at many shrines across the Emerald Empire, often in the form of a small envelope or bag containing a written or inscribed prayer to a particular kami (often one of the great Fortunes, but occasionally others). Most examples provide protection against ill fortune of a specific variety such as illness or accidents, or encourage good luck in some sphere, such as farming, travel, or marriage, but are never put to the test in any rigorous manner—the kami move by paths unseen by mortal eyes, after all, and it is hard to determine if a talisman was truly responsible for one’s safety.</p><p data-start=\"705\" data-end=\"986\">Shugenja and other powerful servants of the kami are capable of creating especially efficacious protective charms. These frequently contain appeals to the seven Great Fortunes (such as the three listed here), but can also offer other protections by appealing to different powers.</p><p data-start=\"988\" data-end=\"1792\">An omamori might contain one of the following blessings:<br data-start=\"1044\" data-end=\"1047\">$ Boon of Fukurokujin: Fukurokujin, Fortune of Wisdom, illuminates the truth even when tricksters seek to obscure it. Once per game session, the wearer may spend 1 Void point to remove a condition or persistent effect caused by a Scheme action.<br data-start=\"1291\" data-end=\"1294\">$ Boon of Bishamon: Bishamon promises glory at arms to the bold, and draws the eyes of the powerful to those who prove their strength. Once per game session, when the wearer receives a glory award, the wearer may spend 1 Void point to increase that award by 3.<br data-start=\"1554\" data-end=\"1557\">$ Boon of Benten: Benten watches over artists and lovers, guiding them in their endeavors. Once per game session, after rolling dice, the wearer may spend 1 Void point to add a kept  set to an  result to an Artisan or Social check.</p><p data-start=\"1794\" data-end=\"2050\">The kami can be a bit jealous in their stewardship, however. While a character can theoretically wear multiple protective charms at once, they cannot benefit from any of these blessings while they are wearing more than one omamori. (Cost: 5 bu. Rarity: 2.)</p>"
+  },
+  {
+   "name": "Norimono (Planquin)",
+   "kind": "Item",
+   "qualities": [
+    "Resplendent"
+   ],
+   "rarity": "7",
+   "text": "<ul><li>Category: Courtier Item</li><li>Cost: 12 koku</li><li>Rarity: 7</li><li>Qualities: [&quot;Resplendent&quot;]</li></ul>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

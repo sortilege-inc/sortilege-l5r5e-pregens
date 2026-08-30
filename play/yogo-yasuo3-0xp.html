@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yogo Yasuo3 — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Yogo Yasuo3</span>
+  <a href="../characters/yogo-yasuo3.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "yogo-yasuo3-0xp",
+ "name": "Yogo Yasuo3",
+ "clan": "Scorpion",
+ "family": "Yogo",
+ "school": "Yogo Wardmaster School",
+ "role": "Shugenja",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 3,
+  "earth": 3,
+  "fire": 1,
+  "water": 2,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 10,
+  "focus": 4,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 10
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 40,
+  "glory": 44,
+  "status": 35
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 2,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 1,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 1,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 1,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Honor",
+  "less": "Compassion"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "4 koku",
+ "techniques": [
+  {
+   "name": "Grasp of Earth",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As an Attack action, make a TN 2 Theology (Earth) check targeting one character at range 0-2.</li><li>If you succeed, you summon cracks in the earth; each target suffers supernatural damage equal to your Earth Ring and must resist with a TN 4 Fitness check (Air 2, Water 5) or suffer Prone.</li><li>Earth (op): Each target that fails also suffers Immobilized.</li><li>Earth (op): Reduce the damage each target suffers to 0.</li></ul>"
+  },
+  {
+   "name": "Jade Strike",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As an Attack action, make a TN 2 Theology (Earth) check targeting one character at range 0-3.</li><li>If you succeed and the target is an Otherworldly being, you smite and purify it with searing jade energy. It suffers a Critical Strike with severity equal to your Earth Ring plus bonus successes. The creature may spend (op)(op) from its check to resist to conceal that it has been affected, potentially concealing its Otherworldly nature (though it still suffers the effects).</li><li>If you succeed and the target is not Otherworldly, it suffers no ill effects.</li><li>Earth (op): Each Otherworldly target suffers Silenced and cannot use Mahō until end of your next turn.</li></ul>"
+  },
+  {
+   "name": "Shallow Waters",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When you make a Social skill (Water) check targeting a character, you may spend (op) as follows:</li><li>Water (op): Learn of one material item or worldly experience the target desires.</li><li>Water (op)(op): Learn the target&#x27;s Ninjō.</li></ul>"
+  },
+  {
+   "name": "Commune with the Spirits",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>As a downtime activity or Support action, make a TN 1 Theology check using Air, Earth, Fire, Water, or Void to appeal to nearby spirits of that Element (appeal to the departed, such as ancestor spirits, and other non-elemental supernatural presences if using Void) for aid.</li><li>If you succeed, choose and receive one of the following boons: (1) Sense the Kami — Detect all spirits and uses of their magic by shugenja within a number of range bands equal to the ring you used plus your bonus successes. (2) Spiritual Knowledge — Learn one fact the spirits know about the area. (3) Elemental Gift — The kami deliver a small amount of the Element in question to you (e.g., rain from water kami, sparks from fire kami, a gust from air kami, a stone from earth kami, or a found ancestor&#x27;s belonging from Void).</li><li>(op): Reduce the TN of your next check to interact with or appeal to kami or supernatural presences of this Element by 1.</li><li>(op)+: If you succeed, receive one additional boon per (op) spent this way. Each boon can only be received one time per activation.</li></ul>"
+  },
+  {
+   "name": "Threshold Barrier",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>As a downtime activity, make a TN 2 Theology check using Air, Earth, Fire, Water, or Void targeting a threshold, gate, or other entryway at range 0-1.</li><li>If you succeed, the threshold is barred against a particular entity type based on the ring chosen for one hour, plus additional hours equal to your bonus successes. When an entity of that type attempts to enter, it must resist with a TN 3 Meditation (Void) check or be repelled. Whether it succeeds or fails, you immediately become aware of its attempted entry. Entity types by ring: Air — Ethereal Otherworldly beings such as spirits and ghosts. Earth — Living Tainted beings. Fire — Undead beings with corporeal form. Water — Wild animals. Void — Humans.</li><li>(op): Instead of protecting a threshold, you may protect the entirety of a sealed area extending a number of range bands around you no greater than your bonus successes.</li><li>(op): If any beings of the type you are sealing the threshold against have passed through the threshold within the last twenty-four hours, you become aware of their passage.</li></ul>"
+  },
+  {
+   "name": "Mystical Script",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>You can have a number of additional wards with prepared invocations (see page 190) up to your school rank. Decoding or using one of your wards requires any other character to make a Theology (Void) check with TN equal to your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Keen Balance",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<ul><li>When moving across treacherous terrain (such as rooftops or the rigging of a ship), as long as nobody is hindering you, you do not fall.</li><li>When performing a check for which your balance is a benefit (such as a Fitness [Earth] check to resist being knocked down or moved or a Seafaring [Earth] check to withstand getting seasick during a storm), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Debt to",
+   "tag": "Adversity",
+   "ring": "water",
+   "kind": "adversity",
+   "text": "<ul><li>You are in terrible debt. If you fail to make regular payments or fulfill obligations, your debtor will hunt you down.</li><li>When making a check related to dodging or worsening debt (such as Commerce [Water] to purchase something unnecessary or Courtesy [Water] to get a loan), you must choose and reroll two dice containing success or explosion. If you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Ancestry",
+   "tag": "Passion",
+   "ring": "earth",
+   "kind": "passion",
+   "text": "<ul><li>The recollection of lineages comes easily to you. You know your own family history as far back as it has been recorded, and can swiftly recall the lineages of notable figures in Rokugan&#x27;s history.</li><li>After performing a check to recall or determine the family history of another character (such as a Government [Earth] check to remember a past daimyo of a family, or a Command [Earth] check to remind a subordinate of the expectations their ancestors would have of them), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Tip of the Tongue",
+   "tag": "Anxiety",
+   "ring": "air",
+   "kind": "anxiety",
+   "text": "<ul><li>You know multiple languages so fluently that your mind mixes words.</li><li>After performing a check to communicate that requires you to bridge cultural, religious, philosophical, or regional differences, you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Jurojin’s Blessing",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>You do not contract mundane diseases, and you recover from poisons and supernatural maladies in half the time it would take someone else.</li><li>When performing a check for which you need to survive and remain vital (such as a Fitness [Void] check to resist spiritual contamination or a Survival [Void] check to get by on bare minimum supplies), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Sanctified Robes",
+   "kind": "Armor",
+   "physical": 1,
+   "supernatural": 3,
+   "qualities": [
+    "Ceremonial"
+   ],
+   "rarity": "7",
+   "text": "<p>Physical 1 Supernatural 3, Ceremonial, Rarity 7, 4 koku</p>"
+  },
+  {
+   "name": "Concealed Armor",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Concealable"
+   ],
+   "rarity": "4",
+   "text": "<p>Physical 2, Concealable, Rarity 4, 5 koku</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Bō",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "1-2",
+   "damage": 6,
+   "deadliness": 2,
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "2",
+   "text": "<p><span class=\"fontstyle0\">The bō, a humble staff, is a versatile weapon found throughout Rokugan. Roughly six feet long and made from sturdy hardwood, it is carried by travelers who need both a walking stick and an inconspicuous weapon.</span></p>"
+  },
+  {
+   "name": "Shuriken",
+   "kind": "Weapon",
+   "category": "Specialist Weapons",
+   "skill": "unarmed",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "N/A",
+   "qualities": [
+    "Concealable"
+   ],
+   "rarity": "6",
+   "text": "<p><span class=\"fontstyle0\">Favored by shinobi, shuriken are small metal discs with a sharpened edge that come in a dizzying array of sizes and styles. They are designed mainly to distract, but shuriken can also be coated with toxins for lethality, and any cutting edge can kill if used properly.</span></p>"
+  },
+  {
+   "name": "Calligraphy Set",
+   "kind": "Item",
+   "rarity": "3",
+   "text": "<p>These ornate boxes contain items a practiced calligrapher needs to craft books, letters, scrolls, and other written communications. It consists of a small wooden box that contains a variety of brushes, inkstones, and pigments; a small bowl for water; and a small bag of sand for drying. Calligraphers and scribes customarily carry a calligraphy set, as so do some samurai and courtiers who prefer to write their own correspondence. (Cost: 1 bu. Rarity: 3.)</p>"
+  },
+  {
+   "name": "Scroll satchel",
+   "kind": "Item",
+   "rarity": "3"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

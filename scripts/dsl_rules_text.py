@@ -351,9 +351,13 @@ def main():
     print(f"            {len(pec)}/253 peculiarities -> "
           f"{os.path.relpath(PEC_OUT, ROOT)} ({os.path.getsize(PEC_OUT)/1024:.1f} KB)")
 
-    unsigned = [g for g in gaps if g[1] not in exceptions]
-    covered = [g for g in gaps if g[1] in exceptions]
-    pending = [g for g in covered if exceptions[g[1]].startswith("DEFERRED")]
+    def excepted(sub_type, name):
+        """A stated exception for this entry: by name, or for its whole class."""
+        return exceptions.get(name) or exceptions.get("sub_type:" + sub_type)
+
+    unsigned = [g for g in gaps if not excepted(g[0], g[1])]
+    covered = [g for g in gaps if excepted(g[0], g[1])]
+    pending = [g for g in covered if excepted(g[0], g[1]).startswith("DEFERRED")]
     if covered:
         by = collections.Counter(g[0] for g in covered)
         print(f"            {len(covered)} referenced entries stay on Foundry text by "

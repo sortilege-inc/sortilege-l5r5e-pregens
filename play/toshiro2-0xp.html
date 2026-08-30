@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toshiro2 — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Toshiro2</span>
+  <a href="../characters/toshiro2.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "toshiro2-0xp",
+ "name": "Toshiro2",
+ "clan": null,
+ "family": null,
+ "school": "The Wandering Blade",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 1,
+  "earth": 2,
+  "fire": 2,
+  "water": 1,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 6,
+  "focus": 3,
+  "vigilance": 1
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 35,
+  "glory": 40,
+  "status": 33
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 1,
+  "fitness": 1,
+  "melee": 1,
+  "ranged": 1,
+  "unarmed": 0,
+  "meditation": 1,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 1,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Courage",
+  "less": "Duty and Loyalty"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Striking as Water",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>When you make a Martial Arts [Melee, Ranged, or Unarmed] (Water) Attack action check, you may spend (op):</li><li>Water +(op): Your target treats their physical resistance as 1 lower per (op) spent this way. Persists until end of your next turn.</li></ul>"
+  },
+  {
+   "name": "Wanderer's Resolve",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>Activation: Once per scene as a Support action, if you are in a Void stance, focus on protecting what is important to you.</li><li>Remove 3 fatigue and 3 strife, plus 3 fatigue and 3 strife for each Compromised or Incapacitated character in the scene with whom you share a bond.</li></ul>"
+  },
+  {
+   "name": "Signature Weapon",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>Choose a signature weapon category (or unarmed) with GM approval. When using a weapon from this category for an Attack action or Performance check, roll one additional skill die. Additionally, when making such a check you may suffer fatigue up to your school rank to alter that many results of your kept dice to (op) results.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Dead Eyes",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<ul><li>Your gaze is unnervingly calm, even in the face of horrors.</li><li>When performing a check that relies on avoiding fear or exuberant emotions (such as Meditation [Earth] to avoid running from a monstrous oni or Sentiment [Earth] to avoid being caught up in a raucous crowd), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Disdain for Sincerity",
+   "tag": "Adversity",
+   "ring": "void",
+   "kind": "adversity",
+   "text": "<ul><li>Choose one tenet: Compassion (Water), Courage (Fire), Courtesy (Air), Duty and Loyalty (Earth), Honor (Void), Righteousness (Void), or Sincerity (Void). A character may have multiple instances of this disadvantage for different tenets. You no longer believe in the chosen tenet of Bushidō, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.</li><li>When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Wordplay",
+   "tag": "Passion",
+   "ring": "air",
+   "kind": "passion",
+   "text": "<ul><li>You can always identify rhetorical and literary patterns in the works of others when reading or listening to them.</li><li>After performing a check to interpret or create a play on words (such as a Composition [Air] check to write a poem with a perfectly executed poetic pun or a Performance [Air] check to subtly imply something to your audience via a double meaning), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "False Identity",
+   "tag": "Anxiety",
+   "ring": "air",
+   "kind": "anxiety",
+   "text": "<ul><li>You are living under a false identity, and the constant deception weighs on you.</li><li>After performing a check to maintain your false identity (such as Courtesy [Air] to lie about your past or Skulduggery [Air] to hide evidence of the truth), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Paragon of Courage",
+   "tag": "Distinction",
+   "ring": "fire",
+   "kind": "distinction",
+   "text": "<ul><li>Pick One: Compassion (Water), Courage (Fire), Courtesy (Air), Duty and Loyalty (Earth), Honor (Void), Righteousness (Void), Sincerity (Void). A character may have multiple instances of this advantage for different tenets. Each tenet counts as a separate advantage. You believe utterly in the chosen Bushidō tenet, and others instinctively discern that your actions are genuine when you act in accordance with it.</li><li>When performing a check for which you need to convince others of, or leverage your faith in, the Bushidō tenet (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Kabutowari",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 3,
+   "grips": "N/A",
+   "qualities": [
+    "Durable",
+    "Snaring"
+   ],
+   "rarity": "7",
+   "text": "<ul><li>Category: Sword</li><li>Skill: Martial Arts [Melee]</li><li>Range: 0-1</li><li>Damage: 3</li><li>Deadliness: 3</li><li>Grips: 1-hand: -</li><li>Qualities: Durable, Snaring</li><li>Rarity: 7</li><li>Cost: 6 koku</li></ul>"
+  },
+  {
+   "name": "Sand Clock",
+   "kind": "Item",
+   "rarity": "6",
+   "text": "<ul><li>Price: 2 koku</li><li>Rarity: 6</li><li>Two glass-bulb ampoules partially filled with powdered marble or ash, expertly measured for precise time intervals. Status symbol among the Rokugani elite.</li></ul>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

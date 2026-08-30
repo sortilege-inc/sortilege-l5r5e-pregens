@@ -1,0 +1,220 @@
+{
+ "slug": "moto-isamu",
+ "name": "Moto Isamu",
+ "folder_label": "Moto Isamu",
+ "campaign": null,
+ "status": "draft",
+ "bucket": "generated",
+ "accent": null,
+ "identity": {
+  "clan": "Unicorn",
+  "family": "Moto",
+  "school": "Moto Conqueror School",
+  "role": "Bushi",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Moto Conqueror School",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 2,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 1,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 35,
+    "glory": 40,
+    "status": 27,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Compassion"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 6,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Slippery Maneuvers",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "All in Jest",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Swirling Desert Wind",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Dashing Scar",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "air"
+    },
+    {
+     "name": "Lost Family History",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "earth"
+    },
+    {
+     "name": "Rock Gardening",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "void"
+    },
+    {
+     "name": "Animal Signs",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "void"
+    },
+    {
+     "name": "Spiritual Protector",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "void",
+     "via": "mentor"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Concealed Armor",
+     "quantity": 1
+    },
+    {
+     "name": "Katana",
+     "quantity": 1
+    },
+    {
+     "name": "Yumi",
+     "quantity": 1
+    },
+    {
+     "name": "Quiver of Arrow",
+     "quantity": 1
+    },
+    {
+     "name": "Knife",
+     "quantity": 2
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    }
+   ],
+   "advancements": [],
+   "generated": true,
+   "generated_choices": {
+    "standout_ring": "air",
+    "parent_skill": "Seafaring",
+    "heritage": "Unforgivable Performance",
+    "heritage_table": "courts-of-stone-heritages",
+    "mentor_path": "A"
+   }
+  }
+ ],
+ "needs_attention": [
+  "heritage effect needs resolving: Gain the ^\"Benten's Curse (Air)\" disadvantage (core rulebook page 116)",
+  "starting outfit line has no catalog item: Unicorn warhorse"
+ ]
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kitsune Osamu — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Kitsune Osamu</span>
+  <a href="../characters/kitsune-osamu.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "kitsune-osamu-0xp",
+ "name": "Kitsune Osamu",
+ "clan": "Fox",
+ "family": "Kitsune",
+ "school": "Kitsune Impersonator Tradition",
+ "role": "Courtier",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 3,
+  "earth": 3,
+  "fire": 2,
+  "water": 1,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 10,
+  "composure": 8,
+  "focus": 5,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 8
+  },
+  "fatigue": {
+   "max": 10
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 30,
+  "glory": 40,
+  "status": 33
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 1,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 0,
+  "government": 1,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 2,
+  "command": 0,
+  "courtesy": 0,
+  "games": 1,
+  "performance": 1,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 1
+ },
+ "bushido": {
+  "paramount": "Duty and Loyalty",
+  "less": "Righteousness"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "2 koku",
+ "techniques": [
+  {
+   "name": "Nature’s Touch",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Support action, make a TN 1 Theology (Air) check targeting yourself.</li><li>If you succeed, you augment yourself with the ability to speak to animals of the natural world (not Otherworldly or Tainted beings). Animals understand you within their ability but are not compelled to obey. Persists until end of the scene.</li><li>Air (op): Until end of scene, you can understand animals&#x27; speech.</li><li>Air (op): The animal acts favorably toward you, fulfilling one request that does not put it in danger without subsequent checks.</li><li>Air (op)(op): You can communicate with an Otherworldly being this way, provided it has anything to say to you.</li></ul>"
+  },
+  {
+   "name": "Token of Memory",
+   "tag": "Invocation",
+   "kind": "invocation",
+   "text": "<ul><li>As a Scheme action, make a TN 2 Theology (Air) check targeting one position at range 0-1.</li><li>If you succeed, you summon an illusion of one inanimate object at the target position. The illusory object&#x27;s Silhouette is up to your bonus successes (beginning at 0). The item appears real but cannot be used. Any character must resist with a TN 4 Artisan, Smithing, or Design check (Earth 5, Fire 2) using a Scholar skill approach to discern its illusory nature. Persists until end of the scene.</li><li>Air (op): The object can appear to be a creature or person (though it does not move).</li><li>Air +(op): Summon one additional illusory object in range per (op) spent this way.</li><li>Air (op)(op): Illusory objects you summon have mass and can be used as if real (still inanimate, do not move on their own). They vanish when the effect ends.</li></ul>"
+  },
+  {
+   "name": "Commune with the Spirits",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>As a downtime activity or Support action, make a TN 1 Theology check using Air, Earth, Fire, Water, or Void to appeal to nearby spirits of that Element (appeal to the departed, such as ancestor spirits, and other non-elemental supernatural presences if using Void) for aid.</li><li>If you succeed, choose and receive one of the following boons: (1) Sense the Kami — Detect all spirits and uses of their magic by shugenja within a number of range bands equal to the ring you used plus your bonus successes. (2) Spiritual Knowledge — Learn one fact the spirits know about the area. (3) Elemental Gift — The kami deliver a small amount of the Element in question to you (e.g., rain from water kami, sparks from fire kami, a gust from air kami, a stone from earth kami, or a found ancestor&#x27;s belonging from Void).</li><li>(op): Reduce the TN of your next check to interact with or appeal to kami or supernatural presences of this Element by 1.</li><li>(op)+: If you succeed, receive one additional boon per (op) spent this way. Each boon can only be received one time per activation.</li></ul>"
+  },
+  {
+   "name": "Fox Spirit",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>Your true form is that of a large fox with up to eight tails (full-blooded kitsune) or a human with vulpine traits (human ancestry). As a Scheme and Support action, transform between human and true forms, or into another silhouette 1 or 2 natural creature (GM discretion; cannot mimic specific individuals). Observers with vigilance lower than or equal to your school rank plus your ranks in Performance do not detect flaws. Certain features persist across all forms. If you become Compromised, your disguise slips, revealing true tails, ears, feet, or shadow. Must forfeit 1 honor to appear as a samurai of higher status.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Famously Neutral",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<ul><li>You are known for your impartiality and fair-mindedness.</li><li>When performing a check to convince others of your trustworthiness or provide unbiased advice (such as Command [Earth] to reason with two feuding subordinates or Sentiment [Earth] to determine how to set someone at ease), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Elemental Deficiency (Water)",
+   "tag": "Adversity",
+   "ring": "water",
+   "kind": "adversity",
+   "text": "<ul><li>You lack a fundamental connection with Water.</li><li>When performing a check to align with Water or interact with water kami, you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Horse Racing",
+   "tag": "Passion",
+   "ring": "air",
+   "kind": "passion",
+   "text": "<ul><li>You enjoy the bond of horse and rider in competition.</li><li>After performing a check to push your horse to its limits, you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Disdain for Urban Sprawl",
+   "tag": "Anxiety",
+   "ring": "earth",
+   "kind": "anxiety",
+   "text": "<ul><li>You dislike dense urban areas.</li><li>After performing a check to overcome some facet of city life, you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Pot Stirrer",
+   "tag": "Passion",
+   "ring": "fire",
+   "kind": "passion",
+   "text": "<ul><li>You enjoy stirring up social chaos and watching the results unfold.</li><li>After performing a check to stir up social chaos (such as Courtesy [Fire] to incite anger about a perceived insult or Theology [Fire] to encourage two people to argue about religious beliefs), you remove 3 strife.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": []
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

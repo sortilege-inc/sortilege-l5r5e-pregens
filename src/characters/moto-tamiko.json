@@ -1,0 +1,227 @@
+{
+ "slug": "moto-tamiko",
+ "name": "Moto Tamiko",
+ "folder_label": "Moto Tamiko",
+ "campaign": null,
+ "status": "draft",
+ "bucket": "generated",
+ "accent": null,
+ "identity": {
+  "clan": "Unicorn",
+  "family": "Moto",
+  "school": "Moto Avenger School",
+  "role": "Shugenja",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Moto Avenger School",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 2,
+    "earth": 3,
+    "fire": 1,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 44,
+    "glory": 43,
+    "status": 30,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Sincerity",
+     "less_significant": "Duty and Loyalty"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 12,
+    "focus": 3,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 6,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Grasp of Earth",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Tempest of Air",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "invocation",
+     "rank": 1
+    },
+    {
+     "name": "Ancestry Unearthed",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Honest Assessment",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Hands of Earth and Sky",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Bishamon’s Blessing",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "water"
+    },
+    {
+     "name": "Kisshōten’s Curse",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "water"
+    },
+    {
+     "name": "Gossip",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "air"
+    },
+    {
+     "name": "Impatience",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "earth"
+    },
+    {
+     "name": "Traditional Adherent",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "earth",
+     "via": "mentor"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1
+    },
+    {
+     "name": "Scroll satchel",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    }
+   ],
+   "advancements": [],
+   "generated": true,
+   "generated_choices": {
+    "standout_ring": "water",
+    "parent_skill": "Commerce",
+    "heritage": "Famous Deed",
+    "heritage_table": "samurai-heritage-table",
+    "mentor_path": "A"
+   }
+  }
+ ],
+ "needs_attention": [
+  "heritage effect needs resolving: roll 1d10 on its sub-table",
+  "starting outfit line has no catalog item: daishō (any one sword of rarity 7 or lower and wakizashi)",
+  "starting outfit line has no catalog item: Unicorn warhorse (see page 326 of the core rulebook)"
+ ]
+}

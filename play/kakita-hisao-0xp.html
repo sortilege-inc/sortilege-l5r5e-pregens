@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kakita Hisao — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Kakita Hisao</span>
+  <a href="../characters/kakita-hisao.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "kakita-hisao-0xp",
+ "name": "Kakita Hisao",
+ "clan": "Crane",
+ "family": "Kakita",
+ "school": "Kakita Duelist School",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 5,
+  "earth": 2,
+  "fire": 1,
+  "water": 1,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 6,
+  "composure": 6,
+  "focus": 6,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 6
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 50,
+  "glory": 39,
+  "status": 35
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 1,
+  "composition": 1,
+  "design": 1,
+  "smithing": 1,
+  "fitness": 1,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 2,
+  "tactics": 0,
+  "culture": 1,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Righteousness",
+  "less": "Courtesy"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "7 koku",
+ "techniques": [
+  {
+   "name": "Iaijutsu Cut: Rising Blade",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>As an Attack action using one sheathed Razor-Edged weapon, you may make a Martial Arts [Melee] check targeting one character at range 0-1. The TN of this check is equal to the target&#x27;s vigilance.</li><li>You draw and ready the sheathed weapon in a one-handed grip.</li><li>If you succeed, deal physical damage equal to the weapon&#x27;s deadliness. Target cannot defend against this damage if they are Compromised.</li><li>(op): Ready one other sheathed Razor-Edged weapon.</li></ul>"
+  },
+  {
+   "name": "Weight of Duty",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When you make a Social skill (Earth) check targeting a character, you may spend (op) as follows:</li><li>Earth (op): Learn one way the target fears failing as a samurai.</li><li>Earth (op)(op): Learn the target&#x27;s Giri.</li></ul>"
+  },
+  {
+   "name": "Way of the Crane",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>Once per round, you may increase or decrease the severity of a critical strike you inflict by an amount up to your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Ebisu’s Blessing",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<ul><li>Laborers recognize you as a kindred spirit, and characters with status 30 or lower are innately trusting of you unless you give them reason not to be.</li><li>When performing a check for which the blessing of this Fortune is useful (such as a Commerce [Earth] check to safely transport goods or a Labor [Earth] check to plow a field), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Nerve Damage",
+   "tag": "Adversity",
+   "ring": "air",
+   "kind": "adversity",
+   "text": "<ul><li>You have no feeling in certain parts of your body.</li><li>When you make a check for which physical sensitivity is helpful (such as an Aesthetics [Air] check to delicately paint glaze onto a ceramic piece or a Fitness [Air] check to maintain your posture exactly while moving), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Daredevil",
+   "tag": "Passion",
+   "ring": "fire",
+   "kind": "passion",
+   "text": "<ul><li>You can risk your life without consideration or hesitation, even if the potential consequences are obvious and dire.</li><li>After performing a check to risk your life (such as a Fitness [Fire] check to resist a critical strike or a Games [Fire] check to win a contest in a flashy and physically risky way), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Obtuse",
+   "tag": "Anxiety",
+   "ring": "air",
+   "kind": "anxiety",
+   "text": "<ul><li>You struggle to pick up on social cues and the emotions of others.</li><li>After performing a check to analyze or react to the emotions of others (such as Design [Air] to compliment someone&#x27;s garb or Sentiment [Air] to decode a double meaning in someone else&#x27;s speech), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Large Stature",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<ul><li>You can easily reach objects on high shelves, are easy to spot in a crowd, can see over other people, and tend to hit your head on doorways.</li><li>When performing a check for which you can take advantage of your size (such as a Fitness [Earth] check to hold up a heavy object or a Labor [Earth] check to build the frame of a house), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Ceremonial Clothes",
+   "kind": "Armor",
+   "physical": 1,
+   "qualities": [
+    "Ceremonial",
+    "Resplendent"
+   ],
+   "rarity": "4",
+   "text": "<p>Physical 1, Ceremonial Resplendent, Rarity 4, 1 koku</p>"
+  },
+  {
+   "name": "Katana",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Yari",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "2",
+   "damage": 5,
+   "deadliness": 3,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "3",
+   "text": "<p><span class=\"fontstyle0\">A long-shafted spear, the yari is one of the most common weapons in Rokugan. Between six and eight feet long, its shaft is made of hardwood and topped with a leaf-shaped spearhead. Since it is easy to make, the yari is a customary weapon of ashigaru, but also elite clan samurai such as the Daidoji heavy infantry.</span></p>"
+  },
+  {
+   "name": "Quiver of Arrow",
+   "kind": "Item",
+   "rarity": "1",
+   "text": "<p>A quiver is a cloth or leather container used to carry arrows. Worn at the waist or slung over the shoulder, a standard quiver can hold sixty or more arrows. There are also quivers or equivalent carrying pouches for crossbow quarrels, blowgun darts, stones, and other ammunition, and they function in the same manner.</p><p data-start=\"414\" data-end=\"678\">As long as a character has a quiver of arrows available, they are assumed not to run out of standard ammunition. Further, the character is assumed to refill the quiver at reasonable opportunities, such as when visiting a guard outpost or a castle with an armory.</p><p data-start=\"680\" data-end=\"1009\">If a character goes an especially long time without having a reasonable opportunity to refill their quiver, the GM may state that the quiver is running low, with only 3 standard pieces of ammunition remaining; the character then gains 1 Void point. The character still possesses any special arrows they had prior to this point.</p><p data-start=\"1011\" data-end=\"1245\" data-is-last-node=\"\" data-is-only-node=\"\">A depleted quiver can be refilled by visiting a location where the character can acquire ammunition, or by making ammunition using the Survival skill if the character has the proper supplies (see page 169). (Cost: 20 zeni. Rarity: 1.)</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

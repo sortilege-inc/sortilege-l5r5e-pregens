@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kasuga Wataru — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Kasuga Wataru</span>
+  <a href="../characters/kasuga-wataru.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "kasuga-wataru-0xp",
+ "name": "Kasuga Wataru",
+ "clan": "Tortoise",
+ "family": "Kasuga",
+ "school": "Kasuga Smuggler School",
+ "role": "Courtier",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 3,
+  "earth": 2,
+  "fire": 2,
+  "water": 2,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 8,
+  "focus": 5,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 8
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 24,
+  "glory": 38,
+  "status": 25
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 1,
+  "culture": 1,
+  "government": 1,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 2,
+  "labor": 0,
+  "seafaring": 1,
+  "skulduggery": 2,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Compassion",
+  "less": "Courage"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "9 koku",
+ "techniques": [
+  {
+   "name": "Rushing Avalanche Style",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>When you make a Martial Arts [Melee] check using a blunt weapon, you may spend (op):</li><li>(op): If you fail with a shortfall of two or less, your target suffers physical damage equal to your ranks in Fitness.</li><li>(op): If you succeed and your target is Prone, increase the damage you deal by your ranks in Fitness.</li></ul>"
+  },
+  {
+   "name": "Honest Assessment",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>As a Support action, make a TN 2 Courtesy (Earth) check to appraise the weaknesses of a character.</li><li>If you succeed, choose one of the target&#x27;s known disadvantages. The target does not apply that disadvantage to their checks until the end of the scene.</li><li>Earth (op)+: Choose one additional disadvantage per (op) spent this way.</li><li>Earth (op)(op): Reduce the TN of the target&#x27;s next skill check using the ring the disadvantage is attached to by 2.</li></ul>"
+  },
+  {
+   "name": "Way of the Tortoise",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<ul><li>You never need to stake glory to publicly use a Trade skill, so long as you are doing so as part of your duty to your clan.</li><li>Once per scene, you may add a number of kept ring dice set to Opportunity results equal to your school rank to a check to interact with one or more gaijin, peasants, merchants, burakumin, or any other character with status of 20 or lower.</li></ul>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Kisshōten’s Blessing",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>Children enjoy being around you and are much more receptive to your demands. Your own children (if you have any) are particularly blessed with health, beauty, happiness, and luck.</li><li>When performing a check for which you need to communicate with children (such as a Command [Water] check to order them around or a Performance [Water] check to entertain them), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Deafness",
+   "tag": "Adversity",
+   "ring": "air",
+   "kind": "adversity",
+   "text": "<ul><li>You are unable to hear, although you can perceive your surroundings through other senses.</li><li>When you make a check for which auditory cues are very useful (such as a Sentiment [Air] check to discern if someone is being sincere or a Courtesy [Air] check to pick up rumors via eavesdropping on someone&#x27;s faraway conversation), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Playfulness",
+   "tag": "Passion",
+   "ring": "air",
+   "kind": "passion",
+   "text": "<ul><li>When you say something untoward to someone of lower or equal status, they write it off as your playful nature instead of being significantly angered or saddened by it.</li><li>After performing a check to gently mock or chide someone (such as a Composition [Air] check to find the parts of a rival&#x27;s poem that you can echo with parody in your next piece or a Courtesy [Air] check to tease someone with a clever pun on their name), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Softheartedness",
+   "tag": "Anxiety",
+   "ring": "fire",
+   "kind": "anxiety",
+   "text": "<ul><li>If given the choice to kill someone or show mercy, you always spare their life, even if it is not in your interest to let them live.</li><li>After performing a check that addresses or involves killing others or letting them die (such as a Government [Fire] check to estimate the burden a war would place on the common people or a Martial Arts [Ranged] [Fire] check to shoot to kill), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Sea Legs",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You never get seasick, and can maintain your balance easily on a rocking ship. You always feel slightly disconcerted on stable ground, however.</li><li>When performing a check to stay balanced on a shifting surface (MA [Ranged] [Water] bow shot during boarding, Seafaring [Water] to adjust sails in a storm), may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Kyoketsu Shoge",
+   "kind": "Weapon",
+   "category": "Specialist Weapons",
+   "skill": "ranged",
+   "range": "1-2",
+   "damage": 2,
+   "deadliness": 3,
+   "qualities": [
+    "Concealable",
+    "Forbidden",
+    "Snaring"
+   ],
+   "rarity": "6",
+   "text": "<ul><li>Category: Specialist</li><li>Skill: Martial Arts [Ranged]</li><li>Range: 1-2</li><li>Damage: 2</li><li>Deadliness: 3</li><li>Grips: 2-hand: -</li><li>Qualities: [&quot;Concealable&quot;,&quot;Forbidden&quot;,&quot;Snaring&quot;]</li><li>Rarity: 6</li><li>Cost: 3 bu</li></ul>"
+  },
+  {
+   "name": "Calligraphy Set",
+   "kind": "Item",
+   "rarity": "3",
+   "text": "<p>These ornate boxes contain items a practiced calligrapher needs to craft books, letters, scrolls, and other written communications. It consists of a small wooden box that contains a variety of brushes, inkstones, and pigments; a small bowl for water; and a small bag of sand for drying. Calligraphers and scribes customarily carry a calligraphy set, as so do some samurai and courtiers who prefer to write their own correspondence. (Cost: 1 bu. Rarity: 3.)</p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Kiseru",
+   "kind": "Weapon",
+   "category": "Blunt Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 2,
+   "grips": "N/A",
+   "qualities": [
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "5",
+   "text": "<p><span class=\"fontstyle0\">Kiseru are pipes used to smoke various herbs found throughout Rokugan. They consist of a metal mouthpiece and a metal bowl connected by a hollow wood or bamboo tube. Kiseru range in quality from a peasant’s rough-hewn pipe to a courtier or noble’s ivoryand-gold inlaid piece of art. Further, they can function as clandestine weapons. Since kiseru are not formally considered arms, it is easy to get them into places that forbid weapons.</span></p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

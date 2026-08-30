@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asahina Kumiko — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Asahina Kumiko</span>
+  <a href="../characters/asahina-kumiko.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "asahina-kumiko-0xp",
+ "name": "Asahina Kumiko",
+ "clan": "Crane",
+ "family": "Asahina",
+ "school": "Asahina Envoy School",
+ "role": "Courtier",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 3,
+  "earth": 1,
+  "fire": 1,
+  "water": 2,
+  "void": 3
+ },
+ "derived": {
+  "endurance": 4,
+  "composure": 6,
+  "focus": 4,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 4
+  },
+  "void": {
+   "max": 3,
+   "start": 3
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 50,
+  "glory": 35,
+  "status": 35
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 2,
+  "composition": 0,
+  "design": 1,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 1,
+  "tactics": 0,
+  "culture": 2,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 1,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 1,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Courtesy",
+  "less": "Honor"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "6 koku",
+ "techniques": [
+  {
+   "name": "Tea Ceremony",
+   "tag": "Ritual",
+   "kind": "ritual",
+   "text": "<ul><li>Once per game session, as a downtime activity using a tea set, make a TN 2 Performance (Void) check targeting yourself and a number of other characters up to your ranks in Culture, who are also participants. Up to one other participant may assist (see Assistance).</li><li>Each target removes 3 strife, plus additional strife equal to your bonus successes.</li><li>(op): Reduce the TN of each target&#x27;s next check by 1.</li><li>(op)+: Each target removes 1 fatigue, plus 1 fatigue per (op) spent this way.</li><li>(op)(op): If you succeed, each target gains 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Cadence",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When you make a Social skill (Air) check, you may spend (op) in the following ways:</li><li>Air (op): Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who possesses this technique.</li><li>Air (op)(op): Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who does not possess this technique.</li></ul>"
+  },
+  {
+   "name": "Soul of Ceremony",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>When you make a check to perform a ritual, you may add kept ring dice set to opportunity results equal to your school rank. You may spend these opportunity as if the ritual were also a Social skill check of your choice.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Guiding Ancestor",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>You are watched over by a benevolent ancestor spirit, or sorei, who has high hopes for you and your deeds. The spirit cannot communicate directly but may send cryptic omens in dreams and strange phenomena to help you achieve a great destiny.</li><li>When you make a check to interpret omens or to intuit a course of action (such as a Theology [Void] check to understand your dreams or a Tactics [Void] check to guess the plans of an unknown enemy general), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Cognitive Lapses",
+   "tag": "Adversity",
+   "ring": "void",
+   "kind": "adversity",
+   "text": "<ul><li>At the GM&#x27;s discretion, you sometimes lose your ability to focus or think consciously. Your body continues to act during these times according to your general instincts, and it does not undertake actions you would not consciously perform, but you do not form coherent memories of these times. After you suffer such a lapse that lasts for more than a few brief moments at the GM&#x27;s choice, you gain 1 Void point.</li><li>When you make a check for which you must recall anything that happened during a period of cognitive lapse (such as a Meditation [Void] check to understand your past decisions or a Sentiment [Void] check to guess what you might have said to someone based on their reaction to you), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Kabuki",
+   "tag": "Passion",
+   "ring": "air",
+   "kind": "passion",
+   "text": "<ul><li>Seasoned viewer and participant in Kabuki with theater connections.</li><li>After performing a check to engage with Kabuki, you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Fear of Stagnation",
+   "tag": "Anxiety",
+   "ring": "earth",
+   "kind": "anxiety",
+   "text": "<ul><li>Staying in one place frustrates you. You fear relational commitments that tie you down.</li><li>After performing a check to continue a prolonged task (such as Labor [Earth] to work on same project for more than two days or Courtesy [Earth] to arrange yet another night in the same city), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Keen Hearing",
+   "tag": "Distinction",
+   "ring": "air",
+   "kind": "distinction",
+   "text": "<ul><li>You can hear noises that others do not detect, and you can assess your environment by sound alone. Even in darkness, you can accurately pinpoint the location of people and other moving objects in your immediate vicinity.</li><li>When performing a check for which you need to hear soft, distant, or subtle noises (such as a Courtesy [Air] check to eavesdrop at a distance where you are not noticed or a Survival [Air] check to listen to an animal&#x27;s movement before springing a trap), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Ceremonial Clothes",
+   "kind": "Armor",
+   "physical": 1,
+   "qualities": [
+    "Ceremonial",
+    "Resplendent"
+   ],
+   "rarity": "4",
+   "text": "<p>Physical 1, Ceremonial Resplendent, Rarity 4, 1 koku</p>"
+  },
+  {
+   "name": "Sanctified Robes",
+   "kind": "Armor",
+   "physical": 1,
+   "supernatural": 3,
+   "qualities": [
+    "Ceremonial"
+   ],
+   "rarity": "7",
+   "text": "<p>Physical 1 Supernatural 3, Ceremonial, Rarity 7, 4 koku</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Scroll satchel",
+   "kind": "Item",
+   "rarity": "3"
+  },
+  {
+   "name": "Calligraphy Set",
+   "kind": "Item",
+   "rarity": "3",
+   "text": "<p>These ornate boxes contain items a practiced calligrapher needs to craft books, letters, scrolls, and other written communications. It consists of a small wooden box that contains a variety of brushes, inkstones, and pigments; a small bowl for water; and a small bag of sand for drying. Calligraphers and scribes customarily carry a calligraphy set, as so do some samurai and courtiers who prefer to write their own correspondence. (Cost: 1 bu. Rarity: 3.)</p>"
+  },
+  {
+   "name": "Tea Set (Portable)",
+   "kind": "Item",
+   "rarity": "6",
+   "text": "<p>The tea ceremony is exceptionally important in Rokugani society. These small, portable tea sets are designed to withstand rough handling and travel. They allow samurai to enjoy the harmony and relaxation of the tea ceremony even when they are far from home. (Cost: 1 koku. Rarity: 6.)</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

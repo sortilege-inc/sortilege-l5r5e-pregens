@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akodo Sora — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Akodo Sora</span>
+  <a href="../characters/akodo-sora.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "akodo-sora-0xp",
+ "name": "Akodo Sora",
+ "clan": "Lion",
+ "family": "Akodo",
+ "school": "Akodo Soldier School",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 1,
+  "fire": 3,
+  "water": 3,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 8,
+  "focus": 5,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 8
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 50,
+  "glory": 49,
+  "status": 35
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 1,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 2,
+  "culture": 0,
+  "government": 1,
+  "medicine": 1,
+  "sentiment": 0,
+  "theology": 1,
+  "command": 2,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Compassion",
+  "less": "Righteousness"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "5 koku",
+ "techniques": [
+  {
+   "name": "Striking as Water",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>When you make a Martial Arts [Melee, Ranged, or Unarmed] (Water) Attack action check, you may spend (op):</li><li>Water +(op): Your target treats their physical resistance as 1 lower per (op) spent this way. Persists until end of your next turn.</li></ul>"
+  },
+  {
+   "name": "Pelting Hail Style",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>When you make a Martial Arts [Ranged] check, you may spend (op):</li><li>+(op): Choose a number of other characters at range 0-2 of your target equal to (op) spent this way. Each chosen character receives strife equal to the base damage of your weapon.</li></ul>"
+  },
+  {
+   "name": "Drilled Precision",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>When making an Attack or Movement action check, you may remove an amount of strife from yourself up to your school rank. For each strife you remove this way, add one kept (ring) set to (op) to the check and receive 1 fatigue.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Paragon of Honor",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>Pick One: Compassion (Water), Courage (Fire), Courtesy (Air), Duty and Loyalty (Earth), Honor (Void), Righteousness (Void), Sincerity (Void). A character may have multiple instances of this advantage for different tenets. Each tenet counts as a separate advantage. You believe utterly in the chosen Bushidō tenet, and others instinctively discern that your actions are genuine when you act in accordance with it.</li><li>When performing a check for which you need to convince others of, or leverage your faith in, the Bushidō tenet (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Momoku",
+   "tag": "Adversity",
+   "ring": "void",
+   "kind": "adversity",
+   "text": "<ul><li>You do not detect supernatural presences even when they make themselves evident to everyone else, and you are blissfully unaware of the ripples in reality such entities and phenomena create. You can still discern effects they have on the physical world, but only when they become quite obvious.</li><li>When you make a check to understand or appeal to otherworldly powers (such as a Games [Void] check to put your faith in the power of the universe or a Theology [Void] check to call upon the cosmic energy around you), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Gossip",
+   "tag": "Passion",
+   "ring": "air",
+   "kind": "passion",
+   "text": "<ul><li>At the start of each scene, you can always identify the character present who will know the juiciest rumors (besides yourself, obviously).</li><li>After performing a check to spread or receive rumors (such as a Courtesy [Air] check to cast someone in a certain light when telling a story about them or a Culture [Air] check to read people&#x27;s current anxieties from the subtle ways they obey or break etiquette), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Intolerance",
+   "tag": "Anxiety",
+   "ring": "water",
+   "kind": "anxiety",
+   "text": "<ul><li>A particular hate festers within you for a group of people (or even supernatural beings), and it overwhelms your better judgment when you are faced with members or representatives of this group. Choose one group of people or supernatural beings to be your hated enemies. When you are in the presence of these beings (and even when they are mentioned), your enmity is evident to all who observe you.</li><li>After performing a check to interact with a member of the chosen group (such as a Commerce [Water] check to bargain with someone from a family that once wronged your own or a Composition [Water] check to translate from the language of a group of foreigners you dislike due to a battle you fought against their people), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Knowledgeable Wilderness Guide",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>You are very comfortable in a particular wilderness environment (Mountain, Forest, Plains, or Coastal). You always know which way is north and can identify signs of creatures that dwell in those areas.</li><li>When performing a check for which your experience as a wilderness guide in your selected environment is a benefit (such as Survival [Void] or Sentiment [Void]), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Ashigaru Armor",
+   "kind": "Armor",
+   "physical": 3,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "3",
+   "text": "<p>Physical 3, Wargear, Rarity 3, 5 koku</p>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Katana",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Yari",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "2",
+   "damage": 5,
+   "deadliness": 3,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "3",
+   "text": "<p><span class=\"fontstyle0\">A long-shafted spear, the yari is one of the most common weapons in Rokugan. Between six and eight feet long, its shaft is made of hardwood and topped with a leaf-shaped spearhead. Since it is easy to make, the yari is a customary weapon of ashigaru, but also elite clan samurai such as the Daidoji heavy infantry.</span></p>"
+  },
+  {
+   "name": "Nodachi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1-2",
+   "damage": 5,
+   "deadliness": 6,
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "8",
+   "text": "<p><span class=\"fontstyle0\">Larger than katana, nodachi are long and lethal swords more at home on the battlefield than in a city or at court. Roughly six feet long, these blades are relatively rare due to the skill and strength needed to wield them effectively. There are those who prize the raw force of these blades, however, such as members of the Matsu school. Too large to be worn at the waist, nodachi are normally worn on the back and drawn over the shoulder or even carried into battle by a samurai’s attendant</span>.</p>"
+  },
+  {
+   "name": "Yoroi-Doshi",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +3",
+   "qualities": [
+    "Concealable",
+    "Razor-Edged",
+    "Wargear"
+   ],
+   "rarity": "5",
+   "text": "<ul><li>Category: Hand Weapon</li><li>Skill: Martial Arts [Melee]</li><li>Range: 0</li><li>Damage: 2</li><li>Deadliness: 4</li><li>Grips: 1-hand: -; 2-hand: Deadliness +3</li><li>Qualities: [&quot;Concealable&quot;,&quot;Razor-Edged&quot;,&quot;Wargear&quot;]</li><li>Rarity: 5</li><li>Cost: 10 koku</li><li>Special: When performing an Attack action check with a yoroi-doshi, a character may spend (op) as follows: (op): Your target treats their physical resistance as 2 lower. This effect persists until the end of your next turn.</li></ul>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Battlefield Medical Pack",
+   "kind": "Item",
+   "rarity": "3",
+   "text": "<ul><li>Category: Personal Effect</li><li>Cost: 2 bu</li><li>Rarity: 3</li><li>Once per scene as a Support action, a character with a battlefield medical pack may remove the Bleeding condition from another character at range 0-1.</li></ul>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

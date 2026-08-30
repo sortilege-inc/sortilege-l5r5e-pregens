@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yori — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Yori</span>
+  <a href="../characters/yori.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "yori-0xp",
+ "name": "Yori",
+ "clan": null,
+ "family": null,
+ "school": "Ganzu Guardian Tradition",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 1,
+  "earth": 2,
+  "fire": 1,
+  "water": 3,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 6,
+  "composure": 10,
+  "focus": 2,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 10
+  },
+  "fatigue": {
+   "max": 6
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 42,
+  "glory": 40,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 1,
+  "fitness": 1,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 1,
+  "culture": 0,
+  "government": 0,
+  "medicine": 1,
+  "sentiment": 1,
+  "theology": 0,
+  "command": 1,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Sincerity",
+  "less": "Compassion"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Slashing Sandstorm Style",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>Activation: When you make an Attack action check using Martial Arts [Melee] while wielding an ax, you may spend (op) as follows:</li><li>(op): If you succeed and your target is a minion, your target suffers additional damage equal to the deadliness of your weapon.</li><li>Opportunities: (op)+: If you fail and your target&#x27;s ranks in Meditation are less than or equal to (op) spent this way, your target receives strife equal to the deadliness of your weapon.</li></ul>"
+  },
+  {
+   "name": "Shallow Waters",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When you make a Social skill (Water) check targeting a character, you may spend (op) as follows:</li><li>Water (op): Learn of one material item or worldly experience the target desires.</li><li>Water (op)(op): Learn the target&#x27;s Ninjō.</li></ul>"
+  },
+  {
+   "name": "Moment of Certainty",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>Once per scene after you defend against damage, you may roll a number of skill dice equal to the fatigue you received this way. Choose a number of those dice up to your school rank and reserve them. Until end of scene, when you perform an Attack action check, after choosing kept dice, you may add one reserved die as an additional kept die.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Scrounger",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You are always able to find something to fill your belly and sustain you, though sometimes the only option is repulsive.</li><li>When performing a check for which your resourceful nature applies (such as a Labor [Water] check to find useful items or an Aesthetics [Water] check to find inspiration), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Bluntness",
+   "tag": "Adversity",
+   "ring": "air",
+   "kind": "adversity",
+   "text": "<ul><li>You have difficulty expressing things indirectly, and you overlook insinuations and implications in the statements of others unless they are pointed out to you directly.</li><li>When you make a check to create or interpret subtext (such as a Design [Air] check to select a wardrobe that conveys the proper subtle message to your intended recipient or a Sentiment [Air] check to read someone&#x27;s unstated feelings), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Local Flare for {Region}",
+   "tag": "Passion",
+   "ring": "earth",
+   "kind": "passion",
+   "text": "<ul><li>You have an intimate knowledge of a specific region and its people.</li><li>After performing a check to remember information about the specific region you have chosen (such as Culture [Earth] to know current events or Sentiment [Earth] to recall attitudes of local inhabitants), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Fear of Poison",
+   "tag": "Anxiety",
+   "ring": "air",
+   "kind": "anxiety",
+   "text": "<ul><li>You have a fear of being poisoned by others. You would rather go hungry than accept food or drink from anyone you do not trust completely.</li><li>After performing a check to interact with someone you do not trust who has offered you food or drink (such as Sentiment [Air] or Games [Air]), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Dangerous Allure",
+   "tag": "Distinction",
+   "ring": "fire",
+   "kind": "distinction",
+   "text": "<ul><li>You always make an impression, and NPCs remember your name and face after interacting with you for one or more scenes (unless you take pains to disguise yourself).</li><li>When performing a check for which your good looks are a benefit (such as a Command [Fire] check to get someone to act in spite of the possible consequences or a Performance [Fire] check to incite emotion in someone), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Concealed Armor",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Concealable"
+   ],
+   "rarity": "4",
+   "text": "<p>Physical 2, Concealable, Rarity 4, 5 koku</p>"
+  },
+  {
+   "name": "Ganzu Ring Ax",
+   "kind": "Weapon",
+   "category": "Axes",
+   "skill": "melee",
+   "range": "1-2",
+   "damage": 4,
+   "deadliness": 7,
+   "qualities": [
+    "Cumbersome",
+    "Hewing",
+    "Wargear"
+   ],
+   "rarity": "9",
+   "text": "<ul><li>Category: Melee (Ax)</li><li>Skill: Martial Arts [Melee]</li><li>Range: 1-2</li><li>Damage: 4</li><li>Deadliness: 7</li><li>Grip: 2-hand</li><li>Qualities: [&quot;Cumbersome&quot;,&quot;Hewing&quot;,&quot;Wargear&quot;]</li><li>Rarity: 9</li><li>Price: 35 koku</li><li>Large bladed disk on two-handed shaft. Wielded in momentum-based fighting style to conserve energy. Associated with Sand Road guardians.</li></ul>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Traveling Rations",
+   "kind": "Item",
+   "rarity": "1",
+   "text": "<p>Traveling rations consist of a mix of preserved foods sufficient to keep an individual fed and healthy while on the road. They typically consist of a mix of dried fish, rice balls wrapped in paper, water or tea, pickled vegetables, and other hardy foods that can withstand exposure to the elements. (Cost: 5 zeni per meal. Rarity: 1.)</p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

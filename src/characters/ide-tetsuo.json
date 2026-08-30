@@ -1,0 +1,220 @@
+{
+ "slug": "ide-tetsuo",
+ "name": "Ide Tetsuo",
+ "folder_label": "Ide Tetsuo",
+ "campaign": null,
+ "status": "draft",
+ "bucket": "generated",
+ "accent": null,
+ "identity": {
+  "clan": "Unicorn",
+  "family": "Ide",
+  "school": "Ide Trader School",
+  "role": "Courtier",
+  "age": null
+ },
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "twenty_questions": {},
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Ide Trader School",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 1,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 2,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 37,
+    "status": 33,
+    "ninjo": "",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 9,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Tributaries of Trade",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Cadence",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": true,
+     "bought_at_rank": 0,
+     "kind": "shuji",
+     "rank": 1
+    },
+    {
+     "name": "Vendor of Strange Wares",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "school ability",
+     "rank": 1
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Friend of the Nezumi",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "distinction",
+     "ring": "water"
+    },
+    {
+     "name": "Overconfidence in Subtlety",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "adversity",
+     "ring": "air"
+    },
+    {
+     "name": "Attention",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "fire"
+    },
+    {
+     "name": "Phobia",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "anxiety",
+     "ring": "water"
+    },
+    {
+     "name": "Stargazing",
+     "xp_used": 0,
+     "xp_cost": 3,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "kind": "passion",
+     "ring": "void",
+     "via": "mentor"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1
+    },
+    {
+     "name": "Yumi",
+     "quantity": 1
+    },
+    {
+     "name": "Quiver of Arrow",
+     "quantity": 1
+    },
+    {
+     "name": "Calligraphy Set",
+     "quantity": 1
+    },
+    {
+     "name": "Traveling pack",
+     "quantity": 1
+    },
+    {
+     "name": "Journal of observations",
+     "quantity": 1
+    }
+   ],
+   "advancements": [],
+   "generated": true,
+   "generated_choices": {
+    "standout_ring": "fire",
+    "parent_skill": "Performance",
+    "heritage": "Spirit Companion",
+    "heritage_table": "new-samurai-heritages-table",
+    "mentor_path": "A"
+   }
+  }
+ ],
+ "needs_attention": [
+  "heritage effect needs resolving: Know one additional meishōdō talisman (",
+  "starting outfit line has no catalog item: Unicorn warhorse"
+ ]
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akodo Toshiro — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Akodo Toshiro</span>
+  <a href="../characters/akodo-toshiro.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "akodo-toshiro-0xp",
+ "name": "Akodo Toshiro",
+ "clan": "Lion",
+ "family": "Akodo",
+ "school": "Akodo Commander School",
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 2,
+  "fire": 1,
+  "water": 3,
+  "void": 2
+ },
+ "derived": {
+  "endurance": 6,
+  "composure": 10,
+  "focus": 3,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 10
+  },
+  "fatigue": {
+   "max": 6
+  },
+  "void": {
+   "max": 2,
+   "start": 2
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 50,
+  "glory": 39,
+  "status": 35
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 1,
+  "melee": 1,
+  "ranged": 0,
+  "unarmed": 1,
+  "meditation": 1,
+  "tactics": 2,
+  "culture": 0,
+  "government": 1,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 2,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Courage",
+  "less": "Sincerity"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": "5 koku",
+ "techniques": [
+  {
+   "name": "Striking as Water",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>When you make a Martial Arts [Melee, Ranged, or Unarmed] (Water) Attack action check, you may spend (op):</li><li>Water +(op): Your target treats their physical resistance as 1 lower per (op) spent this way. Persists until end of your next turn.</li></ul>"
+  },
+  {
+   "name": "Lord Akodo’s Roar (Lion)",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>Once per game session as an action, make a TN 1 Command (Void) check targeting each hostile character within a number of range bands equal to your school rank.</li><li>If you succeed, each target suffers the Dazed condition.</li><li>Void (op)(op)+: After you perform this action, one other friendly character per (op)(op) spent this way at range 0-3 may immediately perform a Strike action targeting a Dazed character.</li></ul>"
+  },
+  {
+   "name": "Way of the Lion",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>When you succeed at an Attack or Support action check, you may remove an amount of strife from yourself up to your school rank. For each strife you remove this way, add that one bonus success to the check and receive 1 fatigue.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Traditional Adherent",
+   "tag": "Distinction",
+   "ring": "earth",
+   "kind": "distinction",
+   "text": "<ul><li>You have a mastery of tradition and routine, and are able to perform ceremonies and social functions exactly as you were taught without variation, even under trying circumstances.</li><li>When you make a check to maintain the traditions of the past (such as a Performance [Earth] check to recite a poem in a style long-since out of fashion in the courts, or a Composition [Earth] check to examine a historical account for inconsistencies), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Disdain for Sincerity",
+   "tag": "Adversity",
+   "ring": "void",
+   "kind": "adversity",
+   "text": "<ul><li>Choose one tenet: Compassion (Water), Courage (Fire), Courtesy (Air), Duty and Loyalty (Earth), Honor (Void), Righteousness (Void), or Sincerity (Void). A character may have multiple instances of this disadvantage for different tenets. You no longer believe in the chosen tenet of Bushidō, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.</li><li>When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Animal Bond",
+   "tag": "Passion",
+   "ring": "earth",
+   "kind": "passion",
+   "text": "<ul><li>Reciprocating your interest, a small, mundane animal of some kind has attached itself to you. Choose one silhouette 0 or 1 animal; it follows you around wherever you go and generally acts as your companion. It can be cajoled to do what you want, but it might need incentives (usually food) to perform difficult tasks on demand. If you are granted an animal as part of your starting outfit, that animal can be your companion (regardless of the usual size restrictions).</li><li>After performing a check to interact with an animal (such as a Medicine [Earth] check to mend its injuries or a Survival [Earth] check to calm it), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Reformed Maho-Tsukai",
+   "tag": "Anxiety",
+   "ring": "water",
+   "kind": "anxiety",
+   "text": "<ul><li>You once practiced blood magic, and the memories of that dark time still haunt you.</li><li>After performing a check that reminds you of your former life (such as Courtesy [Water] to speak pleasantly with a priest or Meditation [Water] to calm yourself when witnessing the aftermath of a blood magic sacrifice), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Paragon of Righteousness",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>Pick One: Compassion (Water), Courage (Fire), Courtesy (Air), Duty and Loyalty (Earth), Honor (Void), Righteousness (Void), Sincerity (Void). A character may have multiple instances of this advantage for different tenets. Each tenet counts as a separate advantage. You believe utterly in the chosen Bushidō tenet, and others instinctively discern that your actions are genuine when you act in accordance with it.</li><li>When performing a check for which you need to convince others of, or leverage your faith in, the Bushidō tenet (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Ashigaru Armor",
+   "kind": "Armor",
+   "physical": 3,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "3",
+   "text": "<p>Physical 3, Wargear, Rarity 3, 5 koku</p>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Katana",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Yari",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "2",
+   "damage": 5,
+   "deadliness": 3,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "3",
+   "text": "<p><span class=\"fontstyle0\">A long-shafted spear, the yari is one of the most common weapons in Rokugan. Between six and eight feet long, its shaft is made of hardwood and topped with a leaf-shaped spearhead. Since it is easy to make, the yari is a customary weapon of ashigaru, but also elite clan samurai such as the Daidoji heavy infantry.</span></p>"
+  },
+  {
+   "name": "Jitte",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 3,
+   "deadliness": 2,
+   "grips": "N/A",
+   "qualities": [
+    "Concealable",
+    "Snaring"
+   ],
+   "rarity": "5",
+   "text": "<p><span class=\"fontstyle0\">Typically just over a foot long, the jitte consists of a short steel or iron rod attached to a wooden handle. The rod tapers to a blunt point and has a single prong that extends from one side. This simple weapon is designed to disarm and subdue targets rather than to kill them. It is carried by law enforcement officers at all levels, from low-ranking town constables to high-ranking magistrates, as a symbol of their office.</span></p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Yumi",
+   "kind": "Weapon",
+   "category": "Bows",
+   "skill": "ranged",
+   "range": "2-5",
+   "damage": 5,
+   "deadliness": 3,
+   "rarity": "3",
+   "text": "<p><span class=\"fontstyle0\">The yumi is perhaps the most common bow used by Rokugani samurai. Similar to the daikyū, it is a long, graceful bow made from a composite of horn, sinew, leather, and wood. Smaller than the daikyū, but only just, the yumi has an asymmetric grip, general shape, and long-range killing power similar to those of its larger cousin. Where the daikyū is a cavalry bow, however, the yumi is designed to be fired while standing.</span></p>"
+  },
+  {
+   "name": "Quiver of Arrow",
+   "kind": "Item",
+   "rarity": "1",
+   "text": "<p>A quiver is a cloth or leather container used to carry arrows. Worn at the waist or slung over the shoulder, a standard quiver can hold sixty or more arrows. There are also quivers or equivalent carrying pouches for crossbow quarrels, blowgun darts, stones, and other ammunition, and they function in the same manner.</p><p data-start=\"414\" data-end=\"678\">As long as a character has a quiver of arrows available, they are assumed not to run out of standard ammunition. Further, the character is assumed to refill the quiver at reasonable opportunities, such as when visiting a guard outpost or a castle with an armory.</p><p data-start=\"680\" data-end=\"1009\">If a character goes an especially long time without having a reasonable opportunity to refill their quiver, the GM may state that the quiver is running low, with only 3 standard pieces of ammunition remaining; the character then gains 1 Void point. The character still possesses any special arrows they had prior to this point.</p><p data-start=\"1011\" data-end=\"1245\" data-is-last-node=\"\" data-is-only-node=\"\">A depleted quiver can be refilled by visiting a location where the character can acquire ammunition, or by making ammunition using the Survival skill if the character has the proper supplies (see page 169). (Cost: 20 zeni. Rarity: 1.)</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

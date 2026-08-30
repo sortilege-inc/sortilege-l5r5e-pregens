@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kazuo — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Kazuo</span>
+  <a href="../characters/kazuo.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "kazuo-0xp",
+ "name": "Kazuo",
+ "clan": null,
+ "family": null,
+ "school": "Kolat Saboteur Conspiracy",
+ "role": "Shinobi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 3,
+  "earth": 1,
+  "fire": 1,
+  "water": 2,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 4,
+  "composure": 6,
+  "focus": 4,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 4
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 20,
+  "glory": 40,
+  "status": 35
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 1,
+  "fitness": 0,
+  "melee": 1,
+  "ranged": 1,
+  "unarmed": 0,
+  "meditation": 1,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 1,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 1,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Sincerity",
+  "less": "Compassion"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Veiled Menace Style",
+   "tag": "Kata",
+   "kind": "kata",
+   "text": "<ul><li>When you make a Martial Arts [Melee] or Martial Arts [Unarmed] Attack action check using a weapon in a one-handed grip, you may spend (op):</li><li>+(op): If you succeed, choose one unaware or Disoriented target. That target suffers a Critical Strike with severity equal to weapon&#x27;s deadliness plus 1 per (op) spent this way beyond the first.</li></ul>"
+  },
+  {
+   "name": "Skulk",
+   "tag": "Ninjutsu",
+   "kind": "ninjutsu",
+   "text": "<ul><li>When you perform an Initiative or Attack check using Air, you may spend (op) as follows:</li><li>(op): If you are in Obscuring terrain, a crowd, or otherwise concealed from sight, one character with vigilance lower than or equal to your ranks in Skulduggery loses sight of you.</li></ul>"
+  },
+  {
+   "name": "Cadence",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>When you make a Social skill (Air) check, you may spend (op) in the following ways:</li><li>Air (op): Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who possesses this technique.</li><li>Air (op)(op): Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who does not possess this technique.</li></ul>"
+  },
+  {
+   "name": "Professional Saboteur",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>Once per game session at the beginning of a scene, reveal that an NPC in that scene is the target of your current assignment. The GM decides what the assignment entails (sabotage, framing, killing, or ensuring survival). Until the end of the session, when you make a skill check targeting the chosen NPC, you may reroll a number of dice up to your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Paragon of Sincerity",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>Pick One: Compassion (Water), Courage (Fire), Courtesy (Air), Duty and Loyalty (Earth), Honor (Void), Righteousness (Void), Sincerity (Void). A character may have multiple instances of this advantage for different tenets. Each tenet counts as a separate advantage. You believe utterly in the chosen Bushidō tenet, and others instinctively discern that your actions are genuine when you act in accordance with it.</li><li>When performing a check for which you need to convince others of, or leverage your faith in, the Bushidō tenet (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Schism in Status",
+   "tag": "Adversity",
+   "ring": "water",
+   "kind": "adversity",
+   "text": "<ul><li>A specific social group treats your status as 20 points lower.</li><li>When you make a check to convince a member of this group to listen to you, you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Stargazing",
+   "tag": "Passion",
+   "ring": "void",
+   "kind": "passion",
+   "text": "<ul><li>You can navigate by stars and know astrological myths.</li><li>After performing a check to recall an astronomical fact, you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Jealousy",
+   "tag": "Anxiety",
+   "ring": "air",
+   "kind": "anxiety",
+   "text": "<ul><li>You cannot voluntarily pass up an opportunity to one-up a rival or demonstrate your superiority over someone in the eyes of others.</li><li>After performing a check to compete with someone to demonstrate your excellence (such as a Performance [Air] check to convince an audience of something before a rival can or a Smithing [Air] check to refine a weapon to perfection before presenting it as a gift to your lord), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Well Connected in {City}",
+   "tag": "Distinction",
+   "ring": "water",
+   "kind": "distinction",
+   "text": "<ul><li>You have an extensive network of contacts in a particular city.</li><li>When performing a check to gather information, find items for sale or loan, or interact with people from the chosen city (such as Commerce [Water] to buy or sell something or Culture [Water] to learn current events generating gossip), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Ceremonial Clothes",
+   "kind": "Armor",
+   "physical": 1,
+   "qualities": [
+    "Ceremonial",
+    "Resplendent"
+   ],
+   "rarity": "4",
+   "text": "<p>Physical 1, Ceremonial Resplendent, Rarity 4, 1 koku</p>"
+  },
+  {
+   "name": "Common Clothes",
+   "kind": "Armor",
+   "physical": 1,
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p>Physical 1, Mundane, Rarity 1, 1 bu</p>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Katana",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Shuriken",
+   "kind": "Weapon",
+   "category": "Specialist Weapons",
+   "skill": "unarmed",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "N/A",
+   "qualities": [
+    "Concealable"
+   ],
+   "rarity": "6",
+   "text": "<p><span class=\"fontstyle0\">Favored by shinobi, shuriken are small metal discs with a sharpened edge that come in a dizzying array of sizes and styles. They are designed mainly to distract, but shuriken can also be coated with toxins for lethality, and any cutting edge can kill if used properly.</span></p>"
+  },
+  {
+   "name": "Poison (One Vial)",
+   "kind": "Item",
+   "qualities": [
+    "Forbidden"
+   ],
+   "rarity": "5",
+   "text": "<p>In the courts of the Emerald Empire, the wheels of politics are sometimes turned by unsavory means. Members of the Scorpion Clan are certainly not above using poison to weaken or eliminate political rivals—not that one could ever prove their culpability—and many samurai turn to such measures in times of desperation or fear. (Cost: 30 zeni for one dose. Rarity: 5. Qualities: Forbidden.)</p><p data-start=\"482\" data-end=\"1061\">Three poisons found in Rokugan are:<br data-start=\"517\" data-end=\"520\">$ Noxious Poison: A catchall term for a wide variety of deadly compounds (many of which have perfectly legitimate uses in medicine and other trades), these sorts of poisons often act by attacking the heart, organs, or brain directly.<br data-start=\"753\" data-end=\"756\">– When a character ingests noxious poison, the character suffers a critical strike with severity 10. The poisoner may spend  on their check to deliver the poison to increase the severity by 1 per  spent this way.<br data-start=\"970\" data-end=\"973\">– When noxious poison is applied to a weapon, increase that weapon’s deadliness by +4.</p><p data-start=\"1063\" data-end=\"1509\">$ Fire Biter: A poison that wracks victims with searing pain, fire biter is easily identified by its bitter taste, which makes it difficult to disguise its presence in food or drink.<br data-start=\"1245\" data-end=\"1248\">– When a character ingests fire biter, the character suffers 5 strife and the Dazed and Exhausted conditions.<br data-start=\"1357\" data-end=\"1360\">– When fire biter is applied to a weapon, after a target suffers a critical strike from the weapon, they suffer the Dazed and Exhausted conditions.</p><p data-start=\"1511\" data-end=\"1962\" data-is-last-node=\"\" data-is-only-node=\"\">$ Night Milk: A favorite of the Shosuro family, night milk is a dizzying concoction that must be injected or otherwise delivered directly into the bloodstream.<br data-start=\"1670\" data-end=\"1673\">– When night milk is introduced into a character’s bloodstream, the character suffers 5 fatigue and the Disoriented and Prone conditions.<br data-start=\"1810\" data-end=\"1813\">– When night milk is applied to a weapon, after a target suffers a critical strike from the weapon, they suffer the Disoriented and Prone conditions.</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>

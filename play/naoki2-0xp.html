@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naoki2 — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css">
+<link rel="stylesheet" href="../assets/play/sheet.css">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Naoki2</span>
+  <a href="../characters/naoki2.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "naoki2-0xp",
+ "name": "Naoki2",
+ "clan": null,
+ "family": null,
+ "school": "School of Leaves",
+ "role": "Shinobi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 2,
+  "fire": 2,
+  "water": 1,
+  "void": 1
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 6,
+  "focus": 4,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 1,
+   "start": 1
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 21,
+  "glory": 40,
+  "status": 35
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 1,
+  "ranged": 1,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 0,
+  "command": 1,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 1,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 1
+ },
+ "bushido": {
+  "paramount": "Honor",
+  "less": "Compassion"
+ },
+ "ninjo": "",
+ "giri": "",
+ "money": null,
+ "techniques": [
+  {
+   "name": "Whispers of Court",
+   "tag": "Shuji",
+   "kind": "shuji",
+   "text": "<ul><li>As a Scheme action, make a Courtesy (Air) check targeting each character in the scene. The TN of this check is equal to the lowest vigilance among your targets.</li><li>If you succeed, you create a rumor that sweeps across the room like a storm. Everyone in the scene hears it, and characters with vigilance lower than your bonus successes even come to give it some credence. If spreading a rumor is your social objective in an intrigue, you score rhetorical points equal to your Air Ring plus your bonus successes.</li><li>Air (op): Learn one other rumor that is spreading in the current scene.</li></ul>"
+  },
+  {
+   "name": "Skulk",
+   "tag": "Ninjutsu",
+   "kind": "ninjutsu",
+   "text": "<ul><li>When you perform an Initiative or Attack check using Air, you may spend (op) as follows:</li><li>(op): If you are in Obscuring terrain, a crowd, or otherwise concealed from sight, one character with vigilance lower than or equal to your ranks in Skulduggery loses sight of you.</li></ul>"
+  },
+  {
+   "name": "Deadly Sting",
+   "tag": "Ninjutsu",
+   "kind": "ninjutsu",
+   "text": "<ul><li>As an Attack action, you may use one dose of a poison and make a TN 3 Martial Arts (Air) check using a readied Concealable weapon targeting one character within the weapon&#x27;s range.</li><li>If you succeed, apply the chosen poison to your weapon (see Poison). Then, the target suffers physical damage equal to the deadliness of your weapon plus your bonus successes.</li><li>Air (op): Move 1 range band.</li><li>Air (op)+: If you succeed, the target suffers a critical strike with severity 2, plus 1 per (op) spent this way.</li></ul>"
+  },
+  {
+   "name": "Tactical Cover",
+   "tag": "School Ability",
+   "kind": "school ability",
+   "text": "<p>While you are in Obscuring terrain, you may treat your physical resistance as increased by your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Blood of Osano-Wo",
+   "tag": "Distinction",
+   "ring": "fire",
+   "kind": "distinction",
+   "text": "<ul><li>The Fortune of Storms grants you boldness and a desire not easily satisfied. You cannot be killed by storms (lightning, going overboard in tempest). If you would die this way, you wake up later in a place of the GM&#x27;s choice, miraculously safe, with 0 Void points.</li><li>When performing a check for which you need to take a great risk (Games [Fire] to wager on a single gambit, Seafaring [Fire] to chart a deadly route), may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Insomniac",
+   "tag": "Adversity",
+   "ring": "void",
+   "kind": "adversity",
+   "text": "<ul><li>You have difficulty falling and staying asleep. You recover only half the normal amount after a night&#x27;s rest.</li><li>When you make a check that requires intense focus (such as Government [Void] or Smithing [Void]), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Stories",
+   "tag": "Passion",
+   "ring": "earth",
+   "kind": "passion",
+   "text": "<ul><li>You can recall any story you have been told, including the details that others would gloss over or forget.</li><li>After performing a check to recall or tell a story (such as a Performance [Earth] check to spin a tale to hearten comrades or a Theology [Earth] check to recite a passage from the Tao of Shinsei or Akodo&#x27;s Leadership that is applicable to your situation), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Web of Lies",
+   "tag": "Anxiety",
+   "ring": "air",
+   "kind": "anxiety",
+   "text": "<ul><li>You are caught in a web of lies that grows harder to maintain.</li><li>After performing a check to deceive someone you have deceived before (such as Courtesy [Air] to convince someone you are a clan member when other members have never heard of you or Skulduggery [Air] to convince a previous con victim you didn&#x27;t steal from them), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Karmic Tie",
+   "tag": "Distinction",
+   "ring": "void",
+   "kind": "distinction",
+   "text": "<ul><li>You have a supernatural tie with another character of your choosing, and as if you had a sixth sense, you can tell when the character to whom you are karmically tied is in danger or has died. You always know the general direction they are located in, even if they are separated from you by thousands of li.</li><li>When performing a check to act on behalf of the one with whom you share a bond (such as a Composition [Void] check to express your truest feelings in a poem or a Martial Arts [Melee] [Void] check to fight on their behalf), you may reroll up to two dice.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Physical 2, Durable Mundane Subtle, Rarity 2, 2 bu</p>"
+  },
+  {
+   "name": "Kusarifundo",
+   "kind": "Weapon",
+   "category": "Specialist Weapons",
+   "skill": "melee",
+   "range": "1",
+   "damage": 2,
+   "deadliness": 2,
+   "grips": "Snaring",
+   "qualities": [
+    "Concealable"
+   ],
+   "rarity": "5",
+   "text": "<ul><li>Category: Specialist</li><li>Skill: Martial Arts [Melee]</li><li>Range: 1</li><li>Damage: 2</li><li>Deadliness: 2</li><li>Grips: 1-hand: -; 2-hand: Snaring</li><li>Qualities: [&quot;Concealable&quot;]</li><li>Rarity: 5</li><li>Cost: 4 bu</li></ul>"
+  },
+  {
+   "name": "Shuriken",
+   "kind": "Weapon",
+   "category": "Specialist Weapons",
+   "skill": "unarmed",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "N/A",
+   "qualities": [
+    "Concealable"
+   ],
+   "rarity": "6",
+   "text": "<p><span class=\"fontstyle0\">Favored by shinobi, shuriken are small metal discs with a sharpened edge that come in a dizzying array of sizes and styles. They are designed mainly to distract, but shuriken can also be coated with toxins for lethality, and any cutting edge can kill if used properly.</span></p>"
+  },
+  {
+   "name": "Katana",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>"
+  },
+  {
+   "name": "Knife",
+   "kind": "Weapon",
+   "category": "Hand Weapons",
+   "skill": "melee",
+   "range": "0",
+   "damage": 2,
+   "deadliness": 4,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Razor-Edged",
+    "Concealable",
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>"
+  },
+  {
+   "name": "Astrolabe",
+   "kind": "Item",
+   "rarity": "8"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js"></script>
+<script src="../assets/play/sheet.js"></script>
+</body>
+</html>
