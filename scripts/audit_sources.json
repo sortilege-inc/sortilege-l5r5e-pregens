@@ -1,0 +1,187 @@
+{
+ "core": {
+  "title": "Core Rulebook",
+  "corpus": [
+   "core-*"
+  ],
+  "text": [
+   "core-md/*.md"
+  ],
+  "packs": [
+   "core_rulebook"
+  ]
+ },
+ "path-of-waves": {
+  "title": "Path of Waves",
+  "corpus": [
+   "path-of-waves-*"
+  ],
+  "text": [
+   "path-of-waves-md/*.md"
+  ],
+  "packs": [
+   "path_of_waves"
+  ]
+ },
+ "writ-of-the-wilds": {
+  "title": "Writ of the Wilds",
+  "corpus": [
+   "writ-of-wilds-*"
+  ],
+  "text": [
+   "writ-of-the-wilds-md/*.md"
+  ],
+  "packs": [
+   "writ_of_the_wild"
+  ]
+ },
+ "emerald-empire": {
+  "title": "Emerald Empire",
+  "corpus": [
+   "emerald-empire-*"
+  ],
+  "text": [
+   "emerald-empire-md/*.md"
+  ],
+  "packs": [
+   "emerald_empire"
+  ]
+ },
+ "courts-of-stone": {
+  "title": "Courts of Stone",
+  "corpus": [
+   "courts-of-stone-*"
+  ],
+  "text": [
+   "courts-of-stone-md/*.md"
+  ],
+  "packs": [
+   "court_of_stones",
+   "courts_of_stone"
+  ]
+ },
+ "shadowlands": {
+  "title": "Shadowlands",
+  "corpus": [
+   "shadowlands-*"
+  ],
+  "text": [
+   "shadowlands-md/*.md"
+  ],
+  "packs": [
+   "shadowlands"
+  ]
+ },
+ "celestial-realms": {
+  "title": "Celestial Realms",
+  "corpus": [
+   "celestial-realms-*"
+  ],
+  "text": [
+   "celestial-realms-md/*.md"
+  ],
+  "packs": [
+   "celestial_realms"
+  ]
+ },
+ "five-winds": {
+  "title": "Children of the Five Winds",
+  "corpus": [
+   "children-of-five-winds-*"
+  ],
+  "text": [
+   "five-winds-md/*.md"
+  ],
+  "packs": [
+   "children_of_the_five_winds"
+  ]
+ },
+ "fields-of-victory": {
+  "title": "Fields of Victory",
+  "corpus": [
+   "fields-of-victory-*"
+  ],
+  "text": [
+   "fields-of-victory-md/*.md"
+  ],
+  "packs": [
+   "fields_of_victory"
+  ]
+ },
+ "legacies-of-war": {
+  "title": "Legacies of War",
+  "corpus": [
+   "legacies-of-war-*"
+  ],
+  "text": [
+   "legacies-of-war-md/*.md"
+  ],
+  "packs": []
+ },
+ "mantis-clan": {
+  "title": "The Mantis Clan",
+  "corpus": [
+   "mantis-clan"
+  ],
+  "text": [
+   "Mantis Clan.md"
+  ],
+  "packs": [
+   "the_mantis_clan"
+  ]
+ },
+ "gm-kit": {
+  "title": "GM Kit",
+  "corpus": [
+   "gm-kit-*"
+  ],
+  "text": [
+   "ESL5R05EN-DT_GM-Kit_Reference.md",
+   "ESL5R05EN-DT_GM-Kit_Booklet-Adventure.md"
+  ],
+  "packs": [
+   "gm_kit"
+  ]
+ },
+ "gm-screen": {
+  "title": "GM Screen",
+  "corpus": [
+   "gm-screen-*"
+  ],
+  "text": [
+   "GM Screen.md",
+   "ESL5R05EN-DT_GM-Kit_Screen_Reference.md"
+  ],
+  "packs": []
+ },
+ "daidoji-shin": {
+  "title": "Daidoji Shin and Kasami (letter)",
+  "corpus": [
+   "daidoji-shin-*"
+  ],
+  "text": [
+   "L5R-Daidoji-Shin-and-Kasami-letter.md"
+  ],
+  "packs": []
+ },
+ "errata-2019": {
+  "title": "Errata and FAQ (2019)",
+  "corpus": [
+   "errata-faq-2019"
+  ],
+  "text": [
+   "Errata FAQ v20 2019-09-25.md"
+  ],
+  "packs": []
+ },
+ "errata-2020": {
+  "title": "Errata and FAQ (2020)",
+  "corpus": [
+   "errata-faq-2020"
+  ],
+  "text": [
+   "Errata FAQ v20 2020-08-12.md"
+  ],
+  "packs": []
+ }
+}

@@ -61,5 +61,12 @@ REFRESH=""
 python3 scripts/dsl_rules_text.py $REFRESH
 
 python3 scripts/build.py
+
+# The source audit reads the catalog and the resolved corpus text the two steps
+# above produce, and writes data/audit.js for the Audit section. It only reads
+# the corpus — it never edits it.
+echo
+python3 scripts/audit_corpus.py
+
 echo
 python3 scripts/coverage.py

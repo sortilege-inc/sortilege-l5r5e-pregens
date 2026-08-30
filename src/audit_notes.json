@@ -1,0 +1,227 @@
+{
+  "_comment": "Hand-written assessments for the site's Audit section. The numbers beside them are computed by scripts/audit_corpus.py; these are the judgments about what the numbers mean, including where the evidence does not support a judgment. Confidence is about THIS assessment, not about the corpus.",
+
+  "core": {
+    "completeness": {
+      "verdict": "Probably complete for catalog-shaped content; unmeasured for everything else.",
+      "confidence": "Moderate",
+      "basis": "421 of 495 compendium entries from this book resolve to a corpus rule. Most of the 74 that do not are gear whose rules the corpus states as a stat line rather than prose, plus 6 personal effects known to be absent and deferred by decision. But the compendium only enumerates catalog items — techniques, advantages, schools, titles, gear. It says nothing about whether the systems chapters, tables and procedures are whole, and nothing has yet checked the book page by page for content no entity claims."
+    },
+    "correctness": {
+      "verdict": "The best in the corpus by a wide margin, with two confirmed name defects.",
+      "confidence": "Moderate to high, for the 74% that could be judged",
+      "basis": "602 of 685 judgeable rules strings are printed in the book verbatim (88%). Two name defects confirmed by hand: the adversity is filed as 'Blackmailed by [Name]' where the book prints 'Blackmailed by [Character's Name]' — and a separate advantage 'Blackmail on [Name]' exists, so the distinction matters; and 'Inversion' sits in core-techniques although its own comment says inversions are not in the Core Rulebook. Question 14's invented Demeanor effect was found and fixed on 2026-08-30, along with ten drifted question titles and an invented Part structure. Separately: I reported that all 28 conditions were missing their removal rules. That was wrong — the block is REMOVED_WHEN and my search was for 'Removed When'. Every condition the book gives a removal rule has one."
+    },
+    "next": "The 238 unjudgeable strings need the page images. A page-residue pass would settle the completeness question the compendium cannot."
+  },
+
+  "path-of-waves": {
+    "completeness": {
+      "verdict": "Meaningful gap against the compendium — 48 entries carry no corpus rule.",
+      "confidence": "Moderate",
+      "basis": "143 of 191 compendium entries resolve (75%), the second-worst ratio of any book with a corpus file. Worth noting that this book supplies the Creator's alternate twenty-questions path, so gaps here surface in play."
+    },
+    "correctness": {
+      "verdict": "Pervasively reworded. Sampled cases preserve meaning but almost none are the book's sentence.",
+      "confidence": "Moderate",
+      "basis": "Only 67 of 255 judgeable strings are verbatim (26%), and 124 of the 188 drifting strings share no long run with the book at all. Hand-checked examples: the corpus writes 'does not need to be purchased. You may immediately perform that ritual' where the book prints 'this does not need to be a ritual you have purchased. You are immediately able to perform that ritual'. Meaning survives; the wording is the converter's. Two item names carry corpus-added glosses — 'Lute (Biwa)' and 'Chandu (Smoking Opium)' where the book prints 'biwa' and 'Chandu'."
+    },
+    "next": "Highest-value target after Core: worst verbatim rate, a real completeness gap, and it feeds the Creator."
+  },
+
+  "writ-of-the-wilds": {
+    "completeness": {
+      "verdict": "Complete against the compendium.",
+      "confidence": "Moderate",
+      "basis": "67 of 67 compendium entries resolve. The compendium's list for this book is small, so this is weaker evidence than the ratio suggests."
+    },
+    "correctness": {
+      "verdict": "Heavily reworded, and the least judgeable book in the corpus.",
+      "confidence": "Low",
+      "basis": "29 of 98 judgeable strings verbatim (30%), but 39% of all strings carry symbol notation and cannot be judged from text at all — the highest proportion anywhere. Sampled drift is a mix of corpus-authored connective text ('Always uses Focus as base initiative value') and compression of the book's sentence."
+    },
+    "next": "Do not draw conclusions here without the page images; nearly two fifths of the content is invisible to this method."
+  },
+
+  "emerald-empire": {
+    "completeness": {
+      "verdict": "Complete against the compendium.",
+      "confidence": "Moderate",
+      "basis": "64 of 64 compendium entries resolve. This book is largely setting material, which the compendium does not enumerate, so the ratio speaks only for its mechanical items."
+    },
+    "correctness": {
+      "verdict": "Substantially reworded; a third of drifting strings share no run with the book.",
+      "confidence": "Low to moderate",
+      "basis": "53 of 119 judgeable strings verbatim (45%). Sampled drift includes outfit list fragments where the book interleaves a page cross-reference the corpus drops ('an attendant or Rokugani pony' against 'an attendant (see page 64 of the core rulebook) or Rokugani pony'), and school abilities rewritten in the corpus's own register."
+    },
+    "next": "Sample twenty strings against the page before deciding whether this is cosmetic or substantive."
+  },
+
+  "courts-of-stone": {
+    "completeness": {
+      "verdict": "Complete against the compendium bar one entry.",
+      "confidence": "Moderate",
+      "basis": "117 of 118 compendium entries resolve."
+    },
+    "correctness": {
+      "verdict": "About half the judgeable text is the book's; the rest is close paraphrase.",
+      "confidence": "Moderate",
+      "basis": "80 of 166 judgeable strings verbatim (48%). Hand-checked drift tracks the book's own sentence and diverges on small words — the corpus writes 'the identified relationship' where the book prints 'the relationship identified by the ritual'. No substantive error surfaced in the sample, but the sample was three strings."
+    },
+    "next": "Low apparent risk, but the sample is too small to stand on."
+  },
+
+  "shadowlands": {
+    "completeness": {
+      "verdict": "Complete against the compendium.",
+      "confidence": "Moderate",
+      "basis": "101 of 101 compendium entries resolve."
+    },
+    "correctness": {
+      "verdict": "Reworded throughout; one confirmed loss of specificity.",
+      "confidence": "Moderate",
+      "basis": "71 of 186 judgeable strings verbatim (38%). Confirmed: the Shadowlands Taint disadvantage says a dead character's body 'rises as an undead creature' where the book prints 'rises as a zombie peasant (see page 321)' — a named adversary with a statblock, generalised away. Other sampled drift is the same restructuring seen elsewhere ('Nourish: receive fatigue' for 'If you nourish, you may receive fatigue')."
+    },
+    "next": "Check whether other named-adversary references have been generalised the same way."
+  },
+
+  "celestial-realms": {
+    "completeness": {
+      "verdict": "19 compendium entries carry no corpus rule.",
+      "confidence": "Moderate",
+      "basis": "87 of 106 compendium entries resolve (82%)."
+    },
+    "correctness": {
+      "verdict": "The lowest verbatim rate in the corpus, but much of it is corpus-authored annotation rather than misquoted rules.",
+      "confidence": "Low to moderate",
+      "basis": "33 of 160 judgeable strings verbatim (21%). 106 of 127 drifting strings share no run with the book. Hand-checked: the komainu entries carry lines the corpus wrote itself ('Modified Manifest Earth Kami (core rulebook p.323)'), and a rewrite of the book's 'the komainu is, in all respects, a large stone statue'. The book text extracts cleanly, so this is the corpus's wording, not extraction damage — I verified that before concluding it."
+    },
+    "next": "Decide whether corpus-authored annotation belongs in rules strings at all; it is the bulk of this book's drift."
+  },
+
+  "five-winds": {
+    "completeness": {
+      "verdict": "Near-complete against the compendium.",
+      "confidence": "Moderate",
+      "basis": "105 of 109 compendium entries resolve."
+    },
+    "correctness": {
+      "verdict": "Largely corpus-authored summary lines standing in for the book's procedures.",
+      "confidence": "Moderate",
+      "basis": "77 of 253 judgeable strings verbatim (30%). Sampled drift is short declarative labels the corpus wrote — 'Accumulate momentum to establish a binding agreement between mortal and spirit', 'Drive out a spirit that has possessed a character' — which describe book procedures without quoting them. These are summaries, not errors, but they are also not rules text."
+    },
+    "next": "Confirm the procedures themselves are carried somewhere, not only their summaries."
+  },
+
+  "fields-of-victory": {
+    "completeness": {
+      "verdict": "Near-complete against the compendium.",
+      "confidence": "Moderate",
+      "basis": "117 of 122 compendium entries resolve."
+    },
+    "correctness": {
+      "verdict": "Second-best verbatim rate; drift is dominated by dropped page cross-references.",
+      "confidence": "Moderate to high",
+      "basis": "174 of 264 judgeable strings verbatim (66%). Sampled drift diverges exactly where the book prints '(see page 114)' and the corpus omits it. The 80 names absent from the book are table row labels the corpus coined — 'Status 100', 'Status 90-99' — not missing content."
+    },
+    "next": "Decide the house rule on page cross-references; it would resolve most of this book's drift at a stroke."
+  },
+
+  "legacies-of-war": {
+    "completeness": {
+      "verdict": "Cannot be assessed — the compendium enumerates nothing for this book.",
+      "confidence": "None",
+      "basis": "No compendium entries carry this source, so there is no independent list to measure against. The corpus has 19 entities from a 2-file text extraction."
+    },
+    "correctness": {
+      "verdict": "Mostly tracking the book, on a very small sample.",
+      "confidence": "Low",
+      "basis": "15 of 27 judgeable strings verbatim (56%), and 7 of the 12 drifting strings share a long run with the book — the highest proportion of near-misses anywhere, meaning the corpus is quoting and trimming rather than rewriting. 27 strings is too few to generalise from."
+    },
+    "next": "Small enough to verify by hand end to end."
+  },
+
+  "mantis-clan": {
+    "completeness": {
+      "verdict": "Half the compendium's entries for this book carry no corpus rule.",
+      "confidence": "Moderate",
+      "basis": "11 of 21 compendium entries resolve (52%) — proportionally the worst gap of any book with a corpus file, though the absolute number is small."
+    },
+    "correctness": {
+      "verdict": "Light compression of the book's sentences.",
+      "confidence": "Low",
+      "basis": "9 of 20 judgeable strings verbatim. Hand-checked: the corpus drops qualifiers — 'you wake up later' for the book's 'you instead wake up later', '(Games [Fire] to wager on a single gambit)' for 'such as a Games (Fire) check to wager the game on a single gambit'. Meaning intact. 20 strings is a very small sample."
+    },
+    "next": "The 10 unresolved compendium entries are the concrete thing to chase here."
+  },
+
+  "gm-kit": {
+    "completeness": {
+      "verdict": "Complete against the compendium's three entries.",
+      "confidence": "Low",
+      "basis": "3 of 3 resolve, which is almost no evidence either way."
+    },
+    "correctness": {
+      "verdict": "Not assessable.",
+      "confidence": "None",
+      "basis": "Five rules strings in total, of which four could be judged. There is nothing here to measure."
+    },
+    "next": "Verify by hand if it matters; it is small enough to read."
+  },
+
+  "gm-screen": {
+    "completeness": {
+      "verdict": "Not assessable from the compendium.",
+      "confidence": "None",
+      "basis": "No compendium entries carry this source. The file is 31 reference panels."
+    },
+    "correctness": {
+      "verdict": "Not assessable by this method at all.",
+      "confidence": "None",
+      "basis": "The file contains zero rules strings — its content is written as comments, which this audit does not read because comments are authoring notes elsewhere in the corpus. All 31 names are corpus-coined panel titles ('Dice Symbols Reference'), so the name check says nothing either. This file needs a different technique entirely."
+    },
+    "next": "Decide whether comment-bodied reference panels are acceptable, or should be promoted to properties as the 2026-05-20 audit did for NPC abilities."
+  },
+
+  "daidoji-shin": {
+    "completeness": {
+      "verdict": "Not assessable from the compendium.",
+      "confidence": "None",
+      "basis": "No compendium entries carry this source. It is a promotional letter, not a sourcebook; the corpus has 8 entities."
+    },
+    "correctness": {
+      "verdict": "Not assessable.",
+      "confidence": "None",
+      "basis": "Four rules strings, three of them unjudgeable. The one judgeable string tracks the book and diverges on an article ('the Bushi' for 'a bushi')."
+    },
+    "next": "Small enough to verify by hand."
+  },
+
+  "errata-2019": {
+    "completeness": {
+      "verdict": "Not assessable from the compendium.",
+      "confidence": "None",
+      "basis": "No compendium entries carry this source."
+    },
+    "correctness": {
+      "verdict": "Not assessable by this method — the reference is wrong for this file.",
+      "confidence": "None",
+      "basis": "An errata file names the entities it corrects, which come from the Core Rulebook, not from the errata document. Checking those names against the errata PDF is the wrong comparison, and it is why 9 of 11 names read as absent. Three rules strings is no sample at all."
+    },
+    "next": "Re-run this file against Core plus the errata document together."
+  },
+
+  "errata-2020": {
+    "completeness": {
+      "verdict": "Not assessable from the compendium.",
+      "confidence": "None",
+      "basis": "No compendium entries carry this source."
+    },
+    "correctness": {
+      "verdict": "Not assessable by this method — same wrong reference as 2019.",
+      "confidence": "None",
+      "basis": "14 of 26 judgeable strings verbatim, but the 24 'absent' names are corpus-coined FAQ identifiers ('FAQ: NPC Void Points (2020)') that no book would print. The file's targets are Core entities. This number should not be read as a defect count."
+    },
+    "next": "Re-run against Core plus the errata document. Errata correctness matters disproportionately: these files load last and overwrite everything before them."
+  }
+}

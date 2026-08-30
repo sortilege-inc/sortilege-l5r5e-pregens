@@ -816,6 +816,7 @@ PAGE_STUB = """<!DOCTYPE html>
   <a href="index.html" class="active">Characters</a>
   <a href="../creator/index.html">Creator</a>
   <a href="../admin/index.html">Coverage</a>
+  <a href="../audit/index.html">Audit</a>
 </nav>
 
 <div class="wrap">
