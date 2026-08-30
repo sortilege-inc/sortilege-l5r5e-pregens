@@ -800,10 +800,16 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .wa-n{ margin-left:auto; color:var(--ink-dim); }
 .wa-list{ display:flex; flex-direction:column; gap:0.15rem; margin-top:0.45rem; }
 .wa-q{
-  font-family:var(--body); font-size:0.84rem; color:var(--ink-soft);
-  border-bottom:1px dotted var(--gold-soft); align-self:flex-start;
+  display:flex; gap:0.45rem; align-items:baseline;
+  font-family:var(--body); font-size:0.82rem; line-height:1.35;
+  color:var(--ink-soft); padding:0.12rem 0;
+  border-bottom:1px dotted var(--gold-soft);
 }
 .wa-q:hover{ color:var(--sumi); }
+.wa-n-i{
+  flex:0 0 auto; min-width:1.3em; text-align:right;
+  font-family:var(--caps); font-size:0.7rem; color:var(--ink-dim);
+}
 
 .bio-body{ max-width:62ch; }
 .bio-body p{ margin:0 0 0.7rem; }
@@ -859,7 +865,9 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 
 .choice.has-tip{ border-bottom-style:dotted; border-bottom-width:2px; }
 .rule-tip{
-  position:absolute; z-index:60; max-height:16rem; overflow-y:auto;
+  /* fixed, not absolute: an absolutely positioned card near the right edge
+     extends the document and widens the page as the cursor moves over it */
+  position:fixed; z-index:60; max-height:16rem; overflow-y:auto;
   background:var(--paper-2); border:1px solid var(--gold-soft); border-radius:2px;
   box-shadow:0 6px 20px rgba(25,16,9,0.22);
   padding:0.6rem 0.8rem; font-family:var(--body); font-size:0.88rem;

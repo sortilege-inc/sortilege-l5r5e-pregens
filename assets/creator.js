@@ -1957,11 +1957,14 @@
     t.style.width = w + "px";
     var left = Math.max(12, Math.min(r.left, window.innerWidth - w - 12));
     var h = t.getBoundingClientRect().height;
-    // above the button when there is room, below when there is not
+    // above the target when there is room, below when there is not
     var top = r.top - h - 8;
     if (top < 8) top = r.bottom + 8;
-    t.style.left = (left + window.scrollX) + "px";
-    t.style.top = (top + window.scrollY) + "px";
+    // Viewport coordinates, because the card is position:fixed. Absolute
+    // positioning on the body made the document grow to contain the card, so
+    // hovering anything near the right edge widened the page under the cursor.
+    t.style.left = left + "px";
+    t.style.top = Math.max(8, Math.min(top, window.innerHeight - h - 8)) + "px";
   }
 
   function hideTip() {
@@ -2480,32 +2483,36 @@
   }
 
   // Questions already answered, so a later one can be written against them.
+  // Titled as the corpus words them, and mode-aware — a Path of Waves
+  // character is asked about their past where a samurai is asked about a lord.
   function answeredQuestions() {
     var a = C.answers;
     var rows = [
-      [4, "standout quality", a.standout_quality],
-      [5, qAlt(5) ? "past" : "giri", qAlt(5) ? a.past : a.giri],
-      [5, "lord", a.lord_name],
-      [6, "ninjō", a.ninjo],
-      [7, qAlt(7) ? "known for" : "clan relationship",
-       qAlt(7) ? a.known_for : a.clan_relationship.text],
-      [8, "bushidō", [C.bushido.paramount, C.bushido.lesser].filter(Boolean).join(" / ")],
-      [9, "greatest accomplishment", a.accomplishment],
-      [10, "greatest challenge", a.challenge],
-      [11, "at peace", a.peace],
-      [12, "concern or fear", a.fear],
-      [13, "mentor", [a.mentor.name, a.mentor.text].filter(Boolean).join(" — ")],
-      [14, qAlt(14) ? "prized possession" : "first impression",
-       qAlt(14) ? a.prized_possession : a.first_impression],
-      [15, "stress reaction", a.stress_reaction],
-      [16, "relationships", a.relationships],
-      [17, qAlt(17) ? "shared history" : "parent's opinion",
-       qAlt(17) ? a.group_history : a.parent_opinion.description],
-      [18, qAlt(18) ? "who raised them" : "heritage",
-       qAlt(18) ? a.raised_by : a.heritage],
-      [20, "death", a.death]
+      [4, null, a.standout_quality],
+      [5, null, qAlt(5) ? a.past : a.giri],
+      [5, "Your lord's name", a.lord_name],
+      [6, null, a.ninjo],
+      [7, null, qAlt(7) ? a.known_for : a.clan_relationship.text],
+      [8, null, [C.bushido.paramount, C.bushido.lesser].filter(Boolean).join(" / ")],
+      [9, null, a.accomplishment],
+      [10, null, a.challenge],
+      [11, null, a.peace],
+      [12, null, a.fear],
+      [13, null, [a.mentor.name, a.mentor.text].filter(Boolean).join(" — ")],
+      [14, null, qAlt(14) ? a.prized_possession : a.first_impression],
+      [15, null, a.stress_reaction],
+      [16, null, a.relationships],
+      [17, null, qAlt(17) ? a.group_history : a.parent_opinion.description],
+      [18, null, qAlt(18) ? a.raised_by : a.heritage],
+      [19, null, C.name],
+      [20, null, a.death]
     ];
-    return rows.filter(function (r) { return r[2] && String(r[2]).trim(); });
+    return rows
+      .filter(function (r) { return r[2] && String(r[2]).trim(); })
+      .map(function (r) {
+        return { n: r[0], title: r[1] || qText(r[0]) || "Question " + r[0],
+                 answer: String(r[2]) };
+      });
   }
 
   function renderWip() {
@@ -2561,9 +2568,9 @@
         ? '<details class="wip-answers"><summary>Answered so far' +
           '<span class="wa-n">' + answered.length + "</span></summary>" +
           '<div class="wa-list">' + answered.map(function (r) {
-            return '<span class="wa-q has-tip" data-tip="Question ' + r[0] + '" ' +
-              'data-why="' + esc(String(r[2])) + '">' +
-              r[0] + ". " + esc(r[1]) + "</span>";
+            return '<span class="wa-q has-tip" data-tip="Question ' + r.n + '" ' +
+              'data-why="' + esc(r.answer) + '">' +
+              '<span class="wa-n-i">' + r.n + "</span>" + esc(r.title) + "</span>";
           }).join("") + "</div></details>"
         : "");
 
