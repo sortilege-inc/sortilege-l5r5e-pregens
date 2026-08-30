@@ -118,6 +118,30 @@
     return family ? family + " " + personal : personal;
   }
 
+  /* A mentor belongs to a clan far more often than to an order, a tradition or
+     a conspiracy, so the roll is weighted 3:1 toward a clan — three parts clan
+     to one part everything else, as a category, not per entry. Inside whichever
+     side wins, the choice is uniform. */
+  var CLAN_WEIGHT = 3;
+
+  function rollAssociation() {
+    var a = NAMES.association || {};
+    var clans = a.clans || [], bodies = a.bodies || [];
+    if (!clans.length && !bodies.length) return null;
+    if (!bodies.length) return pickFrom(clans);
+    if (!clans.length) return pickFrom(bodies);
+    return randomBelow(CLAN_WEIGHT + 1) < CLAN_WEIGHT
+      ? pickFrom(clans) : pickFrom(bodies);
+  }
+
+  // Is this association one of the clans? Decides whether a rolled mentor name
+  // gets a family name in front of it.
+  function isClan(name) {
+    return ((NAMES.association || {}).clans || []).some(function (c) {
+      return normName(c) === normName(name);
+    });
+  }
+
   // A lord is usually of the character's own family; failing that, of their
   // clan; failing that, anyone. Resolved per roll, so the button gives variety.
   function rollLordFamily() {
@@ -237,7 +261,8 @@
         lord_name: "", lord_gender: "any",
         prized_possession: "", group_history: "", raised_by: "", raised_skill: null,
         clan_relationship: { path: null, skill: null, text: "" },
-        mentor: { name: "", path: null, granted: null, skill: "", text: "" },
+        mentor: { name: "", path: null, granted: null, skill: "", text: "",
+                  gender: "any", association: "" },
         first_impression: "", accoutrement: "", stress_reaction: "",
         relationships: "", parent_opinion: { description: "", skill: null },
         heritage: null, heritage_table: null, heritage_sub: null, death: ""
@@ -1804,11 +1829,7 @@
           (m.path !== "B" || has(m.skill));
       },
       render: function (body) {
-        var i = document.createElement("input");
-        i.type = "text"; i.placeholder = "Mentor's name";
-        i.value = C.answers.mentor.name || "";
-        i.addEventListener("input", function () { C.answers.mentor.name = i.value; save(); });
-        body.appendChild(i);
+        mentorSection(body);
         choice(body, [["A", "An extra advantage"], ["B", "An extra disadvantage + skill"]],
           C.answers.mentor.path, function (v) {
             if (v === C.answers.mentor.path) return;
@@ -2432,6 +2453,65 @@
         : (isCore()
             ? "Choose a family at question 2 and the roll will put it in front of the name."
             : "These characters carry no family name, so the roll gives a personal name alone.")
+    });
+  }
+
+  /* The mentor: who they are, and who they belong to. The association drives
+     the name roll — a Crane mentor gets a Crane family in front of their name,
+     an order or a tradition gets a personal name alone. */
+  function mentorSection(body) {
+    var m = C.answers.mentor;
+
+    label(body, "Their clan or association");
+    var row = document.createElement("div");
+    row.className = "lord-row";
+    var assoc = document.createElement("input");
+    assoc.type = "text";
+    assoc.placeholder = "A clan, an order, a tradition — or roll one";
+    assoc.value = m.association || "";
+    assoc.addEventListener("input", function () {
+      m.association = assoc.value;
+      save();
+    });
+    row.appendChild(assoc);
+    var rollA = document.createElement("button");
+    rollA.type = "button";
+    rollA.className = "btn ghost lord-roll";
+    rollA.textContent = "Roll";
+    rollA.title = "A clan three times out of four, otherwise one of the orders, " +
+      "traditions or conspiracies the corpus names";
+    rollA.addEventListener("click", function () {
+      var a = rollAssociation();
+      if (!a) return;
+      m.association = a;
+      save();
+      render();
+    });
+    row.appendChild(rollA);
+    body.appendChild(row);
+
+    nameSection(body, {
+      heading: "Their name",
+      placeholder: "Name your mentor, or roll one",
+      get: function () { return m.name; },
+      set: function (v) { m.name = v; },
+      gender: function () { return m.gender; },
+      setGender: function (v) { m.gender = v; },
+      family: function () {
+        var byClan = (NAMES.family || {}).by_clan || {};
+        if (m.association && isClan(m.association)) {
+          var key = Object.keys(byClan).filter(function (k) {
+            return normName(k) === normName(m.association);
+          })[0];
+          if (key) return pickFrom(byClan[key]);
+        }
+        return null;   // an order or a tradition: a personal name alone
+      },
+      note: m.association
+        ? (isClan(m.association)
+            ? "Rolls a " + m.association + " family in front of the name."
+            : m.association + " is not a clan, so the roll gives a personal name alone.")
+        : "Roll or name an association above and the name roll will follow it."
     });
   }
 

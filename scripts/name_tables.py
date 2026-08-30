@@ -78,6 +78,25 @@ def main():
     for k in by_clan:
         by_clan[k] = sorted(set(by_clan[k]))
 
+    # Who a mentor belongs to. Clans come from the wizard's own clan list; the
+    # non-clan side is the corpus's clanless bodies — the orders, traditions and
+    # the one conspiracy it names — read out of the school list rather than
+    # invented, which is why paths like "Wandering Blade" are excluded: they name
+    # a way of living, not a body a person belongs to.
+    clans = []
+    cpath = os.path.join(ROOT, "data", "chargen", "clans.js")
+    if os.path.exists(cpath):
+        clans = sorted({c.get("clan_short_name") or c["name"] for c in load_js(cpath)
+                        if c.get("name")})
+    bodies = []
+    spath = os.path.join(ROOT, "data", "chargen", "schools.js")
+    if os.path.exists(spath):
+        bodies = sorted({sc["name"] for sc in load_js(spath)
+                         if not sc.get("clan") and sc.get("name")
+                         and sc["name"].split()[-1] in ("Order", "Tradition",
+                                                        "Conspiracy")})
+    bodies = sorted(set(bodies) | {"Kolat Saboteur Conspiracy"})
+
     data = {
         "given": {
             "male": male,
@@ -87,6 +106,7 @@ def main():
             "any": sorted(set(rokugani) | set(male) | set(female)),
         },
         "family": {"by_clan": by_clan, "vassal": vassal},
+        "association": {"clans": clans, "bodies": bodies},
         "sources": {
             "male": male_src, "female": female_src, "rokugani": rokugani_src,
             "vassal": "vassal family names",
@@ -101,7 +121,8 @@ def main():
 
     print(f"names: {len(male)} male, {len(female)} female, {len(data['given']['any'])} any; "
           f"{sum(len(v) for v in by_clan.values())} clan families across {len(by_clan)} clans, "
-          f"{len(vassal)} vassal -> {os.path.relpath(OUT, ROOT)} "
+          f"{len(vassal)} vassal; associations {len(clans)} clans + {len(bodies)} "
+          f"non-clan bodies -> {os.path.relpath(OUT, ROOT)} "
           f"({os.path.getsize(OUT)/1024:.1f} KB)")
 
 
