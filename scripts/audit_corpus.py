@@ -66,6 +66,13 @@ SYMBOL = re.compile(
 
 DEF_RE = re.compile(r'\^"([^"]+)"\s+DEF\s*\{')
 BARE = re.compile(r'^[ \t]*"((?:[^"\\]|\\.){25,})"[ \t]*,?[ \t]*$', re.M)
+# Two more shapes the corpus states rules in, both of them missed by the bare-string
+# form and both of which turned out to hold real errors: an indexed entry in an
+# ordered block (DIFFICULTY_SCALE's `2 "An average task…"`) and a named pair
+# (USES's `^"Shattering Parry" "…"`). The target-number scale and the Void point
+# rules were invisible to this audit until these were added.
+INDEXED = re.compile(r'^[ \t]*\d+[ \t]+"((?:[^"\\]|\\.){25,})"[ \t]*,?[ \t]*$', re.M)
+NAMED = re.compile(r'^[ \t]*\^"[^"]+"[ \t]+"((?:[^"\\]|\\.){25,})"[ \t]*,?[ \t]*$', re.M)
 
 # Rules-bearing properties. An ALLOWLIST on purpose: the corpus's own
 # bookkeeping (Errata Note, Carryover From, Source Book) is long prose too, and
@@ -143,6 +150,8 @@ def audit(key, title, cglobs, tglobs, packs, catalog, dsl):
             if book and stream(n) not in book:
                 absent.append({"file": base, "name": n})
         strings = [m.group(1) for m in BARE.finditer(body)]
+        strings += [m.group(1) for m in INDEXED.finditer(body)]
+        strings += [m.group(1) for m in NAMED.finditer(body)]
         strings += [m.group(2) for m in PROP.finditer(body) if m.group(1) in PROSE_PROPS]
         for s in strings:
             if book and stream(s) in book:

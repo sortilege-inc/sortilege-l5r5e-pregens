@@ -30,6 +30,13 @@ SYMBOL = re.compile(r"\((?:op|su|ex|st|ring|skill)\)|"
                     r"\b(?:opportunit(?:y|ies)|explosive\s+success(?:es)?|"
                     r"success(?:es)?|strife)\b", re.I)
 BARE = re.compile(r'^[ \t]*"((?:[^"\\]|\\.){25,})"[ \t]*,?[ \t]*$', re.M)
+# Two more shapes the corpus states rules in, both of them missed by the bare-string
+# form and both of which turned out to hold real errors: an indexed entry in an
+# ordered block (DIFFICULTY_SCALE's `2 "An average task…"`) and a named pair
+# (USES's `^"Shattering Parry" "…"`). The target-number scale and the Void point
+# rules were invisible to this audit until these were added.
+INDEXED = re.compile(r'^[ \t]*\d+[ \t]+"((?:[^"\\]|\\.){25,})"[ \t]*,?[ \t]*$', re.M)
+NAMED = re.compile(r'^[ \t]*\^"[^"]+"[ \t]+"((?:[^"\\]|\\.){25,})"[ \t]*,?[ \t]*$', re.M)
 PROPS = {"Description","Effect","Effects","Activation","Opportunities","Special",
          "Title Ability Effect","Magnitude","Enhancement Effect","Burst Effect","Check",
          "Requirement","Charge","Restriction","Quirk","Profile","Grips","Advances",
@@ -58,6 +65,8 @@ for g in cfg["corpus"]:
     for p in sorted(glob.glob(os.path.join(CORPUS, "l5r5e-0.4-" + g + ".ttrpg"))):
         body = open(p, encoding="utf-8").read()
         ss = [m.group(1) for m in BARE.finditer(body)]
+        ss += [m.group(1) for m in INDEXED.finditer(body)]
+        ss += [m.group(1) for m in NAMED.finditer(body)]
         ss += [m.group(2) for m in PROP.finditer(body) if m.group(1) in PROPS]
         for s in ss:
             cs = stream(s)
