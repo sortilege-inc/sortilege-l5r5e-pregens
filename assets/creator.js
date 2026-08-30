@@ -1149,10 +1149,15 @@
           }), C.upbringing, function (v) { C.upbringing = v; save(); });
           return;
         }
-        if (!C.clan) return needs(body, "Choose a clan first.");
-        var items = familiesOf(C.clan).map(function (f) {
+        // No clan is not a dead end: a character can carry a family name without
+        // one, and Iuchi Nergüi in the archive does exactly that.
+        var pool = clanFilter(body, "family_all", "families",
+                              familiesOf(C.clan), FAMILIES, find(FAMILIES, C.family));
+        var showingAll = pool === FAMILIES;
+        var items = pool.map(function (f) {
           return { value: f.name, label: f.name,
-                   meta: [ringLine(f.ring_increase), skillLine(f.skill_increases),
+                   meta: [showingAll ? f.clan : null,
+                          ringLine(f.ring_increase), skillLine(f.skill_increases),
                           f.starting_wealth ? f.starting_wealth + " koku" : null,
                           f.glory ? "Glory " + f.glory : null].filter(Boolean).join(" · ") };
         });
@@ -1171,38 +1176,12 @@
       desc: "Your school determines your starting techniques, your curriculum, your starting skills, and your starting honor and outfit.",
       done: function () { return has(C.school) && choicesMade(schoolByRollName(C.school), "school"); },
       render: function (body) {
-        // Clan is a shortcut, not a rule. Cross-clan training happens, rōnin
-        // and gaijin schools have no clan at all, and the archive already holds
-        // characters trained outside their own clan — so the filter is a
-        // convenience the player can switch off.
         var current = schoolByRollName(C.school);
-        var mine = schoolsOf(C.clan);
-        var outside = current && mine.indexOf(current) < 0;
-        if (outside) C.school_all = true;      // never hide the school in hand
-        var showAll = !!C.school_all;
-        var pool = showAll ? SCHOOLS : mine;
-
-        if (isCore() && C.clan && mine.length && mine.length < SCHOOLS.length) {
-          var row = document.createElement("label");
-          row.className = "filtercheck";
-          row.innerHTML = '<input type="checkbox"' + (showAll ? "" : " checked") + ">" +
-            "<span>Filter to " + esc(C.clan) + " schools</span>" +
-            '<span class="fc-n">' +
-              (showAll ? SCHOOLS.length + " shown" : mine.length + " of " + SCHOOLS.length) +
-            "</span>";
-          row.querySelector("input").addEventListener("change", function (e) {
-            C.school_all = !e.target.checked;
-            save(); render();
-          });
-          body.appendChild(row);
-          if (outside) {
-            var why = document.createElement("p");
-            why.className = "muted small";
-            why.textContent = current.name + " is not a " + C.clan +
-              " school, so the list is unfiltered to keep it in view.";
-            body.appendChild(why);
-          }
-        }
+        var pool = clanFilter(body, "school_all", "schools",
+                              C.clan ? SCHOOLS.filter(function (x) { return x.clan === C.clan; })
+                                     : [],
+                              SCHOOLS, current);
+        var showAll = pool === SCHOOLS;
 
         var items = pool.map(function (s) {
           return { value: rollName(s.name), label: rollName(s.name),
@@ -1783,6 +1762,40 @@
       }
     });
     return out;
+  }
+
+  /* Clan is a shortcut on the family and school lists, not a rule. Cross-clan
+     training happens, rōnin and gaijin schools have no clan at all, and the
+     archive already holds characters trained outside their own clan — so the
+     filter is a convenience the player can switch off. `flag` is the field on
+     the draft that remembers the choice, per character. */
+  function clanFilter(body, flag, noun, mine, all, current) {
+    var outside = current && all.indexOf(current) >= 0 && mine.indexOf(current) < 0;
+    if (outside) C[flag] = true;                 // never hide the thing in hand
+    var showAll = !!C[flag] || !mine.length;
+
+    if (C.clan && mine.length && mine.length < all.length) {
+      var row = document.createElement("label");
+      row.className = "filtercheck";
+      row.innerHTML = '<input type="checkbox"' + (showAll ? "" : " checked") + ">" +
+        "<span>Filter to " + esc(C.clan) + " " + noun + "</span>" +
+        '<span class="fc-n">' +
+          (showAll ? all.length + " shown" : mine.length + " of " + all.length) +
+        "</span>";
+      row.querySelector("input").addEventListener("change", function (e) {
+        C[flag] = !e.target.checked;
+        save(); render();
+      });
+      body.appendChild(row);
+      if (outside) {
+        var why = document.createElement("p");
+        why.className = "muted small";
+        why.textContent = (current.name || current) + " is not a " + C.clan + " " +
+          noun.replace(/s$/, "") + ", so the list is unfiltered to keep it in view.";
+        body.appendChild(why);
+      }
+    }
+    return showAll ? all : mine;
   }
 
   // A step is not finished while a choice it granted is still open — that is
