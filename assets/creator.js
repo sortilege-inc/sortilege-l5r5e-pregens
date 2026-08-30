@@ -310,11 +310,34 @@
     switchDraft(id);
   }
 
+  // The panel is a <details>, shut unless the author opened it. With 98 archive
+  // drafts an always-open list pushed the wizard itself below the fold, and the
+  // wizard is what the page is for. renderDrafts() rewrites its own markup on
+  // every save, so the open state is held here rather than in the DOM.
+  var LS_DRAFTS_OPEN = "sortilege.l5r.creator.draftsOpen";
+
+  function draftsOpen() {
+    try { return localStorage.getItem(LS_DRAFTS_OPEN) === "1"; }
+    catch (e) { return false; }
+  }
+  function setDraftsOpen(v) {
+    try { localStorage.setItem(LS_DRAFTS_OPEN, v ? "1" : "0"); } catch (e) { /* private mode */ }
+  }
+
   function renderDrafts() {
     var ids = Object.keys(STORE.drafts).sort(function (a, b) {
       return STORE.drafts[b].updated - STORE.drafts[a].updated;
     });
-    el("drafts").innerHTML =
+    var active = STORE.drafts[STORE.activeId];
+    var summary =
+      '<summary class="drafts-sum">' +
+        '<span class="drafts-label">Drafts</span>' +
+        '<span class="ds-active">' + esc(active ? draftLabel(active) : "none") + "</span>" +
+        '<span class="ds-n">' + ids.length + " here" +
+        (ARCHIVE.length ? " · " + ARCHIVE.length + " from Foundry" : "") +
+        "</span>" +
+      "</summary>";
+    el("drafts").innerHTML = summary + '<div class="drafts-body">' +
       '<span class="drafts-label">Drafts</span>' +
       ids.map(function (id) {
         var d = STORE.drafts[id];
@@ -333,6 +356,7 @@
       '<button type="button" class="draftnew" id="draft-dup">Duplicate</button>' +
       (ARCHIVE.length
         ? '<span class="drafts-label drafts-archive">From Foundry</span>' +
+          '<div class="archive-list">' +
           ARCHIVE.map(function (a) {
             var open = Object.keys(STORE.drafts).some(function (id) {
               return STORE.drafts[id].fromArchive === a.slug;
@@ -342,8 +366,13 @@
               esc(a.name) + '<span class="dc-meta">' +
               esc(a.identity.school || a.identity.clan || "—") +
               (open ? " · opened" : "") + "</span></button>";
-          }).join("")
-        : "");
+          }).join("") + "</div>"
+        : "") + "</div>";
+
+    el("drafts").open = draftsOpen();
+    el("drafts").addEventListener("toggle", function () {
+      setDraftsOpen(el("drafts").open);
+    });
 
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-open"), function (b) {
       b.addEventListener("click", function () { switchDraft(b.getAttribute("data-id")); });
