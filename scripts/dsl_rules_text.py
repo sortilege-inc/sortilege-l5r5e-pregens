@@ -232,6 +232,16 @@ def build_index(corpus):
                 put(m.group("name"),
                     synthetic(m.group("name"), [m.group("text")]), "title ability")
 
+        # shape 7: a block that lists names beside their text — ENTRIES of
+        # items, or Path of Waves' forty General Boons. The synthesist only
+        # started emitting the text half of these (a0ccca2); before that the
+        # names arrived with nothing attached.
+        refs2, txt2 = o.get("refs") or [], o.get("text") or []
+        if (o.get("keyword") and len(refs2) == len(txt2) and len(refs2) > 1):
+            for r, t in zip(refs2, txt2):
+                if r and t:
+                    put(r, synthetic(r, [t]), "block entry")
+
         # shape 6: some books state an ability only in a RULES label,
         # 'astradhari_title_ability "Sacred Mantras (Title Ability): …"'
         t = o.get("text")
