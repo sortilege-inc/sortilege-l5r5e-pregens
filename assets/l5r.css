@@ -782,6 +782,20 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .archivechip:hover{ border-color:var(--crimson); color:var(--sumi); }
 .archivechip.open{ border-style:solid; border-color:var(--jade); }
 
+/* ---- dice symbols and ring icons in rules text ----------------------- */
+/* Same glyphs and colours as the play sheet, so a technique reads the same
+   whether you are choosing it or using it. */
+.sym{ font-weight:700; font-style:normal; }
+.sym.su{ color:#3f8f5a; }
+.sym.op{ color:#c08a1e; }
+.sym.st{ color:#b0642a; }
+.sym.ex{ color:#b62432; }
+.sym.ring, .sym.skill{ color:var(--ink); }
+.ring-ico{
+  height:1em; width:1em; vertical-align:-0.12em; margin:0 0.1em;
+  display:inline-block;
+}
+
 .filtercheck{
   display:flex; align-items:center; gap:0.5rem; cursor:pointer;
   margin:0.6rem 0 0.2rem; font-family:var(--caps); text-transform:uppercase;

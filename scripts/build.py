@@ -846,6 +846,7 @@ PAGE_STUB = """<!DOCTYPE html>
 
 <script src="../data/characters/{slug}.js"></script>
 <script src="../data/twenty_questions.js"></script>
+<script src="../assets/symbols.js"></script>
 <script src="../assets/sheet.js"></script>
 </body>
 </html>

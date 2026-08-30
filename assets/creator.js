@@ -986,7 +986,7 @@
                 ? '<p class="pec-src">The rule is stated once, as <strong>' +
                   esc(t.via) + "</strong>.</p>"
                 : "") +
-              (t.text || '<p class="muted">No effect recorded in the corpus.</p>') +
+              (syms(t.text) || '<p class="muted">No effect recorded in the corpus.</p>') +
               '<p class="pec-src">From the DSL corpus' +
               (t.dsl && t.dsl !== e.name ? " as " + esc(t.dsl) : "") + ".</p>" +
               "</div>"
@@ -1623,6 +1623,9 @@
   }
 
   var TECH_TEXT = window.L5R_TECHNIQUE_TEXT || {};
+  // "(op)" and "[Water]" are how the corpus writes the dice symbols and rings;
+  // assets/symbols.js renders them the way the play sheet does.
+  var syms = window.L5R_SYMBOLS || function (h) { return h || ""; };
 
   /* Some starting techniques are written as an instruction rather than a list:
      Isawa Tensai's is "Any one rank 1 invocation of your inspired element".
@@ -1682,7 +1685,7 @@
 
   function showTip(target, title, html) {
     var t = tipNode();
-    t.innerHTML = '<strong class="rt-name">' + esc(title) + "</strong>" + html;
+    t.innerHTML = '<strong class="rt-name">' + esc(title) + "</strong>" + syms(html);
     t.hidden = false;
     var r = target.getBoundingClientRect();
     var w = Math.min(380, window.innerWidth - 24);

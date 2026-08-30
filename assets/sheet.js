@@ -12,6 +12,10 @@
   "use strict";
 
   var RINGS = ["air", "earth", "fire", "water", "void"];
+
+  // Rules text carries the corpus's symbol tokens; assets/symbols.js turns them
+  // into glyphs and ring art. Degrade to the raw text if that file is absent.
+  var syms = window.L5R_SYMBOLS || function (h) { return h || ""; };
   var RING_KANJI = { air: "風", earth: "土", fire: "火", water: "水", void: "空" };
   var SKILL_GROUP_LABEL = {
     artisan: "Artisan", martial: "Martial", scholar: "Scholar",
@@ -156,7 +160,7 @@
     var src = sourceLine(e);
     return '<details class="entry' + (isNew ? " new" : "") + '">' +
       "<summary>" + '<span class="en">' + esc(e.name) + "</span>" + badges.join("") + "</summary>" +
-      '<div class="body">' + (e.description || '<p class="muted">No text recorded.</p>') +
+      '<div class="body">' + (syms(e.description) || '<p class="muted">No text recorded.</p>') +
       entryMechanics(e) +
       (src ? '<div class="src">' + esc(src) + "</div>" : "") +
       "</div></details>";
