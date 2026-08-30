@@ -754,3 +754,62 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 }
 .archivechip:hover{ border-color:var(--crimson); color:var(--sumi); }
 .archivechip.open{ border-style:solid; border-color:var(--jade); }
+
+/* ---- advantage / disadvantage picker -------------------------------- */
+/* Colour carries meaning here: green = a stated condition this character
+   meets, amber = takeable but needs a subject named, red = the rules or the
+   character's own answers put it out of reach. Nothing is colour-only —
+   every marked row also states its reason in words. */
+.pec-bar{ display:flex; align-items:center; gap:0.6rem; flex-wrap:wrap; margin:0.6rem 0 0.35rem; }
+.pec-search{ flex:1 1 16rem; min-width:12rem; margin:0; }
+.pec-random{ white-space:nowrap; }
+.pec-count{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em;
+  font-size:0.64rem; color:var(--ink-dim);
+}
+.pec-legend{ display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap; margin:0 0 0.4rem; }
+.pec-key{
+  display:inline-block; width:0.72rem; height:0.72rem; border-radius:2px;
+  border:1px solid var(--edge); vertical-align:-1px; margin-left:0.7rem;
+}
+.pec-legend .pec-key:first-child{ margin-left:0; }
+.pec-key.yes{ background:rgba(79,125,92,0.55); border-color:var(--jade); }
+.pec-key.open{ background:rgba(154,123,63,0.5); border-color:var(--gold); }
+.pec-key.no{ background:rgba(182,36,50,0.42); border-color:var(--crimson); }
+
+.pec-list{ max-height:460px; }
+.pec{ position:relative; border-bottom:1px solid var(--edge-soft); }
+.pec:last-child{ border-bottom:0; }
+.pec .pick{ border-bottom:0; padding-right:4.2rem; }
+.pec.st-yes{ border-left:3px solid var(--jade); background:rgba(79,125,92,0.07); }
+.pec.st-open{ border-left:3px solid var(--gold); background:rgba(154,123,63,0.07); }
+.pec.st-no{ border-left:3px solid var(--crimson); background:rgba(182,36,50,0.06); }
+.pec.st-no .pick-n{ color:var(--ink-dim); text-decoration:line-through; text-decoration-thickness:1px; }
+.pec.st-plain{ border-left:3px solid transparent; }
+.pec.is-active{ background:rgba(79,125,92,0.18); }
+.pec.is-active .pick-n::before{ content:"✓ "; color:var(--jade); font-weight:700; }
+.pec-why{
+  display:block; margin-top:0.15rem; font-family:var(--body);
+  font-size:0.78rem; font-style:italic; color:var(--ink-soft);
+}
+.pec.st-no .pec-why{ color:var(--crimson-deep); }
+.pec.st-yes .pec-why{ color:var(--jade); }
+.pec-open, .pec-kind{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em;
+  font-size:0.6rem; color:var(--ink-dim); vertical-align:1px;
+}
+.pec-more{
+  position:absolute; top:0.45rem; right:0.55rem; appearance:none; cursor:pointer;
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em;
+  font-size:0.6rem; padding:0.15rem 0.5rem; border-radius:2px;
+  background:var(--paper-2); color:var(--crimson); border:1px solid var(--gold-soft);
+}
+.pec-more:hover{ background:var(--crimson-soft); }
+.pec-text{
+  padding:0.2rem 0.9rem 0.8rem; border-top:1px dashed var(--gold-soft);
+  font-size:0.92rem; color:var(--ink);
+}
+.pec-text p{ margin:0.5rem 0; }
+.pec-text em{ color:var(--ink-soft); }
+.pec-text ul{ margin:0.4rem 0; padding-left:1.1rem; }
+.pec-text li{ margin:0.3rem 0; }

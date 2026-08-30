@@ -137,6 +137,20 @@ titterpig-dashboard-web (`src/systems/l5r5e/chargen.js`, `src/lib/ai.js`). Keep 
 order and the AI prompts in step with that repo — they are meant to ask the same questions
 in the same register.
 
+Two divergences from that repo are deliberate (Jordan, 2026-08-30) and must not be
+"corrected" back:
+
+- **The AI prompts write in the third person**, about the character, and carry an
+  explicit list of the habits that make machine prose read as machine prose
+  (`VOICE`/`SHAPE`/`REGISTER`/`AVOID` in `assets/creator.js`). Naming the tics works
+  better than asking for good writing. The dashboard still says second person; if it
+  is ever brought into line, move the block across whole.
+- **Concept material** is authoring context, not a character field. It lives in
+  `concepts` in `src/foundry_sources.json`, rides to the browser on the archive
+  draft, feeds every AI call, and is dropped on export. Do not put it in
+  `src/characters/<slug>.json` — the source format's `concept` field already means
+  something else (a one-line blurb), and a `--force` re-extract would lose it.
+
 Two things to hold onto when editing it:
 
 - **It exports this repo's source format.** The final step must keep emitting a valid
@@ -148,6 +162,36 @@ Two things to hold onto when editing it:
   the compendium spelling, because that is what the build's school-roll gate and the
   coverage ledger key off. Two need explicit aliases: "Isawa Tensai" (the compendium's
   typo) and "Wandering Blade".
+
+### Advantages and disadvantages have no prerequisites — do not invent any
+
+`peculiarityPicker()` colours its list, and it is worth knowing what the colours can
+honestly mean. **L5R5e peculiarities carry no requirement field**: not in the Foundry
+compendium, not in the DSL corpus (`^"Ring"`, `^"Types"`, `EFFECT`, and nothing else),
+because the game does not gate them on rings, clan, school, or anything else. Checked
+against all 253 entries.
+
+So the colouring is driven only by conditions that actually exist, all of them stated
+in words on the row itself:
+
+| | why |
+|---|---|
+| red | wrong kind for the question being asked |
+| red | already on this character |
+| red | `Shadowlands Taint …` — instilled by the Afflicted condition, an oni, or a cursed mask; never chosen (Shadowlands, and the DSL's own wording) |
+| red | `Disdain for <paramount tenet>` / `Paragon of <least significant tenet>` — contradicts question 8 |
+| green | granted outright by the heritage rolled at question 18 |
+| green | `Disdain for <least significant tenet>` / `Paragon of <paramount tenet>` |
+| amber | open-ended (`Ally [Name]`) — takeable, but needs a subject named |
+
+Red is advisory: the picker asks for confirmation and then lets you through, because
+the GM outranks the tool. If a real prerequisite is ever encoded upstream, extend
+`pecStatus()` — do not hard-code a house rule there.
+
+`data/chargen/peculiarities.js` carries each entry's verbatim compendium text, keyed by
+**uuid**, because five Shadowlands Taint entries share a name. One known gap in the
+source: `Disdain for Courtesy` has an empty description in the compendium while its six
+siblings do not. That is a Foundry data defect, not a pipeline one.
 
 No API key is ever committed. The creator reads one from `localStorage` only.
 

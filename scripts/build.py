@@ -374,7 +374,13 @@ def archive_drafts(docs):
     Drafts exist in two places — Foundry's Draft folder, and the Creator's own
     browser storage — and a draft that only shows in one of them is a draft the
     author cannot find. This is the archive half, so the Creator can list both.
+
+    Concept material rides along from the manifest rather than from the
+    character source: it is authoring context, never part of the record, so it
+    must not survive promotion. See `concepts` in src/foundry_sources.json.
     """
+    concepts = (json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+                .get("concepts") or {})
     out = []
     for c in docs:
         if c.get("status") != "draft":
@@ -391,6 +397,7 @@ def archive_drafts(docs):
                                  "bushido_tenets")},
             "peculiarities": [e["name"] for e in t.get("peculiarities", [])],
             "twenty_questions": c.get("twenty_questions", {}),
+            "concept": concepts.get(c["slug"]) or "",
         })
     return out
 
@@ -559,6 +566,18 @@ def emit(cx):
         " FROM catalog c WHERE c.pack LIKE '%school-curriculum%' ORDER BY c.name")]
     n3 = write(os.path.join(SITEDATA, "coverage.js"), "L5R_COVERAGE",
                {"used": used, "customs": customs, "schools": schools})
+    # The Creator needs each peculiarity's own words on the page — you cannot
+    # judge an advantage from its name — so its verbatim compendium text is
+    # emitted once, keyed by uuid (five Shadowlands Taint entries share a name).
+    pec = {r["uuid"]: {"text": r["description"] or "",
+                       "types": (json.loads(r["data"]).get("types") or "")}
+           for r in cx.execute(
+               "SELECT uuid, description, data FROM catalog"
+               " WHERE sub_type='peculiarity' ORDER BY name")}
+    os.makedirs(os.path.join(SITEDATA, "chargen"), exist_ok=True)
+    write(os.path.join(SITEDATA, "chargen", "peculiarities.js"),
+          "L5R_PECULIARITY_TEXT", pec)
+
     write(os.path.join(SITEDATA, "twenty_questions.js"), "L5R_20Q",
           twenty_question_labels())
     write(os.path.join(SITEDATA, "heritage_coverage.js"), "L5R_HERITAGE_COVERAGE",

@@ -121,12 +121,6 @@
     return v !== null && v !== undefined && v !== "" &&
       !(Array.isArray(v) && v.length === 0);
   }
-  function byKind(kind) {
-    return CATALOG.filter(function (e) {
-      return e.sub_type === "peculiarity" && e.kind === kind;
-    });
-  }
-
   /* ---------------------------------------------------------- draft */
 
   function newCharacter() {
@@ -263,6 +257,9 @@
     c.school = a.identity.school;
     c.role = a.identity.role;
     c.campaign = a.campaign || "";
+    // Authoring context from the manifest, not from the character record — it
+    // feeds the AI suggestions and is dropped again on export.
+    c.concept = a.concept || "";
     c.standout_ring = ans("step4", "ring") || null;
     c.answers.standout_quality = ans("step4", "stand_out");
     c.answers.giri = (a.social || {}).giri || ans("step5", "social_giri");
@@ -297,7 +294,13 @@
     var existing = Object.keys(STORE.drafts).filter(function (id) {
       return STORE.drafts[id].fromArchive === slug;
     })[0];
-    if (existing) { switchDraft(existing); return; }
+    if (existing) {
+      // Concept material lives in the manifest, so a draft opened before the
+      // concept was written should pick it up rather than stay empty.
+      var d = STORE.drafts[existing];
+      if (a.concept && !d.character.concept) { d.character.concept = a.concept; persist(); }
+      switchDraft(existing); return;
+    }
     if (!confirm("Open “" + a.name + "” from the archive as a working draft?\n\n" +
                  "It is copied into this browser; the archive file is not changed. " +
                  "Export when you are done.")) return;
@@ -359,21 +362,45 @@
 
   /* ---------------------------------------------------------- AI */
 
-  // Prompts are the dashboard's, kept word-for-word so both surfaces
-  // suggest in the same register.
-  var STYLE = 'Write in second person ("you"). No quotation marks. 1-2 sentences, ' +
-    "under 120 characters. Match Rokugan's grave, considered, poetic register.";
+  // The dashboard's prompts, with two deliberate divergences (Jordan, 2026-08-30):
+  // they write in the THIRD person here, and they carry an explicit list of the
+  // habits that make machine prose read as machine prose. If the dashboard is
+  // ever brought into line, move this block across whole.
+  var VOICE =
+    "Write in the third person, about the character. Use their name, or they/them " +
+    "if no name is given. Never write \"you\" or address the player.";
+  var SHAPE =
+    "One or two sentences, at most 200 characters. Give the sentence itself and " +
+    "nothing else: no preamble, no framing, no quotation marks, no trailing gloss.";
+  var REGISTER =
+    "Rokugan's register: grave, exact, understated. Plain nouns and plain verbs. " +
+    "Prefer one concrete particular — a person, a place, an object, an act, a debt — " +
+    "over a summary of a feeling.";
+  // Named because naming them works better than asking for "good writing".
+  var AVOID =
+    "Avoid the house style of machine-written prose. Do not use: the " +
+    "\"not just X, but Y\" or \"more than X — Y\" construction; a dash or colon " +
+    "pivot carrying the point at the end of the sentence; three abstract nouns in a " +
+    "row (duty, honor, sacrifice); the words weight, quiet, echo, whisper, tapestry, " +
+    "testament, navigate, delve, resonate, unwavering, steely, haunted, or " +
+    "\"speaks volumes\"; opening on a participial clause (\"Having served…\"); " +
+    "a closing clause that restates the sentence in grander words. Do not restate " +
+    "the question. Do not explain the answer after giving it.";
+  var STYLE = [VOICE, SHAPE, REGISTER, AVOID].join(" ");
+
+  var SETTING = "Legend of the Five Rings 5th Edition, a samurai drama RPG set in " +
+    "the fantasy realm of Rokugan.";
   var PROMPTS = {
-    giri: "You are helping create a character for Legend of the Five Rings 5th Edition, a samurai drama RPG set in the fantasy realm of Rokugan.\n\nWrite a single sentence describing this character's giri (duty/obligation to their lord). Giri is the character's sense of duty — what they must do even at personal cost. It should feel specific to their clan, school, and lord.\n\n" + STYLE,
-    ninjo: "L5R 5e character creation. Write a single sentence describing this character's ninjō (personal desire). The ninjō should sit in tension with their giri — something the character wants for themselves that conflicts with their duty.\n\n" + STYLE,
-    standout_quality: "L5R 5e character creation. Write a single sentence naming and briefly framing a standout quality (a memorable trait or moment) that earned this character their +1 ring increase. Be concrete and unmistakable.\n\n" + STYLE,
-    clan_relationship: "L5R 5e character creation. Write a single sentence describing how this character carries — or resists — their clan's ideals. Be specific to the clan they belong to.\n\n" + STYLE,
-    first_impression: "L5R 5e character creation. Write a single sentence describing how this character first appears to a stranger: their build, bearing, voice, dress, and a distinctive accoutrement they always carry. Concrete details.\n\n" + STYLE,
-    stress_reaction: "L5R 5e character creation. Write a single sentence describing how this character reacts when pushed past their composure. Concrete, visible, in-character.\n\n" + STYLE,
-    parent_opinion: "L5R 5e character creation. Write a single sentence as a parent or guardian's opinion of this character — what they're proud of, frustrated by, or worried about.\n\n" + STYLE,
+    giri: "You are helping create a character for " + SETTING + "\n\nWrite a single sentence describing this character's giri (duty/obligation to their lord). Giri is what they must do even at personal cost. It should be specific to their clan, school, and lord.\n\n" + STYLE,
+    ninjo: "L5R 5e character creation. Write a single sentence describing this character's ninjō (personal desire). The ninjō should sit in tension with their giri — something they want for themselves that conflicts with their duty.\n\n" + STYLE,
+    standout_quality: "L5R 5e character creation. Write a single sentence naming and briefly framing the standout quality — a memorable trait or moment — that earned this character their +1 ring increase. Concrete and unmistakable.\n\n" + STYLE,
+    clan_relationship: "L5R 5e character creation. Write a single sentence describing how this character carries, or resists, their clan's ideals. Specific to the clan they belong to.\n\n" + STYLE,
+    first_impression: "L5R 5e character creation. Write a single sentence describing how this character first appears to a stranger: build, bearing, voice, dress, and a distinctive accoutrement they always carry.\n\n" + STYLE,
+    stress_reaction: "L5R 5e character creation. Write a single sentence describing what this character does when pushed past their composure. Visible, physical, particular to them.\n\n" + STYLE,
+    parent_opinion: "L5R 5e character creation. Write a single sentence reporting a parent or guardian's opinion of this character — what they are proud of, frustrated by, or worried about. Report it in the third person; do not write it as the parent speaking.\n\n" + STYLE,
     mentor_relationship: "L5R 5e character creation. Write a single sentence describing the relationship between this character and a mentor — what they were taught, and at what cost.\n\n" + STYLE,
     relationships: "L5R 5e character creation. Write a single sentence naming one or two people who matter to this character — a rival, an ally, a family member — and what stands between them.\n\n" + STYLE,
-    death: "L5R 5e character creation. Write a single-sentence vision of this character's death — the meaningful ending they would not regret. Solemn, declarative, in their own voice. Not the death the GM must give them, but one the player invites.\n\n" + STYLE,
+    death: "L5R 5e character creation. Write a single sentence describing the death this character would not regret — the ending they invite, not the one the GM must give them. Solemn and declarative, in the third person.\n\n" + STYLE,
     "default": "L5R 5e character creation suggestion. " + STYLE
   };
 
@@ -441,6 +468,7 @@
     add("Passions", C.passions.join(", "));
     add("Anxieties", C.anxieties.join(", "));
     add("Mentor", a.mentor.name + (a.mentor.text ? " — " + a.mentor.text : ""));
+    add("From the mentor", a.mentor.granted);
     add("First impression", a.first_impression);
     add("Stress reaction", a.stress_reaction);
     add("Relationships", a.relationships);
@@ -671,16 +699,234 @@
     draw();
   }
 
+  /* ------------------------------------------- advantages & disadvantages */
+
+  var PEC_TEXT = window.L5R_PECULIARITY_TEXT || {};
+  var TENET_RE = /^(?:Disdain for|Paragon of)\s+(.+)$/;
+
+  // Everything the character already holds, in any bucket, plus the extra the
+  // mentor question grants — so a picker can refuse to sell the same thing twice.
+  function heldPeculiarities() {
+    return [].concat(C.distinctions, C.adversities, C.passions, C.anxieties,
+                     C.answers.mentor.granted ? [C.answers.mentor.granted] : []);
+  }
+
+  // Some heritage results hand over a named peculiarity outright ("Gain the
+  // Guiding Ancestor (Void) distinction"). That is a stated condition the
+  // character demonstrably meets, so the picker marks it as met.
+  function heritageGrantedNames() {
+    var t = HERITAGES[C.answers.heritage_table];
+    if (!t || !C.answers.heritage) return [];
+    var e = t.entries.filter(function (x) { return x.name === C.answers.heritage; })[0];
+    if (!e) return [];
+    var blob = [e.effect, e.description,
+                Object.keys(e.modifiers || {}).map(function (k) {
+                  return e.modifiers[k];
+                }).join(" ")].filter(Boolean).join(" ");
+    var out = [], m;
+    var re = /[Gg]ain the ([^,.;]+?)\s*(?:\([^)]*\)\s*)?(distinction|adversity|passion|anxiety)\b/g;
+    while ((m = re.exec(blob))) out.push(m[1].trim());
+    return out;
+  }
+
+  // L5R5e peculiarities carry no prerequisites: neither the compendium nor the
+  // DSL has a requirement field, because the game does not gate them on rings,
+  // clan, or school. What does gate a choice is the question being asked, what
+  // the character already holds, and the handful of entries the rules confer
+  // rather than sell. Those are what colour the list — nothing here is invented.
+  //   "no"   red    cannot be taken here
+  //   "yes"  green  a stated condition, and this character meets it
+  //   "open" amber  takeable, but it needs a subject naming
+  function pecStatus(e, kinds) {
+    if (kinds.indexOf(e.kind) < 0)
+      return { state: "no",
+               why: "Question asks for a " + kinds.join(" or ") + "." };
+
+    if (/^Shadowlands Taint/i.test(e.name))
+      return { state: "no",
+               why: "Instilled by the Afflicted condition, an oni, or a cursed " +
+                    "mask. Never chosen at creation." };
+
+    var mine = heldPeculiarities().filter(function (h) {
+      return normName(h) === normName(e.name);
+    });
+    if (mine.length) return { state: "no", why: "Already on this character." };
+
+    if (heritageGrantedNames().filter(function (g) {
+      return normName(g) === normName(e.name);
+    }).length)
+      return { state: "yes", why: "Granted by the heritage rolled at question 18." };
+
+    var m = TENET_RE.exec(e.name);
+    if (m) {
+      var tenet = normName(m[1]);
+      var paramount = normName(C.bushido.paramount || "");
+      var lesser = normName(C.bushido.lesser || "");
+      var disdain = e.name.indexOf("Disdain") === 0;
+      if (tenet && tenet === paramount)
+        return disdain
+          ? { state: "no", why: "Question 8 holds this tenet paramount." }
+          : { state: "yes", why: "Question 8 holds this tenet paramount." };
+      if (tenet && tenet === lesser)
+        return disdain
+          ? { state: "yes", why: "Question 8 holds this tenet least significant." }
+          : { state: "no", why: "Question 8 holds this tenet least significant, " +
+                                "and a Paragon believes in it utterly." };
+    }
+
+    // the catalog keeps an open-ended entry's bracket text ("Ally [Name]")
+    if (e.clan)
+      return { state: "open",
+               why: "Open-ended. Name the " + e.clan.toLowerCase() + " it applies to." };
+
+    return { state: "plain", why: "" };
+  }
+
+  var SOURCE_LABEL = {};
+  function sourceLabel(s) {
+    if (!s) return "";
+    if (!SOURCE_LABEL[s]) {
+      SOURCE_LABEL[s] = s.replace(/_/g, " ").replace(/\b\w/g, function (c) {
+        return c.toUpperCase();
+      });
+    }
+    return SOURCE_LABEL[s];
+  }
+
+  /* One picker serves every question that hands out an advantage or a
+     disadvantage: questions 9 to 12 take a single kind, question 13 takes
+     either of a pair. It filters, it reads out the compendium's own words, it
+     rolls at random, and it says plainly what a character may not take and why. */
+  function peculiarityPicker(body, kinds, get, set) {
+    var all = CATALOG.filter(function (e) {
+      return e.sub_type === "peculiarity" && kinds.indexOf(e.kind) >= 0;
+    }).sort(function (a, b) { return a.name.localeCompare(b.name); });
+
+    var bar = document.createElement("div");
+    bar.className = "pec-bar";
+    var search = document.createElement("input");
+    search.type = "search";
+    search.className = "pec-search";
+    search.placeholder = "Filter " + all.length + " by name, ring, type, book, or text";
+    var rand = document.createElement("button");
+    rand.type = "button";
+    rand.className = "btn ghost pec-random";
+    rand.textContent = "Choose at random";
+    rand.title = "Picks from whatever the filter is showing, skipping anything " +
+                 "this character may not take";
+    var count = document.createElement("span");
+    count.className = "pec-count";
+    bar.appendChild(search);
+    bar.appendChild(rand);
+    bar.appendChild(count);
+    body.appendChild(bar);
+
+    var legend = document.createElement("p");
+    legend.className = "pec-legend muted small";
+    legend.innerHTML =
+      '<span class="pec-key yes"></span> a stated condition this character meets ' +
+      '<span class="pec-key open"></span> needs a subject named ' +
+      '<span class="pec-key no"></span> cannot be taken here';
+    body.appendChild(legend);
+
+    var list = document.createElement("div");
+    list.className = "pick-list pec-list";
+    body.appendChild(list);
+
+    var open = {};          // uuid -> its text is showing
+    var shown = [];
+
+    function matches(e, q) {
+      if (!q) return true;
+      var t = PEC_TEXT[e.uuid] || {};
+      return (e.name + " " + (e.kind || "") + " " + (e.ring || "") + " " +
+              (t.types || "") + " " + sourceLabel(e.source_book) + " " +
+              (t.text || "")).toLowerCase().indexOf(q) >= 0;
+    }
+
+    function draw() {
+      var q = search.value.trim().toLowerCase();
+      var current = get();
+      shown = all.filter(function (e) { return matches(e, q); });
+      var takeable = shown.filter(function (e) {
+        return pecStatus(e, kinds).state !== "no";
+      });
+      count.textContent = shown.length + " shown, " + takeable.length + " takeable";
+      rand.disabled = !takeable.length;
+
+      list.innerHTML = shown.map(function (e) {
+        var st = pecStatus(e, kinds);
+        var t = PEC_TEXT[e.uuid] || {};
+        var active = !!current && normName(e.name) === normName(current);
+        var meta = [e.ring ? cap(e.ring) : null, t.types || null,
+                    sourceLabel(e.source_book) +
+                      (e.source_page ? " p." + e.source_page : "")]
+          .filter(Boolean).join(" · ");
+        return '<div class="pec' + (active ? " is-active" : "") + " st-" + st.state +
+          '" data-u="' + esc(e.uuid) + '">' +
+          '<button type="button" class="pick pec-pick" data-u="' + esc(e.uuid) + '">' +
+            '<span class="pick-n">' + esc(e.name) +
+              (e.clan ? ' <span class="pec-open">[' + esc(e.clan) + "]</span>" : "") +
+              (kinds.length > 1 ? ' <span class="pec-kind">' + esc(e.kind) + "</span>" : "") +
+            "</span>" +
+            '<span class="pick-m">' + esc(meta) + "</span>" +
+            (st.why ? '<span class="pec-why">' + esc(st.why) + "</span>" : "") +
+          "</button>" +
+          '<button type="button" class="pec-more" data-u="' + esc(e.uuid) + '"' +
+            ' aria-expanded="' + (open[e.uuid] ? "true" : "false") + '">' +
+            (open[e.uuid] ? "Hide" : "Text") + "</button>" +
+          (open[e.uuid]
+            ? '<div class="pec-text">' +
+              (t.text || '<p class="muted">The compendium carries no text for this entry.</p>') +
+              "</div>"
+            : "") +
+          "</div>";
+      }).join("") || '<p class="muted small">Nothing matches.</p>';
+
+      Array.prototype.forEach.call(list.querySelectorAll(".pec-more"), function (b) {
+        b.addEventListener("click", function () {
+          var u = b.getAttribute("data-u");
+          open[u] = !open[u];
+          draw();
+        });
+      });
+      Array.prototype.forEach.call(list.querySelectorAll(".pec-pick"), function (b) {
+        b.addEventListener("click", function () {
+          var e = all.filter(function (x) {
+            return x.uuid === b.getAttribute("data-u");
+          })[0];
+          if (!e) return;
+          var st = pecStatus(e, kinds);
+          if (st.state === "no" &&
+              !confirm(e.name + " — " + st.why +
+                       "\n\nTake it anyway? Nothing downstream will stop you.")) return;
+          set(!!get() && normName(get()) === normName(e.name) ? null : e.name);
+          draw();
+        });
+      });
+    }
+
+    search.addEventListener("input", draw);
+    rand.addEventListener("click", function () {
+      var pool = shown.filter(function (e) {
+        return pecStatus(e, kinds).state !== "no";
+      });
+      if (!pool.length) return;
+      var e = pool[Math.floor(Math.random() * pool.length)];
+      set(e.name);
+      open[e.uuid] = true;
+      draw();
+      var row = list.querySelector('.pec[data-u="' + e.uuid + '"]');
+      if (row) row.scrollIntoView({ block: "center" });
+    });
+    draw();
+  }
+
   function peculiarityStep(kind, listKey) {
     return function (body) {
-      var items = byKind(kind).map(function (e) {
-        return { value: e.name, label: e.name,
-                 meta: [e.ring ? cap(e.ring) : null, e.source_book].filter(Boolean).join(" · ") };
-      });
-      pickList(body, items, C[listKey][0] || null, function (v) {
-        C[listKey] = [v];
-        save();
-      });
+      peculiarityPicker(body, [kind],
+        function () { return C[listKey][0] || null; },
+        function (v) { C[listKey] = v ? [v] : []; save(); });
     };
   }
 
@@ -901,7 +1147,8 @@
       desc: "Name a mentor and describe the relationship. Then choose: <strong>A)</strong> an additional advantage (distinction or passion), or <strong>B)</strong> an additional disadvantage plus +1 rank in a skill.",
       done: function () {
         var m = C.answers.mentor;
-        return has(m.name) && has(m.path) && (m.path !== "B" || has(m.skill));
+        return has(m.name) && has(m.path) && has(m.granted) &&
+          (m.path !== "B" || has(m.skill));
       },
       render: function (body) {
         var i = document.createElement("input");
@@ -911,7 +1158,10 @@
         body.appendChild(i);
         choice(body, [["A", "An extra advantage"], ["B", "An extra disadvantage + skill"]],
           C.answers.mentor.path, function (v) {
-            C.answers.mentor.path = v; save(); render();
+            if (v === C.answers.mentor.path) return;
+            C.answers.mentor.path = v;
+            C.answers.mentor.granted = null;   // the kinds on offer just changed
+            save(); render();
           });
         if (C.answers.mentor.path === "B") {
           skillPicker(body, C.answers.mentor.skill, function (s) {
@@ -921,6 +1171,18 @@
             C.skills[s] = (C.skills[s] || 0) + 1;
             save();
           });
+        }
+        // Path A is a distinction or a passion; path B an adversity or an
+        // anxiety (core p.36). Until now the question recorded the choice
+        // without ever letting the extra be picked.
+        if (C.answers.mentor.path) {
+          label(body, C.answers.mentor.path === "A"
+            ? "The extra advantage" : "The extra disadvantage");
+          peculiarityPicker(body,
+            C.answers.mentor.path === "A" ? ["distinction", "passion"]
+                                          : ["adversity", "anxiety"],
+            function () { return C.answers.mentor.granted || null; },
+            function (v) { C.answers.mentor.granted = v; save(); });
         }
         textStep("mentor", "answers.mentor.text", "mentor_relationship",
           "What were they taught, and at what cost?")(body);
@@ -1238,8 +1500,7 @@
           return t.kind === "fixed";
         }).map(function (t) { return t.name; }).concat(
           sch.school_ability ? [sch.school_ability] : [])),
-        peculiarities: refs([].concat(C.distinctions, C.adversities,
-                                      C.passions, C.anxieties)),
+        peculiarities: refs(heldPeculiarities()),
         titles: [], bonds: [], signature_scrolls: [],
         gear: refs(C.starting_item ? [C.starting_item] : []),
         advancements: []
@@ -1384,9 +1645,9 @@
           }).join("; ") + ".</p>"
         : "") +
       '<h4 class="field-label">Skills</h4><div class="wip-skills">' + skills + "</div>" +
-      (C.distinctions.length || C.adversities.length || C.passions.length || C.anxieties.length
+      (heldPeculiarities().length
         ? '<h4 class="field-label">Peculiarities</h4><div class="tagrow">' +
-          [].concat(C.distinctions, C.adversities, C.passions, C.anxieties)
+          heldPeculiarities()
             .map(function (n) { return '<span class="chip">' + esc(n) + "</span>"; }).join("") +
           "</div>"
         : "");
