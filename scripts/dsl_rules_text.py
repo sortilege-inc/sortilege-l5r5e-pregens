@@ -26,6 +26,7 @@ what comes out is corrected text. The composition is cached in pipeline/dsl/
 Writes three things:
   * data/chargen/peculiarities.js   the Creator's picker text
   * data/chargen/techniques.js      hover text for the Creator's technique choices
+  * data/chargen/clan_tenets.js     each Great Clan's paramount and lesser tenets
   * pipeline/dsl/rules_text.json, keyed by catalog uuid, which scripts/build.py
     reads at its single description choke point so every dossier and play sheet
     follows.
@@ -45,6 +46,7 @@ DB = os.path.join(ROOT, "pipeline", "l5r.sqlite")
 SOURCES = os.path.join(ROOT, "src", "foundry_sources.json")
 PEC_OUT = os.path.join(ROOT, "data", "chargen", "peculiarities.js")
 TECH_OUT = os.path.join(ROOT, "data", "chargen", "techniques.js")
+TENET_OUT = os.path.join(ROOT, "data", "chargen", "clan_tenets.js")
 # Not a table in l5r.sqlite: scripts/build.py deletes that database and rebuilds
 # it from scratch on every run, so anything written there is gone by the time the
 # build wants to read it.
@@ -350,6 +352,12 @@ def main():
         json.dump(pec, f, ensure_ascii=False, separators=(",", ":"))
         f.write(";\n")
 
+    tenets = clan_tenets(corpus)
+    with open(TENET_OUT, "w") as f:
+        f.write("window.L5R_CLAN_TENETS = ")
+        json.dump(tenets, f, ensure_ascii=False, separators=(",", ":"))
+        f.write(";\n")
+
     # The Creator picks techniques by name from the chargen data, not by uuid,
     # so this one is keyed by normalised name. It is what the school step shows
     # on hover: you cannot choose between two shūji from their titles.
@@ -362,6 +370,8 @@ def main():
           f"  ({stats['gap']} without)")
     print(f"            {len(pec)}/253 peculiarities -> "
           f"{os.path.relpath(PEC_OUT, ROOT)} ({os.path.getsize(PEC_OUT)/1024:.1f} KB)")
+    print(f"            {len(tenets)} clans' bushidō tenets -> "
+          f"{os.path.relpath(TENET_OUT, ROOT)}")
     print(f"            {len(tech)} techniques -> "
           f"{os.path.relpath(TECH_OUT, ROOT)} ({os.path.getsize(TECH_OUT)/1024:.1f} KB)")
 
@@ -391,6 +401,40 @@ def main():
               "`dsl_text_exceptions` in src/foundry_sources.json with a reason.")
         sys.exit(1)
     print("DONE_MARKER dsl rules text ok")
+
+
+def clan_tenets(corpus):
+    """Each Great Clan's paramount and lesser tenets, as the core book states them.
+
+    Core Rulebook, Clan Views of Bushidō: a clan's paramount tenet doubles both
+    the honor forfeited and awarded for it, and its lesser tenets halve both. The
+    seven Great Clans are listed; minor clans and rōnin are not, so they get no
+    default rather than an invented one. Scorpion genuinely has two lesser tenets.
+    """
+    out = {}
+    for o in walk(corpus):
+        if not isinstance(o, dict):
+            continue
+        kw = o.get("keyword")
+        if kw not in ("CLAN_PARAMOUNT_TENETS", "CLAN_LESSER_TENETS"):
+            continue
+        field = "paramount" if kw == "CLAN_PARAMOUNT_TENETS" else "lesser"
+        for row in (o.get("rows") or []):
+            clan = row.get("label")
+            cells = row.get("cells") or []
+            if not clan or not cells:
+                continue
+            raw = str(cells[0].get("value") or "")
+            # Each tenet is its own ^"..." reference. Do NOT split on " and ":
+            # Scorpion's two lesser tenets are ^"Honor (Meiyo)" and
+            # ^"Righteousness (Gi)", but "Duty and Loyalty (Chūgi)" is one tenet
+            # with "and" inside its name.
+            names = [re.sub(r"\s*\([^)]*\)\s*$", "", r).strip()
+                     for r in re.findall(r'\^"([^"]+)"', raw)]
+            names = [n for n in names if n]
+            if names:
+                out.setdefault(clan, {})[field] = names
+    return out
 
 
 def types_of(e):

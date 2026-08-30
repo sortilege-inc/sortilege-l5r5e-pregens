@@ -59,6 +59,7 @@
   var REGIONS = window.L5R_REGIONS || [];
   var UPBRINGINGS = window.L5R_UPBRINGINGS || [];
   var ARCHIVE = window.L5R_ARCHIVE_DRAFTS || [];
+  var CLAN_TENETS = window.L5R_CLAN_TENETS || {};
 
   // Core builds a samurai from clan and family. Path of Waves and Writ of the
   // Wilds replace those two questions with region and upbringing, and drop the
@@ -603,6 +604,32 @@
   function familiesOf(clan) {
     return FAMILIES.filter(function (f) { return f.clan === clan; });
   }
+  // The clan's own view of Bushidō, where the book states one. Minor clans and
+  // rōnin are not in that table, so they get no default rather than a guess.
+  function clanTenets() {
+    if (!isCore() || !C.clan) return null;
+    var key = Object.keys(CLAN_TENETS).filter(function (k) {
+      return normName(k) === normName(C.clan) ||
+             normName(k + " Clan") === normName(C.clan);
+    })[0];
+    return key ? CLAN_TENETS[key] : null;
+  }
+
+  // Fill an unanswered tenet from the clan. Never overwrite an answer: this is
+  // a default, and question 8 belongs to the player.
+  function applyTenetDefaults() {
+    var def = clanTenets();
+    if (!def) return;
+    var dirty = false;
+    if (!has(C.bushido.paramount) && def.paramount.length) {
+      C.bushido.paramount = def.paramount[0]; dirty = true;
+    }
+    if (!has(C.bushido.lesser) && def.lesser.length) {
+      C.bushido.lesser = def.lesser[0]; dirty = true;
+    }
+    if (dirty) save();
+  }
+
   function schoolsOf(clan) {
     var list = SCHOOLS.filter(function (s) { return s.clan === clan; });
     return list.length ? list : SCHOOLS;
@@ -1087,10 +1114,14 @@
         });
         pickList(body, items, C.clan, function (v) {
           if (C.clan !== v) {
+            var was = clanTenets();
             C.family = null; C.school = null; C.role = null;
             C.choices = {};
+            // an untouched default belongs to the old clan; a deliberate answer stays
+            if (was && C.bushido.paramount === was.paramount[0]) C.bushido.paramount = null;
+            if (was && C.bushido.lesser === was.lesser[0]) C.bushido.lesser = null;
           }
-          C.clan = v; save(); render();
+          C.clan = v; applyTenetDefaults(); save(); render();
         });
         var cl = find(CLANS, C.clan) || find(CLANS, C.clan + " Clan");
         renderChoices(body, cl, "clan");
@@ -1253,12 +1284,33 @@
         return has(C.bushido.paramount) && has(C.bushido.lesser) && has(C.bushido.attitude);
       },
       render: function (body) {
+        // The core book's Clan Views of Bushidō give each Great Clan a paramount
+        // tenet and one or two lesser ones. Those are the defaults; the question
+        // is still the player's to answer, so they are only a starting point.
+        var def = clanTenets();
+        applyTenetDefaults();
+
+        if (def) {
+          var note = document.createElement("p");
+          note.className = "muted small";
+          note.innerHTML = "<strong>" + esc(C.clan) + "</strong> holds " +
+            "<strong>" + esc(def.paramount.join(" and ")) + "</strong> paramount and " +
+            "<strong>" + esc(def.lesser.join(" and ")) + "</strong> less significant" +
+            (def.lesser.length > 1 ? " (both)" : "") +
+            ". Filled in below — change either if this character sees it differently.";
+          body.appendChild(note);
+        }
+
         label(body, "Paramount tenet");
-        choice(body, BUSHIDO.map(function (t) { return [t, t]; }), C.bushido.paramount,
-          function (v) { C.bushido.paramount = v; save(); });
+        choice(body, BUSHIDO.map(function (t) {
+          return [t, t + (def && def.paramount.indexOf(t) >= 0 ? " ✦" : "")];
+        }), C.bushido.paramount,
+          function (v) { C.bushido.paramount = v; save(); render(); });
         label(body, "Lesser tenet");
-        choice(body, BUSHIDO.map(function (t) { return [t, t]; }), C.bushido.lesser,
-          function (v) { C.bushido.lesser = v; save(); });
+        choice(body, BUSHIDO.map(function (t) {
+          return [t, t + (def && def.lesser.indexOf(t) >= 0 ? " ✦" : "")];
+        }), C.bushido.lesser,
+          function (v) { C.bushido.lesser = v; save(); render(); });
         label(body, "Attitude");
         choice(body, [["A", "Devoted — +10 Honor"], ["B", "Nuanced — +1 skill rank"]],
           C.bushido.attitude, function (v) { C.bushido.attitude = v; save(); render(); });
