@@ -476,21 +476,48 @@
   var SHAPE =
     "One or two sentences, at most 200 characters. Give the sentence itself and " +
     "nothing else: no preamble, no framing, no quotation marks, no trailing gloss.";
+  // "Grave and poetic" was the old instruction and it is what produced the
+  // over-written results. Ask for a colleague's account, not a narrator's.
   var REGISTER =
-    "Rokugan's register: grave, exact, understated. Plain nouns and plain verbs. " +
-    "Prefer one concrete particular — a person, a place, an object, an act, a debt — " +
-    "over a summary of a feeling.";
-  // Named because naming them works better than asking for "good writing".
+    "Plain and concrete. Write the way someone who works with them would " +
+    "describe them to a stranger — not the way a story would introduce them. " +
+    "Human scale: one person, one place, one incident. No grand totals, no " +
+    "sweeping spans (\"three provinces\", \"a hundred men\", \"all his life\"); " +
+    "one specific thing is more interesting than a large vague one.";
+  var TENSION =
+    "Give it some tension, but make it a fact rather than a mood: something that " +
+    "costs them, that they are bad at, that contradicts what they say they are, " +
+    "or that has not been settled yet. Do not reach for atmosphere.";
+  // Named individually, because naming the exact tic works and asking for
+  // "good writing" does not.
   var AVOID =
-    "Avoid the house style of machine-written prose. Do not use: the " +
-    "\"not just X, but Y\" or \"more than X — Y\" construction; a dash or colon " +
-    "pivot carrying the point at the end of the sentence; three abstract nouns in a " +
-    "row (duty, honor, sacrifice); the words weight, quiet, echo, whisper, tapestry, " +
-    "testament, navigate, delve, resonate, unwavering, steely, haunted, or " +
-    "\"speaks volumes\"; opening on a participial clause (\"Having served…\"); " +
-    "a closing clause that restates the sentence in grander words. Do not restate " +
-    "the question. Do not explain the answer after giving it.";
-  var STYLE = [VOICE, SHAPE, REGISTER, AVOID].join(" ");
+    "Avoid the house style of machine-written prose. In particular, never end a " +
+    "sentence with a detached participial or appositive flourish — the " +
+    "\", asking nothing of the spirits but their names\" move, or " +
+    "\", her hands still steady\", or \", knowing what it would cost\". If the " +
+    "sentence works without a trailing clause, it is finished; stop there. " +
+    "Also do not use: the \"not just X, but Y\" or \"more than X — Y\" " +
+    "construction; a dash or colon pivot carrying the point at the end; three " +
+    "abstract nouns in a row (duty, honor, sacrifice); opening on a participial " +
+    "clause (\"Having served…\"); a closing clause that restates the sentence in " +
+    "grander words; the words weight, quiet, echo, whisper, tapestry, testament, " +
+    "navigate, delve, resonate, unwavering, steely, haunted, or \"speaks volumes\". " +
+    "Do not restate the question. Do not explain the answer after giving it.";
+  /* One rejected shape and one good one. They are deliberately about different
+     characters: an earlier version used the same character for both, and the
+     answers for that archetype came back as paraphrases of the good example
+     rather than as their own sentence. */
+  var EXAMPLE =
+    "For calibration. A rejected answer, for a diviner: \"Nergüi traced a " +
+    "murderer's path through three provinces by reading the bones of her victims " +
+    "in Nagiko's presence, asking nothing of the spirits but their names.\" — " +
+    "inflated scale, an ornamental verb, and a trailing flourish that adds " +
+    "nothing. A good answer, for an unrelated character, a quartermaster: " +
+    "\"She signs for grain she knows is short and makes the difference up out of " +
+    "her own stipend, which she has never mentioned to anyone.\" — one incident, " +
+    "ordinary scale, and the tension is a fact rather than a mood. Match the " +
+    "second in register, not in subject.";
+  var STYLE = [VOICE, SHAPE, REGISTER, TENSION, AVOID, EXAMPLE].join(" ");
 
   var SETTING = "Legend of the Five Rings 5th Edition, a samurai drama RPG set in " +
     "the fantasy realm of Rokugan.";
