@@ -519,6 +519,20 @@
     "second in register, not in subject.";
   var STYLE = [VOICE, SHAPE, REGISTER, TENSION, AVOID, EXAMPLE].join(" ");
 
+  /* Questions 9 to 12 ask a narrative question AND grant a mechanical pick, and
+     the two are meant to be the same fact seen twice. The suggestion used to
+     ignore the pick entirely — a character who had taken Blessed Lineage got an
+     accomplishment about smuggling — so where a pick exists, the prompt names it
+     and asks for the answer that produces it. Naming it, not describing it: the
+     sentence should read as the deed, not as a gloss on the advantage. */
+  function grants(kind, picked, want) {
+    if (!picked) return "";
+    return " This character has taken the " + kind + " \"" + picked + "\" for this " +
+      "question. The sentence must be " + want + ", so that the " + kind +
+      " reads as its consequence. Do not name the " + kind + " itself, and do not " +
+      "quote its rules text.";
+  }
+
   var SETTING = "Legend of the Five Rings 5th Edition, a samurai drama RPG set in " +
     "the fantasy realm of Rokugan.";
   var PROMPTS = {
@@ -529,10 +543,33 @@
     first_impression: "L5R 5e character creation. Write a single sentence describing how this character first appears to a stranger: build, bearing, voice, dress, and a distinctive accoutrement they always carry.\n\n" + STYLE,
     stress_reaction: "L5R 5e character creation. Write a single sentence describing what this character does when pushed past their composure. Visible, physical, particular to them.\n\n" + STYLE,
     parent_opinion: "L5R 5e character creation. Write a single sentence reporting a parent or guardian's opinion of this character — what they are proud of, frustrated by, or worried about. Report it in the third person; do not write it as the parent speaking.\n\n" + STYLE,
-    accomplishment: "L5R 5e character creation. Write a single sentence naming this character's greatest accomplishment so far — a deed, not a trait, with a place or a person in it.\n\n" + STYLE,
-    challenge: "L5R 5e character creation. Write a single sentence describing what holds this character back the most in life. A standing difficulty they carry, not a mood.\n\n" + STYLE,
-    peace: "L5R 5e character creation. Write a single sentence describing the activity that most makes this character feel at peace — something they do for themselves, unrelated to duty.\n\n" + STYLE,
-    fear: "L5R 5e character creation. Write a single sentence describing the concern, fear, or foible that troubles this character most.\n\n" + STYLE,
+    accomplishment: function () {
+      return "L5R 5e character creation. Write a single sentence naming this " +
+        "character's greatest accomplishment so far — a deed, not a trait, with a " +
+        "place or a person in it." + grants("distinction", C.distinctions[0],
+          "the deed, circumstance, or history that this distinction records — " +
+          "some are earned and some are inherited, so do not force it into a deed " +
+          "if it is not one") + "\n\n" + STYLE;
+    },
+    challenge: function () {
+      return "L5R 5e character creation. Write a single sentence describing what " +
+        "holds this character back the most in life. A standing difficulty they " +
+        "carry, not a mood." + grants("adversity", C.adversities[0],
+          "the difficulty it names, as it shows up in their life") + "\n\n" + STYLE;
+    },
+    peace: function () {
+      return "L5R 5e character creation. Write a single sentence describing the " +
+        "activity that most makes this character feel at peace — something they do " +
+        "for themselves, unrelated to duty." + grants("passion", C.passions[0],
+          "that activity, and what it looks like when they are doing it") +
+        "\n\n" + STYLE;
+    },
+    fear: function () {
+      return "L5R 5e character creation. Write a single sentence describing the " +
+        "concern, fear, or foible that troubles this character most." +
+        grants("anxiety", C.anxieties[0],
+          "that fear, and where it costs them") + "\n\n" + STYLE;
+    },
     past: "L5R 5e character creation, Path of Waves. This character has no lord; a past replaces giri. Write a single sentence naming what drives them and what it costs — an obligation, a pursuer, or a choice that still follows them.\n\n" + STYLE,
     known_for: "L5R 5e character creation, Path of Waves. Write a single sentence describing what this character is known for where they have travelled, and to whom.\n\n" + STYLE,
     prized_possession: "L5R 5e character creation, Path of Waves. Write a single sentence about the one possession that matters most when everything they own fits in a pack — what it is, and why this one.\n\n" + STYLE,
@@ -612,10 +649,10 @@
     add("Greatest challenge", a.challenge);
     add("At peace when", a.peace);
     add("Troubled by", a.fear);
-    add("Distinctions", C.distinctions.join(", "));
-    add("Adversities", C.adversities.join(", "));
-    add("Passions", C.passions.join(", "));
-    add("Anxieties", C.anxieties.join(", "));
+    add("Distinction (question 9)", C.distinctions.join(", "));
+    add("Adversity (question 10)", C.adversities.join(", "));
+    add("Passion (question 11)", C.passions.join(", "));
+    add("Anxiety (question 12)", C.anxieties.join(", "));
     add("Mentor", a.mentor.name + (a.mentor.text ? " — " + a.mentor.text : ""));
     add("From the mentor", a.mentor.granted);
     add("First impression", a.first_impression);
@@ -636,7 +673,10 @@
     var proxy = window.L5R_AI_PROXY || "";
     if (!key && !proxy) return Promise.reject(new Error("No API key set."));
 
+    // A prompt may be a function, so a question that also grants a mechanical
+    // pick can name the pick and ask for the answer that produces it.
     var system = PROMPTS[fieldKey] || PROMPTS["default"];
+    if (typeof system === "function") system = system();
     var user = "Existing draft for context:\n" + characterContext() +
       "\n\nSuggest a single " + fieldKey.replace(/_/g, " ") + " for this character.";
 
