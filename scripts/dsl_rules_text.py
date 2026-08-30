@@ -26,6 +26,7 @@ what comes out is corrected text. The composition is cached in pipeline/dsl/
 Writes three things:
   * data/chargen/peculiarities.js   the Creator's picker text
   * data/chargen/techniques.js      hover text for the Creator's technique choices
+  * data/chargen/equipment.js       hover text for the Creator's item choices
   * data/chargen/clan_tenets.js     each Great Clan's paramount and lesser tenets
   * data/chargen/questions.js       the twenty questions, as the corpus words them
   * pipeline/dsl/rules_text.json, keyed by catalog uuid, which scripts/build.py
@@ -47,6 +48,7 @@ DB = os.path.join(ROOT, "pipeline", "l5r.sqlite")
 SOURCES = os.path.join(ROOT, "src", "foundry_sources.json")
 PEC_OUT = os.path.join(ROOT, "data", "chargen", "peculiarities.js")
 TECH_OUT = os.path.join(ROOT, "data", "chargen", "techniques.js")
+GEAR_OUT = os.path.join(ROOT, "data", "chargen", "equipment.js")
 TENET_OUT = os.path.join(ROOT, "data", "chargen", "clan_tenets.js")
 QUESTION_OUT = os.path.join(ROOT, "data", "chargen", "questions.js")
 # Not a table in l5r.sqlite: scripts/build.py deletes that database and rebuilds
@@ -333,7 +335,7 @@ def main():
     rows = [dict(r) for r in cx.execute(
         "SELECT uuid, sub_type, name, clan FROM catalog WHERE sub_type != 'character'")]
 
-    out, pec, tech, gaps = {}, {}, {}, []
+    out, pec, tech, gear, gaps = {}, {}, {}, {}, []
     stats = collections.Counter()
     for r in rows:
         e, parent = resolve(r["name"], r["clan"], idx)
@@ -350,6 +352,11 @@ def main():
                 gaps.append((r["sub_type"], r["name"], why))
         if r["sub_type"] in ("technique", "signature_scroll") and parts:
             tech.setdefault(norm(r["name"]), as_html(parts))
+        # For gear the corpus text is usually the stat line — "Physical 3,
+        # Wargear, Rarity 3, 5 koku" — which is the useful thing to see while
+        # choosing, so it is shipped the same way.
+        if r["sub_type"] in ("item", "weapon", "armor") and parts:
+            gear.setdefault(norm(r["name"]), as_html(parts))
         if r["sub_type"] == "peculiarity" and e:
             pec[r["uuid"]] = {"text": as_html(parts), "types": types_of(e),
                               "dsl": e.get("name"), "via": parent or ""}
@@ -376,6 +383,11 @@ def main():
         json.dump(tenets, f, ensure_ascii=False, separators=(",", ":"))
         f.write(";\n")
 
+    with open(GEAR_OUT, "w") as f:
+        f.write("window.L5R_EQUIPMENT_TEXT = ")
+        json.dump(gear, f, ensure_ascii=False, separators=(",", ":"))
+        f.write(";\n")
+
     # The Creator picks techniques by name from the chargen data, not by uuid,
     # so this one is keyed by normalised name. It is what the school step shows
     # on hover: you cannot choose between two shūji from their titles.
@@ -392,6 +404,8 @@ def main():
           f"{os.path.relpath(QUESTION_OUT, ROOT)}")
     print(f"            {len(tenets)} clans' bushidō tenets -> "
           f"{os.path.relpath(TENET_OUT, ROOT)}")
+    print(f"            {len(gear)} equipment entries -> "
+          f"{os.path.relpath(GEAR_OUT, ROOT)}")
     print(f"            {len(tech)} techniques -> "
           f"{os.path.relpath(TECH_OUT, ROOT)} ({os.path.getsize(TECH_OUT)/1024:.1f} KB)")
 

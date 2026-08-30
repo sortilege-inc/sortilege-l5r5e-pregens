@@ -256,7 +256,7 @@
       bushido: { paramount: null, lesser: null, attitude: null, skill: null },
       answers: {
         giri: "", ninjo: "", standout_quality: "",
-        accomplishment: "", challenge: "", peace: "", fear: "",
+        accomplishment: "", challenge: "", peace: "", fear: "", accoutrement: "",
         past: "", known_for: "", known_skill: null,
         lord_name: "", lord_gender: "any",
         prized_possession: "", group_history: "", raised_by: "", raised_skill: null,
@@ -619,6 +619,12 @@
     standout_quality: "L5R 5e character creation. Write a single sentence naming and briefly framing the standout quality — a memorable trait or moment — that earned this character their +1 ring increase. Concrete and unmistakable.\n\n" + STYLE,
     clan_relationship: "L5R 5e character creation. Write a single sentence describing how this character carries, or resists, their clan's ideals. Specific to the clan they belong to.\n\n" + STYLE,
     first_impression: "L5R 5e character creation. Write a single sentence describing how this character first appears to a stranger: build, bearing, voice, dress, and a distinctive accoutrement they always carry.\n\n" + STYLE,
+    accoutrement: "L5R 5e character creation. Write a phrase or a short sentence " +
+      "naming one distinctive thing this character carries or wears most of the " +
+      "time — a scarf, a hair ornament, an engraved scabbard, an eyepatch. It " +
+      "should either accent how they already strike people or cut against it. " +
+      "Name the object and say what is particular about it; do not explain what " +
+      "it means about them.\n\n" + STYLE,
     stress_reaction: "L5R 5e character creation. Write a single sentence describing what this character does when pushed past their composure. Visible, physical, particular to them.\n\n" + STYLE,
     parent_opinion: "L5R 5e character creation. Write a single sentence reporting a parent or guardian's opinion of this character — what they are proud of, frustrated by, or worried about. Report it in the third person; do not write it as the parent speaking.\n\n" + STYLE,
     accomplishment: function () {
@@ -774,6 +780,7 @@
     add("Mentor", a.mentor.name + (a.mentor.text ? " — " + a.mentor.text : ""));
     add("From the mentor", a.mentor.granted);
     add("First impression", a.first_impression);
+    add("Accoutrement", a.accoutrement);
     add("Stress reaction", a.stress_reaction);
     add("Relationships", a.relationships);
     add("Starting item", C.starting_item);
@@ -1177,12 +1184,22 @@
         shown = picked.concat(shown.filter(function (i) { return i.value !== current; }));
       }
       list.innerHTML = shown.map(function (i) {
+        var tip = opts.tip && opts.tip(i.value);
         return '<button type="button" class="pick' +
-          (i.value === current ? " active" : "") + '" data-v="' + esc(i.value) + '">' +
+          (i.value === current ? " active" : "") + (tip ? " has-tip" : "") +
+          '" data-v="' + esc(i.value) + '">' +
           '<span class="pick-n">' + esc(i.label) + "</span>" +
           (i.meta ? '<span class="pick-m">' + esc(i.meta) + "</span>" : "") + "</button>";
       }).join("") || '<p class="muted small">Nothing matches.</p>';
       Array.prototype.forEach.call(list.querySelectorAll(".pick"), function (b) {
+        if (opts.tip) {
+          var v = b.getAttribute("data-v");
+          var html = opts.tip(v);
+          if (html) {
+            b.addEventListener("mouseenter", function () { showTip(b, v, html); });
+            b.addEventListener("mouseleave", hideTip);
+          }
+        }
         b.addEventListener("click", function () {
           onPick(b.getAttribute("data-v"));
           current = b.getAttribute("data-v");
@@ -1930,16 +1947,23 @@
       desc: function () {
         return qAlt(14)
           ? "When everything you own fits in a pack, one thing still matters more than the rest. Choose it from your outfit, or any item of rarity 5 or lower."
-          : "Describe your character's appearance and a distinctive accoutrement they always carry.";
+          : "What strikes someone on first meeting? Then one distinctive aesthetic accoutrement they carry or wear most of the time.";
       },
       done: function () {
-        return has(qAlt(14) ? C.answers.prized_possession : C.answers.first_impression);
+        if (qAlt(14)) return has(C.answers.prized_possession);
+        return has(C.answers.first_impression) && has(C.answers.accoutrement);
       },
       render: function (body) {
         var alt = qAlt(14);
         if (!alt) {
           textStep("appearance", "answers.first_impression", "first_impression",
             "How do they strike a stranger?")(body);
+          // Core p.93: "choose one distinctive aesthetic accoutrement that your
+          // character carries or wears most of the time" — a second answer the
+          // question asks for, and the step had nowhere to put it.
+          label(body, "Aesthetic accoutrement");
+          textStep("accoutrement", "answers.accoutrement", "accoutrement",
+            "A scarf, a hair ornament, an engraved scabbard, an eyepatch…")(body);
           return;
         }
         label(body, "The possession");
@@ -2221,6 +2245,7 @@
   }
 
   var TECH_TEXT = window.L5R_TECHNIQUE_TEXT || {};
+  var GEAR_TEXT = window.L5R_EQUIPMENT_TEXT || {};
   // "(op)" and "[Water]" are how the corpus writes the dice symbols and rings;
   // assets/symbols.js renders them the way the play sheet does.
   var syms = window.L5R_SYMBOLS || function (h) { return h || ""; };
@@ -2851,7 +2876,7 @@
     body.appendChild(count);
     pickList(body, items, C.starting_item, function (v) {
       C.starting_item = v; save();
-    });
+    }, { tip: ruleTextFor });
   }
 
   // The lord's name at question 5.
@@ -3109,7 +3134,7 @@
 
   // Rules text for a name, from whichever table holds it.
   function ruleTextFor(name) {
-    var t = TECH_TEXT[normName(name)];
+    var t = TECH_TEXT[normName(name)] || GEAR_TEXT[normName(name)];
     if (t) return t;
     var e = CATALOG.filter(function (x) {
       return x.sub_type === "peculiarity" && normName(x.name) === normName(name);
@@ -3157,6 +3182,7 @@
       [12, null, a.fear],
       [13, null, [a.mentor.name, a.mentor.text].filter(Boolean).join(" — ")],
       [14, null, qAlt(14) ? a.prized_possession : a.first_impression],
+      [14, "Aesthetic accoutrement", a.accoutrement],
       [15, null, a.stress_reaction],
       [16, null, a.relationships],
       [17, null, qAlt(17) ? a.group_history : a.parent_opinion.description],
