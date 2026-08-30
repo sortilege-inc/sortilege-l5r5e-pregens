@@ -782,6 +782,29 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .archivechip:hover{ border-color:var(--crimson); color:var(--sumi); }
 .archivechip.open{ border-style:solid; border-color:var(--jade); }
 
+/* ---- the work-in-progress panel ------------------------------------- */
+.wip-card .has-tip{ cursor:help; }
+.wip-card .ring.has-tip, .wip-card .skill.has-tip{ position:relative; }
+.wip-card .skill.has-tip .sn{ border-bottom:1px dotted var(--gold-soft); }
+.chip.has-tip{ border-bottom:2px dotted var(--gold-soft); }
+.chip.tech{ background:rgba(79,125,92,0.1); }
+.wip-answers{ margin-top:1rem; border-top:1px dashed var(--gold-soft); padding-top:0.6rem; }
+.wip-answers summary{
+  cursor:pointer; list-style:none; display:flex; align-items:center; gap:0.4rem;
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.14em;
+  font-size:0.66rem; color:var(--crimson);
+}
+.wip-answers summary::-webkit-details-marker{ display:none; }
+.wip-answers summary::before{ content:"\25B8"; color:var(--gold); transition:transform .15s; }
+.wip-answers[open] summary::before{ transform:rotate(90deg); }
+.wa-n{ margin-left:auto; color:var(--ink-dim); }
+.wa-list{ display:flex; flex-direction:column; gap:0.15rem; margin-top:0.45rem; }
+.wa-q{
+  font-family:var(--body); font-size:0.84rem; color:var(--ink-soft);
+  border-bottom:1px dotted var(--gold-soft); align-self:flex-start;
+}
+.wa-q:hover{ color:var(--sumi); }
+
 .bio-body{ max-width:62ch; }
 .bio-body p{ margin:0 0 0.7rem; }
 

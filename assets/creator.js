@@ -752,6 +752,14 @@
     var skills = {};
     var honor = 0, glory = 0, status = 0, wealth = 0;
     var pending = [];
+    // Where each increase came from, so the panel can say "+1 Iuchi, +1 Ujik
+    // Diviner School" rather than only the total. Base ranks are not a source.
+    var from = { rings: {}, skills: {} };
+    function credit(kind, key, by, source) {
+      if (!key || !source || !by) return;
+      (from[kind][key] = from[kind][key] || [])
+        .push({ by: by, source: source });
+    }
 
     // A _choose is resolved by the player at the step that granted it; whatever
     // is still unanswered goes on `pending` for the side panel to name.
@@ -760,7 +768,7 @@
         .filter(function (o) { return spec.options.indexOf(o) >= 0; });
       return picked.slice(0, spec.n || 1);
     }
-    function addRing(obj, key) {
+    function addRing(obj, key, source) {
       if (!obj) return;
       if (obj._choose) {
         var spec = obj._choose;
@@ -768,7 +776,7 @@
         var by = spec.yield_value != null ? spec.yield_value : 1;
         picked.forEach(function (o) {
           var r = String(o).toLowerCase();
-          if (rings[r] != null) rings[r] += by;
+          if (rings[r] != null) { rings[r] += by; credit("rings", r, by, source); }
         });
         if (picked.length < (spec.n || 1)) {
           pending.push({ type: "ring", opts: spec.options,
@@ -778,10 +786,10 @@
       }
       Object.keys(obj).forEach(function (k) {
         var r = k.toLowerCase();
-        if (rings[r] != null) rings[r] += obj[k];
+        if (rings[r] != null) { rings[r] += obj[k]; credit("rings", r, obj[k], source); }
       });
     }
-    function addSkills(obj, key) {
+    function addSkills(obj, key, source) {
       if (!obj) return;
       if (obj._choose) {
         var spec = obj._choose;
@@ -790,6 +798,7 @@
         picked.forEach(function (o) {
           var sk = SKILL_BY_LABEL[String(o).toLowerCase()] || String(o).toLowerCase();
           skills[sk] = (skills[sk] || 0) + by;
+          credit("skills", sk, by, source);
         });
         if (picked.length < (spec.n || 1)) {
           pending.push({ type: "skill", opts: spec.options,
@@ -800,37 +809,53 @@
       Object.keys(obj).forEach(function (k) {
         var s = SKILL_BY_LABEL[String(k).toLowerCase()] || k.toLowerCase();
         skills[s] = (skills[s] || 0) + obj[k];
+        credit("skills", s, obj[k], source);
       });
     }
 
     var clan = find(CLANS, C.clan) || find(CLANS, C.clan + " Clan");
     if (clan) {
-      addRing(clan.ring_bonus, "clan.ring_bonus");
-      addSkills(clan.skill_bonus, "clan.skill_bonus");
+      addRing(clan.ring_bonus, "clan.ring_bonus", C.clan);
+      addSkills(clan.skill_bonus, "clan.skill_bonus", C.clan);
       status = clan.starting_status || 0;
     }
     var fam = find(FAMILIES, C.family);
     if (fam) {
-      addRing(fam.ring_increase, "family.ring_increase");
-      addSkills(fam.skill_increases, "family.skill_increases");
+      addRing(fam.ring_increase, "family.ring_increase", C.family);
+      addSkills(fam.skill_increases, "family.skill_increases", C.family);
       glory = fam.glory || 0; wealth = fam.starting_wealth || 0;
     }
     var sch = schoolByRollName(C.school);
     if (sch) {
-      addRing(sch.ring_increase, "school.ring_increase");
-      addSkills(sch.starting_skills, "school.starting_skills");
+      addRing(sch.ring_increase, "school.ring_increase", C.school);
+      addSkills(sch.starting_skills, "school.starting_skills", C.school);
       honor = sch.starting_honor || 0;
     }
-    if (C.standout_ring && rings[C.standout_ring] != null) rings[C.standout_ring] += 1;
+    if (C.standout_ring && rings[C.standout_ring] != null) {
+      rings[C.standout_ring] += 1;
+      credit("rings", C.standout_ring, 1, "Question 4");
+    }
     if (C.bushido.attitude === "A") honor += 10;
     if (C.answers.clan_relationship.path === "A") glory += 5;
 
-    // chosen skills the player resolved by hand
+    // Skills the player resolved by hand at a question that grants one. The
+    // question is the source; C.skills is a flat tally, so match on the answer.
+    var byQuestion = {};
+    [[C.answers.clan_relationship.skill, "Question 7"],
+     [C.bushido.skill, "Question 8"],
+     [C.answers.mentor.skill, "Question 13"],
+     [C.answers.known_skill, "Question 7"],
+     [C.answers.parent_opinion.skill, "Question 17"],
+     [C.answers.raised_skill, "Question 18"]].forEach(function (p) {
+      if (p[0]) byQuestion[p[0]] = p[1];
+    });
     Object.keys(C.skills || {}).forEach(function (k) {
       skills[k] = (skills[k] || 0) + C.skills[k];
+      credit("skills", k, C.skills[k], byQuestion[k] || "a question");
     });
     return { rings: rings, skills: skills, honor: honor, glory: glory,
-             status: status, wealth: wealth, pending: pending, school: sch };
+             status: status, wealth: wealth, pending: pending, school: sch,
+             from: from };
   }
 
   /* ---------------------------------------------------------- steps */
@@ -2413,18 +2438,98 @@
     el("progress-label").textContent = done + " of " + live.length + " answered";
   }
 
+  // "+1 Iuchi, +1 Ujik Diviner School" — what actually built this number.
+  function provenance(list, base) {
+    var bits = (list || []).map(function (c) {
+      return (c.by > 0 ? "+" : "") + c.by + " " + c.source;
+    });
+    if (base != null) bits.unshift(base + " base");
+    return bits.join(", ");
+  }
+
+  // Rules text for a name, from whichever table holds it.
+  function ruleTextFor(name) {
+    var t = TECH_TEXT[normName(name)];
+    if (t) return t;
+    var e = CATALOG.filter(function (x) {
+      return x.sub_type === "peculiarity" && normName(x.name) === normName(name);
+    })[0];
+    var p = e && PEC_TEXT[e.uuid];
+    return (p && p.text) || null;
+  }
+
+  // Everything the character has taken that carries rules text.
+  function wipTechniques() {
+    var sch = schoolByRollName(C.school);
+    if (!sch) return [];
+    var out = [];
+    (sch.starting_techniques || []).forEach(function (g, i) {
+      if (g.kind === "fixed" && g.name) out.push(g.name);
+      else if (g.kind === "choose") out = out.concat(chosen("school.tech." + i));
+    });
+    if (sch.school_ability) out.push(sch.school_ability);
+    return out.filter(function (v, i, a) { return a.indexOf(v) === i; });
+  }
+
+  function chipRow(names, cls) {
+    return '<div class="tagrow">' + names.map(function (n) {
+      var txt = ruleTextFor(n);
+      return '<span class="chip' + (txt ? " has-tip" : "") + (cls ? " " + cls : "") +
+        '" data-tip="' + esc(n) + '">' + esc(n) + "</span>";
+    }).join("") + "</div>";
+  }
+
+  // Questions already answered, so a later one can be written against them.
+  function answeredQuestions() {
+    var a = C.answers;
+    var rows = [
+      [4, "standout quality", a.standout_quality],
+      [5, qAlt(5) ? "past" : "giri", qAlt(5) ? a.past : a.giri],
+      [5, "lord", a.lord_name],
+      [6, "ninjō", a.ninjo],
+      [7, qAlt(7) ? "known for" : "clan relationship",
+       qAlt(7) ? a.known_for : a.clan_relationship.text],
+      [8, "bushidō", [C.bushido.paramount, C.bushido.lesser].filter(Boolean).join(" / ")],
+      [9, "greatest accomplishment", a.accomplishment],
+      [10, "greatest challenge", a.challenge],
+      [11, "at peace", a.peace],
+      [12, "concern or fear", a.fear],
+      [13, "mentor", [a.mentor.name, a.mentor.text].filter(Boolean).join(" — ")],
+      [14, qAlt(14) ? "prized possession" : "first impression",
+       qAlt(14) ? a.prized_possession : a.first_impression],
+      [15, "stress reaction", a.stress_reaction],
+      [16, "relationships", a.relationships],
+      [17, qAlt(17) ? "shared history" : "parent's opinion",
+       qAlt(17) ? a.group_history : a.parent_opinion.description],
+      [18, qAlt(18) ? "who raised them" : "heritage",
+       qAlt(18) ? a.raised_by : a.heritage],
+      [20, "death", a.death]
+    ];
+    return rows.filter(function (r) { return r[2] && String(r[2]).trim(); });
+  }
+
   function renderWip() {
     var d = computed();
     var ring = RINGS.map(function (r) {
-      return '<div class="ring" data-ring="' + r + '"><div class="rn">' + cap(r) +
-        '</div><div class="rv">' + d.rings[r] + "</div></div>";
+      var why = provenance(d.from.rings[r], 1);
+      return '<div class="ring' + (why ? " has-tip" : "") + '" data-ring="' + r +
+        '" data-tip="' + esc(cap(r)) + '" data-why="' + esc(why) + '">' +
+        '<div class="rn">' + cap(r) + '</div><div class="rv">' + d.rings[r] +
+        "</div></div>";
     }).join("");
+
     var skills = Object.keys(d.skills).filter(function (k) { return d.skills[k]; })
       .sort().map(function (k) {
-        return '<div class="skill"><span class="sn">' +
-          esc(SKILL_LABEL[k] || cap(k)) + '</span><span class="sv">' +
-          d.skills[k] + "</span></div>";
+        var why = provenance(d.from.skills[k], null);
+        return '<div class="skill' + (why ? " has-tip" : "") +
+          '" data-tip="' + esc(SKILL_LABEL[k] || cap(k)) + '" data-why="' + esc(why) +
+          '"><span class="sn">' + esc(SKILL_LABEL[k] || cap(k)) +
+          '</span><span class="sv">' + d.skills[k] + "</span></div>";
       }).join("") || '<p class="muted small">No skills yet.</p>';
+
+    var advantages = heldPeculiarities();
+    var techs = wipTechniques();
+    var answered = answeredQuestions();
 
     el("wip").innerHTML =
       '<h3 class="wip-name">' + esc(C.name || "Unnamed") + "</h3>" +
@@ -2445,12 +2550,38 @@
           }).join("; ") + ".</p>"
         : "") +
       '<h4 class="field-label">Skills</h4><div class="wip-skills">' + skills + "</div>" +
-      (heldPeculiarities().length
-        ? '<h4 class="field-label">Peculiarities</h4><div class="tagrow">' +
-          heldPeculiarities()
-            .map(function (n) { return '<span class="chip">' + esc(n) + "</span>"; }).join("") +
-          "</div>"
+      (advantages.length
+        ? '<h4 class="field-label">Advantages &amp; Disadvantages</h4>' +
+          chipRow(advantages)
+        : "") +
+      (techs.length
+        ? '<h4 class="field-label">Techniques</h4>' + chipRow(techs, "tech")
+        : "") +
+      (answered.length
+        ? '<details class="wip-answers"><summary>Answered so far' +
+          '<span class="wa-n">' + answered.length + "</span></summary>" +
+          '<div class="wa-list">' + answered.map(function (r) {
+            return '<span class="wa-q has-tip" data-tip="Question ' + r[0] + '" ' +
+              'data-why="' + esc(String(r[2])) + '">' +
+              r[0] + ". " + esc(r[1]) + "</span>";
+          }).join("") + "</div></details>"
         : "");
+
+    wireWipTips();
+  }
+
+  /* Hover anywhere in the panel that has something to say: a rule's text, or
+     where a number came from. Reuses the technique card, so the two look the
+     same and there is only one thing to position. */
+  function wireWipTips() {
+    Array.prototype.forEach.call(el("wip").querySelectorAll(".has-tip"), function (n) {
+      var title = n.getAttribute("data-tip") || "";
+      var why = n.getAttribute("data-why");
+      var html = why ? "<p>" + esc(why) + "</p>" : ruleTextFor(title);
+      if (!html) return;
+      n.addEventListener("mouseenter", function () { showTip(n, title, html); });
+      n.addEventListener("mouseleave", hideTip);
+    });
   }
 
   function render() {
