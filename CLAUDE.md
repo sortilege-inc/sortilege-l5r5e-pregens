@@ -267,12 +267,14 @@ listed. Two different situations, and they must not be blurred:
   which the sheet already renders in its own columns. Foundry's description is flavour
   ("As much a work of art as it is a weapon, the katana…"), not rules. Nothing is missing.
 - **4 entries — empty in Foundry too**, or authored in the module with no printed source.
-- **6 items — an OPEN GAP.** Calligraphy Set, Finger of Jade, Personal Seal or Chop,
-  Poison (One Vial), Quiver of Arrow, Traveling pack carry real mechanics ("Blanket, bowl,
-  chopsticks, four days of travel rations… and any three other items of rarity 4 or
-  lower"). Core Rulebook personal effects the corpus does not have. Their reason begins
-  `PENDING` and the script reports them on **every run** so they cannot read as settled.
-  The fix is to convert them into titterpig-dsl-l5r5e.
+- **6 items — a real gap, deferred by decision (Jordan, 2026-08-30).** Calligraphy Set,
+  Finger of Jade, Personal Seal or Chop, Poison (One Vial), Quiver of Arrow, Traveling
+  pack carry real mechanics ("Blanket, bowl, chopsticks, four days of travel rations… and
+  any three other items of rarity 4 or lower"). Core Rulebook personal effects the corpus
+  does not have. **Jordan has decided not to add them to the corpus for now**, so they keep
+  Foundry's text. Their reason begins `DEFERRED` and the script names them on every run —
+  not to nag, but because a gap that stops being printed is a gap that gets forgotten.
+  Do not fold them in with the settled exclusions above.
 
 ## Never author rules text
 

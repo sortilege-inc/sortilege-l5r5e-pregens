@@ -353,19 +353,17 @@ def main():
 
     unsigned = [g for g in gaps if g[1] not in exceptions]
     covered = [g for g in gaps if g[1] in exceptions]
-    pending = [g for g in covered if exceptions[g[1]].startswith("PENDING")]
+    pending = [g for g in covered if exceptions[g[1]].startswith("DEFERRED")]
     if covered:
         by = collections.Counter(g[0] for g in covered)
         print(f"            {len(covered)} referenced entries stay on Foundry text by "
               f"stated exception ({', '.join(f'{v} {k}' for k, v in by.most_common())})")
     if pending:
-        # Never let an open gap read as a settled one. These are reported every
-        # run until they are either converted or explicitly written off.
-        print(f"\n   {len(pending)} of those are OPEN GAPS, not settled exclusions — "
-              "real mechanical text the corpus does not carry:")
-        for st, nm, _ in sorted(pending):
-            print(f"      {st:10} {nm}")
-        print("   Convert them into titterpig-dsl-l5r5e, or write them off explicitly.")
+        # A deferral is not a settled exclusion. Jordan has seen these and chosen
+        # to leave them, so this does not nag — but it stays counted and named,
+        # because a gap that stops being printed is a gap that gets forgotten.
+        print(f"            of those, {len(pending)} are DEFERRED gaps the corpus lacks "
+              f"(not settled): {', '.join(nm for _, nm, _ in sorted(pending))}")
     if unsigned:
         print(f"\nFAIL — {len(unsigned)} entries on live character pages have no corpus "
               "text and no signed exception:")
