@@ -62,6 +62,43 @@
   var CLAN_TENETS = window.L5R_CLAN_TENETS || {};
   var QUESTIONS = window.L5R_QUESTIONS || {};
   var NAMES = window.L5R_NAMES || {};
+  var TAROT = window.L5R_TAROT || [];
+
+  /* An honest draw. crypto.getRandomValues with rejection sampling, so there is
+     no modulo bias: a 32-bit value is discarded and redrawn if it falls in the
+     short tail that would over-represent the low indices. Nothing here weights
+     the deck, avoids a card, or retries a spread it does not like — three
+     distinct cards from 78, each equally likely, each upright or reversed on a
+     separate fair bit. */
+  function randomBelow(n) {
+    if (n <= 0) return 0;
+    var limit = Math.floor(4294967296 / n) * n;   // largest unbiased multiple
+    var buf = new Uint32Array(1);
+    var v;
+    do {
+      crypto.getRandomValues(buf);
+      v = buf[0];
+    } while (v >= limit);
+    return v % n;
+  }
+
+  function drawSpread(count) {
+    var pool = TAROT.slice();
+    var out = [];
+    for (var i = 0; i < count && pool.length; i++) {
+      var card = pool.splice(randomBelow(pool.length), 1)[0];
+      out.push({ card: card, reversed: randomBelow(2) === 1 });
+    }
+    return out;
+  }
+
+  function spreadText(spread) {
+    return spread.map(function (d, i) {
+      var o = d.reversed ? "Reversed" : "Upright";
+      return "— " + (i + 1) + ". " + d.card.name + ", " + o + " —\n\n" +
+        (d.reversed ? d.card.reversed : d.card.upright);
+    }).join("\n\n");
+  }
 
   function pickFrom(list) {
     return list && list.length ? list[Math.floor(Math.random() * list.length)] : null;
@@ -1282,6 +1319,34 @@
         ta.value = C.concept || "";
         ta.addEventListener("input", function () { C.concept = ta.value; save(); });
         body.appendChild(ta);
+
+        if (TAROT.length) {
+          var row = document.createElement("div");
+          row.className = "ai-row";
+          var draw = document.createElement("button");
+          draw.type = "button";
+          draw.className = "ai-btn";
+          draw.textContent = "Draw tarot spread";
+          draw.title = "Three distinct cards from the full 78, upright or reversed, " +
+            "appended to the concept above";
+          draw.addEventListener("click", function () {
+            var spread = drawSpread(3);
+            if (!spread.length) return;
+            var block = "Tarot spread\n\n" + spreadText(spread);
+            C.concept = C.concept && C.concept.trim()
+              ? C.concept.replace(/\s+$/, "") + "\n\n" + block
+              : block;
+            ta.value = C.concept;
+            ta.scrollTop = ta.scrollHeight;
+            save();
+          });
+          row.appendChild(draw);
+          var hint = document.createElement("span");
+          hint.className = "ai-hint";
+          hint.textContent = TAROT.length + " cards · no card twice · appended, never replaced";
+          row.appendChild(hint);
+          body.appendChild(row);
+        }
       } },
 
     { id: "clan", n: 1,
