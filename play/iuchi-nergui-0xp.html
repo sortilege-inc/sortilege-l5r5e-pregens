@@ -6,7 +6,7 @@
 <title>Iuchi Nergüi — 0 XP — Character Sheet</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/l5r.css?v=1500c556">
+<link rel="stylesheet" href="../assets/l5r.css?v=d0867055">
 <link rel="stylesheet" href="../assets/play/sheet.css?v=961462f4">
 </head>
 <body class="play-body">
@@ -24,7 +24,7 @@
 {
  "id": "iuchi-nergui-0xp",
  "name": "Iuchi Nergüi",
- "clan": null,
+ "clan": "Unicorn",
  "family": "Iuchi",
  "school": "Ujik Diviner School",
  "role": "Sage",
@@ -32,34 +32,34 @@
  "portrait": null,
  "rings": {
   "air": 1,
-  "earth": 1,
+  "earth": 2,
   "fire": 1,
-  "water": 2,
-  "void": 2
+  "water": 3,
+  "void": 3
  },
  "derived": {
-  "endurance": 4,
-  "composure": 6,
+  "endurance": 6,
+  "composure": 10,
   "focus": 2,
   "vigilance": 2
  },
  "trackers": {
   "strife": {
-   "max": 6
+   "max": 10
   },
   "fatigue": {
-   "max": 4
+   "max": 6
   },
   "void": {
-   "max": 2,
-   "start": 2
+   "max": 3,
+   "start": 3
   }
  },
  "stance": "void",
  "social": {
   "honor": 40,
   "glory": 40,
-  "status": null
+  "status": 30
  },
  "xp": {
   "earned": 0,
@@ -74,35 +74,104 @@
   "melee": 0,
   "ranged": 0,
   "unarmed": 0,
-  "meditation": 1,
+  "meditation": 3,
   "tactics": 0,
-  "culture": 0,
+  "culture": 1,
   "government": 0,
   "medicine": 0,
   "sentiment": 0,
-  "theology": 1,
+  "theology": 3,
   "command": 0,
   "courtesy": 0,
   "games": 0,
-  "performance": 0,
+  "performance": 1,
   "commerce": 0,
   "labor": 0,
   "seafaring": 0,
   "skulduggery": 0,
-  "survival": 0
+  "survival": 1
  },
  "bushido": {
-  "paramount": null,
-  "less": null
+  "paramount": "Duty and Loyalty",
+  "less": "Sincerity"
  },
- "ninjo": "",
- "giri": "",
+ "ninjo": "He wants to read the bones without hearing Nagiko's questions echo underneath, but he accepted what the cards showed him and he will not break that debt.",
+ "giri": "Nergüi reads the cards for Nagiko's investigations even when the revelations yield nightmares.",
  "money": "5 koku",
- "techniques": [],
- "peculiarities": [],
+ "techniques": [
+  {
+   "name": "Jurojin's Balm",
+   "tag": "Technique",
+   "text": "<ul><li>Jurōjin, guardian of longevity, health, and physical wellbeing, is one of the most sought after of the Seven Fortunes—for whether one is a lord or a peasant, one is sure to pray for health sooner or later. A shugenja can impart spiritual fortification in this Fortune’s name, anointing the body of the target with sacred earth, healing plants such as ginseng or rhubarb, or stranger remedies still. While under the effects of this blessing, a character is much more resistant to poison, disease, and the effects of alcohol—which can be a boon or curse depending on one&#x27;s goals.</li><li>As a Support action, make a TN 1 Theology (Earth) check targeting one character at range 0-1.</li><li>If you succeed, you augment your target&#x27;s fortitude. The target reduces TN of all checks to resist poison and disease by 2 (min 1). The target cannot become intoxicated via alcohol. Persists until end of the scene.</li><li>Earth (op): Target also reduces TN of checks to resist Mahō, Defiled terrain, and effects of Otherworldly beings by 2 (min 1).</li><li>Earth (op)(op): This effect persists for twenty-four hours instead.</li><li>Earth (op)(op): You also mend your target, removing current poisons, the Dying condition, and suppressing disease symptoms until end of scene.</li></ul>"
+  },
+  {
+   "name": "Embrace of Kenro-Ji-Jin",
+   "tag": "Technique",
+   "text": "<ul><li>The shugenja appeals to rumbling subterranean kami, offering the proper prayers to receive safe passage even across places humans were not meant to tread. The spirits shroud the shugenja, allowing them to stick to rocky surfaces or parting the ground to allow passage.</li><li>As a Support action, make a TN 2 Theology (Earth) check targeting yourself.</li><li>If you succeed, you augment yourself with the ability to stick to earthen surfaces, traversing even vertical surfaces made of earth or stone. Persists for one round, plus additional rounds equal to bonus successes (or one minute in narrative).</li><li>Earth (op): This effect persists until end of the scene instead.</li><li>Earth (op): You can pass through solid earth as if it was water when you move. Supernatural resistance against Earth invocations, kihō, and mahō equal to your Earth Ring.</li><li>Earth (op)(op): Effects also apply to metal. Physical resistance against metal weapons equal to your Earth Ring.</li></ul>"
+  },
+  {
+   "name": "Heart of the Water Dragon",
+   "tag": "Technique",
+   "text": "<ul><li>The shugenja traces a gentle pattern on the target’s skin with purified water, calling upon the water kami in their body to protect and mend the flesh they call home. The target becomes extremely resistant to invocations, sorcery, and other supernatural abilities; summoned flames ripple off their skin harmlessly, and baleful maledictions pass over the targets.</li><li>As a Support action, make a TN 3 Theology (Water) check targeting one character at range 0-2.</li><li>If you succeed, you augment your target with spiritual fluidity. The target gains supernatural resistance equal to your Water Ring and removes 1 fatigue at the end of each round. Persists for one round, plus additional rounds equal to bonus successes. Each target cannot be affected by this invocation again until end of scene.</li><li>Water (op)(op): When the target succeeds on a check to resist the effect of a kihō, Mahō, or invocation, the character who used the technique must also make the check to resist that effect, or suffer the effect themself.</li></ul>"
+  },
+  {
+   "name": "Inari's Blessing",
+   "tag": "Technique",
+   "text": "<ul><li>Water is life, and water kami can provide life-giving gifts of food and drink even from the most desolate environments. After the shugenja performs the invocation, the land nearby flourishes with life, delivering food to the shugenja, and pure water springs from the ground. This food is simple and nourishing, and it can be cooked or even packed away as rations for later if needed.</li><li>As a Support action, make a TN 2 Theology (Water) check targeting one position at range 1.</li><li>If you succeed, you summon a meal at the target position that can feed a number of people up to your Water Ring plus bonus successes.</li><li>Water (op): The meal is particularly fortifying. Any character who partakes during downtime removes fatigue equal to your Water Ring.</li><li>Water +(op): The meal can feed people equal to your Water Ring plus bonus successes times (op) spent this way instead.</li></ul>"
+  },
+  {
+   "name": "Ancestry Unearthed",
+   "tag": "Technique",
+   "text": "<ul><li>A samurai’s ancestry often reveals a great deal about their political opportunities, assets, and probable allies in the Emerald Empire, for the rigid social strata allow little divergence. Any courtier can likely dredge up another samurai’s lineage from the dark corners of their mind, but some can recall it in an instant.</li><li>When you make a Scholar skill (Earth) or Social skill (Earth) check targeting a character, you may spend (op) as follows:</li><li>Earth (op): You know one sworn oath the character&#x27;s family took in the past, and whether or not they have broken or bent it.</li><li>Earth (op)(op): You know one secret of the character&#x27;s family that they would prefer be forgotten, and have perhaps even worked to bury.</li><li>Earth (op)(op)(op): You know something the character does not even know about their own ancestry.</li></ul>"
+  },
+  {
+   "name": "Seer of the Lords of Death",
+   "tag": "Technique",
+   "text": "<p>You can channel rituals in the same way as invocations. Once per scene, when you channel you may receive fatigue up to your school rank. If you do, you may immediately make another check to perform an invocation of the same element using the reserved dice from your channel. For each fatigue received this way, you may add one kept die set to an (op) result.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Seasoned",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are older and more worldly than most of your fellows and have learned a few things along the way. While you do not start with additional experience, your experience expenditures might reflect revealing aspects of yourself you have held back to avoid overshadowing your younger companions. You have met members of many cultures and organizations, and you know how to properly behave in almost any city in Rokugan and perhaps even beyond. You also know many other older people, and the number and variety of your acquaintances often surprises your younger companions.</li><li>When performing a check for which your hard-earned wisdom is an advantage (such as a Courtesy [Void] check to impart wisdom to an impetuous comrade or a Theology [Void] check to intuit whether a spirit will appreciate your offering), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Blindness",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are unable to see out of either eye. Your lack of sight does not mean you cannot perceive your surroundings (using your other senses), but you cannot observe things that can be perceived only by sight.</li><li>When you make a check for which sight is an asset that cannot easily be replaced by other senses (such as a Sentiment [Water] check to identify someone&#x27;s hostile intentions from across a noisy room or a Martial Arts [Ranged] [Water] check to hit a moving target with an arrow), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Ancestry",
+   "tag": "Peculiarity",
+   "text": "<ul><li>The recollection of lineages comes easily to you. You know your own family history as far back as it has been recorded, and can swiftly recall the lineages of notable figures in Rokugan&#x27;s history.</li><li>After performing a check to recall or determine the family history of another character (such as a Government [Earth] check to remember a past daimyo of a family, or a Command [Earth] check to remind a subordinate of the expectations their ancestors would have of them), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Vanity",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are hyperfocused on your physical appearance.</li><li>After performing a check where your appearance is in jeopardy, you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Fashion",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You always know the current trends in your home region, and you can identify what is in vogue (and how to take advantage of that fact) in a new place after spending one or more scenes there.</li><li>After performing a check to interact with clothes, jewelry, or other worn works of art (such as a Culture [Fire] check to theorize about what others might wear at the next Winter Court or a Design [Fire] check to create a stunning work), you remove 3 strife.</li></ul>"
+  }
+ ],
  "titles": [],
  "bonds": [],
- "gear": []
+ "gear": [
+  {
+   "name": "Sokutoki",
+   "kind": "Item",
+   "qualities": [
+    "Concealable",
+    "Prepare",
+    "Subtle"
+   ],
+   "rarity": "4",
+   "text": "<ul><li>Category: Shinobi Item</li><li>Cost: 2 bu</li><li>Rarity: 4</li><li>Qualities: [&quot;Concealable&quot;,&quot;Prepare&quot;,&quot;Subtle&quot;]</li><li>Special: Can be loaded with blinding powder for close-range discharge into target&#x27;s eyes.</li></ul>"
+  }
+ ]
 }
 </script>
 <script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>

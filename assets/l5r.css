@@ -1061,3 +1061,13 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
   border-style:dashed; color:var(--crimson-deep);
   border-color:rgba(182,36,50,0.55); background:var(--crimson-soft);
 }
+
+/* concept notes landed as a bio carry their own headings and lists */
+.bio-body h3, .bio-body h4, .bio-body h5{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.12em;
+  font-size:0.78rem; color:var(--ink-dim); margin:1.1rem 0 0.35rem;
+}
+.bio-body ul{ margin:0.4rem 0 0.8rem; padding-left:1.2rem; }
+.bio-body li{ margin-bottom:0.28rem; }
+.bio-body hr{ border:0; border-top:1px solid var(--gold-soft); margin:1.2rem 0; }
+.bio-body code{ font-size:0.88em; }

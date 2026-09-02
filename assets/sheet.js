@@ -184,15 +184,59 @@
   // Concept material that became part of the record on promotion. Raw prose,
   // meant to be edited into something narrative later, so it is rendered as
   // paragraphs rather than dressed up.
+  /* A bio is the character's concept notes, landed by scripts/promote.py, and
+     those are written in Markdown — headings, bold, bullet lists, horizontal
+     rules. Rendering them as plain text put literal "**Ujik Diviner**" and
+     "### Cards" on the page, so this handles the small subset the concepts
+     actually use. Escaping happens first and the formatting is applied to the
+     escaped text, so nothing in a note can inject markup. */
+  function bioInline(t) {
+    return t
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/(^|[\s(])\*([^*\n]+)\*(?=[\s.,;:)]|$)/g, "$1<em>$2</em>")
+      .replace(/`([^`]+)`/g, "<code>$1</code>");
+  }
+
   function renderBio(bio) {
     if (!bio || !String(bio).trim()) return "";
-    var paras = String(bio).split(/\n{2,}/).filter(function (p) { return p.trim(); });
+    /* Line by line rather than block by block: the concepts put a heading and
+       the list under it in one run of lines with no blank between, so
+       classifying whole blank-line-separated blocks left "### Cards" and its
+       bullets stranded together in a single paragraph. */
+    var out = [], para = [], list = [];
+    function flushPara() {
+      if (!para.length) return;
+      out.push("<p>" + bioInline(esc(para.join("\n"))).replace(/\n/g, "<br>") + "</p>");
+      para = [];
+    }
+    function flushList() {
+      if (!list.length) return;
+      out.push("<ul>" + list.map(function (i) {
+        return "<li>" + bioInline(esc(i)) + "</li>";
+      }).join("") + "</ul>");
+      list = [];
+    }
+    String(bio).split("\n").forEach(function (line) {
+      var t = line.trim();
+      if (!t) { flushList(); flushPara(); return; }
+      if (/^-{3,}$/.test(t)) { flushList(); flushPara(); out.push("<hr>"); return; }
+      var h = t.match(/^(#{1,6})\s+(.*)$/);
+      if (h) {
+        flushList(); flushPara();
+        // the notes' headings sit inside the Bio section, a level below it
+        out.push("<h" + Math.min(6, h[1].length + 2) + ">" + bioInline(esc(h[2])) +
+                 "</h" + Math.min(6, h[1].length + 2) + ">");
+        return;
+      }
+      var li = t.match(/^[-*+]\s+(.*)$/);
+      if (li) { flushPara(); list.push(li[1]); return; }
+      flushList();
+      para.push(t);
+    });
+    flushList(); flushPara();
     return '<section><h2 class="section-h"><span class="kanji">伝</span>Bio' +
       '<span class="en">From the concept notes</span></h2>' +
-      '<div class="bio-body">' +
-      paras.map(function (p) {
-        return "<p>" + esc(p.trim()).replace(/\n/g, "<br>") + "</p>";
-      }).join("") + "</div></section>";
+      '<div class="bio-body">' + out.join("") + "</div></section>";
   }
 
   function renderDutyDesire(t) {

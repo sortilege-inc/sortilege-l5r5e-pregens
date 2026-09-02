@@ -114,16 +114,28 @@ def main():
         save_sources(d)
         print(f"{doc['name']} is a draft again.")
     else:
-        if doc.get("status") != "draft" and args.slug not in slugs:
-            print(f"{doc['name']} is not a draft — nothing to promote.")
+        # Promotion does two things: it clears the draft flag, and it lands the
+        # character's concept as a bio. A source that arrived with no status —
+        # hand-written, or exported before the Creator set one — needs the
+        # second without the first, so "not a draft" is not on its own a reason
+        # to refuse. Refuse only when there is nothing left to do.
+        concepts = {k: v for k, v in (d.get("concepts") or {}).items()
+                    if not k.startswith("_")}
+        pending_bio = bool(concepts.get(args.slug)) and not (doc.get("bio") or "").strip()
+        if doc.get("status") != "draft" and args.slug not in slugs and not pending_bio:
+            print(f"{doc['name']} is not a draft and has no concept to land — "
+                  "nothing to promote.")
             return
         if args.slug not in slugs:
             slugs.append(args.slug)
             slugs.sort()
+        was_draft = doc.get("status") == "draft"
         doc["status"] = None
         json.dump(doc, open(path, "w"), indent=1, ensure_ascii=False)
         save_sources(d)
-        print(f"{doc['name']} promoted out of draft.")
+        print("%s %s." % (doc["name"],
+                          "promoted out of draft" if was_draft
+                          else "recorded as promoted; its concept will land as a bio"))
     print("Run ./scripts/pipeline.sh to rebuild.")
 
 
