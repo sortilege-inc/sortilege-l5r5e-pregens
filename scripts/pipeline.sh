@@ -62,6 +62,14 @@ python3 scripts/dsl_rules_text.py $REFRESH
 
 python3 scripts/build.py
 
+# Chargen tables the Creator reads straight from the corpus, rather than through
+# the catalog. heritage_tables.py in particular was outside the chain, so a
+# corpus edit to a heritage table reached the site only if someone remembered to
+# run it by hand -- which is how a corrected Spirit Companion entry sat stale.
+# name_tables.py keys off the clan, family and school data the build just wrote.
+python3 scripts/heritage_tables.py | tail -1
+python3 scripts/name_tables.py | tail -1
+
 # The source audit reads the catalog and the resolved corpus text the two steps
 # above produce, and writes data/audit.js for the Audit section. It only reads
 # the corpus — it never edits it.

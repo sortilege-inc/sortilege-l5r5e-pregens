@@ -1055,3 +1055,9 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .aflag h3{ font-size:0.95rem; margin:0 0 0.4rem; }
 .aflag ul{ margin:0; padding-left:1.2rem; }
 .aflag li{ margin-bottom:0.35rem; }
+
+/* gear a rule grants without naming it — an open item, not a finished one */
+.chip.needs-def{
+  border-style:dashed; color:var(--crimson-deep);
+  border-color:rgba(182,36,50,0.55); background:var(--crimson-soft);
+}

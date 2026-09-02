@@ -1222,6 +1222,42 @@
 
   // Everything the character already holds, in any bucket, plus the extra the
   // mentor question grants — so a picker can refuse to sell the same thing twice.
+  /* Gear the rules hand over without naming a specific item.
+
+     A heritage result can grant a possession the character must then define:
+     Spirit Companion (Children of the Five Winds, entry 9) says "You know one
+     additional meishōdō talisman", and which talisman is a decision for the
+     player and the GM, not something the table settles. Carrying these as a
+     derived list rather than stored state means changing the heritage cannot
+     leave a stale grant behind.
+
+     Keyed by heritage entry name. Add to it as other results are found to
+     confer an undefined possession; the map is deliberately explicit, because a
+     pattern loose enough to catch "one additional talisman" also catches "one
+     additional target". */
+  var HERITAGE_GRANTED_GEAR = {
+    "Spirit Companion": {
+      item: "One additional meishōdō talisman",
+      // the entry's sub-roll fixes the spirit's ring, so the talisman follows it
+      ringFromSubRoll: true,
+      note: "Granted by the Spirit Companion heritage. Needs defining with the " +
+            "GM: which talisman, and the rank 1 invocation of that ring it lets " +
+            "you learn."
+    }
+  };
+
+  function grantedGear() {
+    var g = HERITAGE_GRANTED_GEAR[C.answers.heritage];
+    if (!g) return [];
+    var name = g.item;
+    if (g.ringFromSubRoll && C.answers.heritage_sub) {
+      // the sub-roll reads "1-2 — Air"; keep only the result
+      var ring = String(C.answers.heritage_sub).split("—").pop().trim();
+      if (ring) name += " (" + ring + ")";
+    }
+    return [{ name: name, note: g.note, needs_definition: true }];
+  }
+
   function heldPeculiarities() {
     return [].concat(C.distinctions, C.adversities, C.passions, C.anxieties,
                      C.answers.mentor.granted ? [C.answers.mentor.granted] : []);
@@ -1784,7 +1820,7 @@
               C.answers.known_skill = sk;
               C.skills[sk] = (C.skills[sk] || 0) + 1;
               save();
-            });
+            }, { atZero: true });
           }
           textStep("known-for", "answers.known_for", "known_for",
             "What are they known for, and to whom?")(body);
@@ -1801,7 +1837,7 @@
             C.answers.clan_relationship.skill = s;
             C.skills[s] = (C.skills[s] || 0) + 1;
             save();
-          });
+          }, { atZero: true });
         }
         textStep("clan-tie", "answers.clan_relationship.text", "clan_relationship",
           "How do they carry, or resist, the clan's ideals?")(body);
@@ -1850,7 +1886,7 @@
             C.bushido.skill = s;
             C.skills[s] = (C.skills[s] || 0) + 1;
             save();
-          });
+          }, { only: BUSHIDO_DIVERGENT_SKILLS });
         }
       } },
 
@@ -2052,7 +2088,7 @@
           C.answers.parent_opinion.skill = s;
           C.skills[s] = (C.skills[s] || 0) + 1;
           save();
-        });
+        }, { atZero: true });
       } },
 
     { id: "heritage", n: 18, label: "Heritage", title: function () { return qText(18) || "Family Heritage"; },
@@ -2077,7 +2113,7 @@
             C.answers.raised_skill = sk;
             C.skills[sk] = (C.skills[sk] || 0) + 1;
             save();
-          });
+          }, { atZero: true });
           return;
         }
         var keys = Object.keys(HERITAGES);
@@ -2910,13 +2946,44 @@
     });
     body.appendChild(wrap);
   }
-  function skillPicker(body, current, onPick) {
+  /* Several questions grant a skill rank but restrict what may be chosen, and
+     the restriction is part of the rule rather than a nicety:
+
+       opts.atZero  the book's "one skill currently at rank 0" (questions 7 and
+                    17, and their Path of Waves counterparts). The skill this
+                    step itself raised is already at 1 by the time the list is
+                    drawn, so `current` is always kept in view — otherwise the
+                    answer would vanish the moment it was given.
+       opts.only    an explicit list, as question 8's divergent attitude allows
+                    only Commerce, Labor, Medicine, Seafaring, Skulduggery or
+                    Survival.
+
+     Ranks counted here are the running total, so a skill raised by the clan,
+     family or school no longer qualifies for a rank-0 grant. */
+  // Core Rulebook p. 91: a character who diverges from common beliefs about
+  // honourable behaviour gains a rank in one of these six, "to reflect past
+  // behavior that was unbefitting of a samurai".
+  var BUSHIDO_DIVERGENT_SKILLS =
+    ["commerce", "labor", "medicine", "seafaring", "skulduggery", "survival"];
+
+  function skillPicker(body, current, onPick, opts) {
+    opts = opts || {};
+    var d = computed();
     var items = [];
     Object.keys(SKILL_GROUPS).forEach(function (g) {
       SKILL_GROUPS[g].forEach(function (s) {
+        if (opts.only && opts.only.indexOf(s) < 0 && s !== current) return;
+        var rank = (d.skills && d.skills[s]) || 0;
+        if (opts.atZero && s !== current && rank > 0) return;
         items.push({ value: s, label: SKILL_LABEL[s], meta: cap(g) });
       });
     });
+    if (opts.atZero) {
+      var n = document.createElement("p");
+      n.className = "muted small";
+      n.textContent = "Only skills you have no ranks in are listed.";
+      body.appendChild(n);
+    }
     pickList(body, items, current, function (v) { onPick(v); render(); });
   }
   function ringLine(obj) {
@@ -3012,7 +3079,12 @@
         }, []).concat(sch.school_ability ? [sch.school_ability] : [])),
         peculiarities: refs(heldPeculiarities()),
         titles: [], bonds: [], signature_scrolls: [],
-        gear: refs(C.starting_item ? [C.starting_item] : []),
+        gear: refs(C.starting_item ? [C.starting_item] : []).concat(
+          grantedGear().map(function (g) {
+            // custom, because the build resolves a bare name against the
+            // compendium and an item that is not yet defined cannot resolve
+            return { name: g.name, custom: true, text: g.note };
+          })),
         advancements: []
       }]
     };
@@ -3219,6 +3291,7 @@
 
     var advantages = heldPeculiarities();
     var techs = wipTechniques();
+    var gear = grantedGear();
     var answered = answeredQuestions();
 
     el("wip").innerHTML =
@@ -3246,6 +3319,17 @@
         : "") +
       (techs.length
         ? '<h4 class="field-label">Techniques</h4>' + chipRow(techs, "tech")
+        : "") +
+      // Gear a rule confers without naming it. Shown with its own marker
+      // because it is an open item: the character has it, and what it is has
+      // still to be settled with the GM.
+      (gear.length
+        ? '<h4 class="field-label">Granted, needs defining</h4>' +
+          '<div class="tagrow">' + gear.map(function (g) {
+            return '<span class="chip needs-def has-tip" data-tip="' +
+              esc(g.name) + '" data-why="' + esc(g.note) + '">' +
+              esc(g.name) + "</span>";
+          }).join("") + "</div>"
         : "") +
       (answered.length
         ? '<details class="wip-answers"><summary>Answered so far' +
