@@ -872,9 +872,12 @@ def emit_pages(cx):
     out = os.path.join(ROOT, "characters")
     os.makedirs(out, exist_ok=True)
     # drop stubs for characters whose source is gone, or coverage.py will
-    # (rightly) fail on a page with no character behind it
+    # (rightly) fail on a page with no character behind it. The hand-written
+    # pages that live in this directory are not stubs and must survive; the
+    # sweep silently deleted the relationship map the first time it ran.
+    KEEP = {"index.html", "map.html"}
     for stale in glob.glob(os.path.join(out, "*.html")):
-        if os.path.basename(stale) != "index.html":
+        if os.path.basename(stale) not in KEEP:
             os.remove(stale)
     cx.row_factory = sqlite3.Row
     n = 0

@@ -432,6 +432,7 @@
     c.answers.accoutrement = ans("step14", "accoutrement");
     c.answers.stress_reaction = ans("step15", "stress");
     c.answers.relationships = ans("step16", "relations");
+    c.answers.lord_name = ans("step5", "lord_name");
     c.answers.parent_opinion.description = ans("step17", "parents_pov");
     c.answers.heritage = ans("step18", "heritage_name") || null;
     c.answers.death = ans("step20", "death");
@@ -3685,7 +3686,10 @@
         template: isCore() ? "core" : "pow", generated: false,
         steps: {
           step4: { answers: { stand_out: a.standout_quality, ring: C.standout_ring }, picks: {} },
-          step5: { answers: { social_giri: a.giri }, picks: {} },
+          // The lord's name is asked for at question 5 and is the one named
+          // person in a giri, so it is worth keeping as a field rather than
+          // only inside the prose. Foundry has no key for it either.
+          step5: { answers: { social_giri: a.giri, lord_name: a.lord_name }, picks: {} },
           step6: { answers: { social_ninjo: a.ninjo }, picks: {} },
           step7: { answers: { clan_relations: a.clan_relationship.text }, picks: {} },
           step8: { answers: { tenet_paramount: C.bushido.paramount,

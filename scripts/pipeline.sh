@@ -69,6 +69,7 @@ python3 scripts/build.py
 # name_tables.py keys off the clan, family and school data the build just wrote.
 python3 scripts/heritage_tables.py | tail -1
 python3 scripts/name_tables.py | tail -1
+python3 scripts/relationship_map.py | tail -2
 
 # The source audit reads the catalog and the resolved corpus text the two steps
 # above produce, and writes data/audit.js for the Audit section. It only reads

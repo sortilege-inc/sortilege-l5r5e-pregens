@@ -119,8 +119,12 @@ def main():
     if all(t in handled for t in on_actors):
         print("             every type is extracted")
 
+    # The hand-written pages in characters/ are not character stubs, so they are
+    # not expected to have a source behind them. Kept in step with build.py's
+    # own KEEP set: both gates treated the relationship map as a stray stub.
+    HANDWRITTEN = {"index", "map"}
     pages = {os.path.basename(p)[:-5] for p in
-             glob.glob(os.path.join(ROOT, "characters", "*.html"))} - {"index"}
+             glob.glob(os.path.join(ROOT, "characters", "*.html"))} - HANDWRITTEN
     slugs = {r["slug"] for r in cx.execute("SELECT slug FROM character")}
     for s in sorted(slugs - pages):
         fail.append(f"{s}: no generated page in characters/")
