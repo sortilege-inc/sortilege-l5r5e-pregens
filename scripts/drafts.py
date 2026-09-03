@@ -455,6 +455,31 @@ def cmd_set(a):
     write(row, full, body, a.editor)
 
 
+def cmd_delete(a):
+    """Take a draft off the table. It goes for everyone, and there is no undo:
+    the table is not in git and nothing keeps a copy. So this prints what it is
+    about to remove and refuses without --yes."""
+    row = resolve(a.who)
+    status, full = call("/drafts/" + row["id"])
+    if status != 200:
+        sys.exit(f"{status}: {full.get('error')}")
+    ch = (full.get("body") or {}).get("character") or {}
+    ans = sum(1 for v in (ch.get("answers") or {}).values()
+              if v not in ("", None, [], {}))
+    print(f"{full['name']}  ({row['id']}, rev {full['rev']}, "
+          f"last touched {ago(full['updated'])}"
+          f"{' by ' + full['editor'] if full.get('editor') else ''})")
+    print(f"  {ch.get('clan') or 'no clan'} / {ch.get('school') or 'no school'}"
+          f" · {ans} answers · {len(ch.get('choices') or {})} choices")
+    if not a.yes:
+        print("\nNot deleted. Add --yes to remove it from the table for everyone.")
+        return
+    status, res = call("/drafts/" + row["id"], "DELETE")
+    if status != 200:
+        sys.exit(f"{status}: {res.get('error')}")
+    print("  deleted from the table.")
+
+
 def cmd_watch(a):
     """Follow the table while somebody else works in it."""
     seen = {r["id"]: r for r in listing()}
@@ -508,6 +533,10 @@ def main():
     k.add_argument("--apply", action="store_true")
     k.add_argument("--editor", default="Claude")
     k.set_defaults(fn=cmd_pick)
+
+    x = sub.add_parser("delete", help="remove a draft from the table for everyone")
+    x.add_argument("who"); x.add_argument("--yes", action="store_true")
+    x.set_defaults(fn=cmd_delete)
 
     w = sub.add_parser("watch", help="print changes as other people make them")
     w.add_argument("--seconds", type=int, default=300)
