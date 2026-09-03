@@ -25,7 +25,7 @@ Writes data/chargen/heritages.js (window.L5R_HERITAGES).
 
     python3 scripts/heritage_tables.py
 """
-import json, os, re, sys
+import glob, json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from generate_pregen import SKILL_LABEL
@@ -473,6 +473,23 @@ def attach_requirements(key, table):
     return problems
 
 
+def errata_touching_heritages(names):
+    """Errata that correct a heritage table or one of its entries.
+
+    This reads the corpus files as written, not the composed corpus, which is
+    only safe while no errata corrects a heritage — and today none does. Rather
+    than leave that as luck, it is checked: the day an errata does correct one,
+    this says so instead of quietly reading the pre-errata text.
+    """
+    hits = []
+    for path in sorted(glob.glob(os.path.join(DSL, "*errata*.ttrpg"))):
+        text = open(path, encoding="utf-8").read()
+        for m in re.finditer(r'(?:MODIFY|OVERRIDE)\s+\^"([^"]+)"', text):
+            if m.group(1) in names:
+                hits.append((os.path.basename(path), m.group(1)))
+    return hits
+
+
 def main():
     if not os.path.isdir(DSL):
         sys.exit(f"DSL corpus not found at {DSL} — set L5R_DSL")
@@ -530,6 +547,17 @@ def main():
                       f"{len(sub['ranges'])} range — {sub['ranges'][0]['text']!r}")
 
     print(f"requirements: {nreq} across {nentries} entries")
+
+    names = {t["name"] for t in tables.values()} | {
+        e["name"] for t in tables.values() for e in t["entries"]}
+    touched = errata_touching_heritages(names)
+    if touched:
+        problems.append(
+            "an errata corrects a heritage, and this reads the corpus files as "
+            "written rather than the composed corpus: " +
+            ", ".join(f"{f} -> {n}" for f, n in touched) +
+            ". Read pipeline/dsl/l5r5e-resolved.ttrpg instead.")
+
     if problems:
         print(f"UNHANDLED heritage entries ({len(problems)}):")
         for p_ in problems:

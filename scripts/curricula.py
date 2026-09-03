@@ -131,10 +131,15 @@ def parse_advancement(body):
 
 
 def dedupe(entries):
-    """Errata EXTEND a title and restate its curriculum, and the synthesist
-    appends rather than replaces — Emerald Magistrate's seven entries arrive
-    three times over. Identical entries, so this is safe; it is reported as a
-    composition defect rather than passed on."""
+    """A guard, no longer a workaround.
+
+    Emerald Magistrate's seven curriculum entries used to arrive twenty-one
+    entries long: the 2019 and 2020 errata each restate the curriculum, and a
+    MODIFY carrying a block of rows appended them to the rows already there
+    instead of replacing them. That was two faults at once — the errata
+    restated DEF-level clauses inside a MODIFY body, and the synthesist could
+    not key a row child — and both are fixed. Kept because a duplicate is
+    cheap to drop and expensive to ship, and because it reports when it fires."""
     seen, out = set(), []
     for e in entries:
         k = (e["rank"], e["kind"], e["group"], norm(e["label"]))
