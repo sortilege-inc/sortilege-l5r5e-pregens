@@ -171,5 +171,12 @@
    "to": "Yogo Preserver School",
    "_why": "Shadowlands prints 'Yogo Preserver School'; the pack title is truncated."
   }
+ },
+ "title_name_corrections": {
+  "_comment": "The l5r5e-compendia-sortilege titles pack misspells one title; corrected at catalog load in scripts/build.py, so the site shows what the book prints and the compendium spelling never reaches a page. Verified against the source PDF. Delete an entry once the upstream pack is fixed.",
+  "Spirits hunter": {
+   "to": "Spirit Hunter",
+   "_why": "Deathly Turns p.20 prints 'Spirit Hunter' throughout ('spirit hunter (title)', 'the Spirit Hunter title', 'new title to bestow on spirit hunters'); 'Spirits hunter' appears nowhere in the book. The DSL corpus DEF is ^\"Spirit Hunter\"."
+  }
  }
 }

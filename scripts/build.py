@@ -189,6 +189,23 @@ def fix_school(name):
     return _SCHOOL_FIX.get(name, name)
 
 
+def title_name_corrections():
+    """Upstream pack typos in title names, fixed before anything sees them."""
+    src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+    return {k: v["to"] for k, v in (src.get("title_name_corrections") or {}).items()
+            if not k.startswith("_")}
+
+
+_TITLE_FIX = None
+
+
+def fix_title(name):
+    global _TITLE_FIX
+    if _TITLE_FIX is None:
+        _TITLE_FIX = title_name_corrections()
+    return _TITLE_FIX.get(name, name)
+
+
 def load_catalog(cx):
     index = json.load(open(os.path.join(CATDIR, "index.json")))
     full = {}
@@ -207,8 +224,9 @@ def load_catalog(cx):
             m = SCHOOL_CLAN_RE.match(e["name"])
             if "titles-" in pack and doc:
                 ability, award, tentries = parse_title(doc)
+                tname = fix_title(e["name"])
                 for ce in tentries:
-                    title_cur.append((norm(e["name"]), e["name"], ce["ordinal"],
+                    title_cur.append((norm(tname), tname, ce["ordinal"],
                                       ce["kind"], ce["group"], ce["label"],
                                       norm(ce["label"]), 1 if ce["prereq"] else 0,
                                       ability, award))
@@ -227,6 +245,8 @@ def load_catalog(cx):
             display = m.group("name") if m else e["name"]
             if pack.endswith("school-curriculum-l5r-sortilege") or "school-curriculum" in pack:
                 display = fix_school(display)
+            if "titles-" in pack:
+                display = fix_title(display)
             rows.append((
                 e["uuid"], pack, v["label"], v["type"], e["subType"] or v["type"],
                 display, norm(display),
