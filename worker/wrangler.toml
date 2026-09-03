@@ -8,6 +8,14 @@ compatibility_date = "2026-08-29"
 # (Cloudflare error 1042) if no route points at it.
 workers_dev = true
 
+# The shared draft store. `database_id` is filled in by scripts/deploy_worker.sh
+# the first time it runs, from `wrangler d1 create`; the placeholder is what
+# `wrangler dev --local` binds against, where the id is only a local key.
+[[d1_databases]]
+binding = "DB"
+database_name = "sortilege-l5r-drafts"
+database_id = "PLACEHOLDER-set-by-deploy_worker.sh"
+
 [vars]
 # Comma-separated origins allowed to call this Worker. The first is the
 # fallback CORS origin. The Creator is served from GitHub Pages; keep the
@@ -21,10 +29,14 @@ ALLOWED_ORIGIN = "https://sortilege-inc.github.io,http://localhost:8412"
 MODEL = "claude-haiku-4-5-20251001"
 MAX_TOKENS = "400"
 
-# Per-IP rate limit, requests per minute. Suggestions are one-at-a-time and
-# human-paced; anything faster is not a person filling in a character sheet.
+# Per-IP rate limits, requests per minute, counted separately per route.
+# Suggestions are one-at-a-time and human-paced; anything faster is not a person
+# filling in a character sheet. Draft syncing is an autosave plus a poll, so it
+# is legitimately much chattier and needs its own allowance.
 RATE_PER_MIN = "12"
+SYNC_PER_MIN = "120"
 
-# ANTHROPIC_API_KEY is a SECRET and is deliberately absent from this file.
-# Set it yourself, from your own shell:
+# ANTHROPIC_API_KEY and TABLE_KEY are SECRETS and are deliberately absent from
+# this file. Set them yourself, from your own shell:
 #   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put TABLE_KEY

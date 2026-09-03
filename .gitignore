@@ -25,3 +25,7 @@ worker/.wrangler/
 # The composed DSL corpus (synthesist output), rebuilt with --refresh-dsl.
 # The corpus itself lives in ~/Working/Titterpig DSL/titterpig-dsl-l5r5e.
 pipeline/dsl/
+
+# Local Worker secrets for `wrangler dev` (TABLE_KEY, ANTHROPIC_API_KEY).
+# The real ones live in Cloudflare's secret store, set by scripts/deploy_worker.sh.
+worker/.dev.vars

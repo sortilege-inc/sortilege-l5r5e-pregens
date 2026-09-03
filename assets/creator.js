@@ -23,6 +23,8 @@
   var LS_DRAFT = "sortilege.l5r.creator.draft";      // legacy single draft
   var LS_DRAFTS = "sortilege.l5r.creator.drafts";    // { activeId, drafts: {} }
   var LS_KEY = "sortilege.l5r.creator.apiKey";
+  var LS_TKEY = "sortilege.l5r.creator.tableKey";    // the shared-drafts key
+  var LS_EDITOR = "sortilege.l5r.creator.editor";    // who is editing, for labels
   var MODEL = "claude-haiku-4-5-20251001";
 
   var RINGS = ["air", "earth", "fire", "water", "void"];
@@ -319,7 +321,15 @@
 
   function save() {
     var d = STORE.drafts[STORE.activeId];
-    if (d) { d.character = C; d.updated = Date.now(); }
+    if (d) {
+      d.character = C;
+      d.updated = Date.now();
+      // `stamp` counts edits, so a push that is already in flight can tell
+      // whether anything changed underneath it. `dirty` is what the flusher
+      // looks for.
+      d.stamp = (d.stamp || 0) + 1;
+      if (d.shared) { d.dirty = true; flushSoon(); }
+    }
     persist();
     renderWip();
     renderNav();
@@ -355,7 +365,17 @@
   function removeDraft(id) {
     var d = STORE.drafts[id];
     if (!d) return;
-    if (!confirm("Delete “" + draftLabel(d) + "”? This cannot be undone.")) return;
+    var shared = d.shared && syncOn();
+    if (!confirm(shared
+          ? "Delete “" + draftLabel(d) + "” from the table?\n\nIt goes for " +
+            "everyone, not just this browser, and cannot be undone."
+          : "Delete “" + draftLabel(d) + "”? This cannot be undone.")) return;
+    if (shared) {
+      syncFetch("/drafts/" + encodeURIComponent(id), { method: "DELETE" })
+        .then(function (res) {
+          if (!res.ok) setStatus("could not delete from the table (" + res.status + ")");
+        });
+    }
     delete STORE.drafts[id];
     if (!Object.keys(STORE.drafts).length) { addDraft(); return; }
     if (STORE.activeId === id) STORE.activeId = Object.keys(STORE.drafts)[0];
@@ -462,31 +482,97 @@
     try { localStorage.setItem(LS_DRAFTS_OPEN, v ? "1" : "0"); } catch (e) { /* private mode */ }
   }
 
+  // The row that joins or leaves the table, and says what syncing is doing.
+  // Absent entirely when no Worker is configured, so a local-only build of the
+  // site does not advertise a feature it cannot offer.
+  function syncRow() {
+    if (!syncConfigured()) return "";
+    if (!syncOn()) {
+      return '<div class="syncrow">' +
+        '<span class="drafts-label">Shared drafts</span>' +
+        '<input type="password" id="sync-key" placeholder="table key" ' +
+          'autocomplete="off" spellcheck="false">' +
+        '<button type="button" class="draftnew" id="sync-join">Join</button>' +
+        '<span class="sync-status" id="sync-status">' + esc(syncStatus) + "</span>" +
+        '<span class="sync-hint">Drafts stay in this browser until you join. ' +
+        "With the key, everyone at the table sees and edits the same ones.</span>" +
+        "</div>";
+    }
+    var n = Object.keys(STORE.drafts).filter(function (id) {
+      return STORE.drafts[id].shared;
+    }).length;
+    return '<div class="syncrow on">' +
+      '<span class="drafts-label">Shared drafts</span>' +
+      "<span>" + n + " on the table</span>" +
+      '<input type="text" id="sync-editor" placeholder="your name" ' +
+        'value="' + esc(editorName) + '" autocomplete="off" maxlength="40">' +
+      '<button type="button" class="draftnew" id="sync-leave">Leave</button>' +
+      '<span class="sync-status" id="sync-status">' + esc(syncStatus) + "</span>" +
+      "</div>";
+  }
+
+  // Both versions are held and neither is thrown away, so this asks rather than
+  // picks. It is the only place the wizard interrupts to ask about syncing.
+  function conflictRows() {
+    return Object.keys(STORE.drafts).filter(function (id) {
+      return STORE.drafts[id].conflict;
+    }).map(function (id) {
+      var d = STORE.drafts[id];
+      var who = d.conflict.editor ? esc(d.conflict.editor) : "someone else";
+      return '<div class="syncconflict" data-id="' + id + '">' +
+        "<span><strong>" + esc(draftLabel(d)) + "</strong> was changed on the table by " +
+        who + " while you were editing it. Both versions are still here.</span>" +
+        '<button type="button" class="draftnew" data-keep="mine" data-id="' + id +
+          '">Keep mine</button>' +
+        '<button type="button" class="draftnew" data-keep="theirs" data-id="' + id +
+          '">Take theirs</button>' +
+        "</div>";
+    }).join("");
+  }
+
   function renderDrafts() {
+    // A poll rewrites this panel every twenty seconds. Doing that while
+    // somebody is typing their name into it would take the focus away
+    // mid-word, so a re-render defers to whoever is using the panel; the next
+    // save renders it anyway.
+    var focused = document.activeElement;
+    if (focused && focused.tagName === "INPUT" &&
+        el("drafts").contains(focused)) return;
+
     var ids = Object.keys(STORE.drafts).sort(function (a, b) {
       return STORE.drafts[b].updated - STORE.drafts[a].updated;
     });
     var active = STORE.drafts[STORE.activeId];
+    var shared = ids.filter(function (id) { return STORE.drafts[id].shared; }).length;
     var summary =
       '<summary class="drafts-sum">' +
         '<span class="drafts-label">Drafts</span>' +
         '<span class="ds-active">' + esc(active ? draftLabel(active) : "none") + "</span>" +
         '<span class="ds-n">' + ids.length + " here" +
+        (shared ? " · " + shared + " shared" : "") +
         (ARCHIVE.length ? " · " + ARCHIVE.length + " from Foundry" : "") +
         "</span>" +
       "</summary>";
     el("drafts").innerHTML = summary + '<div class="drafts-body">' +
+      syncRow() + conflictRows() +
       '<span class="drafts-label">Drafts</span>' +
       ids.map(function (id) {
         var d = STORE.drafts[id];
         var c = d.character || {};
         var n = draftProgress(c);
+        var mark = d.conflict ? " conflict" : (d.shared ? " shared" : "");
+        var tag = d.conflict ? " · needs a decision"
+                : d.shared ? (d.dirty ? " · saving" : " · shared") : "";
         return '<span class="draftchip' + (id === STORE.activeId ? " active" : "") +
-          '" data-id="' + id + '">' +
+          mark + '" data-id="' + id + '">' +
           '<button type="button" class="dc-open" data-id="' + id + '">' +
           esc(draftLabel(d)) +
           '<span class="dc-meta">' + esc(c.school || c.clan || "no clan yet") +
-          " · " + n + "/21</span></button>" +
+          " · " + n + "/21" + tag + "</span></button>" +
+          (syncOn() && !d.shared
+            ? '<button type="button" class="dc-share" data-id="' + id +
+              '" title="Put this draft on the table">↑</button>'
+            : "") +
           '<button type="button" class="dc-x" data-id="' + id + '" title="Delete">×</button>' +
           "</span>";
       }).join("") +
@@ -525,6 +611,431 @@
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".archivechip"), function (b) {
       b.addEventListener("click", function () { openArchiveDraft(b.getAttribute("data-slug")); });
     });
+    Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-share"), function (b) {
+      b.addEventListener("click", function (e) {
+        e.stopPropagation(); shareDraft(b.getAttribute("data-id"));
+      });
+    });
+    Array.prototype.forEach.call(el("drafts").querySelectorAll("[data-keep]"), function (b) {
+      b.addEventListener("click", function () {
+        resolveConflict(b.getAttribute("data-id"), b.getAttribute("data-keep"));
+      });
+    });
+
+    var kf = document.getElementById("sync-key");
+    var jb = document.getElementById("sync-join");
+    if (kf && jb) {
+      jb.addEventListener("click", function () { joinTable(kf.value); });
+      kf.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") { e.preventDefault(); joinTable(kf.value); }
+      });
+    }
+    var lb = document.getElementById("sync-leave");
+    if (lb) lb.addEventListener("click", leaveTable);
+    var nf = document.getElementById("sync-editor");
+    if (nf) {
+      nf.addEventListener("change", function () {
+        editorName = nf.value.trim();
+        try { localStorage.setItem(LS_EDITOR, editorName); } catch (e) { /* private mode */ }
+      });
+    }
+  }
+
+  /* ------------------------------------------------- shared drafts */
+
+  // Drafts used to live only in this browser's localStorage, so a character in
+  // progress belonged to whoever started it, on the machine they started it on.
+  // With a table key set, a draft is instead kept by the Worker (see
+  // worker/src/index.js) and anyone at the table can pick it up and carry on.
+  //
+  // localStorage stays the working copy — the wizard reads and writes it exactly
+  // as before, so editing is never waiting on the network and a dropped
+  // connection costs nothing. Syncing is a layer on top: push what changed,
+  // poll for what others changed.
+  //
+  // The one thing that cannot be handled quietly is two people saving the same
+  // draft. Every push says which revision it was based on and the Worker
+  // refuses it if that revision has moved on, so instead of one person's work
+  // vanishing, both versions survive and the second saver is asked which to
+  // keep.
+
+  var SYNC = (window.L5R_AI_PROXY || "").replace(/\/+$/, "");
+  var tableKey = "";
+  var editorName = "";
+  var syncStatus = "";     // one short line for the panel
+  var flushTimer = null;
+  var pollTimer = null;
+
+  try { tableKey = localStorage.getItem(LS_TKEY) || ""; } catch (e) { /* private mode */ }
+  try { editorName = localStorage.getItem(LS_EDITOR) || ""; } catch (e) { /* private mode */ }
+
+  function syncConfigured() { return !!SYNC; }
+  function syncOn() { return !!(SYNC && tableKey); }
+
+  function setStatus(t) {
+    syncStatus = t;
+    var n = document.getElementById("sync-status");
+    if (n) n.textContent = t;
+  }
+
+  function syncFetch(path, opts) {
+    opts = opts || {};
+    opts.headers = { "x-table-key": tableKey };
+    if (opts.body) opts.headers["content-type"] = "application/json";
+    return fetch(SYNC + path, opts).then(function (r) {
+      return r.text().then(function (t) {
+        var body = {};
+        try { body = t ? JSON.parse(t) : {}; } catch (e) { /* not JSON */ }
+        return { ok: r.ok, status: r.status, body: body };
+      });
+    }, function () {
+      return { ok: false, status: 0, body: {} };   // offline; not an error to shout about
+    });
+  }
+
+  // What goes over the wire. The server stores this verbatim and never looks
+  // inside it, so the wizard's shape can keep changing without a migration.
+  function draftPayload(d) {
+    return { rev: d.rev || 0, name: draftLabel(d), editor: editorName,
+             body: { character: d.character, fromArchive: d.fromArchive || null } };
+  }
+
+  // `stamp` is bumped by every edit. A push clears the dirty flag only if no
+  // edit landed while it was in flight — otherwise typing during a save would
+  // be marked as saved and then never sent.
+  function pushDraft(id) {
+    var d = STORE.drafts[id];
+    if (!d || !syncOn() || !d.shared || d.conflict) return Promise.resolve();
+    var stamp = d.stamp || 0;
+    return syncFetch("/drafts/" + encodeURIComponent(id),
+                     { method: "PUT", body: JSON.stringify(draftPayload(d)) })
+      .then(function (res) {
+        if (res.ok) {
+          d.rev = res.body.rev;
+          d.updated = res.body.updated;
+          if ((d.stamp || 0) === stamp) d.dirty = false;
+          setStatus("saved to the table");
+        } else if (res.status === 409) {
+          flagConflict(id, res.body.current);
+        } else if (res.status === 403) {
+          setStatus("the table key was rejected");
+        } else if (res.status === 0) {
+          setStatus("offline — will save when you are back");
+        } else {
+          setStatus("could not save (" + res.status + ")");
+        }
+        persist();
+        renderDrafts();
+      });
+  }
+
+  function flushSoon() {
+    if (!syncOn()) return;
+    if (flushTimer) clearTimeout(flushTimer);
+    setStatus("saving…");
+    flushTimer = setTimeout(flushNow, 1200);
+  }
+
+  function flushNow() {
+    flushTimer = null;
+    if (!syncOn()) return Promise.resolve();
+    var ids = Object.keys(STORE.drafts).filter(function (id) {
+      var d = STORE.drafts[id];
+      return d.shared && d.dirty && !d.conflict;
+    });
+    return Promise.all(ids.map(pushDraft));
+  }
+
+  function flagConflict(id, current) {
+    var d = STORE.drafts[id];
+    if (!d || !current) return;
+    // Hold both versions and stop pushing. Resolving is the author's call —
+    // guessing here is exactly how the losing edit disappears.
+    d.conflict = current;
+    d.dirty = false;
+    setStatus("“" + draftLabel(d) + "” was changed by someone else");
+  }
+
+  function resolveConflict(id, keep) {
+    var d = STORE.drafts[id];
+    if (!d || !d.conflict) return;
+    var theirs = d.conflict;
+    delete d.conflict;
+    if (keep === "theirs") {
+      d.character = remoteCharacter(theirs.body);
+      d.rev = theirs.rev;
+      d.updated = theirs.updated;
+      d.dirty = false;
+      if (id === STORE.activeId) C = activeChar();
+      setStatus("took the version from the table");
+      persist();
+      render();
+      return;
+    }
+    // Keep mine: rebase onto their revision so the next push is accepted.
+    d.rev = theirs.rev;
+    d.dirty = true;
+    persist();
+    renderDrafts();
+    flushNow();
+  }
+
+  // A draft off the table was written by another browser, possibly running an
+  // older build of this page, so it cannot be trusted to have every field the
+  // wizard reads. Anything absent falls back to what a new character would
+  // have; anything the remote carries that we do not recognise is kept, so a
+  // newer build's work is not stripped by an older one.
+  //
+  // Without this a single missing key threw inside renderDrafts and took the
+  // whole drafts panel down — the one control you would need to get out of it.
+  function plain(v) {
+    return !!v && typeof v === "object" && !Array.isArray(v);
+  }
+  function withDefaults(remote, base) {
+    if (!plain(remote) || !plain(base)) return remote === undefined ? base : remote;
+    var out = {};
+    Object.keys(base).forEach(function (k) { out[k] = withDefaults(remote[k], base[k]); });
+    Object.keys(remote).forEach(function (k) { if (!(k in out)) out[k] = remote[k]; });
+    return out;
+  }
+  function remoteCharacter(body) {
+    return withDefaults((body && body.character) || {}, newCharacter());
+  }
+
+  // Take a draft as the server has it. Never overwrites local work: a draft
+  // with unsent edits, or one already in conflict, is left alone.
+  function adoptRemote(r) {
+    var d = STORE.drafts[r.id];
+    if (d && (d.dirty || d.conflict)) return;
+    if (!d) d = STORE.drafts[r.id] = { id: r.id };
+    d.shared = true;
+    d.rev = r.rev;
+    d.updated = r.updated;
+    d.editor = r.editor || "";
+    d.character = remoteCharacter(r.body);
+    if (r.body && r.body.fromArchive) d.fromArchive = r.body.fromArchive;
+    if (r.id === STORE.activeId) C = activeChar();
+  }
+
+  function pullDrafts() {
+    if (!syncOn()) return Promise.resolve();
+    return syncFetch("/drafts", {}).then(function (res) {
+      if (res.status === 403) { setStatus("the table key was rejected"); return; }
+      if (!res.ok) {
+        if (res.status === 0) setStatus("offline");
+        return;
+      }
+      var list = res.body.drafts || [];
+      var onServer = {};
+      var stale = [];
+      list.forEach(function (r) {
+        onServer[r.id] = true;
+        var d = STORE.drafts[r.id];
+        // The list carries revisions, not bodies — a poll every few seconds
+        // should not drag every character across the wire. Only what actually
+        // moved is fetched in full.
+        if (!d || (d.rev !== r.rev && !d.dirty && !d.conflict)) stale.push(r.id);
+      });
+
+      // A shared draft that is no longer on the server was deleted by someone
+      // else. One with unsent edits is kept: it is not gone, it is not up yet.
+      var dropped = 0;
+      Object.keys(STORE.drafts).forEach(function (id) {
+        var d = STORE.drafts[id];
+        if (d.shared && d.rev && !onServer[id] && !d.dirty && !d.conflict) {
+          delete STORE.drafts[id];
+          dropped++;
+        }
+      });
+
+      return Promise.all(stale.map(function (id) {
+        return syncFetch("/drafts/" + encodeURIComponent(id), {}).then(function (r) {
+          if (r.ok && r.body && r.body.id) adoptRemote(r.body);
+        });
+      })).then(function () {
+        // Said before anything returns early: emptying the table used to leave
+        // the panel reporting whatever it had been doing before, which read as
+        // if the deletion had not happened.
+        if (stale.length || dropped) {
+          setStatus(stale.length + " updated" +
+                    (dropped ? ", " + dropped + " deleted" : "") + " on the table");
+        } else if (!syncStatus || syncStatus === "offline") {
+          setStatus("in step with the table");
+        }
+        // The wizard always has a draft open. If the last one was deleted by
+        // someone else, this browser starts a fresh local one rather than
+        // rendering nothing.
+        if (!Object.keys(STORE.drafts).length) { addDraft(); return; }
+        if (!STORE.drafts[STORE.activeId]) {
+          STORE.activeId = Object.keys(STORE.drafts)[0];
+        }
+        C = activeChar();
+        persist();
+        if (stale.length || dropped) render();
+        else renderDrafts();
+      });
+    });
+  }
+
+  function shareDraft(id) {
+    var d = STORE.drafts[id];
+    if (!d || !syncOn()) return;
+    d.shared = true;
+    d.rev = 0;            // 0 means "I believe this is new"
+    d.dirty = true;
+    persist();
+    renderDrafts();
+    pushDraft(id);
+  }
+
+  // Key order is not meaningful, and two browsers building the same character
+  // will not agree on it, so a plain JSON.stringify would report differences
+  // that are not there.
+  function canonical(v) {
+    if (Array.isArray(v)) return "[" + v.map(canonical).join(",") + "]";
+    if (plain(v)) {
+      return "{" + Object.keys(v).sort().map(function (k) {
+        return JSON.stringify(k) + ":" + canonical(v[k]);
+      }).join(",") + "}";
+    }
+    return JSON.stringify(v === undefined ? null : v);
+  }
+
+  function joinTable(key) {
+    key = (key || "").trim();
+    if (!key) return;
+    var previous = tableKey;
+    tableKey = key;
+    // Bodies as well as revisions: joining reconciles this browser against the
+    // table in one pass, and it cannot tell whether a draft it already has is
+    // the same as the table's copy without seeing both.
+    return syncFetch("/drafts?full=1", {}).then(function (res) {
+      if (res.status === 403) {
+        tableKey = previous;
+        setStatus("that key was not accepted");
+        renderDrafts();
+        return;
+      }
+      if (!res.ok) {
+        tableKey = previous;
+        setStatus(res.status === 0 ? "could not reach the table" : "error " + res.status);
+        renderDrafts();
+        return;
+      }
+      try { localStorage.setItem(LS_TKEY, tableKey); } catch (e) { /* private mode */ }
+
+      var onTable = {};
+      (res.body.drafts || []).forEach(function (r) { onTable[r.id] = r; });
+
+      // A draft this browser has already had on the table — before leaving, or
+      // on another visit — is re-attached rather than offered up as new.
+      // Treating it as new made its own existing row reject the write, so
+      // rejoining used to raise a conflict against yourself on every draft.
+      var reattached = 0;
+      Object.keys(STORE.drafts).forEach(function (id) {
+        var r = onTable[id];
+        if (!r) return;
+        var d = STORE.drafts[id];
+        d.shared = true;
+        d.rev = r.rev;
+        d.dirty = false;
+        reattached++;
+        // Carried on with while away from the table? Then there really are two
+        // versions, and that is the one thing worth interrupting for.
+        if (canonical(d.character) !== canonical(remoteCharacter(r.body))) {
+          flagConflict(id, r);
+        }
+      });
+
+      var mine = Object.keys(STORE.drafts).filter(function (id) {
+        return !STORE.drafts[id].shared && !onTable[id];
+      });
+      // Joining should not silently publish whatever is lying around in this
+      // browser, so the local drafts go up only if asked for. Anything left
+      // behind can still be shared one at a time from its own chip.
+      if (mine.length && confirm(
+            "Joined. Put your " + mine.length + " local draft" +
+            (mine.length === 1 ? "" : "s") + " on the table as well, so others " +
+            "can edit them?\n\nYou can also share them one at a time later.")) {
+        mine.forEach(function (id) {
+          STORE.drafts[id].shared = true;
+          STORE.drafts[id].rev = 0;
+          STORE.drafts[id].dirty = true;
+        });
+      }
+
+      // Everything on the table this browser has never seen.
+      Object.keys(onTable).forEach(function (id) {
+        if (!STORE.drafts[id]) adoptRemote(onTable[id]);
+      });
+
+      persist();
+      startPolling();
+      setStatus(reattached ? "rejoined the table" : "joined the table");
+      render();
+      return flushNow();
+    });
+  }
+
+  function leaveTable() {
+    if (!confirm("Stop syncing with the table?\n\nShared drafts stay on the table " +
+                 "for everyone else. This browser keeps its own copy of them.")) return;
+    tableKey = "";
+    try { localStorage.removeItem(LS_TKEY); } catch (e) { /* private mode */ }
+    Object.keys(STORE.drafts).forEach(function (id) {
+      var d = STORE.drafts[id];
+      delete d.shared; delete d.rev; delete d.dirty; delete d.conflict;
+    });
+    stopPolling();
+    setStatus("");
+    persist();
+    renderDrafts();
+  }
+
+  function startPolling() {
+    stopPolling();
+    if (!syncOn()) return;
+    pollTimer = setInterval(function () {
+      if (!document.hidden) pullDrafts();
+    }, 20000);
+  }
+  function stopPolling() {
+    if (pollTimer) { clearInterval(pollTimer); pollTimer = null; }
+  }
+
+  function initSync() {
+    if (!syncConfigured()) return;
+
+    // Registered whether or not a table has been joined yet, because joining
+    // happens in the middle of a session: hanging these off syncOn() at load
+    // meant the first join of a session got the poll and nothing else, so
+    // coming back to the tab did not refresh and the last edits before closing
+    // it were never sent.
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden) pullDrafts();
+    });
+    // keepalive, because a normal fetch is cancelled when the page goes away —
+    // and this is exactly the save that matters, the one at the end.
+    window.addEventListener("pagehide", function () {
+      if (!syncOn()) return;
+      Object.keys(STORE.drafts).forEach(function (id) {
+        var d = STORE.drafts[id];
+        if (!d.shared || !d.dirty || d.conflict) return;
+        try {
+          fetch(SYNC + "/drafts/" + encodeURIComponent(id), {
+            method: "PUT", keepalive: true,
+            headers: { "content-type": "application/json", "x-table-key": tableKey },
+            body: JSON.stringify(draftPayload(d))
+          });
+        } catch (e) { /* going away anyway */ }
+      });
+    });
+
+    if (!syncOn()) return;
+    // Anything typed while offline is sent before asking what changed, so a
+    // pull cannot come back and overwrite work that was never uploaded.
+    flushNow().then(pullDrafts);
+    startPolling();
   }
 
   /* ---------------------------------------------------------- AI */
@@ -3421,6 +3932,7 @@
       render();
     });
     render();
+    initSync();
   }
 
   function boot() { loadLocalKey(init); }

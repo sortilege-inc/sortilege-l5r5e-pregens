@@ -1,11 +1,17 @@
 #!/usr/bin/env bash
-# Deploy the Creator's Anthropic shim and wire its URL into the site.
+# Deploy the Creator's Worker — the Anthropic shim and the shared draft store —
+# and wire its URL into the site.
 #
 #   ./scripts/deploy_worker.sh
 #
-# The key is piped straight from .env into `wrangler secret put`, so it is never
-# printed, never pasted, and never written anywhere but Cloudflare's secret
-# store. Run this yourself — it publishes.
+# Secrets are piped straight from .env into `wrangler secret put`, so they are
+# never printed, never pasted, and never written anywhere but Cloudflare's
+# secret store. Run this yourself — it publishes.
+#
+# The one exception is the table key on the run that creates it: you cannot hand
+# a key to your players without seeing it once, so a generated key is printed
+# and appended to .env. Set L5R_TABLE_KEY there yourself if you would rather
+# choose it.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 ROOT="$PWD"
@@ -13,13 +19,64 @@ ROOT="$PWD"
 [ -f .env ] || { echo "no .env here"; exit 1; }
 grep -q '^ANTHROPIC_API_KEY=' .env || { echo "no ANTHROPIC_API_KEY in .env"; exit 1; }
 
+# ---------------------------------------------------------------- table key
+if ! grep -q '^L5R_TABLE_KEY=' .env; then
+  # Words, not hex: this gets read down a table or typed off a phone screen.
+  GEN=$(python3 - <<'PY'
+import secrets
+words = ("crane crab lion phoenix scorpion dragon unicorn mantis heron sparrow "
+         "iron jade amber winter river stone thunder lantern paper willow "
+         "quiet steady hidden distant patient").split()
+print("-".join(secrets.choice(words) for _ in range(4)))
+PY
+)
+  printf 'L5R_TABLE_KEY=%s\n' "$GEN" >> .env
+  echo "==> no L5R_TABLE_KEY in .env, so one was generated and added there."
+  echo
+  echo "    The table key is:  $GEN"
+  echo
+  echo "    Give it to anyone who should be able to edit drafts. It is the only"
+  echo "    thing standing between a public web page and your working drafts, so"
+  echo "    do not put it on the site itself."
+  echo
+fi
+
 cd worker
 
-# Piped straight out of .env: the value never lands in a variable, an argument,
-# or the terminal. Wrangler reads the secret from stdin.
-echo "==> setting the secret (piped from .env; never displayed)"
+# ------------------------------------------------------------------ D1
+# The draft store. Created once; the id is written into wrangler.toml so the
+# next run finds it rather than making a second database.
+if grep -q '^database_id = "PLACEHOLDER' wrangler.toml; then
+  echo "==> creating the D1 database"
+  CREATE_OUT=$(npx wrangler d1 create sortilege-l5r-drafts 2>&1 | tee /dev/stderr)
+  DBID=$(printf '%s' "$CREATE_OUT" | grep -oE '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}' | head -1)
+  if [ -z "$DBID" ]; then
+    echo "Could not read the database id out of wrangler's output."
+    echo "Put it in worker/wrangler.toml under [[d1_databases]] and re-run."
+    exit 1
+  fi
+  python3 - "$DBID" <<'PY'
+import re, sys
+p = "wrangler.toml"
+s = open(p).read()
+s = re.sub(r'^database_id = "PLACEHOLDER[^"]*"$',
+           'database_id = "%s"' % sys.argv[1], s, flags=re.M)
+open(p, "w").write(s)
+print(f"wrangler.toml: database_id = {sys.argv[1]}")
+PY
+fi
+
+echo "==> applying the schema (safe to repeat; every statement is IF NOT EXISTS)"
+npx wrangler d1 execute sortilege-l5r-drafts --remote --file schema.sql --yes
+
+# --------------------------------------------------------------- secrets
+# Piped straight out of .env: the values never land in a variable, an argument,
+# or the terminal. Wrangler reads each secret from stdin.
+echo "==> setting the secrets (piped from .env; never displayed)"
 grep '^ANTHROPIC_API_KEY=' ../.env | cut -d= -f2- | tr -d '\r\n' \
   | npx wrangler secret put ANTHROPIC_API_KEY
+grep '^L5R_TABLE_KEY=' ../.env | cut -d= -f2- | tr -d '\r\n' \
+  | npx wrangler secret put TABLE_KEY
 
 echo
 echo "==> deploying"

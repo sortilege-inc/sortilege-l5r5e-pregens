@@ -736,6 +736,45 @@ p.cur-meta{ margin:0 0 0.5rem; }
 .btn.promote{ background:var(--jade); border-color:#3d6248; }
 .btn.promote:hover:not(:disabled){ background:#3d6248; }
 
+/* Shared drafts. The row spans the panel so the table's state reads as one
+   statement rather than as another chip among the drafts. */
+.syncrow{
+  display:flex; flex-wrap:wrap; align-items:center; gap:0.45rem; width:100%;
+  padding:0.45rem 0.55rem; margin-bottom:0.2rem;
+  border:1px dashed var(--gold-soft); border-radius:2px; background:var(--paper);
+}
+.syncrow.on{ border-style:solid; border-color:var(--jade); }
+.syncrow input{
+  font-family:var(--body); font-size:0.85rem; padding:0.28rem 0.5rem;
+  border:1px solid var(--edge); border-radius:2px; background:var(--paper-2);
+  color:var(--sumi); min-width:9rem;
+}
+.sync-status{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em;
+  font-size:0.6rem; color:var(--ink-dim); margin-left:auto;
+}
+.sync-hint{
+  width:100%; font-size:0.78rem; color:var(--ink-dim); line-height:1.4;
+}
+
+/* A conflict is the one thing here that must not be missable: it means two
+   people's work is outstanding and nobody has said which wins. */
+.syncconflict{
+  display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem; width:100%;
+  padding:0.5rem 0.6rem; margin-bottom:0.2rem;
+  border:1px solid var(--crimson); border-left-width:3px; border-radius:2px;
+  background:var(--crimson-soft); font-size:0.85rem; line-height:1.4;
+}
+.syncconflict span{ flex:1 1 16rem; }
+
+.draftchip.shared{ border-color:var(--jade); }
+.draftchip.conflict{ border-color:var(--crimson); box-shadow:0 0 0 1px var(--crimson); }
+.dc-share{
+  appearance:none; border:0; border-left:1px solid var(--edge); cursor:pointer;
+  background:none; color:var(--jade); padding:0 0.5rem; font-size:0.95rem;
+}
+.dc-share:hover{ background:var(--jade); color:#fff; }
+
 /* ------------------------------------------------------------ heritage step */
 .choice .ch-n{
   display:inline-block; margin-left:0.45em; opacity:0.6; font-size:0.9em;
