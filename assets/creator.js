@@ -1301,6 +1301,45 @@
     return b.join("\n");
   }
 
+  /* Which of the twenty questions each AI-assisted field answers, so a
+     suggestion can be handed the book's own advice for that question and not
+     just this file's instruction about register.
+
+     The advice is what the corpus calls GUIDANCE — the core rulebook's
+     walkthrough of each question, pp.88-98, carried through
+     l5r5e-0.4-core-character.ttrpg and into data/chargen/questions.js. It is
+     the only thing in the corpus that says what a good answer to "what does
+     your character long for" looks like, which is exactly what a suggestion
+     needs and previously never saw.
+
+     Core only. Path of Waves and Writ of the Wilds ask their own questions and
+     the book states no per-question advice for them, so their fields — past,
+     known_for, prized_possession, group_history, raised_by — are absent here
+     and get none rather than borrowing the core book's answer to a different
+     question. */
+  var FIELD_QUESTION = {
+    standout_quality: 4, giri: 5, ninjo: 6, clan_relationship: 7,
+    accomplishment: 9, challenge: 10, peace: 11, fear: 12,
+    mentor_relationship: 13, first_impression: 14, stress_reaction: 15,
+    relationships: 16, relationship_person: 16, parent_opinion: 17,
+    death: 20
+  };
+
+  // The Worker caps a request body, and the longest of these (question 5, the
+  // lord and giri) is over 5,000 characters on its own. Trimmed at a sentence
+  // so the model is never handed half a clause; the substance of each entry is
+  // at the front and the tails are lists of examples.
+  var GUIDANCE_MAX = 4000;
+
+  function questionGuidance(fieldKey) {
+    var n = FIELD_QUESTION[fieldKey];
+    if (!n || !isCore()) return "";
+    var g = ((QUESTIONS[String(n)] || {}).core || {}).guidance || "";
+    if (g.length <= GUIDANCE_MAX) return g;
+    var cut = g.lastIndexOf(". ", GUIDANCE_MAX);
+    return g.slice(0, cut > GUIDANCE_MAX / 2 ? cut + 1 : GUIDANCE_MAX);
+  }
+
   // Two routes to a suggestion. A key in this browser calls Anthropic directly;
   // otherwise the request goes to the Worker, which holds the key server-side.
   // The published site has no key of its own and must never be given one.
@@ -1321,13 +1360,24 @@
        character were the same image in different words. Two corrections: tell
        it what has already been offered, and send it in from a different angle. */
     var seen = (C.ai_history && C.ai_history[fieldKey]) || [];
+    /* Prepended to the user turn rather than the system prompt: it is reference
+       material, it is long, and the Worker's system ceiling is 4,000
+       characters — putting it there would have silently truncated the
+       instructions that follow it. */
+    var advice = questionGuidance(fieldKey);
+    var preamble = advice
+      ? "The rulebook's own guidance for this question, for what it asks and " +
+        "what a good answer does. Use it to decide what the answer should be " +
+        "about; do not quote it, restate it, or answer in its voice:\n\n" +
+        advice + "\n\n---\n\n"
+      : "";
     var user;
     if (sourceText && sourceText.trim()) {
       /* Rewriting what the player wrote. Their words are the content and the
          only content: the angle rotation and the "do not repeat yourself" list
          are both suppressed, because both exist to find NEW material and would
          fight the text they were handed. */
-      user = "Existing draft for context:\n" + characterContext() +
+      user = preamble + "Existing draft for context:\n" + characterContext() +
         "\n\nTHE PLAYER HAS WRITTEN THE ANSWER BELOW. This overrides every " +
         "instruction about what to write about, including any advantage or " +
         "disadvantage named above. Your job is only how it is written.\n\n" +
@@ -1338,7 +1388,7 @@
         "and do not change the subject. If it is already in the register, return " +
         "it close to unchanged rather than finding something to alter.";
     } else {
-      user = "Existing draft for context:\n" + characterContext(current) +
+      user = preamble + "Existing draft for context:\n" + characterContext(current) +
         "\n\nSuggest a single " + fieldKey.replace(/_/g, " ") + " for this character." +
         "\n\nApproach it as: " + ANGLES[Math.floor(Math.random() * ANGLES.length)] +
         ". Write that, rather than gesturing at it." +

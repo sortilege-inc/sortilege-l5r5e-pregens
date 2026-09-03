@@ -422,7 +422,10 @@ def main():
           f"  ({stats['gap']} without)")
     print(f"            {len(pec)}/253 peculiarities -> "
           f"{os.path.relpath(PEC_OUT, ROOT)} ({os.path.getsize(PEC_OUT)/1024:.1f} KB)")
-    print(f"            {len(questions)} chargen questions -> "
+    guided = sum(1 for q in questions.values()
+                 if (q.get("core") or {}).get("guidance"))
+    print(f"            {len(questions)} chargen questions "
+          f"({guided} with the book's guidance) -> "
           f"{os.path.relpath(QUESTION_OUT, ROOT)}")
     print(f"            {len(tenets)} clans' bushidō tenets -> "
           f"{os.path.relpath(TENET_OUT, ROOT)}")
@@ -568,6 +571,37 @@ def chargen_questions(corpus):
                     for r in (b.get("rows") or []) if r.get("label")]
             if rows:
                 entry[kw.lower()] = rows
+
+    # The book's own walkthrough of each question (core rulebook pp.88-98),
+    # carried as GUIDANCE entries named q04-… to q20- in
+    # l5r5e-0.4-core-character.ttrpg. The mechanical outcome of a question is
+    # stated in core-chargen.ttrpg and read above; this is the advice a player
+    # reads beside it, and it is the only thing in the corpus that says what a
+    # good answer to "what does your character long for" actually looks like.
+    #
+    # Only the core book has these. Path of Waves and Writ of the Wilds state
+    # their own questions but no per-question advice, so those modes get none
+    # rather than borrowing the core book's.
+    guided = 0
+    for o in walk(corpus):
+        if not isinstance(o, dict):
+            continue
+        name = o.get("name")
+        if not isinstance(name, str):
+            continue
+        m = re.match(r"^q(\d\d)-", name)
+        if not m or not o.get("text"):
+            continue
+        num = str(int(m.group(1)))
+        if num not in out or "core" not in out[num]:
+            continue
+        out[num]["core"]["guidance"] = o["text"].strip()
+        guided += 1
+    if not guided:
+        # Loud rather than silent: this went unnoticed once already, and a
+        # question with no guidance looks exactly like a question whose
+        # guidance was dropped on the way through.
+        print("    WARNING: no question GUIDANCE found in the composed corpus")
     return out
 
 
