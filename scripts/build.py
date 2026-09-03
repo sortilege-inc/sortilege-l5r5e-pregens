@@ -390,11 +390,19 @@ def emit_local_key():
 
 
 def archive_drafts(docs):
-    """Enough of each draft character for the Creator to pick it up.
+    """Enough of every character for the Creator to pick it up.
 
     Drafts exist in two places — Foundry's Draft folder, and the Creator's own
     browser storage — and a draft that only shows in one of them is a draft the
     author cannot find. This is the archive half, so the Creator can list both.
+
+    Promoted characters are here too, because a character does not stop needing
+    changes when it is promoted: a question answered thinly, a name settled
+    later, a heritage grant nobody had picked. `status` is what tells the two
+    apart, and `tier_count` is what tells the Creator how much of a promoted
+    one it may touch — a character Foundry holds at several XP tiers has
+    numbers this wizard did not derive and cannot re-derive, so only its prose
+    is editable (see scripts/apply_edit.py).
 
     Concept material rides along from the manifest rather than from the
     character source: it is authoring context, never part of the record, so it
@@ -402,14 +410,21 @@ def archive_drafts(docs):
     """
     concepts = (json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
                 .get("concepts") or {})
+    # `wizard` is a source-file key and not part of what the build derives, so
+    # it is read from the source rather than from the emitted doc.
+    wizards = {}
+    for p in sorted(glob.glob(os.path.join(SRC, "*.json"))):
+        d = json.load(open(p))
+        if d.get("wizard"):
+            wizards[d["slug"]] = d["wizard"]
     out = []
     for c in docs:
-        if c.get("status") != "draft":
-            continue
         t = c["tiers"][0]
         out.append({
             "slug": c["slug"], "name": c["name"], "campaign": c.get("campaign"),
             "portrait": c.get("portrait"),
+            "status": c.get("status"),
+            "tier_count": c.get("tier_count") or len(c["tiers"]),
             "identity": {"clan": c.get("clan"), "family": c.get("family"),
                          "school": c.get("school"), "role": c.get("role")},
             "rings": t.get("rings"),
@@ -417,8 +432,27 @@ def archive_drafts(docs):
                        for k in ("honor", "glory", "status", "giri", "ninjo",
                                  "bushido_tenets")},
             "peculiarities": [e["name"] for e in t.get("peculiarities", [])],
+            "notes": c.get("notes") or "",
+            # The wizard's own state, where the record has it. This is what
+            # makes an edit exact rather than a re-derivation that quietly
+            # loses the choices behind the numbers.
+            "wizard": wizards.get(c["slug"]),
+            # ...and the numbers themselves, so the Creator can check its
+            # reconstruction against them before an edit is allowed to write
+            # any of them. See mechanicsAgree() in assets/creator.js.
+            "skills": t.get("skills"),
+            "derived": t.get("derived"),
+            "money": t.get("money"),
+            "techniques": [e["name"] for e in t.get("techniques", [])],
+            "gear": [e["name"] for e in t.get("gear", [])],
             "twenty_questions": c.get("twenty_questions", {}),
-            "concept": concepts.get(c["slug"]) or "",
+            # Concept material is for making a character, and it is GM-facing:
+            # unpicked hooks, open questions, plot the player should not read.
+            # promote.py cuts it down before any of it becomes a bio, so a
+            # promoted character must not carry the raw thing into a file this
+            # site serves to anyone. Drafts keep theirs; the record is the bio.
+            "concept": (concepts.get(c["slug"]) or ""
+                        if c.get("status") == "draft" else ""),
         })
     return out
 

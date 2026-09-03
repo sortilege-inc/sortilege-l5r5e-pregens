@@ -336,6 +336,12 @@
     renderDrafts();
   }
 
+  // The draft the wizard is on, and whether it is an edit of a promoted
+  // character rather than a new one.
+  function activeDraft() { return STORE.drafts[STORE.activeId] || {}; }
+  function isEdit() { return activeDraft().kind === "edit"; }
+  function editSlug() { return isEdit() ? activeDraft().fromArchive : null; }
+
   function draftLabel(d) {
     var c = d.character || {};
     return c.name || "Unnamed draft";
@@ -398,6 +404,18 @@
   // the character stays in the archive file until it is exported again.
   function hydrate(a) {
     var c = newCharacter();
+    /* A record written by this wizard carries the state it was made from, so
+       hydrating is exact — the same character comes back, choices and all.
+       Everything after this is the path for records that predate that: the
+       Foundry actors, and the characters exported before `wizard` existed. It
+       reads what it can out of the answers, and what it cannot read is why an
+       edit is landed as a difference from what this produced rather than as a
+       replacement (see baselineFor(), and scripts/apply_edit.py). */
+    if (a.wizard) {
+      c = withDefaults(a.wizard, newCharacter());
+      c.concept = a.concept || "";
+      return c;
+    }
     var tq = (a.twenty_questions || {}).steps || {};
     function ans(step, key) {
       return ((tq[step] || {}).answers || {})[key] || "";
@@ -428,6 +446,11 @@
     c.answers.challenge = ans("step10", "difficulty");
     c.answers.peace = ans("step11", "calms");
     c.answers.fear = ans("step12", "worries");
+    // Question 13 exports as "<name> — <what they taught>", and hydrate read
+    // neither half, so opening an archive character lost its mentor entirely.
+    var m13 = ans("step13", "most_learn").split(" — ");
+    c.answers.mentor.name = (m13[0] || "").trim();
+    c.answers.mentor.text = m13.slice(1).join(" — ").trim();
     c.answers.first_impression = ans("step14", "first_sight");
     c.answers.accoutrement = ans("step14", "accoutrement");
     c.answers.stress_reaction = ans("step15", "stress");
@@ -454,9 +477,65 @@
     return c;
   }
 
-  function openArchiveDraft(slug) {
+  /* One of the two archive lists. Drafts are opened to be carried on with;
+     promoted characters are opened to be changed, which is a different thing
+     and says so — the record already exists and the edit is landed against it
+     rather than exported as a new file. */
+  function archiveList(heading, keep, mode) {
+    var rows = ARCHIVE.filter(keep);
+    if (!rows.length) return "";
+    return '<span class="drafts-label drafts-archive">' + esc(heading) + "</span>" +
+      '<div class="archive-list">' +
+      rows.map(function (a) {
+        var open = Object.keys(STORE.drafts).some(function (id) {
+          return STORE.drafts[id].fromArchive === a.slug;
+        });
+        var tiers = a.tier_count > 1 ? " · " + a.tier_count + " tiers" : "";
+        return '<button type="button" class="archivechip' +
+          (open ? " open" : "") + (mode === "edit" ? " promoted" : "") +
+          '" data-slug="' + esc(a.slug) + '" data-mode="' + mode + '"' +
+          (mode === "edit" && a.tier_count > 1
+            ? ' title="Foundry holds this one at ' + a.tier_count +
+              ' XP tiers, so only its prose is editable here"'
+            : "") + ">" +
+          esc(a.name) + '<span class="dc-meta">' +
+          esc(a.identity.school || a.identity.clan || "—") + tiers +
+          (open ? " · opened" : "") + "</span></button>";
+      }).join("") + "</div>";
+  }
+
+  /* A promoted character whose numbers this wizard did not derive. Foundry
+     holds it at several XP tiers, and tier 0 is what those were built from, so
+     a mechanical change to the base would leave tiers 1..N no longer following
+     from it. Its prose is still editable.
+
+     Nothing else needs to be out of reach, because an edit is landed as a
+     difference rather than as a replacement: see baselineFor() below. */
+  function proseOnly(a) {
+    return (a.tier_count || 1) > 1;
+  }
+
+  /* What the record looks like coming straight back out of the wizard, before
+     anybody has changed anything.
+
+     This is what makes an edit safe. Hydrating a record written before the
+     wizard carried its own state is a reconstruction, not a restoration: the
+     answers come back, but not the choices behind the numbers, so re-exporting
+     Shosuro Hisano gave Water 1 for her Water 2 and three techniques for her
+     four. Writing that back would have quietly undone her.
+
+     So scripts/apply_edit.py does not write what the wizard now says. It
+     writes the difference between what the wizard says now and what it said
+     the moment the record was opened — and a field nobody touched has no
+     difference, whatever the wizard managed to reconstruct of it. */
+  function baselineFor(a) {
+    try { return sourceFor(hydrate(a)); } catch (e) { return null; }
+  }
+
+  function openArchiveDraft(slug, mode) {
     var a = ARCHIVE.filter(function (x) { return x.slug === slug; })[0];
     if (!a) return;
+    var edit = mode === "edit";
     var existing = Object.keys(STORE.drafts).filter(function (id) {
       return STORE.drafts[id].fromArchive === slug;
     })[0];
@@ -467,11 +546,25 @@
       if (a.concept && !d.character.concept) { d.character.concept = a.concept; persist(); }
       switchDraft(existing); return;
     }
-    if (!confirm("Open “" + a.name + "” from the archive as a working draft?\n\n" +
-                 "It is copied into this browser; the archive file is not changed. " +
-                 "Export when you are done.")) return;
+    if (!confirm(edit
+          ? "Open “" + a.name + "” for editing?\n\n" +
+            (proseOnly(a)
+              ? "Foundry holds this character at " + a.tier_count + " XP tiers, " +
+                "whose numbers were built from this one — so only its prose " +
+                "can be changed here. Rings, skills, techniques and gear are " +
+                "left alone.\n\n"
+              : "") +
+            "Nothing is written until you land the edit with " +
+            "scripts/apply_edit.py, which shows you the change first."
+          : "Open “" + a.name + "” from the archive as a working draft?\n\n" +
+            "It is copied into this browser; the archive file is not changed. " +
+            "Export when you are done.")) return;
     var id = newId();
     STORE.drafts[id] = { id: id, updated: Date.now(), fromArchive: slug,
+                         kind: edit ? "edit" : "draft",
+                         proseOnly: edit && proseOnly(a),
+                         baseTiers: a.tier_count || 1,
+                         baseline: edit ? baselineFor(a) : null,
                          character: hydrate(a) };
     switchDraft(id);
   }
@@ -586,20 +679,10 @@
       }).join("") +
       '<button type="button" class="draftnew" id="draft-new">+ New</button>' +
       '<button type="button" class="draftnew" id="draft-dup">Duplicate</button>' +
-      (ARCHIVE.length
-        ? '<span class="drafts-label drafts-archive">From the archive</span>' +
-          '<div class="archive-list">' +
-          ARCHIVE.map(function (a) {
-            var open = Object.keys(STORE.drafts).some(function (id) {
-              return STORE.drafts[id].fromArchive === a.slug;
-            });
-            return '<button type="button" class="archivechip' +
-              (open ? " open" : "") + '" data-slug="' + esc(a.slug) + '">' +
-              esc(a.name) + '<span class="dc-meta">' +
-              esc(a.identity.school || a.identity.clan || "—") +
-              (open ? " · opened" : "") + "</span></button>";
-          }).join("") + "</div>"
-        : "") + "</div>";
+      archiveList("From the archive", function (a) { return a.status === "draft"; },
+                  "draft") +
+      archiveList("Promoted characters", function (a) { return a.status !== "draft"; },
+                  "edit") + "</div>";
 
     el("drafts").open = draftsOpen();
     el("drafts").addEventListener("toggle", function () {
@@ -617,7 +700,9 @@
     el("draft-new").addEventListener("click", addDraft);
     el("draft-dup").addEventListener("click", function () { duplicateDraft(STORE.activeId); });
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".archivechip"), function (b) {
-      b.addEventListener("click", function () { openArchiveDraft(b.getAttribute("data-slug")); });
+      b.addEventListener("click", function () {
+        openArchiveDraft(b.getAttribute("data-slug"), b.getAttribute("data-mode"));
+      });
     });
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-share"), function (b) {
       b.addEventListener("click", function (e) {
@@ -704,8 +789,21 @@
   // What goes over the wire. The server stores this verbatim and never looks
   // inside it, so the wizard's shape can keep changing without a migration.
   function draftPayload(d) {
+    var body = { character: d.character, fromArchive: d.fromArchive || null,
+                 // an edit of a promoted character is not a new character, and
+                 // everyone at the table should see which it is
+                 kind: d.kind || "draft", proseOnly: !!d.proseOnly,
+                 baseTiers: d.baseTiers || 1, baseline: d.baseline || null };
+    /* An edit rides with the document it exports to. Only the wizard can work
+       that out — computed() is what turns a clan, a family, a school and
+       twenty answers into rings and skills — so without this, landing an edit
+       would always need somebody to open the browser and press Copy, even for
+       a one-word change. With it, scripts/apply_edit.py can read the edit off
+       the table. Drafts do not carry one: they are promoted by download, and
+       every draft would pay for it. */
+    if (d.kind === "edit") body.source = sourceFor(d.character);
     return { rev: d.rev || 0, name: draftLabel(d), editor: editorName,
-             body: { character: d.character, fromArchive: d.fromArchive || null } };
+             body: body };
   }
 
   // `stamp` is bumped by every edit. A push clears the dirty flag only if no
@@ -822,6 +920,14 @@
     d.editor = r.editor || "";
     d.character = remoteCharacter(r.body);
     if (r.body && r.body.fromArchive) d.fromArchive = r.body.fromArchive;
+    if (r.body && r.body.kind) {
+      d.kind = r.body.kind;
+      d.proseOnly = !!r.body.proseOnly;
+      d.baseTiers = r.body.baseTiers || 1;
+      // whoever opened the record captured this; a second browser must not
+      // recompute it from its own hydrate and call that the starting point
+      if (r.body.baseline) d.baseline = r.body.baseline;
+    }
     if (r.id === STORE.activeId) C = activeChar();
   }
 
@@ -3219,8 +3325,25 @@
       done: function () { return has(C.answers.death); },
       render: textStep("death", "answers.death", "death", "The ending they would not regret…") },
 
-    { id: "export", n: 21, label: "Export", title: "Add to the Archive",
-      desc: "The creator emits this repo's own character source format. Save it as <code>src/characters/&lt;slug&gt;.json</code>, then run <code>./scripts/pipeline.sh</code> — the build resolves every name to the compendium's verbatim rules text and generates the dossier, the coverage entry, and a playable sheet.",
+    { id: "export", n: 21,
+      label: function () { return isEdit() ? "Save" : "Export"; },
+      title: function () {
+        return isEdit() ? "Land the Edit" : "Add to the Archive";
+      },
+      desc: function () {
+        return isEdit()
+          ? "This character is already in the archive, so there is nothing to " +
+            "add — the change is landed against the record it came from. " +
+            "Copy or download what is below and run " +
+            "<code>python3 scripts/apply_edit.py &lt;name&gt;</code>, which shows " +
+            "you field by field what would change before it writes anything." +
+            (activeDraft().proseOnly
+              ? " Only the prose of this one can change: it is held at " +
+                activeDraft().baseTiers + " XP tiers, whose numbers were built " +
+                "from tier 0, and the applier refuses the rest."
+              : "")
+          : "The creator emits this repo's own character source format. Save it as <code>src/characters/&lt;slug&gt;.json</code>, then run <code>./scripts/pipeline.sh</code> — the build resolves every name to the compendium's verbatim rules text and generates the dossier, the coverage entry, and a playable sheet.";
+      },
       done: function () { return false; },
       render: renderExport }
   ];
@@ -4285,6 +4408,26 @@
       // C.concept is deliberately absent: it informs the making of the
       // character and is not part of the finished one.
       notes: C.notes || "",
+      /* The wizard's own state, so this file describes the character rather
+         than only its results.
+
+         Everything below `tiers` is derived: rings and skills are what the
+         clan, the family, the school and twenty answers add up to. Which is
+         fine until somebody wants to change one — hydrate() could read the
+         answers back but not the choices behind the numbers, so re-exporting a
+         character dropped every resolved "+1 Earth or Fire", every "three of
+         these six skills", every chosen kata, and the ranks that questions 7,
+         8, 13 and 17 hand out. Shosuro Hisano came back with Water 1 for Water
+         2 and three techniques for four, and nothing said so.
+
+         So the state travels with the record. `concept` is left out: it is
+         authoring material and promotion is where it stops being part of this. */
+      wizard: (function () {
+        var w = {}, k;
+        for (k in C) if (C.hasOwnProperty(k) && k !== "concept" &&
+                         k.charAt(0) !== "_") w[k] = C[k];
+        return w;
+      })(),
       twenty_questions: {
         template: isCore() ? "core" : "pow", generated: false,
         steps: {
@@ -4373,13 +4516,78 @@
     };
   }
 
+  /* What an edit hands to scripts/apply_edit.py: the whole wizard-owned
+     document, and which record it belongs to. Deliberately not a field list —
+     the applier decides what it is allowed to take from this, so there is one
+     statement of that policy rather than two that can drift. */
+  /* toSourceJson() for a character that is not the one open in the wizard.
+     Everything downstream of it reads the global C — computed(), the heritage
+     grants, mode() — so the character is swapped in and put back, the way
+     draftProgress() does for the step count. */
+  function sourceFor(ch) {
+    var saved = C, out;
+    C = ch;
+    try { out = toSourceJson(); }
+    finally { C = saved; }
+    return out;
+  }
+
+  function toEditPatch() {
+    var d = activeDraft();
+    return { edit: d.fromArchive, prose_only: !!d.proseOnly,
+             base_tiers: d.baseTiers || 1,
+             baseline: d.baseline || null, source: toSourceJson() };
+  }
+
   function renderExport(body) {
-    var doc = toSourceJson();
+    var edit = isEdit();
+    var doc = edit ? toEditPatch() : toSourceJson();
     var missing = activeSteps().filter(function (s) {
       return s.id !== "export" && !s.done();
     }).map(function (s) {
       return typeof s.label === "function" ? s.label() : s.label;
     });
+
+    if (edit) {
+      var head = document.createElement("p");
+      head.className = "muted small";
+      head.innerHTML = "Editing <strong>" + esc(editSlug()) + "</strong>. " +
+        (missing.length
+          ? esc(missing.length + " step" + (missing.length === 1 ? "" : "s") +
+                " unanswered — the applier only writes what changed, so an " +
+                "unanswered question is left as the record has it.")
+          : "Every question answered.");
+      body.appendChild(head);
+      var row0 = document.createElement("div");
+      row0.className = "choicerow";
+      row0.innerHTML = '<button type="button" class="btn" id="dl">Download patch</button>' +
+        '<button type="button" class="btn" id="cp">Copy patch</button>';
+      body.appendChild(row0);
+      var how = document.createElement("p");
+      how.className = "muted small";
+      how.innerHTML = "Then: <code>python3 scripts/apply_edit.py " +
+        esc(editSlug()) + "</code> — it reads the edit off the table if this " +
+        "draft is shared, or <code>--file</code> the download. Nothing is " +
+        "written without <code>--apply</code>.";
+      body.appendChild(how);
+      var pre0 = document.createElement("pre");
+      pre0.className = "export-json";
+      pre0.textContent = JSON.stringify(doc, null, 1);
+      body.appendChild(pre0);
+      row0.querySelector("#dl").addEventListener("click", function () {
+        var blob = new Blob([JSON.stringify(doc, null, 1)],
+                            { type: "application/json" });
+        var a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = editSlug() + "-edit.json";
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+      });
+      row0.querySelector("#cp").addEventListener("click", function () {
+        navigator.clipboard.writeText(JSON.stringify(doc, null, 1));
+      });
+      return;
+    }
 
     if (missing.length) {
       var warn = document.createElement("p");
@@ -4594,6 +4802,12 @@
       '<h3 class="wip-name">' + esc(C.name || "Unnamed") + "</h3>" +
       '<p class="wip-sub">' +
       esc([C.clan, C.family, C.school].filter(Boolean).join(" · ") || "—") + "</p>" +
+      // Which of the two things this is. An edit looks exactly like making a
+      // character, and it is not one: there is a record behind it.
+      (isEdit()
+        ? '<p class="wip-editing">Editing <strong>' + esc(editSlug()) +
+          "</strong>" + (activeDraft().proseOnly ? " · prose only" : "") + "</p>"
+        : "") +
       '<div class="rings">' + ring + "</div>" +
       '<div class="statrow">' +
       ['<div class="stat"><span class="k">Honor</span><span class="v">' + d.honor + "</span></div>",

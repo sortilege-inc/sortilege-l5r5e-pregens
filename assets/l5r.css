@@ -888,6 +888,13 @@ p.cur-meta{ margin:0 0 0.5rem; }
   .rm-canvas{ height:60vh; }
 }
 
+/* An edit of a promoted character, which looks exactly like making one. */
+.wip-editing{
+  margin:0.2rem 0 0.5rem; font-family:var(--caps); text-transform:uppercase;
+  letter-spacing:0.09em; font-size:0.62rem; color:var(--crimson);
+}
+.wip-editing strong{ font-family:var(--body); text-transform:none; letter-spacing:0; }
+
 /* ------------------------------------------------------------ heritage step */
 .choice .ch-n{
   display:inline-block; margin-left:0.45em; opacity:0.6; font-size:0.9em;
@@ -981,6 +988,8 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 }
 .archivechip:hover{ border-color:var(--crimson); color:var(--sumi); }
 .archivechip.open{ border-style:solid; border-color:var(--jade); }
+/* a promoted character opens as an edit, not as a draft to carry on */
+.archivechip.promoted{ border-left:3px solid var(--jade-soft, var(--jade)); }
 
 /* ---- the work-in-progress panel ------------------------------------- */
 .wip-card .has-tip{ cursor:help; }
