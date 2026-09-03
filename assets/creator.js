@@ -1129,7 +1129,35 @@
     ninjo: "L5R 5e character creation. Write a single sentence describing this character's ninjō (personal desire). The ninjō should sit in tension with their giri — something they want for themselves that conflicts with their duty.\n\n" + STYLE,
     standout_quality: "L5R 5e character creation. Write a single sentence naming and briefly framing the standout quality — a memorable trait or moment — that earned this character their +1 ring increase. Concrete and unmistakable.\n\n" + STYLE,
     clan_relationship: "L5R 5e character creation. Write a single sentence describing how this character carries, or resists, their clan's ideals. Specific to the clan they belong to.\n\n" + STYLE,
-    first_impression: "L5R 5e character creation. Write a single sentence describing how this character first appears to a stranger: build, bearing, voice, dress, and a distinctive accoutrement they always carry.\n\n" + STYLE,
+    /* Question 14 asks what people NOTICE, and the book's answer is a
+       deviation from the norm rather than a portrait — "slight oddities of
+       appearance to trivial mannerisms", recorded under Personality, Habits
+       and Quirks, with "chewing one's lip when nervous" as its own example.
+
+       Asking for build, bearing, voice and dress got general impressions back:
+       composed, watchful, plainly dressed. Those are conclusions a stranger
+       draws, not things a stranger can see, so the answer said nothing anyone
+       could point at. Naming that failure with examples is what works here;
+       asking for "something concrete" does not.
+
+       It also asked for the accoutrement, which is its own field on this same
+       step, so the sentence was spent answering the next question. */
+    first_impression: "L5R 5e character creation. Name the one thing a stranger " +
+      "notices first about this character, and make it something they could " +
+      "point at: a physical feature, a habit of movement, a mannerism, a tic, or " +
+      "a verbal habit. It should veer from what is expected of someone of their " +
+      "clan and station — that is why it gets noticed at all.\n\n" +
+      "It must be observable. Not an impression, a bearing, or an air: " +
+      "\"composed\", \"watchful\", \"an unsettling stillness\", \"carries " +
+      "herself with quiet authority\" are all conclusions a stranger draws, not " +
+      "things they see. Give the thing that would make them draw it — where the " +
+      "eye goes, or what the hands do.\n\n" +
+      "Do not name anything they carry or wear. That is a separate answer on " +
+      "this same question.\n\n" +
+      "Describe the thing; do not assert that it is visible. \"A real visible " +
+      "flinch\", \"a noticeable habit of\", \"an observable tendency to\" are " +
+      "the instruction leaking into the answer — if the reader can see it, " +
+      "saying so is wasted words.\n\n" + STYLE,
     accoutrement: "L5R 5e character creation. Write a phrase or a short sentence " +
       "naming one distinctive thing this character carries or wears most of the " +
       "time — a scarf, a hair ornament, an engraved scabbard, an eyepatch. It " +
@@ -2558,11 +2586,15 @@
           "What were they taught, and at what cost?")(body);
       } },
 
-    { id: "appearance", n: 14, label: "Appearance", title: function () { return qText(14) || "First Impression"; },
+    { id: "appearance", n: 14, label: "Noticed First", title: function () { return qText(14) || "First Impression"; },
       desc: function () {
         return qAlt(14)
           ? "When everything you own fits in a pack, one thing still matters more than the rest. Choose it from your outfit, or any item of rarity 5 or lower."
-          : "What strikes someone on first meeting? Then one distinctive aesthetic accoutrement they carry or wear most of the time.";
+          : "Not a portrait — the one oddity that gets noticed, from an unusual " +
+            "feature to a trivial mannerism. The book's own examples are chewing " +
+            "one's lip when nervous, or clasping the hands to hide trembling " +
+            "fingers. Then one distinctive aesthetic accoutrement they carry or " +
+            "wear most of the time.";
       },
       done: function () {
         if (qAlt(14)) return has(C.answers.prized_possession);
@@ -2572,7 +2604,7 @@
         var alt = qAlt(14);
         if (!alt) {
           textStep("appearance", "answers.first_impression", "first_impression",
-            "How do they strike a stranger?")(body);
+            "A feature, a mannerism, a tic — something you could point at…")(body);
           // Core p.93: "choose one distinctive aesthetic accoutrement that your
           // character carries or wears most of the time" — a second answer the
           // question asks for, and the step had nowhere to put it.
