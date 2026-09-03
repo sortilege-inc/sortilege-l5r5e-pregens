@@ -17,14 +17,18 @@ not state rather than filling it in from somewhere else. Nothing here reads the
 Foundry compendium or the books: the corpus is the source, and a gap in it is a
 thing to fix in the corpus.
 
-Three shapes of curriculum are in use, one per converter that wrote one:
+Four shapes of curriculum are in use, one per converter that wrote one:
 
     CURRICULUM { RANK 1 { SKILL "Command" ... ^"Name" [kata] } }   schools
     CURRICULUM { "Trade Skills" "Skill Group" ... }                core titles
     ^"Advancement" LIST OF STRING [ "Commerce (Skill)", ... ]       most titles
+    ^"Advances" STRING "Government (skill), = Rank 1 Rituals (...)"  Spirit Hunter
 
-and a title states its cost either as XP_TO_COMPLETION or as an
-^"XP to Completion" property, depending on the same.
+and a title states its completion cost as XP_TO_COMPLETION, as an
+^"XP to Completion" property, or as ^"XP Cost", depending on the same. The
+leading `=` on an advance is the books' mark for one buyable without meeting
+its prerequisites, which is what appearing on a curriculum already means, so it
+is read as the marker it is and not as part of the label.
 """
 import json, os, re, sys
 
@@ -101,6 +105,37 @@ def parse_ranked(body):
     return out
 
 
+def parse_value_first(body):
+    """CURRICULUM { ^"Title Curriculum" DEF { "Social" SKILL_GROUP … } }
+
+    Writ of the Wilds and Celestial Realms put the value first and the keyword
+    second — the reverse of every other shape — and wrap the lot in a nested
+    DEF. A technique names its category inside the label:
+    "Eternal Mind's Gate (kiho)" TECHNIQUE.
+
+    Read by token order rather than by line, because the source and the
+    composed corpus lay the pairs out differently: the source writes
+    `"Social" SKILL_GROUP` on one line, and the synthesist re-emits the same
+    row as `"Social"` then `SKILL_GROUP "Scholar"` on the next. Matching a line
+    found one entry of the eight and reported the rest as a corpus gap.
+    """
+    out, pending = [], None
+    for tok in re.finditer(r'\^?"(?:[^"\\]|\\.)*"|[A-Z_]{3,}', body):
+        t = tok.group(0)
+        if t.startswith('^'):
+            pending = None                  # a name or a reference, not a value
+        elif t.startswith('"'):
+            pending = t[1:-1]
+        elif pending is not None:
+            k = KIND.get(norm(t))
+            if k:
+                gm = re.match(r"(?P<label>.*?)\s*\((?P<grp>[^)]+)\)\s*$", pending)
+                out.append(entry(k, gm.group("label") if gm else pending, None,
+                                 gm.group("grp").strip().lower() if gm else None))
+            pending = None
+    return out
+
+
 def parse_pairs(body):
     """CURRICULUM { "Trade Skills" "Skill Group" } — the core-title shape."""
     out = []
@@ -112,12 +147,37 @@ def parse_pairs(body):
     return out
 
 
+def close_bracket(text, at):
+    """The index of the `]` that closes the `[` at `at`, ignoring brackets that
+    sit inside a quoted string.
+
+    A plain text.index("]") ends the list at the first bracket it sees, and the
+    first entry of several title curricula is "Martial Arts [Melee] (Skill)" —
+    so Sword-Saint's seven advancements read as none, and any list with a
+    bracketed skill part-way down was truncated there. Nothing said so.
+    """
+    i, n, in_str = at + 1, len(text), False
+    while i < n:
+        c = text[i]
+        if in_str:
+            if c == "\\":
+                i += 1
+            elif c == '"':
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c == "]":
+            return i
+        i += 1
+    return n
+
+
 def parse_advancement(body):
     """^"Advancement" LIST OF STRING [ "Commerce (Skill)" ] — most titles."""
     m = re.search(r'\^"Advancement"\s+LIST OF STRING\s*\[', body)
     if not m:
         return []
-    end = body.index("]", m.end() - 1)
+    end = close_bracket(body, m.end() - 1)
     out = []
     for s in re.findall(r'"((?:[^"\\]|\\.)*)"', body[m.end():end]):
         pm = re.match(r"(?P<label>.*?)\s*\((?P<kind>[^)]+)\)\s*$", s)
@@ -127,6 +187,42 @@ def parse_advancement(body):
         k = pm.group("kind").strip()
         out.append(entry(KIND.get(norm(k), "Technique"), pm.group("label"),
                          None, None if norm(k) in KIND else k.lower()))
+    return out
+
+
+def parse_advances(body):
+    """^"Advances" STRING "Government (skill), = Rank 1 Rituals (ritual, tech group)"
+
+    One comma-separated string rather than a list, and its kinds are written
+    lowercase and sometimes compound: "(ritual, tech group)" names the category
+    and the kind at once.
+    """
+    m = re.search(r'\^"Advances"\s+STRING\s+"((?:[^"\\]|\\.)*)"', body)
+    if not m:
+        return []
+    out = []
+    # split on commas that are not inside a parenthetical
+    for part in re.split(r",(?![^(]*\))", m.group(1)):
+        part = part.strip()
+        if not part:
+            continue
+        prereq_waived = part.startswith("=")
+        part = part.lstrip("=").strip()
+        pm = re.match(r"(?P<label>.*?)\s*\((?P<kind>[^)]+)\)\s*$", part)
+        if not pm:
+            out.append(entry("Skill", part))
+            continue
+        label, kind = pm.group("label"), pm.group("kind").strip()
+        bits = [b.strip() for b in kind.split(",")]
+        group = None
+        k = KIND.get(norm(bits[-1]))
+        if len(bits) > 1 and k:
+            group = bits[0].lower()          # "(ritual, tech group)"
+        elif not k:
+            k, group = "Technique", kind.lower()
+        e = entry(k, label, None, group)
+        e["prereq_waived"] = prereq_waived
+        out.append(e)
     return out
 
 
@@ -150,9 +246,33 @@ def dedupe(entries):
     return out
 
 
+def modifier_award(body):
+    """Status/Glory stated as integer modifiers rather than a printed sentence.
+
+    Spirit Hunter carries ^"Status Modifier" INTEGER 5 and ^"Glory Modifier"
+    INTEGER 0 where the other titles carry ^"Status Award" STRING
+    "+15 (to a minimum of 40)". A zero modifier is stated, not absent — the
+    corpus's own comment says the title grants no glory award because secrecy
+    matters to Lady Mazoku's work — so it is reported rather than dropped.
+    """
+    bits = []
+    for which in ("Status", "Glory", "Honor"):
+        v = prop(body, which + " Modifier")
+        if v is not None:
+            bits.append("%s %+d" % (which, v))
+    return ", ".join(bits) or None
+
+
 def prop(body, name):
-    """^"Name" STRING "value" / INTEGER 5, however the line is wrapped."""
+    """^"Name" STRING "value" / INTEGER 5, however the line is wrapped.
+
+    `INTEGER DEFAULT 24` is a declared default and is still the value the book
+    prints; without allowing DEFAULT here, Forester and Awakened Soul read as
+    having no completion cost, which is how an extractor's blind spot gets
+    reported as a hole in the corpus.
+    """
     m = re.search(r'\^"' + re.escape(name) + r'"\s*(?:STRING|INTEGER)?\s*'
+                  r'(?:DEFAULT\s+)?'
                   r'(?:"((?:[^"\\]|\\.)*)"|(\d+))', body)
     if not m:
         return None
@@ -181,21 +301,31 @@ def main():
         name = m.group("name")
         body, _ = block(text, m.end() - 1)
         has_cur = "CURRICULUM" in body
+        # Identified as a title by something only a title says. ^"XP Cost" is
+        # NOT that: bonds, item patterns and techniques all carry one, and
+        # reading it as the marker pulled in forty of them.
+        titleish = ('^"Type" STRING "Title"' in body or
+                    re.search(r'EXTENDS\s+(?:#\S+\s+)?\^"Title"', body) or
+                    '^"XP to Completion"' in body or
+                    "XP_TO_COMPLETION" in body or
+                    '^"Title Ability"' in body)
         xp = prop(body, "XP to Completion")
         if xp is None:
             xp = keyword(body, "XP_TO_COMPLETION")
+        if xp is None and titleish:
+            xp = prop(body, "XP Cost")
         # The abstract ^"Title" DEF states what a title is; it is not one, and
         # a "<Book> Titles" DEF is the container its entries sit in — both
         # match on their contents otherwise.
-        is_title = name != "Title" and "ENTRIES" not in body and (
-            xp is not None or
-            ('LIST OF STRING' in body and '^"Title Ability"' in body))
+        is_title = (name != "Title" and "ENTRIES" not in body and titleish
+                    and (xp is not None or '^"Title Ability"' in body))
 
         if is_title:
-            cur = parse_advancement(body)
+            cur = parse_advancement(body) or parse_advances(body)
             if not cur and has_cur:
                 cb, _ = block(body, body.index("CURRICULUM"))
-                cur = parse_ranked(cb) or parse_pairs(cb)
+                cur = (parse_ranked(cb) or parse_pairs(cb)
+                       or parse_value_first(cb))
             n = len(cur)
             cur = dedupe(cur)
             if n != len(cur):
@@ -218,8 +348,11 @@ def main():
                                         or keyword(body, "ASSIGNED_BY")),
                 "award": unescape(prop(body, "Status Award")
                                   or prop(body, "Glory Award")
+                                  or prop(body, "Honor Award")
                                   or keyword(body, "STATUS_AWARD")
-                                  or keyword(body, "GLORY_AWARD")),
+                                  or keyword(body, "GLORY_AWARD")
+                                  or keyword(body, "HONOR_AWARD")
+                                  or modifier_award(body)),
                 "xp_to_completion": xp,
                 "ability": unescape(ability),
                 "ability_effect": unescape(effect),
