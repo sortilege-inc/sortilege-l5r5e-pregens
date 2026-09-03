@@ -22,13 +22,26 @@ grep -q '^ANTHROPIC_API_KEY=' .env || { echo "no ANTHROPIC_API_KEY in .env"; exi
 # ---------------------------------------------------------------- table key
 if ! grep -q '^L5R_TABLE_KEY=' .env; then
   # Words, not hex: this gets read down a table or typed off a phone screen.
-  GEN=$(python3 - <<'PY'
+  # Five distinct words out of a hundred is about 33 bits, which against the
+  # Worker's per-IP limit is not worth anyone's time to guess. Four words from a
+  # twenty-five word list would have read just as well and been weak enough to
+  # brute-force in a weekend.
+  GEN=$(python3 - <<'GENPY'
 import secrets
-words = ("crane crab lion phoenix scorpion dragon unicorn mantis heron sparrow "
-         "iron jade amber winter river stone thunder lantern paper willow "
-         "quiet steady hidden distant patient").split()
-print("-".join(secrets.choice(words) for _ in range(4)))
-PY
+words = """
+crane crab lion phoenix scorpion dragon unicorn mantis heron sparrow tortoise
+badger fox hare monkey ox spider swallow falcon carp mongoose centipede
+iron jade amber ivory silver copper lacquer silk paper bronze pearl obsidian
+winter autumn summer spring dawn dusk midnight noon frost thaw monsoon
+river stone thunder lantern willow bamboo cedar plum maple pine reed lotus
+mountain valley harbour bridge gate garden tower well road ford shrine
+quiet steady hidden distant patient careful stubborn restless watchful
+sudden narrow open honest crooked bright faded sharp
+brush blade fan scroll cup mask drum bell kite chain anvil kettle needle
+mirror ribbon saddle
+""".split()
+print("-".join(secrets.SystemRandom().sample(words, 5)))
+GENPY
 )
   printf 'L5R_TABLE_KEY=%s\n' "$GEN" >> .env
   echo "==> no L5R_TABLE_KEY in .env, so one was generated and added there."

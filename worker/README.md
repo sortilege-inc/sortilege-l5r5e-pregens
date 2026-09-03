@@ -34,9 +34,10 @@ deploys, reads the URL out of wrangler's output, writes it to
 `src/foundry_sources.json` as `ai_proxy.url`, and rebuilds. Commit and push
 afterwards to put it live.
 
-If there is no `L5R_TABLE_KEY` in `.env`, the script generates one, appends it
-there, and prints it once — you cannot give players a key you have never seen.
-Set it yourself in `.env` if you would rather choose it.
+If there is no `L5R_TABLE_KEY` in `.env`, the script generates one (five words,
+about 33 bits — guessing it against the per-IP limit would take a century),
+appends it there, and prints it once: you cannot give players a key you have
+never seen. Set it yourself in `.env` if you would rather choose it.
 
 **The URL is predictable**: `name` in `wrangler.toml` plus your workers.dev
 subdomain, which is `sortilege` — so
