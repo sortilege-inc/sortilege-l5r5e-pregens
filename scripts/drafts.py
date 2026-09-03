@@ -455,10 +455,67 @@ def cmd_set(a):
     write(row, full, body, a.editor)
 
 
+SRC_CHARS = os.path.join(ROOT, "src", "characters")
+
+
+def slugify(name):
+    """creator.js's slugify, so the guard looks for the file the export writes."""
+    import unicodedata
+    t = unicodedata.normalize("NFKD", str(name or ""))
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    return re.sub(r"^-|-$", "", re.sub(r"[^a-z0-9]+", "-", t.lower()))
+
+
+def prose_of(node, out=None):
+    """Every substantial string a draft holds. Short values — a ring name, a
+    gender, a tenet — are skipped: they are not what gets lost, and matching
+    them would flag everything."""
+    out = [] if out is None else out
+    if isinstance(node, str):
+        if len(node.strip()) >= 25:
+            out.append(node.strip())
+    elif isinstance(node, dict):
+        for k, v in node.items():
+            if k != "concept":      # deliberately not exported; see toSourceJson
+                prose_of(v, out)
+    elif isinstance(node, list):
+        for v in node:
+            prose_of(v, out)
+    return out
+
+
+def unexported(body):
+    """What this draft has written that its source file does not.
+
+    Returns (slug, path, missing). `missing` empty means the file already holds
+    everything the draft does, so deleting the draft loses nothing.
+
+    Compared by looking for the draft's own sentences in the file rather than by
+    mapping field to field. A mapping would be a second copy of the export's
+    own, and would drift from it — which is exactly how questions 9 to 12 came
+    to be written by the wizard and never exported.
+    """
+    ch = (body or {}).get("character") or {}
+    slug = (body or {}).get("fromArchive") or slugify(ch.get("name"))
+    path = os.path.join(SRC_CHARS, slug + ".json") if slug else ""
+    written = prose_of(ch)
+    if not path or not os.path.exists(path):
+        return slug, path, written
+    have = open(path, encoding="utf-8").read()
+    return slug, path, [w for w in written if json.dumps(w, ensure_ascii=False)[1:-1] not in have
+                        and w not in have]
+
+
 def cmd_delete(a):
     """Take a draft off the table. It goes for everyone, and there is no undo:
-    the table is not in git and nothing keeps a copy. So this prints what it is
-    about to remove and refuses without --yes."""
+    the table is not in git and nothing keeps a copy.
+
+    So before removing one, this checks that its work is actually on disk.
+    Kitsuki Nagiko sat at rev 68 with twenty written answers while her source
+    file was still the archive stub she was opened from, and Ichiro Tsutomu's
+    export was missing four answers the Creator never wrote. Either deletion
+    would have destroyed work that existed nowhere else.
+    """
     row = resolve(a.who)
     status, full = call("/drafts/" + row["id"])
     if status != 200:
@@ -471,6 +528,25 @@ def cmd_delete(a):
           f"{' by ' + full['editor'] if full.get('editor') else ''})")
     print(f"  {ch.get('clan') or 'no clan'} / {ch.get('school') or 'no school'}"
           f" · {ans} answers · {len(ch.get('choices') or {})} choices")
+
+    slug, path, missing = unexported(full.get("body"))
+    if missing and not a.force:
+        where = (os.path.relpath(path, ROOT) if path and os.path.exists(path)
+                 else f"src/characters/{slug or '?'}.json (not there)")
+        print(f"\n  REFUSED — {len(missing)} written answer"
+              f"{'' if len(missing) == 1 else 's'} in this draft "
+              f"{'is' if len(missing) == 1 else 'are'} not in {where}:")
+        for w in missing[:6]:
+            print(f"     {w[:96]}{'…' if len(w) > 96 else ''}")
+        if len(missing) > 6:
+            print(f"     …and {len(missing) - 6} more")
+        print("\n  Export it from the Creator first, then delete. If you mean to "
+              "throw this work\n  away, --force says so.")
+        return
+    if missing:
+        print(f"  --force: discarding {len(missing)} answers that are not on disk")
+    elif path and os.path.exists(path):
+        print(f"  its work is in {os.path.relpath(path, ROOT)}")
     if not a.yes:
         print("\nNot deleted. Add --yes to remove it from the table for everyone.")
         return
@@ -536,6 +612,8 @@ def main():
 
     x = sub.add_parser("delete", help="remove a draft from the table for everyone")
     x.add_argument("who"); x.add_argument("--yes", action="store_true")
+    x.add_argument("--force", action="store_true",
+                   help="delete even though the draft holds work no source file has")
     x.set_defaults(fn=cmd_delete)
 
     w = sub.add_parser("watch", help="print changes as other people make them")
