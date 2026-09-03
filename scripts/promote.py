@@ -29,23 +29,27 @@ def save_sources(d):
 # Where a concept stops being about the character and starts being about
 # running her. Every concept that has sections at all opens with an unheaded
 # block — name, pronouns, school and clan, and the hook in a sentence — and
-# then breaks into headings. Those headings are the authoring layer, all of
-# them: "Candidate hooks (unpicked)", "Open" and "Cross-character" obviously,
-# but "Established" carries plot ("she is implicated in the adventure's plot",
-# "she has no idea what the partnership actually is"), and even "Cards" and
-# "Reading" are interpretation rather than description ("she is deluding
-# herself", "the specific frustration of a competent subordinate").
+# then breaks into headings.
 #
-# So the cut is the first heading, which also fails in the safe direction: a
-# section nobody has classified yet stays off the page rather than landing on
-# it. The five concepts with no headings are unaffected and land whole.
-HEADING = re.compile(r"^#{1,6}\s", re.M)
+# The tarot draw and its reading stay: they are the character's own, and Jordan
+# wants them on the page (2026-09-03). Everything after them does not.
+# "Candidate hooks (unpicked)", "Open" and "Cross-character" are plainly notes
+# to the GM, and "Established" carries plot — "she is implicated in the
+# adventure's plot", "she has no idea what the partnership actually is".
+#
+# So the cut is the first heading that is not on this list, which fails in the
+# safe direction: a section nobody has classified yet stays off the page rather
+# than landing on it. The five concepts with no headings land whole.
+KEEP = {"cards", "reading"}
+HEADING = re.compile(r"^(#{1,6})\s*(.+?)\s*$", re.M)
 
 
 def player_facing(concept):
     """The part of a concept that belongs on a public character page."""
-    m = HEADING.search(concept or "")
-    return (concept[:m.start()] if m else (concept or "")).strip()
+    for m in HEADING.finditer(concept or ""):
+        if m.group(2).strip().lower() not in KEEP:
+            return (concept[:m.start()]).strip()
+    return (concept or "").strip()
 
 
 def apply_promotions():
