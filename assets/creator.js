@@ -1483,6 +1483,24 @@
   function familiesOf(clan) {
     return FAMILIES.filter(function (f) { return f.clan === clan; });
   }
+  // The clan step stores clan_short_name where there is one, so C.clan is
+  // "Tortoise" while the entry is named "Tortoise Minor Clan". Matching on
+  // `name`, even with " Clan" appended, therefore found nothing for the seven
+  // clans whose name is neither "<short>" nor "<short> Clan" — Badger,
+  // Centipede, Deer, Falcon, Fox, Imperial Families and Tortoise — and
+  // computed() then skipped their ring bonus, skill bonus and starting status
+  // without saying so. A Kasuga smuggler came out at Air 2 rather than Air 3,
+  // missing Commerce and at status 0 instead of 25.
+  function clanByName(name) {
+    if (!name) return null;
+    var want = normName(name);
+    return CLANS.filter(function (c) {
+      return (c.clan_short_name && normName(c.clan_short_name) === want) ||
+             normName(c.name) === want ||
+             normName(c.name) === normName(name + " Clan");
+    })[0] || null;
+  }
+
   // The clan's own view of Bushidō, where the book states one. Minor clans and
   // rōnin are not in that table, so they get no default rather than a guess.
   function clanTenets() {
@@ -1603,7 +1621,7 @@
       });
     }
 
-    var clan = find(CLANS, C.clan) || find(CLANS, C.clan + " Clan");
+    var clan = clanByName(C.clan);
     if (clan) {
       addRing(clan.ring_bonus, "clan.ring_bonus", C.clan);
       addSkills(clan.skill_bonus, "clan.skill_bonus", C.clan);
@@ -2125,7 +2143,7 @@
           }
           C.clan = v; applyTenetDefaults(); save(); render();
         });
-        var cl = find(CLANS, C.clan) || find(CLANS, C.clan + " Clan");
+        var cl = clanByName(C.clan);
         renderChoices(body, cl, "clan");
       } },
 
