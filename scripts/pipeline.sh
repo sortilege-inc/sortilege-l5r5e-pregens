@@ -68,6 +68,9 @@ python3 scripts/build.py
 # run it by hand -- which is how a corrected Spirit Companion entry sat stale.
 # name_tables.py keys off the clan, family and school data the build just wrote.
 python3 scripts/heritage_tables.py | tail -1
+# School and title curricula, for the advancement ledger. Reads the resolved
+# corpus that dsl_rules_text.py composed above, so errata are already applied.
+python3 scripts/curricula.py
 python3 scripts/name_tables.py | tail -1
 python3 scripts/relationship_map.py
 
