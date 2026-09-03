@@ -27,6 +27,9 @@ Writes data/chargen/heritages.js (window.L5R_HERITAGES).
 """
 import json, os, re, sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from generate_pregen import SKILL_LABEL
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DSL = os.environ.get(
     "L5R_DSL",
@@ -182,6 +185,294 @@ def parse_table(name, body, source):
     return None
 
 
+# ---------------------------------------------------------------- requirements
+#
+# Half of these results oblige the player to settle something: a skill, a
+# technique of the rolled category, a weapon, which distinction. The wizard
+# showed the entry's text and recorded none of it, so six characters in the
+# archive carry a heritage whose grant never landed — Ichiro Tsutomu rolled
+# "+1 Commerce" at question 18 and has Commerce 0.
+#
+# So each entry also carries `requires`: what the sheet still needs before the
+# result is actually on the character. Two things produce them.
+#
+# The corpus's own structure, where it has any. A sub-table range reading
+# `Gain +1 ^"Composition"` names a skill and is read as one — that is most of
+# the ranges in the line, and none of it is guessed.
+#
+# REQUIRES, below, for every entry whose obligation is stated in prose. It is
+# deliberately explicit and per entry: a pattern loose enough to catch "select
+# one invocation of that ring type" also catches "choose two of your rings",
+# and a confidently wrong requirement is worse than none. `sub` says how to
+# read that entry's own sub-table, because the ranges are not all skills —
+# some name the heirloom, some the technique category, some the spirit's ring.
+#
+# check_requirements() fails the run on an entry that neither parses nor
+# appears here, so a supplement added to the corpus later cannot arrive
+# unhandled and unnoticed.
+#
+# What a requirement means to the wizard:
+#   skill        +1 rank in `skill`, or in one of `options`, or in one of the
+#                school's starting skills the character has no ranks in
+#   technique    learn one, of `rank`, in `category` (or the rolled category,
+#                or an invocation of the rolled ring)
+#   peculiarity  gain `name`, or one of `options`; `subject` fills an
+#                open-ended entry ("Support of [One Group]")
+#   item         add `name`, or one of `category`; `held: False` for an
+#                heirloom that exists but is lost
+#   ring_swap    reduce one ring by 1 to raise another; never above `cap`
+#   pick_one     exactly one of `options`, each a requirement in its own right
+#   money        the entry pays instead of granting
+
+SKILLS = set(SKILL_LABEL.values())
+MARTIAL_ARTS = ["Martial Arts [Melee]", "Martial Arts [Ranged]",
+                "Martial Arts [Unarmed]"]
+# how the books print a martial art the player picks
+CHOOSE_ONE = "Martial Arts [Choose One]"
+RINGS = ["Air", "Earth", "Fire", "Water", "Void"]
+
+GAIN_SKILL = re.compile(r'^Gain\s*\+\s*1\s*\^?"?(?P<name>[^"]+?)"?$', re.I)
+# a sentence the conversion appended to one range that belongs to all of them
+TRAILING = re.compile(
+    r"\.\s*(?:Gain \+1 rank|This item is a battlefield heirloom)\.?\s*$", re.I)
+
+
+def as_skill(text):
+    """The requirement in a sub-table range that names a skill, or None."""
+    t = clean(TRAILING.sub("", text or "")).rstrip(".")
+    m = GAIN_SKILL.match(t)
+    if m:
+        t = clean(m.group("name")).strip('"')
+    else:
+        t = ref(t)
+    if t == CHOOSE_ONE:
+        return {"kind": "skill", "prompt": "Martial art", "options": MARTIAL_ARTS}
+    if t in SKILLS:
+        return {"kind": "skill", "prompt": "Skill", "skill": t}
+    return None
+
+
+def pec(name, prompt="Advantage", **kw):
+    return dict({"kind": "peculiarity", "prompt": prompt, "name": name}, **kw)
+
+
+REQUIRES = {
+    # --- core rulebook: Samurai Heritage Table (p. 96) --------------------
+    ("samurai-heritage-table", "Famous Deed"): {
+        "sub": "item_category",
+        "requires": [{"kind": "item", "prompt": "Family heirloom",
+                      "category_from_sub": True,
+                      "qualities": {"player": 1, "gm": 1}}]},
+    ("samurai-heritage-table", "Glorious Sacrifice"): {
+        "sub": "item_category",
+        "requires": [{"kind": "item", "prompt": "Lost heirloom", "held": False,
+                      "category_from_sub": True,
+                      "qualities": {"player": 1, "gm": 1}}]},
+    ("samurai-heritage-table", "Stolen Knowledge"): {
+        "sub": "technique_category",
+        "requires": [{"kind": "technique", "prompt": "Additional technique",
+                      "rank": 1, "category_from_sub": True}]},
+    ("samurai-heritage-table", "Imperial Heritage"): {
+        "requires": [pec("Blessed Lineage")]},
+    ("samurai-heritage-table", "Unusual Name Origin"): {
+        "requires": [{"kind": "pick_one", "prompt": "One of the two", "options": [
+            {"kind": "ring_swap", "prompt": "Reduce one ring, raise another",
+             "to": "any", "cap": 3},
+            {"kind": "item", "prompt": "Item of rarity 6 or lower",
+             "rarity_max": 6}]}]},
+
+    # --- Celestial Realms (p. 141) ----------------------------------------
+    ("new-samurai-heritages-celestial-realms",
+     "Associated with a Natural Disaster"): {
+        "requires": [pec("Whispers of Failure", prompt="Adversity"),
+                     {"kind": "ring_swap", "optional": True, "cap": 3,
+                      "to": "any", "prompt": "Ring of the disaster"}]},
+    ("new-samurai-heritages-celestial-realms", "Mark of the Elements"): {
+        "requires": [{"kind": "ring_swap", "optional": True, "cap": 3,
+                      "to": "any", "prompt": "Ring of the element"}]},
+    ("new-samurai-heritages-celestial-realms", "Sacrifice"): {
+        "sub": "item_category",
+        "requires": [{"kind": "item", "prompt": "The sacrifice",
+                      "category_from_sub": True,
+                      "qualities": {"player": 1, "gm": 1}}]},
+    ("new-samurai-heritages-celestial-realms", "Spirit of the Phoenix"): {
+        "sub": "peculiarity"},
+    ("new-samurai-heritages-celestial-realms", "Touched by the Fortunes"): {
+        "requires": [pec("Sixth Sense", prompt="Distinction")]},
+
+    # --- Children of the Five Winds (p. 97) -------------------------------
+    ("new-samurai-heritages-table", "Ancestral Horse Line"): {
+        "sub": "item_name",
+        "requires": [{"kind": "item", "prompt": "Warhorse",
+                      "name_from_sub": True, "name_suffix": " horse",
+                      "custom": True}]},
+    ("new-samurai-heritages-table", "Heart of the Horse"): {
+        "requires": [{"kind": "item", "prompt": "Horse", "name": "Horse",
+                      "custom": True},
+                     pec("Karmic Tie", prompt="Distinction")]},
+    ("new-samurai-heritages-table", "Knowledge Exchange"): {
+        "sub": "technique_category",
+        "requires": [{"kind": "technique", "prompt": "Additional technique",
+                      "rank": 1, "category_from_sub": True}]},
+    ("new-samurai-heritages-table", "Lost Banner"): {
+        "requires": [pec("Indomitable Will", prompt="Distinction")]},
+    ("new-samurai-heritages-table", "Sacred Wilderness"): {
+        "requires": [{"kind": "item", "prompt": "Estate", "name": "Estate",
+                      "custom": True,
+                      "define": "free food, shelter, and medical care"}]},
+    ("new-samurai-heritages-table", "Spirit Companion"): {
+        "sub": "ring",
+        "requires": [{"kind": "item", "prompt": "Talisman", "custom": True,
+                      "name": "Meishōdō talisman",
+                      "define": "which talisman, agreed with the GM"},
+                     {"kind": "technique", "prompt": "Invocation of that ring",
+                      "rank": 1, "category": "invocation",
+                      "ring_from_sub": True}]},
+    ("new-samurai-heritages-table", "Spiritual Debt"): {
+        "sub": "ring",
+        "requires": [{"kind": "ring_swap", "optional": True, "cap": 3,
+                      "to": "from_sub", "prompt": "The spirit's ring"}]},
+
+    # --- Courts of Stone (p. 104) -----------------------------------------
+    ("courts-of-stone-heritages", "Triumph over the Lion"): {
+        "sub": "item_category",
+        "requires": [{"kind": "item", "prompt": "Family heirloom",
+                      "category_from_sub": True,
+                      "qualities": {"player": 1, "gm": 1}}]},
+    ("courts-of-stone-heritages", "Unforgivable Performance"): {
+        "sub": "skill",
+        "requires": [pec("Benten's Curse", prompt="Disadvantage")]},
+    ("courts-of-stone-heritages", "Triumph During Gempuku"): {
+        "requires": [pec("Support of [One Group]", prompt="Distinction",
+                         subject="the Kakita Dueling Academy")]},
+    ("courts-of-stone-heritages", "Elegant Craftsman"): {
+        "requires": [pec("Isolation", prompt="Anxiety"),
+                     {"kind": "ring_swap", "optional": True, "cap": 3,
+                      "to": ["Fire", "Air"], "prompt": "Raise Fire or Air"}]},
+
+    # --- Fields of Victory (p. 84) ----------------------------------------
+    ("fields-of-victory-heritages", "Born on the Battlefield"): {
+        "requires": [pec("Guiding Ancestor", prompt="Distinction")]},
+    ("fields-of-victory-heritages", "Victory against the Crane"): {
+        "sub": "item_category",
+        "requires": [{"kind": "item", "prompt": "Family heirloom",
+                      "category_from_sub": True,
+                      "heirloom": "battlefield"}]},
+    ("fields-of-victory-heritages", "Shamed by Defeat"): {
+        "requires": [{"kind": "skill", "prompt": "Starting skill at 0 ranks",
+                      "from": "school_starting_at_zero"}]},
+    ("fields-of-victory-heritages", "Blade of 10,000 Battles"): {
+        "requires": [{"kind": "item", "prompt": "Storied weapon",
+                      "category": "weapon", "heirloom": "battlefield"}]},
+    ("fields-of-victory-heritages", "Lost Heirloom"): {
+        "requires": [{"kind": "item", "prompt": "The lost weapon",
+                      "category": "weapon", "held": False,
+                      "heirloom": "battlefield"}]},
+    ("fields-of-victory-heritages", "Selfless Sentinel"): {
+        "requires": [pec("Traditional Adherent", prompt="Distinction")]},
+    ("fields-of-victory-heritages", "Mighty Conqueror"): {
+        "requires": [{"kind": "pick_one", "prompt": "One of the three",
+                      "options": [
+                          {"kind": "money", "prompt": "Double starting koku",
+                           "koku": "double"},
+                          {"kind": "item", "prompt": "Item of rarity 6 or lower",
+                           "rarity_max": 6, "heirloom": "battlefield"},
+                          pec("Glorious Deeds", prompt="Passion")]}]},
+    ("fields-of-victory-heritages", "Right Hand of the Emperor"): {
+        "requires": [pec("Support of [One Group]", prompt="Distinction",
+                         subject_options=["the Seppun family",
+                                          "the Otomo family",
+                                          "the Miya family",
+                                          "the Imperial Legions"])]},
+
+    # --- Shadowlands (p. 96) ----------------------------------------------
+    ("shadowlands-heritages", "Blood and Mortar"): {
+        "requires": [pec("Blessed Lineage")]},
+    # the effect is narrative: the ancestor may still be alive down there
+    ("shadowlands-heritages", "Lost in the Darkness"): {"sub": "skill"},
+    ("shadowlands-heritages", "Vengeance for the Fallen"): {
+        "sub": "skill",
+        "requires": [pec("Haunting", prompt="Adversity")]},
+    ("shadowlands-heritages", "Tainted Blood"): {
+        "requires": [pec("Fallen Ancestor", prompt="Anxiety"),
+                     {"kind": "ring_swap", "optional": True, "cap": 3,
+                      "to": ["Void"], "prompt": "Raise Void"}]},
+
+    # --- Writ of the Wilds (p. 101) ---------------------------------------
+    ("new-samurai-heritages-dragon", "At One with Nature"): {
+        "sub": "item"},
+    ("new-samurai-heritages-dragon", "Medical Innovator"): {
+        "requires": [pec("Knowledgeable Wilderness Guide",
+                         prompt="Distinction")]},
+    ("new-samurai-heritages-dragon", "Gaijin Consort"): {
+        "requires": [pec("Ally [Gaijin Group]", prompt="Distinction",
+                         subject_free="the gaijin group")]},
+    ("new-samurai-heritages-dragon", "Revered Parent"): {
+        "requires": [{"kind": "peculiarity", "prompt": "One distinction",
+                      "options": ["Kisshoten’s Blessing", "Famously Lucky"]}]},
+    ("new-samurai-heritages-dragon", "Path to Enlightenment"): {
+        "requires": [pec("Enlightenment", prompt="Passion")]},
+}
+
+# The compendium has three Omamori boons and not this one, though the book puts
+# the item on core p. 243. Carried as the book names it, and marked custom so
+# the build reports it rather than failing on a name it cannot resolve.
+CUSTOM_ITEMS = {"Omamori Boon of Fukurokujin"}
+
+# How a sub-table's ranges are read into requirements. "skill" is the default
+# and is proved rather than assumed: every range has to parse as one.
+def ref(text):
+    """The name inside a corpus reference: `^"Finger of Jade"` -> Finger of Jade."""
+    t = clean(text)
+    m = re.match(r'^\^?"(?P<name>.*)"$', t)
+    return clean(m.group("name")) if m else t.strip('"')
+
+
+SUB_READERS = {
+    "skill": as_skill,
+    "peculiarity": lambda t: pec(ref(t), prompt="Advantage"),
+    "item": lambda t: {"kind": "item", "prompt": "Item", "name": ref(t),
+                       "custom": ref(t) in CUSTOM_ITEMS},
+    # these are read by an entry-level requirement, not on their own
+    "item_category": lambda t: None,
+    "item_name": lambda t: None,
+    "technique_category": lambda t: None,
+    "ring": lambda t: None,
+}
+
+
+def attach_requirements(key, table):
+    """Give every entry its `requires`, and each sub-range its own. -> problems"""
+    problems = []
+    for e in table["entries"]:
+        spec = REQUIRES.get((key, e["name"]), {})
+        e["requires"] = [dict(r) for r in spec.get("requires", [])]
+        sub = e.get("sub_table")
+        how = spec.get("sub", "skill")
+        if sub:
+            reader = SUB_READERS[how]
+            for r in sub["ranges"]:
+                req = reader(r["text"])
+                r["requires"] = [req] if req else []
+            if how == "skill" and not all(r["requires"] for r in sub["ranges"]):
+                unread = [r["text"] for r in sub["ranges"] if not r["requires"]]
+                problems.append(
+                    f"{table['name']} / {e['name']}: sub-table range(s) neither "
+                    f"a skill nor declared in REQUIRES — {unread!r}")
+            e["sub_kind"] = how
+        elif how != "skill":
+            problems.append(f"{table['name']} / {e['name']}: REQUIRES declares "
+                            f"sub={how!r} but the entry has no sub-table")
+        # An effect that grants something but produces no requirement is the
+        # exact failure this is here to catch, so say so rather than ship it.
+        if e.get("effect") and not e["requires"] and how in ("skill",):
+            if (key, e["name"]) not in REQUIRES:
+                problems.append(
+                    f"{table['name']} / {e['name']}: has an EFFECT and no "
+                    f"requirement — {e['effect'][:90]!r}")
+    return problems
+
+
 def main():
     if not os.path.isdir(DSL):
         sys.exit(f"DSL corpus not found at {DSL} — set L5R_DSL")
@@ -201,6 +492,14 @@ def main():
             key = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
             tables[key] = table
 
+    problems, nreq = [], 0
+    for key, table in tables.items():
+        problems += attach_requirements(key, table)
+        for e in table["entries"]:
+            nreq += len(e["requires"]) + sum(
+                len(r["requires"]) for r in
+                (e.get("sub_table") or {"ranges": []})["ranges"])
+
     with open(OUT, "w") as f:
         f.write("window.L5R_HERITAGES = ")
         json.dump(tables, f, ensure_ascii=False, separators=(",", ":"))
@@ -208,12 +507,34 @@ def main():
 
     print(f"{len(tables)} heritage tables -> {os.path.relpath(OUT, ROOT)} "
           f"({os.path.getsize(OUT)/1024:.1f} KB)")
+    nentries = 0
     for k, t in tables.items():
         subs = sum(1 for e in t["entries"] if e.get("sub_table"))
+        reqs = sum(1 for e in t["entries"] if e["requires"] or
+                   any(r["requires"] for r in
+                       (e.get("sub_table") or {"ranges": []})["ranges"]))
+        nentries += len(t["entries"])
         note = ("  <- NOT ENCODED in the DSL corpus: rule ids only"
                 if t["form"] == "unencoded" else "")
         print(f"   {len(t['entries']):3} entries  {subs:2} with sub-tables  "
-              f"[{t['form']:9}]  {t['name']}{note}")
+              f"{reqs:2} that grant something  [{t['form']:9}]  {t['name']}{note}")
+
+    # A sub-table with one range where its siblings have four or five is a
+    # damaged conversion, not a short table. Said out loud because the wizard
+    # can only offer what the corpus states.
+    for k, t in tables.items():
+        for e in t["entries"]:
+            sub = e.get("sub_table")
+            if sub and len(sub["ranges"]) < 2:
+                print(f"   DAMAGED sub-table: {t['name']} / {e['name']} has "
+                      f"{len(sub['ranges'])} range — {sub['ranges'][0]['text']!r}")
+
+    print(f"requirements: {nreq} across {nentries} entries")
+    if problems:
+        print(f"UNHANDLED heritage entries ({len(problems)}):")
+        for p_ in problems:
+            print("   ", p_)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

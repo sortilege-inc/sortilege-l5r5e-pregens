@@ -435,6 +435,12 @@
     c.answers.lord_name = ans("step5", "lord_name");
     c.answers.parent_opinion.description = ans("step17", "parents_pov");
     c.answers.heritage = ans("step18", "heritage_name") || null;
+    c.answers.heritage_table = heritageTableKey(ans("step18", "heritage_table"));
+    c.answers.heritage_sub = ans("step18", "heritage_sub") || null;
+    var hp = (tq.step18 || {}).picks || {};
+    Object.keys(hp).forEach(function (k) {
+      if (k.indexOf("heritage.") === 0) c.choices[k] = hp[k];
+    });
     c.answers.death = ans("step20", "death");
     // peculiarities land in whichever bucket the catalog says they belong to
     (a.peculiarities || []).forEach(function (n) {
@@ -1781,6 +1787,37 @@
       skills[k] = (skills[k] || 0) + C.skills[k];
       credit("skills", k, C.skills[k], byQuestion[k] || "a question");
     });
+
+    /* Question 18's heritage. Its social modifiers, the rank its second roll
+       grants, the ring it lets the character move and — for one entry in the
+       Lion table — double starting koku. All of it used to be dropped on the
+       floor: the entry's name went into the export and none of its effect did.
+
+       The swap is applied last and only if it is legal here, because the ring
+       it raises is capped at 3 during creation like every other ring, and the
+       one it lowers cannot go below 1. */
+    var her = heritageGrants();
+    honor += her.social.honor;
+    glory += her.social.glory;
+    status += her.social.status;
+    wealth *= her.koku;
+    Object.keys(her.skills).forEach(function (k) {
+      skills[k] = (skills[k] || 0) + her.skills[k];
+      credit("skills", k, her.skills[k], "Question 18");
+    });
+    if (her.swap) {
+      var lo = String(her.swap.from).toLowerCase();
+      var hi = String(her.swap.to).toLowerCase();
+      if (rings[lo] != null && rings[hi] != null && lo !== hi &&
+          rings[lo] > 1 && rings[hi] < (her.swap.cap || 3)) {
+        rings[lo] -= 1;
+        rings[hi] += 1;
+        credit("rings", lo, -1, "Question 18");
+        credit("rings", hi, 1, "Question 18");
+      } else {
+        pending.push({ type: "swap", from: lo, to: hi });
+      }
+    }
     return { rings: rings, skills: skills, honor: honor, glory: glory,
              status: status, wealth: wealth, pending: pending, school: sch,
              from: from };
@@ -1871,63 +1908,346 @@
 
   // Everything the character already holds, in any bucket, plus the extra the
   // mentor question grants — so a picker can refuse to sell the same thing twice.
-  /* Gear the rules hand over without naming a specific item.
+  /* ------------------------------------------ what a heritage result grants
 
-     A heritage result can grant a possession the character must then define:
-     Spirit Companion (Children of the Five Winds, entry 9) says "You know one
-     additional meishōdō talisman", and which talisman is a decision for the
-     player and the GM, not something the table settles. Carrying these as a
-     derived list rather than stored state means changing the heritage cannot
-     leave a stale grant behind.
+     A heritage result is not only a line of family history and a social
+     modifier. Every one of the fifty-three entries in the line hands the
+     character something — a skill rank, a technique from outside their school,
+     an heirloom, a distinction — and about half of those make the player
+     choose what.
 
-     Keyed by heritage entry name. Add to it as other results are found to
-     confer an undefined possession; the map is deliberately explicit, because a
-     pattern loose enough to catch "one additional talisman" also catches "one
-     additional target". */
-  var HERITAGE_GRANTED_GEAR = {
-    "Spirit Companion": {
-      item: "One additional meishōdō talisman",
-      // the entry's sub-roll fixes the spirit's ring, so the talisman follows it
-      ringFromSubRoll: true,
-      note: "Granted by the Spirit Companion heritage. Needs defining with the " +
-            "GM: which talisman, and the rank 1 invocation of that ring it lets " +
-            "you learn."
-    }
+     Almost none of it was recorded. Question 18 showed the entry, wrote its
+     name into the export and dropped the rest: Ichiro Tsutomu rolled
+     "Gain +1 Commerce" and has Commerce 0, Shosuro Hisano rolled "+1 Command"
+     and has Command 0, and three more carry a grant nobody ever picked. The
+     MODIFIERS went the same way, so Hisano's glory is her family's 40 rather
+     than the 37 Dynasty Builder leaves her with.
+
+     scripts/heritage_tables.py now reads the obligation out of the corpus and
+     emits it as `requires`, on the entry and on each sub-table range. This is
+     the other half: a control for each requirement, the answer kept in
+     C.choices where every other resolved choice lives, and the result folded
+     into computed(), the side panel and the export.
+
+     Only the answers are stored. What the requirements ARE is derived from the
+     entry every time, so changing the heritage cannot leave a stale grant
+     behind — which is the same reason the old hard-coded gear map is gone. */
+
+  var RING_NAMES = ["Air", "Earth", "Fire", "Water", "Void"];
+
+  // The technique categories a sub-roll can name, in the corpus's own words,
+  // mapped to what the compendium calls them. "Mahō or ninjutsu" is one roll
+  // and two categories.
+  var TECH_KIND = {
+    kata: ["kata"], shuji: ["shuji"], ritual: ["ritual"], rituals: ["ritual"],
+    invocation: ["invocation"], invocations: ["invocation"], kiho: ["kiho"],
+    mahoorninjutsu: ["maho", "ninjutsu"], ninjutsuormaho: ["maho", "ninjutsu"]
   };
 
-  function grantedGear() {
-    var g = HERITAGE_GRANTED_GEAR[C.answers.heritage];
-    if (!g) return [];
-    var name = g.item;
-    if (g.ringFromSubRoll && C.answers.heritage_sub) {
-      // the sub-roll reads "1-2 — Air"; keep only the result
-      var ring = String(C.answers.heritage_sub).split("—").pop().trim();
-      if (ring) name += " (" + ring + ")";
+  function techKinds(text) {
+    var t = normName(String(text || "").replace(/^gain access to\s*/i, ""));
+    return TECH_KIND[t] || null;
+  }
+
+  /* What the heirloom sub-tables mean by their categories. The phrasings are
+     the books' own. Three of them have no compendium behind them — a horse, a
+     boat, the deed to a piece of land are not items in the equipment packs —
+     so those are named by the player and carried as custom, the same way the
+     talisman always was. */
+  var HEIRLOOM = [
+    [/^a weapon/i, { type: "weapon" }],
+    [/^a set of armor/i, { type: "armor" }],
+    [/^a game set/i, { type: "item" }],
+    [/^(another item|some other item)/i, { type: "" }],
+    [/^a horse or (an)?other animal/i, { free: "the animal" }],
+    [/^a boat or estate/i, { free: "the boat or estate" }],
+    [/^the deed to/i, { free: "the land" }]
+  ];
+
+  function heirloomKind(text) {
+    for (var i = 0; i < HEIRLOOM.length; i++) {
+      if (HEIRLOOM[i][0].test(String(text || "").trim())) return HEIRLOOM[i][1];
     }
-    return [{ name: name, note: g.note, needs_definition: true }];
+    return { type: "" };
+  }
+
+  // The sixteen item qualities, which the books cite by page rather than list
+  // ("from the list of item qualities on page 240"). Filtered from the
+  // compendium by that page, so the set is the book's and not a copy of it.
+  function itemQualities() {
+    return CATALOG.filter(function (e) {
+      return e.sub_type === "property" && e.source_book === "core_rulebook" &&
+        (e.source_page === 240 || e.source_page === 241);
+    }).map(function (e) { return e.name; }).sort();
+  }
+
+  function heritageTable() { return HERITAGES[C.answers.heritage_table] || null; }
+
+  // The export writes the table's printed name; the draft holds its key. This
+  // is what lets a character exported from here be opened here again.
+  function heritageTableKey(name) {
+    if (!name) return null;
+    if (HERITAGES[name]) return name;
+    return Object.keys(HERITAGES).filter(function (k) {
+      return normName(HERITAGES[k].name) === normName(name);
+    })[0] || null;
+  }
+
+  // Every answer given to a heritage requirement, for the export. They ride in
+  // step 18's `picks`, which every step has and Foundry ignores.
+  function heritagePicks() {
+    var out = {};
+    Object.keys(C.choices || {}).sort().forEach(function (k) {
+      if (k.indexOf("heritage.") === 0) out[k] = C.choices[k];
+    });
+    return out;
+  }
+
+  function heritageEntry() {
+    var t = heritageTable();
+    if (!t || !C.answers.heritage) return null;
+    return t.entries.filter(function (e) {
+      return e.name === C.answers.heritage;
+    })[0] || null;
+  }
+
+  // The sub-table range chosen under the entry. `heritage_sub` is stored as it
+  // is shown — "1-3 — A weapon" — so the range is found by rebuilding that.
+  function heritageSubRange() {
+    var e = heritageEntry();
+    if (!e || !e.sub_table || !C.answers.heritage_sub) return null;
+    return e.sub_table.ranges.filter(function (r) {
+      return r.range + " — " + r.text === C.answers.heritage_sub;
+    })[0] || null;
+  }
+
+  // A requirement that reads from the sub-roll is only answerable once the
+  // roll has happened, because the range's own text is the category, the ring
+  // or the kind of heirloom.
+  function resolveReq(r, sub, key) {
+    var out = {}, k;
+    for (k in r) if (r.hasOwnProperty(k)) out[k] = r[k];
+    out.key = key;
+    var text = sub ? sub.text : "";
+    if (r.kind === "pick_one") {
+      out.options = (r.options || []).map(function (o, i) {
+        return resolveReq(o, sub, key + ".p" + i);
+      });
+      return out;
+    }
+    if (!sub && (r.category_from_sub || r.ring_from_sub || r.name_from_sub ||
+                 r.to === "from_sub")) {
+      out.waiting = true;               // the second roll has not happened yet
+      return out;
+    }
+    if (r.category_from_sub && r.kind === "technique") {
+      out.kinds = techKinds(text);
+      out.category_label = text;
+    }
+    if (r.category_from_sub && r.kind === "item") {
+      var h = heirloomKind(text);
+      out.type = h.type;
+      out.free = h.free;
+      out.category_label = text;
+    }
+    if (r.ring_from_sub) out.ring = String(text || "").toLowerCase();
+    if (r.name_from_sub) out.name = text + (r.name_suffix || "");
+    if (r.to === "from_sub") out.to = [cap(String(text || "").toLowerCase())];
+    return out;
+  }
+
+  // Everything the result puts on the sheet: the entry's own requirements
+  // first, then the ones the second roll brought with it. Each carries a key
+  // of its own, so an answer survives a re-render and the CLI can read it.
+  function heritageRequirements() {
+    var e = heritageEntry();
+    if (!e) return [];
+    var sub = heritageSubRange();
+    var base = "heritage." + slugify(e.name);
+    return (e.requires || []).concat((sub && sub.requires) || [])
+      .map(function (r, i) { return resolveReq(r, sub, base + "." + i); });
+  }
+
+  /* Re-rolling the heritage, or the second roll, invalidates every answer the
+     old result asked for. They are dropped rather than left in C.choices under
+     a key nothing reads any more — a stale pick that reappears when the same
+     entry is rolled again is the kind of thing nobody would think to check. */
+  function forgetHeritagePicks() {
+    Object.keys(C.choices || {}).forEach(function (k) {
+      if (k.indexOf("heritage.") === 0) delete C.choices[k];
+    });
+  }
+
+  function pick1(key) { return chosen(key)[0] || null; }
+  function setPick1(key, v) { setChosen(key, v ? [v] : []); }
+
+  // Which requirements still need an answer. A requirement that grants outright
+  // — "+1 Commerce", "gain the Sixth Sense distinction" — needs none.
+  function reqOpen(r) {
+    if (r.waiting) return true;
+    switch (r.kind) {
+      case "skill":
+        return !r.skill && !pick1(r.key);
+      case "technique":
+        return !pick1(r.key);
+      case "peculiarity":
+        if (r.options) return !pick1(r.key);
+        if (r.subject_options || r.subject_free) return !pick1(r.key + ".subject");
+        return false;
+      case "item":
+        if (r.name) return false;
+        return !pick1(r.key + ".item") ||
+          (!!r.qualities && !pick1(r.key + ".quality"));
+      case "ring_swap":
+        if (r.optional) return false;
+        return !(pick1(r.key + ".from") && pick1(r.key + ".to"));
+      case "pick_one":
+        var p = pick1(r.key + ".pick");
+        if (!p) return true;
+        return reqOpen(r.options[Number(p)]);
+      default:
+        return false;
+    }
+  }
+
+  /* What still needs an answer. The second roll counts: most entries state
+     their whole grant in the sub-table, so an entry with a sub-table and no
+     range chosen has granted nothing yet — and used to read as settled,
+     because there were no requirements to be open. */
+  function heritageOpen() {
+    var e = heritageEntry();
+    var out = heritageRequirements().filter(reqOpen);
+    if (e && e.sub_table && !heritageSubRange()) {
+      out.unshift({ kind: "sub_roll", prompt: "Second roll" });
+    }
+    return out;
+  }
+
+  // The corpus writes a name as a reference: `^"Finger of Jade"`. That is its
+  // syntax, not the book's punctuation, so it comes off before display.
+  function refText(t) {
+    return String(t == null ? "" : t).replace(/\^"([^"]*)"/g, "$1");
+  }
+
+  /* The result, folded into one shape the rest of the wizard reads. Nothing in
+     here is stored: it is the entry plus the answers, recomputed. */
+  function heritageGrants() {
+    var out = { skills: {}, swap: null, techniques: [], peculiarities: [],
+                gear: [], koku: 1, social: { honor: 0, glory: 0, status: 0 } };
+    var e = heritageEntry();
+    if (!e) return out;
+
+    var mods = e.modifiers || {};
+    Object.keys(mods).forEach(function (k) {
+      var n = parseInt(String(mods[k]).replace(/[^\-0-9]/g, ""), 10);
+      var slot = k.toLowerCase();
+      if (!isNaN(n) && out.social[slot] != null) out.social[slot] += n;
+    });
+
+    function fold(r) {
+      if (r.waiting) return;
+      if (r.kind === "pick_one") {
+        var p = pick1(r.key + ".pick");
+        if (p) fold(r.options[Number(p)]);
+        return;
+      }
+      if (r.kind === "skill") {
+        var name = r.skill || pick1(r.key);
+        var sk = name && (SKILL_BY_LABEL[String(name).toLowerCase()] ||
+                          String(name).toLowerCase());
+        if (sk) out.skills[sk] = (out.skills[sk] || 0) + 1;
+        return;
+      }
+      if (r.kind === "technique") {
+        var t = pick1(r.key);
+        if (t) out.techniques.push(t);
+        return;
+      }
+      if (r.kind === "peculiarity") {
+        var pn = r.options ? pick1(r.key) : r.name;
+        if (!pn) return;
+        var subject = r.subject || pick1(r.key + ".subject");
+        if (subject) {
+          // an open-ended entry with its subject filled in: the compendium
+          // holds the stem, so the specific wording is carried as custom, the
+          // way the archive already records "Support of the Yogo"
+          out.peculiarities.push({
+            name: pn.replace(/\s*\[[^\]]*\]\s*$/, "") + " " + subject,
+            custom: true });
+        } else {
+          out.peculiarities.push({ name: pn });
+        }
+        return;
+      }
+      if (r.kind === "item") {
+        var iname = r.name || pick1(r.key + ".item");
+        if (!iname) return;
+        var custom = !!r.custom || !!r.free;
+        var note = [];
+        if (r.define) note.push(r.define);
+        if (r.held === false) note.push("lost — it exists somewhere in the world");
+        if (r.heirloom) note.push(r.heirloom + " heirloom");
+        var q = pick1(r.key + ".quality"), gq = pick1(r.key + ".gm_quality");
+        if (q) note.push("quality chosen by the player: " + q);
+        if (gq) note.push("quality chosen by the GM: " + gq);
+        out.gear.push({ name: iname, custom: custom, held: r.held !== false,
+                        note: note.join("; "),
+                        needs: reqOpen(r) });
+        return;
+      }
+      if (r.kind === "ring_swap") {
+        var from = pick1(r.key + ".from"), to = pick1(r.key + ".to");
+        if (from && to) out.swap = { from: from, to: to, cap: r.cap || 3 };
+        return;
+      }
+      if (r.kind === "money" && r.koku === "double") out.koku = 2;
+    }
+    heritageRequirements().forEach(fold);
+    return out;
+  }
+
+  // Gear the rules confer without naming it — the talisman, the estate, the
+  // animal — plus any heirloom still to be chosen. The panel marks these as
+  // open rather than settled.
+  function grantedGear() {
+    return heritageGrants().gear.filter(function (g) {
+      return g.custom || g.needs;
+    }).map(function (g) {
+      return { name: g.name, note: g.note || "Granted by the heritage rolled at " +
+               "question 18, and still to be settled with the GM.",
+               needs_definition: true };
+    });
+  }
+
+  // The names a heritage hands over outright, so the peculiarity pickers can
+  // mark them met rather than drawing them as a collision.
+  function heritageGrantedNames() {
+    return heritageGrants().peculiarities.map(function (p) { return p.name; });
+  }
+
+  /* The same set as heldPeculiarities(), as references rather than names. An
+     open-ended entry with its subject filled in ("Support of the Kakita
+     Dueling Academy") is not in the compendium under that wording, so it
+     travels as custom — otherwise the build cannot resolve it and stops. */
+  function peculiarityRefs() {
+    var her = heritageGrants().peculiarities;
+    var byName = {};
+    her.forEach(function (p) { byName[normName(p.name)] = p; });
+    return heldPeculiarities().map(function (n) {
+      var p = byName[normName(n)];
+      return p && p.custom ? { name: p.name, custom: true } : { name: n };
+    });
   }
 
   function heldPeculiarities() {
     return [].concat(C.distinctions, C.adversities, C.passions, C.anxieties,
-                     C.answers.mentor.granted ? [C.answers.mentor.granted] : []);
-  }
-
-  // Some heritage results hand over a named peculiarity outright ("Gain the
-  // Guiding Ancestor (Void) distinction"). That is a stated condition the
-  // character demonstrably meets, so the picker marks it as met.
-  function heritageGrantedNames() {
-    var t = HERITAGES[C.answers.heritage_table];
-    if (!t || !C.answers.heritage) return [];
-    var e = t.entries.filter(function (x) { return x.name === C.answers.heritage; })[0];
-    if (!e) return [];
-    var blob = [e.effect, e.description,
-                Object.keys(e.modifiers || {}).map(function (k) {
-                  return e.modifiers[k];
-                }).join(" ")].filter(Boolean).join(" ");
-    var out = [], m;
-    var re = /[Gg]ain the ([^,.;]+?)\s*(?:\([^)]*\)\s*)?(distinction|adversity|passion|anxiety)\b/g;
-    while ((m = re.exec(blob))) out.push(m[1].trim());
-    return out;
+                     C.answers.mentor.granted ? [C.answers.mentor.granted] : [],
+                     // Several heritages confer one outright, and say so: "this
+                     // can be assigned in excess of the normal limitations on
+                     // advantages at character creation".
+                     heritageGrants().peculiarities.map(function (p) {
+                       return p.name;
+                     }));
   }
 
   // L5R5e peculiarities carry no prerequisites: neither the compendium nor the
@@ -1953,15 +2273,17 @@
     if (current && normName(current) === normName(e.name)) {
       return { state: "plain", why: "" };
     }
-    var mine = heldPeculiarities().filter(function (h) {
-      return normName(h) === normName(e.name);
-    });
-    if (mine.length) return { state: "no", why: "Already on this character." };
-
+    // Asked before "already on this character", because a heritage grant IS on
+    // the character — it is held, and the reason it is held is worth saying.
     if (heritageGrantedNames().filter(function (g) {
       return normName(g) === normName(e.name);
     }).length)
       return { state: "yes", why: "Granted by the heritage rolled at question 18." };
+
+    var mine = heldPeculiarities().filter(function (h) {
+      return normName(h) === normName(e.name);
+    });
+    if (mine.length) return { state: "no", why: "Already on this character." };
 
     var m = TENET_RE.exec(e.name);
     if (m) {
@@ -2752,7 +3074,13 @@
       },
       done: function () {
         if (qAlt(18)) return has(C.answers.raised_by) && has(C.answers.raised_skill);
-        return has(C.answers.heritage);
+        // Rolling the entry is half the question. The step is answered when
+        // what it grants has actually been settled — the skill picked, the
+        // technique chosen, the heirloom named.
+        return has(C.answers.heritage) && !heritageOpen().length &&
+          !computed().pending.filter(function (p) {
+            return p.type === "swap";
+          }).length;
       },
       render: function (body) {
         var alt18 = qAlt(18);
@@ -2789,6 +3117,7 @@
         Array.prototype.forEach.call(tabs.querySelectorAll(".choice"), function (b) {
           if (b.disabled) return;
           b.addEventListener("click", function () {
+            forgetHeritagePicks();
             C.answers.heritage_table = b.getAttribute("data-v");
             C.answers.heritage = null;
             C.answers.heritage_sub = null;
@@ -2812,6 +3141,7 @@
         roll.type = "button"; roll.className = "btn ghost"; roll.textContent = "Roll d10";
         roll.addEventListener("click", function () {
           var e = table.entries[Math.floor(Math.random() * table.entries.length)];
+          forgetHeritagePicks();
           C.answers.heritage = e.name;
           C.answers.heritage_sub = null;
           save(); render();
@@ -2832,17 +3162,18 @@
             '<span class="h-body"><span class="h-name">' + esc(e.name) + "</span>" +
             (e.description ? '<span class="h-desc">' + esc(e.description) + "</span>" : "") +
             (mods ? '<span class="h-mod">' + esc(mods) + "</span>" : "") +
-            (e.effect ? '<span class="h-eff">' + esc(e.effect) + "</span>" : "") +
+            (e.effect ? '<span class="h-eff">' + esc(refText(e.effect)) + "</span>" : "") +
             (e.sub_table
               ? '<span class="h-sub">' + esc(e.sub_table.die) + ": " +
                 e.sub_table.ranges.map(function (r) {
-                  return "<em>" + esc(r.range) + "</em> " + esc(r.text);
+                  return "<em>" + esc(r.range) + "</em> " + esc(refText(r.text));
                 }).join(" · ") + "</span>"
               : "") +
             "</span></button>";
         }).join("");
         Array.prototype.forEach.call(list.querySelectorAll(".heritage"), function (b) {
           b.addEventListener("click", function () {
+            forgetHeritagePicks();
             C.answers.heritage = b.getAttribute("data-v");
             C.answers.heritage_sub = null;
             save(); render();
@@ -2862,16 +3193,20 @@
           subRoll.addEventListener("click", function () {
             var r = chosen.sub_table.ranges[
               Math.floor(Math.random() * chosen.sub_table.ranges.length)];
+            forgetHeritagePicks();
             C.answers.heritage_sub = r.range + " — " + r.text;
             save(); render();
           });
           body.appendChild(subRoll);
           pickList(body, chosen.sub_table.ranges.map(function (r) {
-            return { value: r.range + " — " + r.text, label: r.text, meta: r.range };
+            return { value: r.range + " — " + r.text, label: refText(r.text),
+                     meta: r.range };
           }), C.answers.heritage_sub, function (v) {
-            C.answers.heritage_sub = v; save();
+            C.answers.heritage_sub = v; save(); render();
           });
         }
+
+        heritageGrantSection(body);
       } },
 
     { id: "final-name", n: 19, label: "Name", title: function () { return qText(19) || "Your Character's Name"; },
@@ -3568,6 +3903,274 @@
     }, { tip: ruleTextFor });
   }
 
+  /* ------------------------------------- question 18: settling the result
+
+     One control per requirement, in the order the rules state them. Each is
+     the same picker used wherever else the wizard asks for that kind of thing,
+     so a technique from a heritage is chosen from the compendium exactly as a
+     school technique is. */
+
+  function reqHeading(body, r, n) {
+    var h = document.createElement("h4");
+    h.className = "field-label her-req" + (reqOpen(r) ? " open" : " settled");
+    h.innerHTML = '<span class="hr-n">' + n + "</span>" + esc(r.prompt) +
+      (r.optional ? ' <span class="hr-opt">optional</span>' : "") +
+      (r.category_label
+        ? ' <span class="hr-sub">' + esc(refText(r.category_label)) + "</span>"
+        : "");
+    body.appendChild(h);
+  }
+
+  // A technique the heritage teaches: rank 1, of the rolled category, and
+  // performable even where the school does not allow it.
+  function reqTechnique(body, r) {
+    var kinds = r.kinds || (r.category ? [r.category] : []);
+    if (!kinds.length) return needs(body, "The second roll names the category.");
+    var pool = CATALOG.filter(function (e) {
+      return e.sub_type === "technique" && e.rank === (r.rank || 1) &&
+        kinds.indexOf(String(e.kind || "").toLowerCase()) >= 0 &&
+        (!r.ring || String(e.ring || "").toLowerCase() === r.ring);
+    });
+    if (!pool.length) {
+      return needs(body, "Nothing in the compendium matches " +
+        kinds.join(" or ") + " at rank " + (r.rank || 1) +
+        (r.ring ? " with the " + cap(r.ring) + " ring" : "") + ".");
+    }
+    pickList(body, pool.map(function (e) {
+      return { value: e.name, label: e.name,
+               meta: [cap(e.kind), e.ring ? cap(e.ring) : null,
+                      e.source_book].filter(Boolean).join(" · ") };
+    }), pick1(r.key), function (v) { setPick1(r.key, v); render(); },
+      { tip: ruleTextFor });
+  }
+
+  function reqSkill(body, r) {
+    if (r.skill) {
+      // nothing to choose: the roll named it
+      var p = document.createElement("p");
+      p.className = "muted small";
+      p.textContent = "+1 rank in " + r.skill + ", applied.";
+      body.appendChild(p);
+      return;
+    }
+    var opts = r.options;
+    if (r.from === "school_starting_at_zero") {
+      // "one of the starting skills for your school in which your character
+      // has no ranks" — measured before this grant, so the one just chosen
+      // does not vanish out of its own list
+      var sch = schoolByRollName(C.school);
+      var spec = sch && sch.starting_skills && sch.starting_skills._choose;
+      var all = spec ? spec.options : [];
+      var have = computed().skills, mine = heritageGrants().skills;
+      opts = all.filter(function (o) {
+        var k = SKILL_BY_LABEL[String(o).toLowerCase()] ||
+                String(o).toLowerCase();
+        return ((have[k] || 0) - (mine[k] || 0)) === 0;
+      });
+      if (!opts.length) {
+        return needs(body, sch
+          ? "Every starting skill for " + C.school + " already has a rank."
+          : "Choose a school first.");
+      }
+    }
+    pickList(body, (opts || []).map(function (o) {
+      return { value: o, label: o };
+    }), pick1(r.key), function (v) { setPick1(r.key, v); render(); });
+  }
+
+  function reqPeculiarity(body, r) {
+    if (r.options) {
+      pickList(body, r.options.map(function (o) {
+        return { value: o, label: o };
+      }), pick1(r.key), function (v) { setPick1(r.key, v); render(); },
+        { tip: ruleTextFor });
+      return;
+    }
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.innerHTML = "Gains <strong>" + esc(r.name) + "</strong>" +
+      (r.subject ? " (" + esc(r.subject) + ")" : "") + ".";
+    body.appendChild(note);
+    if (r.subject_options) {
+      pickList(body, r.subject_options.map(function (o) {
+        return { value: o, label: o };
+      }), pick1(r.key + ".subject"), function (v) {
+        setPick1(r.key + ".subject", v); render();
+      });
+    } else if (r.subject_free) {
+      var inp = document.createElement("input");
+      inp.type = "text";
+      inp.className = "textline";
+      inp.placeholder = "Name " + r.subject_free;
+      inp.value = pick1(r.key + ".subject") || "";
+      inp.addEventListener("change", function () {
+        setPick1(r.key + ".subject", inp.value.trim()); render();
+      });
+      body.appendChild(inp);
+    }
+  }
+
+  function reqItem(body, r) {
+    if (r.name) {
+      var p = document.createElement("p");
+      p.className = "muted small";
+      p.textContent = r.name + (r.define ? " — " + r.define : "") + ".";
+      body.appendChild(p);
+    } else if (r.free) {
+      // no compendium behind it: a horse, a boat, the deed to a piece of land
+      var inp = document.createElement("input");
+      inp.type = "text";
+      inp.className = "textline";
+      inp.placeholder = "Name " + r.free;
+      inp.value = pick1(r.key + ".item") || "";
+      inp.addEventListener("change", function () {
+        setPick1(r.key + ".item", inp.value.trim()); render();
+      });
+      body.appendChild(inp);
+    } else {
+      var pool = CATALOG.filter(function (e) {
+        if (!isEquipment(e)) return false;
+        if (r.type && e.sub_type !== r.type) return false;
+        var rr = itemRarity(e);
+        if (r.rarity_max != null && rr != null && rr > r.rarity_max) return false;
+        return true;
+      });
+      var count = document.createElement("p");
+      count.className = "muted small";
+      count.textContent = pool.length + " to choose from" +
+        (r.rarity_max != null ? ", rarity " + r.rarity_max + " or lower" : "") + ".";
+      body.appendChild(count);
+      pickList(body, pool.map(function (e) {
+        var rr = itemRarity(e);
+        return { value: e.name, label: e.name,
+                 meta: [cap(e.sub_type), rr != null ? "Rarity " + rr : null,
+                        e.source_book].filter(Boolean).join(" · ") };
+      }), pick1(r.key + ".item"), function (v) {
+        setPick1(r.key + ".item", v); render();
+      }, { tip: ruleTextFor });
+    }
+    if (r.held === false) {
+      var lost = document.createElement("p");
+      lost.className = "muted small";
+      lost.textContent = "It is not in hand: it exists somewhere in the world, " +
+        "and reclaiming it is something the campaign can be about.";
+      body.appendChild(lost);
+    }
+    if (r.qualities) {
+      // "You choose one quality and the GM chooses one quality" — the player's
+      // is theirs to settle here; the GM's is recorded when the GM says.
+      var qs = itemQualities().map(function (q) {
+        return { value: q, label: q };
+      });
+      label(body, "Quality you choose");
+      pickList(body, qs, pick1(r.key + ".quality"), function (v) {
+        setPick1(r.key + ".quality", v); render();
+      }, { tip: ruleTextFor });
+      label(body, "Quality the GM chooses (optional here)");
+      pickList(body, qs, pick1(r.key + ".gm_quality"), function (v) {
+        setPick1(r.key + ".gm_quality", v); render();
+      }, { tip: ruleTextFor });
+    }
+  }
+
+  function reqRingSwap(body, r) {
+    var d = computed();
+    var to = r.to === "any" ? RING_NAMES : (r.to || RING_NAMES);
+    var from = pick1(r.key + ".from"), into = pick1(r.key + ".to");
+    label(body, "Reduce by 1");
+    choice(body, RING_NAMES.map(function (n) {
+      return [n.toLowerCase(), n + " " + d.rings[n.toLowerCase()]];
+    }), from, function (v) {
+      setPick1(r.key + ".from", from === v ? null : v); render();
+    });
+    label(body, "Raise by 1" + (r.cap ? " (never above " + r.cap + ")" : ""));
+    choice(body, to.map(function (n) {
+      return [String(n).toLowerCase(), n + " " + d.rings[String(n).toLowerCase()]];
+    }), into, function (v) {
+      setPick1(r.key + ".to", into === v ? null : v); render();
+    });
+    if (from && into) {
+      var swapped = d.from.rings[into] && d.from.rings[into].filter(function (c) {
+        return c.source === "Question 18";
+      }).length;
+      if (!swapped) {
+        var why = document.createElement("p");
+        why.className = "muted small";
+        why.textContent = from === into
+          ? "Pick two different rings."
+          : "Not applied: a ring cannot go below 1, and cannot be raised above " +
+            (r.cap || 3) + " during creation.";
+        body.appendChild(why);
+      }
+    }
+  }
+
+  function renderRequirement(body, r, n) {
+    reqHeading(body, r, n);
+    if (r.waiting) {
+      return needs(body, "Roll or choose on the second table first — it names " +
+                         "what this grants.");
+    }
+    if (r.kind === "sub_roll") {
+      return needs(body, "Roll or choose on the second table above — it names " +
+                         "what this result grants.");
+    }
+    if (r.kind === "skill") return reqSkill(body, r);
+    if (r.kind === "technique") return reqTechnique(body, r);
+    if (r.kind === "peculiarity") return reqPeculiarity(body, r);
+    if (r.kind === "item") return reqItem(body, r);
+    if (r.kind === "ring_swap") return reqRingSwap(body, r);
+    if (r.kind === "money") {
+      return needs(body, "Starting koku doubled.");
+    }
+    if (r.kind === "pick_one") {
+      var picked = pick1(r.key + ".pick");
+      choice(body, r.options.map(function (o, i) {
+        // "Passion" says less than "Glorious Deeds (passion)"
+        return [String(i), o.name ? o.name + " (" + o.prompt.toLowerCase() + ")"
+                                  : o.prompt];
+      }), picked, function (v) {
+        setPick1(r.key + ".pick", picked === v ? null : v); render();
+      });
+      if (picked) renderRequirement(body, r.options[Number(picked)], n + "·");
+      return;
+    }
+  }
+
+  // The block under the entry cards: what this result actually does, and every
+  // control needed to settle it.
+  function heritageGrantSection(body) {
+    var e = heritageEntry();
+    if (!e) return;
+    var reqs = heritageRequirements();
+    // Where the grant is stated in the sub-table, there is nothing to show
+    // until the second roll happens — so say that, in place of the controls.
+    if (e.sub_table && !heritageSubRange()) {
+      reqs = [{ kind: "sub_roll", prompt: "Second roll", key: "heritage.sub" }];
+    }
+    var mods = Object.keys(e.modifiers || {}).filter(function (k) {
+      return k !== "note";
+    });
+    if (!reqs.length && !mods.length) return;
+
+    var wrap = document.createElement("div");
+    wrap.className = "her-grants";
+    // An answered swap that the ring caps will not allow is not settled either,
+    // and computed() is the only thing that knows whether it applies.
+    var open = heritageOpen().length +
+      computed().pending.filter(function (p) { return p.type === "swap"; }).length;
+    wrap.innerHTML = '<h4 class="field-label her-head">What this result grants' +
+      '<span class="hg-n' + (open ? "" : " ok") + '">' +
+      (open ? open + " to settle" : "settled") + "</span></h4>" +
+      (mods.length
+        ? '<p class="her-mods">' + mods.map(function (k) {
+            return "<span>" + esc(k) + " " + esc(e.modifiers[k]) + "</span>";
+          }).join("") + "</p>"
+        : "");
+    body.appendChild(wrap);
+    reqs.forEach(function (r, i) { renderRequirement(wrap, r, i + 1); });
+  }
+
   // The lord's name at question 5.
   function lordSection(body) {
     nameSection(body, {
@@ -3721,7 +4324,7 @@
             heritage_name: a.heritage,
             heritage_table: (HERITAGES[a.heritage_table] || {}).name || a.heritage_table,
             heritage_sub: a.heritage_sub
-          }, picks: {} },
+          }, picks: heritagePicks() },
           step20: { answers: { death: a.death }, picks: {} }
         }
       },
@@ -3746,18 +4349,24 @@
         // Both halves: the techniques the school simply grants, and the ones the
         // player chose from its lists. Only the fixed ones used to be exported,
         // so every chosen kata, ritual and shūji was dropped on the way out.
-        techniques: refs((sch.starting_techniques || []).reduce(function (acc, t, i) {
-          if (t.kind === "fixed") return acc.concat([t.name]);
-          if (t.kind === "choose") return acc.concat(chosen("school.tech." + i));
-          return acc;
-        }, []).concat(sch.school_ability ? [sch.school_ability] : [])),
-        peculiarities: refs(heldPeculiarities()),
+        // The same list the side panel shows: what the school grants, what the
+        // player chose from its lists, and the one a heritage teaches from
+        // outside it.
+        techniques: refs(wipTechniques()),
+        peculiarities: peculiarityRefs(),
         titles: [], bonds: [], signature_scrolls: [],
         gear: refs(C.starting_item ? [C.starting_item] : []).concat(
-          grantedGear().map(function (g) {
-            // custom, because the build resolves a bare name against the
-            // compendium and an item that is not yet defined cannot resolve
-            return { name: g.name, custom: true, text: g.note };
+          heritageGrants().gear.filter(function (g) {
+            return g.name;
+          }).map(function (g) {
+            // custom where there is nothing in the compendium to resolve
+            // against — an heirloom still to be settled, a horse, an estate —
+            // and the note carries what the rules said about it
+            var o = { name: g.name };
+            if (g.custom) o.custom = true;
+            if (g.note) o.text = g.note;
+            if (!g.held) { o.custom = true; o.held = false; }
+            return o;
           })),
         advancements: []
       }]
@@ -3892,13 +4501,17 @@
   // Everything the character has taken that carries rules text.
   function wipTechniques() {
     var sch = schoolByRollName(C.school);
-    if (!sch) return [];
     var out = [];
-    (sch.starting_techniques || []).forEach(function (g, i) {
-      if (g.kind === "fixed" && g.name) out.push(g.name);
-      else if (g.kind === "choose") out = out.concat(chosen("school.tech." + i));
-    });
-    if (sch.school_ability) out.push(sch.school_ability);
+    if (sch) {
+      (sch.starting_techniques || []).forEach(function (g, i) {
+        if (g.kind === "fixed" && g.name) out.push(g.name);
+        else if (g.kind === "choose") out = out.concat(chosen("school.tech." + i));
+      });
+      if (sch.school_ability) out.push(sch.school_ability);
+    }
+    // Stolen Knowledge, Knowledge Exchange and Spirit Companion each teach one
+    // technique from outside the school, and say it may be performed anyway.
+    out = out.concat(heritageGrants().techniques);
     return out.filter(function (v, i, a) { return a.indexOf(v) === i; });
   }
 
@@ -3965,7 +4578,16 @@
 
     var advantages = heldPeculiarities();
     var techs = wipTechniques();
-    var gear = grantedGear();
+    // Everything the character carries: the item question 16 buys, and whatever
+    // the heritage handed over. Settled pieces used to be invisible here — only
+    // the ones still to be defined were listed.
+    var gear = (C.starting_item ? [{ name: C.starting_item, note: "" }] : [])
+      .concat(heritageGrants().gear.filter(function (g) { return g.name; })
+        .map(function (g) {
+          return { name: g.name, note: g.note,
+                   open: g.needs || g.custom,
+                   held: g.held !== false };
+        }));
     var answered = answeredQuestions();
 
     el("wip").innerHTML =
@@ -3982,8 +4604,12 @@
       (d.pending.length
         ? '<p class="muted small wip-pending">Choices from your clan, family or school ' +
           "still to resolve: " + d.pending.map(function (p) {
-            return p.type === "ring" ? "a ring (" + p.opts.join("/") + ")"
-                                     : p.n + " skills";
+            if (p.type === "ring") return "a ring (" + p.opts.join("/") + ")";
+            if (p.type === "swap") {
+              return "the heritage's swap — " + cap(p.to) + " cannot be raised " +
+                     "or " + cap(p.from) + " lowered from here";
+            }
+            return p.n + " skills";
           }).join("; ") + ".</p>"
         : "") +
       '<h4 class="field-label">Skills</h4><div class="wip-skills">' + skills + "</div>" +
@@ -3994,14 +4620,17 @@
       (techs.length
         ? '<h4 class="field-label">Techniques</h4>' + chipRow(techs, "tech")
         : "") +
-      // Gear a rule confers without naming it. Shown with its own marker
-      // because it is an open item: the character has it, and what it is has
-      // still to be settled with the GM.
+      // A piece a rule confers without naming it keeps its own marker, because
+      // it is an open item: the character has it, and what it is has still to
+      // be settled with the GM.
       (gear.length
-        ? '<h4 class="field-label">Granted, needs defining</h4>' +
+        ? '<h4 class="field-label">Gear</h4>' +
           '<div class="tagrow">' + gear.map(function (g) {
-            return '<span class="chip needs-def has-tip" data-tip="' +
-              esc(g.name) + '" data-why="' + esc(g.note) + '">' +
+            var why = [g.note, g.held ? "" : "Not in hand."].filter(Boolean).join(" ");
+            return '<span class="chip' + (g.open ? " needs-def" : "") +
+              (why || ruleTextFor(g.name) ? " has-tip" : "") +
+              '" data-tip="' + esc(g.name) + '"' +
+              (why ? ' data-why="' + esc(why) + '"' : "") + ">" +
               esc(g.name) + "</span>";
           }).join("") + "</div>"
         : "") +

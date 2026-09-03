@@ -113,7 +113,8 @@
     "answers": {
      "heritage_name": "Dynasty Builder",
      "heritage_table": "Samurai Heritage Table",
-     "heritage_sub": "1-3 — Gain +1 ^\"Command\""
+     "heritage_sub": "1-3 — Gain +1 ^\"Command\"",
+     "heritage_applied": true
     },
     "picks": {}
    },
@@ -162,7 +163,7 @@
      "theology": 0
     },
     "social": {
-     "command": 0,
+     "command": 1,
      "courtesy": 2,
      "games": 0,
      "performance": 2
@@ -177,7 +178,7 @@
    },
    "social": {
     "honor": 30,
-    "glory": 40,
+    "glory": 37,
     "status": 35,
     "ninjo": "Hisano wants to direct a new production with actors other than themself, but every time they miss a performance to scout talent or develop a script, the theatre company loses money and their handlers grow impatient about the intelligence gap.",
     "giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to their Scorpion handlers, which means they cannot afford to miss a performance or be seen conferring with anyone the theatre company would recognize.",

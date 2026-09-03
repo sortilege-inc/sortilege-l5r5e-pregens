@@ -923,6 +923,49 @@ p.cur-meta{ margin:0 0 0.5rem; }
   border-top:1px dashed var(--edge-soft); font-size:0.84rem; color:var(--ink-soft);
 }
 .h-sub em{ color:var(--crimson); font-style:normal; font-family:var(--caps); font-size:0.9em; }
+
+/* What the rolled result grants, and the controls that settle it. Set apart
+   from the entry cards above it: the cards are the table, this is the part of
+   the character it changes. */
+.her-grants{
+  margin:1rem 0 0.4rem; padding:0.8rem 0.9rem 0.9rem;
+  border:1px solid var(--edge-soft); border-top:3px solid var(--jade);
+  border-radius:2px; background:var(--paper-2);
+}
+.her-grants h4.her-head{ margin-top:0; display:flex; align-items:baseline; gap:0.5rem; }
+.hg-n{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.09em;
+  font-size:0.6rem; padding:0.1rem 0.45rem; border-radius:2px;
+  color:var(--crimson); background:var(--crimson-soft);
+}
+.hg-n.ok{ color:var(--jade); background:rgba(79,125,92,0.13); }
+.her-mods{ margin:0.2rem 0 0.6rem; display:flex; flex-wrap:wrap; gap:0.35rem; }
+.her-mods span{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em;
+  font-size:0.64rem; color:var(--crimson); background:var(--crimson-soft);
+  padding:0.12rem 0.45rem; border-radius:2px;
+}
+h4.her-req{
+  display:flex; align-items:baseline; gap:0.45rem; margin-top:0.9rem;
+  padding-bottom:0.2rem; border-bottom:1px solid var(--edge-soft);
+}
+h4.her-req .hr-n{
+  flex:none; width:1.5em; height:1.5em; line-height:1.5em; text-align:center;
+  border-radius:50%; font-size:0.7rem; font-variant-numeric:lining-nums;
+  color:var(--paper); background:var(--ink-dim);
+}
+h4.her-req.open .hr-n{ background:var(--crimson); }
+h4.her-req.settled .hr-n{ background:var(--jade); }
+.hr-opt, .hr-sub{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.09em;
+  font-size:0.6rem; color:var(--ink-soft); font-weight:400;
+}
+.hr-sub{ color:var(--crimson); text-transform:none; letter-spacing:0.04em; }
+.her-grants input.textline{
+  width:100%; max-width:34rem; padding:0.4rem 0.55rem; font:inherit;
+  color:var(--sumi); background:var(--paper); border:1px solid var(--edge-soft);
+  border-radius:2px;
+}
 h3.cur-title.active{ color:var(--crimson); }
 h3.cur-title.active::before{ content:"❖ "; color:var(--crimson); font-size:0.8em; }
 .cur-prog.active{ color:var(--crimson); }

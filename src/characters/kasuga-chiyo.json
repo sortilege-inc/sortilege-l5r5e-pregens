@@ -87,7 +87,8 @@
     "answers": {
      "heritage_name": "Famous Deed",
      "heritage_table": "Samurai Heritage Table",
-     "heritage_sub": "1-3 — A weapon"
+     "heritage_sub": "1-3 — A weapon",
+     "heritage_applied": true
     },
     "picks": {}
    },
@@ -151,7 +152,7 @@
    },
    "social": {
     "honor": 29,
-    "glory": 38,
+    "glory": 41,
     "status": 25,
     "ninjo": "She wants to be read as competent by someone who matters, and she'll lie about what she knows to make it happen.",
     "giri": "She must certify the magistrates' expenditures from the harbor fund, which means accounting for money she knows went missing on her watch and never admitting where it actually went.",

@@ -87,7 +87,8 @@
     "answers": {
      "heritage_name": "Spirit Companion",
      "heritage_table": "New Samurai Heritages Table",
-     "heritage_sub": "3-4 — Water"
+     "heritage_sub": "3-4 — Water",
+     "heritage_applied": true
     },
     "picks": {}
    },
@@ -151,8 +152,8 @@
    },
    "social": {
     "honor": 40,
-    "glory": 40,
-    "status": 30,
+    "glory": 37,
+    "status": 33,
     "ninjo": "He wants to read the bones without hearing Nagiko's questions echo underneath, but he accepted what the cards showed him and he will not break that debt.",
     "giri": "Nergüi reads the cards for Nagiko's investigations even when the revelations yield nightmares.",
     "bushido_tenets": {

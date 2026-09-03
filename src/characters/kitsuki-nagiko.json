@@ -111,7 +111,8 @@
     "answers": {
      "heritage_name": "Touched by the Fortunes",
      "heritage_table": "New Samurai Heritages (Celestial Realms)",
-     "heritage_sub": null
+     "heritage_sub": null,
+     "heritage_applied": true
     },
     "picks": {}
    },
@@ -175,7 +176,7 @@
    },
    "social": {
     "honor": 55,
-    "glory": 49,
+    "glory": 44,
     "status": 30,
     "ninjo": "She wants the people she investigates to admit what she has already proven, and resents that they lie anyway.",
     "giri": "She reports each investigation's findings to the Emerald Champion in writing, methodical and complete, knowing he will decide what the Emperor learns and what stays buried.",
@@ -222,6 +223,9 @@
     },
     {
      "name": "Horrible Scar"
+    },
+    {
+     "name": "Sixth Sense"
     }
    ],
    "titles": [],

@@ -113,7 +113,8 @@
     "answers": {
      "heritage_name": "Knowledge Exchange",
      "heritage_table": "New Samurai Heritages Table",
-     "heritage_sub": "4-6 — shūji"
+     "heritage_sub": "4-6 — shūji",
+     "heritage_applied": true
     },
     "picks": {}
    },
@@ -177,7 +178,7 @@
    },
    "social": {
     "honor": 45,
-    "glory": 45,
+    "glory": 40,
     "status": 30,
     "ninjo": "She wants to build a ward that holds against mahō itself rather than merely containing it, and she has already sketched the framework using principles the Kuni would call heresy if they knew how far she had taken them.",
     "giri": "Ryōsei catalogs the ritual components confiscated from mahō-tsukai cells for Magistrate Sekihara, cross-referencing their applications against Kuni doctrine so that none are ever used twice.",

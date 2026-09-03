@@ -105,6 +105,18 @@ def _js(name):
     return json.loads(t[t.index("=") + 1:].rstrip().rstrip(";\n").rstrip(";"))
 
 
+_CATALOG = None
+
+
+def catalog():
+    """The compendium index, read once."""
+    global _CATALOG
+    if _CATALOG is None:
+        t = open(os.path.join(ROOT, "data", "catalog.js"), encoding="utf-8").read()
+        _CATALOG = json.loads(t[t.index("=") + 1:].rstrip().rstrip(";\n").rstrip(";"))
+    return _CATALOG
+
+
 def norm(s):
     """creator.js's normName: fold accents, keep [a-z0-9]."""
     import unicodedata
@@ -224,6 +236,237 @@ def specs(ch):
                     opts = expand(opts[0], g.get("category"), by_ring)
             add(f"school.tech.{i}", f"{g.get('category','technique')} technique",
                 None, g.get("n", 1), opts)
+    # Question 18's heritage puts its own choices — a skill, a technique from
+    # outside the school, an heirloom and its quality, which distinction.
+    out += heritage_specs(ch)
+    return out
+
+
+def equipment(kind=None, rarity_max=None):
+    """The wizard's own equipment pool: items, weapons and armour, minus the
+    categories it never offers."""
+    out = []
+    for e in catalog():
+        if e.get("sub_type") not in ("item", "weapon", "armor"):
+            continue
+        if e.get("category") in ("Unarmed profiles", "Siege Weapons",
+                                 "Improvised Weapons"):
+            continue
+        if kind and e.get("sub_type") != kind:
+            continue
+        r = e.get("rarity")
+        try:
+            r = int(r)
+        except (TypeError, ValueError):
+            r = None
+        if rarity_max is not None and r is not None and r > rarity_max:
+            continue
+        out.append(e["name"])
+    return sorted(set(out))
+
+
+def item_qualities():
+    """The sixteen on core pp. 240-241, by page rather than by a copy of them."""
+    return sorted(e["name"] for e in catalog()
+                  if e.get("sub_type") == "property"
+                  and e.get("source_book") == "core_rulebook"
+                  and e.get("source_page") in (240, 241))
+
+
+# creator.js's TECH_KIND and HEIRLOOM, mirrored. The keys are the corpus's own
+# words for a technique category and the books' own words for a kind of
+# heirloom, so both tables have to say the same thing as the wizard does or a
+# pick made here reads as illegal there.
+TECH_KIND = {"kata": ["kata"], "shuji": ["shuji"], "ritual": ["ritual"],
+             "rituals": ["ritual"], "invocation": ["invocation"],
+             "invocations": ["invocation"], "kiho": ["kiho"],
+             "mahoorninjutsu": ["maho", "ninjutsu"],
+             "ninjutsuormaho": ["maho", "ninjutsu"]}
+
+HEIRLOOM = [(r"^a weapon", {"type": "weapon"}),
+            (r"^a set of armor", {"type": "armor"}),
+            (r"^a game set", {"type": "item"}),
+            (r"^(another item|some other item)", {"type": None}),
+            (r"^a horse or (an)?other animal", {"free": "the animal"}),
+            (r"^a boat or estate", {"free": "the boat or estate"}),
+            (r"^the deed to", {"free": "the land"})]
+
+
+def deref(text):
+    return re.sub(r'\^"([^"]*)"', r"\1", str(text or ""))
+
+
+def heritage_entry(ch):
+    """(entry, sub_range) for the result rolled at question 18."""
+    tables = _js("heritages.js")
+    a = ch.get("answers") or {}
+    key = a.get("heritage_table")
+    table = (tables or {}).get(key)
+    if not table:
+        table = next((t for t in (tables or {}).values()
+                      if norm(t.get("name")) == norm(key)), None)
+    if not table or not a.get("heritage"):
+        return None, None
+    entry = next((e for e in table["entries"]
+                  if e["name"] == a["heritage"]), None)
+    if not entry:
+        return None, None
+    sub = None
+    if entry.get("sub_table") and a.get("heritage_sub"):
+        sub = next((r for r in entry["sub_table"]["ranges"]
+                    if r["range"] + " — " + r["text"] == a["heritage_sub"]), None)
+    return entry, sub
+
+
+SKILL_KEY = {}
+
+
+def skill_key(label):
+    """'Martial Arts [Melee]' -> 'melee', the way creator.js keys skills."""
+    if not SKILL_KEY:
+        m = re.search(r"var SKILL_LABEL = \{(.*?)\};",
+                      open(CREATOR, encoding="utf-8").read(), re.S)
+        for k, v in re.findall(r'(\w+):\s*"([^"]+)"', m.group(1) if m else ""):
+            SKILL_KEY[v.lower()] = k
+    return SKILL_KEY.get(str(label).lower(), str(label).lower())
+
+
+def skill_tally(ch):
+    """The skill ranks this character has, from the same sources computed()
+    adds up: what the clan, family and school give, the choices resolved
+    against them, and the ranks the questions hand out by name.
+
+    Mirrored here because one heritage — Shamed by Defeat — offers only the
+    school's starting skills "in which your character has no ranks", and a
+    CLI that offered all of them would let a pick through that the wizard's
+    own list refuses."""
+    out = {}
+    picks = ch.get("choices") or {}
+
+    def fold(node, key):
+        if not isinstance(node, dict):
+            return
+        sp = node.get("_choose")
+        if sp:
+            by = sp.get("yield_value", 1) or 1
+            for o in (picks.get(key) or [])[:sp.get("n", 1)]:
+                if o in (sp.get("options") or []):
+                    out[skill_key(o)] = out.get(skill_key(o), 0) + by
+            return
+        for k, v in node.items():
+            if isinstance(v, int):
+                out[skill_key(k)] = out.get(skill_key(k), 0) + v
+
+    clan = find(_js("clans.js"), ch.get("clan"), (" Clan",))
+    fold((clan or {}).get("skill_bonus"), "clan.skill_bonus")
+    fam = find(_js("families.js"), ch.get("family"))
+    fold((fam or {}).get("skill_increases"), "family.skill_increases")
+    sch = find(_js("schools.js"), ch.get("school"), (" School",))
+    fold((sch or {}).get("starting_skills"), "school.starting_skills")
+    for k, v in (ch.get("skills") or {}).items():
+        out[skill_key(k)] = out.get(skill_key(k), 0) + v
+    return out
+
+
+def heritage_specs(ch):
+    """What question 18's result still puts to the player, keyed as creator.js
+    keys it. The requirements themselves come out of the corpus by way of
+    data/chargen/heritages.js — this only turns them into choices."""
+    entry, sub = heritage_entry(ch)
+    if not entry:
+        return []
+    out = []
+    picked_of = lambda k: list((ch.get("choices") or {}).get(k) or [])
+
+    def add(key, label, options, n=1, free=None):
+        out.append({"key": key, "label": label, "n": n,
+                    "options": options or [], "free": free,
+                    "picked": picked_of(key)})
+
+    def one(r, key, label_prefix=""):
+        kind = r.get("kind")
+        prompt = label_prefix + r.get("prompt", kind)
+        if kind == "skill":
+            if r.get("skill"):
+                return                       # the roll named it; nothing to pick
+            if r.get("from") == "school_starting_at_zero":
+                sch = find(_js("schools.js"), ch.get("school"), (" School",))
+                sp = ((sch or {}).get("starting_skills") or {}).get("_choose") or {}
+                have = skill_tally(ch)
+                add(key, prompt, [o for o in (sp.get("options") or [])
+                                  if not have.get(skill_key(o))])
+                return
+            add(key, prompt, list(r.get("options") or []))
+        elif kind == "technique":
+            kinds = TECH_KIND.get(norm(deref(sub["text"]).replace(
+                "Gain access to", ""))) if r.get("category_from_sub") and sub else None
+            if r.get("category"):
+                kinds = [r["category"]]
+            if not kinds:
+                add(key, prompt + " (waiting on the second roll)", [])
+                return
+            ring = r.get("ring")
+            if r.get("ring_from_sub"):
+                ring = deref(sub["text"]).lower() if sub else None
+            add(key, prompt, sorted(
+                e["name"] for e in catalog()
+                if e.get("sub_type") == "technique"
+                and e.get("rank") == r.get("rank", 1)
+                and str(e.get("kind") or "").lower() in kinds
+                and (not ring or str(e.get("ring") or "").lower() == ring)))
+        elif kind == "peculiarity":
+            if r.get("options"):
+                add(key, prompt, list(r["options"]))
+            elif r.get("subject_options"):
+                add(key + ".subject", prompt + " — subject",
+                    list(r["subject_options"]))
+            elif r.get("subject_free"):
+                add(key + ".subject", prompt + " — subject", [],
+                    free="name " + r["subject_free"])
+        elif kind == "item":
+            if not r.get("name"):
+                free, kind_ = r.get("free"), r.get("type")
+                if r.get("category_from_sub"):
+                    if not sub:
+                        add(key + ".item", prompt + " (waiting on the second roll)", [])
+                        return
+                    txt = deref(sub["text"]).strip()
+                    spec = next((v for pat, v in HEIRLOOM
+                                 if re.match(pat, txt, re.I)), {"type": None})
+                    free, kind_ = spec.get("free"), spec.get("type")
+                if free:
+                    add(key + ".item", prompt, [], free="name " + free)
+                else:
+                    add(key + ".item", prompt,
+                        equipment(kind_, r.get("rarity_max")))
+            if r.get("qualities"):
+                add(key + ".quality", prompt + " — quality you choose",
+                    item_qualities())
+                add(key + ".gm_quality", prompt + " — quality the GM chooses",
+                    item_qualities())
+        elif kind == "ring_swap":
+            to = RINGS if r.get("to") in ("any", "from_sub", None) else r["to"]
+            if r.get("to") == "from_sub":
+                to = [deref(sub["text"]).capitalize()] if sub else RINGS
+            add(key + ".from", prompt + " — reduce by 1",
+                [x.lower() for x in RINGS])
+            add(key + ".to", prompt + " — raise by 1", [x.lower() for x in to])
+        elif kind == "pick_one":
+            opts = r.get("options") or []
+            add(key + ".pick", prompt,
+                [str(i) for i in range(len(opts))])
+            for i, o in enumerate(opts):
+                label = o.get("name") or o.get("prompt")
+                one(o, key + ".p" + str(i), f"[{i}: {label}] ")
+
+    base = "heritage." + slugify(entry["name"])
+    reqs = list(entry.get("requires") or []) + list((sub or {}).get("requires") or [])
+    if entry.get("sub_table") and not sub:
+        add("heritage.second_roll", "Second roll — roll or choose it in the wizard",
+            [r["range"] + " — " + r["text"]
+             for r in entry["sub_table"]["ranges"]])
+    for i, r in enumerate(reqs):
+        one(r, base + "." + str(i))
     return out
 
 
@@ -231,9 +474,7 @@ def expand(option, kind, ring):
     """creator.js's expandInstruction: the techniques an instruction stands for."""
     m = re.search(r"\brank (\d)\b", option, re.I)
     rank = int(m.group(1)) if m else 1
-    t = open(os.path.join(ROOT, "data", "catalog.js"), encoding="utf-8").read()
-    cat = json.loads(t[t.index("=") + 1:].rstrip().rstrip(";\n").rstrip(";"))
-    return sorted(e["name"] for e in cat
+    return sorted(e["name"] for e in catalog()
                   if e.get("sub_type") == "technique"
                   and str(e.get("kind") or "").lower() == str(kind or "").lower()
                   and e.get("rank") == rank
@@ -390,15 +631,19 @@ def cmd_pick(a):
     if not sp:
         sys.exit(f"{a.key!r} is not a choice this character has.\n  " +
                  "\n  ".join(rows) if rows else "this character has no choices yet")
-    if not sp["options"]:
+    if not sp["options"] and not sp.get("free"):
         sys.exit(f"{a.key} has no options yet — an earlier choice fills it in")
     canon = []
-    for v in a.values:
-        hit = [o for o in sp["options"] if o.lower() == v.lower()]
-        if not hit:
-            sys.exit(f"{v!r} is not an option for {a.key}.\n  choose from: "
-                     + ", ".join(sp["options"]))
-        canon.append(hit[0])
+    if sp.get("free"):
+        # nothing to check it against: the rule asks for a name, not a pick
+        canon = [v for v in a.values if v.strip()]
+    else:
+        for v in a.values:
+            hit = [o for o in sp["options"] if o.lower() == v.lower()]
+            if not hit:
+                sys.exit(f"{v!r} is not an option for {a.key}.\n  choose from: "
+                         + ", ".join(sp["options"]))
+            canon.append(hit[0])
     if len(canon) > sp["n"]:
         sys.exit(f"{a.key} takes {sp['n']}, got {len(canon)}")
     ch.setdefault("choices", {})[a.key] = canon
