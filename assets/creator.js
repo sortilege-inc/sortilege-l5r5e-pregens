@@ -354,6 +354,22 @@
     return n;
   }
 
+  // What the chip says under the name: how far along a draft is, or for an
+  // advance, what it spends.
+  function draftMeta(d) {
+    var c = d.character || {};
+    if (d.kind === "advance" && c.advance) {
+      var saved = C, st;
+      C = c;
+      try { st = advanceState(); } catch (e) { st = null; }
+      C = saved;
+      return "advance · " + ((st && st.spent) || 0) + " of " +
+             ((c.advance && c.advance.xp) || 0) + " XP";
+    }
+    return (c.school || c.clan || "no clan yet") + " · " +
+           draftProgress(c) + "/21";
+  }
+
   function switchDraft(id) {
     if (!STORE.drafts[id]) return;
     STORE.activeId = id;
@@ -491,7 +507,9 @@
           return STORE.drafts[id].fromArchive === a.slug;
         });
         var tiers = a.tier_count > 1 ? " · " + a.tier_count + " tiers" : "";
-        return '<button type="button" class="archivechip' +
+        var top = a.top || {};
+        return '<span class="archiverow">' +
+          '<button type="button" class="archivechip' +
           (open ? " open" : "") + (mode === "edit" ? " promoted" : "") +
           '" data-slug="' + esc(a.slug) + '" data-mode="' + mode + '"' +
           (mode === "edit" && a.tier_count > 1
@@ -500,7 +518,16 @@
             : "") + ">" +
           esc(a.name) + '<span class="dc-meta">' +
           esc(a.identity.school || a.identity.clan || "—") + tiers +
-          (open ? " · opened" : "") + "</span></button>";
+          (open ? " · opened" : "") + "</span></button>" +
+          // Advancing is its own act: it adds a tier rather than changing the
+          // one that is there, so it is its own button.
+          (mode === "edit"
+            ? '<button type="button" class="dc-advance" data-slug="' +
+              esc(a.slug) + '" title="Spend experience: ' +
+              (top.xp || 0) + ' XP, school rank ' + (top.rank || 1) +
+              '">+XP</button>'
+            : "") +
+          "</span>";
       }).join("") + "</div>";
   }
 
@@ -566,6 +593,33 @@
                          baseTiers: a.tier_count || 1,
                          baseline: edit ? baselineFor(a) : null,
                          character: hydrate(a) };
+    switchDraft(id);
+  }
+
+  /* Advancing a character. Unlike an edit, this does not touch the tier it
+     starts from: it reads the highest tier on the record, keeps a ledger
+     against it, and lands as a new tier beside the others. So there is nothing
+     to lose here and no baseline to keep — the record is only ever added to. */
+  function openAdvance(slug) {
+    var a = ARCHIVE.filter(function (x) { return x.slug === slug; })[0];
+    if (!a || !a.top) return;
+    var existing = Object.keys(STORE.drafts).filter(function (id) {
+      return STORE.drafts[id].kind === "advance" &&
+        STORE.drafts[id].fromArchive === slug;
+    })[0];
+    if (existing) { switchDraft(existing); return;
+
+    }
+    if (!confirm("Spend experience for “" + a.name + "”?\n\n" +
+                 "They are at " + (a.top.xp || 0) + " XP, school rank " +
+                 (a.top.rank || 1) + ". Landing this adds a tier; the ones " +
+                 "already on the record are not changed.")) return;
+    var id = newId();
+    var c = hydrate(a);
+    c.advance = newAdvance(a);
+    STORE.drafts[id] = { id: id, updated: Date.now(), fromArchive: slug,
+                         kind: "advance", baseTiers: a.tier_count || 1,
+                         character: c };
     switchDraft(id);
   }
 
@@ -660,7 +714,6 @@
       ids.map(function (id) {
         var d = STORE.drafts[id];
         var c = d.character || {};
-        var n = draftProgress(c);
         var mark = d.conflict ? " conflict" : (d.shared ? " shared" : "");
         var tag = d.conflict ? " · needs a decision"
                 : d.shared ? (d.dirty ? " · saving" : " · shared") : "";
@@ -668,8 +721,7 @@
           mark + '" data-id="' + id + '">' +
           '<button type="button" class="dc-open" data-id="' + id + '">' +
           esc(draftLabel(d)) +
-          '<span class="dc-meta">' + esc(c.school || c.clan || "no clan yet") +
-          " · " + n + "/21" + tag + "</span></button>" +
+          '<span class="dc-meta">' + esc(draftMeta(d)) + tag + "</span></button>" +
           (syncOn() && !d.shared
             ? '<button type="button" class="dc-share" data-id="' + id +
               '" title="Put this draft on the table">↑</button>'
@@ -702,6 +754,11 @@
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".archivechip"), function (b) {
       b.addEventListener("click", function () {
         openArchiveDraft(b.getAttribute("data-slug"), b.getAttribute("data-mode"));
+      });
+    });
+    Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-advance"), function (b) {
+      b.addEventListener("click", function (e) {
+        e.stopPropagation(); openAdvance(b.getAttribute("data-slug"));
       });
     });
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-share"), function (b) {
@@ -802,6 +859,10 @@
        the table. Drafts do not carry one: they are promoted by download, and
        every draft would pay for it. */
     if (d.kind === "edit") body.source = sourceFor(d.character);
+    // and an advance rides with the tier its ledger comes to, for the same
+    // reason: working that out means running the ledger, and only the wizard
+    // knows the costs and the curriculum.
+    if (d.kind === "advance") body.advancePatch = advancePatchFor(d.character);
     return { rev: d.rev || 0, name: draftLabel(d), editor: editorName,
              body: body };
   }
@@ -4425,7 +4486,7 @@
       wizard: (function () {
         var w = {}, k;
         for (k in C) if (C.hasOwnProperty(k) && k !== "concept" &&
-                         k.charAt(0) !== "_") w[k] = C[k];
+                         k !== "advance" && k.charAt(0) !== "_") w[k] = C[k];
         return w;
       })(),
       twenty_questions: {
@@ -4515,6 +4576,795 @@
       }]
     };
   }
+
+  /* ===================================================== advancement ledger
+
+     An advance is the third thing a draft can be. A character in play spends
+     experience between sessions — a rank of a skill, a ring, a technique, a
+     rank of a bond — and their school's curriculum decides how much of that
+     spending counts toward their next school rank. A title runs in parallel:
+     assigned by narrative events, advanced with the same purchases, completed
+     at a stated total.
+
+     None of that is the Game of Twenty Questions, so an advance draft renders
+     its own screen instead of the wizard's, and when it lands it appends a new
+     tier to the record rather than merging into the one it started from.
+
+     Every number here is the corpus's, and nothing is rounded in the
+     character's favour:
+
+       ring        3 XP x the value bought; never above the lowest ring plus
+                   the Void Ring, and never above 5
+       skill       2 XP x the rank bought; never above 5
+       technique   3 XP; of a category the school allows, or listed in the
+                   curriculum, and of a rank no higher than the school rank
+       passion     3 XP, at the GM's discretion, and never a fourth
+       bond        3, 4, 6, 8, 10 XP for its five ranks, and counts toward
+                   neither the school rank nor a title
+       rank        20, 24, 32, 44, 60 curriculum XP, reset on each advance
+       curriculum  a listed purchase contributes its whole cost, anything else
+                   half rounded up — and rings are never listed anywhere */
+
+  var CURRICULA = window.L5R_CURRICULA || {};
+  var TITLES = window.L5R_TITLES || {};
+  var RANK_THRESHOLD = { 1: 20, 2: 24, 3: 32, 4: 44, 5: 60 };
+  var BOND_COST = [3, 4, 6, 8, 10];
+  var BUYABLE = [
+    ["skill", "Skill rank"], ["ring", "Ring"], ["technique", "Technique"],
+    ["passion", "Passion"], ["bond", "Bond rank"]
+  ];
+
+  function activeAdvance() { return (C && C.advance) || null; }
+  function isAdvance() { return activeDraft().kind === "advance"; }
+
+  function newAdvance(a) {
+    return { slug: a.slug, from: a.top, xp: 0, ledger: [], title: null,
+             label: "" };
+  }
+
+  // The school's curriculum at a rank. Reported rather than assumed away: a
+  // school the corpus has no curriculum for cannot tell in from out, and the
+  // ledger says so instead of calling everything out of curriculum.
+  function curriculumFor(school) {
+    var bare = String(school || "").replace(/\s+School$/i, "");
+    return CURRICULA[normName(bare)] || CURRICULA[normName(school)] || null;
+  }
+
+  function curriculumAt(school, rank) {
+    var c = curriculumFor(school);
+    return ((c && c.ranks) || {})[String(rank)] || [];
+  }
+
+  var SKILL_GROUP_LABEL = { artisan: "Artisan Skills", martial: "Martial Skills",
+                            scholar: "Scholar Skills", social: "Social Skills",
+                            trade: "Trade Skills" };
+
+  function groupOfSkill(sk) {
+    var out = null;
+    Object.keys(SKILL_GROUPS).forEach(function (g) {
+      if (SKILL_GROUPS[g].indexOf(sk) >= 0) out = g;
+    });
+    return out;
+  }
+
+  // "Rank 1-2 Kata", "Rank 1 Earth Invocations" — the ranks it spans, the
+  // category it names, and the ring it is restricted to, if any.
+  function techGroupSpec(label) {
+    var m = /rank\s*(\d)\s*(?:[-–—]\s*(\d))?/i.exec(label || "");
+    var lo = m ? Number(m[1]) : 1;
+    var hi = m && m[2] ? Number(m[2]) : lo;
+    var ring = null;
+    RING_NAMES.forEach(function (r) {
+      if (new RegExp("\\b" + r + "\\b", "i").test(label || "")) ring = r.toLowerCase();
+    });
+    return { lo: lo, hi: hi, kind: techKindOfLabel(label), ring: ring };
+  }
+
+  function techKindOfLabel(label) {
+    var l = normName(label);
+    var found = null;
+    ["kata", "shuji", "ritual", "invocation", "kiho", "maho", "ninjutsu",
+     "mantra", "inversion"].forEach(function (k) {
+      if (l.indexOf(k) >= 0) found = k;
+    });
+    return found;
+  }
+
+  function catalogTechnique(name) {
+    return CATALOG.filter(function (e) {
+      return e.sub_type === "technique" && normName(e.name) === normName(name);
+    })[0] || null;
+  }
+
+  /* Whether a purchase appears on the curriculum for the rank being completed.
+     A skill is listed by its own name or by its group; a technique by its name
+     or by a group covering its category and rank. */
+  function listedIn(entries, e, st) {
+    if (!entries.length) return false;
+    if (e.kind === "skill") {
+      var label = SKILL_LABEL[e.target] || e.target;
+      var grp = SKILL_GROUP_LABEL[groupOfSkill(e.target)];
+      return entries.some(function (x) {
+        if (x.kind === "Skill") return normName(x.label) === normName(label);
+        if (x.kind === "Skill Group") return grp && normName(x.label) === normName(grp);
+        return false;
+      });
+    }
+    if (e.kind === "technique") {
+      var t = catalogTechnique(e.target);
+      return entries.some(function (x) {
+        if (x.kind === "Technique") return normName(x.label) === normName(e.target);
+        if (x.kind !== "Tech. Grp.") return false;
+        var spec = techGroupSpec(x.label);
+        var kind = x.group || spec.kind;
+        return t && kind && String(t.kind || "").toLowerCase() === kind &&
+          t.rank >= spec.lo && t.rank <= spec.hi &&
+          (!spec.ring || String(t.ring || "").toLowerCase() === spec.ring);
+      });
+    }
+    return false;      // rings, passions and bonds appear on no curriculum
+  }
+
+  function flatten(skills) {
+    var out = {};
+    Object.keys(skills || {}).forEach(function (g) {
+      if (typeof skills[g] === "object") {
+        Object.keys(skills[g]).forEach(function (s) { out[s] = skills[g][s]; });
+      } else {
+        out[g] = skills[g];
+      }
+    });
+    return out;
+  }
+
+  function ceilHalf(n) { return Math.ceil(n / 2); }
+
+  // A ring cannot be raised past the lowest ring plus the Void Ring, to a
+  // maximum of 5 — measured before the purchase, as the table states it.
+  function ringCeiling(rings) {
+    var lowest = RING_NAMES.map(function (r) {
+      return rings[r.toLowerCase()] || 0;
+    }).reduce(function (a, b) { return Math.min(a, b); }, 99);
+    return Math.min(5, lowest + (rings["void"] || 0));
+  }
+
+  /* The ledger, applied in order. Order matters: a purchase's cost is set by
+     the rank it takes the character to, and whether it counts in curriculum is
+     set by the school rank they held when they made it. */
+  function advanceState() {
+    var a = activeAdvance();
+    if (!a) return null;
+    var from = a.from || {};
+    var st = {
+      rings: JSON.parse(JSON.stringify(from.rings || {})),
+      skills: flatten(from.skills),
+      techniques: (from.techniques || []).slice(),
+      peculiarities: (from.peculiarities || []).slice(),
+      titles: (from.titles || []).slice(),
+      bonds: (from.bonds || []).slice(),
+      scrolls: (from.signature_scrolls || []).slice(),
+      gear: (from.gear || []).slice(),
+      rank: from.rank || 1,
+      school: from.school,
+      spent: 0, curXp: 0, titleXp: 0, rankUps: [], titleDone: false,
+      rows: [], problems: []
+    };
+    var title = a.title ? TITLES[normName(a.title)] : null;
+    if (a.title && !title) {
+      st.problems.push("The corpus has no title called “" + a.title + "”, so " +
+                       "its curriculum and completion cost are unknown here.");
+    }
+    if (a.title && st.titles.indexOf(a.title) < 0) st.titles.push(a.title);
+    if (!curriculumFor(st.school)) {
+      st.problems.push("The corpus has no curriculum for " +
+                       (st.school || "this school") + ", so nothing can be " +
+                       "told in curriculum from out. Every purchase is " +
+                       "counted at half.");
+    }
+
+    (a.ledger || []).forEach(function (e, i) {
+      var row = { i: i, kind: e.kind, target: e.target, to: e.to,
+                  allocate: e.allocate || "school", at_rank: st.rank,
+                  xp: 0, listed: false, contributes: 0, note: null, bad: null };
+      var entries = curriculumAt(st.school, st.rank);
+
+      if (e.kind === "skill") {
+        var was = st.skills[e.target] || 0;
+        var to = e.to != null ? e.to : was + 1;
+        row.to = to;
+        row.xp = to * 2;
+        if (to > 5) row.bad = "A skill cannot go past rank 5.";
+        else if (to !== was + 1) row.bad = "Ranks are bought one at a time: " +
+          (SKILL_LABEL[e.target] || e.target) + " is at " + was + ".";
+        else st.skills[e.target] = to;
+        row.listed = listedIn(entries, e, st);
+      } else if (e.kind === "ring") {
+        var wasR = st.rings[e.target] || 0;
+        var toR = e.to != null ? e.to : wasR + 1;
+        var cap = ringCeiling(st.rings);
+        row.to = toR;
+        row.xp = toR * 3;
+        if (toR > cap) row.bad = "The lowest ring plus Void allows " + cap +
+          " at most right now.";
+        else if (toR !== wasR + 1) row.bad = "Ring values are bought one at a " +
+          "time: " + cap0(e.target) + " is at " + wasR + ".";
+        else st.rings[e.target] = toR;
+        row.note = "no curriculum lists rings";
+      } else if (e.kind === "technique") {
+        var t = catalogTechnique(e.target);
+        row.xp = 3;
+        row.listed = listedIn(entries, e, st);
+        if (!t) row.bad = "Not a technique in the compendium.";
+        else if (st.techniques.some(function (n) {
+          return normName(n) === normName(e.target);
+        })) row.bad = "Already known.";
+        else if (t.rank > st.rank && !row.listed) {
+          row.bad = "Rank " + t.rank + " technique, and the character is " +
+            "school rank " + st.rank + ".";
+        } else if (!techniqueAllowed(t, row.listed)) {
+          row.bad = cap0(String(t.kind || "")) + " is not among this school's " +
+            "categories, and the technique is not on the curriculum.";
+        } else {
+          st.techniques.push(t.name);
+        }
+      } else if (e.kind === "passion") {
+        row.xp = 3;
+        var held = st.peculiarities.filter(isPassionName).length;
+        if (held >= 3) row.bad = "A character can never have more than three " +
+          "passions.";
+        else if (st.peculiarities.some(function (n) {
+          return normName(n) === normName(e.target);
+        })) row.bad = "Already held.";
+        else st.peculiarities.push(e.target);
+        row.note = "at the GM's discretion";
+      } else if (e.kind === "bond") {
+        var rank = e.to || 1;
+        row.to = rank;
+        row.xp = BOND_COST[rank - 1] || 0;
+        if (rank < 1 || rank > 5) row.bad = "A bond has five ranks.";
+        row.allocate = "none";
+        row.note = "counts toward neither the school rank nor a title";
+        var label = e.target + (e.bondType ? " (" + e.bondType + ")" : "");
+        st.bonds = st.bonds.filter(function (n) {
+          return normName(String(n).split(" (")[0]) !== normName(e.target);
+        }).concat([label]);
+      }
+
+      if (row.bad) { st.rows.push(row); return; }
+      st.spent += row.xp;
+
+      if (row.allocate === "title" && title) {
+        var listedT = listedIn(title.curriculum || [], e, st);
+        row.contributes = listedT ? row.xp : ceilHalf(row.xp);
+        row.listed = listedT;
+        st.titleXp += row.contributes;
+        if (!st.titleDone && title.xp_to_completion &&
+            st.titleXp >= title.xp_to_completion) {
+          st.titleDone = true;
+          if (title.ability) {
+            st.scrolls.push(title.ability + " (" + title.name + ")");
+          }
+        }
+      } else if (row.allocate === "school") {
+        row.contributes = row.listed ? row.xp : ceilHalf(row.xp);
+        st.curXp += row.contributes;
+        var need = RANK_THRESHOLD[st.rank];
+        while (need && st.curXp >= need && st.rank < 6) {
+          st.rankUps.push({ to: st.rank + 1, after: i });
+          st.rank += 1;
+          st.curXp = 0;            // the corpus: the total resets on advancing
+          need = RANK_THRESHOLD[st.rank];
+        }
+      }
+      st.rows.push(row);
+    });
+
+    st.title = title;
+    st.threshold = RANK_THRESHOLD[st.rank] || null;
+    st.remaining = (a.xp || 0) - st.spent;
+    return st;
+  }
+
+  function cap0(s) { return cap(String(s || "")); }
+
+  function isPassionName(name) {
+    var e = CATALOG.filter(function (x) {
+      return x.sub_type === "peculiarity" && normName(x.name) === normName(name);
+    })[0];
+    return !!e && e.kind === "passion";
+  }
+
+  // "Category must be listed among available techniques, or the technique must
+  // appear on your curriculum."
+  function techniqueAllowed(t, listed) {
+    if (listed) return true;
+    var sch = schoolByRollName((activeAdvance() || {}).from &&
+                               activeAdvance().from.school);
+    var avail = (sch && sch.techniques_available) || [];
+    return avail.some(function (a) {
+      return techKindOfLabel(a) === String(t.kind || "").toLowerCase();
+    });
+  }
+
+  /* ------------------------------------------------- the advance screen */
+
+  function advSave() { save(); }
+
+  function addLedger(e) {
+    var a = activeAdvance();
+    if (!a) return;
+    a.ledger = (a.ledger || []).concat([e]);
+    advSave(); render();
+  }
+
+  function dropLedger(i) {
+    var a = activeAdvance();
+    a.ledger = a.ledger.filter(function (_, k) { return k !== i; });
+    advSave(); render();
+  }
+
+  function setAllocate(i, v) {
+    var a = activeAdvance();
+    a.ledger[i].allocate = v;
+    advSave(); render();
+  }
+
+  // The XP the character has to spend, which comes from the table and not from
+  // anything this site tracks.
+  function advXpRow(body) {
+    var a = activeAdvance();
+    var st = advanceState();
+    var wrap = document.createElement("div");
+    wrap.className = "adv-xp";
+    wrap.innerHTML =
+      '<label class="adv-xp-in">Experience to spend' +
+      '<input type="number" min="0" max="999" value="' + (a.xp || 0) + '"></label>' +
+      '<span class="adv-tot' + (st.remaining < 0 ? " over" : "") + '">' +
+      st.spent + " spent · " + st.remaining + " left</span>";
+    wrap.querySelector("input").addEventListener("change", function (e) {
+      a.xp = Math.max(0, Number(e.target.value) || 0);
+      advSave(); render();
+    });
+    body.appendChild(wrap);
+  }
+
+  function advProgress(body) {
+    var st = advanceState();
+    var a = activeAdvance();
+    var bits = [];
+    bits.push('<div class="adv-stat"><span class="k">School rank</span>' +
+      '<span class="v">' + st.rank + "</span></div>");
+    if (st.threshold) {
+      bits.push('<div class="adv-stat"><span class="k">Toward rank ' +
+        (st.rank + 1) + '</span><span class="v">' + st.curXp + " / " +
+        st.threshold + "</span></div>");
+    } else {
+      bits.push('<div class="adv-stat"><span class="k">Rank 6</span>' +
+        '<span class="v">mastery</span></div>');
+    }
+    if (st.title) {
+      bits.push('<div class="adv-stat"><span class="k">' + esc(st.title.name) +
+        '</span><span class="v">' + st.titleXp + " / " +
+        (st.title.xp_to_completion || "?") +
+        (st.titleDone ? " ✓" : "") + "</span></div>");
+    }
+    bits.push('<div class="adv-stat"><span class="k">New tier</span>' +
+      '<span class="v">' + ((a.from.xp || 0) + st.spent) + " XP</span></div>");
+    var row = document.createElement("div");
+    row.className = "adv-progress";
+    row.innerHTML = bits.join("");
+    body.appendChild(row);
+
+    st.problems.forEach(function (p) { needs(body, p); });
+    if (st.rankUps.length) {
+      var up = document.createElement("p");
+      up.className = "adv-rankup";
+      up.textContent = st.rankUps.map(function (r) {
+        return "Reaches school rank " + r.to;
+      }).join("; ") + ".";
+      body.appendChild(up);
+    }
+  }
+
+  /* One control per kind of purchase, each using the picker the wizard already
+     uses for that kind of thing. Adding is deliberate: nothing is bought by
+     clicking a name, because a click that spends experience should be a click
+     that says so. */
+  function advAdd(body) {
+    var a = activeAdvance();
+    var st = advanceState();
+    a.adding = a.adding || "skill";
+    label(body, "Buy an advancement");
+    choice(body, BUYABLE, a.adding, function (v) {
+      a.adding = v; a.pick = null; advSave(); render();
+    });
+
+    var kind = a.adding;
+    var wrap = document.createElement("div");
+    wrap.className = "adv-add";
+    body.appendChild(wrap);
+
+    if (kind === "skill") {
+      var entries = curriculumAt(st.school, st.rank);
+      var items = Object.keys(SKILL_LABEL).sort(function (x, y) {
+        return SKILL_LABEL[x].localeCompare(SKILL_LABEL[y]);
+      }).map(function (sk) {
+        var at = st.skills[sk] || 0;
+        var listed = listedIn(entries, { kind: "skill", target: sk }, st);
+        return { value: sk, label: SKILL_LABEL[sk],
+                 meta: (at >= 5 ? "at 5, the maximum"
+                                : "rank " + at + " → " + (at + 1) + " · " +
+                                  ((at + 1) * 2) + " XP") +
+                       (listed ? " · in curriculum" : "") };
+      });
+      pickList(wrap, items, null, function (sk) {
+        if ((st.skills[sk] || 0) >= 5) return;
+        addLedger({ kind: "skill", target: sk, to: (st.skills[sk] || 0) + 1 });
+      });
+    } else if (kind === "ring") {
+      var cap = ringCeiling(st.rings);
+      choice(wrap, RING_NAMES.map(function (r) {
+        var k = r.toLowerCase();
+        var at = st.rings[k] || 0;
+        return [k, r + " " + at + (at + 1 <= cap ? " → " + (at + 1) +
+                " (" + ((at + 1) * 3) + " XP)" : " · capped")];
+      }), null, function (k) {
+        if ((st.rings[k] || 0) + 1 > cap) return;
+        addLedger({ kind: "ring", target: k, to: (st.rings[k] || 0) + 1 });
+      });
+      needs(wrap, "The lowest ring plus the Void Ring allows " + cap +
+                  " at most right now, and 5 is the ceiling in any case.");
+    } else if (kind === "technique") {
+      var ent = curriculumAt(st.school, st.rank);
+      var sch = schoolByRollName(st.school);
+      var pool = CATALOG.filter(function (e) {
+        if (e.sub_type !== "technique") return false;
+        if (["school_ability", "mastery_ability", "title_ability"]
+            .indexOf(String(e.kind || "")) >= 0) return false;
+        if (st.techniques.some(function (n) {
+          return normName(n) === normName(e.name);
+        })) return false;
+        var listed = listedIn(ent, { kind: "technique", target: e.name }, st);
+        return (e.rank <= st.rank || listed) && techniqueAllowed(e, listed);
+      });
+      var titems = pool.map(function (e) {
+        var listed = listedIn(ent, { kind: "technique", target: e.name }, st);
+        return { value: e.name, label: e.name,
+                 meta: [cap0(e.kind), "rank " + e.rank,
+                        e.ring ? cap0(e.ring) : null, "3 XP",
+                        listed ? "in curriculum" : null]
+                   .filter(Boolean).join(" · ") };
+      });
+      needs(wrap, titems.length + " available: rank " + st.rank + " or lower, " +
+            "in a category " + (st.school || "the school") + " teaches, or on " +
+            "the curriculum.");
+      pickList(wrap, titems, null, function (n) {
+        addLedger({ kind: "technique", target: n });
+      });
+    } else if (kind === "passion") {
+      var pitems = CATALOG.filter(function (e) {
+        return e.sub_type === "peculiarity" && e.kind === "passion" &&
+          !st.peculiarities.some(function (n) {
+            return normName(n) === normName(e.name);
+          });
+      }).map(function (e) {
+        return { value: e.name, label: e.name, meta: "3 XP" };
+      }).sort(function (x, y) { return x.label.localeCompare(y.label); });
+      needs(wrap, "At the GM's discretion, and never a fourth — this character " +
+            "holds " + st.peculiarities.filter(isPassionName).length + ".");
+      pickList(wrap, pitems, null, function (n) {
+        addLedger({ kind: "passion", target: n });
+      });
+    } else if (kind === "bond") {
+      var bonds = CATALOG.filter(function (e) { return e.sub_type === "bond"; })
+        .map(function (e) { return e.name; }).sort();
+      a.bondDraft = a.bondDraft || { type: bonds[0] || "", who: "", rank: 1 };
+      var bd = a.bondDraft;
+      label(wrap, "Kind of bond");
+      choice(wrap, bonds.map(function (b) { return [b, b]; }), bd.type,
+        function (v) { bd.type = v; advSave(); render(); });
+      label(wrap, "With whom");
+      var who = document.createElement("input");
+      who.type = "text"; who.className = "textline";
+      who.placeholder = "Name the person";
+      who.value = bd.who || "";
+      who.addEventListener("change", function () {
+        bd.who = who.value.trim(); advSave();
+      });
+      wrap.appendChild(who);
+      label(wrap, "Rank being bought");
+      choice(wrap, BOND_COST.map(function (c, i) {
+        return [String(i + 1), "Rank " + (i + 1) + " · " + c + " XP"];
+      }), String(bd.rank), function (v) {
+        bd.rank = Number(v); advSave(); render();
+      });
+      var add = document.createElement("button");
+      add.type = "button"; add.className = "btn";
+      add.textContent = "Add this bond rank";
+      add.addEventListener("click", function () {
+        if (!bd.who) return;
+        addLedger({ kind: "bond", target: bd.who, bondType: bd.type,
+                    to: bd.rank });
+      });
+      wrap.appendChild(add);
+      needs(wrap, "Experience spent on a bond contributes to neither the " +
+            "school rank nor a title.");
+    }
+  }
+
+  function advTitle(body) {
+    var a = activeAdvance();
+    var st = advanceState();
+    label(body, "Title");
+    var keys = Object.keys(TITLES).sort(function (x, y) {
+      return TITLES[x].name.localeCompare(TITLES[y].name);
+    });
+    var held = (a.from.titles || []);
+    var items = keys.map(function (k) {
+      var t = TITLES[k];
+      return { value: t.name, label: t.name,
+               meta: [t.xp_to_completion ? t.xp_to_completion + " XP" : "cost unknown",
+                      t.award || null, t.ability || null,
+                      held.indexOf(t.name) >= 0 ? "already held" : null]
+                 .filter(Boolean).join(" · ") };
+    });
+    needs(body, "A title is assigned by what happens in play, not bought. " +
+          "Naming it here lets purchases be allocated to it — and a character " +
+          "can only have one incomplete title at a time. " + keys.length +
+          " are in the corpus.");
+    pickList(body, items, a.title, function (n) {
+      a.title = a.title === n ? null : n;
+      advSave(); render();
+    }, { tip: ruleTextFor });
+    if (st.title && st.title.assigned_by) {
+      var by = document.createElement("p");
+      by.className = "muted small";
+      by.innerHTML = "<strong>Assigned by:</strong> " +
+        esc(st.title.assigned_by) +
+        (st.title.award ? " · <strong>Award:</strong> " + esc(st.title.award) : "");
+      body.appendChild(by);
+    }
+    if (st.title && st.title.ability_effect) {
+      var ab = document.createElement("p");
+      ab.className = "muted small";
+      ab.innerHTML = "<strong>" + esc(st.title.ability || "Title ability") +
+        ":</strong> " + esc(st.title.ability_effect);
+      body.appendChild(ab);
+    }
+  }
+
+  function advLedger(body) {
+    var st = advanceState();
+    if (!st.rows.length) {
+      return needs(body, "Nothing bought yet.");
+    }
+    label(body, "The ledger");
+    var list = document.createElement("div");
+    list.className = "adv-ledger";
+    list.innerHTML = st.rows.map(function (r) {
+      var name = r.kind === "skill" ? (SKILL_LABEL[r.target] || r.target)
+               : r.kind === "ring" ? cap0(r.target)
+               : r.target;
+      var to = r.to != null ? " → " + r.to : "";
+      return '<div class="adv-row' + (r.bad ? " bad" : "") + '">' +
+        '<span class="ar-k">' + esc(r.kind) + "</span>" +
+        '<span class="ar-n">' + esc(name + to) + "</span>" +
+        '<span class="ar-x">' + r.xp + " XP</span>" +
+        '<span class="ar-a">' +
+          (r.bad ? esc(r.bad)
+                 : (r.allocate === "none"
+                     ? esc(r.note || "counts for neither")
+                     : (r.listed ? "in curriculum" : "out of curriculum") +
+                       " · " + r.contributes + " toward " +
+                       (r.allocate === "title" ? "the title" : "rank " + r.at_rank))) +
+        "</span>" +
+        (r.kind === "bond" || r.bad ? ""
+          : '<span class="ar-alloc">' +
+            '<button type="button" class="choice' +
+              (r.allocate === "school" ? " active" : "") +
+              '" data-alloc="school" data-i="' + r.i + '">school</button>' +
+            '<button type="button" class="choice' +
+              (r.allocate === "title" ? " active" : "") +
+              '" data-alloc="title" data-i="' + r.i + '">title</button></span>') +
+        '<button type="button" class="ar-x-btn" data-drop="' + r.i +
+        '" title="Remove">×</button></div>';
+    }).join("");
+    Array.prototype.forEach.call(list.querySelectorAll("[data-drop]"), function (b) {
+      b.addEventListener("click", function () {
+        dropLedger(Number(b.getAttribute("data-drop")));
+      });
+    });
+    Array.prototype.forEach.call(list.querySelectorAll("[data-alloc]"), function (b) {
+      b.addEventListener("click", function () {
+        setAllocate(Number(b.getAttribute("data-i")), b.getAttribute("data-alloc"));
+      });
+    });
+    body.appendChild(list);
+  }
+
+  function renderAdvance(body) {
+    var a = activeAdvance();
+    if (!a) return needs(body, "This draft has no advance on it.");
+    advXpRow(body);
+    advProgress(body);
+    advTitle(body);
+    advAdd(body);
+    advLedger(body);
+  }
+
+  /* What an advance hands to scripts/apply_advance.py: the tier it started
+     from, the ledger, and the tier it comes to. The applier recomputes the
+     result from the ledger rather than trusting the tier, so the two have to
+     agree — which is the check that the ledger says what the numbers show. */
+  // The patch for a character that is not the one open in the wizard, the way
+  // sourceFor() does it for an edit.
+  function advancePatchFor(ch) {
+    var saved = C, out = null;
+    C = ch;
+    try { out = ch && ch.advance ? toAdvancePatch() : null; }
+    catch (e) { out = null; }
+    finally { C = saved; }
+    return out;
+  }
+
+  function toAdvancePatch() {
+    var a = activeAdvance();
+    var st = advanceState();
+    var skills = {};
+    Object.keys(SKILL_GROUPS).forEach(function (g) {
+      skills[g] = {};
+      SKILL_GROUPS[g].forEach(function (s) { skills[g][s] = st.skills[s] || 0; });
+    });
+    function refs(names) {
+      return (names || []).map(function (n) { return { name: n }; });
+    }
+    var money = a.from.money || { zeni: 0, koku: 0, bu: 0 };
+    return {
+      advance: a.slug,
+      from_xp: a.from.xp || 0,
+      xp_available: a.xp || 0,
+      ledger: (a.ledger || []).map(function (e, i) {
+        var r = st.rows[i] || {};
+        return { kind: e.kind, target: e.target, to: r.to,
+                 bond_type: e.bondType || null,
+                 allocate: r.allocate, xp: r.xp, listed: !!r.listed,
+                 contributes: r.contributes, at_rank: r.at_rank };
+      }),
+      title: a.title || null,
+      title_xp: st.titleXp,
+      title_complete: st.titleDone,
+      tier: {
+        xp: (a.from.xp || 0) + st.spent,
+        label: a.label || null,
+        rank: st.rank,
+        school: a.from.school,
+        foundry_id: null,
+        rings: st.rings,
+        skills: skills,
+        social: a.from.social,
+        derived: {
+          endurance: (st.rings.earth + st.rings.fire) * 2,
+          composure: (st.rings.earth + st.rings.water) * 2,
+          focus: st.rings.air + st.rings.fire,
+          vigilance: Math.ceil((st.rings.air + st.rings.water) / 2),
+          void_points: st.rings["void"]
+        },
+        money: money,
+        techniques: refs(st.techniques),
+        peculiarities: refs(st.peculiarities),
+        titles: refs(st.titles),
+        bonds: st.bonds.map(function (n) {
+          return { name: String(n).split(" (")[0], custom: true, text: n };
+        }),
+        signature_scrolls: refs(st.scrolls),
+        gear: refs(st.gear),
+        advancements: st.rows.filter(function (r) { return !r.bad; })
+          .map(function (r) {
+            var name = r.kind === "skill" ? (SKILL_LABEL[r.target] || r.target)
+                     : r.kind === "ring" ? cap0(r.target) : r.target;
+            return { label: name + (r.to != null ? " +1 (→ " + r.to + ")" : ""),
+                     type: r.kind, at_rank: r.at_rank, xp: r.xp,
+                     in_curriculum: !!r.listed };
+          })
+      }
+    };
+  }
+
+  function renderAdvanceSave(body) {
+    var a = activeAdvance();
+    var st = advanceState();
+    var doc = toAdvancePatch();
+    var bad = st.rows.filter(function (r) { return r.bad; });
+
+    var head = document.createElement("p");
+    head.className = "muted small";
+    head.innerHTML = "Advancing <strong>" + esc(a.slug) + "</strong> from " +
+      (a.from.xp || 0) + " XP to " + doc.tier.xp + " XP" +
+      (st.rank !== (a.from.rank || 1)
+        ? ", school rank " + (a.from.rank || 1) + " to " + st.rank : "") + ".";
+    body.appendChild(head);
+
+    label(body, "Label for the new tier");
+    var lab = document.createElement("input");
+    lab.type = "text"; lab.className = "textline";
+    lab.placeholder = st.rank !== (a.from.rank || 1) ? "Rank " + st.rank : "optional";
+    lab.value = a.label || "";
+    lab.addEventListener("change", function () {
+      a.label = lab.value.trim(); advSave();
+    });
+    body.appendChild(lab);
+
+    if (bad.length) {
+      var warn = document.createElement("p");
+      warn.className = "export-warn";
+      warn.textContent = bad.length + " purchase" + (bad.length === 1 ? "" : "s") +
+        " in the ledger cannot be made and are left out of the new tier.";
+      body.appendChild(warn);
+    }
+    if (st.remaining < 0) {
+      var over = document.createElement("p");
+      over.className = "export-warn";
+      over.textContent = "The ledger spends " + (-st.remaining) +
+        " XP more than the character has.";
+      body.appendChild(over);
+    }
+
+    var row = document.createElement("div");
+    row.className = "choicerow";
+    row.innerHTML = '<button type="button" class="btn" id="dl">Download</button>' +
+      '<button type="button" class="btn" id="cp">Copy</button>';
+    body.appendChild(row);
+    var how = document.createElement("p");
+    how.className = "muted small";
+    how.innerHTML = "Then: <code>python3 scripts/apply_advance.py " +
+      esc(a.slug) + "</code> — it recomputes the tier from the ledger, shows " +
+      "it against the record, and writes nothing without <code>--apply</code>.";
+    body.appendChild(how);
+
+    var pre = document.createElement("pre");
+    pre.className = "export-json";
+    pre.textContent = JSON.stringify(doc, null, 1);
+    body.appendChild(pre);
+    row.querySelector("#dl").addEventListener("click", function () {
+      var blob = new Blob([JSON.stringify(doc, null, 1)],
+                          { type: "application/json" });
+      var n = document.createElement("a");
+      n.href = URL.createObjectURL(blob);
+      n.download = a.slug + "-advance.json";
+      document.body.appendChild(n); n.click(); n.remove();
+      setTimeout(function () { URL.revokeObjectURL(n.href); }, 1000);
+    });
+    row.querySelector("#cp").addEventListener("click", function () {
+      navigator.clipboard.writeText(JSON.stringify(doc, null, 1));
+    });
+  }
+
+  var ADVANCE_STEPS = [
+    { id: "advance", n: 0, label: "Ledger",
+      title: function () {
+        var a = activeAdvance();
+        return "Advancing " + ((a && a.from && a.from.label) ||
+                               (C && C.name) || "a character");
+      },
+      desc: "Experience spent between sessions. A purchase counts toward the " +
+        "school rank in full if the curriculum for the current rank lists it, " +
+        "and at half rounded up if it does not — or toward a title instead, " +
+        "on the same terms. Rings are on no curriculum, and bonds count for " +
+        "neither.",
+      done: function () {
+        var st = advanceState();
+        return !!st && st.spent > 0 && !st.rows.filter(function (r) {
+          return r.bad;
+        }).length && st.remaining >= 0;
+      },
+      render: renderAdvance },
+    { id: "advance-save", n: 1, label: "Save", title: "Land the Advance",
+      desc: "This appends a new tier to the record. The one it started from " +
+        "is left exactly as it is, so the character keeps every version of " +
+        "themself the archive already holds.",
+      done: function () { return false; },
+      render: renderAdvanceSave }
+  ];
 
   /* What an edit hands to scripts/apply_edit.py: the whole wizard-owned
      document, and which record it belongs to. Deliberately not a field list —
@@ -4658,14 +5508,20 @@
 
   // Path of Waves and Writ of the Wilds characters have no clan, so the
   // clan-relationship question is dropped rather than asked emptily.
+  /* Which set of steps is in play. An advance is not the Game of Twenty
+     Questions — it is a ledger and a save — so it has its own two. */
+  function steps() {
+    return isAdvance() ? ADVANCE_STEPS : STEPS;
+  }
+
   function activeSteps() {
-    return STEPS.filter(function (s) {
+    return steps().filter(function (s) {
       return !(s.id === "clan-tie" && !isCore());
     });
   }
 
   function renderNav() {
-    el("steps").innerHTML = STEPS.map(function (s, i) {
+    el("steps").innerHTML = steps().map(function (s, i) {
       var skip = s.id === "clan-tie" && !isCore();
       var done = s.id !== "export" && s.done();
       return '<button type="button" class="stepnav' + (i === step ? " active" : "") +
@@ -4765,7 +5621,60 @@
       });
   }
 
+  /* The panel beside an advance shows where the character is now, not what
+     twenty questions would build — C is only hydrated here to carry the name
+     and the school, and computed() would report a 0 XP derivation of a
+     character who is at 279. */
+  function renderAdvanceWip() {
+    var st = advanceState();
+    var a = activeAdvance();
+    if (!st) return;
+    var ring = RING_NAMES.map(function (n) {
+      var k = n.toLowerCase();
+      var was = (a.from.rings || {})[k] || 0;
+      return '<div class="ring' + (st.rings[k] > was ? " up" : "") +
+        '" data-ring="' + k + '"><div class="rn">' + n + "</div>" +
+        '<div class="rv">' + (st.rings[k] || 0) + "</div></div>";
+    }).join("");
+    var skills = Object.keys(st.skills).filter(function (k) { return st.skills[k]; })
+      .sort().map(function (k) {
+        var was = flatten(a.from.skills)[k] || 0;
+        return '<div class="skill' + (st.skills[k] > was ? " up" : "") +
+          '"><span class="sn">' + esc(SKILL_LABEL[k] || cap(k)) +
+          '</span><span class="sv">' + st.skills[k] + "</span></div>";
+      }).join("") || '<p class="muted small">No skills.</p>';
+    el("wip").innerHTML =
+      '<h3 class="wip-name">' + esc(C.name || a.slug) + "</h3>" +
+      '<p class="wip-sub">' + esc([C.clan, C.family, a.from.school]
+        .filter(Boolean).join(" · ")) + "</p>" +
+      '<p class="wip-editing">Advancing from ' + (a.from.xp || 0) + " XP" +
+      (a.from.label ? " · " + esc(a.from.label) : "") + "</p>" +
+      '<div class="rings">' + ring + "</div>" +
+      '<div class="statrow">' +
+      ['<div class="stat"><span class="k">XP</span><span class="v">' +
+         ((a.from.xp || 0) + st.spent) + "</span></div>",
+       '<div class="stat"><span class="k">Rank</span><span class="v">' +
+         st.rank + "</span></div>",
+       '<div class="stat"><span class="k">Curriculum</span><span class="v">' +
+         st.curXp + (st.threshold ? "/" + st.threshold : "") + "</span></div>",
+       '<div class="stat"><span class="k">Left</span><span class="v">' +
+         st.remaining + "</span></div>"].join("") + "</div>" +
+      '<h4 class="field-label">Skills</h4><div class="wip-skills">' + skills +
+      "</div>" +
+      (st.titles.length
+        ? '<h4 class="field-label">Titles</h4>' + chipRow(st.titles) : "") +
+      (st.bonds.length
+        ? '<h4 class="field-label">Bonds</h4>' + chipRow(st.bonds) : "") +
+      (st.techniques.length
+        ? '<h4 class="field-label">Techniques<span class="wa-n">' +
+          st.techniques.length + "</span></h4>" +
+          chipRow(st.techniques, "tech")
+        : "");
+    wireWipTips();
+  }
+
   function renderWip() {
+    if (isAdvance()) return renderAdvanceWip();
     var d = computed();
     var ring = RINGS.map(function (r) {
       var why = provenance(d.from.rings[r], 1);
@@ -4876,7 +5785,8 @@
   }
 
   function render() {
-    var s = STEPS[step];
+    var s = steps()[step] || steps()[0];
+    step = steps().indexOf(s);
     function val(x) { return typeof x === "function" ? x() : x; }
     el("step-n").textContent = s.n === 0 ? "Begin" : "Question " + s.n;
     el("step-title").textContent = val(s.title);
@@ -4885,7 +5795,7 @@
     body.innerHTML = "";
     s.render(body);
     el("prev").disabled = step === 0;
-    el("next").disabled = step === STEPS.length - 1;
+    el("next").disabled = step === steps().length - 1;
     renderNav();
     renderWip();
     renderDrafts();
@@ -4921,7 +5831,7 @@
       if (step > 0) goToStep(step - 1);
     });
     el("next").addEventListener("click", function () {
-      if (step < STEPS.length - 1) goToStep(step + 1);
+      if (step < steps().length - 1) goToStep(step + 1);
     });
     var k = el("ai-key");
     var stored = null;

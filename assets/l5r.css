@@ -991,6 +991,72 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 /* a promoted character opens as an edit, not as a draft to carry on */
 .archivechip.promoted{ border-left:3px solid var(--jade-soft, var(--jade)); }
 
+/* ---- the advancement ledger ------------------------------------------ */
+.archiverow{ display:inline-flex; align-items:stretch; gap:0; }
+.archiverow .archivechip{ border-top-right-radius:0; border-bottom-right-radius:0; }
+.dc-advance{
+  appearance:none; cursor:pointer; border:1px dashed var(--gold-soft);
+  border-left:0; background:var(--paper); color:var(--ink-2);
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.06em;
+  font-size:0.6rem; padding:0 0.45rem; border-radius:0 2px 2px 0;
+}
+.dc-advance:hover{ border-color:var(--jade); color:var(--jade); }
+.adv-xp{ display:flex; flex-wrap:wrap; align-items:baseline; gap:0.8rem; margin:0.3rem 0 0.7rem; }
+.adv-xp-in{
+  display:flex; align-items:baseline; gap:0.5rem; font-family:var(--caps);
+  text-transform:uppercase; letter-spacing:0.09em; font-size:0.64rem;
+  color:var(--ink-soft);
+}
+.adv-xp-in input{
+  width:5rem; padding:0.3rem 0.4rem; font:inherit; font-size:1rem;
+  font-variant-numeric:lining-nums; color:var(--sumi);
+  background:var(--paper); border:1px solid var(--edge-soft); border-radius:2px;
+}
+.adv-tot{ font-family:var(--disp); font-size:1.05rem; color:var(--ink-2); }
+.adv-tot.over{ color:var(--crimson); font-weight:600; }
+.adv-progress{ display:flex; flex-wrap:wrap; gap:0.5rem; margin:0 0 0.8rem; }
+.adv-stat{
+  flex:1 1 7rem; padding:0.4rem 0.6rem; border:1px solid var(--edge-soft);
+  border-radius:2px; background:var(--paper-2);
+}
+.adv-stat .k{
+  display:block; font-family:var(--caps); text-transform:uppercase;
+  letter-spacing:0.09em; font-size:0.58rem; color:var(--ink-soft);
+}
+.adv-stat .v{
+  display:block; font-family:var(--disp); font-size:1.2rem; color:var(--sumi);
+  font-variant-numeric:lining-nums;
+}
+.adv-rankup{
+  margin:0.2rem 0 0.7rem; padding:0.35rem 0.6rem; border-left:3px solid var(--jade);
+  background:rgba(79,125,92,0.1); font-size:0.9rem; color:var(--sumi);
+}
+.adv-add{ margin:0.3rem 0 0.8rem; }
+.adv-ledger{ display:grid; gap:0.3rem; margin:0.4rem 0 0.8rem; }
+.adv-row{
+  display:grid; grid-template-columns:5.5rem 1fr 4rem 2fr auto auto;
+  align-items:center; gap:0.5rem; padding:0.35rem 0.5rem;
+  border:1px solid var(--edge-soft); border-left:3px solid var(--jade);
+  border-radius:2px; background:var(--paper); font-size:0.9rem;
+}
+.adv-row.bad{ border-left-color:var(--crimson); background:var(--crimson-soft); }
+.ar-k{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.08em;
+  font-size:0.58rem; color:var(--ink-soft);
+}
+.ar-n{ font-family:var(--disp); color:var(--sumi); }
+.ar-x{ font-variant-numeric:lining-nums; color:var(--ink-2); text-align:right; }
+.ar-a{ font-size:0.8rem; color:var(--ink-soft); }
+.adv-row.bad .ar-a{ color:var(--crimson); }
+.ar-alloc{ display:inline-flex; gap:0.2rem; }
+.ar-alloc .choice{ padding:0.1rem 0.4rem; font-size:0.62rem; }
+.ar-x-btn{
+  appearance:none; cursor:pointer; border:0; background:none; padding:0 0.3rem;
+  color:var(--ink-soft); font-size:1.1rem; line-height:1;
+}
+.ar-x-btn:hover{ color:var(--crimson); }
+.wip-card .ring.up .rv, .wip-card .skill.up .sv{ color:var(--jade); font-weight:600; }
+
 /* ---- the work-in-progress panel ------------------------------------- */
 .wip-card .has-tip{ cursor:help; }
 .wip-card .ring.has-tip, .wip-card .skill.has-tip{ position:relative; }

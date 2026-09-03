@@ -389,6 +389,18 @@ def emit_local_key():
     return True
 
 
+def top_tier(c):
+    """The character as they stand: the highest-XP tier, with the lists reduced
+    to the names an advancement ledger works in."""
+    t = max(c["tiers"], key=lambda x: x["xp"])
+    out = {k: t.get(k) for k in ("xp", "label", "rank", "school", "rings",
+                                 "skills", "social", "derived", "money")}
+    for k in ("techniques", "peculiarities", "titles", "bonds",
+              "signature_scrolls", "gear"):
+        out[k] = [e["name"] for e in t.get(k) or []]
+    return out
+
+
 def archive_drafts(docs):
     """Enough of every character for the Creator to pick it up.
 
@@ -437,6 +449,11 @@ def archive_drafts(docs):
             # makes an edit exact rather than a re-derivation that quietly
             # loses the choices behind the numbers.
             "wizard": wizards.get(c["slug"]),
+            # An advance starts from where the character actually is, which is
+            # the highest tier on the record and not tier 0. Carried whole,
+            # because the ledger adds to all of it: rings and skills, the
+            # techniques and advantages held, the titles and bonds in progress.
+            "top": top_tier(c),
             # ...and the numbers themselves, so the Creator can check its
             # reconstruction against them before an edit is allowed to write
             # any of them. See mechanicsAgree() in assets/creator.js.
