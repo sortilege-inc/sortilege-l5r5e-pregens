@@ -14,7 +14,7 @@ workers_dev = true
 [[d1_databases]]
 binding = "DB"
 database_name = "sortilege-l5r-drafts"
-database_id = "PLACEHOLDER-set-by-deploy_worker.sh"
+database_id = "0893d9cf-ce4e-4e19-8053-a29fd8f86888"
 
 [vars]
 # Comma-separated origins allowed to call this Worker. The first is the
