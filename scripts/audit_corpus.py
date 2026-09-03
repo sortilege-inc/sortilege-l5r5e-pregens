@@ -55,6 +55,8 @@ SOURCES = [
    ["Errata FAQ v20 2019-09-25.md", "core-md/*.md"], []),
   ("errata-2020", "Errata and FAQ (2020)", ["errata-faq-2020"],
    ["Errata FAQ v20 2020-08-12.md", "core-md/*.md"], []),
+  ("deathly-turns", "Deathly Turns", ["deathly-turns-*"],
+   ["deathly-turns-md/*.md"], ["deathly_turns"]),
 ]
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

@@ -183,5 +183,17 @@
    "Errata FAQ v20 2020-08-12.md"
   ],
   "packs": []
+ },
+ "deathly-turns": {
+  "title": "Deathly Turns",
+  "corpus": [
+   "deathly-turns-*"
+  ],
+  "text": [
+   "deathly-turns-md/*.md"
+  ],
+  "packs": [
+   "deathly_turns"
+  ]
  }
 }
