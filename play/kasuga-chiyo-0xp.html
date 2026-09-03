@@ -32,23 +32,23 @@
  "portrait": null,
  "rings": {
   "air": 3,
-  "earth": 1,
+  "earth": 2,
   "fire": 1,
-  "water": 2,
+  "water": 3,
   "void": 1
  },
  "derived": {
-  "endurance": 4,
-  "composure": 6,
+  "endurance": 6,
+  "composure": 10,
   "focus": 4,
   "vigilance": 3
  },
  "trackers": {
   "strife": {
-   "max": 6
+   "max": 10
   },
   "fatigue": {
-   "max": 4
+   "max": 6
   },
   "void": {
    "max": 1,
@@ -58,7 +58,7 @@
  "stance": "void",
  "social": {
   "honor": 29,
-  "glory": 33,
+  "glory": 38,
   "status": 25
  },
  "xp": {
@@ -76,33 +76,87 @@
   "unarmed": 0,
   "meditation": 0,
   "tactics": 0,
-  "culture": 0,
+  "culture": 1,
   "government": 1,
   "medicine": 0,
   "sentiment": 0,
   "theology": 0,
   "command": 0,
-  "courtesy": 0,
-  "games": 0,
+  "courtesy": 1,
+  "games": 1,
   "performance": 0,
-  "commerce": 1,
+  "commerce": 2,
   "labor": 0,
-  "seafaring": 0,
-  "skulduggery": 1,
+  "seafaring": 1,
+  "skulduggery": 4,
   "survival": 0
  },
  "bushido": {
-  "paramount": null,
-  "less": null
+  "paramount": "Courtesy",
+  "less": "Sincerity"
  },
- "ninjo": "",
- "giri": "",
+ "ninjo": "She wants to be read as competent by someone who matters, and she'll lie about what she knows to make it happen.",
+ "giri": "She must certify the magistrates' expenditures from the harbor fund, which means accounting for money she knows went missing on her watch and never admitting where it actually went.",
  "money": "9 koku",
- "techniques": [],
- "peculiarities": [],
+ "techniques": [
+  {
+   "name": "Rushing Avalanche Style",
+   "tag": "Technique",
+   "text": "<ul><li>When adopting this style, the bushi strikes with reckless abandon using a heavy armament. Thanks to the sheer weight of their weapon and the ferocity of their strikes, even a glancing blow can cause serious harm, and a telling blow usually ends the battle.</li><li>When you make a Martial Arts [Melee] check using a blunt weapon, you may spend (op):</li><li>(op): If you fail with a shortfall of two or less, your target suffers physical damage equal to your ranks in Fitness.</li><li>(op): If you succeed and your target is Prone, increase the damage you deal by your ranks in Fitness.</li></ul>"
+  },
+  {
+   "name": "Well of Desire",
+   "tag": "Technique",
+   "text": "<ul><li>Bribery is considered to be corruption in Rokugan, yet gift exchanges and gift giving is a time-honored tradition. The shrewdest courtiers can engineer scenarios in which their targets cannot refuse their gifts without tarnishing their reputations. Thus, the recipient of such a poisoned gift might find it preferable to owe the courtier a favor than to be shamed in public.</li><li>When you make a Courtesy (Water) check to present a gift to a target, you may spend (op) as follows:</li><li>Water (op): To refuse your gift, your target must forfeit glory equal to your Water Ring. Additionally, if the gift is something that the target desires, the target also must suffer strife equal to its rarity to refuse it. If your target accepts the gift, reduce the TN of your next Social skill check targeting them by the rarity of the item (to a minimum of 1).</li></ul>"
+  },
+  {
+   "name": "Way of the Tortoise",
+   "tag": "Technique",
+   "text": "<ul><li>You never need to stake glory to publicly use a Trade skill, so long as you are doing so as part of your duty to your clan.</li><li>Once per scene, you may add a number of kept ring dice set to Opportunity results equal to your school rank to a check to interact with one or more gaijin, peasants, merchants, burakumin, or any other character with status of 20 or lower.</li></ul>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Blackmail on",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have incriminating information on an individual, which you use to force them to help you even when doing so may damage their reputation. They will share what knowledge they have about a given person, item, location, or situation, whether through a face-to-face meeting or through written correspondence. They will also arrange for introductions with exclusive members of society or places of business.</li><li>When performing a check to demand favors of the chosen individual (such as a Courtesy [Fire] check to remind them of the consequences of their disobeying you or a Command [Fire] check to order them to risk themself on your behalf), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Hunted by Chikusho-Do",
+   "tag": "Peculiarity",
+   "text": "<ul><li>The spirits of Chikushodo have marked you, and animals are hostile toward you.</li><li>When performing a check to interact with an animal (such as Survival [Earth] to calm a frightened horse or Fitness [Earth] to go unnoticed by a hungry wolf), you must choose and reroll two dice showing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Charity",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Your charitable nature makes those who have witnessed or heard of your generosity more likely to accept your reasonable requests for aid.</li><li>After performing a check with which your charitable history is a benefit (such as Courtesy [Water] or Labor [Water]), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Fear of",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have an irrational fear of a commonly found creature. When you perceive such a creature you become unnerved.</li><li>After performing a check to make choices while in the presence of your feared creature (such as Medicine [Earth] or Courtesy [Earth]), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Paranoia",
+   "tag": "Peculiarity",
+   "text": "<ul><li>In every shadow, you see assassins, and in every smile, you see a rival in pursuit of your undoing. This fear makes it very hard for you to rely upon others, and it might distract you from real threats. You cannot relax unless you have confirmed vital information (such as your current safety) for yourself.</li><li>After performing a check to identify danger in your environment (such as a Government [Water] check to know the political currents in a court or a Sentiment [Water] check to sense if someone&#x27;s intentions toward you are hostile), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  }
+ ],
  "titles": [],
  "bonds": [],
- "gear": []
+ "gear": [
+  {
+   "name": "Sailor's garb",
+   "kind": "Armor",
+   "physical": "1",
+   "qualities": [
+    "Mundane",
+    "Durable"
+   ],
+   "rarity": "2",
+   "text": "<p>Mantis sailors generally dress in practical clothes made of sturdy, resilient cloth that will not fall apart when soaked by the sea or baked by the sun. These clothes are also generally easy to repair, even aboard a ship where supplies are scarce.</p>"
+  }
+ ]
 }
 </script>
 <script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>

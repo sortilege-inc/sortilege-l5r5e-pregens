@@ -37,7 +37,7 @@ GATE: every catalog entry a character actually references must resolve to the
 corpus, or be listed in `dsl_text_exceptions` in src/foundry_sources.json with a
 reason. Narrowing is the owner's signed call, never this script's default.
 """
-import argparse, collections, html, json, os, re, shutil, sqlite3, subprocess, sys, unicodedata
+import argparse, collections, glob, html, json, os, re, shutil, sqlite3, subprocess, sys, unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORKING = os.path.dirname(ROOT)
@@ -257,6 +257,63 @@ def build_index(corpus):
     return idx, counts
 
 
+# A book's mechanics live in its .ttrpg and its prose in the companion .lore —
+# the Mantis Clan states Sailor's Garb's resistance, qualities, rarity and cost
+# in one file and what the thing actually is in the other. This only read the
+# .ttrpg, so every entry whose description was written on the lore side looked
+# like an entry with no description, and the gate reported a conversion gap that
+# was not one.
+#
+# Keyed on the heading, because that is what the lore files use to name an
+# entity: "#### Sailor's Garb" under "### Mantis Armor".
+LORE_HEADING = re.compile(r"^(#{2,6})\s*(.+?)\s*$", re.M)
+
+
+def lore_prose(base):
+    """Every named section of every .lore file beside the corpus, by name."""
+    idx = {}
+    for path in sorted(glob.glob(os.path.join(base, "*.lore"))):
+        text = open(path, encoding="utf-8").read()
+        marks = list(LORE_HEADING.finditer(text))
+        for i, m in enumerate(marks):
+            end = marks[i + 1].start() if i + 1 < len(marks) else len(text)
+            body = text[m.end():end].strip()
+            # Section headings introduce the entries under them rather than
+            # describing a thing, so anything that has a deeper heading inside
+            # it is a container, not an entry.
+            if not body or (i + 1 < len(marks)
+                            and len(marks[i + 1].group(1)) > len(m.group(1))):
+                continue
+            body = "\n".join(l for l in body.splitlines()
+                              if l.strip() and not l.startswith(("---", "**Version",
+                                                                "**Source", "**Publisher")))
+            if body:
+                head, body = m.group(2), body.strip()
+                idx.setdefault(norm(head), body)
+                # A book sometimes describes a pair under one heading while the
+                # .ttrpg lists them separately — "Tinbe-Rochin" against a Tinbe
+                # and a Rochin. Index the halves too, but only as a fallback:
+                # a heading of their own always wins.
+                halves = [h for h in re.split(r"[-\u2013\u2014]", head) if h.strip()]
+                if len(halves) > 1:
+                    for h in halves:
+                        idx.setdefault(norm(h), body)
+    return idx
+
+
+def lore_for(name, dsl_name, lore):
+    """The lore section for an entity, allowing for the pairs a book names
+    together — the .ttrpg has Tinbe and Rochin as separate gear, the book
+    describes them once, as "Tinbe-Rochin"."""
+    for n in (name, dsl_name):
+        if not n:
+            continue
+        hit = lore.get(norm(n))
+        if hit:
+            return hit
+    return None
+
+
 def text_of(e):
     """Whatever rules prose this node carries, in whichever shape it uses."""
     parts = []
@@ -345,6 +402,13 @@ def main():
     idx, shapes = build_index(corpus)
     print("   corpus index: " + ", ".join(f"{v} {k}" for k, v in shapes.most_common()))
 
+    manifest = json.load(open(MANIFEST))
+    base = os.path.normpath(os.path.join(os.path.dirname(MANIFEST),
+                                         manifest["base_dir"]))
+    lore = lore_prose(base)
+    print(f"   lore sections: {len(lore)} named, for entries whose prose the book "
+          "states outside the .ttrpg")
+
     exceptions = {k: v for k, v in
                   ((json.load(open(SOURCES)).get("dsl_text_exceptions") or {}).items())
                   if not k.startswith("_")}
@@ -362,6 +426,11 @@ def main():
     for r in rows:
         e, parent = resolve(r["name"], r["clan"], idx)
         parts = text_of(e) if e else []
+        if e and not parts:
+            fallback = lore_for(r["name"], e.get("name"), lore)
+            if fallback:
+                parts = [fallback]
+                stats["from_lore"] += 1
         stats["total"] += 1
         if parts:
             stats["text"] += 1
@@ -418,8 +487,10 @@ def main():
         json.dump(tech, f, ensure_ascii=False, separators=(",", ":"))
         f.write(";\n")
 
-    print(f"dsl text:   {stats['text']}/{stats['total']} catalog entries carry corpus prose"
-          f"  ({stats['gap']} without)")
+    from_lore = (f", {stats['from_lore']} of them from the book's .lore"
+                 if stats["from_lore"] else "")
+    print(f"dsl text:   {stats['text']}/{stats['total']} catalog entries carry corpus "
+          f"prose{from_lore}  ({stats['gap']} without)")
     print(f"            {len(pec)}/253 peculiarities -> "
           f"{os.path.relpath(PEC_OUT, ROOT)} ({os.path.getsize(PEC_OUT)/1024:.1f} KB)")
     guided = sum(1 for q in questions.values()
