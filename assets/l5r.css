@@ -838,8 +838,13 @@ p.cur-meta{ margin:0 0 0.5rem; }
 
 /* Nodes and lines. A dashed line means nobody has written that pair yet, which
    is information rather than decoration, so it is drawn in the accent colour. */
-.rm-edge{ stroke:var(--edge-hair); stroke-width:1; }
-.rm-edge:hover{ stroke:var(--crimson); stroke-width:2.5; cursor:pointer; }
+.rm-edge{ stroke:var(--edge-hair); stroke-width:1; pointer-events:none; }
+/* The pointer target: eleven pixels wide, invisible, and drawn just before the
+   line it belongs to so hovering it can light that line. The visible line
+   takes no pointer events, so it cannot swallow the hover. */
+.rm-hit{ stroke:transparent; stroke-width:11; cursor:pointer; }
+.rm-hit:hover + .rm-edge{ stroke:var(--crimson); stroke-width:2.5; }
+.rm-hit:hover + .rm-edge.rm-party.rm-undefined{ opacity:1; }
 .rm-party{ stroke:var(--gold); stroke-width:2; }
 .rm-party.rm-undefined{
   stroke:var(--crimson); stroke-width:1.2; stroke-dasharray:5 5; opacity:0.55;

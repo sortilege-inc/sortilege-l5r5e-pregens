@@ -131,11 +131,29 @@
       if (state.selected && e.a !== state.selected && e.b !== state.selected) {
         cls += " rm-dim";
       }
-      var ln = mk("line", { x1: s.x, y1: s.y, x2: t.x, y2: t.y, class: cls,
-                            "data-i": i });
-      ln.addEventListener("click", function (ev) {
+      var caption = s.name + " & " + t.name + " — " +
+        (e.text ? e.text : e.kind === "party" ? "not written yet" : e.kind);
+
+      /* A drawn line is one or two pixels wide, which is fine to look at and
+         impossible to hover. So each edge is two lines: a fat transparent one
+         that takes the pointer, and the visible one drawn over it with
+         `pointer-events:none` so it never steals the hover.
+
+         The hit line comes FIRST in document order on purpose — that is what
+         lets `.rm-hit:hover + .rm-edge` light the visible line. Appending it
+         second reads more naturally and there is no selector for it. */
+      var hit = mk("line", { x1: s.x, y1: s.y, x2: t.x, y2: t.y,
+                             class: "rm-hit" });
+      var ht = mk("title");
+      ht.textContent = caption;
+      hit.appendChild(ht);
+      hit.addEventListener("click", function (ev) {
         ev.stopPropagation(); showEdge(e, s, t);
       });
+
+      var ln = mk("line", { x1: s.x, y1: s.y, x2: t.x, y2: t.y, class: cls,
+                            "data-i": i });
+      lines.appendChild(hit);
       lines.appendChild(ln);
     });
 
@@ -154,10 +172,25 @@
                           transform: "translate(" + d.x + "," + d.y + ")" });
       grp.appendChild(mk("circle", { r: r, class: isPc ? "rm-pc" : "rm-npc",
                                      fill: isPc ? clanVar(d.clan) : "var(--paper-3)" }));
+      /* Names only, and cut short even so. The map showed nothing but names
+         and still went unreadable once, because a hand-written relationship
+         line parsed into an "NPC" called `Miramoto Shinzka: Is betrothed.
+         Raised in the Asahina Envoy school…` and that became the label. The
+         parser is fixed; this is the belt as well as the braces. */
       var label = mk("text", { class: isPc ? "rm-label rm-label-pc" : "rm-label",
                                y: isPc ? r + 15 : r + 12 });
-      label.textContent = d.name;
+      label.textContent = d.name.length > 28 ? d.name.slice(0, 27) + "…" : d.name;
       grp.appendChild(label);
+
+      // What the relationship actually is belongs on hover and on click, not
+      // on the canvas: forty lines of it at once is not a map of anything.
+      var tip = mk("title");
+      tip.textContent = d.name +
+        (d.affiliation ? " (" + d.affiliation + ")" : "") +
+        (isPc ? " — " + [d.clan, d.school].filter(Boolean).join(", ")
+              : (d.named_by || []).length
+                  ? " — named by " + d.named_by.join(", ") : "");
+      grp.appendChild(tip);
       grp.addEventListener("click", function (ev) {
         ev.stopPropagation();
         state.selected = state.selected === d.id ? null : d.id;

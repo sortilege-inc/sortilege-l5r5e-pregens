@@ -33,6 +33,61 @@ DASH = re.compile(r"\s+[—–]\s+")
 PAREN = re.compile(r"^(.*?)\s*\(([^)]*)\)\s*$")
 CROSS = re.compile(r"^\s*\*\*(.+?)\s*↔\s*(.+?)\*\*\s*[—–]?\s*(.*)$", re.M)
 
+# A person's name, then what the relationship is. Characters made in the
+# Creator serialise as `Name (Affiliation) — text`, but the ones written by
+# hand or imported from Foundry use a colon, a hyphen, a markdown heading, or
+# no separator at all, and some lines are prose that names nobody. Splitting on
+# the separator alone produced an "NPC" whose name was a whole paragraph, and
+# the map dutifully drew it as a label.
+SEP = re.compile(r"\s*(?:[—–]|:|\s-\s)\s*")
+NAME_MAX_WORDS = 5
+NAME_MAX_CHARS = 44
+
+
+def looks_like_a_name(s):
+    """Is this a person's name, or the start of a sentence?
+
+    Deliberately strict. A line that does not clearly begin with a name is
+    skipped and counted, which is visible on every build, rather than turned
+    into a node, which is not.
+    """
+    s = (s or "").strip()
+    if not s or len(s) > NAME_MAX_CHARS or len(s.split()) > NAME_MAX_WORDS:
+        return False
+    if not s[0].isalpha() or not s[0].isupper():
+        return False
+    # A heading is not always a person: `### **The Exchange of Gifts – A Pact of
+    # Brotherhood**` put "The Exchange of Gifts" on the map as someone Harunobu
+    # knows. An article or a connective marks a phrase, not a Rokugani name —
+    # and "Ikoma no Hosokawa Ota" survives, because `no` is a name particle and
+    # is not in this list.
+    if re.match(r"^(the|a|an)\b", s, re.I):
+        return False
+    if re.search(r"\s(?:of|and|for|to|with|in|from)\s", s, re.I):
+        return False
+    # "met at court, at Ayame's salon" and "her younger brother" are sentences
+    return not re.search(r"[.!?,;]", s)
+
+
+def split_person(line):
+    """(name, affiliation, text) for a line that names someone, else None."""
+    line = line.strip()
+    if not line or line[0] in "-*>•":
+        return None
+    # `### **Akodo Masanari – A Kindred Spirit**` — a heading naming a person
+    head = re.match(r"^#{1,6}\s*(.+?)\s*$", line)
+    if head:
+        line = head.group(1)
+    line = line.replace("**", "").strip()
+    parts = SEP.split(line, 1)
+    who = parts[0].strip()
+    text = parts[1].strip() if len(parts) > 1 else ""
+    aff = ""
+    m = PAREN.match(who)
+    if m:
+        who, aff = m.group(1).strip(), m.group(2).strip()
+    return (who, aff, text) if looks_like_a_name(who) else None
+
 
 def fold(s):
     s = unicodedata.normalize("NFKD", str(s or ""))
@@ -45,36 +100,39 @@ def answer(doc, step, key):
 
 
 def contacts(doc):
-    """The people this character named, with where each came from.
+    """The people this character named, and the lines that name nobody.
 
-    Question 16 is written one per line as `Name (Affiliation) — what it is`,
-    which is exactly how the Creator serialises its structured people, so it
-    parses back rather than being guessed at.
+    Question 16 is one person per line, but only for characters made in the
+    Creator, which serialises `Name (Affiliation) — what it is`. Hand-written
+    and imported sheets use a colon, a dash, a markdown heading, sub-bullets,
+    or plain prose about someone already mentioned. Assuming the Creator's
+    shape held everywhere is what put a paragraph on the map as a person's
+    name, so a line only becomes a person if split_person can see one; the
+    rest come back as `skipped` and get counted on the build.
     """
-    out = []
+    out, skipped = [], []
     for line in answer(doc, "step16", "relations").split("\n"):
-        line = line.strip()
-        if not line:
+        if not line.strip():
             continue
-        parts = DASH.split(line, 1)
-        m = PAREN.match(parts[0].strip())
-        name = (m.group(1) if m else parts[0]).strip()
-        if name:
-            out.append({"name": name, "affiliation": (m.group(2) if m else "").strip(),
-                        "text": (parts[1] if len(parts) > 1 else "").strip(),
+        got = split_person(line)
+        if got:
+            out.append({"name": got[0], "affiliation": got[1], "text": got[2],
                         "via": "knows"})
+        elif len(line.strip()) > 20:
+            skipped.append(line.strip())
     mentor = answer(doc, "step13", "most_learn").strip()
     if mentor:
-        parts = DASH.split(mentor, 1)
-        if parts[0].strip():
-            out.append({"name": parts[0].strip(), "affiliation": "",
-                        "text": (parts[1] if len(parts) > 1 else "").strip(),
+        got = split_person(mentor)
+        if got:
+            out.append({"name": got[0], "affiliation": got[1], "text": got[2],
                         "via": "taught by"})
+        elif len(mentor) > 20:
+            skipped.append(mentor)
     lord = answer(doc, "step5", "lord_name").strip()
     if lord:
         out.append({"name": lord, "affiliation": "", "via": "serves",
                     "text": answer(doc, "step5", "social_giri").strip()})
-    return out
+    return out, skipped
 
 
 def cross_notes(concepts):
@@ -120,7 +178,7 @@ def main():
                 if not k.startswith("_")}
     notes = cross_notes(concepts)
 
-    campaigns, unmatched = {}, set()
+    campaigns, unmatched, unreadable = {}, set(), {}
     by_campaign = {}
     for d in docs:
         by_campaign.setdefault(d.get("campaign") or "Unassigned", []).append(d)
@@ -139,28 +197,54 @@ def main():
 
         # NPCs, keyed by folded name so the same person named by two PCs is one
         # node. None currently is, but the map should join them if it happens.
+        by_pc_name = {fold(p["name"]): p for p in pcs}
+        written = {}          # pair -> what each of them wrote about the other
         npcs = {}
         for d in members:
-            for c in contacts(d):
+            got, skip = contacts(d)
+            if skip:
+                unreadable.setdefault(d["name"], []).extend(skip)
+            for c in got:
+                # Someone a PC names may BE another PC — Asahina Jûjirô's
+                # question 16 names Doji Setsuna, who is in the same party.
+                # That is a written relationship between two characters, so it
+                # points at the existing node instead of standing up a second
+                # one with the same name beside it.
+                mine = "pc:" + d["slug"]
+                pc = by_pc_name.get(fold(c["name"]))
+                if pc:
+                    # Held for the party pass rather than drawn now, so a pair
+                    # gets one line and not two: this text and a Cross-character
+                    # note are two accounts of the same relationship.
+                    if pc["id"] != mine:
+                        written.setdefault(
+                            tuple(sorted((mine, pc["id"]))), []).append(
+                                d["name"] + ": " + c["text"] if c["text"] else "")
+                    continue
                 key = "npc:" + fold(c["name"]).replace(" ", "-")
                 n = npcs.setdefault(key, {"id": key, "kind": "npc", "name": c["name"],
                                           "affiliation": c["affiliation"], "named_by": []})
                 if not n["affiliation"] and c["affiliation"]:
                     n["affiliation"] = c["affiliation"]
                 n["named_by"].append(d["name"])
-                edges.append({"a": "pc:" + d["slug"], "b": key, "kind": c["via"],
+                edges.append({"a": mine, "b": key, "kind": c["via"],
                               "text": c["text"], "defined": True})
         nodes.extend(npcs[k] for k in sorted(npcs))
 
-        # Every pair of PCs, written up or not.
+        # Every pair of PCs, written up or not. Two sources can describe a pair
+        # — a Cross-character note, and one of them naming the other at
+        # question 16 — and either counts as written.
         for i, p in enumerate(pcs):
             for q in pcs[i + 1:]:
-                text = ""
+                parts = []
                 for key, body in notes.items():
                     m1, m2 = (match_pc(key[0], pcs), match_pc(key[1], pcs))
                     if m1 and m2 and {m1["id"], m2["id"]} == {p["id"], q["id"]}:
-                        text = body
+                        parts.append(body)
                         break
+                parts.extend(t for t in
+                             written.get(tuple(sorted((p["id"], q["id"]))), []) if t)
+                text = "\n\n".join(parts)
                 edges.append({"a": p["id"], "b": q["id"], "kind": "party",
                               "text": text, "defined": bool(text)})
         campaigns[camp] = {"nodes": nodes, "edges": edges,
@@ -176,7 +260,8 @@ def main():
 
     data = {"campaigns": campaigns,
             "order": sorted(campaigns, key=lambda c: (-campaigns[c]["pcs"], c)),
-            "unmatched_cross_refs": sorted(unmatched)}
+            "unmatched_cross_refs": sorted(unmatched),
+            "unreadable": {k: len(v) for k, v in sorted(unreadable.items())}}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         f.write("window.L5R_RELMAP = ")
@@ -194,6 +279,15 @@ def main():
     if unmatched:
         print("            cross-character names matching no character: "
               + ", ".join(sorted(unmatched)))
+    if unreadable:
+        # Not a failure — a hand-written sheet is allowed to be prose. But a
+        # line the parser cannot see a name in is a person missing from the
+        # map, so say how many and for whom rather than dropping them quietly.
+        total = sum(len(v) for v in unreadable.values())
+        print(f"            {total} relationship lines name nobody the parser "
+              "can read, so they are not on the map:")
+        for name, lines in sorted(unreadable.items()):
+            print(f"              {name}: {len(lines)}")
 
 
 if __name__ == "__main__":
