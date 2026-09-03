@@ -476,8 +476,14 @@ def prose_of(node, out=None):
             out.append(node.strip())
     elif isinstance(node, dict):
         for k, v in node.items():
-            if k != "concept":      # deliberately not exported; see toSourceJson
-                prose_of(v, out)
+            # `concept` is deliberately not exported (see toSourceJson);
+            # `ai_history` is a cache of suggestions that were offered, and a
+            # leading underscore marks the wizard's own scratch — none of the
+            # three is an answer, and flagging them cried wolf on a draft whose
+            # work was in fact all on disk.
+            if k == "concept" or k == "ai_history" or k.startswith("_"):
+                continue
+            prose_of(v, out)
     elif isinstance(node, list):
         for v in node:
             prose_of(v, out)

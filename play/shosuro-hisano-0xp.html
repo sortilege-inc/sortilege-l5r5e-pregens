@@ -33,22 +33,22 @@
  "rings": {
   "air": 3,
   "earth": 1,
-  "fire": 2,
-  "water": 1,
+  "fire": 3,
+  "water": 2,
   "void": 1
  },
  "derived": {
-  "endurance": 6,
-  "composure": 4,
-  "focus": 5,
-  "vigilance": 2
+  "endurance": 8,
+  "composure": 6,
+  "focus": 6,
+  "vigilance": 3
  },
  "trackers": {
   "strife": {
-   "max": 4
+   "max": 6
   },
   "fatigue": {
-   "max": 6
+   "max": 8
   },
   "void": {
    "max": 1,
@@ -67,42 +67,101 @@
  },
  "skills": {
   "aesthetics": 0,
-  "composition": 0,
-  "design": 0,
+  "composition": 1,
+  "design": 1,
   "smithing": 0,
   "fitness": 0,
-  "melee": 0,
+  "melee": 1,
   "ranged": 0,
-  "unarmed": 0,
+  "unarmed": 1,
   "meditation": 0,
   "tactics": 0,
   "culture": 0,
   "government": 0,
-  "medicine": 0,
+  "medicine": 1,
   "sentiment": 0,
   "theology": 0,
   "command": 0,
-  "courtesy": 1,
+  "courtesy": 2,
   "games": 0,
-  "performance": 1,
+  "performance": 2,
   "commerce": 0,
   "labor": 0,
   "seafaring": 0,
-  "skulduggery": 1,
+  "skulduggery": 2,
   "survival": 0
  },
  "bushido": {
-  "paramount": null,
-  "less": null
+  "paramount": "Duty and Loyalty",
+  "less": "Honor"
  },
- "ninjo": "",
- "giri": "",
+ "ninjo": "Hisano wants to direct a new production with actors other than themself, but every time they miss a performance to scout talent or develop a script, the theatre company loses money and their handlers grow impatient about the intelligence gap.",
+ "giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to their Scorpion handlers, which means they cannot afford to miss a performance or be seen conferring with anyone the theatre company would recognize.",
  "money": "6 koku",
- "techniques": [],
- "peculiarities": [],
+ "techniques": [
+  {
+   "name": "Deadly Sting",
+   "tag": "Technique",
+   "text": "<ul><li>Poison is not a weapon an honorable samurai would choose, but it is tremendously effective, and like its namesake, the Scorpion Clan is not above envenoming its weapons to defeat foes it otherwise could not best.</li><li>As an Attack action, you may use one dose of a poison and make a TN 3 Martial Arts (Air) check using a readied Concealable weapon targeting one character within the weapon&#x27;s range.</li><li>If you succeed, apply the chosen poison to your weapon (see Poison). Then, the target suffers physical damage equal to the deadliness of your weapon plus your bonus successes.</li><li>Air (op): Move 1 range band.</li><li>Air (op)+: If you succeed, the target suffers a critical strike with severity 2, plus 1 per (op) spent this way.</li></ul>"
+  },
+  {
+   "name": "Sensational Distraction",
+   "tag": "Technique",
+   "text": "<ul><li>Standing out in court requires a great deal of both cunning and flair, and standing out on purpose can be even harder. Courtiers train for much of their lives to learn to control the perceptions of others at court. The best courtiers know when to draw attention to themselves with a display of rhetorical prowess or another social feat and when to avoid attention. Drawing attention to oneself can give collaborators the chance to work unnoticed as well, and thus it is an extremely valuable tool in the courtier’s arsenal.</li><li>When making a Social skill (Fire) check targeting one or more characters, you may spend (op) in the following way:</li><li>Fire (op)+: When interacting with other characters, the target treats their vigilance as 1 lower per (op) spent this way; when interacting with you, the target treats their vigilance as 1 higher per (op) spent this way. This effect persists until the end of the scene.</li></ul>"
+  },
+  {
+   "name": "The Path of Shadows",
+   "tag": "Technique",
+   "text": "<p>While performing an Attack action against a target who is Compromised, Incapacitated, Unconscious, or unaware of your presence, treat the damage and deadliness of your weapon as being increased by your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Famously Lucky",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Other people have heard of you for your good fortune, and they believe it by default unless given evidence to the contrary.</li><li>When performing a check for which you need to leverage your reputation for having things turn out your way (such as a Command [Void] check to get your troops to put their faith in you utterly or a Games [Void] check to let fate decide the match), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Unsavory Past",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Your past contains shameful events that may come back to haunt you.</li><li>When performing a check by which your past may come back to haunt you (such as Games [Water] to play with people who know your penchant for cheating or Tactics [Water] to lead troops who know you once fled the battlefield), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Kintsugi",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have a particular fondness and skill for kintsugi, the art of mending broken pottery with gold or similar.</li><li>After performing a check to mend an object with kintsugi or interact with a piece of kintsugi-repaired pottery (such as Culture [Earth] or Labor [Earth]), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "False Identity",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have an elaborate false identity that you have maintained over a long period of time. Many of the people you interact with regularly know you by this identity, and you may even have a family that does not know the truth.</li><li>After performing a check to maintain your false identity (such as a Courtesy [Air] check to lie about your past or a Skulduggery [Air] check to surreptitiously hide evidence of the truth), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Kisshōten’s Blessing",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Children enjoy being around you and are much more receptive to your demands. Your own children (if you have any) are particularly blessed with health, beauty, happiness, and luck.</li><li>When performing a check for which you need to communicate with children (such as a Command [Water] check to order them around or a Performance [Water] check to entertain them), you may reroll up to two dice.</li></ul>"
+  }
+ ],
  "titles": [],
  "bonds": [],
- "gear": []
+ "gear": [
+  {
+   "name": "Kuwa",
+   "kind": "Weapon",
+   "category": "Axes",
+   "skill": "melee",
+   "range": "1",
+   "damage": 4,
+   "deadliness": 2,
+   "grips": "Damage +2, Deadliness +2, Range 1-2",
+   "qualities": [
+    "Cumbersome",
+    "Mundane"
+   ],
+   "rarity": "3",
+   "text": "<p>A weaponized farming hoe, wielded similarly to a two-handed axe. The wielder uses the sharp end to fling dirt and follows up with a devastating chop.</p>"
+  }
+ ]
 }
 </script>
 <script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>

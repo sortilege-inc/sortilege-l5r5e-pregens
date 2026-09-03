@@ -1,23 +1,129 @@
 {
  "slug": "shosuro-hisano",
  "name": "Shosuro Hisano",
- "folder_label": "Shosuro Hisano",
  "campaign": "Slow Tide Harbor",
- "status": "draft",
- "bucket": null,
- "accent": null,
+ "status": null,
  "identity": {
   "clan": "Scorpion",
   "family": "Shosuro",
   "school": "Shosuro Infiltrator School",
   "role": "Shinobi",
-  "age": null
+  "age": "",
+  "region": null,
+  "upbringing": null
  },
+ "mode": "core",
  "portrait": null,
- "concept": null,
+ "concept": "Hisano's hands move while they listen—not fidgeting, but the precise small adjustments a puppeteer makes, testing invisible strings, and they do not seem aware they are doing it.",
  "summary": null,
  "notes": "",
- "twenty_questions": {},
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Hisano has played the same role in the same production for so long that they practice the understudy's lines in empty dressing rooms, uncertain whether they are preparing to step aside or simply afraid to stop.",
+     "ring": "fire"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to their Scorpion handlers, which means they cannot afford to miss a performance or be seen conferring with anyone the theatre company would recognize."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Hisano wants to direct a new production with actors other than themself, but every time they miss a performance to scout talent or develop a script, the theatre company loses money and their handlers grow impatient about the intelligence gap."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Hisano has been asleep so long that when the Scorpion woke them, they couldn't tell if they were being rescued or recaptured."
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Duty and Loyalty",
+     "tenet_less_significant": "Honor"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Hisano kept the lead role and took the director's chair when the theatre company's patron fell ill and they stepped in to finish staging the new production he had commissioned, and no one in the audience that opening night realized the masked actor and the figure moving in the wings were the same person."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Every time Hisano books a scouting trip to look at new actors, the theatre company's box office drops and their handlers send a terse message about the intelligence gap they're leaving behind."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Hisano sits alone in the dressing room after the final curtain, holding a cracked teacup from the prop table, carefully painting gold lacquer into the fracture lines until the break becomes something worth looking at."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Hisano's stage name appears on programmes in three provinces while their handlers' name for them exists only in encrypted ledgers, and they cannot tell which one will be remembered after they stop performing."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Kaiu Michio"
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Hisano's hands move while they listen—not fidgeting, but the precise small adjustments a puppeteer makes, testing invisible strings, and they do not seem aware they are doing it.",
+     "accoutrement": "The cracked teacup from the prop table sits on the shelf above Hisano's dressing mirror, the fractures filled with gold lacquer in varying stages of completion, and when the theatre company's new stagehand asked what it was for, Hisano said it was a practice piece and did not mention that they have been working on it for three years."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When Hisano's composure cracks, they begin speaking their lines—not from the role they're famous for, but from understudy parts they've memorized in empty dressing rooms, cycling through the words like prayer or inventory, which makes it impossible to tell whether they're steadying themselves or auditioning for a life they'll never live."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Shika Umi (Deer) — Shika Umi once paid for Hisano's entire run of a new production after the theatre company's patron withdrew his support, and Hisano has spent five years trying to find a way to repay her without admitting they cannot afford to.\nKasuga Tomomasa (Tortoise) — Kasuga Tomomasa sat in the front row for the opening night of Hisano's masked drama and did not return for a second viewing, though Hisano's handlers noted he attended three other productions at the theatre that season, which means he was there to see Hisano and decided once was enough."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Hisano's mother stopped attending performances after the third year, claiming the role never changed, though she still reads the programmes and has not mentioned to anyone that her child's stage name now appears in venues their handlers would never approve of."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "Dynasty Builder",
+     "heritage_table": "Samurai Heritage Table",
+     "heritage_sub": "1-3 — Gain +1 ^\"Command\""
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Hisano collapses in the wings during the final act, the teacup still in their hand, and the understudy goes on for the curtain call while Hisano's handlers spend three days deciding whether to report the death or simply mark them inactive in the ledgers."
+    },
+    "picks": {}
+   }
+  }
+ },
  "tiers": [
   {
    "xp": 0,
@@ -25,47 +131,46 @@
    "rank": 1,
    "school": "Shosuro Infiltrator School",
    "foundry_id": null,
-   "foundry_name": null,
    "rings": {
     "air": 3,
     "earth": 1,
-    "fire": 2,
-    "water": 1,
+    "fire": 3,
+    "water": 2,
     "void": 1
    },
    "skills": {
     "artisan": {
      "aesthetics": 0,
-     "composition": 0,
-     "design": 0,
+     "composition": 1,
+     "design": 1,
      "smithing": 0
     },
     "martial": {
      "fitness": 0,
-     "melee": 0,
+     "melee": 1,
      "ranged": 0,
-     "unarmed": 0,
+     "unarmed": 1,
      "meditation": 0,
      "tactics": 0
     },
     "scholar": {
      "culture": 0,
      "government": 0,
-     "medicine": 0,
+     "medicine": 1,
      "sentiment": 0,
      "theology": 0
     },
     "social": {
      "command": 0,
-     "courtesy": 1,
+     "courtesy": 2,
      "games": 0,
-     "performance": 1
+     "performance": 2
     },
     "trade": {
      "commerce": 0,
      "labor": 0,
      "seafaring": 0,
-     "skulduggery": 1,
+     "skulduggery": 2,
      "survival": 0
     }
    },
@@ -73,18 +178,18 @@
     "honor": 30,
     "glory": 40,
     "status": 35,
-    "ninjo": "",
-    "giri": "",
+    "ninjo": "Hisano wants to direct a new production with actors other than themself, but every time they miss a performance to scout talent or develop a script, the theatre company loses money and their handlers grow impatient about the intelligence gap.",
+    "giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to their Scorpion handlers, which means they cannot afford to miss a performance or be seen conferring with anyone the theatre company would recognize.",
     "bushido_tenets": {
-     "paramount": null,
-     "less_significant": null
+     "paramount": "Duty and Loyalty",
+     "less_significant": "Honor"
     }
    },
    "derived": {
-    "endurance": 6,
-    "composure": 4,
-    "focus": 5,
-    "vigilance": 2,
+    "endurance": 8,
+    "composure": 6,
+    "focus": 6,
+    "vigilance": 3,
     "void_points": 1
    },
    "money": {
@@ -92,25 +197,44 @@
     "koku": 6,
     "bu": 0
    },
-   "techniques": [],
-   "peculiarities": [],
+   "techniques": [
+    {
+     "name": "Deadly Sting"
+    },
+    {
+     "name": "Sensational Distraction"
+    },
+    {
+     "name": "The Path of Shadows"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Famously Lucky"
+    },
+    {
+     "name": "Unsavory Past"
+    },
+    {
+     "name": "Kintsugi"
+    },
+    {
+     "name": "False Identity"
+    },
+    {
+     "name": "Kisshōten’s Blessing"
+    }
+   ],
    "titles": [],
    "bonds": [],
    "signature_scrolls": [],
-   "gear": [],
+   "gear": [
+    {
+     "name": "Kuwa"
+    }
+   ],
    "advancements": []
   }
  ],
- "needs_attention": [
-  "family ring: choose 1 of Air, Water",
-  "school starting skills: choose 5 of Courtesy, Fitness, Games, Martial Arts [Melee], Martial Arts [Unarmed], Performance, Skulduggery",
-  "ninjutsu: choose 1 of Deadly Sting",
-  "shuji: choose 1 of Whispers of Court, Sensational Distraction",
-  "question 4: standout quality and its +1 ring",
-  "questions 9-12: distinction, adversity, passion, anxiety",
-  "question 13: mentor, and the extra advantage or disadvantage",
-  "question 18: heritage",
-  "giri and ninjo",
-  "starting outfit"
- ]
+ "bio": "Shosuro Hisano — they/them — Scorpion asset on loan to Nagiko\n\n**Shosuro Infiltrator** · Scorpion · Shinobi/Courtier · Air +1, Fire +1 · Honor 30 · they/them\n**Not a yoriki.** A long-dormant Scorpion asset whose use has been granted to Nagiko as a favour from the Scorpion.\n\n### Cards\n- **Six of Wands** — a highly regarded performer.\n- **Eight of Pentacles, reversed** — wants to be able to manage other artists, but is too embroiled in their own craft.\n- **Page of Wands** — also blocked by inexperience, but has big ideas for what they hope to do as they move into more of a producer role.\n\n### Reading\nNothing in this spread is about espionage. Three cards on craft and ambition, none on tradecraft. Hisano is an artist who happens to have been trained to lie professionally, rather than a spy with a cover story.\n\nThe acclaim was accumulated *during the sleep*. A dormant asset lives their cover, and theirs is a stage career they've had nothing to do but excel at. The cover stopped being a cover and became the only life they've actually lived.\n\nSix of Wands over Page of Wands is an unusual position: senior at the thing they want to stop doing, novice at the thing they want to start. Both true simultaneously. Not impostor syndrome — a person whose actual credential is in the wrong field, and who knows it.\n\nThe Eight of Pentacles reversed is the mechanism. Excellence keeps them at the bench. Every strong performance earns another performance. Success is the cage, and it's invisible from outside, because it looks like a career going well.\n\nThe Page of Wands does double duty: inexperienced as a producer, and rusty as an operative. The one thing everyone will assume they're good at is the thing they're least current in."
 }

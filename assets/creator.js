@@ -429,6 +429,7 @@
     c.answers.peace = ans("step11", "calms");
     c.answers.fear = ans("step12", "worries");
     c.answers.first_impression = ans("step14", "first_sight");
+    c.answers.accoutrement = ans("step14", "accoutrement");
     c.answers.stress_reaction = ans("step15", "stress");
     c.answers.relationships = ans("step16", "relations");
     c.answers.parent_opinion.description = ans("step17", "parents_pov");
@@ -3701,7 +3702,14 @@
           step11: { answers: { calms: a.peace }, picks: {} },
           step12: { answers: { worries: a.fear }, picks: {} },
           step13: { answers: { most_learn: a.mentor.name + (a.mentor.text ? " — " + a.mentor.text : "") }, picks: {} },
-          step14: { answers: { first_sight: a.first_impression }, picks: {} },
+          // Question 14 asks two things: what people notice, and one
+          // distinctive accoutrement carried or worn most of the time. Foundry
+          // records only the first — its step14 has a single `first_sight` key
+          // — so the accoutrement had nowhere to go and was written by every
+          // player and exported by nobody. It rides alongside; an extra key is
+          // harmless to Foundry and hydrate() reads it back.
+          step14: { answers: { first_sight: a.first_impression,
+                               accoutrement: a.accoutrement }, picks: {} },
           step15: { answers: { stress: a.stress_reaction }, picks: {} },
           step16: { answers: { relations: a.relationships }, picks: {} },
           step17: { answers: { parents_pov: a.parent_opinion.description }, picks: {} },
