@@ -472,8 +472,14 @@ def prose_of(node, out=None):
     them would flag everything."""
     out = [] if out is None else out
     if isinstance(node, str):
-        if len(node.strip()) >= 25:
-            out.append(node.strip())
+        s = node.strip()
+        # An identifier is not prose. `heritage_table` holds a key like
+        # "new-samurai-heritages-table", which the export deliberately
+        # translates to its display name, so looking for the key in the file
+        # found nothing and refused a draft that was fully exported. Anything
+        # someone wrote has a space in it.
+        if len(s) >= 25 and " " in s:
+            out.append(s)
     elif isinstance(node, dict):
         for k, v in node.items():
             # `concept` is deliberately not exported (see toSourceJson);

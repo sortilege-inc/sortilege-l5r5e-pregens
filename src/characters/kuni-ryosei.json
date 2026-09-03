@@ -1,23 +1,130 @@
 {
  "slug": "kuni-ryosei",
  "name": "Kuni Ryōsei",
- "folder_label": "Kuni Ryōsei",
  "campaign": "Slow Tide Harbor",
- "status": "draft",
- "bucket": null,
- "accent": null,
+ "status": null,
  "identity": {
   "clan": "Crab",
   "family": "Kuni",
   "school": "Kuni Purifier School",
   "role": "Shugenja",
-  "age": null
+  "age": "",
+  "region": null,
+  "upbringing": null
  },
+ "mode": "core",
  "portrait": null,
- "concept": null,
+ "concept": "Her fingernails are worn flat on one side from years of scraping dried components off cataloging surfaces, and she does not file them even.",
  "summary": null,
  "notes": "",
- "twenty_questions": {},
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "During her final examination at the dōjō, she sat across from her instructor in absolute silence for two hours, watching him perform a warding ritual, and when he asked her what she had learned, she described not the words or gestures but the precise moment when his concentration shifted — and was right.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Ryōsei catalogs the ritual components confiscated from mahō-tsukai cells for Magistrate Sekihara, cross-referencing their applications against Kuni doctrine so that none are ever used twice.",
+     "lord_name": "Kuni Isei"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "She wants to build a ward that holds against mahō itself rather than merely containing it, and she has already sketched the framework using principles the Kuni would call heresy if they knew how far she had taken them."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "She recites the Kuni's purification rites word-perfect in formal settings and improvises variations in the field without asking permission, trusting her reading of the moment more than the prescribed text."
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She identified the mahō components in Magistrate Sekihara's first confiscation by their absence—the ones that should have been there, cross-referenced against three separate Kuni catalogs, and proved the cell had sold their most potent materials to an outsider before the raids began."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "She cannot walk into a room where mahō components have been cataloged without her hands moving toward the work, and she has learned to disguise this as professional thoroughness."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "She sits in the confiscation archive after the magistrate has left, a cup of last year's Kuni sake warming in her hands, reading the notes on components she has already memorized—not for the work, but because the repetition settles the wanting down to a hum she can live with."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "She sketched a ward that should hold against mahō itself, showed it to Sekihara because protocol demanded it, and watched his face close the moment he understood what she had actually built."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Katsuhito"
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Her fingernails are worn flat on one side from years of scraping dried components off cataloging surfaces, and she does not file them even.",
+     "accoutrement": "She wears a leather glove on her right hand, the palm worn through in three places where she has patched it with canvas, because she will not stop touching the components even when her skin begins to crack."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "She stops speaking mid-sentence and begins examining whatever is nearest to her with absolute attention—the grain of wood, the weave of fabric, the way light falls across a surface—until someone directly addresses her by name."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Iuchi Okura (Unicorn) — Iuchi Okura taught her a Unicorn binding technique for containing volatile components, and now Ryōsei uses it on every catalog she prepares, which means every confiscation she handles carries a foreign mark that could get her examined if anyone looked closely enough."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Her mother finds her impossible to shop for because she will spend twenty minutes examining the weave of a bolt of silk or the grain of a tea bowl and then say nothing about whether she wants it."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "Knowledge Exchange",
+     "heritage_table": "New Samurai Heritages Table",
+     "heritage_sub": "4-6 — shūji"
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "She dies in the confiscation archive after hours, alone with a ward design that finally holds, before she can decide whether to burn it or show it to Sekihara."
+    },
+    "picks": {}
+   }
+  }
+ },
  "tiers": [
   {
    "xp": 0,
@@ -25,13 +132,12 @@
    "rank": 1,
    "school": "Kuni Purifier School",
    "foundry_id": null,
-   "foundry_name": null,
    "rings": {
     "air": 1,
     "earth": 3,
     "fire": 2,
     "water": 1,
-    "void": 1
+    "void": 3
    },
    "skills": {
     "artisan": {
@@ -43,7 +149,7 @@
     "martial": {
      "fitness": 1,
      "melee": 0,
-     "ranged": 0,
+     "ranged": 1,
      "unarmed": 0,
      "meditation": 0,
      "tactics": 0
@@ -51,9 +157,9 @@
     "scholar": {
      "culture": 0,
      "government": 0,
-     "medicine": 1,
+     "medicine": 3,
      "sentiment": 0,
-     "theology": 1
+     "theology": 2
     },
     "social": {
      "command": 0,
@@ -66,18 +172,18 @@
      "labor": 0,
      "seafaring": 0,
      "skulduggery": 0,
-     "survival": 0
+     "survival": 1
     }
    },
    "social": {
-    "honor": 35,
-    "glory": 40,
+    "honor": 45,
+    "glory": 45,
     "status": 30,
-    "ninjo": "",
-    "giri": "",
+    "ninjo": "She wants to build a ward that holds against mahō itself rather than merely containing it, and she has already sketched the framework using principles the Kuni would call heresy if they knew how far she had taken them.",
+    "giri": "Ryōsei catalogs the ritual components confiscated from mahō-tsukai cells for Magistrate Sekihara, cross-referencing their applications against Kuni doctrine so that none are ever used twice.",
     "bushido_tenets": {
-     "paramount": null,
-     "less_significant": null
+     "paramount": "Courage",
+     "less_significant": "Courtesy"
     }
    },
    "derived": {
@@ -85,35 +191,60 @@
     "composure": 8,
     "focus": 3,
     "vigilance": 1,
-    "void_points": 1
+    "void_points": 3
    },
    "money": {
     "zeni": 0,
     "koku": 4,
     "bu": 0
    },
-   "techniques": [],
-   "peculiarities": [],
+   "techniques": [
+    {
+     "name": "Striking as Earth"
+    },
+    {
+     "name": "Armor of Earth"
+    },
+    {
+     "name": "Jade Strike"
+    },
+    {
+     "name": "Commune with the Spirits"
+    },
+    {
+     "name": "Threshold Barrier"
+    },
+    {
+     "name": "Gaze into Shadow"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Daikoku’s Blessing"
+    },
+    {
+     "name": "Stained Lineage"
+    },
+    {
+     "name": "Sake"
+    },
+    {
+     "name": "Fear of Mediocrity"
+    },
+    {
+     "name": "Whispers of Treachery"
+    }
+   ],
    "titles": [],
    "bonds": [],
    "signature_scrolls": [],
-   "gear": [],
+   "gear": [
+    {
+     "name": "Mono Imi Fuda (Taboo Plaque)"
+    }
+   ],
    "advancements": []
   }
  ],
- "needs_attention": [
-  "family ring: choose 1 of Earth, Void",
-  "school starting skills: choose 3 of Martial Arts [Melee], Medicine, Sentiment, Skulduggery, Survival, Theology",
-  "kata: choose 1 of Striking as Earth, Striking as Fire",
-  "invocation: choose 1 of Armor of Earth",
-  "invocation: choose 1 of Jade Strike",
-  "ritual: choose 1 of Commune with the Spirits",
-  "ritual: choose 1 of Threshold Barrier",
-  "question 4: standout quality and its +1 ring",
-  "questions 9-12: distinction, adversity, passion, anxiety",
-  "question 13: mentor, and the extra advantage or disadvantage",
-  "question 18: heritage",
-  "giri and ninjo",
-  "starting outfit"
- ]
+ "bio": "Kuni Ryōsei — she/her — Yoriki\n\n**Kuni Purifier** · Crab · Shugenja/Bushi · Earth +1, Fire +1 · Honor 35 · she/her\n**Yoriki**\n\n### Cards\n- **King of Cups** — a willingness to explore the dark side, but never in a way that has risked or tempted her.\n- **Queen of Wands, reversed** — there is a pull towards darkness, and she knows the path to take.\n- **Temperance (XIV)** — this is avoided because she maintains a life balanced in all things, not overly rigid.\n\n### Reading\nThe calmest spread in the party, and the only adult one — King, Queen, and a major, where others drew Pages and Knights. She is not developing; she is maintained. That is a function, not a flaw.\n\nKing of Cups is competence, not innocence. She has looked at the thing directly, professionally, repeatedly, and it never got a hook in. The exposure is the job. What the card says is that the exposure never converted into appetite.\n\nThe Queen of Wands reversed matters because of the precision of the phrasing — not vague temptation, but *she knows the path to take*. Which is simply true of her training. Understanding how mahō works is the curriculum. Nothing needs to be discovered; something would only need to be decided.\n\nTemperance is a practice, not a victory. Not-rigid was specified, and it matters: this holds because it is maintained daily, not because it is locked. The opposite mechanism from Nagiko, who also does not fall but stays upright by being immovable."
 }

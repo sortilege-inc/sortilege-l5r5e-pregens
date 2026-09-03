@@ -35,7 +35,7 @@
   "earth": 3,
   "fire": 2,
   "water": 1,
-  "void": 1
+  "void": 3
  },
  "derived": {
   "endurance": 10,
@@ -51,14 +51,14 @@
    "max": 10
   },
   "void": {
-   "max": 1,
-   "start": 1
+   "max": 3,
+   "start": 3
   }
  },
  "stance": "void",
  "social": {
-  "honor": 35,
-  "glory": 40,
+  "honor": 45,
+  "glory": 45,
   "status": 30
  },
  "xp": {
@@ -72,15 +72,15 @@
   "smithing": 0,
   "fitness": 1,
   "melee": 0,
-  "ranged": 0,
+  "ranged": 1,
   "unarmed": 0,
   "meditation": 0,
   "tactics": 0,
   "culture": 0,
   "government": 0,
-  "medicine": 1,
+  "medicine": 3,
   "sentiment": 0,
-  "theology": 1,
+  "theology": 2,
   "command": 0,
   "courtesy": 0,
   "games": 0,
@@ -89,20 +89,87 @@
   "labor": 0,
   "seafaring": 0,
   "skulduggery": 0,
-  "survival": 0
+  "survival": 1
  },
  "bushido": {
-  "paramount": null,
-  "less": null
+  "paramount": "Courage",
+  "less": "Courtesy"
  },
- "ninjo": "",
- "giri": "",
+ "ninjo": "She wants to build a ward that holds against mahō itself rather than merely containing it, and she has already sketched the framework using principles the Kuni would call heresy if they knew how far she had taken them.",
+ "giri": "Ryōsei catalogs the ritual components confiscated from mahō-tsukai cells for Magistrate Sekihara, cross-referencing their applications against Kuni doctrine so that none are ever used twice.",
  "money": "4 koku",
- "techniques": [],
- "peculiarities": [],
+ "techniques": [
+  {
+   "name": "Striking as Earth",
+   "tag": "Technique",
+   "text": "<ul><li>After striking, the bushi roots themself to the ground, hunkering down to make sure their armor takes the brunt of a hit or raising a weapon in a warding position where it can deflect harm without being damaged.</li><li>When you make a Martial Arts [Melee, Ranged, or Unarmed] (Earth) check, you may spend (op):</li><li>Earth +(op): Treat your physical resistance as 1 higher per (op) spent this way until beginning of your next turn.</li></ul>"
+  },
+  {
+   "name": "Armor of Earth",
+   "tag": "Technique",
+   "text": "<ul><li>Earth is the Element of protection, as evidenced by this invocation. When a shugenja performs this invocation, shards of stone fly toward them, fastening around them to clad them in rocky armor.</li><li>As a Support action, make a TN 2 Theology (Earth) check targeting yourself.</li><li>You summon and equip a suit of armor that grants physical resistance equal to your Earth Ring plus bonus successes and has the Cumbersome and Wargear qualities. Persists for rounds equal to your Earth Ring, then tumbles to the ground as loose stones.</li><li>Earth (op): This effect persists until end of the scene instead.</li><li>Earth (op): The armor has the Durable quality.</li><li>Earth (op)(op): The armor has the Sacred quality.</li></ul>"
+  },
+  {
+   "name": "Jade Strike",
+   "tag": "Technique",
+   "text": "<ul><li>Jade, said to be the tears of Amaterasu, is a sacred stone. It is anathema to creatures of darkness, and it is one of the few substances capable of harming the greater minions of Fu Leng, the fallen Kami. A shugenja can mimic its effects by entreating earth kami to punish evil before them. The shugenja’s hand is enveloped in the sacred green glow, which strikes forth, withering creatures of evil and humans under the sway of the Shadowlands’ insidious power.</li><li>As an Attack action, make a TN 2 Theology (Earth) check targeting one character at range 0-3.</li><li>If you succeed and the target is an Otherworldly being, you smite and purify it with searing jade energy. It suffers a Critical Strike with severity equal to your Earth Ring plus bonus successes. The creature may spend (op)(op) from its check to resist to conceal that it has been affected, potentially concealing its Otherworldly nature (though it still suffers the effects).</li><li>If you succeed and the target is not Otherworldly, it suffers no ill effects.</li><li>Earth (op): Each Otherworldly target suffers Silenced and cannot use Mahō until end of your next turn.</li></ul>"
+  },
+  {
+   "name": "Commune with the Spirits",
+   "tag": "Technique",
+   "text": "<ul><li>The ritualist centers their mind on one of the Elements, appealing to the spirits in their environment and seeking their counsel or boon. Priests and laypeople are able to use this ritual to receive less specific guidance from the spirits, such as a leaf that falls to the ground pointing in the direction of the person or thing they are seeking.</li><li>As a downtime activity or Support action, make a TN 1 Theology check using Air, Earth, Fire, Water, or Void to appeal to nearby spirits of that Element (appeal to the departed, such as ancestor spirits, and other non-elemental supernatural presences if using Void) for aid.</li><li>If you succeed, choose and receive one of the following boons: (1) Sense the Kami — Detect all spirits and uses of their magic by shugenja within a number of range bands equal to the ring you used plus your bonus successes. (2) Spiritual Knowledge — Learn one fact the spirits know about the area. (3) Elemental Gift — The kami deliver a small amount of the Element in question to you (e.g., rain from water kami, sparks from fire kami, a gust from air kami, a stone from earth kami, or a found ancestor&#x27;s belonging from Void).</li><li>(op): Reduce the TN of your next check to interact with or appeal to kami or supernatural presences of this Element by 1.</li><li>(op)+: If you succeed, receive one additional boon per (op) spent this way. Each boon can only be received one time per activation.</li></ul>"
+  },
+  {
+   "name": "Threshold Barrier",
+   "tag": "Technique",
+   "text": "<ul><li>The ritualist wards an entryway against beings of a certain sort, causing them to fail to observe the entryway or making them mentally repulsed by their efforts to enter it.</li><li>As a downtime activity, make a TN 2 Theology check using Air, Earth, Fire, Water, or Void targeting a threshold, gate, or other entryway at range 0-1.</li><li>If you succeed, the threshold is barred against a particular entity type based on the ring chosen for one hour, plus additional hours equal to your bonus successes. When an entity of that type attempts to enter, it must resist with a TN 3 Meditation (Void) check or be repelled. Whether it succeeds or fails, you immediately become aware of its attempted entry. Entity types by ring: Air — Ethereal Otherworldly beings such as spirits and ghosts. Earth — Living Tainted beings. Fire — Undead beings with corporeal form. Water — Wild animals. Void — Humans.</li><li>(op): Instead of protecting a threshold, you may protect the entirety of a sealed area extending a number of range bands around you no greater than your bonus successes.</li><li>(op): If any beings of the type you are sealing the threshold against have passed through the threshold within the last twenty-four hours, you become aware of their passage.</li></ul>"
+  },
+  {
+   "name": "Gaze into Shadow",
+   "tag": "Technique",
+   "text": "<p>Once per round, when you make a check targeting or involving a Tainted being, you may choose a number of your kept dice up to your school rank containing (st) symbols. Set each of these dice to a (su) result. You cannot use this ability if you are unsure if a being is Tainted or not.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Daikoku’s Blessing",
+   "tag": "Peculiarity",
+   "text": "<ul><li>After spending one or more scenes in a relevant market, you can always discern whether a given commodity or service&#x27;s value is going to rise or fall in the next month.</li><li>When performing a check for which your strong financial knowledge benefits (such as a Government [Water] check to know where to acquire goods), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Stained Lineage",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Your family has a bad reputation. Most people in your region know and make negative assumptions about you.</li><li>When making a check to interact with anyone from your home region (such as Commerce [Void] to trade without drawing attention or Courtesy [Void] to warn of danger), you must choose and reroll two dice containing success or explosion. If you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Sake",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You can identify regional variations in sake and other alcohol, and you know a great deal about the various processes involved in making sake. It takes you twice as much alcohol as it does anyone else to become intoxicated.</li><li>After performing a check to interact with the fine art of fermented beverages (such as a Courtesy [Water] check to serve alcohol according to proper procedure in a social setting or a Labor [Water] check to ferment rice), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Fear of Mediocrity",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Your fear of amounting to nothing causes you to seize up when faced with the need to innovate on the fly.</li><li>After performing a check to adapt to an unexpected situation (such as Survival [Fire] or Culture [Fire]), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Whispers of Treachery",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you will act against them at the first opportunity.</li><li>When you make a check to get others to trust you (such as a Courtesy [Air] check to convince someone of your sincerity or a Skulduggery [Air] check to act covertly while someone is aware of your presence), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  }
+ ],
  "titles": [],
  "bonds": [],
- "gear": []
+ "gear": [
+  {
+   "name": "Mono Imi Fuda (Taboo Plaque)",
+   "kind": "Item",
+   "qualities": [
+    "Sacred"
+   ],
+   "rarity": "6",
+   "text": "<ul><li>Category: Courtier Item</li><li>Cost: 8 bu</li><li>Rarity: 6</li><li>Qualities: [&quot;Sacred&quot;]</li><li>Special: Warns off people and blocks spread of impure energies. TN 3 Theology (Air) check to assess whether a particular plaque possesses the Sacred quality.</li></ul>"
+  }
+ ]
 }
 </script>
 <script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
