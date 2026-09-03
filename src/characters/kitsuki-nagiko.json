@@ -1,23 +1,128 @@
 {
  "slug": "kitsuki-nagiko",
  "name": "Kitsuki Nagiko",
- "folder_label": "Kitsuki Nagiko",
  "campaign": "Slow Tide Harbor",
- "status": "draft",
- "bucket": null,
- "accent": null,
+ "status": null,
  "identity": {
   "clan": "Dragon",
   "family": "Kitsuki",
   "school": "Kitsuki Investigator School",
   "role": "Courtier",
-  "age": null
+  "age": "",
+  "region": null,
+  "upbringing": null
  },
+ "mode": "core",
  "portrait": null,
- "concept": null,
+ "concept": "She stops mid-sentence to reread something in a ledger, leaving whoever was speaking to wait while she traces a line with her finger.",
  "summary": null,
  "notes": "",
- "twenty_questions": {},
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Nagiko will spend six hours examining a crime scene for inconsistencies that everyone else has accepted, but cannot hear when someone is lying to her face about why they wept.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "She reports each investigation's findings to the Emerald Champion in writing, methodical and complete, knowing he will decide what the Emperor learns and what stays buried."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "She wants the people she investigates to admit what she has already proven, and resents that they lie anyway."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "She follows the Kitsuki method so precisely that other clans' magistrates treat her findings as foreign law rather than evidence, which means she files everything anyway and lets the Emerald Champion decide what Rokugan believes."
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Sincerity",
+     "tenet_less_significant": "Duty and Loyalty"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She proved a merchant had poisoned his wife in Otosan Uchi by reconstructing her final hours from the position of overturned furniture, then watched him confess to the Emerald Champion and deny it to the magistrates of three clans who arrived to contest her method."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "She insists on the Kitsuki method in provinces where magistrates answer to the local daimyo, not the Emerald Champion, and has filed complaints against three of them for obstructing her investigation."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "She spreads the contents of a new province's archives across a table—ledgers, letters, permits, the mundane things no one else thinks to read—and begins the work of making its contradictions visible, her pen marking what does not fit, and for those hours nothing requires her to speak to anyone at all."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "She rewrote the magistrate's own report three times before realizing he would never accept corrections to his findings, and now she cannot stop cataloging the errors he will submit to the Emerald Champion under his seal."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Tonbo Satoshi — Tonbo Satoshi taught her the Kitsuki method by example in the archives at Tonbo Castle, drilling her on contradictions in old records until she could spot a forged seal by the angle of the brush stroke, but he never taught her to want people to admit what she had proven, and now she mistakes her own certainty for their confession."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "She stops mid-sentence to reread something in a ledger, leaving whoever was speaking to wait while she traces a line with her finger."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When someone contradicts evidence she has documented, she stops talking mid-word and begins rewriting her notes from the beginning, crossing out what she has already written, her jaw clenched so hard the tendons show in her neck."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Yuifum (Scholar of al-Zawira Tradition) — Nagiko once asked Yuifum to verify the authenticity of a merchant's ledger written in foreign script, and Yuifum spotted the forgery in minutes while she had spent two days on it, which she has never mentioned to him.\nSeppun Atsumori (Imperial) — Seppun Atsumori signs off on her investigations without reading them, which means she files them anyway, which means the Emperor's household knows things about provincial magistrates that the provincial magistrates do not know she has told them."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Her father stopped correcting her reports after she rewrote his own findings three times without asking permission, and now he simply signs them and does not read them."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "Touched by the Fortunes",
+     "heritage_table": "New Samurai Heritages (Celestial Realms)",
+     "heritage_sub": null
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "She bleeds out in an archive basement after being stabbed by someone whose ledger she was about to prove falsified, alone except for the stacks, still trying to catalog which records the killer disturbed before she lost consciousness."
+    },
+    "picks": {}
+   }
+  }
+ },
  "tiers": [
   {
    "xp": 0,
@@ -25,13 +130,12 @@
    "rank": 1,
    "school": "Kitsuki Investigator School",
    "foundry_id": null,
-   "foundry_name": null,
    "rings": {
-    "air": 2,
+    "air": 3,
     "earth": 2,
     "fire": 2,
     "water": 1,
-    "void": 1
+    "void": 2
    },
    "skills": {
     "artisan": {
@@ -42,18 +146,18 @@
     },
     "martial": {
      "fitness": 0,
-     "melee": 0,
+     "melee": 1,
      "ranged": 0,
      "unarmed": 0,
      "meditation": 1,
      "tactics": 0
     },
     "scholar": {
-     "culture": 0,
-     "government": 1,
+     "culture": 1,
+     "government": 2,
      "medicine": 0,
-     "sentiment": 1,
-     "theology": 0
+     "sentiment": 3,
+     "theology": 1
     },
     "social": {
      "command": 0,
@@ -65,52 +169,71 @@
      "commerce": 0,
      "labor": 0,
      "seafaring": 0,
-     "skulduggery": 0,
+     "skulduggery": 1,
      "survival": 0
     }
    },
    "social": {
-    "honor": 45,
-    "glory": 44,
+    "honor": 55,
+    "glory": 49,
     "status": 30,
-    "ninjo": "",
-    "giri": "",
+    "ninjo": "She wants the people she investigates to admit what she has already proven, and resents that they lie anyway.",
+    "giri": "She reports each investigation's findings to the Emerald Champion in writing, methodical and complete, knowing he will decide what the Emperor learns and what stays buried.",
     "bushido_tenets": {
-     "paramount": null,
-     "less_significant": null
+     "paramount": "Sincerity",
+     "less_significant": "Duty and Loyalty"
     }
    },
    "derived": {
     "endurance": 8,
     "composure": 6,
-    "focus": 4,
+    "focus": 5,
     "vigilance": 2,
-    "void_points": 1
+    "void_points": 2
    },
    "money": {
     "zeni": 0,
     "koku": 6,
     "bu": 0
    },
-   "techniques": [],
-   "peculiarities": [],
+   "techniques": [
+    {
+     "name": "Tactical Assessment"
+    },
+    {
+     "name": "Shallow Waters"
+    },
+    {
+     "name": "Kitsuki's Method"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Well Connected"
+    },
+    {
+     "name": "Overconfidence in Subtlety"
+    },
+    {
+     "name": "Travel"
+    },
+    {
+     "name": "Perfectionism"
+    },
+    {
+     "name": "Horrible Scar"
+    }
+   ],
    "titles": [],
    "bonds": [],
    "signature_scrolls": [],
-   "gear": [],
+   "gear": [
+    {
+     "name": "Ashigaru Armor"
+    }
+   ],
    "advancements": []
   }
  ],
- "needs_attention": [
-  "family ring: choose 1 of Air, Water",
-  "school starting skills: choose 5 of Culture, Government, Martial Arts [Melee], Medicine, Sentiment, Skulduggery, Survival",
-  "kata: choose 1 of Striking as Air, Tactical Assessment",
-  "shuji: choose 1 of Shallow Waters",
-  "question 4: standout quality and its +1 ring",
-  "questions 9-12: distinction, adversity, passion, anxiety",
-  "question 13: mentor, and the extra advantage or disadvantage",
-  "question 18: heritage",
-  "giri and ninjo",
-  "starting outfit"
- ]
+ "bio": "Kitsuki Nagiko — she/her — Emerald Magistrate\n\n**Kitsuki Investigator** · Dragon · Courtier/Bushi · Air +1, Earth +1 · Honor 45 · she/her\n**Emerald Magistrate**\n\n### Cards\n- **The Emperor, reversed** — rigid; will follow her method thoroughly regardless of what anyone else thinks.\n- **Knight of Swords, reversed** — tactless, unsympathetic; idealises a moment when people would simply cede to her correct, factual assessments.\n- **Knight of Pentacles, upright** — hard-working, practical, uncomplaining about her own difficulties. She will complain about others.\n\n### Reading\nTwo Knights and a reversed Emperor. She holds the *office* of authority while both other cards say she is still a Knight — in service, in motion, not yet a master. She has the writ before she has the maturity, and the Emperor reversed is what fills that gap with procedure.\n\nThe two Knights run at opposite tempos, and that is her: patient with the work, impatient with people. Nine hours on a body, ninety seconds on your feelings about it.\n\nThe Knight of Pentacles gives her a running audit of who is falling short, while she says nothing about her own difficulties. That isn't hypocrisy she is aware of — it doesn't occur to her that the two are the same ledger.\n\nThe Knight of Swords fantasy is her emotional core: a room where facts land and everyone concedes. Rokugan is not that room, and the Kitsuki evidence method specifically has contested standing outside Dragon lands. The Emperor reversed therefore puts her in the position of insisting on a procedure that the people present may not be obliged to accept."
 }

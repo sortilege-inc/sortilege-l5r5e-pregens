@@ -3689,6 +3689,17 @@
           step7: { answers: { clan_relations: a.clan_relationship.text }, picks: {} },
           step8: { answers: { tenet_paramount: C.bushido.paramount,
                               tenet_less_significant: C.bushido.lesser }, picks: {} },
+          // Questions 9 to 12 each ask for a narrative answer beside their
+          // mechanical pick. hydrate() reads all four on the way in — its
+          // comment records that they were once dropped on the floor — but the
+          // export never wrote them, so every character made here left the
+          // Creator without its greatest accomplishment, its greatest
+          // challenge, what calms it or what it fears. The keys match the ones
+          // hydrate() looks for, so a character now round-trips.
+          step9: { answers: { success: a.accomplishment }, picks: {} },
+          step10: { answers: { difficulty: a.challenge }, picks: {} },
+          step11: { answers: { calms: a.peace }, picks: {} },
+          step12: { answers: { worries: a.fear }, picks: {} },
           step13: { answers: { most_learn: a.mentor.name + (a.mentor.text ? " — " + a.mentor.text : "") }, picks: {} },
           step14: { answers: { first_sight: a.first_impression }, picks: {} },
           step15: { answers: { stress: a.stress_reaction }, picks: {} },

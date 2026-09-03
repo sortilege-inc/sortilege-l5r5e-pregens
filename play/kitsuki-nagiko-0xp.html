@@ -31,16 +31,16 @@
  "rank": 1,
  "portrait": null,
  "rings": {
-  "air": 2,
+  "air": 3,
   "earth": 2,
   "fire": 2,
   "water": 1,
-  "void": 1
+  "void": 2
  },
  "derived": {
   "endurance": 8,
   "composure": 6,
-  "focus": 4,
+  "focus": 5,
   "vigilance": 2
  },
  "trackers": {
@@ -51,14 +51,14 @@
    "max": 8
   },
   "void": {
-   "max": 1,
-   "start": 1
+   "max": 2,
+   "start": 2
   }
  },
  "stance": "void",
  "social": {
-  "honor": 45,
-  "glory": 44,
+  "honor": 55,
+  "glory": 49,
   "status": 30
  },
  "xp": {
@@ -71,16 +71,16 @@
   "design": 0,
   "smithing": 0,
   "fitness": 0,
-  "melee": 0,
+  "melee": 1,
   "ranged": 0,
   "unarmed": 0,
   "meditation": 1,
   "tactics": 0,
-  "culture": 0,
-  "government": 1,
+  "culture": 1,
+  "government": 2,
   "medicine": 0,
-  "sentiment": 1,
-  "theology": 0,
+  "sentiment": 3,
+  "theology": 1,
   "command": 0,
   "courtesy": 0,
   "games": 0,
@@ -88,21 +88,74 @@
   "commerce": 0,
   "labor": 0,
   "seafaring": 0,
-  "skulduggery": 0,
+  "skulduggery": 1,
   "survival": 0
  },
  "bushido": {
-  "paramount": null,
-  "less": null
+  "paramount": "Sincerity",
+  "less": "Duty and Loyalty"
  },
- "ninjo": "",
- "giri": "",
+ "ninjo": "She wants the people she investigates to admit what she has already proven, and resents that they lie anyway.",
+ "giri": "She reports each investigation's findings to the Emerald Champion in writing, methodical and complete, knowing he will decide what the Emperor learns and what stays buried.",
  "money": "6 koku",
- "techniques": [],
- "peculiarities": [],
+ "techniques": [
+  {
+   "name": "Tactical Assessment",
+   "tag": "Technique",
+   "text": "<ul><li>Akodo’s Leadership and Bayushi’s Lies agree on a few topics, for both leaders were practical to a certain degree, even if Akodo famously scorned many of Bayushi’s methods. As the scholar Hida Fuyuko noted in her revelatory commentary on Leadership’s lessons for commanders on the Kaiu Wall, the most famous meeting of these two minds comes on the matter of preparation: battles are not won in the field, but in the leadup to the conflict. Even in small clashes, the warrior who better understands the terrain, the strength of their own forces, and the composition of the enemy’s troops is usually victorious.</li><li>When you make an Initiative check, you may spend (op):</li><li>Air (op): Choose an enemy. Learn one of their advantages (their choice) and their physical or supernatural resistance (your choice).</li><li>Earth (op): Choose a character. They do not apply any of their disadvantages to their checks until end of their first turn.</li><li>Water (op): Choose a piece of Terrain. Until start of your first turn, it counts as having the Obscuring quality for Attack action checks targeting you and your allies.</li><li>Fire (op): Choose a character and one of their advantages you know. Until end of their first turn, they apply that advantage to all of their checks.</li></ul>"
+  },
+  {
+   "name": "Shallow Waters",
+   "tag": "Technique",
+   "text": "<ul><li>A good courtier learns how to read the desires of those around them from the subtle cues of their responses in conversation, as well as how to probe for details without revealing their intentions.</li><li>When you make a Social skill (Water) check targeting a character, you may spend (op) as follows:</li><li>Water (op): Learn of one material item or worldly experience the target desires.</li><li>Water (op)(op): Learn the target&#x27;s Ninjō.</li></ul>"
+  },
+  {
+   "name": "Kitsuki's Method",
+   "tag": "Technique",
+   "text": "<p>When performing a check to investigate with any skill (see The Art of Investigation, on page 170), you may treat your ranks in the skill you are using as being equal to your school rank. If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add a kept (ring) set to an (op) result instead.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Well Connected",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have a number of influential connections among the courts and leadership of Rokugan, whose names you can subtly invoke to establish your own importance.</li><li>When performing a check for which your connections are a benefit (such as a Courtesy [Water] check to impress someone at court or a Government [Water] check to identify a useful contact among the local aristocracy), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Overconfidence in Subtlety",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are overconfident in a particular capacity, which blinds you to your limitations.</li><li>When performing a check for which you need to leverage the capacity about which you are overconfident (such as Fitness [Earth] to run several li or Composition [Fire] to draft an exciting poem), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Travel",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are not unsettled by foreign customs, and you can comfortably fit in even in strange environments.</li><li>After performing a check to travel to a new location or interact with a novel thing (such as a Survival [Water] check to try to identify a new plant, animal, or phenomenon, or a Seafaring [Water] check to travel by boat), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Perfectionism",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Anything short of perfection in your work is unacceptable to you, and you have been known to create works of beauty only to cast them aside over some perceived flaw. You cannot help but try to improve any work in which you identify a flaw, even if it means informing someone of higher status of an error they have made.</li><li>After performing a check in which you must interact with an imperfect or unfinished work (such as an Aesthetics [Water] check to improve an existing piece of art or a Composition [Water] check to translate a work without losing any of the nuance present in the original language), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Horrible Scar",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have an awful scar that hinders interactions. People stare, treat you unfairly, and judge you.</li><li>When performing a check to interact socially with a stranger (such as Courtesy [Air] to request information or Sentiment [Air] to calm someone), you must choose and reroll two dice containing success or explosion. If you failed, gain 1 Void point.</li></ul>"
+  }
+ ],
  "titles": [],
  "bonds": [],
- "gear": []
+ "gear": [
+  {
+   "name": "Ashigaru Armor",
+   "kind": "Armor",
+   "physical": 3,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "3",
+   "text": "<p>Cheap, lightweight, and easy to acquire, ashigaru armor is issued to the peasant soldiery. Possessing neither the beauty nor the fine craftsmanship of lacquered or plated armor, ashigaru armor consists of light plates sewn together to protect the head, torso, and upper legs. It is occasionally paired with a light helmet. Although it does not protect as well as heavier armor, it is lightweight, flexible, and inexpensive as armor goes.</p>"
+  }
+ ]
 }
 </script>
 <script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
