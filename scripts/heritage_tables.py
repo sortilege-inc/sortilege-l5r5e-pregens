@@ -119,8 +119,13 @@ def parse_table(name, body, source):
     if m:
         inner, _ = block(body, m.end() - 1)
         pos = 0
+        # A multi-roll entry states its span inline — `2-3 #hash ^"Name" DEF {`
+        # — and matching a single \d+ took the last digit of it, so Courts of
+        # Stone's 2-3 entry read as roll 3 and four of the seven tables looked
+        # as though they covered half a d10. The span is part of the roll.
         for em in re.finditer(
-                r'(?P<roll>\d+)\s+(?:#\S+\s+)?\^"(?P<name>[^"]+)"\s+DEF\s*\{', inner):
+                r'(?P<roll>\d+(?:\s*[-–—]\s*\d+)?)\s+(?:#\S+\s+)?'
+                r'\^"(?P<name>[^"]+)"\s+DEF\s*\{', inner):
             ebody, end = block(inner, em.end() - 1)
             props = parse_strings(ebody)
             entries.append({

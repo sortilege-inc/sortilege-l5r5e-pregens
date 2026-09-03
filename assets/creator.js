@@ -2148,6 +2148,38 @@
     }).map(function (e) { return e.name; }).sort();
   }
 
+  /* A roll range as the corpus states it: "1", or "2-3". Entries do not each
+     occupy one face of the die — Courts of Stone's six entries span 1, 2-3,
+     4-5, 6-7, 8-9 and 10 — so rolling has to roll the die and find the entry
+     the result lands on, rather than picking an entry uniformly. Picking
+     uniformly made a two-face entry as likely as a one-face entry. */
+  function rollSpan(range) {
+    var m = /^(\d+)\s*[-–—]\s*(\d+)$/.exec(String(range || "").trim());
+    if (m) {
+      var out = [];
+      for (var i = Number(m[1]); i <= Number(m[2]); i++) out.push(i);
+      return out;
+    }
+    var n = Number(String(range || "").trim());
+    return isNaN(n) ? [] : [n];
+  }
+
+  // The entry or range a d10 lands on. Falls back to a uniform pick over the
+  // list when the spans do not cover the die, so a corpus gap cannot leave the
+  // button doing nothing.
+  function rollOn(list, rangeOf) {
+    var faces = {};
+    list.forEach(function (x) {
+      rollSpan(rangeOf(x)).forEach(function (f) {
+        if (f >= 1 && f <= 10 && faces[f] === undefined) faces[f] = x;
+      });
+    });
+    var covered = [];
+    for (var f = 1; f <= 10; f++) if (faces[f] !== undefined) covered.push(f);
+    if (covered.length < 10) return list[randomBelow(list.length)];
+    return faces[covered[randomBelow(covered.length)]];
+  }
+
   function heritageTable() { return HERITAGES[C.answers.heritage_table] || null; }
 
   // The export writes the table's printed name; the draft holds its key. This
@@ -3307,7 +3339,7 @@
         var roll = document.createElement("button");
         roll.type = "button"; roll.className = "btn ghost"; roll.textContent = "Roll d10";
         roll.addEventListener("click", function () {
-          var e = table.entries[Math.floor(Math.random() * table.entries.length)];
+          var e = rollOn(table.entries, function (x) { return x.roll; });
           forgetHeritagePicks();
           C.answers.heritage = e.name;
           C.answers.heritage_sub = null;
@@ -3358,8 +3390,7 @@
           subRoll.type = "button"; subRoll.className = "btn ghost";
           subRoll.textContent = "Roll " + chosen.sub_table.die;
           subRoll.addEventListener("click", function () {
-            var r = chosen.sub_table.ranges[
-              Math.floor(Math.random() * chosen.sub_table.ranges.length)];
+            var r = rollOn(chosen.sub_table.ranges, function (x) { return x.range; });
             forgetHeritagePicks();
             C.answers.heritage_sub = r.range + " — " + r.text;
             save(); render();
