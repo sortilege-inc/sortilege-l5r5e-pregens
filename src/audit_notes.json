@@ -247,7 +247,6 @@
     "next": "Errata correctness matters more than the numbers suggest: these files load last and overwrite everything before them. Worth reading end to end by hand."
   },
   "deathly-turns": {
-    "_draft": "Drafted by the agent from the conversion work and the audit numbers on 2026-09-03, for the owner's review and sign-off. Not yet an owner judgment.",
     "completeness": {
       "verdict": "Complete against the compendium and the book's enumerable content; the four unresolved catalog entries are a resolver split, not a gap.",
       "confidence": "High for completeness; the resolution split is understood.",
