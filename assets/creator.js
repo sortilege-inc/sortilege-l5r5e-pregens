@@ -1070,6 +1070,15 @@
     "\", asking nothing of the spirits but their names\" move, or " +
     "\", her hands still steady\", or \", knowing what it would cost\". If the " +
     "sentence works without a trailing clause, it is finished; stop there. " +
+    "Never speculate about an inner state with a simile clause. That means no " +
+    "\"as if\", no \"as though\", and no \"like she/he/they \u2026\": " +
+    "\"as if the weight changes under observation\", \"as if she hasn\u2019t " +
+    "noticed\", \"like she\u2019s swallowing something down\". It is the " +
+    "trailing flourish wearing a simile, and banning only one of its wordings " +
+    "gets you the others. State what happens and let the reader draw the " +
+    "inference. A plain comparison of one thing to another is fine \u2014 " +
+    "\"a scar like a fishhook\" \u2014 it is the guess at what someone is " +
+    "feeling that is banned. " +
     "Also do not use: the \"not just X, but Y\" or \"more than X — Y\" " +
     "construction; a dash or colon pivot carrying the point at the end; three " +
     "abstract nouns in a row (duty, honor, sacrifice); opening on a participial " +
@@ -1359,6 +1368,12 @@
   // at the front and the tails are lists of examples.
   var GUIDANCE_MAX = 4000;
 
+  // The simile clause, in the wordings it actually comes back as. A plain
+  // comparison is not matched — "a scar like a fishhook" is fine; it is the
+  // guess at an inner state that is not.
+  var SIMILE =
+    /\b(as if|as though|like (?:she|he|they|it)\s+\w|the way (?:an?|the|she|he|they)\b)/i;
+
   function questionGuidance(fieldKey) {
     var n = FIELD_QUESTION[fieldKey];
     if (!n || !isCore()) return "";
@@ -1431,40 +1446,65 @@
           : "");
     }
 
-    var req = key
-      ? fetch("https://api.anthropic.com/v1/messages", {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-            "x-api-key": key,
-            "anthropic-version": "2023-06-01",
-            "anthropic-dangerous-direct-browser-access": "true"
-          },
-          body: JSON.stringify({
-            model: MODEL, max_tokens: 256, system: system,
-            messages: [{ role: "user", content: user }]
+    function once(note) {
+      var sys = note ? system + "\n\n" + note : system;
+      var req = key
+        ? fetch("https://api.anthropic.com/v1/messages", {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+              "x-api-key": key,
+              "anthropic-version": "2023-06-01",
+              "anthropic-dangerous-direct-browser-access": "true"
+            },
+            body: JSON.stringify({
+              model: MODEL, max_tokens: 256, system: sys,
+              messages: [{ role: "user", content: user }]
+            })
           })
-        })
-      : fetch(proxy, {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({ system: system, user: user })
-        });
+        : fetch(proxy, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({ system: sys, user: user })
+          });
 
-    return req.then(function (r) {
-      if (!r.ok) {
-        return r.text().then(function (t) {
-          var msg = t;
-          try { msg = JSON.parse(t).error || t; } catch (e) { /* plain text */ }
-          throw new Error("AI request failed (" + r.status + "): " +
-                          String(msg).slice(0, 200));
-        });
-      }
-      return r.json();
-    }).then(function (d) {
-      if (typeof d.text === "string") return d.text;      // via the Worker
-      return (d.content || []).filter(function (b) { return b.type === "text"; })
-        .map(function (b) { return b.text; }).join("").trim();
+      return req.then(function (r) {
+        if (!r.ok) {
+          return r.text().then(function (t) {
+            var msg = t;
+            try { msg = JSON.parse(t).error || t; } catch (e) { /* plain text */ }
+            throw new Error("AI request failed (" + r.status + "): " +
+                            String(msg).slice(0, 200));
+          });
+        }
+        return r.json();
+      }).then(function (d) {
+        if (typeof d.text === "string") return d.text;      // via the Worker
+        return (d.content || []).filter(function (b) { return b.type === "text"; })
+          .map(function (b) { return b.text; }).join("").trim();
+      });
+    }
+
+    /* Banning the simile clause in the instructions did not hold. Across three
+       generations it came back as "the way a deer does before it bolts" and as
+       "as though she has to remind herself" — the second being a wording the
+       prompt names outright. A prohibition sitting in a long list competes with
+       everything else in the prompt and loses often enough to matter, so the
+       answer is checked and asked for again, naming what it did.
+
+       One retry. If it does it twice the second answer is returned anyway: it
+       is a suggestion the player can reject, and spending calls to chase it is
+       worse than showing it. */
+    return once(null).then(function (text) {
+      var m = SIMILE.exec(text || "");
+      if (!m) return text;
+      return once(
+        "Your previous attempt was rejected for writing \"" + m[0] + "\". Do " +
+        "not guess at what this character feels by comparing them to something. " +
+        "No \"as if\", no \"as though\", no \"like she \u2026\", no \"the " +
+        "way a \u2026 does\". Write what happens and stop."
+      ).then(function (retry) { return retry || text; },
+             function () { return text; });   // a failed retry still has an answer
     });
   }
 
