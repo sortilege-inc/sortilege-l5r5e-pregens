@@ -1,23 +1,104 @@
 {
  "slug": "ichiro-tsutomu",
  "name": "Ichirō Tsutomu",
- "folder_label": "Ichirō Tsutomu",
  "campaign": "Slow Tide Harbor",
- "status": "draft",
- "bucket": null,
- "accent": null,
+ "status": null,
  "identity": {
   "clan": "Badger",
   "family": "Ichirō",
   "school": "Ichirō Grappler School",
   "role": "Bushi",
-  "age": null
+  "age": "",
+  "region": null,
+  "upbringing": null
  },
+ "mode": "core",
  "portrait": null,
- "concept": null,
+ "concept": "Ichirō still has the shoulders and chest of a sumai wrestler, though he has not fought in several months.",
  "summary": null,
  "notes": "",
- "twenty_questions": {},
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Ichirō waits longer than other grapplers before committing his weight, which costs him tournaments but makes him nearly impossible to provoke into a mistake during an interrogation.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Ichirō keeps Chiyo's books balanced and her debtors reminded, work that pays better than sumai ever did and requires him to be the thing he already is: a man who doesn't move until he must."
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Ichirō sends money to a sumai stable in the interior, enough that the master there has stopped taking commissions and trains only the fighters Ichirō pays for, and Chiyo has never asked why her enforcer bleeds money into a town he doesn't live in anymore."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Ichirō agrees with the Badger clan's principle that a tool should do its job well, but he does his job so thoroughly that Chiyo's debtors now fear him more than they fear debt, which means she has to step in to negotiate terms he would simply enforce."
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Duty and Loyalty",
+     "tenet_less_significant": "Righteousness"
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Ichirō Namiyo — Ichirō's mother Namiyo taught him that strength meant holding still when it would be easier to move, a lesson he learned by watching her refuse to flinch when his father drank, and now he sends money to a stable in her name while working for a woman who fears his restraint more than she values it."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Ichirō still has the shoulders and chest of a sumai wrestler, though he has not fought in several months."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When pressed past composure, Ichirō's jaw tightens and he begins trimming his fingernails with short, precise strokes, the blade moving faster and faster until someone speaks directly to him or he draws blood."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Kaito Koin (Phoenix) — Ichirō met Kaito Koin at a sumai bout in the interior three years ago, when Koin was there on Phoenix clan business and stopped to watch the wrestlers; Koin recognized the stable master's name from somewhere official, asked questions Ichirō shouldn't have answered, and never reported what he learned about the money flowing quietly through that town, a debt Ichirō has been repaying ever since by doing small favors Koin requests through intermediaries — nothing that would reach Chiyo, nothing that costs much, just enough that Ichirō knows Koin still has his measure and still chooses not to use it.\nKasuga Sanjiro (Tortoise) — Kasuga Sanjiro trained under the same sumai master Ichirō sends money to, left the sport before Ichirō did, and now when they cross paths at the stable Sanjiro watches him hand over coin with the expression of a man who made a different choice and knows exactly what it cost."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "His mother Namiyo, now dead, taught him that strength meant holding still when it would be easier to move, a lesson he learned by watching her refuse to flinch when his father drank, and she would have approved of the money he sends to the stable in her name, though his father would not have understood why a man throws away what he earned."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "heritage_name": "Elevated for Service",
+     "heritage_table": "Samurai Heritage Table",
+     "heritage_sub": "1-3 — Gain +1 ^\"Commerce\""
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Ichirō dies pinned under a falling beam during a fire at the stable, having gone back inside after everyone else was out, because the stable master was still calling for help and Ichirō could not make himself leave a man who had seen him at his worst and stayed anyway."
+    },
+    "picks": {}
+   }
+  }
+ },
  "tiers": [
   {
    "xp": 0,
@@ -25,28 +106,27 @@
    "rank": 1,
    "school": "Ichirō Grappler School",
    "foundry_id": null,
-   "foundry_name": null,
    "rings": {
     "air": 1,
     "earth": 3,
-    "fire": 1,
+    "fire": 2,
     "water": 2,
-    "void": 1
+    "void": 2
    },
    "skills": {
     "artisan": {
      "aesthetics": 0,
-     "composition": 0,
+     "composition": 1,
      "design": 0,
      "smithing": 0
     },
     "martial": {
-     "fitness": 1,
+     "fitness": 2,
      "melee": 0,
      "ranged": 0,
-     "unarmed": 1,
+     "unarmed": 2,
      "meditation": 0,
-     "tactics": 1
+     "tactics": 2
     },
     "scholar": {
      "culture": 0,
@@ -56,14 +136,14 @@
      "theology": 0
     },
     "social": {
-     "command": 0,
+     "command": 1,
      "courtesy": 0,
-     "games": 0,
-     "performance": 0
+     "games": 1,
+     "performance": 1
     },
     "trade": {
      "commerce": 0,
-     "labor": 0,
+     "labor": 1,
      "seafaring": 0,
      "skulduggery": 0,
      "survival": 0
@@ -73,44 +153,63 @@
     "honor": 45,
     "glory": 35,
     "status": 25,
-    "ninjo": "",
-    "giri": "",
+    "ninjo": "Ichirō sends money to a sumai stable in the interior, enough that the master there has stopped taking commissions and trains only the fighters Ichirō pays for, and Chiyo has never asked why her enforcer bleeds money into a town he doesn't live in anymore.",
+    "giri": "Ichirō keeps Chiyo's books balanced and her debtors reminded, work that pays better than sumai ever did and requires him to be the thing he already is: a man who doesn't move until he must.",
     "bushido_tenets": {
-     "paramount": null,
-     "less_significant": null
+     "paramount": "Duty and Loyalty",
+     "less_significant": "Righteousness"
     }
    },
    "derived": {
-    "endurance": 8,
+    "endurance": 10,
     "composure": 10,
-    "focus": 2,
+    "focus": 3,
     "vigilance": 2,
-    "void_points": 1
+    "void_points": 2
    },
    "money": {
     "zeni": 0,
     "koku": 3,
     "bu": 0
    },
-   "techniques": [],
-   "peculiarities": [],
+   "techniques": [
+    {
+     "name": "Fierce Badger Style"
+    },
+    {
+     "name": "All in Jest"
+    },
+    {
+     "name": "Badger's Hold"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Keen Smell"
+    },
+    {
+     "name": "Blackmailed by"
+    },
+    {
+     "name": "Stories"
+    },
+    {
+     "name": "Irrepressible Flirtation"
+    },
+    {
+     "name": "Ambidexterity"
+    }
+   ],
    "titles": [],
    "bonds": [],
    "signature_scrolls": [],
-   "gear": [],
+   "gear": [
+    {
+     "name": "Whetstone"
+    }
+   ],
    "advancements": []
   }
  ],
- "needs_attention": [
-  "family ring: choose 1 of Earth, Fire",
-  "school starting skills: choose 5 of Fitness, Games, Martial Arts [Unarmed], Meditation, Performance, Survival, Tactics",
-  "kata: choose 1 of Fierce Badger Style",
-  "shuji: choose 1 of All in Jest, Honest Assessment",
-  "question 4: standout quality and its +1 ring",
-  "questions 9-12: distinction, adversity, passion, anxiety",
-  "question 13: mentor, and the extra advantage or disadvantage",
-  "question 18: heritage",
-  "giri and ninjo",
-  "starting outfit"
- ]
+ "bio": "Ichirō Tsutomu — he/him — Chiyo's hired muscle\n\n**Ichirō Grappler** · Badger · Bushi · Earth +1, Water +1 · Honor 45 · he/him\n**Not a yoriki.** Hired by Chiyo personally as her own muscle.\n\n### Cards\n- **Two of Wands, reversed** — risk averse, defensive.\n- **Ten of Swords, reversed** — came out of failure pivoting into something else, or with the gumption to re-enter the sport.\n- **Justice (XI)** — he got absolutely trounced because of his cautious style.\n\n### Reading\nJustice is cruel in a specific way: no bad call, no injury, no rigged bout. He lost because of how he fights, and the verdict was correct. An unfair defeat lets a man stay who he is and blame the world; a just one doesn't. And the Two of Wands reversed says the thing he'd have to change is temperamental, not tactical. You don't decide to stop being risk-averse.\n\nThe defensive grappler picture is concrete: waiting, not committing, letting the other man make the mistake. Against an opponent who doesn't make mistakes, that's standing there while it happens.\n\n**His liability in sport is an asset in law enforcement.** A magistrate's retinue needs suspects alive and witnesses unbroken. The strongest body in the party being the least inclined to commit to violence is precisely right for a portside interrogation. Whether he's realised that is a better arc than \"learns to be aggressive.\"\n\nHe is also the only one whose failure is public. Chiyo's ruin is secret, Sanpei's debt hidden, Hisano's rut looks like success, Nergüi's difference is visible but isn't shame. Ichirō lost in front of a crowd — nobody can threaten to expose a man whose worst moment already had an audience.\n\n**The pivot isn't upward.** Several months out from losing a title he was favoured for, and the work he's found is being someone's available muscle in a portside town. Not a new calling — the same asset, his body, rented out in a worse setting.\n\n**\"Favoured for\" is the sharpest detail.** He never held it. The room expected him to take it and his caution let it go. There's no title to reclaim, only one to finally earn, and the version of himself who could earn it is the version he isn't.\n\n**The one decisive act of his life was leaving.** He didn't drift — he came looking for work. A man who lost a title by never committing made exactly one commitment: get out and sell the only thing that still works."
 }

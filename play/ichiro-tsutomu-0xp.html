@@ -33,14 +33,14 @@
  "rings": {
   "air": 1,
   "earth": 3,
-  "fire": 1,
+  "fire": 2,
   "water": 2,
-  "void": 1
+  "void": 2
  },
  "derived": {
-  "endurance": 8,
+  "endurance": 10,
   "composure": 10,
-  "focus": 2,
+  "focus": 3,
   "vigilance": 2
  },
  "trackers": {
@@ -48,11 +48,11 @@
    "max": 10
   },
   "fatigue": {
-   "max": 8
+   "max": 10
   },
   "void": {
-   "max": 1,
-   "start": 1
+   "max": 2,
+   "start": 2
   }
  },
  "stance": "void",
@@ -67,42 +67,91 @@
  },
  "skills": {
   "aesthetics": 0,
-  "composition": 0,
+  "composition": 1,
   "design": 0,
   "smithing": 0,
-  "fitness": 1,
+  "fitness": 2,
   "melee": 0,
   "ranged": 0,
-  "unarmed": 1,
+  "unarmed": 2,
   "meditation": 0,
-  "tactics": 1,
+  "tactics": 2,
   "culture": 0,
   "government": 0,
   "medicine": 0,
   "sentiment": 0,
   "theology": 0,
-  "command": 0,
+  "command": 1,
   "courtesy": 0,
-  "games": 0,
-  "performance": 0,
+  "games": 1,
+  "performance": 1,
   "commerce": 0,
-  "labor": 0,
+  "labor": 1,
   "seafaring": 0,
   "skulduggery": 0,
   "survival": 0
  },
  "bushido": {
-  "paramount": null,
-  "less": null
+  "paramount": "Duty and Loyalty",
+  "less": "Righteousness"
  },
- "ninjo": "",
- "giri": "",
+ "ninjo": "Ichirō sends money to a sumai stable in the interior, enough that the master there has stopped taking commissions and trains only the fighters Ichirō pays for, and Chiyo has never asked why her enforcer bleeds money into a town he doesn't live in anymore.",
+ "giri": "Ichirō keeps Chiyo's books balanced and her debtors reminded, work that pays better than sumai ever did and requires him to be the thing he already is: a man who doesn't move until he must.",
  "money": "3 koku",
- "techniques": [],
- "peculiarities": [],
+ "techniques": [
+  {
+   "name": "Fierce Badger Style",
+   "tag": "Technique",
+   "text": "<ul><li>Type: Kata</li><li>Subtype: Close Combat Kata</li><li>Rank: 2</li><li>Activation: When you make a Martial Arts [Unarmed] check targeting a character at range 0</li><li>Opportunities: (op)+: If the target is Immobilized, they receive 1 strife per (op) spent this way. (op)+: If the target&#x27;s silhouette and vigilance both are lower than or equal to (op) spent this way, the target is thrown 2 range bands in a direction of your choice and suffers 3 fatigue.</li></ul>"
+  },
+  {
+   "name": "All in Jest",
+   "tag": "Technique",
+   "text": "<ul><li>Veteran courtiers sometimes play off missteps as jokes. This underhanded but effective tactic puts the other person in a difficult position: press the issue and seem stubborn, or let it slide and give the courtier a pass.</li><li>When you make a Commerce (Water), Courtesy (Water), or Performance (Water) check, you may spend (op) in the following way:</li><li>Water (op)+: If you forfeited honor as part of the check in order to say something rude or appeal to your target&#x27;s base desires (greed, lust, laziness, etc.), regain 1 honor per (op) spent this way (see Forfeiting Social Attributes).</li></ul>"
+  },
+  {
+   "name": "Badger's Hold",
+   "tag": "Technique",
+   "text": "<p>After you succeed at an Attack action check using the Martial Arts [Unarmed] skill, if the target is Immobilized or Prone, they also receive fatigue equal to your school rank.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Keen Smell",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You always remember scents you have experienced before, and you can identify by smell things that others would certainly overlook.</li><li>When performing a check for which you need to use your sense of smell (such as a Labor [Fire] check to experiment with a new recipe or a Survival [Fire] check to determine if a plant is poisonous based on its smell), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Blackmailed by",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Someone has incriminating information on you, which they use to try and force you to help them even when doing so may damage your reputation. You must share with them what knowledge you have about a given person, item, location, or situation, whether through a face-to-face meeting or through written correspondence. You must also arrange for introductions on their behalf with exclusive members of society or places of business.</li><li>When performing a check to evade complying with the character who is blackmailing you (such as a Courtesy [Air] check to nominally tell them what they want without giving away key pieces of information or a Performance [Air] check to pretend as though you will go through with something they have demanded of you), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Stories",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You can recall any story you have been told, including the details that others would gloss over or forget.</li><li>After performing a check to recall or tell a story (such as a Performance [Earth] check to spin a tale to hearten comrades or a Theology [Earth] check to recite a passage from the Tao of Shinsei or Akodo&#x27;s Leadership that is applicable to your situation), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Irrepressible Flirtation",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You find it difficult to pass up the chance to flirt with people you find attractive, and when someone you find attractive flirts with you, you cannot help but return their advances with your own flirtation. Your interest is obvious to all onlookers.</li><li>After performing a check to interact with (or ignore) someone you are interested in without exceeding propriety (such as a Courtesy [Earth] check to make appropriate small talk or a Sentiment [Earth] check to know how to tread cautiously in a social scene), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Ambidexterity",
+   "tag": "Peculiarity",
+   "text": "<ul><li>As you have no dominant hand, you can compensate if your right hand is injured or lost.</li><li>When making a check for which your equal skill with both hands is a benefit (such as a Martial Arts [Melee] [Air] check to strike an unexpected blow with a weapon in your left hand or a Skulduggery [Air] check to stealthily pick someone&#x27;s pocket), you may reroll up to two dice.</li></ul>"
+  }
+ ],
  "titles": [],
  "bonds": [],
- "gear": []
+ "gear": [
+  {
+   "name": "Whetstone",
+   "kind": "Item",
+   "rarity": "1",
+   "text": "<p>Whetstones are portable grinding stones used to sharpen most bladed weapons, save for a samurai’s katana and wakizashi, which must be sharpened by an accomplished weaponsmith or professional polisher.</p>"
+  }
+ ]
 }
 </script>
 <script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>

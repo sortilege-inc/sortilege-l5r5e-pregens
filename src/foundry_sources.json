@@ -111,6 +111,7 @@
  "promoted": {
   "_comment": "slugs promoted out of draft. The Draft folder and the Creator both mark characters as drafts; promotion is the deliberate act of saying one is finished, and is recorded here so a re-extract cannot silently undo it. Use scripts/promote.py.",
   "slugs": [
+   "ichiro-tsutomu",
    "iuchi-nergui",
    "kasuga-chiyo"
   ]
