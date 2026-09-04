@@ -6732,6 +6732,15 @@
         var kv = pair.split("=");
         if (kv[0]) q[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1] || "");
       });
+    // ?new=1 is the site's front-door link: start a fresh character rather
+    // than resuming whichever draft happened to be open last.
+    if (q["new"]) {
+      if (history.replaceState) {
+        history.replaceState(null, "", location.pathname + location.hash);
+      }
+      addDraft();
+      return;
+    }
     var slug = q.advance || q.edit || q.legacy;
     if (!slug) return;
     var a = ARCHIVE.filter(function (x) { return x.slug === slug; })[0];

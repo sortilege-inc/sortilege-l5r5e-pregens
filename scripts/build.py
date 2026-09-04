@@ -666,7 +666,10 @@ def emit(cx):
         talias = title_aliases()
         held = {norm(e["name"]) for t in tiers for e in t.get("titles", [])}
         title_curricula = {}
-        for tn in held:
+        # sorted, not set order: PYTHONHASHSEED is random per process, so
+        # iterating `held` directly reordered these keys on every run and every
+        # rebuild showed a diff on a file whose content had not changed
+        for tn in sorted(held):
             # a renamed title borrows its curriculum from the compendium title
             lookup = talias.get(tn, tn)
             entries = [dict(r) for r in cx.execute(

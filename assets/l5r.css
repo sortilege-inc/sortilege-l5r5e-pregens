@@ -1449,3 +1449,30 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .bio-body li{ margin-bottom:0.28rem; }
 .bio-body hr{ border:0; border-top:1px solid var(--gold-soft); margin:1.2rem 0; }
 .bio-body code{ font-size:0.88em; }
+
+/* The front door's "start one of your own" band. The archive is the site's
+   subject, so this sits under the masthead rather than above it -- visible
+   without arguing with the thing people came to look at. */
+.startband{
+  max-width:790px; margin:0 auto 2.4rem; padding:1.5rem 1.7rem;
+  border:1px solid var(--edge); background:var(--paper-2);
+  box-shadow:inset 0 0 0 4px var(--paper-2), inset 0 0 0 5px var(--edge-soft);
+  display:flex; flex-wrap:wrap; align-items:center; gap:1.1rem 1.6rem;
+}
+.startband .sb-copy{ flex:1 1 320px; min-width:0; }
+.startband h2{
+  font-family:var(--disp); font-size:1.5rem; margin:0 0 0.3rem;
+  color:var(--sumi); font-weight:600;
+}
+.startband h2 .kanji{
+  font-size:0.82em; color:var(--crimson); margin-right:0.45rem; opacity:0.85;
+}
+.startband p{ margin:0; font-size:0.97rem; color:var(--ink-2); }
+.sb-go{ display:flex; flex-wrap:wrap; gap:0.55rem; flex:0 0 auto; }
+.sb-go .btn, .startband .btn{ text-decoration:none; display:inline-block; }
+.btn.big{ font-size:0.82rem; padding:0.62rem 1.5rem; }
+@media (max-width:620px){
+  .startband{ padding:1.2rem 1.1rem; }
+  .startband .sb-go{ width:100%; }
+  .startband .sb-go .btn{ flex:1 1 auto; text-align:center; }
+}
