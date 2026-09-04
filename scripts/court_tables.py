@@ -37,9 +37,10 @@ rank), never rewritten. A template whose properties fit no role is reported
 rather than dropped.
 
 WHAT THIS DOES NOT HAVE, and why it is not filled in from elsewhere: the book's
-own example movers (7 bullets), its example giri, and 9 of the 11 Court Sheet
+own example movers (7 bullets), its example giri, and 10 of the 12 Court Sheet
 field descriptions are absent from the corpus -- the conversion drops the
-source's "$"-marked bullet lists. TABLE "Sample Ninjo" is present but
+source's "$"-marked bullet lists, and the 2 that survived sit above the
+"### The Court Sheet" heading rather than under it. TABLE "Sample Ninjo" is present but
 paraphrased, so it is not offered either. The court sheet this tool keeps is
 built from the fields the seven steps themselves name, which are in the corpus.
 See the flag raised 2026-09-03; the fix belongs in the corpus.
