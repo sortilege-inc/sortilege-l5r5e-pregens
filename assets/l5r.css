@@ -1564,3 +1564,67 @@ select.trait-sel{
 .wip-npc .wh{ color:var(--crimson); font-size:0.74rem; font-style:italic; }
 
 .muted.warn{ color:var(--crimson); }
+
+/* ---- Create Army (Fields of Victory, marshaling an army) --------------- */
+/* Unlike a court, this screen is arithmetic, so the marshaller's five numbers
+   sit in a grid where they can be read across rather than scrolled through. */
+.army-grid{
+  display:grid; gap:0.5rem; margin:0.5rem 0;
+  grid-template-columns:repeat(auto-fit,minmax(96px,1fr));
+}
+.army-cell{ display:flex; flex-direction:column; gap:0.15rem; }
+.army-cell span{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.12em;
+  font-size:0.6rem; color:var(--ink-dim);
+}
+.army-cell input{
+  font-family:var(--serif); font-size:1rem; padding:0.4rem 0.5rem;
+  background:var(--paper); border:1px solid var(--edge); border-radius:2px;
+  color:var(--ink); width:100%;
+}
+/* a status modifier, an allied lord: a label, a number, and a way out */
+.mod-row{ display:grid; grid-template-columns:1fr 92px auto; gap:0.45rem;
+          align-items:center; margin:0.3rem 0; }
+.mod-row input{
+  font-family:var(--serif); font-size:0.94rem; padding:0.4rem 0.55rem;
+  background:var(--paper); border:1px solid var(--edge); border-radius:2px;
+  color:var(--ink); margin:0; width:100%;
+}
+.ally-band{ margin:0 0 0.6rem; padding-left:0.2rem; }
+
+.merc-row{
+  display:flex; align-items:center; gap:0.6rem; flex-wrap:wrap;
+  padding:0.35rem 0; border-bottom:1px solid var(--edge-soft);
+}
+.merc-row.on{ background:var(--crimson-soft); }
+.merc-row .choice{ flex:0 0 auto; }
+.merc-row .muted{ flex:1 1 200px; min-width:0; }
+input.merc-n{
+  width:64px; font-family:var(--serif); padding:0.3rem 0.4rem; margin:0;
+  background:var(--paper); border:1px solid var(--edge); border-radius:2px;
+}
+
+.doc-card{
+  border:1px solid var(--edge-soft); border-left:3px solid var(--edge);
+  padding:0.5rem 0.7rem; margin:0.45rem 0; background:var(--paper);
+}
+.doc-card.on{ border-left-color:var(--crimson); background:var(--paper-2); }
+.doc-body{ margin-top:0.35rem; font-size:0.88rem; color:var(--ink-2); }
+.doc-body .tk{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em;
+  font-size:0.6rem; color:var(--ink-dim);
+}
+
+.res-row{ display:flex; gap:0.7rem; padding:0.35rem 0;
+          border-bottom:1px solid var(--edge-soft); font-size:0.9rem; }
+.res-row .res-k{
+  flex:0 0 190px; font-family:var(--caps); text-transform:uppercase;
+  letter-spacing:0.1em; font-size:0.66rem; color:var(--crimson);
+  padding-top:0.12rem;
+}
+.res-row .res-v{ flex:1 1 auto; min-width:0; color:var(--ink-2); }
+@media (max-width:640px){
+  .res-row{ flex-direction:column; gap:0.15rem; }
+  .res-row .res-k{ flex:none; }
+  .mod-row{ grid-template-columns:1fr 78px auto; }
+}

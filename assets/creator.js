@@ -351,6 +351,7 @@
     var c = d.character || {};
     // a court has no character name; it is named as a court
     if (d.kind === "court") return (c.court && c.court.name) || "Unnamed court";
+    if (d.kind === "army") return (c.army && c.army.name) || "Unnamed army";
     return c.name || "Unnamed draft";
   }
   function draftProgress(c) {
@@ -375,6 +376,11 @@
       C = saved;
       return "advance · " + ((st && st.spent) || 0) + " of " +
              ((c.advance && c.advance.xp) || 0) + " XP";
+    }
+    if (d.kind === "army" && c.army) {
+      var am = c.army;
+      return "army · strength " + (am.strength == null ? "—" : am.strength) +
+             (am.marshaller ? ", " + am.marshaller.name : "");
     }
     if (d.kind === "court" && c.court) {
       var ct = c.court, mv = (ct.npcs || []).filter(function (n) {
@@ -782,6 +788,9 @@
       '<button type="button" class="draftnew" id="draft-court" ' +
         'title="Courts of Stone: assemble a court in seven steps">' +
         "+ Court</button>" +
+      '<button type="button" class="draftnew" id="draft-army" ' +
+        'title="Fields of Victory: marshal an army">' +
+        "+ Army</button>" +
       archiveList("From the archive", function (a) { return a.status === "draft"; },
                   "draft") +
       archiveList("Promoted characters", function (a) { return a.status !== "draft"; },
@@ -802,6 +811,7 @@
     });
     el("draft-new").addEventListener("click", addDraft);
     el("draft-court").addEventListener("click", function () { openCourt(); });
+    el("draft-army").addEventListener("click", function () { openArmy(); });
     el("draft-dup").addEventListener("click", function () { duplicateDraft(STORE.activeId); });
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".archivechip"), function (b) {
       b.addEventListener("click", function () {
@@ -7292,6 +7302,906 @@
           }).join("") : "");
   }
 
+  /* ------------------------------------------------------------- army
+
+     Fields of Victory's "Marshaling an Army". Unlike a court, this is
+     arithmetic: a TN 3 Command check as a down-time activity, and then the
+     marshaller's status sets the army's maximum strength (Table 3-1) and their
+     bonus successes set its discipline (Table 3-2). Allied lords, mercenaries,
+     doctrines, equipment upgrades and the monthly maintenance check all hang
+     off that.
+
+     data/chargen/army.js carries the whole system as the corpus states it,
+     read by scripts/army_tables.py. Nothing about the numbers is written here:
+     the status bands, the discipline formulae, the mercenary rates and the
+     upgrade costs are all read out of the corpus at run time, so a corpus
+     correction arrives without a change to this file.
+
+     Two things the published book leaves ragged, reproduced as printed rather
+     than tidied:
+
+       - the prose says discipline is set by "bonus successes and their honor",
+         while Table 3-2 says "+ ranks in Government + glory rank" and never
+         mentions honor. The table is what is applied, and the screen says so.
+       - Table 3-1's bands 20-24 and 24-29 both contain status 24. At exactly
+         24 the screen shows both and takes the better, saying which. */
+
+  var ARMY = window.L5R_ARMY || { systems: {}, tables: {} };
+
+  function isArmy() { return (activeDraft() || {}).kind === "army"; }
+  function activeArmy() { return (activeChar() || {}).army || null; }
+
+  function newArmy() {
+    return { name: "", marshaller: null, status_mods: [], bonus: 0,
+             strength: null, allies: [], mercenaries: [], doctrines: [],
+             upgrades: [], conditions: [], notes: "" };
+  }
+
+  function openArmy(asked) {
+    if (!asked && !confirm(
+          "Marshal an army?\n\nA TN 3 Command check as a down-time activity. " +
+          "The marshaller's status sets its strength and their bonus successes " +
+          "set its discipline.")) return;
+    var id = newId();
+    var c = newCharacter();
+    c.army = newArmy();
+    STORE.drafts[id] = { id: id, updated: Date.now(), kind: "army",
+                         character: c };
+    switchDraft(id);
+  }
+
+  function armyTable(key) {
+    var t = ARMY.tables[key];
+    return t ? t.entries || [] : [];
+  }
+  function armySystem(key) { return ARMY.systems[key] || null; }
+
+  /* A band named "Status 90-99" or "Status 100" or "Allied Status 0-19",
+     read off the corpus's own entry name rather than a hard-coded ladder. */
+  function bandRange(name) {
+    var m = String(name).match(/(\d+)\s*[-–—]\s*(\d+)/);
+    if (m) return [parseInt(m[1], 10), parseInt(m[2], 10)];
+    var one = String(name).match(/(\d+)/);
+    return one ? [parseInt(one[1], 10), parseInt(one[1], 10)] : null;
+  }
+
+  /* Every band that contains this status. Normally one; at status 24 the
+     book's own bands overlap and this returns two. */
+  function bandsFor(entries, status, prop) {
+    return entries.filter(function (e) {
+      var r = bandRange(e.name);
+      return r && status >= r[0] && status <= r[1] &&
+             e.properties[prop] != null;
+    });
+  }
+
+  function armyRank(n) {
+    // the corpus states it: rank is the tens digit (honor 35 = rank 3)
+    return Math.floor((Number(n) || 0) / 10);
+  }
+
+  function effStatus() {
+    var a = activeArmy();
+    if (!a) return 0;
+    var base = (a.marshaller && Number(a.marshaller.status)) || 0;
+    return (a.status_mods || []).reduce(function (t, m) {
+      return t + (Number(m.by) || 0);
+    }, base);
+  }
+
+  /* What the army comes out as. Kept in one place so the screens and the
+     export cannot disagree about it. */
+  function armyState() {
+    var a = activeArmy() || newArmy();
+    var st = effStatus();
+    var bands = bandsFor(armyTable("table31determiningarmystrength"), st,
+                         "Maximum Strength");
+    var maxes = bands.map(function (b) {
+      return Number(b.properties["Maximum Strength"]);
+    });
+    var max = maxes.length ? Math.max.apply(null, maxes) : null;
+
+    var disc = null, discWhy = null;
+    var rows = armyTable("table32determiningarmydiscipline");
+    var bonus = Number(a.bonus) || 0;
+    // the entries are named "4+ Bonus Successes", "3 Bonus Successes", …
+    var hit = rows.filter(function (e) {
+      var m = e.name.match(/(\d+)\s*(\+)?/);
+      if (!m) return false;
+      var n = parseInt(m[1], 10);
+      return m[2] || /\bor more\b/i.test(e.name) ? bonus >= n : bonus === n;
+    })[0];
+    if (hit) {
+      var f = String(hit.properties.Discipline || "");
+      var lead = f.match(/^(\d+)/);
+      var gov = (a.marshaller && Number(a.marshaller.government)) || 0;
+      var gl = armyRank((a.marshaller && a.marshaller.glory) || 0);
+      disc = (lead ? parseInt(lead[1], 10) : 0) +
+             (/Government/i.test(f) ? gov : 0) +
+             (/glory rank/i.test(f) ? gl : 0);
+      discWhy = f;
+    }
+
+    var allied = (a.allies || []).map(function (al) {
+      var b = bandsFor(armyTable("table35alliedforces"),
+                       Number(al.status) || 0, "Modifiers")[0] ||
+              bandsFor(armyTable("table35alliedforces"),
+                       Number(al.status) || 0, "Base Army Stats")[0] || null;
+      return { lord: al.lord, status: al.status, band: b };
+    });
+
+    var monthly = (a.mercenaries || []).reduce(function (t, m) {
+      var e = armyTable("table34mercenaryforces").filter(function (x) {
+        return x.name === m.name;
+      })[0];
+      var k = e && String(e.properties.Cost || "").match(/([\d,]+)\s*koku/);
+      return t + (k ? parseInt(k[1].replace(/,/g, ""), 10) : 0) *
+                 (Number(m.n) || 1);
+    }, 0);
+
+    var outlay = (a.upgrades || []).reduce(function (t, name) {
+      var e = ((armySystem("equipmentupgrades") || {}).entries || [])
+        .filter(function (x) { return x.name === name; })[0];
+      var k = e && String(e.properties.Cost || "").match(/([\d,]+)\s*koku/);
+      return t + (k ? parseInt(k[1].replace(/,/g, ""), 10) : 0);
+    }, 0);
+
+    return { eff: st, bands: bands, max: max, overlap: bands.length > 1,
+             strength: a.strength, discipline: disc, discipline_formula: discWhy,
+             allied: allied, monthly: monthly, outlay: outlay };
+  }
+
+  // ---- step 1: the marshaller
+
+  function renderArmyMarshaller(body) {
+    var a = activeArmy();
+    if (!a) return needs(body, "This draft has no army on it.");
+    var sys = armySystem("marshalinganarmy");
+
+    label(body, "What this army is called");
+    textField(body, "The Host of the Twin Rivers…",
+              function () { return a.name; },
+              function (v) { a.name = v; });
+
+    if (sys && sys.properties) {
+      var p = document.createElement("p");
+      p.className = "muted small";
+      p.textContent = ["Check: " + (sys.properties.Check || "—"),
+                       sys.properties.Activation,
+                       sys.properties.Frequency].filter(Boolean).join(" · ");
+      body.appendChild(p);
+    }
+
+    label(body, "Who marshals it");
+    var pick = document.createElement("select");
+    pick.className = "trait-sel";
+    pick.innerHTML = '<option value="">— from the archive, or fill it in below —</option>' +
+      ARCHIVE.filter(function (x) { return x.top; }).map(function (x) {
+        return '<option value="' + esc(x.slug) + '"' +
+          ((a.marshaller && a.marshaller.slug) === x.slug ? " selected" : "") +
+          ">" + esc(x.name) + "</option>";
+      }).join("");
+    pick.addEventListener("change", function () {
+      var x = ARCHIVE.filter(function (y) { return y.slug === pick.value; })[0];
+      if (!x) { a.marshaller = null; save(); render(); return; }
+      var soc = (x.top && x.top.social) || x.social || {};
+      var sk = (x.top && x.top.skills) || x.skills || {};
+      a.marshaller = {
+        slug: x.slug, name: x.name,
+        status: Number(soc.status) || 0,
+        honor: Number(soc.honor) || 0,
+        glory: Number(soc.glory) || 0,
+        command: ((sk.social || {}).command) || 0,
+        government: ((sk.scholar || {}).government) || 0
+      };
+      save(); render();
+    });
+    body.appendChild(pick);
+
+    var m = a.marshaller || { name: "", status: 0, honor: 0, glory: 0,
+                              command: 0, government: 0 };
+    if (!a.marshaller) {
+      textField(body, "…or a name",
+                function () { return ""; },
+                function (v) {
+                  if (!v) return;
+                  a.marshaller = { slug: null, name: v, status: 0, honor: 0,
+                                   glory: 0, command: 0, government: 0 };
+                  render();
+                });
+      return;
+    }
+
+    var grid = document.createElement("div");
+    grid.className = "army-grid";
+    [["status", "Status"], ["honor", "Honor"], ["glory", "Glory"],
+     ["command", "Command"], ["government", "Government"]]
+      .forEach(function (f) {
+        var cell = document.createElement("label");
+        cell.className = "army-cell";
+        cell.innerHTML = "<span>" + f[1] + "</span>";
+        var i = document.createElement("input");
+        i.type = "number";
+        i.min = "0";
+        i.value = m[f[0]];
+        i.addEventListener("change", function () {
+          a.marshaller[f[0]] = Number(i.value) || 0; save(); render();
+        });
+        cell.appendChild(i);
+        grid.appendChild(cell);
+      });
+    body.appendChild(grid);
+
+    label(body, "Temporary status, if their wealth does not match their rank");
+    var ex = armySystem("supplementalforces");
+    var exs = ex && ex.properties["Status Modifier Examples"];
+    if (exs) {
+      var note = document.createElement("p");
+      note.className = "muted small";
+      note.textContent = "The book's examples: " +
+        (Array.isArray(exs) ? exs.join("; ") : exs);
+      body.appendChild(note);
+    }
+    (a.status_mods || []).forEach(function (sm, i) {
+      var row = document.createElement("div");
+      row.className = "mod-row";
+      var w = document.createElement("input");
+      w.type = "text";
+      w.placeholder = "A ship with luxury goods";
+      w.value = sm.what || "";
+      w.addEventListener("change", function () { sm.what = w.value.trim(); save(); });
+      var b = document.createElement("input");
+      b.type = "number";
+      b.value = sm.by || 0;
+      b.addEventListener("change", function () {
+        sm.by = Number(b.value) || 0; save(); render();
+      });
+      var x = document.createElement("button");
+      x.type = "button";
+      x.className = "ar-x-btn";
+      x.textContent = "×";
+      x.addEventListener("click", function () {
+        a.status_mods.splice(i, 1); save(); render();
+      });
+      [w, b, x].forEach(function (n) { row.appendChild(n); });
+      body.appendChild(row);
+    });
+    var add = document.createElement("button");
+    add.type = "button";
+    add.className = "btn ghost";
+    add.textContent = "+ Add a status modifier";
+    add.addEventListener("click", function () {
+      a.status_mods = (a.status_mods || []).concat([{ what: "", by: 0 }]);
+      save(); render();
+    });
+    body.appendChild(add);
+
+    var st = armyState();
+    var out = document.createElement("p");
+    out.className = "muted small";
+    out.innerHTML = "Effective status <strong>" + st.eff + "</strong>" +
+      (st.max != null
+        ? " — maximum strength <strong>" + st.max + "</strong>"
+        : " — no status band in Table 3-1 covers that");
+    body.appendChild(out);
+    if (st.overlap) {
+      var ov = document.createElement("p");
+      ov.className = "muted small warn";
+      ov.textContent = "Table 3-1 prints " +
+        st.bands.map(function (b) {
+          return b.name + " → " + b.properties["Maximum Strength"];
+        }).join(" and ") +
+        ", and status " + st.eff + " falls in both. Taking the higher, as " +
+        "printed — the overlap is the book's.";
+      body.appendChild(ov);
+    }
+  }
+
+  // ---- step 2: the marshaling check
+
+  function renderArmyCheck(body) {
+    var a = activeArmy();
+    if (!a) return needs(body, "This draft has no army on it.");
+    if (!a.marshaller) return needs(body, "Say who marshals it first.");
+    var sys = armySystem("marshalinganarmy");
+
+    var p = document.createElement("p");
+    p.className = "muted small";
+    p.textContent = (sys && sys.note) ||
+      "A TN 3 Command check as a down-time activity.";
+    body.appendChild(p);
+
+    label(body, "Bonus successes on the check");
+    var row = document.createElement("div");
+    row.className = "need-row";
+    row.innerHTML = '<span class="need-k">Bonus</span>' +
+      [0, 1, 2, 3, 4].map(function (n) {
+        return '<button type="button" class="choice small' +
+          ((Number(a.bonus) || 0) === n ? " active" : "") + '" data-v="' + n +
+          '">' + (n === 4 ? "4 or more" : n) + "</button>";
+      }).join("");
+    row.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-v]");
+      if (!b) return;
+      a.bonus = Number(b.dataset.v); save(); render();
+    });
+    body.appendChild(row);
+
+    var st = armyState();
+    var d = document.createElement("p");
+    d.className = "muted small";
+    d.innerHTML = st.discipline != null
+      ? "Discipline <strong>" + st.discipline + "</strong> — " +
+        esc(st.discipline_formula) + ", with Government " +
+        a.marshaller.government + " and glory rank " +
+        armyRank(a.marshaller.glory) + " (glory " + a.marshaller.glory + ")"
+      : "No row in Table 3-2 for that many bonus successes.";
+    body.appendChild(d);
+
+    var anom = document.createElement("p");
+    anom.className = "muted small";
+    anom.textContent = "The prose says discipline is set by bonus successes " +
+      "and honor; Table 3-2 says Government and glory rank, and never " +
+      "mentions honor. The table is what is applied here. Both are as printed.";
+    body.appendChild(anom);
+
+    label(body, "Strength");
+    var st2 = armyState();
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = st2.max != null
+      ? "Up to " + st2.max + ", and never below 5 — a smaller army is easier " +
+        "to maintain, which is a real reason to take one."
+      : "Set the marshaller's status first.";
+    body.appendChild(note);
+    var s = document.createElement("input");
+    s.type = "number";
+    s.min = "5";
+    if (st2.max != null) s.max = String(st2.max);
+    s.value = a.strength == null ? "" : a.strength;
+    s.placeholder = st2.max != null ? "5 to " + st2.max : "";
+    s.addEventListener("change", function () {
+      var v = s.value === "" ? null : Number(s.value);
+      if (v != null && v < 5) { setStatus("the minimum army is 5"); v = 5; }
+      if (v != null && st2.max != null && v > st2.max) {
+        setStatus("status " + st2.eff + " allows at most " + st2.max);
+        v = st2.max;
+      }
+      a.strength = v; save(); render();
+    });
+    body.appendChild(s);
+  }
+
+  // ---- step 3: supplemental forces
+
+  function renderArmySupplemental(body) {
+    var a = activeArmy();
+    if (!a) return needs(body, "This draft has no army on it.");
+    var sys = armySystem("supplementalforces");
+
+    label(body, "Allied lords");
+    var an = document.createElement("p");
+    an.className = "muted small";
+    an.textContent = "Winning a lord's support should take an Intrigue or a " +
+      "run of scenes, and usually a concession — territory, a marriage, " +
+      "somebody else's enemy defeated. What they bring follows their status.";
+    body.appendChild(an);
+
+    (a.allies || []).forEach(function (al, i) {
+      var row = document.createElement("div");
+      row.className = "mod-row";
+      var nm = document.createElement("input");
+      nm.type = "text";
+      nm.placeholder = "The lord's name";
+      nm.value = al.lord || "";
+      nm.addEventListener("change", function () { al.lord = nm.value.trim(); save(); render(); });
+      var stt = document.createElement("input");
+      stt.type = "number";
+      stt.min = "0";
+      stt.value = al.status || 0;
+      stt.addEventListener("change", function () {
+        al.status = Number(stt.value) || 0; save(); render();
+      });
+      var x = document.createElement("button");
+      x.type = "button";
+      x.className = "ar-x-btn";
+      x.textContent = "×";
+      x.addEventListener("click", function () {
+        a.allies.splice(i, 1); save(); render();
+      });
+      [nm, stt, x].forEach(function (n) { row.appendChild(n); });
+      body.appendChild(row);
+      var b = armyState().allied[i] && armyState().allied[i].band;
+      var d = document.createElement("p");
+      d.className = "muted small ally-band";
+      d.textContent = b
+        ? b.name + " — " + Object.keys(b.properties).map(function (k) {
+            return k + ": " + b.properties[k];
+          }).join(" · ")
+        : "No band in Table 3-5 covers status " + (al.status || 0) + ".";
+      body.appendChild(d);
+    });
+    var addA = document.createElement("button");
+    addA.type = "button";
+    addA.className = "btn ghost";
+    addA.textContent = "+ Add an allied lord";
+    addA.addEventListener("click", function () {
+      a.allies = (a.allies || []).concat([{ lord: "", status: 0 }]);
+      save(); render();
+    });
+    body.appendChild(addA);
+
+    label(body, "Mercenaries");
+    var mn = document.createElement("p");
+    mn.className = "muted small";
+    mn.textContent = "Paid a fixed amount each month, when the maintenance " +
+      "check is made.";
+    body.appendChild(mn);
+    armyTable("table34mercenaryforces").forEach(function (e) {
+      var held = (a.mercenaries || []).filter(function (m) {
+        return m.name === e.name;
+      })[0];
+      var row = document.createElement("div");
+      row.className = "merc-row" + (held ? " on" : "");
+      var t = document.createElement("button");
+      t.type = "button";
+      t.className = "choice small" + (held ? " active" : "");
+      t.textContent = e.name;
+      t.addEventListener("click", function () {
+        if (held) {
+          a.mercenaries = a.mercenaries.filter(function (m) {
+            return m.name !== e.name;
+          });
+        } else {
+          a.mercenaries = (a.mercenaries || []).concat([{ name: e.name, n: 1 }]);
+        }
+        save(); render();
+      });
+      row.appendChild(t);
+      var d = document.createElement("span");
+      d.className = "muted small";
+      d.textContent = Object.keys(e.properties).map(function (k) {
+        return k + ": " + e.properties[k];
+      }).join(" · ");
+      row.appendChild(d);
+      if (held) {
+        var n = document.createElement("input");
+        n.type = "number";
+        n.min = "1";
+        n.value = held.n || 1;
+        n.className = "merc-n";
+        n.addEventListener("change", function () {
+          held.n = Math.max(1, Number(n.value) || 1); save(); render();
+        });
+        row.appendChild(n);
+      }
+      body.appendChild(row);
+    });
+
+    var st = armyState();
+    var tot = document.createElement("p");
+    tot.className = "muted small";
+    tot.innerHTML = "Mercenaries cost <strong>" +
+      st.monthly.toLocaleString() + " koku</strong> a month.";
+    body.appendChild(tot);
+
+    if (sys) {
+      (sys.entries || []).filter(function (e) {
+        return !/^Table /.test(e.name) && (e.note || e.properties.Rule);
+      }).forEach(function (e) {
+        var d = document.createElement("div");
+        d.className = "tpl-detail";
+        d.innerHTML = "<strong>" + esc(e.name) + "</strong>" +
+          (e.note ? "<div>" + esc(e.note) + "</div>" : "") +
+          Object.keys(e.properties).map(function (k) {
+            return '<div><span class="tk">' + esc(k) + "</span> " +
+              esc(String(e.properties[k])) + "</div>";
+          }).join("");
+        body.appendChild(d);
+      });
+    }
+  }
+
+  // ---- step 4: doctrines
+
+  /* Doctrines nest, and the parent is not an empty folder: "Clan Doctrines"
+     carries the Applies To, Narrative Requirements and Training Check that all
+     seven clan doctrines share, while each clan carries only its own Effect.
+     So a parent with children becomes a group whose shared terms are stated
+     once, and each child is pickable and inherits them. Rendering the parent
+     as a pickable card would offer a doctrine that is not one; hiding its
+     properties would drop the requirements the clan ones are taken under. */
+  function doctrineList() {
+    var sys = armySystem("doctrines");
+    if (!sys) return [];
+    var out = [];
+    (sys.entries || []).forEach(function (e) {
+      if ((e.entries || []).length) {
+        e.entries.forEach(function (c) {
+          out.push({ d: c, group: e.name, shared: e.properties, note: e.note });
+        });
+      } else {
+        out.push({ d: e, group: null, shared: null, note: null });
+      }
+    });
+    return out;
+  }
+
+  function renderArmyDoctrines(body) {
+    var a = activeArmy();
+    if (!a) return needs(body, "This draft has no army on it.");
+    var all = doctrineList();
+    if (!all.length) return needs(body, "The corpus states no doctrines.");
+    var n = document.createElement("p");
+    n.className = "muted small";
+    n.textContent = "Each doctrine states what training or narrative it takes " +
+      "to have. Nothing here is compulsory — an army with none is an army.";
+    body.appendChild(n);
+
+    var groups = {}, shared = {};
+    all.forEach(function (x) {
+      var g = x.group || "General";
+      (groups[g] = groups[g] || []).push(x.d);
+      if (x.shared) shared[g] = { props: x.shared, note: x.note };
+    });
+    Object.keys(groups).sort(function (p, q) {
+      return p === "General" ? -1 : q === "General" ? 1 : p.localeCompare(q);
+    }).forEach(function (g) {
+      label(body, g);
+      // the terms every doctrine in the group is taken under, stated once
+      if (shared[g]) {
+        var sh = document.createElement("div");
+        sh.className = "tpl-detail";
+        sh.innerHTML = (shared[g].note
+            ? "<div>" + esc(shared[g].note) + "</div>" : "") +
+          Object.keys(shared[g].props).map(function (k) {
+            return '<div><span class="tk">' + esc(k) + "</span> " +
+              esc(String(shared[g].props[k])) + "</div>";
+          }).join("");
+        body.appendChild(sh);
+      }
+      groups[g].forEach(function (d) {
+        var on = (a.doctrines || []).indexOf(d.name) >= 0;
+        var card = document.createElement("div");
+        card.className = "doc-card" + (on ? " on" : "");
+        var t = document.createElement("button");
+        t.type = "button";
+        t.className = "choice small" + (on ? " active" : "");
+        t.textContent = d.name;
+        t.addEventListener("click", function () {
+          a.doctrines = a.doctrines || [];
+          var i = a.doctrines.indexOf(d.name);
+          if (i >= 0) a.doctrines.splice(i, 1); else a.doctrines.push(d.name);
+          save(); render();
+        });
+        card.appendChild(t);
+        var body2 = document.createElement("div");
+        body2.className = "doc-body";
+        body2.innerHTML = Object.keys(d.properties).map(function (k) {
+          return '<div><span class="tk">' + esc(k) + "</span> " +
+            esc(String(d.properties[k])) + "</div>";
+        }).join("") + (d.note ? '<div class="muted small">' + esc(d.note) +
+                                "</div>" : "");
+        card.appendChild(body2);
+        body.appendChild(card);
+      });
+    });
+  }
+
+  // ---- step 5: outfitting
+
+  function renderArmyOutfitting(body) {
+    var a = activeArmy();
+    if (!a) return needs(body, "This draft has no army on it.");
+    var sys = armySystem("equipmentupgrades");
+    if (!sys) return needs(body, "The corpus states no equipment upgrades.");
+    var n = document.createElement("p");
+    n.className = "muted small";
+    n.textContent = "Bought once, and each states what it applies to and how " +
+      "rare it is.";
+    body.appendChild(n);
+    (sys.entries || []).forEach(function (e) {
+      var on = (a.upgrades || []).indexOf(e.name) >= 0;
+      var card = document.createElement("div");
+      card.className = "doc-card" + (on ? " on" : "");
+      var t = document.createElement("button");
+      t.type = "button";
+      t.className = "choice small" + (on ? " active" : "");
+      t.textContent = e.name;
+      t.addEventListener("click", function () {
+        a.upgrades = a.upgrades || [];
+        var i = a.upgrades.indexOf(e.name);
+        if (i >= 0) a.upgrades.splice(i, 1); else a.upgrades.push(e.name);
+        save(); render();
+      });
+      card.appendChild(t);
+      var d = document.createElement("div");
+      d.className = "doc-body";
+      d.innerHTML = Object.keys(e.properties).map(function (k) {
+        return '<div><span class="tk">' + esc(k) + "</span> " +
+          esc(String(e.properties[k])) + "</div>";
+      }).join("");
+      card.appendChild(d);
+      body.appendChild(card);
+    });
+    var st = armyState();
+    var tot = document.createElement("p");
+    tot.className = "muted small";
+    tot.innerHTML = "One-off outlay <strong>" + st.outlay.toLocaleString() +
+      " koku</strong>.";
+    body.appendChild(tot);
+  }
+
+  // ---- step 6: maintenance
+
+  function renderArmyMaintenance(body) {
+    var a = activeArmy();
+    if (!a) return needs(body, "This draft has no army on it.");
+    var sys = armySystem("armymaintenance");
+    if (!sys) return needs(body, "The corpus states no maintenance rules.");
+
+    if (sys.properties && Object.keys(sys.properties).length) {
+      var d = document.createElement("div");
+      d.className = "tpl-detail";
+      d.innerHTML = Object.keys(sys.properties).map(function (k) {
+        return '<div><span class="tk">' + esc(k) + "</span> " +
+          esc(String(sys.properties[k])) + "</div>";
+      }).join("");
+      body.appendChild(d);
+    }
+
+    label(body, "Table 3-6: what the check does");
+    armyTable("table36armymaintenancecheckresults").forEach(function (e) {
+      var row = document.createElement("div");
+      row.className = "res-row";
+      row.innerHTML = '<span class="res-k">' + esc(e.name) + "</span>" +
+        '<span class="res-v">' + Object.keys(e.properties).map(function (k) {
+          return esc(String(e.properties[k]));
+        }).join(" · ") + "</span>";
+      body.appendChild(row);
+    });
+
+    var harsh = (sys.entries || []).filter(function (e) {
+      return /Harsh Conditions/i.test(e.name);
+    })[0];
+    var conds = harsh ? harsh.entries || [] : [];
+    if (conds.length) {
+      label(body, "Harsh conditions in play");
+      conds.forEach(function (c) {
+        var on = (a.conditions || []).indexOf(c.name) >= 0;
+        var row = document.createElement("div");
+        row.className = "merc-row" + (on ? " on" : "");
+        var t = document.createElement("button");
+        t.type = "button";
+        t.className = "choice small" + (on ? " active" : "");
+        t.textContent = c.name;
+        t.addEventListener("click", function () {
+          a.conditions = a.conditions || [];
+          var i = a.conditions.indexOf(c.name);
+          if (i >= 0) a.conditions.splice(i, 1); else a.conditions.push(c.name);
+          save(); render();
+        });
+        row.appendChild(t);
+        var s = document.createElement("span");
+        s.className = "muted small";
+        s.textContent = Object.keys(c.properties).map(function (k) {
+          return k + ": " + c.properties[k];
+        }).join(" · ");
+        row.appendChild(s);
+        body.appendChild(row);
+      });
+    }
+
+    (sys.entries || []).filter(function (e) {
+      return !/^Table |Harsh Conditions/i.test(e.name) &&
+             (Object.keys(e.properties).length || e.note);
+    }).forEach(function (e) {
+      var d = document.createElement("div");
+      d.className = "tpl-detail";
+      d.innerHTML = "<strong>" + esc(e.name) + "</strong>" +
+        (e.note ? "<div>" + esc(e.note) + "</div>" : "") +
+        Object.keys(e.properties).map(function (k) {
+          return '<div><span class="tk">' + esc(k) + "</span> " +
+            esc(String(e.properties[k])) + "</div>";
+        }).join("");
+      body.appendChild(d);
+    });
+
+    var st = armyState();
+    var p = document.createElement("p");
+    p.className = "muted small";
+    p.innerHTML = "Running cost: <strong>" + st.monthly.toLocaleString() +
+      " koku</strong> a month in mercenaries" +
+      ((a.conditions || []).length
+        ? ", under " + a.conditions.length + " harsh condition" +
+          (a.conditions.length === 1 ? "" : "s") : "") + ".";
+    body.appendChild(p);
+  }
+
+  // ---- what the army hands to scripts/apply_army.py
+
+  function toArmyPatch() {
+    var a = activeArmy() || newArmy();
+    var st = armyState();
+    return {
+      army: slugify(a.name || "an-army"),
+      name: a.name || null,
+      marshaller: a.marshaller
+        ? { slug: a.marshaller.slug, name: a.marshaller.name,
+            status: a.marshaller.status, honor: a.marshaller.honor,
+            glory: a.marshaller.glory, glory_rank: armyRank(a.marshaller.glory),
+            command: a.marshaller.command,
+            government: a.marshaller.government }
+        : null,
+      status_modifiers: (a.status_mods || []).slice(),
+      effective_status: st.eff,
+      bonus_successes: Number(a.bonus) || 0,
+      // both the number and the band it came from, so the arithmetic can be
+      // re-done rather than taken on trust
+      maximum_strength: st.max,
+      strength_band: st.bands.map(function (b) { return b.name; }),
+      strength: a.strength,
+      discipline: st.discipline,
+      discipline_formula: st.discipline_formula,
+      allies: (a.allies || []).map(function (al, i) {
+        var b = st.allied[i] && st.allied[i].band;
+        return { lord: al.lord, status: al.status,
+                 band: b ? b.name : null,
+                 brings: b ? b.properties : null };
+      }),
+      mercenaries: (a.mercenaries || []).slice(),
+      monthly_koku: st.monthly,
+      doctrines: (a.doctrines || []).slice(),
+      upgrades: (a.upgrades || []).slice(),
+      upgrade_koku: st.outlay,
+      harsh_conditions: (a.conditions || []).slice(),
+      notes: a.notes || ""
+    };
+  }
+
+  function renderArmySave(body) {
+    var doc = toArmyPatch();
+    var open = activeSteps().filter(function (s) {
+      return s.id !== "army-save" && !s.done();
+    }).map(function (s) { return s.n + ". " + s.label; });
+    var head = document.createElement("p");
+    head.className = "muted small";
+    head.innerHTML = "<strong>" + esc(doc.name || "An unnamed army") +
+      "</strong> — strength " + (doc.strength == null ? "not set" : doc.strength) +
+      " of " + (doc.maximum_strength == null ? "?" : doc.maximum_strength) +
+      ", discipline " + (doc.discipline == null ? "not set" : doc.discipline) +
+      ", " + doc.allies.length + " allied lord" +
+      (doc.allies.length === 1 ? "" : "s") + ", " +
+      doc.monthly_koku.toLocaleString() + " koku a month.";
+    body.appendChild(head);
+    if (open.length) {
+      var w = document.createElement("p");
+      w.className = "muted small warn";
+      w.textContent = "Steps still open: " + open.join(", ") + ".";
+      body.appendChild(w);
+    }
+    var row = document.createElement("div");
+    row.className = "choicerow";
+    row.innerHTML = '<button type="button" class="btn" id="dl">Download</button>' +
+      '<button type="button" class="btn" id="cp">Copy</button>';
+    body.appendChild(row);
+    var how = document.createElement("p");
+    how.className = "muted small";
+    how.innerHTML = "Then: <code>python3 scripts/apply_army.py " +
+      esc(doc.army) + "</code> — it writes <code>src/armies/" +
+      esc(doc.army) + ".json</code> and re-does the arithmetic from the " +
+      "corpus before it will. Nothing is written without <code>--apply</code>.";
+    body.appendChild(how);
+    var pre = document.createElement("pre");
+    pre.className = "export-json";
+    pre.textContent = JSON.stringify(doc, null, 1);
+    body.appendChild(pre);
+    row.querySelector("#dl").addEventListener("click", function () {
+      var blob = new Blob([JSON.stringify(doc, null, 1)],
+                          { type: "application/json" });
+      var n = document.createElement("a");
+      n.href = URL.createObjectURL(blob);
+      n.download = doc.army + "-army.json";
+      document.body.appendChild(n); n.click(); n.remove();
+      setTimeout(function () { URL.revokeObjectURL(n.href); }, 1000);
+    });
+    row.querySelector("#cp").addEventListener("click", function () {
+      navigator.clipboard.writeText(JSON.stringify(doc, null, 1));
+    });
+  }
+
+  var ARMY_STEPS = [
+    { id: "army-marshaller", n: 1, label: "Marshaller",
+      title: "Who marshals it",
+      desc: "Their status sets the army's maximum strength. If their wealth " +
+        "does not match their rank, the book lets the GM treat the status as " +
+        "the wealth they can actually reach.",
+      done: function () {
+        var a = activeArmy();
+        return !!(a && a.name && a.marshaller && armyState().max != null);
+      },
+      render: renderArmyMarshaller },
+    { id: "army-check", n: 2, label: "The check", title: "Marshal the army",
+      desc: "A TN 3 Command check as a down-time activity. Bonus successes " +
+        "set the discipline; the strength is chosen up to the maximum, and " +
+        "never below 5.",
+      done: function () {
+        var a = activeArmy(), st = armyState();
+        return !!(a && a.strength != null && a.strength >= 5 &&
+                  st.discipline != null);
+      },
+      render: renderArmyCheck },
+    { id: "army-supplemental", n: 3, label: "Supplements",
+      title: "Allies and mercenaries",
+      desc: "Optional. An allied lord brings what their status allows; " +
+        "mercenaries are paid every month.",
+      done: function () { return !!activeArmy(); },
+      render: renderArmySupplemental },
+    { id: "army-doctrines", n: 4, label: "Doctrines", title: "Doctrines",
+      desc: "Optional. Each states the training or the narrative it takes.",
+      done: function () { return !!activeArmy(); },
+      render: renderArmyDoctrines },
+    { id: "army-outfitting", n: 5, label: "Outfitting",
+      title: "Equipment upgrades",
+      desc: "Optional, and bought once each.",
+      done: function () { return !!activeArmy(); },
+      render: renderArmyOutfitting },
+    { id: "army-maintenance", n: 6, label: "Maintenance",
+      title: "Keeping it in the field",
+      desc: "What the monthly check costs and what happens when it fails.",
+      done: function () { return !!activeArmy(); },
+      render: renderArmyMaintenance },
+    { id: "army-save", n: 0, label: "Save", title: "Keep the army",
+      desc: "Written to src/armies/, with the band and the formula each number " +
+        "came from so the arithmetic can be checked rather than trusted.",
+      done: function () { return false; },
+      render: renderArmySave }
+  ];
+
+  function renderArmyWip() {
+    var a = activeArmy();
+    var box = el("wip");
+    if (!a) { box.innerHTML = ""; return; }
+    var st = armyState();
+    function stat(k, v) {
+      return '<div class="wip-npc"><span class="wn">' + esc(String(v)) +
+        '</span><span class="wr">' + esc(k) + "</span></div>";
+    }
+    box.innerHTML =
+      '<h3 class="wip-name">' + esc(a.name || "An unnamed army") + "</h3>" +
+      '<p class="muted small">' +
+        (a.marshaller ? "marshalled by " + esc(a.marshaller.name)
+                      : "no marshaller yet") + "</p>" +
+      stat("strength", (a.strength == null ? "—" : a.strength) +
+           (st.max != null ? " / " + st.max : "")) +
+      stat("discipline", st.discipline == null ? "—" : st.discipline) +
+      stat("effective status", st.eff) +
+      (st.monthly ? stat("koku a month", st.monthly.toLocaleString()) : "") +
+      (st.outlay ? stat("koku outlay", st.outlay.toLocaleString()) : "") +
+      ((a.allies || []).length
+        ? '<h4 class="wip-h">Allies</h4>' + a.allies.map(function (al, i) {
+            var b = st.allied[i] && st.allied[i].band;
+            return '<div class="wip-npc"><span class="wn">' +
+              esc(al.lord || "unnamed lord") + '</span><span class="wr">' +
+              (b ? esc(b.name) : "status " + al.status) + "</span></div>";
+          }).join("") : "") +
+      ((a.mercenaries || []).length
+        ? '<h4 class="wip-h">Mercenaries</h4>' + a.mercenaries.map(function (m) {
+            return '<div class="wip-npc"><span class="wn">' + esc(m.name) +
+              '</span><span class="wr">×' + (m.n || 1) + "</span></div>";
+          }).join("") : "") +
+      ((a.doctrines || []).length
+        ? '<h4 class="wip-h">Doctrines</h4>' + a.doctrines.map(function (d) {
+            return '<div class="wip-npc"><span class="wn">' + esc(d) +
+              "</span></div>";
+          }).join("") : "") +
+      ((a.upgrades || []).length
+        ? '<h4 class="wip-h">Equipment</h4>' + a.upgrades.map(function (u) {
+            return '<div class="wip-npc"><span class="wn">' + esc(u) +
+              "</span></div>";
+          }).join("") : "");
+  }
+
   /* ---------------------------------------------------------- shell */
 
   // Path of Waves and Writ of the Wilds characters have no clan, so the
@@ -7302,6 +8212,7 @@
     if (isAdvance()) return ADVANCE_STEPS;
     if (isLegacy()) return LEGACY_STEPS;
     if (isCourt()) return COURT_STEPS;
+    if (isArmy()) return ARMY_STEPS;
     return STEPS;
   }
 
@@ -7494,6 +8405,7 @@
     if (isLegacy()) return renderLegacyWip();
     if (isAdvance()) return renderAdvanceWip();
     if (isCourt()) return renderCourtWip();
+    if (isArmy()) return renderArmyWip();
     var d = computed();
     var ring = RINGS.map(function (r) {
       var why = provenance(d.from.rings[r], 1);
@@ -7610,8 +8522,8 @@
     // the twenty questions are Questions; a court's seven steps are Steps, and
     // a step numbered 0 is the one at the end that saves
     el("step-n").textContent = s.eyebrow ? s.eyebrow
-      : s.n === 0 ? (isCourt() ? "Keep it" : "Begin")
-      : (isCourt() ? "Step " : "Question ") + s.n;
+      : s.n === 0 ? (isCourt() || isArmy() ? "Keep it" : "Begin")
+      : (isCourt() || isArmy() ? "Step " : "Question ") + s.n;
     el("step-title").textContent = val(s.title);
     el("step-desc").innerHTML = val(s.desc);
     var body = el("step-body");
@@ -7694,11 +8606,13 @@
       });
     // ?new=1 is the site's front-door link: start a fresh character rather
     // than resuming whichever draft happened to be open last.
-    if (q["new"] || q.court) {
+    if (q["new"] || q.court || q.army) {
       if (history.replaceState) {
         history.replaceState(null, "", location.pathname + location.hash);
       }
-      if (q.court) openCourt(true); else addDraft();
+      if (q.court) openCourt(true);
+      else if (q.army) openArmy(true);
+      else addDraft();
       return;
     }
     var slug = q.advance || q.edit || q.legacy;

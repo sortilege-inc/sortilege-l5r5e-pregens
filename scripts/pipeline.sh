@@ -77,6 +77,9 @@ python3 scripts/legacy_tables.py
 # Create Court: the seven-step framework's step list, the NPC templates step 7
 # overlays, and the need tiers a ninjo is written from.
 python3 scripts/court_tables.py
+# Create Army: Fields of Victory's marshaling system -- the status bands, the
+# discipline formulae, mercenaries, allies, doctrines, upgrades, maintenance.
+python3 scripts/army_tables.py
 python3 scripts/name_tables.py | tail -1
 python3 scripts/relationship_map.py
 
