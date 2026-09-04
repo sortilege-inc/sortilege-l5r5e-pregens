@@ -105,7 +105,19 @@
   },
   "Sins of Regret": {
    "arc": "l5r5e-0.4-sins-of-regret.arc",
-   "note": "For rōnin PCs of rank 2 or higher, at Closed Shell Castle: their commitment to Bushidō against an unjust lord and desperate peasants. Tied to Path of Waves' Twin Blessings Village — so a Path of Waves pack rather than a clan one, and rank 2 rather than fresh."
+   "note": "For rōnin PCs of rank 2 or higher, at Closed Shell Castle: their commitment to Bushidō against an unjust lord and desperate peasants. Tied to Path of Waves' Twin Blessings Village — so a Path of Waves pack rather than a clan one, and rank 2 rather than fresh.",
+   "pencilled_schools": [
+    "Student of the Talon",
+    "Treasure Hunter",
+    "Artisan of the Roads",
+    "Qamarist Shield Bearer Tradition",
+    "Woolen Hooves Trapper Tradition",
+    "Ganzu Guardian Tradition",
+    "Fortunist Monk Order",
+    "Ujik Nomad Tradition"
+   ],
+   "pencilled_why": "Chosen 2026-09-04. Every one is clanless, because the adventure is written for rōnin of rank 2 or higher and is about whether Bushidō means anything to the masterless: an unjust lord, desperate peasants, and endings that range from being sworn into service (rōnin no longer) to replacing the daimyō outright.\n\nThree are Path of Waves rōnin schools — Student of the Talon, Treasure Hunter for the village's hidden caches, Artisan of the Roads for a traveller among villagers who have nothing — with Qamarist Shield Bearer as the masterless warrior who already has a creed, which is exactly the test. Woolen Hooves Trapper reads the land the adventure has broken: a river moved, crops dead, no fish. Ganzu Guardian, Ujik Nomad and Fortunist Monk Order are the far-travelled and the devout, so the party converges on a Rokugani backwater from four different elsewheres rather than being one band.\n\nTreasure Hunter and Artisan of the Roads are also the schools of published pregens — Otgontogoch Turgen and Akagi Daichi, both from The Highwayman. That overlap is structural rather than accidental: The Highwayman is a rōnin adventure too and the Path of Waves set is only eight schools, so the only published non-core pregens draw on the same ones. Untouched by the archive, so they still add coverage.",
+   "build_note": "The one pack that does not start at rank 1: the adventure specifies rōnin of rank 2 or higher. scripts/generate_pregen.py builds at 0 XP and rank 1, so each of these needs building and then advancing through the Creator. The target XP is not decided yet — settle it before the pack is built rather than after."
   },
   "Slow Tide Harbor": {
    "arc": "l5r5e-0.4-gm-kit-dark-tides.arc",
