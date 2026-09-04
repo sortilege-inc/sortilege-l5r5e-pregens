@@ -4739,11 +4739,13 @@
 
   var CURRICULA = window.L5R_CURRICULA || {};
   var TITLES = window.L5R_TITLES || {};
+  var PATTERNS = window.L5R_PATTERNS || {};
   var RANK_THRESHOLD = { 1: 20, 2: 24, 3: 32, 4: 44, 5: 60 };
   var BOND_COST = [3, 4, 6, 8, 10];
   var BUYABLE = [
     ["skill", "Skill rank"], ["ring", "Ring"], ["technique", "Technique"],
-    ["passion", "Passion"], ["bond", "Bond rank"]
+    ["passion", "Passion"], ["pattern", "Item pattern"],
+    ["bond", "Bond rank"]
   ];
 
   function activeAdvance() { return (C && C.advance) || null; }
@@ -4860,45 +4862,122 @@
     return Math.min(5, lowest + (rings["void"] || 0));
   }
 
+  /* Where a purchase belongs.
+
+     Experience is not spent into a pool — every advancement is filed against
+     one thing, and that filing is what decides which curriculum it is measured
+     against and whether it counts in full or at half. The corpus is explicit
+     that the three are separate ledgers: XP allocated to a title does not
+     count toward the school rank and vice versa, and XP spent on a bond counts
+     toward neither.
+
+     So a bucket is the school, one held title, or one bond, and every row in
+     the ledger names the one it belongs to. */
+  function advBuckets() {
+    var a = activeAdvance();
+    var st = { school: null, titles: [], bonds: [] };
+    if (!a) return st;
+    var from = a.from || {};
+    // The label carries no rank: the rank moves as the ledger is applied, so
+    // a rank baked in here would be the one they started at.
+    st.school = { kind: "school", key: "school",
+                  label: from.school || "School", school: from.school };
+    (from.titles || []).concat(a.addedTitles || []).forEach(function (t) {
+      var rec = TITLES[normName(t.name)] || null;
+      st.titles.push({
+        kind: "title", key: "title:" + t.name, ref: t.name, label: t.name,
+        // what the record already had against it, so a title half finished
+        // stays half finished
+        was: t.xp_used || 0,
+        needs: t.xp_cost || (rec && rec.xp_to_completion) || null,
+        curriculum: (rec && rec.curriculum) || [],
+        ability: rec && rec.ability,
+        award: rec && rec.award,
+        assigned_now: !!t.assigned_now,
+        known: !!rec
+      });
+    });
+    (from.bonds || []).concat(a.addedBonds || []).forEach(function (b) {
+      st.bonds.push({ kind: "bond", key: "bond:" + b.name, ref: b.name,
+                      label: b.name, type: b.type || null,
+                      rank: b.rank || null, added_now: !!b.added_now });
+    });
+    return st;
+  }
+
+  // The title a purchase defaults to: the one still incomplete, since the
+  // corpus allows only one of those at a time.
+  function openTitle(buckets, st) {
+    return buckets.titles.filter(function (t) {
+      var got = t.was + ((st && st.titleXp[t.key]) || 0);
+      return t.needs && got < t.needs;
+    })[0] || null;
+  }
+
+  function bucketByKey(buckets, key) {
+    if (!key || key === "school") return buckets.school;
+    return buckets.titles.concat(buckets.bonds).filter(function (b) {
+      return b.key === key;
+    })[0] || null;
+  }
+
   /* The ledger, applied in order. Order matters: a purchase's cost is set by
      the rank it takes the character to, and whether it counts in curriculum is
-     set by the school rank they held when they made it. */
+     set by the bucket it belongs to and the school rank held at the time. */
   function advanceState() {
     var a = activeAdvance();
     if (!a) return null;
     var from = a.from || {};
+    var buckets = advBuckets();
     var st = {
       rings: JSON.parse(JSON.stringify(from.rings || {})),
       skills: flatten(from.skills),
       techniques: (from.techniques || []).slice(),
       peculiarities: (from.peculiarities || []).slice(),
-      titles: (from.titles || []).slice(),
-      bonds: (from.bonds || []).slice(),
+      titles: (from.titles || []).map(function (t) { return t.name; }),
+      bonds: (from.bonds || []).map(function (b) { return b.name; }),
       scrolls: (from.signature_scrolls || []).slice(),
       gear: (from.gear || []).slice(),
+      patterns: [],
       rank: from.rank || 1,
       school: from.school,
-      spent: 0, curXp: 0, titleXp: 0, rankUps: [], titleDone: false,
-      rows: [], problems: []
+      spent: 0, curXp: 0, titleXp: {}, bondXp: {}, rankUps: [], completed: [],
+      rows: [], problems: [], buckets: buckets
     };
-    var title = a.title ? TITLES[normName(a.title)] : null;
-    if (a.title && !title) {
-      st.problems.push("The corpus has no title called “" + a.title + "”, so " +
-                       "its curriculum and completion cost are unknown here.");
-    }
-    if (a.title && st.titles.indexOf(a.title) < 0) st.titles.push(a.title);
+    (a.addedTitles || []).forEach(function (t) {
+      if (st.titles.indexOf(t.name) < 0) st.titles.push(t.name);
+    });
+    (a.addedBonds || []).forEach(function (b) {
+      if (st.bonds.indexOf(b.name) < 0) st.bonds.push(b.name);
+    });
     if (!curriculumFor(st.school)) {
       st.problems.push("The corpus has no curriculum for " +
                        (st.school || "this school") + ", so nothing can be " +
-                       "told in curriculum from out. Every purchase is " +
-                       "counted at half.");
+                       "told in curriculum from out. Every purchase toward the " +
+                       "school rank is counted at half.");
     }
+    buckets.titles.forEach(function (t) {
+      if (!t.known) {
+        st.problems.push("The corpus has no title called “" + t.ref +
+                         "”, so its curriculum and completion cost are " +
+                         "unknown; purchases filed against it count at half.");
+      }
+    });
 
     (a.ledger || []).forEach(function (e, i) {
+      // an older draft filed purchases with `allocate`; read it as a bucket
+      var key = e.belongs ||
+        (e.allocate === "title" ? (openTitle(buckets, st) || {}).key
+         : e.allocate === "none" ? null : "school");
+      var bucket = key ? bucketByKey(buckets, key) : null;
       var row = { i: i, kind: e.kind, target: e.target, to: e.to,
-                  allocate: e.allocate || "school", at_rank: st.rank,
-                  xp: 0, listed: false, contributes: 0, note: null, bad: null };
-      var entries = curriculumAt(st.school, st.rank);
+                  belongs: bucket ? bucket.key : null,
+                  belongs_label: bucket ? bucket.label : "nothing",
+                  at_rank: st.rank, xp: 0, listed: false, contributes: 0,
+                  note: null, bad: null };
+      var entries = bucket && bucket.kind === "school"
+        ? curriculumAt(st.school, st.rank)
+        : (bucket && bucket.curriculum) || [];
 
       if (e.kind === "skill") {
         var was = st.skills[e.target] || 0;
@@ -4949,51 +5028,68 @@
         })) row.bad = "Already held.";
         else st.peculiarities.push(e.target);
         row.note = "at the GM's discretion";
+      } else if (e.kind === "pattern") {
+        var pat = PATTERNS[normName(e.target)];
+        row.xp = pat ? pat.xp_cost : 0;
+        if (!pat) row.bad = "Not an item pattern in the corpus.";
+        else if (st.patterns.some(function (n) {
+          return normName(n) === normName(e.target);
+        })) row.bad = "Already bought.";
+        else st.patterns.push(pat.name);
+        row.note = "no curriculum lists item patterns";
       } else if (e.kind === "bond") {
         var rank = e.to || 1;
         row.to = rank;
         row.xp = BOND_COST[rank - 1] || 0;
         if (rank < 1 || rank > 5) row.bad = "A bond has five ranks.";
-        row.allocate = "none";
-        row.note = "counts toward neither the school rank nor a title";
-        var label = e.target + (e.bondType ? " (" + e.bondType + ")" : "");
-        st.bonds = st.bonds.filter(function (n) {
-          return normName(String(n).split(" (")[0]) !== normName(e.target);
-        }).concat([label]);
+        row.note = "counts toward neither a school rank nor a title";
+        if (!bucket || bucket.kind !== "bond") {
+          row.belongs = "bond:" + e.target;
+          row.belongs_label = e.target;
+        }
       }
 
       if (row.bad) { st.rows.push(row); return; }
       st.spent += row.xp;
 
-      if (row.allocate === "title" && title) {
-        var listedT = listedIn(title.curriculum || [], e, st);
-        row.contributes = listedT ? row.xp : ceilHalf(row.xp);
-        row.listed = listedT;
-        st.titleXp += row.contributes;
-        if (!st.titleDone && title.xp_to_completion &&
-            st.titleXp >= title.xp_to_completion) {
-          st.titleDone = true;
-          if (title.ability) {
-            st.scrolls.push(title.ability + " (" + title.name + ")");
+      if (e.kind === "bond" || (bucket && bucket.kind === "bond")) {
+        // the corpus: experience spent on a bond contributes to neither the
+        // school curriculum rank nor a title
+        st.bondXp[row.belongs] = (st.bondXp[row.belongs] || 0) + row.xp;
+        row.contributes = 0;
+        st.rows.push(row);
+        return;
+      }
+      if (!bucket) { st.rows.push(row); return; }
+
+      row.contributes = row.listed ? row.xp : ceilHalf(row.xp);
+      if (bucket.kind === "title") {
+        st.titleXp[bucket.key] = (st.titleXp[bucket.key] || 0) + row.contributes;
+        var got = bucket.was + st.titleXp[bucket.key];
+        if (bucket.needs && got >= bucket.needs &&
+            st.completed.indexOf(bucket.ref) < 0) {
+          st.completed.push(bucket.ref);
+          if (bucket.ability) {
+            var scroll = bucket.ability + " (" + bucket.ref + ")";
+            if (st.scrolls.indexOf(scroll) < 0) st.scrolls.push(scroll);
           }
         }
-      } else if (row.allocate === "school") {
-        row.contributes = row.listed ? row.xp : ceilHalf(row.xp);
+      } else {
         st.curXp += row.contributes;
         var need = RANK_THRESHOLD[st.rank];
         while (need && st.curXp >= need && st.rank < 6) {
           st.rankUps.push({ to: st.rank + 1, after: i });
           st.rank += 1;
-          st.curXp = 0;            // the corpus: the total resets on advancing
+          st.curXp = 0;          // the corpus: the total resets on advancing
           need = RANK_THRESHOLD[st.rank];
         }
       }
       st.rows.push(row);
     });
 
-    st.title = title;
     st.threshold = RANK_THRESHOLD[st.rank] || null;
     st.remaining = (a.xp || 0) - st.spent;
+    st.openTitle = openTitle(buckets, st);
     return st;
   }
 
@@ -5025,7 +5121,11 @@
   function addLedger(e) {
     var a = activeAdvance();
     if (!a) return;
+    // A new purchase is filed where the last one was, which is almost always
+    // right and always visible.
+    if (!e.belongs) e.belongs = a.lastBelongs || "school";
     a.ledger = (a.ledger || []).concat([e]);
+    a.lastBelongs = e.belongs;
     advSave(); render();
   }
 
@@ -5035,14 +5135,13 @@
     advSave(); render();
   }
 
-  function setAllocate(i, v) {
+  function setBelongs(i, key) {
     var a = activeAdvance();
-    a.ledger[i].allocate = v;
+    a.ledger[i].belongs = key;
+    a.lastBelongs = key;
     advSave(); render();
   }
 
-  // The XP the character has to spend, which comes from the table and not from
-  // anything this site tracks.
   function advXpRow(body) {
     var a = activeAdvance();
     var st = advanceState();
@@ -5052,7 +5151,9 @@
       '<label class="adv-xp-in">Experience to spend' +
       '<input type="number" min="0" max="999" value="' + (a.xp || 0) + '"></label>' +
       '<span class="adv-tot' + (st.remaining < 0 ? " over" : "") + '">' +
-      st.spent + " spent · " + st.remaining + " left</span>";
+      st.spent + " spent · " + st.remaining + " left</span>" +
+      '<span class="adv-tot">new tier ' + ((a.from.xp || 0) + st.spent) +
+      " XP</span>";
     wrap.querySelector("input").addEventListener("change", function (e) {
       a.xp = Math.max(0, Number(e.target.value) || 0);
       advSave(); render();
@@ -5060,32 +5161,66 @@
     body.appendChild(wrap);
   }
 
-  function advProgress(body) {
+  // One curriculum, as a row of what it lists.
+  function curriculumChips(entries) {
+    if (!entries.length) return '<span class="muted small">nothing listed</span>';
+    return entries.map(function (e) {
+      return '<span class="cur-chip" title="' + esc(e.kind) + '">' +
+        esc(e.label) + "</span>";
+    }).join("");
+  }
+
+  /* Where this character stands: the school rank and its curriculum, each
+     title with its own curriculum and how far along it is, and any bonds.
+     These are the three ledgers a purchase can be filed against, so they are
+     shown before anything is bought rather than after. */
+  function advTracks(body) {
     var st = advanceState();
     var a = activeAdvance();
-    var bits = [];
-    bits.push('<div class="adv-stat"><span class="k">School rank</span>' +
-      '<span class="v">' + st.rank + "</span></div>");
-    if (st.threshold) {
-      bits.push('<div class="adv-stat"><span class="k">Toward rank ' +
-        (st.rank + 1) + '</span><span class="v">' + st.curXp + " / " +
-        st.threshold + "</span></div>");
-    } else {
-      bits.push('<div class="adv-stat"><span class="k">Rank 6</span>' +
-        '<span class="v">mastery</span></div>');
-    }
-    if (st.title) {
-      bits.push('<div class="adv-stat"><span class="k">' + esc(st.title.name) +
-        '</span><span class="v">' + st.titleXp + " / " +
-        (st.title.xp_to_completion || "?") +
-        (st.titleDone ? " ✓" : "") + "</span></div>");
-    }
-    bits.push('<div class="adv-stat"><span class="k">New tier</span>' +
-      '<span class="v">' + ((a.from.xp || 0) + st.spent) + " XP</span></div>");
-    var row = document.createElement("div");
-    row.className = "adv-progress";
-    row.innerHTML = bits.join("");
-    body.appendChild(row);
+    var b = st.buckets;
+
+    var wrap = document.createElement("div");
+    wrap.className = "adv-tracks";
+
+    var cur = curriculumAt(st.school, st.rank);
+    wrap.innerHTML +=
+      '<div class="track school"><div class="tr-head">' +
+        '<span class="tr-name">' + esc(st.school || "School") + "</span>" +
+        '<span class="tr-prog">rank ' + st.rank +
+          (st.threshold ? " · " + st.curXp + " / " + st.threshold + " toward rank " +
+            (st.rank + 1) : " · mastery") + "</span></div>" +
+        '<div class="tr-cur">' + curriculumChips(cur) + "</div></div>";
+
+    b.titles.forEach(function (t) {
+      var got = t.was + (st.titleXp[t.key] || 0);
+      var done = t.needs && got >= t.needs;
+      wrap.innerHTML +=
+        '<div class="track title' + (done ? " done" : "") + '">' +
+        '<div class="tr-head"><span class="tr-name">' + esc(t.ref) +
+          (t.assigned_now ? ' <span class="tr-new">assigned now</span>' : "") +
+          "</span>" +
+        '<span class="tr-prog">' + got + " / " + (t.needs || "?") +
+          (done ? " · complete" : "") + "</span></div>" +
+        (t.ability
+          ? '<div class="tr-note">Ability: ' + esc(t.ability) +
+            (t.award ? " · " + esc(t.award) : "") + "</div>"
+          : "") +
+        '<div class="tr-cur">' + curriculumChips(t.curriculum) + "</div></div>";
+    });
+
+    b.bonds.forEach(function (bo) {
+      var spent = st.bondXp[bo.key] || 0;
+      wrap.innerHTML +=
+        '<div class="track bond"><div class="tr-head">' +
+        '<span class="tr-name">' + esc(bo.label) +
+          (bo.type ? ' <span class="tr-new">' + esc(bo.type) + "</span>" : "") +
+          "</span>" +
+        '<span class="tr-prog">' + (spent ? spent + " XP this advance" : "held") +
+        "</span></div>" +
+        '<div class="tr-note">Counts toward neither a school rank nor a title.' +
+        "</div></div>";
+    });
+    body.appendChild(wrap);
 
     st.problems.forEach(function (p) { needs(body, p); });
     if (st.rankUps.length) {
@@ -5096,20 +5231,136 @@
       }).join("; ") + ".";
       body.appendChild(up);
     }
+    if (st.completed.length) {
+      var c = document.createElement("p");
+      c.className = "adv-rankup";
+      c.textContent = "Completes " + st.completed.join(", ") +
+        ", gaining its title ability.";
+      body.appendChild(c);
+    }
   }
 
-  /* One control per kind of purchase, each using the picker the wizard already
-     uses for that kind of thing. Adding is deliberate: nothing is bought by
-     clicking a name, because a click that spends experience should be a click
-     that says so. */
+  /* Taking on a title, or forming a bond. A title is assigned by narrative
+     events rather than bought, and the corpus allows only one incomplete title
+     at a time — so this offers one only when none is outstanding, and says so
+     when one is. */
+  function advAddTrack(body) {
+    var a = activeAdvance();
+    var st = advanceState();
+    a.adding_track = a.adding_track || null;
+
+    label(body, "Take on a title, or form a bond");
+    var row = document.createElement("div");
+    row.className = "choicerow";
+    var openT = st.openTitle;
+    row.innerHTML =
+      '<button type="button" class="choice' +
+        (a.adding_track === "title" ? " active" : "") +
+        (openT ? " disabled" : "") + '" data-v="title"' +
+        (openT ? ' disabled title="' + esc(openT.ref) + ' is still ' +
+          'incomplete, and a character can only have one incomplete title at ' +
+          'a time"' : "") + ">Assign a title</button>" +
+      '<button type="button" class="choice' +
+        (a.adding_track === "bond" ? " active" : "") +
+        '" data-v="bond">Form a bond</button>';
+    Array.prototype.forEach.call(row.querySelectorAll(".choice"), function (btn) {
+      if (btn.disabled) return;
+      btn.addEventListener("click", function () {
+        var v = btn.getAttribute("data-v");
+        a.adding_track = a.adding_track === v ? null : v;
+        advSave(); render();
+      });
+    });
+    body.appendChild(row);
+    if (openT) {
+      needs(body, openT.ref + " is at " +
+            (openT.was + (st.titleXp[openT.key] || 0)) + " of " +
+            (openT.needs || "?") + " XP. A character can only have one " +
+            "incomplete title at a time, so finish it before taking another.");
+    }
+
+    if (a.adding_track === "title") {
+      var held = st.titles.map(normName);
+      var items = Object.keys(TITLES).filter(function (k) {
+        return held.indexOf(normName(TITLES[k].name)) < 0;
+      }).sort(function (x, y) {
+        return TITLES[x].name.localeCompare(TITLES[y].name);
+      }).map(function (k) {
+        var t = TITLES[k];
+        return { value: t.name, label: t.name,
+                 meta: [t.xp_to_completion ? t.xp_to_completion + " XP" : "cost unknown",
+                        t.award, t.ability].filter(Boolean).join(" · ") };
+      });
+      needs(body, "A title is assigned by what happens in play, not bought. " +
+            "Assigning it here opens its curriculum as somewhere to file " +
+            "purchases, and applies its award.");
+      pickList(body, items, null, function (n) {
+        a.addedTitles = (a.addedTitles || []).concat(
+          [{ name: n, xp_used: 0, assigned_now: true }]);
+        a.adding_track = null;
+        a.lastBelongs = "title:" + n;
+        advSave(); render();
+      }, { tip: ruleTextFor });
+    } else if (a.adding_track === "bond") {
+      var bonds = CATALOG.filter(function (e) { return e.sub_type === "bond"; })
+        .map(function (e) { return e.name; }).sort();
+      a.bondDraft = a.bondDraft || { type: bonds[0] || "", who: "" };
+      var bd = a.bondDraft;
+      label(body, "Kind of bond");
+      choice(body, bonds.map(function (x) { return [x, x]; }), bd.type,
+        function (v) { bd.type = v; advSave(); render(); });
+      label(body, "With whom");
+      var who = document.createElement("input");
+      who.type = "text"; who.className = "textline";
+      who.placeholder = "Name the person";
+      who.value = bd.who || "";
+      who.addEventListener("change", function () {
+        bd.who = who.value.trim(); advSave();
+      });
+      body.appendChild(who);
+      var add = document.createElement("button");
+      add.type = "button"; add.className = "btn";
+      add.textContent = "Form this bond";
+      add.addEventListener("click", function () {
+        if (!bd.who) return;
+        a.addedBonds = (a.addedBonds || []).concat(
+          [{ name: bd.who, type: bd.type, added_now: true }]);
+        a.adding_track = null;
+        a.lastBelongs = "bond:" + bd.who;
+        // rank 1 is the bond, so it is bought with it
+        addLedger({ kind: "bond", target: bd.who, bondType: bd.type, to: 1,
+                    belongs: "bond:" + bd.who });
+      });
+      body.appendChild(add);
+      needs(body, "Rank 1 costs 3 XP and is what forms the bond; further " +
+            "ranks cost 4, 6, 8 and 10.");
+    }
+  }
+
   function advAdd(body) {
     var a = activeAdvance();
     var st = advanceState();
     a.adding = a.adding || "skill";
     label(body, "Buy an advancement");
     choice(body, BUYABLE, a.adding, function (v) {
-      a.adding = v; a.pick = null; advSave(); render();
+      a.adding = v; advSave(); render();
     });
+
+    // Which ledger the next purchase is filed against.
+    var b = st.buckets;
+    var opts = [["school", (st.school || "School") + " · rank " + st.rank]]
+      .concat(b.titles.map(function (t) { return [t.key, t.ref]; }))
+      .concat(b.bonds.map(function (x) { return [x.key, x.label]; }));
+    if (opts.length > 1) {
+      label(body, "File it against");
+      choice(body, opts, a.lastBelongs || "school", function (v) {
+        a.lastBelongs = v; advSave(); render();
+      });
+    }
+    var against = bucketByKey(b, a.lastBelongs || "school");
+    var entries = against && against.kind === "school"
+      ? curriculumAt(st.school, st.rank)
+      : (against && against.curriculum) || [];
 
     var kind = a.adding;
     var wrap = document.createElement("div");
@@ -5117,7 +5368,6 @@
     body.appendChild(wrap);
 
     if (kind === "skill") {
-      var entries = curriculumAt(st.school, st.rank);
       var items = Object.keys(SKILL_LABEL).sort(function (x, y) {
         return SKILL_LABEL[x].localeCompare(SKILL_LABEL[y]);
       }).map(function (sk) {
@@ -5145,10 +5395,9 @@
         addLedger({ kind: "ring", target: k, to: (st.rings[k] || 0) + 1 });
       });
       needs(wrap, "The lowest ring plus the Void Ring allows " + cap +
-                  " at most right now, and 5 is the ceiling in any case.");
+                  " at most right now, and 5 is the ceiling in any case. No " +
+                  "curriculum lists rings, so a ring always counts at half.");
     } else if (kind === "technique") {
-      var ent = curriculumAt(st.school, st.rank);
-      var sch = schoolByRollName(st.school);
       var pool = CATALOG.filter(function (e) {
         if (e.sub_type !== "technique") return false;
         if (["school_ability", "mastery_ability", "title_ability"]
@@ -5156,11 +5405,11 @@
         if (st.techniques.some(function (n) {
           return normName(n) === normName(e.name);
         })) return false;
-        var listed = listedIn(ent, { kind: "technique", target: e.name }, st);
+        var listed = listedIn(entries, { kind: "technique", target: e.name }, st);
         return (e.rank <= st.rank || listed) && techniqueAllowed(e, listed);
       });
       var titems = pool.map(function (e) {
-        var listed = listedIn(ent, { kind: "technique", target: e.name }, st);
+        var listed = listedIn(entries, { kind: "technique", target: e.name }, st);
         return { value: e.name, label: e.name,
                  meta: [cap0(e.kind), "rank " + e.rank,
                         e.ring ? cap0(e.ring) : null, "3 XP",
@@ -5169,7 +5418,7 @@
       });
       needs(wrap, titems.length + " available: rank " + st.rank + " or lower, " +
             "in a category " + (st.school || "the school") + " teaches, or on " +
-            "the curriculum.");
+            "the curriculum it is filed against.");
       pickList(wrap, titems, null, function (n) {
         addLedger({ kind: "technique", target: n });
       });
@@ -5187,90 +5436,53 @@
       pickList(wrap, pitems, null, function (n) {
         addLedger({ kind: "passion", target: n });
       });
-    } else if (kind === "bond") {
-      var bonds = CATALOG.filter(function (e) { return e.sub_type === "bond"; })
-        .map(function (e) { return e.name; }).sort();
-      a.bondDraft = a.bondDraft || { type: bonds[0] || "", who: "", rank: 1 };
-      var bd = a.bondDraft;
-      label(wrap, "Kind of bond");
-      choice(wrap, bonds.map(function (b) { return [b, b]; }), bd.type,
-        function (v) { bd.type = v; advSave(); render(); });
-      label(wrap, "With whom");
-      var who = document.createElement("input");
-      who.type = "text"; who.className = "textline";
-      who.placeholder = "Name the person";
-      who.value = bd.who || "";
-      who.addEventListener("change", function () {
-        bd.who = who.value.trim(); advSave();
+    } else if (kind === "pattern") {
+      var pitems2 = Object.keys(PATTERNS).map(function (k) {
+        return PATTERNS[k];
+      }).filter(function (p) {
+        return !st.patterns.some(function (n) {
+          return normName(n) === normName(p.name);
+        });
+      }).sort(function (x, y) { return x.name.localeCompare(y.name); })
+        .map(function (p) {
+          return { value: p.name, label: p.name,
+                   meta: [p.xp_cost + " XP",
+                          p.rarity_modifier ? "rarity " + p.rarity_modifier : null]
+                     .filter(Boolean).join(" · "),
+                   why: p.effect };
+        });
+      needs(wrap, pitems2.length + " item patterns, " +
+            "3 to 8 XP. A pattern is applied to an item; no curriculum lists " +
+            "one, so it counts at half against whatever it is filed under.");
+      pickList(wrap, pitems2, null, function (n) {
+        addLedger({ kind: "pattern", target: n });
       });
-      wrap.appendChild(who);
+    } else if (kind === "bond") {
+      var bnds = st.buckets.bonds;
+      if (!bnds.length) {
+        return needs(wrap, "No bonds yet — form one above first.");
+      }
+      label(wrap, "Which bond");
+      a.bondRankFor = a.bondRankFor || bnds[0].ref;
+      choice(wrap, bnds.map(function (x) { return [x.ref, x.label]; }),
+        a.bondRankFor, function (v) { a.bondRankFor = v; advSave(); render(); });
       label(wrap, "Rank being bought");
       choice(wrap, BOND_COST.map(function (c, i) {
         return [String(i + 1), "Rank " + (i + 1) + " · " + c + " XP"];
-      }), String(bd.rank), function (v) {
-        bd.rank = Number(v); advSave(); render();
+      }), null, function (v) {
+        addLedger({ kind: "bond", target: a.bondRankFor, to: Number(v),
+                    belongs: "bond:" + a.bondRankFor });
       });
-      var add = document.createElement("button");
-      add.type = "button"; add.className = "btn";
-      add.textContent = "Add this bond rank";
-      add.addEventListener("click", function () {
-        if (!bd.who) return;
-        addLedger({ kind: "bond", target: bd.who, bondType: bd.type,
-                    to: bd.rank });
-      });
-      wrap.appendChild(add);
-      needs(wrap, "Experience spent on a bond contributes to neither the " +
-            "school rank nor a title.");
-    }
-  }
-
-  function advTitle(body) {
-    var a = activeAdvance();
-    var st = advanceState();
-    label(body, "Title");
-    var keys = Object.keys(TITLES).sort(function (x, y) {
-      return TITLES[x].name.localeCompare(TITLES[y].name);
-    });
-    var held = (a.from.titles || []);
-    var items = keys.map(function (k) {
-      var t = TITLES[k];
-      return { value: t.name, label: t.name,
-               meta: [t.xp_to_completion ? t.xp_to_completion + " XP" : "cost unknown",
-                      t.award || null, t.ability || null,
-                      held.indexOf(t.name) >= 0 ? "already held" : null]
-                 .filter(Boolean).join(" · ") };
-    });
-    needs(body, "A title is assigned by what happens in play, not bought. " +
-          "Naming it here lets purchases be allocated to it — and a character " +
-          "can only have one incomplete title at a time. " + keys.length +
-          " are in the corpus.");
-    pickList(body, items, a.title, function (n) {
-      a.title = a.title === n ? null : n;
-      advSave(); render();
-    }, { tip: ruleTextFor });
-    if (st.title && st.title.assigned_by) {
-      var by = document.createElement("p");
-      by.className = "muted small";
-      by.innerHTML = "<strong>Assigned by:</strong> " +
-        esc(st.title.assigned_by) +
-        (st.title.award ? " · <strong>Award:</strong> " + esc(st.title.award) : "");
-      body.appendChild(by);
-    }
-    if (st.title && st.title.ability_effect) {
-      var ab = document.createElement("p");
-      ab.className = "muted small";
-      ab.innerHTML = "<strong>" + esc(st.title.ability || "Title ability") +
-        ":</strong> " + esc(st.title.ability_effect);
-      body.appendChild(ab);
     }
   }
 
   function advLedger(body) {
     var st = advanceState();
-    if (!st.rows.length) {
-      return needs(body, "Nothing bought yet.");
-    }
+    if (!st.rows.length) return needs(body, "Nothing bought yet.");
     label(body, "The ledger");
+    var opts = [["school", "school"]]
+      .concat(st.buckets.titles.map(function (t) { return [t.key, t.ref]; }))
+      .concat(st.buckets.bonds.map(function (x) { return [x.key, x.label]; }));
     var list = document.createElement("div");
     list.className = "adv-ledger";
     list.innerHTML = st.rows.map(function (r) {
@@ -5278,26 +5490,24 @@
                : r.kind === "ring" ? cap0(r.target)
                : r.target;
       var to = r.to != null ? " → " + r.to : "";
+      var where = r.bad ? esc(r.bad)
+        : r.kind === "bond"
+          ? esc(r.note)
+          : (r.listed ? "in curriculum" : "out of curriculum") + " · " +
+            r.contributes + " toward " + esc(r.belongs_label);
       return '<div class="adv-row' + (r.bad ? " bad" : "") + '">' +
         '<span class="ar-k">' + esc(r.kind) + "</span>" +
         '<span class="ar-n">' + esc(name + to) + "</span>" +
         '<span class="ar-x">' + r.xp + " XP</span>" +
-        '<span class="ar-a">' +
-          (r.bad ? esc(r.bad)
-                 : (r.allocate === "none"
-                     ? esc(r.note || "counts for neither")
-                     : (r.listed ? "in curriculum" : "out of curriculum") +
-                       " · " + r.contributes + " toward " +
-                       (r.allocate === "title" ? "the title" : "rank " + r.at_rank))) +
-        "</span>" +
-        (r.kind === "bond" || r.bad ? ""
-          : '<span class="ar-alloc">' +
-            '<button type="button" class="choice' +
-              (r.allocate === "school" ? " active" : "") +
-              '" data-alloc="school" data-i="' + r.i + '">school</button>' +
-            '<button type="button" class="choice' +
-              (r.allocate === "title" ? " active" : "") +
-              '" data-alloc="title" data-i="' + r.i + '">title</button></span>') +
+        '<span class="ar-a">' + where + "</span>" +
+        (r.bad || r.kind === "bond"
+          ? '<span class="ar-alloc"></span>'
+          : '<span class="ar-alloc">' + opts.map(function (o) {
+              return '<button type="button" class="choice' +
+                (r.belongs === o[0] ? " active" : "") + '" data-b="' +
+                esc(o[0]) + '" data-i="' + r.i + '">' + esc(o[1]) +
+                "</button>";
+            }).join("") + "</span>") +
         '<button type="button" class="ar-x-btn" data-drop="' + r.i +
         '" title="Remove">×</button></div>';
     }).join("");
@@ -5306,9 +5516,9 @@
         dropLedger(Number(b.getAttribute("data-drop")));
       });
     });
-    Array.prototype.forEach.call(list.querySelectorAll("[data-alloc]"), function (b) {
+    Array.prototype.forEach.call(list.querySelectorAll("[data-b]"), function (b) {
       b.addEventListener("click", function () {
-        setAllocate(Number(b.getAttribute("data-i")), b.getAttribute("data-alloc"));
+        setBelongs(Number(b.getAttribute("data-i")), b.getAttribute("data-b"));
       });
     });
     body.appendChild(list);
@@ -5318,8 +5528,8 @@
     var a = activeAdvance();
     if (!a) return needs(body, "This draft has no advance on it.");
     advXpRow(body);
-    advProgress(body);
-    advTitle(body);
+    advTracks(body);
+    advAddTrack(body);
     advAdd(body);
     advLedger(body);
   }
@@ -5359,12 +5569,18 @@
         var r = st.rows[i] || {};
         return { kind: e.kind, target: e.target, to: r.to,
                  bond_type: e.bondType || null,
-                 allocate: r.allocate, xp: r.xp, listed: !!r.listed,
+                 // which ledger it is filed against, and what that was
+                 belongs: r.belongs, belongs_label: r.belongs_label,
+                 xp: r.xp, listed: !!r.listed,
                  contributes: r.contributes, at_rank: r.at_rank };
       }),
-      title: a.title || null,
+      titles_assigned: (a.addedTitles || []).map(function (t) { return t.name; }),
+      bonds_formed: (a.addedBonds || []).map(function (b) {
+        return { name: b.name, type: b.type };
+      }),
       title_xp: st.titleXp,
-      title_complete: st.titleDone,
+      bond_xp: st.bondXp,
+      titles_completed: st.completed,
       tier: {
         xp: (a.from.xp || 0) + st.spent,
         label: a.label || null,
@@ -5384,10 +5600,30 @@
         money: money,
         techniques: refs(st.techniques),
         peculiarities: refs(st.peculiarities),
-        titles: refs(st.titles),
-        bonds: st.bonds.map(function (n) {
-          return { name: String(n).split(" (")[0], custom: true, text: n };
+        titles: st.titles.map(function (n) {
+          var b = st.buckets.titles.filter(function (t) {
+            return t.ref === n;
+          })[0];
+          var o = { name: n };
+          if (b) {
+            o.xp_used = b.was + (st.titleXp[b.key] || 0);
+            if (b.needs) o.xp_cost = b.needs;
+            o.bought_at_rank = st.rank;
+          }
+          return o;
         }),
+        bonds: st.bonds.map(function (n) {
+          var b = st.buckets.bonds.filter(function (x) {
+            return x.ref === n;
+          })[0];
+          var o = { name: n, custom: true };
+          if (b && b.type) o.text = b.type + " bond";
+          if (b && st.bondXp[b.key]) o.xp_used = st.bondXp[b.key];
+          return o;
+        }),
+        // patterns bought this advance ride with the gear they modify; the
+        // corpus states each one's effect and rarity modifier
+        gear_patterns: st.patterns.slice(),
         signature_scrolls: refs(st.scrolls),
         gear: refs(st.gear),
         advancements: st.rows.filter(function (r) { return !r.bad; })
@@ -5396,6 +5632,9 @@
                      : r.kind === "ring" ? cap0(r.target) : r.target;
             return { label: name + (r.to != null ? " +1 (→ " + r.to + ")" : ""),
                      type: r.kind, at_rank: r.at_rank, xp: r.xp,
+                     // what it was filed against, so the tier records which
+                     // ledger each purchase counted toward
+                     via: r.belongs_label, belongs: r.belongs,
                      in_curriculum: !!r.listed };
           })
       }
@@ -5413,7 +5652,15 @@
     head.innerHTML = "Advancing <strong>" + esc(a.slug) + "</strong> from " +
       (a.from.xp || 0) + " XP to " + doc.tier.xp + " XP" +
       (st.rank !== (a.from.rank || 1)
-        ? ", school rank " + (a.from.rank || 1) + " to " + st.rank : "") + ".";
+        ? ", school rank " + (a.from.rank || 1) + " to " + st.rank : "") + "." +
+      (doc.titles_assigned.length
+        ? " Takes on " + esc(doc.titles_assigned.join(", ")) + "." : "") +
+      (doc.titles_completed.length
+        ? " Completes " + esc(doc.titles_completed.join(", ")) + "." : "") +
+      (doc.bonds_formed.length
+        ? " Forms a bond with " +
+          esc(doc.bonds_formed.map(function (b) { return b.name; }).join(", ")) +
+          "." : "");
     body.appendChild(head);
 
     label(body, "Label for the new tier");
@@ -6254,6 +6501,9 @@
         ? '<h4 class="field-label">Titles</h4>' + chipRow(st.titles) : "") +
       (st.bonds.length
         ? '<h4 class="field-label">Bonds</h4>' + chipRow(st.bonds) : "") +
+      (st.patterns.length
+        ? '<h4 class="field-label">Item patterns</h4>' + chipRow(st.patterns)
+        : "") +
       (st.techniques.length
         ? '<h4 class="field-label">Techniques<span class="wa-n">' +
           st.techniques.length + "</span></h4>" +

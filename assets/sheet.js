@@ -625,7 +625,6 @@
      is where they actually are, so it says which that is rather than implying
      it advances from the tier on screen. */
   function renderActions(t) {
-    var top = CHAR.tiers[CHAR.tiers.length - 1];
     var sheet = "../play/" + CHAR.slug + "-" + t.xp + "xp.html";
     var q = "../creator/index.html?";
     var left = (CHAR.legacies || []).length;
@@ -633,8 +632,7 @@
       '<a class="btn action-play" href="' + esc(sheet) + '">Play' +
         '<span class="act-note">' + t.xp + " XP sheet</span></a>" +
       '<a class="btn action-advance" href="' + esc(q + "advance=" +
-        encodeURIComponent(CHAR.slug)) + '">Advance' +
-        '<span class="act-note">spend XP from ' + top.xp + "</span></a>" +
+        encodeURIComponent(CHAR.slug)) + '">Advance</a>' +
       '<a class="btn action-legacy" href="' + esc(q + "legacy=" +
         encodeURIComponent(CHAR.slug)) + '">Legacy' +
         '<span class="act-note">' +

@@ -1108,6 +1108,38 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
   background:rgba(79,125,92,0.1); font-size:0.9rem; color:var(--sumi);
 }
 .adv-add{ margin:0.3rem 0 0.8rem; }
+/* The three ledgers a purchase can be filed against, shown before anything
+   is bought: the school rank and its curriculum, each title with its own, and
+   any bonds. */
+.adv-tracks{ display:grid; gap:0.45rem; margin:0.2rem 0 0.8rem; }
+.track{
+  padding:0.5rem 0.7rem; border:1px solid var(--edge-soft); border-radius:2px;
+  background:var(--paper); border-left:3px solid var(--edge-soft);
+}
+.track.school{ border-left-color:var(--jade); }
+.track.title{ border-left-color:var(--crimson); }
+.track.title.done{ border-left-color:var(--gold-soft); }
+.track.bond{ border-left-color:var(--ink-dim); }
+.tr-head{ display:flex; justify-content:space-between; gap:0.6rem; flex-wrap:wrap; }
+.tr-name{ font-family:var(--disp); font-weight:600; color:var(--sumi); }
+.tr-new{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.08em;
+  font-size:0.55rem; color:var(--crimson); background:var(--crimson-soft);
+  padding:0.05rem 0.35rem; border-radius:2px; font-weight:400;
+}
+.tr-prog{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.08em;
+  font-size:0.6rem; color:var(--ink-soft); font-variant-numeric:lining-nums;
+}
+.tr-note{ font-size:0.8rem; color:var(--ink-soft); margin-top:0.2rem; }
+.tr-cur{ display:flex; flex-wrap:wrap; gap:0.25rem; margin-top:0.35rem; }
+.cur-chip{
+  font-size:0.72rem; padding:0.08rem 0.4rem; border-radius:2px;
+  background:var(--paper-2); border:1px solid var(--edge-soft); color:var(--ink-2);
+}
+.adv-row{ grid-template-columns:5.5rem 1fr 4rem 2fr auto auto; }
+.ar-alloc .choice{ padding:0.1rem 0.4rem; font-size:0.6rem; }
+
 .adv-ledger{ display:grid; gap:0.3rem; margin:0.4rem 0 0.8rem; }
 .adv-row{
   display:grid; grid-template-columns:5.5rem 1fr 4rem 2fr auto auto;

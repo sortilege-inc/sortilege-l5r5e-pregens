@@ -32,6 +32,10 @@ CATEGORY_SUBTYPE = {
     # compendium keeps it in Title Abilities as a technique
     "signature_scrolls": ("signature_scroll", "technique"),
     "gear": ("weapon", "armor", "item"),
+    # item patterns are bought with experience like anything else, and the
+    # advance ledger files them on their own so they can be told from the gear
+    # they modify
+    "gear_patterns": "item_pattern",
 }
 SCHOOL_CLAN_RE = re.compile(r"^(?P<name>.*?)\s*\[(?P<clan>[^\]]+)\]\s*$")
 # "Scorn of [One Group]" -> "Scorn of"; the bracket is the player's choice
@@ -206,6 +210,23 @@ def fix_title(name):
     return _TITLE_FIX.get(name, name)
 
 
+def pattern_name_corrections():
+    """Upstream pack typos in item-pattern names, fixed before anything sees them."""
+    src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+    return {k: v["to"] for k, v in (src.get("pattern_name_corrections") or {}).items()
+            if not k.startswith("_")}
+
+
+_PATTERN_FIX = None
+
+
+def fix_pattern(name):
+    global _PATTERN_FIX
+    if _PATTERN_FIX is None:
+        _PATTERN_FIX = pattern_name_corrections()
+    return _PATTERN_FIX.get(name, name)
+
+
 def load_catalog(cx):
     index = json.load(open(os.path.join(CATDIR, "index.json")))
     full = {}
@@ -247,6 +268,8 @@ def load_catalog(cx):
                 display = fix_school(display)
             if "titles-" in pack:
                 display = fix_title(display)
+            if (e["subType"] or v["type"]) == "item_pattern":
+                display = fix_pattern(display)
             rows.append((
                 e["uuid"], pack, v["label"], v["type"], e["subType"] or v["type"],
                 display, norm(display),
@@ -431,9 +454,18 @@ def top_tier(c):
     t = max(c["tiers"], key=lambda x: x["xp"])
     out = {k: t.get(k) for k in ("xp", "label", "rank", "school", "rings",
                                  "skills", "social", "derived", "money")}
-    for k in ("techniques", "peculiarities", "titles", "bonds",
-              "signature_scrolls", "gear"):
+    for k in ("techniques", "peculiarities", "signature_scrolls", "gear"):
         out[k] = [e["name"] for e in t.get(k) or []]
+    # Titles and bonds keep their progress, not just their names. A title
+    # carries xp_used against xp_cost — Emerald Magistrate reads 30/30 — and
+    # that is how the ledger knows which title is still incomplete and how far
+    # along it is. Reduced to names, an advance could not tell.
+    for k in ("titles", "bonds"):
+        out[k] = [{f: e.get(f) for f in
+                   ("name", "xp_used", "xp_cost", "bought_at_rank", "text",
+                    "custom")
+                   if e.get(f) is not None}
+                  for e in t.get(k) or []]
     return out
 
 

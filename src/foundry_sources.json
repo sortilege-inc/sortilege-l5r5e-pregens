@@ -178,5 +178,12 @@
    "to": "Spirit Hunter",
    "_why": "Deathly Turns p.20 prints 'Spirit Hunter' throughout ('spirit hunter (title)', 'the Spirit Hunter title', 'new title to bestow on spirit hunters'); 'Spirits hunter' appears nowhere in the book. The DSL corpus DEF is ^\"Spirit Hunter\"."
   }
+ },
+ "pattern_name_corrections": {
+  "_comment": "Item-pattern name typos in the compendium, corrected at catalog load the same way school and title names are. The DSL corpus is the source of truth for the spelling. Delete an entry once the upstream pack is fixed.",
+  "Burning Watter Pattern": {
+   "to": "Burning Water Pattern",
+   "_why": "Fields of Victory: the corpus DEF is ^\"Burning Water Pattern\" (l5r5e-0.4-fields-of-victory-mechanics.ttrpg:1667); 'Watter' is a doubled letter in the pack and appears nowhere in the corpus."
+  }
  }
 }

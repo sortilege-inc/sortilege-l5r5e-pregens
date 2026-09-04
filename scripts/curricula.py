@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Every school curriculum and every title, read out of the DSL corpus.
+"""What the advancement ledger needs from the DSL corpus.
 
 Advancement needs three things the wizard has never had: what a school's
 curriculum lists at each rank (so a purchase can be told in-curriculum from
@@ -11,8 +11,12 @@ errata files last — so what lands is the corpus after errata, not before.
 
     python3 scripts/curricula.py
 
-Writes data/chargen/curricula.js (window.L5R_CURRICULA) and
-data/chargen/titles.js (window.L5R_TITLES), and reports what the corpus does
+Item patterns are here too: they are bought with experience like anything
+else, and the corpus states each one's XP Cost, Effect and Rarity Modifier.
+
+Writes data/chargen/curricula.js (window.L5R_CURRICULA),
+data/chargen/titles.js (window.L5R_TITLES) and
+data/chargen/patterns.js (window.L5R_PATTERNS), and reports what the corpus does
 not state rather than filling it in from somewhere else. Nothing here reads the
 Foundry compendium or the books: the corpus is the source, and a gap in it is a
 thing to fix in the corpus.
@@ -36,8 +40,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESOLVED = os.path.join(ROOT, "pipeline", "dsl", "l5r5e-resolved.ttrpg")
 OUT_CUR = os.path.join(ROOT, "data", "chargen", "curricula.js")
 OUT_TITLE = os.path.join(ROOT, "data", "chargen", "titles.js")
+OUT_PAT = os.path.join(ROOT, "data", "chargen", "patterns.js")
 
 DEF_RE = re.compile(r'(?:#(?P<hash>\S+)\s+)?\^"(?P<name>[^"]+)"\s+DEF\s*\{')
+NESTED_DEF = re.compile(r'\^"[^"]+"\s+DEF\s*\{')
 # the kinds a curriculum entry can be, however the corpus writes them
 KIND = {"skillgroup": "Skill Group", "skill": "Skill",
         "techniquegroup": "Tech. Grp.", "techgroup": "Tech. Grp.",
@@ -290,6 +296,36 @@ def unescape(s):
     return None if s is None else s.replace('\\"', '"') if isinstance(s, str) else s
 
 
+def patterns(text):
+    """Item patterns and their XP cost, from wherever the corpus states them.
+
+    Identified by carrying an ^"XP Cost" beside a ^"Rarity Modifier" — that
+    pairing is what an item pattern is and nothing else in the corpus has it,
+    which matters because ^"XP Cost" on its own is worn by bonds, titles and
+    techniques as well.
+    """
+    out = {}
+    for m in DEF_RE.finditer(text):
+        body, _ = block(text, m.end() - 1)
+        # This DEF's own properties, stopping at the first nested DEF — matched
+        # as a DEF header, not as the substring "DEF", which also occurs inside
+        # DEFAULT. Splitting on the bare word cut Agasha Pattern's head off
+        # immediately before its own `^"XP Cost" INTEGER DEFAULT 6`, so the
+        # pattern read as having no cost and was dropped.
+        nested = NESTED_DEF.search(body)
+        head = body[:nested.start()] if nested else body
+        xp = prop(head, "XP Cost")
+        rar = prop(head, "Rarity Modifier")
+        if xp is None or rar is None:
+            continue
+        name = m.group("name")
+        out.setdefault(norm(name), {
+            "name": name, "hash": m.group("hash"), "xp_cost": xp,
+            "rarity_modifier": rar, "effect": prop(head, "Effect"),
+        })
+    return out
+
+
 def main():
     if not os.path.exists(RESOLVED):
         sys.exit(f"no resolved corpus at {RESOLVED} — run "
@@ -371,8 +407,10 @@ def main():
                     {k: v for k, v in e.items() if k != "rank"})
             schools[norm(name)] = {"school": name, "ranks": ranks}
 
+    pats = patterns(text)
     for path, var, data in ((OUT_CUR, "L5R_CURRICULA", schools),
-                            (OUT_TITLE, "L5R_TITLES", titles)):
+                            (OUT_TITLE, "L5R_TITLES", titles),
+                            (OUT_PAT, "L5R_PATTERNS", pats)):
         with open(path, "w") as f:
             f.write(f"window.{var} = ")
             json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
@@ -396,6 +434,37 @@ def main():
         if gap:
             print(f"   FLAG — {label} in the corpus for {len(gap)}: "
                   + ", ".join(gap))
+    costs = sorted({p["xp_cost"] for p in pats.values()})
+    print(f"{len(pats)} item patterns -> {os.path.relpath(OUT_PAT, ROOT)} "
+          f"({os.path.getsize(OUT_PAT)/1024:.1f} KB), "
+          f"{costs[0]} to {costs[-1]} XP" if pats else "no item patterns found")
+    noeffect = sorted(p["name"] for p in pats.values() if not p["effect"])
+    if noeffect:
+        print(f"   FLAG — no effect stated for {len(noeffect)}: "
+              + ", ".join(noeffect))
+    # A pattern the corpus states but the compendium does not stock cannot be
+    # resolved by build.py, so a character who bought it would fail the build.
+    # Named on every run rather than dropped from the list: the corpus is the
+    # source of truth for what exists, and a compendium gap is Jordan's call.
+    cat = os.path.join(ROOT, "data", "catalog.js")
+    if os.path.exists(cat) and pats:
+        import unicodedata
+
+        def cnorm(x):
+            x = unicodedata.normalize("NFKD", x or "")
+            x = "".join(c for c in x if not unicodedata.combining(c))
+            return re.sub(r"[^a-z0-9]+", "", x.lower())
+
+        known = {cnorm(c["name"]) for c in
+                 json.loads(open(cat, encoding="utf-8").read()
+                            .split("=", 1)[1].rstrip().rstrip(";"))
+                 if c.get("sub_type") == "item_pattern"}
+        astray = sorted(p["name"] for p in pats.values()
+                        if cnorm(p["name"]) not in known)
+        if astray:
+            print(f"   FLAG — in the corpus but not in the compendium, so a "
+                  f"purchase would not resolve ({len(astray)}): "
+                  + ", ".join(astray))
     if dups:
         print(f"   FLAG — curriculum entries arrive more than once for "
               f"{len(dups)} (errata EXTEND and the synthesist appends; "
