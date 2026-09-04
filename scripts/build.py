@@ -536,6 +536,18 @@ def campaigns(cx):
           f"claimed by a campaign, {len(excused)} excused with a reason")
 
     with_arc = sum(1 for c in out if c["arc"])
+    # The roll, accounted for. Not a gate -- a new book adds schools and the
+    # unclaimed count goes back up, which is normal -- but the number is the
+    # one that says how much of the archive's own goal is even planned.
+    unclaimed = sorted(roll[k] for k in roll
+                       if k not in covered and k not in
+                       {norm(p["school"]) for c in out if not c["pack_from"]
+                        for p in c["pencilled"]})
+    print(f"   schools: {len(roll)} on the roll = {len(covered)} built + "
+          f"{len(roll) - len(covered) - len(unclaimed)} pencilled + "
+          f"{len(unclaimed)} unclaimed"
+          + ("   (the roll is closed)" if not unclaimed else ""))
+
     npen = sum(len(c["pencilled"]) for c in out if not c["pack_from"])
     nshare = sum(1 for c in out if c["pack_from"])
     print(f"   campaigns: {len(out)} ({sum(1 for c in out if c['declared'])} "

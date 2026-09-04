@@ -116,6 +116,19 @@
     "The Knotted Tails"
    ]
   },
+  "No Scenario": {
+   "arc": null,
+   "note": "Not an adventure — the schools left over once every other pack had taken what it wanted, gathered so that no school on the compendium's roll goes unplanned. Six of them, and with these pencilled the roll is closed: 24 built and 86 pencilled against 110. Whoever builds these picks the scenario, or none.",
+   "pencilled_schools": [
+    "Akodo Soldier School",
+    "Kitsune Naturalist School",
+    "Mercenary Ninja Training",
+    "Moto Conqueror School",
+    "Qamarist Alchemist Tradition",
+    "Sand Road Wayfinder Tradition"
+   ],
+   "pencilled_why": "Gathered 2026-09-04. These are the six that no adventure claimed, which is not the same as six nobody wanted: Akodo Soldier and Moto Conqueror are line soldiers whose packs filled with commanders and cavalry instead; Kitsune Naturalist lost out to a Kitsune Mediator and a Kitsune Impersonator; Sand Road Wayfinder and Qamarist Alchemist are far-travelled outsiders that a Rokugani backwater and a Shadowlands expedition both passed over; and Mercenary Ninja Training at honour 20 was offered to Sins of Regret and to Winter's Embrace and taken by neither.\n\nThey make a coherent party in spite of that, and an unusual one: two soldiers, a shugenja who reads the land, a sage who makes things, and two people who travel light and ask no questions — honour 20 to 52, four of the six from outside the Great Clans, and every technique type between them. If a scenario is ever wanted for them, they are a caravan."
+  },
   "Portents & Fortunes": {
    "arc": null,
    "note": "Not a published adventure — the owner's solo campaign, so there is no arc in the corpus for it. Already holds Togashi Norikage, the Dragon monk it was built around; the six here are additional to him.",
