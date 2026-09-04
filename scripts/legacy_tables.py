@@ -51,11 +51,17 @@ TESTS = {
                              "op": ">=", "value": 75}},
     "Idealism": {"test": {"kind": "social", "attr": "honor",
                           "op": ">=", "value": 75}},
-    "Inherited Connections": {"test": {"kind": "count", "of": "connection",
-                                       "op": ">=", "value": 5},
-                              "judgement":
-        "Count Ally, Support and comparable connection advantages — the book "
-        "allows any combination."},
+    "Inherited Connections": {
+        "test": {"kind": "count", "of": "connection", "op": ">=", "value": 5},
+        "judgement":
+            "Count Ally, Support and comparable connection advantages — the "
+            "book allows any combination.",
+        # The one template in the line that obliges the SUCCESSOR to do
+        # something at their own character creation, rather than only asking
+        # what the predecessor was. Structured so the wizard can require it
+        # instead of printing a sentence and hoping.
+        "successor": {"kind": "advantage", "n": 1,
+                      "any_of": ["Ally", "Support of"]}},
     "Notorious Scoundrel": {"test": {"kind": "social", "attr": "glory",
                                      "op": "<=", "value": 20}},
     "Pragmatist": {"test": {"kind": "social", "attr": "honor",
@@ -124,6 +130,18 @@ def steps(text):
     return [s for s in out if re.match(r"Step \d", s)]
 
 
+def successor_sentence(props):
+    """The sentence a template addresses to the successor, if it has one.
+
+    Quoted rather than summarised: it is the rule the successor has to follow,
+    and it belongs on their sheet in the book's words.
+    """
+    blob = " ".join(str(props.get(f) or "") for f in
+                    ("Requirement", "Charge", "Effects", "Recovery Note"))
+    m = re.search(r"[^.]*\bsuccessor\b[^.]*\.", blob)
+    return clean(m.group(0)) if m else None
+
+
 def main():
     if not os.path.exists(RESOLVED):
         sys.exit(f"no resolved corpus at {RESOLVED} — run "
@@ -155,6 +173,8 @@ def main():
             "recovery_note": p.get("Recovery Note"),
             "test": spec.get("test"),
             "judgement": spec.get("judgement"),
+            "successor": spec.get("successor"),
+            "successor_text": successor_sentence(p),
         }
 
     framework = steps(text)
@@ -167,8 +187,11 @@ def main():
     print(f"{len(out)} Legacy templates -> {os.path.relpath(OUT, ROOT)} "
           f"({os.path.getsize(OUT)/1024:.1f} KB)")
     tested = sum(1 for t in out.values() if t["test"])
+    obliged = sum(1 for t in out.values() if t["successor"])
     print(f"   {tested} with a requirement a tool can check, "
           f"{len(out) - tested} that turn on what happened in play")
+    print(f"   {obliged} that oblige the successor to do something at their "
+          f"own character creation")
     print(f"   custom-template framework: {len(framework)} steps")
 
     # Every template must be accounted for either way, and every entry in
@@ -176,6 +199,15 @@ def main():
     # otherwise silently lose its test.
     problems = [n["name"] for n in out.values()
                 if not n["test"] and not n["judgement"]]
+    # A template that puts an obligation on the successor in prose but carries
+    # no structured form of it would be printed and not enforced, which is the
+    # same as not having it.
+    unenforced = [t for t in out.values()
+                  if t["successor_text"] and not t["successor"]]
+    for t in unenforced:
+        print(f"   UNENFORCED successor obligation: {t['name']} — "
+              f"{t['successor_text']}")
+    problems += [t["name"] for t in unenforced]
     stray = [k for k in TESTS
              if re.sub(r"[^a-z0-9]+", "", k.lower()) not in out]
     for n in problems:

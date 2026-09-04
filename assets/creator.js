@@ -268,7 +268,8 @@
         first_impression: "", accoutrement: "", stress_reaction: "",
         relationships: "", people: [],
         parent_opinion: { description: "", skill: null },
-        heritage: null, heritage_table: null, heritage_sub: null, death: ""
+        heritage: null, heritage_table: null, heritage_sub: null,
+        legacy: null, legacy_inverted: false, death: ""
       },
       starting_item: "", campaign: "", notes: "", gender: "any",
       // clan/family/school choices the player resolved, keyed by what granted them
@@ -480,6 +481,8 @@
     c.answers.relationships = ans("step16", "relations");
     c.answers.lord_name = ans("step5", "lord_name");
     c.answers.parent_opinion.description = ans("step17", "parents_pov");
+    c.answers.legacy = ans("step18", "legacy") || null;
+    c.answers.legacy_inverted = !!((tq.step18 || {}).answers || {}).legacy_inverted;
     c.answers.heritage = ans("step18", "heritage_name") || null;
     c.answers.heritage_table = heritageTableKey(ans("step18", "heritage_table"));
     c.answers.heritage_sub = ans("step18", "heritage_sub") || null;
@@ -2373,6 +2376,10 @@
   function heritageGrants() {
     var out = { skills: {}, swap: null, techniques: [], peculiarities: [],
                 gear: [], koku: 1, social: { honor: 0, glory: 0, status: 0 } };
+    // "If they do, the player does not apply any results from the Heritage
+    // table in Question 18." The Legacy itself is an advantage and rides in
+    // through peculiarityRefs(), not as a heritage grant.
+    if (hasLegacy()) return out;
     var e = heritageEntry();
     if (!e) return out;
 
@@ -2472,15 +2479,24 @@
     var her = heritageGrants().peculiarities;
     var byName = {};
     her.forEach(function (p) { byName[normName(p.name)] = p; });
+    var leg = legacyAdvantage();
+    if (leg) byName[normName(leg.name)] = leg;
     return heldPeculiarities().map(function (n) {
       var p = byName[normName(n)];
-      return p && p.custom ? { name: p.name, custom: true } : { name: n };
+      if (!p || !p.custom) return { name: n };
+      var o = { name: p.name, custom: true };
+      if (p.text) o.text = p.text;
+      return o;
     });
   }
 
   function heldPeculiarities() {
+    var leg = takenLegacy();
     return [].concat(C.distinctions, C.adversities, C.passions, C.anxieties,
                      C.answers.mentor.granted ? [C.answers.mentor.granted] : [],
+                     // a Legacy is an advantage in its own right, assigned with
+                     // the distinctions and allowed to exceed their limit
+                     leg ? [leg.name] : [],
                      // Several heritages confer one outright, and say so: "this
                      // can be assigned in excess of the normal limitations on
                      // advantages at character creation".
@@ -3313,6 +3329,12 @@
       },
       done: function () {
         if (qAlt(18)) return has(C.answers.raised_by) && has(C.answers.raised_skill);
+        // A Legacy answers the question instead, and answers it fully only
+        // when any obligation it puts on the successor is on the character.
+        if (hasLegacy()) {
+          var ob = legacyObligation();
+          return !ob || ob.met;
+        }
         // Rolling the entry is half the question. The step is answered when
         // what it grants has actually been settled — the skill picked, the
         // technique chosen, the heirloom named.
@@ -3323,6 +3345,37 @@
       },
       render: function (body) {
         var alt18 = qAlt(18);
+        if (!alt18) {
+          /* The other door. Legacies of War: a player making a new character
+             mid-campaign may take on their last PC's Legacy, and if they do
+             they apply no heritage result at all. Offered only when a Legacy
+             has actually been left, so a table not using them never sees it. */
+          if (LEGACY_RECORDS.length) {
+            label(body, "How this question is answered");
+            /* Which door is open is its own state: "" means the Legacy door
+               with nothing picked yet. Deriving it from whether a Legacy is
+               chosen meant choosing the door did nothing visible and dropped
+               you back on the heritage tables. */
+            choice(body, [["heritage", "Roll on a heritage table"],
+                          ["legacy", "Take on a Legacy"]],
+                   C.answers.legacy === null ? "heritage" : "legacy",
+                   function (v) {
+              if (v === "legacy") {
+                forgetHeritagePicks();
+                C.answers.heritage = null;
+                C.answers.heritage_sub = null;
+                C.answers.legacy = "";
+              } else {
+                C.answers.legacy = null;
+                C.answers.legacy_inverted = false;
+              }
+              save(); render();
+            });
+          }
+          if (C.answers.legacy !== null && C.answers.legacy !== undefined) {
+            return legacySection(body);
+          }
+        }
         if (alt18) {
           textStep("raised", "answers.raised_by", "raised_by",
             "Who raised them, and how do they feel about it?")(body);
@@ -4597,9 +4650,16 @@
           step16: { answers: { relations: a.relationships }, picks: {} },
           step17: { answers: { parents_pov: a.parent_opinion.description }, picks: {} },
           step18: { answers: {
-            heritage_name: a.heritage,
-            heritage_table: (HERITAGES[a.heritage_table] || {}).name || a.heritage_table,
-            heritage_sub: a.heritage_sub
+            // which door out of question 18 was taken
+            legacy: a.legacy || null,
+            legacy_inverted: !!a.legacy_inverted,
+            // A Legacy means no heritage result applies, so the record must
+            // not name a table either — it was never consulted, and a
+            // consumer reading one would think it had been.
+            heritage_name: hasLegacy() ? null : a.heritage,
+            heritage_table: hasLegacy() ? null
+              : ((HERITAGES[a.heritage_table] || {}).name || a.heritage_table),
+            heritage_sub: hasLegacy() ? null : a.heritage_sub
           }, picks: heritagePicks() },
           step20: { answers: { death: a.death }, picks: {} }
         }
@@ -5437,6 +5497,139 @@
       done: function () { return false; },
       render: renderAdvanceSave }
   ];
+
+  /* ------------------------------------ question 18: taking a Legacy instead
+
+     "When a player makes a new character during a campaign using Legacies,
+     they may choose to take on the Legacy of their last PC (or another
+     character, at the GM's discretion). If they do, the player does not apply
+     any results from the Heritage table in Question 18."
+
+     So this is not an extra grant beside a heritage — it is the other door out
+     of question 18, and taking it means the heritage tables do not apply at
+     all. The corpus states three more things about it: a Legacy is applied at
+     the same time as distinctions, it may exceed the normal limit on
+     advantages at creation, and the GM may invert it as an adversity.
+
+     One template in the line obliges the successor in turn — Inherited
+     Connections requires them to take Ally [Name] or Support of [One Group] as
+     one of their own advantages — and that is required here rather than
+     printed, so the step cannot be finished while it is unmet. */
+
+  var LEGACY_RECORDS = window.L5R_LEGACY_RECORDS || [];
+
+  function takenLegacy() {
+    var slug = C.answers.legacy;
+    if (!slug) return null;
+    return LEGACY_RECORDS.filter(function (l) {
+      return l.legacy === slug;
+    })[0] || null;
+  }
+
+  function hasLegacy() { return !!takenLegacy(); }
+
+  // A Legacy's obligation on the successor, and whether they have met it.
+  function legacyObligation() {
+    var l = takenLegacy();
+    var spec = l && l.successor;
+    if (!spec) return null;
+    var held = heldPeculiarities();
+    var got = held.filter(function (n) {
+      return (spec.any_of || []).some(function (want) {
+        return new RegExp("^" + want.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") +
+                          "\\b", "i").test(String(n));
+      });
+    });
+    return { spec: spec, text: l.successor_text, held: got,
+             met: got.length >= (spec.n || 1) };
+  }
+
+  /* What a taken Legacy puts on the successor's sheet.
+
+     Carried as custom: a Legacy is a new kind of advantage from Legacies of
+     War and is not in the compendium, so a bare name would fail the build. Its
+     own charge and effects travel with it, because a successor has to play to
+     the charge and the record should not depend on the Legacy table still
+     saying the same thing. */
+  function legacyAdvantage() {
+    var l = takenLegacy();
+    if (!l) return null;
+    var inverted = !!C.answers.legacy_inverted;
+    return {
+      name: l.name,
+      custom: true,
+      text: [(inverted ? "Legacy (inverted as an adversity at the GM's " +
+                         "discretion)" : "Legacy") +
+             ", left by " + l.predecessor_name + ".",
+             l.charge ? "Charge. " + l.charge : null,
+             l.effects ? "Effects. " + l.effects : null,
+             l.successor_text || null].filter(Boolean).join(" ")
+    };
+  }
+
+  function legacySection(body) {
+    var recs = LEGACY_RECORDS;
+    if (!recs.length) {
+      return needs(body, "No Legacies have been left yet. One is made from a " +
+                   "finished character — Promoted characters, then Legacy.");
+    }
+    label(body, "The Legacy this character takes on");
+    pickList(body, recs.map(function (l) {
+      return { value: l.legacy, label: l.name,
+               meta: ["left by " + l.predecessor_name,
+                      l.ring, l.from_template,
+                      l.successor ? "obliges the successor" : null]
+                 .filter(Boolean).join(" · ") };
+    }), C.answers.legacy, function (v) {
+      C.answers.legacy = C.answers.legacy === v ? null : v;
+      save(); render();
+    });
+
+    var l = takenLegacy();
+    if (!l) return;
+
+    var card = document.createElement("div");
+    card.className = "legacy-detail";
+    card.innerHTML =
+      '<h4 class="field-label">' + esc(l.name) + " — as the book states it</h4>" +
+      (l.requirement
+        ? '<p><strong>Requirement on ' + esc(l.predecessor_name) + ".</strong> " +
+          esc(l.requirement) + "</p>" : "") +
+      (l.charge ? '<p><strong>Charge.</strong> ' + esc(l.charge) + "</p>" : "") +
+      (l.effects ? '<p><strong>Effects.</strong> ' + esc(l.effects) + "</p>" : "") +
+      (l.recovery_note
+        ? '<p><strong>Recovery.</strong> ' + esc(l.recovery_note) + "</p>" : "");
+    body.appendChild(card);
+
+    var ob = legacyObligation();
+    if (ob) {
+      var box = document.createElement("div");
+      box.className = "legacy-oblig" + (ob.met ? " met" : "");
+      box.innerHTML = "<strong>" + (ob.met ? "Met" : "Required") + ".</strong> " +
+        esc(ob.text) +
+        (ob.met
+          ? " — this character holds " + esc(ob.held.join(", ")) + "."
+          : " Take one at question 9; the step is not finished until it is on " +
+            "the character.");
+      body.appendChild(box);
+    }
+
+    // The GM may invert a Legacy as an adversity rather than an advantage.
+    var inv = document.createElement("label");
+    inv.className = "filtercheck";
+    inv.innerHTML = '<input type="checkbox"' +
+      (C.answers.legacy_inverted ? " checked" : "") + ">" +
+      "<span>Inverted as an adversity, at the GM's discretion</span>";
+    inv.querySelector("input").addEventListener("change", function (e) {
+      C.answers.legacy_inverted = e.target.checked;
+      save(); render();
+    });
+    body.appendChild(inv);
+
+    needs(body, "Taking this Legacy means no result from a heritage table " +
+          "applies. It is assigned at the same time as distinctions and may " +
+          "exceed the normal limit on advantages at creation.");
+  }
 
   /* ========================================================== legacies
 

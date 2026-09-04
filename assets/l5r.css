@@ -1014,6 +1014,14 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .legacy-card h3{ margin:0 0 0.3rem; font-family:var(--disp); font-size:1.15rem; }
 .legacy-card p{ margin:0.3rem 0; font-size:0.92rem; }
 .legacy-card .lg-must{ color:var(--crimson); }
+.legacy-oblig{
+  margin:0.5rem 0; padding:0.5rem 0.7rem; border-radius:2px;
+  border-left:3px solid var(--crimson); background:var(--crimson-soft);
+  font-size:0.9rem; color:var(--sumi);
+}
+.legacy-oblig.met{
+  border-left-color:var(--jade); background:rgba(79,125,92,0.1);
+}
 .dc-legacy{
   appearance:none; cursor:pointer; border:1px dashed var(--gold-soft);
   border-left:0; background:var(--paper); color:var(--ink-2);
