@@ -101,7 +101,10 @@
     "Nezumi Tattered Ear Explorer Tradition",
     "Yogo Preserver School"
    ],
-   "pencilled_why": "Chosen 2026-09-04 for the expedition the adventure actually is: out through Crab lands into the Shadowlands, to the ruins of Shiro Hiruma. The Hiruma Scout is going home to that ruin and the Kaiu Engineer can read what is left standing; the Agasha Alchemist brews against the Taint and the Shiba Guardian keeps them alive doing it; the Yogo Preserver wards, and carries a curse that belongs to this story. The Nezumi Tattered Ear Explorer is the party's way into The Knotted Tails, which is played inside this adventure — and at honour 18 it is a different game from the other five."
+   "pencilled_why": "Chosen 2026-09-04 for the expedition the adventure actually is: out through Crab lands into the Shadowlands, to the ruins of Shiro Hiruma. The Hiruma Scout is going home to that ruin and the Kaiu Engineer can read what is left standing; the Agasha Alchemist brews against the Taint and the Shiba Guardian keeps them alive doing it; the Yogo Preserver wards, and carries a curse that belongs to this story. The Nezumi Tattered Ear Explorer is the party's way into The Knotted Tails, which is played inside this adventure and shares this pack (decided 2026-09-04) — and at honour 18 it is a different game from the other five.",
+   "pack_shared_with": [
+    "The Knotted Tails"
+   ]
   },
   "Sins of Regret": {
    "arc": "l5r5e-0.4-sins-of-regret.arc",
@@ -125,7 +128,8 @@
   },
   "The Knotted Tails": {
    "arc": "l5r5e-0.4-knotted-tails.arc",
-   "note": "An optional bonus storyline played within Mask of the Oni, before the PCs reach Shiro Hiruma, among the nezumi of the Knotted Tails tribe. Same party as Mask of the Oni if you run it inside that adventure, in which case one pack serves both and this stub can go."
+   "note": "An optional bonus storyline played within Mask of the Oni, before the PCs reach Shiro Hiruma, among the nezumi of the Knotted Tails tribe — who pride themselves on remembering. Sharing Mask of the Oni's pack, decided 2026-09-04, so it keeps no shortlist of its own: same party, same expedition, and that pack already carries a Nezumi Tattered Ear Explorer chosen for this storyline.",
+   "pack_from": "Mask of the Oni"
   },
   "The Lost Writer in the City of the Rich Frog": {
    "arc": "l5r5e-0.4-children-of-five-winds-lost-writer.arc",
