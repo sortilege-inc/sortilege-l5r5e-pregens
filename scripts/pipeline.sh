@@ -60,6 +60,14 @@ REFRESH=""
 [[ " $* " == *" --refresh-dsl "* ]] && REFRESH="--refresh"
 python3 scripts/dsl_rules_text.py $REFRESH
 
+# The published pregens: FFG's own folios for the Beginner Game and the two
+# Gen Con adventures, transcribed verbatim in the corpus and written out as
+# records here. They are the second category of character — reference rather
+# than the archive's work — so they count towards no coverage and the roster
+# hides them unless asked. Runs after the corpus is composed and before the
+# build that reads src/characters/.
+python3 scripts/import_published.py
+
 python3 scripts/build.py
 
 # Chargen tables the Creator reads straight from the corpus, rather than through
@@ -90,6 +98,10 @@ node scripts/coin_selftest.js
 # resolved to nothing and were skipped in silence. This one fails on a record
 # it cannot resolve as loudly as on one that disagrees.
 python3 scripts/coin_audit.py
+# And that the published pregens really are the second category: counted in no
+# coverage number, marked on every roster row so the tab can hide them, the
+# whole printed set present, and still built with a page and a play sheet each.
+python3 scripts/published_gate.py
 # School and title curricula, for the advancement ledger. Reads the resolved
 # corpus that dsl_rules_text.py composed above, so errata are already applied.
 python3 scripts/curricula.py

@@ -1,0 +1,299 @@
+{
+ "slug": "noburo",
+ "name": "Noburo",
+ "folder_label": "Noburo",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "The Highwayman",
+  "adventure": "The Highwayman",
+  "publisher": "Fantasy Flight Games",
+  "year": 2019,
+  "source_file": "l5r5e-0.4-highwayman-pregens.actor"
+ },
+ "identity": {
+  "clan": null,
+  "family": null,
+  "region": "Mountainous",
+  "upbringing": "Temple/Monastic",
+  "origin_type": null,
+  "school": "Mystic of the Mountain",
+  "role": "Monk",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "Pregenerated monk PC for The Highwayman.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": "[\"Haruko: Good terms, she seems like a wayward soul\", \"Mishti: Friendly, she seems determined and honest\", \"Turgen: Friendly, a kind man with a love of animals\", \"Daichi: Very friendly, you know his secret — he's a hinin, but you don't mind (titles are a worldly concern...) and are compassionate to his struggles\", \"Kenshin: Friendly, they seem ambitious and conscientious\"]",
+ "demeanor": "Technique types available: Kata, Rituals, Shūji.",
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 2,
+   "school": "Mystic of the Mountain",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 3,
+    "earth": 3,
+    "fire": 1,
+    "water": 2,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 2,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 2,
+     "theology": 2
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 2,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 38,
+    "status": 35,
+    "ninjo": "To help bring others closer to a path of Enlightenment, and to fill others' lives with peace.",
+    "giri": "A terrible fire left awful scars on your body and your mind, and stole those you cherished from you.",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 3
+   },
+   "money": {
+    "koku": 0,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Cleansing Rite",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "ritual"
+    },
+    {
+     "name": "Artisan's Appraisal",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Air Fist",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kiho"
+    },
+    {
+     "name": "Honest Assessment",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Ki Protection",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kiho"
+    },
+    {
+     "name": "Way of the Earthquake",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kiho"
+    },
+    {
+     "name": "Unexpected Wisdom",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "You are (or at least believe yourself to be) a wealth of wisdom, which you can dispense up to 2 times during this game session. On your turn or at any appropriate time during a narrative scene, you may dispense a small bit of wisdom to a character who can hear you and has not benefited from this ability this scene. The next time a character, including yourself, employs that wisdom they may reduce the TN of that check by 1 and may negate a number of strife up to your ranks in Sentiment or Theology."
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Paragon of Bushidō Tenet [Righteousness]",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "distinction",
+     "ring": "void",
+     "description": "You believe utterly in Righteousness, and others instinctively discern that your actions are genuine when you act in accordance with it. Righteousness is also known as the Right Action, or Justice."
+    },
+    {
+     "name": "Enlightenment",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "passion",
+     "ring": "void",
+     "description": "You feel no attachment to mundane items and earthly titles; you cannot be tempted with material wealth or the promise of power. Detaching yourself from material concerns through contemplation, engaging with nature, and meditating brings you relief from mortal concerns."
+    },
+    {
+     "name": "Horrible Scar",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "adversity",
+     "ring": "air",
+     "description": "You have an awful scar that covers half your face and your upper arm, and strangers stare at you, treat you unfairly, and otherwise judge you for your appearance."
+    },
+    {
+     "name": "Maimed Arm",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "adversity",
+     "ring": "air",
+     "description": "Your left arm is injured, making it much harder to perform activities that involve using it. Gripping anything tightly causes you pain."
+    },
+    {
+     "name": "Softheartedness",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "anxiety",
+     "ring": "fire",
+     "description": "If given the choice to kill someone or show mercy, you always spare their life, even if it is not your interest to let them live. When dealing with matters of killing you experience significant distress."
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Bō",
+     "quantity": 1,
+     "printed": "Bō (staff): Damage 6/2, Range 1–2, Mundane",
+     "custom": true
+    },
+    {
+     "name": "Punch",
+     "quantity": 1,
+     "printed": "Punch (hand): Damage 1/2, Range 0, Snaring",
+     "custom": true
+    },
+    {
+     "name": "Kick",
+     "quantity": 1,
+     "printed": "Kick (leg): Damage 2/1, Range 1",
+     "custom": true
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1,
+     "printed": "Traveling Clothes (Physical 2, Durable, Mundane, Subtle)",
+     "custom": true
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1,
+     "printed": "Sanctified Robes (Physical 1, Supernatural 3, Ceremonial)",
+     "custom": true
+    },
+    {
+     "name": "1 day's worth of rations",
+     "quantity": 1,
+     "printed": "1 day's worth of rations",
+     "custom": true
+    },
+    {
+     "name": "small tent",
+     "quantity": 1,
+     "printed": "small tent",
+     "custom": true
+    },
+    {
+     "name": "a journal of somewhat useful musings",
+     "quantity": 1,
+     "printed": "a journal of somewhat useful musings",
+     "custom": true
+    },
+    {
+     "name": "a lucky cricket in a tiny box with holes",
+     "quantity": 1,
+     "printed": "a lucky cricket in a tiny box with holes",
+     "custom": true
+    },
+    {
+     "name": "cooking kit",
+     "quantity": 1,
+     "printed": "cooking kit",
+     "custom": true
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

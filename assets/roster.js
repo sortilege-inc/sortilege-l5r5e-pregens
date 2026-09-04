@@ -10,6 +10,12 @@
   }
   /* `opts.actions` puts Edit, +XP and Legacy at the foot of every card.
 
+     Never on a published pregen, whatever opts says. Those records are written
+     by scripts/import_published.py from the corpus on every run, so an edit or
+     an advance landed against one would be overwritten the next time the
+     pipeline runs. They are reference: to play one and take them further, copy
+     them into the archive as your own character.
+
      Those three used to be a "Promoted characters" list in the Creator's
      drafts panel, which is the wrong place twice over: that panel is for work
      in progress, and someone who wants to do something with a finished
@@ -33,9 +39,11 @@
           esc(creator + kind + "=" + encodeURIComponent(c.slug)) + '">' +
           label + "</a>";
       }
-      return '<div class="pcard">' +
+      var published = c.provenance === "published";
+      return '<div class="pcard' + (published ? " pc-published" : "") + '">' +
         '<a class="pc-open" href="' + esc(prefix) + esc(c.slug) + '.html">' +
         '<div class="frame">' + art +
+        (published ? '<span class="pubbadge">Published</span>' : "") +
         '<span class="tiercount">' + c.tier_count +
         (c.tier_count === 1 ? " tier" : " tiers") + "</span></div>" +
         '<span class="nm">' + esc(c.name) + "</span>" +
@@ -45,8 +53,10 @@
         esc(c.clan || String(c.region || "").replace(/ Region$/, "")) + " · " +
         (c.xp_min === c.xp_max ? c.xp_min : c.xp_min + "–" + c.xp_max) + " XP</span>" +
         (c.campaign ? '<span class="camp">' + esc(c.campaign) + "</span>" : "") +
+        (published && c.product
+          ? '<span class="camp pc-product">' + esc(c.product) + "</span>" : "") +
         "</a>" +
-        (actions
+        (actions && !published
           ? '<div class="pc-actions">' +
             act("edit", "Edit", "Change " + c.name + " — landed against the " +
                 "record, not exported as a new one") +

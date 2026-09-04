@@ -117,9 +117,16 @@ def main():
                 if half.strip():
                     grants.setdefault(norm(half), (z, label))
 
-    bad, unresolved, checked = [], [], 0
+    bad, unresolved, checked, published = [], [], 0, 0
     for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
         doc = json.load(open(path, encoding="utf-8"))
+        # A published pregen's purse is transcribed from its printed folio --
+        # already spent down on the gear the sheet lists, at a school rank
+        # above 1 -- so what question 2 would have given is not what it should
+        # be carrying. Counted and named, not checked.
+        if doc.get("provenance") == "published":
+            published += 1
+            continue
         tiers = sorted(doc.get("tiers") or [], key=lambda t: t.get("xp") or 0)
         if not tiers:
             continue
@@ -149,7 +156,9 @@ def main():
         return 1
 
     print(f"coin audit: {checked} records carry exactly what question 2 gives, "
-          f"none unresolved")
+          f"none unresolved"
+          + (f"; {published} published pregens carry their folio's purse "
+             f"instead and are not checked" if published else ""))
     return 0
 
 

@@ -38,10 +38,23 @@ def main():
     cx.row_factory = sqlite3.Row
     fail = []
 
+    # A published pregen counts towards nothing here. It is somebody else's
+    # character, transcribed from a printed folio: that a school has one is not
+    # evidence the archive has covered it, and a technique carried only by one
+    # is not a technique the archive has used. It is listed so the number is
+    # not a mystery, and then set aside.
+    ARCHIVE = "provenance = 'archive'"
     total = cx.execute("SELECT COUNT(*) FROM catalog").fetchone()[0]
-    nchar = cx.execute("SELECT COUNT(*) FROM character").fetchone()[0]
+    nchar = cx.execute(f"SELECT COUNT(*) FROM character WHERE {ARCHIVE}").fetchone()[0]
+    npub = cx.execute("SELECT COUNT(*) FROM character"
+                      " WHERE provenance = 'published'").fetchone()[0]
+    ntier = cx.execute(
+        f"SELECT COUNT(*) FROM tier WHERE slug IN"
+        f" (SELECT slug FROM character WHERE {ARCHIVE})").fetchone()[0]
     print(f"inventory units: {total} catalog entries, {nchar} characters, "
-          f"{cx.execute('SELECT COUNT(*) FROM tier').fetchone()[0]} tiers")
+          f"{ntier} tiers"
+          + (f"   (plus {npub} published pregens, which count towards none of "
+             f"the below)" if npub else ""))
     if total == 0:
         fail.append("catalog is EMPTY — the denominator did not load")
 
@@ -54,12 +67,16 @@ def main():
             t = cx.execute("SELECT COUNT(*) FROM catalog WHERE " + where).fetchone()[0]
             u = cx.execute(
                 "SELECT COUNT(*) FROM catalog c WHERE " + where +
-                " AND EXISTS (SELECT 1 FROM character ch WHERE ch.school_norm = c.norm)"
+                " AND EXISTS (SELECT 1 FROM character ch WHERE ch.school_norm = c.norm"
+                f"            AND ch.{ARCHIVE})"
             ).fetchone()[0]
         else:
             row = cx.execute(
                 "SELECT COUNT(*) t, SUM(CASE WHEN uuid IN"
-                " (SELECT catalog_uuid FROM tier_content WHERE catalog_uuid IS NOT NULL)"
+                " (SELECT catalog_uuid FROM tier_content tc"
+                "  WHERE tc.catalog_uuid IS NOT NULL"
+                "  AND EXISTS (SELECT 1 FROM character ch WHERE ch.slug = tc.slug"
+                f"             AND ch.{ARCHIVE}))"
                 " THEN 1 ELSE 0 END) u FROM catalog WHERE " + where).fetchone()
             t, u = row["t"], row["u"] or 0
         pct = f"{round(100 * u / t)}%" if t else "—"
@@ -131,8 +148,22 @@ def main():
     for s in sorted(pages - slugs):
         fail.append(f"{s}.html: page with no character source")
 
-    customs = cx.execute("SELECT COUNT(DISTINCT name) FROM tier_content WHERE custom=1").fetchone()[0]
-    print(f"\noff-catalog (custom) entries carried by characters: {customs}")
+    # Every line on a published pregen's folio is recorded custom -- the sheet
+    # is a transcription, not an advancement ledger -- so counting them here
+    # would swamp the number this is for: how much of what the archive's own
+    # characters carry is off the compendium.
+    customs = cx.execute(
+        f"SELECT COUNT(DISTINCT name) FROM tier_content tc WHERE custom=1"
+        f" AND EXISTS (SELECT 1 FROM character ch WHERE ch.slug = tc.slug"
+        f"             AND ch.{ARCHIVE})").fetchone()[0]
+    pubcustoms = cx.execute(
+        "SELECT COUNT(DISTINCT name) FROM tier_content tc WHERE custom=1"
+        " AND EXISTS (SELECT 1 FROM character ch WHERE ch.slug = tc.slug"
+        "             AND ch.provenance = 'published')").fetchone()[0]
+    print(f"\noff-catalog (custom) entries carried by characters: {customs}"
+          + (f"   (a further {pubcustoms} on the published pregens' folios, "
+             f"which are transcriptions rather than ledgers)"
+             if pubcustoms else ""))
 
     if fail:
         print(f"\nFAIL ({len(fail)}):")

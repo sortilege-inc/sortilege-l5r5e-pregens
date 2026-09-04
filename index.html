@@ -7,7 +7,7 @@
 <meta name="description" content="A pre-generated character for every school in Legend of the Five Rings 5th Edition — each one playable at several XP tiers.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/l5r.css?v=ddca57be">
+<link rel="stylesheet" href="assets/l5r.css?v=5b88ec5d">
 </head>
 <body>
 <nav class="topnav">
@@ -59,10 +59,10 @@
 
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
-<script src="data/roster.js?v=51b41332"></script>
+<script src="data/roster.js?v=1e5def76"></script>
 <script src="data/catalog.js?v=9b36d0ae"></script>
 <script src="data/coverage.js?v=a9d5cbf4"></script>
-<script src="assets/roster.js?v=f398b418"></script>
+<script src="assets/roster.js?v=2cefdb59"></script>
 <script>
 (function () {
   var chars = window.L5R_ROSTER || [];
@@ -80,6 +80,10 @@
       '<div class="v">' + v + (total ? ' <small>/ ' + total + '</small>' : '') + '</div>' +
       (total ? '<div class="bar"><i style="width:' + pct + '%"></i></div>' : '') + '</div>';
   }
+  // The archive's own characters. The published pregens are FFG's folios,
+  // transcribed for reference: they count towards no tile here and are turned
+  // on in the Characters tab, not on the front page.
+  var mine = chars.filter(function (c) { return c.provenance !== "published"; });
   var used = cov.used || {};
   function count(pred) {
     var t = 0, u = 0;
@@ -97,14 +101,14 @@
   var gear = count(function (e) { return ["weapon", "armor", "item"].indexOf(e.sub_type) >= 0; });
   document.getElementById("headline").innerHTML =
     tile("Schools", covered, schools.length) +
-    tile("Characters", chars.length, 0) +
-    tile("XP tiers", chars.reduce(function (a, c) { return a + c.tier_count; }, 0), 0) +
+    tile("Characters", mine.length, 0) +
+    tile("XP tiers", mine.reduce(function (a, c) { return a + c.tier_count; }, 0), 0) +
     tile("Techniques", tech[0], tech[1]) +
     tile("Advantages &amp; Disadvantages", pec[0], pec[1]) +
     tile("Equipment", gear[0], gear[1]);
 
   document.getElementById("roster").innerHTML =
-    window.renderRoster(chars, "characters/");
+    window.renderRoster(mine, "characters/");
 })();
 </script>
 </body>

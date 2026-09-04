@@ -574,8 +574,15 @@
     var prev = idx > 0 ? CHAR.tiers[idx - 1] : null;
 
     var titleOnly = tierTitleOnly(t);
-    el("school-line").innerHTML = esc(t.school || CHAR.school || "") +
-      (t.rank ? ' <span class="muted">· Rank ' + t.rank + "</span>" : "") +
+    // The Beginner Game's seven are students competing to graduate, so their
+    // folios name no school at all. Without a school there is nothing for the
+    // rank to hang off, and the line read " · Rank 1".
+    var school = t.school || CHAR.school || "";
+    el("school-line").innerHTML =
+      (school
+        ? esc(school) + (t.rank ? ' <span class="muted">· Rank ' + t.rank
+                                  + "</span>" : "")
+        : (t.rank ? '<span class="muted">Rank ' + t.rank + "</span>" : "")) +
       (titleOnly ? ' · <strong>' + esc(titleOnly) + "</strong>" : "");
 
     el("changelog-target").innerHTML = renderChangelog(idx);
@@ -628,9 +635,27 @@
     var sheet = "../play/" + CHAR.slug + "-" + t.xp + "xp.html";
     var q = "../creator/index.html?";
     var left = (CHAR.legacies || []).length;
-    el("char-actions").innerHTML =
-      '<a class="btn action-play" href="' + esc(sheet) + '">Play' +
-        '<span class="act-note">' + t.xp + " XP sheet</span></a>" +
+    var play = '<a class="btn action-play" href="' + esc(sheet) + '">Play' +
+      '<span class="act-note">' + t.xp + " XP sheet</span></a>";
+
+    /* A published pregen gets Play and nothing else. Its record is rewritten
+       from the corpus by scripts/import_published.py on every pipeline run, so
+       an advance or a Legacy landed against it would be gone the next time —
+       and it is a transcription of somebody else's printed folio, which is not
+       ours to carry forward. Playing one is exactly what it is for. To take
+       that character further, build them into the archive as your own. */
+    if (CHAR.provenance === "published") {
+      var pub = CHAR.published || {};
+      el("char-actions").innerHTML = play +
+        '<span class="act-published">' +
+          esc(pub.product || "A published pregen") +
+          '<span class="act-note">' +
+            (pub.publisher ? esc(pub.publisher) + (pub.year ? " · " + pub.year : "")
+                           : "published pregen") +
+          "</span></span>";
+      return;
+    }
+    el("char-actions").innerHTML = play +
       '<a class="btn action-advance" href="' + esc(q + "advance=" +
         encodeURIComponent(CHAR.slug)) + '">Advance</a>' +
       '<a class="btn action-legacy" href="' + esc(q + "legacy=" +

@@ -6,7 +6,7 @@
 <title>Characters — Sortilege L5R Pregens</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/l5r.css?v=ddca57be">
+<link rel="stylesheet" href="../assets/l5r.css?v=5b88ec5d">
 </head>
 <body>
 <nav class="topnav">
@@ -40,6 +40,10 @@
     <select id="role"><option value="">All</option></select>
     <label for="campaign">Campaign</label>
     <select id="campaign"><option value="">All</option></select>
+    <label class="tog" for="published">
+      <input type="checkbox" id="published">
+      <span>Published pregens</span>
+    </label>
     <span class="chip" id="shown"></span>
   </div>
 
@@ -48,8 +52,8 @@
 
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
-<script src="../data/roster.js?v=51b41332"></script>
-<script src="../assets/roster.js?v=f398b418"></script>
+<script src="../data/roster.js?v=1e5def76"></script>
+<script src="../assets/roster.js?v=2cefdb59"></script>
 <script>
 (function () {
   var chars = window.L5R_ROSTER || [];
@@ -58,32 +62,60 @@
       role = document.getElementById("role"),
       campaign = document.getElementById("campaign");
 
-  function fill(sel, key) {
-    var vals = {};
-    chars.forEach(function (c) { if (c[key]) vals[c[key]] = 1; });
-    Object.keys(vals).sort().forEach(function (v) {
-      var o = document.createElement("option"); o.value = o.textContent = v; sel.appendChild(o);
+  var published = document.getElementById("published");
+  // Two kinds of character live here. The archive is the work — one build per
+  // school, ours. The published pregens are the folios FFG shipped with the
+  // Beginner Game and the Gen Con adventures, transcribed verbatim: useful to
+  // hand to a player, but not ours and not what the coverage count is about.
+  // So they are off by default and the toggle says how many are waiting.
+  var mine = chars.filter(function (c) { return c.provenance !== "published"; });
+  var pubs = chars.filter(function (c) { return c.provenance === "published"; });
+  // the option lists follow whichever set is on screen, so turning the pregens
+  // on does not leave a clan in the dropdown that nothing in view has
+  function fillAll(pool) {
+    [clan, role, campaign].forEach(function (sel) {
+      var was = sel.value;
+      while (sel.options.length > 1) sel.remove(1);
+      sel.value = "";
+      var key = sel.id;
+      var vals = {};
+      pool.forEach(function (c) { if (c[key]) vals[c[key]] = 1; });
+      Object.keys(vals).sort().forEach(function (v) {
+        var o = document.createElement("option");
+        o.value = o.textContent = v;
+        sel.appendChild(o);
+      });
+      if (was && vals[was]) sel.value = was;
     });
   }
-  fill(clan, "clan"); fill(role, "role"); fill(campaign, "campaign");
 
   function draw() {
+    var pool = published.checked ? chars : mine;
     var term = q.value.trim().toLowerCase();
-    var list = chars.filter(function (c) {
+    var list = pool.filter(function (c) {
       if (clan.value && c.clan !== clan.value) return false;
       if (role.value && c.role !== role.value) return false;
       if (campaign.value && c.campaign !== campaign.value) return false;
       if (!term) return true;
-      return [c.name, c.school, c.clan, c.family, c.role, c.campaign]
+      return [c.name, c.school, c.clan, c.family, c.role, c.campaign, c.product]
         .join(" ").toLowerCase().indexOf(term) >= 0;
     });
     // Edit, +XP and Legacy under each card: this is the roster, where someone
-    // comes to do something with a character they already have.
+    // comes to do something with a character they already have. renderRoster
+    // withholds them from a published pregen, whose record the importer owns.
     document.getElementById("roster").innerHTML =
       window.renderRoster(list, "", { actions: true });
     document.getElementById("shown").textContent =
-      list.length + " of " + chars.length;
+      list.length + " of " + pool.length;
   }
+  published.nextElementSibling.textContent =
+    pubs.length ? "Published pregens (" + pubs.length + ")" : "Published pregens";
+  if (!pubs.length) published.closest("label").hidden = true;
+  fillAll(mine);
+  published.addEventListener("change", function () {
+    fillAll(published.checked ? chars : mine);
+    draw();
+  });
   [q, clan, role, campaign].forEach(function (e) { e.addEventListener("input", draw); });
   draw();
 })();

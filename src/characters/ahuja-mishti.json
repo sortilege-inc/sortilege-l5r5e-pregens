@@ -1,0 +1,343 @@
+{
+ "slug": "ahuja-mishti",
+ "name": "Ahuja Mishti",
+ "folder_label": "Ahuja Mishti",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "The Highwayman",
+  "adventure": "The Highwayman",
+  "publisher": "Fantasy Flight Games",
+  "year": 2019,
+  "source_file": "l5r5e-0.4-highwayman-pregens.actor"
+ },
+ "identity": {
+  "clan": null,
+  "family": null,
+  "region": "Yodha",
+  "upbringing": "Hunter",
+  "origin_type": "gaijin",
+  "school": "Ivory Kingdoms Sage",
+  "role": "Sage",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "Pregenerated gaijin PC for The Highwayman.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": "[\"Haruko: Friendly, she seems like a kindred spirit who has seen struggle\", \"Kenshin: Friendly, seems friendly and honest\", \"Turgen: Friendly, another person who knows the realities of being in Rokugan as an outsider. He has a mischievous spirit haunting him, but you don't see any reason for that to hinder your friendship\", \"Daichi: Neutral, he seems to be nervous most of the time\", \"Noboru: Friendly, they remind you of the wizened sage of your village\"]",
+ "demeanor": "Technique types available: Kata, Rituals, Kihō.",
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 2,
+   "school": "Ivory Kingdoms Sage",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 1,
+    "earth": 3,
+    "fire": 2,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 2,
+     "ranged": 0,
+     "unarmed": 2,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 0,
+     "theology": 2
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 34,
+    "status": 3,
+    "ninjo": "To recover your family's lost blade and make peace with yourself.",
+    "giri": "Haunted by your part in your family's death, you fear that recovering their blade won't relieve your guilt.",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 10,
+    "focus": 3,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "koku": 0,
+    "bu": 4,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Bellow of Resolve",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata"
+    },
+    {
+     "name": "Cleansing Spirit",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kiho"
+    },
+    {
+     "name": "Ki Protection",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kiho"
+    },
+    {
+     "name": "Threshold Barrier",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "ritual"
+    },
+    {
+     "name": "Earth Needs No Eyes",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kiho"
+    },
+    {
+     "name": "Earthen Fist",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kiho"
+    },
+    {
+     "name": "Landslide Strike",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata"
+    },
+    {
+     "name": "Gift of Inner Power",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "You can infuse other characters with your inner energy. After you perform a check to activate one of your kihō (Cleansing Spirit, Earth Needs No Eyes, Earthen Fist, or Ki Protection), you can receive up to your school rank and choose another character at range 0–1. If you do, that character gains the enhancement effect of your kihō in your stead (you may still resolve the burst effect, if able). The effect persists a number of rounds equal to the amount of fatigue you received this way plus your ranks in Meditation (1). Only one character can benefit from your kihō in this way at a time."
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Sixth Sense",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "distinction",
+     "ring": "void",
+     "description": "You have the instinctive sense of supernatural beings, and you can sense the presence of spirits even if they have not revealed themselves. This feeling is ominous in the presence of evil and neutral if the beings are going about their usual business. You are exceptionally good at following your hunches."
+    },
+    {
+     "name": "Large Stature",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "distinction",
+     "ring": "earth",
+     "description": "You are easy to spot in a crowd, can reach high spaces, can see over others, and tend to hit your head on doorways."
+    },
+    {
+     "name": "Curiosity",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "passion",
+     "ring": "fire",
+     "description": "The first time you attempt a new task and fail, you always think of another route you could try to take to overcome or learn more about the problem. You always feel better after taking a step closer to answering an interesting question."
+    },
+    {
+     "name": "Encompassing Duty",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "adversity",
+     "ring": "earth",
+     "description": "You have a duty to avenge your family. You must secure your family's sacred gada (mace) and destroy the monster who stole it. Whenever you make a check related to overcoming something that is hindering you in achieving your goal, you must choose and reroll two dice containing Success or Strife symbols."
+    },
+    {
+     "name": "Gaijin Name",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "adversity",
+     "ring": "fire",
+     "description": "People of a higher status tend to assume you are uneducated, while people of lower status tend to be fearful of you. You struggle to inspire those who are not from your culture."
+    },
+    {
+     "name": "The Coming Storm",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "anxiety",
+     "ring": "void",
+     "description": "Your family has been plagued by wicked creatures for generations. As a result, you are constantly vigilant for Tainting beings that will spell your demise. When performing a check that involves planning or preparation for securing your family's well-being (such as a Command check to warn others of an impending attack related to wicked creatures), you receive 3 strife. If this was the first time this has occurred this scene, gain 1 Void point."
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Talwar",
+     "quantity": 1,
+     "printed": "Talwar: Damage 4/6, Range 1, Cumbersome, Durable, Razor-Edged",
+     "custom": true
+    },
+    {
+     "name": "Chain Whip",
+     "quantity": 1,
+     "printed": "Chain Whip: Damage 3/5, Range 1–2, Razor-Edged, Snaring",
+     "custom": true
+    },
+    {
+     "name": "Punch",
+     "quantity": 1,
+     "printed": "Punch: Damage 1/2, Range 0, Snaring",
+     "custom": true
+    },
+    {
+     "name": "Kick",
+     "quantity": 1,
+     "printed": "Kick: Damage 2/1, Range 1",
+     "custom": true
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1,
+     "printed": "Traveling Clothes (Physical 2, Durable, Mundane, Subtle)",
+     "custom": true
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1,
+     "printed": "Sanctified Robes (Physical 1, Supernatural 3, Ceremonial)",
+     "custom": true
+    },
+    {
+     "name": "Map of the route to Crab lands from the Sand Road",
+     "quantity": 1,
+     "printed": "Map of the route to Crab lands from the Sand Road",
+     "custom": true
+    },
+    {
+     "name": "5 days' rations",
+     "quantity": 1,
+     "printed": "5 days' rations",
+     "custom": true
+    },
+    {
+     "name": "small sketch of family",
+     "quantity": 1,
+     "printed": "small sketch of family",
+     "custom": true
+    },
+    {
+     "name": "finger of jade",
+     "quantity": 1,
+     "printed": "finger of jade",
+     "custom": true
+    },
+    {
+     "name": "finger of coral",
+     "quantity": 1,
+     "printed": "finger of coral",
+     "custom": true
+    },
+    {
+     "name": "small tent",
+     "quantity": 1,
+     "printed": "small tent",
+     "custom": true
+    },
+    {
+     "name": "whetstone",
+     "quantity": 1,
+     "printed": "whetstone",
+     "custom": true
+    },
+    {
+     "name": "fishing kit",
+     "quantity": 1,
+     "printed": "fishing kit",
+     "custom": true
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

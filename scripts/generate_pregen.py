@@ -178,7 +178,10 @@ def usage_counts():
         return {}
     cx = sqlite3.connect(DB)
     return {r[0]: r[1] for r in cx.execute(
-        "SELECT norm, COUNT(DISTINCT slug) FROM tier_content GROUP BY norm")}
+        "SELECT norm, COUNT(DISTINCT slug) FROM tier_content tc"
+        " WHERE EXISTS (SELECT 1 FROM character ch WHERE ch.slug = tc.slug"
+        "               AND ch.provenance = 'archive')"
+        " GROUP BY norm")}
 
 
 def least_used(names, counts, n=1, seed=""):
@@ -878,8 +881,12 @@ def main():
     cx = sqlite3.connect(DB)
     cx.row_factory = sqlite3.Row
 
+    # A school the Beginner Game happens to have a folio for is still a school
+    # the archive owes a character, so published pregens do not make one
+    # covered.
     covered = {norm(r["school"]) for r in cx.execute(
-        "SELECT school FROM character WHERE school IS NOT NULL")}
+        "SELECT school FROM character"
+        " WHERE school IS NOT NULL AND provenance = 'archive'")}
     all_schools = [r["name"] for r in cx.execute(
         "SELECT name FROM catalog WHERE pack LIKE '%school-curriculum%' ORDER BY name")]
     uncovered = [s for s in all_schools if norm(s) not in covered]
@@ -922,7 +929,8 @@ def main():
     counts = usage_counts()
     # every personal name already in the archive, so generated ones do not collide
     taken = []
-    for r in cx.execute("SELECT name FROM character"):
+    for r in cx.execute("SELECT name FROM character"):   # published ones too:
+        # a name already in the archive is taken whoever wrote it
         taken += (r["name"] or "").split()
     names = {"pool": GIVEN, "used": taken}
 

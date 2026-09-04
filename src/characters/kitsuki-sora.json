@@ -1,0 +1,254 @@
+{
+ "slug": "kitsuki-sora",
+ "name": "Kitsuki Sora",
+ "folder_label": "Kitsuki Sora",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "Wedding at Kyotei Castle",
+  "adventure": "Wedding at Kyotei Castle",
+  "publisher": "Fantasy Flight Games",
+  "year": 2018,
+  "source_file": "l5r5e-0.4-wedding-kyotei-pregens.actor"
+ },
+ "identity": {
+  "clan": "Dragon",
+  "family": "Kitsuki",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
+  "school": "Kitsuki Investigator",
+  "role": "Courtier",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "Pregenerated PC for Wedding at Kyotei Castle. Technique types available: Kata, Rituals, Shūji.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": null,
+ "demeanor": "Very fastidious, especially around crime scenes; strokes beard when thinking.",
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 2,
+   "school": "Kitsuki Investigator",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 2,
+    "earth": 3,
+    "fire": 3,
+    "water": 2,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 2,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 1,
+     "sentiment": 3,
+     "theology": 1
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 2,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 55,
+    "glory": 45,
+    "status": 35,
+    "ninjo": "Find out the truth surrounding the murder of Retsu and use this knowledge to the advantage of the Dragon Clan.",
+    "giri": "As a diplomat, ensure that the Dragon Clan is considered an ally of the lord and lady of Kyotei Castle (regardless of their allegiance).",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 12,
+    "composure": 10,
+    "focus": 3,
+    "vigilance": 2,
+    "void_points": 1
+   },
+   "money": {
+    "koku": 6,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Earth",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "opportunity",
+     "description": "When you make a Martial Arts [Melee, Ranged, or Unarmed] (Earth) check, you may spend Opportunity in the following way: Earth Opportunity+: Treat your physical resistance as 1 higher per Opportunity spent this way until the beginning of your next turn."
+    },
+    {
+     "name": "Truth Burns through Lies",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "opportunity",
+     "description": "When making a Scholar skill (Fire) check to assess a character's story, you may spend Opportunity in the following way: Fire Opportunity: If there is a single statement upon which the character's story hinges, you determine what it is and what you would need to do to verify or disprove it."
+    },
+    {
+     "name": "Kitsuki's Method",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "When performing a check to investigate with any skill, you may treat your ranks in the skill you are using as being equal to your school rank (2). If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add a kept Opportunity set to an Explosive Success result instead."
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Ambidexterity",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "distinction",
+     "ring": "air",
+     "description": "As you have no dominant hand, you can compensate if your right hand is injured or lost. This lets you use weapons and make actions with either hand."
+    },
+    {
+     "name": "History",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "passion",
+     "ring": "earth",
+     "description": "After a short time spent studying it, you can discern the era and context of any object, structure, or text you encounter—or else you know for certain that no chronicler of the Emerald Empire has encountered this thing before."
+    },
+    {
+     "name": "Whispers of Doom",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "adversity",
+     "ring": "void",
+     "description": "You are well-known, but not for the right reasons. Characters who do not know you personally always assume that those around you will perish or meet bad ends, even if you survive to spread your ill fortune further."
+    },
+    {
+     "name": "Impatience",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "anxiety",
+     "ring": "earth",
+     "description": "You find it difficult to repress yourself, and when you are forced to wait, it causes you palpable discomfort. If given the choice between seizing an opportunity and waiting for a better moment, you strive to seize the opportunity despite risks that might be mitigated if you act later."
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Jian",
+     "quantity": 1,
+     "printed": "Jian (sword): Damage 5/3, Range 0–1",
+     "custom": true
+    },
+    {
+     "name": "Jitte",
+     "quantity": 1,
+     "printed": "Jitte (forked hand weapon): Damage 3/2, Range 0, Concealable, Snaring",
+     "custom": true
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1,
+     "printed": "Wakizashi (short sword): Damage 3/5 (7 DLS if 2 handed), Range 0–1, Ceremonial, Razor-Edged",
+     "custom": true
+    },
+    {
+     "name": "Common Clothes",
+     "quantity": 1,
+     "printed": "Common Clothes (Physical 1, Mundane)",
+     "custom": true
+    },
+    {
+     "name": "Ceremonial Clothes",
+     "quantity": 1,
+     "printed": "Ceremonial Clothes (Physical 1, Ceremonial, Resplendent)",
+     "custom": true
+    },
+    {
+     "name": "Traveling clothes",
+     "quantity": 1,
+     "printed": "Traveling clothes",
+     "custom": true
+    },
+    {
+     "name": "knife",
+     "quantity": 1,
+     "printed": "knife",
+     "custom": true
+    },
+    {
+     "name": "calligraphy set",
+     "quantity": 1,
+     "printed": "calligraphy set",
+     "custom": true
+    },
+    {
+     "name": "traveling pack",
+     "quantity": 1,
+     "printed": "traveling pack",
+     "custom": true
+    },
+    {
+     "name": "journal of observations",
+     "quantity": 1,
+     "printed": "journal of observations",
+     "custom": true
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

@@ -1,0 +1,242 @@
+{
+ "slug": "kaito-natsuyuki",
+ "name": "Kaito Natsuyuki",
+ "folder_label": "Kaito Natsuyuki",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "Wedding at Kyotei Castle",
+  "adventure": "Wedding at Kyotei Castle",
+  "publisher": "Fantasy Flight Games",
+  "year": 2018,
+  "source_file": "l5r5e-0.4-wedding-kyotei-pregens.actor"
+ },
+ "identity": {
+  "clan": "Phoenix",
+  "family": "Kaito",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
+  "school": "Kaito Shrine Keeper",
+  "role": "Monk",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "Pregenerated PC for Wedding at Kyotei Castle. Technique types available: Kata, Invocations, Rituals, Shūji.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": null,
+ "demeanor": "Has a long scar along one arm, but refuses to speak of it; wears hair in a severe bun, and is obsessive about keeping it perfect.",
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 2,
+   "school": "Kaito Shrine Keeper",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 2,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 0,
+     "design": 1,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 3,
+     "unarmed": 0,
+     "meditation": 2,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 2
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 30,
+    "status": 35,
+    "ninjo": "Prove to the members of the other Great Clans—and to yourself—that the Kaito are as worthy as any other major family.",
+    "giri": "Investigate sources of elemental imbalance in the Golden Valley, such as displeased kami and restless ghosts, and assist in appeasing them.",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 3,
+    "void_points": 2
+   },
+   "money": {
+    "koku": 4,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Tempest of Air",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "invocation",
+     "description": "As an Attack action, you may make a TN 3 Theology (Air) check targeting each character at range 2–3. If you succeed, blasts of wind smite each target. Each target suffers supernatural damage equal to your Air Ring and must resist with a TN 4 Fitness check (Earth 5, Fire 2) or suffer the Disoriented condition. Air Opportunity+: Each target who fails their Fitness check is also pushed 1 range band away from you per Opportunity spent this way."
+    },
+    {
+     "name": "Hawk's Precision",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "opportunity",
+     "description": "When you make a Martial Arts [Ranged] check, you may spend Opportunity in the following way: Opportunity+: Treat the range of the weapon as 1 higher per Opportunity spent this way, to a maximum of range 6."
+    },
+    {
+     "name": "Sacred Arrows",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "As an action, you may augment one of your arrows with a prayer to the kami. Make the check to perform one invocation you know, reducing the TN by your school rank (2), and record the result. The arrow unleashes the invocation wherever it lands after you fire it and remains infused with the invocation until the end of the scene."
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Sixth Sense",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "distinction",
+     "ring": "void",
+     "description": "You have an instinctive sense of supernatural beings, and you can feel the presence of spirits and similar entities even when they have not chosen to reveal themselves. This feeling is ominous in the presence of beings with evil intentions and neutral when the beings are simply going about their business as usual."
+    },
+    {
+     "name": "Sake",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "passion",
+     "ring": "water",
+     "description": "You can identify regional variations in sake and other alcohol, and you know a great deal about the various processes involved in making sake. It takes you twice as much alcohol as it does anyone else to become intoxicated."
+    },
+    {
+     "name": "Bluntness",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "adversity",
+     "ring": "air",
+     "description": "You have difficulty expressing things indirectly, and you overlook insinuations and implications in the statements of others unless they are pointed out to you directly."
+    },
+    {
+     "name": "Softheartedness",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "anxiety",
+     "ring": "fire",
+     "description": "If given the choice to kill someone or show mercy, you always spare their life, even if it is not in your interest to let them live."
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Yumi",
+     "quantity": 1,
+     "printed": "Yumi (bow): Damage 5/3, Range 2–5",
+     "custom": true
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1,
+     "printed": "Wakizashi (short sword): Damage 3/5 (7 DLS if 2 handed), Range 0–1, Ceremonial, Razor-Edged",
+     "custom": true
+    },
+    {
+     "name": "Sanctified Robes",
+     "quantity": 1,
+     "printed": "Sanctified Robes (Physical 1, Supernatural 3, Ceremonial)",
+     "custom": true
+    },
+    {
+     "name": "Ceremonial Clothes",
+     "quantity": 1,
+     "printed": "Ceremonial Clothes (Physical 1, Ceremonial, Resplendent)",
+     "custom": true
+    },
+    {
+     "name": "Quiver of arrows",
+     "quantity": 1,
+     "printed": "Quiver of arrows",
+     "custom": true
+    },
+    {
+     "name": "knife",
+     "quantity": 1,
+     "printed": "knife",
+     "custom": true
+    },
+    {
+     "name": "scroll satchel",
+     "quantity": 1,
+     "printed": "scroll satchel",
+     "custom": true
+    },
+    {
+     "name": "traveling pack",
+     "quantity": 1,
+     "printed": "traveling pack",
+     "custom": true
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

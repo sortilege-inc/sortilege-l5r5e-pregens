@@ -241,6 +241,37 @@ a{ color:var(--crimson); }
 /* a solid hover on one neighbour must not leave the shared edge doubled */
 .pc-act:hover + .pc-act{ border-left:none; }
 
+/* A published pregen: FFG's folio, not the archive's work. Marked on the card
+   rather than only in a filter, so a card seen on its own still says which
+   kind it is — and its frame stays quiet, because the roster's own characters
+   are what the page is for. */
+.pubbadge{
+  position:absolute; left:0; top:0; background:var(--sumi, #17120d); color:var(--gold-lit);
+  font-family:var(--caps); font-size:0.62rem; letter-spacing:0.14em;
+  text-transform:uppercase; padding:0.14rem 0.5rem;
+}
+.pcard.pc-published .frame{ border-style:dashed; }
+.pc-product{ color:var(--ink-dim) !important; font-style:normal; }
+
+/* the roster's show/hide for them, beside the clan and role selects */
+.toolbar .tog{
+  display:inline-flex; align-items:center; gap:0.4rem; cursor:pointer;
+  font-family:var(--caps); font-size:0.7rem; letter-spacing:0.12em;
+  text-transform:uppercase; color:var(--ink-soft);
+}
+.toolbar .tog:hover{ color:var(--crimson); }
+.toolbar .tog input{ accent-color:var(--crimson); cursor:pointer; margin:0; }
+
+/* Where Advance and Legacy sit for the archive's own characters, a published
+   pregen names its product instead: the same slot, saying why there is
+   nothing to press. */
+.act-published{
+  display:inline-flex; flex-direction:column; justify-content:center;
+  padding:0.4rem 0.9rem; border:1px dashed var(--gold-soft); border-radius:2px;
+  font-family:var(--caps); font-size:0.7rem; letter-spacing:0.12em;
+  text-transform:uppercase; color:var(--ink-soft);
+}
+
 /* ------------------------------------------------------------ timeline */
 .timeline-section{
   position:relative; margin:1.6rem 0 2.2rem; padding:1.3rem 1.5rem 1.1rem;

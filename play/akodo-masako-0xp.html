@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akodo Masako — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css?v=5b88ec5d">
+<link rel="stylesheet" href="../assets/play/sheet.css?v=961462f4">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Akodo Masako</span>
+  <a href="../characters/akodo-masako.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "akodo-masako-0xp",
+ "name": "Akodo Masako",
+ "clan": "Lion",
+ "family": "Akodo",
+ "school": null,
+ "role": "Bushi",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 1,
+  "earth": 3,
+  "fire": 1,
+  "water": 3,
+  "void": 2
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 12,
+  "focus": 2,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 12
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 2,
+   "start": 2
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 60,
+  "glory": 47,
+  "status": null
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 1,
+  "fitness": 1,
+  "melee": 2,
+  "ranged": 0,
+  "unarmed": 1,
+  "meditation": 1,
+  "tactics": 1,
+  "culture": 1,
+  "government": 2,
+  "medicine": 0,
+  "sentiment": 0,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": null,
+  "less": null
+ },
+ "ninjo": "You desire personal glory, the better to ensure your clan's role in Rokugan, but you know as a Lion there is no greater role than to serve on the battlefield, where there may be little recognition.",
+ "giri": null,
+ "money": "5 koku",
+ "techniques": [
+  {
+   "name": "Way of the Lion",
+   "tag": "School Ability",
+   "kind": "school_ability",
+   "text": "When you succeed at an Attack check during a skirmish, you may remove 1 strife and add 1 bonus success to the check."
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Indomitable Will",
+   "tag": "Peculiarity",
+   "text": "Although nobody is without fear, your will is strong and cannot be overcome easily. You may reroll up to 2 dice of your choice when your advantage helps you on any check."
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Fists",
+   "kind": "Item"
+  },
+  {
+   "name": "Blunted or wooden sword",
+   "kind": "Item"
+  },
+  {
+   "name": "Tough Robes",
+   "kind": "Item"
+  },
+  {
+   "name": "Traveling Pack",
+   "kind": "Item"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js?v=1c4f76bc"></script>
+<script src="../assets/play/sheet.js?v=ae08be20"></script>
+</body>
+</html>

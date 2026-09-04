@@ -1,0 +1,281 @@
+{
+ "slug": "maki-haruko",
+ "name": "Maki Haruko",
+ "folder_label": "Maki Haruko",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "The Highwayman",
+  "adventure": "The Highwayman",
+  "publisher": "Fantasy Flight Games",
+  "year": 2019,
+  "source_file": "l5r5e-0.4-highwayman-pregens.actor"
+ },
+ "identity": {
+  "clan": null,
+  "family": null,
+  "region": "Rural Farmland",
+  "upbringing": "Fallen Noble (Lion Clan)",
+  "origin_type": "ronin",
+  "school": "Wandering Blade",
+  "role": "Bushi",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "Pregenerated rōnin PC for The Highwayman.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": "[\"Noboru: Good terms, but they give a lot of questionable advice\", \"Mishti: Friendly, something about her reminds you of your situation\", \"Turgen: A strange man, but seems generally honorable\", \"Akagi Daichi: Neutral, seems a little suspicious\", \"Kenshin: Neutral, seems geisha are a part of Rokugan\"]",
+ "demeanor": "Technique types available: Kata, Rituals, Shūji.",
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 2,
+   "school": "Wandering Blade",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 1,
+    "earth": 3,
+    "fire": 3,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 2,
+     "melee": 3,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 1,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 34,
+    "status": 34,
+    "ninjo": "To atone by being a strong leader, protecting others, and proving your worth as a person of integrity.",
+    "giri": "Your family disowned you after you disobeyed an order and caused the deaths of those under your charge.",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 12,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "koku": 0,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Bellow of Resolve",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Wanderer's Resolve",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Mind's Edge",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata"
+    },
+    {
+     "name": "Striking as Earth",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata"
+    },
+    {
+     "name": "Striking as Fire",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata"
+    },
+    {
+     "name": "Tactical Assessment",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata"
+    },
+    {
+     "name": "Signature Weapon",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "When using a weapon from the Sword category (such as your nodachi, or katana) to perform an Attack action or Performance check, roll one additional skill die. Additionally, when making such a check you may suffer fatigue up to your school rank (2) to alter that many results of your kept dice to Opportunity results."
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Ardent Leader",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "distinction",
+     "ring": "fire",
+     "description": "People are more likely to hear what you have to say even if they are of a higher status (though that doesn't save you from consequences of being impolite or foolish)."
+    },
+    {
+     "name": "Indomitable Will",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "distinction",
+     "ring": "earth",
+     "description": "You can always choose to stand your ground, even when faced with untenable odds or supernatural terrors that bend the minds of lesser souls."
+    },
+    {
+     "name": "Honest Work",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "passion",
+     "ring": "earth",
+     "description": "You are always able to determine how much work is needed to complete a physical, hands-on task, and your work on such tasks is always markedly better than that of others."
+    },
+    {
+     "name": "Incurable Illness",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "adversity",
+     "ring": "earth",
+     "description": "Periodically, if you push yourself too hard, you find yourself significantly restricted in your activity for a brief period of time."
+    },
+    {
+     "name": "Failure",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "anxiety",
+     "ring": "water",
+     "description": "The thought of letting someone down to which you have made a promise induces panic in you that manifests physically and can only be soothed by making a step towards accomplishing your goal. Shirking your obligations or working against keeping a promise you made causes you significant anxiety."
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Nodachi",
+     "quantity": 1,
+     "printed": "Nodachi (longsword): Damage 5/6, Range 1–2, Ceremonial, Razor-Edged",
+     "custom": true
+    },
+    {
+     "name": "Katana",
+     "quantity": 1,
+     "printed": "Katana: Damage 4/(5/7), Range 1, Ceremonial, Razor-Edged",
+     "custom": true
+    },
+    {
+     "name": "Traveling Clothes",
+     "quantity": 1,
+     "printed": "Traveling Clothes (Physical 2, Durable, Mundane, Subtle)",
+     "custom": true
+    },
+    {
+     "name": "Ashigaru Armor",
+     "quantity": 1,
+     "printed": "Ashigaru Armor (Physical 3, Wargear)",
+     "custom": true
+    },
+    {
+     "name": "Two days' rations",
+     "quantity": 1,
+     "printed": "Two days' rations",
+     "custom": true
+    },
+    {
+     "name": "medicine kit",
+     "quantity": 1,
+     "printed": "medicine kit",
+     "custom": true
+    },
+    {
+     "name": "a gold-inlayed helmet with a faux Lion's mane",
+     "quantity": 1,
+     "printed": "a gold-inlayed helmet with a faux Lion's mane (worth approx. 3 koku)",
+     "custom": true
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

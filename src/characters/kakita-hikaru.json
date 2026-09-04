@@ -1,0 +1,236 @@
+{
+ "slug": "kakita-hikaru",
+ "name": "Kakita Hikaru",
+ "folder_label": "Kakita Hikaru",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "Wedding at Kyotei Castle",
+  "adventure": "Wedding at Kyotei Castle",
+  "publisher": "Fantasy Flight Games",
+  "year": 2018,
+  "source_file": "l5r5e-0.4-wedding-kyotei-pregens.actor"
+ },
+ "identity": {
+  "clan": "Crane",
+  "family": "Kakita",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
+  "school": "Kakita Duelist",
+  "role": "Bushi",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "Pregenerated PC for Wedding at Kyotei Castle. Technique types available: Kata, Rituals, Shūji.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": null,
+ "demeanor": "Strokes his long, glorious, pure white hair when he thinks no one is watching him; keeps sizing up everyone he meets as potential dueling opponents.",
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 2,
+   "school": "Kakita Duelist",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 3,
+    "earth": 2,
+    "fire": 3,
+    "water": 1,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 2,
+     "composition": 1,
+     "design": 1,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 3,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 2,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 2,
+     "games": 1,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 60,
+    "glory": 40,
+    "status": 35,
+    "ninjo": "Find a rival truly worthy of your skills with the blade.",
+    "giri": "See that Takashi gets married, so that he can maintain Crane influence over the Golden Valley and dispel the concerns of his seeming weakness.",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 6,
+    "focus": 6,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "koku": 7,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Iaijutsu Cut (Rising Blade)",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata",
+     "description": "As an Attack action using one sheathed Razor-Edged weapon, you may make a TN 3 Martial Arts [Melee] check targeting one character at range 0–1 and draw and ready the sheathed weapon in a one-handed grip. If you succeed, you deal physical damage to the target equal to the weapon's deadliness. Your target cannot defend against this damage if they are Compromised. Opportunity: Ready one other sheathed Razor-Edged weapon."
+    },
+    {
+     "name": "Sensational Distraction",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "opportunity",
+     "description": "When making a Social skill (Fire) check targeting one or more characters, you may spend Opportunity in the following way: Fire Opportunity+: When interacting with other characters, the target treats their vigilance as 1 lower per Opportunity spent this way; when interacting with you, the target treats their vigilance as 1 higher per Opportunity spent this way. This effect persists until the end of the scene."
+    },
+    {
+     "name": "Way of the Crane",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "Once per round, you may increase or decrease the severity of a critical strike you inflict by an amount up to your school rank (2)."
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Dangerous Allure",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "distinction",
+     "ring": "fire",
+     "description": "You always make an impression, and NPCs remember your name and face after interacting with you for one or more scenes (unless you take pains to disguise yourself)."
+    },
+    {
+     "name": "Stories",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "passion",
+     "ring": "earth",
+     "description": "You can recall any story you have been told, including the details that others would gloss over or forget."
+    },
+    {
+     "name": "Benten's Curse",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "adversity",
+     "ring": "air",
+     "description": "Your romantic efforts are always stymied by circumstances, and your gestures to get the romantic attention of others are usually misinterpreted."
+    },
+    {
+     "name": "Perfectionism",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "anxiety",
+     "ring": "water",
+     "description": "Anything short of perfection in your work is unacceptable to you, and you have been known to create works of beauty only to cast them aside over some perceived flaw. You cannot help but try to improve any work in which you identify a flaw, even if it means informing someone of higher status of an error they have made."
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Katana",
+     "quantity": 1,
+     "printed": "Katana: Damage 4/5 (7 DLS if 2 handed), Range 1, Ceremonial, Razor-Edged",
+     "custom": true
+    },
+    {
+     "name": "Wakizashi",
+     "quantity": 1,
+     "printed": "Wakizashi (short sword): Damage 3/5 (7 DLS if 2 handed), Range 0–1, Ceremonial, Razor-Edged",
+     "custom": true
+    },
+    {
+     "name": "Resplendent Robes",
+     "quantity": 1,
+     "printed": "Resplendent Robes (Physical 1, Mundane)",
+     "custom": true
+    },
+    {
+     "name": "Ceremonial Clothes",
+     "quantity": 1,
+     "printed": "Ceremonial Clothes (Physical 1, Ceremonial, Resplendent)",
+     "custom": true
+    },
+    {
+     "name": "Traveling clothes",
+     "quantity": 1,
+     "printed": "Traveling clothes",
+     "custom": true
+    },
+    {
+     "name": "traveling pack",
+     "quantity": 1,
+     "printed": "traveling pack",
+     "custom": true
+    },
+    {
+     "name": "an attendant or Rokugani pony",
+     "quantity": 1,
+     "printed": "an attendant or Rokugani pony",
+     "custom": true
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

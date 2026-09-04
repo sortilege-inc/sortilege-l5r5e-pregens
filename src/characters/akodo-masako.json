@@ -1,0 +1,163 @@
+{
+ "slug": "akodo-masako",
+ "name": "Akodo Masako",
+ "folder_label": "Akodo Masako",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "Legend of the Five Rings Beginner Game",
+  "adventure": "In the Palace of the Emerald Champion",
+  "publisher": "Fantasy Flight Games",
+  "year": 2018,
+  "source_file": "l5r5e-0.4-emerald-champion-pregens.actor"
+ },
+ "identity": {
+  "clan": "Lion",
+  "family": "Akodo",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
+  "school": null,
+  "role": "Bushi",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "Beginner Game pregen — Bushi of the Lion Clan.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": null,
+ "demeanor": "Personal Unmasking: Angrily call out challenges to foes for combat!",
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": null,
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 1,
+    "earth": 3,
+    "fire": 1,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 2,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 1,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 2,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 60,
+    "glory": 47,
+    "status": null,
+    "ninjo": "You desire personal glory, the better to ensure your clan's role in Rokugan, but you know as a Lion there is no greater role than to serve on the battlefield, where there may be little recognition.",
+    "giri": null,
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 12,
+    "focus": 2,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "koku": 5,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Way of the Lion",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "When you succeed at an Attack check during a skirmish, you may remove 1 strife and add 1 bonus success to the check."
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Indomitable Will",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "description": "Although nobody is without fear, your will is strong and cannot be overcome easily. You may reroll up to 2 dice of your choice when your advantage helps you on any check."
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Fists",
+     "quantity": 1,
+     "printed": "Fists: Martial Arts [Unarmed], Range 0, Damage 1",
+     "custom": true
+    },
+    {
+     "name": "Blunted or wooden sword",
+     "quantity": 1,
+     "printed": "Blunted or wooden sword: Martial Arts [Melee], Range 1, Damage 2",
+     "custom": true
+    },
+    {
+     "name": "Tough Robes",
+     "quantity": 1,
+     "printed": "Tough Robes",
+     "custom": true
+    },
+    {
+     "name": "Traveling Pack",
+     "quantity": 1,
+     "printed": "Traveling Pack",
+     "custom": true
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

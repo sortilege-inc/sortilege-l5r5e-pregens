@@ -158,7 +158,14 @@ def schema(cx):
       school TEXT,
       school_norm TEXT, role TEXT, bucket TEXT, campaign TEXT, status TEXT, accent TEXT,
       portrait TEXT, concept TEXT, summary TEXT, tier_count INTEGER,
-      xp_min INTEGER, xp_max INTEGER);
+      xp_min INTEGER, xp_max INTEGER,
+      -- "archive" for a character built here, "published" for an official
+      -- pregen transcribed from a printed sheet. A published one is a
+      -- different kind of thing from ours: it is not evidence that a school
+      -- has been covered, its purse comes off a folio rather than from
+      -- question 2, and the roster hides it unless asked. See provenance()
+      -- and PUBLISHED_EXCLUDED below.
+      provenance TEXT, product TEXT);
     CREATE TABLE tier(
       id INTEGER PRIMARY KEY, slug TEXT, idx INTEGER, xp INTEGER, label TEXT,
       rank INTEGER, school TEXT, foundry_id TEXT, rings TEXT, skills TEXT,
@@ -359,8 +366,47 @@ def school_aliases():
     return out
 
 
+# The compendium's roll name for a school ends in a word the DSL corpus drops:
+# the corpus calls it "Bayushi Manipulator" and the roll "Bayushi Manipulator
+# School", "Wandering Blade" against "The Wandering Blade". A record written
+# from the corpus -- every published pregen is -- carries the short form, and
+# a school that does not resolve costs a name on the coverage roll.
+SCHOOL_SUFFIXES = ("school", "tradition", "order", "path", "conspiracy",
+                   "training")
+
+
+def school_norm_index(cx):
+    """norm(any spelling of a school) -> norm(the compendium's roll name).
+
+    Built from the catalog itself rather than a hand-kept list, so a book added
+    tomorrow needs no entry. Only the compendium's own suffixes and a leading
+    "The" are stripped: nothing else is guessed at, and a short form that two
+    roll names would both answer to is left out rather than picked between.
+    """
+    index, ambiguous = {}, set()
+    for (name, n) in cx.execute(
+            "SELECT name, norm FROM catalog WHERE pack LIKE '%school-curriculum%'"):
+        index[n] = n
+        forms = set()
+        bare = re.sub(r"^the\s+", "", name, flags=re.I)
+        forms.add(bare)
+        for suf in SCHOOL_SUFFIXES:
+            forms.add(re.sub(rf"\s+{suf}$", "", bare, flags=re.I))
+        for form in forms:
+            k = norm(form)
+            if not k or k == n:
+                continue
+            if k in index and index[k] != n:
+                ambiguous.add(k)
+            index[k] = n
+    for k in ambiguous:
+        index.pop(k, None)
+    return index
+
+
 def load_characters(cx):
     ALIASES = school_aliases()
+    SCHOOL_INDEX = school_norm_index(cx)
     unresolved = []
     tid = 0
     for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
@@ -368,7 +414,9 @@ def load_characters(cx):
         tiers = c["tiers"]
         snorm = norm(c["identity"].get("school"))
         snorm = ALIASES.get(snorm, snorm)
-        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 20) + ")", (
+        # then the corpus's short spelling, if that is what the record used
+        snorm = SCHOOL_INDEX.get(snorm, snorm)
+        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 22) + ")", (
             c["slug"], c["name"], c["identity"].get("clan"), c["identity"].get("family"),
             c["identity"].get("region"), c["identity"].get("upbringing"),
             c["identity"].get("origin_type"),
@@ -376,7 +424,10 @@ def load_characters(cx):
             c["identity"].get("role"), c.get("bucket"), c.get("campaign"),
             c.get("status"), c.get("accent"), c.get("portrait"),
             c.get("concept"), c.get("summary"),
-            len(tiers), min(t["xp"] for t in tiers), max(t["xp"] for t in tiers)))
+            len(tiers), min(t["xp"] for t in tiers), max(t["xp"] for t in tiers),
+            # absent means ours: the archive is what this repo was for, and the
+            # published pregens arrived later
+            c.get("provenance") or "archive", (c.get("published") or {}).get("product")))
         for idx, t in enumerate(tiers):
             tid += 1
             cx.execute("INSERT INTO tier VALUES (" + ",".join("?" * 14) + ")", (
@@ -741,6 +792,11 @@ def emit(cx):
                "notes": src.get("notes", ""),
                # concept material, landed on promotion by scripts/promote.py
                "bio": src.get("bio", ""),
+               # for a published pregen: which product it is from, and the
+               # sheet's own extra lines that our records have no field for
+               "published": src.get("published"),
+               "demeanor": src.get("demeanor"),
+               "relationships": src.get("relationships"),
                "curriculum": curricula.get(c["school_norm"], []),
                "title_curricula": title_curricula,
                # what this character left behind, if anything
@@ -756,7 +812,11 @@ def emit(cx):
                             "region", "upbringing", "origin_type",
                             "school", "role", "bucket",
                             "campaign", "status", "portrait", "tier_count",
-                            "xp_min", "xp_max")})
+                            "xp_min", "xp_max",
+                            # "archive" or "published": the roster hides the
+                            # published pregens unless asked, and names the
+                            # product they came from when it shows them
+                            "provenance", "product")})
 
     # the roster is the finished archive; drafts live in the Creator until promoted
     n1 = write(os.path.join(SITEDATA, "roster.js"), "L5R_ROSTER", roster)
@@ -784,17 +844,27 @@ def emit(cx):
         " (SELECT ch.status FROM character ch WHERE ch.slug = tc.slug) status"
         " FROM tier_content tc"
         " JOIN catalog c ON c.uuid = tc.catalog_uuid"
-        " JOIN tier t ON t.id = tc.tier_id GROUP BY c.uuid, tc.slug"):
+        " JOIN tier t ON t.id = tc.tier_id"
+        # a technique carried only by a published pregen is not one the archive
+        # has covered -- somebody else wrote that character
+        " WHERE EXISTS (SELECT 1 FROM character ch WHERE ch.slug = tc.slug"
+        f"               AND ch.{ARCHIVE_ONLY})"
+        " GROUP BY c.uuid, tc.slug"):
         used[r["uuid"]].append({"slug": r["slug"], "xp": r["xp"],
                                 "draft": r["status"] == "draft"})
     customs = [dict(r) for r in cx.execute(
         "SELECT slug,category,name,MIN(meta) meta FROM tier_content"
-        " WHERE custom=1 GROUP BY slug,category,name")]
+        " WHERE custom=1"
+        " AND EXISTS (SELECT 1 FROM character ch WHERE ch.slug = tier_content.slug"
+        f"            AND ch.{ARCHIVE_ONLY})"
+        " GROUP BY slug,category,name")]
     schools = [dict(r) for r in cx.execute(
         "SELECT c.uuid uuid, c.name name, c.clan clan, c.source_book source_book,"
         " c.source_page source_page,"
-        " (SELECT ch.slug FROM character ch WHERE ch.school_norm = c.norm LIMIT 1) slug,"
-        " (SELECT ch.status FROM character ch WHERE ch.school_norm = c.norm LIMIT 1) status"
+        " (SELECT ch.slug FROM character ch WHERE ch.school_norm = c.norm"
+        f"  AND ch.{ARCHIVE_ONLY} LIMIT 1) slug,"
+        " (SELECT ch.status FROM character ch WHERE ch.school_norm = c.norm"
+        f"  AND ch.{ARCHIVE_ONLY} LIMIT 1) status"
         " FROM catalog c WHERE c.pack LIKE '%school-curriculum%' ORDER BY c.name")]
     n3 = write(os.path.join(SITEDATA, "coverage.js"), "L5R_COVERAGE",
                {"used": used, "customs": customs, "schools": schools})
@@ -1079,6 +1149,14 @@ def emit_pages(cx):
     return n
 
 
+# What "a published pregen does not count towards coverage" means in SQL.
+# Spelled once and reused, because coverage is counted from four different
+# angles -- how many characters there are, which schools have one, which
+# catalog entries are carried, and which schools the generator still owes a
+# character -- and a rule applied in three of the four is not a rule.
+ARCHIVE_ONLY = "provenance = 'archive'"
+
+
 def check_schools(cx):
     """Every character's school should match a School Curriculum entry exactly.
 
@@ -1165,9 +1243,12 @@ def main():
 
     print(f"catalog:    {ncat} entries ({missing} without full text yet)"
           f", {ncur} school + {ntcur} title curriculum rows")
+    npub = cx.execute("SELECT COUNT(*) FROM character"
+                      " WHERE provenance = 'published'").fetchone()[0]
     print(f"characters: {cx.execute('SELECT COUNT(*) FROM character').fetchone()[0]}"
-          f", tiers {cx.execute('SELECT COUNT(*) FROM tier').fetchone()[0]}"
-          f", content refs {cx.execute('SELECT COUNT(*) FROM tier_content').fetchone()[0]}")
+          + (f" ({npub} published pregens, outside coverage)" if npub else "")
+          + f", tiers {cx.execute('SELECT COUNT(*) FROM tier').fetchone()[0]}"
+          + f", content refs {cx.execute('SELECT COUNT(*) FROM tier_content').fetchone()[0]}")
     print("site data:  roster.js %.1f KB | catalog.js %.1f KB | coverage.js %.1f KB"
           " | largest character %.1f KB" % tuple(s / 1024 for s in sizes))
     print(f"pages:      {npages} character stubs, {nplay} playable sheets")

@@ -1,0 +1,169 @@
+{
+ "slug": "doji-ren",
+ "name": "Doji Ren",
+ "folder_label": "Doji Ren",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "Legend of the Five Rings Beginner Game",
+  "adventure": "In the Palace of the Emerald Champion",
+  "publisher": "Fantasy Flight Games",
+  "year": 2018,
+  "source_file": "l5r5e-0.4-emerald-champion-pregens.actor"
+ },
+ "identity": {
+  "clan": "Crane",
+  "family": "Doji",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
+  "school": null,
+  "role": "Courtier",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "Beginner Game pregen — Courtier of the Crane Clan.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": null,
+ "demeanor": "Personal Unmasking: Unseemly weeping",
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": null,
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 2,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 1,
+     "design": 1,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 2,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 1,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 57,
+    "glory": 47,
+    "status": null,
+    "ninjo": "You seek a life full of challenges and wonders! Your skill at sumi-e painting could bring great honor to your clan and family—but also a much less adventurous life than you desire.",
+    "giri": null,
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 6,
+    "focus": 5,
+    "vigilance": 3,
+    "void_points": 2
+   },
+   "money": {
+    "koku": 2,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Speaking in Silence",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "Once per scene when making a check to persuade or influence someone, you may add 1 kept Ring die showing an Opportunity result."
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Dangerous Allure",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "description": "You have an air of intimidating beauty about you that others can rarely ignore, and leaves an impression on those around you. You may reroll up to 2 dice of your choice when your advantage helps you on any check."
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Fists",
+     "quantity": 1,
+     "printed": "Fists: Martial Arts [Unarmed], Range 0, Damage 1",
+     "custom": true
+    },
+    {
+     "name": "Blunted or wooden sword",
+     "quantity": 1,
+     "printed": "Blunted or wooden sword: Martial Arts [Melee], Range 1, Damage 2",
+     "custom": true
+    },
+    {
+     "name": "Elegant Robes",
+     "quantity": 1,
+     "printed": "Elegant Robes",
+     "custom": true
+    },
+    {
+     "name": "Traveling Pack",
+     "quantity": 1,
+     "printed": "Traveling Pack",
+     "custom": true
+    },
+    {
+     "name": "Calligraphy Kit",
+     "quantity": 1,
+     "printed": "Calligraphy Kit",
+     "custom": true
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
