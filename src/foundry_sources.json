@@ -73,7 +73,18 @@
   "Blood of the Lioness": {
    "arc": null,
    "note": "Not on disk: no corpus file, no source PDF, and not in the compendium's book list. Legacies of War, which is converted, is its supplement and describes it — a three-part adventure at the Castle of the Swift Sword whose Part Two is played in the past, with Legacy advantages linking each present PC to a predecessor. Its own page 12 holds The Advisors, the pregens for that past party. Find the source and convert it, then the arc goes here.",
-   "_pack_shape": "This one wants two sets rather than one: a present party for Parts One and Three, and a past party for Part Two — either The Advisors from the adventure itself or characters built to be their predecessors. The Creator's Legacy step is already the Legacies of War mechanic, so the link between the two is buildable today; what is missing is the adventure that says who they are."
+   "_pack_shape": "This one wants two sets rather than one: a present party for Parts One and Three, and a past party for Part Two — either The Advisors from the adventure itself or characters built to be their predecessors. The Creator's Legacy step is already the Legacies of War mechanic, so the link between the two is buildable today; what is missing is the adventure that says who they are.",
+   "pencilled_schools": [
+    "Akodo Commander School",
+    "Kitsu Medic School",
+    "Ikoma Shadow School",
+    "Kakita Swordsmith School",
+    "Mirumoto Taoist Blade School",
+    "Utaku Battle Maiden School",
+    "Asako Loremaster School",
+    "Miya Cartographer School"
+   ],
+   "pencilled_why": "Chosen 2026-09-04, eight rather than six because the adventure runs two parties: Parts One and Three in the present, Part Two in the past, linked by Legacy advantages.\n\nThe Lion holds the castle — Akodo Commander for the school of the champion who built Hayaken no Shiro, Kitsu Medic for the family whose fortress home it is, Ikoma Shadow for the work a war needs done off the field. Kakita Swordsmith and Mirumoto Taoist Blade come over the borders the castle watches, and Utaku Battle Maiden brings the cavalry the northern border implies. Asako Loremaster and Miya Cartographer are what a campaign actually runs on: someone who knows the past that Part Two is set in, and someone who knows the ground.\n\nThree of the eight read as the older generation rather than the inheriting one — Akodo Commander (whose mastery is Akodo's Final Lesson), Kakita Swordsmith (a blade outlives its wielder, which is the legacy mechanic as a craft), and Asako Loremaster (the one who remembers). The split between the two parties is not fixed here.\n\nNoted and not acted on: both Kitsu shugenja schools, Medium and Realm Wanderer, are pencilled for Wheel of Judgment, so the Kitsu family is represented at its own castle by the medic. Utaku Battle Maiden is also the school of a published pregen (Utaku Azami, Wedding at Kyotei Castle) — untouched by the archive, so it still adds coverage."
   },
   "Imperfect Land": {
    "arc": "l5r5e-0.4-imperfect-land.arc",
