@@ -392,13 +392,52 @@ def campaigns(cx):
         "SELECT DISTINCT school_norm FROM character"
         " WHERE school_norm IS NOT NULL AND provenance = 'archive'")}
 
-    out, offroll, stale = [], [], []
-    for name in sorted(set(counts) | {k for k in declared if not k.startswith("_")}):
+    names = sorted(set(counts) | {k for k in declared if not k.startswith("_")})
+
+    # One pack can serve two adventures -- The Scroll or the Blade runs inside
+    # Winter's Embrace, in the same palace -- so the base adventure holds the
+    # shortlist and the other points at it rather than repeating it. A link
+    # that only goes one way is refused: a pack_from with nothing pointing back
+    # is as likely a typo as an intent.
+    links = []
+    for name in names:
         spec = declared.get(name) or {}
+        src_name = spec.get("pack_from")
+        if not src_name:
+            continue
+        owner = declared.get(src_name)
+        if owner is None:
+            links.append(f"{name}: pack_from {src_name!r} is not a declared campaign")
+        elif not owner.get("pencilled_schools"):
+            links.append(f"{name}: pack_from {src_name!r} has no pencilled schools "
+                         f"to share")
+        elif name not in (owner.get("pack_shared_with") or []):
+            links.append(f"{name}: pack_from {src_name!r}, but {src_name} does not "
+                         f"list it in pack_shared_with")
+        if spec.get("pencilled_schools"):
+            links.append(f"{name}: has both pack_from and its own "
+                         f"pencilled_schools — one or the other")
+    for name in names:
+        for shared in (declared.get(name) or {}).get("pack_shared_with") or []:
+            if (declared.get(shared) or {}).get("pack_from") != name:
+                links.append(f"{name}: shares its pack with {shared!r}, which does "
+                             f"not point back with pack_from")
+    if links:
+        raise SystemExit(f"FAIL — {len(links)} broken shared-pack link(s):\n"
+                         + "\n".join("   " + m for m in links))
+
+    out, offroll, stale = [], [], []
+    for name in names:
+        spec = declared.get(name) or {}
+        # a campaign sharing another's pack shows that shortlist rather than
+        # keeping a copy that could drift out of step with it
+        owner = spec.get("pack_from")
+        labels = ((declared.get(owner) or {}).get("pencilled_schools") if owner
+                  else spec.get("pencilled_schools")) or []
         # the shortlist a pack will be built from, each entry resolved against
         # the roll so a misspelling is caught while it is still a plan
         pencilled = []
-        for label in spec.get("pencilled_schools") or []:
+        for label in labels:
             n = norm(label)
             if n not in roll:
                 offroll.append((name, label))
@@ -409,7 +448,10 @@ def campaigns(cx):
         out.append({"name": name, "characters": counts.get(name, 0),
                     "arc": spec.get("arc"), "note": spec.get("note"),
                     "pencilled": pencilled,
-                    "pencilled_why": spec.get("pencilled_why"),
+                    "pencilled_why": spec.get("pencilled_why")
+                                     or (declared.get(owner) or {}).get("pencilled_why"),
+                    "pack_from": owner,
+                    "pack_shared_with": spec.get("pack_shared_with") or [],
                     # declared and empty: something to set up, not a gap in the
                     # data — the roster says so rather than showing nothing
                     "declared": name in declared})
@@ -419,6 +461,7 @@ def campaigns(cx):
             f"FAIL — {len(offroll)} pencilled school(s) are not on the "
             f"compendium's School Curriculum roll:\n"
             + "\n".join(f"   {c}: {s!r}" for c, s in offroll))
+    stale = sorted(set(stale))
     if stale:
         # not an error: a pack may deliberately revisit a school. But the point
         # of a shortlist is usually fresh ground, so say which have been taken
@@ -432,6 +475,10 @@ def campaigns(cx):
     # -- but it is almost always a slip, and it gets likelier with every list.
     seen = collections.defaultdict(list)
     for c in out:
+        # a borrowed list is the same pack by design, so counting it here would
+        # report every shared school as double-booked
+        if c["pack_from"]:
+            continue
         for pen in c["pencilled"]:
             seen[pen["school"]].append(c["name"])
     twice = {k: v for k, v in seen.items() if len(v) > 1}
@@ -460,11 +507,14 @@ def campaigns(cx):
             f"in the corpus at {base}:\n"
             + "\n".join(f"   {n}: {a}" for n, a in dead))
     with_arc = sum(1 for c in out if c["arc"])
-    npen = sum(len(c["pencilled"]) for c in out)
+    npen = sum(len(c["pencilled"]) for c in out if not c["pack_from"])
+    nshare = sum(1 for c in out if c["pack_from"])
     print(f"   campaigns: {len(out)} ({sum(1 for c in out if c['declared'])} "
           f"declared, {with_arc} pointing at an arc on disk"
           + (f", {npen} schools pencilled across "
-             f"{sum(1 for c in out if c['pencilled'])}" if npen else "") + ")")
+             f"{sum(1 for c in out if c['pencilled'] and not c['pack_from'])}"
+             if npen else "")
+          + (f", {nshare} sharing another's pack" if nshare else "") + ")")
     return out
 
 

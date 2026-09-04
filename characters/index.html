@@ -53,7 +53,7 @@
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
 <script src="../data/roster.js?v=1e5def76"></script>
-<script src="../data/campaigns.js?v=8a0a9173"></script>
+<script src="../data/campaigns.js?v=4d34f06b"></script>
 <script src="../assets/roster.js?v=2cefdb59"></script>
 <script>
 (function () {
@@ -144,7 +144,15 @@
           // the shortlist, so the plan is where the empty pack is rather than
           // only in the manifest
           ((picked.pencilled || []).length
-            ? '<p class="ce-pencilled"><span class="ce-label">Pencilled in</span>' +
+            ? '<p class="ce-pencilled"><span class="ce-label">' +
+              (picked.pack_from
+                ? "Sharing " + esc(picked.pack_from) + "'s pack"
+                : "Pencilled in" +
+                  ((picked.pack_shared_with || []).length
+                    ? ", shared with " +
+                      picked.pack_shared_with.map(esc).join(" and ")
+                    : "")) +
+              "</span>" +
               picked.pencilled.map(function (p) {
                 return "<span" + (p.covered ? ' class="ce-taken"' : "") +
                   ' title="' + (p.covered

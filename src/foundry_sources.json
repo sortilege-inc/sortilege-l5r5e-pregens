@@ -69,7 +69,7 @@
   "sanpei": "Slow Tide Harbor"
  },
  "campaign_list": {
-  "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current.",
+  "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current. Where one pack serves two adventures, the base adventure holds the shortlist and names the other in `pack_shared_with`; the other carries `pack_from` pointing back. The build refuses a one-sided link, and the double-booking check ignores a shared list — the same schools in two packs is the point there, not a slip.",
   "Mask of the Oni": {
    "arc": "l5r5e-0.4-mask-of-the-oni.arc",
    "note": "Set in 1123: the PCs pass through the Crab Clan's defenses into the Shadowlands, to the ruins of Shiro Hiruma. Arc, cast and lore are converted — what is missing is the pack.",
@@ -97,7 +97,8 @@
   },
   "The Scroll or the Blade": {
    "arc": "l5r5e-0.4-scroll-or-blade.arc",
-   "note": "A supplemental storyline during or after Winter's Embrace, in Kyūden Doji, centred on Masayo — an orphaned child of Dragon and Phoenix parents. Same party as Winter's Embrace if run alongside it, in which case one pack serves both."
+   "note": "A supplemental storyline during or after Winter's Embrace, in Kyūden Doji, centred on Masayo — an orphaned child of Dragon and Phoenix parents. Same party as Winter's Embrace if run alongside it, in which case one pack serves both. Sharing Winter's Embrace's pack, decided 2026-09-04, so it keeps no shortlist of its own.",
+   "pack_from": "Winter's Embrace"
   },
   "Wheel of Judgment": {
    "arc": null,
@@ -114,7 +115,25 @@
   },
   "Winter's Embrace": {
    "arc": "l5r5e-0.4-winters-embrace.arc",
-   "note": "The Winter Court at Kyūden Doji, with the PCs caught between the traditional Crane, the unconventional Mantis, and their allies' schemes. A political pack: courtiers rather than a war party."
+   "note": "The Winter Court at Kyūden Doji, with the PCs caught between the traditional Crane, the unconventional Mantis, and their allies' schemes. A political pack: courtiers rather than a war party.",
+   "pack_shared_with": [
+    "The Scroll or the Blade"
+   ],
+   "pencilled_schools": [
+    "Doji Diplomat School",
+    "Kakita Duelist School",
+    "Storm Fleet Sailor School",
+    "Otomo Schemer School",
+    "Ikoma Bard School",
+    "Bayushi Manipulator School",
+    "Kitsune Mediator School",
+    "Shika Matchmaker School",
+    "Togashi Chronicler School",
+    "Shiba Artist School",
+    "Soshi Illusionist School",
+    "Shika Speardancer School"
+   ],
+   "pencilled_why": "Chosen 2026-09-04 for the Winter Court at Kyūden Doji, and for The Scroll or the Blade with it — that storyline runs during or after this one in the same palace, so one pack serves both. Twelve rather than a party's worth because it covers two adventures.\n\nThe two clans whose reputations are the stake are both in it: Doji Diplomat and Kakita Duelist hosting, Storm Fleet Sailor as the Mantis who does not belong in a winter palace. Otomo Schemer is the Throne watching; Ikoma Bard and Bayushi Manipulator are reputation made and unmade. Kitsune Mediator is there to stop it becoming blood and Shika Matchmaker to make the betrothals a Winter Court exists for — her mastery ability is a curse, which is a plot by itself. Togashi Chronicler records it, Shiba Artist enters the poetry competition the Asahina priest oversees, Soshi Illusionist and Shika Speardancer do the quiet work in the corridors.\n\nKakita Duelist and Bayushi Manipulator are also the schools of published pregens (Kakita Hikaru and Bayushi Hibiki, Wedding at Kyotei Castle) — untouched by the archive, so they still add coverage, but not fresh ground. That overlap is not a coincidence: Wedding at Kyotei Castle is a court adventure too."
   }
  },
  "corrections": {
