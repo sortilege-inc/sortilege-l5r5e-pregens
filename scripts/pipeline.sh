@@ -84,6 +84,12 @@ if ! command -v node >/dev/null; then
   exit 1
 fi
 node scripts/coin_selftest.js
+# And the other half of the same question: does every character actually carry
+# the coin question 2 gives them? Thirteen records did not, and the first audit
+# of it missed two -- it matched families by exact name, so the vassal houses
+# resolved to nothing and were skipped in silence. This one fails on a record
+# it cannot resolve as loudly as on one that disagrees.
+python3 scripts/coin_audit.py
 # School and title curricula, for the advancement ledger. Reads the resolved
 # corpus that dsl_rules_text.py composed above, so errata are already applied.
 python3 scripts/curricula.py

@@ -72,7 +72,12 @@
   "_comment": "field fixes applied on extract; the Foundry record has the typo",
   "nasu-kogo": {
    "identity.school": "Shosuro Shadowweaver School",
-   "_why": "Foundry records 'Shoshuro Shadoweaver School'; the compendium roll spells it 'Shosuro Shadowweaver School'"
+   "_why": "Foundry records 'Shoshuro Shadoweaver School'; the compendium roll spells it 'Shosuro Shadowweaver School' The actor carries no coin at all. Nasu is a vassal family, not one of the corpus's 42, so there is no ^\"Wealth\" DEF to read — but the character's own step-2 answers name the patron (\"Nasu (Shiba Vassal)\") and record wealth 5, which is exactly what the corpus gives Shiba (^\"Wealth\" DEF { Count 5, Type \"koku\" }). Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   }
   },
   "tonbo-asahi": {
    "identity.school": "Dragonfly Grace of the Spirits School",
@@ -85,7 +90,132 @@
   },
   "iuchi-temur": {
    "identity.school": "Iuchi Meishodo Master School",
-   "_why": "actor records 'Iuchi Meishōdō Master'; the roll has ' School' on the end"
+   "_why": "actor records 'Iuchi Meishōdō Master'; the roll has ' School' on the end The actor carries no coin at all, and its identity records no family — but the character's own step-2 answers name Iuchi, which the corpus gives 5 koku (^\"Wealth\" DEF { Count 5, Type \"koku\" }). Those same answers record wealth 6, which no Unicorn family gives; the family named is the part two sources agree on, so the grant is taken and the 6 left as the stray. Flagged for review. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   }
+  },
+  "asahina-jujiro": {
+   "_why": "The actor carries no coin at all, while the family the character's own twenty-questions record names at step 2 — Asahina — gives 6 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 6, Type \"koku\" }). Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 6,
+    "bu": 0
+   }
+  },
+  "doji-sayaka": {
+   "_why": "The actor carries no coin at all, while the family the character's own twenty-questions record names at step 2 — Doji — gives 8 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 8, Type \"koku\" }). Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
+   }
+  },
+  "doji-setsuna": {
+   "_why": "The actor carries no coin at all, while the family the character's own twenty-questions record names at step 2 — Doji — gives 8 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 8, Type \"koku\" }). Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
+   }
+  },
+  "hiruma-kaede": {
+   "_why": "The actor carries no coin at all, while the family the character's own twenty-questions record names at step 2 — Hiruma — gives 3 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 3, Type \"koku\" }). Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 3,
+    "bu": 0
+   }
+  },
+  "ikoma-no-hosokawa-ota": {
+   "_why": "The actor carries no coin at all, while the family the character's own twenty-questions record names at step 2 — Yogo — gives 4 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 4, Type \"koku\" }). Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 4,
+    "bu": 0
+   }
+  },
+  "isawa-chisato": {
+   "_why": "The actor carries no coin at all, while the family the character's own twenty-questions record names at step 2 — Isawa — gives 5 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 5, Type \"koku\" }). Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   }
+  },
+  "isawa-yukiko": {
+   "_why": "The actor carries no coin at all, while the family the character's own twenty-questions record names at step 2 — Isawa — gives 5 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 5, Type \"koku\" }). Her step-2 answers record wealth 3 and glory 39, which are Hiruma's numbers rather than Isawa's 5 and 44 — the family named there is Isawa and her tier glory is 44, so the 3 is the stray value, not the 5. Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   }
+  },
+  "shinjo-anzu": {
+   "_why": "The actor carries no coin at all, while the family the character's own twenty-questions record names at step 2 — Shinjo — gives 8 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 8, Type \"koku\" }). Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
+   }
+  },
+  "togashi-rensho": {
+   "_why": "The actor carries no coin at all, while the family the character's own twenty-questions record names at step 2 — Togashi — gives 3 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 3, Type \"koku\" }). Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 3,
+    "bu": 0
+   }
+  },
+  "shinjo-harunobu": {
+   "_why": "The actor carries 400 zeni, while the family the character's own twenty-questions record names at step 2 — Shinjo — gives 8 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 8, Type \"koku\" }). 400 zeni is exactly the 8 koku the family gives, so this restates the same money in the denomination the book prints. Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
+   }
+  },
+  "togashi-norikage": {
+   "_why": "The actor carries 150 zeni, while the family the character's own twenty-questions record names at step 2 — Togashi — gives 3 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 3, Type \"koku\" }). 150 zeni is exactly the 3 koku the family gives, so this restates the same money in the denomination the book prints. Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 3,
+    "bu": 0
+   }
+  },
+  "tsume-kunimichi": {
+   "_why": "The actor carries no coin at all. Tsume is a Crane vassal family, not one of the corpus's 42, so there is no ^\"Wealth\" DEF to read — but the character's own step-2 answers record wealth 8 and glory 44, which are Doji's figures (^\"Wealth\" DEF { Count 8, Type \"koku\" }, ^\"Glory\" 44) and the only Crane family with either. Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
+   }
+  },
+  "jinrai": {
+   "_why": "The actor carries no coin at all. Foundry has no upbringing field, so \"Military\" arrived in the family slot; the Military Upbringing gives 1 koku, which is also exactly what the character's own step-2 answers record. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 1,
+    "bu": 0
+   }
+  },
+  "the-beshkara-constrictor": {
+   "_why": "The actor carries no coin at all and the step-2 answers record no wealth. \"Hunter\" arrived in the family slot, as upbringings do; the book names the entry for two callings and the Hunter or Fisher Upbringing gives 4 bu. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 4
+   }
+  },
+  "kurosawa-genzo": {
+   "_why": "The actor carries no coin at all. Foundry has no upbringing field, so \"Military\" arrived in the family slot; the Military Upbringing gives 1 koku. The character's own step-2 answers record wealth 5, which no upbringing gives, so the grant is taken and the 5 left as the stray. Flagged for review. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
+   "tiers.*.money": {
+    "zeni": 0,
+    "koku": 1,
+    "bu": 0
+   }
   }
  },
  "portraits": {

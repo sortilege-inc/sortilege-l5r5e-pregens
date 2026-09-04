@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Crab",
   "family": "Hiruma",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Hida Defender School",
   "role": "Bushi",
   "age": ""
@@ -289,7 +292,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 3,
     "bu": 0
    },
    "techniques": [
@@ -490,7 +493,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 3,
     "bu": 0
    },
    "techniques": [
@@ -755,7 +758,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 3,
     "bu": 0
    },
    "techniques": [
@@ -1082,7 +1085,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 3,
     "bu": 0
    },
    "techniques": [
@@ -1486,7 +1489,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 3,
     "bu": 0
    },
    "techniques": [
@@ -1971,7 +1974,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 3,
     "bu": 0
    },
    "techniques": [
@@ -2561,7 +2564,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 3,
     "bu": 0
    },
    "techniques": [
@@ -3287,7 +3290,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 3,
     "bu": 0
    },
    "techniques": [

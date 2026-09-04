@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Unicorn",
   "family": "Shinjo",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Iuchi Meishodo Master School",
   "role": "Artisan",
   "age": ""
@@ -287,7 +290,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 8,
     "bu": 0
    },
    "techniques": [
@@ -516,7 +519,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 8,
     "bu": 0
    },
    "techniques": [

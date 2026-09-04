@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Crane",
   "family": "Tsume",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Daidoji Harrier School",
   "role": "Shinobi",
   "age": ""
@@ -286,7 +289,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 8,
     "bu": 0
    },
    "techniques": [
@@ -492,7 +495,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 8,
     "bu": 0
    },
    "techniques": [
@@ -762,7 +765,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 8,
     "bu": 0
    },
    "techniques": [
@@ -1085,7 +1088,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 8,
     "bu": 0
    },
    "techniques": [

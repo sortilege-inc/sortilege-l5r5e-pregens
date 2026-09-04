@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Shinomen Forest",
   "family": "Hunter",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Shinomen Naga Seer Tradition",
   "role": "",
   "age": ""
@@ -284,7 +287,7 @@
    "money": {
     "zeni": 0,
     "koku": 0,
-    "bu": 0
+    "bu": 4
    },
    "techniques": [
     {

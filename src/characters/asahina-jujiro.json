@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Crane",
   "family": "Asahina",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Asahina Artificer School",
   "role": "Artisan",
   "age": ""
@@ -242,7 +245,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 6,
     "bu": 0
    },
    "techniques": [

@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Unicorn",
   "family": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Iuchi Meishodo Master School",
   "role": "Shugenja",
   "age": ""
@@ -216,7 +219,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 5,
     "bu": 0
    },
    "techniques": [

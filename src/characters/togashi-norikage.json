@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Dragon",
   "family": "Togashi",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Togashi Tattooed Order",
   "role": "Monk",
   "age": ""
@@ -266,7 +269,9 @@
     "void_points": 3
    },
    "money": {
-    "zeni": 150
+    "zeni": 0,
+    "koku": 3,
+    "bu": 0
    },
    "techniques": [
     {

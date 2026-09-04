@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Phoenix",
   "family": "Isawa",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Isawa Tensai School",
   "role": "Shugenja",
   "age": ""
@@ -176,7 +179,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 5,
     "bu": 0
    },
    "techniques": [

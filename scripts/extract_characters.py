@@ -305,18 +305,31 @@ def main():
         for field, value in (corrections.get(slug) or {}).items():
             if field.startswith("_"):
                 continue
-            # a tier's own field: "tiers.0.money". Identity fields live on the
-            # doc, but money, rings and socials live per tier, and a
-            # multi-tier character's differ between them — so the index is
-            # part of the path rather than applying to all of them.
+            # A tier's own field: "tiers.0.money" for one tier, "tiers.*.money"
+            # for every tier the character has. Identity fields live on the doc,
+            # but money, rings and socials live per tier and a multi-tier
+            # character's can differ between them, so the tier is part of the
+            # path rather than implied.
+            #
+            # The wildcard is for a value that does not vary by tier and is not
+            # recorded anywhere — a starting purse nobody has tracked spending
+            # against. Naming each index instead would leave the next tier
+            # silently empty the day one is added.
             parts = field.split(".")
-            if len(parts) == 3 and parts[0] == "tiers" and parts[1].isdigit():
-                i = int(parts[1])
-                if i < len(doc["tiers"]):
+            if len(parts) == 3 and parts[0] == "tiers" and \
+                    (parts[1].isdigit() or parts[1] == "*"):
+                idxs = (range(len(doc["tiers"])) if parts[1] == "*"
+                        else [int(parts[1])])
+                hit = False
+                for i in idxs:
+                    if i >= len(doc["tiers"]):
+                        continue
                     was = doc["tiers"][i].get(parts[2])
                     doc["tiers"][i][parts[2]] = value
-                    print(f"   correction {slug}: {field} {was!r} -> {value!r}")
-                else:
+                    print(f"   correction {slug}: tiers.{i}.{parts[2]} "
+                          f"{was!r} -> {value!r}")
+                    hit = True
+                if not hit:
                     print(f"   ! correction {slug}: {field} — only "
                           f"{len(doc['tiers'])} tier(s)")
                 continue

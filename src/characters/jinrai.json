@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Rural Farmland Region",
   "family": "Military",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Mystic of the Mountain",
   "role": "Monk",
   "age": ""
@@ -175,7 +178,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 1,
     "bu": 0
    },
    "techniques": [

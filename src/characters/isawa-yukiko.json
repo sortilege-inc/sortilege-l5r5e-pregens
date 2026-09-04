@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Phoenix",
   "family": "Isawa",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Ishiken Initiate School",
   "role": "Sage",
   "age": ""
@@ -263,7 +266,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 5,
     "bu": 0
    },
    "techniques": [
@@ -584,7 +587,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 5,
     "bu": 0
    },
    "techniques": [
@@ -948,7 +951,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 5,
     "bu": 0
    },
    "techniques": [

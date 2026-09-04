@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Phoenix",
   "family": "Nasu",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Shosuro Shadowweaver School",
   "role": "Shugenja",
   "age": ""
@@ -295,7 +298,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 5,
     "bu": 0
    },
    "techniques": [
@@ -531,7 +534,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 5,
     "bu": 0
    },
    "techniques": [
@@ -822,7 +825,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 5,
     "bu": 0
    },
    "techniques": [
@@ -1166,7 +1169,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 5,
     "bu": 0
    },
    "techniques": [

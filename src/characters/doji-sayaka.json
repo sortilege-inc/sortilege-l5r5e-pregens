@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Crane",
   "family": "Doji",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Daidoji Spymaster School",
   "role": "Courtier",
   "age": ""
@@ -177,7 +180,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 8,
     "bu": 0
    },
    "techniques": [

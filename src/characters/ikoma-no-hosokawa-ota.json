@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Lion",
   "family": "Yogo",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Yogo Penitent Order",
   "role": "Bushi",
   "age": ""
@@ -242,7 +245,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 4,
     "bu": 0
    },
    "techniques": [

@@ -9,6 +9,9 @@
  "identity": {
   "clan": "River Region",
   "family": "Military",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Worldly Rōnin Path",
   "role": "Bushi",
   "age": ""
@@ -177,7 +180,7 @@
    },
    "money": {
     "zeni": 0,
-    "koku": 0,
+    "koku": 1,
     "bu": 0
    },
    "techniques": [

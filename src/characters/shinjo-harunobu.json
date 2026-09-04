@@ -9,6 +9,9 @@
  "identity": {
   "clan": "Unicorn",
   "family": "Shinjo",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
   "school": "Hida Battle Leader School",
   "role": "Bushi",
   "age": ""
@@ -289,7 +292,9 @@
     "void_points": 3
    },
    "money": {
-    "zeni": 400
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
    },
    "techniques": [
     {
