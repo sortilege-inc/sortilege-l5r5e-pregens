@@ -409,6 +409,22 @@ def emit_local_key():
     return True
 
 
+def legacies():
+    """Every Legacy on disk, by the predecessor who left it.
+
+    A Legacy is a record of its own (src/legacies/), so it survives its
+    predecessor being edited or re-extracted and one character can leave more
+    than one. The character's own source carries only the slugs; this is what
+    turns those into something a page can show.
+    """
+    out, byslug = {}, {}
+    for p in sorted(glob.glob(os.path.join(ROOT, "src", "legacies", "*.json"))):
+        d = json.load(open(p))
+        byslug[d["legacy"]] = d
+        out.setdefault(d.get("predecessor"), []).append(d)
+    return out, byslug
+
+
 def top_tier(c):
     """The character as they stand: the highest-XP tier, with the lists reduced
     to the names an advancement ledger works in."""
@@ -538,7 +554,12 @@ def heritage_coverage():
     }
 
 
+LEGACY_BY_PREDECESSOR, LEGACY_BY_SLUG = {}, {}
+
+
 def emit(cx):
+    global LEGACY_BY_PREDECESSOR, LEGACY_BY_SLUG
+    LEGACY_BY_PREDECESSOR, LEGACY_BY_SLUG = legacies()
     """Write the site's data files.
 
     Split per character on purpose: a single characters.js was 781 KB at six
@@ -636,6 +657,8 @@ def emit(cx):
                "bio": src.get("bio", ""),
                "curriculum": curricula.get(c["school_norm"], []),
                "title_curricula": title_curricula,
+               # what this character left behind, if anything
+               "legacies": LEGACY_BY_PREDECESSOR.get(c["slug"], []),
                "tiers": tiers}
         docs.append(doc)
         size = write(os.path.join(chardir, c["slug"] + ".js"), "L5R_CHARACTER", doc)
@@ -690,6 +713,8 @@ def emit(cx):
           twenty_question_labels())
     write(os.path.join(SITEDATA, "heritage_coverage.js"), "L5R_HERITAGE_COVERAGE",
           heritage_coverage())
+    write(os.path.join(SITEDATA, "legacies.js"), "L5R_LEGACY_RECORDS",
+          sorted(LEGACY_BY_SLUG.values(), key=lambda x: x["name"]))
     write(os.path.join(SITEDATA, "drafts.js"), "L5R_ARCHIVE_DRAFTS",
           archive_drafts(docs))
     emit_local_key()

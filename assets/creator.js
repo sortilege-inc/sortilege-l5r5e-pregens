@@ -362,6 +362,9 @@
   // advance, what it spends.
   function draftMeta(d) {
     var c = d.character || {};
+    if (d.kind === "legacy" && c.legacy) {
+      return "legacy of " + (c.legacy.predecessor_name || c.legacy.predecessor);
+    }
     if (d.kind === "advance" && c.advance) {
       var saved = C, st;
       C = c;
@@ -529,7 +532,10 @@
             ? '<button type="button" class="dc-advance" data-slug="' +
               esc(a.slug) + '" title="Spend experience: ' +
               (top.xp || 0) + ' XP, school rank ' + (top.rank || 1) +
-              '">+XP</button>'
+              '">+XP</button>' +
+              '<button type="button" class="dc-legacy" data-slug="' +
+              esc(a.slug) + '" title="Leave a Legacy for a successor to take ' +
+              'instead of a heritage result">Legacy</button>'
             : "") +
           "</span>";
       }).join("") + "</div>";
@@ -624,6 +630,30 @@
     c.advance = newAdvance(a);
     STORE.drafts[id] = { id: id, updated: Date.now(), fromArchive: slug,
                          kind: "advance", baseTiers: a.tier_count || 1,
+                         character: c };
+    switchDraft(id);
+  }
+
+  /* Leaving a Legacy. Like an advance it reads the character's highest tier
+     and does not touch the record it came from — a Legacy is a thing the
+     predecessor leaves behind, not a change to them. */
+  function openLegacy(slug, asked) {
+    var a = ARCHIVE.filter(function (x) { return x.slug === slug; })[0];
+    if (!a || !a.top) return;
+    var existing = Object.keys(STORE.drafts).filter(function (id) {
+      return STORE.drafts[id].kind === "legacy" &&
+        STORE.drafts[id].fromArchive === slug;
+    })[0];
+    if (existing) { switchDraft(existing); return; }
+    if (!asked &&
+        !confirm("Leave a Legacy from “" + a.name + "”?\n\n" +
+                 "A successor who takes it applies no heritage result at " +
+                 "question 18. Their own record is not changed.")) return;
+    var id = newId();
+    var c = hydrate(a);
+    c.legacy = newLegacy(a);
+    STORE.drafts[id] = { id: id, updated: Date.now(), fromArchive: slug,
+                         kind: "legacy", baseTiers: a.tier_count || 1,
                          character: c };
     switchDraft(id);
   }
@@ -764,6 +794,11 @@
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-advance"), function (b) {
       b.addEventListener("click", function (e) {
         e.stopPropagation(); openAdvance(b.getAttribute("data-slug"));
+      });
+    });
+    Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-legacy"), function (b) {
+      b.addEventListener("click", function (e) {
+        e.stopPropagation(); openLegacy(b.getAttribute("data-slug"));
       });
     });
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-share"), function (b) {
@@ -4522,7 +4557,8 @@
       wizard: (function () {
         var w = {}, k;
         for (k in C) if (C.hasOwnProperty(k) && k !== "concept" &&
-                         k !== "advance" && k.charAt(0) !== "_") w[k] = C[k];
+                         k !== "advance" && k !== "legacy" &&
+                         k.charAt(0) !== "_") w[k] = C[k];
         return w;
       })(),
       twenty_questions: {
@@ -5402,6 +5438,328 @@
       render: renderAdvanceSave }
   ];
 
+  /* ========================================================== legacies
+
+     A Legacy is Legacies of War's alternative to question 18. When a player
+     makes a new character mid-campaign they may take on the Legacy of their
+     last PC, and if they do they apply no result from the heritage table. Each
+     one carries a Ring, Categories, a Requirement the predecessor must
+     satisfy, a Charge that removes or gains strife, and Effects — a narrative
+     boon and a reroll.
+
+     So a Legacy is made FROM a finished character, which makes it the fourth
+     thing a draft can be. Ten templates are published; the book also gives a
+     four-step framework for writing one, and both paths land the same record.
+
+     Six of the ten requirements are arithmetic on the predecessor's own sheet
+     and are checked here. The other four turn on what happened in play —
+     whether a ninjō went unfulfilled, whether a death earned honor — and are
+     put as a question rather than guessed at. */
+
+  var LEGACY = window.L5R_LEGACIES || { templates: {}, framework: [] };
+
+  function activeLegacy() { return (C && C.legacy) || null; }
+  function isLegacy() { return activeDraft().kind === "legacy"; }
+
+  function newLegacy(a) {
+    return { predecessor: a.slug, predecessor_name: a.name,
+             from: a.top, template: null, custom: null, answers: {},
+             name: "", notes: "" };
+  }
+
+  /* What Inherited Connections counts, in the book's own words: "five or more
+     of the following (in any combination): Ally advantages, Support of [One
+     Group] advantages, and/or Bonds."
+
+     Three things worth being exact about. Bonds count, and they are a list of
+     their own on the tier rather than advantages. Only those two advantage
+     families count — an earlier version of this also counted Blackmail on,
+     Well Connected and Sworn, which the book does not name, and inventing a
+     rule that hands out a Legacy is worse than not checking at all. And the
+     match is on the family, because the archive records these with their
+     subject filled in ("Support of the Yogo"). */
+  var CONNECTION = /^(Ally|Support of)\b/i;
+
+  function connectionCount(top) {
+    var adv = (top.peculiarities || []).filter(function (n) {
+      return CONNECTION.test(String(n));
+    }).length;
+    return adv + (top.bonds || []).length;
+  }
+
+  /* Whether a predecessor meets a template's requirement.
+     -> {state: "met"|"unmet"|"ask", why: "…"} */
+  function legacyStatus(t, top) {
+    if (!top) return { state: "ask", why: "No record for the predecessor." };
+    var test = t.test;
+    if (test) {
+      var have, label;
+      if (test.kind === "social") {
+        have = (top.social || {})[test.attr] || 0;
+        label = cap(test.attr) + " " + have;
+      } else if (test.kind === "skill") {
+        have = flatten(top.skills)[test.skill] || 0;
+        label = (SKILL_LABEL[test.skill] || test.skill) + " rank " + have;
+      } else if (test.kind === "count") {
+        have = connectionCount(top);
+        label = have + " connection advantage" + (have === 1 ? "" : "s");
+      }
+      var ok = test.op === ">=" ? have >= test.value : have <= test.value;
+      return { state: ok ? "met" : "unmet",
+               why: label + " — needs " + test.op + " " + test.value +
+                    (t.judgement ? ". " + t.judgement : "") };
+    }
+    return { state: "ask", why: t.judgement || t.requirement };
+  }
+
+  function legacyDone() {
+    var l = activeLegacy();
+    if (!l) return false;
+    if (l.template) return !!has(l.name);
+    var c = l.custom || {};
+    return !!(has(l.name) && has(c.ring) && has(c.requirement) &&
+              has(c.charge) && has(c.effects));
+  }
+
+  /* ------------------------------------------------------ the screen */
+
+  function legacyPredecessor(body) {
+    var l = activeLegacy();
+    var p = document.createElement("p");
+    p.className = "muted small";
+    p.innerHTML = "The Legacy of <strong>" + esc(l.predecessor_name) +
+      "</strong> — " + (l.from.xp || 0) + " XP, honor " +
+      ((l.from.social || {}).honor) + ", glory " +
+      ((l.from.social || {}).glory) + ", status " +
+      ((l.from.social || {}).status) + ". A successor who takes it applies no " +
+      "result from the heritage table at question 18.";
+    body.appendChild(p);
+  }
+
+  function legacyTemplates(body) {
+    var l = activeLegacy();
+    var keys = Object.keys(LEGACY.templates).sort(function (a, b) {
+      return LEGACY.templates[a].name.localeCompare(LEGACY.templates[b].name);
+    });
+    if (!keys.length) return needs(body, "No Legacy templates loaded.");
+    label(body, "Published templates");
+    var met = 0;
+    var list = document.createElement("div");
+    list.className = "legacy-list";
+    list.innerHTML = keys.map(function (k) {
+      var t = LEGACY.templates[k];
+      var st = legacyStatus(t, l.from);
+      if (st.state === "met") met++;
+      var on = l.template === k;
+      return '<button type="button" class="legacy ' + st.state +
+        (on ? " active" : "") + '" data-k="' + esc(k) + '">' +
+        '<span class="lg-head"><span class="lg-name">' + esc(t.name) + "</span>" +
+        '<span class="lg-ring">' + esc(t.ring || "") + "</span>" +
+        '<span class="lg-state">' +
+          (st.state === "met" ? "qualifies"
+            : st.state === "unmet" ? "does not qualify" : "a call for the table") +
+        "</span></span>" +
+        '<span class="lg-req">' + esc(t.requirement || "") + "</span>" +
+        '<span class="lg-why">' + esc(st.why || "") + "</span>" +
+        "</button>";
+    }).join("");
+    Array.prototype.forEach.call(list.querySelectorAll(".legacy"), function (b) {
+      b.addEventListener("click", function () {
+        var k = b.getAttribute("data-k");
+        l.template = l.template === k ? null : k;
+        if (l.template) {
+          l.custom = null;
+          if (!l.name) l.name = LEGACY.templates[k].name;
+        }
+        save(); render();
+      });
+    });
+    body.appendChild(list);
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = met + " of " + keys.length +
+      " qualify on this predecessor's record; the rest either do not, or turn " +
+      "on what happened in play and are for the table to settle.";
+    body.appendChild(note);
+  }
+
+  function legacyChosen(body) {
+    var l = activeLegacy();
+    if (!l.template) return;
+    var t = LEGACY.templates[l.template];
+    if (!t) return;
+    var wrap = document.createElement("div");
+    wrap.className = "legacy-detail";
+    wrap.innerHTML =
+      '<h4 class="field-label">' + esc(t.name) + " — as the book states it</h4>" +
+      '<p><strong>Charge.</strong> ' + esc(t.charge || "") + "</p>" +
+      '<p><strong>Effects.</strong> ' + esc(t.effects || "") + "</p>" +
+      (t.recovery_note
+        ? '<p><strong>Recovery.</strong> ' + esc(t.recovery_note) + "</p>" : "");
+    body.appendChild(wrap);
+  }
+
+  function legacyCustom(body) {
+    var l = activeLegacy();
+    label(body, "Or write one");
+    if (!l.custom && l.template) {
+      var start = document.createElement("button");
+      start.type = "button";
+      start.className = "btn ghost";
+      start.textContent = "Write a custom Legacy instead";
+      start.addEventListener("click", function () {
+        l.template = null;
+        l.custom = { ring: null, categories: [], requirement: "", charge: "",
+                     effects: "" };
+        save(); render();
+      });
+      body.appendChild(start);
+      return;
+    }
+    if (!l.custom) {
+      l.custom = { ring: null, categories: [], requirement: "", charge: "",
+                   effects: "" };
+    }
+    var c = l.custom;
+
+    (LEGACY.framework || []).forEach(function (s, i) {
+      var p = document.createElement("p");
+      p.className = "legacy-step";
+      p.innerHTML = "<span>" + (i + 1) + "</span>" + esc(s);
+      body.appendChild(p);
+    });
+
+    label(body, "Ring the ability most often uses");
+    ringPicker(body, c.ring, function (r) { c.ring = r; save(); render(); });
+
+    [["requirement", "What the predecessor must have been or done"],
+     ["charge", "The charge — what removes strife, and what gains it"],
+     ["effects", "Effects — a narrative boon, and a reroll"]].forEach(function (f) {
+      label(body, f[1]);
+      var ta = document.createElement("textarea");
+      ta.rows = f[0] === "requirement" ? 2 : 4;
+      ta.value = c[f[0]] || "";
+      ta.addEventListener("change", function () {
+        c[f[0]] = ta.value.trim(); save();
+      });
+      body.appendChild(ta);
+    });
+  }
+
+  function renderLegacy(body) {
+    var l = activeLegacy();
+    if (!l) return needs(body, "This draft has no Legacy on it.");
+    legacyPredecessor(body);
+    label(body, "What this Legacy is called");
+    var nm = document.createElement("input");
+    nm.type = "text";
+    nm.className = "textline";
+    nm.placeholder = "Its name on the successor's sheet";
+    nm.value = l.name || "";
+    nm.addEventListener("change", function () { l.name = nm.value.trim(); save(); });
+    body.appendChild(nm);
+    legacyTemplates(body);
+    legacyChosen(body);
+    legacyCustom(body);
+  }
+
+  /* What a Legacy hands to scripts/apply_legacy.py. The template's own text is
+     carried rather than referenced: a successor's sheet has to state the
+     charge and the effects, and the record should not depend on the template
+     table still saying the same thing years later. */
+  function toLegacyPatch() {
+    var l = activeLegacy();
+    var t = l.template ? LEGACY.templates[l.template] : null;
+    var c = l.custom || {};
+    return {
+      legacy: slugify(l.name || (t && t.name) || l.predecessor + "-legacy"),
+      name: l.name || (t && t.name) || null,
+      predecessor: l.predecessor,
+      predecessor_name: l.predecessor_name,
+      from_template: t ? t.name : null,
+      ring: t ? t.ring : c.ring,
+      categories: t ? t.categories : (c.categories || []),
+      requirement: t ? t.requirement : c.requirement,
+      charge: t ? t.charge : c.charge,
+      effects: t ? t.effects : c.effects,
+      recovery_note: t ? t.recovery_note : null,
+      successor_must: t && /the successor PC must/i.test(t.requirement || "")
+        ? String(t.requirement).replace(/^[\s\S]*?(During character creation)/i,
+                                        "$1")
+        : null,
+      qualifies: t ? legacyStatus(t, l.from).state : "ask",
+      qualifies_why: t ? legacyStatus(t, l.from).why : null,
+      notes: l.notes || ""
+    };
+  }
+
+  function renderLegacySave(body) {
+    var l = activeLegacy();
+    var doc = toLegacyPatch();
+    var head = document.createElement("p");
+    head.className = "muted small";
+    head.innerHTML = "A Legacy left by <strong>" + esc(l.predecessor_name) +
+      "</strong>" + (doc.from_template
+        ? ", from the published <strong>" + esc(doc.from_template) + "</strong> template"
+        : ", written for this predecessor") + ".";
+    body.appendChild(head);
+    if (doc.qualifies === "unmet") {
+      var warn = document.createElement("p");
+      warn.className = "export-warn";
+      warn.textContent = "This predecessor does not meet the template's " +
+        "requirement: " + doc.qualifies_why + " The record says so; landing it " +
+        "is the GM's call.";
+      body.appendChild(warn);
+    }
+    var row = document.createElement("div");
+    row.className = "choicerow";
+    row.innerHTML = '<button type="button" class="btn" id="dl">Download</button>' +
+      '<button type="button" class="btn" id="cp">Copy</button>';
+    body.appendChild(row);
+    var how = document.createElement("p");
+    how.className = "muted small";
+    how.innerHTML = "Then: <code>python3 scripts/apply_legacy.py " +
+      esc(doc.legacy) + "</code> — it writes " +
+      "<code>src/legacies/" + esc(doc.legacy) + ".json</code> and points " +
+      esc(l.predecessor_name) + "'s page at it. Nothing is written without " +
+      "<code>--apply</code>.";
+    body.appendChild(how);
+    var pre = document.createElement("pre");
+    pre.className = "export-json";
+    pre.textContent = JSON.stringify(doc, null, 1);
+    body.appendChild(pre);
+    row.querySelector("#dl").addEventListener("click", function () {
+      var blob = new Blob([JSON.stringify(doc, null, 1)],
+                          { type: "application/json" });
+      var n = document.createElement("a");
+      n.href = URL.createObjectURL(blob);
+      n.download = doc.legacy + "-legacy.json";
+      document.body.appendChild(n); n.click(); n.remove();
+      setTimeout(function () { URL.revokeObjectURL(n.href); }, 1000);
+    });
+    row.querySelector("#cp").addEventListener("click", function () {
+      navigator.clipboard.writeText(JSON.stringify(doc, null, 1));
+    });
+  }
+
+  var LEGACY_STEPS = [
+    { id: "legacy", n: 0, label: "Legacy",
+      title: function () {
+        var l = activeLegacy();
+        return "The Legacy of " + ((l && l.predecessor_name) || "a character");
+      },
+      desc: "A successor who takes this on applies no result from the heritage " +
+        "table at question 18. Ten templates are published; the book's own " +
+        "four-step framework is here too if none of them fits.",
+      done: legacyDone,
+      render: renderLegacy },
+    { id: "legacy-save", n: 1, label: "Save", title: "Leave the Legacy",
+      desc: "This writes a record of its own and points the predecessor's page " +
+        "at it. Their own record is not changed.",
+      done: function () { return false; },
+      render: renderLegacySave }
+  ];
+
   /* What an edit hands to scripts/apply_edit.py: the whole wizard-owned
      document, and which record it belongs to. Deliberately not a field list —
      the applier decides what it is allowed to take from this, so there is one
@@ -5547,7 +5905,9 @@
   /* Which set of steps is in play. An advance is not the Game of Twenty
      Questions — it is a ledger and a save — so it has its own two. */
   function steps() {
-    return isAdvance() ? ADVANCE_STEPS : STEPS;
+    if (isAdvance()) return ADVANCE_STEPS;
+    if (isLegacy()) return LEGACY_STEPS;
+    return STEPS;
   }
 
   function activeSteps() {
@@ -5709,7 +6069,31 @@
     wireWipTips();
   }
 
+  function renderLegacyWip() {
+    var l = activeLegacy();
+    if (!l) return;
+    var t = l.template ? LEGACY.templates[l.template] : null;
+    var st = t ? legacyStatus(t, l.from) : null;
+    el("wip").innerHTML =
+      '<h3 class="wip-name">' + esc(l.name || "Unnamed Legacy") + "</h3>" +
+      '<p class="wip-sub">left by ' + esc(l.predecessor_name) + "</p>" +
+      '<p class="wip-editing">' +
+        (t ? esc(t.name) + " · " + esc(t.ring || "")
+           : "written for this predecessor") + "</p>" +
+      '<div class="statrow">' +
+      ['<div class="stat"><span class="k">Honor</span><span class="v">' +
+         ((l.from.social || {}).honor) + "</span></div>",
+       '<div class="stat"><span class="k">Glory</span><span class="v">' +
+         ((l.from.social || {}).glory) + "</span></div>",
+       '<div class="stat"><span class="k">Status</span><span class="v">' +
+         ((l.from.social || {}).status) + "</span></div>",
+       '<div class="stat"><span class="k">XP</span><span class="v">' +
+         (l.from.xp || 0) + "</span></div>"].join("") + "</div>" +
+      (st ? '<p class="muted small">' + esc(st.why) + "</p>" : "");
+  }
+
   function renderWip() {
+    if (isLegacy()) return renderLegacyWip();
     if (isAdvance()) return renderAdvanceWip();
     var d = computed();
     var ring = RINGS.map(function (r) {
@@ -5905,14 +6289,14 @@
         var kv = pair.split("=");
         if (kv[0]) q[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1] || "");
       });
-    var slug = q.advance || q.edit;
+    var slug = q.advance || q.edit || q.legacy;
     if (!slug) return;
     var a = ARCHIVE.filter(function (x) { return x.slug === slug; })[0];
     if (!a) {
       setStatus("no character called “" + slug + "” in the archive");
       return;
     }
-    var kind = q.advance ? "advance" : "edit";
+    var kind = q.advance ? "advance" : q.legacy ? "legacy" : "edit";
     var open = Object.keys(STORE.drafts).filter(function (id) {
       return STORE.drafts[id].fromArchive === slug &&
              (STORE.drafts[id].kind || "draft") === kind;
@@ -5922,6 +6306,7 @@
     }
     if (open) { switchDraft(open); return; }
     if (kind === "advance") openAdvance(slug, true);
+    else if (kind === "legacy") openLegacy(slug, true);
     else openArchiveDraft(slug, "edit", true);
   }
 

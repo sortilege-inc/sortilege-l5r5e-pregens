@@ -1004,6 +1004,60 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 }
 .char-actions .action-play{ border-left:3px solid var(--jade); }
 .char-actions .action-advance{ border-left:3px solid var(--crimson); }
+.char-actions .action-legacy{ border-left:3px solid var(--gold-soft); }
+
+/* ---- legacies -------------------------------------------------------- */
+.legacy-card{
+  margin:0.5rem 0; padding:0.7rem 0.9rem; border:1px solid var(--edge-soft);
+  border-left:3px solid var(--gold-soft); border-radius:2px; background:var(--paper-2);
+}
+.legacy-card h3{ margin:0 0 0.3rem; font-family:var(--disp); font-size:1.15rem; }
+.legacy-card p{ margin:0.3rem 0; font-size:0.92rem; }
+.legacy-card .lg-must{ color:var(--crimson); }
+.dc-legacy{
+  appearance:none; cursor:pointer; border:1px dashed var(--gold-soft);
+  border-left:0; background:var(--paper); color:var(--ink-2);
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.06em;
+  font-size:0.6rem; padding:0 0.45rem; border-radius:0 2px 2px 0;
+}
+.dc-legacy:hover{ border-color:var(--crimson); color:var(--crimson); }
+.legacy-list{ display:grid; gap:0.45rem; margin:0.4rem 0 0.6rem; }
+.legacy{
+  display:block; width:100%; text-align:left; appearance:none; cursor:pointer;
+  background:var(--paper); border:1px solid var(--edge-soft);
+  border-left:3px solid var(--edge-soft); border-radius:2px;
+  padding:0.5rem 0.7rem; transition:.14s;
+}
+.legacy:hover{ background:var(--paper-2); }
+.legacy.met{ border-left-color:var(--jade); }
+.legacy.unmet{ border-left-color:var(--crimson); opacity:0.75; }
+.legacy.ask{ border-left-color:var(--gold-soft); }
+.legacy.active{ background:rgba(79,125,92,0.08); border-color:var(--jade); }
+.legacy.active .lg-name::before{ content:"\2713 "; color:var(--jade); }
+.lg-head{ display:flex; align-items:baseline; gap:0.5rem; flex-wrap:wrap; }
+.lg-name{ font-family:var(--disp); font-weight:600; font-size:1.05rem; color:var(--sumi); }
+.lg-ring, .lg-state{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.09em;
+  font-size:0.58rem; color:var(--ink-soft);
+}
+.legacy.met .lg-state{ color:var(--jade); }
+.legacy.unmet .lg-state{ color:var(--crimson); }
+.lg-req{ display:block; font-size:0.9rem; color:var(--ink-2); margin-top:0.2rem; }
+.lg-why{ display:block; font-size:0.8rem; color:var(--ink-soft); margin-top:0.15rem; }
+.legacy-detail{
+  margin:0.5rem 0 0.8rem; padding:0.7rem 0.9rem; border:1px solid var(--edge-soft);
+  border-top:3px solid var(--jade); border-radius:2px; background:var(--paper-2);
+}
+.legacy-detail p{ margin:0.35rem 0; font-size:0.92rem; }
+.legacy-step{
+  display:flex; gap:0.6rem; align-items:baseline; margin:0.3rem 0;
+  font-size:0.88rem; color:var(--ink-2);
+}
+.legacy-step span{
+  flex:none; width:1.5em; height:1.5em; line-height:1.5em; text-align:center;
+  border-radius:50%; font-size:0.7rem; color:var(--paper); background:var(--ink-dim);
+  font-variant-numeric:lining-nums;
+}
 
 /* ---- the advancement ledger ------------------------------------------ */
 .archiverow{ display:inline-flex; align-items:stretch; gap:0; }

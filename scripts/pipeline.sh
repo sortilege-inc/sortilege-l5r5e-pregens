@@ -71,6 +71,9 @@ python3 scripts/heritage_tables.py | tail -1
 # School and title curricula, for the advancement ledger. Reads the resolved
 # corpus that dsl_rules_text.py composed above, so errata are already applied.
 python3 scripts/curricula.py
+# Legacy templates: Legacies of War's alternative to the heritage table, and
+# what a predecessor has to be to qualify for each.
+python3 scripts/legacy_tables.py
 python3 scripts/name_tables.py | tail -1
 python3 scripts/relationship_map.py
 

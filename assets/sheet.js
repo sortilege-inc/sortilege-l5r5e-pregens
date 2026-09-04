@@ -586,7 +586,7 @@
       '<span class="en">Ring + Skill</span></h2>' + renderSkills(t);
     el("content-target").innerHTML = CATEGORY_ORDER.map(function (c) {
       return renderCategory(t, prev, c);
-    }).join("") + renderCurriculum(t);
+    }).join("") + renderCurriculum(t) + renderLegacies();
 
     Array.prototype.forEach.call(document.querySelectorAll("#timeline .tl-node"), function (n, i) {
       n.classList.toggle("active", i === idx);
@@ -627,13 +627,46 @@
   function renderActions(t) {
     var top = CHAR.tiers[CHAR.tiers.length - 1];
     var sheet = "../play/" + CHAR.slug + "-" + t.xp + "xp.html";
-    var advance = "../creator/index.html?advance=" +
-      encodeURIComponent(CHAR.slug);
+    var q = "../creator/index.html?";
+    var left = (CHAR.legacies || []).length;
     el("char-actions").innerHTML =
       '<a class="btn action-play" href="' + esc(sheet) + '">Play' +
         '<span class="act-note">' + t.xp + " XP sheet</span></a>" +
-      '<a class="btn action-advance" href="' + esc(advance) + '">Advance' +
-        '<span class="act-note">spend XP from ' + top.xp + "</span></a>";
+      '<a class="btn action-advance" href="' + esc(q + "advance=" +
+        encodeURIComponent(CHAR.slug)) + '">Advance' +
+        '<span class="act-note">spend XP from ' + top.xp + "</span></a>" +
+      '<a class="btn action-legacy" href="' + esc(q + "legacy=" +
+        encodeURIComponent(CHAR.slug)) + '">Legacy' +
+        '<span class="act-note">' +
+          (left ? left + " left" : "leave one for a successor") +
+        "</span></a>";
+  }
+
+  /* What this character left for a successor to take instead of a heritage
+     result. Shown with the charge and the effects in full, because a successor
+     who takes it has to play to the charge — a name and a link would make it
+     look like a badge. */
+  function renderLegacies() {
+    var left = CHAR.legacies || [];
+    if (!left.length) return "";
+    return '<h2 class="section-h"><span class="kanji">遺産</span>Legacy' +
+      '<span class="en">left for a successor</span></h2>' +
+      left.map(function (l) {
+        return '<div class="legacy-card">' +
+          '<h3>' + esc(l.name) +
+            (l.from_template && l.from_template !== l.name
+              ? ' <span class="muted">· ' + esc(l.from_template) + "</span>" : "") +
+            (l.ring ? ' <span class="lg-ring">' + esc(l.ring) + "</span>" : "") +
+          "</h3>" +
+          '<p class="lg-req"><strong>Requirement.</strong> ' +
+            esc(l.requirement || "") + "</p>" +
+          (l.charge ? '<p><strong>Charge.</strong> ' + esc(l.charge) + "</p>" : "") +
+          (l.effects ? '<p><strong>Effects.</strong> ' + esc(l.effects) + "</p>" : "") +
+          (l.successor_must
+            ? '<p class="lg-must"><strong>The successor must.</strong> ' +
+              esc(l.successor_must) + "</p>" : "") +
+          "</div>";
+      }).join("");
   }
 
   function init() {
