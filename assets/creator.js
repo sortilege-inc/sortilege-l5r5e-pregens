@@ -172,9 +172,30 @@
     if (m === "pow") return q.pow || q.core || null;
     return q.core || null;
   }
+  /* The question's wording, which falls back further than its mechanics do.
+
+     The corpus states questions 1, 2 and 5 only in Writ of the Wilds, even
+     though Path of Waves asks all three — its own chapter prints "what region
+     does your character come from?", "what was your character's upbringing?"
+     and "What is your character's past and how does it affect them?", word for
+     word the same sentences (Path of Waves p.36, p.46, p.61; checked against
+     the source). So the text walks pow -> wow -> core while qFor() stays
+     pow -> core: borrowing the sentence the other book states for the same
+     question is right, and borrowing its options would not be, because Writ of
+     the Wilds offers three regions where Path of Waves offers six.
+
+     Without this, a rōnin was asked "What Clan Does Your Character Belong To?"
+     over a list of regions. The missing DEFs are a corpus gap, flagged. */
   function qText(n) {
-    var q = qFor(n);
-    return (q && q.text) || null;
+    var q = QUESTIONS[String(n)] || {};
+    var m = mode();
+    var chain = m === "wow" ? [q.wow, q.pow, q.core]
+              : m === "pow" ? [q.pow, q.wow, q.core]
+              : [q.core];
+    for (var i = 0; i < chain.length; i++) {
+      if (chain[i] && chain[i].text) return chain[i].text;
+    }
+    return null;
   }
   // True when the mode asks a different question here, not a reworded one.
   function qAlt(n) {
@@ -195,14 +216,39 @@
   ];
   function mode() { return C.mode || "core"; }
   function isCore() { return mode() === "core"; }
-  function originSet() {
-    var src = mode() === "wow" ? "writ-of-wilds" : "path-of-waves";
-    var list = (mode() === "wow" ? UPBRINGINGS : REGIONS);
+  /* Question 1 asks a region and question 2 an upbringing, in both modes.
+     This used to be one function returning REGIONS for Path of Waves and
+     UPBRINGINGS for Writ of the Wilds, which meant question 1 in Wilds mode
+     offered upbringings. Each question gets its own set, and each is scoped to
+     the books that actually state it -- scripts/origin_tables.py records that
+     per entry as `modes`, because Path of Waves and Writ of the Wilds share
+     four upbringings and the resolved corpus presents each of them once. */
+  function originScoped(list, n) {
+    var m = mode();
+    /* When the mode's own question names its options, those are the set: Writ
+       of the Wilds offers three of the six regions and four of the thirteen
+       upbringings, and states which in its OPTIONS. Matching on the option
+       label, because the question says "Forest" where the entry is called
+       "Forest Region". */
+    var q = (QUESTIONS[String(n)] || {})[m];
+    var named = (q && q.options || []).map(function (o) {
+      return normName(o.label);
+    });
+    if (named.length) {
+      var byOption = list.filter(function (x) {
+        var k = normName(x.name);
+        return named.some(function (o) { return k.indexOf(o) === 0; });
+      });
+      if (byOption.length === named.length) return byOption;
+    }
+    // otherwise every entry the mode's book states
     var scoped = list.filter(function (x) {
-      return (x.source || "").indexOf(src) >= 0;
+      return (x.modes || []).indexOf(m) >= 0;
     });
     return scoped.length ? scoped : list;
   }
+  function regionSet() { return originScoped(REGIONS, 1); }
+  function upbringingSet() { return originScoped(UPBRINGINGS, 2); }
   var ROLL = (window.L5R_COVERAGE || {}).schools || [];
 
   // The chargen data and the compendium spell schools differently ("Asahina
@@ -1936,6 +1982,11 @@
         .filter(function (o) { return spec.options.indexOf(o) >= 0; });
       return picked.slice(0, spec.n || 1);
     }
+    /* A grant can be flat, a choice, or BOTH: Hunter or Fisher gives
+       "+1 Labor, +1 Seafaring or +1 Survival" — one fixed rank and one the
+       player picks. These used to return as soon as they saw a _choose, so the
+       flat part beside it was dropped and that Labor rank never arrived. The
+       choice is applied and then the flat keys, every time. */
     function addRing(obj, key, source) {
       if (!obj) return;
       if (obj._choose) {
@@ -1950,9 +2001,9 @@
           pending.push({ type: "ring", opts: spec.options,
                          n: (spec.n || 1) - picked.length });
         }
-        return;
       }
       Object.keys(obj).forEach(function (k) {
+        if (k === "_choose") return;
         var r = k.toLowerCase();
         if (rings[r] != null) { rings[r] += obj[k]; credit("rings", r, obj[k], source); }
       });
@@ -1972,9 +2023,9 @@
           pending.push({ type: "skill", opts: spec.options,
                          n: (spec.n || 1) - picked.length });
         }
-        return;
       }
       Object.keys(obj).forEach(function (k) {
+        if (k === "_choose") return;
         var s = SKILL_BY_LABEL[String(k).toLowerCase()] || k.toLowerCase();
         skills[s] = (skills[s] || 0) + obj[k];
         credit("skills", s, obj[k], source);
@@ -1992,6 +2043,32 @@
       addRing(fam.ring_increase, "family.ring_increase", C.family);
       addSkills(fam.skill_increases, "family.skill_increases", C.family);
       glory = fam.glory || 0; wealth = fam.starting_wealth || 0;
+    }
+    /* Path of Waves and Writ of the Wilds answer questions 1 and 2 with a
+       region and an upbringing, which grant rings, skills, glory, status and
+       wealth exactly as a clan and a family do. computed() read only clan and
+       family, so those two questions added nothing at all and a rōnin came out
+       with bare 1s. (Jordan, 2026-09-03.)
+
+       After the clan and family blocks, not before: a mode switch can
+       leave the other mode's answer on the draft, and in this mode it is
+       the region and the upbringing that are the answers. */
+    if (!isCore()) {
+      var reg = find(REGIONS, C.region);
+      if (reg) {
+        addRing(reg.ring_increase, "region.ring_increase", C.region);
+        addSkills(reg.skill_increase, "region.skill_increase", C.region);
+        if (reg.glory != null) glory = reg.glory;
+      }
+      var up = find(UPBRINGINGS, C.upbringing);
+      if (up) {
+        addRing(up.ring_increase, "upbringing.ring_increase", C.upbringing);
+        addSkills(up.skill_increases, "upbringing.skill_increases", C.upbringing);
+        // a region sets glory and an upbringing modifies status, the way a
+        // family sets glory and a clan sets status in core
+        if (up.status_modification != null) status += up.status_modification;
+        if (up.starting_wealth) wealth += up.starting_wealth;
+      }
     }
     var sch = schoolByRollName(C.school);
     if (sch) {
@@ -2231,20 +2308,67 @@
     return isNaN(n) ? [] : [n];
   }
 
-  // The entry or range a d10 lands on. Falls back to a uniform pick over the
-  // list when the spans do not cover the die, so a corpus gap cannot leave the
-  // button doing nothing.
-  function rollOn(list, rangeOf) {
+  /* The entry a die lands on. Falls back to a uniform pick over the list when
+     the spans do not cover the die, so a corpus gap cannot leave the button
+     doing nothing.
+
+     `sides` defaults to 10 because every heritage table is a d10; Path of
+     Waves' sample-pasts table is a d100, and reading it on a d10 would only
+     ever reach its first two rows. */
+  function rollOn(list, rangeOf, sides) {
+    var n = sides || 10;
     var faces = {};
     list.forEach(function (x) {
       rollSpan(rangeOf(x)).forEach(function (f) {
-        if (f >= 1 && f <= 10 && faces[f] === undefined) faces[f] = x;
+        if (f >= 1 && f <= n && faces[f] === undefined) faces[f] = x;
       });
     });
     var covered = [];
-    for (var f = 1; f <= 10; f++) if (faces[f] !== undefined) covered.push(f);
-    if (covered.length < 10) return list[randomBelow(list.length)];
+    for (var f = 1; f <= n; f++) if (faces[f] !== undefined) covered.push(f);
+    if (covered.length < n) return list[randomBelow(list.length)];
     return faces[covered[randomBelow(covered.length)]];
+  }
+
+  /* Roll the die and say which face came up, not just which row it hit.
+
+     rollOn() returns the row, so a report built from it can only name the
+     row's span — "rolled 39-46", which is not a number anybody rolled. This
+     rolls a face and finds the row containing it, falling back to rollOn when
+     the spans do not cover the die. */
+  function rollFace(rows, rangeOf, sides) {
+    var n = sides || 10;
+    var faces = {};
+    rows.forEach(function (x) {
+      rollSpan(rangeOf(x)).forEach(function (f) {
+        if (f >= 1 && f <= n && faces[f] === undefined) faces[f] = x;
+      });
+    });
+    var covered = 0;
+    for (var f = 1; f <= n; f++) if (faces[f] !== undefined) covered++;
+    if (covered < n) {
+      var any = rollOn(rows, rangeOf, n);
+      return any ? { face: null, entry: any } : null;
+    }
+    var roll = randomBelow(n) + 1;
+    return { face: roll, entry: faces[roll] };
+  }
+
+  // "d100" -> 100. A table states its own die; nothing here assumes one.
+  function dieSides(die) {
+    var m = /d(\d+)/i.exec(String(die || ""));
+    return m ? Number(m[1]) : 10;
+  }
+
+  /* A row of a roll table, as a name and what it says.
+     The corpus writes each row as "Name: what it means", and the row's own
+     label is its roll range. The range is bookkeeping for rolling, not
+     something to read, so it is used by the roll button and never shown. */
+  function tableRow(r) {
+    var t = String(r.text || "");
+    var i = t.indexOf(":");
+    return i > 0 && i < 60
+      ? { label: t.slice(0, i).trim(), text: t.slice(i + 1).trim(), roll: r.label }
+      : { label: t.slice(0, 48), text: t, roll: r.label };
   }
 
   function heritageTable() { return HERITAGES[C.answers.heritage_table] || null; }
@@ -2838,13 +2962,17 @@
       done: function () { return isCore() ? has(C.clan) : has(C.region); },
       render: function (body) {
         if (!isCore()) {
-          var regions = originSet();
-          pickList(body, regions.map(function (r) {
+          pickList(body, regionSet().map(function (r) {
             return { value: r.name, label: r.name,
-                     meta: [r.ring_increase, r.skill_increase || r.skill_increases,
+                     meta: [r.ring_increase_label, r.skill_increase_label,
                             r.glory != null ? "Glory " + r.glory : null]
                        .filter(Boolean).join(" · ") };
-          }), C.region, function (v) { C.region = v; save(); });
+          }), C.region, function (v) {
+            if (C.region !== v) C.choices = C.choices || {};
+            C.region = v; save(); render();
+          });
+          // a region can grant a ring the player picks between
+          renderChoices(body, find(REGIONS, C.region), "region");
           return;
         }
         var items = CLANS.map(function (c) {
@@ -2879,15 +3007,19 @@
       done: function () { return isCore() ? has(C.family) : has(C.upbringing); },
       render: function (body) {
         if (!isCore()) {
-          pickList(body, UPBRINGINGS.map(function (u) {
+          pickList(body, upbringingSet().map(function (u) {
             return { value: u.name, label: u.name,
-                     meta: [u.ring_increase, u.skill_increases,
-                            u.starting_wealth,
+                     meta: [u.ring_increase_label, u.skill_increases_label,
+                            u.starting_wealth_label,
                             u.status_modification != null
                               ? "Status " + (u.status_modification > 0 ? "+" : "") +
                                 u.status_modification : null]
                        .filter(Boolean).join(" · ") };
-          }), C.upbringing, function (v) { C.upbringing = v; save(); });
+          }), C.upbringing, function (v) {
+            if (C.upbringing !== v) C.choices = C.choices || {};
+            C.upbringing = v; save(); render();
+          });
+          renderChoices(body, find(UPBRINGINGS, C.upbringing), "upbringing");
           return;
         }
         // No clan is not a dead end: a character can carry a family name without
@@ -3030,12 +3162,13 @@
           textStep("giri", "answers.giri", "giri", "Whom do you serve, and how?")(body);
           return;
         }
-        var table = (QUESTIONS["5"] && QUESTIONS["5"].pow || {}).table;
-        if (table) {
-          label(body, "Sample pasts — " + table.die);
-          optionRow(body, "q5.past", table.rows.map(function (r) {
-            return { label: r.label, text: r.text };
-          }));
+        var table = (alt.table) ||
+                    (QUESTIONS["5"] && QUESTIONS["5"].pow || {}).table;
+        if (table && (table.rows || []).length) {
+          var rows = table.rows.map(tableRow);
+          label(body, "Sample pasts");
+          rollRow(body, "q5.past", rows, table.die);
+          optionRow(body, "q5.past", rows);
         }
         textStep("past", "answers.past", "past", "What drives them, and what does it cost?")(body);
       } },
@@ -3740,6 +3873,9 @@
     if (!source) return out;
     [["ring_bonus", "Ring"], ["ring_increase", "Ring"],
      ["skill_bonus", "Skill"], ["skill_increases", "Skill"],
+     // a region states ^"Skill Increase" and an upbringing ^"Skill Increases";
+     // both are here or a region's skill choice is never offered
+     ["skill_increase", "Skill"],
      ["starting_skills", "Starting skill"]].forEach(function (pair) {
       var v = source[pair[0]];
       if (v && v._choose) {
@@ -3810,6 +3946,46 @@
      These render the replacement where one applies, and are no-ops in core
      mode. Each keeps its own answer field, so switching mode never silently
      reinterprets an answer given to a different question. */
+
+  /* Roll on a table instead of choosing from it. The row that comes up is
+     selected the same way a click would select it, so the two paths cannot
+     diverge, and the die and the number rolled are both said out loud. */
+  function rollRow(body, key, rows, die) {
+    var sides = dieSides(die);
+    var row = document.createElement("div");
+    row.className = "ai-row";
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "ai-btn";
+    b.textContent = "Roll " + (die || "d10");
+    var said = document.createElement("span");
+    said.className = "ai-hint";
+    /* The number rolled is shown here rather than through setStatus(), which
+       writes to the sync row — absent entirely when no table Worker is
+       configured, so on a local build the roll would say nothing at all.
+
+       Kept per key, with the entry it produced, so the line cannot outlive
+       what it describes: choose a different entry by hand and it stops
+       claiming a roll. */
+    C.answers.rolls = C.answers.rolls || {};
+    var was = C.answers.rolls[key];
+    var still = was && chosen(key)[0] === was.label;
+    said.textContent = still
+      ? "rolled " + was.roll + " on " + (die || "d10")
+      : rows.length + " entries · roll or choose";
+    b.addEventListener("click", function () {
+      var hit = rollFace(rows, function (x) { return x.roll; }, sides);
+      if (!hit || !hit.entry) return;
+      setChosen(key, [hit.entry.label]);
+      C.answers.rolls[key] = { roll: hit.face == null ? hit.entry.roll : hit.face,
+                               label: hit.entry.label };
+      save();
+      render();
+    });
+    row.appendChild(b);
+    row.appendChild(said);
+    body.appendChild(row);
+  }
 
   // A list of labelled options with their effect, as the corpus states them.
   function optionRow(body, key, opts, onPick) {
@@ -8456,14 +8632,17 @@
        '<div class="stat"><span class="k">Koku</span><span class="v">' + d.wealth + "</span></div>"
       ].join("") + "</div>" +
       (d.pending.length
-        ? '<p class="muted small wip-pending">Choices from your clan, family or school ' +
-          "still to resolve: " + d.pending.map(function (p) {
+        // a rōnin has no clan and no family; the question those choices came
+        // from is a region and an upbringing instead
+        ? '<p class="muted small wip-pending">Choices from your ' +
+          (isCore() ? "clan, family or school" : "region, upbringing or school") +
+          " still to resolve: " + d.pending.map(function (p) {
             if (p.type === "ring") return "a ring (" + p.opts.join("/") + ")";
             if (p.type === "swap") {
               return "the heritage's swap — " + cap(p.to) + " cannot be raised " +
                      "or " + cap(p.from) + " lowered from here";
             }
-            return p.n + " skills";
+            return p.n + (p.n === 1 ? " skill" : " skills");
           }).join("; ") + ".</p>"
         : "") +
       '<h4 class="field-label">Skills</h4><div class="wip-skills">' + skills + "</div>" +

@@ -68,6 +68,12 @@ python3 scripts/build.py
 # run it by hand -- which is how a corrected Spirit Companion entry sat stale.
 # name_tables.py keys off the clan, family and school data the build just wrote.
 python3 scripts/heritage_tables.py | tail -1
+# Regions and upbringings: Path of Waves and Writ of the Wilds answer questions
+# 1 and 2 with these instead of a clan and a family, and they grant rings,
+# skills, glory, status and wealth the same way. Both files used to be
+# hand-written and outside this chain, with every grant flattened to a display
+# string the Creator could not add up.
+python3 scripts/origin_tables.py
 # School and title curricula, for the advancement ledger. Reads the resolved
 # corpus that dsl_rules_text.py composed above, so errata are already applied.
 python3 scripts/curricula.py
