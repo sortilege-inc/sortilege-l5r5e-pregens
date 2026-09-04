@@ -10,6 +10,19 @@ Questions' bookkeeping, and every input is already stated in the corpus:
     clan       ring bonus, skill bonus, starting status
     family     ring increase, skill increases, glory, starting wealth
 
+A Path of Waves or Writ of the Wilds school answers the first two differently,
+and the generator follows:
+
+    region       ring increase, skill increase, glory        (question 1)
+    upbringing   ring and skill increases, wealth, and a
+                 status modification applied to the base the
+                 character's type sets                       (question 2)
+    type         ronin 24, peasant 15, gaijin 0 -- the corpus states these as
+                 its own rules labels, and a reduction floors at 0
+
+and question 18 grants a skill rather than a heritage, because the heritage
+table is not part of that set.
+
 So this answers the mechanical questions from the corpus and leaves the
 narrative ones empty. It writes `src/characters/<slug>.json` with
 status "draft", so a generated character shows up in the Creator and never in
@@ -34,6 +47,18 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from dsl_rules_text import (CACHE, DB, ROOT, compose, norm, variants, walk)
 
 SRC = os.path.join(ROOT, "src", "characters")
+
+# The books whose schools answer questions 1 and 2 with a region and an
+# upbringing. The catalog's own source_book is what says which.
+NONCORE_BOOKS = {"path of waves", "writ of the wild", "writ of the wilds"}
+
+# Path of Waves p.46, and the corpus's own rules labels
+# (pow_ronin_base_status_24, pow_peasant_base_status_15,
+# pow_gaijin_base_status_0). A generated character defaults to ronin, which is
+# what the mode is called -- and says so in needs_attention, because for a
+# nezumi or tengu tradition the book states no type at all.
+ORIGIN_BASE_STATUS = {"ronin": 24, "peasant": 15, "gaijin": 0}
+DEFAULT_ORIGIN_TYPE = "ronin"
 CHARGEN = os.path.join(ROOT, "data", "chargen")
 
 RINGS = ["air", "earth", "fire", "water", "void"]
@@ -412,9 +437,14 @@ def pick_heritage(heritages, counts, seed=""):
 
 
 def build_character(school_name, school, clans, families, catalog, counts,
-                    peculiarities, given_names, heritages):
+                    peculiarities, given_names, heritages, regions=None,
+                    upbringings=None, book=None):
     clan_name = prop_value(school, "Clan")
     roles = json.loads(prop_value(school, "Roles") or "[]")
+    # A school from Path of Waves or Writ of the Wilds replaces the clan and the
+    # family with a region and an upbringing. Decided by the book rather than by
+    # the absence of a clan: a monk order has no clan either and is still core.
+    noncore = (book or "").strip().lower() in NONCORE_BOOKS
     clan = next((c for c in clans
                  if clan_name and norm(c.get("clan_short_name") or c["name"]) == norm(clan_name)),
                 None)
@@ -422,27 +452,158 @@ def build_character(school_name, school, clans, families, catalog, counts,
 
     rings = {r: 1 for r in RINGS}
     skills = {g: {s: 0 for s in ss} for g, ss in SKILL_GROUPS.items()}
+    # where an increase had to be redirected to stay inside the creation cap
+    ring_notes = []
 
-    def bump_skill(label, by=1):
+    def bump_skill(label, by=1, why=""):
+        return bump_skill_capped(label, by, why)
+
+    def _apply_grant(obj, bump):
+        """A region's or an upbringing's grant, which may be flat, a choice, or
+        both at once -- Hunter or Fisher gives "+1 Labor, +1 Seafaring or +1
+        Survival". The choice takes its first option, which is what a generated
+        character does everywhere else it has a free pick."""
+        if not obj:
+            return
+        ch = obj.get("_choose") if isinstance(obj, dict) else None
+        if ch:
+            opts = ch.get("options") or []
+            by = int(ch.get("yield_value") or 1)
+            for o in opts[:int(ch.get("n") or 1)]:
+                bump(o, by)
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                if k == "_choose":
+                    continue
+                bump(k, int(v))
+
+    # "During character creation, no ring may exceed 3 and no skill may exceed
+    # 3" (core-chargen.ttrpg; Path of Waves states it again). The book's remedy
+    # is not to clamp: "if a choice would result in a ring rising above rank 3
+    # during character creation, then the player must choose a different ring
+    # to increase instead, as long as that ring would not be increased above
+    # 3." Every increase here is the generator's own pick, so it redirects —
+    # and says where, because a redirected increase is not what the school
+    # printed.
+    CREATION_CAP = 3
+
+    def bump_ring(name, by=1, why=""):
+        k = (name or "").strip().lower()
+        if k not in rings:
+            return False
+        for _ in range(by):
+            if rings[k] < CREATION_CAP:
+                rings[k] += 1
+                continue
+            spare = [r for r in RINGS if rings[r] < CREATION_CAP]
+            if not spare:
+                ring_notes.append(
+                    f"+1 {k.capitalize()} could not be taken: every ring is at "
+                    f"{CREATION_CAP}, the creation cap" +
+                    (f" ({why})" if why else ""))
+                continue
+            alt = sorted(spare, key=lambda r: (rings[r], RINGS.index(r)))[0]
+            rings[alt] += 1
+            ring_notes.append(
+                f"+1 {k.capitalize()} would have passed the creation cap of "
+                f"{CREATION_CAP}, so it went to {alt.capitalize()} instead" +
+                (f" ({why})" if why else ""))
+        return True
+
+    def bump_skill_capped(label, by=1, why=""):
+        """The same rule for skills: a different skill not already at 3."""
         k = skill_key(label)
         if not k:
             return False
         for g, ss in skills.items():
-            if k in ss:
-                ss[k] += by
-                return True
-        return False
-
-    def bump_ring(name, by=1):
-        k = (name or "").strip().lower()
-        if k in rings:
-            rings[k] += by
+            if k not in ss:
+                continue
+            for _ in range(by):
+                if ss[k] < CREATION_CAP:
+                    ss[k] += 1
+                    continue
+                spare = [(gg, s) for gg, sss in skills.items()
+                         for s in sss if sss[s] < CREATION_CAP]
+                if not spare:
+                    ring_notes.append(
+                        f"+1 {SKILL_LABEL.get(k, k)} could not be taken: every "
+                        f"skill is at {CREATION_CAP}")
+                    continue
+                gg, alt = sorted(spare, key=lambda x: (skills[x[0]][x[1]], x[1]))[0]
+                skills[gg][alt] += 1
+                ring_notes.append(
+                    f"+1 {SKILL_LABEL.get(k, k)} would have passed the creation "
+                    f"cap, so it went to {SKILL_LABEL.get(alt, alt)} instead")
             return True
         return False
 
+    attention = []
+
+    noncore_coins = None
+    if noncore:
+        # --- region (Q1) and upbringing (Q2) -------------------------------
+        origin_type = DEFAULT_ORIGIN_TYPE
+        status = ORIGIN_BASE_STATUS[origin_type]
+        glory, wealth, family = 40, 0, None
+        region = upbringing = None
+
+        pool = [r for r in (regions or [])
+                if not r.get("modes") or "pow" in r["modes"] or "wow" in r["modes"]]
+        if pool:
+            region = sorted(pool, key=lambda r: (counts.get(norm(r["name"]), 0),
+                                                 r["name"]))[0]
+            counts[norm(region["name"])] = counts.get(norm(region["name"]), 0) + 1
+            _apply_grant(region.get("ring_increase"), bump_ring)
+            _apply_grant(region.get("skill_increase"), bump_skill)
+            if region.get("glory") is not None:
+                glory = region["glory"]
+
+        upool = list(upbringings or [])
+        if upool:
+            upbringing = sorted(upool, key=lambda u: (counts.get(norm(u["name"]), 0),
+                                                      u["name"]))[0]
+            counts[norm(upbringing["name"])] = \
+                counts.get(norm(upbringing["name"]), 0) + 1
+            _apply_grant(upbringing.get("ring_increase"), bump_ring)
+            _apply_grant(upbringing.get("skill_increases"), bump_skill)
+            mod = upbringing.get("status_modification")
+            if mod is not None:
+                status += int(mod)
+                # every negative Status Modification in the chapter is printed
+                # "(minimum 0)" -- six of the thirteen
+                if int(mod) < 0:
+                    status = max(0, status)
+            # the denominations as stated, not a koku equivalent — the source
+            # format keeps zeni, koku and bu separately
+            coins = upbringing.get("starting_coins") or {}
+            wealth = coins.get("koku") or 0
+            noncore_coins = {"zeni": coins.get("zeni") or 0,
+                             "koku": coins.get("koku") or 0,
+                             "bu": coins.get("bu") or 0}
+            # a day's rations, an heirloom worth 3 koku, a wakizashi: gear
+            for it in upbringing.get("starting_items") or []:
+                attention.append(
+                    f"{upbringing['name']} starts with {it} — record it as gear")
+            if upbringing.get("from_clan"):
+                attention.append(
+                    f"{upbringing['name']} takes its increases from a clan the "
+                    f"character names, or falls back to a free choice — the "
+                    f"fallback was taken here")
+
+        attention.append(
+            f"type is {origin_type} by default, for a base status of "
+            f"{ORIGIN_BASE_STATUS[origin_type]} — confirm it, and the region "
+            f"and upbringing below, which were chosen for coverage rather than "
+            f"for this character")
+        if region:
+            attention.append(f"region: {region['name']} (question 1)")
+        if upbringing:
+            attention.append(f"upbringing: {upbringing['name']} (question 2)")
+
     # --- clan (Q1) ---------------------------------------------------------
-    status = 30
-    if clan:
+    if not noncore:
+        status = 30
+    if clan and not noncore:
         for r, v in (clan.get("ring_bonus") or {}).items():
             bump_ring(r, v)
         for s, v in (clan.get("skill_bonus") or {}).items():
@@ -450,8 +611,9 @@ def build_character(school_name, school, clans, families, catalog, counts,
         status = clan.get("starting_status") or status
 
     # --- family (Q2) — the least-used family of the clan, for variety ------
-    glory, wealth, family = 40, 0, None
-    if fams:
+    if not noncore:
+        glory, wealth, family = 40, 0, None
+    if fams and not noncore:
         # A school named for a family belongs to it: the Kaito Shrine Keeper is a
         # Kaito, not whichever Phoenix family the archive has covered least.
         # Cross-family training is legal, so this is a default, not a rule.
@@ -546,8 +708,25 @@ def build_character(school_name, school, clans, families, catalog, counts,
     else:
         parent_skill = None
 
-    # --- Q18 heritage ------------------------------------------------------
-    heritage, attention = pick_heritage(heritages, counts, school_name), []
+    # --- Q18 --------------------------------------------------------------
+    # The heritage table is core's question 18. Path of Waves and Writ of the
+    # Wilds ask "Who raised you?" and grant a skill instead, so rolling a
+    # heritage for one of their characters would hand out an ancestor, a
+    # modifier and sometimes an item the set does not have.
+    heritage = None
+    raised_skill = None
+    if noncore:
+        zero18 = [SKILL_LABEL[k] for g in skills.values()
+                  for k, v in g.items() if v == 0]
+        if zero18:
+            raised_skill = least_used(zero18, counts, seed=school_name + "18")[0]
+            bump_skill(raised_skill)
+            counts[norm(raised_skill)] = counts.get(norm(raised_skill), 0) + 1
+            attention.append(
+                f"question 18 is \"who raised you\", which grants a skill "
+                f"rather than a heritage: {raised_skill} — say who they were")
+    else:
+        heritage = pick_heritage(heritages, counts, school_name)
     if heritage:
         counts[norm(heritage["name"])] = counts.get(norm(heritage["name"]), 0) + 1
         for field, delta in (heritage.get("modifiers") or {}).items():
@@ -575,7 +754,9 @@ def build_character(school_name, school, clans, families, catalog, counts,
     gear, unresolved = outfit_items(outfit, catalog, counts, seed=school_name)
 
     # --- name --------------------------------------------------------------
-    fam_name = (family or {}).get("name") or (clan_name or "Ronin")
+    # A ronin, a gaijin or a nezumi has no family name to carry, so the
+    # personal name stands alone rather than being prefixed with "Ronin".
+    fam_name = (family or {}).get("name") or (None if noncore else clan_name)
     # Names must not repeat across the archive — "Akodo Akemi" and "Agasha Akemi"
     # in the same set reads as a generator, not a roster. Walk the pool until an
     # unused personal name comes up, seeded off the school so the order varies.
@@ -585,7 +766,7 @@ def build_character(school_name, school, clans, families, catalog, counts,
     if given is None:                       # pool exhausted: fall back to a suffix
         given = pool[0] + str(1 + sum(1 for u in given_names["used"] if u.startswith(pool[0])))
     given_names["used"].append(given)
-    display = f"{fam_name} {given}" if family else given
+    display = f"{fam_name} {given}" if (family and fam_name) else given
 
     slug = re.sub(r"[^a-z0-9]+", "-",
                   unicodedata.normalize("NFKD", display.lower())
@@ -606,7 +787,8 @@ def build_character(school_name, school, clans, families, catalog, counts,
             "vigilance": -(-(rings["air"] + rings["water"]) // 2),
             "void_points": rings["void"],
         },
-        "money": {"zeni": 0, "koku": wealth, "bu": 0},
+        "money": (noncore_coins if noncore and noncore_coins
+                  else {"zeni": 0, "koku": wealth, "bu": 0}),
         "techniques": techs,
         "peculiarities": pecs,
         "titles": [], "bonds": [], "signature_scrolls": [],
@@ -618,6 +800,7 @@ def build_character(school_name, school, clans, families, catalog, counts,
             "parent_skill": parent_skill,
             "heritage": (heritage or {}).get("name"),
             "heritage_table": (heritage or {}).get("_table"),
+            "raised_by_skill": raised_skill,
             "mentor_path": "A",
         },
     }
@@ -628,9 +811,16 @@ def build_character(school_name, school, clans, families, catalog, counts,
 
     doc = {
         "slug": slug, "name": display, "folder_label": display,
+        # which question set answered this character, the way the Creator
+        # records it on a draft it made
+        "mode": "pow" if noncore else "core",
         "campaign": None, "status": "draft", "bucket": "generated",
         "accent": None,
-        "identity": {"clan": clan_name, "family": (family or {}).get("name"),
+        "identity": {"clan": None if noncore else clan_name,
+                     "family": (family or {}).get("name"),
+                     "region": (region or {}).get("name") if noncore else None,
+                     "upbringing": (upbringing or {}).get("name") if noncore else None,
+                     "origin_type": origin_type if noncore else None,
                      "school": school_name, "role": (roles or [None])[0], "age": None},
         "portrait": None, "concept": None, "summary": None,
         "notes": "",
@@ -642,6 +832,8 @@ def build_character(school_name, school, clans, families, catalog, counts,
     # what this school issues, and a person has to decide how to record it.
     for line in unresolved:
         attention.append(f"starting outfit line has no catalog item: {line}")
+    # a redirected increase is not what the school printed, so it is named
+    attention += ring_notes
     if attention:
         doc["needs_attention"] = attention
     return doc, unresolved
@@ -706,6 +898,13 @@ def main():
         e["rarity"] = int(r) if str(r).strip().isdigit() else None
     peculiarities = [e for e in catalog if e["sub_type"] == "peculiarity"]
     heritages = load_js("heritages.js", "L5R_HERITAGES")
+    # questions 1 and 2 for a Path of Waves or Writ of the Wilds school
+    regions = load_js("regions.js", "L5R_REGIONS")
+    upbringings = load_js("upbringings.js", "L5R_UPBRINGINGS")
+    # which book each school is from, which is what decides the question set
+    books = {norm(r["name"]): r["source_book"] for r in cx.execute(
+        "SELECT name, source_book FROM catalog"
+        " WHERE pack LIKE '%school-curriculum%'")}
     counts = usage_counts()
     # every personal name already in the archive, so generated ones do not collide
     taken = []
@@ -720,13 +919,23 @@ def main():
             bad.append(name)
             continue
         doc, unresolved = build_character(name, school, clans, families, catalog,
-                                          counts, peculiarities, names, heritages)
+                                          counts, peculiarities, names, heritages,
+                                          regions=regions, upbringings=upbringings,
+                                          book=books.get(norm(name)))
         missing += [(name, u) for u in unresolved]
         t = doc["tiers"][0]
-        print(f"{doc['name']:26} {name:44} "
+        ident = doc["identity"]
+        origin = (ident.get("clan") or
+                  " · ".join(x for x in (
+                      str(ident.get("region") or "").replace(" Region", ""),
+                      str(ident.get("upbringing") or "").replace(" Upbringing", ""),
+                      ident.get("origin_type") or "") if x) or "—")
+        print(f"{doc['name']:22} {name:40} {doc['mode']:5} "
               f"rings {'/'.join(str(t['rings'][r]) for r in RINGS)}  "
-              f"{len(t['techniques'])} tech  {len(t['peculiarities'])} pec  "
-              f"{len(t['gear'])} gear")
+              f"h{t['social']['honor']} g{t['social']['glory']} "
+              f"s{t['social']['status']}  "
+              f"{len(t['techniques'])}t {len(t['peculiarities'])}p "
+              f"{len(t['gear'])}g  {origin[:44]}")
         if args.write:
             os.makedirs(SRC, exist_ok=True)
             dest = os.path.join(SRC, doc["slug"] + ".json")

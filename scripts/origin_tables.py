@@ -37,7 +37,7 @@ emitted as the choice it is, and the from-clan alternative is carried in
 `from_clan` so the Creator can offer it rather than dropping it. The previous
 hand-written file had this entry's grants as empty strings.
 """
-import json, os, re, sys
+import json, os, re, sys, unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESOLVED = os.path.join(ROOT, "pipeline", "dsl", "l5r5e-resolved.json")
@@ -50,6 +50,13 @@ BOOKS = {"path-of-waves": "pow", "writ-of-wilds": "wow"}
 CHOOSE_HEAD = re.compile(
     r"CHOOSE\s+(?P<distinct>DISTINCT\s+)?(?P<n>\d+)\s*\[")
 NAME_RE = re.compile(r'\^"([^"]+)"')
+
+
+def norm(s):
+    """Fold a name to bare letters, so "Bu" and "bu" are one denomination."""
+    s = unicodedata.normalize("NFKD", str(s or ""))
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", "", s.lower())
 
 
 def close_bracket(text, at):
@@ -170,34 +177,78 @@ def grants(p):
     return out, ", ".join(bits)
 
 
-def wealth(p):
-    """Starting wealth as a koku figure, the way a family states it.
+# The corpus states the rate: "One koku can be exchanged for five silver bu...
+# One bu can be exchanged for ten copper zeni" (core-systems.ttrpg, the
+# currency-of-rokugan entry). So a koku is 5 bu is 50 zeni.
+PER_KOKU = {"koku": 1.0, "bu": 1.0 / 5, "zeni": 1.0 / 50}
 
-    A family's starting_wealth is a plain number of koku; an upbringing states
-    DEF { ^"Koku" INTEGER 1 } or DEF { ^"Bu" INTEGER 4 }. A bu is a tenth of a
-    koku (core rulebook), so 4 bu is 0.4 koku -- kept as a number so the two
-    are one currency, with the label preserved for display.
+
+def wealth(p):
+    """Starting wealth, in the denominations the source format keeps.
+
+    Three shapes are in use, and all three matter:
+        INTEGER 1                     a plain count of koku (seven of thirteen)
+        DEF { ^"Bu" INTEGER 4 }       another denomination
+        DEF { ^"Day's Rations" ... }  not money at all -- an item
+
+    Returns (coins, koku_equivalent, items, label). Anything that is neither a
+    denomination nor empty comes back as an item rather than being counted as
+    currency or dropped.
     """
+    coins = {"koku": 0, "bu": 0, "zeni": 0}
+    items, bits = [], []
     if not p:
-        return 0, ""
-    if p.get("type") == "STRING":
-        v = str(p.get("value") or "")
-        m = re.match(r"(\d+)\s*(koku|bu)", v, re.I)
-        if not m:
-            return 0, v
-        n = int(m.group(1))
-        return (n if m.group(2).lower() == "koku" else n / 10.0), v
-    total, bits = 0, []
-    for n in p.get("nested") or []:
-        if not n.get("name") or n.get("value") is None:
-            continue
+        return coins, 0.0, items, ""
+
+    def add(name, value):
+        k = norm(name)
         try:
-            v = int(n["value"])
+            v = int(value)
         except (TypeError, ValueError):
-            continue
-        bits.append(f"{v} {n['name'].lower()}")
-        total += v if n["name"].lower() == "koku" else v / 10.0
-    return total, ", ".join(bits)
+            items.append(str(name))
+            return
+        if k in coins:
+            coins[k] += v
+            bits.append(f"{v} {k}")
+        else:
+            # a day's rations, an heirloom, a wakizashi
+            items.append(str(name) if v == 1 else f"{name} x{v}")
+
+    if p.get("type") == "INTEGER":
+        n = number(p)
+        if n is not None:
+            coins["koku"] += n
+            bits.append(f"{n} koku")
+    elif p.get("type") == "STRING":
+        v = str(p.get("value") or next(
+            (m.get("value") for m in (p.get("modifiers") or [])
+             if m.get("kind") == "DEFAULT"), "") or "")
+        for m in re.finditer(r"(\d+)\s*(koku|bu|zeni)", v, re.I):
+            add(m.group(2), m.group(1))
+        if not bits and v.strip():
+            items.append(v.strip())
+    elif p.get("type") == "DEF":
+        for n in p.get("nested") or []:
+            if not n.get("name"):
+                continue
+            # an item can state what it is worth rather than a count:
+            #     ^"Heirloom" DEF { ^"Koku" INTEGER 3 }
+            # which is an heirloom worth three koku, not three koku. The worth
+            # is kept on the item; the character does not start with the coins.
+            inner = n.get("nested") or []
+            if inner and norm(n["name"]) not in coins:
+                worth = []
+                for q in inner:
+                    if q.get("name") and q.get("value") is not None:
+                        worth.append(f"{q['value']} {str(q['name']).lower()}")
+                items.append(n["name"] + (f" (worth {', '.join(worth)})"
+                                          if worth else ""))
+                continue
+            add(n["name"], 1 if n.get("value") is None else n["value"])
+
+    equiv = round(sum(coins[k] * PER_KOKU[k] for k in coins), 3)
+    label = ", ".join(bits + items)
+    return coins, equiv, items, label
 
 
 def number(p):
@@ -245,7 +296,7 @@ def build(d, kind):
     si = prop(d, "Skill Increase", "Skill Increases")
     rings, rlabel = grants(ri)
     skills, slabel = grants(si)
-    koku, wlabel = wealth(prop(d, "Starting Wealth"))
+    coins, koku, witems, wlabel = wealth(prop(d, "Starting Wealth"))
     row = {
         "name": d["name"],
         "kind": kind,
@@ -255,8 +306,14 @@ def build(d, kind):
         "ring_increase_label": rlabel or "",
         "glory": number(prop(d, "Glory")),
         "status_modification": number(prop(d, "Status Modification")),
+        # the denominations as the source format keeps them, plus the single
+        # koku figure the Creator adds to a family's
+        "starting_wealth_stated": prop(d, "Starting Wealth") is not None,
+        "starting_coins": coins,
         "starting_wealth": koku,
         "starting_wealth_label": wlabel,
+        # a day's rations, an heirloom, a wakizashi: gear, not currency
+        "starting_items": witems,
         "from_clan": from_clan(ri) and {
             "rings": from_clan(ri), "skills": from_clan(si)} or None,
     }
@@ -347,6 +404,17 @@ def main():
                 sys.exit(f"FAIL — {r['name']} {field} offers {len(ma)} of the "
                          f"3 Martial Arts skills ({', '.join(ma)}); the option "
                          f"list was truncated")
+
+    # Wealth is either coins or named items. A Starting Wealth the corpus
+    # states that produced neither means a shape nobody has read yet — which is
+    # exactly how Craftsperson's plain INTEGER 1 koku read as 0.
+    mute = [r["name"] for r in regions + ups
+            if r.get("starting_wealth_stated")
+            and not any(r["starting_coins"].values())
+            and not r["starting_items"]]
+    if mute:
+        sys.exit("FAIL — Starting Wealth is stated but read as nothing for "
+                 f"{len(mute)}: " + ", ".join(mute))
 
     write(OUT_REGION, "L5R_REGIONS", regions)
     write(OUT_UPBRINGING, "L5R_UPBRINGINGS", ups)

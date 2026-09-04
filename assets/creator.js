@@ -2109,6 +2109,12 @@
           if (up.status_modification < 0) status = Math.max(0, status);
         }
         if (up.starting_wealth) wealth += up.starting_wealth;
+        // Temple starts with a day's rations, Fallen Noble with an heirloom
+        // worth 3 koku and a wakizashi. Those are gear, not currency, and
+        // were being dropped along with the distinction between the two.
+        (up.starting_items || []).forEach(function (it) {
+          pending.push({ type: "item", name: it, source: C.upbringing });
+        });
       }
     }
     var sch = schoolByRollName(C.school);
@@ -9738,6 +9744,9 @@
             if (p.type === "swap") {
               return "the heritage's swap — " + cap(p.to) + " cannot be raised " +
                      "or " + cap(p.from) + " lowered from here";
+            }
+            if (p.type === "item") {
+              return p.name + " from " + p.source + ", to record as gear";
             }
             return p.n + (p.n === 1 ? " skill" : " skills");
           }).join("; ") + ".</p>"
