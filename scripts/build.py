@@ -426,7 +426,7 @@ def campaigns(cx):
         raise SystemExit(f"FAIL — {len(links)} broken shared-pack link(s):\n"
                          + "\n".join("   " + m for m in links))
 
-    out, offroll, stale = [], [], []
+    out, offroll, stale, blank = [], [], [], []
     for name in names:
         spec = declared.get(name) or {}
         # a campaign sharing another's pack shows that shortlist rather than
@@ -437,14 +437,24 @@ def campaigns(cx):
         # the shortlist a pack will be built from, each entry resolved against
         # the roll so a misspelling is caught while it is still a plan
         pencilled = []
-        for label in labels:
+        for entry in labels:
+            # an entry is the school's roll name, or an object carrying a
+            # one-line concept beside it
+            label = entry["school"] if isinstance(entry, dict) else entry
+            concept = entry.get("concept") if isinstance(entry, dict) else None
             n = norm(label)
             if n not in roll:
                 offroll.append((name, label))
                 continue
+            if isinstance(entry, dict) and not str(concept or "").strip():
+                # an object with an empty concept is a note somebody started
+                # and left, which reads on the page as though there were none
+                blank.append((name, label))
+                continue
             if n in covered:
                 stale.append((name, roll[n]))
-            pencilled.append({"school": roll[n], "covered": n in covered})
+            pencilled.append({"school": roll[n], "covered": n in covered,
+                              "concept": concept})
         out.append({"name": name, "characters": counts.get(name, 0),
                     "arc": spec.get("arc"), "note": spec.get("note"),
                     "pencilled": pencilled,
@@ -461,6 +471,10 @@ def campaigns(cx):
             f"FAIL — {len(offroll)} pencilled school(s) are not on the "
             f"compendium's School Curriculum roll:\n"
             + "\n".join(f"   {c}: {s!r}" for c, s in offroll))
+    if blank:
+        raise SystemExit(
+            f"FAIL — {len(blank)} pencilled school(s) carry an empty concept:\n"
+            + "\n".join(f"   {c}: {s!r}" for c, s in blank))
     stale = sorted(set(stale))
     if stale:
         # not an error: a pack may deliberately revisit a school. But the point
@@ -548,6 +562,8 @@ def campaigns(cx):
           f"{len(unclaimed)} unclaimed"
           + ("   (the roll is closed)" if not unclaimed else ""))
 
+    withconcept = sum(1 for c in out if not c["pack_from"]
+                      for p in c["pencilled"] if p["concept"])
     npen = sum(len(c["pencilled"]) for c in out if not c["pack_from"])
     nshare = sum(1 for c in out if c["pack_from"])
     print(f"   campaigns: {len(out)} ({sum(1 for c in out if c['declared'])} "
@@ -555,7 +571,9 @@ def campaigns(cx):
           + (f", {npen} schools pencilled across "
              f"{sum(1 for c in out if c['pencilled'] and not c['pack_from'])}"
              if npen else "")
-          + (f", {nshare} sharing another's pack" if nshare else "") + ")")
+          + (f", {nshare} sharing another's pack" if nshare else "")
+          + (f", {withconcept} of {npen} with a concept" if withconcept else "")
+          + ")")
     return out
 
 

@@ -1074,6 +1074,8 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .stubchip:hover{ border-style:dashed; }
 .stubchip.taken .dc-meta{ color:var(--crimson); }
 .stubchip.folio .dc-meta{ color:var(--ink-dim); }
+/* a stub that already has a premise written for it — hover for the line */
+.stubchip.has-concept{ border-left:2px solid var(--jade-soft, var(--jade)); }
 .dl-n{
   margin-left:0.45rem; padding:0.02rem 0.36rem; border-radius:2px;
   background:var(--paper-3); color:var(--ink-dim); font-size:0.68rem;

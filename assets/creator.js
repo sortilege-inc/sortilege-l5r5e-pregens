@@ -541,6 +541,9 @@
     c.school = st.school;
     c.campaign = st.campaign;
     c.mode = st.mode || "core";
+    // the premise the pack was drawn with, into the field that feeds every AI
+    // suggestion and is never exported
+    if (st.concept) c.concept = st.concept;
     var id = newId();
     STORE.drafts[id] = { id: id, updated: Date.now(), character: c };
     switchDraft(id);
@@ -730,13 +733,15 @@
                 : st.built_by === "published" ? " · a folio has this school"
                 : "";
         return '<button type="button" class="archivechip stubchip' +
+          (st.concept ? " has-concept" : "") +
           (st.built_by === "archive" ? " taken" : "") +
           (st.built_by === "published" ? " folio" : "") +
           '" data-stub="' + i + '"' +
           ' title="' + esc(st.school + " — " + (st.book || "") +
             (st.page ? " p" + st.page : "") +
             (st.mode !== "core" ? " · asks questions 1 and 2 as a region and "
-                                  + "an upbringing" : "")) + '">' +
+                                  + "an upbringing" : "") +
+            (st.concept ? "\n\n" + st.concept : "")) + '">' +
           esc(st.school) +
           '<span class="dc-meta">' + esc(st.campaign) + esc(also) + tag +
           "</span></button>";

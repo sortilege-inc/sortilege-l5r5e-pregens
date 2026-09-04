@@ -109,6 +109,8 @@ def main():
                 # shortlist has gone stale), "published" if only a publisher's
                 # folio has it, absent if nobody
                 "built_by": have.get(n),
+                # the premise, straight into the draft's concept field
+                "concept": pen.get("concept"),
             })
     if missing:
         print(f"FAIL — {len(missing)} pencilled school(s) do not resolve to both "
@@ -147,10 +149,12 @@ def main():
     modes = {}
     for s in stubs:
         modes[s["mode"]] = modes.get(s["mode"], 0) + 1
+    nconcept = sum(1 for s in stubs if s["concept"])
     npub = sum(1 for s in stubs if s["built_by"] == "published")
     print(f"pack stubs: {len(stubs)} across {packs} packs -> "
           f"data/stubs.js ({os.path.getsize(OUT)/1024:.1f} KB), "
           + ", ".join(f"{v} {k}" for k, v in sorted(modes.items()))
+          + (f"; {nconcept} with a concept" if nconcept else "")
           + (f"; {npub} on a school a published pregen already has"
              if npub else ""))
     return 0

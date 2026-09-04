@@ -71,7 +71,7 @@
   "the-beshkara-constrictor": "The Bushi Oni Part II"
  },
  "campaign_list": {
-  "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current. Where one pack serves two adventures, the base adventure holds the shortlist and names the other in `pack_shared_with`; the other carries `pack_from` pointing back. The build refuses a one-sided link, and the double-booking check ignores a shared list — the same schools in two packs is the point there, not a slip.",
+  "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current. Where one pack serves two adventures, the base adventure holds the shortlist and names the other in `pack_shared_with`; the other carries `pack_from` pointing back. The build refuses a one-sided link, and the double-booking check ignores a shared list — the same schools in two packs is the point there, not a slip. A `pencilled_schools` entry is either the school's roll name or an object with `school` and a one-line `concept` — the premise, which the stub carries into the draft's concept field.",
   "Blood of the Lioness": {
    "arc": null,
    "note": "Not on disk: no corpus file, no source PDF, and not in the compendium's book list. Legacies of War, which is converted, is its supplement and describes it — a three-part adventure at the Castle of the Swift Sword whose Part Two is played in the past, with Legacy advantages linking each present PC to a predecessor. Its own page 12 holds The Advisors, the pregens for that past party. Find the source and convert it, then the arc goes here.",
@@ -228,13 +228,34 @@
    "arc": null,
    "note": "The adventure is not on disk: no corpus file, no source PDF, and not in the compendium's book list. Its only trace is Deathly Turns, which supplements it — a Spirit Realms adventure the party returns from, with the maō Burakakin in it. Find the source and convert it, then the arc goes here.",
    "pencilled_schools": [
-    "Toritaka Phantom Hunter School",
-    "Kitsu Medium School",
-    "Kitsu Realm Wanderer School",
-    "Mazoku's Enforcer Tradition",
-    "Champion of Days Gone Tradition",
-    "Yogo Wardmaster School",
-    "Miya Herald School"
+    {
+     "school": "Toritaka Phantom Hunter School",
+     "concept": "The youngest of her family's hunters, sent along as an observer, who keeps a meticulous field journal of the Spirit Realms that nobody living was ever meant to read."
+    },
+    {
+     "school": "Kitsu Medium School",
+     "concept": "An elderly Kitsu who came looking for death, expecting a reunion with her late lord, and finds him unwilling to see her."
+    },
+    {
+     "school": "Kitsu Realm Wanderer School",
+     "concept": "The one who has walked the realms before and therefore has to keep the others' nerve, though her last passage went badly and she has never said how."
+    },
+    {
+     "school": "Mazoku's Enforcer Tradition",
+     "concept": "A magistrate's enforcer who died in Ningen-dō a century ago, works for Lady Mazoku now, and is assigned to the party as an escort they cannot dismiss."
+    },
+    {
+     "school": "Champion of Days Gone Tradition",
+     "concept": "A dead champion who has been waiting in Meido for a judgement that keeps being deferred, and attaches himself to the party because they are going somewhere."
+    },
+    {
+     "school": "Yogo Wardmaster School",
+     "concept": "The one sent to seal the tunnel out of the Shadowlands, treating the party as cover for an errand he has not disclosed."
+    },
+    {
+     "school": "Miya Herald School",
+     "concept": "A herald who arrives in the afterlife still holding the Emperor's authority and genuinely cannot tell whether it means anything here — and neither can Emma-Ō's court."
+    }
    ],
    "pencilled_why": "Chosen 2026-09-04 against Deathly Turns' account of the adventure, since the adventure itself is not on disk. Toritaka Phantom Hunter because Lady Mazoku is the secret patron of the Falcon Clan and its Phantom Hunters; Mazoku's Enforcer and Champion of Days Gone because Deathly Turns writes both for characters created in the afterlife; the two Kitsu because they speak with the dead and walk between realms; Yogo Wardmaster for the seals, with a tunnel out of the Shadowlands to close. Kitsu Medium is also the school of a published pregen (Kitsu Kohaku, Wedding at Kyotei Castle) — untouched by the archive, but not fresh ground.\n\nMiya Herald added 2026-09-04. A herald who speaks with the Emperor's voice is a strange and useful thing to be carrying in Meido, where the question is who has authority over the dead."
   },
