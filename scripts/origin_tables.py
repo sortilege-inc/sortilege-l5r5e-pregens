@@ -289,6 +289,12 @@ def main():
         n = d.get("name") or ""
         if n in ("Region", "Upbringing"):
             continue                      # the metatype anchors
+        # Path of Waves' own questions are DEFs named ^"Question 1: Region" and
+        # ^"Question 2: Upbringing", which end in the same two words a region
+        # and an upbringing do. A question is not an origin: it has a
+        # ^"Question" number and a ^"Question Text", and no grants at all.
+        if prop(d, "Question", "Question Text") or re.match(r"^Question \d", n):
+            continue
         if n.endswith(" Region"):
             regions.append(build(d, "region"))
         elif n.endswith(" Upbringing"):

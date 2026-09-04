@@ -114,6 +114,20 @@ def check(doc, cat, tpl):
                            f"the players already assigned; step 7 asks for one "
                            f"they do not know about")
 
+        # the Court Sheet's four offence slots, and the rule they carry
+        off = n.get("offenses") or []
+        if len(off) > 4:
+            bad.append(f"{who}: {len(off)} prior offenses; the sheet has four "
+                       f"slots")
+        filled = [x for x in off if x]
+        if len(filled) == 4 and n.get("opposition") not in (None, "") \
+                and n.get("opposition") != off[3]:
+            notes.append(f"{who}: all four offenses are filled, so the rule "
+                         f"makes the last to offend them ({off[3]!r}) their "
+                         f"opposition, but the record says "
+                         f"{n.get('opposition')!r} — the GM is the final "
+                         f"arbiter, so this is a note, not a fault")
+
         # step 7 -- movers are Adversaries
         pt = n.get("profile_type")
         if pt and pt not in ("Adversary", "Minion"):
@@ -283,6 +297,17 @@ SELFTEST = [
              "templates": ["Sommelier Template"]}],
         "bonds": []}, 1),
     ("nobody at court", {"court": "t", "npcs": [], "bonds": []}, 1),
+    ("five prior offenses in four slots", {
+        "court": "t", "npcs": [
+            {"id": "a", "tier": "mover", "name": "A", "profile_type": "Adversary",
+             "offenses": ["a", "b", "c", "d", "e"]}],
+        "bonds": []}, 1),
+    ("four offenses filled, opposition agreeing", {
+        "court": "t", "npcs": [
+            {"id": "a", "tier": "mover", "name": "A", "profile_type": "Adversary",
+             "offenses": ["w", "x", "y", "Doji Setsuna"],
+             "opposition": "Doji Setsuna"}],
+        "bonds": []}, 0),
     ("a tier that is neither", {
         "court": "t", "npcs": [
             {"id": "a", "tier": "bystander", "name": "A",

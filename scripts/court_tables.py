@@ -36,16 +36,19 @@ role (advantages / disadvantages / techniques / demeanor / rings / skills /
 rank), never rewritten. A template whose properties fit no role is reported
 rather than dropped.
 
-WHAT THIS DOES NOT HAVE, and why it is not filled in from elsewhere: the book's
-own example movers (7 bullets), its example giri, and 10 of the 12 Court Sheet
-field descriptions are absent from the corpus -- the conversion drops the
-source's "$"-marked bullet lists, and the 2 that survived sit above the
-"### The Court Sheet" heading rather than under it. TABLE "Sample Ninjo" is present but
-paraphrased, so it is not offered either. The court sheet this tool keeps is
-built from the fields the seven steps themselves name, which are in the corpus.
-See the flag raised 2026-09-03; the fix belongs in the corpus.
+The Court Sheet's twelve fields are read from the corpus too, and gated: every
+field the book's sheet names must map to something the tool actually keeps.
+That gate is what caught the tool having no "Prior Offenses by the PCs" -- a
+field with real mechanics (four slots; fill all four and the NPC's current
+opposition becomes the last PC to offend them) that stayed invisible while the
+corpus stated only two of the twelve.
+
+WHAT THIS STILL DOES NOT HAVE: the book's own example movers (7 bullets) and its
+example giri, absent from the corpus because the conversion drops the source's
+"$"-marked bullet lists -- a defect Jordan has deliberately parked. Nothing is
+offered in their place; the need tiers stand in as the prompt for a ninjo.
 """
-import json, os, re, sys
+import json, os, re, sys, unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESOLVED = os.path.join(ROOT, "pipeline", "dsl", "l5r5e-resolved.ttrpg")
@@ -116,7 +119,15 @@ def block(text, start):
 
 
 def norm(s):
-    return re.sub(r"[^a-z0-9]+", "", str(s or "").lower())
+    """Fold to bare letters and digits, decomposing accents first.
+
+    Without the decomposition "Ninjō" folds to "ninj" -- the macron is not
+    [a-z0-9], so it is dropped along with the o it sits on. Same normaliser as
+    build.py's.
+    """
+    s = unicodedata.normalize("NFKD", str(s or ""))
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", "", s.lower())
 
 
 def unescape(s):
@@ -176,6 +187,52 @@ def templates(text):
     return out, unplaced
 
 
+# Which field on a court NPC holds each of the Court Sheet's twelve. Named here
+# so a field the corpus states and the tool does not keep fails the run rather
+# than going unnoticed -- which is how "Prior Offenses by the PCs" was missed.
+SHEET_FIELDS = {
+    "name": "name",
+    "role": "role",
+    "moversecondarybox": "tier",
+    "ninjo": "ninjo",
+    "giri": "giri",
+    "advantages": "advantage",
+    "disadvantages": "disadvantage",
+    "bonds": "bonds",
+    "currentheirifany": "heir",
+    "currentgoal": "goal",
+    "currentopposition": "opposition",
+    "prioroffensesbythepcs": "offenses",
+}
+
+
+def court_sheet():
+    """The Court Sheet's fields, as the corpus states them.
+
+    A "- Label: what it is" list under the "### The Court Sheet" heading. The
+    book prints twelve; the corpus carried two until 2026-09-04, and both of
+    those sat above the heading rather than under it, so the count is checked.
+    """
+    if not os.path.exists(LORE):
+        sys.exit("missing " + LORE)
+    text = open(LORE, encoding="utf-8").read()
+    m = re.search(r"^###\s+The Court Sheet\s*$", text, re.M)
+    if not m:
+        return []
+    tail = text[m.end():]
+    nxt = re.search(r"^#{1,4}\s+\S", tail, re.M)
+    if nxt:
+        tail = tail[:nxt.start()]
+    out = []
+    for line in tail.split("\n"):
+        fm = re.match(r"^-\s+([^:]+):\s*(.*)$", line.strip())
+        if fm:
+            out.append({"label": fm.group(1).strip(),
+                        "about": fm.group(2).strip(),
+                        "holds": SHEET_FIELDS.get(norm(fm.group(1)))})
+    return out
+
+
 def sentence_case(s):
     s = " ".join(str(s or "").split()).lower()
     return s[:1].upper() + s[1:]
@@ -214,6 +271,7 @@ def main():
 
     tpl, unplaced = templates(text)
     steps = framework()
+    sheet = court_sheet()
 
     # "advantages" is a substring of "disadvantages", so the order of ROLES is
     # load-bearing and a reordering would silently mis-file every disadvantage.
@@ -242,10 +300,23 @@ def main():
     if not tpl:
         sys.exit("FAIL — no NPC templates found in the resolved corpus")
 
+    # The book's sheet is twelve fields. Fewer means the section did not fully
+    # convert (it held two until 2026-09-04); a field with no `holds` means the
+    # tool keeps nothing for something the sheet asks for.
+    if len(sheet) != 12:
+        sys.exit("FAIL — the corpus states %d of the Court Sheet's 12 fields: %s"
+                 % (len(sheet), ", ".join(f["label"] for f in sheet)))
+    orphan = [f["label"] for f in sheet if not f["holds"]]
+    if orphan:
+        sys.exit("FAIL — %d Court Sheet field(s) the tool keeps nothing for: %s"
+                 ". Add them to the court NPC and to SHEET_FIELDS."
+                 % (len(orphan), ", ".join(orphan)))
+
     doc = {
         "steps": steps,
         "needs": [{"tier": t, "turns_on": w} for t, w in NEED_TIERS],
         "templates": tpl,
+        "sheet": sheet,
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as fh:
@@ -255,7 +326,8 @@ def main():
 
     gm = sum(1 for s in steps if s["who"] == "gm")
     print(f"{len(steps)} steps ({gm} GM, {len(steps)-gm} with the players), "
-          f"{len(tpl)} NPC templates, {len(NEED_TIERS)} need tiers "
+          f"{len(tpl)} NPC templates, {len(NEED_TIERS)} need tiers, "
+          f"{len(sheet)} sheet fields "
           f"-> {os.path.relpath(OUT, ROOT)} "
           f"({os.path.getsize(OUT)/1024:.1f} KB)")
     noroles = sorted(t["name"] for t in tpl.values()

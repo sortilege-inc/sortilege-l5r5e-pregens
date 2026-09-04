@@ -174,18 +174,19 @@
   }
   /* The question's wording, which falls back further than its mechanics do.
 
-     The corpus states questions 1, 2 and 5 only in Writ of the Wilds, even
-     though Path of Waves asks all three — its own chapter prints "what region
-     does your character come from?", "what was your character's upbringing?"
-     and "What is your character's past and how does it affect them?", word for
-     word the same sentences (Path of Waves p.36, p.46, p.61; checked against
-     the source). So the text walks pow -> wow -> core while qFor() stays
-     pow -> core: borrowing the sentence the other book states for the same
-     question is right, and borrowing its options would not be, because Writ of
-     the Wilds offers three regions where Path of Waves offers six.
+     A mode inherits the wording of the book it revises before falling back to
+     core: Writ of the Wilds is a partial revision of Path of Waves, restating
+     only questions 1, 2, 5, 6, 7 and 8, so a Wilds character takes Path of
+     Waves' wording for the other fourteen rather than the core rulebook's
+     samurai phrasing. qFor() still walks pow -> core, because the wording of
+     the same question travels between the two books and the options do not:
+     Writ of the Wilds offers three regions where Path of Waves offers six.
 
-     Without this, a rōnin was asked "What Clan Does Your Character Belong To?"
-     over a list of regions. The missing DEFs are a corpus gap, flagged. */
+     This chain was added when the corpus stated questions 1, 2, 3 and 5 for
+     neither book properly, and a rōnin was asked "What Clan Does Your
+     Character Belong To?" over a list of regions. The corpus was fixed on
+     2026-09-04 and Path of Waves now states all twenty, so the pow -> wow hop
+     no longer fires — the wow -> pow one does, and only now works. */
   function qText(n) {
     var q = QUESTIONS[String(n)] || {};
     var m = mode();
@@ -2359,12 +2360,17 @@
     return m ? Number(m[1]) : 10;
   }
 
-  /* A row of a roll table, as a name and what it says.
-     The corpus writes each row as "Name: what it means", and the row's own
-     label is its roll range. The range is bookkeeping for rolling, not
-     something to read, so it is used by the roll button and never shown. */
+  /* A row of a roll table, as a name and what it says. The row's own label is
+     its roll range — bookkeeping for rolling, not something to read, so it is
+     used by the roll button and never shown.
+
+     The corpus states the name in its own cell (since the tables were
+     re-verbatimised on 2026-09-04), and the generator carries it as `name`.
+     Older rows that fold the name into the text as "Name: what it means" are
+     still split on the colon, so a table converted before that holds up. */
   function tableRow(r) {
     var t = String(r.text || "");
+    if (r.name) return { label: String(r.name), text: t, roll: r.label };
     var i = t.indexOf(":");
     return i > 0 && i < 60
       ? { label: t.slice(0, i).trim(), text: t.slice(i + 1).trim(), roll: r.label }
@@ -6653,8 +6659,8 @@
                    giri: "", conflicts: [], advantage: "", disadvantage: "",
                    assigned_by: "", connection: "", name: "", details: "",
                    heir: "", hidden: { kind: "", name: "" }, goal: "",
-                   opposition: "", profile: "", profile_type: "",
-                   templates: [] });
+                   opposition: "", offenses: ["", "", "", ""],
+                   profile: "", profile_type: "", templates: [] });
     save();
   }
 
@@ -7158,6 +7164,60 @@
 
   // ---- step 7: retouch and finalise (GM)
 
+  /* Prior Offenses by the PCs: the Court Sheet's twelfth field, and the only
+     one with a rule attached. Four slots, and the corpus states what filling
+     them all does — "if all four offenses are ever filled by any PCs' actions,
+     the NPC begins to see the last PC or PCs to offend them as their current
+     opposition, and begins to take action to remove them from the court".
+
+     So the fourth entry is what the rule turns on, and when all four are there
+     the screen says whose opposition it makes them and offers to write it into
+     the opposition field rather than doing it silently — the corpus also says
+     "the GM is the final arbiter of how these are assigned and how they
+     manifest". They fill during play, not at the table where the court is
+     built, so an empty set is not an unfinished step. */
+  function offenseSlots(card, n) {
+    n.offenses = n.offenses || ["", "", "", ""];
+    while (n.offenses.length < 4) n.offenses.push("");
+    var lab = document.createElement("div");
+    lab.className = "need-row";
+    lab.innerHTML = '<span class="need-k">Prior offenses by the PCs</span>' +
+      '<span class="muted small">' +
+      n.offenses.filter(function (o) { return o; }).length + " of 4</span>";
+    card.appendChild(lab);
+    n.offenses.forEach(function (_, i) {
+      var f = document.createElement("input");
+      f.type = "text";
+      f.className = "textline offense";
+      f.placeholder = "Offense " + (i + 1) + " — who gave it, and how";
+      f.value = n.offenses[i] || "";
+      f.addEventListener("change", function () {
+        n.offenses[i] = f.value.trim(); save(); render();
+      });
+      card.appendChild(f);
+    });
+    var filled = n.offenses.filter(function (o) { return o; });
+    if (filled.length === 4) {
+      var p = document.createElement("p");
+      p.className = "muted small warn";
+      p.textContent = "All four are filled. " + npcLabel(n) + " now sees the " +
+        "last to offend them as their opposition, and acts to remove them " +
+        "from the court until it is redressed — a formal apology, a lavish " +
+        "gift, or a duel.";
+      card.appendChild(p);
+      if (n.opposition !== n.offenses[3]) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "btn ghost";
+        b.textContent = "Set their opposition to “" + n.offenses[3] + "”";
+        b.addEventListener("click", function () {
+          n.opposition = n.offenses[3]; save(); render();
+        });
+        card.appendChild(b);
+      }
+    }
+  }
+
   function renderCourtFinalise(body) {
     var all = courtNpcs();
     if (!all.length) return needs(body, "There is nobody at this court yet.");
@@ -7222,6 +7282,7 @@
         textField(card, "Current heir, if their position warrants one",
                   function () { return n.heir; },
                   function (v) { n.heir = v; });
+        offenseSlots(card, n);
 
         var prow = document.createElement("div");
         prow.className = "need-row";
@@ -7337,6 +7398,9 @@
             ? { kind: n.hidden.kind, name: n.hidden.name } : null,
           goal: n.goal || null,
           opposition: n.opposition || null,
+          // the Court Sheet's four slots, kept in order: the fourth is the one
+          // the rule turns on
+          offenses: (n.offenses || []).slice(0, 4),
           profile: n.profile || null,
           profile_type: n.profile_type || null,
           templates: (n.templates || []).slice()

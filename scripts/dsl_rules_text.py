@@ -602,16 +602,42 @@ def chargen_questions(corpus):
             out.setdefault(n, {})[mode] = {"text": text.strip()}
 
     # The Sample Pasts table replaces giri for these characters. It is a
-    # top-level TABLE, which the synthesist now emits under "blocks".
+    # top-level TABLE, which the synthesist emits under "blocks".
+    #
+    # The corpus states it as three cells — "01-06" "Name" "Description" —
+    # since the 2026-09-04 re-verbatimisation split the PAST column out of the
+    # description. Reading only cells[0] used to give the whole description;
+    # after the split it gives the name alone and drops the text, so both are
+    # carried. A two-cell row (the older shape, or another table converted
+    # before the split) still reads correctly: its one cell becomes the text
+    # and the name is derived from it by the consumer.
     for b in (corpus.get("blocks") or []):
         if b.get("keyword") != "TABLE" or "Sample Pasts" not in (b.get("label") or ""):
             continue
-        rows = [{"label": r.get("label"),
-                 "text": (r.get("cells") or [{}])[0].get("value", "")}
-                for r in (b.get("rows") or []) if r.get("label")]
+        rows = []
+        for r in (b.get("rows") or []):
+            if not r.get("label"):
+                continue
+            cells = [c.get("value", "") for c in (r.get("cells") or [])]
+            row = {"label": r.get("label")}
+            if len(cells) >= 2:
+                row["name"] = cells[0]
+                row["text"] = cells[1]
+            else:
+                row["text"] = cells[0] if cells else ""
+            rows.append(row)
         if rows and "5" in out:
             out["5"].setdefault("pow", {"text": out["5"].get("wow", {}).get("text", "")})
-            out["5"]["pow"]["table"] = {"die": "d100", "rows": rows}
+            # the table states its own die, as a nested ROLL block
+            die = next((x.get("value") for x in (b.get("blocks") or [])
+                        if x.get("keyword") == "ROLL" and x.get("value")), None)
+            out["5"]["pow"]["table"] = {"die": die or "d100", "rows": rows}
+            if not die:
+                print("            FLAG — Sample Pasts states no ROLL; "
+                      "assuming d100")
+            named = sum(1 for r in rows if r.get("name"))
+            print(f"            Sample Pasts: {len(rows)} rows, {named} with the "
+                  f"book's own name in its own cell")
 
     # …and the choices each states, from the composed corpus, so a consumer can
     # offer the question rather than only name it.

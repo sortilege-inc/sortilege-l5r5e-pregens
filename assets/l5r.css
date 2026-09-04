@@ -1640,3 +1640,7 @@ input.merc-n{
   color:var(--crimson); border-left:2px solid var(--crimson);
   padding-left:0.55rem; margin:0.5rem 0;
 }
+
+/* the Court Sheet's four offence slots, narrower than a full field so four in
+   a row do not read as four separate questions */
+.npc-card input.textline.offense{ font-size:0.92rem; padding:0.34rem 0.55rem; }
