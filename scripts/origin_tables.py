@@ -200,18 +200,17 @@ def grants(p):
     return out, ", ".join(bits)
 
 
-# The corpus states the rate, and still does: "One koku can be exchanged for
-# five silver bu... One bu can be exchanged for ten copper zeni"
-# (core-systems.ttrpg, the currency-of-rokugan entry). Only needed for a single
-# comparable figure now — the denomination itself is explicit in ^"Wealth".
-PER_KOKU = {"koku": 1.0, "bu": 1.0 / 5, "zeni": 1.0 / 50}
-
-
 def wealth(d):
     """Starting wealth and items, from the corpus's structured properties.
 
     ^"Wealth" is money and names its own denomination; ^"Item" is not money and
-    repeats. Returns (coins, koku_equivalent, items, label, stated).
+    repeats. Returns (coins, items, label, stated, unreadable).
+
+    Coin stays in the denominations the corpus states. It used to also come
+    back as a koku equivalent, which the Creator then summed -- and a koku
+    total cannot hold Peasant Family's 10 zeni without calling it 0.2 of a
+    coin. Consumers add one denomination at a time now and carry nothing into
+    the next, so nothing wants the float.
 
     An item's Description may state what it is worth -- "An heirloom worth 3
     koku" -- which is an appraisal, not coin in hand, so it is never added to
@@ -258,14 +257,9 @@ def wealth(d):
             count = 1
         items.append(desc if count == 1 else f"{desc} x{count}")
 
-    # an int when it is whole: a family's 4 koku was an int in the file this
-    # replaces, and 4.0 is noise in a diff and in JSON
-    equiv = round(sum(coins[k] * PER_KOKU[k] for k in coins), 3)
-    if equiv == int(equiv):
-        equiv = int(equiv)
     label = ", ".join(bits + items)
     real = [n for n in wnodes + inodes if (n.get("nested") or [])]
-    return coins, equiv, items, label, bool(real), unknown
+    return coins, items, label, bool(real), unknown
 
 
 def number(p):
@@ -313,7 +307,7 @@ def build(d, kind):
     si = prop(d, "Skill Increase", "Skill Increases")
     rings, rlabel = grants(ri)
     skills, slabel = grants(si)
-    coins, koku, witems, wlabel, wstated, wbad = wealth(d)
+    coins, witems, wlabel, wstated, wbad = wealth(d)
     row = {
         "name": d["name"],
         "kind": kind,
@@ -323,12 +317,10 @@ def build(d, kind):
         "ring_increase_label": rlabel or "",
         "glory": number(prop(d, "Glory")),
         "status_modification": number(prop(d, "Status Modification")),
-        # the denominations as the source format keeps them, plus the single
-        # koku figure the Creator adds to a family's
+        # the denominations as the source format keeps them
         "starting_wealth_stated": wstated,
         "wealth_unreadable": wbad,
         "starting_coins": coins,
-        "starting_wealth": koku,
         "starting_wealth_label": wlabel,
         # a day's rations, an heirloom, a wakizashi: gear, not currency
         "starting_items": witems,
@@ -483,7 +475,7 @@ def build_family(d):
     """
     rings, rlabel = grants(prop(d, "Ring Increase", "Ring Increases"))
     skills, slabel = grants(prop(d, "Skill Increases", "Skill Increase"))
-    coins, koku, witems, wlabel, wstated, wbad = wealth(d)
+    coins, witems, wlabel, wstated, wbad = wealth(d)
     clan = prop(d, "Clan")
     return {
         "name": d["name"],
@@ -491,10 +483,6 @@ def build_family(d):
         "source": (d.get("sources") or [None])[0],
         "clan": (clan or {}).get("value"),
         "glory": number(prop(d, "Glory")),
-        # the plain koku figure the Creator and the generator already add up,
-        # kept so nothing downstream changes shape
-        "starting_wealth": koku,
-        # and what the koku figure cannot say on its own
         "starting_coins": coins,
         "starting_wealth_label": wlabel,
         "starting_items": witems,

@@ -895,7 +895,10 @@ def sheet_from_tier(char, tier):
     for group in (tier.get("skills") or {}).values():
         skills.update(group)
     money = tier.get("money") or {}
-    money_str = ", ".join(f"{v} {k}" for k, v in money.items() if v) or None
+    # largest denomination first, whatever order the character file stores them
+    # in -- "1 koku, 2 bu", never "2 bu, 1 koku"
+    money_str = ", ".join(f"{money[k]} {k}" for k in ("koku", "bu", "zeni")
+                          if money.get(k)) or None
 
     def gear_entry(e):
         armor = e.get("armor") or {}

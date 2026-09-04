@@ -8,13 +8,13 @@ Questions' bookkeeping, and every input is already stated in the corpus:
     school     ring increase, starting skills (choose N), starting honor,
                starting techniques, starting outfit, school ability
     clan       ring bonus, skill bonus, starting status
-    family     ring increase, skill increases, glory, starting wealth
+    family     ring increase, skill increases, glory, starting coin
 
 A Path of Waves or Writ of the Wilds school answers the first two differently,
 and the generator follows:
 
     region       ring increase, skill increase, glory        (question 1)
-    upbringing   ring and skill increases, wealth, and a
+    upbringing   ring and skill increases, starting coin, and a
                  status modification applied to the base the
                  character's type sets                       (question 2)
     type         ronin 24, peasant 15, gaijin 0 -- the corpus states these as
@@ -83,6 +83,26 @@ SKILL_LABEL = {
 SKILL_KEY = {v.lower(): k for k, v in SKILL_LABEL.items()}
 SKILL_KEY.update({"martial arts [melee]": "melee", "martial arts [ranged]": "ranged",
                   "martial arts [unarmed]": "unarmed"})
+
+
+# Rokugani coin, added one denomination at a time and never carried into the
+# next. The corpus states the exchange rate -- a koku is five bu is fifty zeni
+# (core-systems.ttrpg, the currency-of-rokugan entry) -- but a koku total
+# cannot hold Peasant Family's 10 zeni without calling it 0.2 of a coin, and
+# normalizing the other way restates the book: the entry says ten copper
+# coins, so the sheet says ten copper coins.
+COINS = ("koku", "bu", "zeni")
+
+
+def coins_of(entity_coins):
+    """A starting allotment in the shape the character format keeps."""
+    src = entity_coins or {}
+    return {k: int(src.get(k) or 0) for k in COINS}
+
+
+def coin_label(coins):
+    return ", ".join(f"{coins[k]} {k}" for k in COINS
+                     if (coins or {}).get(k)) or "nothing"
 
 
 def load_js(name, var):
@@ -539,13 +559,13 @@ def build_character(school_name, school, clans, families, catalog, counts,
 
     attention = []
 
-    noncore_coins = None
     if noncore:
         # --- region (Q1) and upbringing (Q2) -------------------------------
         origin_type = DEFAULT_ORIGIN_TYPE
         status = ORIGIN_BASE_STATUS[origin_type]
-        glory, wealth, family = 40, 0, None
+        glory, family = 40, None
         region = upbringing = None
+        purse = coins_of(None)
 
         pool = [r for r in (regions or [])
                 if not r.get("modes") or "pow" in r["modes"] or "wow" in r["modes"]]
@@ -573,13 +593,7 @@ def build_character(school_name, school, clans, families, catalog, counts,
                 # "(minimum 0)" -- six of the thirteen
                 if int(mod) < 0:
                     status = max(0, status)
-            # the denominations as stated, not a koku equivalent — the source
-            # format keeps zeni, koku and bu separately
-            coins = upbringing.get("starting_coins") or {}
-            wealth = coins.get("koku") or 0
-            noncore_coins = {"zeni": coins.get("zeni") or 0,
-                             "koku": coins.get("koku") or 0,
-                             "bu": coins.get("bu") or 0}
+            purse = coins_of(upbringing.get("starting_coins"))
             # a day's rations, an heirloom worth 3 koku, a wakizashi: gear
             for it in upbringing.get("starting_items") or []:
                 attention.append(
@@ -612,7 +626,8 @@ def build_character(school_name, school, clans, families, catalog, counts,
 
     # --- family (Q2) — the least-used family of the clan, for variety ------
     if not noncore:
-        glory, wealth, family = 40, 0, None
+        glory, family = 40, None
+        purse = coins_of(None)
     if fams and not noncore:
         # A school named for a family belongs to it: the Kaito Shrine Keeper is a
         # Kaito, not whichever Phoenix family the archive has covered least.
@@ -621,7 +636,7 @@ def build_character(school_name, school, clans, families, catalog, counts,
         pool = eponymous or fams
         family = sorted(pool, key=lambda f: (counts.get(norm(f["name"]), 0), f["name"]))[0]
         glory = family.get("glory") or glory
-        wealth = family.get("starting_wealth") or 0
+        purse = coins_of(family.get("starting_coins"))
         inc = family.get("ring_increase") or {}
         if "_choose" in inc:
             opts = inc["_choose"].get("options") or []
@@ -787,8 +802,7 @@ def build_character(school_name, school, clans, families, catalog, counts,
             "vigilance": -(-(rings["air"] + rings["water"]) // 2),
             "void_points": rings["void"],
         },
-        "money": (noncore_coins if noncore and noncore_coins
-                  else {"zeni": 0, "koku": wealth, "bu": 0}),
+        "money": purse,
         "techniques": techs,
         "peculiarities": pecs,
         "titles": [], "bonds": [], "signature_scrolls": [],
@@ -935,7 +949,8 @@ def main():
               f"h{t['social']['honor']} g{t['social']['glory']} "
               f"s{t['social']['status']}  "
               f"{len(t['techniques'])}t {len(t['peculiarities'])}p "
-              f"{len(t['gear'])}g  {origin[:44]}")
+              f"{len(t['gear'])}g  {coin_label(t['money']):14} "
+              f"{origin[:34]}")
         if args.write:
             os.makedirs(SRC, exist_ok=True)
             dest = os.path.join(SRC, doc["slug"] + ".json")

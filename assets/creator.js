@@ -28,6 +28,44 @@
   var MODEL = "claude-haiku-4-5-20251001";
 
   var RINGS = ["air", "earth", "fire", "water", "void"];
+
+  /* Rokugani coin. The corpus states the exchange rate -- "One koku can be
+     exchanged for five silver bu... One bu can be exchanged for ten copper
+     zeni" (core-systems.ttrpg, currency-of-rokugan) -- but a purse is added up
+     one denomination at a time and never carried into the next.
+
+     Two reasons. A koku total cannot hold Peasant Family's 10 zeni without
+     calling it 0.2 of a coin, which is what the panel used to show. And
+     normalizing the other way restates the book: 10 zeni is exactly 1 bu in
+     value, but the family entry says ten copper coins, and a character sheet
+     that says one silver one is not reporting what they were given.
+
+     Exchanging is something the character does at a table, with a rate the
+     corpus already states. It is not the sheet's job to do it for them. */
+  var COINS = ["koku", "bu", "zeni"];
+
+  function addCoins(into, coins) {
+    COINS.forEach(function (k) {
+      into[k] = (into[k] || 0) + (Number(coins && coins[k]) || 0);
+    });
+    return into;
+  }
+
+  function scaleCoins(coins, n) {
+    var out = {};
+    COINS.forEach(function (k) { out[k] = (Number(coins[k]) || 0) * n; });
+    return out;
+  }
+
+  // "1 koku, 2 bu" — and "nothing" rather than an empty string, since a
+  // character with no money at all is a fact worth reading
+  function coinLabel(coins) {
+    var bits = COINS.filter(function (k) {
+      return (Number(coins && coins[k]) || 0) > 0;
+    }).map(function (k) { return coins[k] + " " + k; });
+    return bits.length ? bits.join(", ") : "nothing";
+  }
+
   var SKILL_GROUPS = {
     artisan: ["aesthetics", "composition", "design", "smithing"],
     martial: ["fitness", "melee", "ranged", "unarmed", "meditation", "tactics"],
@@ -1998,7 +2036,9 @@
   function computed() {
     var rings = { air: 1, earth: 1, fire: 1, water: 1, "void": 1 };
     var skills = {};
-    var honor = 0, glory = 0, status = 0, wealth = 0;
+    var honor = 0, glory = 0, status = 0;
+    // coin per denomination, never carried into the next
+    var purse = { koku: 0, bu: 0, zeni: 0 };
     var pending = [];
     // Where each increase came from, so the panel can say "+1 Iuchi, +1 Ujik
     // Diviner School" rather than only the total. Base ranks are not a source.
@@ -2076,7 +2116,8 @@
     if (fam) {
       addRing(fam.ring_increase, "family.ring_increase", C.family);
       addSkills(fam.skill_increases, "family.skill_increases", C.family);
-      glory = fam.glory || 0; wealth = fam.starting_wealth || 0;
+      glory = fam.glory || 0;
+      addCoins(purse, fam.starting_coins);
       // Tonbo starts with two Dragonfly glass ornaments beside its koku. The
       // corpus states a family's items the same way it states an upbringing's,
       // so they are surfaced the same way rather than dropped.
@@ -2114,7 +2155,7 @@
           // "(minimum 0)" — six of the thirteen — so a reduction floors there
           if (up.status_modification < 0) status = Math.max(0, status);
         }
-        if (up.starting_wealth) wealth += up.starting_wealth;
+        addCoins(purse, up.starting_coins);
         // Temple starts with a day's rations, Fallen Noble with an heirloom
         // worth 3 koku and a wakizashi. Those are gear, not currency, and
         // were being dropped along with the distinction between the two.
@@ -2164,7 +2205,9 @@
     honor += her.social.honor;
     glory += her.social.glory;
     status += her.social.status;
-    wealth *= her.koku;
+    // one Lion heritage doubles the starting money; doubling each
+    // denomination is exact, where doubling a koku float was not
+    if ((her.koku || 1) !== 1) purse = scaleCoins(purse, her.koku);
     Object.keys(her.skills).forEach(function (k) {
       skills[k] = (skills[k] || 0) + her.skills[k];
       credit("skills", k, her.skills[k], "Question 18");
@@ -2183,8 +2226,11 @@
       }
     }
     return { rings: rings, skills: skills, honor: honor, glory: glory,
-             status: status, wealth: wealth, pending: pending, school: sch,
-             from: from };
+             status: status,
+             // the coins, and the label to show them. No koku float: that is
+             // the thing being fixed.
+             coins: purse, coin_label: coinLabel(purse),
+             pending: pending, school: sch, from: from };
   }
 
   /* ---------------------------------------------------------- steps */
@@ -4019,6 +4065,12 @@
     return out;
   }
 
+  // "families" -> "family", "schools" -> "school"; stripping the s alone gave
+  // "is not a Dragonfly familie"
+  function singular(noun) {
+    return noun.replace(/ies$/, "y").replace(/s$/, "");
+  }
+
   /* Clan is a shortcut on the family and school lists, not a rule. Cross-clan
      training happens, rōnin and gaijin schools have no clan at all, and the
      archive already holds characters trained outside their own clan — so the
@@ -4046,7 +4098,7 @@
         var why = document.createElement("p");
         why.className = "muted small";
         why.textContent = (current.name || current) + " is not a " + C.clan + " " +
-          noun.replace(/s$/, "") + ", so the list is unfiltered to keep it in view.";
+          singular(noun) + ", so the list is unfiltered to keep it in view.";
         body.appendChild(why);
       }
     }
@@ -5017,7 +5069,9 @@
           vigilance: Math.ceil((d.rings.air + d.rings.water) / 2),
           void_points: d.rings["void"]
         },
-        money: { zeni: 0, koku: d.wealth, bu: 0 },
+        // the coins as the source states them, not a koku fraction: a
+        // character with 10 zeni used to export koku 0.2
+        money: { zeni: d.coins.zeni, koku: d.coins.koku, bu: d.coins.bu },
         // Both halves: the techniques the school simply grants, and the ones the
         // player chose from its lists. Only the fixed ones used to be exported,
         // so every chosen kata, ritual and shūji was dropped on the way out.
@@ -9719,7 +9773,8 @@
       ['<div class="stat"><span class="k">Honor</span><span class="v">' + d.honor + "</span></div>",
        '<div class="stat"><span class="k">Glory</span><span class="v">' + d.glory + "</span></div>",
        '<div class="stat"><span class="k">Status</span><span class="v">' + d.status + "</span></div>",
-       '<div class="stat"><span class="k">Koku</span><span class="v">' + d.wealth + "</span></div>"
+       '<div class="stat"><span class="k">Purse</span><span class="v">' +
+         esc(d.coin_label) + "</span></div>"
       ].join("") + "</div>" +
       // Anything already past the creation cap, whatever put it there: a
       // choice the GM waved through, or fixed grants that stack past 3 with no

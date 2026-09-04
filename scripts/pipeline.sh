@@ -74,6 +74,16 @@ python3 scripts/heritage_tables.py | tail -1
 # hand-written and outside this chain, with every grant flattened to a display
 # string the Creator could not add up.
 python3 scripts/origin_tables.py
+# The purse gate. Runs the Creator's own coin helpers over the families and
+# upbringings just written and fails if any starting purse renders as a
+# fraction of a coin -- the defect that had Peasant Family's 10 zeni showing
+# as "Koku 0.2". Hard-fails rather than skipping if node is missing: a gate
+# that quietly does not run is the one that lets this back in.
+if ! command -v node >/dev/null; then
+  echo "FAIL — node is not on PATH, so the purse gate cannot run" >&2
+  exit 1
+fi
+node scripts/coin_selftest.js
 # School and title curricula, for the advancement ledger. Reads the resolved
 # corpus that dsl_rules_text.py composed above, so errata are already applied.
 python3 scripts/curricula.py
