@@ -112,6 +112,19 @@
     "The Knotted Tails"
    ]
   },
+  "Portents & Fortunes": {
+   "arc": null,
+   "note": "Not a published adventure — the owner's solo campaign, so there is no arc in the corpus for it. Already holds Togashi Norikage, the Dragon monk it was built around; the six here are additional to him.",
+   "pencilled_schools": [
+    "Agasha Ascetic School",
+    "Shinjo Outrider School",
+    "Moshi Sun Sentinel School",
+    "Laughing Mountain Hearthstone Tradition",
+    "Kaiu Architect School",
+    "Matsu Beastmaster School"
+   ],
+   "pencilled_why": "Chosen 2026-09-04. Weighted towards omen and celestial matter, which is what the campaign is named for: a Moshi sun sentinel at Fire 2 and honour 55, an Agasha ascetic who stands as the mountain, and a Laughing Mountain hearthstone courtier-monk at honour 28 to argue with all of them. A Kaiu architect, a Shinjo outrider and a Matsu beastmaster carry the practical half."
+  },
   "Sins of Regret": {
    "arc": "l5r5e-0.4-sins-of-regret.arc",
    "note": "For rōnin PCs of rank 2 or higher, at Closed Shell Castle: their commitment to Bushidō against an unjust lord and desperate peasants. Tied to Path of Waves' Twin Blessings Village — so a Path of Waves pack rather than a clan one, and rank 2 rather than fresh.",
@@ -132,6 +145,19 @@
    "arc": "l5r5e-0.4-gm-kit-dark-tides.arc",
    "note": "The Dark Tides pack, from the Game Master's Kit. Tagged by its setting rather than the adventure's name, which is how it was built; declared here so the arc it plays from is recorded."
   },
+  "The Bushi Oni": {
+   "arc": null,
+   "note": "Not a published adventure — the owner's own campaign, so there is no arc in the corpus for it. Already holds Nasu Kōgo and Tsume Kunimichi, whose schools were built before this shortlist was drawn; the six here are additional to those two.",
+   "pencilled_schools": [
+    "Yasuki Yōjimbō School",
+    "Isawa Elementalist School",
+    "Shinseist Monk Order",
+    "Mirumoto Two-Heavens Adept School",
+    "Storm Fleet Tide Seer",
+    "Seppun Palace Guard School"
+   ],
+   "pencilled_why": "Chosen 2026-09-04. A party assembled across the Empire rather than from one clan: a Crab bodyguard, an Isawa who picks their own two rings, a Shinseist monk for the Kihō and the Void, a Mirumoto with two swords, a Mantis tide seer and an Imperial palace guard."
+  },
   "The Knotted Tails": {
    "arc": "l5r5e-0.4-knotted-tails.arc",
    "note": "An optional bonus storyline played within Mask of the Oni, before the PCs reach Shiro Hiruma, among the nezumi of the Knotted Tails tribe — who pride themselves on remembering. Sharing Mask of the Oni's pack, decided 2026-09-04, so it keeps no shortlist of its own: same party, same expedition, and that pack already carries a Nezumi Tattered Ear Explorer chosen for this storyline.",
@@ -139,12 +165,34 @@
   },
   "The Lost Writer in the City of the Rich Frog": {
    "arc": "l5r5e-0.4-children-of-five-winds-lost-writer.arc",
-   "note": "Children of the Five Winds, chapter 4, in the Imperial holding at the river junction the Dragon, Lion, Unicorn and Dragonfly all care about. Not the same as the \"City of the Rich Frog\" tag already in this list — that one is the city, and holds a character of its own."
+   "note": "Children of the Five Winds, chapter 4, in the Imperial holding at the river junction the Dragon, Lion, Unicorn and Dragonfly all care about. Not the same as the \"City of the Rich Frog\" tag already in this list — that one is the city, and holds a character of its own.",
+   "pencilled_schools": [
+    "Yasuki Merchant School",
+    "Ide Trader School",
+    "School of Leaves",
+    "Scholar of al-Zawira Tradition",
+    "Ivory Kingdoms Dancing Blades Tradition",
+    "Utaku Stablemaster School"
+   ],
+   "pencilled_why": "Chosen 2026-09-04 for a city, not a battlefield: an Imperial holding at a river junction that the Dragon, Lion, Unicorn and Dragonfly all want, with Kaeru rōnin keeping the peace. Two traders — a Yasuki and an Ide — because a river junction is about goods; a Scholar of al-Zawira and an Ivory Kingdoms blade because a trade city is full of people from elsewhere; a School of Leaves at honour 26 for what is happening under it; and a Utaku stablemaster at honour 55 as the one who will not bend. Yasuki Merchant is also the school of a published pregen (Yasuki Toru, Wedding at Kyotei Castle) — untouched by the archive, so it still adds coverage.\n\nNote on the source: the owner recalled this adventure shipping a publisher party. Nothing on disk shows one — Children of the Five Winds' PDF has no mention of pregenerated characters and no character sheets, where Wedding at Kyotei Castle's has both. Either way this pack stands alone."
   },
   "The Scroll or the Blade": {
    "arc": "l5r5e-0.4-scroll-or-blade.arc",
    "note": "A supplemental storyline during or after Winter's Embrace, in Kyūden Doji, centred on Masayo — an orphaned child of Dragon and Phoenix parents. Same party as Winter's Embrace if run alongside it, in which case one pack serves both. Sharing Winter's Embrace's pack, decided 2026-09-04, so it keeps no shortlist of its own.",
    "pack_from": "Winter's Embrace"
+  },
+  "Wedding at Kyotei Castle": {
+   "arc": "l5r5e-0.4-wedding-kyotei.arc",
+   "note": "The 2018 Gen Con adventure. It ships its own seven pregens, which are already here as published pregens and count towards no coverage — and this pack is independent of them, decided 2026-09-04. So the adventure has two parties on the site: the publisher's folios, hidden unless the roster's toggle is on, and the archive's own six.",
+   "pencilled_schools": [
+    "Kuni Warden School",
+    "Asahina Envoy School",
+    "Kaito Shrine Keeper School",
+    "Ide Emissary School",
+    "Kitsune Impersonator Tradition",
+    "Seppun Astrologer School"
+   ],
+   "pencilled_why": "Chosen 2026-09-04, and deliberately not the folios' own six schools bar one. A court adventure, so an Asahina envoy for the ceremony and an Ide emissary who is welcome everywhere; a Seppun astrologer for the omens and a Kitsune impersonator at honour 30 for the thing nobody at the wedding is saying. Kuni Warden and Kaito Shrine Keeper are there because a Gen Con adventure at a wedding has a second act. Kaito Shrine Keeper is also the school of one of this adventure's own folios (Kaito Natsuyuki) — the two parties are independent, so the duplication is deliberate."
   },
   "Wheel of Judgment": {
    "arc": null,
@@ -454,7 +502,6 @@
   "l5r5e-0.4-deathly-turns.arc": "Skipped for pregens by the owner, 2026-09-04. It supplements Blood of the Lioness's sibling Wheel of Judgment, which is declared.",
   "l5r5e-0.4-emerald-champion.arc": "The Beginner Game: its seven character folios are already here as published pregens, so it needs no pack of its own.",
   "l5r5e-0.4-topaz-championship.arc": "The Beginner Game's core adventure, played with the same seven folios as In the Palace of the Emerald Champion.",
-  "l5r5e-0.4-highwayman.arc": "Ships its own six pregens, already here as published pregens.",
-  "l5r5e-0.4-wedding-kyotei.arc": "Ships its own seven pregens, already here as published pregens."
+  "l5r5e-0.4-highwayman.arc": "Ships its own six pregens, already here as published pregens."
  }
 }

@@ -53,7 +53,7 @@
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
 <script src="../data/roster.js?v=1e5def76"></script>
-<script src="../data/campaigns.js?v=4a1ee37c"></script>
+<script src="../data/campaigns.js?v=f71cf7f9"></script>
 <script src="../assets/roster.js?v=2cefdb59"></script>
 <script>
 (function () {
@@ -132,39 +132,53 @@
     // Edit, +XP and Legacy under each card: this is the roster, where someone
     // comes to do something with a character they already have. renderRoster
     // withholds them from a published pregen, whose record the importer owns.
-    // A declared campaign with nothing in it is a thing to set up, not a bug.
-    // Saying which and why beats an empty grid: the note is where the source
-    // is known to be missing.
+    /* The pack panel, above whatever cards there are.
+
+       It used to render only when a campaign had no characters at all, which
+       hid the plan for every pack already part-built — and two of them are.
+       So it shows whenever the campaign has a shortlist, and says how far
+       along it is; a declared campaign with neither characters nor a shortlist
+       still gets the note saying what is missing, because an empty grid on its
+       own reads as a bug. */
     var picked = CAMPAIGN_BY_NAME[campaign.value];
+    var pen = (picked && picked.pencilled) || [];
+    var panel = "";
+    if (picked && (pen.length || (!picked.characters && picked.note))) {
+      panel = '<div class="campaign-empty"><p class="muted"><strong>' +
+        esc(picked.name) + "</strong> " +
+        (picked.characters
+          ? picked.characters + (picked.characters === 1 ? " character built"
+                                                        : " characters built")
+            + (pen.length ? ", with " + pen.length + " school" +
+               (pen.length === 1 ? "" : "s") + " pencilled in." : ".")
+          : "has no characters yet.") +
+        (!picked.characters && picked.note ? " " + esc(picked.note) : "") +
+        "</p>" +
+        (pen.length
+          ? '<p class="ce-pencilled"><span class="ce-label">' +
+            (picked.pack_from
+              ? "Sharing " + esc(picked.pack_from) + "'s pack"
+              : "Pencilled in" +
+                ((picked.pack_shared_with || []).length
+                  ? ", shared with " +
+                    picked.pack_shared_with.map(esc).join(" and ")
+                  : "")) +
+            "</span>" +
+            pen.map(function (x) {
+              return "<span" + (x.covered ? ' class="ce-taken"' : "") +
+                ' title="' + (x.covered
+                  ? "the archive has already built a character to this school"
+                  : "not yet built anywhere in the archive") + '">' +
+                esc(x.school) + "</span>";
+            }).join("") + "</p>"
+          : "") +
+        (picked.pencilled_why
+          ? '<p class="muted small ce-why">' + esc(picked.pencilled_why) + "</p>"
+          : "") + "</div>";
+    }
     document.getElementById("roster").innerHTML =
-      (!list.length && picked && !picked.characters
-        ? '<div class="campaign-empty"><p class="muted"><strong>' +
-          esc(picked.name) + "</strong> has no characters yet." +
-          (picked.note ? " " + esc(picked.note) : "") + "</p>" +
-          // the shortlist, so the plan is where the empty pack is rather than
-          // only in the manifest
-          ((picked.pencilled || []).length
-            ? '<p class="ce-pencilled"><span class="ce-label">' +
-              (picked.pack_from
-                ? "Sharing " + esc(picked.pack_from) + "'s pack"
-                : "Pencilled in" +
-                  ((picked.pack_shared_with || []).length
-                    ? ", shared with " +
-                      picked.pack_shared_with.map(esc).join(" and ")
-                    : "")) +
-              "</span>" +
-              picked.pencilled.map(function (p) {
-                return "<span" + (p.covered ? ' class="ce-taken"' : "") +
-                  ' title="' + (p.covered
-                    ? "the archive has already built a character to this school"
-                    : "not yet built anywhere in the archive") + '">' +
-                  esc(p.school) + "</span>";
-              }).join("") + "</p>"
-            : "") +
-          (picked.pencilled_why
-            ? '<p class="muted small ce-why">' + esc(picked.pencilled_why) + "</p>"
-            : "") + "</div>"
-        : window.renderRoster(list, "", { actions: true }));
+      panel + (list.length || !panel
+                 ? window.renderRoster(list, "", { actions: true }) : "");
     document.getElementById("shown").textContent =
       list.length + " of " + pool.length;
   }
