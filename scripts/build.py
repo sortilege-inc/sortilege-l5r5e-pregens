@@ -227,6 +227,19 @@ def fix_pattern(name):
     return _PATTERN_FIX.get(name, name)
 
 
+def catalog_additions():
+    """Published content the compendium does not stock.
+
+    The *_name_corrections maps above fix a compendium entry that is wrong;
+    this covers one that is absent. Same burden of proof — the book and page —
+    and deliberately no rules text: the entry exists so the name resolves, and
+    the description comes from the DSL corpus like every other entry's.
+    """
+    src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+    return {k: v for k, v in (src.get("catalog_additions") or {}).items()
+            if not k.startswith("_")}
+
+
 def load_catalog(cx):
     index = json.load(open(os.path.join(CATDIR, "index.json")))
     full = {}
@@ -279,6 +292,25 @@ def load_catalog(cx):
                 sr.get("page"), m.group("clan") if m else None, sysd.get("xp_cost"),
                 sysd.get("description"), json.dumps(sysd, ensure_ascii=False),
             ))
+    # Additions last, and only when the compendium really lacks the name —
+    # so a compendium entry always wins and an addition can never shadow one.
+    have = {(r[4], r[6]) for r in rows}
+    for name, spec in catalog_additions().items():
+        if (spec["sub_type"], norm(name)) in have:
+            continue
+        pack = "l5r5e-compendia-sortilege." + spec["pack"]
+        label = next((v["label"] for k, v in index.items() if k == pack), None)
+        rows.append((
+            "Addition." + spec["pack"] + "." + norm(name), pack,
+            label or spec["pack"], "Item", spec["sub_type"],
+            name, norm(name), None, None, None,
+            book(spec.get("source")), spec.get("page"), None,
+            spec.get("xp_cost"), None,
+            json.dumps({"source_reference": {"source": spec.get("source"),
+                                             "page": spec.get("page")},
+                        "xp_cost": spec.get("xp_cost"),
+                        "_addition": True}, ensure_ascii=False),
+        ))
     cx.executemany("INSERT INTO catalog VALUES (" + ",".join("?" * 16) + ")", rows)
     cx.executemany("INSERT INTO curriculum VALUES (?,?,?,?,?,?,?,?)", curriculum)
     cx.executemany("INSERT INTO title_curriculum VALUES (" + ",".join("?" * 10) + ")",
