@@ -991,6 +991,20 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 /* a promoted character opens as an edit, not as a draft to carry on */
 .archivechip.promoted{ border-left:3px solid var(--jade-soft, var(--jade)); }
 
+/* Play and Advance, under a character's chips — the two things anyone does
+   with a character who is already made. */
+.char-actions{ display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.7rem; }
+.char-actions .btn{
+  display:inline-flex; flex-direction:column; align-items:flex-start; gap:0.1rem;
+  line-height:1.15; text-decoration:none;
+}
+.char-actions .act-note{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.08em;
+  font-size:0.56rem; opacity:0.72; font-weight:400;
+}
+.char-actions .action-play{ border-left:3px solid var(--jade); }
+.char-actions .action-advance{ border-left:3px solid var(--crimson); }
+
 /* ---- the advancement ledger ------------------------------------------ */
 .archiverow{ display:inline-flex; align-items:stretch; gap:0; }
 .archiverow .archivechip{ border-top-right-radius:0; border-bottom-right-radius:0; }

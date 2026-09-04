@@ -606,9 +606,34 @@
       t.xp + " XP" + (t.rank ? ", school rank " + t.rank : "") +
       '. Trackers, rolls and the log are saved in this browser, per tier. ' +
       '<a href="' + esc(src) + '" target="_blank" rel="noopener">Open full screen</a>.';
+    renderActions(t);
     if (history.replaceState) {
       history.replaceState(null, "", "#" + t.xp + "xp");
     }
+  }
+
+  /* Play and Advance, under the chips.
+
+     Both were reachable already and neither looked like an option: Play was a
+     tab two thirds of the way across a tab bar, and advancing meant opening
+     the Creator, finding the character in the drafts panel and pressing a +XP
+     button on its row. These are the two things anyone does with a character
+     who is already made, so they sit with its name.
+
+     Play follows the timeline — the sheet you open is the tier you are looking
+     at. Advance always starts from the character's highest tier, because that
+     is where they actually are, so it says which that is rather than implying
+     it advances from the tier on screen. */
+  function renderActions(t) {
+    var top = CHAR.tiers[CHAR.tiers.length - 1];
+    var sheet = "../play/" + CHAR.slug + "-" + t.xp + "xp.html";
+    var advance = "../creator/index.html?advance=" +
+      encodeURIComponent(CHAR.slug);
+    el("char-actions").innerHTML =
+      '<a class="btn action-play" href="' + esc(sheet) + '">Play' +
+        '<span class="act-note">' + t.xp + " XP sheet</span></a>" +
+      '<a class="btn action-advance" href="' + esc(advance) + '">Advance' +
+        '<span class="act-note">spend XP from ' + top.xp + "</span></a>";
   }
 
   function init() {

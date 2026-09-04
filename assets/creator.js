@@ -295,7 +295,11 @@
   function loadStore() {
     var st = null;
     try { st = JSON.parse(localStorage.getItem(LS_DRAFTS)); } catch (e) { /* ignore */ }
-    if (st && st.drafts) return st;
+    // An empty drafts object is truthy, and taking it at face value left
+    // activeChar() reading a draft that is not there — which throws during
+    // boot and renders a blank page, with no control left to recover with.
+    // The wizard always has one draft open; if the store has none, start one.
+    if (st && st.drafts && Object.keys(st.drafts).length) return st;
     // migrate the old single-draft key, so an in-progress character survives
     var legacy = null;
     try { legacy = JSON.parse(localStorage.getItem(LS_DRAFT)); } catch (e) { /* ignore */ }
@@ -559,7 +563,7 @@
     try { return sourceFor(hydrate(a)); } catch (e) { return null; }
   }
 
-  function openArchiveDraft(slug, mode) {
+  function openArchiveDraft(slug, mode, asked) {
     var a = ARCHIVE.filter(function (x) { return x.slug === slug; })[0];
     if (!a) return;
     var edit = mode === "edit";
@@ -573,7 +577,7 @@
       if (a.concept && !d.character.concept) { d.character.concept = a.concept; persist(); }
       switchDraft(existing); return;
     }
-    if (!confirm(edit
+    if (!asked && !confirm(edit
           ? "Open “" + a.name + "” for editing?\n\n" +
             (proseOnly(a)
               ? "Foundry holds this character at " + a.tier_count + " XP tiers, " +
@@ -600,7 +604,7 @@
      starts from: it reads the highest tier on the record, keeps a ledger
      against it, and lands as a new tier beside the others. So there is nothing
      to lose here and no baseline to keep — the record is only ever added to. */
-  function openAdvance(slug) {
+  function openAdvance(slug, asked) {
     var a = ARCHIVE.filter(function (x) { return x.slug === slug; })[0];
     if (!a || !a.top) return;
     var existing = Object.keys(STORE.drafts).filter(function (id) {
@@ -610,7 +614,8 @@
     if (existing) { switchDraft(existing); return;
 
     }
-    if (!confirm("Spend experience for “" + a.name + "”?\n\n" +
+    if (!asked &&
+        !confirm("Spend experience for “" + a.name + "”?\n\n" +
                  "They are at " + (a.top.xp || 0) + " XP, school rank " +
                  (a.top.rank || 1) + ". Landing this adds a tier; the ones " +
                  "already on the record are not changed.")) return;
@@ -5880,6 +5885,44 @@
     });
     render();
     initSync();
+    openFromQuery();
+  }
+
+  /* A deep link from a character's page: ?advance=<slug> or ?edit=<slug>.
+
+     The two things anyone does with a finished character are on its own page
+     now, and pressing one of them should land here on that character rather
+     than on the drafts panel with instructions. If a draft for it is already
+     open this switches to it; the confirm the panel asks is skipped, because
+     following the link IS the answer to it.
+
+     The query is cleared afterwards, so a reload does not re-ask and the
+     browser's back button behaves. */
+  function openFromQuery() {
+    var q = {};
+    String(location.search || "").replace(/^\?/, "").split("&")
+      .forEach(function (pair) {
+        var kv = pair.split("=");
+        if (kv[0]) q[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1] || "");
+      });
+    var slug = q.advance || q.edit;
+    if (!slug) return;
+    var a = ARCHIVE.filter(function (x) { return x.slug === slug; })[0];
+    if (!a) {
+      setStatus("no character called “" + slug + "” in the archive");
+      return;
+    }
+    var kind = q.advance ? "advance" : "edit";
+    var open = Object.keys(STORE.drafts).filter(function (id) {
+      return STORE.drafts[id].fromArchive === slug &&
+             (STORE.drafts[id].kind || "draft") === kind;
+    })[0];
+    if (history.replaceState) {
+      history.replaceState(null, "", location.pathname + location.hash);
+    }
+    if (open) { switchDraft(open); return; }
+    if (kind === "advance") openAdvance(slug, true);
+    else openArchiveDraft(slug, "edit", true);
   }
 
   function boot() { loadLocalKey(init); }

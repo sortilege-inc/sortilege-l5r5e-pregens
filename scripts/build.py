@@ -897,6 +897,7 @@ PAGE_STUB = """<!DOCTYPE html>
       <h1 id="char-name"></h1>
       <p class="school-line" id="school-line"></p>
       <div class="tagrow" id="char-chips"></div>
+      <div class="char-actions" id="char-actions"></div>
     </div>
   </div>
 
