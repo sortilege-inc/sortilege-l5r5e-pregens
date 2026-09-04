@@ -316,6 +316,59 @@
   function upbringingSet() { return originScoped(UPBRINGINGS, 2); }
   var ROLL = (window.L5R_COVERAGE || {}).schools || [];
 
+  /* ─── TEMPORARY, 2026-09-04 ──────────────────────────────────────────────
+     Bias the two random picks — the advantage/disadvantage roller and the
+     heritage roll — away from what promoted characters already carry, while a
+     queue of pregens is being built. Coverage is the point of that queue, and
+     a uniform roll kept landing on entries the archive already had.
+
+     This is a deliberate departure from the book: question 18 is a d10 table
+     roll and this makes it not one. That is why it is one flag and why every
+     call site names it. To revert: set COVERAGE_BIAS to false, or delete this
+     block and the three sites `grep COVERAGE_BIAS` finds.
+
+     "Already carried" means by a PROMOTED character. A draft is work in
+     progress and its picks are not settled, so it does not block anything. */
+  var COVERAGE_BIAS = true;
+
+  var PEC_USED = (window.L5R_COVERAGE || {}).used || {};
+  var HERITAGE_USED = (window.L5R_HERITAGE_COVERAGE || {}).used || {};
+
+  function promotedSlugs() {
+    var out = {};
+    ARCHIVE.forEach(function (a) {
+      if (a.status !== "draft") out[a.slug] = true;
+    });
+    return out;
+  }
+
+  // a catalog entry a promoted character carries, by uuid
+  function takenByPromoted(uuid) {
+    return (PEC_USED[uuid] || []).some(function (u) { return !u.draft; });
+  }
+
+  /* A heritage entry a promoted character took. The heritage feed records who
+     took what but not whether they are a draft, so the slug is checked against
+     the archive rather than trusted. */
+  function heritageTakenByPromoted(tableKey, name) {
+    var who = HERITAGE_USED[tableKey + "::" + name] || [];
+    if (!who.length) return false;
+    var promoted = promotedSlugs();
+    return who.some(function (u) { return promoted[u.slug]; });
+  }
+
+  // the untaken members of a pool, or the whole pool when all are taken —
+  // never an empty result, so a full archive degrades to a plain random pick
+  function preferUntaken(pool, isTaken) {
+    if (!COVERAGE_BIAS) return pool;
+    var free = pool.filter(function (x) { return !isTaken(x); });
+    return free.length ? free : pool;
+  }
+
+  // what the last biased heritage roll skipped, for the line under the button
+  var heritageRerollNote = "";
+  /* ─── end TEMPORARY ─────────────────────────────────────────────────── */
+
   // The chargen data and the compendium spell schools differently ("Asahina
   // Artificer" vs "Asahina Artificer School"). Everything downstream — the
   // build's school-roll gate, the coverage ledger — keys off the compendium
@@ -3153,7 +3206,9 @@
         return pecStatus(e, kinds, get()).state !== "no";
       });
       if (!pool.length) return;
-      var e = pool[Math.floor(Math.random() * pool.length)];
+      // COVERAGE_BIAS: prefer what no promoted character already carries
+      var from = preferUntaken(pool, function (x) { return takenByPromoted(x.uuid); });
+      var e = from[randomBelow(from.length)];
       set(e.name);
       open[e.uuid] = true;
       draw();
@@ -3908,23 +3963,51 @@
         var roll = document.createElement("button");
         roll.type = "button"; roll.className = "btn ghost"; roll.textContent = "Roll d10";
         roll.addEventListener("click", function () {
+          /* COVERAGE_BIAS: roll honestly, and reroll while the result is one a
+             promoted character already took. Bounded, and it says what it
+             skipped rather than quietly handing back a different answer than
+             the die gave. */
           var e = rollOn(table.entries, function (x) { return x.roll; });
+          var skipped = [];
+          if (COVERAGE_BIAS) {
+            for (var i = 0; i < 12 && heritageTakenByPromoted(key, e.name); i++) {
+              if (skipped.indexOf(e.name) < 0) skipped.push(e.name);
+              e = rollOn(table.entries, function (x) { return x.roll; });
+            }
+          }
+          heritageRerollNote = skipped.length
+            ? (heritageTakenByPromoted(key, e.name)
+                ? "every entry on this table is already taken — kept " + e.name
+                : "rerolled past " + skipped.join(", ") +
+                  (skipped.length > 1 ? " — all already taken"
+                                      : " — already taken"))
+            : "";
           forgetHeritagePicks();
           C.answers.heritage = e.name;
           C.answers.heritage_sub = null;
           save(); render();
         });
         body.appendChild(roll);
+        // COVERAGE_BIAS: what the roll skipped, so a biased roll is visible
+        if (COVERAGE_BIAS && heritageRerollNote) {
+          var note = document.createElement("p");
+          note.className = "muted small";
+          note.textContent = heritageRerollNote;
+          body.appendChild(note);
+        }
 
         // full entry cards — the point of the step is reading these
         var list = document.createElement("div");
         list.className = "heritage-list";
         list.innerHTML = table.entries.map(function (e) {
           var active = e.name === C.answers.heritage;
+          // COVERAGE_BIAS: say which are spoken for, so a hand-pick can see it
+          var held = COVERAGE_BIAS && heritageTakenByPromoted(key, e.name);
           var mods = Object.keys(e.modifiers || {}).map(function (k2) {
             return k2 === "note" ? e.modifiers[k2] : k2 + " " + e.modifiers[k2];
           }).join(" · ");
           return '<button type="button" class="heritage' + (active ? " active" : "") +
+            (held ? " held" : "") +
             '" data-v="' + esc(e.name) + '">' +
             '<span class="h-roll">' + esc(e.roll || "—") + "</span>" +
             '<span class="h-body"><span class="h-name">' + esc(e.name) + "</span>" +

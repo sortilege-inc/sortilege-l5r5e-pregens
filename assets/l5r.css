@@ -1075,6 +1075,14 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .stubchip.taken .dc-meta{ color:var(--crimson); }
 .stubchip.folio .dc-meta{ color:var(--ink-dim); }
 /* a stub that already has a premise written for it — hover for the line */
+/* TEMPORARY (COVERAGE_BIAS): a heritage entry a promoted character already
+   took. Marked rather than hidden — a hand-pick may still want it. */
+.heritage.held .h-name::after{
+  content:" · taken"; color:var(--ink-dim); font-family:var(--caps);
+  font-size:0.62rem; letter-spacing:0.12em; text-transform:uppercase;
+}
+.heritage.held{ opacity:0.72; }
+
 .stubchip.has-concept{ border-left:2px solid var(--jade-soft, var(--jade)); }
 .dl-n{
   margin-left:0.45rem; padding:0.02rem 0.36rem; border-radius:2px;
