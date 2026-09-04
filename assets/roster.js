@@ -24,7 +24,9 @@
         (c.tier_count === 1 ? " tier" : " tiers") + "</span></div>" +
         '<span class="nm">' + esc(c.name) + "</span>" +
         '<span class="rl">' + esc(c.school || "—") + "</span>" +
-        '<span class="xp">' + esc(c.clan || "") + " · " +
+        // a ronin has no clan; the region answers the same question
+        '<span class="xp">' +
+        esc(c.clan || String(c.region || "").replace(/ Region$/, "")) + " · " +
         (c.xp_min === c.xp_max ? c.xp_min : c.xp_min + "–" + c.xp_max) + " XP</span>" +
         (c.campaign ? '<span class="camp">' + esc(c.campaign) + "</span>" : "") +
         "</a>";

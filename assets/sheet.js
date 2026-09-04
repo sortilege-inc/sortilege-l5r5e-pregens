@@ -676,9 +676,20 @@
     document.title = CHAR.name + " — Sortilege L5R Pregens";
     el("char-name").textContent = CHAR.name;
     el("char-chips").innerHTML =
+      /* Questions 1 and 2. A samurai answers them with a clan and a family; a
+         Path of Waves or Writ of the Wilds character answers them with a region
+         and an upbringing, and those used to render as nothing at all. The
+         chips carry whichever the character actually has. */
       (CHAR.clan ? '<span class="chip clan" data-clan="' + esc(CHAR.clan) + '">' +
         esc(CHAR.clan) + "</span>" : "") +
       (CHAR.family ? '<span class="chip">' + esc(CHAR.family) + " family</span>" : "") +
+      (!CHAR.clan && CHAR.region
+        ? '<span class="chip">' + esc(String(CHAR.region).replace(/ Region$/, "")) +
+          "</span>" : "") +
+      (!CHAR.family && CHAR.upbringing
+        ? '<span class="chip">' +
+          esc(String(CHAR.upbringing).replace(/ Upbringing$/, "")) +
+          " upbringing</span>" : "") +
       (CHAR.role ? '<span class="chip">' + esc(CHAR.role) + "</span>" : "") +
       (CHAR.campaign ? '<span class="chip crimson">' + esc(CHAR.campaign) + "</span>" : "") +
       '<span class="chip">' + CHAR.tier_count +

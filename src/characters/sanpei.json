@@ -1,23 +1,316 @@
 {
  "slug": "sanpei",
  "name": "Sanpei",
- "folder_label": "Sanpei",
  "campaign": "Slow Tide Harbor",
- "status": "draft",
- "bucket": null,
- "accent": null,
+ "status": null,
  "identity": {
   "clan": null,
   "family": null,
   "school": "The Wandering Blade",
   "role": "Bushi",
-  "age": null
+  "age": "",
+  "region": "Sea River or Lake Region",
+  "upbringing": "Geisha House Upbringing",
+  "origin_type": "ronin"
  },
+ "mode": "pow",
  "portrait": null,
  "concept": null,
  "summary": null,
  "notes": "",
- "twenty_questions": {},
+ "wizard": {
+  "name": "Sanpei",
+  "mode": "pow",
+  "clan": null,
+  "family": null,
+  "school": "The Wandering Blade",
+  "role": "Bushi",
+  "region": "Sea River or Lake Region",
+  "upbringing": "Geisha House Upbringing",
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "melee": 1,
+   "courtesy": 1
+  },
+  "distinctions": [
+   "Famously Neutral"
+  ],
+  "adversities": [
+   "Debt to"
+  ],
+  "passions": [
+   "Pot Stirrer"
+  ],
+  "anxieties": [
+   "Uncleanliness"
+  ],
+  "bushido": {
+   "paramount": "Courage",
+   "lesser": "Righteousness",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "",
+   "ninjo": "Sanpei counts the money his friend sends twice, looking for a mistake that would let him ask for more without losing face.",
+   "standout_quality": "Sanpei grew up as a child of a geisha house and he knows where to run and hide to avoid consequences.",
+   "accomplishment": "He talked a Mantis samurai down from a fight in the harbor without either of them losing face.",
+   "challenge": "Every ship that docks in Slow Tide Harbor, Sanpei finds work watching the cargo or the crew, and every few weeks a man he doesn't recognize hands him a bill for protection money owed, which he pays in full and on time because the alternative is that they'll come to Nagiko with what they know.",
+   "peace": "He sits alone in the dockside tea houses after closing and argues with the owner about the bill until they laugh and comp him a cup, which he could never afford to simply order.",
+   "fear": "He cannot sit still in the magistrate's office without finding something to clean—the desk, the floor, his own hands—because Nagiko's efficiency terrifies him and he needs the work to feel earned.",
+   "accoutrement": "",
+   "past": "He has a close friend who was adopted into the Tortoise family formally, and they have been enemies of jealousy ever since.",
+   "known_for": "Sanpei counts the money his friend sends twice, looking for a mistake that would let him ask for more without losing face.",
+   "known_skill": null,
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "He counts the money his friend sends three times before spending any of it, and keeps the last envelope unopened in case the arithmetic changes.",
+   "group_history": "Sanpei pays Agasha Yui back at half the rate the protection men demand, which means he is always behind on one debt or the other, and he has stopped trying to calculate which one matters more.",
+   "raised_by": "The geisha house raised him to read a room by watching who isn't talking, and he still does it in the magistrate's office, cataloguing Nagiko's silences instead of doing his work.",
+   "raised_skill": "courtesy",
+   "clan_relationship": {
+    "path": null,
+    "skill": null,
+    "text": ""
+   },
+   "mentor": {
+    "name": "Matsu Tekkan",
+    "path": "B",
+    "granted": "Elemental Deficiency (Air)",
+    "skill": "melee",
+    "text": "",
+    "gender": "male",
+    "association": "Lion"
+   },
+   "first_impression": "",
+   "stress_reaction": "When his composure breaks, Sanpei starts cleaning—scrubbing the magistrate's desk with his sleeve, rewinding the scroll racks, arranging the writing implements in order of size—and he will not stop until someone orders him to or the room is immaculate enough that no one could reasonably find fault.",
+   "relationships": "Agasha Yui (Dragon) — Agasha Yui lent him money once, before she knew about the others, and he has been paying her back at half the rate of the protection men because he cannot bring himself to ask her for mercy on a debt that was actually kind.\nNobunari (Brotherhood of Shinsei) — Nobunari taught him to meditate in the monastery gardens, and Sanpei still cannot sit through a single full breath without his hands finding work to do.",
+   "people": [
+    {
+     "name": "Agasha Yui",
+     "gender": "female",
+     "association": "Dragon",
+     "text": "Agasha Yui lent him money once, before she knew about the others, and he has been paying her back at half the rate of the protection men because he cannot bring himself to ask her for mercy on a debt that was actually kind."
+    },
+    {
+     "name": "Nobunari",
+     "gender": "male",
+     "association": "Brotherhood of Shinsei",
+     "text": "Nobunari taught him to meditate in the monastery gardens, and Sanpei still cannot sit through a single full breath without his hands finding work to do."
+    }
+   ],
+   "parent_opinion": {
+    "description": "",
+    "skill": null
+   },
+   "heritage": null,
+   "heritage_table": null,
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Sanpei drowns in the harbor while trying to retrieve a ledger that washed overboard from a protection man's boat, because he miscalculated which debt was more urgent to hide."
+  },
+  "starting_item": "Bisentō",
+  "campaign": "Slow Tide Harbor",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "school.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Melee]",
+    "Martial Arts [Unarmed]",
+    "Fitness",
+    "Smithing",
+    "Performance"
+   ],
+   "school.tech.0": [
+    "Striking as Fire"
+   ],
+   "q4.trouble": [
+    "Empathetic, tricky, clever"
+   ],
+   "q5.past": [
+    "79-86"
+   ],
+   "q7.known": [
+    "Positive deeds, skills, or helpful behavior"
+   ],
+   "q14.prized": [
+    "Ashigaru Armor"
+   ],
+   "q17.history": [
+    "A secret"
+   ],
+   "upbringing.ring_increase": [
+    "Fire"
+   ]
+  },
+  "school_all": true,
+  "ai_history": {
+   "standout_quality": [
+    "He took work as a geisha's servant rather than starve, which the other rōnin never ask him about because they already know what it means he'll do for money."
+   ],
+   "past": [
+    "Sanpei spends what he doesn't have and calls it investment, then spends the next month finding work to cover the gap — a pattern he learned in the geisha house, where a girl's debt to her contract was always larger than her wages, and always solvable if you were clever enough to find the margin."
+   ],
+   "ninjo": [
+    "Sanpei counts the money his friend sends twice, looking for a mistake that would let him ask for more without losing face."
+   ],
+   "known_for": [
+    "Sanpei counts the money his friend sends twice, looking for a mistake that would let him ask for more without losing face."
+   ],
+   "challenge": [
+    "Every ship that docks in Slow Tide Harbor, Sanpei finds work watching the cargo or the crew, and every few weeks a man he doesn't recognize hands him a bill for protection money owed, which he pays in full and on time because the alternative is that they'll come to Nagiko with what they know."
+   ],
+   "peace": [
+    "He sits alone in the dockside tea houses after closing and argues with the owner about the bill until they laugh and comp him a cup, which he could never afford to simply order."
+   ],
+   "fear": [
+    "Every few weeks a man he doesn't recognize hands him a bill, and Sanpei counts the notes twice before he pays, unable to stop looking for a mistake that would let him ask Nagiko for an advance without admitting what the money is for.",
+    "He scrubs his hands raw after handling the protection money, afraid that if Nagiko sees the contact or catches the smell of it on him, she will understand what the debts really are.",
+    "He cannot sit still in the magistrate's office without finding something to clean—the desk, the floor, his own hands—because Nagiko's efficiency terrifies him and he needs the work to feel earned."
+   ],
+   "prized_possession": [
+    "He counts the money his friend sends three times before spending any of it, and keeps the last envelope unopened in case the arithmetic changes."
+   ],
+   "stress_reaction": [
+    "When his composure breaks, Sanpei starts cleaning—scrubbing the magistrate's desk with his sleeve, rewinding the scroll racks, arranging the writing implements in order of size—and he will not stop until someone orders him to or the room is immaculate enough that no one could reasonably find fault."
+   ],
+   "relationship_person": [
+    "Agasha Yui lent him money once, before she knew about the others, and he has been paying her back at half the rate of the protection men because he cannot bring himself to ask her for mercy on a debt that was actually kind.",
+    "Nobunari taught him to meditate in the monastery gardens, and Sanpei still cannot sit through a single full breath without his hands finding work to do."
+   ],
+   "group_history": [
+    "Sanpei pays Agasha Yui back at half the rate the protection men demand, which means he is always behind on one debt or the other, and he has stopped trying to calculate which one matters more."
+   ],
+   "raised_by": [
+    "The geisha house raised him to read a room by watching who isn't talking, and he still does it in the magistrate's office, cataloguing Nagiko's silences instead of doing his work."
+   ],
+   "death": [
+    "Sanpei drowns in the harbor while trying to retrieve a ledger that washed overboard from a protection man's boat, because he miscalculated which debt was more urgent to hide."
+   ]
+  },
+  "origin_type": "ronin"
+ },
+ "twenty_questions": {
+  "template": "pow",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Sanpei grew up as a child of a geisha house and he knows where to run and hide to avoid consequences.",
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "",
+     "lord_name": ""
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Sanpei counts the money his friend sends twice, looking for a mistake that would let him ask for more without losing face."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": ""
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Righteousness"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "He talked a Mantis samurai down from a fight in the harbor without either of them losing face."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Every ship that docks in Slow Tide Harbor, Sanpei finds work watching the cargo or the crew, and every few weeks a man he doesn't recognize hands him a bill for protection money owed, which he pays in full and on time because the alternative is that they'll come to Nagiko with what they know."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "He sits alone in the dockside tea houses after closing and argues with the owner about the bill until they laugh and comp him a cup, which he could never afford to simply order."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "He cannot sit still in the magistrate's office without finding something to clean—the desk, the floor, his own hands—because Nagiko's efficiency terrifies him and he needs the work to feel earned."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Matsu Tekkan"
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "",
+     "accoutrement": ""
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When his composure breaks, Sanpei starts cleaning—scrubbing the magistrate's desk with his sleeve, rewinding the scroll racks, arranging the writing implements in order of size—and he will not stop until someone orders him to or the room is immaculate enough that no one could reasonably find fault."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Agasha Yui (Dragon) — Agasha Yui lent him money once, before she knew about the others, and he has been paying her back at half the rate of the protection men because he cannot bring himself to ask her for mercy on a debt that was actually kind.\nNobunari (Brotherhood of Shinsei) — Nobunari taught him to meditate in the monastery gardens, and Sanpei still cannot sit through a single full breath without his hands finding work to do."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": ""
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": null,
+     "heritage_table": null,
+     "heritage_sub": null
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Sanpei drowns in the harbor while trying to retrieve a ledger that washed overboard from a protection man's boat, because he miscalculated which debt was more urgent to hide."
+    },
+    "picks": {}
+   }
+  }
+ },
  "tiers": [
   {
    "xp": 0,
@@ -25,26 +318,25 @@
    "rank": 1,
    "school": "The Wandering Blade",
    "foundry_id": null,
-   "foundry_name": null,
    "rings": {
-    "air": 1,
+    "air": 2,
     "earth": 2,
-    "fire": 1,
-    "water": 1,
+    "fire": 3,
+    "water": 2,
     "void": 1
    },
    "skills": {
     "artisan": {
-     "aesthetics": 0,
+     "aesthetics": 1,
      "composition": 0,
      "design": 0,
-     "smithing": 0
+     "smithing": 1
     },
     "martial": {
-     "fitness": 0,
-     "melee": 0,
+     "fitness": 1,
+     "melee": 2,
      "ranged": 0,
-     "unarmed": 0,
+     "unarmed": 1,
      "meditation": 0,
      "tactics": 0
     },
@@ -57,34 +349,34 @@
     },
     "social": {
      "command": 0,
-     "courtesy": 0,
+     "courtesy": 2,
      "games": 0,
-     "performance": 0
+     "performance": 1
     },
     "trade": {
      "commerce": 0,
      "labor": 0,
-     "seafaring": 0,
+     "seafaring": 1,
      "skulduggery": 0,
      "survival": 0
     }
    },
    "social": {
-    "honor": 35,
-    "glory": null,
-    "status": null,
-    "ninjo": "",
+    "honor": 45,
+    "glory": 32,
+    "status": 4,
+    "ninjo": "Sanpei counts the money his friend sends twice, looking for a mistake that would let him ask for more without losing face.",
     "giri": "",
     "bushido_tenets": {
-     "paramount": null,
-     "less_significant": null
+     "paramount": "Courage",
+     "less_significant": "Righteousness"
     }
    },
    "derived": {
-    "endurance": 6,
-    "composure": 6,
-    "focus": 2,
-    "vigilance": 1,
+    "endurance": 10,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 2,
     "void_points": 1
    },
    "money": {
@@ -92,25 +384,45 @@
     "koku": 0,
     "bu": 0
    },
-   "techniques": [],
-   "peculiarities": [],
+   "techniques": [
+    {
+     "name": "Striking as Fire"
+    },
+    {
+     "name": "Wanderer's Resolve"
+    },
+    {
+     "name": "Signature Weapon"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Famously Neutral"
+    },
+    {
+     "name": "Debt to"
+    },
+    {
+     "name": "Pot Stirrer"
+    },
+    {
+     "name": "Uncleanliness"
+    },
+    {
+     "name": "Elemental Deficiency (Air)"
+    }
+   ],
    "titles": [],
    "bonds": [],
    "signature_scrolls": [],
-   "gear": [],
+   "gear": [
+    {
+     "name": "Bisentō"
+    }
+   ],
    "advancements": []
   }
  ],
- "needs_attention": [
-  "school ring: choose 1 of Air, Fire, Water, Void",
-  "school starting skills: choose 5 of Fitness, Martial Arts [Melee], Martial Arts [Ranged], Martial Arts [Unarmed], Meditation, Performance, Smithing",
-  "kata: choose 1 of Striking as Air, Striking as Earth, Striking as Water, Striking as Fire",
-  "shuji: choose 1 of Wanderer's Resolve",
-  "question 4: standout quality and its +1 ring",
-  "questions 9-12: distinction, adversity, passion, anxiety",
-  "question 13: mentor, and the extra advantage or disadvantage",
-  "question 18: heritage",
-  "giri and ninjo",
-  "starting outfit"
- ]
+ "folder_label": "Sanpei",
+ "bio": "Sanpei — he/him — Hired by Nagiko; formal status undefined\n\n**The Wandering Blade** · Rōnin · Bushi · Earth +1 + choice · Honor 35 · he/him\n**Status undefined.** Hired by Nagiko; not a yoriki.\n\n### Cards\n- **Three of Pentacles** — promising, and has been granted this opportunity to serve an Emerald Magistrate; determined not to fuck it up.\n- **Queen of Pentacles** — he just wants a lord to serve, material guarantees, etc.\n- **Ten of Pentacles, reversed** — any such lord would have to pay off the many debts that threaten to catch up with him, many of them unsavoury.\n\n### Reading\nEvery card is Pentacles. No swords, no wands, no cups — nothing about honour, glory, the blade, or the spirit. For a rōnin in Rokugan that's pointed: his entire inner life is material security, in a culture that considers material security beneath mention.\n\nThe Ten of Pentacles is the inheritance card, drawn upside down. A rōnin's condition is the absence of that card. Reversed, it's worse than absent — where a legacy should be, there's a negative balance. He didn't inherit nothing; he inherited a bill.\n\nHis problem is arithmetic, not sentiment. He isn't trying to impress anyone; he's trying to be worth more than he costs, because any lord who takes him on assumes a liability and he knows it. The Three of Pentacles reads as *don't let anyone see why I might fuck this up* rather than as ambition.\n\nThe Queen of Pentacles is refreshingly unromantic. Not a name restored, not vengeance, not enlightenment. A roof, a stipend, a lord, regular meals.\n\n**Protection money isn't a sum, it's a subscription.** You don't clear it; you keep paying until the lender stops existing. So the Queen of Pentacles want may not be purchasable — a lord could cover a debt, but covering a tribute means buying out the lender or removing them, and neither is a thing you ask a new patron for. His plan may have no version that works.\n\n**\"His own\" removes his excuse.** No inherited bill, no debt assumed for a friend. He built this. The Three of Pentacles promise runs against his own documented judgement, and the Queen of Pentacles isn't really a want for a lord — it's a want to be saved from himself by someone with more money.\n\n**His value to his creditors just went up.** He walked into their town, behind on payments, wearing a magistrate's authority. Yesterday he was a debtor worth what he could be beaten for; today he's a man inside an Emerald Magistrate's investigation who owes them money. They don't want him dead — they want him useful.\n\n**Nagiko has miscategorised it.** She knows he owes money, which in her framework is a personal failing to be noted. She doesn't know the lenders are criminal or local. She filed it and moved on — exactly what the Emperor reversed does with information that doesn't fit the method. The clock is therefore driven by the creditors, not by her discovery. They'll reach him long before she reaches the truth.\n\nUseful for you: this is a compromise vector with nothing supernatural in it. It runs parallel to the cult and needs no connection to it."
 }

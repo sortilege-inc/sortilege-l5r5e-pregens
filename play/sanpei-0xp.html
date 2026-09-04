@@ -31,24 +31,24 @@
  "rank": 1,
  "portrait": null,
  "rings": {
-  "air": 1,
+  "air": 2,
   "earth": 2,
-  "fire": 1,
-  "water": 1,
+  "fire": 3,
+  "water": 2,
   "void": 1
  },
  "derived": {
-  "endurance": 6,
-  "composure": 6,
-  "focus": 2,
-  "vigilance": 1
+  "endurance": 10,
+  "composure": 8,
+  "focus": 5,
+  "vigilance": 2
  },
  "trackers": {
   "strife": {
-   "max": 6
+   "max": 8
   },
   "fatigue": {
-   "max": 6
+   "max": 10
   },
   "void": {
    "max": 1,
@@ -57,23 +57,23 @@
  },
  "stance": "void",
  "social": {
-  "honor": 35,
-  "glory": null,
-  "status": null
+  "honor": 45,
+  "glory": 32,
+  "status": 4
  },
  "xp": {
   "earned": 0,
   "spent": 0
  },
  "skills": {
-  "aesthetics": 0,
+  "aesthetics": 1,
   "composition": 0,
   "design": 0,
-  "smithing": 0,
-  "fitness": 0,
-  "melee": 0,
+  "smithing": 1,
+  "fitness": 1,
+  "melee": 2,
   "ranged": 0,
-  "unarmed": 0,
+  "unarmed": 1,
   "meditation": 0,
   "tactics": 0,
   "culture": 0,
@@ -82,27 +82,87 @@
   "sentiment": 0,
   "theology": 0,
   "command": 0,
-  "courtesy": 0,
+  "courtesy": 2,
   "games": 0,
-  "performance": 0,
+  "performance": 1,
   "commerce": 0,
   "labor": 0,
-  "seafaring": 0,
+  "seafaring": 1,
   "skulduggery": 0,
   "survival": 0
  },
  "bushido": {
-  "paramount": null,
-  "less": null
+  "paramount": "Courage",
+  "less": "Righteousness"
  },
- "ninjo": "",
+ "ninjo": "Sanpei counts the money his friend sends twice, looking for a mistake that would let him ask for more without losing face.",
  "giri": "",
  "money": null,
- "techniques": [],
- "peculiarities": [],
+ "techniques": [
+  {
+   "name": "Striking as Fire",
+   "tag": "Technique",
+   "text": "<ul><li>Victory cannot be achieved through defense alone, and it is a poor student of the sword who forgets that their most important goal is simple: cut down their enemy. All else fades to the background as the bushi fiercely presses the attack, trying to force an error or open an opportunity to end their foe.</li><li>When you make a Martial Arts [Melee, Ranged, or Unarmed] (Fire) Attack action check, you may spend (op):</li><li>Fire +(op): The next time your target suffers a Critical Strike, increase its severity by 1 per (op) spent this way. Persists until end of your next turn.</li></ul>"
+  },
+  {
+   "name": "Wanderer's Resolve",
+   "tag": "Technique",
+   "text": "<ul><li>Activation: Once per scene as a Support action, if you are in a Void stance, focus on protecting what is important to you.</li><li>Remove 3 fatigue and 3 strife, plus 3 fatigue and 3 strife for each Compromised or Incapacitated character in the scene with whom you share a bond.</li></ul>"
+  },
+  {
+   "name": "Signature Weapon",
+   "tag": "Technique",
+   "text": "<p>Choose a signature weapon category (or unarmed) with GM approval. When using a weapon from this category for an Attack action or Performance check, roll one additional skill die. Additionally, when making such a check you may suffer fatigue up to your school rank to alter that many results of your kept dice to (op) results.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Famously Neutral",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are known for your impartiality and fair-mindedness.</li><li>When performing a check to convince others of your trustworthiness or provide unbiased advice (such as Command [Earth] to reason with two feuding subordinates or Sentiment [Earth] to determine how to set someone at ease), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Debt to",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are in terrible debt. If you fail to make regular payments or fulfill obligations, your debtor will hunt you down.</li><li>When making a check related to dodging or worsening debt (such as Commerce [Water] to purchase something unnecessary or Courtesy [Water] to get a loan), you must choose and reroll two dice containing success or explosion. If you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Pot Stirrer",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You enjoy stirring up social chaos and watching the results unfold.</li><li>After performing a check to stir up social chaos (such as Courtesy [Fire] to incite anger about a perceived insult or Theology [Fire] to encourage two people to argue about religious beliefs), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Uncleanliness",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Uncleanliness causes you physical and mental distress.</li><li>After performing a check to interact with something unclean, you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Elemental Deficiency (Air)",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You lack a fundamental connection with Air.</li><li>When performing a check to align with Air or interact with air kami, you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  }
+ ],
  "titles": [],
  "bonds": [],
- "gear": []
+ "gear": [
+  {
+   "name": "Bisentō",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "2",
+   "damage": 4,
+   "deadliness": 6,
+   "grips": "Damage +2",
+   "qualities": [
+    "Cumbersome",
+    "Durable",
+    "Wargear"
+   ],
+   "rarity": "8",
+   "text": "<p>The bisentō is a strange weapon not regularly seen on Rokugan’s battlefields. Essentially a scimitar with an extremely long hilt, the bisentō has a long, yari-like wooden shaft topped by a broad and heavy curved blade. Though it seems awkward and top-heavy, the bisentō is exceptionally dangerous in the right hands. The length of the shaft gives the wielder incredible leverage, allowing them to deliver great chopping blows that can slice a person in half or cleave through heavy armor. Typically seen among the more militant orders of monks, such as the Perfect Land Sect, the bisentō is sometimes used by heavy infantry units, like those of the Daidoji family.</p>"
+  }
+ ]
 }
 </script>
 <script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>

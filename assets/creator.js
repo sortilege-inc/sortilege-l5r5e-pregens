@@ -210,6 +210,27 @@
   // Core builds a samurai from clan and family. Path of Waves and Writ of the
   // Wilds replace those two questions with region and upbringing, and drop the
   // clan-relationship beat, since those characters have no clan.
+  /* Path of Waves p.46, and the corpus's own rules labels
+     (pow_ronin_base_status_24, pow_peasant_base_status_15,
+     pow_gaijin_base_status_0): the character's type sets the status their
+     upbringing then modifies. Every one of the thirteen upbringings applies to
+     all three types, so this gates nothing — it only sets the base. */
+  var ORIGIN_TYPES = [
+    { key: "ronin", label: "Rōnin", status: 24,
+      note: "a samurai without a lord" },
+    { key: "peasant", label: "Peasant", status: 15,
+      note: "open about the upbringing" },
+    { key: "gaijin", label: "Gaijin", status: 0,
+      note: "status works differently; see the book" }
+  ];
+  function originType() {
+    var t = C.origin_type;
+    return ORIGIN_TYPES.filter(function (x) { return x.key === t; })[0]
+      // the mode is labelled Ronin, so that is the base a draft without an
+      // explicit answer already assumed
+      || ORIGIN_TYPES[0];
+  }
+
   var MODES = [
     { key: "core", label: "Samurai", book: "Core Rulebook" },
     { key: "pow", label: "Ronin", book: "Path of Waves" },
@@ -2073,13 +2094,20 @@
         addSkills(reg.skill_increase, "region.skill_increase", C.region);
         if (reg.glory != null) glory = reg.glory;
       }
+      // the type's base status, which the upbringing then modifies
+      status = originType().status;
       var up = find(UPBRINGINGS, C.upbringing);
       if (up) {
         addRing(up.ring_increase, "upbringing.ring_increase", C.upbringing);
         addSkills(up.skill_increases, "upbringing.skill_increases", C.upbringing);
         // a region sets glory and an upbringing modifies status, the way a
         // family sets glory and a clan sets status in core
-        if (up.status_modification != null) status += up.status_modification;
+        if (up.status_modification != null) {
+          status += up.status_modification;
+          // every negative Status Modification in the chapter is printed
+          // "(minimum 0)" — six of the thirteen — so a reduction floors there
+          if (up.status_modification < 0) status = Math.max(0, status);
+        }
         if (up.starting_wealth) wealth += up.starting_wealth;
       }
     }
@@ -3025,6 +3053,33 @@
       done: function () { return isCore() ? has(C.family) : has(C.upbringing); },
       render: function (body) {
         if (!isCore()) {
+          /* The book asks this here: "Depending on what type of character you
+             choose, you have a particular base status value that is modified
+             by your upbringing" (Path of Waves p.46). Without it the base was
+             0 and every upbringing's modification was applied to nothing. */
+          label(body, "What kind of character is this");
+          var trow = document.createElement("div");
+          trow.className = "need-row wrapped";
+          trow.innerHTML = '<span class="need-k">Type</span>' +
+            ORIGIN_TYPES.map(function (t) {
+              return '<button type="button" class="choice small' +
+                (originType().key === t.key ? " active" : "") +
+                '" data-v="' + t.key + '" title="' + esc(t.note) + '">' +
+                esc(t.label) + " · status " + t.status + "</button>";
+            }).join("");
+          trow.addEventListener("click", function (e) {
+            var b = e.target.closest("button[data-v]");
+            if (!b) return;
+            C.origin_type = b.dataset.v; save(); render();
+          });
+          body.appendChild(trow);
+          var tn = document.createElement("p");
+          tn.className = "muted small";
+          tn.textContent = "Status begins there, and the upbringing below "
+            + "modifies it — a reduction never takes it below 0.";
+          body.appendChild(tn);
+
+          label(body, "Upbringing");
           pickList(body, upbringingSet().map(function (u) {
             return { value: u.name, label: u.name,
                      meta: [u.ring_increase_label, u.skill_increases_label,
@@ -4849,7 +4904,9 @@
       identity: {
         clan: C.clan, family: C.family, school: C.school,
         role: C.role, age: "",
-        region: C.region || null, upbringing: C.upbringing || null
+        region: C.region || null, upbringing: C.upbringing || null,
+        // rōnin / peasant / gaijin — what set the base status
+        origin_type: isCore() ? null : originType().key
       },
       mode: mode(),
       portrait: null,

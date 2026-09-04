@@ -151,7 +151,11 @@ def schema(cx):
       description TEXT, data TEXT);
     CREATE INDEX catalog_norm ON catalog(sub_type, norm);
     CREATE TABLE character(
-      slug TEXT PRIMARY KEY, name TEXT, clan TEXT, family TEXT, school TEXT,
+      slug TEXT PRIMARY KEY, name TEXT, clan TEXT, family TEXT,
+      -- questions 1 and 2 for a Path of Waves or Writ of the Wilds character,
+      -- where a samurai has a clan and a family
+      region TEXT, upbringing TEXT, origin_type TEXT,
+      school TEXT,
       school_norm TEXT, role TEXT, bucket TEXT, campaign TEXT, status TEXT, accent TEXT,
       portrait TEXT, concept TEXT, summary TEXT, tier_count INTEGER,
       xp_min INTEGER, xp_max INTEGER);
@@ -364,8 +368,10 @@ def load_characters(cx):
         tiers = c["tiers"]
         snorm = norm(c["identity"].get("school"))
         snorm = ALIASES.get(snorm, snorm)
-        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 17) + ")", (
+        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 20) + ")", (
             c["slug"], c["name"], c["identity"].get("clan"), c["identity"].get("family"),
+            c["identity"].get("region"), c["identity"].get("upbringing"),
+            c["identity"].get("origin_type"),
             c["identity"].get("school"), snorm,
             c["identity"].get("role"), c.get("bucket"), c.get("campaign"),
             c.get("status"), c.get("accent"), c.get("portrait"),
@@ -548,6 +554,9 @@ def archive_drafts(docs):
             "status": c.get("status"),
             "tier_count": c.get("tier_count") or len(c["tiers"]),
             "identity": {"clan": c.get("clan"), "family": c.get("family"),
+                         "region": c.get("region"),
+                         "upbringing": c.get("upbringing"),
+                         "origin_type": c.get("origin_type"),
                          "school": c.get("school"), "role": c.get("role")},
             "rings": t.get("rings"),
             "social": {k: (t.get("social") or {}).get(k)
@@ -742,7 +751,10 @@ def emit(cx):
         biggest = max(biggest, size)
         if c["status"] != "draft":
             roster.append({k: c[k] for k in
-                           ("slug", "name", "clan", "family", "school", "role", "bucket",
+                           ("slug", "name", "clan", "family",
+                            # a ronin's answers to questions 1 and 2
+                            "region", "upbringing", "origin_type",
+                            "school", "role", "bucket",
                             "campaign", "status", "portrait", "tier_count",
                             "xp_min", "xp_max")})
 

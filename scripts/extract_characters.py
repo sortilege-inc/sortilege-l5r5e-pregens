@@ -279,6 +279,16 @@ def main():
             "identity": {
                 "clan": base["identity"].get("clan"),
                 "family": base["identity"].get("family"),
+                # Path of Waves and Writ of the Wilds answer questions 1 and 2
+                # with these instead of a clan and a family. Foundry has no
+                # field for either, so they only ever arrive from the Creator's
+                # export or a hand-authored source — but they must survive a
+                # re-extract, which means living in the schema.
+                "region": base["identity"].get("region"),
+                "upbringing": base["identity"].get("upbringing"),
+                # rōnin / peasant / gaijin: what set the base status the
+                # upbringing then modified
+                "origin_type": base["identity"].get("origin_type"),
                 "school": clean_school(base["identity"].get("school")),
                 "role": base["identity"].get("roles"),
                 "age": base["identity"].get("age"),
