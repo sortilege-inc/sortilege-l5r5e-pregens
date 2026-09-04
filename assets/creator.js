@@ -3829,6 +3829,35 @@
     btn.addEventListener("blur", hideTip);
   }
 
+  /* "During character creation, no ring may exceed 3 and no skill may exceed
+     3" — l5r5e-0.4-core-chargen.ttrpg, and Path of Waves states it again for
+     rōnin. The book's remedy is not to clamp: "if a choice would result in a
+     ring rising above rank 3 during character creation, then the player must
+     choose a different ring to increase instead". So an option that would
+     breach it is marked and refused, and the same confirm-and-continue the
+     peculiarity picker uses is offered, because the GM outranks the tool. */
+  var CREATION_CAP = 3;
+
+  // What an option would bring its ring or skill to if taken.
+  function wouldReach(heading, option, by) {
+    var d;
+    try { d = computed(); } catch (e) { return null; }
+    if (/^Ring/.test(heading)) {
+      var r = String(option).toLowerCase();
+      if (d.rings[r] == null) return null;
+      return { kind: "ring", label: cap(r), now: d.rings[r],
+               then: d.rings[r] + by };
+    }
+    if (/kill/.test(heading)) {
+      var sk = SKILL_BY_LABEL[String(option).toLowerCase()] ||
+               String(option).toLowerCase();
+      var now = d.skills[sk] || 0;
+      return { kind: "skill", label: SKILL_LABEL[sk] || cap(sk), now: now,
+               then: now + by };
+    }
+    return null;
+  }
+
   function chooseGroup(body, key, heading, spec, fmt, tips, after) {
     var n = spec.n || 1;
     var yield_ = spec.yield_value != null ? spec.yield_value : 1;
@@ -3841,8 +3870,15 @@
       (picked.length === n ? " done" : "");
     row.innerHTML = spec.options.map(function (o) {
       var on = picked.indexOf(o) >= 0;
+      // only a pick that is not already held can breach the cap
+      var w = on ? null : wouldReach(heading, o, yield_);
+      var over = w && w.then > CREATION_CAP;
       return '<button type="button" class="choice' + (on ? " active" : "") +
-        '" data-v="' + esc(o) + '">' + esc(fmt ? fmt(o) : o) + "</button>";
+        (over ? " over-cap" : "") + '" data-v="' + esc(o) + '"' +
+        (over ? ' title="' + esc(w.label + " is at " + w.now + "; this would " +
+                              "make it " + w.then + ", and nothing may pass " +
+                              CREATION_CAP + " during creation") + '"' : "") +
+        '>' + esc(fmt ? fmt(o) : o) + "</button>";
     }).join("") +
       '<span class="choose-n' + (picked.length === n ? " ok" : "") + '">' +
       picked.length + "/" + n + "</span>";
@@ -3852,6 +3888,17 @@
       b.addEventListener("click", function () {
         var v = b.getAttribute("data-v");
         var at = picked.indexOf(v);
+        if (at < 0) {
+          var w = wouldReach(heading, v, yield_);
+          if (w && w.then > CREATION_CAP &&
+              !confirm(w.label + " is at " + w.now + ", and this would make it " +
+                       w.then + ".\n\nDuring character creation nothing may " +
+                       "pass " + CREATION_CAP + " — the rule is to increase " +
+                       "something else instead.\n\nTake it anyway?")) {
+            hideTip();
+            return;
+          }
+        }
         var next = picked.slice();
         if (at >= 0) next.splice(at, 1);
         else if (spec.distinct === false || next.indexOf(v) < 0) next.push(v);
@@ -8631,6 +8678,27 @@
        '<div class="stat"><span class="k">Status</span><span class="v">' + d.status + "</span></div>",
        '<div class="stat"><span class="k">Koku</span><span class="v">' + d.wealth + "</span></div>"
       ].join("") + "</div>" +
+      // Anything already past the creation cap, whatever put it there: a
+      // choice the GM waved through, or fixed grants that stack past 3 with no
+      // choice involved at all. Named rather than clamped, because the book's
+      // remedy is to increase something else.
+      (function () {
+        var over = [];
+        RINGS.forEach(function (r) {
+          if (d.rings[r] > CREATION_CAP) over.push(cap(r) + " " + d.rings[r]);
+        });
+        Object.keys(d.skills).sort().forEach(function (k) {
+          if (d.skills[k] > CREATION_CAP) {
+            over.push((SKILL_LABEL[k] || cap(k)) + " " + d.skills[k]);
+          }
+        });
+        return over.length
+          ? '<p class="muted small wip-overcap">Past the creation cap of ' +
+            CREATION_CAP + ": " + esc(over.join(", ")) +
+            ". During character creation nothing may pass " + CREATION_CAP +
+            " — the rule is to increase something else instead.</p>"
+          : "";
+      })() +
       (d.pending.length
         // a rōnin has no clan and no family; the question those choices came
         // from is a region and an upbringing instead

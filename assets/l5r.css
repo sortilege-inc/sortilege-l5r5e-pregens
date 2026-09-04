@@ -1628,3 +1628,15 @@ input.merc-n{
   .res-row .res-k{ flex:none; }
   .mod-row{ grid-template-columns:1fr 78px auto; }
 }
+
+/* An option that would take a ring or skill past the creation cap of 3, and
+   the side panel's notice when something already has. Marked, not hidden: the
+   book's remedy is to increase something else, and the GM may still override. */
+.choice.over-cap{
+  border-style:dashed; border-color:var(--crimson); color:var(--crimson);
+}
+.choice.over-cap.active{ border-style:solid; }
+.wip-overcap{
+  color:var(--crimson); border-left:2px solid var(--crimson);
+  padding-left:0.55rem; margin:0.5rem 0;
+}
