@@ -72,7 +72,16 @@
   "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current.",
   "Mask of the Oni": {
    "arc": "l5r5e-0.4-mask-of-the-oni.arc",
-   "note": "Set in 1123: the PCs pass through the Crab Clan's defenses into the Shadowlands, to the ruins of Shiro Hiruma. Arc, cast and lore are converted — what is missing is the pack."
+   "note": "Set in 1123: the PCs pass through the Crab Clan's defenses into the Shadowlands, to the ruins of Shiro Hiruma. Arc, cast and lore are converted — what is missing is the pack.",
+   "pencilled_schools": [
+    "Hiruma Scout School",
+    "Kaiu Engineer School",
+    "Agasha Alchemist School",
+    "Shiba Guardian School",
+    "Nezumi Tattered Ear Explorer Tradition",
+    "Yogo Preserver School"
+   ],
+   "pencilled_why": "Chosen 2026-09-04 for the expedition the adventure actually is: out through Crab lands into the Shadowlands, to the ruins of Shiro Hiruma. The Hiruma Scout is going home to that ruin and the Kaiu Engineer can read what is left standing; the Agasha Alchemist brews against the Taint and the Shiba Guardian keeps them alive doing it; the Yogo Preserver wards, and carries a curse that belongs to this story. The Nezumi Tattered Ear Explorer is the party's way into The Knotted Tails, which is played inside this adventure — and at honour 18 it is a different game from the other five."
   },
   "Sins of Regret": {
    "arc": "l5r5e-0.4-sins-of-regret.arc",

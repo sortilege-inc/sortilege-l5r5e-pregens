@@ -425,6 +425,20 @@ def campaigns(cx):
         # since it was written.
         print(f"   ! {len(stale)} pencilled school(s) the archive has since "
               f"covered: " + ", ".join(f"{c} → {s}" for c, s in stale))
+
+    # The same school pencilled for two packs means only one of them can be the
+    # build that covers it, so the second pack is planning ground it will not
+    # gain. Also not an error -- two packs may want the same school on purpose
+    # -- but it is almost always a slip, and it gets likelier with every list.
+    seen = collections.defaultdict(list)
+    for c in out:
+        for pen in c["pencilled"]:
+            seen[pen["school"]].append(c["name"])
+    twice = {k: v for k, v in seen.items() if len(v) > 1}
+    if twice:
+        print(f"   ! {len(twice)} school(s) pencilled for more than one "
+              f"campaign: "
+              + "; ".join(f"{k} ({', '.join(v)})" for k, v in sorted(twice.items())))
     missing = [c["name"] for c in out
                if c["declared"] and not c["characters"] and not c["note"]]
     if missing:
