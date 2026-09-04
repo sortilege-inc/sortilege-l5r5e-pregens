@@ -179,14 +179,27 @@
   },
   "The Bushi Oni Part II": {
    "arc": null,
-   "note": "The owner's own campaign, a second party alongside The Bushi Oni, so there is no arc in the corpus for it. Two characters already built are tagged into it — Aarav (Ivory Kingdoms Sage Tradition) and The Beshkara Constrictor (Shinomen Naga Seer Tradition), both of which had no campaign before — and the schools below are additional to those two.",
+   "note": "The owner's own campaign, a second party alongside The Bushi Oni, so there is no arc in the corpus for it. Two characters already built are tagged into it — Aarav (Ivory Kingdoms Sage Tradition) and The Beshkara Constrictor (Shinomen Naga Seer Tradition), both of which had no campaign before — and the schools below are additional to those two. This part of the campaign takes place in and near the Shinomen Forest.",
    "pencilled_schools": [
-    "Voice of the Wilds",
-    "Ichirō Ironsmith School",
-    "Agasha Mystic School",
-    "Iuchi Horse Lord Disciple"
+    {
+     "school": "Voice of the Wilds",
+     "concept": "A hedge-shugenja who learned invocations from the kami directly rather than from a school, and is faintly embarrassed to be the party's most orthodox member."
+    },
+    {
+     "school": "Ichirō Ironsmith School",
+     "concept": "A travelling smith, working his way village to village along the Shinomen's edge with his forge on his back."
+    },
+    {
+     "school": "Agasha Mystic School",
+     "concept": "A Dragon sent to verify a claim nobody in her clan believes, who has privately concluded it is true and has not yet said so."
+    },
+    {
+     "school": "Iuchi Horse Lord Disciple",
+     "concept": "A shugenja who names things in order to bind them, and the only one in the party who finds the naga's speech easy."
+    }
    ],
-   "pencilled_why": "Chosen 2026-09-04. Built around the two characters tagged into it rather than from scratch: Aarav is an Ivory Kingdoms sage and the Constrictor a Shinomen naga seer, so this is a party of outsiders and non-humans before it is anything else. Voice of the Wilds keeps that going — a shugenja-courtier who picks their own two rings — while Ichirō Ironsmith and Agasha Mystic supply the Badger forge and the Dragon transmutationist, which is to say the two people who can make something out of what the others find.\n\nVoice of the Wilds is also the school of a published pregen (Hiyabayashi Kenshin, The Highwayman) — untouched by the archive, so it still adds coverage.\n\nIuchi Horse Lord Disciple was named for this party and for Sins of Regret in the same breath, and settled here 2026-09-04. It belongs: Sins of Regret's other eight picks are all clanless because the adventure is written for rōnin, and a Unicorn school there would have been the one thing to break that premise — while a Unicorn shugenja sits easily beside a gaijin sage and a naga seer."
+   "pencilled_why": "Chosen 2026-09-04. Built around the two characters tagged into it rather than from scratch: Aarav is an Ivory Kingdoms sage and the Constrictor a Shinomen naga seer, so this is a party of outsiders and non-humans before it is anything else. Voice of the Wilds keeps that going — a shugenja-courtier who picks their own two rings — while Ichirō Ironsmith and Agasha Mystic supply the Badger forge and the Dragon transmutationist, which is to say the two people who can make something out of what the others find.\n\nVoice of the Wilds is also the school of a published pregen (Hiyabayashi Kenshin, The Highwayman) — untouched by the archive, so it still adds coverage.\n\nIuchi Horse Lord Disciple was named for this party and for Sins of Regret in the same breath, and settled here 2026-09-04. It belongs: Sins of Regret's other eight picks are all clanless because the adventure is written for rōnin, and a Unicorn school there would have been the one thing to break that premise — while a Unicorn shugenja sits easily beside a gaijin sage and a naga seer.",
+   "setting": "In and near the Shinomen Forest, per the owner 2026-09-04 — which is why the party leans on things that are not people: The Beshkara Constrictor is a Shinomen naga seer, and both the Voice of the Wilds and the Iuchi Horse Lord Disciple work by talking to what will not talk back to anyone else. Concepts for this pack should assume the forest, not a court."
   },
   "The Knotted Tails": {
    "arc": "l5r5e-0.4-knotted-tails.arc",
