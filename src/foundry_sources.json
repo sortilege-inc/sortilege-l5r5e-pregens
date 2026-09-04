@@ -69,7 +69,7 @@
   "sanpei": "Slow Tide Harbor"
  },
  "campaign_list": {
-  "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing.",
+  "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current.",
   "Mask of the Oni": {
    "arc": "l5r5e-0.4-mask-of-the-oni.arc",
    "note": "Set in 1123: the PCs pass through the Crab Clan's defenses into the Shadowlands, to the ruins of Shiro Hiruma. Arc, cast and lore are converted — what is missing is the pack."
@@ -92,7 +92,16 @@
   },
   "Wheel of Judgment": {
    "arc": null,
-   "note": "The adventure is not on disk: no corpus file, no source PDF, and not in the compendium's book list. Its only trace is Deathly Turns, which supplements it — a Spirit Realms adventure the party returns from, with the maō Burakakin in it. Find the source and convert it, then the arc goes here."
+   "note": "The adventure is not on disk: no corpus file, no source PDF, and not in the compendium's book list. Its only trace is Deathly Turns, which supplements it — a Spirit Realms adventure the party returns from, with the maō Burakakin in it. Find the source and convert it, then the arc goes here.",
+   "pencilled_schools": [
+    "Toritaka Phantom Hunter School",
+    "Kitsu Medium School",
+    "Kitsu Realm Wanderer School",
+    "Mazoku's Enforcer Tradition",
+    "Champion of Days Gone Tradition",
+    "Yogo Wardmaster School"
+   ],
+   "pencilled_why": "Chosen 2026-09-04 against Deathly Turns' account of the adventure, since the adventure itself is not on disk. Toritaka Phantom Hunter because Lady Mazoku is the secret patron of the Falcon Clan and its Phantom Hunters; Mazoku's Enforcer and Champion of Days Gone because Deathly Turns writes both for characters created in the afterlife; the two Kitsu because they speak with the dead and walk between realms; Yogo Wardmaster for the seals, with a tunnel out of the Shadowlands to close. Kitsu Medium is also the school of a published pregen (Kitsu Kohaku, Wedding at Kyotei Castle) — untouched by the archive, but not fresh ground."
   },
   "Winter's Embrace": {
    "arc": "l5r5e-0.4-winters-embrace.arc",

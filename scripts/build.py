@@ -384,14 +384,47 @@ def campaigns(cx):
             "SELECT campaign FROM character"
             " WHERE campaign IS NOT NULL AND provenance = 'archive'"):
         counts[name] += 1
-    out = []
+    # every school on the compendium roll, and which of them the archive has
+    # already built a character to
+    roll = {n: name for name, n in cx.execute(
+        "SELECT name, norm FROM catalog WHERE pack LIKE '%school-curriculum%'")}
+    covered = {n for (n,) in cx.execute(
+        "SELECT DISTINCT school_norm FROM character"
+        " WHERE school_norm IS NOT NULL AND provenance = 'archive'")}
+
+    out, offroll, stale = [], [], []
     for name in sorted(set(counts) | {k for k in declared if not k.startswith("_")}):
         spec = declared.get(name) or {}
+        # the shortlist a pack will be built from, each entry resolved against
+        # the roll so a misspelling is caught while it is still a plan
+        pencilled = []
+        for label in spec.get("pencilled_schools") or []:
+            n = norm(label)
+            if n not in roll:
+                offroll.append((name, label))
+                continue
+            if n in covered:
+                stale.append((name, roll[n]))
+            pencilled.append({"school": roll[n], "covered": n in covered})
         out.append({"name": name, "characters": counts.get(name, 0),
                     "arc": spec.get("arc"), "note": spec.get("note"),
+                    "pencilled": pencilled,
+                    "pencilled_why": spec.get("pencilled_why"),
                     # declared and empty: something to set up, not a gap in the
                     # data — the roster says so rather than showing nothing
                     "declared": name in declared})
+
+    if offroll:
+        raise SystemExit(
+            f"FAIL — {len(offroll)} pencilled school(s) are not on the "
+            f"compendium's School Curriculum roll:\n"
+            + "\n".join(f"   {c}: {s!r}" for c, s in offroll))
+    if stale:
+        # not an error: a pack may deliberately revisit a school. But the point
+        # of a shortlist is usually fresh ground, so say which have been taken
+        # since it was written.
+        print(f"   ! {len(stale)} pencilled school(s) the archive has since "
+              f"covered: " + ", ".join(f"{c} → {s}" for c, s in stale))
     missing = [c["name"] for c in out
                if c["declared"] and not c["characters"] and not c["note"]]
     if missing:
@@ -413,8 +446,11 @@ def campaigns(cx):
             f"in the corpus at {base}:\n"
             + "\n".join(f"   {n}: {a}" for n, a in dead))
     with_arc = sum(1 for c in out if c["arc"])
+    npen = sum(len(c["pencilled"]) for c in out)
     print(f"   campaigns: {len(out)} ({sum(1 for c in out if c['declared'])} "
-          f"declared, {with_arc} pointing at an arc on disk)")
+          f"declared, {with_arc} pointing at an arc on disk"
+          + (f", {npen} schools pencilled across "
+             f"{sum(1 for c in out if c['pencilled'])}" if npen else "") + ")")
     return out
 
 

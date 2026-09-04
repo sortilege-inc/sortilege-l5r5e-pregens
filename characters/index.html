@@ -6,7 +6,7 @@
 <title>Characters — Sortilege L5R Pregens</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/l5r.css?v=0a9e075d">
+<link rel="stylesheet" href="../assets/l5r.css?v=396e8b3e">
 </head>
 <body>
 <nav class="topnav">
@@ -53,7 +53,7 @@
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
 <script src="../data/roster.js?v=1e5def76"></script>
-<script src="../data/campaigns.js?v=69854f94"></script>
+<script src="../data/campaigns.js?v=36715bfa"></script>
 <script src="../assets/roster.js?v=2cefdb59"></script>
 <script>
 (function () {
@@ -138,9 +138,24 @@
     var picked = CAMPAIGN_BY_NAME[campaign.value];
     document.getElementById("roster").innerHTML =
       (!list.length && picked && !picked.characters
-        ? '<p class="muted campaign-empty"><strong>' + esc(picked.name) +
-          "</strong> has no characters yet." +
-          (picked.note ? " " + esc(picked.note) : "") + "</p>"
+        ? '<div class="campaign-empty"><p class="muted"><strong>' +
+          esc(picked.name) + "</strong> has no characters yet." +
+          (picked.note ? " " + esc(picked.note) : "") + "</p>" +
+          // the shortlist, so the plan is where the empty pack is rather than
+          // only in the manifest
+          ((picked.pencilled || []).length
+            ? '<p class="ce-pencilled"><span class="ce-label">Pencilled in</span>' +
+              picked.pencilled.map(function (p) {
+                return "<span" + (p.covered ? ' class="ce-taken"' : "") +
+                  ' title="' + (p.covered
+                    ? "the archive has already built a character to this school"
+                    : "not yet built anywhere in the archive") + '">' +
+                  esc(p.school) + "</span>";
+              }).join("") + "</p>"
+            : "") +
+          (picked.pencilled_why
+            ? '<p class="muted small ce-why">' + esc(picked.pencilled_why) + "</p>"
+            : "") + "</div>"
         : window.renderRoster(list, "", { actions: true }));
     document.getElementById("shown").textContent =
       list.length + " of " + pool.length;
