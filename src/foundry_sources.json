@@ -68,6 +68,13 @@
   "ichiro-tsutomu": "Slow Tide Harbor",
   "sanpei": "Slow Tide Harbor"
  },
+ "campaign_list": {
+  "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing.",
+  "Wheel of Judgment": {
+   "arc": null,
+   "note": "The adventure is not on disk: no corpus file, no source PDF, and not in the compendium's book list. Its only trace is Deathly Turns, which supplements it — a Spirit Realms adventure the party returns from, with the maō Burakakin in it. Find the source and convert it, then the arc goes here."
+  }
+ },
  "corrections": {
   "_comment": "field fixes applied on extract; the Foundry record has the typo",
   "nasu-kogo": {

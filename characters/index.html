@@ -6,7 +6,7 @@
 <title>Characters — Sortilege L5R Pregens</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/l5r.css?v=5b88ec5d">
+<link rel="stylesheet" href="../assets/l5r.css?v=0a9e075d">
 </head>
 <body>
 <nav class="topnav">
@@ -53,6 +53,7 @@
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
 <script src="../data/roster.js?v=1e5def76"></script>
+<script src="../data/campaigns.js?v=6e023736"></script>
 <script src="../assets/roster.js?v=2cefdb59"></script>
 <script>
 (function () {
@@ -62,6 +63,12 @@
       role = document.getElementById("role"),
       campaign = document.getElementById("campaign");
 
+  function esc(x) {
+    return String(x == null ? "" : x).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;",
+               "'": "&#39;" }[c];
+    });
+  }
   var published = document.getElementById("published");
   // Two kinds of character live here. The archive is the work — one build per
   // school, ours. The published pregens are the folios FFG shipped with the
@@ -70,10 +77,32 @@
   // So they are off by default and the toggle says how many are waiting.
   var mine = chars.filter(function (c) { return c.provenance !== "published"; });
   var pubs = chars.filter(function (c) { return c.provenance === "published"; });
+  /* The campaign filter reads the declared list rather than what the
+     characters happen to carry, so a campaign nobody has built for yet still
+     appears — with its count, and with the reason it is empty when you pick
+     it. Clan and role stay observed: there is no sense in offering a clan that
+     nothing in view belongs to. */
+  var CAMPAIGNS = window.L5R_CAMPAIGNS || [];
+  var CAMPAIGN_BY_NAME = {};
+  CAMPAIGNS.forEach(function (c) { CAMPAIGN_BY_NAME[c.name] = c; });
+
+  function fillCampaigns() {
+    var was = campaign.value;
+    while (campaign.options.length > 1) campaign.remove(1);
+    CAMPAIGNS.forEach(function (c) {
+      var o = document.createElement("option");
+      o.value = c.name;
+      o.textContent = c.name + (c.characters ? " (" + c.characters + ")"
+                                             : " — none yet");
+      campaign.appendChild(o);
+    });
+    if (was && CAMPAIGN_BY_NAME[was]) campaign.value = was;
+  }
+
   // the option lists follow whichever set is on screen, so turning the pregens
   // on does not leave a clan in the dropdown that nothing in view has
   function fillAll(pool) {
-    [clan, role, campaign].forEach(function (sel) {
+    [clan, role].forEach(function (sel) {
       var was = sel.value;
       while (sel.options.length > 1) sel.remove(1);
       sel.value = "";
@@ -103,8 +132,16 @@
     // Edit, +XP and Legacy under each card: this is the roster, where someone
     // comes to do something with a character they already have. renderRoster
     // withholds them from a published pregen, whose record the importer owns.
+    // A declared campaign with nothing in it is a thing to set up, not a bug.
+    // Saying which and why beats an empty grid: the note is where the source
+    // is known to be missing.
+    var picked = CAMPAIGN_BY_NAME[campaign.value];
     document.getElementById("roster").innerHTML =
-      window.renderRoster(list, "", { actions: true });
+      (!list.length && picked && !picked.characters
+        ? '<p class="muted campaign-empty"><strong>' + esc(picked.name) +
+          "</strong> has no characters yet." +
+          (picked.note ? " " + esc(picked.note) : "") + "</p>"
+        : window.renderRoster(list, "", { actions: true }));
     document.getElementById("shown").textContent =
       list.length + " of " + pool.length;
   }
@@ -112,6 +149,7 @@
     pubs.length ? "Published pregens (" + pubs.length + ")" : "Published pregens";
   if (!pubs.length) published.closest("label").hidden = true;
   fillAll(mine);
+  fillCampaigns();
   published.addEventListener("change", function () {
     fillAll(published.checked ? chars : mine);
     draw();

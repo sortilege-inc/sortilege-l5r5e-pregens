@@ -265,6 +265,13 @@ a{ color:var(--crimson); }
 /* Where Advance and Legacy sit for the archive's own characters, a published
    pregen names its product instead: the same slot, saying why there is
    nothing to press. */
+/* a declared campaign with nothing built for it yet */
+.campaign-empty{
+  grid-column:1/-1; margin:2rem 0; padding:1.2rem 1.4rem;
+  border:1px dashed var(--gold-soft); border-radius:2px; background:var(--paper);
+  line-height:1.6;
+}
+
 .act-published{
   display:inline-flex; flex-direction:column; justify-content:center;
   padding:0.4rem 0.9rem; border:1px dashed var(--gold-soft); border-radius:2px;

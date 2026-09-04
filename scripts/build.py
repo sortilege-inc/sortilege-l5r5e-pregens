@@ -354,6 +354,44 @@ def title_aliases():
     return out
 
 
+def campaigns(cx):
+    """Every campaign the archive knows of, whether a character is tagged to
+    one yet or not.
+
+    A campaign used to exist only as a value on a character, so the roster's
+    filter could offer nothing that had not already been built — and a campaign
+    somebody means to run but has not set up had nowhere to be recorded. The
+    manifest's campaign_list declares those; this merges them with what the
+    characters actually carry, so the filter reads from one list.
+
+    Counts are the archive's own characters. A published pregen carries no
+    campaign and could not appear under one anyway.
+    """
+    declared = (json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+                .get("campaign_list") or {})
+    counts = collections.Counter()
+    for (name,) in cx.execute(
+            "SELECT campaign FROM character"
+            " WHERE campaign IS NOT NULL AND provenance = 'archive'"):
+        counts[name] += 1
+    out = []
+    for name in sorted(set(counts) | {k for k in declared if not k.startswith("_")}):
+        spec = declared.get(name) or {}
+        out.append({"name": name, "characters": counts.get(name, 0),
+                    "arc": spec.get("arc"), "note": spec.get("note"),
+                    # declared and empty: something to set up, not a gap in the
+                    # data — the roster says so rather than showing nothing
+                    "declared": name in declared})
+    missing = [c["name"] for c in out
+               if c["declared"] and not c["characters"] and not c["note"]]
+    if missing:
+        # a declared campaign with neither a character nor a reason is a line
+        # somebody added and forgot; say so rather than shipping a dead filter
+        print(f"   ! {len(missing)} declared campaign(s) with no characters and "
+              f"no note: " + ", ".join(missing))
+    return out
+
+
 def school_aliases():
     """Character school name -> compendium spelling, for entries the compendium
     gets wrong. The source file keeps the printed spelling; only the match bends."""
@@ -820,6 +858,9 @@ def emit(cx):
 
     # the roster is the finished archive; drafts live in the Creator until promoted
     n1 = write(os.path.join(SITEDATA, "roster.js"), "L5R_ROSTER", roster)
+
+    # every campaign the archive knows of, tagged or not
+    write(os.path.join(SITEDATA, "campaigns.js"), "L5R_CAMPAIGNS", campaigns(cx))
 
     # the denominator, metadata only (no long rules text) — ledger + landing tiles
     cat = [dict(r) for r in cx.execute(
