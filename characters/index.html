@@ -6,7 +6,7 @@
 <title>Characters — Sortilege L5R Pregens</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/l5r.css?v=c7ae57f1">
+<link rel="stylesheet" href="../assets/l5r.css?v=ddca57be">
 </head>
 <body>
 <nav class="topnav">
@@ -49,7 +49,7 @@
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
 <script src="../data/roster.js?v=51b41332"></script>
-<script src="../assets/roster.js?v=3f16e2b0"></script>
+<script src="../assets/roster.js?v=f398b418"></script>
 <script>
 (function () {
   var chars = window.L5R_ROSTER || [];
@@ -77,7 +77,10 @@
       return [c.name, c.school, c.clan, c.family, c.role, c.campaign]
         .join(" ").toLowerCase().indexOf(term) >= 0;
     });
-    document.getElementById("roster").innerHTML = window.renderRoster(list, "");
+    // Edit, +XP and Legacy under each card: this is the roster, where someone
+    // comes to do something with a character they already have.
+    document.getElementById("roster").innerHTML =
+      window.renderRoster(list, "", { actions: true });
     document.getElementById("shown").textContent =
       list.length + " of " + chars.length;
   }

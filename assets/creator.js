@@ -543,6 +543,55 @@
     persist();
     render();
   }
+  /* A draft whose character the archive now holds as a promoted record has
+     been promoted: the file was downloaded, committed and built, and the repo
+     copy is the one that counts. Leaving the chip behind puts the same
+     character in two places and makes the finished one look provisional —
+     which is how Sanpei stayed in the drafts list after promotion.
+
+     Two conditions before anything is deleted. The archive has to actually
+     hold the character, which is what makes the local copy redundant rather
+     than merely stale. And the draft has to be local: a shared draft keeps its
+     chip, labelled "promoted", because deleting it would take it off
+     everyone's table and not just this browser's list.
+
+     An edit, advance or legacy of a promoted character is not a copy of it —
+     it is work against it — so only plain drafts are considered. */
+  function promotedNames() {
+    var out = {};
+    ARCHIVE.forEach(function (a) {
+      if (a.status !== "draft") out[a.slug] = true;
+    });
+    return out;
+  }
+
+  function pruneSuperseded() {
+    var done = promotedNames(), gone = [];
+    Object.keys(STORE.drafts).forEach(function (id) {
+      var d = STORE.drafts[id];
+      if ((d.kind || "draft") !== "draft") return;
+      var name = (d.character || {}).name;
+      if (!name || !done[slugify(name)]) return;
+      if (d.shared) return;
+      gone.push(draftLabel(d));
+      delete STORE.drafts[id];
+      if (STORE.activeId === id) STORE.activeId = null;
+    });
+    if (!gone.length) return;
+    if (!Object.keys(STORE.drafts).length) { addDraft(); return; }
+    if (!STORE.activeId || !STORE.drafts[STORE.activeId]) {
+      STORE.activeId = Object.keys(STORE.drafts)[0];
+    }
+    C = activeChar();
+    persist();
+    setStatus(gone.join(", ") + (gone.length > 1 ? " are" : " is") +
+              " in the archive now, so " +
+              (gone.length > 1 ? "those drafts" : "that draft") +
+              " has been cleared — open " +
+              (gone.length > 1 ? "them" : "it") +
+              " from the Characters tab to edit, advance or leave a Legacy.");
+  }
+
   function duplicateDraft(id) {
     var src = STORE.drafts[id];
     if (!src) return;
@@ -633,43 +682,29 @@
     return c;
   }
 
-  /* One of the two archive lists. Drafts are opened to be carried on with;
-     promoted characters are opened to be changed, which is a different thing
-     and says so — the record already exists and the edit is landed against it
-     rather than exported as a new file. */
-  function archiveList(heading, keep, mode) {
-    var rows = ARCHIVE.filter(keep);
+  /* The archive's unfinished characters, to be carried on with here.
+
+     Promoted characters used to have a second list beside this one, with Edit,
+     +XP and Legacy on every row. They are on each character's own card in the
+     Characters tab now, which is where someone looking for a finished
+     character goes — and this panel is for work in progress, which a promoted
+     character is not. */
+  function archiveList() {
+    var rows = ARCHIVE.filter(function (a) { return a.status === "draft"; });
     if (!rows.length) return "";
-    return '<span class="drafts-label drafts-archive">' + esc(heading) + "</span>" +
+    return '<span class="drafts-label drafts-archive">From the archive</span>' +
       '<div class="archive-list">' +
       rows.map(function (a) {
         var open = Object.keys(STORE.drafts).some(function (id) {
           return STORE.drafts[id].fromArchive === a.slug;
         });
         var tiers = a.tier_count > 1 ? " · " + a.tier_count + " tiers" : "";
-        var top = a.top || {};
         return '<span class="archiverow">' +
-          '<button type="button" class="archivechip' +
-          (open ? " open" : "") + (mode === "edit" ? " promoted" : "") +
-          '" data-slug="' + esc(a.slug) + '" data-mode="' + mode + '"' +
-          (mode === "edit" && a.tier_count > 1
-            ? ' title="Foundry holds this one at ' + a.tier_count +
-              ' XP tiers, so only its prose is editable here"'
-            : "") + ">" +
+          '<button type="button" class="archivechip' + (open ? " open" : "") +
+          '" data-slug="' + esc(a.slug) + '" data-mode="draft">' +
           esc(a.name) + '<span class="dc-meta">' +
           esc(a.identity.school || a.identity.clan || "—") + tiers +
           (open ? " · opened" : "") + "</span></button>" +
-          // Advancing is its own act: it adds a tier rather than changing the
-          // one that is there, so it is its own button.
-          (mode === "edit"
-            ? '<button type="button" class="dc-advance" data-slug="' +
-              esc(a.slug) + '" title="Spend experience: ' +
-              (top.xp || 0) + ' XP, school rank ' + (top.rank || 1) +
-              '">+XP</button>' +
-              '<button type="button" class="dc-legacy" data-slug="' +
-              esc(a.slug) + '" title="Leave a Legacy for a successor to take ' +
-              'instead of a heritage result">Legacy</button>'
-            : "") +
           "</span>";
       }).join("") + "</div>";
   }
@@ -883,7 +918,12 @@
         var d = STORE.drafts[id];
         var c = d.character || {};
         var mark = d.conflict ? " conflict" : (d.shared ? " shared" : "");
+        // a shared draft the archive already holds is not deleted from under
+        // the table, so it says what it is instead
+        var over = (d.kind || "draft") === "draft" && c.name &&
+                   promotedNames()[slugify(c.name)];
         var tag = d.conflict ? " · needs a decision"
+                : over ? " · promoted, delete when you are done with it"
                 : d.shared ? (d.dirty ? " · saving" : " · shared") : "";
         return '<span class="draftchip' + (id === STORE.activeId ? " active" : "") +
           mark + '" data-id="' + id + '">' +
@@ -908,10 +948,7 @@
       '<button type="button" class="draftnew" id="draft-school" ' +
         'title="Path of Waves: build a school in nine steps">' +
         "+ School</button>" +
-      archiveList("From the archive", function (a) { return a.status === "draft"; },
-                  "draft") +
-      archiveList("Promoted characters", function (a) { return a.status !== "draft"; },
-                  "edit") + "</div>";
+      archiveList() + "</div>";
 
     el("drafts").open = draftsOpen();
     el("drafts").addEventListener("toggle", function () {
@@ -934,16 +971,6 @@
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".archivechip"), function (b) {
       b.addEventListener("click", function () {
         openArchiveDraft(b.getAttribute("data-slug"), b.getAttribute("data-mode"));
-      });
-    });
-    Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-advance"), function (b) {
-      b.addEventListener("click", function (e) {
-        e.stopPropagation(); openAdvance(b.getAttribute("data-slug"));
-      });
-    });
-    Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-legacy"), function (b) {
-      b.addEventListener("click", function (e) {
-        e.stopPropagation(); openLegacy(b.getAttribute("data-slug"));
       });
     });
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-share"), function (b) {
@@ -9930,6 +9957,7 @@
       } catch (e) { /* private mode */ }
       render();
     });
+    pruneSuperseded();
     render();
     initSync();
     openFromQuery();
