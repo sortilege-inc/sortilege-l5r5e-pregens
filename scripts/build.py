@@ -294,9 +294,15 @@ def load_catalog(cx):
             ))
     # Additions last, and only when the compendium really lacks the name —
     # so a compendium entry always wins and an addition can never shadow one.
+    #
+    # A superseded addition is NAMED, not silently skipped. An addition is a
+    # workaround for a compendium gap, and a workaround nobody is reminded of
+    # is a workaround that outlives the gap it was for.
     have = {(r[4], r[6]) for r in rows}
+    superseded = []
     for name, spec in catalog_additions().items():
         if (spec["sub_type"], norm(name)) in have:
+            superseded.append(name)
             continue
         pack = "l5r5e-compendia-sortilege." + spec["pack"]
         label = next((v["label"] for k, v in index.items() if k == pack), None)
@@ -315,6 +321,10 @@ def load_catalog(cx):
     cx.executemany("INSERT INTO curriculum VALUES (?,?,?,?,?,?,?,?)", curriculum)
     cx.executemany("INSERT INTO title_curriculum VALUES (" + ",".join("?" * 10) + ")",
                    title_cur)
+    if superseded:
+        print(f"   the compendium now stocks {len(superseded)} entry(ies) the "
+              f"manifest adds — delete them from catalog_additions in "
+              f"src/foundry_sources.json: " + ", ".join(sorted(superseded)))
     return len(rows), missing, len(curriculum), len(title_cur)
 
 

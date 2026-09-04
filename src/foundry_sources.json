@@ -187,7 +187,8 @@
    "source": "shadowlands",
    "page": 29,
    "xp_cost": 4,
-   "_why": "Shadowlands page 29, a sidebar in Chapter 1 (Dark Histories) beside the Festering Pit material, headed 'Pit-Forged Obsidian' with a 'Pattern: Pit-Forged Obsidian' block. The compendium's 21 item patterns are each attributed to a book's item-patterns section (shadowlands p.109, fields_of_victory p.93-94, path_of_waves p.117, five_winds p.107, celestial_realms p.105); this is the only pattern in any of the six books printed outside such a section, which is why a section-by-section sweep missed it. Verified: 27 pattern blocks across the six books, one outside its book's cluster."
+   "_why": "Shadowlands page 29, a sidebar in Chapter 1 (Dark Histories) beside the Festering Pit material, headed 'Pit-Forged Obsidian' with a 'Pattern: Pit-Forged Obsidian' block. The compendium's 21 item patterns are each attributed to a book's item-patterns section (shadowlands p.109, fields_of_victory p.93-94, path_of_waves p.117, five_winds p.107, celestial_realms p.105); this is the only pattern in any of the six books printed outside such a section, which is why a section-by-section sweep missed it. Verified: 27 pattern blocks across the six books, one outside its book's cluster.",
+   "_pending": "PROVISIONAL. Jordan is adding this to the Item Patterns pack in Foundry directly (decided 2026-09-04). Once a `./scripts/pipeline.sh --pull` shows it in the pack, delete this entry — build.py names it on every run from the moment the compendium stocks it, so the reminder is automatic."
   }
  },
  "pattern_name_corrections": {
