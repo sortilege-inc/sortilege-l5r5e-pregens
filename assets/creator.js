@@ -1743,7 +1743,6 @@
       b.push(k + ": " + v);
     }
 
-    if (C.concept) b.push("Concept the player is holding:\n" + C.concept + "\n");
     add("Mode", (MODES.filter(function (m) { return m.key === mode(); })[0] || {}).book);
     add("Name", C.name);
     if (isCore()) {
@@ -1795,6 +1794,93 @@
     add("Heritage", a.heritage + (a.heritage_sub ? " — " + a.heritage_sub : ""));
     add("Vision of death", a.death);
     return b.join("\n");
+  }
+
+  /* The user turn, ordered by weight, because in a prompt position IS weight.
+
+     What went wrong before: the answered questions were a flat list with
+     nothing said about their standing, so the one just filled in sat at the
+     end of the context — the strongest position there is — while the concept
+     sat at the top, the weakest. Suggestions duly continued the previous
+     answer instead of answering the question asked.
+
+     So: the facts first and furthest away, the concept next, the question
+     itself last and immediately before the ask. And the precedence is stated
+     rather than implied, because ordering alone is a hint and this needs to be
+     a rule. */
+  function weightedContext(fieldKey, omit) {
+    var facts = characterContext(omit);
+    var qn = FIELD_QUESTION[fieldKey];
+    var asked = qn ? qText(qn) : null;
+    var b = [];
+
+    if (facts) {
+      b.push("WHAT THIS CHARACTER ALREADY IS. These are settled facts and the " +
+             "boundary your answer sits inside: do not contradict them. They " +
+             "are not the subject of the answer and not a prompt to continue " +
+             "any of them — several are answers to other questions, which have " +
+             "already been asked and are done.\n\n" + facts);
+    }
+    if (C.concept) {
+      b.push("THE CONCEPT the player is holding for this character. This is " +
+             "where the answer's material comes from — the people, the places, " +
+             "the work, the trouble. Prefer it over anything you would " +
+             "otherwise invent:\n\n" + C.concept);
+    }
+
+    /* The question, last. Naming the previous one and ruling it out is the
+       specific fix: a general instruction not to drift does not catch this,
+       because the model cannot tell which of the facts above was the one just
+       written. It has to be told which line is the trap. */
+    var prev = previousAnswer(fieldKey);
+    b.push("THE QUESTION YOU ARE ANSWERING" +
+           (qn ? ", question " + qn + " of the twenty" : "") + "." +
+           (asked ? "\n\n" + asked : "") +
+           "\n\nAnswer that question and only that question. In order of " +
+           "precedence: what this question asks governs what the sentence is " +
+           "about; the concept supplies the material it is made of; the settled " +
+           "facts constrain it and nothing more." +
+           (prev
+             ? " In particular, the character's " + prev + " above is the answer " +
+               "to the question before this one. It is context. Do not extend " +
+               "it, retell it, or make this answer a further episode of it — " +
+               "this question is about something else."
+             : ""));
+    return b.join("\n\n---\n\n");
+  }
+
+  /* The label of the most recently answered question before this one, so it can
+     be named and set aside. Nearest first: the trap is the answer just written,
+     not one from ten questions ago. */
+  function previousAnswer(fieldKey) {
+    var qn = FIELD_QUESTION[fieldKey];
+    if (!qn) return null;
+    var a = C.answers;
+    var byQ = [
+      [4, "standout quality", a.standout_quality],
+      [5, qAlt(5) ? "past" : "giri", qAlt(5) ? a.past : a.giri],
+      [6, "ninjō", a.ninjo],
+      [7, qAlt(7) ? "what they are known for" : "clan relationship",
+       qAlt(7) ? a.known_for : (a.clan_relationship || {}).text],
+      [9, "greatest accomplishment", a.accomplishment],
+      [10, "greatest challenge", a.challenge],
+      [11, "what puts them at peace", a.peace],
+      [12, "what troubles them", a.fear],
+      [13, "mentor", (a.mentor || {}).text],
+      [14, qAlt(14) ? "prized possession" : "first impression",
+       qAlt(14) ? a.prized_possession : a.first_impression],
+      [15, "stress reaction", a.stress_reaction],
+      [16, "relationships", a.relationships],
+      [17, qAlt(17) ? "shared history with the group" : "parent's opinion",
+       qAlt(17) ? a.group_history : (a.parent_opinion || {}).description]
+    ];
+    var best = null;
+    byQ.forEach(function (row) {
+      if (row[0] < qn && String(row[2] || "").trim()) {
+        if (!best || row[0] > best[0]) best = row;
+      }
+    });
+    return best ? best[1] : null;
   }
 
   /* Which of the twenty questions each AI-assisted field answers, so a
@@ -1880,6 +1966,7 @@
          are both suppressed, because both exist to find NEW material and would
          fight the text they were handed. */
       user = preamble + "Existing draft for context:\n" + characterContext() +
+        (C.concept ? "\n\nThe concept the player is holding:\n" + C.concept : "") +
         "\n\nTHE PLAYER HAS WRITTEN THE ANSWER BELOW. This overrides every " +
         "instruction about what to write about, including any advantage or " +
         "disadvantage named above. Your job is only how it is written.\n\n" +
@@ -1890,7 +1977,7 @@
         "and do not change the subject. If it is already in the register, return " +
         "it close to unchanged rather than finding something to alter.";
     } else {
-      user = preamble + "Existing draft for context:\n" + characterContext(current) +
+      user = preamble + weightedContext(fieldKey, current) +
         "\n\nSuggest a single " + fieldKey.replace(/_/g, " ") + " for this character." +
         "\n\nApproach it as: " + ANGLES[Math.floor(Math.random() * ANGLES.length)] +
         ". Write that, rather than gesturing at it." +
