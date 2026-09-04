@@ -506,6 +506,35 @@ def campaigns(cx):
             f"FAIL — {len(dead)} campaign_list arc(s) name a file that is not "
             f"in the corpus at {base}:\n"
             + "\n".join(f"   {n}: {a}" for n, a in dead))
+    # Every adventure the corpus holds is either a campaign's or explicitly
+    # not one. This is the check that was missing: the adventure list was
+    # read off what happened to be on disk, so a converted arc could sit
+    # there unclaimed and an adventure named only by its own supplement
+    # -- Blood of the Lioness, Wheel of Judgment -- went unnoticed.
+    claimed = {c["arc"] for c in out if c["arc"]}
+    excused = {k: v for k, v in (json.load(open(
+        os.path.join(ROOT, "src", "foundry_sources.json")))
+        .get("arcs_without_a_campaign") or {}).items() if not k.startswith("_")}
+    on_disk = {os.path.basename(f) for f in glob.glob(os.path.join(base, "*.arc"))}
+    orphan = sorted(on_disk - claimed - set(excused))
+    reasonless = sorted(a for a, why in excused.items() if not str(why).strip())
+    ghosts = sorted((claimed | set(excused)) - on_disk)
+    problems = []
+    if orphan:
+        problems += [f"{a}: an adventure in the corpus that no campaign claims "
+                     f"and nothing excuses" for a in orphan]
+    if reasonless:
+        problems += [f"{a}: excused from having a campaign with no reason given"
+                     for a in reasonless]
+    if ghosts:
+        problems += [f"{a}: claimed or excused, but not in the corpus" for a in ghosts]
+    if problems:
+        raise SystemExit(
+            f"FAIL — {len(problems)} arc(s) unaccounted for:\n"
+            + "\n".join("   " + m for m in problems))
+    print(f"   adventures: {len(on_disk)} arcs in the corpus, {len(claimed)} "
+          f"claimed by a campaign, {len(excused)} excused with a reason")
+
     with_arc = sum(1 for c in out if c["arc"])
     npen = sum(len(c["pencilled"]) for c in out if not c["pack_from"])
     nshare = sum(1 for c in out if c["pack_from"])

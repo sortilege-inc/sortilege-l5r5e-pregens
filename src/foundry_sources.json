@@ -70,6 +70,15 @@
  },
  "campaign_list": {
   "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current. Where one pack serves two adventures, the base adventure holds the shortlist and names the other in `pack_shared_with`; the other carries `pack_from` pointing back. The build refuses a one-sided link, and the double-booking check ignores a shared list — the same schools in two packs is the point there, not a slip.",
+  "Blood of the Lioness": {
+   "arc": null,
+   "note": "Not on disk: no corpus file, no source PDF, and not in the compendium's book list. Legacies of War, which is converted, is its supplement and describes it — a three-part adventure at the Castle of the Swift Sword whose Part Two is played in the past, with Legacy advantages linking each present PC to a predecessor. Its own page 12 holds The Advisors, the pregens for that past party. Find the source and convert it, then the arc goes here.",
+   "_pack_shape": "This one wants two sets rather than one: a present party for Parts One and Three, and a past party for Part Two — either The Advisors from the adventure itself or characters built to be their predecessors. The Creator's Legacy step is already the Legacies of War mechanic, so the link between the two is buildable today; what is missing is the adventure that says who they are."
+  },
+  "Imperfect Land": {
+   "arc": "l5r5e-0.4-imperfect-land.arc",
+   "note": "The Imperfect Land pack, uncovering the Perfect Land Sect."
+  },
   "Mask of the Oni": {
    "arc": "l5r5e-0.4-mask-of-the-oni.arc",
    "note": "Set in 1123: the PCs pass through the Crab Clan's defenses into the Shadowlands, to the ruins of Shiro Hiruma. Arc, cast and lore are converted — what is missing is the pack.",
@@ -86,6 +95,10 @@
   "Sins of Regret": {
    "arc": "l5r5e-0.4-sins-of-regret.arc",
    "note": "For rōnin PCs of rank 2 or higher, at Closed Shell Castle: their commitment to Bushidō against an unjust lord and desperate peasants. Tied to Path of Waves' Twin Blessings Village — so a Path of Waves pack rather than a clan one, and rank 2 rather than fresh."
+  },
+  "Slow Tide Harbor": {
+   "arc": "l5r5e-0.4-gm-kit-dark-tides.arc",
+   "note": "The Dark Tides pack, from the Game Master's Kit. Tagged by its setting rather than the adventure's name, which is how it was built; declared here so the arc it plays from is recorded."
   },
   "The Knotted Tails": {
    "arc": "l5r5e-0.4-knotted-tails.arc",
@@ -401,5 +414,14 @@
    "to": "Burning Water Pattern",
    "_why": "Fields of Victory: the corpus DEF is ^\"Burning Water Pattern\" (l5r5e-0.4-fields-of-victory-mechanics.ttrpg:1667); 'Watter' is a doubled letter in the pack and appears nowhere in the corpus."
   }
+ },
+ "arcs_without_a_campaign": {
+  "_comment": "Every .arc in the corpus should be claimed by a campaign_list entry's `arc`, or listed here with the reason it is not. The build fails on an arc that is neither — which is how an adventure gets converted and then quietly forgotten.",
+  "l5r5e-0.4-cresting-waves.arc": "Skipped for pregens by the owner, 2026-09-04. Three supplemental encounters for Sins of Regret; that pack covers the party.",
+  "l5r5e-0.4-deathly-turns.arc": "Skipped for pregens by the owner, 2026-09-04. It supplements Blood of the Lioness's sibling Wheel of Judgment, which is declared.",
+  "l5r5e-0.4-emerald-champion.arc": "The Beginner Game: its seven character folios are already here as published pregens, so it needs no pack of its own.",
+  "l5r5e-0.4-topaz-championship.arc": "The Beginner Game's core adventure, played with the same seven folios as In the Palace of the Emerald Champion.",
+  "l5r5e-0.4-highwayman.arc": "Ships its own six pregens, already here as published pregens.",
+  "l5r5e-0.4-wedding-kyotei.arc": "Ships its own seven pregens, already here as published pregens."
  }
 }
