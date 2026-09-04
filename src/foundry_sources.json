@@ -70,9 +70,33 @@
  },
  "campaign_list": {
   "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing.",
+  "Mask of the Oni": {
+   "arc": "l5r5e-0.4-mask-of-the-oni.arc",
+   "note": "Set in 1123: the PCs pass through the Crab Clan's defenses into the Shadowlands, to the ruins of Shiro Hiruma. Arc, cast and lore are converted — what is missing is the pack."
+  },
+  "Sins of Regret": {
+   "arc": "l5r5e-0.4-sins-of-regret.arc",
+   "note": "For rōnin PCs of rank 2 or higher, at Closed Shell Castle: their commitment to Bushidō against an unjust lord and desperate peasants. Tied to Path of Waves' Twin Blessings Village — so a Path of Waves pack rather than a clan one, and rank 2 rather than fresh."
+  },
+  "The Knotted Tails": {
+   "arc": "l5r5e-0.4-knotted-tails.arc",
+   "note": "An optional bonus storyline played within Mask of the Oni, before the PCs reach Shiro Hiruma, among the nezumi of the Knotted Tails tribe. Same party as Mask of the Oni if you run it inside that adventure, in which case one pack serves both and this stub can go."
+  },
+  "The Lost Writer in the City of the Rich Frog": {
+   "arc": "l5r5e-0.4-children-of-five-winds-lost-writer.arc",
+   "note": "Children of the Five Winds, chapter 4, in the Imperial holding at the river junction the Dragon, Lion, Unicorn and Dragonfly all care about. Not the same as the \"City of the Rich Frog\" tag already in this list — that one is the city, and holds a character of its own."
+  },
+  "The Scroll or the Blade": {
+   "arc": "l5r5e-0.4-scroll-or-blade.arc",
+   "note": "A supplemental storyline during or after Winter's Embrace, in Kyūden Doji, centred on Masayo — an orphaned child of Dragon and Phoenix parents. Same party as Winter's Embrace if run alongside it, in which case one pack serves both."
+  },
   "Wheel of Judgment": {
    "arc": null,
    "note": "The adventure is not on disk: no corpus file, no source PDF, and not in the compendium's book list. Its only trace is Deathly Turns, which supplements it — a Spirit Realms adventure the party returns from, with the maō Burakakin in it. Find the source and convert it, then the arc goes here."
+  },
+  "Winter's Embrace": {
+   "arc": "l5r5e-0.4-winters-embrace.arc",
+   "note": "The Winter Court at Kyūden Doji, with the PCs caught between the traditional Crane, the unconventional Mantis, and their allies' schemes. A political pack: courtiers rather than a war party."
   }
  },
  "corrections": {

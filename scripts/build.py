@@ -354,6 +354,16 @@ def title_aliases():
     return out
 
 
+def corpus_base_dir():
+    """Where the DSL corpus lives, from the synthesist manifest that composes
+    it -- the same answer dsl_rules_text.py gets, rather than a second copy of
+    the path to fall out of step."""
+    import dsl_rules_text
+    manifest = json.load(open(dsl_rules_text.MANIFEST))
+    return os.path.normpath(os.path.join(os.path.dirname(dsl_rules_text.MANIFEST),
+                                         manifest["base_dir"]))
+
+
 def campaigns(cx):
     """Every campaign the archive knows of, whether a character is tagged to
     one yet or not.
@@ -389,6 +399,22 @@ def campaigns(cx):
         # somebody added and forgot; say so rather than shipping a dead filter
         print(f"   ! {len(missing)} declared campaign(s) with no characters and "
               f"no note: " + ", ".join(missing))
+
+    # An `arc` names a file in the DSL corpus. The pipeline already cannot run
+    # without that corpus, so a pointer at a file that is not there is a stated
+    # fact gone stale rather than a missing optional dependency -- and a
+    # renamed arc would otherwise rot here unnoticed.
+    base = corpus_base_dir()
+    dead = [(c["name"], c["arc"]) for c in out
+            if c["arc"] and not os.path.exists(os.path.join(base, c["arc"]))]
+    if dead:
+        raise SystemExit(
+            f"FAIL — {len(dead)} campaign_list arc(s) name a file that is not "
+            f"in the corpus at {base}:\n"
+            + "\n".join(f"   {n}: {a}" for n, a in dead))
+    with_arc = sum(1 for c in out if c["arc"])
+    print(f"   campaigns: {len(out)} ({sum(1 for c in out if c['declared'])} "
+          f"declared, {with_arc} pointing at an arc on disk)")
     return out
 
 
