@@ -49,6 +49,7 @@ RESOLVED = os.path.join(ROOT, "pipeline", "dsl", "l5r5e-resolved.json")
 OUT_REGION = os.path.join(ROOT, "data", "chargen", "regions.js")
 OUT_UPBRINGING = os.path.join(ROOT, "data", "chargen", "upbringings.js")
 OUT_FAMILY = os.path.join(ROOT, "data", "chargen", "families.js")
+OUT_CLAN = os.path.join(ROOT, "data", "chargen", "clans.js")
 
 # The books that reword questions 1 and 2, and the Creator mode each drives.
 BOOKS = {"path-of-waves": "pow", "writ-of-wilds": "wow"}
@@ -344,6 +345,33 @@ def build(d, kind):
     return row
 
 
+def build_clan(d):
+    """A clan, in the shape clans.js has always had.
+
+    ^"Clan Status" states itself as a DEFAULT modifier rather than a value, so
+    number() has to look there — the same trap that made every region's glory
+    read as null. Glory Modifier and Demeanor are absent on all sixteen; the
+    fields are kept as null because the file has always had them.
+    """
+    rings, _ = grants(prop(d, "Clan Ring Bonus"))
+    skills, _ = grants(prop(d, "Clan Skill Bonus"))
+    short = prop(d, "Clan Name")
+    return {
+        "name": d["name"],
+        "kind": "clan",
+        "source": (d.get("sources") or [None])[0],
+        "description": "",
+        "ring_bonus": rings,
+        "skill_bonus": skills,
+        "starting_status": number(prop(d, "Clan Status")),
+        "glory_modifier": number(prop(d, "Glory Modifier")),
+        "demeanor": (prop(d, "Demeanor") or {}).get("value"),
+        "clan_short_name": (short or {}).get("value"),
+        "rules": ["#" + r["hash"] for r in (d.get("rules") or [])
+                  if r.get("hash")],
+    }
+
+
 def build_family(d):
     """A family, in the shape families.js has always had, plus structured wealth.
 
@@ -396,9 +424,14 @@ def main():
         sys.exit(f"missing {RESOLVED} — run scripts/dsl_rules_text.py first")
     doc = json.load(open(RESOLVED, encoding="utf-8"))
 
-    regions, ups, fams = [], [], []
+    regions, ups, fams, clans = [], [], [], []
     for d in defs(doc):
         n = d.get("name") or ""
+        # a clan is identified by its own property; the ^"Clan" metatype that
+        # declares the shape is not one
+        if prop(d, "Clan Name") and n != "Clan":
+            clans.append(build_clan(d))
+            continue
         # a family is identified by its own property, not by its name, and the
         # ^"Family" metatype that declares the shape is not one
         if prop(d, "Family Name") and n != "Family":
@@ -427,7 +460,8 @@ def main():
                 best[r["name"]] = r
         return sorted(best.values(), key=lambda r: r["name"])
 
-    regions, ups, fams = dedupe(regions), dedupe(ups), dedupe(fams)
+    regions, ups, fams, clans = (dedupe(regions), dedupe(ups), dedupe(fams),
+                                 dedupe(clans))
     if not regions or not ups:
         sys.exit(f"FAIL — {len(regions)} regions and {len(ups)} upbringings; "
                  f"both are needed for questions 1 and 2")
@@ -464,6 +498,17 @@ def main():
                 sys.exit(f"FAIL — {r['name']} {field} offers {len(ma)} of the "
                          f"3 Martial Arts skills ({', '.join(ma)}); the option "
                          f"list was truncated")
+
+    # Sixteen clans, and every one must grant what question 1 grants.
+    if len(clans) != 16:
+        sys.exit(f"FAIL — {len(clans)} clans found; the corpus and the file it "
+                 f"replaces both had 16.")
+    for c in clans:
+        for field in ("ring_bonus", "skill_bonus", "clan_short_name"):
+            if not c[field]:
+                sys.exit(f"FAIL — {c['name']} states no {field}")
+        if c["starting_status"] is None:
+            sys.exit(f"FAIL — {c['name']} states no starting status")
 
     # The corpus states 42 families and the hand-written file had 42. A count
     # that moves means the corpus changed or the discriminator broke, and
@@ -504,6 +549,11 @@ def main():
     write(OUT_REGION, "L5R_REGIONS", regions)
     write(OUT_UPBRINGING, "L5R_UPBRINGINGS", ups)
     write(OUT_FAMILY, "L5R_FAMILIES", fams)
+    write(OUT_CLAN, "L5R_CLANS", clans)
+    print(f"{len(clans)} clans -> {os.path.relpath(OUT_CLAN, ROOT)} "
+          f"({os.path.getsize(OUT_CLAN)/1024:.1f} KB)  "
+          f"status {min(c['starting_status'] for c in clans)} to "
+          f"{max(c['starting_status'] for c in clans)}")
     coined = sum(1 for f in fams if any(f["starting_coins"].values()))
     withitems = [f["name"] for f in fams if f["starting_items"]]
     print(f"{len(fams)} families -> {os.path.relpath(OUT_FAMILY, ROOT)} "
