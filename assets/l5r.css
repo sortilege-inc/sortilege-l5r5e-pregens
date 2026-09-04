@@ -1476,3 +1476,91 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
   .startband .sb-go{ width:100%; }
   .startband .sb-go .btn{ flex:1 1 auto; text-align:center; }
 }
+
+/* ---- Create Court (Courts of Stone, seven steps) ----------------------- */
+/* An NPC at court is a card, because the seven steps come back to the same
+   people again and again and the screen has to stay legible with eight of
+   them on it. Movers carry a crimson edge; secondaries do not. */
+.npc-card{
+  border:1px solid var(--edge); background:var(--paper);
+  padding:0.7rem 0.9rem 0.9rem; margin:0.7rem 0; border-left:3px solid var(--edge);
+}
+.npc-card.mover{ border-left-color:var(--crimson); }
+.npc-head{ display:flex; align-items:baseline; gap:0.6rem; }
+.npc-head .npc-tier{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.14em;
+  font-size:0.62rem; color:var(--ink-dim);
+}
+.npc-head .npc-name{
+  font-family:var(--disp); font-size:1.12rem; font-weight:600; color:var(--sumi);
+  flex:1 1 auto; min-width:0;
+}
+.npc-card .npc-recap{ margin:0.2rem 0 0.4rem; }
+.npc-card .trait-text{ margin:0.1rem 0 0.5rem; }
+.npc-card .trait-text ul{ margin:0.2rem 0 0; padding-left:1.1rem; }
+
+/* a labelled row of small toggles: the need tiers, the conflict targets, the
+   profile type, the templates */
+.need-row{
+  display:flex; align-items:center; flex-wrap:wrap; gap:0.35rem; margin:0.45rem 0;
+}
+.need-row.wrapped{ align-items:flex-start; }
+.need-row .need-k{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.13em;
+  font-size:0.62rem; color:var(--ink-dim); margin-right:0.3rem; flex:0 0 auto;
+}
+.choice.small{ font-size:0.64rem; padding:0.24rem 0.55rem; }
+
+.trait-row{ display:flex; gap:0.5rem; }
+select.trait-sel{
+  width:100%; font-family:var(--serif); font-size:0.94rem; padding:0.42rem 0.6rem;
+  background:var(--paper); border:1px solid var(--edge); border-radius:2px;
+  color:var(--ink); margin:0.3rem 0;
+}
+
+.pc-row{ display:flex; flex-wrap:wrap; gap:0.35rem; margin:0.4rem 0; }
+
+.bond-row{
+  display:flex; align-items:center; gap:0.6rem; padding:0.4rem 0.6rem;
+  border:1px solid var(--edge-soft); background:var(--paper); margin:0.3rem 0;
+}
+.bond-row .bond-t{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.12em;
+  font-size:0.66rem; color:var(--crimson); flex:0 0 auto;
+}
+.bond-row .bond-p{ flex:1 1 auto; min-width:0; }
+.bond-row .bond-r{ font-size:0.78rem; color:var(--ink-dim); flex:0 0 auto; }
+.bond-form{
+  display:grid; gap:0.45rem; margin:0.6rem 0;
+  grid-template-columns:1fr 1fr 1fr auto; align-items:center;
+}
+.bond-form select{ margin:0; }
+@media (max-width:700px){
+  .bond-form{ grid-template-columns:1fr; }
+}
+
+/* a chosen template's own modifiers, as the corpus labels them */
+.tpl-detail{
+  border-left:2px solid var(--gold-soft); padding:0.35rem 0 0.35rem 0.6rem;
+  margin:0.4rem 0; font-size:0.86rem; color:var(--ink-2);
+}
+.tpl-detail .tk{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em;
+  font-size:0.6rem; color:var(--ink-dim);
+}
+
+/* the side panel's court roster */
+.wip-h{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.15em;
+  font-size:0.64rem; color:var(--crimson); margin:0.9rem 0 0.25rem;
+}
+.wip-npc{
+  display:flex; flex-direction:column; gap:0.05rem; padding:0.3rem 0;
+  border-bottom:1px solid var(--edge-soft); font-size:0.86rem;
+}
+.wip-npc .wn{ color:var(--sumi); font-weight:600; }
+.wip-npc .wr{ color:var(--ink-soft); font-size:0.78rem; }
+.wip-npc .wt{ color:var(--ink-2); font-size:0.78rem; }
+.wip-npc .wh{ color:var(--crimson); font-size:0.74rem; font-style:italic; }
+
+.muted.warn{ color:var(--crimson); }

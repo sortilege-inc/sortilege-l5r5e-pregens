@@ -349,6 +349,8 @@
 
   function draftLabel(d) {
     var c = d.character || {};
+    // a court has no character name; it is named as a court
+    if (d.kind === "court") return (c.court && c.court.name) || "Unnamed court";
     return c.name || "Unnamed draft";
   }
   function draftProgress(c) {
@@ -373,6 +375,14 @@
       C = saved;
       return "advance · " + ((st && st.spent) || 0) + " of " +
              ((c.advance && c.advance.xp) || 0) + " XP";
+    }
+    if (d.kind === "court" && c.court) {
+      var ct = c.court, mv = (ct.npcs || []).filter(function (n) {
+        return n.tier === "mover";
+      }).length;
+      return "court · " + mv + " mover" + (mv === 1 ? "" : "s") + ", " +
+             ((ct.npcs || []).length - mv) + " secondar" +
+             ((ct.npcs || []).length - mv === 1 ? "y" : "ies");
     }
     return (c.school || c.clan || "no clan yet") + " · " +
            draftProgress(c) + "/21";
@@ -769,6 +779,9 @@
       }).join("") +
       '<button type="button" class="draftnew" id="draft-new">+ New</button>' +
       '<button type="button" class="draftnew" id="draft-dup">Duplicate</button>' +
+      '<button type="button" class="draftnew" id="draft-court" ' +
+        'title="Courts of Stone: assemble a court in seven steps">' +
+        "+ Court</button>" +
       archiveList("From the archive", function (a) { return a.status === "draft"; },
                   "draft") +
       archiveList("Promoted characters", function (a) { return a.status !== "draft"; },
@@ -788,6 +801,7 @@
       });
     });
     el("draft-new").addEventListener("click", addDraft);
+    el("draft-court").addEventListener("click", function () { openCourt(); });
     el("draft-dup").addEventListener("click", function () { duplicateDraft(STORE.activeId); });
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".archivechip"), function (b) {
       b.addEventListener("click", function () {
@@ -6338,6 +6352,946 @@
     });
   }
 
+  /* ------------------------------------------------------------ court
+
+     Courts of Stone's "Assembling a Court in Seven Steps": the GM sketches the
+     movers, seeds the conflicts, and creates the secondaries (steps 1-3), the
+     table assigns traits, bonds and personal details (steps 4-6), and the GM
+     retouches and finalises (step 7). data/chargen/court.js carries the step
+     list and who does each one, read from the corpus by scripts/court_tables.py.
+
+     A court is not a character, so a court draft holds its content on
+     c.court the way a legacy holds c.legacy — the wizard's shell (drafts,
+     sharing, nav) is reused, the character document is not.
+
+     What the tool enforces is what the steps state, and nothing else:
+
+       step 4  one advantage and one disadvantage per NPC, no more
+       step 5  bonds are rank 1, and every NPC ends with at least one
+       step 7  one further trait per NPC that the PCs do not know about, and a
+               profile — movers Adversaries, secondaries Adversary or Minion
+
+     The book's own example movers and example giri are not offered, because
+     they are absent from the corpus (its "$"-bullet lists were dropped in
+     conversion) and the corpus is the only source this site reads. The need
+     tiers stand in as the prompt for writing a ninjō. */
+
+  var COURT = window.L5R_COURT || { steps: [], needs: [], templates: {} };
+  /* The steps say "advantage" and "disadvantage"; the compendium files a
+     peculiarity as one of four kinds. Two are advantages, two are not. */
+  var PEC_KINDS = { advantage: ["distinction", "passion"],
+                    disadvantage: ["adversity", "anxiety"] };
+  var BOND_TYPES = CATALOG.filter(function (e) { return e.sub_type === "bond"; })
+    .map(function (e) { return e.name; }).sort();
+  var NPC_PROFILES = CATALOG.filter(function (e) { return e.sub_type === "npc"; })
+    .map(function (e) { return e.name; }).sort();
+
+  function isCourt() { return (activeDraft() || {}).kind === "court"; }
+  function activeCourt() { return (activeChar() || {}).court || null; }
+
+  function newCourt() {
+    return { name: "", place: "", premise: "", npcs: [], bonds: [], pcs: [] };
+  }
+
+  function openCourt(asked) {
+    if (!asked && !confirm(
+          "Assemble a court?\n\nSeven steps: you sketch the movers, seed the " +
+          "conflicts and create the secondaries, then the table assigns " +
+          "traits, bonds and details, and you finalise.")) return;
+    var id = newId();
+    var c = newCharacter();
+    c.court = newCourt();
+    STORE.drafts[id] = { id: id, updated: Date.now(), kind: "court",
+                         character: c };
+    switchDraft(id);
+  }
+
+  function courtNpcs(tier) {
+    var ct = activeCourt();
+    if (!ct) return [];
+    return tier ? ct.npcs.filter(function (n) { return n.tier === tier; })
+                : ct.npcs;
+  }
+
+  function addNpc(tier) {
+    var ct = activeCourt();
+    if (!ct) return;
+    ct.npcs.push({ id: newId(), tier: tier, role: "", ninjo: "", need: "",
+                   giri: "", conflicts: [], advantage: "", disadvantage: "",
+                   assigned_by: "", connection: "", name: "", details: "",
+                   heir: "", hidden: { kind: "", name: "" }, goal: "",
+                   opposition: "", profile: "", profile_type: "",
+                   templates: [] });
+    save();
+  }
+
+  function removeNpc(id) {
+    var ct = activeCourt();
+    if (!ct) return;
+    var n = ct.npcs.filter(function (x) { return x.id === id; })[0];
+    if (n && (n.name || n.role) &&
+        !confirm("Remove " + (n.name || n.role) + " from the court?")) return;
+    ct.npcs = ct.npcs.filter(function (x) { return x.id !== id; });
+    // and every bond and conflict that pointed at them
+    ct.bonds = ct.bonds.filter(function (b) {
+      return b.a !== "npc:" + id && b.b !== "npc:" + id;
+    });
+    ct.npcs.forEach(function (x) {
+      x.conflicts = (x.conflicts || []).filter(function (c) { return c !== id; });
+    });
+    save();
+  }
+
+  function npcById(id) {
+    return courtNpcs().filter(function (n) { return n.id === id; })[0] || null;
+  }
+
+  function partyLabel(ref) {
+    if (!ref) return "";
+    if (ref.indexOf("pc:") === 0) return ref.slice(3);
+    var n = npcById(ref.slice(4));
+    return n ? (n.name || n.role || "an unnamed NPC") : "someone removed";
+  }
+
+  function npcLabel(n) {
+    return n.name || n.role || (n.tier === "mover" ? "a mover" : "a secondary");
+  }
+
+  /* A line of text bound to a field, so the seven screens do not each
+     hand-roll one. */
+  function textField(body, ph, get, set, kind) {
+    var i = document.createElement(kind === "area" ? "textarea" : "input");
+    if (kind !== "area") i.type = "text";
+    i.className = kind === "area" ? "textbox" : "textline";
+    i.placeholder = ph;
+    i.value = get() || "";
+    i.addEventListener("change", function () { set(i.value.trim()); save(); });
+    body.appendChild(i);
+    return i;
+  }
+
+  function npcCard(body, n, fill) {
+    var card = document.createElement("div");
+    card.className = "npc-card" + (n.tier === "mover" ? " mover" : "");
+    var head = document.createElement("div");
+    head.className = "npc-head";
+    head.innerHTML = '<span class="npc-tier">' + esc(n.tier) + "</span>" +
+      '<span class="npc-name">' + esc(npcLabel(n)) + "</span>";
+    var x = document.createElement("button");
+    x.type = "button";
+    x.className = "ar-x-btn";
+    x.textContent = "×";
+    x.title = "Remove from the court";
+    x.addEventListener("click", function () { removeNpc(n.id); render(); });
+    head.appendChild(x);
+    card.appendChild(head);
+    fill(card, n);
+    body.appendChild(card);
+    return card;
+  }
+
+  function addRow(body, text, tier) {
+    var row = document.createElement("div");
+    row.className = "choicerow";
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "btn ghost";
+    b.textContent = text;
+    b.addEventListener("click", function () { addNpc(tier); render(); });
+    row.appendChild(b);
+    body.appendChild(row);
+  }
+
+  /* The book's target counts, said as advice. It says three to four movers and
+     three to five secondaries are good targets — targets, not limits, so this
+     says where you are rather than stopping you. */
+  function countNote(body, have, lo, hi, what) {
+    var p = document.createElement("p");
+    p.className = "muted small";
+    p.textContent = have + " " + what + (have === 1 ? "" : "s") + ". " +
+      (have < lo ? "The book suggests " + lo + " to " + hi + "."
+       : have > hi ? "The book suggests " + lo + " to " + hi +
+                     " — more makes a more complex court, which is a choice."
+       : "Within the " + lo + " to " + hi + " the book suggests.");
+    body.appendChild(p);
+  }
+
+  // ---- step 1: sketch out the movers (GM)
+
+  function renderCourtMovers(body) {
+    var ct = activeCourt();
+    if (!ct) return needs(body, "This draft has no court on it.");
+    label(body, "What this court is called");
+    textField(body, "Kyūden Doji, the winter court at…",
+              function () { return ct.name; },
+              function (v) { ct.name = v; });
+    label(body, "The arc and themes you want");
+    textField(body, "What the campaign is about — the movers are the people " +
+              "whose desires cut across it.",
+              function () { return ct.premise; },
+              function (v) { ct.premise = v; }, "area");
+
+    label(body, "The movers");
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = "A role at court and a ninjō are enough here — not " +
+      "even a name yet. Movers are the ones whose desires intersect the PCs' " +
+      "in ways that create friction.";
+    body.appendChild(note);
+
+    courtNpcs("mover").forEach(function (n) {
+      npcCard(body, n, function (card) {
+        textField(card, "Role at court — a daimyō, a yōjimbō, a visiting scholar…",
+                  function () { return n.role; },
+                  function (v) { n.role = v; });
+        textField(card, "Ninjō — what they want",
+                  function () { return n.ninjo; },
+                  function (v) { n.ninjo = v; });
+        needTier(card, n);
+      });
+    });
+    countNote(body, courtNpcs("mover").length, 3, 4, "mover");
+    addRow(body, "+ Add a mover", "mover");
+  }
+
+  /* The five tiers of need the book adapts, as a prompt rather than a field
+     with consequences: which level of need a ninjō comes from changes what
+     kind of story it makes. */
+  function needTier(card, n) {
+    if (!(COURT.needs || []).length) return;
+    var wrap = document.createElement("div");
+    wrap.className = "need-row";
+    wrap.innerHTML = '<span class="need-k">Need</span>' +
+      COURT.needs.map(function (t) {
+        return '<button type="button" class="choice small' +
+          (n.need === t.tier ? " active" : "") + '" data-v="' + esc(t.tier) +
+          '" title="' + esc(t.turns_on) + '">' + esc(t.tier) + "</button>";
+      }).join("");
+    wrap.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-v]");
+      if (!b) return;
+      n.need = n.need === b.dataset.v ? "" : b.dataset.v;
+      save(); render();
+    });
+    card.appendChild(wrap);
+  }
+
+  // ---- step 2: seed the conflicts (GM)
+
+  function renderCourtConflicts(body) {
+    var movers = courtNpcs("mover");
+    if (!movers.length) return needs(body, "Sketch the movers first.");
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = "Give each mover a giri that conflicts directly with " +
+      "the ninjō of at least one other mover. The friction should not have " +
+      "boiled over yet.";
+    body.appendChild(note);
+
+    movers.forEach(function (n) {
+      npcCard(body, n, function (card) {
+        var r = document.createElement("p");
+        r.className = "muted small npc-recap";
+        r.innerHTML = "<strong>" + esc(n.role || "no role yet") +
+          "</strong> — wants: " + esc(n.ninjo || "nothing stated yet");
+        card.appendChild(r);
+        textField(card, "Giri — their sworn duty",
+                  function () { return n.giri; },
+                  function (v) { n.giri = v; });
+        var others = movers.filter(function (m) { return m.id !== n.id; });
+        if (!others.length) {
+          var only = document.createElement("p");
+          only.className = "muted small";
+          only.textContent = "Only one mover, so there is no other ninjō for " +
+            "this giri to cut across yet.";
+          card.appendChild(only);
+          return;
+        }
+        var lab = document.createElement("div");
+        lab.className = "need-row";
+        lab.innerHTML = '<span class="need-k">Cuts across</span>' +
+          others.map(function (m) {
+            return '<button type="button" class="choice small' +
+              ((n.conflicts || []).indexOf(m.id) >= 0 ? " active" : "") +
+              '" data-v="' + esc(m.id) + '" title="' +
+              esc(m.ninjo || "no ninjō stated") + '">' +
+              esc(npcLabel(m)) + "</button>";
+          }).join("");
+        lab.addEventListener("click", function (e) {
+          var b = e.target.closest("button[data-v]");
+          if (!b) return;
+          n.conflicts = n.conflicts || [];
+          var i = n.conflicts.indexOf(b.dataset.v);
+          if (i >= 0) n.conflicts.splice(i, 1); else n.conflicts.push(b.dataset.v);
+          save(); render();
+        });
+        card.appendChild(lab);
+      });
+    });
+  }
+
+  // ---- step 3: create secondaries (GM)
+
+  function renderCourtSecondaries(body) {
+    var ct = activeCourt();
+    if (!ct) return needs(body, "This draft has no court on it.");
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = "Made the same way as movers — a role, a ninjō and a " +
+      "giri — but less pressing, and less likely to conflict with the others. " +
+      "A secondary the players take an interest in can become a mover later.";
+    body.appendChild(note);
+    courtNpcs("secondary").forEach(function (n) {
+      npcCard(body, n, function (card) {
+        textField(card, "Role at court",
+                  function () { return n.role; },
+                  function (v) { n.role = v; });
+        textField(card, "Ninjō — what they want",
+                  function () { return n.ninjo; },
+                  function (v) { n.ninjo = v; });
+        textField(card, "Giri — their sworn duty",
+                  function () { return n.giri; },
+                  function (v) { n.giri = v; });
+        needTier(card, n);
+      });
+    });
+    countNote(body, courtNpcs("secondary").length, 3, 5, "secondary");
+    addRow(body, "+ Add a secondary", "secondary");
+  }
+
+  // ---- step 4: assign traits (players and GM)
+
+  /* One advantage and one disadvantage per NPC, from the compendium's 253,
+     with the corpus's rule text. Not peculiarityPicker(): that colours its
+     rows against the open character's tenets, heritage and rings, none of
+     which mean anything for an NPC at court. */
+  function traitPicker(card, n, kind) {
+    var held = kind === "advantage" ? n.advantage : n.disadvantage;
+    var all = CATALOG.filter(function (e) {
+      return e.sub_type === "peculiarity" && PEC_KINDS[kind].indexOf(e.kind) >= 0;
+    }).sort(function (a, b) { return a.name.localeCompare(b.name); });
+
+    var row = document.createElement("div");
+    row.className = "trait-row";
+    var sel = document.createElement("select");
+    sel.className = "trait-sel";
+    sel.innerHTML = '<option value="">— ' + kind + " —</option>" +
+      all.map(function (e) {
+        return '<option value="' + esc(e.name) + '"' +
+          (e.name === held ? " selected" : "") + ">" + esc(e.name) +
+          (e.ring ? " (" + esc(cap(e.ring)) + ")" : "") + "</option>";
+      }).join("");
+    sel.addEventListener("change", function () {
+      if (kind === "advantage") n.advantage = sel.value;
+      else n.disadvantage = sel.value;
+      save(); render();
+    });
+    row.appendChild(sel);
+    card.appendChild(row);
+    if (held) {
+      // ruleTextFor() is the wizard's own resolver and returns the corpus's
+      // HTML, so this is innerHTML rather than a second lookup of its own
+      var t = ruleTextFor(held);
+      if (t) {
+        var d = document.createElement("div");
+        d.className = "muted small trait-text";
+        d.innerHTML = t;
+        card.appendChild(d);
+      }
+    }
+  }
+
+  function renderCourtTraits(body) {
+    var all = courtNpcs();
+    if (!all.length) return needs(body, "There is nobody at this court yet.");
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.innerHTML = "Going around the table, each player picks an NPC and " +
+      "gives them one advantage or disadvantage — then says how their own PC " +
+      "is connected to it. One of each per NPC, no more; once an NPC has " +
+      "both, they are out of the round. <strong>Do not read out a mover's " +
+      "ninjō, or which of these people is a mover.</strong>";
+    body.appendChild(note);
+
+    all.forEach(function (n) {
+      npcCard(body, n, function (card) {
+        var r = document.createElement("p");
+        r.className = "muted small npc-recap";
+        r.textContent = (n.role || "no role yet") +
+          " · giri: " + (n.giri || "none stated");
+        card.appendChild(r);
+        traitPicker(card, n, "advantage");
+        traitPicker(card, n, "disadvantage");
+        textField(card, "Which player assigned it",
+                  function () { return n.assigned_by; },
+                  function (v) { n.assigned_by = v; });
+        textField(card, "How their PC is connected to it",
+                  function () { return n.connection; },
+                  function (v) { n.connection = v; }, "area");
+      });
+    });
+    var short = all.filter(function (n) { return !n.advantage || !n.disadvantage; });
+    if (short.length) {
+      var p = document.createElement("p");
+      p.className = "muted small";
+      p.textContent = short.length + " still to fill: " +
+        short.map(npcLabel).join(", ") + ".";
+      body.appendChild(p);
+    }
+  }
+
+  // ---- step 5: assign bonds (players and GM)
+
+  function bondRefs() {
+    var ct = activeCourt();
+    return courtNpcs().map(function (n) {
+      return ["npc:" + n.id, npcLabel(n)];
+    }).concat((ct.pcs || []).map(function (p) { return ["pc:" + p, p]; }));
+  }
+
+  function renderCourtBonds(body) {
+    var ct = activeCourt();
+    if (!ct) return needs(body, "This draft has no court on it.");
+    if (!courtNpcs().length) return needs(body, "There is nobody at this court yet.");
+
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = "Each player picks two NPCs and a bond they share, " +
+      "recorded at rank 1 — or gives the bond to their own PC instead. Keep " +
+      "going until every NPC has at least one.";
+    body.appendChild(note);
+
+    label(body, "The party");
+    var pcnote = document.createElement("p");
+    pcnote.className = "muted small";
+    pcnote.textContent = "So a bond can run to a PC as well as between NPCs.";
+    body.appendChild(pcnote);
+    var pcrow = document.createElement("div");
+    pcrow.className = "pc-row";
+    (ct.pcs || []).forEach(function (p) {
+      var chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "choice small active";
+      chip.textContent = p + " ×";
+      chip.title = "Remove from the party";
+      chip.addEventListener("click", function () {
+        ct.pcs = ct.pcs.filter(function (x) { return x !== p; });
+        ct.bonds = ct.bonds.filter(function (b) {
+          return b.a !== "pc:" + p && b.b !== "pc:" + p;
+        });
+        save(); render();
+      });
+      pcrow.appendChild(chip);
+    });
+    body.appendChild(pcrow);
+    var pcadd = document.createElement("select");
+    pcadd.className = "trait-sel";
+    pcadd.innerHTML = '<option value="">— add a PC —</option>' +
+      ARCHIVE.filter(function (a) {
+        return (ct.pcs || []).indexOf(a.name) < 0;
+      }).map(function (a) {
+        return '<option value="' + esc(a.name) + '">' + esc(a.name) + "</option>";
+      }).join("");
+    pcadd.addEventListener("change", function () {
+      if (!pcadd.value) return;
+      ct.pcs = (ct.pcs || []).concat([pcadd.value]);
+      save(); render();
+    });
+    body.appendChild(pcadd);
+    textField(body, "…or a name not in the archive, then press Enter",
+              function () { return ""; },
+              function (v) {
+                if (!v || (ct.pcs || []).indexOf(v) >= 0) return;
+                ct.pcs = (ct.pcs || []).concat([v]);
+                render();
+              });
+
+    label(body, "Bonds");
+    (ct.bonds || []).forEach(function (b, i) {
+      var row = document.createElement("div");
+      row.className = "bond-row";
+      row.innerHTML = '<span class="bond-t">' + esc(b.type) + "</span>" +
+        '<span class="bond-p">' + esc(partyLabel(b.a)) + " ↔ " +
+        esc(partyLabel(b.b)) + "</span>" +
+        '<span class="bond-r">rank 1</span>';
+      var x = document.createElement("button");
+      x.type = "button";
+      x.className = "ar-x-btn";
+      x.textContent = "×";
+      x.addEventListener("click", function () {
+        ct.bonds.splice(i, 1); save(); render();
+      });
+      row.appendChild(x);
+      body.appendChild(row);
+    });
+
+    var refs = bondRefs();
+    var form = document.createElement("div");
+    form.className = "bond-form";
+    var a = document.createElement("select");
+    var bb = document.createElement("select");
+    var ty = document.createElement("select");
+    [a, bb].forEach(function (s, k) {
+      s.className = "trait-sel";
+      s.innerHTML = '<option value="">— ' + (k ? "and" : "between") +
+        " —</option>" + refs.map(function (r) {
+          return '<option value="' + esc(r[0]) + '">' + esc(r[1]) + "</option>";
+        }).join("");
+    });
+    ty.className = "trait-sel";
+    ty.innerHTML = '<option value="">— bond —</option>' +
+      BOND_TYPES.map(function (t) {
+        return '<option value="' + esc(t) + '">' + esc(t) + "</option>";
+      }).join("");
+    var add = document.createElement("button");
+    add.type = "button";
+    add.className = "btn ghost";
+    add.textContent = "Record the bond";
+    add.addEventListener("click", function () {
+      if (!a.value || !bb.value || !ty.value) {
+        setStatus("a bond needs two people and a type");
+        return;
+      }
+      if (a.value === bb.value) {
+        setStatus("a bond runs between two people");
+        return;
+      }
+      var dup = (ct.bonds || []).some(function (x) {
+        return (x.a === a.value && x.b === bb.value) ||
+               (x.a === bb.value && x.b === a.value);
+      });
+      if (dup && !confirm("These two already share a bond. Record another?")) return;
+      ct.bonds = (ct.bonds || []).concat([{ a: a.value, b: bb.value,
+                                            type: ty.value, rank: 1 }]);
+      save(); render();
+    });
+    [a, bb, ty, add].forEach(function (n) { form.appendChild(n); });
+    body.appendChild(form);
+
+    var bondless = courtNpcs().filter(function (n) {
+      return !(ct.bonds || []).some(function (b) {
+        return b.a === "npc:" + n.id || b.b === "npc:" + n.id;
+      });
+    });
+    var p = document.createElement("p");
+    p.className = "muted small";
+    p.textContent = bondless.length
+      ? bondless.length + " with no bond yet: " + bondless.map(npcLabel).join(", ") + "."
+      : "Everyone at court has at least one bond.";
+    body.appendChild(p);
+  }
+
+  // ---- step 6: assign personal details (players and GM)
+
+  function renderCourtDetails(body) {
+    var all = courtNpcs();
+    if (!all.length) return needs(body, "There is nobody at this court yet.");
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = "Names, families, quirks — offer these to the players, " +
+      "especially for an NPC one of them is bonded to or sworn to. A player " +
+      "is far less likely to forget a name they invented.";
+    body.appendChild(note);
+    var ct = activeCourt();
+    all.forEach(function (n) {
+      npcCard(body, n, function (card) {
+        var bonds = (ct.bonds || []).filter(function (b) {
+          return b.a === "npc:" + n.id || b.b === "npc:" + n.id;
+        });
+        if (bonds.length) {
+          var r = document.createElement("p");
+          r.className = "muted small npc-recap";
+          r.textContent = "bonded: " + bonds.map(function (b) {
+            var other = b.a === "npc:" + n.id ? b.b : b.a;
+            return b.type + " with " + partyLabel(other);
+          }).join("; ");
+          card.appendChild(r);
+        }
+        textField(card, "Name", function () { return n.name; },
+                  function (v) { n.name = v; });
+        textField(card, "Family, quirks, whatever the table invented",
+                  function () { return n.details; },
+                  function (v) { n.details = v; }, "area");
+      });
+    });
+    var unnamed = all.filter(function (n) { return !n.name; });
+    if (unnamed.length) {
+      var p = document.createElement("p");
+      p.className = "muted small";
+      p.textContent = unnamed.length + " still unnamed.";
+      body.appendChild(p);
+    }
+  }
+
+  // ---- step 7: retouch and finalise (GM)
+
+  function renderCourtFinalise(body) {
+    var all = courtNpcs();
+    if (!all.length) return needs(body, "There is nobody at this court yet.");
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.innerHTML = "One more advantage or disadvantage each, that the PCs " +
+      "know nothing about — so there is still something to discover. Then a " +
+      "profile: <strong>movers are Adversaries</strong>, secondaries may be " +
+      "Adversaries or Minions.";
+    body.appendChild(note);
+
+    all.forEach(function (n) {
+      npcCard(body, n, function (card) {
+        var r = document.createElement("p");
+        r.className = "muted small npc-recap";
+        r.textContent = "known: " + (n.advantage || "—") + " / " +
+          (n.disadvantage || "—");
+        card.appendChild(r);
+
+        var kindrow = document.createElement("div");
+        kindrow.className = "need-row";
+        kindrow.innerHTML = '<span class="need-k">Hidden</span>' +
+          ["advantage", "disadvantage"].map(function (k) {
+            return '<button type="button" class="choice small' +
+              (n.hidden.kind === k ? " active" : "") + '" data-v="' + k + '">' +
+              cap(k) + "</button>";
+          }).join("");
+        kindrow.addEventListener("click", function (e) {
+          var b = e.target.closest("button[data-v]");
+          if (!b) return;
+          if (n.hidden.kind !== b.dataset.v) { n.hidden.kind = b.dataset.v; n.hidden.name = ""; }
+          save(); render();
+        });
+        card.appendChild(kindrow);
+
+        if (n.hidden.kind) {
+          var taken = [n.advantage, n.disadvantage];
+          var opts = CATALOG.filter(function (e) {
+            return e.sub_type === "peculiarity" &&
+                   PEC_KINDS[n.hidden.kind].indexOf(e.kind) >= 0 &&
+                   taken.indexOf(e.name) < 0;
+          }).sort(function (a, b) { return a.name.localeCompare(b.name); });
+          var sel = document.createElement("select");
+          sel.className = "trait-sel";
+          sel.innerHTML = '<option value="">— the one they do not know —</option>' +
+            opts.map(function (e) {
+              return '<option value="' + esc(e.name) + '"' +
+                (e.name === n.hidden.name ? " selected" : "") + ">" +
+                esc(e.name) + "</option>";
+            }).join("");
+          sel.addEventListener("change", function () {
+            n.hidden.name = sel.value; save(); render();
+          });
+          card.appendChild(sel);
+        }
+
+        textField(card, "Current goal", function () { return n.goal; },
+                  function (v) { n.goal = v; });
+        textField(card, "Who they see as the obstacle to it",
+                  function () { return n.opposition; },
+                  function (v) { n.opposition = v; });
+        textField(card, "Current heir, if their position warrants one",
+                  function () { return n.heir; },
+                  function (v) { n.heir = v; });
+
+        var prow = document.createElement("div");
+        prow.className = "need-row";
+        var types = n.tier === "mover" ? ["Adversary"] : ["Adversary", "Minion"];
+        prow.innerHTML = '<span class="need-k">Profile</span>' +
+          types.map(function (t) {
+            return '<button type="button" class="choice small' +
+              (n.profile_type === t ? " active" : "") + '" data-v="' + t + '">' +
+              t + "</button>";
+          }).join("") +
+          (n.tier === "mover"
+            ? '<span class="muted small"> — a mover is an Adversary</span>' : "");
+        prow.addEventListener("click", function (e) {
+          var b = e.target.closest("button[data-v]");
+          if (!b) return;
+          n.profile_type = n.profile_type === b.dataset.v ? "" : b.dataset.v;
+          save(); render();
+        });
+        card.appendChild(prow);
+
+        var psel = document.createElement("select");
+        psel.className = "trait-sel";
+        psel.innerHTML = '<option value="">— a published profile, or none —</option>' +
+          NPC_PROFILES.map(function (p) {
+            return '<option value="' + esc(p) + '"' +
+              (p === n.profile ? " selected" : "") + ">" + esc(p) + "</option>";
+          }).join("");
+        psel.addEventListener("change", function () {
+          n.profile = psel.value; save(); render();
+        });
+        card.appendChild(psel);
+        var pn = document.createElement("p");
+        pn.className = "muted small";
+        pn.textContent = n.profile
+          ? "Replace its advantages and disadvantages with the ones above, and " +
+            "swap its rings to fit. A mover should generally match the party's " +
+            "rank in their own sphere."
+          : "Or build one from whole cloth — the book allows it.";
+        card.appendChild(pn);
+
+        var tpl = Object.keys(COURT.templates || {});
+        if (tpl.length) {
+          var trow = document.createElement("div");
+          trow.className = "need-row wrapped";
+          trow.innerHTML = '<span class="need-k">Templates</span>' +
+            tpl.map(function (k) {
+              var t = COURT.templates[k];
+              var on = (n.templates || []).indexOf(t.name) >= 0;
+              return '<button type="button" class="choice small' +
+                (on ? " active" : "") + '" data-v="' + esc(t.name) + '" title="' +
+                esc((t.roles.description && t.roles.description[0].value) ||
+                    "an overlay on a base profile") + '">' +
+                esc(t.name.replace(/\s*(NPC\s*)?Template$/, "")) + "</button>";
+            }).join("");
+          trow.addEventListener("click", function (e) {
+            var b = e.target.closest("button[data-v]");
+            if (!b) return;
+            n.templates = n.templates || [];
+            var i = n.templates.indexOf(b.dataset.v);
+            if (i >= 0) n.templates.splice(i, 1); else n.templates.push(b.dataset.v);
+            save(); render();
+          });
+          card.appendChild(trow);
+          (n.templates || []).forEach(function (name) {
+            var t = COURT.templates[norm_(name)];
+            if (!t) return;
+            var d = document.createElement("div");
+            d.className = "tpl-detail";
+            d.innerHTML = "<strong>" + esc(t.name) + "</strong>" +
+              t.properties.filter(function (p) {
+                return !/^base profile$|^description$/i.test(p.label);
+              }).map(function (p) {
+                return '<div><span class="tk">' + esc(p.label) + "</span> " +
+                  esc(String(p.value)) + "</div>";
+              }).join("");
+            card.appendChild(d);
+          });
+        }
+      });
+    });
+  }
+
+  function norm_(s) {
+    return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "");
+  }
+
+  // ---- what the court hands to scripts/apply_court.py
+
+  function toCourtPatch() {
+    var ct = activeCourt() || newCourt();
+    return {
+      court: slugify(ct.name || "a-court"),
+      name: ct.name || null,
+      premise: ct.premise || "",
+      party: (ct.pcs || []).slice(),
+      npcs: courtNpcs().map(function (n) {
+        return {
+          id: n.id, tier: n.tier, role: n.role, name: n.name || null,
+          ninjo: n.ninjo, need: n.need || null, giri: n.giri,
+          // named, not id-referenced: the record should still read as prose
+          // when an id means nothing to anyone
+          giri_cuts_across: (n.conflicts || []).map(function (id) {
+            var m = npcById(id);
+            return m ? npcLabel(m) : null;
+          }).filter(Boolean),
+          advantage: n.advantage || null,
+          disadvantage: n.disadvantage || null,
+          assigned_by: n.assigned_by || null,
+          pc_connection: n.connection || "",
+          details: n.details || "",
+          heir: n.heir || null,
+          hidden: n.hidden.name
+            ? { kind: n.hidden.kind, name: n.hidden.name } : null,
+          goal: n.goal || null,
+          opposition: n.opposition || null,
+          profile: n.profile || null,
+          profile_type: n.profile_type || null,
+          templates: (n.templates || []).slice()
+        };
+      }),
+      bonds: (ct.bonds || []).map(function (b) {
+        return { type: b.type, rank: 1,
+                 between: [partyLabel(b.a), partyLabel(b.b)],
+                 refs: [b.a, b.b] };
+      })
+    };
+  }
+
+  function renderCourtSave(body) {
+    var doc = toCourtPatch();
+    var open = activeSteps().filter(function (s) {
+      return s.id !== "court-save" && !s.done();
+    }).map(function (s) { return s.n + ". " + s.label; });
+    var head = document.createElement("p");
+    head.className = "muted small";
+    head.innerHTML = "<strong>" + esc(doc.name || "An unnamed court") +
+      "</strong> — " + doc.npcs.length + " at court (" +
+      doc.npcs.filter(function (n) { return n.tier === "mover"; }).length +
+      " movers), " + doc.bonds.length + " bonds.";
+    body.appendChild(head);
+    if (open.length) {
+      var w = document.createElement("p");
+      w.className = "muted small warn";
+      w.textContent = "Steps still open: " + open.join(", ") +
+        ". A court can be saved part-built — steps 4 to 6 happen at the table.";
+      body.appendChild(w);
+    }
+    var secret = doc.npcs.filter(function (n) { return n.hidden || n.ninjo; }).length;
+    if (secret) {
+      var s = document.createElement("p");
+      s.className = "muted small warn";
+      s.textContent = "This record holds what the players do not know — " +
+        "ninjō, and the hidden trait from step 7. It is GM material: it is " +
+        "written to src/courts/ and no character page reads it.";
+      body.appendChild(s);
+    }
+    var row = document.createElement("div");
+    row.className = "choicerow";
+    row.innerHTML = '<button type="button" class="btn" id="dl">Download</button>' +
+      '<button type="button" class="btn" id="cp">Copy</button>';
+    body.appendChild(row);
+    var how = document.createElement("p");
+    how.className = "muted small";
+    how.innerHTML = "Then: <code>python3 scripts/apply_court.py " +
+      esc(doc.court) + "</code> — it writes <code>src/courts/" +
+      esc(doc.court) + ".json</code>. Nothing is written without " +
+      "<code>--apply</code>.";
+    body.appendChild(how);
+    var pre = document.createElement("pre");
+    pre.className = "export-json";
+    pre.textContent = JSON.stringify(doc, null, 1);
+    body.appendChild(pre);
+    row.querySelector("#dl").addEventListener("click", function () {
+      var blob = new Blob([JSON.stringify(doc, null, 1)],
+                          { type: "application/json" });
+      var n = document.createElement("a");
+      n.href = URL.createObjectURL(blob);
+      n.download = doc.court + "-court.json";
+      document.body.appendChild(n); n.click(); n.remove();
+      setTimeout(function () { URL.revokeObjectURL(n.href); }, 1000);
+    });
+    row.querySelector("#cp").addEventListener("click", function () {
+      navigator.clipboard.writeText(JSON.stringify(doc, null, 1));
+    });
+  }
+
+  // ---- the step list
+
+  /* done() per step is the step's own stated requirement, not "has the GM
+     typed something" — step 2 is done when every mover's giri cuts across
+     another's ninjō, which is what the step is for. */
+  var COURT_STEPS = [
+    { id: "court-movers", n: 1, label: "Movers", title: "Sketch out the movers",
+      desc: "A role at court and a ninjō for each. Three to four is a good " +
+        "target — one or two will turn out to matter less, and that is fine.",
+      done: function () {
+        var m = courtNpcs("mover");
+        return m.length > 0 && m.every(function (n) { return n.role && n.ninjo; });
+      },
+      render: renderCourtMovers },
+    { id: "court-conflicts", n: 2, label: "Conflicts", title: "Seed the conflicts",
+      desc: "Each mover gets a giri, and each giri conflicts directly with " +
+        "the ninjō of at least one other mover.",
+      done: function () {
+        var m = courtNpcs("mover");
+        if (!m.length) return false;
+        if (m.length === 1) return !!m[0].giri;
+        return m.every(function (n) {
+          return n.giri && (n.conflicts || []).length > 0;
+        });
+      },
+      render: renderCourtConflicts },
+    { id: "court-secondaries", n: 3, label: "Secondaries", title: "Create secondaries",
+      desc: "Role, ninjō and giri again, less pressing. Three to five.",
+      done: function () {
+        var s = courtNpcs("secondary");
+        return s.length > 0 &&
+          s.every(function (n) { return n.role && n.ninjo && n.giri; });
+      },
+      render: renderCourtSecondaries },
+    { id: "court-traits", n: 4, label: "Traits", title: "Assign traits",
+      desc: "With the players. One advantage and one disadvantage per NPC, " +
+        "and how the assigning PC is connected to it.",
+      done: function () {
+        var a = courtNpcs();
+        return a.length > 0 &&
+          a.every(function (n) { return n.advantage && n.disadvantage; });
+      },
+      render: renderCourtTraits },
+    { id: "court-bonds", n: 5, label: "Bonds", title: "Assign bonds",
+      desc: "With the players. Rank 1 bonds, until every NPC has at least one.",
+      done: function () {
+        var ct = activeCourt();
+        var a = courtNpcs();
+        if (!ct || !a.length) return false;
+        return a.every(function (n) {
+          return (ct.bonds || []).some(function (b) {
+            return b.a === "npc:" + n.id || b.b === "npc:" + n.id;
+          });
+        });
+      },
+      render: renderCourtBonds },
+    { id: "court-details", n: 6, label: "Details", title: "Assign personal details",
+      desc: "With the players. Names above all — a player remembers a name " +
+        "they made up.",
+      done: function () {
+        var a = courtNpcs();
+        return a.length > 0 && a.every(function (n) { return !!n.name; });
+      },
+      render: renderCourtDetails },
+    { id: "court-finalise", n: 7, label: "Finalise", title: "Retouch and finalise",
+      desc: "One hidden trait each, a current goal, and a profile — movers " +
+        "as Adversaries, secondaries as Adversaries or Minions.",
+      done: function () {
+        var a = courtNpcs();
+        return a.length > 0 && a.every(function (n) {
+          return n.hidden && n.hidden.name && n.profile_type;
+        });
+      },
+      render: renderCourtFinalise },
+    { id: "court-save", n: 0, label: "Save", title: "Keep the court",
+      desc: "Written to src/courts/ as GM material. Nothing about it reaches " +
+        "a character page.",
+      done: function () { return false; },
+      render: renderCourtSave }
+  ];
+
+  function renderCourtWip() {
+    var ct = activeCourt();
+    var box = el("wip");
+    if (!ct) { box.innerHTML = ""; return; }
+    var movers = courtNpcs("mover"), secs = courtNpcs("secondary");
+    function line(n) {
+      var bits = [n.role || "no role"];
+      if (n.profile_type) bits.push(n.profile_type);
+      return '<div class="wip-npc"><span class="wn">' + esc(npcLabel(n)) +
+        '</span><span class="wr">' + esc(bits.join(" · ")) + "</span>" +
+        (n.advantage || n.disadvantage
+          ? '<span class="wt">' + esc([n.advantage, n.disadvantage]
+              .filter(Boolean).join(" / ")) + "</span>" : "") +
+        (n.hidden && n.hidden.name
+          ? '<span class="wh">hidden: ' + esc(n.hidden.name) + "</span>" : "") +
+        "</div>";
+    }
+    box.innerHTML =
+      '<h3 class="wip-name">' + esc(ct.name || "An unnamed court") + "</h3>" +
+      '<p class="muted small">' + movers.length + " mover" +
+      (movers.length === 1 ? "" : "s") + ", " + secs.length + " secondar" +
+      (secs.length === 1 ? "y" : "ies") + ", " +
+      ((ct.bonds || []).length) + " bond" +
+      ((ct.bonds || []).length === 1 ? "" : "s") + "</p>" +
+      (movers.length ? '<h4 class="wip-h">Movers</h4>' +
+        movers.map(line).join("") : "") +
+      (secs.length ? '<h4 class="wip-h">Secondaries</h4>' +
+        secs.map(line).join("") : "") +
+      ((ct.bonds || []).length
+        ? '<h4 class="wip-h">Bonds</h4>' + ct.bonds.map(function (b) {
+            return '<div class="wip-npc"><span class="wn">' + esc(b.type) +
+              '</span><span class="wr">' + esc(partyLabel(b.a)) + " ↔ " +
+              esc(partyLabel(b.b)) + "</span></div>";
+          }).join("") : "");
+  }
+
   /* ---------------------------------------------------------- shell */
 
   // Path of Waves and Writ of the Wilds characters have no clan, so the
@@ -6347,6 +7301,7 @@
   function steps() {
     if (isAdvance()) return ADVANCE_STEPS;
     if (isLegacy()) return LEGACY_STEPS;
+    if (isCourt()) return COURT_STEPS;
     return STEPS;
   }
 
@@ -6538,6 +7493,7 @@
   function renderWip() {
     if (isLegacy()) return renderLegacyWip();
     if (isAdvance()) return renderAdvanceWip();
+    if (isCourt()) return renderCourtWip();
     var d = computed();
     var ring = RINGS.map(function (r) {
       var why = provenance(d.from.rings[r], 1);
@@ -6651,7 +7607,11 @@
     var s = steps()[step] || steps()[0];
     step = steps().indexOf(s);
     function val(x) { return typeof x === "function" ? x() : x; }
-    el("step-n").textContent = s.n === 0 ? "Begin" : "Question " + s.n;
+    // the twenty questions are Questions; a court's seven steps are Steps, and
+    // a step numbered 0 is the one at the end that saves
+    el("step-n").textContent = s.eyebrow ? s.eyebrow
+      : s.n === 0 ? (isCourt() ? "Keep it" : "Begin")
+      : (isCourt() ? "Step " : "Question ") + s.n;
     el("step-title").textContent = val(s.title);
     el("step-desc").innerHTML = val(s.desc);
     var body = el("step-body");
@@ -6734,11 +7694,11 @@
       });
     // ?new=1 is the site's front-door link: start a fresh character rather
     // than resuming whichever draft happened to be open last.
-    if (q["new"]) {
+    if (q["new"] || q.court) {
       if (history.replaceState) {
         history.replaceState(null, "", location.pathname + location.hash);
       }
-      addDraft();
+      if (q.court) openCourt(true); else addDraft();
       return;
     }
     var slug = q.advance || q.edit || q.legacy;
