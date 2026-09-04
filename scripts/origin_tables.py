@@ -50,6 +50,7 @@ OUT_REGION = os.path.join(ROOT, "data", "chargen", "regions.js")
 OUT_UPBRINGING = os.path.join(ROOT, "data", "chargen", "upbringings.js")
 OUT_FAMILY = os.path.join(ROOT, "data", "chargen", "families.js")
 OUT_CLAN = os.path.join(ROOT, "data", "chargen", "clans.js")
+OUT_SCHOOL = os.path.join(ROOT, "data", "chargen", "schools.js")
 
 # The books that reword questions 1 and 2, and the Creator mode each drives.
 BOOKS = {"path-of-waves": "pow", "writ-of-wilds": "wow"}
@@ -345,6 +346,106 @@ def build(d, kind):
     return row
 
 
+# The corpus's block keyword is SHUJI, KIHO, MAHO; the catalog's technique
+# `kind` matches that spelling, and the books print Shūji, Kihō, Mahō. So the
+# machine value keeps the corpus's spelling and the label carries the macron —
+# the hand-written file had only the macron form, which read correctly but did
+# not match the catalog.
+CATEGORY_LABEL = {"shuji": "Shūji", "kiho": "Kihō", "maho": "Mahō"}
+
+
+def unquote(x):
+    """A block list entry, which arrives with its own quoting: "\"club\"" and
+    "^\"Striking as Earth\"" both mean the bare name."""
+    x = str(x or "").strip()
+    if x.startswith("^"):
+        x = x[1:]
+    return x.strip('"')
+
+
+def blocks_of(d, keyword):
+    return [b for b in (d.get("blocks") or []) if b.get("keyword") == keyword]
+
+
+def build_school(d):
+    """A school, in the shape schools.js has always had.
+
+    Two things are worth naming because they are not obvious in the data:
+
+      - a starting technique is either fixed or a choice, and its category is
+        the KATA / SHUJI / RITUAL keyword rather than a property. A block with
+        a `choose` is the choice form; one with a bare label is the fixed form.
+      - SCHOOL_ABILITY labels itself with a plain quoted string and
+        MASTERY_ABILITY with a ^"name"; both reduce to the bare name.
+    """
+    rings, _ = grants(prop(d, "Ring Increase"))
+    skills, _ = grants(prop(d, "Starting Skills"))
+    roles = prop(d, "Roles")
+    avail = prop(d, "Techniques Available")
+    clan = prop(d, "Clan")
+
+    def listing(p_):
+        if not p_:
+            return []
+        v = p_.get("value")
+        if isinstance(v, list):
+            return [unquote(x) for x in v]
+        if isinstance(v, str):
+            try:
+                parsed = json.loads(v)
+                if isinstance(parsed, list):
+                    return [unquote(x) for x in parsed]
+            except (ValueError, TypeError):
+                pass
+        return [unquote(x) for x in (p_.get("list") or [])]
+
+    techs = []
+    for outer in blocks_of(d, "STARTING_TECHNIQUES"):
+        for b in outer.get("blocks") or []:
+            cat = str(b.get("keyword") or "").lower()
+            ch = b.get("choose")
+            label = CATEGORY_LABEL.get(cat, cat.capitalize())
+            if ch:
+                techs.append({"category": cat, "category_label": label,
+                              "kind": "choose",
+                              "n": int(ch.get("n") or 1),
+                              "options": [unquote(o) for o in
+                                          (ch.get("options") or [])]})
+            else:
+                techs.append({"category": cat, "category_label": label,
+                              "kind": "fixed",
+                              "name": unquote(b.get("label"))})
+
+    outfit = []
+    for b in blocks_of(d, "STARTING_OUTFIT"):
+        outfit += [unquote(x) for x in (b.get("list") or [])]
+
+    def ability(keyword):
+        for b in blocks_of(d, keyword):
+            if b.get("label"):
+                return unquote(b["label"])
+        return None
+
+    # The ^"School Name" property, not the entity name: the two differ on
+    # five schools ("Kitsune Impersonator Tradition" is entity, "Kitsune
+    # Impersonator" is the name), and everything downstream — rollName(), the
+    # school-roll gate, the coverage ledger — keys off the property.
+    sname = prop(d, "School Name")
+    return {
+        "name": (sname or {}).get("value") or d["name"],
+        "clan": (clan or {}).get("value"),
+        "roles": listing(roles),
+        "ring_increase": rings,
+        "starting_skills": skills,
+        "starting_honor": number(prop(d, "Starting Honor")),
+        "techniques_available": listing(avail),
+        "starting_techniques": techs,
+        "starting_outfit": outfit,
+        "school_ability": ability("SCHOOL_ABILITY"),
+        "mastery_ability": ability("MASTERY_ABILITY"),
+    }
+
+
 def build_clan(d):
     """A clan, in the shape clans.js has always had.
 
@@ -424,9 +525,14 @@ def main():
         sys.exit(f"missing {RESOLVED} — run scripts/dsl_rules_text.py first")
     doc = json.load(open(RESOLVED, encoding="utf-8"))
 
-    regions, ups, fams, clans = [], [], [], []
+    regions, ups, fams, clans, schools = [], [], [], [], []
     for d in defs(doc):
         n = d.get("name") or ""
+        # a school is identified by its own property; the ^"School" metatype
+        # that declares the shape is not one
+        if prop(d, "School Name") and n != "School":
+            schools.append(build_school(d))
+            continue
         # a clan is identified by its own property; the ^"Clan" metatype that
         # declares the shape is not one
         if prop(d, "Clan Name") and n != "Clan":
@@ -460,8 +566,9 @@ def main():
                 best[r["name"]] = r
         return sorted(best.values(), key=lambda r: r["name"])
 
-    regions, ups, fams, clans = (dedupe(regions), dedupe(ups), dedupe(fams),
-                                 dedupe(clans))
+    regions, ups, fams, clans, schools = (dedupe(regions), dedupe(ups),
+                                         dedupe(fams), dedupe(clans),
+                                         dedupe(schools))
     if not regions or not ups:
         sys.exit(f"FAIL — {len(regions)} regions and {len(ups)} upbringings; "
                  f"both are needed for questions 1 and 2")
@@ -498,6 +605,20 @@ def main():
                 sys.exit(f"FAIL — {r['name']} {field} offers {len(ma)} of the "
                          f"3 Martial Arts skills ({', '.join(ma)}); the option "
                          f"list was truncated")
+
+    # Every school must state what question 3 grants. The count is not
+    # asserted at a fixed number because a new book adds schools; what is
+    # asserted is that none arrives hollow.
+    if len(schools) < 109:
+        sys.exit(f"FAIL — {len(schools)} schools found; the file this replaces "
+                 f"had 109 and books only add.")
+    for sc in schools:
+        for field in ("roles", "ring_increase", "starting_skills",
+                      "techniques_available"):
+            if not sc[field]:
+                sys.exit(f"FAIL — {sc['name']} states no {field}")
+        if sc["starting_honor"] is None:
+            sys.exit(f"FAIL — {sc['name']} states no starting honor")
 
     # Sixteen clans, and every one must grant what question 1 grants.
     if len(clans) != 16:
@@ -550,6 +671,17 @@ def main():
     write(OUT_UPBRINGING, "L5R_UPBRINGINGS", ups)
     write(OUT_FAMILY, "L5R_FAMILIES", fams)
     write(OUT_CLAN, "L5R_CLANS", clans)
+    write(OUT_SCHOOL, "L5R_SCHOOLS", schools)
+    noab = sum(1 for x in schools if not x["school_ability"])
+    nomast = sum(1 for x in schools if not x["mastery_ability"])
+    print(f"{len(schools)} schools -> {os.path.relpath(OUT_SCHOOL, ROOT)} "
+          f"({os.path.getsize(OUT_SCHOOL)/1024:.1f} KB)  "
+          f"{sum(1 for x in schools if x['clan'])} with a clan, "
+          f"{sum(len(x['starting_techniques']) for x in schools)} starting "
+          f"technique entries")
+    if noab or nomast:
+        print(f"   FLAG — {noab} state no school ability, {nomast} no mastery "
+              f"ability")
     print(f"{len(clans)} clans -> {os.path.relpath(OUT_CLAN, ROOT)} "
           f"({os.path.getsize(OUT_CLAN)/1024:.1f} KB)  "
           f"status {min(c['starting_status'] for c in clans)} to "

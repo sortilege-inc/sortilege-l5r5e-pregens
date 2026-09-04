@@ -3195,7 +3195,7 @@
             }
           }
           if (!opts.length) {
-            label(body, cap(g.category || "Technique") + " — choose " + (g.n || 1));
+            label(body, (g.category_label || cap(g.category) || "Technique") + " — choose " + (g.n || 1));
             var p = document.createElement("p");
             p.className = "muted small";
             p.textContent = note || g.options[0];
@@ -3203,7 +3203,7 @@
             return;
           }
           chooseGroup(body, "school.tech." + i,
-                      cap(g.category || "Technique") +
+                      (g.category_label || cap(g.category) || "Technique") +
                         (opts !== g.options && inspired ? " (" + inspired + ")" : ""),
                       { n: g.n || 1, options: opts, yield_value: 1 },
                       null, true);
