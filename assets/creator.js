@@ -99,6 +99,11 @@
   var REGIONS = window.L5R_REGIONS || [];
   var UPBRINGINGS = window.L5R_UPBRINGINGS || [];
   var ARCHIVE = window.L5R_ARCHIVE_DRAFTS || [];
+  /* One per school pencilled in for a pack, from scripts/pack_stubs.py. Not
+     characters — nothing of theirs is in the archive and they count towards no
+     coverage — just the retyping taken out of starting one: the school, the
+     campaign it is for, and the question set its book uses. */
+  var PACK_STUBS = window.L5R_PACK_STUBS || [];
   var CLAN_TENETS = window.L5R_CLAN_TENETS || {};
   var QUESTIONS = window.L5R_QUESTIONS || {};
   var NAMES = window.L5R_NAMES || {};
@@ -522,6 +527,27 @@
     STORE.drafts[id] = { id: id, updated: Date.now(), character: newCharacter() };
     switchDraft(id);
   }
+  /* Start a draft from a pack's shortlist: the school chosen, the campaign
+     tagged, and the mode set to the question set that school's book uses — a
+     Path of Waves school asks question 1 as a region, not a clan, and getting
+     that wrong is a wrong character rather than a wrong label.
+
+     Everything else is left blank. The stub is a starting point, not a
+     character: nobody has decided who this is yet. */
+  function openStub(i) {
+    var st = PACK_STUBS[i];
+    if (!st) return;
+    var c = newCharacter();
+    c.school = st.school;
+    c.campaign = st.campaign;
+    c.mode = st.mode || "core";
+    var id = newId();
+    STORE.drafts[id] = { id: id, updated: Date.now(), character: c };
+    switchDraft(id);
+    setStatus("started " + st.school + " for " + st.campaign +
+              " — the school and campaign are set, the rest is yours");
+  }
+
   function removeDraft(id) {
     var d = STORE.drafts[id];
     if (!d) return;
@@ -680,6 +706,41 @@
       if (bucket && c[bucket].indexOf(n) < 0) c[bucket].push(n);
     });
     return c;
+  }
+
+  /* The packs' shortlists, as chips that start a draft.
+
+     Each says the school on top and the campaign it is for underneath, so a
+     chip stands on its own — the list is long enough that a heading per
+     campaign would scroll off the top of whichever one you were reading.
+     A school already built somewhere in the archive is marked, because the
+     shortlist was drawn when it was not. */
+  function stubList() {
+    if (!PACK_STUBS.length) return "";
+    return '<span class="drafts-label drafts-archive">Pencilled in for a pack' +
+      '<span class="dl-n">' + PACK_STUBS.length + "</span></span>" +
+      '<div class="archive-list stub-list">' +
+      PACK_STUBS.map(function (st, i) {
+        var also = (st.also || []).length
+          ? " · also " + st.also.join(", ") : "";
+        // two different facts, and the difference matters: the archive having
+        // built it means the shortlist has gone stale, while a publisher's
+        // folio having it is the reason to build one of our own
+        var tag = st.built_by === "archive" ? " · already built"
+                : st.built_by === "published" ? " · a folio has this school"
+                : "";
+        return '<button type="button" class="archivechip stubchip' +
+          (st.built_by === "archive" ? " taken" : "") +
+          (st.built_by === "published" ? " folio" : "") +
+          '" data-stub="' + i + '"' +
+          ' title="' + esc(st.school + " — " + (st.book || "") +
+            (st.page ? " p" + st.page : "") +
+            (st.mode !== "core" ? " · asks questions 1 and 2 as a region and "
+                                  + "an upbringing" : "")) + '">' +
+          esc(st.school) +
+          '<span class="dc-meta">' + esc(st.campaign) + esc(also) + tag +
+          "</span></button>";
+      }).join("") + "</div>";
   }
 
   /* The archive's unfinished characters, to be carried on with here.
@@ -948,7 +1009,7 @@
       '<button type="button" class="draftnew" id="draft-school" ' +
         'title="Path of Waves: build a school in nine steps">' +
         "+ School</button>" +
-      archiveList() + "</div>";
+      archiveList() + stubList() + "</div>";
 
     el("drafts").open = draftsOpen();
     el("drafts").addEventListener("toggle", function () {
@@ -969,8 +1030,14 @@
     el("draft-school").addEventListener("click", function () { openSchoolBuild(); });
     el("draft-dup").addEventListener("click", function () { duplicateDraft(STORE.activeId); });
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".archivechip"), function (b) {
+      if (b.hasAttribute("data-stub")) return;
       b.addEventListener("click", function () {
         openArchiveDraft(b.getAttribute("data-slug"), b.getAttribute("data-mode"));
+      });
+    });
+    Array.prototype.forEach.call(el("drafts").querySelectorAll(".stubchip"), function (b) {
+      b.addEventListener("click", function () {
+        openStub(Number(b.getAttribute("data-stub")));
       });
     });
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".dc-share"), function (b) {

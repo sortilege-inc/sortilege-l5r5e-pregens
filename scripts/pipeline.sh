@@ -105,6 +105,10 @@ python3 scripts/coin_audit.py
 # coverage number, marked on every roster row so the tab can hide them, the
 # whole printed set present, and still built with a page and a play sheet each.
 python3 scripts/published_gate.py
+# Every pencilled school as a stub the Creator can open as a draft, with its
+# school, campaign and question set already set. Needs the catalog and the
+# campaign list the build above wrote.
+python3 scripts/pack_stubs.py
 # School and title curricula, for the advancement ledger. Reads the resolved
 # corpus that dsl_rules_text.py composed above, so errata are already applied.
 python3 scripts/curricula.py

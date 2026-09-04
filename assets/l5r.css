@@ -1067,6 +1067,18 @@ table.cur-table tr.cur-past td{ opacity:0.72; }
 .archivechip:hover{ border-color:var(--crimson); color:var(--sumi); }
 .archivechip.open{ border-style:solid; border-color:var(--jade); }
 /* a promoted character opens as an edit, not as a draft to carry on */
+/* the pack shortlists: long, so the list scrolls on its own, and each chip
+   carries its campaign rather than relying on a heading above it */
+.stub-list{ max-height:22rem; overflow-y:auto; }
+.stubchip{ border-style:dotted; }
+.stubchip:hover{ border-style:dashed; }
+.stubchip.taken .dc-meta{ color:var(--crimson); }
+.stubchip.folio .dc-meta{ color:var(--ink-dim); }
+.dl-n{
+  margin-left:0.45rem; padding:0.02rem 0.36rem; border-radius:2px;
+  background:var(--paper-3); color:var(--ink-dim); font-size:0.68rem;
+}
+
 .archivechip.promoted{ border-left:3px solid var(--jade-soft, var(--jade)); }
 
 /* Play and Advance, under a character's chips — the two things anyone does
