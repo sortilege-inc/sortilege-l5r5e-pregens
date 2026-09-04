@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lore — Sortilege L5R Pregens</title>
+<meta name="description" content="The people, places, factions and events of Rokugan as the L5R5e corpus states them — every claim carrying the sentence it was read from.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css?v=c7ae57f1">
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="../index.html">Sortilege L5R Pregens</a>
+  <a href="../index.html">Home</a>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../characters/map.html">Map</a>
+  <a href="index.html" class="active">Lore</a>
+  <a href="../creator/index.html">Creator</a>
+  <a href="../admin/index.html">Coverage</a>
+  <a href="../audit/index.html">Audit</a>
+</nav>
+
+<div class="wrap wide">
+  <header class="masthead">
+    <div class="cartouche">
+      <div class="eyebrow">Rokugan</div>
+      <h1>Lore</h1>
+    </div>
+    <p class="sub">The people, places, factions and events the corpus names — each tie carrying the sentence it was read from.</p>
+    <p class="kicker" id="lore-count">—</p>
+  </header>
+
+  <div class="flourish"></div>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Search a name, a type, a book, or the wording of a quote…">
+    <label for="type">Type</label>
+    <select id="type"><option value="">All</option></select>
+    <label for="book">Book</label>
+    <select id="book"><option value="">All</option></select>
+    <label class="filtercheck" for="tied"><input type="checkbox" id="tied"><span>Only those with ties</span></label>
+    <span class="chip" id="shown"></span>
+  </div>
+
+  <div class="lore-layout">
+    <div class="lore-list" id="list"></div>
+    <div class="lore-detail" id="detail"></div>
+  </div>
+
+  <footer class="foot-note">
+    <p>Read from the corpus's <code>.codex</code> files — spec §25's stand-off
+      lore graph, 66 of them over the <code>.lore</code> prose, sharing one
+      ontology that declares every category and every predicate. An entity is
+      asserted once and amended by later books, so what you see folds every
+      mention of a name; a tie asserted one way is read back the other, and
+      those are marked. <strong>Nothing here is written for this site.</strong>
+      Every quote is the corpus's own <code>FROM</code> evidence for the claim
+      beside it, and every claim names the file it came from.
+      <code>scripts/codex_graph.py</code> builds it.</p>
+  </footer>
+</div>
+
+<script src="../data/lore.js?v=e98ed1cb"></script>
+<script src="../assets/lore.js?v=7934cc1b"></script>
+</body>
+</html>

@@ -92,6 +92,10 @@ python3 scripts/army_tables.py
 python3 scripts/school_tables.py
 python3 scripts/name_tables.py | tail -1
 python3 scripts/relationship_map.py
+# The Lore section: the corpus's own .codex files -- spec §25's stand-off graph
+# of typed entities and relationships over the .lore prose, with the FROM quote
+# that justifies each tie.
+python3 scripts/codex_graph.py
 
 # The source audit reads the catalog and the resolved corpus text the two steps
 # above produce, and writes data/audit.js for the Audit section. It only reads

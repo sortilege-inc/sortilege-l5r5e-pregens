@@ -945,6 +945,7 @@ PAGE_STUB = """<!DOCTYPE html>
   <a class="brand" href="../index.html">Sortilege L5R Pregens</a>
   <a href="../index.html">Home</a>
   <a href="index.html" class="active">Characters</a>
+  <a href="../lore/index.html">Lore</a>
   <a href="../creator/index.html">Creator</a>
   <a href="../admin/index.html">Coverage</a>
   <a href="../audit/index.html">Audit</a>
