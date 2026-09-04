@@ -66,7 +66,9 @@
   "shosuro-hisano": "Slow Tide Harbor",
   "kasuga-chiyo": "Slow Tide Harbor",
   "ichiro-tsutomu": "Slow Tide Harbor",
-  "sanpei": "Slow Tide Harbor"
+  "sanpei": "Slow Tide Harbor",
+  "aarav": "The Bushi Oni Part II",
+  "the-beshkara-constrictor": "The Bushi Oni Part II"
  },
  "campaign_list": {
   "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current. Where one pack serves two adventures, the base adventure holds the shortlist and names the other in `pack_shared_with`; the other carries `pack_from` pointing back. The build refuses a one-sided link, and the double-booking check ignores a shared list — the same schools in two packs is the point there, not a slip.",
@@ -82,9 +84,10 @@
     "Mirumoto Taoist Blade School",
     "Utaku Battle Maiden School",
     "Asako Loremaster School",
-    "Miya Cartographer School"
+    "Miya Cartographer School",
+    "Shinjo Mounted Archer"
    ],
-   "pencilled_why": "Chosen 2026-09-04, eight rather than six because the adventure runs two parties: Parts One and Three in the present, Part Two in the past, linked by Legacy advantages.\n\nThe Lion holds the castle — Akodo Commander for the school of the champion who built Hayaken no Shiro, Kitsu Medic for the family whose fortress home it is, Ikoma Shadow for the work a war needs done off the field. Kakita Swordsmith and Mirumoto Taoist Blade come over the borders the castle watches, and Utaku Battle Maiden brings the cavalry the northern border implies. Asako Loremaster and Miya Cartographer are what a campaign actually runs on: someone who knows the past that Part Two is set in, and someone who knows the ground.\n\nThree of the eight read as the older generation rather than the inheriting one — Akodo Commander (whose mastery is Akodo's Final Lesson), Kakita Swordsmith (a blade outlives its wielder, which is the legacy mechanic as a craft), and Asako Loremaster (the one who remembers). The split between the two parties is not fixed here.\n\nNoted and not acted on: both Kitsu shugenja schools, Medium and Realm Wanderer, are pencilled for Wheel of Judgment, so the Kitsu family is represented at its own castle by the medic. Utaku Battle Maiden is also the school of a published pregen (Utaku Azami, Wedding at Kyotei Castle) — untouched by the archive, so it still adds coverage."
+   "pencilled_why": "Chosen 2026-09-04, eight rather than six because the adventure runs two parties: Parts One and Three in the present, Part Two in the past, linked by Legacy advantages.\n\nThe Lion holds the castle — Akodo Commander for the school of the champion who built Hayaken no Shiro, Kitsu Medic for the family whose fortress home it is, Ikoma Shadow for the work a war needs done off the field. Kakita Swordsmith and Mirumoto Taoist Blade come over the borders the castle watches, and Utaku Battle Maiden brings the cavalry the northern border implies. Asako Loremaster and Miya Cartographer are what a campaign actually runs on: someone who knows the past that Part Two is set in, and someone who knows the ground.\n\nThree of the eight read as the older generation rather than the inheriting one — Akodo Commander (whose mastery is Akodo's Final Lesson), Kakita Swordsmith (a blade outlives its wielder, which is the legacy mechanic as a craft), and Asako Loremaster (the one who remembers). The split between the two parties is not fixed here.\n\nNoted and not acted on: both Kitsu shugenja schools, Medium and Realm Wanderer, are pencilled for Wheel of Judgment, so the Kitsu family is represented at its own castle by the medic. Utaku Battle Maiden is also the school of a published pregen (Utaku Azami, Wedding at Kyotei Castle) — untouched by the archive, so it still adds coverage.\n\nShinjo Mounted Archer added 2026-09-04 — a second Unicorn for a campaign fought on the Lion's northern border, and cavalry that belongs in a mass battle."
   },
   "Imperfect Land": {
    "arc": "l5r5e-0.4-imperfect-land.arc",
@@ -105,9 +108,10 @@
     "Asako Inquisitor School",
     "Kaito Spirit Seeker School",
     "Bayushi Deathdealer School",
-    "Matsu Berserker School"
+    "Matsu Berserker School",
+    "Daidoji Iron Warrior School"
    ],
-   "pencilled_why": "Chosen 2026-09-04 for the expedition the adventure actually is: out through Crab lands into the Shadowlands, to the ruins of Shiro Hiruma. The Hiruma Scout is going home to that ruin and the Kaiu Engineer can read what is left standing; the Agasha Alchemist brews against the Taint and the Shiba Guardian keeps them alive doing it; the Yogo Preserver wards, and carries a curse that belongs to this story. The Nezumi Tattered Ear Explorer is the party's way into The Knotted Tails, which is played inside this adventure and shares this pack (decided 2026-09-04) — and at honour 18 it is a different game from the other five.\n\nSix more added 2026-09-04, taking the pack to twelve — the weight the Winter's Embrace pack carries, and appropriate now that this one serves The Knotted Tails as well. The first six were an expedition; these fill what an expedition into the Shadowlands cannot do without. Moto Avenger is the healer, and heals by Empathic Transfer — taking the wound himself, which out there is a decision every time. Asako Inquisitor reads what came through the ruin and hunts mahō. Tengu Mask of Air brings the three things the first six had none of at once: the monk role, the Sage role, and Kihō — and a tengu walking into the Shadowlands beside a nezumi is a party worth watching. Kaito Spirit Seeker fights and cleanses without choosing between them. Matsu Berserker and Bayushi Deathdealer are the weight and the knife the first six lacked: a scout, an engineer and a bodyguard, and nobody who simply wades in.\n\nKuni Warden was offered for the monk and Kihō gap and passed over; Tengu Mask of Air covers both, so nothing is missing by it.",
+   "pencilled_why": "Chosen 2026-09-04 for the expedition the adventure actually is: out through Crab lands into the Shadowlands, to the ruins of Shiro Hiruma. The Hiruma Scout is going home to that ruin and the Kaiu Engineer can read what is left standing; the Agasha Alchemist brews against the Taint and the Shiba Guardian keeps them alive doing it; the Yogo Preserver wards, and carries a curse that belongs to this story. The Nezumi Tattered Ear Explorer is the party's way into The Knotted Tails, which is played inside this adventure and shares this pack (decided 2026-09-04) — and at honour 18 it is a different game from the other five.\n\nSix more added 2026-09-04, taking the pack to twelve — the weight the Winter's Embrace pack carries, and appropriate now that this one serves The Knotted Tails as well. The first six were an expedition; these fill what an expedition into the Shadowlands cannot do without. Moto Avenger is the healer, and heals by Empathic Transfer — taking the wound himself, which out there is a decision every time. Asako Inquisitor reads what came through the ruin and hunts mahō. Tengu Mask of Air brings the three things the first six had none of at once: the monk role, the Sage role, and Kihō — and a tengu walking into the Shadowlands beside a nezumi is a party worth watching. Kaito Spirit Seeker fights and cleanses without choosing between them. Matsu Berserker and Bayushi Deathdealer are the weight and the knife the first six lacked: a scout, an engineer and a bodyguard, and nobody who simply wades in.\n\nKuni Warden was offered for the monk and Kihō gap and passed over; Tengu Mask of Air covers both, so nothing is missing by it.\n\nDaidoji Iron Warrior added 2026-09-04 — honour 55, Vigilance of Mind, and the Crane's field-army school going into the Shadowlands with everyone else.",
    "pack_shared_with": [
     "The Knotted Tails"
    ]
@@ -154,9 +158,21 @@
     "Shinseist Monk Order",
     "Mirumoto Two-Heavens Adept School",
     "Storm Fleet Tide Seer",
-    "Seppun Palace Guard School"
+    "Seppun Palace Guard School",
+    "Utaku Silent Shadow Yōjimbō",
+    "Kolat Saboteur Conspiracy"
    ],
-   "pencilled_why": "Chosen 2026-09-04. A party assembled across the Empire rather than from one clan: a Crab bodyguard, an Isawa who picks their own two rings, a Shinseist monk for the Kihō and the Void, a Mirumoto with two swords, a Mantis tide seer and an Imperial palace guard."
+   "pencilled_why": "Chosen 2026-09-04. A party assembled across the Empire rather than from one clan: a Crab bodyguard, an Isawa who picks their own two rings, a Shinseist monk for the Kihō and the Void, a Mirumoto with two swords, a Mantis tide seer and an Imperial palace guard.\n\nTwo added 2026-09-04: Utaku Silent Shadow Yōjimbō, the pack's first Unicorn, whose mastery is Reputation Sentinel; and a Kolat Saboteur at honour 20, the lowest in the pack by eighteen."
+  },
+  "The Bushi Oni Part II": {
+   "arc": null,
+   "note": "The owner's own campaign, a second party alongside The Bushi Oni, so there is no arc in the corpus for it. Two characters already built are tagged into it — Aarav (Ivory Kingdoms Sage Tradition) and The Beshkara Constrictor (Shinomen Naga Seer Tradition), both of which had no campaign before — and the schools below are additional to those two.",
+   "pencilled_schools": [
+    "Voice of the Wilds",
+    "Ichirō Ironsmith School",
+    "Agasha Mystic School"
+   ],
+   "pencilled_why": "Chosen 2026-09-04. Built around the two characters tagged into it rather than from scratch: Aarav is an Ivory Kingdoms sage and the Constrictor a Shinomen naga seer, so this is a party of outsiders and non-humans before it is anything else. Voice of the Wilds keeps that going — a shugenja-courtier who picks their own two rings — while Ichirō Ironsmith and Agasha Mystic supply the Badger forge and the Dragon transmutationist, which is to say the two people who can make something out of what the others find.\n\nVoice of the Wilds is also the school of a published pregen (Hiyabayashi Kenshin, The Highwayman) — untouched by the archive, so it still adds coverage.\n\nIuchi Horse Lord Disciple was named for this party and for Sins of Regret in the same breath. It is on neither yet: two packs cannot both be the build that covers a school, and guessing which was meant would quietly settle a decision that is not mine."
   },
   "The Knotted Tails": {
    "arc": "l5r5e-0.4-knotted-tails.arc",
@@ -203,9 +219,10 @@
     "Kitsu Realm Wanderer School",
     "Mazoku's Enforcer Tradition",
     "Champion of Days Gone Tradition",
-    "Yogo Wardmaster School"
+    "Yogo Wardmaster School",
+    "Miya Herald School"
    ],
-   "pencilled_why": "Chosen 2026-09-04 against Deathly Turns' account of the adventure, since the adventure itself is not on disk. Toritaka Phantom Hunter because Lady Mazoku is the secret patron of the Falcon Clan and its Phantom Hunters; Mazoku's Enforcer and Champion of Days Gone because Deathly Turns writes both for characters created in the afterlife; the two Kitsu because they speak with the dead and walk between realms; Yogo Wardmaster for the seals, with a tunnel out of the Shadowlands to close. Kitsu Medium is also the school of a published pregen (Kitsu Kohaku, Wedding at Kyotei Castle) — untouched by the archive, but not fresh ground."
+   "pencilled_why": "Chosen 2026-09-04 against Deathly Turns' account of the adventure, since the adventure itself is not on disk. Toritaka Phantom Hunter because Lady Mazoku is the secret patron of the Falcon Clan and its Phantom Hunters; Mazoku's Enforcer and Champion of Days Gone because Deathly Turns writes both for characters created in the afterlife; the two Kitsu because they speak with the dead and walk between realms; Yogo Wardmaster for the seals, with a tunnel out of the Shadowlands to close. Kitsu Medium is also the school of a published pregen (Kitsu Kohaku, Wedding at Kyotei Castle) — untouched by the archive, but not fresh ground.\n\nMiya Herald added 2026-09-04. A herald who speaks with the Emperor's voice is a strange and useful thing to be carrying in Meido, where the question is who has authority over the dead."
   },
   "Winter's Embrace": {
    "arc": "l5r5e-0.4-winters-embrace.arc",
@@ -225,9 +242,10 @@
     "Togashi Chronicler School",
     "Shiba Artist School",
     "Soshi Illusionist School",
-    "Shika Speardancer School"
+    "Shika Speardancer School",
+    "Ide Messenger School"
    ],
-   "pencilled_why": "Chosen 2026-09-04 for the Winter Court at Kyūden Doji, and for The Scroll or the Blade with it — that storyline runs during or after this one in the same palace, so one pack serves both. Twelve rather than a party's worth because it covers two adventures.\n\nThe two clans whose reputations are the stake are both in it: Doji Diplomat and Kakita Duelist hosting, Storm Fleet Sailor as the Mantis who does not belong in a winter palace. Otomo Schemer is the Throne watching; Ikoma Bard and Bayushi Manipulator are reputation made and unmade. Kitsune Mediator is there to stop it becoming blood and Shika Matchmaker to make the betrothals a Winter Court exists for — her mastery ability is a curse, which is a plot by itself. Togashi Chronicler records it, Shiba Artist enters the poetry competition the Asahina priest oversees, Soshi Illusionist and Shika Speardancer do the quiet work in the corridors.\n\nKakita Duelist and Bayushi Manipulator are also the schools of published pregens (Kakita Hikaru and Bayushi Hibiki, Wedding at Kyotei Castle) — untouched by the archive, so they still add coverage, but not fresh ground. That overlap is not a coincidence: Wedding at Kyotei Castle is a court adventure too."
+   "pencilled_why": "Chosen 2026-09-04 for the Winter Court at Kyūden Doji, and for The Scroll or the Blade with it — that storyline runs during or after this one in the same palace, so one pack serves both. Twelve rather than a party's worth because it covers two adventures.\n\nThe two clans whose reputations are the stake are both in it: Doji Diplomat and Kakita Duelist hosting, Storm Fleet Sailor as the Mantis who does not belong in a winter palace. Otomo Schemer is the Throne watching; Ikoma Bard and Bayushi Manipulator are reputation made and unmade. Kitsune Mediator is there to stop it becoming blood and Shika Matchmaker to make the betrothals a Winter Court exists for — her mastery ability is a curse, which is a plot by itself. Togashi Chronicler records it, Shiba Artist enters the poetry competition the Asahina priest oversees, Soshi Illusionist and Shika Speardancer do the quiet work in the corridors.\n\nKakita Duelist and Bayushi Manipulator are also the schools of published pregens (Kakita Hikaru and Bayushi Hibiki, Wedding at Kyotei Castle) — untouched by the archive, so they still add coverage, but not fresh ground. That overlap is not a coincidence: Wedding at Kyotei Castle is a court adventure too.\n\nIde Messenger added 2026-09-04, closing the one real hole in this pack: nine clans were represented at a Crane–Mantis winter court and the Unicorn were not one of them. A courtier whose mastery is The Herd Flourishes Together, at a court about two clans' reputations."
   }
  },
  "corrections": {

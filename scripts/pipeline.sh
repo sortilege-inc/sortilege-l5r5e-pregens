@@ -23,6 +23,9 @@ import json, glob
 idx = json.load(open('pipeline/foundry/index.json'))
 src = json.load(open('src/foundry_sources.json'))
 campaigns = {k: v for k, v in idx.get('campaigns', {}).items() if not k.startswith('_')}
+# the manifest's tags win over Foundry's, as in extract_characters.py
+campaigns.update({k: v for k, v in (src.get('campaigns') or {}).items()
+                  if not k.startswith('_')})
 portraits = {k: v for k, v in src.get('portraits', {}).items() if not k.startswith('_')}
 for p in sorted(glob.glob('src/characters/*.json')):
     d = json.load(open(p))

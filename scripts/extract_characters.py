@@ -245,9 +245,20 @@ def main():
     idx = load_catalog()
     cat_ids = catalog_by_id()
     index = json.load(open(os.path.join(ROOT, "pipeline", "foundry", "index.json")))
+    sources = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+    # Campaign tags come from Foundry's own index first and then from the
+    # manifest, which wins -- the same order corrections and portraits use.
+    #
+    # The manifest's block used to be read by nobody: both readers took the
+    # index's, so seven Slow Tide Harbor tags survived only because they were
+    # already written into the character files and an unknown slug is left
+    # alone. A hand-set tag looked authoritative in the manifest and did
+    # nothing, and a re-extract would have dropped any that Foundry did not
+    # also carry.
     campaigns = {k: v for k, v in index.get("campaigns", {}).items()
                  if not k.startswith("_")}
-    sources = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+    campaigns.update({k: v for k, v in (sources.get("campaigns") or {}).items()
+                      if not k.startswith("_")})
     corrections = sources.get("corrections", {})
     portraits = sources.get("portraits", {})
     by_char = collections.defaultdict(list)
