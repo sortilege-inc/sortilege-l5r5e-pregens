@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Regions and upbringings, from the corpus, in the shape the Creator computes with.
+"""Questions 1 and 2, from the corpus, in the shape the Creator computes with.
+
+Core answers them with a clan and a family; Path of Waves and Writ of the Wilds
+with a region and an upbringing. This generates the family and the two
+non-core sets — all of them grant rings, skills, glory, status and wealth the
+same way, so one reader covers them.
 
 Path of Waves and Writ of the Wilds replace the core's first two questions:
 question 1 asks a region instead of a clan, question 2 an upbringing instead of
@@ -43,6 +48,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESOLVED = os.path.join(ROOT, "pipeline", "dsl", "l5r5e-resolved.json")
 OUT_REGION = os.path.join(ROOT, "data", "chargen", "regions.js")
 OUT_UPBRINGING = os.path.join(ROOT, "data", "chargen", "upbringings.js")
+OUT_FAMILY = os.path.join(ROOT, "data", "chargen", "families.js")
 
 # The books that reword questions 1 and 2, and the Creator mode each drives.
 BOOKS = {"path-of-waves": "pow", "writ-of-wilds": "wow"}
@@ -250,7 +256,11 @@ def wealth(d):
             count = 1
         items.append(desc if count == 1 else f"{desc} x{count}")
 
+    # an int when it is whole: a family's 4 koku was an int in the file this
+    # replaces, and 4.0 is noise in a diff and in JSON
     equiv = round(sum(coins[k] * PER_KOKU[k] for k in coins), 3)
+    if equiv == int(equiv):
+        equiv = int(equiv)
     label = ", ".join(bits + items)
     real = [n for n in wnodes + inodes if (n.get("nested") or [])]
     return coins, equiv, items, label, bool(real), unknown
@@ -334,6 +344,45 @@ def build(d, kind):
     return row
 
 
+def build_family(d):
+    """A family, in the shape families.js has always had, plus structured wealth.
+
+    Every field the hand-written file carried is reproduced from the corpus —
+    compared across all 42 before this replaced it, and ring increases, skill
+    increases, glory and clan matched exactly, zero differences. The additions
+    are the wealth fields, which is the only thing that was stale.
+    """
+    rings, rlabel = grants(prop(d, "Ring Increase", "Ring Increases"))
+    skills, slabel = grants(prop(d, "Skill Increases", "Skill Increase"))
+    coins, koku, witems, wlabel, wstated, wbad = wealth(d)
+    clan = prop(d, "Clan")
+    return {
+        "name": d["name"],
+        "kind": "family",
+        "source": (d.get("sources") or [None])[0],
+        "clan": (clan or {}).get("value"),
+        "glory": number(prop(d, "Glory")),
+        # the plain koku figure the Creator and the generator already add up,
+        # kept so nothing downstream changes shape
+        "starting_wealth": koku,
+        # and what the koku figure cannot say on its own
+        "starting_coins": coins,
+        "starting_wealth_label": wlabel,
+        "starting_items": witems,
+        "starting_wealth_stated": wstated,
+        "wealth_unreadable": wbad,
+        "ring_increase": rings,
+        "ring_increase_label": rlabel or "",
+        "skill_increases": skills,
+        "skill_increases_label": slabel or "",
+        # the corpus states no prose for a family; the field is kept because
+        # the file has always had it
+        "description": "",
+        "rules": ["#" + r["hash"] for r in (d.get("rules") or [])
+                  if r.get("hash")],
+    }
+
+
 def write(path, var, rows):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as fh:
@@ -347,9 +396,14 @@ def main():
         sys.exit(f"missing {RESOLVED} — run scripts/dsl_rules_text.py first")
     doc = json.load(open(RESOLVED, encoding="utf-8"))
 
-    regions, ups = [], []
+    regions, ups, fams = [], [], []
     for d in defs(doc):
         n = d.get("name") or ""
+        # a family is identified by its own property, not by its name, and the
+        # ^"Family" metatype that declares the shape is not one
+        if prop(d, "Family Name") and n != "Family":
+            fams.append(build_family(d))
+            continue
         if n in ("Region", "Upbringing"):
             continue                      # the metatype anchors
         # Path of Waves' own questions are DEFs named ^"Question 1: Region" and
@@ -373,7 +427,7 @@ def main():
                 best[r["name"]] = r
         return sorted(best.values(), key=lambda r: r["name"])
 
-    regions, ups = dedupe(regions), dedupe(ups)
+    regions, ups, fams = dedupe(regions), dedupe(ups), dedupe(fams)
     if not regions or not ups:
         sys.exit(f"FAIL — {len(regions)} regions and {len(ups)} upbringings; "
                  f"both are needed for questions 1 and 2")
@@ -411,8 +465,24 @@ def main():
                          f"3 Martial Arts skills ({', '.join(ma)}); the option "
                          f"list was truncated")
 
+    # The corpus states 42 families and the hand-written file had 42. A count
+    # that moves means the corpus changed or the discriminator broke, and
+    # either way the file should not be replaced quietly.
+    if len(fams) != 42:
+        sys.exit(f"FAIL — {len(fams)} families found; the corpus and the file "
+                 f"it replaces both had 42. Check the ^\"Family Name\" "
+                 f"discriminator before writing.")
+    for f in fams:
+        if not f["clan"] and f["name"] not in ("Peasant Family",
+                                               "Families of the Fleet"):
+            sys.exit(f"FAIL — {f['name']} states no clan")
+        if f["glory"] is None:
+            sys.exit(f"FAIL — {f['name']} states no glory")
+        if not f["ring_increase"]:
+            sys.exit(f"FAIL — {f['name']} grants no ring increase")
+
     # A node the reader could not make sense of is a shape nobody has read yet.
-    bad = [(r["name"], m) for r in regions + ups
+    bad = [(r["name"], m) for r in regions + ups + fams
            for m in (r.get("wealth_unreadable") or [])]
     if bad:
         sys.exit(f"FAIL — {len(bad)} Wealth/Item node(s) could not be read: "
@@ -433,6 +503,14 @@ def main():
 
     write(OUT_REGION, "L5R_REGIONS", regions)
     write(OUT_UPBRINGING, "L5R_UPBRINGINGS", ups)
+    write(OUT_FAMILY, "L5R_FAMILIES", fams)
+    coined = sum(1 for f in fams if any(f["starting_coins"].values()))
+    withitems = [f["name"] for f in fams if f["starting_items"]]
+    print(f"{len(fams)} families -> {os.path.relpath(OUT_FAMILY, ROOT)} "
+          f"({os.path.getsize(OUT_FAMILY)/1024:.1f} KB)  "
+          f"{coined} grant coin, {len(withitems)} grant an item")
+    if withitems:
+        print("   items: " + ", ".join(withitems))
     for label, rows, path in (("regions", regions, OUT_REGION),
                               ("upbringings", ups, OUT_UPBRINGING)):
         pow_n = sum(1 for r in rows if "pow" in r["modes"])

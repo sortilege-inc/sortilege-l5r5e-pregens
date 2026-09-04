@@ -76,7 +76,12 @@
   },
   "tonbo-asahi": {
    "identity.school": "Dragonfly Grace of the Spirits School",
-   "_why": "Foundry records 'Dragonfly Grace of the Spirits'; the compendium roll has ' School'"
+   "_why": "Foundry records 'Dragonfly Grace of the Spirits'; the compendium roll has ' School'. And the actor carries 0 koku while the character's own twenty-questions record says step2 (the Tonbo family) gave 1 koku — \"wealth\": 1 — which is what Writ of the Wilds prints for the family (\"Starting Wealth: 1 koku, 2 Dragonfly glass ornaments\"; the ornaments are already in her gear). Chargen wins over the actor, per Jordan 2026-09-04.",
+   "tiers.0.money": {
+    "zeni": 0,
+    "koku": 1,
+    "bu": 0
+   }
   },
   "iuchi-temur": {
    "identity.school": "Iuchi Meishodo Master School",

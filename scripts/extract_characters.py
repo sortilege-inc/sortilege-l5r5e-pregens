@@ -305,6 +305,21 @@ def main():
         for field, value in (corrections.get(slug) or {}).items():
             if field.startswith("_"):
                 continue
+            # a tier's own field: "tiers.0.money". Identity fields live on the
+            # doc, but money, rings and socials live per tier, and a
+            # multi-tier character's differ between them — so the index is
+            # part of the path rather than applying to all of them.
+            parts = field.split(".")
+            if len(parts) == 3 and parts[0] == "tiers" and parts[1].isdigit():
+                i = int(parts[1])
+                if i < len(doc["tiers"]):
+                    was = doc["tiers"][i].get(parts[2])
+                    doc["tiers"][i][parts[2]] = value
+                    print(f"   correction {slug}: {field} {was!r} -> {value!r}")
+                else:
+                    print(f"   ! correction {slug}: {field} — only "
+                          f"{len(doc['tiers'])} tier(s)")
+                continue
             section, _, key = field.partition(".")
             if key and section in doc:
                 was = doc[section].get(key)

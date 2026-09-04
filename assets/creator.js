@@ -2077,6 +2077,12 @@
       addRing(fam.ring_increase, "family.ring_increase", C.family);
       addSkills(fam.skill_increases, "family.skill_increases", C.family);
       glory = fam.glory || 0; wealth = fam.starting_wealth || 0;
+      // Tonbo starts with two Dragonfly glass ornaments beside its koku. The
+      // corpus states a family's items the same way it states an upbringing's,
+      // so they are surfaced the same way rather than dropped.
+      (fam.starting_items || []).forEach(function (it) {
+        pending.push({ type: "item", name: it, source: C.family });
+      });
     }
     /* Path of Waves and Writ of the Wilds answer questions 1 and 2 with a
        region and an upbringing, which grant rings, skills, glory, status and
@@ -3110,7 +3116,9 @@
           return { value: f.name, label: f.name,
                    meta: [showingAll ? f.clan : null,
                           ringLine(f.ring_increase), skillLine(f.skill_increases),
-                          f.starting_wealth ? f.starting_wealth + " koku" : null,
+                          // the corpus's own wording: "10 zeni" reads better
+                          // than the 0.2 koku it is equivalent to
+                          f.starting_wealth_label || null,
                           f.glory ? "Glory " + f.glory : null].filter(Boolean).join(" · ") };
         });
         pickList(body, items, C.family, function (v) {
