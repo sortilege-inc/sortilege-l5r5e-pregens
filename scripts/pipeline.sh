@@ -86,6 +86,10 @@ python3 scripts/court_tables.py
 # Create Army: Fields of Victory's marshaling system -- the status bands, the
 # discipline formulae, mercenaries, allies, doctrines, upgrades, maintenance.
 python3 scripts/army_tables.py
+# Create School: Path of Waves' nine-step school-building system -- the roles,
+# the ability and mastery templates, skill and technique counts per role, the
+# curriculum's shape, and the suggested outfits.
+python3 scripts/school_tables.py
 python3 scripts/name_tables.py | tail -1
 python3 scripts/relationship_map.py
 

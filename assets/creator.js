@@ -399,6 +399,9 @@
     // a court has no character name; it is named as a court
     if (d.kind === "court") return (c.court && c.court.name) || "Unnamed court";
     if (d.kind === "army") return (c.army && c.army.name) || "Unnamed army";
+    if (d.kind === "school") {
+      return (c.school_build && c.school_build.name) || "Unnamed school";
+    }
     return c.name || "Unnamed draft";
   }
   function draftProgress(c) {
@@ -423,6 +426,11 @@
       C = saved;
       return "advance · " + ((st && st.spent) || 0) + " of " +
              ((c.advance && c.advance.xp) || 0) + " XP";
+    }
+    if (d.kind === "school" && c.school_build) {
+      var sb = c.school_build;
+      return "school · " + (sb.roles && sb.roles.length
+        ? sb.roles.join(", ") : "no role yet");
     }
     if (d.kind === "army" && c.army) {
       var am = c.army;
@@ -838,6 +846,9 @@
       '<button type="button" class="draftnew" id="draft-army" ' +
         'title="Fields of Victory: marshal an army">' +
         "+ Army</button>" +
+      '<button type="button" class="draftnew" id="draft-school" ' +
+        'title="Path of Waves: build a school in nine steps">' +
+        "+ School</button>" +
       archiveList("From the archive", function (a) { return a.status === "draft"; },
                   "draft") +
       archiveList("Promoted characters", function (a) { return a.status !== "draft"; },
@@ -859,6 +870,7 @@
     el("draft-new").addEventListener("click", addDraft);
     el("draft-court").addEventListener("click", function () { openCourt(); });
     el("draft-army").addEventListener("click", function () { openArmy(); });
+    el("draft-school").addEventListener("click", function () { openSchoolBuild(); });
     el("draft-dup").addEventListener("click", function () { duplicateDraft(STORE.activeId); });
     Array.prototype.forEach.call(el("drafts").querySelectorAll(".archivechip"), function (b) {
       b.addEventListener("click", function () {
@@ -8489,6 +8501,900 @@
           }).join("") : "");
   }
 
+  /* ----------------------------------------------------------- school
+
+     Path of Waves' "Building a School", nine steps. data/chargen/schoolbuild.js
+     carries the framework and Tables 2-3 through 2-11 as the corpus states
+     them, read by scripts/school_tables.py.
+
+     Almost everything keys off the school's ROLE, so step 1 asks for that and
+     the rest follows: the first ring bonus (2-5), how many skills it makes
+     available and how many a player picks (2-7), how many starting techniques
+     (2-8), the outfit (2-11), and which ability and mastery templates are
+     open to it (2-4, 2-10, both of which also carry "Any" templates).
+
+     Two steps carry rules a tool can hold, and it holds them:
+
+       step 6  rituals plus two other common categories. ninjutsu and mahō are
+               "exceptionally rare and should only be given in unique cases",
+               so they are offered but marked; a heretical school "might lack
+               rituals", so rituals can be dropped, also marked.
+       step 7  ranks 1-5 each hold exactly seven advances — one skill group,
+               three skills, one technique group, two techniques — and the
+               three skills "should not be from the skill group selected for
+               that rank", which is checked per rank. Rank 6 is the mastery
+               ability and nothing else. */
+
+  var SCHOOLBUILD = window.L5R_SCHOOLBUILD ||
+    { steps: [], roles: [], tables: {}, technique_access: {}, curriculum: {} };
+
+  function isSchool() { return (activeDraft() || {}).kind === "school"; }
+  function activeSchool() { return (activeChar() || {}).school_build || null; }
+
+  function newSchoolBuild() {
+    return { name: "", roles: [], affiliation: "", summary: "",
+             ability: { template: null, text: "", choice: "" },
+             rings: { first: "", second: "", known_for: "" },
+             skills: [], access: ["Rituals"], starting: [],
+             curriculum: [], mastery: { template: null, text: "" },
+             outfit: { clothing: "", weapons: "", other: "" },
+             notes: "" };
+  }
+
+  function openSchoolBuild(asked) {
+    if (!asked && !confirm(
+          "Build a school?\n\nNine steps: a role, its affiliations, a school " +
+          "ability, ring bonuses, skills, technique access, a five-rank " +
+          "curriculum with a mastery ability, an outfit, and a name.")) return;
+    var id = newId();
+    var c = newCharacter();
+    c.school_build = newSchoolBuild();
+    STORE.drafts[id] = { id: id, updated: Date.now(), kind: "school",
+                         character: c };
+    switchDraft(id);
+  }
+
+  function sbTable(key) {
+    var t = SCHOOLBUILD.tables[key];
+    return t ? t.entries || [] : [];
+  }
+
+  /* The row of a role-keyed table that applies to this school's primary role.
+     Two of the tables key by a role pair as the book writes it ("Courtier or
+     Shinobi"), so a row matches when it names the role anywhere. */
+  function sbForRole(key, role) {
+    if (!role) return null;
+    var rows = sbTable(key);
+    return rows.filter(function (e) {
+      return normName(e.name) === normName(role);
+    })[0] || rows.filter(function (e) {
+      return e.name.toLowerCase().indexOf(role.toLowerCase()) >= 0;
+    })[0] || null;
+  }
+
+  function primaryRole() {
+    var s = activeSchool();
+    return (s && s.roles && s.roles[0]) || null;
+  }
+
+  // Templates a role may use: its own, plus every "Any".
+  function sbTemplates(key, role) {
+    return sbTable(key).filter(function (e) {
+      var r = String(e.Role || e.role || "");
+      return !role || /^any$/i.test(r) ||
+             r.toLowerCase().indexOf(role.toLowerCase()) >= 0;
+    });
+  }
+
+  // ---- step 1: role
+
+  function renderSchoolRole(body) {
+    var s = activeSchool();
+    if (!s) return needs(body, "This draft has no school on it.");
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = "Roles are listed in order of importance, the primary " +
+      "first. Nearly everything after this follows from the primary role.";
+    body.appendChild(note);
+
+    (SCHOOLBUILD.roles || []).forEach(function (r) {
+      var at = s.roles.indexOf(r.name);
+      var card = document.createElement("div");
+      card.className = "doc-card" + (at >= 0 ? " on" : "");
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "choice small" + (at >= 0 ? " active" : "");
+      b.textContent = r.name + (at === 0 ? " · primary"
+                                : at > 0 ? " · " + ordinal(at + 1) : "");
+      b.addEventListener("click", function () {
+        if (at >= 0) s.roles.splice(at, 1); else s.roles.push(r.name);
+        save(); render();
+      });
+      card.appendChild(b);
+      var d = document.createElement("div");
+      d.className = "doc-body";
+      d.textContent = r.Description || r.description || "";
+      card.appendChild(d);
+      body.appendChild(card);
+    });
+
+    if (s.roles.length > 1) {
+      var row = document.createElement("p");
+      row.className = "muted small";
+      row.textContent = "In order: " + s.roles.join(", ") + ". Clear and " +
+        "re-pick to reorder — the first is the primary.";
+      body.appendChild(row);
+    }
+  }
+
+  function ordinal(n) {
+    return n === 2 ? "secondary" : n === 3 ? "tertiary" : n + "th";
+  }
+
+  // ---- step 2: affiliations and summary
+
+  function renderSchoolAffiliation(body) {
+    var s = activeSchool();
+    if (!s) return needs(body, "This draft has no school on it.");
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = "A school is usually tied to a Great Clan, but need " +
+      "not be — a minor clan, a monastic order, a gaijin tradition, or none " +
+      "at all.";
+    body.appendChild(note);
+    label(body, "Affiliation");
+    var pick = document.createElement("select");
+    pick.className = "trait-sel";
+    pick.innerHTML = '<option value="">— none, or typed below —</option>' +
+      CLANS.map(function (c) {
+        return '<option value="' + esc(c.clan_short_name || c.name) + '"' +
+          (s.affiliation === (c.clan_short_name || c.name) ? " selected" : "") +
+          ">" + esc(c.name) + "</option>";
+      }).join("");
+    pick.addEventListener("change", function () {
+      s.affiliation = pick.value; save(); render();
+    });
+    body.appendChild(pick);
+    textField(body, "…or an affiliation of its own",
+              function () { return s.affiliation; },
+              function (v) { s.affiliation = v; });
+    label(body, "Summary");
+    textField(body, "What the school teaches, and what it is for.",
+              function () { return s.summary; },
+              function (v) { s.summary = v; }, "area");
+  }
+
+  // ---- step 3: school ability
+
+  function renderSchoolAbility(body) {
+    var s = activeSchool();
+    if (!s) return needs(body, "This draft has no school on it.");
+    var role = primaryRole();
+    if (!role) return needs(body, "Choose a role first.");
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = "The most critical element of a school's design. Take " +
+      "a template and fill in what it asks you to choose, or write one.";
+    body.appendChild(note);
+
+    sbTemplates("table24genericschoolabilities", role).forEach(function (t) {
+      var on = s.ability.template === t.name;
+      var card = document.createElement("div");
+      card.className = "doc-card" + (on ? " on" : "");
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "choice small" + (on ? " active" : "");
+      b.textContent = t.name.replace(/^School Ability /, "") +
+                      " · " + (t.Role || "Any");
+      b.addEventListener("click", function () {
+        s.ability.template = on ? null : t.name;
+        if (!on) s.ability.text = t["Ability Template"] || "";
+        save(); render();
+      });
+      card.appendChild(b);
+      var d = document.createElement("div");
+      d.className = "doc-body";
+      d.textContent = t["Ability Template"] || "";
+      card.appendChild(d);
+      body.appendChild(card);
+    });
+
+    if (s.ability.template) {
+      label(body, "What this template asks you to choose");
+      textField(body, "The skill group, skill, weapon type, action type or " +
+                "keyword the template names",
+                function () { return s.ability.choice; },
+                function (v) { s.ability.choice = v; });
+    }
+    label(body, "The ability as the school states it");
+    textField(body, "The template's wording with your choice filled in, or " +
+              "an ability of your own.",
+              function () { return s.ability.text; },
+              function (v) { s.ability.text = v; }, "area");
+  }
+
+  // ---- step 4: ring bonuses
+
+  function renderSchoolRings(body) {
+    var s = activeSchool();
+    if (!s) return needs(body, "This draft has no school on it.");
+    var role = primaryRole();
+    var sug = sbForRole("table25suggestedfirstringbonuses", role);
+    if (sug) {
+      var p = document.createElement("p");
+      p.className = "muted small";
+      p.innerHTML = "For a <strong>" + esc(sug.name) + "</strong> school the " +
+        "book suggests <strong>" + esc(sug["Ring Increase"]) +
+        "</strong> as the first increase.";
+      body.appendChild(p);
+    }
+    label(body, "First ring increase");
+    ringRow(body, function () { return s.rings.first; },
+            function (v) { s.rings.first = v; });
+
+    label(body, "What the school is known for");
+    var known = sbTable("table26suggestedsecondringbonus");
+    known.forEach(function (e) {
+      var on = s.rings.known_for === e.name;
+      var row = document.createElement("div");
+      row.className = "merc-row" + (on ? " on" : "");
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "choice small" + (on ? " active" : "");
+      b.textContent = e.name;
+      b.addEventListener("click", function () {
+        s.rings.known_for = on ? "" : e.name;
+        // Table 2-6 is keyed by the ring's printed name ("Water"); a ring is
+        // held everywhere else on the site as its lowercase key, and mixing
+        // the two printed "air / Water" on the same line
+        if (!on) s.rings.second = e.name.toLowerCase();
+        save(); render();
+      });
+      row.appendChild(b);
+      var d = document.createElement("span");
+      d.className = "muted small";
+      d.textContent = e["Trait School Is Known For"] || "";
+      row.appendChild(d);
+      body.appendChild(row);
+    });
+
+    label(body, "Second ring increase");
+    ringRow(body, function () { return s.rings.second; },
+            function (v) { s.rings.second = v; });
+    if (s.rings.first && s.rings.first === s.rings.second) {
+      var w = document.createElement("p");
+      w.className = "muted small warn";
+      w.textContent = "Both increases raise " + cap(s.rings.first) +
+        ". Allowed, but it makes a school with one very tall ring and four short.";
+      body.appendChild(w);
+    }
+  }
+
+  function ringRow(body, get, set) {
+    var row = document.createElement("div");
+    row.className = "need-row";
+    row.innerHTML = '<span class="need-k">Ring</span>' +
+      RINGS.map(function (r) {
+        return '<button type="button" class="choice small' +
+          (get() === r ? " active" : "") + '" data-v="' + r + '">' +
+          cap(r) + "</button>";
+      }).join("");
+    row.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-v]");
+      if (!b) return;
+      set(get() === b.dataset.v ? "" : b.dataset.v);
+      save(); render();
+    });
+    body.appendChild(row);
+  }
+
+  // ---- step 5: skills
+
+  function renderSchoolSkills(body) {
+    var s = activeSchool();
+    if (!s) return needs(body, "This draft has no school on it.");
+    var role = primaryRole();
+    var t = sbForRole("table27skillchoices", role);
+    if (!t) return needs(body, "Choose a role first.");
+    var avail = Number(t["Skills Available"]) || 0;
+    var picks = Number(t["Skill Picks"]) || 0;
+
+    var p = document.createElement("p");
+    p.className = "muted small";
+    p.innerHTML = "A <strong>" + esc(t.name) + "</strong> school makes " +
+      "<strong>" + avail + "</strong> skills available, of which a player " +
+      "picks <strong>" + picks + "</strong>. The book's common list for the " +
+      "role: " + esc(t["Common Skills Available"] || "—") + ".";
+    body.appendChild(p);
+
+    label(body, "The skills this school makes available");
+    var common = String(t["Common Skills Available"] || "").split(/,\s*/)
+      .filter(Boolean);
+    var row = document.createElement("div");
+    row.className = "need-row wrapped";
+    row.innerHTML = '<span class="need-k">Common</span>' +
+      common.map(function (sk) {
+        return '<button type="button" class="choice small' +
+          (s.skills.indexOf(sk) >= 0 ? " active" : "") + '" data-v="' +
+          esc(sk) + '">' + esc(sk) + "</button>";
+      }).join("");
+    row.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-v]");
+      if (!b) return;
+      var at = s.skills.indexOf(b.dataset.v);
+      if (at >= 0) s.skills.splice(at, 1); else s.skills.push(b.dataset.v);
+      save(); render();
+    });
+    body.appendChild(row);
+
+    label(body, "…or any other skill");
+    skillPicker(body, null, function (sk) {
+      var lbl = SKILL_LABEL[sk] || cap(sk);
+      if (s.skills.indexOf(lbl) < 0) s.skills.push(lbl);
+      save(); render();
+    });
+
+    var have = document.createElement("p");
+    have.className = "muted small" + (s.skills.length === avail ? "" : " warn");
+    have.textContent = s.skills.length + " of " + avail + " available: " +
+      (s.skills.join(", ") || "none yet") +
+      (s.skills.length === avail ? "."
+       : s.skills.length > avail
+         ? " — " + (s.skills.length - avail) + " more than the role allows."
+         : " — " + (avail - s.skills.length) + " still to name.");
+    body.appendChild(have);
+  }
+
+  // ---- step 6: technique access and starting techniques
+
+  function renderSchoolTechniques(body) {
+    var s = activeSchool();
+    if (!s) return needs(body, "This draft has no school on it.");
+    var role = primaryRole();
+    var acc = SCHOOLBUILD.technique_access || {};
+    var t8 = sbForRole("table28startingtechniques", role);
+
+    var p = document.createElement("p");
+    p.className = "muted small";
+    p.textContent = "Open access means a member may buy any technique in that " +
+      "category, prerequisites permitting. Most schools have rituals plus two " +
+      "of the common categories.";
+    body.appendChild(p);
+
+    label(body, "Open access");
+    var all = (acc["default"] || []).concat(acc.common || [], acc.rare || []);
+    var row = document.createElement("div");
+    row.className = "need-row wrapped";
+    row.innerHTML = '<span class="need-k">Categories</span>' +
+      all.map(function (c) {
+        var on = s.access.indexOf(c) >= 0;
+        var rare = (acc.rare || []).indexOf(c) >= 0;
+        return '<button type="button" class="choice small' +
+          (on ? " active" : "") + (rare ? " over-cap" : "") +
+          '" data-v="' + esc(c) + '"' +
+          (rare ? ' title="' + esc("Exceptionally rare — only in unique cases") +
+                  '"' : "") + ">" + esc(c) + "</button>";
+      }).join("");
+    row.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-v]");
+      if (!b) return;
+      var c = b.dataset.v, at = s.access.indexOf(c);
+      if (at < 0 && (acc.rare || []).indexOf(c) >= 0 &&
+          !confirm("Access to " + c + " is exceptionally rare, and should " +
+                   "only be given in unique cases.\n\nNo reputable tradition " +
+                   "would admit to teaching it.\n\nGive it anyway?")) return;
+      if (at >= 0 && (acc["default"] || []).indexOf(c) >= 0 &&
+          !confirm("Most schools have rituals. A school without them is " +
+                   "heretical — fundamentally opposed to the Celestial " +
+                   "Order.\n\nDrop rituals?")) return;
+      if (at >= 0) s.access.splice(at, 1); else s.access.push(c);
+      save(); render();
+    });
+    body.appendChild(row);
+
+    var chosenCommon = s.access.filter(function (c) {
+      return (acc.common || []).indexOf(c) >= 0;
+    });
+    var n = acc.choose_from_common || 2;
+    var note = document.createElement("p");
+    note.className = "muted small" + (chosenCommon.length === n ? "" : " warn");
+    note.textContent = chosenCommon.length + " of " + n +
+      " common categories beside rituals" +
+      (chosenCommon.length === n ? "." : " — the book's shape is " + n + ".");
+    body.appendChild(note);
+
+    if (t8) {
+      label(body, "Starting techniques");
+      var sp = document.createElement("p");
+      sp.className = "muted small";
+      sp.innerHTML = "A <strong>" + esc(t8.name) + "</strong> school gives " +
+        "<strong>" + esc(String(t8["Number of Starting Techniques"])) +
+        "</strong>, known at rank 1 without spending experience.";
+      body.appendChild(sp);
+      s.starting.forEach(function (tn, i) {
+        var r = document.createElement("div");
+        r.className = "mod-row";
+        var f = document.createElement("input");
+        f.type = "text";
+        f.value = tn;
+        f.addEventListener("change", function () {
+          s.starting[i] = f.value.trim(); save();
+        });
+        var x = document.createElement("button");
+        x.type = "button";
+        x.className = "ar-x-btn";
+        x.textContent = "×";
+        x.addEventListener("click", function () {
+          s.starting.splice(i, 1); save(); render();
+        });
+        r.appendChild(f);
+        r.appendChild(document.createElement("span"));
+        r.appendChild(x);
+        body.appendChild(r);
+      });
+      var add = document.createElement("button");
+      add.type = "button";
+      add.className = "btn ghost";
+      add.textContent = "+ Add a starting technique";
+      add.addEventListener("click", function () {
+        s.starting.push(""); save(); render();
+      });
+      body.appendChild(add);
+    }
+  }
+
+  // ---- step 7: curriculum and mastery
+
+  function sbRank(i) {
+    var s = activeSchool();
+    s.curriculum = s.curriculum || [];
+    while (s.curriculum.length < 5) {
+      s.curriculum.push({ skill_group: "", skills: ["", "", ""],
+                          technique_group: "", techniques: ["", ""] });
+    }
+    return s.curriculum[i];
+  }
+
+  /* The corpus's one restriction on a rank: "skills selected should not be
+     from the skill group selected for that rank". The groups are the skill
+     categories the site already knows, so membership is a lookup rather than
+     a list to maintain here. */
+  function skillsInGroup(group) {
+    // SKILL_GROUPS is group -> skill keys; the curriculum names a group as the
+    // book writes it ("Martial Skills"), so the trailing word is dropped
+    var g = normName(group).replace(/skills?$/, "");
+    var keys = SKILL_GROUPS[g] || [];
+    return keys.map(function (k) { return SKILL_LABEL[k] || k; });
+  }
+
+  // The group names as the book writes them, from the groups the site knows.
+  function sbSkillGroups() {
+    return Object.keys(SKILL_GROUPS).map(function (g) {
+      return cap(g) + " Skills";
+    });
+  }
+
+  function rankClash(r) {
+    if (!r.skill_group) return [];
+    var inGroup = skillsInGroup(r.skill_group).map(normName);
+    return (r.skills || []).filter(function (sk) {
+      return sk && inGroup.indexOf(normName(sk)) >= 0;
+    });
+  }
+
+  function renderSchoolCurriculum(body) {
+    var s = activeSchool();
+    if (!s) return needs(body, "This draft has no school on it.");
+    var cur = SCHOOLBUILD.curriculum || {};
+    var p = document.createElement("p");
+    p.className = "muted small";
+    p.textContent = "Ranks 1 to 5 hold the same seven advances each: one " +
+      "skill group, three skills, one technique group, two techniques. The " +
+      "three skills should not come from that rank's own skill group. Rank " +
+      (cur.mastery_rank || 6) + " is the mastery ability and nothing else.";
+    body.appendChild(p);
+
+    for (var i = 0; i < (cur.ranks || 5); i++) {
+      (function (i) {
+        var r = sbRank(i);
+        var card = document.createElement("div");
+        card.className = "npc-card";
+        var head = document.createElement("div");
+        head.className = "npc-head";
+        var filled = (r.skill_group ? 1 : 0) +
+          (r.skills || []).filter(Boolean).length +
+          (r.technique_group ? 1 : 0) +
+          (r.techniques || []).filter(Boolean).length;
+        head.innerHTML = '<span class="npc-tier">Rank ' + (i + 1) + "</span>" +
+          '<span class="npc-name">' + filled + " of 7</span>";
+        card.appendChild(head);
+
+        var gl = document.createElement("div");
+        gl.className = "need-row wrapped";
+        gl.innerHTML = '<span class="need-k">Skill group</span>' +
+          sbSkillGroups().map(function (g) {
+            return '<button type="button" class="choice small' +
+              (normName(r.skill_group) === normName(g) ? " active" : "") +
+              '" data-v="' + esc(g) + '">' + esc(g) + "</button>";
+          }).join("");
+        gl.addEventListener("click", function (e) {
+          var b = e.target.closest("button[data-v]");
+          if (!b) return;
+          r.skill_group = normName(r.skill_group) === normName(b.dataset.v)
+            ? "" : b.dataset.v;
+          save(); render();
+        });
+        card.appendChild(gl);
+
+        [0, 1, 2].forEach(function (k) {
+          var f = document.createElement("input");
+          f.type = "text";
+          f.className = "textline";
+          f.placeholder = "Skill " + (k + 1);
+          f.value = (r.skills || [])[k] || "";
+          f.addEventListener("change", function () {
+            r.skills[k] = f.value.trim(); save(); render();
+          });
+          card.appendChild(f);
+        });
+
+        var clash = rankClash(r);
+        if (clash.length) {
+          var w = document.createElement("p");
+          w.className = "muted small warn";
+          w.textContent = clash.join(", ") +
+            (clash.length === 1 ? " is" : " are") + " in " + r.skill_group +
+            ", this rank's own skill group — the book says the three skills " +
+            "should come from outside it.";
+          card.appendChild(w);
+        }
+
+        var tf = document.createElement("input");
+        tf.type = "text";
+        tf.className = "textline";
+        tf.placeholder = "Technique group — e.g. Rank " + (i + 1) + " Shūji";
+        tf.value = r.technique_group || "";
+        tf.addEventListener("change", function () {
+          r.technique_group = tf.value.trim(); save(); render();
+        });
+        card.appendChild(tf);
+
+        [0, 1].forEach(function (k) {
+          var f = document.createElement("input");
+          f.type = "text";
+          f.className = "textline";
+          f.placeholder = "Technique " + (k + 1);
+          f.value = (r.techniques || [])[k] || "";
+          f.addEventListener("change", function () {
+            r.techniques[k] = f.value.trim(); save(); render();
+          });
+          card.appendChild(f);
+        });
+        body.appendChild(card);
+      })(i);
+    }
+
+    label(body, "Rank " + (cur.mastery_rank || 6) + ": the mastery ability");
+    var mnote = document.createElement("p");
+    mnote.className = "muted small";
+    mnote.textContent = "Powerful and awe-inspiring, and something to aspire " +
+      "to. Purely narrative is fine; the templates below are for the more " +
+      "mechanical kind.";
+    body.appendChild(mnote);
+    sbTemplates("table210genericmasteryabilities", primaryRole())
+      .forEach(function (t) {
+        var on = s.mastery.template === t.name;
+        var card = document.createElement("div");
+        card.className = "doc-card" + (on ? " on" : "");
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "choice small" + (on ? " active" : "");
+        b.textContent = t.name.replace(/^Mastery Ability /, "") +
+                        " · " + (t.Role || "Any");
+        b.addEventListener("click", function () {
+          s.mastery.template = on ? null : t.name;
+          if (!on) s.mastery.text = t["Ability Template"] || "";
+          save(); render();
+        });
+        card.appendChild(b);
+        var d = document.createElement("div");
+        d.className = "doc-body";
+        d.textContent = t["Ability Template"] || "";
+        card.appendChild(d);
+        body.appendChild(card);
+      });
+    label(body, "The mastery ability as the school states it");
+    textField(body, "Its wording, with anything the template asks you to " +
+              "choose filled in.",
+              function () { return s.mastery.text; },
+              function (v) { s.mastery.text = v; }, "area");
+  }
+
+  // ---- step 8: outfit
+
+  function renderSchoolOutfit(body) {
+    var s = activeSchool();
+    if (!s) return needs(body, "This draft has no school on it.");
+    var t = sbForRole("table211suggestedstartingoutfits", primaryRole());
+    if (t) {
+      var d = document.createElement("div");
+      d.className = "tpl-detail";
+      d.innerHTML = "<strong>" + esc(t.name) + ", as the book suggests" +
+        "</strong>" +
+        ["Clothing and Armor", "Weapons", "Other Gear"].map(function (k) {
+          return t[k] ? '<div><span class="tk">' + esc(k) + "</span> " +
+            esc(t[k]) + "</div>" : "";
+        }).join("");
+      body.appendChild(d);
+      var take = document.createElement("button");
+      take.type = "button";
+      take.className = "btn ghost";
+      take.textContent = "Take the suggested outfit";
+      take.addEventListener("click", function () {
+        s.outfit = { clothing: t["Clothing and Armor"] || "",
+                     weapons: t.Weapons || "",
+                     other: t["Other Gear"] || "" };
+        save(); render();
+      });
+      body.appendChild(take);
+    }
+    label(body, "Clothing and armour");
+    textField(body, "", function () { return s.outfit.clothing; },
+              function (v) { s.outfit.clothing = v; });
+    label(body, "Weapons");
+    textField(body, "", function () { return s.outfit.weapons; },
+              function (v) { s.outfit.weapons = v; });
+    label(body, "Other gear");
+    textField(body, "", function () { return s.outfit.other; },
+              function (v) { s.outfit.other = v; });
+  }
+
+  // ---- step 9: name
+
+  function renderSchoolName(body) {
+    var s = activeSchool();
+    if (!s) return needs(body, "This draft has no school on it.");
+    var p = document.createElement("p");
+    p.className = "muted small";
+    p.textContent = "The name comes last, with the school in front of you. " +
+      "Its roles are listed after it, primary first.";
+    body.appendChild(p);
+    label(body, "Name");
+    textField(body, "Asahina Artificer School", function () { return s.name; },
+              function (v) { s.name = v; });
+    if (s.name) {
+      var line = document.createElement("p");
+      line.className = "muted small";
+      line.textContent = s.name +
+        (s.roles.length ? " [" + s.roles.join(", ") + "]" : "");
+      body.appendChild(line);
+    }
+    label(body, "Anything else worth recording");
+    textField(body, "", function () { return s.notes; },
+              function (v) { s.notes = v; }, "area");
+  }
+
+  // ---- what the school hands to scripts/apply_school.py
+
+  function toSchoolPatch() {
+    var s = activeSchool() || newSchoolBuild();
+    var role = primaryRole();
+    var t7 = sbForRole("table27skillchoices", role);
+    var t8 = sbForRole("table28startingtechniques", role);
+    return {
+      school: slugify(s.name || "a-school"),
+      name: s.name || null,
+      roles: (s.roles || []).slice(),
+      primary_role: role,
+      affiliation: s.affiliation || null,
+      summary: s.summary || "",
+      ability: { from_template: s.ability.template,
+                 choice: s.ability.choice || null,
+                 text: s.ability.text || "" },
+      rings: { first: s.rings.first || null, second: s.rings.second || null,
+               known_for: s.rings.known_for || null },
+      skills_available: (s.skills || []).slice(),
+      // the figures the role's own row states, so the applier can check the
+      // count without re-deriving which row applies
+      skills_available_n: t7 ? Number(t7["Skills Available"]) : null,
+      skill_picks: t7 ? Number(t7["Skill Picks"]) : null,
+      technique_access: (s.access || []).slice(),
+      starting_techniques: (s.starting || []).filter(Boolean),
+      starting_techniques_n: t8 ? t8["Number of Starting Techniques"] : null,
+      curriculum: (s.curriculum || []).slice(0, 5).map(function (r, i) {
+        return { rank: i + 1, skill_group: r.skill_group || null,
+                 skills: (r.skills || []).filter(Boolean),
+                 technique_group: r.technique_group || null,
+                 techniques: (r.techniques || []).filter(Boolean),
+                 skills_in_own_group: rankClash(r) };
+      }),
+      mastery: { from_template: s.mastery.template,
+                 text: s.mastery.text || "" },
+      outfit: { clothing: s.outfit.clothing || "",
+                weapons: s.outfit.weapons || "",
+                other: s.outfit.other || "" },
+      notes: s.notes || ""
+    };
+  }
+
+  function renderSchoolSave(body) {
+    var doc = toSchoolPatch();
+    var open = activeSteps().filter(function (x) {
+      return x.id !== "school-save" && !x.done();
+    }).map(function (x) { return x.n + ". " + x.label; });
+    var head = document.createElement("p");
+    head.className = "muted small";
+    head.innerHTML = "<strong>" + esc(doc.name || "An unnamed school") +
+      "</strong>" + (doc.roles.length
+        ? " [" + esc(doc.roles.join(", ")) + "]" : "") +
+      " — " + doc.skills_available.length + " skills, " +
+      doc.technique_access.length + " technique categories, " +
+      doc.curriculum.filter(function (r) {
+        return r.skill_group && r.skills.length === 3 &&
+               r.technique_group && r.techniques.length === 2;
+      }).length + " of 5 ranks complete.";
+    body.appendChild(head);
+    if (open.length) {
+      var w = document.createElement("p");
+      w.className = "muted small warn";
+      w.textContent = "Steps still open: " + open.join(", ") + ".";
+      body.appendChild(w);
+    }
+    var row = document.createElement("div");
+    row.className = "choicerow";
+    row.innerHTML = '<button type="button" class="btn" id="dl">Download</button>' +
+      '<button type="button" class="btn" id="cp">Copy</button>';
+    body.appendChild(row);
+    var how = document.createElement("p");
+    how.className = "muted small";
+    how.innerHTML = "Then: <code>python3 scripts/apply_school.py " +
+      esc(doc.school) + "</code> — it writes <code>src/schools/" +
+      esc(doc.school) + ".json</code> and checks it against the corpus's own " +
+      "figures first. Nothing is written without <code>--apply</code>.";
+    body.appendChild(how);
+    var pre = document.createElement("pre");
+    pre.className = "export-json";
+    pre.textContent = JSON.stringify(doc, null, 1);
+    body.appendChild(pre);
+    row.querySelector("#dl").addEventListener("click", function () {
+      var blob = new Blob([JSON.stringify(doc, null, 1)],
+                          { type: "application/json" });
+      var n = document.createElement("a");
+      n.href = URL.createObjectURL(blob);
+      n.download = doc.school + "-school.json";
+      document.body.appendChild(n); n.click(); n.remove();
+      setTimeout(function () { URL.revokeObjectURL(n.href); }, 1000);
+    });
+    row.querySelector("#cp").addEventListener("click", function () {
+      navigator.clipboard.writeText(JSON.stringify(doc, null, 1));
+    });
+  }
+
+  var SCHOOL_STEPS = [
+    { id: "school-role", n: 1, label: "Role", title: "Determine school role",
+      desc: "One or more, primary first. Nearly everything after this follows " +
+        "from the primary role.",
+      done: function () {
+        var s = activeSchool();
+        return !!(s && s.roles && s.roles.length);
+      },
+      render: renderSchoolRole },
+    { id: "school-affiliation", n: 2, label: "Affiliation",
+      title: "Choose affiliations and summary",
+      desc: "Who the school answers to, if anyone, and what it is for.",
+      done: function () {
+        var s = activeSchool();
+        return !!(s && s.summary);
+      },
+      render: renderSchoolAffiliation },
+    { id: "school-ability", n: 3, label: "Ability", title: "Design school ability",
+      desc: "The most critical element of a school's design.",
+      done: function () {
+        var s = activeSchool();
+        return !!(s && s.ability && s.ability.text);
+      },
+      render: renderSchoolAbility },
+    { id: "school-rings", n: 4, label: "Rings", title: "Ring bonuses",
+      desc: "Two increases: one from the role, one from what the school is " +
+        "known for.",
+      done: function () {
+        var s = activeSchool();
+        return !!(s && s.rings.first && s.rings.second);
+      },
+      render: renderSchoolRings },
+    { id: "school-skills", n: 5, label: "Skills", title: "Choosing skills",
+      desc: "As many as the role makes available; the player picks from among " +
+        "them at character creation.",
+      done: function () {
+        var s = activeSchool();
+        var t = sbForRole("table27skillchoices", primaryRole());
+        return !!(s && t && s.skills.length === Number(t["Skills Available"]));
+      },
+      render: renderSchoolSkills },
+    { id: "school-techniques", n: 6, label: "Techniques",
+      title: "Technique access and starting techniques",
+      desc: "Rituals plus two common categories, and the techniques members " +
+        "know at rank 1 for free.",
+      done: function () {
+        var s = activeSchool();
+        if (!s) return false;
+        var acc = SCHOOLBUILD.technique_access || {};
+        var common = s.access.filter(function (c) {
+          return (acc.common || []).indexOf(c) >= 0;
+        });
+        return common.length === (acc.choose_from_common || 2) &&
+               s.starting.filter(Boolean).length > 0;
+      },
+      render: renderSchoolTechniques },
+    { id: "school-curriculum", n: 7, label: "Curriculum",
+      title: "Curriculum and mastery ability",
+      desc: "Five ranks of seven advances each, then the mastery ability at " +
+        "rank six.",
+      done: function () {
+        var s = activeSchool();
+        if (!s || (s.curriculum || []).length < 5) return false;
+        return s.curriculum.slice(0, 5).every(function (r) {
+          return r.skill_group && (r.skills || []).filter(Boolean).length === 3 &&
+                 r.technique_group &&
+                 (r.techniques || []).filter(Boolean).length === 2;
+        }) && !!s.mastery.text;
+      },
+      render: renderSchoolCurriculum },
+    { id: "school-outfit", n: 8, label: "Outfit", title: "Starting outfit",
+      desc: "What a member of the school walks out with.",
+      done: function () {
+        var s = activeSchool();
+        return !!(s && (s.outfit.clothing || s.outfit.weapons ||
+                        s.outfit.other));
+      },
+      render: renderSchoolOutfit },
+    { id: "school-name", n: 9, label: "Name", title: "Name the school",
+      desc: "Last, with the school in front of you.",
+      done: function () {
+        var s = activeSchool();
+        return !!(s && s.name);
+      },
+      render: renderSchoolName },
+    { id: "school-save", n: 0, label: "Save", title: "Keep the school",
+      desc: "Written to src/schools/, checked against the corpus's own " +
+        "figures for the role first.",
+      done: function () { return false; },
+      render: renderSchoolSave }
+  ];
+
+  function renderSchoolWip() {
+    var s = activeSchool();
+    var box = el("wip");
+    if (!s) { box.innerHTML = ""; return; }
+    var t7 = sbForRole("table27skillchoices", primaryRole());
+    var done = (s.curriculum || []).slice(0, 5).filter(function (r) {
+      return r.skill_group && (r.skills || []).filter(Boolean).length === 3 &&
+             r.technique_group && (r.techniques || []).filter(Boolean).length === 2;
+    }).length;
+    function line(k, v) {
+      return '<div class="wip-npc"><span class="wn">' + esc(String(v)) +
+        '</span><span class="wr">' + esc(k) + "</span></div>";
+    }
+    box.innerHTML =
+      '<h3 class="wip-name">' + esc(s.name || "An unnamed school") + "</h3>" +
+      '<p class="muted small">' +
+        (s.roles.length ? esc(s.roles.join(", ")) : "no role yet") +
+        (s.affiliation ? " · " + esc(s.affiliation) : "") + "</p>" +
+      line("rings", (s.rings.first ? cap(s.rings.first) : "—") + " / " +
+                    (s.rings.second ? cap(s.rings.second) : "—")) +
+      line("skills available", s.skills.length +
+           (t7 ? " / " + t7["Skills Available"] : "")) +
+      line("technique access", s.access.join(", ") || "—") +
+      line("starting techniques", s.starting.filter(Boolean).length) +
+      line("ranks complete", done + " / 5") +
+      (s.ability.text ? '<h4 class="wip-h">School ability</h4>' +
+        '<p class="muted small">' + esc(s.ability.text.slice(0, 160)) +
+        (s.ability.text.length > 160 ? "…" : "") + "</p>" : "") +
+      (s.mastery.text ? '<h4 class="wip-h">Mastery</h4>' +
+        '<p class="muted small">' + esc(s.mastery.text.slice(0, 160)) +
+        (s.mastery.text.length > 160 ? "…" : "") + "</p>" : "");
+  }
+
   /* ---------------------------------------------------------- shell */
 
   // Path of Waves and Writ of the Wilds characters have no clan, so the
@@ -8500,6 +9406,7 @@
     if (isLegacy()) return LEGACY_STEPS;
     if (isCourt()) return COURT_STEPS;
     if (isArmy()) return ARMY_STEPS;
+    if (isSchool()) return SCHOOL_STEPS;
     return STEPS;
   }
 
@@ -8693,6 +9600,7 @@
     if (isAdvance()) return renderAdvanceWip();
     if (isCourt()) return renderCourtWip();
     if (isArmy()) return renderArmyWip();
+    if (isSchool()) return renderSchoolWip();
     var d = computed();
     var ring = RINGS.map(function (r) {
       var why = provenance(d.from.rings[r], 1);
@@ -8833,8 +9741,8 @@
     // the twenty questions are Questions; a court's seven steps are Steps, and
     // a step numbered 0 is the one at the end that saves
     el("step-n").textContent = s.eyebrow ? s.eyebrow
-      : s.n === 0 ? (isCourt() || isArmy() ? "Keep it" : "Begin")
-      : (isCourt() || isArmy() ? "Step " : "Question ") + s.n;
+      : s.n === 0 ? (isCourt() || isArmy() || isSchool() ? "Keep it" : "Begin")
+      : (isCourt() || isArmy() || isSchool() ? "Step " : "Question ") + s.n;
     el("step-title").textContent = val(s.title);
     el("step-desc").innerHTML = val(s.desc);
     var body = el("step-body");
@@ -8917,12 +9825,13 @@
       });
     // ?new=1 is the site's front-door link: start a fresh character rather
     // than resuming whichever draft happened to be open last.
-    if (q["new"] || q.court || q.army) {
+    if (q["new"] || q.court || q.army || q.school) {
       if (history.replaceState) {
         history.replaceState(null, "", location.pathname + location.hash);
       }
       if (q.court) openCourt(true);
       else if (q.army) openArmy(true);
+      else if (q.school) openSchoolBuild(true);
       else addDraft();
       return;
     }
