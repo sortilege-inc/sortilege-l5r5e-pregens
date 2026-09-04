@@ -102,6 +102,21 @@ def prop(d, *names):
     return None
 
 
+def props(d, *names):
+    """Every property of a name, in order. ^"Item" repeats — Fallen Noble has
+    two — so indexing the first would silently drop the rest."""
+    return [p for p in d.get("properties") or [] if p.get("name") in names]
+
+
+def nested_map(p):
+    """A DEF property's nested name -> value, as strings."""
+    out = {}
+    for n in (p or {}).get("nested") or []:
+        if n.get("name") is not None:
+            out[n["name"]] = n.get("value")
+    return out
+
+
 def choose_from(raw):
     """A CHOOSE clause written out longhand, as the object clans.js uses."""
     raw = raw or ""
@@ -177,78 +192,68 @@ def grants(p):
     return out, ", ".join(bits)
 
 
-# The corpus states the rate: "One koku can be exchanged for five silver bu...
-# One bu can be exchanged for ten copper zeni" (core-systems.ttrpg, the
-# currency-of-rokugan entry). So a koku is 5 bu is 50 zeni.
+# The corpus states the rate, and still does: "One koku can be exchanged for
+# five silver bu... One bu can be exchanged for ten copper zeni"
+# (core-systems.ttrpg, the currency-of-rokugan entry). Only needed for a single
+# comparable figure now — the denomination itself is explicit in ^"Wealth".
 PER_KOKU = {"koku": 1.0, "bu": 1.0 / 5, "zeni": 1.0 / 50}
 
 
-def wealth(p):
-    """Starting wealth, in the denominations the source format keeps.
+def wealth(d):
+    """Starting wealth and items, from the corpus's structured properties.
 
-    Three shapes are in use, and all three matter:
-        INTEGER 1                     a plain count of koku (seven of thirteen)
-        DEF { ^"Bu" INTEGER 4 }       another denomination
-        DEF { ^"Day's Rations" ... }  not money at all -- an item
+    ^"Wealth" is money and names its own denomination; ^"Item" is not money and
+    repeats. Returns (coins, koku_equivalent, items, label, stated).
 
-    Returns (coins, koku_equivalent, items, label). Anything that is neither a
-    denomination nor empty comes back as an item rather than being counted as
-    currency or dropped.
+    An item's Description may state what it is worth -- "An heirloom worth 3
+    koku" -- which is an appraisal, not coin in hand, so it is never added to
+    the total.
     """
     coins = {"koku": 0, "bu": 0, "zeni": 0}
-    items, bits = [], []
-    if not p:
-        return coins, 0.0, items, ""
+    items, bits, unknown = [], [], []
 
-    def add(name, value):
-        k = norm(name)
+    wnodes = props(d, "Wealth")
+    inodes = props(d, "Item")
+
+    for w in wnodes:
+        if not (w.get("nested") or []):
+            continue                      # the inherited schema declaration
+        m = nested_map(w)
         try:
-            v = int(value)
+            count = int(m.get("Count"))
         except (TypeError, ValueError):
-            items.append(str(name))
-            return
-        if k in coins:
-            coins[k] += v
-            bits.append(f"{v} {k}")
-        else:
-            # a day's rations, an heirloom, a wakizashi
-            items.append(str(name) if v == 1 else f"{name} x{v}")
+            unknown.append(f"Wealth with no readable Count: {m}")
+            continue
+        kind = str(m.get("Type") or "").strip().lower()
+        if kind not in coins:
+            unknown.append(f"Wealth in an unknown denomination {kind!r}")
+            continue
+        coins[kind] += count
+        bits.append(f"{count} {kind}")
 
-    if p.get("type") == "INTEGER":
-        n = number(p)
-        if n is not None:
-            coins["koku"] += n
-            bits.append(f"{n} koku")
-    elif p.get("type") == "STRING":
-        v = str(p.get("value") or next(
-            (m.get("value") for m in (p.get("modifiers") or [])
-             if m.get("kind") == "DEFAULT"), "") or "")
-        for m in re.finditer(r"(\d+)\s*(koku|bu|zeni)", v, re.I):
-            add(m.group(2), m.group(1))
-        if not bits and v.strip():
-            items.append(v.strip())
-    elif p.get("type") == "DEF":
-        for n in p.get("nested") or []:
-            if not n.get("name"):
-                continue
-            # an item can state what it is worth rather than a count:
-            #     ^"Heirloom" DEF { ^"Koku" INTEGER 3 }
-            # which is an heirloom worth three koku, not three koku. The worth
-            # is kept on the item; the character does not start with the coins.
-            inner = n.get("nested") or []
-            if inner and norm(n["name"]) not in coins:
-                worth = []
-                for q in inner:
-                    if q.get("name") and q.get("value") is not None:
-                        worth.append(f"{q['value']} {str(q['name']).lower()}")
-                items.append(n["name"] + (f" (worth {', '.join(worth)})"
-                                          if worth else ""))
-                continue
-            add(n["name"], 1 if n.get("value") is None else n["value"])
+    for it in inodes:
+        # A DEF with no nested at all is the metatype's own schema declaration
+        # -- core-character.ttrpg:212 declares ^"Item" DEF { } on ^"Family" as
+        # "zero or more", and every family EXTENDS it, so the resolved JSON
+        # carries an empty Item on all forty-one of them. That is inheritance,
+        # not data. A node that HAS a body but no Description is a real defect.
+        if not (it.get("nested") or []):
+            continue
+        m = nested_map(it)
+        desc = str(m.get("Description") or "").strip()
+        if not desc:
+            unknown.append(f"Item with a body but no Description: {m}")
+            continue
+        try:
+            count = int(m.get("Count") or 1)
+        except (TypeError, ValueError):
+            count = 1
+        items.append(desc if count == 1 else f"{desc} x{count}")
 
     equiv = round(sum(coins[k] * PER_KOKU[k] for k in coins), 3)
     label = ", ".join(bits + items)
-    return coins, equiv, items, label
+    real = [n for n in wnodes + inodes if (n.get("nested") or [])]
+    return coins, equiv, items, label, bool(real), unknown
 
 
 def number(p):
@@ -296,7 +301,7 @@ def build(d, kind):
     si = prop(d, "Skill Increase", "Skill Increases")
     rings, rlabel = grants(ri)
     skills, slabel = grants(si)
-    coins, koku, witems, wlabel = wealth(prop(d, "Starting Wealth"))
+    coins, koku, witems, wlabel, wstated, wbad = wealth(d)
     row = {
         "name": d["name"],
         "kind": kind,
@@ -308,7 +313,8 @@ def build(d, kind):
         "status_modification": number(prop(d, "Status Modification")),
         # the denominations as the source format keeps them, plus the single
         # koku figure the Creator adds to a family's
-        "starting_wealth_stated": prop(d, "Starting Wealth") is not None,
+        "starting_wealth_stated": wstated,
+        "wealth_unreadable": wbad,
         "starting_coins": coins,
         "starting_wealth": koku,
         "starting_wealth_label": wlabel,
@@ -405,16 +411,25 @@ def main():
                          f"3 Martial Arts skills ({', '.join(ma)}); the option "
                          f"list was truncated")
 
-    # Wealth is either coins or named items. A Starting Wealth the corpus
-    # states that produced neither means a shape nobody has read yet — which is
-    # exactly how Craftsperson's plain INTEGER 1 koku read as 0.
-    mute = [r["name"] for r in regions + ups
-            if r.get("starting_wealth_stated")
-            and not any(r["starting_coins"].values())
-            and not r["starting_items"]]
-    if mute:
-        sys.exit("FAIL — Starting Wealth is stated but read as nothing for "
-                 f"{len(mute)}: " + ", ".join(mute))
+    # A node the reader could not make sense of is a shape nobody has read yet.
+    bad = [(r["name"], m) for r in regions + ups
+           for m in (r.get("wealth_unreadable") or [])]
+    if bad:
+        sys.exit(f"FAIL — {len(bad)} Wealth/Item node(s) could not be read: "
+                 + "; ".join(f"{n}: {m}" for n, m in bad))
+
+    # The gate that matters, and the one the previous version got wrong. It
+    # keyed off "does the corpus state the old property", so when af1423f
+    # removed ^"Starting Wealth" every upbringing silently read as no wealth
+    # and the gate passed vacuously -- the exact failure mode as a moved source
+    # path giving an empty inventory. So the count is asserted instead: the
+    # book gives all thirteen upbringings a starting allotment, in coin or in
+    # kind, and none in a region.
+    silent = [r["name"] for r in ups if not r["starting_wealth_stated"]]
+    if silent:
+        sys.exit(f"FAIL — {len(silent)} of {len(ups)} upbringings state neither "
+                 f"Wealth nor Item; the book gives every one a starting "
+                 f"allotment: " + ", ".join(silent))
 
     write(OUT_REGION, "L5R_REGIONS", regions)
     write(OUT_UPBRINGING, "L5R_UPBRINGINGS", ups)
