@@ -154,15 +154,36 @@
      "school": "Yogo Preserver School",
      "concept": "A warder sent to seal something, who has not told the party what and does not intend to — and who carries the Yogo curse into the one place where betraying someone he loves is not the worst thing that could happen to him."
     },
-    "Moto Avenger School",
-    "Tengu Mask of Air Tradition",
-    "Asako Inquisitor School",
-    "Kaito Spirit Seeker School",
-    "Bayushi Deathdealer School",
-    "Matsu Berserker School",
-    "Daidoji Iron Warrior School"
+    {
+     "school": "Moto Avenger School",
+     "concept": "A Moto who has seen the Taint before, in his own people, and volunteered so someone present would recognise it early."
+    },
+    {
+     "school": "Tengu Mask of Air Tradition",
+     "concept": "A teacher who has outlived several such expeditions and joined this one because the nezumi asked him to."
+    },
+    {
+     "school": "Asako Inquisitor School",
+     "concept": "Sent to determine what came out of Shiro Hiruma, and quietly certain someone in the party already knows."
+    },
+    {
+     "school": "Kaito Spirit Seeker School",
+     "concept": "Carrying a shrine's worth of prayers on her person, and rationing which of the dead she stops for."
+    },
+    {
+     "school": "Bayushi Deathdealer School",
+     "concept": "Attached to the expedition to make sure it comes back — or that the right parts of it do; a Scorpion who has killed people and never a demon, and is unbothered by the distinction in a way that unsettles everyone."
+    },
+    {
+     "school": "Matsu Berserker School",
+     "concept": "Here to die well, and disappointed by how much walking is involved."
+    },
+    {
+     "school": "Daidoji Iron Warrior School",
+     "concept": "A Crane sent to hold a line the Crab abandoned, too polite to put it that way, and the only one who has read the Kaiu's report and believes it."
+    }
    ],
-   "pencilled_why": "Chosen 2026-09-04 for the expedition the adventure actually is: out through Crab lands into the Shadowlands, to the ruins of Shiro Hiruma. The Hiruma Scout is going home to that ruin and the Kaiu Engineer can read what is left standing; the Agasha Alchemist brews against the Taint and the Shiba Guardian keeps them alive doing it; the Yogo Preserver wards, and carries a curse that belongs to this story. The Nezumi Tattered Ear Explorer is the party's way into The Knotted Tails, which is played inside this adventure and shares this pack (decided 2026-09-04) — and at honour 18 it is a different game from the other five.\n\nSix more added 2026-09-04, taking the pack to twelve — the weight the Winter's Embrace pack carries, and appropriate now that this one serves The Knotted Tails as well. The first six were an expedition; these fill what an expedition into the Shadowlands cannot do without. Moto Avenger is the healer, and heals by Empathic Transfer — taking the wound himself, which out there is a decision every time. Asako Inquisitor reads what came through the ruin and hunts mahō. Tengu Mask of Air brings the three things the first six had none of at once: the monk role, the Sage role, and Kihō — and a tengu walking into the Shadowlands beside a nezumi is a party worth watching. Kaito Spirit Seeker fights and cleanses without choosing between them. Matsu Berserker and Bayushi Deathdealer are the weight and the knife the first six lacked: a scout, an engineer and a bodyguard, and nobody who simply wades in.\n\nKuni Warden was offered for the monk and Kihō gap and passed over; Tengu Mask of Air covers both, so nothing is missing by it.\n\nDaidoji Iron Warrior added 2026-09-04 — honour 55, Vigilance of Mind, and the Crane's field-army school going into the Shadowlands with everyone else.\n\nConcepts for the first six written 2026-09-04 — the original expedition, before the six that filled its gaps. Each has a job that ropes them to the others: a guide to a castle his family lost, a surveyor already certain of his answer, an alchemist rationing jade badly, a yōjimbō who has decided which shugenja he cannot save, a nezumi who knew this route before the humans named it, and a warder who will not say what he was sent to seal. The Agasha's and the Yogo's each fold both options together at the owner's direction, so those two carry a job and a grievance where the rest carry a job. The remaining seven have none yet.",
+   "pencilled_why": "Chosen 2026-09-04 for the expedition the adventure actually is: out through Crab lands into the Shadowlands, to the ruins of Shiro Hiruma. The Hiruma Scout is going home to that ruin and the Kaiu Engineer can read what is left standing; the Agasha Alchemist brews against the Taint and the Shiba Guardian keeps them alive doing it; the Yogo Preserver wards, and carries a curse that belongs to this story. The Nezumi Tattered Ear Explorer is the party's way into The Knotted Tails, which is played inside this adventure and shares this pack (decided 2026-09-04) — and at honour 18 it is a different game from the other five.\n\nSix more added 2026-09-04, taking the pack to twelve — the weight the Winter's Embrace pack carries, and appropriate now that this one serves The Knotted Tails as well. The first six were an expedition; these fill what an expedition into the Shadowlands cannot do without. Moto Avenger is the healer, and heals by Empathic Transfer — taking the wound himself, which out there is a decision every time. Asako Inquisitor reads what came through the ruin and hunts mahō. Tengu Mask of Air brings the three things the first six had none of at once: the monk role, the Sage role, and Kihō — and a tengu walking into the Shadowlands beside a nezumi is a party worth watching. Kaito Spirit Seeker fights and cleanses without choosing between them. Matsu Berserker and Bayushi Deathdealer are the weight and the knife the first six lacked: a scout, an engineer and a bodyguard, and nobody who simply wades in.\n\nKuni Warden was offered for the monk and Kihō gap and passed over; Tengu Mask of Air covers both, so nothing is missing by it.\n\nDaidoji Iron Warrior added 2026-09-04 — honour 55, Vigilance of Mind, and the Crane's field-army school going into the Shadowlands with everyone else.\n\nConcepts for the first six written 2026-09-04 — the original expedition, before the six that filled its gaps. Each has a job that ropes them to the others: a guide to a castle his family lost, a surveyor already certain of his answer, an alchemist rationing jade badly, a yōjimbō who has decided which shugenja he cannot save, a nezumi who knew this route before the humans named it, and a warder who will not say what he was sent to seal. The Agasha's and the Yogo's each fold both options together at the owner's direction, so those two carry a job and a grievance where the rest carry a job. The remaining seven have none yet.\n\nThe remaining seven written 2026-09-04, completing the pack. The Bayushi's and the Daidoji's fold both options together at the owner's direction.\n\nFour of the seven were chosen so the pack argues with itself without a GM having to arrange it. The Asako is sent to find what came out of Shiro Hiruma while the Yogo will not say what he was sent to seal. The Daidoji is the only one who has read the Kaiu's report and believes it, and the Kaiu is privately certain the castle cannot be held. The tengu is here because the nezumi asked him, which makes the party's two non-humans a pair rather than a coincidence. And the Moto joined to recognise the Taint early, which is the job nobody else can do and the one the Shiba cannot protect him from.",
    "pack_shared_with": [
     "The Knotted Tails"
    ]
