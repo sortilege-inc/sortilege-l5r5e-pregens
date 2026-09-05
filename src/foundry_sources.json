@@ -218,16 +218,40 @@
    "arc": "l5r5e-0.4-sins-of-regret.arc",
    "note": "For rōnin PCs of rank 2 or higher, at Closed Shell Castle: their commitment to Bushidō against an unjust lord and desperate peasants. Tied to Path of Waves' Twin Blessings Village — so a Path of Waves pack rather than a clan one, and rank 2 rather than fresh.",
    "pencilled_schools": [
-    "Student of the Talon",
-    "Treasure Hunter",
-    "Artisan of the Roads",
-    "Qamarist Shield Bearer Tradition",
-    "Woolen Hooves Trapper Tradition",
-    "Ganzu Guardian Tradition",
-    "Fortunist Monk Order",
-    "Ujik Nomad Tradition"
+    {
+     "school": "Student of the Talon",
+     "concept": "Trained by someone who never explained who was paying for it, and has lately begun to wonder."
+    },
+    {
+     "school": "Treasure Hunter",
+     "concept": "Came to Twin Blessings for the weapon caches everyone pretends are not there, and has since worked out that the village's dead river is worth more than anything buried under it."
+    },
+    {
+     "school": "Artisan of the Roads",
+     "concept": "A travelling artisan who has come through Twin Blessings before and remembers it when there were fish; paid in food and lodging for a decade, and the first to notice the village has neither left to give."
+    },
+    {
+     "school": "Qamarist Shield Bearer Tradition",
+     "concept": "Sworn to protect those who cannot protect themselves — in the village a full-time occupation, and in the castle an insult."
+    },
+    {
+     "school": "Woolen Hooves Trapper Tradition",
+     "concept": "The one who found the burnt way station first, and said nothing because nobody asked."
+    },
+    {
+     "school": "Ganzu Guardian Tradition",
+     "concept": "Someone who uses exactly as much force as a thing requires, about to meet a situation that needs more."
+    },
+    {
+     "school": "Fortunist Monk Order",
+     "concept": "Travelling with the pilgrim Naoki as far as the village and staying on when Naoki does not; a monk who reads the imbalance as a Fortune's displeasure, and is unpopular for saying whose."
+    },
+    {
+     "school": "Ujik Nomad Tradition",
+     "concept": "A Ujik rider a long way from the steppe, who stayed because the winter closed and then because it mattered — the only one in the party who can leave whenever she likes, and who keeps not leaving."
+    }
    ],
-   "pencilled_why": "Chosen 2026-09-04. Every one is clanless, because the adventure is written for rōnin of rank 2 or higher and is about whether Bushidō means anything to the masterless: an unjust lord, desperate peasants, and endings that range from being sworn into service (rōnin no longer) to replacing the daimyō outright.\n\nThree are Path of Waves rōnin schools — Student of the Talon, Treasure Hunter for the village's hidden caches, Artisan of the Roads for a traveller among villagers who have nothing — with Qamarist Shield Bearer as the masterless warrior who already has a creed, which is exactly the test. Woolen Hooves Trapper reads the land the adventure has broken: a river moved, crops dead, no fish. Ganzu Guardian, Ujik Nomad and Fortunist Monk Order are the far-travelled and the devout, so the party converges on a Rokugani backwater from four different elsewheres rather than being one band.\n\nTreasure Hunter and Artisan of the Roads are also the schools of published pregens — Otgontogoch Turgen and Akagi Daichi, both from The Highwayman. That overlap is structural rather than accidental: The Highwayman is a rōnin adventure too and the Path of Waves set is only eight schools, so the only published non-core pregens draw on the same ones. Untouched by the archive, so they still add coverage.",
+   "pencilled_why": "Chosen 2026-09-04. Every one is clanless, because the adventure is written for rōnin of rank 2 or higher and is about whether Bushidō means anything to the masterless: an unjust lord, desperate peasants, and endings that range from being sworn into service (rōnin no longer) to replacing the daimyō outright.\n\nThree are Path of Waves rōnin schools — Student of the Talon, Treasure Hunter for the village's hidden caches, Artisan of the Roads for a traveller among villagers who have nothing — with Qamarist Shield Bearer as the masterless warrior who already has a creed, which is exactly the test. Woolen Hooves Trapper reads the land the adventure has broken: a river moved, crops dead, no fish. Ganzu Guardian, Ujik Nomad and Fortunist Monk Order are the far-travelled and the devout, so the party converges on a Rokugani backwater from four different elsewheres rather than being one band.\n\nTreasure Hunter and Artisan of the Roads are also the schools of published pregens — Otgontogoch Turgen and Akagi Daichi, both from The Highwayman. That overlap is structural rather than accidental: The Highwayman is a rōnin adventure too and the Path of Waves set is only eight schools, so the only published non-core pregens draw on the same ones. Untouched by the archive, so they still add coverage.\n\nConcepts written 2026-09-04, completing the pack. Four fold both options together at the owner's direction — the Treasure Hunter, the Artisan, the Fortunist monk and the Ujik — and four take the second alone.\n\nThe mix does something the two sets did not do separately. The village's claim on the party comes through the four doubled concepts: an artisan who remembers Twin Blessings when there were fish, a monk who will name the Fortune responsible, a rider who stayed first because the winter closed and then because it mattered, a treasure hunter who came for the caches and worked out the river is worth more. The four singles keep what each of them has not said: a student wondering who paid for his training, a trapper who found the burnt way station and kept quiet, a guardian about to need more force than he uses, and a Qamarist whose oath is a full-time job in the village and an insult in the castle.\n\nThe Qamarist is the hinge either way. At honour 50 against a pack running 27 to 45, he already holds the creed the adventure exists to test, and he is the one for whom the ending that offers a lordship is a demotion.\n\nThe monk's Naoki is the arc's own: the pilgrim who may accompany the PCs to Twin Blessings.",
    "build_note": "The one pack that does not start at rank 1: the adventure specifies rōnin of rank 2 or higher. scripts/generate_pregen.py builds at 0 XP and rank 1, so each of these needs building and then advancing through the Creator. The target XP is not decided yet — settle it before the pack is built rather than after."
   },
   "Slow Tide Harbor": {
