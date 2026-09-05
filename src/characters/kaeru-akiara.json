@@ -1,0 +1,176 @@
+{
+ "slug": "kaeru-akiara",
+ "name": "Kaeru Akiara",
+ "folder_label": "Kaeru Akiara",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "Children of the Five Winds",
+  "adventure": "The Lost Writer in the City of the Rich Frog",
+  "publisher": "Edge Studio",
+  "code": "ESL5R18EN-DLC01",
+  "source_file": "l5r5e-0.4-children-of-five-winds-pregens.actor"
+ },
+ "identity": {
+  "pronouns": "He/Him",
+  "clan": "Rōnin (formerly Lion)",
+  "family": "Kaeru (formerly Akodo)",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
+  "school": "Rōnin (Worldly Rōnin Path)",
+  "role": "Bushi",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "DLC pregen — a Bushi and Courtier rōnin, formerly an Akodo of the Lion Clan, now of the Kaeru of the City of the Rich Frog.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": null,
+ "demeanor": null,
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Rōnin (Worldly Rōnin Path)",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 2,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 2,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 2,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 30,
+    "glory": 44,
+    "status": 35,
+    "ninjo": "Your heart yearns for the bygone days where you fought side-by-side with your fellow soldiers in the Lion Clan. You are always craving a fight, and that sometimes overwhelms your better judgment.",
+    "giri": "To uphold the laws of the City of the Rich Frog and maintain the strength and prosperity of your found-family, the Kaeru.",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 6,
+    "focus": 5,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "koku": 0,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Hawk's Precision",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata"
+    },
+    {
+     "name": "Pelting Hail Style",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata"
+    },
+    {
+     "name": "All in Jest",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "School of Waves",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "Choose one bonus curriculum skill; this skill henceforth counts as part of the Worldly Rōnin Path curriculum for you at all ranks. Each time your school rank increases, choose one additional bonus curriculum skill this way. When you make a check using one of your bonus curriculum skills, you may negate 1 Strife symbol."
+    },
+    {
+     "name": "Playfulness",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "When you say something untoward to someone of lower or equal status, they write it off as your playful nature instead of being significantly angered or saddened by it."
+    },
+    {
+     "name": "Impatience",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "You find it difficult to repress yourself, and when you are forced to wait, it causes you palpable discomfort. If given the choice between seizing an opportunity and waiting for a better moment, you strive to seize the opportunity despite risks that might be mitigated if you act later."
+    }
+   ],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [],
+   "advancements": []
+  }
+ ]
+}

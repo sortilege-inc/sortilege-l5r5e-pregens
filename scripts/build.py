@@ -727,8 +727,14 @@ def campaigns(cx):
 
 
 def school_aliases():
-    """Character school name -> compendium spelling, for entries the compendium
-    gets wrong. The source file keeps the printed spelling; only the match bends."""
+    """Character school name -> compendium spelling.
+
+    Two cases, and neither is a dirty record: the compendium has a typo, or a
+    printed sheet names a school differently from the roll (the Children of the
+    Five Winds folios call the Dragonfly school 'Grace of the Spirits' and put
+    the clan in front of the Worldly Rōnin Path). The source file keeps the
+    printed spelling -- a transcription is not ours to reword -- and only the
+    match bends."""
     src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
     out = {}
     for name, spec in (src.get("school_aliases") or {}).items():

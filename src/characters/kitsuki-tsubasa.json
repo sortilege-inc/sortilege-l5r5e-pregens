@@ -1,0 +1,176 @@
+{
+ "slug": "kitsuki-tsubasa",
+ "name": "Kitsuki Tsubasa",
+ "folder_label": "Kitsuki Tsubasa",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "Children of the Five Winds",
+  "adventure": "The Lost Writer in the City of the Rich Frog",
+  "publisher": "Edge Studio",
+  "code": "ESL5R18EN-DLC01",
+  "source_file": "l5r5e-0.4-children-of-five-winds-pregens.actor"
+ },
+ "identity": {
+  "pronouns": "They/Them",
+  "clan": "Dragon",
+  "family": "Kitsuki",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
+  "school": "Kitsuki Investigator",
+  "role": "Courtier",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "DLC pregen — Courtier and Bushi of the Dragon Clan, a Kitsuki Investigator.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": null,
+ "demeanor": null,
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Kitsuki Investigator",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 3,
+    "earth": 3,
+    "fire": 2,
+    "water": 1,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 2,
+     "medicine": 1,
+     "sentiment": 2,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "Your desire for the truth in every situation is absolute, and can sometimes put yourself or others in awkward or dangerous situations.",
+    "giri": "Your sworn duty is to seek the truth, but also maintain the social order. You are expected to smooth over any situation that would cause the Dragon Clan or their allies embarrassment.",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 2,
+    "void_points": 1
+   },
+   "money": {
+    "koku": 0,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Tactical Assessment",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata"
+    },
+    {
+     "name": "Shallow Waters",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Honest Assessment",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Kitsuki's Method",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "When performing a check to investigate with any skill (see The Art of Investigation, on page 170 of the CRB), you may treat your ranks in the skill you are using as being equal to your school rank. If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add a kept Success set to an Opportunity result instead."
+    },
+    {
+     "name": "Gossip",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "At the start of each scene, you can always identify the character present who will know the juiciest rumors (besides yourself, obviously)."
+    },
+    {
+     "name": "Perfectionism",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "Anything short of perfection in your work is unacceptable to you, and you have been known to create works of beauty only to cast them aside over some perceived flaw. You cannot help but try to improve any work in which you identify a flaw, even if it means informing someone of higher status of an error they have made."
+    }
+   ],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [],
+   "advancements": []
+  }
+ ]
+}

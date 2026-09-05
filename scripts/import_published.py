@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """The published pregens, from the corpus into src/characters/.
 
-Three FFG products ship pregenerated PCs, and all twenty were already
-transcribed verbatim into the DSL corpus as `.actor` files -- they were just
-missing from the synthesist manifest, so nothing downstream could see them.
-This reads them out of the resolved corpus and writes one character record per
-pregen, marked `provenance: "published"`.
+Four products ship pregenerated PCs -- three from FFG and the Children of the
+Five Winds sheet pack from Edge Studio -- and all twenty-six are transcribed
+verbatim into the DSL corpus as `.actor` files. This reads them out of the
+resolved corpus and writes one character record per pregen, marked
+`provenance: "published"`.
 
 That mark is the whole point of the second category. A published pregen is
 somebody else's character:
@@ -23,6 +23,7 @@ timeline. They are pregens; the point of having them is to hand one to someone.
 Three sheet shapes, and each is followed rather than flattened:
 
   Wedding at Kyotei Castle  the full core sheet -- clan, family, school, giri
+  Children of the Five Winds  the same, plus the pronouns those sheets print
   Beginner Game             simplified: clan and family but no school and no
                             status, because the seven are students competing
                             to graduate
@@ -66,6 +67,14 @@ PRODUCTS = {
         "adventure": "Wedding at Kyotei Castle",
         "publisher": "Fantasy Flight Games", "year": 2018,
     },
+    # The DLC sheet pack, and the one product here that is not FFG's. No year:
+    # the corpus's header states the publisher and the product code and not a
+    # date, and the plaque leaves it out rather than have one guessed.
+    "l5r5e-0.4-children-of-five-winds-pregens.actor": {
+        "product": "Children of the Five Winds",
+        "adventure": "The Lost Writer in the City of the Rich Frog",
+        "publisher": "Edge Studio", "code": "ESL5R18EN-DLC01",
+    },
 }
 
 SKILL_GROUPS = {
@@ -88,6 +97,9 @@ SKILL_KEY.update({
 RINGS = ("air", "earth", "fire", "water", "void")
 
 # "Quick Reflexes (Fire) — Distinction" / "Fear of Death (Earth) — Anxiety"
+# name -> technique type, built from the corpus in main()
+TECH_INDEX = {}
+
 PEC_RE = re.compile(
     r"^(?P<name>.*?)\s*(?:\((?P<ring>Air|Earth|Fire|Water|Void)\))?"
     r"\s*[—–-]\s*(?P<kind>Distinction|Passion|Adversity|Anxiety)\s*$", re.I)
@@ -130,6 +142,40 @@ def walk(n):
     elif isinstance(n, list):
         for v in n:
             yield from walk(v)
+
+
+# The DLC sheet pack names its techniques and nothing else -- "the techniques
+# are named (their full rules live in the core corpus)", as its own header puts
+# it -- where the FFG folios print "Lightning Raid (Shūji)". A type is a fact
+# the corpus already states, so it is looked up rather than left blank: the
+# corpus files each technique as a sub-entity of a DEF named for its type.
+# These are those DEFs, by their corpus spelling.
+TECH_TYPE_DEFS = {"kata": "kata", "shūji": "shuji", "invocation": "invocation",
+                  "ritual": "ritual", "kihō": "kiho", "mahō": "maho",
+                  "ninjutsu": "ninjutsu", "inversion": "inversion",
+                  "mantra": "mantra", "opportunity": "opportunity"}
+
+
+def technique_types(corpus):
+    """norm(technique name) -> its type, as the corpus files it.
+
+    All ten type DEFs and 174 techniques, and no name sits under two of them,
+    so this cannot pick the wrong one. Where a printed sheet states the type
+    itself that label wins and this is not consulted -- the Wedding at Kyotei
+    folio calls Hawk's Precision a New Opportunity where the corpus files it as
+    a kata, and a transcription keeps what its own sheet says.
+    """
+    idx = {}
+    for d in walk(corpus):
+        if not (isinstance(d, dict) and d.get("kind") == "def"):
+            continue
+        kind = TECH_TYPE_DEFS.get(str(d.get("name") or "").strip().lower())
+        if not kind:
+            continue
+        for sub in d.get("sub_entities") or []:
+            if isinstance(sub, dict) and sub.get("name"):
+                idx.setdefault(norm(sub["name"]), kind)
+    return idx
 
 
 def listing(value):
@@ -285,6 +331,9 @@ def build(entity, source, report):
             if qm:
                 kind = TECH_KIND.get(qm.group("kind").strip().lower())
                 note = qm.group("how").strip()
+        if not kind and not paren:
+            # a bare name: the corpus knows what type it is
+            kind = TECH_INDEX.get(norm(tname))
         if not kind:
             # keep the parenthetical in the name rather than dropping what the
             # sheet says about it
@@ -379,6 +428,11 @@ def build(entity, source, report):
         "provenance": "published",
         "published": dict(PRODUCTS[source], source_file=source),
         "identity": {
+            # Only the DLC sheets print these, and all six of them do. Kept
+            # because the record is a transcription: a pronoun the printed
+            # folio states is not ours to drop, and guessing one later from a
+            # Rokugani name is exactly the mistake it prevents.
+            "pronouns": P.get("Pronouns"),
             "clan": P.get("Clan"),
             "family": P.get("Family"),
             "region": P.get("Region"),
@@ -415,6 +469,9 @@ def main():
     corpus = (compose(args.refresh) if args.refresh or not os.path.exists(CACHE)
               else json.load(open(CACHE, encoding="utf-8")))
 
+    global TECH_INDEX
+    TECH_INDEX = technique_types(corpus)
+
     found = []
     for d in walk(corpus):
         if not (isinstance(d, dict) and d.get("kind") == "def"):
@@ -426,7 +483,7 @@ def main():
 
     if not found:
         sys.exit("FAIL — no *-pregens.actor entities in the composed corpus. "
-                 "The three files are on disk; if they are not in the "
+                 "The four files are on disk; if they are not in the "
                  "synthesist manifest's load_order they compile to nothing. "
                  "See the synthesist skill on manifest drift.")
 
@@ -435,7 +492,8 @@ def main():
     # rather than reported as a clean run.
     expected = {"l5r5e-0.4-emerald-champion-pregens.actor": 7,
                 "l5r5e-0.4-highwayman-pregens.actor": 6,
-                "l5r5e-0.4-wedding-kyotei-pregens.actor": 7}
+                "l5r5e-0.4-wedding-kyotei-pregens.actor": 7,
+                "l5r5e-0.4-children-of-five-winds-pregens.actor": 6}
     per_file = {}
     for _, src in found:
         per_file[src] = per_file.get(src, 0) + 1

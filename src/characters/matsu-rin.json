@@ -1,0 +1,176 @@
+{
+ "slug": "matsu-rin",
+ "name": "Matsu Rin",
+ "folder_label": "Matsu Rin",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "Children of the Five Winds",
+  "adventure": "The Lost Writer in the City of the Rich Frog",
+  "publisher": "Edge Studio",
+  "code": "ESL5R18EN-DLC01",
+  "source_file": "l5r5e-0.4-children-of-five-winds-pregens.actor"
+ },
+ "identity": {
+  "pronouns": "She/Her",
+  "clan": "Lion",
+  "family": "Matsu",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
+  "school": "Matsu Berserker",
+  "role": "Bushi",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "DLC pregen — Bushi of the Lion Clan, a Matsu Berserker.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": null,
+ "demeanor": null,
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Matsu Berserker",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 1,
+    "earth": 2,
+    "fire": 3,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 2,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 0,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 1,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 55,
+    "glory": 44,
+    "status": 35,
+    "ninjo": "You have the heart of a romantic and have a soft spot for the injured, frightened, or love stuck – whether they are mortals or spirits.",
+    "giri": "Your duty to your clan is to find the missing author and protect the City of the Rich Frog, while saving face for the Lion Clan and the Governor Miya.",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 1
+   },
+   "money": {
+    "koku": 0,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Spinning Blades Style",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "kata"
+    },
+    {
+     "name": "Stirring the Embers",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Lord Akodo's Roar",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Matsu's Fury",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "After you suffer a critical strike or unmask, you may suffer the Enraged condition to remove an amount of fatigue from yourself equal to your school rank."
+    },
+    {
+     "name": "Daredevil",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "You can risk your life without consideration or hesitation, even if the potential consequences are obvious and dire."
+    },
+    {
+     "name": "Painful Honesty",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "You are tormented by internal conflict when you lie or allow a lie to pass. You cannot make claims you know to be false, although you can say technically truthful things that imply untruths, if politeness or circumstances demand it."
+    }
+   ],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [],
+   "advancements": []
+  }
+ ]
+}

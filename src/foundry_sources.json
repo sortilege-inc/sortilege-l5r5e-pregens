@@ -78,8 +78,8 @@
  "campaign_list": {
   "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current. Where one pack serves two adventures, the base adventure holds the shortlist and names the other in `pack_shared_with`; the other carries `pack_from` pointing back. The build refuses a one-sided link, and the double-booking check ignores a shared list — the same schools in two packs is the point there, not a slip. A `pencilled_schools` entry is either the school's roll name or an object with `school` and a one-line `concept` — the premise, which the stub carries into the draft's concept field. A `family` on a pencilled entry is the family that build takes. Where a school is named for a family it carries that family — the matching build. Every one of those schools also owes a second build where the family differs, and possibly the clan too; those are not set yet, and will need their own entries rather than replacing these. `gender` on a pencilled entry is that build's gender — male, female or nonbinary — set so each pack splits close to evenly, with three non-binary characters across the whole plan. build.py refuses a gender that disagrees with a pronoun in its own concept, and the fix is to rewrite the sentence: the pronouns in these concepts were written when the lines were drafted rather than chosen, so they are not evidence of anything and were not allowed to decide the split (owner, 2026-09-05).",
   "Blood of the Lioness": {
-   "arc": null,
-   "note": "Not on disk: no corpus file, no source PDF, and not in the compendium's book list. Legacies of War, which is converted, is its supplement and describes it — a three-part adventure at the Castle of the Swift Sword whose Part Two is played in the past, with Legacy advantages linking each present PC to a predecessor. Its own page 12 holds The Advisors, the pregens for that past party. Find the source and convert it, then the arc goes here.",
+   "arc": "l5r5e-0.4-blood-of-the-lioness.arc",
+   "note": "Converted 2026-09-05: arc, lore, a three-statblock cast and its two new mechanics (the Ancestral Army invocation, the Student of Akodo distinction) are on disk. \"Blood of the Lioness: An Adventure at the Battle of Snow Plain\" (L5R15DLC01a, FFG) — three parts at the Castle of the Swift Sword in 1123, investigating a contested diamond mine, playing the Battle of Snow Plain of 820 in a vision, and arbitrating the consequences. Fields of Victory, already converted, continues it. STILL MISSING: The Advisors, the premade historical PCs on page 12, which the arc's Part Two scene list and Legacies of War both point at and which no file in the corpus holds — six schools' worth of published pregens that would belong in the second category once converted. This pack's nine builds are the present-day party and do not depend on them.",
    "_pack_shape": "This one wants two sets rather than one: a present party for Parts One and Three, and a past party for Part Two — either The Advisors from the adventure itself or characters built to be their predecessors. The Creator's Legacy step is already the Legacies of War mechanic, so the link between the two is buildable today; what is missing is the adventure that says who they are.",
    "pencilled_schools": [
     {
@@ -539,8 +539,8 @@
    "setting": "The Kintani — the Golden Valley — during the Crane–Lion border war, at Kyotei Castle, one of the first Lion castles to fall. An introductory scenario, so these are young samurai, and its first scene is the war's cost on the peasantry rather than the wedding.\n\nTwo of the six concepts carry things the adventure means the players to discover: the Ide knows an impostor has been using his clan's name, and the Kaito knows the shrine has been desecrated. Harmless where they are — a pack concept reaches only the draft's concept field, which is never exported — but if either is ever copied into the `concepts` block for a promoted character, put the second half under a heading so promote.py's player_facing() cuts it before it lands as a public bio."
   },
   "Wheel of Judgment": {
-   "arc": null,
-   "note": "The adventure is not on disk: no corpus file, no source PDF, and not in the compendium's book list. Its only trace is Deathly Turns, which supplements it — a Spirit Realms adventure the party returns from, with the maō Burakakin in it. Find the source and convert it, then the arc goes here.",
+   "arc": "l5r5e-0.4-wheel-of-judgment.arc",
+   "note": "Converted 2026-09-05: arc, lore and a 24-statblock cast are on disk. \"Wheel of Judgment: An Adventure in the Underworld\" (L5R13DLC01a, FFG) — three parts across Meido, Jigoku and Gaki-dō, for characters who have died in the Mortal Realm and are stuck in the Realm of Waiting because the records of their lives have gone missing. It ships no pregens and is played with the players' own dead characters, so this pack is entirely ours: six schools chosen for people who arrive already dead. Deathly Turns supplements it and is excused in arcs_without_a_campaign.",
    "pencilled_schools": [
     {
      "school": "Toritaka Phantom Hunter School",
@@ -901,6 +901,17 @@
   "The Wandering Blade": "Wandering Blade",
   "Isawa Tensai School": "Isawa Tensai",
   "Yogo Preserver School": "Yogo Preserver"
+ },
+ "school_aliases": {
+  "_comment": "Character school name -> the compendium's roll name, for the two cases where they differ and neither side is dirty: a compendium typo, or a printed sheet naming a school differently from the roll. The character record keeps its own spelling — a published pregen's record is a transcription and is not ours to reword — and only the match bends. Every entry states the evidence, because a school that resolves to the wrong roll name is a wrong coverage number.",
+  "Grace of the Spirits": {
+   "roll_name": "Dragonfly Grace of the Spirits School",
+   "why": "The Children of the Five Winds DLC folio prints Tonbo Goro's school as 'Grace of the Spirits'. The compendium roll and Writ of the Wilds p96 both name it 'Dragonfly Grace of the Spirits School' (the corpus DEF is ^\"Dragonfly Grace of the Spirits\"). Same school, and the roll's spelling is what coverage keys off."
+  },
+  "Rōnin (Worldly Rōnin Path)": {
+   "roll_name": "Worldly Ronin Path",
+   "why": "The same folio prints Kaeru Akiara's school as 'Rōnin (Worldly Rōnin Path)' — the clan in front of the path. The roll has 'Worldly Ronin Path' (Core Rulebook p87), and the corpus DEF is ^\"Worldly Rōnin Path\"; the macron folds, the parenthetical does not, so the whole string is mapped."
+  }
  },
  "school_name_corrections": {
   "_comment": "The Foundry l5r5e system's core-journal-school-curriculum pack misspells two school titles, and l5r5e-compendia-sortilege mirrors it. Corrected at catalog load in scripts/build.py, so the site shows what the book prints and the compendium title never reaches a page. Verified against the source text in ~/Working/sources/l5r5e. Delete an entry once the upstream pack is fixed.",

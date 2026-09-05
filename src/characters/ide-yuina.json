@@ -1,0 +1,176 @@
+{
+ "slug": "ide-yuina",
+ "name": "Ide Yuina",
+ "folder_label": "Ide Yuina",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "Children of the Five Winds",
+  "adventure": "The Lost Writer in the City of the Rich Frog",
+  "publisher": "Edge Studio",
+  "code": "ESL5R18EN-DLC01",
+  "source_file": "l5r5e-0.4-children-of-five-winds-pregens.actor"
+ },
+ "identity": {
+  "pronouns": "She/Her",
+  "clan": "Unicorn",
+  "family": "Ide",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
+  "school": "Ide Trader",
+  "role": "Courtier",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "DLC pregen — Courtier of the Unicorn Clan, an Ide Trader.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": null,
+ "demeanor": null,
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Ide Trader",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 3,
+    "earth": 2,
+    "fire": 1,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 2,
+     "games": 1,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 2,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 40,
+    "status": 30,
+    "ninjo": "To protect your friend, Higuchi, from harm – even if that means convincing her to give up writing because she is putting herself in increasingly dangerous situations trying to perfect her stories.",
+    "giri": "To protect Higuchi, her secret identity, and her ability to continue writing as her work provides a great deal of financial assets to your lord.",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "koku": 0,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Tributaries of Trade",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Shallow Waters",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Feigned Opening",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "Vendor of Strange Wares",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "Ignore the Forbidden quality when acquiring and handling items. When acquiring, selling, or gifting an item, you may treat its rarity as reduced or increased by your school rank."
+    },
+    {
+     "name": "Brushwork",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "You can identify the signature styles of numerous different schools and individual artists, as well as common motifs and techniques."
+    },
+    {
+     "name": "Meekness",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "You are extremely shy, and you struggle to stand up for yourself. You cannot interrupt people of higher status, and you find it very hard to assert yourself over anyone, including people of lower status."
+    }
+   ],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [],
+   "advancements": []
+  }
+ ]
+}

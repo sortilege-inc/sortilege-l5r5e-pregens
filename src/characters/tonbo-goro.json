@@ -1,0 +1,212 @@
+{
+ "slug": "tonbo-goro",
+ "name": "Tonbo Goro",
+ "folder_label": "Tonbo Goro",
+ "campaign": null,
+ "status": null,
+ "bucket": null,
+ "accent": null,
+ "provenance": "published",
+ "published": {
+  "product": "Children of the Five Winds",
+  "adventure": "The Lost Writer in the City of the Rich Frog",
+  "publisher": "Edge Studio",
+  "code": "ESL5R18EN-DLC01",
+  "source_file": "l5r5e-0.4-children-of-five-winds-pregens.actor"
+ },
+ "identity": {
+  "pronouns": "He/Him",
+  "clan": "Dragonfly",
+  "family": "Tonbo",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null,
+  "school": "Grace of the Spirits",
+  "role": "Courtier",
+  "age": ""
+ },
+ "portrait": null,
+ "concept": "DLC pregen — Courtier and Shugenja of the Dragonfly Clan, of the Grace of the Spirits school.",
+ "summary": null,
+ "notes": null,
+ "twenty_questions": null,
+ "relationships": null,
+ "demeanor": null,
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Grace of the Spirits",
+   "foundry_id": null,
+   "foundry_name": null,
+   "rings": {
+    "air": 2,
+    "earth": 1,
+    "fire": 2,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 2,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 2,
+     "games": 1,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 40,
+    "glory": 35,
+    "status": 30,
+    "ninjo": "You secretly wish to leave the City of the Rich Frog and pursue spiritual studies elsewhere, as your current position feels stifling and mentally taxing.",
+    "giri": "Your sworn duty is to protect the shrine garden of the City of the Rich Frog and do whatever you can to bring peace to the spirits under your care that dwell in the city.",
+    "bushido_tenets": {
+     "paramount": null,
+     "less_significant": null
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "koku": 0,
+    "bu": 0,
+    "zeni": 0
+   },
+   "techniques": [
+    {
+     "name": "Dominion of Suijin",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "invocation"
+    },
+    {
+     "name": "Reflections of P'an Ku",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "invocation"
+    },
+    {
+     "name": "Heart of the Water Dragon",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "invocation"
+    },
+    {
+     "name": "Cleansing Rite",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "ritual"
+    },
+    {
+     "name": "Commune with the Spirits",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "ritual"
+    },
+    {
+     "name": "Threshold Barrier",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "ritual"
+    },
+    {
+     "name": "Truth Burns through Lies",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "shuji"
+    },
+    {
+     "name": "May the Spirits Show the Path",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "Once per scene if you would fail a Social check, you may immediately make a TN 5 Theology check, with the TN being reduced by a number equal to your school rank (to a minimum of 1). If you succeed, you may change any kept Strife on that Social check to Success results instead."
+    },
+    {
+     "name": "Travel",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "You are not unsettled by foreign customs, and you can comfortably fit in even in strange environments."
+    },
+    {
+     "name": "Fear of Death",
+     "xp_used": 0,
+     "xp_cost": 0,
+     "in_curriculum": false,
+     "bought_at_rank": 0,
+     "custom": true,
+     "kind": "school_ability",
+     "description": "You cannot voluntarily choose to die or sacrifice your life (including committing seppuku when honor demands it), and if there is a chance you could live, you must always pursue it."
+    }
+   ],
+   "peculiarities": [],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [],
+   "advancements": []
+  }
+ ]
+}

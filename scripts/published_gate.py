@@ -33,7 +33,8 @@ DATA = os.path.join(ROOT, "data")
 # what each product ships, from the printed products
 EXPECTED = {"Legend of the Five Rings Beginner Game": 7,
             "The Highwayman": 6,
-            "Wedding at Kyotei Castle": 7}
+            "Wedding at Kyotei Castle": 7,
+            "Children of the Five Winds": 6}
 
 
 def payload(path, var):

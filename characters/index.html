@@ -52,8 +52,8 @@
 
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
-<script src="../data/roster.js?v=5d00cbf8"></script>
-<script src="../data/campaigns.js?v=670a2146"></script>
+<script src="../data/roster.js?v=49ff1c77"></script>
+<script src="../data/campaigns.js?v=e10a4c18"></script>
 <script src="../assets/roster.js?v=2cefdb59"></script>
 <script>
 (function () {
@@ -71,9 +71,10 @@
   }
   var published = document.getElementById("published");
   // Two kinds of character live here. The archive is the work — one build per
-  // school, ours. The published pregens are the folios FFG shipped with the
-  // Beginner Game and the Gen Con adventures, transcribed verbatim: useful to
-  // hand to a player, but not ours and not what the coverage count is about.
+  // school, ours. The published pregens are the folios shipped with the
+  // Beginner Game, the Gen Con adventures and the Children of the Five Winds
+  // sheet pack, transcribed verbatim: useful to hand to a player, but not ours
+  // and not what the coverage count is about.
   // So they are off by default and the toggle says how many are waiting.
   var mine = chars.filter(function (c) { return c.provenance !== "published"; });
   var pubs = chars.filter(function (c) { return c.provenance === "published"; });
