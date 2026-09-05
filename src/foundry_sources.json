@@ -854,5 +854,442 @@
   "l5r5e-0.4-emerald-champion.arc": "The Beginner Game: its seven character folios are already here as published pregens, so it needs no pack of its own.",
   "l5r5e-0.4-topaz-championship.arc": "The Beginner Game's core adventure, played with the same seven folios as In the Palace of the Emerald Champion.",
   "l5r5e-0.4-highwayman.arc": "Ships its own six pregens, already here as published pregens."
+ },
+ "second_builds": {
+  "_comment": "The second build owed on every school named for a family. The first is on the campaign's pencilled entry and takes the school's own family; this is the one where it does not. `kind` is vassal, out of family (same clan, different family) or out of clan, split as near to thirds as the corpus allows. `family` is set where it is determined — the vassal house, or a named family of the same clan — and left null for out of clan, because which clan somebody crossed from is a story decision and there are twenty of them. Nothing here is a character yet: these are not stubs and count towards no coverage.",
+  "Agasha Alchemist School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Agasha",
+   "clan": "Dragon",
+   "kind": "vassal",
+   "family": "Izaku"
+  },
+  "Agasha Ascetic School": {
+   "campaign": "Portents & Fortunes",
+   "first_build_family": "Agasha",
+   "clan": "Dragon",
+   "kind": "vassal",
+   "family": "Izaku"
+  },
+  "Agasha Mystic School": {
+   "campaign": "The Bushi Oni Part II",
+   "first_build_family": "Agasha",
+   "clan": "Dragon",
+   "kind": "out of family",
+   "family": "Kitsuki"
+  },
+  "Akodo Commander School": {
+   "campaign": "Blood of the Lioness",
+   "first_build_family": "Akodo",
+   "clan": "Lion",
+   "kind": "vassal",
+   "family": "Damasu"
+  },
+  "Akodo Soldier School": {
+   "campaign": "No Scenario",
+   "first_build_family": "Akodo",
+   "clan": "Lion",
+   "kind": "vassal",
+   "family": "Goseki"
+  },
+  "Asahina Envoy School": {
+   "campaign": "Wedding at Kyotei Castle",
+   "first_build_family": "Asahina",
+   "clan": "Crane",
+   "kind": "vassal",
+   "family": "Ashidaka"
+  },
+  "Asako Inquisitor School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Asako",
+   "clan": "Phoenix",
+   "kind": "vassal",
+   "family": "Nasu"
+  },
+  "Asako Loremaster School": {
+   "campaign": "Blood of the Lioness",
+   "first_build_family": "Asako",
+   "clan": "Phoenix",
+   "kind": "vassal",
+   "family": "Nasu"
+  },
+  "Bayushi Deathdealer School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Bayushi",
+   "clan": "Scorpion",
+   "kind": "vassal",
+   "family": "Rokugo"
+  },
+  "Bayushi Manipulator School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Bayushi",
+   "clan": "Scorpion",
+   "kind": "vassal",
+   "family": "Rokugo"
+  },
+  "Daidoji Iron Warrior School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Daidoji",
+   "clan": "Crane",
+   "kind": "vassal",
+   "family": "Hanako"
+  },
+  "Doji Diplomat School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Doji",
+   "clan": "Crane",
+   "kind": "out of family",
+   "family": "Daidoji"
+  },
+  "Hiruma Scout School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Hiruma",
+   "clan": "Crab",
+   "kind": "out of family",
+   "family": "Kuni"
+  },
+  "Ichirō Ironsmith School": {
+   "campaign": "The Bushi Oni Part II",
+   "first_build_family": "Ichirō",
+   "clan": "Badger",
+   "kind": "vassal",
+   "family": "Fureheshu"
+  },
+  "Ide Emissary School": {
+   "campaign": "Wedding at Kyotei Castle",
+   "first_build_family": "Ide",
+   "clan": "Unicorn",
+   "kind": "vassal",
+   "family": "Shiko"
+  },
+  "Ide Messenger School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Ide",
+   "clan": "Unicorn",
+   "kind": "vassal",
+   "family": "Shiko"
+  },
+  "Ide Trader School": {
+   "campaign": "The Lost Writer in the City of the Rich Frog",
+   "first_build_family": "Ide",
+   "clan": "Unicorn",
+   "kind": "vassal",
+   "family": "Shiko"
+  },
+  "Ikoma Bard School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Ikoma",
+   "clan": "Lion",
+   "kind": "vassal",
+   "family": "Itagawa"
+  },
+  "Ikoma Shadow School": {
+   "campaign": "Blood of the Lioness",
+   "first_build_family": "Ikoma",
+   "clan": "Lion",
+   "kind": "vassal",
+   "family": "Naoko"
+  },
+  "Isawa Elementalist School": {
+   "campaign": "The Bushi Oni",
+   "first_build_family": "Isawa",
+   "clan": "Phoenix",
+   "kind": "vassal",
+   "family": "Nasu"
+  },
+  "Iuchi Horse Lord Disciple": {
+   "campaign": "The Bushi Oni Part II",
+   "first_build_family": "Iuchi",
+   "clan": "Unicorn",
+   "kind": "vassal",
+   "family": "Shiko"
+  },
+  "Kaito Shrine Keeper School": {
+   "campaign": "Wedding at Kyotei Castle",
+   "first_build_family": "Kaito",
+   "clan": "Phoenix",
+   "kind": "out of family",
+   "family": "Asako"
+  },
+  "Kaito Spirit Seeker School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Kaito",
+   "clan": "Phoenix",
+   "kind": "out of family",
+   "family": "Isawa"
+  },
+  "Kaiu Architect School": {
+   "campaign": "Portents & Fortunes",
+   "first_build_family": "Kaiu",
+   "clan": "Crab",
+   "kind": "out of family",
+   "family": "Hiruma"
+  },
+  "Kaiu Engineer School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Kaiu",
+   "clan": "Crab",
+   "kind": "out of family",
+   "family": "Kuni"
+  },
+  "Kakita Duelist School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Kakita",
+   "clan": "Crane",
+   "kind": "out of family",
+   "family": "Daidoji"
+  },
+  "Kakita Swordsmith School": {
+   "campaign": "Blood of the Lioness",
+   "first_build_family": "Kakita",
+   "clan": "Crane",
+   "kind": "out of family",
+   "family": "Doji"
+  },
+  "Kitsu Medic School": {
+   "campaign": "Blood of the Lioness",
+   "first_build_family": "Kitsu",
+   "clan": "Lion",
+   "kind": "out of family",
+   "family": "Akodo"
+  },
+  "Kitsu Medium School": {
+   "campaign": "Wheel of Judgment",
+   "first_build_family": "Kitsu",
+   "clan": "Lion",
+   "kind": "out of family",
+   "family": "Ikoma"
+  },
+  "Kitsu Realm Wanderer School": {
+   "campaign": "Wheel of Judgment",
+   "first_build_family": "Kitsu",
+   "clan": "Lion",
+   "kind": "out of family",
+   "family": "Matsu"
+  },
+  "Kitsune Impersonator Tradition": {
+   "campaign": "Wedding at Kyotei Castle",
+   "first_build_family": "Kitsune",
+   "clan": "Fox",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Kitsune Mediator School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Kitsune",
+   "clan": "Fox",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Kitsune Naturalist School": {
+   "campaign": "No Scenario",
+   "first_build_family": "Kitsune",
+   "clan": "Fox",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Kuni Warden School": {
+   "campaign": "Wedding at Kyotei Castle",
+   "first_build_family": "Kuni",
+   "clan": "Crab",
+   "kind": "out of family",
+   "family": "Hida"
+  },
+  "Matsu Beastmaster School": {
+   "campaign": "Portents & Fortunes",
+   "first_build_family": "Matsu",
+   "clan": "Lion",
+   "kind": "out of family",
+   "family": "Ikoma"
+  },
+  "Matsu Berserker School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Matsu",
+   "clan": "Lion",
+   "kind": "out of family",
+   "family": "Kitsu"
+  },
+  "Mirumoto Taoist Blade School": {
+   "campaign": "The Bushi Oni",
+   "first_build_family": "Mirumoto",
+   "clan": "Dragon",
+   "kind": "out of family",
+   "family": "Agasha"
+  },
+  "Mirumoto Two-Heavens Adept School": {
+   "campaign": "Blood of the Lioness",
+   "first_build_family": "Mirumoto",
+   "clan": "Dragon",
+   "kind": "out of family",
+   "family": "Kitsuki"
+  },
+  "Miya Cartographer School": {
+   "campaign": "Blood of the Lioness",
+   "first_build_family": "Miya",
+   "clan": "Imperial",
+   "kind": "vassal",
+   "family": "Reju"
+  },
+  "Miya Herald School": {
+   "campaign": "Wheel of Judgment",
+   "first_build_family": "Miya",
+   "clan": "Imperial",
+   "kind": "vassal",
+   "family": "Reju"
+  },
+  "Moshi Sun Sentinel School": {
+   "campaign": "Portents & Fortunes",
+   "first_build_family": "Moshi",
+   "clan": "Centipede",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Moto Avenger School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Moto",
+   "clan": "Unicorn",
+   "kind": "vassal",
+   "family": "Shiko"
+  },
+  "Moto Conqueror School": {
+   "campaign": "No Scenario",
+   "first_build_family": "Moto",
+   "clan": "Unicorn",
+   "kind": "out of family",
+   "family": "Iuchi"
+  },
+  "Otomo Schemer School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Otomo",
+   "clan": "Imperial",
+   "kind": "out of family",
+   "family": "Miya"
+  },
+  "Seppun Astrologer School": {
+   "campaign": "Wedding at Kyotei Castle",
+   "first_build_family": "Seppun",
+   "clan": "Imperial",
+   "kind": "out of family",
+   "family": "Otomo"
+  },
+  "Seppun Palace Guard School": {
+   "campaign": "The Bushi Oni",
+   "first_build_family": "Seppun",
+   "clan": "Imperial",
+   "kind": "out of family",
+   "family": "Miya"
+  },
+  "Shiba Artist School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Shiba",
+   "clan": "Phoenix",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Shiba Guardian School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Shiba",
+   "clan": "Phoenix",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Shika Matchmaker School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Shika",
+   "clan": "Deer",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Shika Speardancer School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Shika",
+   "clan": "Deer",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Shinjo Mounted Archer": {
+   "campaign": "Blood of the Lioness",
+   "first_build_family": "Shinjo",
+   "clan": "Unicorn",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Shinjo Outrider School": {
+   "campaign": "Portents & Fortunes",
+   "first_build_family": "Shinjo",
+   "clan": "Unicorn",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Soshi Illusionist School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Soshi",
+   "clan": "Scorpion",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Togashi Chronicler School": {
+   "campaign": "Winter's Embrace",
+   "first_build_family": "Togashi",
+   "clan": "Dragon",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Toritaka Phantom Hunter School": {
+   "campaign": "Wheel of Judgment",
+   "first_build_family": "Toritaka",
+   "clan": "Falcon",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Utaku Battle Maiden School": {
+   "campaign": "Blood of the Lioness",
+   "first_build_family": "Utaku",
+   "clan": "Unicorn",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Utaku Silent Shadow Yōjimbō": {
+   "campaign": "The Bushi Oni",
+   "first_build_family": "Utaku",
+   "clan": "Unicorn",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Utaku Stablemaster School": {
+   "campaign": "The Lost Writer in the City of the Rich Frog",
+   "first_build_family": "Utaku",
+   "clan": "Unicorn",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Yasuki Merchant School": {
+   "campaign": "The Lost Writer in the City of the Rich Frog",
+   "first_build_family": "Yasuki",
+   "clan": "Crab",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Yasuki Yōjimbō School": {
+   "campaign": "The Bushi Oni",
+   "first_build_family": "Yasuki",
+   "clan": "Crab",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Yogo Preserver School": {
+   "campaign": "Mask of the Oni",
+   "first_build_family": "Yogo",
+   "clan": "Scorpion",
+   "kind": "out of clan",
+   "family": null
+  },
+  "Yogo Wardmaster School": {
+   "campaign": "Wheel of Judgment",
+   "first_build_family": "Yogo",
+   "clan": "Scorpion",
+   "kind": "out of clan",
+   "family": null
+  }
  }
 }

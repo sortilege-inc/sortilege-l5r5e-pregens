@@ -583,6 +583,57 @@ def campaigns(cx):
           f"claimed by a campaign, {len(excused)} excused with a reason")
 
     with_arc = sum(1 for c in out if c["arc"])
+    # The second build owed on every family-named school, and whether the plan
+    # for it still holds: the school must be one the packs actually pencil, and
+    # a named family must be a real one whose standing matches the kind.
+    seconds = {k: v for k, v in (json.load(open(
+        os.path.join(ROOT, "src", "foundry_sources.json")))
+        .get("second_builds") or {}).items() if not k.startswith("_")}
+    if seconds:
+        pen_by_school = {p["school"]: p for c in out if not c["pack_from"]
+                         for p in c["pencilled"]}
+        VASSAL = {"Fureheshu", "Ashidaka", "Hanako", "Hiramori", "Tsume",
+                  "Izaku", "Reju", "Damasu", "Goseki", "Itagawa", "Naoko",
+                  "Rokugo", "Shiko", "Nasu"}
+        KINDS = {"vassal", "out of family", "out of clan"}
+        bad = []
+        for school, spec in sorted(seconds.items()):
+            first = pen_by_school.get(school)
+            if first is None:
+                bad.append(f"{school}: no pack pencils this school")
+                continue
+            if first["family"] != spec.get("first_build_family"):
+                bad.append(f"{school}: the pack's family is "
+                           f"{first['family']!r}, not "
+                           f"{spec.get('first_build_family')!r}")
+            if spec.get("kind") not in KINDS:
+                bad.append(f"{school}: kind {spec.get('kind')!r} is not one of "
+                           + ", ".join(sorted(KINDS)))
+            fam = spec.get("family")
+            if spec.get("kind") == "vassal":
+                if fam not in VASSAL:
+                    bad.append(f"{school}: {fam!r} is not a vassal family this "
+                               f"archive can place")
+            elif spec.get("kind") == "out of family":
+                if not fam:
+                    bad.append(f"{school}: out of family with no family named")
+                elif norm(fam) not in famclan:
+                    bad.append(f"{school}: {fam!r} is not one of the 42")
+                elif famclan[norm(fam)][1] != spec.get("clan"):
+                    bad.append(f"{school}: {fam!r} is not of {spec.get('clan')}")
+                elif norm(fam) == norm(first["family"] or ""):
+                    bad.append(f"{school}: {fam!r} is the first build's own "
+                               f"family, so it is not out of family")
+            elif fam:
+                bad.append(f"{school}: out of clan should name no family yet, "
+                           f"and names {fam!r}")
+        if bad:
+            raise SystemExit(f"FAIL — {len(bad)} second-build plan(s) do not "
+                             f"hold:\n" + "\n".join("   " + m for m in bad))
+        kinds = collections.Counter(v.get("kind") for v in seconds.values())
+        print(f"   second builds: {len(seconds)} owed — "
+              + ", ".join(f"{v} {k}" for k, v in sorted(kinds.items())))
+
     # The roll, accounted for. Not a gate -- a new book adds schools and the
     # unclaimed count goes back up, which is normal -- but the number is the
     # one that says how much of the archive's own goal is even planned.
