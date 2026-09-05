@@ -84,15 +84,15 @@
    "pencilled_schools": [
     {
      "school": "Akodo Commander School",
-     "concept": "The one holding Hayaken no Shiro when the war reaches it, who has read every account of the last time and knows how that ended."
+     "concept": "Promoted into the post because the previous commander died badly, and has not been told how."
     },
     {
      "school": "Kitsu Medic School",
-     "concept": "A Kitsu in her own family's fortress, treating soldiers in halls her ancestors are buried under."
+     "concept": "Just out of her gempuku and already a medic in her own family's fortress, treating soldiers in halls her ancestors are buried under."
     },
     {
      "school": "Ikoma Shadow School",
-     "concept": "An Ikoma who knows a traitor's name and cannot prove it in time for it to matter."
+     "concept": "Tasked with rooting out possible traitors among the Lion, which means suspecting the garrison he is quartered with."
     },
     {
      "school": "Kakita Swordsmith School",
@@ -100,26 +100,27 @@
     },
     {
      "school": "Mirumoto Taoist Blade School",
-     "concept": "A Dragon who came for the temple at the castle and stayed for the war, unconvinced either was his business."
+     "concept": "A teacher, unbeaten in duels where he can use the moyen."
     },
     {
      "school": "Utaku Battle Maiden School",
-     "concept": "Riding for a Lion lord because her house owes one, and being reminded of it hourly."
+     "concept": "A Battle Maiden taken prisoner in an earlier engagement, and still, by her own reckoning, on duty."
     },
     {
      "school": "Asako Loremaster School",
-     "concept": "The one who can tell the party what happened here and cannot make them believe the part that matters."
+     "concept": "Sent to make copies of key documents before they can be lost."
     },
     {
      "school": "Miya Cartographer School",
-     "concept": "Sent to survey a border that is about to move, and the only person present with no stake in which way."
+     "concept": "An Imperial observer whose report decides whether the Throne calls this a war or a dispute."
     },
     {
      "school": "Shinjo Mounted Archer",
-     "concept": "The youngest rider in the company, carrying a bow that belonged to someone the Lion remember."
+     "concept": "Newly appointed an Emerald Magistrate, and young for it."
     }
    ],
-   "pencilled_why": "Chosen 2026-09-04, eight rather than six because the adventure runs two parties: Parts One and Three in the present, Part Two in the past, linked by Legacy advantages.\n\nThe Lion holds the castle — Akodo Commander for the school of the champion who built Hayaken no Shiro, Kitsu Medic for the family whose fortress home it is, Ikoma Shadow for the work a war needs done off the field. Kakita Swordsmith and Mirumoto Taoist Blade come over the borders the castle watches, and Utaku Battle Maiden brings the cavalry the northern border implies. Asako Loremaster and Miya Cartographer are what a campaign actually runs on: someone who knows the past that Part Two is set in, and someone who knows the ground.\n\nThree of the eight read as the older generation rather than the inheriting one — Akodo Commander (whose mastery is Akodo's Final Lesson), Kakita Swordsmith (a blade outlives its wielder, which is the legacy mechanic as a craft), and Asako Loremaster (the one who remembers). The split between the two parties is not fixed here.\n\nNoted and not acted on: both Kitsu shugenja schools, Medium and Realm Wanderer, are pencilled for Wheel of Judgment, so the Kitsu family is represented at its own castle by the medic. Utaku Battle Maiden is also the school of a published pregen (Utaku Azami, Wedding at Kyotei Castle) — untouched by the archive, so it still adds coverage.\n\nShinjo Mounted Archer added 2026-09-04 — a second Unicorn for a campaign fought on the Lion's northern border, and cavalry that belongs in a mass battle.\n\nConcepts written 2026-09-04, and all nine are present-day characters — Parts One and Three. The pack no longer tries to cover both generations: the adventure ships The Advisors on its own page 12 as the past party for Part Two, so the archive builds the generation that inherits and the book supplies the one inherited from. The three that read as ancestors when the pack was drawn (Akodo Commander, Kakita Swordsmith, Asako Loremaster) are written as the present-day holders of those legacies instead.\n\nEach of the nine implies a predecessor without naming one — a blade she did not forge, a bow that belonged to someone the Lion remember, an account whose author left something out. That is what a Legacy advantage wants: somewhere to attach, rather than an ancestor the players are handed."
+   "pencilled_why": "Chosen 2026-09-04, eight rather than six because the adventure runs two parties: Parts One and Three in the present, Part Two in the past, linked by Legacy advantages.\n\nThe Lion holds the castle — Akodo Commander for the school of the champion who built Hayaken no Shiro, Kitsu Medic for the family whose fortress home it is, Ikoma Shadow for the work a war needs done off the field. Kakita Swordsmith and Mirumoto Taoist Blade come over the borders the castle watches, and Utaku Battle Maiden brings the cavalry the northern border implies. Asako Loremaster and Miya Cartographer are what a campaign actually runs on: someone who knows the past that Part Two is set in, and someone who knows the ground.\n\nThree of the eight read as the older generation rather than the inheriting one — Akodo Commander (whose mastery is Akodo's Final Lesson), Kakita Swordsmith (a blade outlives its wielder, which is the legacy mechanic as a craft), and Asako Loremaster (the one who remembers). The split between the two parties is not fixed here.\n\nNoted and not acted on: both Kitsu shugenja schools, Medium and Realm Wanderer, are pencilled for Wheel of Judgment, so the Kitsu family is represented at its own castle by the medic. Utaku Battle Maiden is also the school of a published pregen (Utaku Azami, Wedding at Kyotei Castle) — untouched by the archive, so it still adds coverage.\n\nShinjo Mounted Archer added 2026-09-04 — a second Unicorn for a campaign fought on the Lion's northern border, and cavalry that belongs in a mass battle.\n\nConcepts chosen by the owner 2026-09-04 — four of the options offered, five written from their own direction — and all nine are present-day characters — Parts One and Three. The pack no longer tries to cover both generations: the adventure ships The Advisors on its own page 12 as the past party for Part Two, so the archive builds the generation that inherits and the book supplies the one inherited from. The three that read as ancestors when the pack was drawn (Akodo Commander, Kakita Swordsmith, Asako Loremaster) are written as the present-day holders of those legacies instead.\n\nEach of the nine implies a predecessor without naming one — a blade she did not forge, a bow that belonged to someone the Lion remember, an account whose author left something out. That is what a Legacy advantage wants: somewhere to attach, rather than an ancestor the players are handed.",
+   "_concept_note": "Two things to check in the Mirumoto and the Utaku. \"Moyen\" in the Mirumoto Taoist Blade's concept is the owner's word, kept verbatim: it appears nowhere in the l5r5e corpus, and the school itself is Bushi/Monk with Kata, Kihō and Rituals, opening on Water Fist — an unarmed ki school rather than a two-sword one — so a guess at the term risked writing the wrong character. And the Utaku's \"still, by her own reckoning, on duty\" is an added clause, not the owner's: the direction was \"a POW\" and the rest is a reading of what honour 50 does with captivity."
   },
   "Imperfect Land": {
    "arc": "l5r5e-0.4-imperfect-land.arc",
