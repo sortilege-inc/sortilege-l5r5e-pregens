@@ -111,6 +111,9 @@ def main():
                 "built_by": have.get(n),
                 # the premise, straight into the draft's concept field
                 "concept": pen.get("concept"),
+                # the family this build takes, for question 2. Only on a
+                # school named for a family so far, where it is that family.
+                "family": pen.get("family"),
             })
     if missing:
         print(f"FAIL — {len(missing)} pencilled school(s) do not resolve to both "
@@ -149,12 +152,14 @@ def main():
     modes = {}
     for s in stubs:
         modes[s["mode"]] = modes.get(s["mode"], 0) + 1
+    nfamily = sum(1 for s in stubs if s["family"])
     nconcept = sum(1 for s in stubs if s["concept"])
     npub = sum(1 for s in stubs if s["built_by"] == "published")
     print(f"pack stubs: {len(stubs)} across {packs} packs -> "
           f"data/stubs.js ({os.path.getsize(OUT)/1024:.1f} KB), "
           + ", ".join(f"{v} {k}" for k, v in sorted(modes.items()))
           + (f"; {nconcept} with a concept" if nconcept else "")
+          + (f"; {nfamily} with a family" if nfamily else "")
           + (f"; {npub} on a school a published pregen already has"
              if npub else ""))
     return 0

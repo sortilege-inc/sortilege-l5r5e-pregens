@@ -388,6 +388,13 @@ def campaigns(cx):
     # already built a character to
     roll = {n: name for name, n in cx.execute(
         "SELECT name, norm FROM catalog WHERE pack LIKE '%school-curriculum%'")}
+    # the 42 families and whose clan each is, for checking a pencilled `family`
+    famclan = {}
+    fpath = os.path.join(SITEDATA, "chargen", "families.js")
+    if os.path.exists(fpath):
+        ftext = open(fpath, encoding="utf-8").read()
+        for f in json.loads(ftext[ftext.index("[") :].rstrip().rstrip(";")):
+            famclan[norm(f["name"])] = (f["name"], f.get("clan"))
     covered = {n for (n,) in cx.execute(
         "SELECT DISTINCT school_norm FROM character"
         " WHERE school_norm IS NOT NULL AND provenance = 'archive'")}
@@ -426,7 +433,7 @@ def campaigns(cx):
         raise SystemExit(f"FAIL — {len(links)} broken shared-pack link(s):\n"
                          + "\n".join("   " + m for m in links))
 
-    out, offroll, stale, blank = [], [], [], []
+    out, offroll, stale, blank, badfam = [], [], [], [], []
     for name in names:
         spec = declared.get(name) or {}
         # a campaign sharing another's pack shows that shortlist rather than
@@ -446,15 +453,36 @@ def campaigns(cx):
             if n not in roll:
                 offroll.append((name, label))
                 continue
-            if isinstance(entry, dict) and not str(concept or "").strip():
-                # an object with an empty concept is a note somebody started
-                # and left, which reads on the page as though there were none
+            # A blank concept is a note somebody started and left, which
+            # reads on the page as though there were none. An absent one is
+            # different and fine: an entry may be an object to carry a family
+            # before anyone has written its premise.
+            if isinstance(entry, dict) and "concept" in entry \
+                    and not str(concept or "").strip():
                 blank.append((name, label))
                 continue
             if n in covered:
                 stale.append((name, roll[n]))
+            # the family this build takes. A school named for a family has a
+            # matching build and, eventually, one where the family differs —
+            # so the field is checked against the corpus but never inferred.
+            fam = entry.get("family") if isinstance(entry, dict) else None
+            if fam:
+                key = norm(fam)
+                if key not in famclan:
+                    badfam.append((name, label, fam, "is not one of the 42 "
+                                                     "families in the corpus"))
+                else:
+                    fname, fclan = famclan[key]
+                    schclan = (cx.execute(
+                        "SELECT clan FROM catalog WHERE norm=?", (n,)
+                    ).fetchone() or [None])[0]
+                    if fclan and schclan and fclan != schclan:
+                        badfam.append((name, label, fam,
+                                       f"is {fclan} where the school is {schclan}"))
+                    fam = fname
             pencilled.append({"school": roll[n], "covered": n in covered,
-                              "concept": concept})
+                              "concept": concept, "family": fam})
         out.append({"name": name, "characters": counts.get(name, 0),
                     "arc": spec.get("arc"), "note": spec.get("note"),
                     "pencilled": pencilled,
@@ -475,6 +503,11 @@ def campaigns(cx):
         raise SystemExit(
             f"FAIL — {len(blank)} pencilled school(s) carry an empty concept:\n"
             + "\n".join(f"   {c}: {s!r}" for c, s in blank))
+    if badfam:
+        raise SystemExit(
+            f"FAIL — {len(badfam)} pencilled family assignment(s) do not hold:\n"
+            + "\n".join(f"   {c}: {s} — {f!r} {why}"
+                         for c, s, f, why in badfam))
     stale = sorted(set(stale))
     if stale:
         # not an error: a pack may deliberately revisit a school. But the point
@@ -564,6 +597,8 @@ def campaigns(cx):
 
     withconcept = sum(1 for c in out if not c["pack_from"]
                       for p in c["pencilled"] if p["concept"])
+    withfamily = sum(1 for c in out if not c["pack_from"]
+                     for p in c["pencilled"] if p["family"])
     npen = sum(len(c["pencilled"]) for c in out if not c["pack_from"])
     nshare = sum(1 for c in out if c["pack_from"])
     print(f"   campaigns: {len(out)} ({sum(1 for c in out if c['declared'])} "
@@ -573,6 +608,7 @@ def campaigns(cx):
              if npen else "")
           + (f", {nshare} sharing another's pack" if nshare else "")
           + (f", {withconcept} of {npen} with a concept" if withconcept else "")
+          + (f", {withfamily} with a family" if withfamily else "")
           + ")")
     return out
 

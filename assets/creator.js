@@ -597,6 +597,17 @@
     // the premise the pack was drawn with, into the field that feeds every AI
     // suggestion and is never exported
     if (st.concept) c.concept = st.concept;
+    /* Question 2, where the pack has settled it. A school named for a family
+       gets a build of that family and, later, one of another — so this is only
+       ever the matching case, and the clan comes with it because a family
+       belongs to exactly one. */
+    if (st.family) {
+      var fam = find(FAMILIES, st.family);
+      if (fam) {
+        c.family = fam.name;
+        if (fam.clan) c.clan = fam.clan;
+      }
+    }
     var id = newId();
     STORE.drafts[id] = { id: id, updated: Date.now(), character: c };
     switchDraft(id);
@@ -796,7 +807,8 @@
                                   + "an upbringing" : "") +
             (st.concept ? "\n\n" + st.concept : "")) + '">' +
           esc(st.school) +
-          '<span class="dc-meta">' + esc(st.campaign) + esc(also) + tag +
+          '<span class="dc-meta">' + esc(st.campaign) + esc(also) +
+          (st.family ? " · " + esc(st.family) : "") + tag +
           "</span></button>";
       }).join("") + "</div>";
   }
