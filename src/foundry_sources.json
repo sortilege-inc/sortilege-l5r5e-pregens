@@ -205,14 +205,27 @@
    "arc": null,
    "note": "Not a published adventure — the owner's solo campaign, so there is no arc in the corpus for it. Already holds Togashi Norikage, the Dragon monk it was built around; the six here are additional to him.",
    "pencilled_schools": [
-    "Agasha Ascetic School",
-    "Shinjo Outrider School",
+    {
+     "school": "Agasha Ascetic School",
+     "concept": "A shugenja who has read the terraces and agrees with the consolidation, which makes her the least welcome person in either village."
+    },
+    {
+     "school": "Shinjo Outrider School",
+     "concept": "Hired to move households and their goods over a road that takes careless walkers off the cliff."
+    },
     "Moshi Sun Sentinel School",
-    "Laughing Mountain Hearthstone Tradition",
+    {
+     "school": "Laughing Mountain Hearthstone Tradition",
+     "concept": "A monk whose whole practice is that a home is made rather than assigned, arriving where everyone has been assigned one."
+    },
     "Kaiu Architect School",
-    "Matsu Beastmaster School"
+    {
+     "school": "Matsu Beastmaster School",
+     "concept": "A Lion far outside Lion lands, working for a Dragon vassal family because the work was there."
+    }
    ],
-   "pencilled_why": "Chosen 2026-09-04. Weighted towards omen and celestial matter, which is what the campaign is named for: a Moshi sun sentinel at Fire 2 and honour 55, an Agasha ascetic who stands as the mountain, and a Laughing Mountain hearthstone courtier-monk at honour 28 to argue with all of them. A Kaiu architect, a Shinjo outrider and a Matsu beastmaster carry the practical half."
+   "pencilled_why": "Chosen 2026-09-04. Weighted towards omen and celestial matter, which is what the campaign is named for: a Moshi sun sentinel at Fire 2 and honour 55, an Agasha ascetic who stands as the mountain, and a Laughing Mountain hearthstone courtier-monk at honour 28 to argue with all of them. A Kaiu architect, a Shinjo outrider and a Matsu beastmaster carry the practical half.\n\nFour concepts chosen 2026-09-04. The Agasha agrees with the consolidation and is unwelcome in both villages for it; the Laughing Mountain monk holds that a home is made rather than assigned and arrives where everyone has been assigned one, which is the arc's engine answered by a school ability; the Shinjo moves households over a road that takes careless walkers off the cliff; the Matsu is a Lion working for a Dragon vassal family because the work was there.\n\nTwo still open: the Moshi Sun Sentinel, where both offered concepts were about the silent mountain and the owner asked for something else, and the Kaiu Architect, which was not ruled on.",
+   "setting": "Kinenkan province, Dragon lands — the campaign at ~/Working/2026 Portents & Fortunes/portents-and-fortunes, read 2026-09-04. Seiya Mori, daimyō of a vassal family sworn to the Agasha, has ordered a consolidation: two or three villages given up because the terraces are failing, their households marched to White Flower Village. Seiya Fusae, 22, a Mirumoto Two-Heavens Adept, commands the column on nothing but rank, over older ashigaru. Wrath of the Kami has not erupted in twenty-four years, which the Agasha hold as the worst omen in their tradition. North of the village is a Seidō to Fukurokujin, Fortune of Wisdom. The arc's own stated engine is the mixing rather than the uprooting: households with no shared history and no agreed order of precedence, expected to become one village by arriving in the same place.\n\nConcepts here draw only on that public situation. The GM document's Behind the Veil material — the prophecy's mechanism, the kami-displacement chain, which elders are Perfect Land devotees — is deliberately not in them, because a pack concept feeds AI suggestions and can become a bio.\n\nOne thing still open: the campaign is solo, with Togashi Norikage as its only PC. These six are written as a troupe with their own reasons to be at the village, which is how they were offered and chosen. If they are meant instead as company arriving alongside Norikage, they want rewriting toward being useful to him."
   },
   "Sins of Regret": {
    "arc": "l5r5e-0.4-sins-of-regret.arc",
