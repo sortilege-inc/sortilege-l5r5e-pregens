@@ -262,16 +262,41 @@
    "arc": null,
    "note": "Not a published adventure — the owner's own campaign, so there is no arc in the corpus for it. Already holds Nasu Kōgo and Tsume Kunimichi, whose schools were built before this shortlist was drawn; the six here are additional to those two.",
    "pencilled_schools": [
-    "Yasuki Yōjimbō School",
-    "Isawa Elementalist School",
-    "Shinseist Monk Order",
-    "Mirumoto Taoist Blade School",
-    "Storm Fleet Tide Seer",
-    "Seppun Palace Guard School",
-    "Utaku Silent Shadow Yōjimbō",
-    "Kolat Saboteur Conspiracy"
+    {
+     "school": "Yasuki Yōjimbō School",
+     "concept": "Assigned to keep team B alive, and the only one of them told how team A's investigator died."
+    },
+    {
+     "school": "Isawa Elementalist School",
+     "concept": "Can read the residue at each scene, and has found the same hand at all of them."
+    },
+    {
+     "school": "Shinseist Monk Order",
+     "concept": "Reads the murders as a pattern of intention rather than of method — and is right for the wrong reasons."
+    },
+    {
+     "school": "Mirumoto Taoist Blade School",
+     "concept": "A Dragon training in the capital, quietly asked to watch team A rather than the murders."
+    },
+    {
+     "school": "Storm Fleet Tide Seer",
+     "concept": "In Otosan Uchi on other business, conscripted because she was the only shugenja not already spoken for."
+    },
+    {
+     "school": "Seppun Palace Guard School",
+     "concept": "The reason team B exists: a guard who does not accept team A's suspect and has the standing to be humoured."
+    },
+    {
+     "school": "Utaku Silent Shadow Yōjimbō",
+     "concept": "Guarding a reputation rather than a body — whoever's name team A's suspect is about to ruin."
+    },
+    {
+     "school": "Kolat Saboteur Conspiracy",
+     "concept": "On team B under a borrowed name, and genuinely useful, which is the problem."
+    }
    ],
-   "pencilled_why": "Chosen 2026-09-04. A party assembled across the Empire rather than from one clan: a Crab bodyguard, an Isawa who picks their own two rings, a Shinseist monk for the Kihō and the Void, a Mirumoto of the Taoist Blade, a Mantis tide seer and an Imperial palace guard.\n\nTwo added 2026-09-04: Utaku Silent Shadow Yōjimbō, the pack's first Unicorn, whose mastery is Reputation Sentinel; and a Kolat Saboteur at honour 20, the lowest in the pack by eighteen.\n\nSwapped 2026-09-04: this pack held Mirumoto Two-Heavens Adept and now holds Mirumoto Taoist Blade, trading with Blood of the Lioness, whose Mirumoto is a niten teacher and wanted the school built on niten. The Taoist Blade suits this pack better than the trade suggests: it already carries a Shinseist monk for the Kihō and the Void, and the Taoist Blade is the Mirumoto who follows the Tao of Shinsei — Bushi and Monk both, opening on Water Fist — so the pack gains a second ki tradition rather than losing a swordsman."
+   "pencilled_why": "Chosen 2026-09-04. A party assembled across the Empire rather than from one clan: a Crab bodyguard, an Isawa who picks their own two rings, a Shinseist monk for the Kihō and the Void, a Mirumoto of the Taoist Blade, a Mantis tide seer and an Imperial palace guard.\n\nTwo added 2026-09-04: Utaku Silent Shadow Yōjimbō, the pack's first Unicorn, whose mastery is Reputation Sentinel; and a Kolat Saboteur at honour 20, the lowest in the pack by eighteen.\n\nSwapped 2026-09-04: this pack held Mirumoto Two-Heavens Adept and now holds Mirumoto Taoist Blade, trading with Blood of the Lioness, whose Mirumoto is a niten teacher and wanted the school built on niten. The Taoist Blade suits this pack better than the trade suggests: it already carries a Shinseist monk for the Kihō and the Void, and the Taoist Blade is the Mirumoto who follows the Tao of Shinsei — Bushi and Monk both, opening on Water Fist — so the pack gains a second ki tradition rather than losing a swordsman.\n\nConcepts written 2026-09-04. Six take the first option and two the second, which puts the weight on the second investigation as an institution rather than on the forensics: a Seppun senior enough to be humoured when he refuses team A's answer, a Dragon watching team A rather than the case, a yōjimbō who knows how the last investigator died, a Utaku guarding a reputation instead of a body, a Mantis conscripted because she was the only shugenja spare, and a Kolat embedded under a borrowed name and genuinely useful.\n\nThe two seconds supply the spine the politics hangs on. The Isawa has found the same hand at every scene and the monk reads a pattern of intention rather than of method — and with Nasu Kōgo, a Shosuro Shadowweaver, on the other side of the case, \"the same hand\" and \"seemingly supernatural\" point in the same direction without either concept having to say so.",
+   "setting": "Otosan Uchi, per the owner 2026-09-04. The party is team B on a series of seemingly supernatural murders, and exists because team A's investigation has already produced a suspect — so this is a second, quieter look at a case somebody considers closed. Two questions run under it: whether the murders are supernatural at all, and why anyone wanted a second team.\n\nNasu Kōgo and Tsume Kunimichi are tagged to this campaign and are ANTAGONISTS, not party members. An earlier version of this note had them as allies covering the espionage end, which was wrong. A Shosuro Shadowweaver and a Daidoji Harrier on the other side of an investigation into murders that look supernatural is a different campaign from the one that reading described.\n\nConcepts for this pack should assume the Imperial capital and an investigation with a political floor under it, not a wilderness."
   },
   "The Bushi Oni Part II": {
    "arc": null,
