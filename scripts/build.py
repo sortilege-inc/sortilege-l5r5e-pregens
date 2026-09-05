@@ -592,9 +592,12 @@ def campaigns(cx):
     if seconds:
         pen_by_school = {p["school"]: p for c in out if not c["pack_from"]
                          for p in c["pencilled"]}
+        # Vassal houses this archive can place to a clan. All fourteen from
+        # the corpus, plus Raikuto and Ishi from the L5R wiki — see the note on
+        # second_builds for why only those two were taken from it.
         VASSAL = {"Fureheshu", "Ashidaka", "Hanako", "Hiramori", "Tsume",
                   "Izaku", "Reju", "Damasu", "Goseki", "Itagawa", "Naoko",
-                  "Rokugo", "Shiko", "Nasu"}
+                  "Rokugo", "Shiko", "Nasu", "Raikuto", "Ishi"}
         KINDS = {"vassal", "out of family", "out of clan"}
         bad = []
         for school, spec in sorted(seconds.items()):
