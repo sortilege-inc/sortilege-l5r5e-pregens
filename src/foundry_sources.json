@@ -76,7 +76,7 @@
   "kurosawa-genzo": "Imperfect Land"
  },
  "campaign_list": {
-  "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current. Where one pack serves two adventures, the base adventure holds the shortlist and names the other in `pack_shared_with`; the other carries `pack_from` pointing back. The build refuses a one-sided link, and the double-booking check ignores a shared list — the same schools in two packs is the point there, not a slip. A `pencilled_schools` entry is either the school's roll name or an object with `school` and a one-line `concept` — the premise, which the stub carries into the draft's concept field. A `family` on a pencilled entry is the family that build takes. Where a school is named for a family it carries that family — the matching build. Every one of those schools also owes a second build where the family differs, and possibly the clan too; those are not set yet, and will need their own entries rather than replacing these. `gender` on a pencilled entry is that build's gender — male, female or nonbinary — set so each pack splits close to evenly, with three non-binary characters across the whole plan. A concept written with a pronoun in it settles its own entry; build.py refuses a gender that disagrees with one.",
+  "_comment": "Campaigns the archive knows about, whether or not a character is tagged to one yet. `campaigns` above tags a character; this declares the campaign itself, so a set that has not been built yet still appears in the roster's filter instead of existing only as a plan. `arc` is the corpus arc it plays from; `note` says what is still missing. `pencilled_schools` is the shortlist a pack will be built from — compendium roll names, checked by the build against the roll and against what the archive has already covered, so a plan that has gone stale says so instead of sitting there looking current. Where one pack serves two adventures, the base adventure holds the shortlist and names the other in `pack_shared_with`; the other carries `pack_from` pointing back. The build refuses a one-sided link, and the double-booking check ignores a shared list — the same schools in two packs is the point there, not a slip. A `pencilled_schools` entry is either the school's roll name or an object with `school` and a one-line `concept` — the premise, which the stub carries into the draft's concept field. A `family` on a pencilled entry is the family that build takes. Where a school is named for a family it carries that family — the matching build. Every one of those schools also owes a second build where the family differs, and possibly the clan too; those are not set yet, and will need their own entries rather than replacing these. `gender` on a pencilled entry is that build's gender — male, female or nonbinary — set so each pack splits close to evenly, with three non-binary characters across the whole plan. build.py refuses a gender that disagrees with a pronoun in its own concept, and the fix is to rewrite the sentence: the pronouns in these concepts were written when the lines were drafted rather than chosen, so they are not evidence of anything and were not allowed to decide the split (owner, 2026-09-05).",
   "Blood of the Lioness": {
    "arc": null,
    "note": "Not on disk: no corpus file, no source PDF, and not in the compendium's book list. Legacies of War, which is converted, is its supplement and describes it — a three-part adventure at the Castle of the Swift Sword whose Part Two is played in the past, with Legacy advantages linking each present PC to a predecessor. Its own page 12 holds The Advisors, the pregens for that past party. Find the source and convert it, then the arc goes here.",
@@ -97,20 +97,20 @@
     {
      "school": "Ikoma Shadow School",
      "family": "Ikoma",
-     "gender": "male",
-     "concept": "Tasked with rooting out possible traitors among the Lion, which means suspecting the garrison he is quartered with."
+     "gender": "female",
+     "concept": "Tasked with rooting out possible traitors among the Lion, which means suspecting the garrison she is quartered with."
     },
     {
      "school": "Kakita Swordsmith School",
      "family": "Kakita",
-     "gender": "female",
-     "concept": "A Crane at a Lion castle to repair blades she did not forge, and increasingly certain she knows whose hand made one of them."
+     "gender": "male",
+     "concept": "A Crane at a Lion castle to repair blades he did not forge, and increasingly certain he knows whose hand made one of them."
     },
     {
      "school": "Mirumoto Two-Heavens Adept School",
      "family": "Mirumoto",
-     "gender": "male",
-     "concept": "A teacher, unbeaten in duels where he can use the niten — both blades of the daishō at once — which is not the duel a Kakita will offer him."
+     "gender": "female",
+     "concept": "A teacher, unbeaten in duels where she can use the niten — both blades of the daishō at once — which is not the duel a Kakita will offer her."
     },
     {
      "school": "Utaku Battle Maiden School",
@@ -127,7 +127,7 @@
     {
      "school": "Miya Cartographer School",
      "family": "Miya",
-     "gender": "female",
+     "gender": "male",
      "concept": "An Imperial observer whose report decides whether the Throne calls this a war or a dispute."
     },
     {
@@ -151,8 +151,8 @@
     {
      "school": "Hiruma Scout School",
      "family": "Hiruma",
-     "gender": "male",
-     "concept": "The scout guiding the expedition to a castle his family lost, who has been to its walls twice and inside neither time."
+     "gender": "female",
+     "concept": "The scout guiding the expedition to a castle her family lost, who has been to its walls twice and inside neither time."
     },
     {
      "school": "Kaiu Engineer School",
@@ -174,7 +174,7 @@
     },
     {
      "school": "Nezumi Tattered Ear Explorer Tradition",
-     "gender": "male",
+     "gender": "female",
      "concept": "A Tattered Ear scout who remembers this route from before the humans had a name for it, and expects to be believed."
     },
     {
@@ -191,13 +191,13 @@
     },
     {
      "school": "Tengu Mask of Air Tradition",
-     "gender": "male",
-     "concept": "A teacher who has outlived several such expeditions and joined this one because the nezumi asked him to."
+     "gender": "female",
+     "concept": "A teacher who has outlived several such expeditions and joined this one because the nezumi asked her to."
     },
     {
      "school": "Asako Inquisitor School",
      "family": "Asako",
-     "gender": "female",
+     "gender": "male",
      "concept": "Sent to determine what came out of Shiro Hiruma, and quietly certain someone in the party already knows."
     },
     {
@@ -209,7 +209,7 @@
     {
      "school": "Bayushi Deathdealer School",
      "family": "Bayushi",
-     "gender": "female",
+     "gender": "male",
      "concept": "Attached to the expedition to make sure it comes back — or that the right parts of it do; a Scorpion who has killed people and never a demon, and is unbothered by the distinction in a way that unsettles everyone."
     },
     {
@@ -221,7 +221,7 @@
     {
      "school": "Daidoji Iron Warrior School",
      "family": "Daidoji",
-     "gender": "female",
+     "gender": "male",
      "concept": "A Crane sent to hold a line the Crab abandoned, too polite to put it that way, and the only one who has read the Kaiu's report and believes it."
     }
    ],
@@ -283,24 +283,24 @@
     {
      "school": "Moshi Sun Sentinel School",
      "family": "Moshi",
-     "gender": "female",
+     "gender": "male",
      "concept": "Devoted to Lady Sun in a village whose shrine belongs to Fukurokujin and whose newcomers follow the Little Teacher — a third faith in an argument that already had two; the most honourable person in the province by a wide margin, and the one with no authority whatsoever."
     },
     {
      "school": "Laughing Mountain Hearthstone Tradition",
-     "gender": "female",
+     "gender": "male",
      "concept": "A monk whose whole practice is that a home is made rather than assigned, arriving where everyone has been assigned one."
     },
     {
      "school": "Kaiu Architect School",
      "family": "Kaiu",
-     "gender": "male",
+     "gender": "female",
      "concept": "Here to say whether the terraces can be saved and privately certain they cannot; sent to build homes by spring for households that have already arrived, with neither the hands nor the materials promised."
     },
     {
      "school": "Matsu Beastmaster School",
      "family": "Matsu",
-     "gender": "male",
+     "gender": "female",
      "concept": "A Lion far outside Lion lands, working for a Dragon vassal family because the work was there."
     }
    ],
@@ -323,7 +323,7 @@
     },
     {
      "school": "Artisan of the Roads",
-     "gender": "female",
+     "gender": "male",
      "concept": "A travelling artisan who has come through Twin Blessings before and remembers it when there were fish; paid in food and lodging for a decade, and the first to notice the village has neither left to give."
     },
     {
@@ -343,7 +343,7 @@
     },
     {
      "school": "Fortunist Monk Order",
-     "gender": "male",
+     "gender": "female",
      "concept": "Travelling with the pilgrim Naoki as far as the village and staying on when Naoki does not; a monk who reads the imbalance as a Fortune's displeasure, and is unpopular for saying whose."
     },
     {
@@ -372,7 +372,7 @@
     {
      "school": "Isawa Elementalist School",
      "family": "Isawa",
-     "gender": "female",
+     "gender": "male",
      "concept": "Can read the residue at each scene, and has found the same hand at all of them."
     },
     {
@@ -405,7 +405,7 @@
     },
     {
      "school": "Kolat Saboteur Conspiracy",
-     "gender": "male",
+     "gender": "female",
      "concept": "On team B under a borrowed name, and genuinely useful, which is the problem."
     }
    ],
@@ -418,14 +418,14 @@
    "pencilled_schools": [
     {
      "school": "Voice of the Wilds",
-     "gender": "female",
+     "gender": "male",
      "concept": "A hedge-shugenja who learned invocations from the kami directly rather than from a school, and is faintly embarrassed to be the party's most orthodox member."
     },
     {
      "school": "Ichirō Ironsmith School",
      "family": "Ichirō",
-     "gender": "male",
-     "concept": "A travelling smith, working his way village to village along the Shinomen's edge with his forge on his back."
+     "gender": "female",
+     "concept": "A travelling smith, working her way village to village along the Shinomen's edge with her forge on her back."
     },
     {
      "school": "Agasha Mystic School",
@@ -455,8 +455,8 @@
     {
      "school": "Yasuki Merchant School",
      "family": "Yasuki",
-     "gender": "male",
-     "concept": "A Crab with a stall at the Unicorn docks who knows which crates are not what the manifest says; retained to find the author and paid by the day, which suits him."
+     "gender": "female",
+     "concept": "A Crab with a stall at the Unicorn docks who knows which crates are not what the manifest says; retained to find the author and paid by the day, which suits her."
     },
     {
      "school": "Ide Trader School",
@@ -466,7 +466,7 @@
     },
     {
      "school": "School of Leaves",
-     "gender": "female",
+     "gender": "male",
      "concept": "Reads Hana-no-Ame, and is the only person in the city who noticed the stories stopped."
     },
     {
@@ -519,19 +519,19 @@
     {
      "school": "Ide Emissary School",
      "family": "Ide",
-     "gender": "male",
-     "concept": "A genuine Ide who arrives to find someone has been wearing his clan's name to do murder, and wants the impostor personally."
+     "gender": "female",
+     "concept": "A genuine Ide who arrives to find someone has been wearing her clan's name to do murder, and wants the impostor personally."
     },
     {
      "school": "Kitsune Impersonator Tradition",
      "family": "Kitsune",
-     "gender": "female",
+     "gender": "male",
      "concept": "A Fox at a wedding under a borrowed name, who is the one member of the party in no position to accuse anyone of impersonation."
     },
     {
      "school": "Seppun Astrologer School",
      "family": "Seppun",
-     "gender": "female",
+     "gender": "male",
      "concept": "A young Seppun who read the omens correctly, said so, was ignored, and has arrived to watch it happen."
     }
    ],
@@ -557,8 +557,8 @@
     {
      "school": "Kitsu Realm Wanderer School",
      "family": "Kitsu",
-     "gender": "female",
-     "concept": "The one who has walked the realms before and therefore has to keep the others' nerve, though her last passage went badly and she has never said how."
+     "gender": "male",
+     "concept": "The one who has walked the realms before and therefore has to keep the others' nerve, though his last passage went badly and he has never said how."
     },
     {
      "school": "Mazoku's Enforcer Tradition",
@@ -579,7 +579,7 @@
     {
      "school": "Miya Herald School",
      "family": "Miya",
-     "gender": "male",
+     "gender": "female",
      "concept": "A herald who arrives in the afterlife still holding the Emperor's authority and genuinely cannot tell whether it means anything here — and neither can Emma-Ō's court."
     }
    ],
@@ -601,12 +601,12 @@
     {
      "school": "Kakita Duelist School",
      "family": "Kakita",
-     "gender": "female",
+     "gender": "male",
      "concept": "The Crane's answer to any insult that cannot be answered politely, and increasingly the first person consulted: functionally a courtier assassin, who kills by challenge rather than by knife."
     },
     {
      "school": "Storm Fleet Sailor School",
-     "gender": "female",
+     "gender": "male",
      "concept": "A sailor sent to a winter palace as a delegate, doing a courtier's job in a courtier's clothes and fooling nobody."
     },
     {
@@ -618,14 +618,14 @@
     {
      "school": "Ikoma Bard School",
      "family": "Ikoma",
-     "gender": "male",
+     "gender": "female",
      "concept": "A Lion telling stories at a Crane court, in a room where the Lion are why half the guests are in mourning; the court's unofficial record-keeper, because everyone tells a bard what they would never write down."
     },
     {
      "school": "Bayushi Manipulator School",
      "family": "Bayushi",
-     "gender": "male",
-     "concept": "Attending on behalf of someone who is not attending, whose name is the one thing he will not trade."
+     "gender": "female",
+     "concept": "Attending on behalf of someone who is not attending, whose name is the one thing she will not trade."
     },
     {
      "school": "Kitsune Mediator School",
@@ -648,7 +648,7 @@
     {
      "school": "Shiba Artist School",
      "family": "Shiba",
-     "gender": "male",
+     "gender": "female",
      "concept": "A Phoenix who builds gardens for a living, asked to design something for a wedding that may not happen."
     },
     {
@@ -660,7 +660,7 @@
     {
      "school": "Shika Speardancer School",
      "family": "Shika",
-     "gender": "female",
+     "gender": "male",
      "concept": "A minor-clan bushi keeping the Deer's delegate alive in a palace where two great clans are counting bodies."
     },
     {
