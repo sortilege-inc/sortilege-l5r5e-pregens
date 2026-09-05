@@ -370,12 +370,30 @@
     "The Scroll or the Blade"
    ],
    "pencilled_schools": [
-    "Doji Diplomat School",
-    "Kakita Duelist School",
-    "Storm Fleet Sailor School",
-    "Otomo Schemer School",
-    "Ikoma Bard School",
-    "Bayushi Manipulator School",
+    {
+     "school": "Doji Diplomat School",
+     "concept": "A young Doji handed the Mantis delegation to manage, as a test nobody told her she was taking."
+    },
+    {
+     "school": "Kakita Duelist School",
+     "concept": "The Crane's answer to any insult that cannot be answered politely, and increasingly the first person consulted: functionally a courtier assassin, who kills by challenge rather than by knife."
+    },
+    {
+     "school": "Storm Fleet Sailor School",
+     "concept": "A sailor sent to a winter palace as a delegate, doing a courtier's job in a courtier's clothes and fooling nobody."
+    },
+    {
+     "school": "Otomo Schemer School",
+     "concept": "Here to decide on the Throne's behalf which of the two clans is worth backing, and enjoying the position far too much."
+    },
+    {
+     "school": "Ikoma Bard School",
+     "concept": "A Lion telling stories at a Crane court, in a room where the Lion are why half the guests are in mourning; the court's unofficial record-keeper, because everyone tells a bard what they would never write down."
+    },
+    {
+     "school": "Bayushi Manipulator School",
+     "concept": "Attending on behalf of someone who is not attending, whose name is the one thing he will not trade."
+    },
     "Kitsune Mediator School",
     "Shika Matchmaker School",
     "Togashi Chronicler School",
@@ -384,7 +402,7 @@
     "Shika Speardancer School",
     "Ide Messenger School"
    ],
-   "pencilled_why": "Chosen 2026-09-04 for the Winter Court at Kyūden Doji, and for The Scroll or the Blade with it — that storyline runs during or after this one in the same palace, so one pack serves both. Twelve rather than a party's worth because it covers two adventures.\n\nThe two clans whose reputations are the stake are both in it: Doji Diplomat and Kakita Duelist hosting, Storm Fleet Sailor as the Mantis who does not belong in a winter palace. Otomo Schemer is the Throne watching; Ikoma Bard and Bayushi Manipulator are reputation made and unmade. Kitsune Mediator is there to stop it becoming blood and Shika Matchmaker to make the betrothals a Winter Court exists for — her mastery ability is a curse, which is a plot by itself. Togashi Chronicler records it, Shiba Artist enters the poetry competition the Asahina priest oversees, Soshi Illusionist and Shika Speardancer do the quiet work in the corridors.\n\nKakita Duelist and Bayushi Manipulator are also the schools of published pregens (Kakita Hikaru and Bayushi Hibiki, Wedding at Kyotei Castle) — untouched by the archive, so they still add coverage, but not fresh ground. That overlap is not a coincidence: Wedding at Kyotei Castle is a court adventure too.\n\nIde Messenger added 2026-09-04, closing the one real hole in this pack: nine clans were represented at a Crane–Mantis winter court and the Unicorn were not one of them. A courtier whose mastery is The Herd Flourishes Together, at a court about two clans' reputations."
+   "pencilled_why": "Chosen 2026-09-04 for the Winter Court at Kyūden Doji, and for The Scroll or the Blade with it — that storyline runs during or after this one in the same palace, so one pack serves both. Twelve rather than a party's worth because it covers two adventures.\n\nThe two clans whose reputations are the stake are both in it: Doji Diplomat and Kakita Duelist hosting, Storm Fleet Sailor as the Mantis who does not belong in a winter palace. Otomo Schemer is the Throne watching; Ikoma Bard and Bayushi Manipulator are reputation made and unmade. Kitsune Mediator is there to stop it becoming blood and Shika Matchmaker to make the betrothals a Winter Court exists for — her mastery ability is a curse, which is a plot by itself. Togashi Chronicler records it, Shiba Artist enters the poetry competition the Asahina priest oversees, Soshi Illusionist and Shika Speardancer do the quiet work in the corridors.\n\nKakita Duelist and Bayushi Manipulator are also the schools of published pregens (Kakita Hikaru and Bayushi Hibiki, Wedding at Kyotei Castle) — untouched by the archive, so they still add coverage, but not fresh ground. That overlap is not a coincidence: Wedding at Kyotei Castle is a court adventure too.\n\nIde Messenger added 2026-09-04, closing the one real hole in this pack: nine clans were represented at a Crane–Mantis winter court and the Unicorn were not one of them. A courtier whose mastery is The Herd Flourishes Together, at a court about two clans' reputations.\n\nConcepts for the first six written 2026-09-04. The Kakita's carries the owner's own framing — functionally a courtier assassin, killing by challenge rather than by knife — which pairs her with the young Doji being quietly examined: the Crane arrive with a diplomat and an executioner and only one of them has been told what she is. The Ikoma's folds both options together, so the Lion who is the reason half the room is in mourning is also the person everyone confides in. The Otomo decides which clan the Throne backs, and the Doji and the Mantis sailor are the two trying to make that decision for him.\n\nThe remaining seven have none yet. Two of those — the Togashi Chronicler and the Shiba Artist — are the natural hooks for The Scroll or the Blade, which shares this pack and turns on Masayo, an orphaned child of Dragon and Phoenix parents, so their concepts should be written with that in view rather than for the court alone."
   }
  },
  "corrections": {
