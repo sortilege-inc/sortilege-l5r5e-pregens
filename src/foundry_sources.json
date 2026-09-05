@@ -233,14 +233,33 @@
    "arc": "l5r5e-0.4-wedding-kyotei.arc",
    "note": "The 2018 Gen Con adventure. It ships its own seven pregens, which are already here as published pregens and count towards no coverage — and this pack is independent of them, decided 2026-09-04. So the adventure has two parties on the site: the publisher's folios, hidden unless the roster's toggle is on, and the archive's own six.",
    "pencilled_schools": [
-    "Kuni Warden School",
-    "Asahina Envoy School",
-    "Kaito Shrine Keeper School",
-    "Ide Emissary School",
-    "Kitsune Impersonator Tradition",
-    "Seppun Astrologer School"
+    {
+     "school": "Kuni Warden School",
+     "concept": "A young warden on his first posting outside Crab lands, who keeps checking the castle's ghosts for corruption they do not have."
+    },
+    {
+     "school": "Asahina Envoy School",
+     "concept": "The wedding's actual organiser, who has spent a year on this match and will not let a dead bird undo it."
+    },
+    {
+     "school": "Kaito Shrine Keeper School",
+     "concept": "Sent by the Phoenix side to bless the match, and finds herself the only shrine keeper in a castle whose shrine has been desecrated."
+    },
+    {
+     "school": "Ide Emissary School",
+     "concept": "A genuine Ide who arrives to find someone has been wearing his clan's name to do murder, and wants the impostor personally."
+    },
+    {
+     "school": "Kitsune Impersonator Tradition",
+     "concept": "A Fox at a wedding under a borrowed name, who is the one member of the party in no position to accuse anyone of impersonation."
+    },
+    {
+     "school": "Seppun Astrologer School",
+     "concept": "A young Seppun who read the omens correctly, said so, was ignored, and has arrived to watch it happen."
+    }
    ],
-   "pencilled_why": "Chosen 2026-09-04, and deliberately not the folios' own six schools bar one. A court adventure, so an Asahina envoy for the ceremony and an Ide emissary who is welcome everywhere; a Seppun astrologer for the omens and a Kitsune impersonator at honour 30 for the thing nobody at the wedding is saying. Kuni Warden and Kaito Shrine Keeper are there because a Gen Con adventure at a wedding has a second act. Kaito Shrine Keeper is also the school of one of this adventure's own folios (Kaito Natsuyuki) — the two parties are independent, so the duplication is deliberate."
+   "pencilled_why": "Chosen 2026-09-04, and deliberately not the folios' own six schools bar one. A court adventure, so an Asahina envoy for the ceremony and an Ide emissary who is welcome everywhere; a Seppun astrologer for the omens and a Kitsune impersonator at honour 30 for the thing nobody at the wedding is saying. Kuni Warden and Kaito Shrine Keeper are there because a Gen Con adventure at a wedding has a second act. Kaito Shrine Keeper is also the school of one of this adventure's own folios (Kaito Natsuyuki) — the two parties are independent, so the duplication is deliberate.",
+   "setting": "The Kintani — the Golden Valley — during the Crane–Lion border war, at Kyotei Castle, one of the first Lion castles to fall. An introductory scenario, so these are young samurai, and its first scene is the war's cost on the peasantry rather than the wedding.\n\nTwo of the six concepts carry things the adventure means the players to discover: the Ide knows an impostor has been using his clan's name, and the Kaito knows the shrine has been desecrated. Harmless where they are — a pack concept reaches only the draft's concept field, which is never exported — but if either is ever copied into the `concepts` block for a promoted character, put the second half under a heading so promote.py's player_facing() cuts it before it lands as a public bio."
   },
   "Wheel of Judgment": {
    "arc": null,
