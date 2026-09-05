@@ -10,6 +10,8 @@
  "published": {
   "product": "Wedding at Kyotei Castle",
   "adventure": "Wedding at Kyotei Castle",
+  "party": "Wedding at Kyotei Castle",
+  "party_relationships": "grid",
   "publisher": "Fantasy Flight Games",
   "year": 2018,
   "source_file": "l5r5e-0.4-wedding-kyotei-pregens.actor"

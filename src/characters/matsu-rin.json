@@ -10,6 +10,8 @@
  "published": {
   "product": "Children of the Five Winds",
   "adventure": "The Lost Writer in the City of the Rich Frog",
+  "party": "The Lost Writer",
+  "party_relationships": "grid",
   "publisher": "Edge Studio",
   "code": "ESL5R18EN-DLC01",
   "source_file": "l5r5e-0.4-children-of-five-winds-pregens.actor"

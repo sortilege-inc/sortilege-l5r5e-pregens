@@ -52,20 +52,35 @@ SRC = os.path.join(ROOT, "src", "characters")
 
 # Which product each file transcribes, from the file's own header comment.
 # Keyed by source filename so a new cast is one line.
+#
+# `party` is what the relationship map calls this set, where the product name
+# is not what anyone sits down to play. `party_relationships` says what the
+# printed sheets give for the party itself, checked against the PDFs rather
+# than assumed: "printed" (the Highwayman's six sheets carry a filled matrix of
+# who thinks what of whom), "grid" (an empty OTHER CHARACTER'S NAME / STANDING
+# table for the table to fill in), or "none" (no relationship section at all).
 PRODUCTS = {
     "l5r5e-0.4-emerald-champion-pregens.actor": {
         "product": "Legend of the Five Rings Beginner Game",
         "adventure": "In the Palace of the Emerald Champion",
+        # the party as it is played: the box's core adventure, which these same
+        # seven folios are for (owner, 2026-09-05)
+        "party": "The Topaz Championship",
+        "party_relationships": "none",
         "publisher": "Fantasy Flight Games", "year": 2018,
     },
     "l5r5e-0.4-highwayman-pregens.actor": {
         "product": "The Highwayman",
         "adventure": "The Highwayman",
+        "party": "The Highwayman",
+        "party_relationships": "printed",
         "publisher": "Fantasy Flight Games", "year": 2019,
     },
     "l5r5e-0.4-wedding-kyotei-pregens.actor": {
         "product": "Wedding at Kyotei Castle",
         "adventure": "Wedding at Kyotei Castle",
+        "party": "Wedding at Kyotei Castle",
+        "party_relationships": "grid",
         "publisher": "Fantasy Flight Games", "year": 2018,
     },
     # The DLC sheet pack, and the one product here that is not FFG's. No year:
@@ -74,6 +89,8 @@ PRODUCTS = {
     "l5r5e-0.4-children-of-five-winds-pregens.actor": {
         "product": "Children of the Five Winds",
         "adventure": "The Lost Writer in the City of the Rich Frog",
+        "party": "The Lost Writer",
+        "party_relationships": "grid",
         "publisher": "Edge Studio", "code": "ESL5R18EN-DLC01",
     },
 }

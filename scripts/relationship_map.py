@@ -37,12 +37,36 @@ A clan is NOT a relationship. Two people being Tortoise says nothing about
 whether they have ever met, so an NPC's affiliation rides along as a label on
 the NPC and never as an edge.
 """
-import glob, json, os, re, unicodedata
+import glob, json, os, re, sys, unicodedata
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import dsl_rules_text  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "src", "characters")
 SOURCES = os.path.join(ROOT, "src", "foundry_sources.json")
 OUT = os.path.join(ROOT, "data", "relmap.js")
+
+# Which adventure's .lore holds the handouts for a product's folios, keyed by
+# the pregens file each record already names. Only the two that have them: the
+# Beginner Game's folios and the Children of the Five Winds sheet pack carry no
+# per-character handout at all (checked in the corpus and against the printed
+# PDFs -- the DLC sheets print an empty "OTHER CHARACTER'S NAME / STANDING"
+# grid for the table to fill in, and the Beginner Game folios have no
+# relationship section).
+HANDOUT_LORE = {
+    "l5r5e-0.4-wedding-kyotei-pregens.actor": "l5r5e-0.4-wedding-kyotei.lore",
+    "l5r5e-0.4-highwayman-pregens.actor": "l5r5e-0.4-highwayman.lore",
+}
+# `### Kitsu Kohaku — Lion Kitsu Medium (Shugenja)` inside `## Player Handouts`
+HANDOUT_PC = re.compile(r"^###\s+(?P<name>[^—–\n]+?)\s*[—–]", re.M)
+# `**Connection:** you have been graced with an invitation …`
+CONNECTION = re.compile(r"^\*\*Connection:\*\*\s*(?P<text>.+?)\s*$", re.M)
+# `- **Tsume Yemon:** His sanity is said to be slipping …`  The source marks
+# the name in bold, so nothing has to be guessed out of a sentence -- which is
+# the whole reason this is safe to draw and the archive's free-text
+# relationship lines need a strict name guard.
+INTEL = re.compile(r"^-\s+\*\*(?P<who>[^*:]+?):?\*\*[:\s]*(?P<text>.+?)\s*$", re.M)
 
 DASH = re.compile(r"\s+[—–]\s+")
 PAREN = re.compile(r"^(.*?)\s*\(([^)]*)\)\s*$")
@@ -181,6 +205,44 @@ def match_pc(token, pcs):
     return hits[0] if len(hits) == 1 else None
 
 
+def handouts(lore_name):
+    """Per-pregen handout material from an adventure's .lore.
+
+    Returns {folded pregen name: {"connection": str, "intel": [(who, text)]}}.
+    The Wedding at Kyotei handouts are the reason this exists: each of its
+    seven folios carries a private list of what that character knows about the
+    other guests, and every one of those guests has a statblock in the
+    adventure's cast. Nothing else in this archive states a published pregen's
+    relationships to NPCs, and the map was drawing none.
+    """
+    if not lore_name:
+        return {}      # a product with no handouts; join("") is the directory
+    manifest = json.load(open(dsl_rules_text.MANIFEST))
+    base = os.path.normpath(os.path.join(
+        os.path.dirname(dsl_rules_text.MANIFEST), manifest["base_dir"]))
+    path = os.path.join(base, lore_name)
+    if not os.path.exists(path):
+        return {}
+    text = open(path, encoding="utf-8").read()
+    m = re.search(r"^## Player Handouts\s*$", text, re.M)
+    if not m:
+        return {}
+    nxt = re.search(r"^## ", text[m.end():], re.M)
+    body = text[m.end():m.end() + (nxt.start() if nxt else len(text))]
+
+    out, marks = {}, list(HANDOUT_PC.finditer(body))
+    for i, pc in enumerate(marks):
+        end = marks[i + 1].start() if i + 1 < len(marks) else len(body)
+        section = body[pc.end():end]
+        conn = CONNECTION.search(section)
+        out[fold(pc.group("name"))] = {
+            "connection": conn.group("text").strip() if conn else None,
+            "intel": [(i2.group("who").strip(), i2.group("text").strip())
+                      for i2 in INTEL.finditer(section)],
+        }
+    return out
+
+
 def main():
     # Every character in the archive, not only the ones with a filled-in
     # twenty questions. Kuni Ryōsei and Sanpei have empty records and are still
@@ -294,6 +356,34 @@ def main():
             pcs.append(pc)
             nodes.append(pc)
 
+        # The NPCs each folio knows, from the adventure's handouts. Several
+        # folios naming the same guest converge on one node -- which is the
+        # point of drawing them: Tsume Yemon is one person that four of the
+        # seven have been told something different about.
+        hand = handouts(HANDOUT_LORE.get(
+            (members[0].get("published") or {}).get("source_file"), "")) \
+            if members else {}
+        npcs = {}
+        for d in members:
+            h = hand.get(fold(d["name"]))
+            if not h:
+                continue
+            mine = "pc:" + d["slug"]
+            for pc in pcs:
+                if pc["id"] == mine and h["connection"]:
+                    # not an edge: the connection line is why this character is
+                    # here at all, and it names nobody in a marked-up way
+                    pc["connection"] = h["connection"]
+            for who, text in h["intel"]:
+                key = "npc:" + fold(who).replace(" ", "-")
+                n = npcs.setdefault(key, {"id": key, "kind": "npc",
+                                          "name": who, "affiliation": None,
+                                          "named_by": []})
+                n["named_by"].append(d["name"])
+                edges.append({"a": mine, "b": key, "kind": "knows",
+                              "text": text, "defined": True})
+        nodes.extend(npcs[k] for k in sorted(npcs))
+
         # What each folio says about the others. A line reads "Haruko:
         # Friendly, ..." -- a given name, not the full one -- so it is matched
         # against every token of every other pregen's name in this product.
@@ -328,10 +418,19 @@ def main():
                               "text": text, "defined": bool(text)})
         first = members[0].get("published") or {}
         published[product] = {
-            "nodes": nodes, "edges": edges, "pcs": len(pcs), "npcs": 0,
+            "nodes": nodes, "edges": edges, "pcs": len(pcs),
+            "npcs": len(npcs),
             "published": True,
+            # what to call this party on the map, where the product name is not
+            # what anybody sits down to play: the Beginner Game's seven folios
+            # play the Topaz Championship, and the sheet pack's six are for the
+            # Lost Writer
+            "label": first.get("party") or product,
             "adventure": first.get("adventure"),
-            "publisher": first.get("publisher"), "year": first.get("year")}
+            "publisher": first.get("publisher"), "year": first.get("year"),
+            # why a silent pair is silent, which differs by product and is not
+            # the same thing as nobody having got round to it
+            "pairs": first.get("party_relationships")}
 
     # any cross-character pair that resolved to nobody, so a renamed character
     # or a broken convention is visible instead of silently dropping an edge
@@ -362,12 +461,18 @@ def main():
           f"{sum(v['npcs'] for v in campaigns.values())} NPCs, {tot_e} edges "
           f"({undef} party pairs still undefined) -> "
           f"{os.path.relpath(OUT, ROOT)} ({os.path.getsize(OUT)/1024:.1f} KB)")
-    pub_e = sum(len(v["edges"]) for v in published.values())
-    pub_def = sum(1 for v in published.values() for e in v["edges"] if e["defined"])
+    pub_pairs = sum(1 for v in published.values()
+                    for e in v["edges"] if e["kind"] == "folio")
+    pub_def = sum(1 for v in published.values()
+                  for e in v["edges"] if e["kind"] == "folio" and e["defined"])
+    pub_knows = sum(1 for v in published.values()
+                    for e in v["edges"] if e["kind"] == "knows")
     if published:
         print(f"            + {len(published)} published product(s), "
-              f"{sum(v['pcs'] for v in published.values())} pregens, {pub_e} "
-              f"pairs ({pub_def} the folios describe themselves)")
+              f"{sum(v['pcs'] for v in published.values())} pregens, "
+              f"{pub_pairs} pairs ({pub_def} described on the folios), "
+              f"{sum(v['npcs'] for v in published.values())} NPCs from the "
+              f"handouts on {pub_knows} edges")
     if unmatched:
         print("            cross-character names matching no character: "
               + ", ".join(sorted(unmatched)))

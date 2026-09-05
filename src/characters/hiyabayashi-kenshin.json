@@ -10,6 +10,8 @@
  "published": {
   "product": "The Highwayman",
   "adventure": "The Highwayman",
+  "party": "The Highwayman",
+  "party_relationships": "printed",
   "publisher": "Fantasy Flight Games",
   "year": 2019,
   "source_file": "l5r5e-0.4-highwayman-pregens.actor"

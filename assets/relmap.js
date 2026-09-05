@@ -31,6 +31,31 @@
   // one lookup over both populations, so nothing else has to know which dict
   // a group came from
   function group(name) { return DATA.campaigns[name] || PUBLISHED[name] || null; }
+
+  /* A product is keyed by its product name -- unique, and stable against a
+     campaign of ours sharing a title -- but shown by the party it is played
+     as: the Beginner Game's seven folios are the Topaz Championship party. */
+  function label(name) {
+    var g = group(name);
+    return (g && g.label) || name;
+  }
+
+  /* Why a pair of pregens has nothing on it. Three different facts, checked
+     against the printed sheets, and "nobody has written it" is none of them. */
+  function pairsNote(c) {
+    if (c.pairs === "printed") {
+      return "What they think of each other is printed on their sheets.";
+    }
+    if (c.pairs === "grid") {
+      return "Their sheets carry an empty standing grid for the table to " +
+             "fill in, so a faint line is the sheet waiting, not a gap here.";
+    }
+    if (c.pairs === "none") {
+      return "These folios have no relationship section at all, so the faint " +
+             "lines are only who sat down together.";
+    }
+    return "A faint line means the product says nothing about that pair.";
+  }
   var GREAT = ["crab", "crane", "dragon", "lion", "phoenix", "scorpion",
                "unicorn", "imperial"];
 
@@ -242,6 +267,8 @@
         '<p class="rm-sub">' +
           esc([d.clan, d.family, d.school, d.role].filter(Boolean).join(" · ")) +
         "</p>" +
+        (d.connection
+          ? '<p class="rm-quote">' + esc(d.connection) + "</p>" : "") +
         '<p><a class="rm-link" href="' + esc(d.slug) + '.html">Open their page →</a></p>' +
         '<p class="rm-eyebrow">In the party with</p><ul class="rm-list">' +
         party.map(function (e) {
@@ -274,20 +301,26 @@
   }
 
   function showEdge(e, s, t) {
-    var label = e.kind === "party" ? "In the party together"
+    var pub = (group(state.campaign) || {}).published;
+    var kindLabel = e.kind === "party" ? "In the party together"
               : e.kind === "folio" ? "On the same printed folio"
+              // on a folio this is not what the character worked out, it is
+              // what their handout told them before play began
+              : e.kind === "knows" ? (pub ? "What their handout told them"
+                                          : "Knows")
+              : e.kind === "taught by" ? "Taught by"
+              : e.kind === "serves" ? "Serves"
               : e.kind;
     // Nothing is owed on a published pair: the folios either say or they do
     // not, and either way it is not this archive's decision to make.
     var empty = e.kind === "folio"
       ? '<p class="rm-sub">Neither folio says anything about the other. ' +
-        "These are printed characters — the silence is the product\u2019s, not " +
-        "a gap here.</p>"
+        pairsNote(group(state.campaign) || {}) + "</p>"
       : '<p class="rm-todo">This pair has no relationship written yet. ' +
         "Every pair of characters in a party has one; this is where you " +
         "would decide what it is.</p>";
     el("detail").innerHTML =
-      '<p class="rm-eyebrow">' + esc(label) +
+      '<p class="rm-eyebrow">' + esc(kindLabel) +
       "</p><h2>" + esc(s.name) + " &amp; " + esc(t.name) + "</h2>" +
       (e.text ? '<p class="rm-quote">' + esc(e.text) + "</p>" : empty);
   }
@@ -347,21 +380,28 @@
       // there is no worklist here and the summary does not imply one.
       var folio = state.edges.filter(function (e) { return e.kind === "folio"; });
       var said = folio.filter(function (e) { return e.defined; }).length;
+      var knows = state.edges.filter(function (e) { return e.kind === "knows"; });
       el("summary").innerHTML =
         plural(c.pcs, "pregen", "pregens") + " · " +
         (folio.length
           ? said + " of " + folio.length + " pairs described on the folios"
           : "a single folio") +
+        (c.npcs ? " · " + plural(c.npcs, "guest they were told about",
+                                 "guests they were told about") : "") +
         (c.publisher ? " · " + esc(c.publisher) +
                        (c.year ? " " + c.year : "") : "");
       el("detail").innerHTML =
-        '<p class="rm-eyebrow">Published pregens</p><h2>' + esc(name) + "</h2>" +
-        (c.adventure && c.adventure !== name
-          ? "<p>The folios that ship with " + esc(c.adventure) + ".</p>"
-          : "<p>The folios that ship with it.</p>") +
+        '<p class="rm-eyebrow">Published pregens</p><h2>' + esc(label(name)) +
+        "</h2>" +
+        (c.adventure && c.adventure !== label(name)
+          ? "<p>The folios that ship with " + esc(c.adventure) + ".</p>" : "") +
         '<p class="rm-sub">Somebody else\u2019s characters, transcribed. ' +
-        "What they think of each other is printed on the sheets, so a faint " +
-        "line here means the product is silent — not that anything is owed.</p>";
+        pairsNote(c) + "</p>" +
+        (knows.length
+          ? '<p class="rm-sub">The lines out to the guests are what each folio ' +
+            "was privately told about them — four of these characters were " +
+            "handed different things about the same person.</p>"
+          : "");
       return;
     }
 
@@ -386,7 +426,7 @@
     var pick = el("campaign");
     function opts(names) {
       return names.map(function (n) {
-        return '<option value="' + esc(n) + '">' + esc(n) +
+        return '<option value="' + esc(n) + '">' + esc(label(n)) +
           " (" + group(n).pcs + ")</option>";
       }).join("");
     }
