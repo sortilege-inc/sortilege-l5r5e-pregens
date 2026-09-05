@@ -71,7 +71,7 @@ python3 scripts/dsl_rules_text.py $REFRESH
 # build that reads src/characters/.
 python3 scripts/import_published.py
 
-python3 scripts/build.py
+python3 scripts/build.py --final
 
 # Chargen tables the Creator reads straight from the corpus, rather than through
 # the catalog. heritage_tables.py in particular was outside the chain, so a

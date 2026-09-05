@@ -114,7 +114,7 @@
      "in_curriculum": false,
      "bought_at_rank": 0,
      "custom": true,
-     "kind": "opportunity",
+     "kind": "kata",
      "description": "When you make a Martial Arts [Melee, Ranged, or Unarmed] (Earth) check, you may spend Opportunity in the following way: Earth Opportunity+: Treat your physical resistance as 1 higher per Opportunity spent this way until the beginning of your next turn."
     },
     {
@@ -124,7 +124,7 @@
      "in_curriculum": false,
      "bought_at_rank": 0,
      "custom": true,
-     "kind": "opportunity",
+     "kind": "shuji",
      "description": "When making a Scholar skill (Fire) check to assess a character's story, you may spend Opportunity in the following way: Fire Opportunity: If there is a single statement upon which the character's story hinges, you determine what it is and what you would need to do to verify or disprove it."
     },
     {

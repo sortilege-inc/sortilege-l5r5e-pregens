@@ -124,7 +124,7 @@
      "in_curriculum": false,
      "bought_at_rank": 0,
      "custom": true,
-     "kind": "opportunity",
+     "kind": "kata",
      "description": "When you make a Martial Arts [Ranged] check, you may spend Opportunity in the following way: Opportunity+: Treat the range of the weapon as 1 higher per Opportunity spent this way, to a maximum of range 6."
     },
     {

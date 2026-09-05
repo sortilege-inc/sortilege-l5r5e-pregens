@@ -77,6 +77,22 @@ PRODUCTS = {
     },
 }
 
+# A *-pregens.actor file that does not hold pregenerated characters. The
+# Advisors are persona overlays: the source is explicit that "Mechanically, they
+# use their normal character sheet", so each carries an identity, a ninjō, a
+# giri and a backstory and no rings, skills, school or techniques at all. A
+# record built from one would be a character with no numbers, and
+# published_gate.py would then go looking for its play sheet. Excluded by name
+# with the reason, so the unknown-file gate below stays meaningful.
+NOT_CHARACTERS = {
+    "l5r5e-0.4-blood-of-the-lioness-pregens.actor":
+        "The Advisors (Blood of the Lioness p12) and Matsu no Shion Nori (p13) "
+        "are premade historical personas for Part Two, not characters: a player "
+        "keeps their own rings, skills, school and techniques and takes on only "
+        "the identity, ninjō, giri and backstory. They EXTEND ^\"Historical "
+        "Persona\", which APPLIES TO ^\"Samurai\" rather than being one.",
+}
+
 SKILL_GROUPS = {
     "artisan": ["aesthetics", "composition", "design", "smithing"],
     "martial": ["fitness", "melee", "ranged", "unarmed", "meditation", "tactics"],
@@ -99,6 +115,9 @@ RINGS = ("air", "earth", "fire", "water", "void")
 # "Quick Reflexes (Fire) — Distinction" / "Fear of Death (Earth) — Anxiety"
 # name -> technique type, built from the corpus in main()
 TECH_INDEX = {}
+# (character, printed entry, printed type, the corpus's type) for every label
+# that disagrees with the corpus. Filled in build(), judged in main().
+TYPE_CONFLICTS = []
 
 PEC_RE = re.compile(
     r"^(?P<name>.*?)\s*(?:\((?P<ring>Air|Earth|Fire|Water|Void)\))?"
@@ -175,6 +194,21 @@ def technique_types(corpus):
         for sub in d.get("sub_entities") or []:
             if isinstance(sub, dict) and sub.get("name"):
                 idx.setdefault(norm(sub["name"]), kind)
+    # The core book nests a technique under a DEF named for its type; Path of
+    # Waves and Writ of the Wilds instead give each one its own top-level DEF
+    # with ^"Type" on it (the section banners above them are comments, which do
+    # not survive composition). Reading only the first shape missed all 82 of
+    # those -- including Bellow of Resolve, whose type is the whole point of the
+    # check below.
+    for d in walk(corpus):
+        if not (isinstance(d, dict) and d.get("kind") == "def" and d.get("name")):
+            continue
+        for prop in (d.get("properties") or []):
+            if prop.get("name") != "Type" or not prop.get("value"):
+                continue
+            kind = TECH_KIND.get(str(prop["value"]).strip().lower())
+            if kind:
+                idx.setdefault(norm(d["name"]), kind)
     return idx
 
 
@@ -340,6 +374,13 @@ def build(entity, source, report):
             report.append(f"{name}: technique {raw!r} names no type this reader "
                           f"knows — kept whole and unclassified")
             tname = str(raw).strip()
+        # The sheet's label against the corpus's filing. Upstream corrected
+        # seven of these in one commit -- techniques labelled "(New
+        # Opportunity)", which is not a technique type -- so it is worth
+        # checking by machine rather than by eye.
+        corpus_kind = TECH_INDEX.get(norm(tname))
+        if kind and corpus_kind and corpus_kind != kind:
+            TYPE_CONFLICTS.append((name, str(raw).strip(), kind, corpus_kind))
         e = content(tname, kind=kind, text=FX.get(tname))
         if note:
             # "Rank 1 from school ability": how the character has it, which the
@@ -478,8 +519,15 @@ def main():
             continue
         src = next((s for s in (d.get("sources") or [])
                     if s.endswith("-pregens.actor")), None)
-        if src:
-            found.append((d, src))
+        if not src or src in NOT_CHARACTERS:
+            continue
+        # A pregen is a samurai. Anything else in one of these files is a type
+        # or an overlay, and building a character record from it would invent
+        # numbers the sheet never printed -- so it is skipped here and, if its
+        # file is not excused above, caught by the unknown-file gate.
+        if d.get("extends") != "Samurai":
+            continue
+        found.append((d, src))
 
     if not found:
         sys.exit("FAIL — no *-pregens.actor entities in the composed corpus. "
@@ -504,13 +552,17 @@ def main():
             print(f"FAIL — {f}: the corpus has {got} pregens, the printed "
                   f"product has {want}", file=sys.stderr)
         return 1
-    unknown = sorted(set(per_file) - set(expected))
+    unknown = sorted(set(per_file) - set(expected) - set(NOT_CHARACTERS))
     if unknown:
         print(f"FAIL — {len(unknown)} pregen file(s) this script does not know "
               f"the product for; add them to PRODUCTS:", file=sys.stderr)
         for f in unknown:
             print(f"   {f}", file=sys.stderr)
         return 1
+
+    excused = {k: v for k, v in (json.load(open(
+        os.path.join(ROOT, "src", "foundry_sources.json")))
+        .get("pregen_technique_types") or {}).items() if not k.startswith("_")}
 
     report, wrote, docs = [], 0, []
     for entity, src in sorted(found, key=lambda x: x[0]["name"]):
@@ -535,9 +587,29 @@ def main():
             json.dump(doc, open(path, "w"), indent=1, ensure_ascii=False)
             wrote += 1
 
+    # Every printed technique type must agree with the corpus's filing, or be
+    # excused by name with a reason. Not advisory: a folio that files a shūji
+    # as a kata groups it wrongly on the play sheet, and the label is the only
+    # thing that says which.
+    conflicts = [c for c in TYPE_CONFLICTS if f"{c[0]}: {c[1]}" not in excused]
+    if conflicts:
+        print(f"FAIL — {len(conflicts)} printed technique type(s) disagree with "
+              f"the corpus:", file=sys.stderr)
+        for who, raw, printed, corpus_kind in conflicts:
+            print(f"   {who}: {raw} — the corpus files it as {corpus_kind}",
+                  file=sys.stderr)
+        print("   Fix the .actor file upstream, or excuse it in "
+              "pregen_technique_types with the reason.", file=sys.stderr)
+        return 1
+
     by_product = {}
     for d in docs:
         by_product.setdefault(d["published"]["product"], []).append(d["name"])
+    # An excused conflict stays printed on every run: a defect that stops being
+    # mentioned is a defect that gets forgotten.
+    if excused:
+        print(f"   ! {len(excused)} printed technique type(s) excused rather "
+              f"than agreeing with the corpus: " + "; ".join(sorted(excused)))
     verb = "would write" if args.check else "wrote"
     print(f"published pregens: {len(docs)} from {len(by_product)} products, "
           f"{verb} {wrote if not args.check else len(docs)}")

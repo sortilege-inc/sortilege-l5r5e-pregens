@@ -782,15 +782,29 @@ def school_norm_index(cx):
     return index
 
 
+# pipeline.sh passes --final to the second of its two build passes: the one
+# that runs after the published records have been refreshed from the corpus.
+# Checks that need current records go behind it.
+FINAL = "--final" in sys.argv
+
+
 def load_characters(cx):
     ALIASES = school_aliases()
     SCHOOL_INDEX = school_norm_index(cx)
     unresolved = []
+    # Which aliases actually did something. An alias whose spelling has been
+    # corrected upstream goes on quietly matching nothing, and the next reader
+    # has no way to tell a live workaround from a dead one -- so a dead one is
+    # an error. (Kaeru Akiara's school was 'Rōnin (Worldly Rōnin Path)' for a
+    # day, and is now the sheet's own 'Rōnin'.)
+    used_alias = set()
     tid = 0
     for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
         c = json.load(open(path))
         tiers = c["tiers"]
         snorm = norm(c["identity"].get("school"))
+        if snorm in ALIASES:
+            used_alias.add(snorm)
         snorm = ALIASES.get(snorm, snorm)
         # then the corpus's short spelling, if that is what the record used
         snorm = SCHOOL_INDEX.get(snorm, snorm)
@@ -854,6 +868,20 @@ def load_characters(cx):
                         tid, c["slug"], cat, entry["name"], n,
                         1 if entry.get("custom") else 0, uuid,
                         json.dumps(entry, ensure_ascii=False)))
+
+    # Only on the final pass. pipeline.sh runs this build twice -- once before
+    # scripts/import_published.py rewrites the published records from the
+    # corpus, once after -- and on the first pass those records are still last
+    # run's, so an alias corrected upstream this morning looks dead when it is
+    # about to be needed. The second pass sees what the corpus actually says.
+    dead = sorted(set(ALIASES) - used_alias) if FINAL else []
+    if dead:
+        raise SystemExit(
+            f"FAIL — {len(dead)} school alias(es) match no character's school, "
+            f"so they are doing nothing:\n"
+            + "\n".join(f"   {d!r} -> {ALIASES[d]!r}" for d in dead)
+            + "\n   Probably corrected upstream: drop the entry from "
+              "school_aliases, or fix its spelling.")
     return unresolved
 
 
