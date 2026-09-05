@@ -306,14 +306,33 @@
    "arc": "l5r5e-0.4-children-of-five-winds-lost-writer.arc",
    "note": "Children of the Five Winds, chapter 4, in the Imperial holding at the river junction the Dragon, Lion, Unicorn and Dragonfly all care about. Not the same as the \"City of the Rich Frog\" tag already in this list — that one is the city, and holds a character of its own.",
    "pencilled_schools": [
-    "Yasuki Merchant School",
-    "Ide Trader School",
-    "School of Leaves",
-    "Scholar of al-Zawira Tradition",
-    "Ivory Kingdoms Dancing Blades Tradition",
-    "Utaku Stablemaster School"
+    {
+     "school": "Yasuki Merchant School",
+     "concept": "A Crab with a stall at the Unicorn docks who knows which crates are not what the manifest says; retained to find the author and paid by the day, which suits him."
+    },
+    {
+     "school": "Ide Trader School",
+     "concept": "Supplied the curio shop with half its foreign stock, and is trying very hard to remember what else was in that consignment."
+    },
+    {
+     "school": "School of Leaves",
+     "concept": "Reads Hana-no-Ame, and is the only person in the city who noticed the stories stopped."
+    },
+    {
+     "school": "Scholar of al-Zawira Tradition",
+     "concept": "The only person in the city who can say what an ifrit is without guessing."
+    },
+    {
+     "school": "Ivory Kingdoms Dancing Blades Tradition",
+     "concept": "A foreign blade hired as a bodyguard by a client who has since vanished."
+    },
+    {
+     "school": "Utaku Stablemaster School",
+     "concept": "Keeps the Unicorn district's stables and hears everything the riders say when they think they are alone — and is senior enough that the Kaeru know where to come when a Unicorn is the problem."
+    }
    ],
-   "pencilled_why": "Chosen 2026-09-04 for a city, not a battlefield: an Imperial holding at a river junction that the Dragon, Lion, Unicorn and Dragonfly all want, with Kaeru rōnin keeping the peace. Two traders — a Yasuki and an Ide — because a river junction is about goods; a Scholar of al-Zawira and an Ivory Kingdoms blade because a trade city is full of people from elsewhere; a School of Leaves at honour 26 for what is happening under it; and a Utaku stablemaster at honour 55 as the one who will not bend. Yasuki Merchant is also the school of a published pregen (Yasuki Toru, Wedding at Kyotei Castle) — untouched by the archive, so it still adds coverage.\n\nNote on the source: the owner recalled this adventure shipping a publisher party. Nothing on disk shows one — Children of the Five Winds' PDF has no mention of pregenerated characters and no character sheets, where Wedding at Kyotei Castle's has both. Either way this pack stands alone."
+   "pencilled_why": "Chosen 2026-09-04 for a city, not a battlefield: an Imperial holding at a river junction that the Dragon, Lion, Unicorn and Dragonfly all want, with Kaeru rōnin keeping the peace. Two traders — a Yasuki and an Ide — because a river junction is about goods; a Scholar of al-Zawira and an Ivory Kingdoms blade because a trade city is full of people from elsewhere; a School of Leaves at honour 26 for what is happening under it; and a Utaku stablemaster at honour 55 as the one who will not bend. Yasuki Merchant is also the school of a published pregen (Yasuki Toru, Wedding at Kyotei Castle) — untouched by the archive, so it still adds coverage.\n\nNote on the source: the owner recalled this adventure shipping a publisher party. Nothing on disk shows one — Children of the Five Winds' PDF has no mention of pregenerated characters and no character sheets, where Wedding at Kyotei Castle's has both. Either way this pack stands alone.\n\nConcepts written 2026-09-04, completing the pack. The Yasuki's folds both options together and the Utaku's takes the first with a hint of the second, both at the owner's direction.\n\nThe party arrives already holding the case rather than waiting to be given it: one of them noticed the stories stopped, one supplied the curio shop, one can say what an ifrit is without guessing, one knows which crates lie, and one lost the client he was guarding. The Utaku matters more than she looks — the missing author is a Shinjo, so the senior Unicorn in the city is the person the Kaeru come to when the problem is a Unicorn, which this one is.\n\nNote on the name: this is the adventure, not the \"City of the Rich Frog\" campaign tag also in this list, which is the city and holds a character of its own.",
+   "setting": "Children of the Five Winds chapter 4. An Imperial holding at a river junction, three clan districts — Dragon, Lion, Unicorn — with the Dragonfly also invested and neutral Kaeru rōnin keeping the peace. The missing author is Shinjo Higuchi, who wrote as Hana-no-Ame and is possessed by an ifrit out of a meishōdō talisman. The arc names its own themes: freedom and captivity, literal and spiritual, and art as a vessel for truth with the dangers of uncovering it. Smuggling at the Unicorn docks is an open secret and the curio shop is full of foreign talismans and sealed scrolls."
   },
   "The Scroll or the Blade": {
    "arc": "l5r5e-0.4-scroll-or-blade.arc",
