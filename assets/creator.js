@@ -157,6 +157,9 @@
      NOT `rollName` — that name already belongs to the school-name resolver
      above, and taking it made every roll return the character's school. */
   function rollPersonalName(family, gender) {
+    // The l5r5e name tables split only male and female, so "any" and
+    // "nonbinary" both roll from the union of the two -- which is `any`, not a
+    // third list, because the game does not print one.
     var pool = (NAMES.given || {})[gender] || (NAMES.given || {}).any || [];
     var personal = pickFrom(pool);
     if (!personal) return null;
@@ -608,6 +611,11 @@
         if (fam.clan) c.clan = fam.clan;
       }
     }
+    /* And the gender the pack was planned around, so the name roll gives a
+       name that fits without anyone setting the toggle first. It is the plan's
+       call, not a fact about the character: change it here and the pack's
+       balance is off by one, which is the build.py gate's business. */
+    if (st.gender) c.gender = st.gender;
     var id = newId();
     STORE.drafts[id] = { id: id, updated: Date.now(), character: c };
     switchDraft(id);
@@ -796,6 +804,9 @@
         var tag = st.built_by === "archive" ? " · already built"
                 : st.built_by === "published" ? " · a folio has this school"
                 : "";
+        // a pronoun reads faster than "female" on a chip already carrying a
+        // campaign and a family
+        var who = { male: "he", female: "she", nonbinary: "they" }[st.gender];
         return '<button type="button" class="archivechip stubchip' +
           (st.concept ? " has-concept" : "") +
           (st.built_by === "archive" ? " taken" : "") +
@@ -808,7 +819,8 @@
             (st.concept ? "\n\n" + st.concept : "")) + '">' +
           esc(st.school) +
           '<span class="dc-meta">' + esc(st.campaign) + esc(also) +
-          (st.family ? " · " + esc(st.family) : "") + tag +
+          (st.family ? " · " + esc(st.family) : "") +
+          (who ? " · " + who : "") + tag +
           "</span></button>";
       }).join("") + "</div>";
   }
@@ -4518,7 +4530,8 @@
 
     var g = document.createElement("div");
     g.className = "choicerow lord-gender";
-    [["any", "Any"], ["male", "Male"], ["female", "Female"]].forEach(function (o) {
+    [["any", "Any"], ["male", "Male"], ["female", "Female"],
+     ["nonbinary", "Nonbinary"]].forEach(function (o) {
       var b = document.createElement("button");
       b.type = "button";
       b.className = "choice" + ((opts.gender() || "any") === o[0] ? " active" : "");

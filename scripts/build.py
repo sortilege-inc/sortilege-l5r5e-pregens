@@ -364,6 +364,23 @@ def corpus_base_dir():
                                          manifest["base_dir"]))
 
 
+GENDERS = ("male", "female", "nonbinary")
+
+# The pronouns a concept can be written with. A premise that says "he" has
+# settled its own entry, so the gender is checked against it rather than
+# trusted -- but a concept naming a second person ("her late lord ... finds him
+# unwilling") carries both, and there the sentence cannot say which is the
+# character. Mixed is skipped, single-gender is enforced.
+PRONOUNS = {"male": re.compile(r"\b(he|him|his|himself)\b", re.I),
+            "female": re.compile(r"\b(she|her|hers|herself)\b", re.I)}
+
+
+def concept_pronoun(text):
+    """male, female, or None if a concept names both genders or neither."""
+    hit = [g for g, rx in PRONOUNS.items() if rx.search(text or "")]
+    return hit[0] if len(hit) == 1 else None
+
+
 def campaigns(cx):
     """Every campaign the archive knows of, whether a character is tagged to
     one yet or not.
@@ -433,7 +450,7 @@ def campaigns(cx):
         raise SystemExit(f"FAIL — {len(links)} broken shared-pack link(s):\n"
                          + "\n".join("   " + m for m in links))
 
-    out, offroll, stale, blank, badfam = [], [], [], [], []
+    out, offroll, stale, blank, badfam, badgender = [], [], [], [], [], []
     for name in names:
         spec = declared.get(name) or {}
         # a campaign sharing another's pack shows that shortlist rather than
@@ -481,8 +498,22 @@ def campaigns(cx):
                         badfam.append((name, label, fam,
                                        f"is {fclan} where the school is {schclan}"))
                     fam = fname
+            # The gender this build is written for. A pack is a table's
+            # worth of characters and wants a spread, so it is planned here
+            # rather than left to whoever builds it -- and a concept already
+            # written with a pronoun in it settles its own entry.
+            gender = entry.get("gender") if isinstance(entry, dict) else None
+            if gender not in GENDERS:
+                badgender.append((name, label, gender,
+                                  "is not one of " + ", ".join(GENDERS)))
+            else:
+                said = concept_pronoun(concept)
+                if said and said != gender:
+                    badgender.append((name, label, gender,
+                                      f"but the concept is written as {said}"))
             pencilled.append({"school": roll[n], "covered": n in covered,
-                              "concept": concept, "family": fam})
+                              "concept": concept, "family": fam,
+                              "gender": gender})
         out.append({"name": name, "characters": counts.get(name, 0),
                     "arc": spec.get("arc"), "note": spec.get("note"),
                     "pencilled": pencilled,
@@ -508,6 +539,28 @@ def campaigns(cx):
             f"FAIL — {len(badfam)} pencilled family assignment(s) do not hold:\n"
             + "\n".join(f"   {c}: {s} — {f!r} {why}"
                          for c, s, f, why in badfam))
+    if badgender:
+        raise SystemExit(
+            f"FAIL — {len(badgender)} pencilled gender(s) do not hold:\n"
+            + "\n".join(f"   {c}: {s} — {g!r} {why}"
+                         for c, s, g, why in badgender))
+    # Each pack splits male/female as near to evenly as its own count allows.
+    # Off by one is the closest an odd-numbered pack can come; off by more is a
+    # plan drifting, and the locked concepts are not currently enough to force
+    # it in any pack.
+    skewed = []
+    for c in out:
+        if c["pack_from"] or not c["pencilled"]:
+            continue
+        g = collections.Counter(p["gender"] for p in c["pencilled"])
+        if abs(g["male"] - g["female"]) > 1:
+            skewed.append((c["name"], g["male"], g["female"], g["nonbinary"]))
+    if skewed:
+        raise SystemExit(
+            f"FAIL — {len(skewed)} pack(s) no longer split close to evenly:\n"
+            + "\n".join(f"   {n}: {m}M {f}F"
+                         + (f" {nb}NB" if nb else "") + " — off by "
+                         + str(abs(m - f)) for n, m, f, nb in skewed))
     stale = sorted(set(stale))
     if stale:
         # not an error: a pack may deliberately revisit a school. But the point
@@ -664,6 +717,12 @@ def campaigns(cx):
           + (f", {withconcept} of {npen} with a concept" if withconcept else "")
           + (f", {withfamily} with a family" if withfamily else "")
           + ")")
+    if npen:
+        g = collections.Counter(p["gender"] for c in out if not c["pack_from"]
+                                for p in c["pencilled"])
+        packs = sum(1 for c in out if c["pencilled"] and not c["pack_from"])
+        print(f"   pencilled genders: {g['male']}M {g['female']}F "
+              f"{g['nonbinary']}NB — every one of {packs} packs within one")
     return out
 
 
