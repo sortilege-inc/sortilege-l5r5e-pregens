@@ -30,7 +30,13 @@
  "summary": null,
  "notes": null,
  "twenty_questions": null,
- "relationships": "[\"Noboru: Good terms, but they give a lot of questionable advice\", \"Mishti: Friendly, something about her reminds you of your situation\", \"Turgen: A strange man, but seems generally honorable\", \"Akagi Daichi: Neutral, seems a little suspicious\", \"Kenshin: Neutral, seems geisha are a part of Rokugan\"]",
+ "relationships": [
+  "Noboru: Good terms, but they give a lot of questionable advice",
+  "Mishti: Friendly, something about her reminds you of your situation",
+  "Turgen: A strange man, but seems generally honorable",
+  "Akagi Daichi: Neutral, seems a little suspicious",
+  "Kenshin: Neutral, seems geisha are a part of Rokugan"
+ ],
  "demeanor": "Technique types available: Kata, Rituals, Shūji.",
  "tiers": [
   {

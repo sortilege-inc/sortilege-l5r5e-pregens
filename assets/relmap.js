@@ -13,6 +13,10 @@
      knows /    a PC to someone they named while being made: a question 16
      taught by  contact, the question 13 mentor, the question 5 lord.
      serves
+     folio      a pair of published pregens. Solid where their own sheets say
+                what they think of each other -- the Highwayman's six carry a
+                full matrix of it -- and faint where the folios are silent,
+                which is NOT work to do: these are somebody else's characters.
 
    A clan is not a line. Two people being Tortoise says nothing about whether
    they have met, so affiliation is a label on a node and never an edge.
@@ -21,6 +25,12 @@
   "use strict";
 
   var DATA = window.L5R_RELMAP || { campaigns: {}, order: [] };
+  var PUBLISHED = DATA.published || {};
+  var PUB_ORDER = DATA.published_order || [];
+
+  // one lookup over both populations, so nothing else has to know which dict
+  // a group came from
+  function group(name) { return DATA.campaigns[name] || PUBLISHED[name] || null; }
   var GREAT = ["crab", "crane", "dragon", "lion", "phoenix", "scorpion",
                "unicorn", "imperial"];
 
@@ -132,7 +142,10 @@
         cls += " rm-dim";
       }
       var caption = s.name + " & " + t.name + " — " +
-        (e.text ? e.text : e.kind === "party" ? "not written yet" : e.kind);
+        (e.text ? e.text
+                : e.kind === "party" ? "not written yet"
+                : e.kind === "folio" ? "their folios do not say"
+                : e.kind);
 
       /* A drawn line is one or two pixels wide, which is fine to look at and
          impossible to hover. So each edge is two lines: a fat transparent one
@@ -261,13 +274,22 @@
   }
 
   function showEdge(e, s, t) {
+    var label = e.kind === "party" ? "In the party together"
+              : e.kind === "folio" ? "On the same printed folio"
+              : e.kind;
+    // Nothing is owed on a published pair: the folios either say or they do
+    // not, and either way it is not this archive's decision to make.
+    var empty = e.kind === "folio"
+      ? '<p class="rm-sub">Neither folio says anything about the other. ' +
+        "These are printed characters — the silence is the product\u2019s, not " +
+        "a gap here.</p>"
+      : '<p class="rm-todo">This pair has no relationship written yet. ' +
+        "Every pair of characters in a party has one; this is where you " +
+        "would decide what it is.</p>";
     el("detail").innerHTML =
-      '<p class="rm-eyebrow">' + esc(e.kind === "party" ? "In the party together" : e.kind) +
+      '<p class="rm-eyebrow">' + esc(label) +
       "</p><h2>" + esc(s.name) + " &amp; " + esc(t.name) + "</h2>" +
-      (e.text ? '<p class="rm-quote">' + esc(e.text) + "</p>"
-              : '<p class="rm-todo">This pair has no relationship written yet. ' +
-                "Every pair of characters in a party has one; this is where you " +
-                "would decide what it is.</p>");
+      (e.text ? '<p class="rm-quote">' + esc(e.text) + "</p>" : empty);
   }
 
   /* ---------------------------------------------------------- shell */
@@ -308,7 +330,7 @@
   }
 
   function load(name) {
-    var c = DATA.campaigns[name];
+    var c = group(name);
     if (!c) return;
     state.campaign = name;
     state.nodes = JSON.parse(JSON.stringify(c.nodes));
@@ -318,9 +340,33 @@
     layout(state.nodes, state.edges, size.w, size.h);
     draw();
     fit();
+    function plural(n, one, many) { return n + " " + (n === 1 ? one : many); }
+
+    if (c.published) {
+      // A shipped party. Its pairs are described or not by the product, so
+      // there is no worklist here and the summary does not imply one.
+      var folio = state.edges.filter(function (e) { return e.kind === "folio"; });
+      var said = folio.filter(function (e) { return e.defined; }).length;
+      el("summary").innerHTML =
+        plural(c.pcs, "pregen", "pregens") + " · " +
+        (folio.length
+          ? said + " of " + folio.length + " pairs described on the folios"
+          : "a single folio") +
+        (c.publisher ? " · " + esc(c.publisher) +
+                       (c.year ? " " + c.year : "") : "");
+      el("detail").innerHTML =
+        '<p class="rm-eyebrow">Published pregens</p><h2>' + esc(name) + "</h2>" +
+        (c.adventure && c.adventure !== name
+          ? "<p>The folios that ship with " + esc(c.adventure) + ".</p>"
+          : "<p>The folios that ship with it.</p>") +
+        '<p class="rm-sub">Somebody else\u2019s characters, transcribed. ' +
+        "What they think of each other is printed on the sheets, so a faint " +
+        "line here means the product is silent — not that anything is owed.</p>";
+      return;
+    }
+
     var party = state.edges.filter(function (e) { return e.kind === "party"; });
     var undef = party.filter(function (e) { return !e.defined; }).length;
-    function plural(n, one, many) { return n + " " + (n === 1 ? one : many); }
     el("summary").innerHTML =
       plural(c.pcs, "character", "characters") + " · " +
       plural(c.npcs, "person they named", "people they named") +
@@ -338,10 +384,21 @@
 
   function init() {
     var pick = el("campaign");
-    pick.innerHTML = DATA.order.map(function (n) {
-      return '<option value="' + esc(n) + '">' + esc(n) +
-        " (" + DATA.campaigns[n].pcs + ")</option>";
-    }).join("");
+    function opts(names) {
+      return names.map(function (n) {
+        return '<option value="' + esc(n) + '">' + esc(n) +
+          " (" + group(n).pcs + ")</option>";
+      }).join("");
+    }
+    /* Two optgroups rather than one list, because a product is not one of our
+       campaigns -- and because two of them share a name with one ("Wedding at
+       Kyotei Castle" is both a product and a pack of our own), which a single
+       flat list would silently collapse. */
+    pick.innerHTML =
+      (PUB_ORDER.length
+        ? '<optgroup label="Campaigns">' + opts(DATA.order) + "</optgroup>" +
+          '<optgroup label="Published pregens">' + opts(PUB_ORDER) + "</optgroup>"
+        : opts(DATA.order));
     var first = DATA.order.indexOf("Slow Tide Harbor") >= 0
       ? "Slow Tide Harbor" : DATA.order[0];
     pick.value = first;
@@ -399,7 +456,15 @@
       }).observe(el("map"));
     }
 
-    whenSized(function () { load(first); });
+    /* The first draw waits for a real box, and that wait can be long: opened
+       in a hidden pane, `whenSized` polls until the pane is shown. Two things
+       can happen in the meantime -- the reader picks a campaign, or the
+       browser restores the one they had picked before a reload -- and firing
+       `first` then would throw their choice away. So this loads whatever the
+       picker says by then, and only if nothing is loaded yet. */
+    whenSized(function () {
+      if (!state.campaign) load(group(pick.value) ? pick.value : first);
+    });
   }
 
   // window.load rather than DOMContentLoaded: the layout needs the stylesheet

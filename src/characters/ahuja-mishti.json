@@ -30,7 +30,13 @@
  "summary": null,
  "notes": null,
  "twenty_questions": null,
- "relationships": "[\"Haruko: Friendly, she seems like a kindred spirit who has seen struggle\", \"Kenshin: Friendly, seems friendly and honest\", \"Turgen: Friendly, another person who knows the realities of being in Rokugan as an outsider. He has a mischievous spirit haunting him, but you don't see any reason for that to hinder your friendship\", \"Daichi: Neutral, he seems to be nervous most of the time\", \"Noboru: Friendly, they remind you of the wizened sage of your village\"]",
+ "relationships": [
+  "Haruko: Friendly, she seems like a kindred spirit who has seen struggle",
+  "Kenshin: Friendly, seems friendly and honest",
+  "Turgen: Friendly, another person who knows the realities of being in Rokugan as an outsider. He has a mischievous spirit haunting him, but you don't see any reason for that to hinder your friendship",
+  "Daichi: Neutral, he seems to be nervous most of the time",
+  "Noboru: Friendly, they remind you of the wizened sage of your village"
+ ],
  "demeanor": "Technique types available: Kata, Rituals, Kihō.",
  "tiers": [
   {
@@ -114,7 +120,7 @@
      "in_curriculum": false,
      "bought_at_rank": 0,
      "custom": true,
-     "kind": "kata"
+     "kind": "shuji"
     },
     {
      "name": "Cleansing Spirit",

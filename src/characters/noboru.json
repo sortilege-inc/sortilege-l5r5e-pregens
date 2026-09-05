@@ -1,7 +1,7 @@
 {
- "slug": "noburo",
- "name": "Noburo",
- "folder_label": "Noburo",
+ "slug": "noboru",
+ "name": "Noboru",
+ "folder_label": "Noboru",
  "campaign": null,
  "status": null,
  "bucket": null,
@@ -30,7 +30,13 @@
  "summary": null,
  "notes": null,
  "twenty_questions": null,
- "relationships": "[\"Haruko: Good terms, she seems like a wayward soul\", \"Mishti: Friendly, she seems determined and honest\", \"Turgen: Friendly, a kind man with a love of animals\", \"Daichi: Very friendly, you know his secret — he's a hinin, but you don't mind (titles are a worldly concern...) and are compassionate to his struggles\", \"Kenshin: Friendly, they seem ambitious and conscientious\"]",
+ "relationships": [
+  "Haruko: Good terms, she seems like a wayward soul",
+  "Mishti: Friendly, she seems determined and honest",
+  "Turgen: Friendly, a kind man with a love of animals",
+  "Daichi: Very friendly, you know his secret — he's a hinin, but you don't mind (titles are a worldly concern...) and are compassionate to his struggles",
+  "Kenshin: Friendly, they seem ambitious and conscientious"
+ ],
  "demeanor": "Technique types available: Kata, Rituals, Shūji.",
  "tiers": [
   {

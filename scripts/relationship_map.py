@@ -13,6 +13,21 @@ Three things go on the map, per campaign:
     written carry their text; the rest are marked undefined, which is the point
     — the map should show what still needs deciding.
 
+The published pregens are the second half of the map, kept apart from the
+archive's campaigns rather than mixed into them. They arrive with no campaign
+on them, so before this they all landed in one "Unassigned" group -- 26 folios
+from four different products drawn as a single party of 28 with 378 lines
+between people who have never met. Now each product is its own party, which is
+what it shipped as, and the group says so.
+
+Their edges come from the folios themselves. The Highwayman's six sheets carry
+a full matrix of who thinks what of whom ("Haruko: Friendly, she seems like a
+kindred spirit who has seen struggle"), which is exactly this map's material,
+and both directions of a pair are shown because they often disagree. A pair the
+folios say nothing about is drawn faintly and is NOT counted as work to do:
+nobody here has to write it. That distinction is why these are `folio` edges
+and not `party` ones.
+
 PC-to-PC text comes from the `Cross-character` section of a concept in
 src/foundry_sources.json, written as `**A ↔ B** — what it is`. Those are prep
 notes rather than published prose, and they are on the map deliberately
@@ -180,7 +195,15 @@ def main():
 
     campaigns, unmatched, unreadable = {}, set(), {}
     by_campaign = {}
+    published_docs = []
     for d in docs:
+        # A published pregen is somebody else's finished character and belongs
+        # to its product, not to one of this archive's campaigns. Keeping the
+        # two dicts separate also avoids a collision: "Wedding at Kyotei
+        # Castle" is both a product here and a declared campaign of our own.
+        if d.get("provenance") == "published":
+            published_docs.append(d)
+            continue
         by_campaign.setdefault(d.get("campaign") or "Unassigned", []).append(d)
 
     for camp, members in sorted(by_campaign.items()):
@@ -250,6 +273,66 @@ def main():
         campaigns[camp] = {"nodes": nodes, "edges": edges,
                            "pcs": len(pcs), "npcs": len(npcs)}
 
+    # ---------------------------------------------------------- the folios
+    published, by_product = {}, {}
+    for d in published_docs:
+        by_product.setdefault((d.get("published") or {}).get("product")
+                              or "Unattributed", []).append(d)
+    for product, members in sorted(by_product.items()):
+        pcs, nodes, edges = [], [], []
+        for d in sorted(members, key=lambda x: x["name"]):
+            ident = d.get("identity") or {}
+            pc = {"id": "pc:" + d["slug"], "kind": "pc", "name": d["name"],
+                  "slug": d["slug"],
+                  # a folio's own clan, or its region for a non-core sheet, so
+                  # the node is coloured by something rather than by nothing
+                  "clan": ident.get("clan") or ident.get("region"),
+                  "family": ident.get("family") or ident.get("upbringing"),
+                  "school": ident.get("school"), "role": ident.get("role"),
+                  "pronouns": ident.get("pronouns"),
+                  "portrait": d.get("portrait"), "published": True}
+            pcs.append(pc)
+            nodes.append(pc)
+
+        # What each folio says about the others. A line reads "Haruko:
+        # Friendly, ..." -- a given name, not the full one -- so it is matched
+        # against every token of every other pregen's name in this product.
+        said = {}
+        for d in members:
+            mine = "pc:" + d["slug"]
+            for line in (d.get("relationships") or []):
+                who, _, text = str(line).partition(":")
+                if not text.strip():
+                    continue
+                target = None
+                for p2 in pcs:
+                    if p2["id"] == mine:
+                        continue
+                    tokens = {fold(t) for t in p2["name"].split()}
+                    tokens.add(fold(p2["name"]))
+                    if fold(who) in tokens:
+                        target = p2
+                        break
+                if target is None:
+                    unmatched.add(f"{d['name']} → {who.strip()}")
+                    continue
+                said.setdefault(tuple(sorted((mine, target["id"]))), []).append(
+                    d["name"].split()[-1] + " on " + who.strip() + ": "
+                    + text.strip())
+        for i, p in enumerate(pcs):
+            for q in pcs[i + 1:]:
+                text = "\n\n".join(said.get(tuple(sorted((p["id"], q["id"]))), []))
+                # `folio`, not `party`: an undefined pair here is the folios
+                # being silent, not a decision anyone owes.
+                edges.append({"a": p["id"], "b": q["id"], "kind": "folio",
+                              "text": text, "defined": bool(text)})
+        first = members[0].get("published") or {}
+        published[product] = {
+            "nodes": nodes, "edges": edges, "pcs": len(pcs), "npcs": 0,
+            "published": True,
+            "adventure": first.get("adventure"),
+            "publisher": first.get("publisher"), "year": first.get("year")}
+
     # any cross-character pair that resolved to nobody, so a renamed character
     # or a broken convention is visible instead of silently dropping an edge
     allpcs = [{"id": "pc:" + d["slug"], "name": d["name"]} for d in docs]
@@ -260,6 +343,9 @@ def main():
 
     data = {"campaigns": campaigns,
             "order": sorted(campaigns, key=lambda c: (-campaigns[c]["pcs"], c)),
+            "published": published,
+            "published_order": sorted(published,
+                                      key=lambda c: (-published[c]["pcs"], c)),
             "unmatched_cross_refs": sorted(unmatched),
             "unreadable": {k: len(v) for k, v in sorted(unreadable.items())}}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
@@ -276,6 +362,12 @@ def main():
           f"{sum(v['npcs'] for v in campaigns.values())} NPCs, {tot_e} edges "
           f"({undef} party pairs still undefined) -> "
           f"{os.path.relpath(OUT, ROOT)} ({os.path.getsize(OUT)/1024:.1f} KB)")
+    pub_e = sum(len(v["edges"]) for v in published.values())
+    pub_def = sum(1 for v in published.values() for e in v["edges"] if e["defined"])
+    if published:
+        print(f"            + {len(published)} published product(s), "
+              f"{sum(v['pcs'] for v in published.values())} pregens, {pub_e} "
+              f"pairs ({pub_def} the folios describe themselves)")
     if unmatched:
         print("            cross-character names matching no character: "
               + ", ".join(sorted(unmatched)))

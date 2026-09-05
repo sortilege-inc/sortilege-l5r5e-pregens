@@ -927,6 +927,13 @@ p.cur-meta{ margin:0 0 0.5rem; }
 .rm-party.rm-undefined{
   stroke:var(--crimson); stroke-width:1.2; stroke-dasharray:5 5; opacity:0.55;
 }
+/* A published pair. Solid jade where the folios describe each other, barely
+   there where they do not -- deliberately NOT the crimson dashed line, which
+   means "somebody still has to write this" and nobody does here. */
+.rm-folio{ stroke:var(--jade); stroke-width:1.8; }
+.rm-folio.rm-undefined{
+  stroke:var(--edge-hair); stroke-width:1; stroke-dasharray:2 6; opacity:0.4;
+}
 .rm-knows, .rm-taught-by, .rm-serves{ stroke:var(--edge-hair); stroke-width:1.2; }
 .rm-serves{ stroke:var(--jade); }
 .rm-dim{ opacity:0.13; }
@@ -954,6 +961,7 @@ p.cur-meta{ margin:0 0 0.5rem; }
 .rm-key-pc{ background:var(--clan-crane); }
 .rm-key-npc{ background:var(--paper-3); border:1px solid var(--ink-dim); }
 .rm-key-todo{ border-top:2px dashed var(--crimson); }
+.rm-key-folio{ border-top:2px solid var(--jade); }
 .rm-key-knows{ border-top:1px solid var(--edge-hair); }
 .rm-note{
   margin-top:0.8rem; font-size:0.8rem; color:var(--ink-dim); line-height:1.5;

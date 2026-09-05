@@ -30,7 +30,13 @@
  "summary": null,
  "notes": null,
  "twenty_questions": null,
- "relationships": "[\"Haruko: Friendly, seems like she could use someone to talk to!\", \"Kenshin: Friendly, seems like they could use some help!\", \"Mishti: Friendly, she understands the struggles of being an outsider in Rokugan\", \"Daichi: Friendly, seems talented and kind-hearted\", \"Noboru: Neutral, they remind you of the shaman who cursed you, and that makes you nervous\"]",
+ "relationships": [
+  "Haruko: Friendly, seems like she could use someone to talk to!",
+  "Kenshin: Friendly, seems like they could use some help!",
+  "Mishti: Friendly, she understands the struggles of being an outsider in Rokugan",
+  "Daichi: Friendly, seems talented and kind-hearted",
+  "Noboru: Neutral, they remind you of the shaman who cursed you, and that makes you nervous"
+ ],
  "demeanor": "Technique types available: Kata, Rituals, Shūji. Focus/Vigilance shown here are the uncompromised values (7/5); when Compromised, Risk and Reward lowers them to 5/3.",
  "tiers": [
   {

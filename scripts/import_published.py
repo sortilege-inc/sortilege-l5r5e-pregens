@@ -38,6 +38,7 @@ a custom entry rather than bent into a near-match.
     python3 scripts/import_published.py --check     # verify, write nothing
 """
 import argparse
+import glob
 import json
 import os
 import re
@@ -492,7 +493,13 @@ def build(entity, source, report):
         # would put words in the character's mouth, so the record says plainly
         # that it was not built that way.
         "twenty_questions": None,
-        "relationships": P.get("Relationships") or None,
+        # A LIST OF STRING comes back from the synthesist as its JSON array
+        # serialised into one string, so this needs listing() like every other
+        # list property. Assigned raw, it reached the record as a string --
+        # and anything iterating it walked it one character at a time. The
+        # Highwayman folios carry a full 6x6 matrix of who thinks what of whom
+        # in there, which is the relationship map's best material.
+        "relationships": listing(P.get("Relationships")) or None,
         "demeanor": P.get("Demeanor") or None,
         "tiers": [tier],
     }
@@ -601,6 +608,29 @@ def main():
         print("   Fix the .actor file upstream, or excuse it in "
               "pregen_technique_types with the reason.", file=sys.stderr)
         return 1
+
+    # A record for a pregen the corpus no longer has. The importer owns these
+    # files, so a rename upstream leaves the old slug behind unless it is
+    # cleared: correcting Noburo to Noboru left a seventh Highwayman folio on
+    # disk, which the published gate caught only because it changed a count it
+    # happens to check. Removing it here is the ownership contract, and it
+    # names what it removed rather than doing it quietly.
+    mine = {d["slug"] for d in docs}
+    orphans = []
+    for path in sorted(glob.glob(os.path.join(SRC, "*.json"))):
+        slug = os.path.basename(path)[:-5]
+        if slug in mine:
+            continue
+        rec = json.load(open(path, encoding="utf-8"))
+        if rec.get("provenance") != "published":
+            continue      # an archive character is not the importer's to touch
+        orphans.append(slug)
+        if not args.check:
+            os.remove(path)
+    if orphans:
+        print(f"   ! {len(orphans)} published record(s) whose pregen the corpus "
+              f"no longer has, " + ("listed" if args.check else "removed")
+              + ": " + ", ".join(orphans))
 
     by_product = {}
     for d in docs:

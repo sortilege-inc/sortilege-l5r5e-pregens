@@ -30,7 +30,13 @@
  "summary": null,
  "notes": null,
  "twenty_questions": null,
- "relationships": "[\"Noboru: Friendly, they seem kind and treat you well\", \"Mishti: Friendly, she has never been anything but nice\", \"Turgen: Neutral, he seems a bit odd. The hawk is interesting, though\", \"Haruko: Neutral, Haruko is a bit formal, and samurai make you nervous\", \"Kenshin: Friendly, Kenshin seems like another person trying to make their way in a world that wants to dictate what you can accomplish by your birth, a kindred soul\"]",
+ "relationships": [
+  "Noboru: Friendly, they seem kind and treat you well",
+  "Mishti: Friendly, she has never been anything but nice",
+  "Turgen: Neutral, he seems a bit odd. The hawk is interesting, though",
+  "Haruko: Neutral, Haruko is a bit formal, and samurai make you nervous",
+  "Kenshin: Friendly, Kenshin seems like another person trying to make their way in a world that wants to dictate what you can accomplish by your birth, a kindred soul"
+ ],
  "demeanor": "Technique types available: Kata, Rituals, Shūji.",
  "tiers": [
   {
