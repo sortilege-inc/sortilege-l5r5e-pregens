@@ -134,6 +134,49 @@ def norm(s):
     return re.sub(r"[^a-z0-9]+", "", s.lower())
 
 
+def words(s):
+    """Lowercase words, diacritics folded. norm() throws the spaces away, and
+    a prefix test needs them: "Ally" must match "Ally Toshiro" and not
+    "Allying Blade"."""
+    s = unicodedata.normalize("NFKD", s or "")
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return [w for w in re.split(r"[^a-z0-9]+", s.lower()) if w]
+
+
+# The placeholder on a compendium parametric: "Well Connected in {City}",
+# "Affinity with [Animal Type]".
+PLACEHOLDER_RE = re.compile(r"\s*[\[\{][^\]\}]*[\]\}]\s*$")
+
+
+def parametric_row(cx, name, subs):
+    """The catalog parametric a filled name fills, or None.
+
+    The compendium files an open-ended peculiarity under its bare stem —
+    "Affinity with", "Scorn of", "Support of", "Stalked by" — or with a
+    placeholder, "Well Connected in {City}". A character records the wording
+    with the subject in it, so neither an exact match nor the trailing-bracket
+    strip finds it: "Affinity with Felines" and "Support of Kasuga" resolved
+    to nothing and were carried as custom, which meant the entry they fill
+    counted as unused however many characters had taken it.
+
+    Longest stem wins, so "Well Connected in {City}" beats the bare "Well
+    Connected"; a tie is left unresolved rather than picked between.
+    """
+    want = words(name)
+    best, hits = 0, []
+    for r in cx.execute(
+            "SELECT uuid, name FROM catalog WHERE sub_type IN (%s)"
+            % ",".join("?" * len(subs)), tuple(subs)).fetchall():
+        stem = words(PLACEHOLDER_RE.sub("", r[1]))
+        if not stem or len(stem) >= len(want) or want[:len(stem)] != stem:
+            continue
+        if len(stem) > best:
+            best, hits = len(stem), [r]
+        elif len(stem) == best:
+            hits.append(r)
+    return hits[0] if len(hits) == 1 else None
+
+
 def book(src):
     return (src or "").strip() or None
 
@@ -933,10 +976,27 @@ def load_characters(cx):
                                      and norm(QUALIFIED_RE.match(cd[1]).group("stem")) == n]
                             if len(stems) == 1:
                                 row = stems[0]
+                        if not row and cat == "peculiarities":
+                            row = parametric_row(cx, entry["name"], subs)
                         if row:
                             uuid = row[0]
                         else:
                             unresolved.append((c["slug"], cat, entry["name"]))
+                    elif cat == "peculiarities":
+                        # A custom entry keeps its own text — but if it is a
+                        # compendium parametric with the subject filled in, it
+                        # still credits the entry it fills. Coverage counted
+                        # "Affinity with" as unused while Matsu Rikona had it,
+                        # and "Support of" as unused with five characters on it.
+                        #
+                        # Peculiarities only. The same prefix test on gear
+                        # would credit "Yari" for "yari (spear) or naginata
+                        # (polearm)" — an outfit line nobody has chosen yet.
+                        # Those want splitting or choosing, not crediting;
+                        # see the outfit-bundle pass in CLAUDE.md.
+                        prow = parametric_row(cx, entry["name"], subs)
+                        if prow:
+                            uuid = prow[0]
                     cx.execute("INSERT INTO tier_content VALUES (?,?,?,?,?,?,?,?)", (
                         tid, c["slug"], cat, entry["name"], n,
                         1 if entry.get("custom") else 0, uuid,
@@ -1214,7 +1274,10 @@ def emit(cx):
             content = collections.defaultdict(list)
             for r in cx.execute("SELECT * FROM tier_content WHERE tier_id=?", (t["id"],)):
                 entry = json.loads(r["meta"])
-                if r["catalog_uuid"]:
+                # A custom row may carry a catalog_uuid for coverage's sake —
+                # the parametric it fills — but its text is the character's
+                # own, so it is not enriched from the catalog.
+                if r["catalog_uuid"] and not r["custom"]:
                     cat = cx.execute(
                         "SELECT kind,ring,rank,source_book,source_page,description,data"
                         " FROM catalog WHERE uuid=?", (r["catalog_uuid"],)).fetchone()

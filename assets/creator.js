@@ -351,6 +351,45 @@
     return (PEC_USED[uuid] || []).some(function (u) { return !u.draft; });
   }
 
+  // how many promoted characters carry it
+  function timesTaken(uuid) {
+    return (PEC_USED[uuid] || []).filter(function (u) { return !u.draft; }).length;
+  }
+
+  /* COVERAGE_BIAS, one level up. While anything in the pool is untaken the
+     roll stays among the untaken — that is the strongest coverage move and
+     what this always did. Once every entry on offer has been taken at least
+     once, a uniform roll starts putting a third and fourth copy on entries
+     that already have three while others sit at one, so the bias moves to the
+     group: the ring whose entries carry the fewest takers each, and then the
+     least-taken entries within it.
+
+     Mean rather than total, because the rings are not the same size — Air
+     holds more adversities than Void, and a total would make the small ring
+     look neglected for ever. */
+  function preferLeastUsed(pool) {
+    if (!COVERAGE_BIAS) return pool;
+    var free = pool.filter(function (x) { return !timesTaken(x.uuid); });
+    if (free.length) return free;
+    var ring = function (x) { return String(x.ring || "-").toLowerCase(); };
+    var sum = {}, n = {};
+    pool.forEach(function (x) {
+      var r = ring(x);
+      sum[r] = (sum[r] || 0) + timesTaken(x.uuid);
+      n[r] = (n[r] || 0) + 1;
+    });
+    var mean = {}, lowest = Infinity;
+    Object.keys(sum).forEach(function (r) {
+      mean[r] = sum[r] / n[r];
+      if (mean[r] < lowest) lowest = mean[r];
+    });
+    var group = pool.filter(function (x) { return mean[ring(x)] === lowest; });
+    var least = Math.min.apply(null, group.map(function (x) {
+      return timesTaken(x.uuid);
+    }));
+    return group.filter(function (x) { return timesTaken(x.uuid) === least; });
+  }
+
   /* A heritage entry a promoted character took. The heritage feed records who
      took what but not whether they are a draft, so the slug is checked against
      the archive rather than trusted. */
@@ -359,14 +398,6 @@
     if (!who.length) return false;
     var promoted = promotedSlugs();
     return who.some(function (u) { return promoted[u.slug]; });
-  }
-
-  // the untaken members of a pool, or the whole pool when all are taken —
-  // never an empty result, so a full archive degrades to a plain random pick
-  function preferUntaken(pool, isTaken) {
-    if (!COVERAGE_BIAS) return pool;
-    var free = pool.filter(function (x) { return !isTaken(x); });
-    return free.length ? free : pool;
   }
 
   // what the last biased heritage roll skipped, for the line under the button
@@ -3579,8 +3610,10 @@
         return pecStatus(e, kinds, get()).state !== "no";
       });
       if (!pool.length) return;
-      // COVERAGE_BIAS: prefer what no promoted character already carries
-      var from = preferUntaken(pool, function (x) { return takenByPromoted(x.uuid); });
+      // COVERAGE_BIAS: prefer what no promoted character already carries,
+      // and once they all carry something, the least-carried ring's least-
+      // carried entries
+      var from = preferLeastUsed(pool);
       var e = from[randomBelow(from.length)];
       set(e.name);
       open[e.uuid] = true;
