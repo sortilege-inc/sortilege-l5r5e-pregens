@@ -3124,6 +3124,63 @@
     return out;
   }
 
+  /* Everything the character carries that is not the item they bought.
+
+     Three sources, and none of them was reaching the panel or the record: the
+     school's starting outfit, which every school states and question 3 grants
+     ("Receive the school's starting outfit"); an item a family or upbringing
+     hands over, which computed() already collects as `pending`; and the
+     accoutrement from question 14, which asks for "one distinctive thing this
+     character carries or wears most of the time" and had nowhere to go.
+
+     The outfit is listed as the corpus states it, because it says things a
+     parser should not flatten: "daishō (katana and wakizashi)" is two items,
+     "bō (staff) or knife" is a choice, and "any one weapon of rarity 6 or
+     lower" is an instruction. Anything with an "or" in it, or asking for a
+     rarity, is marked open — still to settle — rather than pretended to be a
+     settled item. */
+  var OUTFIT_OPEN = /\bor\b|\brarity\b|\b(any|one)\s+(weapon|item|trinket)\b/i;
+
+  function outfitGear() {
+    var out = [];
+    var sch = schoolByRollName(C.school);
+    (sch && sch.starting_outfit ? sch.starting_outfit : []).forEach(function (it) {
+      out.push({ name: it, note: "From the " + (sch.name || "school") +
+                 " starting outfit", open: OUTFIT_OPEN.test(it), held: true });
+    });
+    computed().pending.forEach(function (p) {
+      if (p.type === "item" && p.name) {
+        out.push({ name: p.name, note: "From " + (p.source || "questions 1–2"),
+                   open: OUTFIT_OPEN.test(p.name), held: true });
+      }
+    });
+    var acc = (C.answers.accoutrement || "").trim();
+    if (acc) {
+      out.push({ name: acc, note: "The accoutrement named at question 14",
+                 open: false, held: true, prose: true });
+    }
+    return out;
+  }
+
+  /* Does the compendium have this by name? Used to decide whether a piece of
+     gear travels as a reference or as custom text — an unresolvable reference
+     stops the build. The two extra attempts are the corpus's own habits: it
+     glosses a name ("yumi (bow)") and pluralises where the compendium does not
+     ("quiver of arrows" against its "Quiver of Arrow"). */
+  function catalogHas(name) {
+    var n = String(name || "");
+    var tries = [n, n.replace(/\s*\([^)]*\)\s*$/, ""),
+                 n.replace(/s$/, ""),
+                 n.replace(/\s*\([^)]*\)\s*$/, "").replace(/s$/, "")];
+    for (var i = 0; i < tries.length; i++) {
+      var k = normName(tries[i]);
+      for (var j = 0; j < CATALOG.length; j++) {
+        if (normName(CATALOG[j].name) === k) return CATALOG[j].name;
+      }
+    }
+    return null;
+  }
+
   // Gear the rules confer without naming it — the talisman, the estate, the
   // animal — plus any heirloom still to be chosen. The panel marks these as
   // open rather than settled.
@@ -5700,6 +5757,19 @@
         peculiarities: peculiarityRefs(),
         titles: [], bonds: [], signature_scrolls: [],
         gear: refs(C.starting_item ? [C.starting_item] : []).concat(
+          /* The outfit, the granted items and the accoutrement, which the
+             record was leaving out entirely — every character built here went
+             out carrying one item. Anything the compendium has by name travels
+             as a reference under its spelling; the rest is custom and carries
+             the printed string as its text, because an unresolvable reference
+             stops the build and inventing a resolvable name would be worse. */
+          outfitGear().map(function (g) {
+            var hit = g.prose ? null : catalogHas(g.name);
+            if (hit && !g.open) return { name: hit };
+            var o = { name: g.name, custom: true, text: g.note };
+            if (g.open) o.held = false;
+            return o;
+          })).concat(
           heritageGrants().gear.filter(function (g) {
             return g.name;
           }).map(function (g) {
@@ -10373,7 +10443,10 @@
           return { name: g.name, note: g.note,
                    open: g.needs || g.custom,
                    held: g.held !== false };
-        }));
+        }))
+      // the school's outfit, a family's or upbringing's item, and the
+      // accoutrement — none of which the panel was showing
+      .concat(outfitGear());
     var answered = answeredQuestions();
 
     el("wip").innerHTML =
