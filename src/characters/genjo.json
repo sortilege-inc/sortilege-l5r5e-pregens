@@ -70,7 +70,7 @@
   "answers": {
    "giri": "",
    "ninjo": "Genjo sits through the evening meal in the refectory without eating, watching for which monks leave food on their bowls, so they can finish it after everyone has gone.",
-   "standout_quality": "When left to tend a dormitory or common room, Genjo scrubs and mends and reorganizes until the space feels inhabited, which the monks find either touching or maddening depending on whether they've asked him to stop.",
+   "standout_quality": "When left to tend a dormitory or common room, Genjo scrubs and mends and reorganizes until the space feels inhabited, which the monks find either touching or maddening depending on whether they've asked Genjo to stop.",
    "accomplishment": "Genjo keeps the monastery's guest house so scrupulously that monks arriving from other temples comment on it first, before they mention anything else they saw on the road.",
    "challenge": "Genjo's fingers catch on the weave when they try to mend the guest house linens quickly enough to have them ready by morning.",
    "peace": "Genjo walks through the mountain villages after a monastery supply run, learning which families have taken in refugees from the lowlands, which paths are new since last season, which elders remember the routes their father traveled.",
@@ -130,7 +130,7 @@
   "starting_item": "Stealth Clothing",
   "campaign": "Portents & Fortunes",
   "notes": "",
-  "gender": "male",
+  "gender": "nonbinary",
   "choices": {
    "upbringing.ring_increase": [
     "Water"
@@ -166,10 +166,10 @@
   "school_all": true,
   "ai_history": {
    "standout_quality": [
-    "When left to tend a dormitory or common room, Genjo scrubs and mends and reorganizes until the space feels inhabited, which the monks find either touching or maddening depending on whether they've asked him to stop."
+    "When left to tend a dormitory or common room, Genjo scrubs and mends and reorganizes until the space feels inhabited, which the monks find either touching or maddening depending on whether they've asked Genjo to stop."
    ],
    "past": [
-    "Genjo left a farmstead where his presence made the household run better than it ever had, and the family stopped asking him to leave."
+    "Genjo left a farmstead where their presence made the household run better than it ever had, and the family stopped asking Genjo to leave."
    ],
    "ninjo": [
     "Genjo patches a torn sleeve that isn't theirs, knowing that when the monk wearing it returns, they will have to pretend not to have noticed it was broken.",
@@ -217,7 +217,7 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "When left to tend a dormitory or common room, Genjo scrubs and mends and reorganizes until the space feels inhabited, which the monks find either touching or maddening depending on whether they've asked him to stop.",
+     "stand_out": "When left to tend a dormitory or common room, Genjo scrubs and mends and reorganizes until the space feels inhabited, which the monks find either touching or maddening depending on whether they've asked Genjo to stop.",
      "ring": "water"
     },
     "picks": {}
