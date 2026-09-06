@@ -123,7 +123,7 @@
   "starting_item": "Nodachi",
   "campaign": "Mask of the Oni",
   "notes": "",
-  "gender": "male",
+  "gender": "female",
   "choices": {
    "family.ring_increase": [
     "Air"
