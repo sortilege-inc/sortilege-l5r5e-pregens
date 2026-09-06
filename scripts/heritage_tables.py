@@ -470,7 +470,15 @@ def attach_requirements(key, table):
                             f"sub={how!r} but the entry has no sub-table")
         # An effect that grants something but produces no requirement is the
         # exact failure this is here to catch, so say so rather than ship it.
-        if e.get("effect") and not e["requires"] and how in ("skill",):
+        # A sub-table whose every range carries the requirement is covered,
+        # though: Splintered Loyalties' effect is "roll for the skill, take +1
+        # rank in it", and which skill that is can only be a per-range answer.
+        # Before the corpus was corrected the entry had no EFFECT at all — the
+        # sentence was glued onto its last range — so this never came up.
+        ranges = (sub or {}).get("ranges") or []
+        by_range = bool(ranges) and all(r["requires"] for r in ranges)
+        if e.get("effect") and not e["requires"] and not by_range \
+                and how in ("skill",):
             if (key, e["name"]) not in REQUIRES:
                 problems.append(
                     f"{table['name']} / {e['name']}: has an EFFECT and no "

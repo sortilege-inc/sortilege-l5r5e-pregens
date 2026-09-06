@@ -1,0 +1,451 @@
+{
+ "slug": "shinjo-shojiro",
+ "name": "Shinjo Shojiro",
+ "campaign": "Portents & Fortunes",
+ "status": null,
+ "identity": {
+  "clan": "Unicorn",
+  "family": "Shinjo",
+  "school": "Shinjo Outrider School",
+  "role": "Courtier",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Shojiro's eyes track the ground as he walks, cataloging stone and angle and the places where a tired animal's hoof might slip.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Shinjo Shojiro",
+  "mode": "core",
+  "clan": "Unicorn",
+  "family": "Shinjo",
+  "school": "Shinjo Outrider School",
+  "role": "Courtier",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "skills": {
+   "commerce": 1,
+   "meditation": 1
+  },
+  "distinctions": [
+   "Well Connected in {City}"
+  ],
+  "adversities": [
+   "Schism in Status"
+  ],
+  "passions": [
+   "Provocation"
+  ],
+  "anxieties": [
+   "Fear of Death"
+  ],
+  "pec_subjects": {
+   "wellconnectedincity": {
+    "name": "Well Connected in {City}",
+    "subject": "TBD",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Compassion",
+   "lesser": "Courtesy",
+   "attitude": "B",
+   "skill": "commerce"
+  },
+  "answers": {
+   "giri": "His lord is Shinjo Altai, a regional trade official grown careless with his authority; Shojiro must deliver the merchant families safely across the mountain road even when Altai's poorly-maintained checkpoints and corrupt guards create the actual danger.",
+   "ninjo": "Shojiro wants the mountain road kept safe enough that he doesn't have to talk his way past genuine disaster, and Altai's neglect makes him complicit in the very corruption he smooths over for the merchants.",
+   "standout_quality": "Shojiro talks his way through situations where other outriders would turn back, but his charm runs thin when the ground itself is the problem.",
+   "accomplishment": "Shojiro talked three merchant families past the Sorrow's Gate checkpoint without losing a single pack animal, though the road beyond had already killed two travelers that season and Altai's guards were taking bribes to look the other way.",
+   "challenge": "The merchant families who trust Shojiro's assurances about the mountain road do not trust the Shinjo name enough to believe him when he warns them the crossing is genuinely unsafe.",
+   "peace": "Shojiro spends evenings mapping the mountain road in detail with merchants who have walked it safely, marking where the loose stone is, where the wind channels differently, where a tired animal might stumble—work that makes their next crossing less dependent on his talking them through it.",
+   "fear": "Shojiro cannot turn back from a crossing even when he knows the stone is loose and the merchants behind him are tired, because admitting the road is impassable means admitting Altai's negligence has finally won.",
+   "accoutrement": "A leather surveyor's notebook, its pages warped from being carried in his sleeve through every season's weather on the mountain road, the ink bleeding where he has marked safe passages so often the paper has worn thin.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Shinjo Magohachi",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Shojiro praises the Unicorn's embrace of foreign ways while quietly resenting that Altai uses that same philosophy to justify ignoring the mountain road altogether."
+   },
+   "mentor": {
+    "name": "Moto Tetsuyuki",
+    "path": "A",
+    "granted": "Blood of Osano-Wo",
+    "skill": "",
+    "text": "Moto Tetsuyuki taught Shojiro that a man can inherit his lord's mistakes as easily as his title, and Shojiro has never found a way to refuse the inheritance.",
+    "gender": "any",
+    "association": "Unicorn"
+   },
+   "first_impression": "Shojiro's eyes track the ground as he walks, cataloging stone and angle and the places where a tired animal's hoof might slip.",
+   "stress_reaction": "Shojiro stops talking mid-crossing and makes the merchants dismount and walk their animals single-file, which they resist because it means admitting the road is truly bad, and his silence while they argue costs him more than any amount of persuasion would.",
+   "relationships": "Asahina Momo (Crane) — Asahina Momo of the Crane extended credit to Shojiro for supplies to repair the worst sections of the mountain road, then recalled the debt when her family's shipping contracts shifted elsewhere, leaving him to choose between defaulting on a Crane and admitting to Altai that he had been quietly fixing what his lord would not.",
+   "people": [
+    {
+     "name": "Asahina Momo",
+     "gender": "female",
+     "association": "Crane",
+     "text": "Asahina Momo of the Crane extended credit to Shojiro for supplies to repair the worst sections of the mountain road, then recalled the debt when her family's shipping contracts shifted elsewhere, leaving him to choose between defaulting on a Crane and admitting to Altai that he had been quietly fixing what his lord would not."
+    }
+   ],
+   "parent_opinion": {
+    "description": "His mother wishes he would stop repairing roads that are not his to fix, because every time Altai notices the work, Shojiro lies about who did it, and she has watched her son become careful about which truths he tells her.",
+    "skill": "meditation"
+   },
+   "heritage": "Splintered Loyalties",
+   "heritage_table": "new-samurai-heritages-table",
+   "heritage_sub": "9-10 — Commerce",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "He will die on the mountain road, finally unable to talk a merchant family back from a crossing he knows will kill them, and he will go ahead of them into the loose stone to prove it is passable."
+  },
+  "starting_item": "Sashimono",
+  "campaign": "Portents & Fortunes",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Commerce",
+    "Survival",
+    "Martial Arts [Ranged]",
+    "Medicine",
+    "Skulduggery"
+   ],
+   "school.tech.0": [
+    "Striking as Fire"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Shojiro talks his way through situations where other outriders would turn back, but his charm runs thin when the ground itself is the problem."
+   ],
+   "giri": [
+    "His lord is Shinjo Altai, a regional trade official grown careless with his authority; Shojiro must deliver the merchant families safely across the mountain road even when Altai's poorly-maintained checkpoints and corrupt guards create the actual danger."
+   ],
+   "ninjo": [
+    "Shojiro wants the mountain road kept safe enough that he doesn't have to talk his way past genuine disaster, and Altai's neglect makes him complicit in the very corruption he smooths over for the merchants."
+   ],
+   "clan_relationship": [
+    "Shojiro praises the Unicorn's embrace of foreign ways while quietly resenting that Altai uses that same philosophy to justify ignoring the mountain road altogether."
+   ],
+   "accomplishment": [
+    "Shojiro talked three merchant families past the Sorrow's Gate checkpoint without losing a single pack animal, though the road beyond had already killed two travelers that season and Altai's guards were taking bribes to look the other way."
+   ],
+   "challenge": [
+    "The merchant families who trust Shojiro's assurances about the mountain road do not trust the Shinjo name enough to believe him when he warns them the crossing is genuinely unsafe."
+   ],
+   "peace": [
+    "Shojiro spends evenings mapping the mountain road in detail with merchants who have walked it safely, marking where the loose stone is, where the wind channels differently, where a tired animal might stumble—work that makes their next crossing less dependent on his talking them through it."
+   ],
+   "fear": [
+    "Shojiro cannot turn back from a crossing even when he knows the stone is loose and the merchants behind him are tired, because admitting the road is impassable means admitting Altai's negligence has finally won."
+   ],
+   "mentor_relationship": [
+    "Moto Tetsuyuki taught Shojiro that a man can inherit his lord's mistakes as easily as his title, and Shojiro has never found a way to refuse the inheritance."
+   ],
+   "first_impression": [
+    "Shojiro's eyes track the ground as he walks, cataloging stone and angle and the places where a tired animal's hoof might slip."
+   ],
+   "accoutrement": [
+    "A leather surveyor's notebook, its pages warped from being carried in his sleeve through every season's weather on the mountain road, the ink bleeding where he has marked safe passages so often the paper has worn thin."
+   ],
+   "stress_reaction": [
+    "Shojiro stops talking mid-crossing and makes the merchants dismount and walk their animals single-file, which they resist because it means admitting the road is truly bad, and his silence while they argue costs him more than any amount of persuasion would."
+   ],
+   "relationship_person": [
+    "Asahina Momo of the Crane extended credit to Shojiro for supplies to repair the worst sections of the mountain road, then recalled the debt when her family's shipping contracts shifted elsewhere, leaving him to choose between defaulting on a Crane and admitting to Altai that he had been quietly fixing what his lord would not."
+   ],
+   "parent_opinion": [
+    "His mother wishes he would stop repairing roads that are not his to fix, because every time Altai notices the work, Shojiro lies about who did it, and she has watched her son become careful about which truths he tells her."
+   ],
+   "death": [
+    "He will die on the mountain road, finally unable to talk a merchant family back from a crossing he knows will kill them, and he will go ahead of them into the loose stone to prove it is passable."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Shojiro talks his way through situations where other outriders would turn back, but his charm runs thin when the ground itself is the problem.",
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "His lord is Shinjo Altai, a regional trade official grown careless with his authority; Shojiro must deliver the merchant families safely across the mountain road even when Altai's poorly-maintained checkpoints and corrupt guards create the actual danger.",
+     "lord_name": "Shinjo Magohachi"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Shojiro wants the mountain road kept safe enough that he doesn't have to talk his way past genuine disaster, and Altai's neglect makes him complicit in the very corruption he smooths over for the merchants."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Shojiro praises the Unicorn's embrace of foreign ways while quietly resenting that Altai uses that same philosophy to justify ignoring the mountain road altogether.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Compassion",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Shojiro talked three merchant families past the Sorrow's Gate checkpoint without losing a single pack animal, though the road beyond had already killed two travelers that season and Altai's guards were taking bribes to look the other way."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "The merchant families who trust Shojiro's assurances about the mountain road do not trust the Shinjo name enough to believe him when he warns them the crossing is genuinely unsafe."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Shojiro spends evenings mapping the mountain road in detail with merchants who have walked it safely, marking where the loose stone is, where the wind channels differently, where a tired animal might stumble—work that makes their next crossing less dependent on his talking them through it."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Shojiro cannot turn back from a crossing even when he knows the stone is loose and the merchants behind him are tired, because admitting the road is impassable means admitting Altai's negligence has finally won."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Moto Tetsuyuki — Moto Tetsuyuki taught Shojiro that a man can inherit his lord's mistakes as easily as his title, and Shojiro has never found a way to refuse the inheritance."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Shojiro's eyes track the ground as he walks, cataloging stone and angle and the places where a tired animal's hoof might slip.",
+     "accoutrement": "A leather surveyor's notebook, its pages warped from being carried in his sleeve through every season's weather on the mountain road, the ink bleeding where he has marked safe passages so often the paper has worn thin."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Shojiro stops talking mid-crossing and makes the merchants dismount and walk their animals single-file, which they resist because it means admitting the road is truly bad, and his silence while they argue costs him more than any amount of persuasion would."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Asahina Momo (Crane) — Asahina Momo of the Crane extended credit to Shojiro for supplies to repair the worst sections of the mountain road, then recalled the debt when her family's shipping contracts shifted elsewhere, leaving him to choose between defaulting on a Crane and admitting to Altai that he had been quietly fixing what his lord would not."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "His mother wishes he would stop repairing roads that are not his to fix, because every time Altai notices the work, Shojiro lies about who did it, and she has watched her son become careful about which truths he tells her."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Splintered Loyalties",
+     "heritage_table": "New Samurai Heritages Table",
+     "heritage_sub": "9-10 — Commerce",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "He will die on the mountain road, finally unable to talk a merchant family back from a crossing he knows will kill them, and he will go ahead of them into the loose stone to prove it is passable."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Shinjo Outrider School",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 3,
+    "water": 2,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 3,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 3
+    }
+   },
+   "social": {
+    "honor": 40,
+    "glory": 49,
+    "status": 25,
+    "ninjo": "Shojiro wants the mountain road kept safe enough that he doesn't have to talk his way past genuine disaster, and Altai's neglect makes him complicit in the very corruption he smooths over for the merchants.",
+    "giri": "His lord is Shinjo Altai, a regional trade official grown careless with his authority; Shojiro must deliver the merchant families safely across the mountain road even when Altai's poorly-maintained checkpoints and corrupt guards create the actual danger.",
+    "bushido_tenets": {
+     "paramount": "Compassion",
+     "less_significant": "Courtesy"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 2,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Fire"
+    },
+    {
+     "name": "Lady Shinjo's Speed"
+    },
+    {
+     "name": "Born in the Saddle"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Well Connected in TBD",
+     "custom": true,
+     "subject": "TBD",
+     "text": "You have an extensive network of contacts in a particular city. When performing a check to gather information, find items for sale or loan, or interact with people from the chosen city (such as Commerce [Water] to buy or sell something or Culture [Water] to learn current events generating gossip), you may reroll up to two dice."
+    },
+    {
+     "name": "Schism in Status"
+    },
+    {
+     "name": "Provocation"
+    },
+    {
+     "name": "Fear of Death"
+    },
+    {
+     "name": "Blood of Osano-Wo"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Sashimono"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "daishō (katana or scimitar, wakizashi)",
+     "custom": true,
+     "text": "From the Shinjo Outrider starting outfit",
+     "held": false
+    },
+    {
+     "name": "Yumi"
+    },
+    {
+     "name": "Quiver of Arrow"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Unicorn warhorse",
+     "custom": true,
+     "text": "From the Shinjo Outrider starting outfit"
+    },
+    {
+     "name": "A leather surveyor's notebook, its pages warped from being carried in his sleeve through every season's weather on the mountain road, the ink bleeding where he has marked safe passages so often the paper has worn thin.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

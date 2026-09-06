@@ -1,0 +1,460 @@
+{
+ "slug": "atsumaru-tami",
+ "name": "Atsumaru Tami",
+ "campaign": "The Bushi Oni Part II",
+ "status": null,
+ "identity": {
+  "clan": "Dragon",
+  "family": "Agasha",
+  "school": "Agasha Mystic School",
+  "role": "Shugenja",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Tami's sketches of the spirit-marks are meticulous down to the angle of shadow, but she has trained herself not to look directly at anyone's face while they are speaking to her.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Atsumaru Tami",
+  "mode": "core",
+  "clan": "Dragon",
+  "family": "Agasha",
+  "school": "Agasha Mystic School",
+  "role": "Shugenja",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "fire",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "skills": {
+   "smithing": 1,
+   "melee": 1
+  },
+  "distinctions": [
+   "Guiding Ancestor"
+  ],
+  "adversities": [
+   "Lost Eye"
+  ],
+  "passions": [
+   "Daredevil"
+  ],
+  "anxieties": [
+   "Omen of Bad Luck"
+  ],
+  "pec_subjects": {
+   "despisedin": {
+    "name": "Despised in",
+    "subject": "TBD",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Sincerity",
+   "lesser": "Duty and Loyalty",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Tami serves Agasha Isawa, the family daimyō, by documenting the claims of spirit activity in the Shinomen and reporting what she actually finds, not what the clan expects to hear.",
+   "ninjo": "Tami wants the Shinomen's spirits to acknowledge what she has found, rather than remaining trapped in her own certainty while the clan dismisses her.",
+   "standout_quality": "Tami's meditation practice has become so rigorous that she catches contradictions in doctrine that her teachers have taught for years without noticing them herself.",
+   "accomplishment": "She traced spirit-marks in the Shinomen that matched neither the clan records nor the stories the forest-edge villages told, and brought back sketches no one at the Agasha compound could dismiss as misreading—though no one has asked her to explain them yet.",
+   "challenge": "When Tami sketches the spirit-marks in the Shinomen at dusk, the ones on the shadowed eastern face of the shrine-post escape her entirely, and she does not know they are gone until someone else points to the blank space on her paper.",
+   "peace": "Tami sketches the spirit-marks in daylight now, when the eastern face of the shrine-post holds no shadows, and accepts that she will never know what she might have missed in the dark.",
+   "fear": "When Tami presents her findings to Isawa through back channels, she cannot tell whether the spirits' silence means she has misread the marks or whether the clan's dismissal has made her invisible to them as well.",
+   "accoutrement": "She sketches in a leather-bound journal whose pages she has learned to number in the margin, because twice she has found blank spaces where she thought she had drawn, and now she counts them to be sure.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Agasha Katsunan",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Tami reports her findings to Isawa through channels that bypass the family council's expectations, which means she cannot ask them to help her understand what she is seeing."
+   },
+   "mentor": {
+    "name": "Soshi Sumitomo",
+    "path": "B",
+    "granted": "Despised in",
+    "skill": "smithing",
+    "text": "Soshi Sumitomo taught her to read a silence—to sit with what the other person will not say until they break first—and now Tami cannot tell if the spirits' refusal to speak to her is wisdom or cruelty.",
+    "gender": "male",
+    "association": "Scorpion"
+   },
+   "first_impression": "Tami's sketches of the spirit-marks are meticulous down to the angle of shadow, but she has trained herself not to look directly at anyone's face while they are speaking to her.",
+   "stress_reaction": "When presented with contradictory findings she cannot reconcile, Tami stops answering direct questions and instead describes what she has already written down, as if the journal's existence settles the matter and further conversation is redundant.",
+   "relationships": "Doji Morina (Crane) — Doji Morina of the Crane once corrected Tami's reading of a spirit-mark in front of witnesses, and Tami has not trusted her own sight of that particular mark since, though she has never asked Morina whether she was right.",
+   "people": [
+    {
+     "name": "Doji Morina",
+     "gender": "female",
+     "association": "Crane",
+     "text": "Doji Morina of the Crane once corrected Tami's reading of a spirit-mark in front of witnesses, and Tami has not trusted her own sight of that particular mark since, though she has never asked Morina whether she was right."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Her father says she comes home with her journal filled but her reports empty, and he has stopped asking which one is true.",
+    "skill": "melee"
+   },
+   "heritage": "Medical Innovator",
+   "heritage_table": "new-samurai-heritages-dragon",
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Tami will die in the Shinomen without her journal, and no one will find her report because she cannot imagine that the spirits might speak through someone else's voice."
+  },
+  "starting_item": "Genno",
+  "campaign": "The Bushi Oni Part II",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Void"
+   ],
+   "school.starting_skills": [
+    "Meditation",
+    "Theology",
+    "Smithing"
+   ],
+   "school.tech.0": [
+    "The Fires from Within"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Tami's meditation practice has become so rigorous that she catches contradictions in doctrine that her teachers have taught for years without noticing them herself."
+   ],
+   "giri": [
+    "Tami serves Agasha Isawa, the family daimyō, by documenting the claims of spirit activity in the Shinomen and reporting what she actually finds, not what the clan expects to hear."
+   ],
+   "ninjo": [
+    "Tami wants the Shinomen's spirits to acknowledge what she has found, rather than remaining trapped in her own certainty while the clan dismisses her."
+   ],
+   "clan_relationship": [
+    "Tami reports her findings to Isawa through channels that bypass the family council's expectations, which means she cannot ask them to help her understand what she is seeing."
+   ],
+   "accomplishment": [
+    "She traced spirit-marks in the Shinomen that matched neither the clan records nor the stories the forest-edge villages told, and brought back sketches no one at the Agasha compound could dismiss as misreading—though no one has asked her to explain them yet."
+   ],
+   "challenge": [
+    "When Tami sketches the spirit-marks in the Shinomen at dusk, the ones on the shadowed eastern face of the shrine-post escape her entirely, and she does not know they are gone until someone else points to the blank space on her paper."
+   ],
+   "fear": [
+    "When Tami presents her findings to Isawa through back channels, she cannot tell whether the spirits' silence means she has misread the marks or whether the clan's dismissal has made her invisible to them as well."
+   ],
+   "mentor_relationship": [
+    "Soshi Sumitomo taught her to read a silence—to sit with what the other person will not say until they break first—and now Tami cannot tell if the spirits' refusal to speak to her is wisdom or cruelty."
+   ],
+   "first_impression": [
+    "Tami's sketches of the spirit-marks are meticulous down to the angle of shadow, but she has trained herself not to look directly at anyone's face while they are speaking to her."
+   ],
+   "accoutrement": [
+    "She sketches in a leather-bound journal whose pages she has learned to number in the margin, because twice she has found blank spaces where she thought she had drawn, and now she counts them to be sure."
+   ],
+   "stress_reaction": [
+    "When presented with contradictory findings she cannot reconcile, Tami stops answering direct questions and instead describes what she has already written down, as if the journal's existence settles the matter and further conversation is redundant."
+   ],
+   "relationship_person": [
+    "Doji Morina of the Crane once corrected Tami's reading of a spirit-mark in front of witnesses, and Tami has not trusted her own sight of that particular mark since, though she has never asked Morina whether she was right."
+   ],
+   "parent_opinion": [
+    "Her father says she comes home with her journal filled but her reports empty, and he has stopped asking which one is true."
+   ],
+   "death": [
+    "Tami will die in the Shinomen without her journal, and no one will find her report because she cannot imagine that the spirits might speak through someone else's voice."
+   ],
+   "peace": [
+    "Tami sketches the spirit-marks in daylight now, when the eastern face of the shrine-post holds no shadows, and accepts that she will never know what she might have missed in the dark."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Tami's meditation practice has become so rigorous that she catches contradictions in doctrine that her teachers have taught for years without noticing them herself.",
+     "ring": "fire"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Tami serves Agasha Isawa, the family daimyō, by documenting the claims of spirit activity in the Shinomen and reporting what she actually finds, not what the clan expects to hear.",
+     "lord_name": "Agasha Katsunan"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Tami wants the Shinomen's spirits to acknowledge what she has found, rather than remaining trapped in her own certainty while the clan dismisses her."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Tami reports her findings to Isawa through channels that bypass the family council's expectations, which means she cannot ask them to help her understand what she is seeing.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Sincerity",
+     "tenet_less_significant": "Duty and Loyalty"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She traced spirit-marks in the Shinomen that matched neither the clan records nor the stories the forest-edge villages told, and brought back sketches no one at the Agasha compound could dismiss as misreading—though no one has asked her to explain them yet."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When Tami sketches the spirit-marks in the Shinomen at dusk, the ones on the shadowed eastern face of the shrine-post escape her entirely, and she does not know they are gone until someone else points to the blank space on her paper."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Tami sketches the spirit-marks in daylight now, when the eastern face of the shrine-post holds no shadows, and accepts that she will never know what she might have missed in the dark."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When Tami presents her findings to Isawa through back channels, she cannot tell whether the spirits' silence means she has misread the marks or whether the clan's dismissal has made her invisible to them as well."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Soshi Sumitomo — Soshi Sumitomo taught her to read a silence—to sit with what the other person will not say until they break first—and now Tami cannot tell if the spirits' refusal to speak to her is wisdom or cruelty."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Tami's sketches of the spirit-marks are meticulous down to the angle of shadow, but she has trained herself not to look directly at anyone's face while they are speaking to her.",
+     "accoutrement": "She sketches in a leather-bound journal whose pages she has learned to number in the margin, because twice she has found blank spaces where she thought she had drawn, and now she counts them to be sure."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When presented with contradictory findings she cannot reconcile, Tami stops answering direct questions and instead describes what she has already written down, as if the journal's existence settles the matter and further conversation is redundant."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Doji Morina (Crane) — Doji Morina of the Crane once corrected Tami's reading of a spirit-mark in front of witnesses, and Tami has not trusted her own sight of that particular mark since, though she has never asked Morina whether she was right."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Her father says she comes home with her journal filled but her reports empty, and he has stopped asking which one is true."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Medical Innovator",
+     "heritage_table": "New Samurai Heritages (Dragon)",
+     "heritage_sub": null,
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Tami will die in the Shinomen without her journal, and no one will find her report because she cannot imagine that the spirits might speak through someone else's voice."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Agasha Mystic School",
+   "foundry_id": null,
+   "rings": {
+    "air": 1,
+    "earth": 2,
+    "fire": 3,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 3
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 2,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 55,
+    "glory": 45,
+    "status": 30,
+    "ninjo": "Tami wants the Shinomen's spirits to acknowledge what she has found, rather than remaining trapped in her own certainty while the clan dismisses her.",
+    "giri": "Tami serves Agasha Isawa, the family daimyō, by documenting the claims of spirit activity in the Shinomen and reporting what she actually finds, not what the clan expects to hear.",
+    "bushido_tenets": {
+     "paramount": "Sincerity",
+     "less_significant": "Duty and Loyalty"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 4,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "The Fires from Within"
+    },
+    {
+     "name": "Path to Inner Peace"
+    },
+    {
+     "name": "Jurōjin's Balm"
+    },
+    {
+     "name": "Cleansing Rite"
+    },
+    {
+     "name": "Commune with the Spirits"
+    },
+    {
+     "name": "Elemental Transmutation"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Guiding Ancestor"
+    },
+    {
+     "name": "Lost Eye"
+    },
+    {
+     "name": "Daredevil"
+    },
+    {
+     "name": "Omen of Bad Luck"
+    },
+    {
+     "name": "Despised in TBD",
+     "custom": true,
+     "subject": "TBD",
+     "text": "You are infamous among the residents of a particular city (chosen with the GM). People within this city resist cooperating with you and may actively hinder your activities within the city. When performing a check to gain assistance or cooperation from a resident of the city that despises you (such as a Courtesy [Water] check to learn the latest sake house rumors or a Commerce [Water] check to purchase goods within the city), you must choose and reroll two dice showing (op) or (st) results. After resolving the check, if you failed, you regain 1 Void point."
+    },
+    {
+     "name": "Knowledgeable Wilderness Guide"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Genno"
+    },
+    {
+     "name": "Sanctified Robes"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Bō"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Scroll satchel"
+    },
+    {
+     "name": "set of glass vials",
+     "custom": true,
+     "text": "From the Agasha Mystic starting outfit"
+    },
+    {
+     "name": "journal",
+     "custom": true,
+     "text": "From the Agasha Mystic starting outfit"
+    },
+    {
+     "name": "She sketches in a leather-bound journal whose pages she has learned to number in the margin, because twice she has found blank spaces where she thought she had drawn, and now she counts them to be sure.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

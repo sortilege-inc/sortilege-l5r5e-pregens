@@ -1,0 +1,463 @@
+{
+ "slug": "morohisa",
+ "name": "Morohisa",
+ "campaign": "Winter's Embrace",
+ "status": null,
+ "identity": {
+  "clan": "Mantis",
+  "family": "Families of the Fleet",
+  "school": "Storm Fleet Sailor School",
+  "role": "Bushi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Morohisa's scar pulls his mouth into a half-smile even when he is not smiling, so strangers spend the first moment wondering if he finds something amusing about them.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Morohisa",
+  "mode": "core",
+  "clan": "Mantis",
+  "family": "Families of the Fleet",
+  "school": "Storm Fleet Sailor School",
+  "role": "Bushi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "skills": {
+   "seafaring": 1,
+   "command": 1
+  },
+  "distinctions": [
+   "Scrounger"
+  ],
+  "adversities": [
+   "Maimed Visage"
+  ],
+  "passions": [
+   "Knotwork"
+  ],
+  "anxieties": [
+   "Reformed Maho-Tsukai"
+  ],
+  "pec_subjects": {
+   "supportof": {
+    "name": "Support of",
+    "subject": "Kasuga",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Courage",
+   "lesser": "Courtesy",
+   "attitude": "B",
+   "skill": "seafaring"
+  },
+  "answers": {
+   "giri": "Morohisa reports to Captain Haruo of the Mantis fleet, and must keep the Crane from learning how badly this winter's storms have damaged their merchant vessels.",
+   "ninjo": "Morohisa keeps trying to steer Lady Magami's bid for the crown prince toward one that rests on the Mantis' actual strength rather than on outmaneuvering the Crane, even when Captain Haruo's orders run the other way.",
+   "standout_quality": "Morohisa learned to read the set of a sail and the shift of a deck under his feet before he learned to read people, and it shows in how he stands motionless through a tea ceremony while his eyes keep tracking the door.",
+   "accomplishment": "During last winter's storm, Morohisa found enough preserved fish and grain in the Mantis hold to feed the crew for three more weeks when Captain Haruo had already begun rationing, and told no one but the captain how close they had come to eating the ship's stores meant for trade.",
+   "challenge": "When Morohisa sits across from a Crane courtier at tea, the scar tissue on his cheek pulls tight as he speaks, and the courtier's eyes drop to it instead of meeting his, and he has already lost the conversation before the tea cools.",
+   "peace": "Morohisa works a line of cordage across his lap during the long afternoons between court sessions, his fingers moving through the same knots he has tied a thousand times, each one emerging exactly as it should.",
+   "fear": "When Morohisa sits across from a Crane courtier and speaks in water-ring courtesy, the scar on his cheek tightens and his tongue moves through the old blood-magic shapes of words without his meaning them to, and he watches the courtier's eyes go distant, calculating whether the Mantis delegate is worth trusting at all.",
+   "accoutrement": "Morohisa's cuff is knotted cordage woven tight enough to support weight, and he unconsciously tightens it whenever a Crane courtier begins speaking.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Haruo",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Morohisa keeps his captain's orders and Lady Magami's ambitions in separate ledgers, checking neither against the other, until one day they will be impossible to keep apart."
+   },
+   "mentor": {
+    "name": "Kasuga Emi",
+    "path": "A",
+    "granted": "Support of",
+    "skill": "",
+    "text": "Kasuga Emi taught Morohisa that a person can be steady on a pitching deck and still capsize in a room where everyone is watching, so now he ties knots instead of speaking when the Crane have guests.",
+    "gender": "female",
+    "association": "Tortoise"
+   },
+   "first_impression": "Morohisa's scar pulls his mouth into a half-smile even when he is not smiling, so strangers spend the first moment wondering if he finds something amusing about them.",
+   "stress_reaction": "Morohisa works cordage through his fingers during any conversation where he cannot leave: the same knots, over and over, each one emerging exactly as it should, until the person across from him stops waiting for him to speak and speaks first.",
+   "relationships": "Asahina Sanzaemon (Crane) — Asahina Sanzaemon invited Morohisa to a private meeting before the court sessions began, and neither of them has mentioned it to anyone else, which means Morohisa cannot tell Captain Haruo and cannot tell Lady Magami, and the silence is beginning to cost him.",
+   "people": [
+    {
+     "name": "Asahina Sanzaemon",
+     "gender": "male",
+     "association": "Crane",
+     "text": "Asahina Sanzaemon invited Morohisa to a private meeting before the court sessions began, and neither of them has mentioned it to anyone else, which means Morohisa cannot tell Captain Haruo and cannot tell Lady Magami, and the silence is beginning to cost him."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Morohisa's mother watched him tie the same knot for the third time during the merchant's visit, undoing it each time it emerged perfect, and told the visiting captain that her son had learned his father's steadiness but not his father's certainty about what steadiness was for.",
+    "skill": "command"
+   },
+   "heritage": "Imperial Heritage",
+   "heritage_table": "samurai-heritage-table",
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Morohisa will die on a deck in a storm, doing the work that steadies him, because by then he will have chosen between the ledgers he keeps and the choice will have cost him the ground to stand on."
+  },
+  "starting_item": "Kabutowari",
+  "campaign": "Winter's Embrace",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Seafaring",
+    "Labor",
+    "Fitness",
+    "Games",
+    "Martial Arts [Melee]"
+   ],
+   "school.tech.1": [
+    "Stirring the Embers"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Morohisa learned to read the set of a sail and the shift of a deck under his feet before he learned to read people, and it shows in how he stands motionless through a tea ceremony while his eyes keep tracking the door."
+   ],
+   "giri": [
+    "Morohisa reports to Captain Isomaki of the Mantis fleet, and must keep the Crane from learning how badly this winter's storms have damaged their merchant vessels."
+   ],
+   "ninjo": [
+    "Morohisa keeps trying to steer Lady Magami's bid for the crown prince toward one that rests on the Mantis' actual strength rather than on outmaneuvering the Crane, even when Captain Haruo's orders run the other way."
+   ],
+   "clan_relationship": [
+    "Morohisa keeps his captain's orders and Lady Magami's ambitions in separate ledgers, checking neither against the other, until one day they will be impossible to keep apart."
+   ],
+   "accomplishment": [
+    "During last winter's storm, Morohisa found enough preserved fish and grain in the Mantis hold to feed the crew for three more weeks when Captain Haruo had already begun rationing, and told no one but the captain how close they had come to eating the ship's stores meant for trade."
+   ],
+   "challenge": [
+    "When Morohisa sits across from a Crane courtier at tea, the scar tissue on his cheek pulls tight as he speaks, and the courtier's eyes drop to it instead of meeting his, and he has already lost the conversation before the tea cools."
+   ],
+   "peace": [
+    "Morohisa works a line of cordage across his lap during the long afternoons between court sessions, his fingers moving through the same knots he has tied a thousand times, each one emerging exactly as it should."
+   ],
+   "fear": [
+    "When Morohisa sits across from a Crane courtier and speaks in water-ring courtesy, the scar on his cheek tightens and his tongue moves through the old blood-magic shapes of words without his meaning them to, and he watches the courtier's eyes go distant, calculating whether the Mantis delegate is worth trusting at all."
+   ],
+   "mentor_relationship": [
+    "Kasuga Emi taught Morohisa that a person can be steady on a pitching deck and still capsize in a room where everyone is watching, so now he ties knots instead of speaking when the Crane have guests."
+   ],
+   "first_impression": [
+    "Morohisa's scar pulls his mouth into a half-smile even when he is not smiling, so strangers spend the first moment wondering if he finds something amusing about them."
+   ],
+   "accoutrement": [
+    "Morohisa's cuff is knotted cordage woven tight enough to support weight, and he unconsciously tightens it whenever a Crane courtier begins speaking."
+   ],
+   "stress_reaction": [
+    "Morohisa works cordage through his fingers during any conversation where he cannot leave: the same knots, over and over, each one emerging exactly as it should, until the person across from him stops waiting for him to speak and speaks first."
+   ],
+   "relationship_person": [
+    "Asahina Sanzaemon invited Morohisa to a private meeting before the court sessions began, and neither of them has mentioned it to anyone else, which means Morohisa cannot tell Captain Haruo and cannot tell Lady Magami, and the silence is beginning to cost him."
+   ],
+   "parent_opinion": [
+    "Morohisa's mother watched him tie the same knot for the third time during the merchant's visit, undoing it each time it emerged perfect, and told the visiting captain that her son had learned his father's steadiness but not his father's certainty about what steadiness was for."
+   ],
+   "death": [
+    "Morohisa will die on a deck in a storm, doing the work that steadies him, because by then he will have chosen between the ledgers he keeps and the choice will have cost him the ground to stand on."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Morohisa learned to read the set of a sail and the shift of a deck under his feet before he learned to read people, and it shows in how he stands motionless through a tea ceremony while his eyes keep tracking the door.",
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Morohisa reports to Captain Haruo of the Mantis fleet, and must keep the Crane from learning how badly this winter's storms have damaged their merchant vessels.",
+     "lord_name": "Haruo"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Morohisa keeps trying to steer Lady Magami's bid for the crown prince toward one that rests on the Mantis' actual strength rather than on outmaneuvering the Crane, even when Captain Haruo's orders run the other way."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Morohisa keeps his captain's orders and Lady Magami's ambitions in separate ledgers, checking neither against the other, until one day they will be impossible to keep apart.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "During last winter's storm, Morohisa found enough preserved fish and grain in the Mantis hold to feed the crew for three more weeks when Captain Haruo had already begun rationing, and told no one but the captain how close they had come to eating the ship's stores meant for trade."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When Morohisa sits across from a Crane courtier at tea, the scar tissue on his cheek pulls tight as he speaks, and the courtier's eyes drop to it instead of meeting his, and he has already lost the conversation before the tea cools."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Morohisa works a line of cordage across his lap during the long afternoons between court sessions, his fingers moving through the same knots he has tied a thousand times, each one emerging exactly as it should."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When Morohisa sits across from a Crane courtier and speaks in water-ring courtesy, the scar on his cheek tightens and his tongue moves through the old blood-magic shapes of words without his meaning them to, and he watches the courtier's eyes go distant, calculating whether the Mantis delegate is worth trusting at all."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Kasuga Emi — Kasuga Emi taught Morohisa that a person can be steady on a pitching deck and still capsize in a room where everyone is watching, so now he ties knots instead of speaking when the Crane have guests."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Morohisa's scar pulls his mouth into a half-smile even when he is not smiling, so strangers spend the first moment wondering if he finds something amusing about them.",
+     "accoutrement": "Morohisa's cuff is knotted cordage woven tight enough to support weight, and he unconsciously tightens it whenever a Crane courtier begins speaking."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Morohisa works cordage through his fingers during any conversation where he cannot leave: the same knots, over and over, each one emerging exactly as it should, until the person across from him stops waiting for him to speak and speaks first."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Asahina Sanzaemon (Crane) — Asahina Sanzaemon invited Morohisa to a private meeting before the court sessions began, and neither of them has mentioned it to anyone else, which means Morohisa cannot tell Captain Haruo and cannot tell Lady Magami, and the silence is beginning to cost him."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Morohisa's mother watched him tie the same knot for the third time during the merchant's visit, undoing it each time it emerged perfect, and told the visiting captain that her son had learned his father's steadiness but not his father's certainty about what steadiness was for."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Imperial Heritage",
+     "heritage_table": "Samurai Heritage Table",
+     "heritage_sub": null,
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Morohisa will die on a deck in a storm, doing the work that steadies him, because by then he will have chosen between the ledgers he keeps and the choice will have cost him the ground to stand on."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Storm Fleet Sailor School",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 1,
+    "fire": 3,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 1,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 1,
+     "seafaring": 3,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 35,
+    "glory": 41,
+    "status": 35,
+    "ninjo": "Morohisa keeps trying to steer Lady Magami's bid for the crown prince toward one that rests on the Mantis' actual strength rather than on outmaneuvering the Crane, even when Captain Haruo's orders run the other way.",
+    "giri": "Morohisa reports to Captain Haruo of the Mantis fleet, and must keep the Crane from learning how badly this winter's storms have damaged their merchant vessels.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Courtesy"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 7,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Pelting Hail Style"
+    },
+    {
+     "name": "Stirring the Embers"
+    },
+    {
+     "name": "Sailor's Fortune"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Scrounger"
+    },
+    {
+     "name": "Maimed Visage"
+    },
+    {
+     "name": "Knotwork"
+    },
+    {
+     "name": "Reformed Maho-Tsukai"
+    },
+    {
+     "name": "Support of Kasuga",
+     "custom": true,
+     "subject": "Kasuga",
+     "text": "You have proven yourself to a particular group, which is willing to help you when doing so will not damage its reputation. Its members will offer you their hospitality, including meals, a place to rest, and medical attention if they have a healer. They will also grant you access to their other facilities, such as libraries, smithies, or stables. When performing a check to interact with the members of the chosen group that relies on your rapport (such as a Command [Water] check to issue them orders or a Performance [Water] check to cause an audience of them to desire something), you may reroll up to two dice."
+    },
+    {
+     "name": "Blessed Lineage"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Kabutowari"
+    },
+    {
+     "name": "Sailor's garb"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "any two weapons of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Storm Fleet Sailor starting outfit",
+     "held": false
+    },
+    {
+     "name": "Yumi"
+    },
+    {
+     "name": "Quiver of Arrow"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "rope (twenty feet)",
+     "custom": true,
+     "text": "From the Storm Fleet Sailor starting outfit"
+    },
+    {
+     "name": "gambling set (cards or dice)",
+     "custom": true,
+     "text": "From the Storm Fleet Sailor starting outfit",
+     "held": false
+    },
+    {
+     "name": "Fishing Rod and Line"
+    },
+    {
+     "name": "Morohisa's cuff is knotted cordage woven tight enough to support weight, and he unconsciously tightens it whenever a Crane courtier begins speaking.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
