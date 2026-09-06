@@ -3314,6 +3314,14 @@
     if (e.clan)
       return { state: "open",
                why: "Open-ended. Name the " + e.clan.toLowerCase() + " it applies to." };
+    /* And two entries carry the placeholder in the name itself: "Local Flare
+       for {Region}", "Well Connected in {City}". They looked settled, so the
+       picker never asked — Genjo went out carrying "Local Flare for {Region}"
+       with the braces still in it. */
+    var ph = pecPlaceholder(e.name);
+    if (ph)
+      return { state: "open",
+               why: "Open-ended. Name the " + ph.toLowerCase() + " it applies to." };
 
     return { state: "plain", why: "" };
   }
@@ -3427,15 +3435,16 @@
              goes into the peculiarity as the game writes it, and the line
              about them makes the person real enough to appear on the
              relationship map. */
-          (active && e.clan
+          (active && (e.clan || pecPlaceholder(e.name))
             ? (function () {
                 var sub = pecSubject(e.name) || {};
-                var isPerson = /name|person|ally|enem|rival|lord|patron/i.test(e.clan);
+                var what = e.clan || pecPlaceholder(e.name);
+                var isPerson = /name|person|ally|enem|rival|lord|patron/i.test(what);
                 return '<div class="pec-subject">' +
-                  '<label>' + esc(cap(e.clan)) +
+                  '<label>' + esc(cap(what)) +
                     '<input type="text" class="pec-sub" data-u="' + esc(e.uuid) +
                     '" value="' + esc(sub.subject || "") +
-                    '" placeholder="' + esc(e.clan) + '"></label>' +
+                    '" placeholder="' + esc(what) + '"></label>' +
                   '<label>' + (isPerson ? "Who are they?" : "What is it?") +
                     '<input type="text" class="pec-who" data-u="' + esc(e.uuid) +
                     '" value="' + esc(sub.who || "") +
@@ -3537,9 +3546,22 @@
      shape heritageGrants() has always produced for a granted open-ended entry
      ("Support of the Kakita Dueling Academy"), so a picked one matches it. */
   function pecFilled(name, subject) {
-    var bare = String(name || "").replace(/\s*\[[^\]]*\]\s*$/, "").trim();
+    var n = String(name || "");
     subject = String(subject || "").trim();
+    // a placeholder is replaced in place, not appended: "Local Flare for
+    // {Region}" becomes "Local Flare for the Mountain Region", where "Ally
+    // [Name]" becomes "Ally Hida Sadao"
+    if (pecPlaceholder(n)) {
+      return subject ? n.replace(/\{[^}]+\}/, subject) : n;
+    }
+    var bare = n.replace(/\s*\[[^\]]*\]\s*$/, "").trim();
     return subject ? bare + " " + subject : bare;
+  }
+
+  /* "{Region}" out of "Local Flare for {Region}", or null. */
+  function pecPlaceholder(name) {
+    var m = /\{([^}]+)\}/.exec(String(name || ""));
+    return m ? m[1] : null;
   }
 
   function pecSubject(name) {

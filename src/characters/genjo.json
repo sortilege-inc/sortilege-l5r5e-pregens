@@ -1,0 +1,462 @@
+{
+ "slug": "genjo",
+ "name": "Genjo",
+ "campaign": "Portents & Fortunes",
+ "status": null,
+ "identity": {
+  "clan": null,
+  "family": null,
+  "school": "Laughing Mountain Hearthstone Tradition",
+  "role": "Monk",
+  "age": "",
+  "region": "Mountain Region",
+  "upbringing": "Farmer Upbringing",
+  "origin_type": "peasant"
+ },
+ "mode": "wow",
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Genjo",
+  "mode": "wow",
+  "clan": null,
+  "family": null,
+  "school": "Laughing Mountain Hearthstone Tradition",
+  "role": "Monk",
+  "region": "Mountain Region",
+  "upbringing": "Farmer Upbringing",
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "tactics": 0,
+   "culture": 1,
+   "labor": 0,
+   "commerce": 1,
+   "smithing": 1
+  },
+  "distinctions": [
+   "Syncretic Philosophy"
+  ],
+  "adversities": [
+   "Lost Fingers"
+  ],
+  "passions": [
+   "Local Flare for {Region}"
+  ],
+  "anxieties": [
+   "Phobia"
+  ],
+  "pec_subjects": {
+   "supportof": {
+    "name": "Support of",
+    "subject": "Tengu",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Compassion",
+   "lesser": "Righteousness",
+   "attitude": "B",
+   "skill": "commerce"
+  },
+  "answers": {
+   "giri": "",
+   "ninjo": "Genjo sits through the evening meal in the refectory without eating, watching for which monks leave food on their bowls, so they can finish it after everyone has gone.",
+   "standout_quality": "When left to tend a dormitory or common room, Genjo scrubs and mends and reorganizes until the space feels inhabited, which the monks find either touching or maddening depending on whether they've asked him to stop.",
+   "accomplishment": "Genjo keeps the monastery's guest house so scrupulously that monks arriving from other temples comment on it first, before they mention anything else they saw on the road.",
+   "challenge": "Genjo's fingers catch on the weave when they try to mend the guest house linens quickly enough to have them ready by morning.",
+   "peace": "Genjo walks through the mountain villages after a monastery supply run, learning which families have taken in refugees from the lowlands, which paths are new since last season, which elders remember the routes their father traveled.",
+   "fear": "Genjo cannot name the thing that grows in damp cloth left folded too long, and when a guest arrives with traveling linens already spotted with it, they scrub until their catching fingers bleed rather than let the spores settle into the guest house.",
+   "accoutrement": "",
+   "past": "Genjo followed their father into exile after the murder accusation and stayed until he died, which means the monastery is the first place they've tried to stop running.",
+   "known_for": "Genjo curses fluently in the languages of the six directions, a habit picked up during years of following their father through exile.",
+   "known_skill": "culture",
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "Genjo keeps their father's exile-worn traveling cloak folded in a cedar chest, and last month when a refugee family arrived at the guest house with nothing but damp bundles, Genjo lined their sleeping alcove with it instead of the monastery linens.",
+   "group_history": "When Miwako mentioned she'd slept in worse places than the guest house, Genjo rewove the entire north alcove's sleeping platform because the implication that it was barely adequate wouldn't leave them alone.",
+   "raised_by": "Genjo's father taught them that a home dissolves the moment you stop tending it, so they cannot sit still in rooms where others have stopped trying.",
+   "raised_skill": "smithing",
+   "clan_relationship": {
+    "path": null,
+    "skill": null,
+    "text": ""
+   },
+   "mentor": {
+    "name": "Kikunojo",
+    "path": "A",
+    "granted": "Support of",
+    "skill": "",
+    "text": "Genjo learned from the monastery's head cook that a person can feed others without speaking to them—watching which monks grew thin on meditation weeks, which novices ate only when no one was looking, the cook left extra portions at specific places on the counter, never addressed it directly, and Genjo understood that this was how you showed someone they mattered without forcing them to admit they needed help.",
+    "gender": "male",
+    "association": "Tengu Mask of Air Tradition"
+   },
+   "first_impression": "",
+   "stress_reaction": "Genjo stops what they're doing mid-task and starts over from the beginning, even if it means missing the deadline, because the first attempt—now seen as flawed—will reflect badly on the monastery.",
+   "relationships": "Agasha Miwako (Dragon) — Agasha Miwako arrived at the monastery on a supply run claiming she was mapping trade routes through the mountains, but Genjo recognized the refugee's walk and offered the guest house without asking what she was running from, which means now she knows exactly how much Genjo is willing to give before asking a name.",
+   "people": [
+    {
+     "name": "Agasha Miwako",
+     "gender": "female",
+     "association": "Dragon",
+     "text": "Agasha Miwako arrived at the monastery on a supply run claiming she was mapping trade routes through the mountains, but Genjo recognized the refugee's walk and offered the guest house without asking what she was running from, which means now she knows exactly how much Genjo is willing to give before asking a name."
+    }
+   ],
+   "parent_opinion": {
+    "description": "",
+    "skill": null
+   },
+   "heritage": null,
+   "heritage_table": null,
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Genjo will die in a place they have stopped tending, because the moment they accept that some rooms cannot be saved, they will have no reason to stay in any of them.",
+   "rolls": {
+    "q5.past": {
+     "roll": 88,
+     "label": "Unearned Heroism"
+    }
+   }
+  },
+  "starting_item": "Stealth Clothing",
+  "campaign": "Portents & Fortunes",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "upbringing.ring_increase": [
+    "Water"
+   ],
+   "school.starting_skills": [
+    "Games",
+    "Martial Arts [Unarmed]",
+    "Sentiment",
+    "Courtesy",
+    "Performance"
+   ],
+   "school.tech.0": [
+    "Stirring the Embers",
+    "Sensational Distraction"
+   ],
+   "q4.trouble": [
+    "Gregarious, adaptable, charming"
+   ],
+   "q5.past": [
+    "Bad Reputation"
+   ],
+   "q7.known": [
+    "Negative or selfish actions"
+   ],
+   "q14.prized": [
+    "Spices"
+   ],
+   "q17.history": [
+    "Impressed or jealous"
+   ]
+  },
+  "origin_type": "peasant",
+  "school_all": true,
+  "ai_history": {
+   "standout_quality": [
+    "When left to tend a dormitory or common room, Genjo scrubs and mends and reorganizes until the space feels inhabited, which the monks find either touching or maddening depending on whether they've asked him to stop."
+   ],
+   "past": [
+    "Genjo left a farmstead where his presence made the household run better than it ever had, and the family stopped asking him to leave."
+   ],
+   "ninjo": [
+    "Genjo patches a torn sleeve that isn't theirs, knowing that when the monk wearing it returns, they will have to pretend not to have noticed it was broken.",
+    "Genjo sits through the evening meal in the refectory without eating, watching for which monks leave food on their bowls, so they can finish it after everyone has gone."
+   ],
+   "accomplishment": [
+    "Genjo keeps the monastery's guest house so scrupulously that monks arriving from other temples comment on it first, before they mention anything else they saw on the road."
+   ],
+   "challenge": [
+    "Genjo's fingers catch on the weave when they try to mend the guest house linens quickly enough to have them ready by morning."
+   ],
+   "peace": [
+    "Genjo walks through the mountain villages after a monastery supply run, learning which families have taken in refugees from the lowlands, which paths are new since last season, which elders remember the routes their father traveled."
+   ],
+   "fear": [
+    "Genjo cannot name the thing that grows in damp cloth left folded too long, and when a guest arrives with traveling linens already spotted with it, they scrub until their catching fingers bleed rather than let the spores settle into the guest house."
+   ],
+   "mentor_relationship": [
+    "Kikunojo taught Genjo that a borrowed space can be made into a home by the quality of attention given to it, but will not say whether this was meant to heal the exile or to keep them content enough to stay.",
+    "Genjo learned from the monastery's head cook that a person can feed others without speaking to them—watching which monks grew thin on meditation weeks, which novices ate only when no one was looking, the cook left extra portions at specific places on the counter, never addressed it directly, and Genjo understood that this was how you showed someone they mattered without forcing them to admit they needed help."
+   ],
+   "prized_possession": [
+    "Genjo keeps their father's exile-worn traveling cloak folded in a cedar chest, and last month when a refugee family arrived at the guest house with nothing but damp bundles, Genjo lined their sleeping alcove with it instead of the monastery linens."
+   ],
+   "stress_reaction": [
+    "Genjo stops what they're doing mid-task and starts over from the beginning, even if it means missing the deadline, because the first attempt—now seen as flawed—will reflect badly on the monastery."
+   ],
+   "relationship_person": [
+    "Agasha Miwako arrived at the monastery on a supply run claiming she was mapping trade routes through the mountains, but Genjo recognized the refugee's walk and offered the guest house without asking what she was running from, which means now she knows exactly how much Genjo is willing to give before asking a name."
+   ],
+   "group_history": [
+    "When Miwako mentioned she'd slept in worse places than the guest house, Genjo rewove the entire north alcove's sleeping platform because the implication that it was barely adequate wouldn't leave them alone."
+   ],
+   "raised_by": [
+    "Genjo's father taught them that a home dissolves the moment you stop tending it, so they cannot sit still in rooms where others have stopped trying."
+   ],
+   "death": [
+    "Genjo will die in a place they have stopped tending, because the moment they accept that some rooms cannot be saved, they will have no reason to stay in any of them."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "pow",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "When left to tend a dormitory or common room, Genjo scrubs and mends and reorganizes until the space feels inhabited, which the monks find either touching or maddening depending on whether they've asked him to stop.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "",
+     "lord_name": ""
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Genjo sits through the evening meal in the refectory without eating, watching for which monks leave food on their bowls, so they can finish it after everyone has gone."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "",
+     "path": null,
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Compassion",
+     "tenet_less_significant": "Righteousness"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Genjo keeps the monastery's guest house so scrupulously that monks arriving from other temples comment on it first, before they mention anything else they saw on the road."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Genjo's fingers catch on the weave when they try to mend the guest house linens quickly enough to have them ready by morning."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Genjo walks through the mountain villages after a monastery supply run, learning which families have taken in refugees from the lowlands, which paths are new since last season, which elders remember the routes their father traveled."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Genjo cannot name the thing that grows in damp cloth left folded too long, and when a guest arrives with traveling linens already spotted with it, they scrub until their catching fingers bleed rather than let the spores settle into the guest house."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Kikunojo — Genjo learned from the monastery's head cook that a person can feed others without speaking to them—watching which monks grew thin on meditation weeks, which novices ate only when no one was looking, the cook left extra portions at specific places on the counter, never addressed it directly, and Genjo understood that this was how you showed someone they mattered without forcing them to admit they needed help."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "",
+     "accoutrement": ""
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Genjo stops what they're doing mid-task and starts over from the beginning, even if it means missing the deadline, because the first attempt—now seen as flawed—will reflect badly on the monastery."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Agasha Miwako (Dragon) — Agasha Miwako arrived at the monastery on a supply run claiming she was mapping trade routes through the mountains, but Genjo recognized the refugee's walk and offered the guest house without asking what she was running from, which means now she knows exactly how much Genjo is willing to give before asking a name."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": ""
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": null,
+     "heritage_table": null,
+     "heritage_sub": null,
+     "heritage_applied": false
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Genjo will die in a place they have stopped tending, because the moment they accept that some rooms cannot be saved, they will have no reason to stay in any of them."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Laughing Mountain Hearthstone Tradition",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 1,
+    "fire": 2,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 1,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 28,
+    "glory": 33,
+    "status": 19,
+    "ninjo": "Genjo sits through the evening meal in the refectory without eating, watching for which monks leave food on their bowls, so they can finish it after everyone has gone.",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Compassion",
+     "less_significant": "Righteousness"
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 2
+   },
+   "techniques": [
+    {
+     "name": "Stirring the Embers"
+    },
+    {
+     "name": "Sensational Distraction"
+    },
+    {
+     "name": "Laughter Makes the Home"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Syncretic Philosophy"
+    },
+    {
+     "name": "Lost Fingers"
+    },
+    {
+     "name": "Local Flare for {Region}"
+    },
+    {
+     "name": "Phobia"
+    },
+    {
+     "name": "Support of Tengu",
+     "custom": true,
+     "subject": "Tengu",
+     "text": "You have proven yourself to a particular group, which is willing to help you when doing so will not damage its reputation. Its members will offer you their hospitality, including meals, a place to rest, and medical attention if they have a healer. They will also grant you access to their other facilities, such as libraries, smithies, or stables. When performing a check to interact with the members of the chosen group that relies on your rapport (such as a Command [Water] check to issue them orders or a Performance [Water] check to cause an audience of them to desire something), you may reroll up to two dice."
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Stealth Clothing"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Bō"
+    },
+    {
+     "name": "one weapon of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Laughing Mountain Hearthstone Tradition starting outfit",
+     "held": false
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "woolly pony",
+     "custom": true,
+     "text": "From the Laughing Mountain Hearthstone Tradition starting outfit"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

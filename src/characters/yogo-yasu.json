@@ -1,0 +1,436 @@
+{
+ "slug": "yogo-yasu",
+ "name": "Yogo Yasu",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": "Scorpion",
+  "family": "Yogo",
+  "school": "Yogo Preserver School",
+  "role": "Shugenja",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Yasu's eyes move constantly across surfaces—walls, floor, the joints where stone meets stone—even when someone is speaking directly to him, and it takes him several seconds to redirect his attention to their face.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Yogo Yasu",
+  "mode": "core",
+  "clan": "Scorpion",
+  "family": "Yogo",
+  "school": "Yogo Preserver School",
+  "role": "Shugenja",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "government": 1,
+   "labor": 1,
+   "meditation": 1
+  },
+  "distinctions": [
+   "Fukurokujin’s Blessing"
+  ],
+  "adversities": [
+   "Damaged Heart or Organ"
+  ],
+  "passions": [
+   "Enlightenment"
+  ],
+  "anxieties": [
+   "Coming Storm"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Duty and Loyalty",
+   "lesser": "Honor",
+   "attitude": "B",
+   "skill": "labor"
+  },
+  "answers": {
+   "giri": "Yogo Yasu serves the Kaiu Wall's chief architect, Kaiu Sozen, and must report monthly on the integrity of the seals that bind the Shadowlands curse within the Yogo family crypts beneath the Wall itself.",
+   "ninjo": "Yasu dreams of a family untouched by the curse—a wife, children, a household where he need not fear that love itself will betray them—but he has never asked the senior preservers whether such a thing is possible for a Yogo, and he will not, because he suspects he already knows the answer.",
+   "standout_quality": "Yasu spends his free hours in the library asking the senior preservers uncomfortable questions about the limits of their own protections, and he listens more carefully to what they do not answer than to what they do.",
+   "accomplishment": "When Kaiu Sozen asked him to verify the seals beneath the Wall, Yasu spent three months in the crypts reading the original binding-work so carefully that he found the fracture-point the senior preservers had missed, and reported it to Sozen alone before the flaw could widen into catastrophe.",
+   "challenge": "Yasu can work through his physical exhaustion in the crypts for exactly as long as his body permits, and then he must stop, which means the seals are sometimes only half-checked before he climbs back to daylight.",
+   "peace": "Yasu sits in the library among the senior preservers' ledgers, cross-referencing the binding-work against texts they have never asked him to read, finding the small corruptions in their reasoning that none of them will ever know he has found.",
+   "fear": "Every month when he climbs back into the crypts to check the seals, Yasu carries the certainty that this time the fracture will have widened beyond what even three months of careful work could have found, and that Sozen will discover it only after the Shadowlands has already begun pouring through.",
+   "accoutrement": "Yasu keeps a length of silk cord wound around his wrist beneath his sleeve, knotted at seven points, one for each seal he has verified; he adds a new knot after each monthly descent into the crypts, and when a knot frays he retires the cord and begins again.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Yogo Shingorô",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "B",
+    "skill": "government",
+    "text": "Yasu withholds from the senior preservers what he has learned about the limits of their seals because telling them would require him to name the possibility he refuses to speak aloud, and once named, it cannot be un-seen by anyone who stands watch over the same crypts he does."
+   },
+   "mentor": {
+    "name": "Kuni Taneyoshi",
+    "path": "A",
+    "granted": "Precise Memory",
+    "skill": "",
+    "text": "Kuni Taneyoshi taught him that the seals fail not because the binding-work is imperfect but because perfection itself is a kind of blindness, and Yasu has spent three years trying to prove her wrong without asking her directly whether she was right.",
+    "gender": "male",
+    "association": "Crab"
+   },
+   "first_impression": "Yasu's eyes move constantly across surfaces—walls, floor, the joints where stone meets stone—even when someone is speaking directly to him, and it takes him several seconds to redirect his attention to their face.",
+   "stress_reaction": "Yasu stops speaking mid-conversation and turns to examine the nearest wall or sealed door, running his fingers along the joints and fracture-lines as though the structural integrity of the room has suddenly become more urgent than whoever was talking to him.",
+   "relationships": "Hida Mayo (Crab) — Hida Mayo watches Yasu check the same joints in the Wall twice, and does not ask him why, because she has learned that the Yogo do not answer questions about what they are afraid of.",
+   "people": [
+    {
+     "name": "Hida Mayo",
+     "gender": "male",
+     "association": "Crab",
+     "text": "Hida Mayo watches Yasu check the same joints in the Wall twice, and does not ask him why, because she has learned that the Yogo do not answer questions about what they are afraid of."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Yasu's mother stood in the library doorway watching him cross-reference the binding-texts for the third hour without moving from his chair, and told the senior preserver beside her that she had given him life but the Wall had given him purpose, and she was no longer certain which one he valued more.",
+    "skill": "meditation"
+   },
+   "heritage": "Dynasty Builder",
+   "heritage_table": "samurai-heritage-table",
+   "heritage_sub": "7-8 — Gain +1 ^\"Games\"",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Yasu will die in the crypts because he miscounts the knots on his cord and descends one month too late, finding the fracture already open."
+  },
+  "starting_item": "Hammer",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Earth"
+   ],
+   "school.starting_skills": [
+    "Aesthetics",
+    "Theology",
+    "Courtesy"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Yasu is the one student who volunteers for the thankless work of copying and rechecking the warding diagrams that protect the dōjō from spiritual corruption, and he catches mistakes in the senior priests' transcriptions without ever saying whose hand made them.",
+    "Yasu spends his free hours in the library asking the senior preservers uncomfortable questions about the limits of their own protections, and he listens more carefully to what they do not answer than to what they do."
+   ],
+   "giri": [
+    "Yogo Yasu serves the Kaiu Wall's chief architect, Kaiu Sozen, and must report monthly on the integrity of the seals that bind the Shadowlands curse within the Yogo family crypts beneath the Wall itself."
+   ],
+   "ninjo": [
+    "Yasu dreams of a family untouched by the curse—a wife, children, a household where he need not fear that love itself will betray them—but he has never asked the senior preservers whether such a thing is possible for a Yogo, and he will not, because he suspects he already knows the answer."
+   ],
+   "clan_relationship": [
+    "Yasu withholds from the senior preservers what he has learned about the limits of their seals because telling them would require him to name the possibility he refuses to speak aloud, and once named, it cannot be un-seen by anyone who stands watch over the same crypts he does."
+   ],
+   "accomplishment": [
+    "When Kaiu Sozen asked him to verify the seals beneath the Wall, Yasu spent three months in the crypts reading the original binding-work so carefully that he found the fracture-point the senior preservers had missed, and reported it to Sozen alone before the flaw could widen into catastrophe."
+   ],
+   "challenge": [
+    "Yasu can work through his physical exhaustion in the crypts for exactly as long as his body permits, and then he must stop, which means the seals are sometimes only half-checked before he climbs back to daylight."
+   ],
+   "peace": [
+    "Yasu sits in the library among the senior preservers' ledgers, cross-referencing the binding-work against texts they have never asked him to read, finding the small corruptions in their reasoning that none of them will ever know he has found."
+   ],
+   "fear": [
+    "Every month when he climbs back into the crypts to check the seals, Yasu carries the certainty that this time the fracture will have widened beyond what even three months of careful work could have found, and that Sozen will discover it only after the Shadowlands has already begun pouring through."
+   ],
+   "mentor_relationship": [
+    "Kuni Taneyoshi taught him that the seals fail not because the binding-work is imperfect but because perfection itself is a kind of blindness, and Yasu has spent three years trying to prove her wrong without asking her directly whether she was right."
+   ],
+   "first_impression": [
+    "Yasu's eyes move constantly across surfaces—walls, floor, the joints where stone meets stone—even when someone is speaking directly to him, and it takes him several seconds to redirect his attention to their face."
+   ],
+   "accoutrement": [
+    "Yasu keeps a length of silk cord wound around his wrist beneath his sleeve, knotted at seven points, one for each seal he has verified; he adds a new knot after each monthly descent into the crypts, and when a knot frays he retires the cord and begins again."
+   ],
+   "stress_reaction": [
+    "Yasu stops speaking mid-conversation and turns to examine the nearest wall or sealed door, running his fingers along the joints and fracture-lines as though the structural integrity of the room has suddenly become more urgent than whoever was talking to him."
+   ],
+   "relationship_person": [
+    "Hida Mayo watches Yasu check the same joints in the Wall twice, and does not ask him why, because she has learned that the Yogo do not answer questions about what they are afraid of."
+   ],
+   "parent_opinion": [
+    "Yasu's mother stood in the library doorway watching him cross-reference the binding-texts for the third hour without moving from his chair, and told the senior preserver beside her that she had given him life but the Wall had given him purpose, and she was no longer certain which one he valued more."
+   ],
+   "death": [
+    "Yasu will die in the crypts because he miscounts the knots on his cord and descends one month too late, finding the fracture already open."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Yasu spends his free hours in the library asking the senior preservers uncomfortable questions about the limits of their own protections, and he listens more carefully to what they do not answer than to what they do.",
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Yogo Yasu serves the Kaiu Wall's chief architect, Kaiu Sozen, and must report monthly on the integrity of the seals that bind the Shadowlands curse within the Yogo family crypts beneath the Wall itself.",
+     "lord_name": "Yogo Shingorô"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Yasu dreams of a family untouched by the curse—a wife, children, a household where he need not fear that love itself will betray them—but he has never asked the senior preservers whether such a thing is possible for a Yogo, and he will not, because he suspects he already knows the answer."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Yasu withholds from the senior preservers what he has learned about the limits of their seals because telling them would require him to name the possibility he refuses to speak aloud, and once named, it cannot be un-seen by anyone who stands watch over the same crypts he does.",
+     "path": "B",
+     "skill": "government"
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Duty and Loyalty",
+     "tenet_less_significant": "Honor"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "When Kaiu Sozen asked him to verify the seals beneath the Wall, Yasu spent three months in the crypts reading the original binding-work so carefully that he found the fracture-point the senior preservers had missed, and reported it to Sozen alone before the flaw could widen into catastrophe."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Yasu can work through his physical exhaustion in the crypts for exactly as long as his body permits, and then he must stop, which means the seals are sometimes only half-checked before he climbs back to daylight."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Yasu sits in the library among the senior preservers' ledgers, cross-referencing the binding-work against texts they have never asked him to read, finding the small corruptions in their reasoning that none of them will ever know he has found."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Every month when he climbs back into the crypts to check the seals, Yasu carries the certainty that this time the fracture will have widened beyond what even three months of careful work could have found, and that Sozen will discover it only after the Shadowlands has already begun pouring through."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Kuni Taneyoshi — Kuni Taneyoshi taught him that the seals fail not because the binding-work is imperfect but because perfection itself is a kind of blindness, and Yasu has spent three years trying to prove her wrong without asking her directly whether she was right."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Yasu's eyes move constantly across surfaces—walls, floor, the joints where stone meets stone—even when someone is speaking directly to him, and it takes him several seconds to redirect his attention to their face.",
+     "accoutrement": "Yasu keeps a length of silk cord wound around his wrist beneath his sleeve, knotted at seven points, one for each seal he has verified; he adds a new knot after each monthly descent into the crypts, and when a knot frays he retires the cord and begins again."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Yasu stops speaking mid-conversation and turns to examine the nearest wall or sealed door, running his fingers along the joints and fracture-lines as though the structural integrity of the room has suddenly become more urgent than whoever was talking to him."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Hida Mayo (Crab) — Hida Mayo watches Yasu check the same joints in the Wall twice, and does not ask him why, because she has learned that the Yogo do not answer questions about what they are afraid of."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Yasu's mother stood in the library doorway watching him cross-reference the binding-texts for the third hour without moving from his chair, and told the senior preserver beside her that she had given him life but the Wall had given him purpose, and she was no longer certain which one he valued more."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Dynasty Builder",
+     "heritage_table": "Samurai Heritage Table",
+     "heritage_sub": "7-8 — Gain +1 ^\"Games\"",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Yasu will die in the crypts because he miscounts the knots on his cord and descends one month too late, finding the fracture already open."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Yogo Preserver School",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 2,
+    "fire": 2,
+    "water": 1,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 2
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 1,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 38,
+    "glory": 36,
+    "status": 35,
+    "ninjo": "Yasu dreams of a family untouched by the curse—a wife, children, a household where he need not fear that love itself will betray them—but he has never asked the senior preservers whether such a thing is possible for a Yogo, and he will not, because he suspects he already knows the answer.",
+    "giri": "Yogo Yasu serves the Kaiu Wall's chief architect, Kaiu Sozen, and must report monthly on the integrity of the seals that bind the Shadowlands curse within the Yogo family crypts beneath the Wall itself.",
+    "bushido_tenets": {
+     "paramount": "Duty and Loyalty",
+     "less_significant": "Honor"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 6,
+    "focus": 5,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 4,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "By the Light of the Lord Moon"
+    },
+    {
+     "name": "Embrace of Kenro-Ji-Jin"
+    },
+    {
+     "name": "Yari of Air"
+    },
+    {
+     "name": "Craft Shikigami"
+    },
+    {
+     "name": "Threshold Barrier"
+    },
+    {
+     "name": "Warded Shikigami"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Fukurokujin’s Blessing"
+    },
+    {
+     "name": "Damaged Heart or Organ"
+    },
+    {
+     "name": "Enlightenment"
+    },
+    {
+     "name": "Coming Storm"
+    },
+    {
+     "name": "Precise Memory"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Hammer"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Sanctified Robes"
+    },
+    {
+     "name": "Concealed Armor"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Bō"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Yasu keeps a length of silk cord wound around his wrist beneath his sleeve, knotted at seven points, one for each seal he has verified; he adds a new knot after each monthly descent into the crypts, and when a knot frays he retires the cord and begins again.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

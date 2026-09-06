@@ -149,12 +149,6 @@
    "note": "Set in 1123: the PCs pass through the Crab Clan's defenses into the Shadowlands, to the ruins of Shiro Hiruma. Arc, cast and lore are converted — what is missing is the pack.",
    "pencilled_schools": [
     {
-     "school": "Yogo Preserver School",
-     "family": "Yogo",
-     "gender": "male",
-     "concept": "A warder sent to seal something, who has not told the party what and does not intend to — and who carries the Yogo curse into the one place where betraying someone he loves is not the worst thing that could happen to him."
-    },
-    {
      "school": "Kaito Spirit Seeker School",
      "family": "Kaito",
      "gender": "female",
@@ -176,7 +170,8 @@
     "Moto Avenger School": "Moto Azumamaro — male, Moto. Pencilled premise: A Moto who has seen the Taint before, in his own people, and volunteered so someone present would recognise it early.",
     "Nezumi Tattered Ear Explorer Tradition": "Nara — female, no family. Pencilled premise: A Tattered Ear scout who remembers this route from before the humans had a name for it, and expects to be believed.",
     "Shiba Guardian School": "Shiba Yoshiteru — male, Shiba. Pencilled premise: A yōjimbō whose charge is the party's shugenja, and who has already decided which of them he cannot save.",
-    "Tengu Mask of Air Tradition": "Teruyo — female, no family. Pencilled premise: A teacher who has outlived several such expeditions and joined this one because the nezumi asked her to."
+    "Tengu Mask of Air Tradition": "Teruyo — female, no family. Pencilled premise: A teacher who has outlived several such expeditions and joined this one because the nezumi asked her to.",
+    "Yogo Preserver School": "Yogo Yasu — male, Yogo. Pencilled premise: A warder sent to seal something, who has not told the party what and does not intend to — and who carries the Yogo curse into the one place where betraying someone he loves is not the worst thing that could happen to him."
    }
   },
   "No Scenario": {
@@ -236,11 +231,6 @@
      "concept": "Devoted to Lady Sun in a village whose shrine belongs to Fukurokujin and whose newcomers follow the Little Teacher — a third faith in an argument that already had two; the most honourable person in the province by a wide margin, and the one with no authority whatsoever."
     },
     {
-     "school": "Laughing Mountain Hearthstone Tradition",
-     "gender": "male",
-     "concept": "A monk whose whole practice is that a home is made rather than assigned, arriving where everyone has been assigned one."
-    },
-    {
      "school": "Kaiu Architect School",
      "family": "Kaiu",
      "gender": "female",
@@ -254,7 +244,10 @@
     }
    ],
    "pencilled_why": "Chosen 2026-09-04. Weighted towards omen and celestial matter, which is what the campaign is named for: a Moshi sun sentinel at Fire 2 and honour 55, an Agasha ascetic who stands as the mountain, and a Laughing Mountain hearthstone courtier-monk at honour 28 to argue with all of them. A Kaiu architect, a Shinjo outrider and a Matsu beastmaster carry the practical half.\n\nFour concepts chosen 2026-09-04. The Agasha agrees with the consolidation and is unwelcome in both villages for it; the Laughing Mountain monk holds that a home is made rather than assigned and arrives where everyone has been assigned one, which is the arc's engine answered by a school ability; the Shinjo moves households over a road that takes careless walkers off the cliff; the Matsu is a Lion working for a Dragon vassal family because the work was there.\n\nThe last two settled 2026-09-04, both folding two options together. The Moshi's first pair of concepts were about the silent mountain and were rejected for it; she is now a third faith in an argument that already had two, and the most honourable person in the province with no authority at all — which sets her against the Agasha, who is unwelcome precisely because she is useful. The Kaiu is on the same spring deadline as Seiya Fusae and from the opposite end: Fusae must return with homes or the means to build them, and he is the man who would have to build them.",
-   "setting": "Kinenkan province, Dragon lands — the campaign at ~/Working/2026 Portents & Fortunes/portents-and-fortunes, read 2026-09-04. Seiya Mori, daimyō of a vassal family sworn to the Agasha, has ordered a consolidation: two or three villages given up because the terraces are failing, their households marched to White Flower Village. Seiya Fusae, 22, a Mirumoto Two-Heavens Adept, commands the column on nothing but rank, over older ashigaru. Wrath of the Kami has not erupted in twenty-four years, which the Agasha hold as the worst omen in their tradition. North of the village is a Seidō to Fukurokujin, Fortune of Wisdom. The arc's own stated engine is the mixing rather than the uprooting: households with no shared history and no agreed order of precedence, expected to become one village by arriving in the same place.\n\nConcepts here draw only on that public situation. The GM document's Behind the Veil material — the prophecy's mechanism, the kami-displacement chain, which elders are Perfect Land devotees — is deliberately not in them, because a pack concept feeds AI suggestions and can become a bio.\n\nOne thing still open: the campaign is solo, with Togashi Norikage as its only PC. These six are written as a troupe with their own reasons to be at the village, which is how they were offered and chosen. If they are meant instead as company arriving alongside Norikage, they want rewriting toward being useful to him."
+   "setting": "Kinenkan province, Dragon lands — the campaign at ~/Working/2026 Portents & Fortunes/portents-and-fortunes, read 2026-09-04. Seiya Mori, daimyō of a vassal family sworn to the Agasha, has ordered a consolidation: two or three villages given up because the terraces are failing, their households marched to White Flower Village. Seiya Fusae, 22, a Mirumoto Two-Heavens Adept, commands the column on nothing but rank, over older ashigaru. Wrath of the Kami has not erupted in twenty-four years, which the Agasha hold as the worst omen in their tradition. North of the village is a Seidō to Fukurokujin, Fortune of Wisdom. The arc's own stated engine is the mixing rather than the uprooting: households with no shared history and no agreed order of precedence, expected to become one village by arriving in the same place.\n\nConcepts here draw only on that public situation. The GM document's Behind the Veil material — the prophecy's mechanism, the kami-displacement chain, which elders are Perfect Land devotees — is deliberately not in them, because a pack concept feeds AI suggestions and can become a bio.\n\nOne thing still open: the campaign is solo, with Togashi Norikage as its only PC. These six are written as a troupe with their own reasons to be at the village, which is how they were offered and chosen. If they are meant instead as company arriving alongside Norikage, they want rewriting toward being useful to him.",
+   "built_from_shortlist": {
+    "Laughing Mountain Hearthstone Tradition": "Genjo — male, no family. Pencilled premise: A monk whose whole practice is that a home is made rather than assigned, arriving where everyone has been assigned one."
+   }
   },
   "Sins of Regret": {
    "arc": "l5r5e-0.4-sins-of-regret.arc",
@@ -834,7 +827,8 @@
    "kuni-ryosei",
    "kurosawa-genzo",
    "sanpei",
-   "shosuro-hisano"
+   "shosuro-hisano",
+   "the-beshkara-constrictor"
   ]
  },
  "title_aliases": {

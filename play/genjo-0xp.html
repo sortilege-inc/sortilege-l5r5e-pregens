@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genjo — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css?v=1e5e7e8c">
+<link rel="stylesheet" href="../assets/play/sheet.css?v=961462f4">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Genjo</span>
+  <a href="../characters/genjo.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "genjo-0xp",
+ "name": "Genjo",
+ "clan": null,
+ "family": null,
+ "school": "Laughing Mountain Hearthstone Tradition",
+ "role": "Monk",
+ "roles": null,
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 1,
+  "fire": 2,
+  "water": 3,
+  "void": 2
+ },
+ "derived": {
+  "endurance": 6,
+  "composure": 8,
+  "focus": 4,
+  "vigilance": 3
+ },
+ "trackers": {
+  "strife": {
+   "max": 8
+  },
+  "fatigue": {
+   "max": 6
+  },
+  "void": {
+   "max": 2,
+   "start": 2
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 28,
+  "glory": 33,
+  "status": 19
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 1,
+  "fitness": 1,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 1,
+  "meditation": 1,
+  "tactics": 0,
+  "culture": 1,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 0,
+  "command": 0,
+  "courtesy": 1,
+  "games": 1,
+  "performance": 1,
+  "commerce": 1,
+  "labor": 1,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 0
+ },
+ "bushido": {
+  "paramount": "Compassion",
+  "less": "Righteousness"
+ },
+ "ninjo": "Genjo sits through the evening meal in the refectory without eating, watching for which monks leave food on their bowls, so they can finish it after everyone has gone.",
+ "giri": "",
+ "money": "2 bu",
+ "techniques": [
+  {
+   "name": "Stirring the Embers",
+   "tag": "Technique",
+   "text": "<ul><li>A good leader does not just compensate for the weaknesses of comrades, but also fosters their innate strengths. The courtier reminds an ally of one of their finer qualities, sparking their pride to get them to fight more fiercely or speak with greater conviction.</li><li>When making a Social skill (Fire) check targeting one or more characters, you may spend (op) in the following way:</li><li>Fire (op)+: Choose a target and one of their known distinctions per (op) spent this way. Until the end of the scene, when that advantage applies to a check, the target may reroll up to three dice (instead of two).</li></ul>"
+  },
+  {
+   "name": "Sensational Distraction",
+   "tag": "Technique",
+   "text": "<ul><li>Standing out in court requires a great deal of both cunning and flair, and standing out on purpose can be even harder. Courtiers train for much of their lives to learn to control the perceptions of others at court. The best courtiers know when to draw attention to themselves with a display of rhetorical prowess or another social feat and when to avoid attention. Drawing attention to oneself can give collaborators the chance to work unnoticed as well, and thus it is an extremely valuable tool in the courtier’s arsenal.</li><li>When making a Social skill (Fire) check targeting one or more characters, you may spend (op) in the following way:</li><li>Fire (op)+: When interacting with other characters, the target treats their vigilance as 1 lower per (op) spent this way; when interacting with you, the target treats their vigilance as 1 higher per (op) spent this way. This effect persists until the end of the scene.</li></ul>"
+  },
+  {
+   "name": "Laughter Makes the Home",
+   "tag": "Technique",
+   "text": "<p>The first time you make a successful Social check against another character in a scene, you may reduce the TN of all subsequent Social checks against that character by 1 (to a minimum of 1) for the remainder of the scene. This effect does not stack with itself, but can be used on multiple characters.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Syncretic Philosophy",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Exposed to many cultures and philosophies, you understand the nuances of personal moral stances.</li><li>When performing a check to appeal to someone&#x27;s ethics, morality, or philosophy, you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Lost Fingers",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have fewer functional digits on one of your hands than most people. Checks to craft new items take you twice as long as they would take a character with their full complement of fingers.</li><li>When you make a check for which you must maintain a precise grip with both hands at once (such as a Design [Fire] check to weave cloth or a Martial Arts [Fire] check to draw your blade quickly), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Local Flare for {Region}",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have an intimate knowledge of a specific region and its people.</li><li>After performing a check to remember information about the specific region you have chosen (such as Culture [Earth] to know current events or Sentiment [Earth] to recall attitudes of local inhabitants), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Phobia",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Choose something mundane. You have a debilitating fear of this thing. You cannot speak its name. In its presence, you cannot hide your fear, and you attempt to flee if at all possible.</li><li>After performing a check to deal with your phobia (such as a Courtesy [Water] check to talk pleasantly about the subject or a Survival [Water] check to identify it as the thing you fear), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Support of Tengu",
+   "tag": "Peculiarity"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Stealth Clothing",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Forbidden",
+    "Subtle"
+   ],
+   "rarity": "7",
+   "text": "<ul><li>Physical Resistance: 2</li><li>Qualities: [&quot;Forbidden&quot;,&quot;Subtle&quot;]</li><li>Rarity: 7</li><li>Cost: 4 bu</li><li>Special: Reversible (dark/bright sides). While in Obscuring terrain with appropriate side shown, increase TN of Attack checks targeting you by additional 1 (total +2).</li></ul>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak.</p>"
+  },
+  {
+   "name": "Bō",
+   "kind": "Weapon",
+   "category": "Polearms",
+   "skill": "melee",
+   "range": "1-2",
+   "damage": 6,
+   "deadliness": 2,
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "2",
+   "text": "<p>The bō, a humble staff, is a versatile weapon found throughout Rokugan. Roughly six feet long and made from sturdy hardwood, it is carried by travelers who need both a walking stick and an inconspicuous weapon.</p>"
+  },
+  {
+   "name": "one weapon of rarity 6 or lower",
+   "kind": "Item"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  },
+  {
+   "name": "woolly pony",
+   "kind": "Item"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js?v=1c4f76bc"></script>
+<script src="../assets/play/sheet.js?v=ae08be20"></script>
+</body>
+</html>

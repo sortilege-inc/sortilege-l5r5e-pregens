@@ -914,16 +914,16 @@ def load_characters(cx):
                                     row = cand
                                     break
                         if not row:
-                            # And it may qualify by clan: the compendium
-                            # has "Lord Shiba’s Valor (Phoenix)" where the
-                            # corpus, the school data and the character all say
-                            # "Lord Shiba's Valor". Nine entries do this and no
-                            # two of them share a base name, so the stem is
-                            # unambiguous -- but it is checked here rather than
-                            # assumed, and a shared stem is left unresolved
-                            # instead of picked between. Shiba Yoshiteru's
-                            # school hands him one of the nine, which is how
-                            # this surfaced.
+                            # And it may qualify the name in parentheses where
+                            # nothing else does: by clan, "Lord Shiba’s Valor
+                            # (Phoenix)" against the corpus's "Lord Shiba's
+                            # Valor"; or by role, "Craft Shikigami (Shugenja)"
+                            # against Yogo Yasu's "Craft Shikigami". Accepted
+                            # only when exactly one catalog entry has that
+                            # stem, so an ambiguous one stays unresolved rather
+                            # than being picked between. Shiba Yoshiteru
+                            # surfaced the clan case and Yogo Yasu the role
+                            # case, one character apart.
                             cands = cx.execute(
                                 "SELECT uuid, name FROM catalog WHERE sub_type IN (%s)"
                                 " AND norm LIKE ? || '%%'" % ",".join("?" * len(subs)),
