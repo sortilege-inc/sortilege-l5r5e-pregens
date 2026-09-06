@@ -1,109 +1,284 @@
 {
  "slug": "doji-sayaka",
  "name": "Doji Sayaka",
- "folder_label": "Doji Sayaka",
  "campaign": "Imperfect Land",
  "status": null,
- "bucket": null,
- "accent": null,
  "identity": {
   "clan": "Crane",
   "family": "Doji",
-  "region": null,
-  "upbringing": null,
-  "origin_type": null,
   "school": "Daidoji Spymaster School",
   "role": "Courtier",
-  "age": ""
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
  },
+ "mode": "core",
  "portrait": "src/portraits/doji-sayaka.webp",
- "concept": null,
+ "concept": "She speaks in elaborate metaphors even when a direct answer would serve, turning simple questions into riddles that give her time to measure who is listening and what they want to hear, though it leaves people uncertain whether she is being evasive or simply cannot help herself anymore.",
  "summary": null,
  "notes": "",
+ "wizard": {
+  "name": "Doji Sayaka",
+  "mode": "core",
+  "clan": "Crane",
+  "family": "Doji",
+  "school": "Daidoji Spymaster School",
+  "role": "Courtier",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "skulduggery": 2,
+   "unarmed": 1
+  },
+  "distinctions": [
+   "Subtle Observer"
+  ],
+  "adversities": [
+   "Cognitive Lapses"
+  ],
+  "passions": [
+   "History"
+  ],
+  "anxieties": [
+   "Fear of Stagnation"
+  ],
+  "bushido": {
+   "paramount": "Duty and Loyalty",
+   "lesser": "Honor",
+   "attitude": "B",
+   "skill": "skulduggery"
+  },
+  "answers": {
+   "giri": "You must dismantle the Perfect Land Sect's influence before it unsettles the Crane, using honeyed words where others would wield steel, even as the mask you wear grows indistinguishable from your face.",
+   "ninjo": "You hunger to be known truly by another soul, even once, before you become merely the perfect performance that greets death's stage.",
+   "standout_quality": "You mastered the art of seeming ordinary, dissolving into crowds as easily as water takes the shape of any vessel, earning your Water ring's advancement through countless missions where invisibility proved more valuable than any blade.",
+   "accomplishment": "She identified a Perfect Land Sect recruiter operating from within the Doji household by watching how his eyes moved when servants spoke of the harvest, and reported him to her daimyō before he could sway anyone to the sect's cause.",
+   "challenge": "During her briefings with the daimyō, Sayaka sometimes cannot recall whether she witnessed the sect recruiter's movements herself or only heard them described, and must ask carefully neutral questions to reconstruct what she actually saw.",
+   "peace": "In the dusty archive rooms of the Doji household, she reconstructs the sect recruiter's movements by cross-referencing old ledgers and servant records, each verified detail settling the fog between what she witnessed and what she was told, until the past becomes solid ground beneath her.",
+   "fear": "Three days into arranging the sect recruiter's movements under house arrest, Sayaka realizes she cannot remember whether she ordered the guards herself or simply approved an order someone else had drafted, and the uncertainty keeps her in the Doji compound retracing every conversation instead of pursuing the network spreading through the merchant quarters.",
+   "accoutrement": "She wears a jade comb carved to look like layered water, which she takes from her hair and sets on the table during negotiations, though she never seems to notice when it goes missing and always has another one the next day.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Daidoji Ikki",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "B",
+    "skill": "skulduggery",
+    "text": "# Clan Relationship: Doji\n\nYou find yourself drawn to a distant Doji cousin whose genuine warmth makes the performance exhausting rather than natural, and you must choose whether the Crane's demand for perfect grace permits you to lower your mask, even fractionally, with one of your own blood."
+   },
+   "mentor": {
+    "name": "Yogo Morishige",
+    "path": "A",
+    "granted": "Thoughtful Arbiter",
+    "skill": "",
+    "text": "Yogo Morishige taught her to trace a lie through what people choose not to say, but Sayaka has spent so long listening for absences that she sometimes cannot tell what she actually heard from what the silence suggested.",
+    "gender": "male",
+    "association": "Scorpion"
+   },
+   "first_impression": "She speaks in elaborate metaphors even when a direct answer would serve, turning simple questions into riddles that give her time to measure who is listening and what they want to hear, though it leaves people uncertain whether she is being evasive or simply cannot help herself anymore.",
+   "stress_reaction": "When pushed past composure, Sayaka's hands go still—she stops adjusting her sleeves, stops touching the jade comb, stops the small precise movements that fill her silences—and speaks in direct sentences without metaphor until the moment passes.",
+   "relationships": "Doji Kenzaburo (Crane) — Kenzaburo once asked her directly whether the metaphors were a choice or a habit, and she answered him in plain sentences for three minutes before reaching for the jade comb and never speaking that way to him again.\nOtomo Koemi (Imperial) — Otomo Koemi caught her in the merchant quarter dressed as a laborer and said nothing about it to anyone, which means Sayaka must now decide whether to trust her or treat her as a threat that will eventually move.",
+   "people": [
+    {
+     "name": "Doji Kenzaburo",
+     "gender": "male",
+     "association": "Crane",
+     "text": "Kenzaburo once asked her directly whether the metaphors were a choice or a habit, and she answered him in plain sentences for three minutes before reaching for the jade comb and never speaking that way to him again."
+    },
+    {
+     "name": "Otomo Koemi",
+     "gender": "female",
+     "association": "Imperial",
+     "text": "Otomo Koemi caught her in the merchant quarter dressed as a laborer and said nothing about it to anyone, which means Sayaka must now decide whether to trust her or treat her as a threat that will eventually move."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Her mother worries that Sayaka has perfected the art of answering without ever actually responding, and cannot tell anymore whether this is strategy or whether her daughter has simply forgotten how to say what she means.",
+    "skill": "unarmed"
+   },
+   "heritage": "A Little Too Close to Heaven",
+   "heritage_table": "courts-of-stone-heritages",
+   "heritage_sub": "1-2 — Gain +1 ^\"Government\"",
+   "death": "Sayaka dies in the archive room she loves, surrounded by ledgers and records, finally certain of what she witnessed and what she merely heard—and realizes in that moment of perfect clarity that she can no longer remember her own face without consulting a mirror."
+  },
+  "starting_item": "Omamori (Boon of Hotei)",
+  "campaign": "",
+  "notes": "",
+  "gender": "any",
+  "choices": {
+   "family.ring_increase": [
+    "Water"
+   ],
+   "school.starting_skills": [
+    "Command",
+    "Courtesy",
+    "Government",
+    "Sentiment",
+    "Skulduggery"
+   ],
+   "school.tech.1": [
+    "Like a Ghost"
+   ],
+   "school.tech.2": [
+    "Striking as Air"
+   ]
+  },
+  "ai_history": {
+   "accomplishment": [
+    "She identified a Perfect Land Sect recruiter operating from within the Doji household by watching how his eyes moved when servants spoke of the harvest, and reported him to her daimyō before he could sway anyone to the sect's cause."
+   ],
+   "challenge": [
+    "During her briefings with the daimyō, Sayaka sometimes cannot recall whether she witnessed the sect recruiter's movements herself or only heard them described, and must ask carefully neutral questions to reconstruct what she actually saw."
+   ],
+   "peace": [
+    "In the dusty archive rooms of the Doji household, she reconstructs the sect recruiter's movements by cross-referencing old ledgers and servant records, each verified detail settling the fog between what she witnessed and what she was told, until the past becomes solid ground beneath her."
+   ],
+   "fear": [
+    "Three days into arranging the sect recruiter's movements under house arrest, Sayaka realizes she cannot remember whether she ordered the guards herself or simply approved an order someone else had drafted, and the uncertainty keeps her in the Doji compound retracing every conversation instead of pursuing the network spreading through the merchant quarters."
+   ],
+   "mentor_relationship": [
+    "Yogo Morishige taught her to trace a lie through what people choose not to say, but Sayaka has spent so long listening for absences that she sometimes cannot tell what she actually heard from what the silence suggested."
+   ],
+   "first_impression": [
+    "She speaks in elaborate metaphors even when a direct answer would serve, turning simple questions into riddles that give her time to measure who is listening and what they want to hear, though it leaves people uncertain whether she is being evasive or simply cannot help herself anymore."
+   ],
+   "accoutrement": [
+    "She wears a jade comb carved to look like layered water, which she takes from her hair and sets on the table during negotiations, though she never seems to notice when it goes missing and always has another one the next day."
+   ],
+   "stress_reaction": [
+    "When pushed past composure, Sayaka's hands go still—she stops adjusting her sleeves, stops touching the jade comb, stops the small precise movements that fill her silences—and speaks in direct sentences without metaphor until the moment passes."
+   ],
+   "relationship_person": [
+    "Kenzaburo once asked her directly whether the metaphors were a choice or a habit, and she answered him in plain sentences for three minutes before reaching for the jade comb and never speaking that way to him again.",
+    "Otomo Koemi caught her in the merchant quarter dressed as a laborer and said nothing about it to anyone, which means Sayaka must now decide whether to trust her or treat her as a threat that will eventually move."
+   ],
+   "parent_opinion": [
+    "Her mother worries that Sayaka has perfected the art of answering without ever actually responding, and cannot tell anymore whether this is strategy or whether her daughter has simply forgotten how to say what she means."
+   ],
+   "death": [
+    "Sayaka dies in the archive room she loves, surrounded by ledgers and records, finally certain of what she witnessed and what she merely heard—and realizes in that moment of perfect clarity that she can no longer remember her own face without consulting a mirror."
+   ]
+  }
+ },
  "twenty_questions": {
   "template": "core",
-  "generated": true,
+  "generated": false,
   "steps": {
-   "step1": {
-    "answers": {
-     "clan": "Crane",
-     "ring": "air",
-     "skill": "culture",
-     "social_status": 35
-    },
-    "picks": {}
-   },
-   "step2": {
-    "answers": {
-     "family": "Doji",
-     "ring": "water",
-     "skill1": "courtesy",
-     "skill2": "design",
-     "wealth": 8,
-     "social_glory": 44
-    },
-    "picks": {}
-   },
-   "step3": {
-    "answers": {
-     "school": "Daidoji Spymaster School",
-     "roles": "Courtier",
-     "ring1": "air",
-     "ring2": "earth",
-     "skill1": "skulduggery",
-     "skill2": "government",
-     "skill3": "performance",
-     "skill4": "culture",
-     "skill5": "sentiment",
-     "social_honor": 30
-    },
-    "picks": {
-     "techniques": [
-      "Ancestry Unearthed",
-      "Like a Ghost",
-      "Striking as Air"
-     ],
-     "school_ability": [
-      "Incisive Insight"
-     ],
-     "equipment": [
-      "Traveling Clothes",
-      "Ceremonial Clothes",
-      "Wakizashi",
-      "Sokutoki",
-      "Disguise Kit"
-     ]
-    }
-   },
    "step4": {
     "answers": {
+     "stand_out": "You mastered the art of seeming ordinary, dissolving into crowds as easily as water takes the shape of any vessel, earning your Water ring's advancement through countless missions where invisibility proved more valuable than any blade.",
      "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "You must dismantle the Perfect Land Sect's influence before it unsettles the Crane, using honeyed words where others would wield steel, even as the mask you wear grows indistinguishable from your face.",
+     "lord_name": "Daidoji Ikki"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "You hunger to be known truly by another soul, even once, before you become merely the perfect performance that greets death's stage."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "social_add_glory": 5
+     "clan_relations": "# Clan Relationship: Doji\n\nYou find yourself drawn to a distant Doji cousin whose genuine warmth makes the performance exhausting rather than natural, and you must choose whether the Crane's demand for perfect grace permits you to lower your mask, even fractionally, with one of your own blood."
     },
     "picks": {}
    },
    "step8": {
     "answers": {
-     "social_add_honor": 10
+     "tenet_paramount": "Duty and Loyalty",
+     "tenet_less_significant": "Honor"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She identified a Perfect Land Sect recruiter operating from within the Doji household by watching how his eyes moved when servants spoke of the harvest, and reported him to her daimyō before he could sway anyone to the sect's cause."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "During her briefings with the daimyō, Sayaka sometimes cannot recall whether she witnessed the sect recruiter's movements herself or only heard them described, and must ask carefully neutral questions to reconstruct what she actually saw."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "In the dusty archive rooms of the Doji household, she reconstructs the sect recruiter's movements by cross-referencing old ledgers and servant records, each verified detail settling the fog between what she witnessed and what she was told, until the past becomes solid ground beneath her."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Three days into arranging the sect recruiter's movements under house arrest, Sayaka realizes she cannot remember whether she ordered the guards herself or simply approved an order someone else had drafted, and the uncertainty keeps her in the Doji compound retracing every conversation instead of pursuing the network spreading through the merchant quarters."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Yogo Morishige — Yogo Morishige taught her to trace a lie through what people choose not to say, but Sayaka has spent so long listening for absences that she sometimes cannot tell what she actually heard from what the silence suggested."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "She speaks in elaborate metaphors even when a direct answer would serve, turning simple questions into riddles that give her time to measure who is listening and what they want to hear, though it leaves people uncertain whether she is being evasive or simply cannot help herself anymore.",
+     "accoutrement": "She wears a jade comb carved to look like layered water, which she takes from her hair and sets on the table during negotiations, though she never seems to notice when it goes missing and always has another one the next day."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When pushed past composure, Sayaka's hands go still—she stops adjusting her sleeves, stops touching the jade comb, stops the small precise movements that fill her silences—and speaks in direct sentences without metaphor until the moment passes."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Doji Kenzaburo (Crane) — Kenzaburo once asked her directly whether the metaphors were a choice or a habit, and she answered him in plain sentences for three minutes before reaching for the jade comb and never speaking that way to him again.\nOtomo Koemi (Imperial) — Otomo Koemi caught her in the merchant quarter dressed as a laborer and said nothing about it to anyone, which means Sayaka must now decide whether to trust her or treat her as a threat that will eventually move."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Her mother worries that Sayaka has perfected the art of answering without ever actually responding, and cannot tell anymore whether this is strategy or whether her daughter has simply forgotten how to say what she means."
     },
     "picks": {}
    },
    "step18": {
     "answers": {
-     "heritage_add_honor": 0,
-     "heritage_add_glory": 0,
-     "heritage_add_status": 0
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "A Little Too Close to Heaven",
+     "heritage_table": "Courts of Stone Heritages",
+     "heritage_sub": "1-2 — Gain +1 ^\"Government\""
     },
     "picks": {}
    },
-   "step19": {
+   "step20": {
     "answers": {
-     "firstname": "Sayaka"
+     "death": "Sayaka dies in the archive room she loves, surrounded by ledgers and records, finally certain of what she witnessed and what she merely heard—and realizes in that moment of perfect clarity that she can no longer remember her own face without consulting a mirror."
     },
     "picks": {}
    }
@@ -115,8 +290,7 @@
    "label": null,
    "rank": 1,
    "school": "Daidoji Spymaster School",
-   "foundry_id": "5CAEASJK5cHcGRFI",
-   "foundry_name": "Doji Sayaka",
+   "foundry_id": null,
    "rings": {
     "air": 3,
     "earth": 2,
@@ -135,40 +309,40 @@
      "fitness": 0,
      "melee": 0,
      "ranged": 0,
-     "unarmed": 0,
+     "unarmed": 1,
      "meditation": 0,
      "tactics": 0
     },
     "scholar": {
-     "culture": 2,
-     "government": 1,
+     "culture": 1,
+     "government": 2,
      "medicine": 0,
      "sentiment": 1,
      "theology": 0
     },
     "social": {
-     "command": 0,
-     "courtesy": 1,
+     "command": 1,
+     "courtesy": 2,
      "games": 0,
-     "performance": 1
+     "performance": 0
     },
     "trade": {
      "commerce": 0,
      "labor": 0,
      "seafaring": 0,
-     "skulduggery": 1,
+     "skulduggery": 3,
      "survival": 0
     }
    },
    "social": {
-    "honor": 40,
-    "glory": 49,
-    "status": 35,
-    "ninjo": "",
-    "giri": "",
+    "honor": 30,
+    "glory": 44,
+    "status": 40,
+    "ninjo": "You hunger to be known truly by another soul, even once, before you become merely the perfect performance that greets death's stage.",
+    "giri": "You must dismantle the Perfect Land Sect's influence before it unsettles the Crane, using honeyed words where others would wield steel, even as the mask you wear grows indistinguishable from your face.",
     "bushido_tenets": {
-     "paramount": "",
-     "less_significant": ""
+     "paramount": "Duty and Loyalty",
+     "less_significant": "Honor"
     }
    },
    "derived": {
@@ -185,79 +359,41 @@
    },
    "techniques": [
     {
-     "name": "Ancestry Unearthed",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "shuji",
-     "rank": 1
+     "name": "Ancestry Unearthed"
     },
     {
-     "name": "Like a Ghost",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "ninjutsu",
-     "rank": 2
+     "name": "Like a Ghost"
     },
     {
-     "name": "Striking as Air",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "kata",
-     "rank": 1
+     "name": "Striking as Air"
     },
     {
-     "name": "Incisive Insight",
-     "xp_used": 0,
-     "xp_cost": 0,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "school_ability",
-     "rank": 1
+     "name": "Incisive Insight"
     }
    ],
-   "peculiarities": [],
+   "peculiarities": [
+    {
+     "name": "Subtle Observer"
+    },
+    {
+     "name": "Cognitive Lapses"
+    },
+    {
+     "name": "History"
+    },
+    {
+     "name": "Fear of Stagnation"
+    },
+    {
+     "name": "Thoughtful Arbiter"
+    }
+   ],
    "titles": [],
    "bonds": [],
    "signature_scrolls": [],
    "gear": [
     {
-     "name": "Wakizashi",
-     "quantity": 1
-    },
-    {
-     "name": "Traveling Clothes",
-     "quantity": 1
-    },
-    {
-     "name": "Ceremonial Clothes",
-     "quantity": 1
-    },
-    {
-     "name": "Sokutoki",
-     "quantity": 1
-    },
-    {
-     "name": "Disguise Kit",
-     "quantity": 1
-    },
-    {
-     "name": "Opening and Closing Kit",
-     "quantity": 1,
-     "custom": true,
-     "description": "",
-     "source_reference": {
-      "source": "",
-      "page": 0
-     },
-     "rarity": "0",
-     "zeni": "0",
-     "properties": []
+     "name": "Omamori (Boon of Hotei)"
     }
    ],
    "advancements": []

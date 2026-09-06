@@ -57,9 +57,9 @@
  },
  "stance": "void",
  "social": {
-  "honor": 40,
-  "glory": 49,
-  "status": 35
+  "honor": 30,
+  "glory": 44,
+  "status": 40
  },
  "xp": {
   "earned": 0,
@@ -73,121 +73,88 @@
   "fitness": 0,
   "melee": 0,
   "ranged": 0,
-  "unarmed": 0,
+  "unarmed": 1,
   "meditation": 0,
   "tactics": 0,
-  "culture": 2,
-  "government": 1,
+  "culture": 1,
+  "government": 2,
   "medicine": 0,
   "sentiment": 1,
   "theology": 0,
-  "command": 0,
-  "courtesy": 1,
+  "command": 1,
+  "courtesy": 2,
   "games": 0,
-  "performance": 1,
+  "performance": 0,
   "commerce": 0,
   "labor": 0,
   "seafaring": 0,
-  "skulduggery": 1,
+  "skulduggery": 3,
   "survival": 0
  },
  "bushido": {
-  "paramount": "",
-  "less": ""
+  "paramount": "Duty and Loyalty",
+  "less": "Honor"
  },
- "ninjo": "",
- "giri": "",
+ "ninjo": "You hunger to be known truly by another soul, even once, before you become merely the perfect performance that greets death's stage.",
+ "giri": "You must dismantle the Perfect Land Sect's influence before it unsettles the Crane, using honeyed words where others would wield steel, even as the mask you wear grows indistinguishable from your face.",
  "money": "8 koku",
  "techniques": [
   {
    "name": "Ancestry Unearthed",
-   "tag": "Shuji",
-   "kind": "shuji",
+   "tag": "Technique",
    "text": "<ul><li>A samurai’s ancestry often reveals a great deal about their political opportunities, assets, and probable allies in the Emerald Empire, for the rigid social strata allow little divergence. Any courtier can likely dredge up another samurai’s lineage from the dark corners of their mind, but some can recall it in an instant.</li><li>When you make a Scholar skill (Earth) or Social skill (Earth) check targeting a character, you may spend (op) as follows:</li><li>Earth (op): You know one sworn oath the character&#x27;s family took in the past, and whether or not they have broken or bent it.</li><li>Earth (op)(op): You know one secret of the character&#x27;s family that they would prefer be forgotten, and have perhaps even worked to bury.</li><li>Earth (op)(op)(op): You know something the character does not even know about their own ancestry.</li></ul>"
   },
   {
    "name": "Like a Ghost",
-   "tag": "Ninjutsu",
-   "kind": "ninjutsu",
+   "tag": "Technique",
    "text": "<ul><li>Type: Ninjutsu</li><li>Rank: 2</li><li>Activation: As a Movement and Scheme action</li><li>Check: TN 2 Fitness (Air or Water)</li><li>If you succeed, you may move one range band, plus one additional range band per two bonus successes. This movement ignores terrain effects. You may move up or down vertical surfaces or across jumpable gaps.</li><li>Opportunities: (op)(op): Your footfalls are completely silent.</li></ul>"
   },
   {
    "name": "Striking as Air",
-   "tag": "Kata",
-   "kind": "kata",
+   "tag": "Technique",
    "text": "<ul><li>Not every stroke a warrior throws in battle is intended to kill—even if they all lead to that end goal. A skilled fighter can tell when an attack will not land and subtly shift it into a different sort of attack, meant to probe the enemy’s defenses or draw their guard out of position. By carefully placing attack after attack, a master of the blade can eventually whittle down their opponent’s options until none remain but death.</li><li>When you make a Martial Arts [Melee, Ranged, or Unarmed] (Air) check, you may spend (op):</li><li>Air +(op): Reserve one of your rolled dice, plus one additional die per (op) spent this way. These become dropped dice. When making a check with the same skill before end of your next turn, you may roll one fewer (skill) per reserved (skill) and one fewer (ring) per reserved (ring), then add the reserved dice set to their original results. They count as rolled dice.</li></ul>"
   },
   {
    "name": "Incisive Insight",
-   "tag": "School Ability",
-   "kind": "school_ability",
+   "tag": "Technique",
    "text": "<p>Once per scene, when making a check for a Scheme action targeting another character, you may receive a number of strife up to your school rank to reduce the TN by that amount (to a minimum of 1).</p>"
   }
  ],
- "peculiarities": [],
+ "peculiarities": [
+  {
+   "name": "Subtle Observer",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You can understand the cues that people give off while speaking, and you can read people&#x27;s lips and facial expressions to understand what they are saying, even if you cannot hear them.</li><li>When performing a check for which you need to spot or use small details of other people nearby (such as a Courtesy [Air] check to reveal an unpleasant truth pleasantly or a Sentiment [Air] check to detect someone else&#x27;s weaknesses), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Cognitive Lapses",
+   "tag": "Peculiarity",
+   "text": "<ul><li>At the GM&#x27;s discretion, you sometimes lose your ability to focus or think consciously. Your body continues to act during these times according to your general instincts, and it does not undertake actions you would not consciously perform, but you do not form coherent memories of these times. After you suffer such a lapse that lasts for more than a few brief moments at the GM&#x27;s choice, you gain 1 Void point.</li><li>When you make a check for which you must recall anything that happened during a period of cognitive lapse (such as a Meditation [Void] check to understand your past decisions or a Sentiment [Void] check to guess what you might have said to someone based on their reaction to you), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "History",
+   "tag": "Peculiarity",
+   "text": "<ul><li>After a short time spent studying it, you can discern the era and context of any object, structure, or text you encounter — or else you know for certain that no chronicler of the Emerald Empire has encountered this thing before.</li><li>After performing a check to remember a historical anecdote (such as a Government [Earth] check to draw parallels to past events or a Smithing [Earth] check to know about past uses of and trends in the creation of tools and artifacts), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Fear of Stagnation",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Staying in one place frustrates you. You fear relational commitments that tie you down.</li><li>After performing a check to continue a prolonged task (such as Labor [Earth] to work on same project for more than two days or Courtesy [Earth] to arrange yet another night in the same city), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Thoughtful Arbiter",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Others are more likely to willingly tell you their grievances and hear your thoughts regarding disputes.</li><li>When performing a check to arbitrate between two or more parties (such as Government [Water] or Commerce [Water]), you may reroll up to two dice.</li></ul>"
+  }
+ ],
  "titles": [],
  "bonds": [],
  "gear": [
   {
-   "name": "Wakizashi",
-   "kind": "Weapon",
-   "category": "Swords",
-   "skill": "melee",
-   "range": "0-1",
-   "damage": 3,
-   "deadliness": 5,
-   "grips": "Deadliness +2",
-   "qualities": [
-    "Ceremonial",
-    "Razor-Edged"
-   ],
-   "rarity": "7",
-   "text": "<p>Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</p>"
-  },
-  {
-   "name": "Traveling Clothes",
-   "kind": "Armor",
-   "physical": 2,
-   "qualities": [
-    "Durable",
-    "Mundane",
-    "Subtle"
-   ],
+   "name": "Omamori (Boon of Hotei)",
+   "kind": "Item",
    "rarity": "2",
-   "text": "<p>Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak.</p>"
-  },
-  {
-   "name": "Ceremonial Clothes",
-   "kind": "Armor",
-   "physical": 1,
-   "qualities": [
-    "Ceremonial",
-    "Resplendent"
-   ],
-   "rarity": "4",
-   "text": "<p>Ceremonial clothing is any garment worn during an official ceremony, from a samurai’s court kimono to the accoutrement of the Imperial family. Ceremonial clothing is often richly decorated and offers little protection.</p>"
-  },
-  {
-   "name": "Sokutoki",
-   "kind": "Item",
-   "qualities": [
-    "Concealable",
-    "Prepare",
-    "Subtle"
-   ],
-   "rarity": "4",
-   "text": "<ul><li>Category: Shinobi Item</li><li>Cost: 2 bu</li><li>Rarity: 4</li><li>Qualities: [&quot;Concealable&quot;,&quot;Prepare&quot;,&quot;Subtle&quot;]</li><li>Special: Can be loaded with blinding powder for close-range discharge into target&#x27;s eyes.</li></ul>"
-  },
-  {
-   "name": "Disguise Kit",
-   "kind": "Item",
-   "rarity": "6",
-   "text": "<ul><li>Category: Shinobi Item</li><li>Cost: 9 bu</li><li>Rarity: 6</li></ul>"
-  },
-  {
-   "name": "Opening and Closing Kit",
-   "kind": "Item",
-   "rarity": "0"
+   "text": "<p>Omamori are protective charms, sold at many shrines across the Emerald Empire, often in the form of a small envelope or bag containing a written or inscribed prayer to a particular kami (often one of the great Fortunes, but occasionally others). Most examples provide protection against ill fortune of a specific variety such as illness or accidents, or encourage good luck in some sphere, such as farming, travel, or marriage, but are never put to the test in any rigorous manner—the kami move by paths unseen by mortal eyes, after all, and it is hard to determine if a talisman was truly responsible for one’s safety. Shugenja and other powerful servants of the kami are capable of creating especially efficacious protective charms. These frequently contain appeals to the seven Great Fortunes (such as the three listed here), but can also offer other protections by appealing to different powers.</p>"
   }
  ]
 }
