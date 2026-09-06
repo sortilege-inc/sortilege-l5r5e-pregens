@@ -1,0 +1,458 @@
+{
+ "slug": "teruyo",
+ "name": "Teruyo",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": null,
+  "family": null,
+  "school": "Tengu Mask of Air Tradition",
+  "role": "Sage",
+  "age": "",
+  "region": "Mountain Region",
+  "upbringing": "Hunter or Fisher Upbringing",
+  "origin_type": "ronin"
+ },
+ "mode": "wow",
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Teruyo",
+  "mode": "wow",
+  "clan": null,
+  "family": null,
+  "school": "Tengu Mask of Air Tradition",
+  "role": "Sage",
+  "region": "Mountain Region",
+  "upbringing": "Hunter or Fisher Upbringing",
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "command": 1,
+   "composition": 1
+  },
+  "distinctions": [
+   "Friend of the Nezumi"
+  ],
+  "adversities": [
+   "Sworn Enemy"
+  ],
+  "passions": [
+   "Curiosity"
+  ],
+  "anxieties": [
+   "Materialism"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Righteousness",
+   "lesser": "Courtesy",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "",
+   "ninjo": "Teruyo wants to teach someone who will actually survive long enough to teach others, and the nezumi's second asking has already cost her the answer to whether she can.",
+   "standout_quality": "Teruyo teaches by example first and lecture never, which means the younger hunters learn her caution but not always her reasons, and follow her into traps she herself would skirt.",
+   "accomplishment": "Teruyo brought a hunter back from the Shadowlands when the nezumi elder's second asking sent her in after the kin she'd failed to recover, and the younger woman is still alive to doubt her own survival choices.",
+   "challenge": "Teruyo teaches by showing what to do and what not to do, but when the younger hunters make choices she would not make, she cannot tell them why without breaking her own silence about what happened in the Shadowlands ten years ago.",
+   "peace": "Teruyo traces the paths through the Shadowlands on borrowed maps, marking what has changed since her last crossing, since the one before that, finding the small differences that mean a hunter can still pass through alive.",
+   "fear": "Teruyo accepted the Crab captain's gift of a Yasuki blade with the maker's seal still bright on the tsuba, and three days later found herself unable to trade it away when the younger hunter needed a better weapon and had nothing to offer but her own rusted steel.",
+   "accoutrement": "",
+   "past": "Teruyo led three hunters into the Shadowlands ten years ago when a nezumi elder asked her to find his kin, and only she came back, which is why she teaches now instead of ranging, and why she said yes when the nezumi asked again.",
+   "known_for": "The Crab soldiers at the Wall ask Teruyo to scout the Shadowlands approaches because she always comes back, but none of them ask her to take their younger brothers anymore.",
+   "known_skill": "command",
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "Teruyo keeps the Yasuki blade in its sheath most days, but when the younger hunter came back from her first solo crossing with a shoulder wound that wouldn't close clean, Teruyo spent an hour sharpening it on the whetstone instead of answering whether the girl should try again.",
+   "group_history": "When the younger hunter broke formation at the borderlands to chase a moving shadow, Teruyo did not call her back—she simply stepped into the path the girl would run and corrected her shoulder toward the safe route instead, which means none of them have heard her voice give a direct order since.",
+   "raised_by": "Teruyo's adoptive father, an old Crab scout named Isomaki, taught her to check her weapons before sleeping by doing it himself every night in the same corner of whatever shelter they shared, and she still cannot rest until she has done the same.",
+   "raised_skill": "composition",
+   "clan_relationship": {
+    "path": null,
+    "skill": null,
+    "text": ""
+   },
+   "mentor": {
+    "name": "Hida Yukari",
+    "path": "A",
+    "granted": "Creatures",
+    "skill": "",
+    "text": "Hida Yukari taught her that a hunter who cannot live with silence about the dead will spend her whole life speaking to ghosts instead of the living, and Teruyo learned it the day Yukari turned away from three families asking what happened to their kin in the Shadowlands, answering only that they were dead and that was enough.",
+    "gender": "female",
+    "association": "Crab"
+   },
+   "first_impression": "",
+   "stress_reaction": "Teruyo stops answering questions mid-expedition and begins instead to correct the paths the younger hunters are taking, moving them physically by the shoulder when they drift toward what she sees and they do not yet.",
+   "relationships": "Takatora (Laughing Mountain Hearthstone Tradition) — Takatora of the Laughing Mountain Hearthstone Tradition sends word when the Wall's scouts report nezumi movement, and Teruyo answers every time because he is the only one who asks her first instead of after the bodies come back.",
+   "people": [
+    {
+     "name": "Takatora",
+     "gender": "female",
+     "association": "Laughing Mountain Hearthstone Tradition",
+     "text": "Takatora of the Laughing Mountain Hearthstone Tradition sends word when the Wall's scouts report nezumi movement, and Teruyo answers every time because he is the only one who asks her first instead of after the bodies come back."
+    }
+   ],
+   "parent_opinion": {
+    "description": "",
+    "skill": null
+   },
+   "heritage": null,
+   "heritage_table": null,
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "She will die still checking her weapons, in some safe place far enough from the Shadowlands that she has convinced herself the ritual matters, long after the younger hunters have stopped asking her to teach them anything but silence.",
+   "rolls": {}
+  },
+  "starting_item": "Sai",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "upbringing.skill_increases": [
+    "Survival"
+   ],
+   "upbringing.ring_increase": [
+    "Water"
+   ],
+   "school.starting_skills": [
+    "Meditation",
+    "Survival",
+    "Fitness",
+    "Martial Arts [Melee]"
+   ],
+   "school.tech.1": [
+    "Cloak of Night",
+    "Yari of Air"
+   ],
+   "q4.trouble": [
+    "Empathetic, tricky, clever"
+   ],
+   "q5.past": [
+    "Spiritual Troubles"
+   ],
+   "q7.known": [
+    "Negative or selfish actions"
+   ],
+   "q14.prized": [
+    "Animal Helm"
+   ],
+   "q17.history": [
+    "Intense feelings"
+   ]
+  },
+  "origin_type": "ronin",
+  "school_all": true,
+  "ai_history": {
+   "standout_quality": [
+    "Teruyo teaches by example first and lecture never, which means the younger hunters learn her caution but not always her reasons, and follow her into traps she herself would skirt."
+   ],
+   "past": [
+    "Teruyo led three hunters into the Shadowlands ten years ago when a nezumi elder asked her to find his kin, and only she came back, which is why she teaches now instead of ranging, and why she said yes when the nezumi asked again."
+   ],
+   "ninjo": [
+    "Teruyo wants to teach someone who will actually survive long enough to teach others, and the nezumi's second asking has already cost her the answer to whether she can."
+   ],
+   "known_for": [
+    "The Crab soldiers at the Wall ask Teruyo to scout the Shadowlands approaches because she always comes back, but none of them ask her to take their younger brothers anymore."
+   ],
+   "accomplishment": [
+    "Teruyo brought a hunter back from the Shadowlands when the nezumi elder's second asking sent her in after the kin she'd failed to recover, and the younger woman is still alive to doubt her own survival choices."
+   ],
+   "challenge": [
+    "Teruyo teaches by showing what to do and what not to do, but when the younger hunters make choices she would not make, she cannot tell them why without breaking her own silence about what happened in the Shadowlands ten years ago."
+   ],
+   "peace": [
+    "Teruyo traces the paths through the Shadowlands on borrowed maps, marking what has changed since her last crossing, since the one before that, finding the small differences that mean a hunter can still pass through alive."
+   ],
+   "fear": [
+    "Teruyo accepted the Crab captain's gift of a Yasuki blade with the maker's seal still bright on the tsuba, and three days later found herself unable to trade it away when the younger hunter needed a better weapon and had nothing to offer but her own rusted steel."
+   ],
+   "mentor_relationship": [
+    "Hida Yukari taught her that a hunter who cannot live with silence about the dead will spend her whole life speaking to ghosts instead of the living, and Teruyo learned it the day Yukari turned away from three families asking what happened to their kin in the Shadowlands, answering only that they were dead and that was enough."
+   ],
+   "prized_possession": [
+    "Teruyo keeps the Yasuki blade in its sheath most days, but when the younger hunter came back from her first solo crossing with a shoulder wound that wouldn't close clean, Teruyo spent an hour sharpening it on the whetstone instead of answering whether the girl should try again."
+   ],
+   "stress_reaction": [
+    "Teruyo stops answering questions mid-expedition and begins instead to correct the paths the younger hunters are taking, moving them physically by the shoulder when they drift toward what she sees and they do not yet."
+   ],
+   "relationship_person": [
+    "Takatora of the Laughing Mountain Hearthstone Tradition sends word when the Wall's scouts report nezumi movement, and Teruyo answers every time because he is the only one who asks her first instead of after the bodies come back."
+   ],
+   "group_history": [
+    "When the younger hunter broke formation at the borderlands to chase a moving shadow, Teruyo did not call her back—she simply stepped into the path the girl would run and corrected her shoulder toward the safe route instead, which means none of them have heard her voice give a direct order since."
+   ],
+   "raised_by": [
+    "Teruyo's adoptive father, an old Crab scout named Isomaki, taught her to check her weapons before sleeping by doing it himself every night in the same corner of whatever shelter they shared, and she still cannot rest until she has done the same."
+   ],
+   "death": [
+    "She will die still checking her weapons, in some safe place far enough from the Shadowlands that she has convinced herself the ritual matters, long after the younger hunters have stopped asking her to teach them anything but silence."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "pow",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Teruyo teaches by example first and lecture never, which means the younger hunters learn her caution but not always her reasons, and follow her into traps she herself would skirt.",
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "",
+     "lord_name": ""
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Teruyo wants to teach someone who will actually survive long enough to teach others, and the nezumi's second asking has already cost her the answer to whether she can."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "",
+     "path": null,
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Righteousness",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Teruyo brought a hunter back from the Shadowlands when the nezumi elder's second asking sent her in after the kin she'd failed to recover, and the younger woman is still alive to doubt her own survival choices."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Teruyo teaches by showing what to do and what not to do, but when the younger hunters make choices she would not make, she cannot tell them why without breaking her own silence about what happened in the Shadowlands ten years ago."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Teruyo traces the paths through the Shadowlands on borrowed maps, marking what has changed since her last crossing, since the one before that, finding the small differences that mean a hunter can still pass through alive."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Teruyo accepted the Crab captain's gift of a Yasuki blade with the maker's seal still bright on the tsuba, and three days later found herself unable to trade it away when the younger hunter needed a better weapon and had nothing to offer but her own rusted steel."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Hida Yukari — Hida Yukari taught her that a hunter who cannot live with silence about the dead will spend her whole life speaking to ghosts instead of the living, and Teruyo learned it the day Yukari turned away from three families asking what happened to their kin in the Shadowlands, answering only that they were dead and that was enough."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "",
+     "accoutrement": ""
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Teruyo stops answering questions mid-expedition and begins instead to correct the paths the younger hunters are taking, moving them physically by the shoulder when they drift toward what she sees and they do not yet."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Takatora (Laughing Mountain Hearthstone Tradition) — Takatora of the Laughing Mountain Hearthstone Tradition sends word when the Wall's scouts report nezumi movement, and Teruyo answers every time because he is the only one who asks her first instead of after the bodies come back."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": ""
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": null,
+     "heritage_table": null,
+     "heritage_sub": null,
+     "heritage_applied": false
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "She will die still checking her weapons, in some safe place far enough from the Shadowlands that she has convinced herself the ritual matters, long after the younger hunters have stopped asking her to teach them anything but silence."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Tengu Mask of Air Tradition",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 1,
+    "water": 2,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 2,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 65,
+    "glory": 33,
+    "status": 27,
+    "ninjo": "Teruyo wants to teach someone who will actually survive long enough to teach others, and the nezumi's second asking has already cost her the answer to whether she can.",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Righteousness",
+     "less_significant": "Courtesy"
+    }
+   },
+   "derived": {
+    "endurance": 4,
+    "composure": 6,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 4
+   },
+   "techniques": [
+    {
+     "name": "Flight"
+    },
+    {
+     "name": "Cloak of Night"
+    },
+    {
+     "name": "Yari of Air"
+    },
+    {
+     "name": "Chikusho-do's Guile"
+    },
+    {
+     "name": "Mind of Calm"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Friend of the Nezumi"
+    },
+    {
+     "name": "Sworn Enemy"
+    },
+    {
+     "name": "Curiosity"
+    },
+    {
+     "name": "Materialism"
+    },
+    {
+     "name": "Creatures"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Sai"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Bō"
+    },
+    {
+     "name": "carving knife",
+     "custom": true,
+     "text": "From the Tengu Mask of Air Tradition starting outfit"
+    },
+    {
+     "name": "bundle of medicinal herbs",
+     "custom": true,
+     "text": "From the Tengu Mask of Air Tradition starting outfit"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "journal of insights",
+     "custom": true,
+     "text": "From the Tengu Mask of Air Tradition starting outfit"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

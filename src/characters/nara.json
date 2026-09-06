@@ -1,0 +1,455 @@
+{
+ "slug": "nara",
+ "name": "Nara",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": null,
+  "family": null,
+  "school": "Nezumi Tattered Ear Explorer Tradition",
+  "role": "Bushi",
+  "age": "",
+  "region": "Rural Farmland Region",
+  "upbringing": "Craftsperson Upbringing",
+  "origin_type": "ronin"
+ },
+ "mode": "wow",
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Nara",
+  "mode": "wow",
+  "clan": null,
+  "family": null,
+  "school": "Nezumi Tattered Ear Explorer Tradition",
+  "role": "Bushi",
+  "region": "Rural Farmland Region",
+  "upbringing": "Craftsperson Upbringing",
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "survival": 1,
+   "melee": 1,
+   "tactics": 1
+  },
+  "distinctions": [
+   "Large Stature"
+  ],
+  "adversities": [
+   "Fractured Spine"
+  ],
+  "passions": [
+   "Armament"
+  ],
+  "anxieties": [
+   "Cynicism"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Duty and Loyalty",
+   "lesser": "Courage",
+   "attitude": "B",
+   "skill": "survival"
+  },
+  "answers": {
+   "giri": "",
+   "ninjo": "Nara wants the pack to come back out on a route with her, just once, so she can stop being the only one who knows what she knows.",
+   "standout_quality": "Nara can read a path through the Shadowlands by signs too faint for anyone else to parse, but she has stopped trusting whether what she is following is still the route or has become something that wears the route's shape.",
+   "accomplishment": "Nara held the doorway of a collapsed watchtower on the Hiruma route while three scouts she did not know crossed underneath, and when the lintel shifted she did not move until the last one cleared.",
+   "challenge": "When Nara tries to shift her weight to her feet after kneeling by the fire, the scouts watching pretend not to notice how long it takes her spine to stop screaming.",
+   "peace": "Nara strips the rust from a Crab-forged spear point with a whetstone the Tattered Ear found in a dead scout's pack, and the metal under her thumb stops fighting her.",
+   "fear": "Nara walks back to the Tattered Ear from a route she has scouted alone, and finds herself already composing the reasons why they will not believe what she found there.",
+   "accoutrement": "",
+   "past": "Nara led a Tattered Ear pack deeper into the Shadowlands following a path she had walked before the Taint came, and when the others turned back at the wall, she kept going because the route was still there—still *is* there—and now none of them will scout with her.",
+   "known_for": "The Tattered Ear will not take the Hiruma route with her anymore, and she has stopped asking them why.",
+   "known_skill": null,
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "The whetstone from the dead scout's pack has a notch worn into its edge that matches none of the blades Nara carries, which means it was sharpening something that is not coming back.",
+   "group_history": "The Tattered Ear stopped taking the Hiruma route with her after she held the watchtower doorway alone and came back talking about what she had seen past the lintel, and none of them could agree on whether she meant the collapsed stone or something behind it.",
+   "raised_by": "Nara's father was a Crab mason who taught her to read stone the way scouts read ground, and she has never stopped expecting people to follow her the way his apprentices followed him.",
+   "raised_skill": "tactics",
+   "clan_relationship": {
+    "path": null,
+    "skill": null,
+    "text": ""
+   },
+   "mentor": {
+    "name": "Kitsu Kanemitsu",
+    "path": "B",
+    "granted": "Discomfiting Countenance",
+    "skill": "melee",
+    "text": "Kitsu Kanemitsu taught her that a path through the Shadowlands could be read in the scatter of bird bones and the way water pooled differently, but he never told her how to know when she was reading the path and when the path was reading her.",
+    "gender": "male",
+    "association": "Lion"
+   },
+   "first_impression": "",
+   "stress_reaction": "Nara argues the point past any reasonable closing, and the person across from her has to decide whether to keep countering or simply walk away to end it.",
+   "relationships": "Miya Akazome (Imperial) — Miya Akazome of the Imperial courts holds the maps Nara needs to prove the Shadowlands route is still passable, and has made it clear she will not release them until Nara stops contradicting the official account of what happened to the Tattered Ear in the deep dark.",
+   "people": [
+    {
+     "name": "Miya Akazome",
+     "gender": "female",
+     "association": "Imperial",
+     "text": "Miya Akazome of the Imperial courts holds the maps Nara needs to prove the Shadowlands route is still passable, and has made it clear she will not release them until Nara stops contradicting the official account of what happened to the Tattered Ear in the deep dark."
+    }
+   ],
+   "parent_opinion": {
+    "description": "",
+    "skill": null
+   },
+   "heritage": null,
+   "heritage_table": null,
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Nara will die on a route she has walked a hundred times, following a sign that was never there before, and she will not know until the last moment whether she chose to keep going or was being led.",
+   "rolls": {}
+  },
+  "starting_item": "Folding Half-Bow",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "upbringing.ring_increase": [
+    "Void"
+   ],
+   "school.starting_skills": [
+    "Survival",
+    "Medicine",
+    "Martial Arts [Melee]",
+    "Commerce",
+    "Martial Arts [Ranged]"
+   ],
+   "q4.trouble": [
+    "Gregarious, adaptable, charming"
+   ],
+   "q5.past": [
+    "Long Path of Waves"
+   ],
+   "q7.known": [
+    "Positive deeds"
+   ],
+   "q14.prized": [
+    "Sling"
+   ],
+   "q17.history": [
+    "Blood or history"
+   ]
+  },
+  "school_all": true,
+  "ai_history": {
+   "standout_quality": [
+    "Nara can read a path through the Shadowlands by signs too faint for anyone else to parse, but she has stopped trusting whether what she is following is still the route or has become something that wears the route's shape."
+   ],
+   "past": [
+    "Nara led a Tattered Ear pack deeper into the Shadowlands following a path she had walked before the Taint came, and when the others turned back at the wall, she kept going because the route was still there—still *is* there—and now none of them will scout with her."
+   ],
+   "ninjo": [
+    "Nara wants the pack to come back out on a route with her, just once, so she can stop being the only one who knows what she knows."
+   ],
+   "known_for": [
+    "The Tattered Ear will not take the Hiruma route with her anymore, and she has stopped asking them why."
+   ],
+   "accomplishment": [
+    "Nara held the doorway of a collapsed watchtower on the Hiruma route while three scouts she did not know crossed underneath, and when the lintel shifted she did not move until the last one cleared."
+   ],
+   "peace": [
+    "Nara strips the rust from a Crab-forged spear point with a whetstone the Tattered Ear found in a dead scout's pack, and the metal under her thumb stops fighting her."
+   ],
+   "fear": [
+    "Nara walks back to the Tattered Ear from a route she has scouted alone, and finds herself already composing the reasons why they will not believe what she found there."
+   ],
+   "mentor_relationship": [
+    "Kitsu Kanemitsu taught her that a path through the Shadowlands could be read in the scatter of bird bones and the way water pooled differently, but he never told her how to know when she was reading the path and when the path was reading her."
+   ],
+   "prized_possession": [
+    "The whetstone from the dead scout's pack has a notch worn into its edge that matches none of the blades Nara carries, which means it was sharpening something that is not coming back."
+   ],
+   "stress_reaction": [
+    "Nara argues the point past any reasonable closing, and the person across from her has to decide whether to keep countering or simply walk away to end it."
+   ],
+   "relationship_person": [
+    "Miya Akazome of the Imperial courts holds the maps Nara needs to prove the Shadowlands route is still passable, and has made it clear she will not release them until Nara stops contradicting the official account of what happened to the Tattered Ear in the deep dark."
+   ],
+   "group_history": [
+    "The Tattered Ear stopped taking the Hiruma route with her after she held the watchtower doorway alone and came back talking about what she had seen past the lintel, and none of them could agree on whether she meant the collapsed stone or something behind it."
+   ],
+   "raised_by": [
+    "Nara's father was a Crab mason who taught her to read stone the way scouts read ground, and she has never stopped expecting people to follow her the way his apprentices followed him."
+   ],
+   "death": [
+    "Nara will die on a route she has walked a hundred times, following a sign that was never there before, and she will not know until the last moment whether she chose to keep going or was being led."
+   ],
+   "challenge": [
+    "When Nara tries to shift her weight to her feet after kneeling by the fire, the scouts watching pretend not to notice how long it takes her spine to stop screaming."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "pow",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Nara can read a path through the Shadowlands by signs too faint for anyone else to parse, but she has stopped trusting whether what she is following is still the route or has become something that wears the route's shape.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "",
+     "lord_name": ""
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Nara wants the pack to come back out on a route with her, just once, so she can stop being the only one who knows what she knows."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "",
+     "path": null,
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Duty and Loyalty",
+     "tenet_less_significant": "Courage"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Nara held the doorway of a collapsed watchtower on the Hiruma route while three scouts she did not know crossed underneath, and when the lintel shifted she did not move until the last one cleared."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When Nara tries to shift her weight to her feet after kneeling by the fire, the scouts watching pretend not to notice how long it takes her spine to stop screaming."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Nara strips the rust from a Crab-forged spear point with a whetstone the Tattered Ear found in a dead scout's pack, and the metal under her thumb stops fighting her."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Nara walks back to the Tattered Ear from a route she has scouted alone, and finds herself already composing the reasons why they will not believe what she found there."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Kitsu Kanemitsu — Kitsu Kanemitsu taught her that a path through the Shadowlands could be read in the scatter of bird bones and the way water pooled differently, but he never told her how to know when she was reading the path and when the path was reading her."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "",
+     "accoutrement": ""
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Nara argues the point past any reasonable closing, and the person across from her has to decide whether to keep countering or simply walk away to end it."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Miya Akazome (Imperial) — Miya Akazome of the Imperial courts holds the maps Nara needs to prove the Shadowlands route is still passable, and has made it clear she will not release them until Nara stops contradicting the official account of what happened to the Tattered Ear in the deep dark."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": ""
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": null,
+     "heritage_table": null,
+     "heritage_sub": null,
+     "heritage_applied": false
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Nara will die on a route she has walked a hundred times, following a sign that was never there before, and she will not know until the last moment whether she chose to keep going or was being led."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Nezumi Tattered Ear Explorer Tradition",
+   "foundry_id": null,
+   "rings": {
+    "air": 1,
+    "earth": 3,
+    "fire": 2,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 1,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 2,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 18,
+    "glory": 34,
+    "status": 22,
+    "ninjo": "Nara wants the pack to come back out on a route with her, just once, so she can stop being the only one who knows what she knows.",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Duty and Loyalty",
+     "less_significant": "Courage"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 10,
+    "focus": 3,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 1,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Razor Bite"
+    },
+    {
+     "name": "Skulk"
+    },
+    {
+     "name": "Keen Senses"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Large Stature"
+    },
+    {
+     "name": "Fractured Spine"
+    },
+    {
+     "name": "Armament"
+    },
+    {
+     "name": "Cynicism"
+    },
+    {
+     "name": "Discomfiting Countenance"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Folding Half-Bow"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "nezumi armor (Physical 2)",
+     "custom": true,
+     "text": "From the Nezumi Tattered Ear Explorer Tradition starting outfit"
+    },
+    {
+     "name": "two weapons of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Nezumi Tattered Ear Explorer Tradition starting outfit",
+     "held": false
+    },
+    {
+     "name": "memory stick",
+     "custom": true,
+     "text": "From the Nezumi Tattered Ear Explorer Tradition starting outfit"
+    },
+    {
+     "name": "small tent",
+     "custom": true,
+     "text": "From the Nezumi Tattered Ear Explorer Tradition starting outfit"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "two items of rarity 2 or lower that the nezumi scavenged",
+     "custom": true,
+     "text": "From the Nezumi Tattered Ear Explorer Tradition starting outfit",
+     "held": false
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

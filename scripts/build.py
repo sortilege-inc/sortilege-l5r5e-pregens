@@ -913,6 +913,26 @@ def load_characters(cx):
                                         and norm(qm.group("qual")) in held:
                                     row = cand
                                     break
+                        if not row:
+                            # And it may qualify by clan: the compendium
+                            # has "Lord Shiba’s Valor (Phoenix)" where the
+                            # corpus, the school data and the character all say
+                            # "Lord Shiba's Valor". Nine entries do this and no
+                            # two of them share a base name, so the stem is
+                            # unambiguous -- but it is checked here rather than
+                            # assumed, and a shared stem is left unresolved
+                            # instead of picked between. Shiba Yoshiteru's
+                            # school hands him one of the nine, which is how
+                            # this surfaced.
+                            cands = cx.execute(
+                                "SELECT uuid, name FROM catalog WHERE sub_type IN (%s)"
+                                " AND norm LIKE ? || '%%'" % ",".join("?" * len(subs)),
+                                (*subs, n)).fetchall()
+                            stems = [cd for cd in cands
+                                     if (QUALIFIED_RE.match(cd[1]) or None)
+                                     and norm(QUALIFIED_RE.match(cd[1]).group("stem")) == n]
+                            if len(stems) == 1:
+                                row = stems[0]
                         if row:
                             uuid = row[0]
                         else:

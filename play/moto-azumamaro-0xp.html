@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moto Azumamaro — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css?v=1e5e7e8c">
+<link rel="stylesheet" href="../assets/play/sheet.css?v=961462f4">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Moto Azumamaro</span>
+  <a href="../characters/moto-azumamaro.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "moto-azumamaro-0xp",
+ "name": "Moto Azumamaro",
+ "clan": "Unicorn",
+ "family": "Moto",
+ "school": "Moto Avenger School",
+ "role": "Shugenja",
+ "roles": null,
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 2,
+  "fire": 2,
+  "water": 2,
+  "void": 2
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 8,
+  "focus": 4,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 8
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 2,
+   "start": 2
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 54,
+  "glory": 42,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 1,
+  "composition": 0,
+  "design": 0,
+  "smithing": 0,
+  "fitness": 0,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 0,
+  "tactics": 0,
+  "culture": 1,
+  "government": 0,
+  "medicine": 0,
+  "sentiment": 1,
+  "theology": 1,
+  "command": 1,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 0,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 1,
+  "survival": 2
+ },
+ "bushido": {
+  "paramount": "Compassion",
+  "less": "Courtesy"
+ },
+ "ninjo": "Azumamaro wants to ride deeper into the Shadowlands than any Moto has ridden before, to find where the Taint begins, even if it means not returning to report back.",
+ "giri": "Moto Azumamaro serves his daimyo Moto Chagatai by riding the borderlands alone, watching for the Taint before it spreads into the clan's herds and camps, though Chagatai has never explicitly ordered him to do this and grows impatient with reports that arrive too slowly to act on.",
+ "money": "6 koku",
+ "techniques": [
+  {
+   "name": "Grasp of Earth",
+   "tag": "Technique",
+   "text": "<ul><li>With a harsh chant and a gesture of seizing, the shugenja calls upon the earth spirits to lay hold of someone, dragging them down and containing them. Usually, this invocation causes the target’s legs to sink into ground that has turned into sucking mud, quicksand, or a hole beneath them and entraps them.</li><li>As an Attack action, make a TN 2 Theology (Earth) check targeting one character at range 0-2.</li><li>If you succeed, you summon cracks in the earth; each target suffers supernatural damage equal to your Earth Ring and must resist with a TN 4 Fitness check (Air 2, Water 5) or suffer Prone.</li><li>Earth (op): Each target that fails also suffers Immobilized.</li><li>Earth (op): Reduce the damage each target suffers to 0.</li></ul>"
+  },
+  {
+   "name": "Tempest of Air",
+   "tag": "Technique",
+   "text": "<ul><li>The shugenja beseeches the air spirits to lash out all around them, calling buffeting winds to push foes backward or even hurl them to the ground.</li><li>As an Attack action, make a TN 3 Theology (Air) check targeting each character at range 2-3.</li><li>If you succeed, blasts of wind smite each target. Each target suffers supernatural damage equal to your Air Ring and must resist with a TN 4 Fitness check (Earth 5, Fire 2) or suffer Disoriented.</li><li>Air +(op): Each target who fails their Fitness check is also pushed 1 range band away from you per (op) spent this way.</li></ul>"
+  },
+  {
+   "name": "Ancestry Unearthed",
+   "tag": "Technique",
+   "text": "<ul><li>A samurai’s ancestry often reveals a great deal about their political opportunities, assets, and probable allies in the Emerald Empire, for the rigid social strata allow little divergence. Any courtier can likely dredge up another samurai’s lineage from the dark corners of their mind, but some can recall it in an instant.</li><li>When you make a Scholar skill (Earth) or Social skill (Earth) check targeting a character, you may spend (op) as follows:</li><li>Earth (op): You know one sworn oath the character&#x27;s family took in the past, and whether or not they have broken or bent it.</li><li>Earth (op)(op): You know one secret of the character&#x27;s family that they would prefer be forgotten, and have perhaps even worked to bury.</li><li>Earth (op)(op)(op): You know something the character does not even know about their own ancestry.</li></ul>"
+  },
+  {
+   "name": "Honest Assessment",
+   "tag": "Technique",
+   "text": "<ul><li>Honesty is a virtue of Bushidō, but direct honesty is often seen as rudeness among the samurai—instead, one is expected to find a polite way to imply one’s meaning to spare the feelings of the other involved. As a result, directness can be something of a rare and valuable commodity.</li><li>As a Support action, make a TN 2 Courtesy (Earth) check to appraise the weaknesses of a character.</li><li>If you succeed, choose one of the target&#x27;s known disadvantages. The target does not apply that disadvantage to their checks until the end of the scene.</li><li>Earth (op)+: Choose one additional disadvantage per (op) spent this way.</li><li>Earth (op)(op): Reduce the TN of the target&#x27;s next skill check using the ring the disadvantage is attached to by 2.</li></ul>"
+  },
+  {
+   "name": "Hands of Earth and Sky",
+   "tag": "Technique",
+   "text": "<p>When you perform an invocation that targets at least one other character, if you succeed, you may nourish or drain: Nourish: receive fatigue up to your school rank. One target removes fatigue equal to amount received. Drain: remove fatigue up to your school rank. One target receives fatigue equal to amount removed.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Famously Honest",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Other people have heard of you for your honesty, and they believe you by default unless given evidence to the contrary.</li><li>When performing a check for which you can leverage your reputation for telling the truth (such as a Command [Air] check to convince someone of a statement&#x27;s veracity, or a Commerce [Air] check to sell an item at an inflated price), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Insomniac",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have difficulty falling and staying asleep. You recover only half the normal amount after a night&#x27;s rest.</li><li>When you make a check that requires intense focus (such as Government [Void] or Smithing [Void]), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Decorum",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are well-versed in the strictures of courtly etiquette.</li><li>After performing a check to ensure that you or your allies adhere to all the strictures of courtly etiquette (such as Command [Water] to be formally polite to guests or Culture [Water] to ascertain who is adhering to court etiquette), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Web of Lies",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are caught in a web of lies that grows harder to maintain.</li><li>After performing a check to deceive someone you have deceived before (such as Courtesy [Air] to convince someone you are a clan member when other members have never heard of you or Skulduggery [Air] to convince a previous con victim you didn&#x27;t steal from them), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Gossip",
+   "tag": "Peculiarity",
+   "text": "<ul><li>At the start of each scene, you can always identify the character present who will know the juiciest rumors (besides yourself, obviously).</li><li>After performing a check to spread or receive rumors (such as a Courtesy [Air] check to cast someone in a certain light when telling a story about them or a Culture [Air] check to read people&#x27;s current anxieties from the subtle ways they obey or break etiquette), you remove 3 strife.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Sapper's Kit",
+   "kind": "Item",
+   "rarity": "3",
+   "text": "<ul><li>Cost: 1 bu</li><li>Rarity: 3</li></ul>"
+  },
+  {
+   "name": "Traveling Clothes",
+   "kind": "Armor",
+   "physical": 2,
+   "qualities": [
+    "Durable",
+    "Mundane",
+    "Subtle"
+   ],
+   "rarity": "2",
+   "text": "<p>Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak.</p>"
+  },
+  {
+   "name": "Ashigaru Armor",
+   "kind": "Armor",
+   "physical": 3,
+   "qualities": [
+    "Wargear"
+   ],
+   "rarity": "3",
+   "text": "<p>Cheap, lightweight, and easy to acquire, ashigaru armor is issued to the peasant soldiery. Possessing neither the beauty nor the fine craftsmanship of lacquered or plated armor, ashigaru armor consists of light plates sewn together to protect the head, torso, and upper legs. It is occasionally paired with a light helmet. Although it does not protect as well as heavier armor, it is lightweight, flexible, and inexpensive as armor goes.</p>"
+  },
+  {
+   "name": "Wakizashi",
+   "kind": "Weapon",
+   "category": "Swords",
+   "skill": "melee",
+   "range": "0-1",
+   "damage": 3,
+   "deadliness": 5,
+   "grips": "Deadliness +2",
+   "qualities": [
+    "Ceremonial",
+    "Razor-Edged"
+   ],
+   "rarity": "7",
+   "text": "<p>Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</p>"
+  },
+  {
+   "name": "Scroll satchel",
+   "kind": "Item",
+   "rarity": "3"
+  },
+  {
+   "name": "Finger of Jade",
+   "kind": "Item",
+   "qualities": [
+    "Sacred"
+   ],
+   "rarity": "6",
+   "text": "<p>A finger of jade is a length of the precious green stone worn about the neck on a thong to ward off the cor- rupting effects of the Taint. Bit by bit, the finger of jade is consumed by this process.</p>"
+  },
+  {
+   "name": "Traveling pack",
+   "kind": "Item",
+   "qualities": [
+    "Mundane"
+   ],
+   "rarity": "1",
+   "text": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>"
+  },
+  {
+   "name": "Unicorn warhorse",
+   "kind": "Item"
+  },
+  {
+   "name": "Azumamaro wears a Moto scout's map case across his chest, its leather worn from constant checking, and he pulls it out to verify his position before answering anyone who speaks to him.",
+   "kind": "Item"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js?v=1c4f76bc"></script>
+<script src="../assets/play/sheet.js?v=ae08be20"></script>
+</body>
+</html>

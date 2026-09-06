@@ -1,0 +1,449 @@
+{
+ "slug": "shiba-yoshiteru",
+ "name": "Shiba Yoshiteru",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": "Phoenix",
+  "family": "Shiba",
+  "school": "Shiba Guardian School",
+  "role": "Bushi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Yoshiteru's eyes move to track a shugenja the moment one enters a room, and do not move away until they leave it.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Shiba Yoshiteru",
+  "mode": "core",
+  "clan": "Phoenix",
+  "family": "Shiba",
+  "school": "Shiba Guardian School",
+  "role": "Bushi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "fire",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "sentiment": 1
+  },
+  "distinctions": [
+   "Keen Hearing"
+  ],
+  "adversities": [
+   "Disdain for Courtesy"
+  ],
+  "passions": [
+   "Animal Bond"
+  ],
+  "anxieties": [
+   "Omen of Bad Luck"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Righteousness",
+   "lesser": "Sincerity",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Yoshiteru serves Shiba Katosu, the daimyō's secondmost advisor on Shadowlands doctrine, and must report to her weekly on threats the Phoenix's shugenja do not see coming—which means telling her when her own priests are wrong.",
+   "ninjo": "Yoshiteru cannot look away when a shugenja begins to falter, and has already chosen which ones he will die protecting and which he will watch fail.",
+   "standout_quality": "Yoshiteru practices drawing his blade in the courtyard at dusk when no one watches, counting the heartbeats between deciding and the steel clearing the saya, trying to shave them down to nothing.",
+   "accomplishment": "He recognized the tremor in a Phoenician shugenja's voice during a briefing at Shiro Kaiu and reported her advancing exhaustion to Katosu before the woman collapsed into meditation-sickness, but now he listens to her breathing in the ward and knows he was wrong about which ones could be saved.",
+   "challenge": "He cannot pay court to the shugenja he serves without his sincerity showing through like a crack in lacquer, making them doubt whether his protection comes from duty or from his private arithmetic about their worth.",
+   "peace": "Yoshiteru feeds the small grey cat that lives in the Phoenix compound's armory, setting down rice and dried fish while it winds between his boots, the only creature in his household that does not require him to know what he thinks of it.",
+   "fear": "When Yoshiteru reports to Katosu on a shugenja's fraying concentration, the woman's face goes still in a way that costs him three strife and leaves him certain he has just condemned someone to die by his own hand rather than saved them.",
+   "accoutrement": "The saya of his katana is wrapped in fraying silk cord that he reties every few days, always a fraction tighter, though the blade has never loosened.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Shiba Tamiko",
+   "lord_gender": "female",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Yoshiteru's Phoenix brothers assume a Guardian exists to shield their priests from the world's violence, not to measure which ones are worth the cost."
+   },
+   "mentor": {
+    "name": "Seppun Yuko",
+    "path": "A",
+    "granted": "Quick Reflexes",
+    "skill": "",
+    "text": "Seppun Yuko taught Yoshiteru to measure the space between intention and action by drilling draws until his hand moved before his mind could argue, but never told him what to do with the clarity once he had it.",
+    "gender": "male",
+    "association": "Imperial"
+   },
+   "first_impression": "Yoshiteru's eyes move to track a shugenja the moment one enters a room, and do not move away until they leave it.",
+   "stress_reaction": "When Yoshiteru is certain he has just ordered someone's death, he leaves the room and stands in the courtyard retying the silk cord around his saya until his fingers bleed.",
+   "relationships": "Kaito Nagafusa (Phoenix) — Kaito Nagafusa, of the Phoenix, is the shugenja Yoshiteru has already chosen to let fail—the one whose breathing he does not listen for in the ward, the one he will not die protecting, and she knows it.\nMoto Sakuro (Unicorn) — Moto Sakuro of the Unicorn arrived at the Phoenix compound three years ago as part of a trade negotiation, spent a week in the courtyard watching Yoshiteru draw his blade at dusk, and has since written twice asking whether the Phoenix would consider a formal exchange of warriors—which Yoshiteru has not answered, because answering honestly would require admitting that he recognized in her the same fracture between duty and judgment that breaks him.",
+   "people": [
+    {
+     "name": "Kaito Nagafusa",
+     "gender": "female",
+     "association": "Phoenix",
+     "text": "Kaito Nagafusa, of the Phoenix, is the shugenja Yoshiteru has already chosen to let fail—the one whose breathing he does not listen for in the ward, the one he will not die protecting, and she knows it."
+    },
+    {
+     "name": "Moto Sakuro",
+     "gender": "male",
+     "association": "Unicorn",
+     "text": "Moto Sakuro of the Unicorn arrived at the Phoenix compound three years ago as part of a trade negotiation, spent a week in the courtyard watching Yoshiteru draw his blade at dusk, and has since written twice asking whether the Phoenix would consider a formal exchange of warriors—which Yoshiteru has not answered, because answering honestly would require admitting that he recognized in her the same fracture between duty and judgment that breaks him."
+    }
+   ],
+   "parent_opinion": {
+    "description": "His mother says he has never learned to let anything fail, and that the silk cord around his saya grows tighter every season because he is still trying to bind something that broke before he was born.",
+    "skill": "sentiment"
+   },
+   "heritage": "Stolen Knowledge",
+   "heritage_table": "samurai-heritage-table",
+   "heritage_sub": "10 — Mahō or ninjutsu",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Yoshiteru dies protecting a shugenja he has already marked for failure, because in the moment the choice arrives he cannot tell the difference between his duty and the thing he wants to believe about himself."
+  },
+  "starting_item": "Chokutō",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Water"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Melee]",
+    "Fitness",
+    "Survival",
+    "Tactics",
+    "Meditation"
+   ],
+   "school.tech.1": [
+    "Striking as Water"
+   ],
+   "heritage.stolen-knowledge.0": [
+    "Unholy Fervor"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Yoshiteru drilled the same defensive sequence until his shoulders burned, then drilled it again while his charge studied—not because the form needed perfection, but because he needed to know exactly where his body would be when he stopped watching it.",
+    "Yoshiteru practices drawing his blade in the courtyard at dusk when no one watches, counting the heartbeats between deciding and the steel clearing the saya, trying to shave them down to nothing."
+   ],
+   "giri": [
+    "Yoshiteru serves Shiba Katosu, the daimyō's secondmost advisor on Shadowlands doctrine, and must report to her weekly on threats the Phoenix's shugenja do not see coming—which means telling her when her own priests are wrong."
+   ],
+   "ninjo": [
+    "Yoshiteru cannot look away when a shugenja begins to falter, and has already chosen which ones he will die protecting and which he will watch fail."
+   ],
+   "clan_relationship": [
+    "Yoshiteru's Phoenix brothers assume a Guardian exists to shield their priests from the world's violence, not to measure which ones are worth the cost."
+   ],
+   "accomplishment": [
+    "He recognized the tremor in a Phoenician shugenja's voice during a briefing at Shiro Kaiu and reported her advancing exhaustion to Katosu before the woman collapsed into meditation-sickness, but now he listens to her breathing in the ward and knows he was wrong about which ones could be saved."
+   ],
+   "challenge": [
+    "He cannot pay court to the shugenja he serves without his sincerity showing through like a crack in lacquer, making them doubt whether his protection comes from duty or from his private arithmetic about their worth."
+   ],
+   "peace": [
+    "Yoshiteru feeds the small grey cat that lives in the Phoenix compound's armory, setting down rice and dried fish while it winds between his boots, the only creature in his household that does not require him to know what he thinks of it."
+   ],
+   "fear": [
+    "When Yoshiteru reports to Katosu on a shugenja's fraying concentration, the woman's face goes still in a way that costs him three strife and leaves him certain he has just condemned someone to die by his own hand rather than saved them."
+   ],
+   "mentor_relationship": [
+    "Seppun Yuko taught Yoshiteru to measure the space between intention and action by drilling draws until his hand moved before his mind could argue, but never told him what to do with the clarity once he had it."
+   ],
+   "first_impression": [
+    "Yoshiteru's eyes move to track a shugenja the moment one enters a room, and do not move away until they leave it."
+   ],
+   "accoutrement": [
+    "The saya of his katana is wrapped in fraying silk cord that he reties every few days, always a fraction tighter, though the blade has never loosened."
+   ],
+   "stress_reaction": [
+    "When Yoshiteru is certain he has just ordered someone's death, he leaves the room and stands in the courtyard retying the silk cord around his saya until his fingers bleed."
+   ],
+   "relationship_person": [
+    "Kaito Nagafusa, of the Phoenix, is the shugenja Yoshiteru has already chosen to let fail—the one whose breathing he does not listen for in the ward, the one he will not die protecting, and she knows it.",
+    "Moto Sakuro of the Unicorn arrived at the Phoenix compound three years ago as part of a trade negotiation, spent a week in the courtyard watching Yoshiteru draw his blade at dusk, and has since written twice asking whether the Phoenix would consider a formal exchange of warriors—which Yoshiteru has not answered, because answering honestly would require admitting that he recognized in her the same fracture between duty and judgment that breaks him."
+   ],
+   "parent_opinion": [
+    "His mother says he has never learned to let anything fail, and that the silk cord around his saya grows tighter every season because he is still trying to bind something that broke before he was born."
+   ],
+   "death": [
+    "Yoshiteru dies protecting a shugenja he has already marked for failure, because in the moment the choice arrives he cannot tell the difference between his duty and the thing he wants to believe about himself."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Yoshiteru practices drawing his blade in the courtyard at dusk when no one watches, counting the heartbeats between deciding and the steel clearing the saya, trying to shave them down to nothing.",
+     "ring": "fire"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Yoshiteru serves Shiba Katosu, the daimyō's secondmost advisor on Shadowlands doctrine, and must report to her weekly on threats the Phoenix's shugenja do not see coming—which means telling her when her own priests are wrong.",
+     "lord_name": "Shiba Tamiko"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Yoshiteru cannot look away when a shugenja begins to falter, and has already chosen which ones he will die protecting and which he will watch fail."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Yoshiteru's Phoenix brothers assume a Guardian exists to shield their priests from the world's violence, not to measure which ones are worth the cost.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Righteousness",
+     "tenet_less_significant": "Sincerity"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "He recognized the tremor in a Phoenician shugenja's voice during a briefing at Shiro Kaiu and reported her advancing exhaustion to Katosu before the woman collapsed into meditation-sickness, but now he listens to her breathing in the ward and knows he was wrong about which ones could be saved."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "He cannot pay court to the shugenja he serves without his sincerity showing through like a crack in lacquer, making them doubt whether his protection comes from duty or from his private arithmetic about their worth."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Yoshiteru feeds the small grey cat that lives in the Phoenix compound's armory, setting down rice and dried fish while it winds between his boots, the only creature in his household that does not require him to know what he thinks of it."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When Yoshiteru reports to Katosu on a shugenja's fraying concentration, the woman's face goes still in a way that costs him three strife and leaves him certain he has just condemned someone to die by his own hand rather than saved them."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Seppun Yuko — Seppun Yuko taught Yoshiteru to measure the space between intention and action by drilling draws until his hand moved before his mind could argue, but never told him what to do with the clarity once he had it."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Yoshiteru's eyes move to track a shugenja the moment one enters a room, and do not move away until they leave it.",
+     "accoutrement": "The saya of his katana is wrapped in fraying silk cord that he reties every few days, always a fraction tighter, though the blade has never loosened."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When Yoshiteru is certain he has just ordered someone's death, he leaves the room and stands in the courtyard retying the silk cord around his saya until his fingers bleed."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Kaito Nagafusa (Phoenix) — Kaito Nagafusa, of the Phoenix, is the shugenja Yoshiteru has already chosen to let fail—the one whose breathing he does not listen for in the ward, the one he will not die protecting, and she knows it.\nMoto Sakuro (Unicorn) — Moto Sakuro of the Unicorn arrived at the Phoenix compound three years ago as part of a trade negotiation, spent a week in the courtyard watching Yoshiteru draw his blade at dusk, and has since written twice asking whether the Phoenix would consider a formal exchange of warriors—which Yoshiteru has not answered, because answering honestly would require admitting that he recognized in her the same fracture between duty and judgment that breaks him."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "His mother says he has never learned to let anything fail, and that the silk cord around his saya grows tighter every season because he is still trying to bind something that broke before he was born."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Stolen Knowledge",
+     "heritage_table": "Samurai Heritage Table",
+     "heritage_sub": "10 — Mahō or ninjutsu",
+     "heritage_applied": true
+    },
+    "picks": {
+     "heritage.stolen-knowledge.0": [
+      "Unholy Fervor"
+     ]
+    }
+   },
+   "step20": {
+    "answers": {
+     "death": "Yoshiteru dies protecting a shugenja he has already marked for failure, because in the moment the choice arrives he cannot tell the difference between his duty and the thing he wants to believe about himself."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Shiba Guardian School",
+   "foundry_id": null,
+   "rings": {
+    "air": 1,
+    "earth": 2,
+    "fire": 2,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 2,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 1
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 45,
+    "status": 30,
+    "ninjo": "Yoshiteru cannot look away when a shugenja begins to falter, and has already chosen which ones he will die protecting and which he will watch fail.",
+    "giri": "Yoshiteru serves Shiba Katosu, the daimyō's secondmost advisor on Shadowlands doctrine, and must report to her weekly on threats the Phoenix's shugenja do not see coming—which means telling her when her own priests are wrong.",
+    "bushido_tenets": {
+     "paramount": "Righteousness",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 10,
+    "focus": 3,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Lord Shiba's Valor"
+    },
+    {
+     "name": "Striking as Water"
+    },
+    {
+     "name": "Way of the Phoenix"
+    },
+    {
+     "name": "Unholy Fervor"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Keen Hearing"
+    },
+    {
+     "name": "Disdain for Courtesy"
+    },
+    {
+     "name": "Animal Bond"
+    },
+    {
+     "name": "Omen of Bad Luck"
+    },
+    {
+     "name": "Quick Reflexes"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Chokutō"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Shiba Guardian starting outfit"
+    },
+    {
+     "name": "naginata (polearm) or yari (spear)",
+     "custom": true,
+     "text": "From the Shiba Guardian starting outfit",
+     "held": false
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "The saya of his katana is wrapped in fraying silk cord that he reties every few days, always a fraction tighter, though the blade has never loosened.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

@@ -1,0 +1,437 @@
+{
+ "slug": "moto-azumamaro",
+ "name": "Moto Azumamaro",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": "Unicorn",
+  "family": "Moto",
+  "school": "Moto Avenger School",
+  "role": "Shugenja",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "He rides ahead of messengers who have not finished their sentences, and arrives at the next camp before they do.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Moto Azumamaro",
+  "mode": "core",
+  "clan": "Unicorn",
+  "family": "Moto",
+  "school": "Moto Avenger School",
+  "role": "Shugenja",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "void",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "composition": 0,
+   "aesthetics": 1
+  },
+  "distinctions": [
+   "Famously Honest"
+  ],
+  "adversities": [
+   "Insomniac"
+  ],
+  "passions": [
+   "Decorum"
+  ],
+  "anxieties": [
+   "Web of Lies"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Compassion",
+   "lesser": "Courtesy",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Moto Azumamaro serves his daimyo Moto Chagatai by riding the borderlands alone, watching for the Taint before it spreads into the clan's herds and camps, though Chagatai has never explicitly ordered him to do this and grows impatient with reports that arrive too slowly to act on.",
+   "ninjo": "Azumamaro wants to ride deeper into the Shadowlands than any Moto has ridden before, to find where the Taint begins, even if it means not returning to report back.",
+   "standout_quality": "Azumamaro recognized the smell of Taint on a visiting elder before the elder recognized it in himself, and spoke the name of what he had seen in his own clan's borderlands rather than let silence protect the man's pride.",
+   "accomplishment": "He identified the Taint in Moto Daichi at the summer gathering in 1119 and spoke it aloud before the poison could spread through the clan's breeding lines, though Daichi was Chagatai's closest advisor and the accusation cost Azumamaro three years of trust he has not recovered.",
+   "challenge": "Azumamaro rides the borderlands alone each night because sleep will not come, and by dawn he has ridden so far ahead of Chagatai's messengers that his warnings arrive too late to matter.",
+   "peace": "Azumamaro checks the formal courtesies in Chagatai's encampment each dawn — the proper distance between tents, the hierarchy of the watch-posts, who has not been greeted in the correct order — and for the length of that inspection, the riding and the sleeplessness recede.",
+   "fear": "Azumamaro rides ahead of every messenger Chagatai sends, so his warnings arrive stale and useless, and he cannot tell whether he is protecting the clan or simply too impatient to trust anyone else to act on what he has seen.",
+   "accoutrement": "Azumamaro wears a Moto scout's map case across his chest, its leather worn from constant checking, and he pulls it out to verify his position before answering anyone who speaks to him.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Moto Shigeaki",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Azumamaro reports what he has seen to Chagatai without waiting for permission to speak, which Chagatai reads as the younger man assuming he cannot be trusted to act on news unless it arrives unfiltered."
+   },
+   "mentor": {
+    "name": "Akodo Yuri",
+    "path": "A",
+    "granted": "Gossip",
+    "skill": "",
+    "text": "Akodo Yuri taught Azumamaro that a messenger who arrives too late has failed as surely as one who never rode, and now he cannot stop riding ahead of every report he sends.",
+    "gender": "male",
+    "association": "Lion"
+   },
+   "first_impression": "He rides ahead of messengers who have not finished their sentences, and arrives at the next camp before they do.",
+   "stress_reaction": "When Chagatai's messengers finally reach him with news that Azumamaro has already ridden past three days ahead, Azumamaro pulls out his map case and begins correcting their route aloud, talking faster with each correction, until Chagatai has to ask him twice to stop speaking so the men can hear their orders.",
+   "relationships": "Kitsune Noriko (Fox) — Kitsune Noriko once brought Azumamaro word of Taint-sickness moving through a Fox breeding ground, and he has ridden to her encampment unannounced each spring since to ask if she needs him to ride ahead of her hunters again.",
+   "people": [
+    {
+     "name": "Kitsune Noriko",
+     "gender": "female",
+     "association": "Fox",
+     "text": "Kitsune Noriko once brought Azumamaro word of Taint-sickness moving through a Fox breeding ground, and he has ridden to her encampment unannounced each spring since to ask if she needs him to ride ahead of her hunters again."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Azumamaro's mother says he checks the position of every tent in camp before he will sit down to eat, and that he has done this since he was eight years old, which was long before anyone asked him to.",
+    "skill": "aesthetics"
+   },
+   "heritage": "Twenty Goblin Thief",
+   "heritage_table": "shadowlands-heritages",
+   "heritage_sub": "4-6 — Skulduggery",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Azumamaro will die riding ahead of a messenger who carries the one warning that cannot wait, and he will die believing he has already passed it on."
+  },
+  "starting_item": "Sapper's Kit",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Theology",
+    "Culture",
+    "Sentiment"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Azumamaro recognized the smell of Taint on a visiting elder before the elder recognized it in himself, and spoke the name of what he had seen in his own clan's borderlands rather than let silence protect the man's pride."
+   ],
+   "giri": [
+    "Moto Azumamaro serves his daimyo Moto Chagatai by riding the borderlands alone, watching for the Taint before it spreads into the clan's herds and camps, though Chagatai has never explicitly ordered him to do this and grows impatient with reports that arrive too slowly to act on."
+   ],
+   "ninjo": [
+    "Azumamaro wants to ride deeper into the Shadowlands than any Moto has ridden before, to find where the Taint begins, even if it means not returning to report back."
+   ],
+   "clan_relationship": [
+    "Azumamaro reports what he has seen to Chagatai without waiting for permission to speak, which Chagatai reads as the younger man assuming he cannot be trusted to act on news unless it arrives unfiltered."
+   ],
+   "accomplishment": [
+    "Azumamaro rides the borderlands alone because he convinced Chagatai's predecessors that a single watcher who knows the Taint's smell could stop an outbreak faster than a garrison that sees it only after it spreads, but now he cannot leave his circuit without risking the very people he was meant to protect.",
+    "He identified the Taint in Moto Daichi at the summer gathering in 1119 and spoke it aloud before the poison could spread through the clan's breeding lines, though Daichi was Chagatai's closest advisor and the accusation cost Azumamaro three years of trust he has not recovered."
+   ],
+   "challenge": [
+    "Azumamaro rides the borderlands alone each night because sleep will not come, and by dawn he has ridden so far ahead of Chagatai's messengers that his warnings arrive too late to matter."
+   ],
+   "peace": [
+    "Azumamaro checks the formal courtesies in Chagatai's encampment each dawn — the proper distance between tents, the hierarchy of the watch-posts, who has not been greeted in the correct order — and for the length of that inspection, the riding and the sleeplessness recede."
+   ],
+   "fear": [
+    "Azumamaro rides ahead of every messenger Chagatai sends, so his warnings arrive stale and useless, and he cannot tell whether he is protecting the clan or simply too impatient to trust anyone else to act on what he has seen."
+   ],
+   "mentor_relationship": [
+    "Akodo Yuri taught Azumamaro that a messenger who arrives too late has failed as surely as one who never rode, and now he cannot stop riding ahead of every report he sends."
+   ],
+   "first_impression": [
+    "He rides ahead of messengers who have not finished their sentences, and arrives at the next camp before they do."
+   ],
+   "accoutrement": [
+    "Azumamaro wears a Moto scout's map case across his chest, its leather worn from constant checking, and he pulls it out to verify his position before answering anyone who speaks to him."
+   ],
+   "stress_reaction": [
+    "When Chagatai's messengers finally reach him with news that Azumamaro has already ridden past three days ahead, Azumamaro pulls out his map case and begins correcting their route aloud, talking faster with each correction, until Chagatai has to ask him twice to stop speaking so the men can hear their orders."
+   ],
+   "relationship_person": [
+    "Kitsune Noriko once brought Azumamaro word of Taint-sickness moving through a Fox breeding ground, and he has ridden to her encampment unannounced each spring since to ask if she needs him to ride ahead of her hunters again."
+   ],
+   "parent_opinion": [
+    "Azumamaro's mother says he checks the position of every tent in camp before he will sit down to eat, and that he has done this since he was eight years old, which was long before anyone asked him to."
+   ],
+   "death": [
+    "Azumamaro will die riding ahead of a messenger who carries the one warning that cannot wait, and he will die believing he has already passed it on."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Azumamaro recognized the smell of Taint on a visiting elder before the elder recognized it in himself, and spoke the name of what he had seen in his own clan's borderlands rather than let silence protect the man's pride.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Moto Azumamaro serves his daimyo Moto Chagatai by riding the borderlands alone, watching for the Taint before it spreads into the clan's herds and camps, though Chagatai has never explicitly ordered him to do this and grows impatient with reports that arrive too slowly to act on.",
+     "lord_name": "Moto Shigeaki"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Azumamaro wants to ride deeper into the Shadowlands than any Moto has ridden before, to find where the Taint begins, even if it means not returning to report back."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Azumamaro reports what he has seen to Chagatai without waiting for permission to speak, which Chagatai reads as the younger man assuming he cannot be trusted to act on news unless it arrives unfiltered.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Compassion",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "He identified the Taint in Moto Daichi at the summer gathering in 1119 and spoke it aloud before the poison could spread through the clan's breeding lines, though Daichi was Chagatai's closest advisor and the accusation cost Azumamaro three years of trust he has not recovered."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Azumamaro rides the borderlands alone each night because sleep will not come, and by dawn he has ridden so far ahead of Chagatai's messengers that his warnings arrive too late to matter."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Azumamaro checks the formal courtesies in Chagatai's encampment each dawn — the proper distance between tents, the hierarchy of the watch-posts, who has not been greeted in the correct order — and for the length of that inspection, the riding and the sleeplessness recede."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Azumamaro rides ahead of every messenger Chagatai sends, so his warnings arrive stale and useless, and he cannot tell whether he is protecting the clan or simply too impatient to trust anyone else to act on what he has seen."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Akodo Yuri — Akodo Yuri taught Azumamaro that a messenger who arrives too late has failed as surely as one who never rode, and now he cannot stop riding ahead of every report he sends."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "He rides ahead of messengers who have not finished their sentences, and arrives at the next camp before they do.",
+     "accoutrement": "Azumamaro wears a Moto scout's map case across his chest, its leather worn from constant checking, and he pulls it out to verify his position before answering anyone who speaks to him."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When Chagatai's messengers finally reach him with news that Azumamaro has already ridden past three days ahead, Azumamaro pulls out his map case and begins correcting their route aloud, talking faster with each correction, until Chagatai has to ask him twice to stop speaking so the men can hear their orders."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Kitsune Noriko (Fox) — Kitsune Noriko once brought Azumamaro word of Taint-sickness moving through a Fox breeding ground, and he has ridden to her encampment unannounced each spring since to ask if she needs him to ride ahead of her hunters again."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Azumamaro's mother says he checks the position of every tent in camp before he will sit down to eat, and that he has done this since he was eight years old, which was long before anyone asked him to."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Twenty Goblin Thief",
+     "heritage_table": "Shadowlands Heritages",
+     "heritage_sub": "4-6 — Skulduggery",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Azumamaro will die riding ahead of a messenger who carries the one warning that cannot wait, and he will die believing he has already passed it on."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Moto Avenger School",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 1
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 54,
+    "glory": 42,
+    "status": 30,
+    "ninjo": "Azumamaro wants to ride deeper into the Shadowlands than any Moto has ridden before, to find where the Taint begins, even if it means not returning to report back.",
+    "giri": "Moto Azumamaro serves his daimyo Moto Chagatai by riding the borderlands alone, watching for the Taint before it spreads into the clan's herds and camps, though Chagatai has never explicitly ordered him to do this and grows impatient with reports that arrive too slowly to act on.",
+    "bushido_tenets": {
+     "paramount": "Compassion",
+     "less_significant": "Courtesy"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 6,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Grasp of Earth"
+    },
+    {
+     "name": "Tempest of Air"
+    },
+    {
+     "name": "Ancestry Unearthed"
+    },
+    {
+     "name": "Honest Assessment"
+    },
+    {
+     "name": "Hands of Earth and Sky"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Famously Honest"
+    },
+    {
+     "name": "Insomniac"
+    },
+    {
+     "name": "Decorum"
+    },
+    {
+     "name": "Web of Lies"
+    },
+    {
+     "name": "Gossip"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Sapper's Kit"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Scroll satchel"
+    },
+    {
+     "name": "Finger of Jade"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Unicorn warhorse",
+     "custom": true,
+     "text": "From the Moto Avenger starting outfit"
+    },
+    {
+     "name": "Azumamaro wears a Moto scout's map case across his chest, its leather worn from constant checking, and he pulls it out to verify his position before answering anyone who speaks to him.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
