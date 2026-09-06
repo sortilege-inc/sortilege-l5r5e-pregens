@@ -1,0 +1,447 @@
+{
+ "slug": "agasha-kohana",
+ "name": "Agasha Kohana",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": "Dragon",
+  "family": "Agasha",
+  "school": "Agasha Alchemist School",
+  "role": "Shugenja",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Kohana moves through the garrison on a crutch, the stump of her left leg visible when her robes shift.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Agasha Kohana",
+  "mode": "core",
+  "clan": "Dragon",
+  "family": "Agasha",
+  "school": "Agasha Alchemist School",
+  "role": null,
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "medicine": 1,
+   "survival": 1
+  },
+  "distinctions": [
+   "Traditional Adherent"
+  ],
+  "adversities": [
+   "Lost Leg"
+  ],
+  "passions": [
+   "Secrets"
+  ],
+  "anxieties": [
+   "Addiction"
+  ],
+  "bushido": {
+   "paramount": "Sincerity",
+   "lesser": "Duty and Loyalty",
+   "attitude": "B",
+   "skill": "medicine"
+  },
+  "answers": {
+   "giri": "Kohana reports her ward consumption to the Dragon's Shadowlands garrison commander each month, knowing the numbers show she has burned through reserves meant to last three seasons.",
+   "ninjo": "Kohana wants to prove that the Shadowlands can be understood through careful study and mapping, not just survived through jade consumption, but her monthly reports of depleted reserves make that work look like waste.",
+   "standout_quality": "Kohana labels her jade stores by date and intended use, which means she now spends entire study sessions recalculating which wards she can afford to break.",
+   "accomplishment": "Kohana developed a system for distilling shadowlands fauna into reagents that hold their properties longer than raw samples, which means she now spends her evenings testing batches that should have failed weeks ago to prove the method works.",
+   "challenge": "Kohana cannot move quickly enough through the Shadowlands to reach safety when her wards fail, and she knows it.",
+   "peace": "When Kohana recalculates her jade stores against the month's consumption figures, cross-checking her ledger against the vials ranked on the shelf, the numbers either reconcile or they do not, and for those hours the answer is settled.",
+   "fear": "Kohana orders her jade by date and use because if she stops accounting for every vial she will have to admit how fast the Shadowlands is burning through her, and then she cannot pretend the reserves were ever meant to last.",
+   "accoutrement": "She keeps her jade vials in a leather satchel with the month and intended ward marked on each compartment in her own hand, and she repacks it every evening whether the arrangement has changed or not.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Agasha Hachijûrô",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Kohana tells the garrison commander her consumption figures are higher than they should be, which the Dragon clan interprets as diligence, when she is actually documenting her own failure to ration."
+   },
+   "mentor": {
+    "name": "Miya Miho",
+    "path": "A",
+    "granted": "Passion for",
+    "skill": "",
+    "text": "Miya Miho taught Kohana to read emotion through puppetry, a skill that meant nothing until Kohana started lying to the garrison commander about her jade consumption and realized she could not tell when she was believed.",
+    "gender": "female",
+    "association": "Imperial"
+   },
+   "first_impression": "Kohana moves through the garrison on a crutch, the stump of her left leg visible when her robes shift.",
+   "stress_reaction": "When her hands shake, Kohana reaches for her jade vials and measures out a dose that is not in her ledger.",
+   "relationships": "Tonbo Katai (Dragonfly) — Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to him that the Shadowlands is not holding still.\nKuni Soichiro (Crab) — Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses.",
+   "people": [
+    {
+     "name": "Tonbo Katai",
+     "gender": "nonbinary",
+     "association": "Dragonfly",
+     "text": "Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to him that the Shadowlands is not holding still."
+    },
+    {
+     "name": "Kuni Soichiro",
+     "gender": "male",
+     "association": "Crab",
+     "text": "Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Kohana's mother disapproves of her daughter's insistence on studying the Shadowlands through ledgers and samples when a sensible alchemist would simply accept that some things exist to be warded against, not understood.",
+    "skill": "survival"
+   },
+   "heritage": "Glorious Sacrifice",
+   "heritage_table": "samurai-heritage-table",
+   "heritage_sub": "1-3 — A weapon",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Kohana dies rationing jade she should have spent weeks ago, her ledger balanced to the vial, the Shadowlands at the door and her crutch propped against the wall because she will not move quickly enough to matter."
+  },
+  "starting_item": "Norimono (Planquin)",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Void"
+   ],
+   "school.starting_skills": [
+    "Performance",
+    "Theology",
+    "Medicine"
+   ],
+   "school.tech.0": [
+    "The Fires from Within",
+    "The Cleansing Fire",
+    "Path to Inner Peace"
+   ],
+   "school.tech.1": [
+    "Truth Burns through Lies",
+    "Shallow Waters"
+   ],
+   "heritage.glorious-sacrifice.0.item": [
+    "Shinobigatana"
+   ],
+   "heritage.glorious-sacrifice.0.quality": [
+    "Razor-Edged"
+   ],
+   "heritage.glorious-sacrifice.0.gm_quality": [
+    "Unholy"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Kohana labels her jade stores by date and intended use, which means she now spends entire study sessions recalculating which wards she can afford to break."
+   ],
+   "giri": [
+    "Kohana reports her ward consumption to the Dragon's Shadowlands garrison commander each month, knowing the numbers show she has burned through reserves meant to last three seasons."
+   ],
+   "ninjo": [
+    "Kohana wants to prove that the Shadowlands can be understood through careful study and mapping, not just survived through jade consumption, but her monthly reports of depleted reserves make that work look like waste."
+   ],
+   "clan_relationship": [
+    "Kohana tells the garrison commander her consumption figures are higher than they should be, which the Dragon clan interprets as diligence, when she is actually documenting her own failure to ration."
+   ],
+   "accomplishment": [
+    "She mapped the ward-pattern around the garrison's perimeter and found three places where the jade had settled unevenly, which the commander credited to her precision until she had to admit the unevenness was hers.",
+    "Kohana developed a system for distilling shadowlands fauna into reagents that hold their properties longer than raw samples, which means she now spends her evenings testing batches that should have failed weeks ago to prove the method works."
+   ],
+   "challenge": [
+    "Kohana cannot move quickly enough through the Shadowlands to reach safety when her wards fail, and she knows it."
+   ],
+   "peace": [
+    "When Kohana recalculates her jade stores against the month's consumption figures, cross-checking her ledger against the vials ranked on the shelf, the numbers either reconcile or they do not, and for those hours the answer is settled."
+   ],
+   "fear": [
+    "Kohana orders her jade by date and use because if she stops accounting for every vial she will have to admit how fast the Shadowlands is burning through her, and then she cannot pretend the reserves were ever meant to last."
+   ],
+   "mentor_relationship": [
+    "Miya Miho taught her that secrets kept you safe, and Kohana has spent fifteen years since learning that lesson discovering it was the opposite.",
+    "Kohana's senior at the garrison, a weathered alchemist named Isawa Tetsuo, showed her how to read the Shadowlands' own movements in her reagent samples—which ones held their properties, which ones degraded, what that meant about the corruption spreading—and now she cannot stop testing batches that should have failed, unable to trust anything but the work itself."
+   ],
+   "accoutrement": [
+    "She keeps her jade vials in a leather satchel with the month and intended ward marked on each compartment in her own hand, and she repacks it every evening whether the arrangement has changed or not."
+   ],
+   "stress_reaction": [
+    "When her hands shake too badly to read her ledger entries, Kohana unpacks her jade satchel and repacks it in the same order, running her fingers across each compartment until her hands steady again."
+   ],
+   "relationship_person": [
+    "Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to him that the Shadowlands is not holding still.",
+    "Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses."
+   ],
+   "parent_opinion": [
+    "Kohana's mother disapproves of her daughter's insistence on studying the Shadowlands through ledgers and samples when a sensible alchemist would simply accept that some things exist to be warded against, not understood."
+   ],
+   "death": [
+    "Kohana dies rationing jade she should have spent weeks ago, her ledger balanced to the vial, the Shadowlands at the door and her crutch propped against the wall because she will not move quickly enough to matter."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Kohana labels her jade stores by date and intended use, which means she now spends entire study sessions recalculating which wards she can afford to break.",
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Kohana reports her ward consumption to the Dragon's Shadowlands garrison commander each month, knowing the numbers show she has burned through reserves meant to last three seasons.",
+     "lord_name": "Agasha Hachijûrô"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Kohana wants to prove that the Shadowlands can be understood through careful study and mapping, not just survived through jade consumption, but her monthly reports of depleted reserves make that work look like waste."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Kohana tells the garrison commander her consumption figures are higher than they should be, which the Dragon clan interprets as diligence, when she is actually documenting her own failure to ration."
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Sincerity",
+     "tenet_less_significant": "Duty and Loyalty"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Kohana developed a system for distilling shadowlands fauna into reagents that hold their properties longer than raw samples, which means she now spends her evenings testing batches that should have failed weeks ago to prove the method works."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Kohana cannot move quickly enough through the Shadowlands to reach safety when her wards fail, and she knows it."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "When Kohana recalculates her jade stores against the month's consumption figures, cross-checking her ledger against the vials ranked on the shelf, the numbers either reconcile or they do not, and for those hours the answer is settled."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Kohana orders her jade by date and use because if she stops accounting for every vial she will have to admit how fast the Shadowlands is burning through her, and then she cannot pretend the reserves were ever meant to last."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Miya Miho — Miya Miho taught Kohana to read emotion through puppetry, a skill that meant nothing until Kohana started lying to the garrison commander about her jade consumption and realized she could not tell when she was believed."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Kohana moves through the garrison on a crutch, the stump of her left leg visible when her robes shift.",
+     "accoutrement": "She keeps her jade vials in a leather satchel with the month and intended ward marked on each compartment in her own hand, and she repacks it every evening whether the arrangement has changed or not."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When her hands shake, Kohana reaches for her jade vials and measures out a dose that is not in her ledger."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Tonbo Katai (Dragonfly) — Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to him that the Shadowlands is not holding still.\nKuni Soichiro (Crab) — Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Kohana's mother disapproves of her daughter's insistence on studying the Shadowlands through ledgers and samples when a sensible alchemist would simply accept that some things exist to be warded against, not understood."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Glorious Sacrifice",
+     "heritage_table": "Samurai Heritage Table",
+     "heritage_sub": "1-3 — A weapon"
+    },
+    "picks": {
+     "heritage.glorious-sacrifice.0.gm_quality": [
+      "Unholy"
+     ],
+     "heritage.glorious-sacrifice.0.item": [
+      "Shinobigatana"
+     ],
+     "heritage.glorious-sacrifice.0.quality": [
+      "Razor-Edged"
+     ]
+    }
+   },
+   "step20": {
+    "answers": {
+     "death": "Kohana dies rationing jade she should have spent weeks ago, her ledger balanced to the vial, the Shadowlands at the door and her crutch propped against the wall because she will not move quickly enough to matter."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Agasha Alchemist School",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 1,
+    "fire": 3,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 3,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 50,
+    "status": 30,
+    "ninjo": "Kohana wants to prove that the Shadowlands can be understood through careful study and mapping, not just survived through jade consumption, but her monthly reports of depleted reserves make that work look like waste.",
+    "giri": "Kohana reports her ward consumption to the Dragon's Shadowlands garrison commander each month, knowing the numbers show she has burned through reserves meant to last three seasons.",
+    "bushido_tenets": {
+     "paramount": "Sincerity",
+     "less_significant": "Duty and Loyalty"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 6,
+    "focus": 5,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 4,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "The Fires from Within"
+    },
+    {
+     "name": "The Cleansing Fire"
+    },
+    {
+     "name": "Path to Inner Peace"
+    },
+    {
+     "name": "Truth Burns through Lies"
+    },
+    {
+     "name": "Shallow Waters"
+    },
+    {
+     "name": "Flesh of the Elements"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Traditional Adherent"
+    },
+    {
+     "name": "Lost Leg"
+    },
+    {
+     "name": "Secrets"
+    },
+    {
+     "name": "Addiction"
+    },
+    {
+     "name": "Passion for"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Norimono (Planquin)"
+    },
+    {
+     "name": "Shinobigatana",
+     "text": "lost — it exists somewhere in the world; quality chosen by the player: Razor-Edged; quality chosen by the GM: Unholy",
+     "custom": true,
+     "held": false
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

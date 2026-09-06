@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agasha Kohana — 0 XP — Character Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/l5r.css?v=2dea7b8d">
+<link rel="stylesheet" href="../assets/play/sheet.css?v=961462f4">
+</head>
+<body class="play-body">
+<div class="play-bar">
+  <span class="brand">Agasha Kohana</span>
+  <a href="../characters/agasha-kohana.html">&lsaquo; Dossier</a>
+  <span class="chip crimson">0 XP</span>
+  <span class="spacer"></span>
+  <a href="../characters/index.html">Characters</a>
+  <a href="../index.html">Home</a>
+</div>
+<main id="sheet"></main>
+
+<script id="sheet-data" type="application/json">
+{
+ "id": "agasha-kohana-0xp",
+ "name": "Agasha Kohana",
+ "clan": "Dragon",
+ "family": "Agasha",
+ "school": "Agasha Alchemist School",
+ "role": "Shugenja",
+ "rank": 1,
+ "portrait": null,
+ "rings": {
+  "air": 2,
+  "earth": 1,
+  "fire": 3,
+  "water": 2,
+  "void": 2
+ },
+ "derived": {
+  "endurance": 8,
+  "composure": 6,
+  "focus": 5,
+  "vigilance": 2
+ },
+ "trackers": {
+  "strife": {
+   "max": 6
+  },
+  "fatigue": {
+   "max": 8
+  },
+  "void": {
+   "max": 2,
+   "start": 2
+  }
+ },
+ "stance": "void",
+ "social": {
+  "honor": 45,
+  "glory": 50,
+  "status": 30
+ },
+ "xp": {
+  "earned": 0,
+  "spent": 0
+ },
+ "skills": {
+  "aesthetics": 0,
+  "composition": 0,
+  "design": 0,
+  "smithing": 1,
+  "fitness": 0,
+  "melee": 0,
+  "ranged": 0,
+  "unarmed": 0,
+  "meditation": 1,
+  "tactics": 0,
+  "culture": 0,
+  "government": 0,
+  "medicine": 3,
+  "sentiment": 0,
+  "theology": 1,
+  "command": 0,
+  "courtesy": 0,
+  "games": 0,
+  "performance": 1,
+  "commerce": 0,
+  "labor": 0,
+  "seafaring": 0,
+  "skulduggery": 0,
+  "survival": 1
+ },
+ "bushido": {
+  "paramount": "Sincerity",
+  "less": "Duty and Loyalty"
+ },
+ "ninjo": "Kohana wants to prove that the Shadowlands can be understood through careful study and mapping, not just survived through jade consumption, but her monthly reports of depleted reserves make that work look like waste.",
+ "giri": "Kohana reports her ward consumption to the Dragon's Shadowlands garrison commander each month, knowing the numbers show she has burned through reserves meant to last three seasons.",
+ "money": "4 koku",
+ "techniques": [
+  {
+   "name": "The Fires from Within",
+   "tag": "Technique",
+   "text": "<ul><li>The incantation to call fire is guttural and raw. Even as the words echo, the shugenja’s hands snap open, and motes of flame trail from their fingertips, searing their way toward the objects of the shugenja’s ire. If the shugenja has the strength of will to maintain their focus, they can direct the motes with amazing precision and burn tiny, searing holes in their targets. However, if the shugenja lets their heart swell with wrath or fury, the motes bloom into tiny infernos that seek to consume anything they hit and leave only ash.</li><li>As an Attack action, make a TN 3 Theology (Fire) check targeting a number of characters up to your Fire Ring at range 1-3.</li><li>If you succeed, you smite each target with a stream of fire. Each target suffers supernatural damage equal to your Fire Ring plus bonus successes.</li><li>Fire +(op): Treat maximum range as 1 higher per (op) spent this way.</li></ul>"
+  },
+  {
+   "name": "The Cleansing Fire",
+   "tag": "Technique",
+   "text": "<ul><li>With a roared incantation, the shugenja spreads their hands wide and a circle of fire spills forth, rippling across the ground and searing everything in its path. These flames are indiscriminate, hungrily lapping at friend, foe, and inanimate object alike.</li><li>As an Attack action, make a TN 1 Theology (Fire) check targeting each other character at range 0-2.</li><li>If you succeed, you smite each target with a roaring burst of fire. Each target suffers Dazed and must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer supernatural damage equal to your Fire Ring plus their shortfall and Burning.</li></ul>"
+  },
+  {
+   "name": "Path to Inner Peace",
+   "tag": "Technique",
+   "text": "<ul><li>By communing with the water kami that dwell within the body, a shugenja can right imbalances and correct the flow of ki, speeding the recovery of stamina dramatically.</li><li>As a Support action, make a TN 2 Theology (Water) check targeting yourself or another character at range 0-2.</li><li>If you succeed, you mend your target&#x27;s exhausted muscles. The target removes fatigue equal to your Water Ring plus bonus successes. Each target cannot be affected by this invocation again until end of scene.</li><li>Water (op): Choose one condition: Bleeding, Dazed, Disoriented, or Lightly Wounded. Remove that condition from each target.</li><li>Water (op): Your target also removes strife equal to your bonus successes.</li></ul>"
+  },
+  {
+   "name": "Truth Burns through Lies",
+   "tag": "Technique",
+   "text": "<ul><li>The courtier rapidly extrapolates, imagining the ramifications of a story and conjecturing what might have gone unsaid. If a loose thread exists in the account, they can find it, and that first thread can become the unraveling of the most cunning duplicity.</li><li>When making a Scholar skill (Fire) check to assess a character&#x27;s story, you may spend (op) in the following way:</li><li>Fire (op): If there is a single statement upon which the character&#x27;s story hinges, you determine what it is and what you would need to do to verify or disprove it.</li></ul>"
+  },
+  {
+   "name": "Shallow Waters",
+   "tag": "Technique",
+   "text": "<ul><li>A good courtier learns how to read the desires of those around them from the subtle cues of their responses in conversation, as well as how to probe for details without revealing their intentions.</li><li>When you make a Social skill (Water) check targeting a character, you may spend (op) as follows:</li><li>Water (op): Learn of one material item or worldly experience the target desires.</li><li>Water (op)(op): Learn the target&#x27;s Ninjō.</li></ul>"
+  },
+  {
+   "name": "Flesh of the Elements",
+   "tag": "Technique",
+   "text": "<p>You can have a number of additional potions with prepared invocations equal to your school rank. When you spend a downtime activity creating a potion, you may make supplemental checks after the first equal to your school rank, but each must be for a different invocation.</p>"
+  }
+ ],
+ "peculiarities": [
+  {
+   "name": "Traditional Adherent",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have a mastery of tradition and routine, and are able to perform ceremonies and social functions exactly as you were taught without variation, even under trying circumstances.</li><li>When you make a check to maintain the traditions of the past (such as a Performance [Earth] check to recite a poem in a style long-since out of fashion in the courts, or a Composition [Earth] check to examine a historical account for inconsistencies), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Lost Leg",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You have one fewer leg than most people. You use a crutch, cane, or other support to walk, and standing takes more effort than it does for people with two legs. Traveling by walking takes you twice as long as it does others without some form of compensatory tool.</li><li>When you make a check for which you must reposition yourself quickly or maintain your balance (such as a Fitness [Water] check to move across difficult ground quickly or a Seafaring [Water] check to operate a boat in difficult conditions such as a storm), you must choose and reroll two dice containing success or explosive success. After resolving the check, if you failed, you gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Secrets",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You never forget a secret you have heard, and you instinctively know if something you have heard is common knowledge or information someone wants concealed (even if you do not know who or why).</li><li>After performing a check to acquire or preserve a secret (such as a Meditation [Void] check to resist efforts to pry a secret from you or a Sentiment [Void] check to have a hunch about whether someone is concealing a dreadful secret), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Addiction",
+   "tag": "Peculiarity",
+   "text": "<ul><li>Choose an addictive substance or experience; deprivation from this substance or experience for more than three days causes shakes, chills, distraction, or even more violent physical symptoms that become increasingly difficult to conceal.</li><li>After performing a check to resist the substance or experience (such as a Fitness [Earth] check to suppress signs of your addiction during long absences of the substance or experience, or a Meditation [Earth] check to resist pursuing the experience or substance), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Passion for",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are skilled in a foreign artistry (puppetry, miming, foreign dance, foreign instrument) and recognize common forms and intricate historical details.</li><li>After performing a check related to your talent (such as Performance [Air] to impress or Design [Air] to refine craft), you remove 3 strife.</li></ul>"
+  }
+ ],
+ "titles": [],
+ "bonds": [],
+ "gear": [
+  {
+   "name": "Norimono (Planquin)",
+   "kind": "Item",
+   "qualities": [
+    "Resplendent"
+   ],
+   "rarity": "7",
+   "text": "<ul><li>Category: Courtier Item</li><li>Cost: 12 koku</li><li>Rarity: 7</li><li>Qualities: [&quot;Resplendent&quot;]</li></ul>"
+  },
+  {
+   "name": "Shinobigatana",
+   "kind": "Item"
+  }
+ ]
+}
+</script>
+<script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>
+<script src="../assets/play/l5rdata.js?v=1c4f76bc"></script>
+<script src="../assets/play/sheet.js?v=ae08be20"></script>
+</body>
+</html>
