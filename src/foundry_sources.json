@@ -762,7 +762,9 @@
   "_comment": "portrait path per slug, relative to the repo root",
   "aarav": "src/portraits/aarav.png",
   "agasha-kohana": "src/portraits/agasha-kohana.webp",
+  "akodo-umi": "src/portraits/akodo-umi.webp",
   "asahina-jujiro": "src/portraits/asahina-jujiro.webp",
+  "asako-shuichi": "src/portraits/asako-shuichi.webp",
   "asako-yukitsuna": "src/portraits/asako-yukitsuna.webp",
   "bayushi-hirofumi": "src/portraits/bayushi-hirofumi.webp",
   "daidoji-emon": "src/portraits/daidoji-emon.webp",
@@ -772,6 +774,7 @@
   "hiruma-kaede": "src/portraits/hiruma-kaede.png",
   "hiruma-namiko": "src/portraits/hiruma-namiko.webp",
   "ichiro-tsutomu": "src/portraits/ichiro-tsutomu.webp",
+  "ikoma-chiaki": "src/portraits/ikoma-chiaki.webp",
   "ikoma-no-hosokawa-ota": "src/portraits/ikoma-no-hosokawa-ota.png",
   "isawa-chisato": "src/portraits/isawa-chisato.webp",
   "isawa-yukiko": "src/portraits/isawa-yukiko.png",
@@ -779,6 +782,7 @@
   "iuchi-temur": "src/portraits/iuchi-temur.webp",
   "jinrai": "src/portraits/jinrai.webp",
   "kaiu-anzu": "src/portraits/kaiu-anzu.webp",
+  "kakita-kensaku": "src/portraits/kakita-kensaku.webp",
   "kasuga-chiyo": "src/portraits/kasuga-chiyo.webp",
   "kitsuki-nagiko": "src/portraits/kitsuki-nagiko.webp",
   "kuni-ryosei": "src/portraits/kuni-ryosei.webp",
@@ -798,6 +802,7 @@
   "togashi-rensho": "src/portraits/togashi-rensho.webp",
   "tonbo-asahi": "src/portraits/tonbo-asahi.webp",
   "tsume-kunimichi": "src/portraits/tsume-kunimichi.png",
+  "utaku-seki": "src/portraits/utaku-seki.webp",
   "yogo-yasu": "src/portraits/yogo-yasu.webp"
  },
  "derive_tiers": [
