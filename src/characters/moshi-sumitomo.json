@@ -1,0 +1,464 @@
+{
+ "slug": "moshi-sumitomo",
+ "name": "Moshi Sumitomo",
+ "campaign": "Portents & Fortunes",
+ "status": null,
+ "identity": {
+  "clan": "Centipede",
+  "family": "Moshi",
+  "school": "Moshi Sun Sentinel School",
+  "role": "Shugenja",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Sumitomo's eyes move to the account books before she looks at your face, and it takes her a moment to come back.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Moshi Sumitomo",
+  "mode": "core",
+  "clan": "Centipede",
+  "family": "Moshi",
+  "school": "Moshi Sun Sentinel School",
+  "role": "Shugenja",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "tactics": 1
+  },
+  "distinctions": [
+   "Keen Balance"
+  ],
+  "adversities": [
+   "Pursued by"
+  ],
+  "passions": [
+   "Religious Study"
+  ],
+  "anxieties": [
+   "Delusions of Grandeur"
+  ],
+  "pec_subjects": {
+   "pursuedby": {
+    "name": "Pursued by",
+    "subject": "TBD",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Sincerity",
+   "lesser": "Courage",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Moshi Sumitomo serves the Moshi daimyo by reconciling the shrine's accounts each month without revealing to either set of believers how much the other has given.",
+   "ninjo": "Sumitomo wants the shrine's true accounts — the real numbers, unhidden — to survive her death, and she cannot decide whether hiding them now protects that future or betrays it.",
+   "standout_quality": "She keeps the shrine's accounts in two ledgers — one for the tithes Fukurokujin's followers leave, one for Lady Sun's — and never lets the discrepancy show in her face when the numbers arrive.",
+   "accomplishment": "She steadied the village headman on the shrine's roof tiles when he came drunk to confront the abbot about the offerings, and he never knew she had caught him.",
+   "challenge": "She cannot bring herself to stop until both ledgers show the same total, even when the discrepancy serves the shrine better than the truth.",
+   "peace": "She sits with the shrine's account books open before her and traces each entry in both ledgers until the numbers tell the same story, erasing nothing, changing nothing, just finding the place where the lie and the truth occupy the same line.",
+   "fear": "She cannot stop believing that her real gift—the true ledgers, the perfect reconciliation, the invisible steadying hand—will matter more once she is gone, and it costs her every chance to tell anyone it exists.",
+   "accoutrement": "Sumitomo's writing box is divided into three sections by a carpenter who does not know which ledger goes where, and she has never corrected him.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Moshi Etsuko",
+   "lord_gender": "female",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Sumitomo reports the shrine's accounts to the Moshi daimyo each month while her superiors — the shrine's abbot and the village headman — receive versions that do not match, and no one has told her this arrangement is official."
+   },
+   "mentor": {
+    "name": "Moshi Chiyo",
+    "path": "A",
+    "granted": "Keen Sight",
+    "skill": "",
+    "text": "Moshi Chiyo taught her to read the shrine's accounts by candlelight without flinching when the numbers refused to match, and never explained whether the discrepancy was a test of her nerve or a confession of complicity.",
+    "gender": "female",
+    "association": "Centipede"
+   },
+   "first_impression": "Sumitomo's eyes move to the account books before she looks at your face, and it takes her a moment to come back.",
+   "stress_reaction": "When the village headman appeared at the shrine during the autumn audit and asked directly whether the two ledgers matched, Sumitomo did not answer him; instead she began reciting the liturgy for Fukurokujun backwards, correctly, all the way through, before she looked up and handed him tea.",
+   "relationships": "Kitsu Nobuhito (Lion) — Kitsu Nobuhito came to the shrine three years ago asking whether the accounts were falsified, and Sumitomo told him the truth because he asked in a way that made lying feel like theft.\nAsako Ami (Phoenix) — Asako Ami brought a Phoenix delegation to audit the shrine's records two years ago, and Sumitomo has not been able to decide whether Ami saw both ledgers or only the one she was shown.",
+   "people": [
+    {
+     "name": "Kitsu Nobuhito",
+     "gender": "male",
+     "association": "Lion",
+     "text": "Kitsu Nobuhito came to the shrine three years ago asking whether the accounts were falsified, and Sumitomo told him the truth because he asked in a way that made lying feel like theft."
+    },
+    {
+     "name": "Asako Ami",
+     "gender": "female",
+     "association": "Phoenix",
+     "text": "Asako Ami brought a Phoenix delegation to audit the shrine's records two years ago, and Sumitomo has not been able to decide whether Ami saw both ledgers or only the one she was shown."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Her mother stopped asking what Sumitomo does with her evenings after the third time she found her daughter sitting in the dark with both ledgers open, erasing nothing, and could not think of a question that would not force an answer she did not want to hear.",
+    "skill": "tactics"
+   },
+   "heritage": "Great Treatise",
+   "heritage_table": "new-samurai-heritages-celestial-realms",
+   "heritage_sub": "1-3 — Gain +1 ^\"Composition\"",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Sumitomo expects to die in the archive, finding the place where both ledgers match, and to leave behind a locked writing box that no one will open until long after the shrine itself has crumbled into the village's argument about which god was ever real."
+  },
+  "starting_item": "Fire Lance",
+  "campaign": "Portents & Fortunes",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Air"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Unarmed]",
+    "Sentiment",
+    "Courtesy"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "She teaches the shrine's children to pray to Lady Sun while the village elders pray to Fukurokujin, and she does it without once speaking against their god.",
+    "She keeps the shrine's accounts in two ledgers — one for the tithes Fukurokujin's followers leave, one for Lady Sun's — and never lets the discrepancy show in her face when the numbers arrive."
+   ],
+   "giri": [
+    "Moshi Sumitomo serves the Moshi daimyo by reconciling the shrine's accounts each month without revealing to either set of believers how much the other has given."
+   ],
+   "ninjo": [
+    "Sumitomo wants the shrine's true accounts — the real numbers, unhidden — to survive her death, and she cannot decide whether hiding them now protects that future or betrays it."
+   ],
+   "clan_relationship": [
+    "Sumitomo reports the shrine's accounts to the Moshi daimyo each month while her superiors — the shrine's abbot and the village headman — receive versions that do not match, and no one has told her this arrangement is official."
+   ],
+   "accomplishment": [
+    "Sumitomo balanced the shrine's accounts for forty-three months without either the abbot or the headman discovering that she was balancing them against each other.",
+    "She steadied the village headman on the shrine's roof tiles when he came drunk to confront the abbot about the offerings, and he never knew she had caught him."
+   ],
+   "peace": [
+    "She sits with the shrine's account books open before her and traces each entry in both ledgers until the numbers tell the same story, erasing nothing, changing nothing, just finding the place where the lie and the truth occupy the same line."
+   ],
+   "fear": [
+    "She cannot stop believing that her real gift—the true ledgers, the perfect reconciliation, the invisible steadying hand—will matter more once she is gone, and it costs her every chance to tell anyone it exists."
+   ],
+   "mentor_relationship": [
+    "Moshi Chiyo taught her to read the shrine's accounts by candlelight without flinching when the numbers refused to match, and never explained whether the discrepancy was a test of her nerve or a confession of complicity."
+   ],
+   "first_impression": [
+    "Sumitomo's eyes move to the account books before she looks at your face, and it takes her a moment to come back."
+   ],
+   "accoutrement": [
+    "Sumitomo's writing box is divided into three sections by a carpenter who does not know which ledger goes where, and she has never corrected him."
+   ],
+   "stress_reaction": [
+    "When the village headman appeared at the shrine during the autumn audit and asked directly whether the two ledgers matched, Sumitomo did not answer him; instead she began reciting the liturgy for Fukurokujun backwards, correctly, all the way through, before she looked up and handed him tea."
+   ],
+   "relationship_person": [
+    "Kitsu Nobuhito came to the shrine three years ago asking whether the accounts were falsified, and Sumitomo told him the truth because he asked in a way that made lying feel like theft.",
+    "Asako Ami brought a Phoenix delegation to audit the shrine's records two years ago, and Sumitomo has not been able to decide whether Ami saw both ledgers or only the one she was shown."
+   ],
+   "parent_opinion": [
+    "Her mother stopped asking what Sumitomo does with her evenings after the third time she found her daughter sitting in the dark with both ledgers open, erasing nothing, and could not think of a question that would not force an answer she did not want to hear."
+   ],
+   "death": [
+    "Sumitomo expects to die in the archive, finding the place where both ledgers match, and to leave behind a locked writing box that no one will open until long after the shrine itself has crumbled into the village's argument about which god was ever real."
+   ],
+   "challenge": [
+    "She cannot bring herself to stop until both ledgers show the same total, even when the discrepancy serves the shrine better than the truth."
+   ]
+  },
+  "ring_reassign": [
+   {
+    "from": "fire",
+    "to": "void"
+   }
+  ]
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "She keeps the shrine's accounts in two ledgers — one for the tithes Fukurokujin's followers leave, one for Lady Sun's — and never lets the discrepancy show in her face when the numbers arrive.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Moshi Sumitomo serves the Moshi daimyo by reconciling the shrine's accounts each month without revealing to either set of believers how much the other has given.",
+     "lord_name": "Moshi Etsuko"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Sumitomo wants the shrine's true accounts — the real numbers, unhidden — to survive her death, and she cannot decide whether hiding them now protects that future or betrays it."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Sumitomo reports the shrine's accounts to the Moshi daimyo each month while her superiors — the shrine's abbot and the village headman — receive versions that do not match, and no one has told her this arrangement is official.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Sincerity",
+     "tenet_less_significant": "Courage"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She steadied the village headman on the shrine's roof tiles when he came drunk to confront the abbot about the offerings, and he never knew she had caught him."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "She cannot bring herself to stop until both ledgers show the same total, even when the discrepancy serves the shrine better than the truth."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "She sits with the shrine's account books open before her and traces each entry in both ledgers until the numbers tell the same story, erasing nothing, changing nothing, just finding the place where the lie and the truth occupy the same line."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "She cannot stop believing that her real gift—the true ledgers, the perfect reconciliation, the invisible steadying hand—will matter more once she is gone, and it costs her every chance to tell anyone it exists."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Moshi Chiyo — Moshi Chiyo taught her to read the shrine's accounts by candlelight without flinching when the numbers refused to match, and never explained whether the discrepancy was a test of her nerve or a confession of complicity."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Sumitomo's eyes move to the account books before she looks at your face, and it takes her a moment to come back.",
+     "accoutrement": "Sumitomo's writing box is divided into three sections by a carpenter who does not know which ledger goes where, and she has never corrected him."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When the village headman appeared at the shrine during the autumn audit and asked directly whether the two ledgers matched, Sumitomo did not answer him; instead she began reciting the liturgy for Fukurokujun backwards, correctly, all the way through, before she looked up and handed him tea."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Kitsu Nobuhito (Lion) — Kitsu Nobuhito came to the shrine three years ago asking whether the accounts were falsified, and Sumitomo told him the truth because he asked in a way that made lying feel like theft.\nAsako Ami (Phoenix) — Asako Ami brought a Phoenix delegation to audit the shrine's records two years ago, and Sumitomo has not been able to decide whether Ami saw both ledgers or only the one she was shown."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Her mother stopped asking what Sumitomo does with her evenings after the third time she found her daughter sitting in the dark with both ledgers open, erasing nothing, and could not think of a question that would not force an answer she did not want to hear."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Great Treatise",
+     "heritage_table": "New Samurai Heritages (Celestial Realms)",
+     "heritage_sub": "1-3 — Gain +1 ^\"Composition\"",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Sumitomo expects to die in the archive, finding the place where both ledgers match, and to leave behind a locked writing box that no one will open until long after the shrine itself has crumbled into the village's argument about which god was ever real."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Moshi Sun Sentinel School",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 1,
+    "fire": 3,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 1,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 1
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 65,
+    "glory": 45,
+    "status": 33,
+    "ninjo": "Sumitomo wants the shrine's true accounts — the real numbers, unhidden — to survive her death, and she cannot decide whether hiding them now protects that future or betrays it.",
+    "giri": "Moshi Sumitomo serves the Moshi daimyo by reconciling the shrine's accounts each month without revealing to either set of believers how much the other has given.",
+    "bushido_tenets": {
+     "paramount": "Sincerity",
+     "less_significant": "Courage"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 6,
+    "focus": 5,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 3,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Armor of Radiance"
+    },
+    {
+     "name": "Biting Steel"
+    },
+    {
+     "name": "Extinguish"
+    },
+    {
+     "name": "Katana of Fire"
+    },
+    {
+     "name": "Cleansing Rite"
+    },
+    {
+     "name": "Commune with the Spirits"
+    },
+    {
+     "name": "Blazing Tears of Lady Sun"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Keen Balance"
+    },
+    {
+     "name": "Pursued by TBD",
+     "custom": true,
+     "subject": "TBD",
+     "text": "A pursuer wishes to capture or kill you. You have difficulty relaxing in public. When making a check that draws attention in public (such as Commerce [Water] to trade at market or Courtesy [Water] to win favor at court), you must choose and reroll two dice containing success or explosion. If you failed, gain 1 Void point."
+    },
+    {
+     "name": "Religious Study"
+    },
+    {
+     "name": "Delusions of Grandeur"
+    },
+    {
+     "name": "Keen Sight"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Fire Lance"
+    },
+    {
+     "name": "Sanctified Robes"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Moshi Sun Sentinel starting outfit"
+    },
+    {
+     "name": "Bō"
+    },
+    {
+     "name": "Scroll satchel"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "religious texts",
+     "custom": true,
+     "text": "From the Moshi Sun Sentinel starting outfit"
+    },
+    {
+     "name": "Sumitomo's writing box is divided into three sections by a carpenter who does not know which ledger goes where, and she has never corrected him.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

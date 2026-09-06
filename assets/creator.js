@@ -421,6 +421,13 @@
       region: null, upbringing: null,
       standout_ring: null,
       rings: { air: 1, earth: 1, fire: 1, water: 1, "void": 1 },
+      /* Where a ring that came out above 3 puts its excess. Path of Waves,
+         p.61: "Rings and skills have a maximum rank of 3 during character
+         creation. If a choice would result in a ring rising above rank 3
+         during character creation, then the player must choose a different
+         ring to increase instead, as long as that ring would not be increased
+         above 3." One {from, to} per rank moved. */
+      ring_reassign: [],
       skills: {},
       distinctions: [], adversities: [], passions: [], anxieties: [],
       /* An open-ended peculiarity names somebody or something: "Ally [Name]",
@@ -2662,6 +2669,23 @@
         pending.push({ type: "swap", from: lo, to: hi });
       }
     }
+
+    /* The creation cap, applied after every increase including the heritage's,
+       because it is the total that has to come in at 3 or under. Each entry
+       moves one rank off a ring that came out above 3 and onto a ring the
+       player picked; an entry that no longer applies — the school changed, the
+       excess is gone — is simply inert rather than wrong. */
+    (C.ring_reassign || []).forEach(function (mv) {
+      var from = String(mv && mv.from || "").toLowerCase();
+      var to = String(mv && mv.to || "").toLowerCase();
+      if (rings[from] == null || rings[to] == null || from === to) return;
+      if (rings[from] <= 3 || rings[to] >= 3) return;
+      rings[from] -= 1;
+      rings[to] += 1;
+      credit("rings", from, -1, "over the creation cap");
+      credit("rings", to, 1, "reassigned from " + cap(from));
+    });
+
     return { rings: rings, skills: skills, honor: honor, glory: glory,
              status: status,
              // the coins, and the label to show them. No koku float: that is
@@ -3662,6 +3686,83 @@
     body.appendChild(note);
   }
 
+  /* The creation cap. Every ring increase is legal on its own and the total is
+     what breaks the rule, so this can only be settled once they are all in —
+     which is why it is the last thing before the export rather than a warning
+     at the question that tipped it over. */
+  function ringExcess(rings) {
+    return RINGS.reduce(function (n, r) {
+      return n + Math.max(0, (rings[r] || 0) - 3);
+    }, 0);
+  }
+
+  function ringCapSection(body) {
+    var d = computed();
+    var over = RINGS.filter(function (r) { return d.rings[r] > 3; });
+    var moves = C.ring_reassign || [];
+
+    var table = document.createElement("p");
+    table.className = "muted small";
+    table.innerHTML = RINGS.map(function (r) {
+      return "<strong>" + cap(r) + " " + d.rings[r] + "</strong>";
+    }).join(" · ");
+    body.appendChild(table);
+
+    if (over.length) {
+      var from = over[0];
+      var to = RINGS.filter(function (r) { return d.rings[r] < 3; });
+      label(body, cap(from) + " came out at " + d.rings[from]);
+      var row = document.createElement("div");
+      row.className = "choicerow";
+      to.forEach(function (r) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "choice";
+        b.textContent = cap(r) + " " + d.rings[r] + " → " + (d.rings[r] + 1);
+        b.addEventListener("click", function () {
+          C.ring_reassign = moves.concat([{ from: from, to: r }]);
+          save(); render();
+        });
+        row.appendChild(b);
+      });
+      body.appendChild(row);
+      var why = document.createElement("p");
+      why.className = "muted small";
+      why.textContent = "A ring cannot pass 3 at creation, so the rank that "
+        + "would have taken " + cap(from) + " to " + d.rings[from]
+        + " goes to a ring of your choosing instead — any ring that is not "
+        + "already at 3. " + cap(from) + " settles at 3.";
+      body.appendChild(why);
+    } else {
+      var ok = document.createElement("p");
+      ok.className = "muted small";
+      ok.textContent = moves.length
+        ? "Nothing left above 3."
+        : "No ring came out above 3, so there is nothing to move. The cap only "
+          + "binds when the clan, family, school, upbringing, question 4 and "
+          + "the heritage happen to stack on one ring.";
+      body.appendChild(ok);
+    }
+
+    if (moves.length) {
+      label(body, "Moved");
+      var list = document.createElement("p");
+      list.className = "muted small";
+      list.textContent = moves.map(function (m) {
+        return "1 rank from " + cap(m.from) + " to " + cap(m.to);
+      }).join("; ") + ".";
+      body.appendChild(list);
+      var undo = document.createElement("div");
+      undo.className = "choicerow";
+      undo.innerHTML = '<button type="button" class="btn ghost" id="ring-undo">'
+        + "Start over</button>";
+      body.appendChild(undo);
+      undo.querySelector("#ring-undo").addEventListener("click", function () {
+        C.ring_reassign = []; save(); render();
+      });
+    }
+  }
+
   function peculiarityStep(kind, listKey) {
     return function (body) {
       peculiarityPicker(body, [kind],
@@ -4522,6 +4623,13 @@
       desc: "How does your character die? A vision, premonition, or expectation of their end — not a prediction the game must honour, but a meaningful death the player invites.",
       done: function () { return has(C.answers.death); },
       render: textStep("death", "answers.death", "death", "The ending they would not regret…") },
+
+    { id: "ring-cap", n: 0, label: "Rings",
+      eyebrow: "Before you export",
+      title: "Rings Above Three",
+      desc: "A ring cannot pass rank 3 during character creation. Every increase up to here was legal by itself; only the total can break the cap, so this is settled last — the excess rank moves to a ring you choose.",
+      done: function () { return ringExcess(computed().rings) === 0; },
+      render: ringCapSection },
 
     { id: "export", n: 21,
       label: function () { return isEdit() ? "Save" : "Export"; },

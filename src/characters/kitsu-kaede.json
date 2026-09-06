@@ -1,0 +1,454 @@
+{
+ "slug": "kitsu-kaede",
+ "name": "Kitsu Kaede",
+ "campaign": "Blood of the Lioness",
+ "status": null,
+ "identity": {
+  "clan": "Lion",
+  "family": "Kitsu",
+  "school": "Kitsu Medic School",
+  "role": "Bushi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Kaede's eyes move across a room before her body does—tracking the doors, the corners, the places where blood would pool if the walls came down, the way a soldier scans a battlefield from the ridge line.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Kitsu Kaede",
+  "mode": "core",
+  "clan": "Lion",
+  "family": "Kitsu",
+  "school": "Kitsu Medic School",
+  "role": "Bushi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "medicine": 1,
+   "ranged": 1
+  },
+  "distinctions": [
+   "Criminal Connections"
+  ],
+  "adversities": [
+   "Disdain for Duty and Loyalty"
+  ],
+  "passions": [
+   "City"
+  ],
+  "anxieties": [
+   "Battle Trauma"
+  ],
+  "pec_subjects": {
+   "city": {
+    "name": "City",
+    "subject": "Loyalty Castle",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Honor",
+   "lesser": "Duty and Loyalty",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Kaede reports directly to the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
+   "ninjo": "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint.",
+   "standout_quality": "Kaede stations herself in the infirmary gallery overlooking the training grounds, watching soldiers drill below while she prepares medicines, and can name each injury before the man who bears it limps through the door.",
+   "accomplishment": "She convinced a Scorpion contact to delay a poison shipment by three days so the War College could requisition the antidote plants before they vanished from the market, and the soldiers who would have died in the next skirmish lived instead.",
+   "challenge": "When the War College's official requisitions fail and soldiers arrive bleeding, Kaede must choose between the infirmary's empty shelves and the Scorpion agents who will extract a price she cannot name to her superiors.",
+   "peace": "She maps the fortress quarter by quarter on her own time, marking which apothecaries still stock which herbs, which back-alley brewers owe favors to the Scorpion, and which routes the requisition carts take when the official ones fail, until the city inside the castle's walls stops being a problem she cannot solve and becomes instead a ledger she can read.",
+   "fear": "When the infirmary doors open to admit the first casualty of the day, Kaede's breath catches and her mind empties until she has already moved three times and cannot remember doing it.",
+   "accoutrement": "She wears her mentor's copper cuff on her left wrist—a Crab smith's work, too heavy for the bone beneath, and she has not learned to favor her right hand when she reaches for a scalpel, so the weight pulls her cut a hair too shallow when speed matters.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Kitsu Murashige",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Kaede keeps the infirmary stocked by brewing medicines the War College officially forbids—poisons extracted from the same plants as the healers' antidotes—and trades them quietly to the Scorpion agents who pass through the fortress, which means she is betraying the Lion every time she saves a Lion soldier's life."
+   },
+   "mentor": {
+    "name": "Hida Konoye",
+    "path": "B",
+    "granted": "Daikoku’s Curse",
+    "skill": "medicine",
+    "text": "Hida Konoye taught Kaede that a medic's first duty is to the soldier in front of her, not the war, and in doing so left her unable to refuse the Scorpion when they came asking what medicines the infirmary kept in reserve.",
+    "gender": "male",
+    "association": "Crab"
+   },
+   "first_impression": "Kaede's eyes move across a room before her body does—tracking the doors, the corners, the places where blood would pool if the walls came down, the way a soldier scans a battlefield from the ridge line.",
+   "stress_reaction": "When the infirmary empties at nightfall, Kaede counts the stock against the requisition lists she keeps in three separate ledgers—one for the War College, one for what the infirmary actually holds, one for what the Scorpion expect her to have promised them—and recounts them until the numbers stop contradicting themselves or she runs out of candles.",
+   "relationships": "Soshi Hayami (Scorpion) — Soshi Hayami brings the requisitions Kaede cannot get through official channels, and Kaede has stopped asking what debt accumulates each time she accepts them.\nKaito Ujitsuna (Phoenix) — Kaito Ujitsuna of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them.",
+   "people": [
+    {
+     "name": "Soshi Hayami",
+     "gender": "female",
+     "association": "Scorpion",
+     "text": "Soshi Hayami brings the requisitions Kaede cannot get through official channels, and Kaede has stopped asking what debt accumulates each time she accepts them."
+    },
+    {
+     "name": "Kaito Ujitsuna",
+     "gender": "male",
+     "association": "Phoenix",
+     "text": "Kaito Ujitsuna of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Kaede's mother worries that her daughter has learned to see the infirmary as a problem to be solved rather than a duty to be served, and that the maps and ledgers and back-alley routes matter more to her now than the soldiers themselves.",
+    "skill": "ranged"
+   },
+   "heritage": "Victory against Invaders",
+   "heritage_table": "fields-of-victory-heritages",
+   "heritage_sub": "5-6 — Tactics",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Kaede will die on requisition duty in the lower city, caught between a Scorpion agent and a War College inspector who arrives unannounced at the merchant's stall, unable to move in either direction without burning the other."
+  },
+  "starting_item": "Tekagi",
+  "campaign": "Blood of the Lioness",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Void"
+   ],
+   "school.starting_skills": [
+    "Command",
+    "Survival",
+    "Medicine",
+    "Martial Arts [Melee]",
+    "Fitness"
+   ],
+   "school.tech.0": [
+    "Striking as Water"
+   ],
+   "school.tech.1": [
+    "Threshold Barrier"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Kaede stations herself in the infirmary gallery overlooking the training grounds, watching soldiers drill below while she prepares medicines, and can name each injury before the man who bears it limps through the door."
+   ],
+   "giri": [
+    "Kaede reports directly to the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts."
+   ],
+   "ninjo": [
+    "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint."
+   ],
+   "clan_relationship": [
+    "Kaede keeps the infirmary stocked by brewing medicines the War College officially forbids—poisons extracted from the same plants as the healers' antidotes—and trades them quietly to the Scorpion agents who pass through the fortress, which means she is betraying the Lion every time she saves a Lion soldier's life."
+   ],
+   "accomplishment": [
+    "She convinced a Scorpion contact to delay a poison shipment by three days so the War College could requisition the antidote plants before they vanished from the market, and the soldiers who would have died in the next skirmish lived instead."
+   ],
+   "challenge": [
+    "When the War College's official requisitions fail and soldiers arrive bleeding, Kaede must choose between the infirmary's empty shelves and the Scorpion agents who will extract a price she cannot name to her superiors."
+   ],
+   "peace": [
+    "She maps the fortress quarter by quarter on her own time, marking which apothecaries still stock which herbs, which back-alley brewers owe favors to the Scorpion, and which routes the requisition carts take when the official ones fail, until the city inside the castle's walls stops being a problem she cannot solve and becomes instead a ledger she can read."
+   ],
+   "fear": [
+    "When the infirmary doors open to admit the first casualty of the day, Kaede's breath catches and her mind empties until she has already moved three times and cannot remember doing it."
+   ],
+   "mentor_relationship": [
+    "Hida Konoye taught Kaede that a medic's first duty is to the soldier in front of her, not the war, and in doing so left her unable to refuse the Scorpion when they came asking what medicines the infirmary kept in reserve."
+   ],
+   "first_impression": [
+    "Kaede's eyes move across a room before her body does—tracking the doors, the corners, the places where blood would pool if the walls came down, the way a soldier scans a battlefield from the ridge line."
+   ],
+   "accoutrement": [
+    "She wears her mentor's copper cuff on her left wrist—a Crab smith's work, too heavy for the bone beneath, and she has not learned to favor her right hand when she reaches for a scalpel, so the weight pulls her cut a hair too shallow when speed matters."
+   ],
+   "stress_reaction": [
+    "When the infirmary empties at nightfall, Kaede counts the stock against the requisition lists she keeps in three separate ledgers—one for the War College, one for what the infirmary actually holds, one for what the Scorpion expect her to have promised them—and recounts them until the numbers stop contradicting themselves or she runs out of candles."
+   ],
+   "relationship_person": [
+    "Soshi Hayami brings the requisitions Kaede cannot get through official channels, and Kaede has stopped asking what debt accumulates each time she accepts them.",
+    "Kaito Ujitsuna of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them."
+   ],
+   "parent_opinion": [
+    "Kaede's mother worries that her daughter has learned to see the infirmary as a problem to be solved rather than a duty to be served, and that the maps and ledgers and back-alley routes matter more to her now than the soldiers themselves."
+   ],
+   "death": [
+    "She will die in the infirmary, on the wrong side of her own ledgers, when the medicines she brewed run out before the soldiers do.",
+    "Kaede will die on requisition duty in the lower city, caught between a Scorpion agent and a War College inspector who arrives unannounced at the merchant's stall, unable to move in either direction without burning the other."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Kaede stations herself in the infirmary gallery overlooking the training grounds, watching soldiers drill below while she prepares medicines, and can name each injury before the man who bears it limps through the door.",
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Kaede reports directly to the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
+     "lord_name": "Kitsu Murashige"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Kaede keeps the infirmary stocked by brewing medicines the War College officially forbids—poisons extracted from the same plants as the healers' antidotes—and trades them quietly to the Scorpion agents who pass through the fortress, which means she is betraying the Lion every time she saves a Lion soldier's life.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Honor",
+     "tenet_less_significant": "Duty and Loyalty"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She convinced a Scorpion contact to delay a poison shipment by three days so the War College could requisition the antidote plants before they vanished from the market, and the soldiers who would have died in the next skirmish lived instead."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When the War College's official requisitions fail and soldiers arrive bleeding, Kaede must choose between the infirmary's empty shelves and the Scorpion agents who will extract a price she cannot name to her superiors."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "She maps the fortress quarter by quarter on her own time, marking which apothecaries still stock which herbs, which back-alley brewers owe favors to the Scorpion, and which routes the requisition carts take when the official ones fail, until the city inside the castle's walls stops being a problem she cannot solve and becomes instead a ledger she can read."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When the infirmary doors open to admit the first casualty of the day, Kaede's breath catches and her mind empties until she has already moved three times and cannot remember doing it."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Hida Konoye — Hida Konoye taught Kaede that a medic's first duty is to the soldier in front of her, not the war, and in doing so left her unable to refuse the Scorpion when they came asking what medicines the infirmary kept in reserve."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Kaede's eyes move across a room before her body does—tracking the doors, the corners, the places where blood would pool if the walls came down, the way a soldier scans a battlefield from the ridge line.",
+     "accoutrement": "She wears her mentor's copper cuff on her left wrist—a Crab smith's work, too heavy for the bone beneath, and she has not learned to favor her right hand when she reaches for a scalpel, so the weight pulls her cut a hair too shallow when speed matters."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When the infirmary empties at nightfall, Kaede counts the stock against the requisition lists she keeps in three separate ledgers—one for the War College, one for what the infirmary actually holds, one for what the Scorpion expect her to have promised them—and recounts them until the numbers stop contradicting themselves or she runs out of candles."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Soshi Hayami (Scorpion) — Soshi Hayami brings the requisitions Kaede cannot get through official channels, and Kaede has stopped asking what debt accumulates each time she accepts them.\nKaito Ujitsuna (Phoenix) — Kaito Ujitsuna of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Kaede's mother worries that her daughter has learned to see the infirmary as a problem to be solved rather than a duty to be served, and that the maps and ledgers and back-alley routes matter more to her now than the soldiers themselves."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Victory against Invaders",
+     "heritage_table": "Fields of Victory Heritages",
+     "heritage_sub": "5-6 — Tactics",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Kaede will die on requisition duty in the lower city, caught between a Scorpion agent and a War College inspector who arrives unannounced at the merchant's stall, unable to move in either direction without burning the other."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Kitsu Medic School",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 1,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 2,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 57,
+    "glory": 45,
+    "status": 35,
+    "ninjo": "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint.",
+    "giri": "Kaede reports directly to the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
+    "bushido_tenets": {
+     "paramount": "Honor",
+     "less_significant": "Duty and Loyalty"
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 10,
+    "focus": 3,
+    "vigilance": 3,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 4,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Water"
+    },
+    {
+     "name": "Threshold Barrier"
+    },
+    {
+     "name": "Stonewall Tactics"
+    },
+    {
+     "name": "Field Medicine"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Criminal Connections"
+    },
+    {
+     "name": "Disdain for Duty and Loyalty"
+    },
+    {
+     "name": "City Loyalty Castle",
+     "custom": true,
+     "subject": "Loyalty Castle",
+     "text": "You know a particular city extremely well and have extensive practical knowledge about it. You know as much about the city as any lifelong resident, including the popular locations, dangerous or disreputable areas, and open secrets. After performing a check to learn or share knowledge of the particular city (such as a Courtesy [Water] check to befriend a local resident or a Culture [Water] check to find an establishment offering a particular service), you remove 3 strife."
+    },
+    {
+     "name": "Battle Trauma"
+    },
+    {
+     "name": "Daikoku’s Curse"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Tekagi"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Kitsu Medic starting outfit"
+    },
+    {
+     "name": "satchel of medicinal supplies",
+     "custom": true,
+     "text": "From the Kitsu Medic starting outfit"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "She wears her mentor's copper cuff on her left wrist—a Crab smith's work, too heavy for the bone beneath, and she has not learned to favor her right hand when she reaches for a scalpel, so the weight pulls her cut a hair too shallow when speed matters.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
