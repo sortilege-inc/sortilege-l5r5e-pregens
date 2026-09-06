@@ -1,0 +1,407 @@
+{
+ "slug": "bayushi-hirofumi",
+ "name": "Bayushi Hirofumi",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": "Scorpion",
+  "family": "Bayushi",
+  "school": "Bayushi Deathdealer School",
+  "role": "Bushi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Hirofumi's eyes don't track the person speaking to him until they have finished their sentence.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Bayushi Hirofumi",
+  "mode": "core",
+  "clan": "Scorpion",
+  "family": "Bayushi",
+  "school": "Bayushi Deathdealer School",
+  "role": "Bushi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "void",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "games": 1
+  },
+  "distinctions": [
+   "Paragon of Righteousness"
+  ],
+  "adversities": [
+   "Whispers of Cruelty"
+  ],
+  "passions": [
+   "Honest Work"
+  ],
+  "anxieties": [
+   "Ferocity"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Duty and Loyalty",
+   "lesser": "Honor",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Bayushi Hirofumi serves Bayushi Yojiro, the Scorpion Clan's master of the Deathdealer School, and must ensure that any of their assassins who venture into the Shadowlands either return intact or do not return at all.",
+   "ninjo": "Hirofumi wants to know whether the assassins he sends into the Shadowlands die as themselves or come back wrong, and he cannot ask Yojiro without admitting he has already lost track of one.",
+   "standout_quality": "Hirofumi runs through assassination drills alone at night, drilling the same technique until his movements match those of a man who has never hesitated, never flinched, never needed to know the target's name.",
+   "accomplishment": "Hirofumi identified three Deathdealer aspirants corrupted by the Shadowlands on their return to the Scorpion lands and killed them before reporting them lost, preventing Yojiro from unknowingly deploying tainted assassins into the clan's inner courts.",
+   "challenge": "When someone approaches Hirofumi with panic in their voice, they watch him decide whether to believe them, and the delay costs them.",
+   "peace": "Hirofumi strips and cleans each blade after a Shadowlands patrol returns, running his thumb along the edge to test it, and only then permits himself to believe the person still holding it came back whole.",
+   "fear": "When Hirofumi strikes a target in the Shadowlands, he cannot tell afterward whether he stopped because the threat ended or because something in him finally did.",
+   "accoutrement": "Hirofumi carries a small vial of Shadowlands soil sealed in wax, taken from each patrol that returns, kept in a pouch against his ribs; he cannot say what he is testing for or why the collection has stopped growing.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Bayushi Kiku",
+   "lord_gender": "female",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Hirofumi reports to Yojiro that all Deathealers who enter the Shadowlands return or do not, which is true, and carefully does not say which assassins he has stopped sending back at all."
+   },
+   "mentor": {
+    "name": "Soshi Ujimasa",
+    "path": "A",
+    "granted": "Urbane and Worldly",
+    "skill": "",
+    "text": "Bayushi Yojiro taught Hirofumi that a Deathdealer who comes back changed should not come back at all, but Hirofumi has begun killing returners without consulting Yojiro first, and now cannot ask him for guidance without admitting the silence.",
+    "gender": "male",
+    "association": "Scorpion"
+   },
+   "first_impression": "Hirofumi's eyes don't track the person speaking to him until they have finished their sentence.",
+   "stress_reaction": "Hirofumi stops answering direct questions and instead repeats back what he heard, asking if that is correct, until everyone in the room has confirmed the same version of events or admitted they cannot.",
+   "relationships": "Isawa Machiko (Phoenix) — Isawa Machiko of the Phoenix came to observe the Deathdealer program three years ago and saw Hirofumi kill a returner from the Shadowlands before it could report; she has never told Yojiro, and Hirofumi buys her silence by attending her divinations when she asks, pretending to believe the readings differ from what she already decided to tell him.",
+   "people": [
+    {
+     "name": "Isawa Machiko",
+     "gender": "female",
+     "association": "Phoenix",
+     "text": "Isawa Machiko of the Phoenix came to observe the Deathdealer program three years ago and saw Hirofumi kill a returner from the Shadowlands before it could report; she has never told Yojiro, and Hirofumi buys her silence by attending her divinations when she asks, pretending to believe the readings differ from what she already decided to tell him."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Hirofumi's mother has not spoken to him about his work in five years, and when he visits the house she prepares his favorite meal and watches him eat without tasting it herself.",
+    "skill": "games"
+   },
+   "heritage": "A Little Too Close to Heaven",
+   "heritage_table": "courts-of-stone-heritages",
+   "heritage_sub": "7-8 — Gain +1 ^\"Meditation\"",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Hirofumi will die in the Shadowlands because he went back alone to find the one he stopped sending back, and no one will know whether he chose not to return or simply could not."
+  },
+  "starting_item": "Gao",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Sentiment",
+    "Martial Arts [Melee]",
+    "Command",
+    "Tactics",
+    "Courtesy"
+   ],
+   "school.tech.0": [
+    "Striking as Fire"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Hirofumi runs through assassination drills alone at night, drilling the same technique until his movements match those of a man who has never hesitated, never flinched, never needed to know the target's name."
+   ],
+   "giri": [
+    "Bayushi Hirofumi serves Bayushi Yojiro, the Scorpion Clan's master of the Deathdealer School, and must ensure that any of their assassins who venture into the Shadowlands either return intact or do not return at all."
+   ],
+   "ninjo": [
+    "Hirofumi wants to know whether the assassins he sends into the Shadowlands die as themselves or come back wrong, and he cannot ask Yojiro without admitting he has already lost track of one."
+   ],
+   "clan_relationship": [
+    "Hirofumi reports to Yojiro that all Deathealers who enter the Shadowlands return or do not, which is true, and carefully does not say which assassins he has stopped sending back at all."
+   ],
+   "accomplishment": [
+    "Hirofumi identified three Deathdealer aspirants corrupted by the Shadowlands on their return to the Scorpion lands and killed them before reporting them lost, preventing Yojiro from unknowingly deploying tainted assassins into the clan's inner courts."
+   ],
+   "challenge": [
+    "When someone approaches Hirofumi with panic in their voice, they watch him decide whether to believe them, and the delay costs them."
+   ],
+   "peace": [
+    "Hirofumi strips and cleans each blade after a Shadowlands patrol returns, running his thumb along the edge to test it, and only then permits himself to believe the person still holding it came back whole."
+   ],
+   "fear": [
+    "When Hirofumi strikes a target in the Shadowlands, he cannot tell afterward whether he stopped because the threat ended or because something in him finally did."
+   ],
+   "mentor_relationship": [
+    "Soshi Ujimasa taught Hirofumi to sort the corrupted from the whole by smell and bearing, but Ujimasa himself vanished into the Shadowlands five years ago, and Hirofumi has been testing the method alone ever since on people who may not actually be wrong.",
+    "Bayushi Yojiro taught Hirofumi that a Deathdealer who comes back changed should not come back at all, but Hirofumi has begun killing returners without consulting Yojiro first, and now cannot ask him for guidance without admitting the silence."
+   ],
+   "first_impression": [
+    "Hirofumi's eyes don't track the person speaking to him until they have finished their sentence."
+   ],
+   "accoutrement": [
+    "Hirofumi carries a small vial of Shadowlands soil sealed in wax, taken from each patrol that returns, kept in a pouch against his ribs; he cannot say what he is testing for or why the collection has stopped growing."
+   ],
+   "stress_reaction": [
+    "Hirofumi stops answering direct questions and instead repeats back what he heard, asking if that is correct, until everyone in the room has confirmed the same version of events or admitted they cannot."
+   ],
+   "relationship_person": [
+    "Isawa Machiko of the Phoenix came to observe the Deathdealer program three years ago and saw Hirofumi kill a returner from the Shadowlands before it could report; she has never told Yojiro, and Hirofumi buys her silence by attending her divinations when she asks, pretending to believe the readings differ from what she already decided to tell him."
+   ],
+   "parent_opinion": [
+    "Hirofumi's mother has not spoken to him about his work in five years, and when he visits the house she prepares his favorite meal and watches him eat without tasting it herself."
+   ],
+   "death": [
+    "Hirofumi will die in the Shadowlands because he went back alone to find the one he stopped sending back, and no one will know whether he chose not to return or simply could not."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Hirofumi runs through assassination drills alone at night, drilling the same technique until his movements match those of a man who has never hesitated, never flinched, never needed to know the target's name.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Bayushi Hirofumi serves Bayushi Yojiro, the Scorpion Clan's master of the Deathdealer School, and must ensure that any of their assassins who venture into the Shadowlands either return intact or do not return at all.",
+     "lord_name": "Bayushi Kiku"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Hirofumi wants to know whether the assassins he sends into the Shadowlands die as themselves or come back wrong, and he cannot ask Yojiro without admitting he has already lost track of one."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Hirofumi reports to Yojiro that all Deathealers who enter the Shadowlands return or do not, which is true, and carefully does not say which assassins he has stopped sending back at all.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Duty and Loyalty",
+     "tenet_less_significant": "Honor"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Hirofumi identified three Deathdealer aspirants corrupted by the Shadowlands on their return to the Scorpion lands and killed them before reporting them lost, preventing Yojiro from unknowingly deploying tainted assassins into the clan's inner courts."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When someone approaches Hirofumi with panic in their voice, they watch him decide whether to believe them, and the delay costs them."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Hirofumi strips and cleans each blade after a Shadowlands patrol returns, running his thumb along the edge to test it, and only then permits himself to believe the person still holding it came back whole."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When Hirofumi strikes a target in the Shadowlands, he cannot tell afterward whether he stopped because the threat ended or because something in him finally did."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Soshi Ujimasa — Bayushi Yojiro taught Hirofumi that a Deathdealer who comes back changed should not come back at all, but Hirofumi has begun killing returners without consulting Yojiro first, and now cannot ask him for guidance without admitting the silence."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Hirofumi's eyes don't track the person speaking to him until they have finished their sentence.",
+     "accoutrement": "Hirofumi carries a small vial of Shadowlands soil sealed in wax, taken from each patrol that returns, kept in a pouch against his ribs; he cannot say what he is testing for or why the collection has stopped growing."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Hirofumi stops answering direct questions and instead repeats back what he heard, asking if that is correct, until everyone in the room has confirmed the same version of events or admitted they cannot."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Isawa Machiko (Phoenix) — Isawa Machiko of the Phoenix came to observe the Deathdealer program three years ago and saw Hirofumi kill a returner from the Shadowlands before it could report; she has never told Yojiro, and Hirofumi buys her silence by attending her divinations when she asks, pretending to believe the readings differ from what she already decided to tell him."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Hirofumi's mother has not spoken to him about his work in five years, and when he visits the house she prepares his favorite meal and watches him eat without tasting it herself."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "A Little Too Close to Heaven",
+     "heritage_table": "Courts of Stone Heritages",
+     "heritage_sub": "7-8 — Gain +1 ^\"Meditation\"",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Hirofumi will die in the Shadowlands because he went back alone to find the one he stopped sending back, and no one will know whether he chose not to return or simply could not."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Bayushi Deathdealer School",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 3,
+    "water": 1,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 1,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 2,
+     "games": 1,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 49,
+    "status": 40,
+    "ninjo": "Hirofumi wants to know whether the assassins he sends into the Shadowlands die as themselves or come back wrong, and he cannot ask Yojiro without admitting he has already lost track of one.",
+    "giri": "Bayushi Hirofumi serves Bayushi Yojiro, the Scorpion Clan's master of the Deathdealer School, and must ensure that any of their assassins who venture into the Shadowlands either return intact or do not return at all.",
+    "bushido_tenets": {
+     "paramount": "Duty and Loyalty",
+     "less_significant": "Honor"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 4,
+    "focus": 6,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Fire"
+    },
+    {
+     "name": "Assess Strengths"
+    },
+    {
+     "name": "Way of the Scorpion"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Paragon of Righteousness"
+    },
+    {
+     "name": "Whispers of Cruelty"
+    },
+    {
+     "name": "Honest Work"
+    },
+    {
+     "name": "Ferocity"
+    },
+    {
+     "name": "Urbane and Worldly"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Gao"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
