@@ -3238,7 +3238,7 @@
         /* Custom, for the reason the heritage path already gives: the
            compendium holds the stem ("Affinity with [Animal Type]") and not
            the filled wording, so a plain reference resolves to nothing and
-           stops the build. Matsu Kasuga's "Affinity with Felines" is what
+           stops the build. Matsu Rikona's "Affinity with Felines" is what
            caught it. The rules text rides along, because a custom entry
            carries its own.
 

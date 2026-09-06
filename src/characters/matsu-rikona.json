@@ -1,6 +1,6 @@
 {
- "slug": "matsu-kasuga",
- "name": "Matsu Kasuga",
+ "slug": "matsu-rikona",
+ "name": "Matsu Rikona",
  "campaign": "Mask of the Oni",
  "status": null,
  "identity": {
@@ -14,12 +14,12 @@
   "origin_type": null
  },
  "mode": "core",
- "portrait": null,
- "concept": "Kasuga's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
+ "portrait": "src/portraits/matsu-rikona.webp",
+ "concept": "Rikona's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
  "summary": null,
  "notes": "",
  "wizard": {
-  "name": "Matsu Kasuga",
+  "name": "Matsu Rikona",
   "mode": "core",
   "clan": "Lion",
   "family": "Matsu",
@@ -67,12 +67,12 @@
    "skill": "survival"
   },
   "answers": {
-   "giri": "Matsu Kasuga scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not.",
-   "ninjo": "Kasuga seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better.",
-   "standout_quality": "Kasuga volunteers to scout ahead into passages where her teachers said no one should go, and comes back alive when she shouldn't have.",
-   "accomplishment": "Kasuga mapped the eastern blind spot where the Kaiu engineers' foundation calculations repeated the error from the 1063 collapse, and Jirôzaemon changed the Wall's reinforcement schedule before the flaw could kill anyone.",
-   "challenge": "Kasuga sends most of what Vorantis pays her back to the Matsu compound where her mother tends six younger siblings and two cousins orphaned in the Crab wars, leaving her threadbare in the passages where a well-provisioned scout would live.",
-   "peace": "Kasuga spreads maps across the stone table in the Kaiu Wall's map room and traces the Shadowlands passages with a scout's finger, finding where the Crab engineers made the same mistake twice, sixty years apart, and will make it again if no one shows them the pattern.",
+   "giri": "Matsu Rikona scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not.",
+   "ninjo": "Rikona seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better.",
+   "standout_quality": "Rikona volunteers to scout ahead into passages where her teachers said no one should go, and comes back alive when she shouldn't have.",
+   "accomplishment": "Rikona mapped the eastern blind spot where the Kaiu engineers' foundation calculations repeated the error from the 1063 collapse, and Jirôzaemon changed the Wall's reinforcement schedule before the flaw could kill anyone.",
+   "challenge": "Rikona sends most of what Vorantis pays her back to the Matsu compound where her mother tends six younger siblings and two cousins orphaned in the Crab wars, leaving her threadbare in the passages where a well-provisioned scout would live.",
+   "peace": "Rikona spreads maps across the stone table in the Kaiu Wall's map room and traces the Shadowlands passages with a scout's finger, finding where the Crab engineers made the same mistake twice, sixty years apart, and will make it again if no one shows them the pattern.",
    "fear": "Every time she traces the passages in the map room and finds the pattern the Crab engineers missed, she feels the blood-warmth return to her fingertips, and wonders if that recognition — that hunger to see what others cannot — came from the maho-tsukai she used to be, not the scout she claims to be now.",
    "accoutrement": "A flask of unwatered sake, refilled by the map room's stone table, sitting beside her fingertips while she traces the passages that killed the last scouts to walk them.",
    "past": "",
@@ -87,7 +87,7 @@
    "clan_relationship": {
     "path": "B",
     "skill": "games",
-    "text": "Kasuga maps the Wall's blind spots as Vorantis demands, but she pushes past the passages he needs mapped into the ones that will kill her, and Vorantis watches her do it without ordering her back."
+    "text": "Rikona maps the Wall's blind spots as Vorantis demands, but she pushes past the passages he needs mapped into the ones that will kill her, and Vorantis watches her do it without ordering her back."
    },
    "mentor": {
     "name": "Shigetaka",
@@ -98,15 +98,15 @@
     "gender": "male",
     "association": "Mantis"
    },
-   "first_impression": "Kasuga's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
-   "stress_reaction": "Kasuga stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first.",
-   "relationships": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Kasuga maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Vorantis.",
+   "first_impression": "Rikona's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
+   "stress_reaction": "Rikona stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first.",
+   "relationships": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Rikona maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Vorantis.",
    "people": [
     {
      "name": "Kaiu Jirôzaemon",
      "gender": "male",
      "association": "Crab",
-     "text": "Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Kasuga maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in."
+     "text": "Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Rikona maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in."
     },
     {
      "name": "Kitsu Tokuhei",
@@ -116,7 +116,7 @@
     }
    ],
    "parent_opinion": {
-    "description": "Matsu Kasuga's mother counts the coin her daughter sends home against the threadbare state of the scout's kit she arrives in, and says nothing about it to the younger children.",
+    "description": "Matsu Rikona's mother counts the coin her daughter sends home against the threadbare state of the scout's kit she arrives in, and says nothing about it to the younger children.",
     "skill": "performance"
    },
    "heritage": "Associated with a Natural Disaster",
@@ -124,7 +124,7 @@
    "heritage_sub": null,
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Kasuga dies in a passage the maps said was clear, alone, because she stopped trusting the maps and started trusting the hunger instead."
+   "death": "Rikona dies in a passage the maps said was clear, alone, because she stopped trusting the maps and started trusting the hunger instead."
   },
   "starting_item": "Butterfly sword",
   "campaign": "Mask of the Oni",
@@ -153,22 +153,22 @@
   },
   "ai_history": {
    "standout_quality": [
-    "Kasuga volunteers to scout ahead into passages where her teachers said no one should go, and comes back alive when she shouldn't have."
+    "Rikona volunteers to scout ahead into passages where her teachers said no one should go, and comes back alive when she shouldn't have."
    ],
    "giri": [
-    "Matsu Kasuga scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not."
+    "Matsu Rikona scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not."
    ],
    "ninjo": [
-    "Kasuga seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better."
+    "Rikona seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better."
    ],
    "clan_relationship": [
-    "Kasuga maps the Wall's blind spots as Vorantis demands, but she pushes past the passages he needs mapped into the ones that will kill her, and Vorantis watches her do it without ordering her back."
+    "Rikona maps the Wall's blind spots as Vorantis demands, but she pushes past the passages he needs mapped into the ones that will kill her, and Vorantis watches her do it without ordering her back."
    ],
    "challenge": [
-    "Kasuga sends most of what Vorantis pays her back to the Matsu compound where her mother tends six younger siblings and two cousins orphaned in the Crab wars, leaving her threadbare in the passages where a well-provisioned scout would live."
+    "Rikona sends most of what Vorantis pays her back to the Matsu compound where her mother tends six younger siblings and two cousins orphaned in the Crab wars, leaving her threadbare in the passages where a well-provisioned scout would live."
    ],
    "peace": [
-    "Kasuga spreads maps across the stone table in the Kaiu Wall's map room and traces the Shadowlands passages with a scout's finger, finding where the Crab engineers made the same mistake twice, sixty years apart, and will make it again if no one shows them the pattern."
+    "Rikona spreads maps across the stone table in the Kaiu Wall's map room and traces the Shadowlands passages with a scout's finger, finding where the Crab engineers made the same mistake twice, sixty years apart, and will make it again if no one shows them the pattern."
    ],
    "fear": [
     "Every time she traces the passages in the map room and finds the pattern the Crab engineers missed, she feels the blood-warmth return to her fingertips, and wonders if that recognition — that hunger to see what others cannot — came from the maho-tsukai she used to be, not the scout she claims to be now."
@@ -177,26 +177,26 @@
     "Shigetaka taught her to read the Shadowlands' geometry by walking its passages alive, and now she cannot stop walking them even when the maps are done."
    ],
    "first_impression": [
-    "Kasuga's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you."
+    "Rikona's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you."
    ],
    "accoutrement": [
     "A flask of unwatered sake, refilled by the map room's stone table, sitting beside her fingertips while she traces the passages that killed the last scouts to walk them."
    ],
    "stress_reaction": [
-    "Kasuga stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first."
+    "Rikona stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first."
    ],
    "relationship_person": [
-    "Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Kasuga maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.",
+    "Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Rikona maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.",
     "Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Vorantis."
    ],
    "parent_opinion": [
-    "Matsu Kasuga's mother counts the coin her daughter sends home against the threadbare state of the scout's kit she arrives in, and says nothing about it to the younger children."
+    "Matsu Rikona's mother counts the coin her daughter sends home against the threadbare state of the scout's kit she arrives in, and says nothing about it to the younger children."
    ],
    "death": [
-    "Kasuga dies in a passage the maps said was clear, alone, because she stopped trusting the maps and started trusting the hunger instead."
+    "Rikona dies in a passage the maps said was clear, alone, because she stopped trusting the maps and started trusting the hunger instead."
    ],
    "accomplishment": [
-    "Kasuga mapped the eastern blind spot where the Kaiu engineers' foundation calculations repeated the error from the 1063 collapse, and Jirôzaemon changed the Wall's reinforcement schedule before the flaw could kill anyone."
+    "Rikona mapped the eastern blind spot where the Kaiu engineers' foundation calculations repeated the error from the 1063 collapse, and Jirôzaemon changed the Wall's reinforcement schedule before the flaw could kill anyone."
    ]
   }
  },
@@ -206,27 +206,27 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "Kasuga volunteers to scout ahead into passages where her teachers said no one should go, and comes back alive when she shouldn't have.",
+     "stand_out": "Rikona volunteers to scout ahead into passages where her teachers said no one should go, and comes back alive when she shouldn't have.",
      "ring": "void"
     },
     "picks": {}
    },
    "step5": {
     "answers": {
-     "social_giri": "Matsu Kasuga scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not.",
+     "social_giri": "Matsu Rikona scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not.",
      "lord_name": "Matsu Kadiri"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Kasuga seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better."
+     "social_ninjo": "Rikona seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "clan_relations": "Kasuga maps the Wall's blind spots as Vorantis demands, but she pushes past the passages he needs mapped into the ones that will kill her, and Vorantis watches her do it without ordering her back.",
+     "clan_relations": "Rikona maps the Wall's blind spots as Vorantis demands, but she pushes past the passages he needs mapped into the ones that will kill her, and Vorantis watches her do it without ordering her back.",
      "path": "B",
      "skill": "games"
     },
@@ -241,19 +241,19 @@
    },
    "step9": {
     "answers": {
-     "success": "Kasuga mapped the eastern blind spot where the Kaiu engineers' foundation calculations repeated the error from the 1063 collapse, and Jirôzaemon changed the Wall's reinforcement schedule before the flaw could kill anyone."
+     "success": "Rikona mapped the eastern blind spot where the Kaiu engineers' foundation calculations repeated the error from the 1063 collapse, and Jirôzaemon changed the Wall's reinforcement schedule before the flaw could kill anyone."
     },
     "picks": {}
    },
    "step10": {
     "answers": {
-     "difficulty": "Kasuga sends most of what Vorantis pays her back to the Matsu compound where her mother tends six younger siblings and two cousins orphaned in the Crab wars, leaving her threadbare in the passages where a well-provisioned scout would live."
+     "difficulty": "Rikona sends most of what Vorantis pays her back to the Matsu compound where her mother tends six younger siblings and two cousins orphaned in the Crab wars, leaving her threadbare in the passages where a well-provisioned scout would live."
     },
     "picks": {}
    },
    "step11": {
     "answers": {
-     "calms": "Kasuga spreads maps across the stone table in the Kaiu Wall's map room and traces the Shadowlands passages with a scout's finger, finding where the Crab engineers made the same mistake twice, sixty years apart, and will make it again if no one shows them the pattern."
+     "calms": "Rikona spreads maps across the stone table in the Kaiu Wall's map room and traces the Shadowlands passages with a scout's finger, finding where the Crab engineers made the same mistake twice, sixty years apart, and will make it again if no one shows them the pattern."
     },
     "picks": {}
    },
@@ -271,26 +271,26 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "Kasuga's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
+     "first_sight": "Rikona's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
      "accoutrement": "A flask of unwatered sake, refilled by the map room's stone table, sitting beside her fingertips while she traces the passages that killed the last scouts to walk them."
     },
     "picks": {}
    },
    "step15": {
     "answers": {
-     "stress": "Kasuga stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first."
+     "stress": "Rikona stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first."
     },
     "picks": {}
    },
    "step16": {
     "answers": {
-     "relations": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Kasuga maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Vorantis."
+     "relations": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Rikona maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Vorantis."
     },
     "picks": {}
    },
    "step17": {
     "answers": {
-     "parents_pov": "Matsu Kasuga's mother counts the coin her daughter sends home against the threadbare state of the scout's kit she arrives in, and says nothing about it to the younger children."
+     "parents_pov": "Matsu Rikona's mother counts the coin her daughter sends home against the threadbare state of the scout's kit she arrives in, and says nothing about it to the younger children."
     },
     "picks": {}
    },
@@ -314,7 +314,7 @@
    },
    "step20": {
     "answers": {
-     "death": "Kasuga dies in a passage the maps said was clear, alone, because she stopped trusting the maps and started trusting the hunger instead."
+     "death": "Rikona dies in a passage the maps said was clear, alone, because she stopped trusting the maps and started trusting the hunger instead."
     },
     "picks": {}
    }
@@ -374,8 +374,8 @@
     "honor": 52,
     "glory": 44,
     "status": 35,
-    "ninjo": "Kasuga seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better.",
-    "giri": "Matsu Kasuga scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not.",
+    "ninjo": "Rikona seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better.",
+    "giri": "Matsu Rikona scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not.",
     "bushido_tenets": {
      "paramount": "Honor",
      "less_significant": "Compassion"

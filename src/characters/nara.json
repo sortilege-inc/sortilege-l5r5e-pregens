@@ -14,7 +14,7 @@
   "origin_type": "ronin"
  },
  "mode": "wow",
- "portrait": null,
+ "portrait": "src/portraits/nara.webp",
  "concept": null,
  "summary": null,
  "notes": "",

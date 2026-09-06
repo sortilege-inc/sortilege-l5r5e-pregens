@@ -166,7 +166,7 @@
     "Daidoji Iron Warrior School": "Daidoji Emon — male, Daidoji. Pencilled premise: A Crane sent to hold a line the Crab abandoned, too polite to put it that way, and the only one who has read the Kaiu's report and believes it.",
     "Hiruma Scout School": "Hiruma Namiko — female, Hiruma. Pencilled premise: The scout guiding the expedition to a castle her family lost, who has been to its walls twice and inside neither time.",
     "Kaiu Engineer School": "Kaiu Anzu — female, Kaiu. Pencilled premise: Sent to determine whether Shiro Hiruma can be held again, and privately certain of the answer before setting out.",
-    "Matsu Berserker School": "Matsu Kasuga — female, Matsu. Pencilled premise: Here to die well, and disappointed by how much walking is involved.",
+    "Matsu Berserker School": "Matsu Rikona — female, Matsu; built as Kasuga and renamed 2026-09-06. Pencilled premise: Here to die well, and disappointed by how much walking is involved.",
     "Moto Avenger School": "Moto Azumamaro — male, Moto. Pencilled premise: A Moto who has seen the Taint before, in his own people, and volunteered so someone present would recognise it early.",
     "Nezumi Tattered Ear Explorer Tradition": "Nara — female, no family. Pencilled premise: A Tattered Ear scout who remembers this route from before the humans had a name for it, and expects to be believed.",
     "Shiba Guardian School": "Shiba Yoshiteru — male, Shiba. Pencilled premise: A yōjimbō whose charge is the party's shugenja, and who has already decided which of them he cannot save.",
@@ -792,6 +792,7 @@
   "doji-sayaka": "src/portraits/doji-sayaka.webp",
   "doji-setsuna": "src/portraits/doji-setsuna.webp",
   "hiruma-kaede": "src/portraits/hiruma-kaede.png",
+  "hiruma-namiko": "src/portraits/hiruma-namiko.webp",
   "ichiro-tsutomu": "src/portraits/ichiro-tsutomu.webp",
   "ikoma-no-hosokawa-ota": "src/portraits/ikoma-no-hosokawa-ota.png",
   "isawa-chisato": "src/portraits/isawa-chisato.webp",
@@ -803,15 +804,20 @@
   "kitsuki-nagiko": "src/portraits/kitsuki-nagiko.webp",
   "kuni-ryosei": "src/portraits/kuni-ryosei.webp",
   "kurosawa-genzo": "src/portraits/kurosawa-genzo.webp",
+  "matsu-rikona": "src/portraits/matsu-rikona.webp",
+  "moto-azumamaro": "src/portraits/moto-azumamaro.webp",
+  "nara": "src/portraits/nara.webp",
   "nasu-kogo": "src/portraits/nasu-kogo.png",
   "sanpei": "src/portraits/sanpei.webp",
   "shinjo-anzu": "src/portraits/shinjo-anzu.webp",
   "shinjo-harunobu": "src/portraits/shinjo-harunobu.webp",
   "shosuro-hisano": "src/portraits/shosuro-hisano.webp",
+  "teruyo": "src/portraits/teruyo.webp",
   "togashi-norikage": "src/portraits/togashi-norikage.webp",
   "togashi-rensho": "src/portraits/togashi-rensho.webp",
   "tonbo-asahi": "src/portraits/tonbo-asahi.webp",
-  "tsume-kunimichi": "src/portraits/tsume-kunimichi.png"
+  "tsume-kunimichi": "src/portraits/tsume-kunimichi.png",
+  "yogo-yasu": "src/portraits/yogo-yasu.webp"
  },
  "derive_tiers": [
   "doji-setsuna"
