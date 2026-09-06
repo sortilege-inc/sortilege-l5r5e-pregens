@@ -272,7 +272,8 @@
      "legacy_inverted": false,
      "heritage_name": "A Little Too Close to Heaven",
      "heritage_table": "Courts of Stone Heritages",
-     "heritage_sub": "1-2 — Gain +1 ^\"Government\""
+     "heritage_sub": "1-2 — Gain +1 ^\"Government\"",
+     "heritage_applied": true
     },
     "picks": {}
    },

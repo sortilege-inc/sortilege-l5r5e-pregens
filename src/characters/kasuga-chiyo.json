@@ -42,7 +42,8 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "She certifies the harbor fund's ledgers while knowing exactly which entries are false, and has never corrected them."
+     "clan_relations": "She certifies the harbor fund's ledgers while knowing exactly which entries are false, and has never corrected them.",
+     "path": "A"
     },
     "picks": {}
    },

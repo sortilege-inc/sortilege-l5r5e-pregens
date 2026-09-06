@@ -374,6 +374,30 @@ def main():
                               "text": c["text"], "defined": True})
         nodes.extend(npcs[k] for k in sorted(npcs))
 
+        # The people an open-ended peculiarity names. "Ally [Name]" is a
+        # person the character has, and the Creator now asks who: the subject
+        # goes into the peculiarity's name the way the game writes it, and the
+        # line about them makes them somebody to draw rather than a word in a
+        # list.
+        for d in members:
+            mine = "pc:" + d["slug"]
+            for e in (d["tiers"][-1].get("peculiarities") or []):
+                who = (e.get("subject") or "").strip()
+                if not who:
+                    continue
+                key = "npc:" + fold(who).replace(" ", "-")
+                n = npcs.setdefault(key, {"id": key, "kind": "npc", "name": who,
+                                          "affiliation": None, "named_by": []})
+                if d["name"] not in n["named_by"]:
+                    n["named_by"].append(d["name"])
+                bare = e["name"][:-len(who)].strip() if e["name"].endswith(who) \
+                    else e["name"]
+                edges.append({"a": mine, "b": key, "kind": "knows",
+                              "text": (bare + " — " + e["subject_note"]
+                                       if e.get("subject_note") else bare),
+                              "defined": True})
+        nodes.extend(npcs[k] for k in sorted(npcs) if npcs[k] not in nodes)
+
         # Every pair of PCs, written up or not. Two sources can describe a pair
         # — a Cross-character note, and one of them naming the other at
         # question 16 — and either counts as written.

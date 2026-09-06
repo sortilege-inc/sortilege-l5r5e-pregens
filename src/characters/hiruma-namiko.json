@@ -1,0 +1,421 @@
+{
+ "slug": "hiruma-namiko",
+ "name": "Hiruma Namiko",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": "Crab",
+  "family": "Hiruma",
+  "school": "Hiruma Scout School",
+  "role": null,
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "When Namiko sits to eat with others, she sets her portion aside and eats theirs first, tasting each one while watching their faces—a scout's habit that makes the other scouts uncomfortable because she never explains it and never seems to taste anything herself.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Hiruma Namiko",
+  "mode": "core",
+  "clan": "Crab",
+  "family": "Hiruma",
+  "school": "Hiruma Scout School",
+  "role": null,
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "tactics": 1,
+   "medicine": 1,
+   "skulduggery": 0,
+   "survival": 1,
+   "ranged": 1
+  },
+  "distinctions": [
+   "Paragon of Compassion"
+  ],
+  "adversities": [
+   "Lackluster"
+  ],
+  "passions": [
+   "Stargazing"
+  ],
+  "anxieties": [
+   "Obtuse"
+  ],
+  "bushido": {
+   "paramount": "Courage",
+   "lesser": "Courtesy",
+   "attitude": "B",
+   "skill": "survival"
+  },
+  "answers": {
+   "giri": "Namiko reports daily to Hiruma Kaiten on the state of the castle's approaches and what the scouts have found, though he has not yet asked her to lead an expedition back inside.",
+   "ninjo": "Namiko wants to walk inside the castle's walls and see what is still standing there, and she has already turned down two chances to ask Kaiten for the order that would let her go.",
+   "standout_quality": "Namiko keeps the expedition's supplies sorted and rotated through the night watches while others sleep, and when asked why she does work no one assigned her, she says the castle will still be there tomorrow.",
+   "accomplishment": "Namiko sorted the expedition's provisions by expiration and weight while Kaiten slept, then when he woke asked him nothing, and he ordered her inside the castle the next morning because he had seen what she already knew.",
+   "challenge": "Namiko's reports to Kaiten grow shorter each week, because she has started believing that what she failed to notice yesterday she will fail to notice again tomorrow.",
+   "peace": "She lies on the castle's outer wall at midnight with the charts spread beside her and checks each star against the positions she marked the week before, because the heavens have not moved an inch while everything else deteriorates.",
+   "fear": "Namiko marks the same three sections of perimeter chart deteriorating week after week and cannot tell whether the castle is crumbling or she has stopped noticing what changes.",
+   "accoutrement": "She oils the expedition's boot leather every third night and sets the boots in pairs outside each scout's tent, but no one has ever thanked her for it or asked her to stop.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Hiruma Kaneie",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "B",
+    "skill": "tactics",
+    "text": "Namiko checks the perimeter charts against the previous week's and finds herself marking the same deterioration in the same sections, which means either nothing has changed or she has stopped seeing what is actually there."
+   },
+   "mentor": {
+    "name": "Daidoji Katsuhisa",
+    "path": "B",
+    "granted": "Fear of Poison",
+    "skill": "ranged",
+    "text": "Daidoji Katsuhisa taught her to taste for poison in every cup by making her taste first, and she has never told him that she stopped trusting her own tongue three years ago.",
+    "gender": "male",
+    "association": "Crane"
+   },
+   "first_impression": "When Namiko sits to eat with others, she sets her portion aside and eats theirs first, tasting each one while watching their faces—a scout's habit that makes the other scouts uncomfortable because she never explains it and never seems to taste anything herself.",
+   "stress_reaction": "When her reports to Kaiten fall below five sentences, she stops eating altogether until she has watched someone else finish a meal she prepared without falling ill.",
+   "relationships": "Soshi Machi (Scorpion) — Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight.\nKakita Den (Crane) — Namiko trades Kakita Den her scout's observations of the castle's deterioration for his sketches of its original architecture, then spends the next morning comparing what he drew to what still stands, trying to decide whether she is watching it fall or forgetting how to see.",
+   "people": [
+    {
+     "name": "Soshi Machi",
+     "gender": "male",
+     "association": "Scorpion",
+     "text": "Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight."
+    },
+    {
+     "name": "Kakita Den",
+     "gender": "female",
+     "association": "Crane",
+     "text": "Namiko trades Kakita Den her scout's observations of the castle's deterioration for his sketches of its original architecture, then spends the next morning comparing what he drew to what still stands, trying to decide whether she is watching it fall or forgetting how to see."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Hiruma Namiko's mother says she has always prepared for the day she would not come home, the way other daughters prepare their dowries, and now that day may have arrived.",
+    "skill": "medicine"
+   },
+   "heritage": "Vengeance for the Fallen",
+   "heritage_table": "shadowlands-heritages",
+   "heritage_sub": "1-3 — Fitness",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Namiko dies on the castle wall at dawn, having checked the same three sections of perimeter chart against the stars one final time and found nothing changed, and she does not regret it because she was finally certain she had seen everything there was to see."
+  },
+  "starting_item": "Shuriken",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Air"
+   ],
+   "school.starting_skills": [
+    "Skulduggery",
+    "Survival",
+    "Martial Arts [Ranged]",
+    "Fitness",
+    "Martial Arts [Melee]"
+   ],
+   "school.tech.0": [
+    "Pelting Hail Style"
+   ],
+   "school.tech.1": [
+    "Striking as Air"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Namiko keeps the expedition's supplies sorted and rotated through the night watches while others sleep, and when asked why she does work no one assigned her, she says the castle will still be there tomorrow."
+   ],
+   "giri": [
+    "Namiko reports daily to Hiruma Kaiten on the state of the castle's approaches and what the scouts have found, though he has not yet asked her to lead an expedition back inside."
+   ],
+   "ninjo": [
+    "Namiko wants to walk inside the castle's walls and see what is still standing there, and she has already turned down two chances to ask Kaiten for the order that would let her go."
+   ],
+   "clan_relationship": [
+    "Namiko checks the perimeter charts against the previous week's and finds herself marking the same deterioration in the same sections, which means either nothing has changed or she has stopped seeing what is actually there."
+   ],
+   "accomplishment": [
+    "Namiko sorted the expedition's provisions by expiration and weight while Kaiten slept, then when he woke asked him nothing, and he ordered her inside the castle the next morning because he had seen what she already knew."
+   ],
+   "challenge": [
+    "Namiko's reports to Kaiten grow shorter each week, because she has started believing that what she failed to notice yesterday she will fail to notice again tomorrow."
+   ],
+   "peace": [
+    "She lies on the castle's outer wall at midnight with the charts spread beside her and checks each star against the positions she marked the week before, because the heavens have not moved an inch while everything else deteriorates."
+   ],
+   "fear": [
+    "Namiko marks the same three sections of perimeter chart deteriorating week after week and cannot tell whether the castle is crumbling or she has stopped noticing what changes."
+   ],
+   "mentor_relationship": [
+    "Daidoji Katsuhisa taught her to taste for poison in every cup by making her taste first, and she has never told him that she stopped trusting her own tongue three years ago."
+   ],
+   "first_impression": [
+    "Her fingers move across the perimeter charts even when she's not looking at them, tracing the same deteriorated sections week after week as though correcting an error that will not stay corrected.",
+    "When Namiko sits to eat with others, she sets her portion aside and eats theirs first, tasting each one while watching their faces—a scout's habit that makes the other scouts uncomfortable because she never explains it and never seems to taste anything herself."
+   ],
+   "accoutrement": [
+    "She oils the expedition's boot leather every third night and sets the boots in pairs outside each scout's tent, but no one has ever thanked her for it or asked her to stop."
+   ],
+   "stress_reaction": [
+    "When her reports to Kaiten fall below five sentences, she stops eating altogether until she has watched someone else finish a meal she prepared without falling ill."
+   ],
+   "relationship_person": [
+    "Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight.",
+    "Namiko trades Kakita Den her scout's observations of the castle's deterioration for his sketches of its original architecture, then spends the next morning comparing what he drew to what still stands, trying to decide whether she is watching it fall or forgetting how to see."
+   ],
+   "parent_opinion": [
+    "Hiruma Namiko's mother says she has always prepared for the day she would not come home, the way other daughters prepare their dowries, and now that day may have arrived."
+   ],
+   "death": [
+    "Namiko dies on the castle wall at dawn, having checked the same three sections of perimeter chart against the stars one final time and found nothing changed, and she does not regret it because she was finally certain she had seen everything there was to see."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Namiko keeps the expedition's supplies sorted and rotated through the night watches while others sleep, and when asked why she does work no one assigned her, she says the castle will still be there tomorrow.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Namiko reports daily to Hiruma Kaiten on the state of the castle's approaches and what the scouts have found, though he has not yet asked her to lead an expedition back inside.",
+     "lord_name": "Hiruma Kaneie"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Namiko wants to walk inside the castle's walls and see what is still standing there, and she has already turned down two chances to ask Kaiten for the order that would let her go."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Namiko checks the perimeter charts against the previous week's and finds herself marking the same deterioration in the same sections, which means either nothing has changed or she has stopped seeing what is actually there."
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Namiko sorted the expedition's provisions by expiration and weight while Kaiten slept, then when he woke asked him nothing, and he ordered her inside the castle the next morning because he had seen what she already knew."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Namiko's reports to Kaiten grow shorter each week, because she has started believing that what she failed to notice yesterday she will fail to notice again tomorrow."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "She lies on the castle's outer wall at midnight with the charts spread beside her and checks each star against the positions she marked the week before, because the heavens have not moved an inch while everything else deteriorates."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Namiko marks the same three sections of perimeter chart deteriorating week after week and cannot tell whether the castle is crumbling or she has stopped noticing what changes."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Daidoji Katsuhisa — Daidoji Katsuhisa taught her to taste for poison in every cup by making her taste first, and she has never told him that she stopped trusting her own tongue three years ago."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "When Namiko sits to eat with others, she sets her portion aside and eats theirs first, tasting each one while watching their faces—a scout's habit that makes the other scouts uncomfortable because she never explains it and never seems to taste anything herself.",
+     "accoutrement": "She oils the expedition's boot leather every third night and sets the boots in pairs outside each scout's tent, but no one has ever thanked her for it or asked her to stop."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When her reports to Kaiten fall below five sentences, she stops eating altogether until she has watched someone else finish a meal she prepared without falling ill."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Soshi Machi (Scorpion) — Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight.\nKakita Den (Crane) — Namiko trades Kakita Den her scout's observations of the castle's deterioration for his sketches of its original architecture, then spends the next morning comparing what he drew to what still stands, trying to decide whether she is watching it fall or forgetting how to see."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Hiruma Namiko's mother says she has always prepared for the day she would not come home, the way other daughters prepare their dowries, and now that day may have arrived."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Vengeance for the Fallen",
+     "heritage_table": "Shadowlands Heritages",
+     "heritage_sub": "1-3 — Fitness",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Namiko dies on the castle wall at dawn, having checked the same three sections of perimeter chart against the stars one final time and found nothing changed, and she does not regret it because she was finally certain she had seen everything there was to see."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Hiruma Scout School",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 2,
+    "fire": 1,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 3,
+     "melee": 1,
+     "ranged": 2,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 2,
+     "survival": 3
+    }
+   },
+   "social": {
+    "honor": 40,
+    "glory": 39,
+    "status": 30,
+    "ninjo": "Namiko wants to walk inside the castle's walls and see what is still standing there, and she has already turned down two chances to ask Kaiten for the order that would let her go.",
+    "giri": "Namiko reports daily to Hiruma Kaiten on the state of the castle's approaches and what the scouts have found, though he has not yet asked her to lead an expedition back inside.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Courtesy"
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 3,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Pelting Hail Style"
+    },
+    {
+     "name": "Striking as Air"
+    },
+    {
+     "name": "Flickering Flame Skirmisher"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Paragon of Compassion"
+    },
+    {
+     "name": "Lackluster"
+    },
+    {
+     "name": "Stargazing"
+    },
+    {
+     "name": "Obtuse"
+    },
+    {
+     "name": "Fear of Poison"
+    },
+    {
+     "name": "Haunting"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Shuriken"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

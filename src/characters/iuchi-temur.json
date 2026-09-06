@@ -208,7 +208,8 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "Temur reports what the Dragon's healers tell him rather than what he observes, which keeps his daimyō satisfied but means he cannot warn the Unicorn if the affliction truly spreads."
+     "clan_relations": "Temur reports what the Dragon's healers tell him rather than what he observes, which keeps his daimyō satisfied but means he cannot warn the Unicorn if the affliction truly spreads.",
+     "path": "A"
     },
     "picks": {}
    },
@@ -280,7 +281,8 @@
      "legacy_inverted": false,
      "heritage_name": "Heart of the Horse",
      "heritage_table": "New Samurai Heritages Table",
-     "heritage_sub": null
+     "heritage_sub": null,
+     "heritage_applied": true
     },
     "picks": {}
    },

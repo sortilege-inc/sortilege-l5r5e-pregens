@@ -214,7 +214,8 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "Emon defers to Kenshin's orders with perfect courtesy while privately convinced that every strategy Kenshin approves is built on incomplete information."
+     "clan_relations": "Emon defers to Kenshin's orders with perfect courtesy while privately convinced that every strategy Kenshin approves is built on incomplete information.",
+     "path": "A"
     },
     "picks": {}
    },
@@ -286,7 +287,8 @@
      "legacy_inverted": false,
      "heritage_name": "Triumph During Gempuku",
      "heritage_table": "Courts of Stone Heritages",
-     "heritage_sub": null
+     "heritage_sub": null,
+     "heritage_applied": true
     },
     "picks": {}
    },

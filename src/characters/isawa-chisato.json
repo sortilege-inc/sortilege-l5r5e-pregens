@@ -215,7 +215,8 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "Isawa Tetsuya, a scholar three generations removed from the priesthood, questions texts that Chisato has been taught to defend as unassailable, and she cannot decide whether to report his work or to read it."
+     "clan_relations": "Isawa Tetsuya, a scholar three generations removed from the priesthood, questions texts that Chisato has been taught to defend as unassailable, and she cannot decide whether to report his work or to read it.",
+     "path": "A"
     },
     "picks": {}
    },
@@ -287,7 +288,8 @@
      "legacy_inverted": false,
      "heritage_name": "Spirit of the Phoenix",
      "heritage_table": "New Samurai Heritages (Celestial Realms)",
-     "heritage_sub": "9-10 — ^\"Famously Wealthy\""
+     "heritage_sub": "9-10 — ^\"Famously Wealthy\"",
+     "heritage_applied": true
     },
     "picks": {}
    },

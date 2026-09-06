@@ -42,7 +42,8 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "She follows the Kitsuki method so precisely that other clans' magistrates treat her findings as foreign law rather than evidence, which means she files everything anyway and lets the Emerald Champion decide what Rokugan believes."
+     "clan_relations": "She follows the Kitsuki method so precisely that other clans' magistrates treat her findings as foreign law rather than evidence, which means she files everything anyway and lets the Emerald Champion decide what Rokugan believes.",
+     "path": "A"
     },
     "picks": {}
    },

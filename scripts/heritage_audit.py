@@ -133,15 +133,37 @@ def main():
         mods = {k.lower(): int(re.sub(r"[^\-0-9]", "", v))
                 for k, v in (entry.get("modifiers") or {}).items()
                 if k.lower() in ("honor", "glory", "status")}
-        done = bool(ans.get("heritage_applied"))
         tier = doc["tiers"][0]
+        # Judged on evidence, not on the flag alone. The flag is only ever set
+        # by this script or by the Creator's export, and for a while the
+        # Creator folded every grant into its numbers without setting it -- so
+        # a flag check on its own called nine finished characters "NOT
+        # APPLIED", and --apply would have handed each of them a second
+        # helping of the same modifiers. Two things stand in for the flag:
+        #
+        #   a granted peculiarity already on the record, which is the grant
+        #   itself, visible; and
+        #
+        #   the absence of a foundry_id, which means the Creator built this
+        #   character rather than Foundry, and the current Creator always
+        #   folds question 18 in.
+        held = {norm(p["name"]) for p in tier["peculiarities"]}
+        granted_present = bool(settled["peculiarities"]) and all(
+            norm(p) in held for p in settled["peculiarities"])
+        from_creator = not any(t.get("foundry_id") for t in doc["tiers"])
+        done = bool(ans.get("heritage_applied")) or granted_present \
+            or from_creator
+        why = ("flag" if ans.get("heritage_applied")
+               else "the grant is on the record" if granted_present
+               else "built in the Creator, which folds it in" if from_creator
+               else None)
 
         bits = [f"{k} {v:+d}" for k, v in sorted(mods.items())]
         bits += [f"{sk} +{n}" for sk, n in sorted(settled["skills"].items())]
         bits += settled["peculiarities"]
         print(f"{doc['slug']:<26} {entry['name']}")
         print(f"    settled by the dice: {', '.join(bits) or 'nothing'}"
-              f"   [{'applied' if done else 'NOT APPLIED'}]")
+              f"   [{'applied — ' + why if done else 'NOT APPLIED'}]")
         if owed:
             nowed += 1
             for o in owed:
@@ -156,7 +178,6 @@ def main():
             if not g:
                 sys.exit(f"{doc['slug']}: {sk!r} is not a skill in any group")
             tier["skills"][g][sk] = (tier["skills"][g].get(sk) or 0) + n
-        held = {norm(p["name"]) for p in tier["peculiarities"]}
         for p in settled["peculiarities"]:
             if norm(p) not in held:
                 tier["peculiarities"].append({"name": p})

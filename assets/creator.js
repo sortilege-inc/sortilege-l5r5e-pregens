@@ -423,6 +423,13 @@
       rings: { air: 1, earth: 1, fire: 1, water: 1, "void": 1 },
       skills: {},
       distinctions: [], adversities: [], passions: [], anxieties: [],
+      /* An open-ended peculiarity names somebody or something: "Ally [Name]",
+         "Blackmailed by [Name]", "Haunting" — the catalog keeps the bracket
+         and the game expects it filled in. Keyed by the entry's normalised
+         name, each holds the subject and, where the subject is a person, a
+         line saying who they are so they can be a person on the relationship
+         map rather than a word in a list. */
+      pec_subjects: {},
       bushido: { paramount: null, lesser: null, attitude: null, skill: null },
       answers: {
         giri: "", ninjo: "", standout_quality: "",
@@ -3045,6 +3052,18 @@
     if (leg) byName[normName(leg.name)] = leg;
     return heldPeculiarities().map(function (n) {
       var p = byName[normName(n)];
+      /* An open-ended entry the player has named goes out under its filled
+         name, the way the game writes it and the way a heritage-granted one
+         already did. Unnamed it stays bare, which is what "Ally" and "Passion
+         for" on two finished characters are: the question was never asked. */
+      var sub = pecSubject(n);
+      if (sub && sub.subject) {
+        // the subject is kept beside the filled name, so a consumer does not
+        // have to work out which part of "Ally Hida Sadao" is the person
+        var o2 = { name: pecFilled(n, sub.subject), subject: sub.subject };
+        if (sub.who) o2.subject_note = sub.who;
+        return o2;
+      }
       if (!p || !p.custom) return { name: n };
       var o = { name: p.name, custom: true };
       if (p.text) o.text = p.text;
@@ -3231,6 +3250,32 @@
           '<button type="button" class="pec-more" data-u="' + esc(e.uuid) + '"' +
             ' aria-expanded="' + (open[e.uuid] ? "true" : "false") + '">' +
             (open[e.uuid] ? "Hide" : "Text") + "</button>" +
+          /* An open-ended entry that has been chosen asks who it is about.
+             Two fields, because "Ally" alone is not a relationship: the name
+             goes into the peculiarity as the game writes it, and the line
+             about them makes the person real enough to appear on the
+             relationship map. */
+          (active && e.clan
+            ? (function () {
+                var sub = pecSubject(e.name) || {};
+                var isPerson = /name|person|ally|enem|rival|lord|patron/i.test(e.clan);
+                return '<div class="pec-subject">' +
+                  '<label>' + esc(cap(e.clan)) +
+                    '<input type="text" class="pec-sub" data-u="' + esc(e.uuid) +
+                    '" value="' + esc(sub.subject || "") +
+                    '" placeholder="' + esc(e.clan) + '"></label>' +
+                  '<label>' + (isPerson ? "Who are they?" : "What is it?") +
+                    '<input type="text" class="pec-who" data-u="' + esc(e.uuid) +
+                    '" value="' + esc(sub.who || "") +
+                    '" placeholder="one line — enough to play them"></label>' +
+                  (sub.subject
+                    ? '<p class="pec-src">Recorded as <strong>' +
+                      esc(pecFilled(e.name, sub.subject)) + "</strong>.</p>"
+                    : '<p class="pec-src">Unnamed, this records as <strong>' +
+                      esc(pecFilled(e.name, "")) + "</strong> and names nobody.</p>") +
+                  "</div>";
+              }())
+            : "") +
           (open[e.uuid]
             ? '<div class="pec-text">' +
               (t.via
@@ -3245,6 +3290,33 @@
           "</div>";
       }).join("") || '<p class="muted small">Nothing matches.</p>';
 
+      Array.prototype.forEach.call(list.querySelectorAll(".pec-sub, .pec-who"),
+        function (inp) {
+          inp.addEventListener("input", function () {
+            var row = inp.closest(".pec");
+            var e = CATALOG.filter(function (x) {
+              return x.uuid === inp.getAttribute("data-u");
+            })[0];
+            if (!e) return;
+            var subEl = row.querySelector(".pec-sub");
+            var whoEl = row.querySelector(".pec-who");
+            setPecSubject(e.name, subEl ? subEl.value : "",
+                          whoEl ? whoEl.value : "");
+            save();
+            /* Updated in place rather than by redrawing the list, which would
+               rebuild this input and take the cursor out of it mid-word. */
+            var hint = row.querySelector(".pec-src");
+            var sub2 = pecSubject(e.name);
+            if (hint) {
+              hint.innerHTML = sub2 && sub2.subject
+                ? "Recorded as <strong>" + esc(pecFilled(e.name, sub2.subject)) +
+                  "</strong>."
+                : "Unnamed, this records as <strong>" +
+                  esc(pecFilled(e.name, "")) + "</strong> and names nobody.";
+            }
+            renderWip();
+          });
+        });
       Array.prototype.forEach.call(list.querySelectorAll(".pec-more"), function (b) {
         b.addEventListener("click", function () {
           var u = b.getAttribute("data-u");
@@ -3287,6 +3359,25 @@
       if (row) row.scrollIntoView({ block: "center" });
     });
     draw();
+  }
+
+  /* "Ally [Name]" plus "Doji Kenzaburo" reads "Ally Doji Kenzaburo" — the
+     shape heritageGrants() has always produced for a granted open-ended entry
+     ("Support of the Kakita Dueling Academy"), so a picked one matches it. */
+  function pecFilled(name, subject) {
+    var bare = String(name || "").replace(/\s*\[[^\]]*\]\s*$/, "").trim();
+    subject = String(subject || "").trim();
+    return subject ? bare + " " + subject : bare;
+  }
+
+  function pecSubject(name) {
+    return C.pec_subjects[normName(name)] || null;
+  }
+
+  function setPecSubject(name, subject, who) {
+    var k = normName(name);
+    if (!subject && !who) { delete C.pec_subjects[k]; return; }
+    C.pec_subjects[k] = { name: name, subject: subject || "", who: who || "" };
   }
 
   function peculiarityStep(kind, listKey) {
@@ -5352,7 +5443,14 @@
           // only inside the prose. Foundry has no key for it either.
           step5: { answers: { social_giri: a.giri, lord_name: a.lord_name }, picks: {} },
           step6: { answers: { social_ninjo: a.ninjo }, picks: {} },
-          step7: { answers: { clan_relations: a.clan_relationship.text }, picks: {} },
+          /* The path and the skill are answers, not scratch state: path A
+             grants +5 glory in computed(), and writing only the prose left
+             every record unable to reproduce its own glory. Seven of the
+             twelve characters made here are 5 higher than their family and
+             heritage account for, with nothing on the record to say why. */
+          step7: { answers: { clan_relations: a.clan_relationship.text,
+                              path: a.clan_relationship.path,
+                              skill: a.clan_relationship.skill }, picks: {} },
           step8: { answers: { tenet_paramount: C.bushido.paramount,
                               tenet_less_significant: C.bushido.lesser }, picks: {} },
           // Questions 9 to 12 each ask for a narrative answer beside their
@@ -5378,7 +5476,13 @@
           step15: { answers: { stress: a.stress_reaction }, picks: {} },
           step16: { answers: { relations: a.relationships }, picks: {} },
           step17: { answers: { parents_pov: a.parent_opinion.description }, picks: {} },
-          step18: { answers: {
+          /* heritage_applied records that question 18's modifiers, skills and
+           granted peculiarities are already in the numbers above --
+           heritageGrants() folds them into computed(). Without it,
+           scripts/heritage_audit.py judges from the flag alone, called every
+           character made here "NOT APPLIED", and --apply would have handed
+           each of them a second helping of the same modifiers. */
+        step18: { answers: {
             // which door out of question 18 was taken
             legacy: a.legacy || null,
             legacy_inverted: !!a.legacy_inverted,
@@ -5388,7 +5492,9 @@
             heritage_name: hasLegacy() ? null : a.heritage,
             heritage_table: hasLegacy() ? null
               : ((HERITAGES[a.heritage_table] || {}).name || a.heritage_table),
-            heritage_sub: hasLegacy() ? null : a.heritage_sub
+            heritage_sub: hasLegacy() ? null : a.heritage_sub,
+            // the effects are in the numbers above; see the note on step18
+            heritage_applied: hasLegacy() ? false : !!a.heritage
           }, picks: heritagePicks() },
           step20: { answers: { death: a.death }, picks: {} }
         }

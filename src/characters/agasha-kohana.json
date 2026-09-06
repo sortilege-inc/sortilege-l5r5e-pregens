@@ -223,7 +223,8 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "Kohana tells the garrison commander her consumption figures are higher than they should be, which the Dragon clan interprets as diligence, when she is actually documenting her own failure to ration."
+     "clan_relations": "Kohana tells the garrison commander her consumption figures are higher than they should be, which the Dragon clan interprets as diligence, when she is actually documenting her own failure to ration.",
+     "path": "A"
     },
     "picks": {}
    },
@@ -295,7 +296,8 @@
      "legacy_inverted": false,
      "heritage_name": "Glorious Sacrifice",
      "heritage_table": "Samurai Heritage Table",
-     "heritage_sub": "1-3 — A weapon"
+     "heritage_sub": "1-3 — A weapon",
+     "heritage_applied": true
     },
     "picks": {
      "heritage.glorious-sacrifice.0.gm_quality": [
