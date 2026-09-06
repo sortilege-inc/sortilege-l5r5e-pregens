@@ -475,7 +475,24 @@
     // activeChar() reading a draft that is not there — which throws during
     // boot and renders a blank page, with no control left to recover with.
     // The wizard always has one draft open; if the store has none, start one.
-    if (st && st.drafts && Object.keys(st.drafts).length) return st;
+    //
+    // A stored draft was written by whatever build of this page was live when
+    // it was last saved, so it is no more trustworthy than one off the table:
+    // a field added since then is simply absent. withDefaults() already fixed
+    // that for the table (see remoteCharacter); localStorage went without it
+    // until a draft that predated `pec_subjects` threw inside pecSubject() and
+    // took the whole export step down — heading and description rendered, no
+    // Download, Copy or Promote button, and no way to get the character out of
+    // the browser. Fill in what is missing on the way in, for every draft.
+    if (st && st.drafts && Object.keys(st.drafts).length) {
+      Object.keys(st.drafts).forEach(function (id) {
+        var d = st.drafts[id];
+        if (d && plain(d.character)) {
+          d.character = withDefaults(d.character, newCharacter());
+        }
+      });
+      return st;
+    }
     // migrate the old single-draft key, so an in-progress character survives
     var legacy = null;
     try { legacy = JSON.parse(localStorage.getItem(LS_DRAFT)); } catch (e) { /* ignore */ }
@@ -3564,12 +3581,17 @@
     return m ? m[1] : null;
   }
 
+  // Both readers tolerate the key being absent. loadStore() fills it in now,
+  // but these run against whatever character is in C — including one handed
+  // over by a path that predates the field — and a throw here is expensive:
+  // it is called from the export step, which is the way out of the browser.
   function pecSubject(name) {
-    return C.pec_subjects[normName(name)] || null;
+    return (C.pec_subjects || {})[normName(name)] || null;
   }
 
   function setPecSubject(name, subject, who) {
     var k = normName(name);
+    if (!C.pec_subjects) C.pec_subjects = {};
     if (!subject && !who) { delete C.pec_subjects[k]; return; }
     C.pec_subjects[k] = { name: name, subject: subject || "", who: who || "" };
   }
@@ -7335,6 +7357,45 @@
              baseline: d.baseline || null, source: toSourceJson() };
   }
 
+  /* The export step could not build the document. Whatever the reason, the
+     work itself is intact — it is in the draft — so this puts the draft on
+     disk verbatim and says plainly that it is not the repo's character format.
+     A wizard state can be turned into one; a character lost in a browser
+     cannot. */
+  function escapeHatch(body, err) {
+    var state = JSON.stringify(activeDraft().character || C, null, 1);
+    var p = document.createElement("p");
+    p.className = "export-warn";
+    p.innerHTML = "<strong>The export could not be built:</strong> " +
+      esc(String((err && err.message) || err)) +
+      ". Nothing is lost — the draft below is your work as the wizard holds " +
+      "it. Download or copy it and send it on; it is the wizard's own state, " +
+      "not the <code>src/characters/</code> format, so it needs converting " +
+      "rather than dropping in.";
+    body.appendChild(p);
+    var row = document.createElement("div");
+    row.className = "choicerow";
+    row.innerHTML = '<button type="button" class="btn" id="hatch-dl">' +
+      "Download the draft</button>" +
+      '<button type="button" class="btn" id="hatch-cp">Copy the draft</button>';
+    body.appendChild(row);
+    row.querySelector("#hatch-dl").addEventListener("click", function () {
+      var blob = new Blob([state], { type: "application/json" });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = (slugify(C.name || "character")) + "-wizard-state.json";
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+    });
+    row.querySelector("#hatch-cp").addEventListener("click", function () {
+      navigator.clipboard.writeText(state);
+    });
+    var pre = document.createElement("pre");
+    pre.className = "export-json";
+    pre.textContent = state;
+    body.appendChild(pre);
+  }
+
   function renderExport(body) {
     var edit = isEdit();
     var doc = edit ? toEditPatch() : toSourceJson();
@@ -10601,7 +10662,17 @@
     el("step-desc").innerHTML = val(s.desc);
     var body = el("step-body");
     body.innerHTML = "";
-    s.render(body);
+    // A step that throws mid-render leaves its body empty, which on any other
+    // step costs a question and on the export step costs the character: no
+    // Download, no Copy, no Promote, and hours of work with no way out of the
+    // browser. So a failure there always leaves something that gets the state
+    // to disk.
+    try {
+      s.render(body);
+    } catch (e) {
+      if (s.id !== "export") throw e;
+      escapeHatch(body, e);
+    }
     el("prev").disabled = step === 0;
     el("next").disabled = step === steps().length - 1;
     renderNav();
