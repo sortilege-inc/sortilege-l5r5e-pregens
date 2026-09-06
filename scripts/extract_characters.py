@@ -240,6 +240,58 @@ def tier_from_actor(actor, idx):
     }
 
 
+def apply_correction(doc, field, value):
+    """Apply one manifest correction to a character doc. -> (ok, what happened)
+
+    Three shapes of path, and one implementation so that the applier and the
+    extractor cannot drift:
+
+      identity.school                     a field one level down
+      tiers.0.money / tiers.*.money       one tier, or every tier
+      twenty_questions.steps.step13.answers.most_learn    any depth
+
+    A path that does not already exist is a failure rather than a no-op: a
+    correction nobody can see landing reads exactly like one that worked.
+    """
+    parts = field.split(".")
+    if len(parts) == 3 and parts[0] == "tiers" and \
+            (parts[1].isdigit() or parts[1] == "*"):
+        idxs = (range(len(doc["tiers"])) if parts[1] == "*" else [int(parts[1])])
+        hits = []
+        for i in idxs:
+            if i >= len(doc["tiers"]):
+                continue
+            was = doc["tiers"][i].get(parts[2])
+            doc["tiers"][i][parts[2]] = value
+            hits.append(f"tiers.{i}.{parts[2]} {was!r} -> {value!r}")
+        if not hits:
+            return False, f"{field} — only {len(doc['tiers'])} tier(s)"
+        return True, "; ".join(hits)
+
+    if len(parts) == 2 and parts[0] in doc and isinstance(doc[parts[0]], dict):
+        was = doc[parts[0]].get(parts[1])
+        doc[parts[0]][parts[1]] = value
+        # a value that also rides on each tier moves with it
+        for t in doc["tiers"]:
+            if t.get(parts[1]) == was:
+                t[parts[1]] = value
+        return True, f"{field} {was!r} -> {value!r}"
+
+    node = doc
+    for seg in parts[:-1]:
+        if isinstance(node, dict) and seg in node:
+            node = node[seg]
+        else:
+            return False, (f"{field} — no such path on the record, so nothing "
+                           f"was corrected")
+    if isinstance(node, dict) and parts[-1] in node:
+        was = node[parts[-1]]
+        node[parts[-1]] = value
+        return True, (f"{field} ({len(str(was))} chars -> "
+                      f"{len(str(value))})")
+    return False, f"{field} — no such path on the record, so nothing was corrected"
+
+
 def main():
     force = "--force" in sys.argv
     idx = load_catalog()
@@ -267,6 +319,7 @@ def main():
 
     os.makedirs(OUT, exist_ok=True)
     wrote = skipped = 0
+    bad_paths = []
     for char, entries in sorted(by_char.items()):
         actors = []
         for e in entries:
@@ -316,42 +369,10 @@ def main():
         for field, value in (corrections.get(slug) or {}).items():
             if field.startswith("_"):
                 continue
-            # A tier's own field: "tiers.0.money" for one tier, "tiers.*.money"
-            # for every tier the character has. Identity fields live on the doc,
-            # but money, rings and socials live per tier and a multi-tier
-            # character's can differ between them, so the tier is part of the
-            # path rather than implied.
-            #
-            # The wildcard is for a value that does not vary by tier and is not
-            # recorded anywhere — a starting purse nobody has tracked spending
-            # against. Naming each index instead would leave the next tier
-            # silently empty the day one is added.
-            parts = field.split(".")
-            if len(parts) == 3 and parts[0] == "tiers" and \
-                    (parts[1].isdigit() or parts[1] == "*"):
-                idxs = (range(len(doc["tiers"])) if parts[1] == "*"
-                        else [int(parts[1])])
-                hit = False
-                for i in idxs:
-                    if i >= len(doc["tiers"]):
-                        continue
-                    was = doc["tiers"][i].get(parts[2])
-                    doc["tiers"][i][parts[2]] = value
-                    print(f"   correction {slug}: tiers.{i}.{parts[2]} "
-                          f"{was!r} -> {value!r}")
-                    hit = True
-                if not hit:
-                    print(f"   ! correction {slug}: {field} — only "
-                          f"{len(doc['tiers'])} tier(s)")
-                continue
-            section, _, key = field.partition(".")
-            if key and section in doc:
-                was = doc[section].get(key)
-                doc[section][key] = value
-                for t in doc["tiers"]:
-                    if t.get(key) == was:
-                        t[key] = value
-                print(f"   correction {slug}: {field} {was!r} -> {value!r}")
+            ok, note = apply_correction(doc, field, value)
+            print(f"   {'correction' if ok else '! correction'} {slug}: {note}")
+            if not ok:
+                bad_paths.append((slug, field))
 
         dest = os.path.join(OUT, f"{slug}.json")
         if os.path.exists(dest) and not force:
@@ -363,6 +384,10 @@ def main():
         wrote += 1
         print(f"   wrote {slug}.json  ({len(tiers)} tiers, {tiers[0]['xp']}-{tiers[-1]['xp']} XP)",
               flush=True)
+    if bad_paths:
+        sys.exit(f"FAIL — {len(bad_paths)} correction(s) address a path no "
+                 f"record has:\n"
+                 + "\n".join(f"   {s2}: {f}" for s2, f in bad_paths))
     print(f"DONE_MARKER characters={len(by_char)} wrote={wrote} skipped={skipped}", flush=True)
 
 

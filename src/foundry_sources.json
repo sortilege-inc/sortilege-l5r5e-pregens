@@ -691,7 +691,11 @@
     "zeni": 0,
     "koku": 1,
     "bu": 0
-   }
+   },
+   "twenty_questions.steps.step13.answers.most_learn": "Tonbo Umeko (Tonbo) — Tonbo Umeko is a minor courtier from a cadet branch of the Tonbo family who found her calling as a matchmaker. While others saw only Asahi's visions, Umeko taught her to also observe the small human details—a hesitation before speaking, the way someone holds their hands, the subtle shift in a room's atmosphere.\n\n- Umeko treats Asahi with the fond exasperation of an older sister, simultaneously proud of her accomplishments and worried about her melancholic tendencies. She brings Asahi gossip from other courts, practical gifts, and unsolicited romantic advice (which Asahi politely ignores).",
+   "_why_twenty_questions.steps.step13.answers.most_learn": "Same shape: Tonbo Umeko is introduced by a sentence rather than named at the front, and the second paragraph continues about her. Her name and family lead the first, and the second is marked as a bullet so it attaches to her instead of being read as somebody new. Every word is the record's.",
+   "twenty_questions.steps.step16.answers.relations": "Mirumoto Takeshi: Dragon clan liason; he is Asahi's main contact, but it's always a strictly business relationship.\n\nYogo Ren: A Scorpion clan courtier who passes through often; they are on friendly terms.\n\nStill Water Temple (monks): She has a delicate relationship with them; her reputation is good, but she is not a monk and she tries to maintain a formal distinction.",
+   "_why_twenty_questions.steps.step16.answers.relations": "\"Monks of the Still Water Temple\" is a body, not a person, and the map's name guard rejects a phrase with 'of' in it -- for good reason, since that guard is what keeps a paragraph from becoming a node. Written as the temple with its monks as the affiliation, which is how the map labels a body anyway. The sentence is unchanged."
   },
   "iuchi-temur": {
    "identity.school": "Iuchi Meishodo Master School",
@@ -772,7 +776,9 @@
     "zeni": 0,
     "koku": 3,
     "bu": 0
-   }
+   },
+   "twenty_questions.steps.step13.answers.most_learn": "Tonbo Asahi (Dragonfly) — Renshō studied briefly with Tonbo Asahi, a Dragonfly seer whose visions were famously ambiguous. Her quiet acceptance of uncertainty challenges his philosophy—that doubt is not weakness but wisdom.",
+   "_why_twenty_questions.steps.step13.answers.most_learn": "The answer names Tonbo Asahi mid-sentence, so the relationship map could not see a person in it and reported the line as unreadable. Her name and clan are stated at the front; the sentence that follows is the Foundry record's own, word for word. Asahi is a PC in the same campaign, so this becomes text on their pair rather than a node."
   },
   "shinjo-harunobu": {
    "_why": "The actor carries 400 zeni, while the family the character's own twenty-questions record names at step 2 — Shinjo — gives 8 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 8, Type \"koku\" }). 400 zeni is exactly the 8 koku the family gives, so this restates the same money in the denomination the book prints. Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
