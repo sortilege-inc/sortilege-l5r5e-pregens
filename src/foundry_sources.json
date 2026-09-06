@@ -784,7 +784,11 @@
  "portraits": {
   "_comment": "portrait path per slug, relative to the repo root",
   "aarav": "src/portraits/aarav.png",
+  "agasha-kohana": "src/portraits/agasha-kohana.webp",
   "asahina-jujiro": "src/portraits/asahina-jujiro.webp",
+  "asako-yukitsuna": "src/portraits/asako-yukitsuna.webp",
+  "bayushi-hirofumi": "src/portraits/bayushi-hirofumi.webp",
+  "daidoji-emon": "src/portraits/daidoji-emon.webp",
   "doji-sayaka": "src/portraits/doji-sayaka.webp",
   "doji-setsuna": "src/portraits/doji-setsuna.webp",
   "hiruma-kaede": "src/portraits/hiruma-kaede.png",

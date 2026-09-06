@@ -14,7 +14,7 @@
   "origin_type": null
  },
  "mode": "core",
- "portrait": null,
+ "portrait": "src/portraits/daidoji-emon.webp",
  "concept": "Emon listens to someone describe a fortification and begins nodding along, then stops mid-nod and says \"that's not what the Kaiu survey shows,\" which causes an immediate, visible strain in his face as he realizes he has just contradicted someone of higher rank without being asked.",
  "summary": null,
  "notes": "",

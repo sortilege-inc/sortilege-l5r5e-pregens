@@ -14,7 +14,7 @@
   "origin_type": null
  },
  "mode": "core",
- "portrait": null,
+ "portrait": "src/portraits/bayushi-hirofumi.webp",
  "concept": "Hirofumi's eyes don't track the person speaking to him until they have finished their sentence.",
  "summary": null,
  "notes": "",
