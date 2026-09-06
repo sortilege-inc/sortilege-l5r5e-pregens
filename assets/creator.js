@@ -1712,7 +1712,17 @@
          "…, which means she now spends entire study sessions recalculating",
          "…, which costs him tournaments but makes him", "…, but cannot hear
          when someone is lying". A good device once; as a template it makes
-         everyone the same person. */
+         everyone the same person.
+
+         NOT YET EFFECTIVE (2026-09-06). The ban below is by name and it came
+         back anyway on the first character built after it: Kaiu Anzu, "can
+         read a ruin's load-bearing bones and predict where it will fail long
+         before the collapse, BUT SHE CANNOT look at what the Shadowlands did
+         to make those bones brittle". Flagged for a follow-up pass once a few
+         more characters exist, so it is not tuned on one sample (owner,
+         2026-09-06). The fix to try is the one that worked for the trailing
+         participial flourish: quote the rejected shape as an example rather
+         than prohibiting it, since a named ban has now failed twice. */
       "The quality itself is the answer. Do not append the price of it: no " +
       "\"which means\", no \"which costs\", no \"but cannot\", no \"but " +
       "turns down\". If it is genuinely double-edged, that can show in what " +
@@ -1829,7 +1839,18 @@
       /* Fourteen answers were the same idea: the character dies of their
          defining flaw, mid-task, with the irony spelled out. And all of them
          were shot from outside the character, in the third-person present,
-         which is a camera rather than a belief. */
+         which is a camera rather than a belief.
+
+         NOT YET EFFECTIVE (2026-09-06). Two characters built since: Asako
+         Yukitsuna, "will die at her desk in the Phoenix archives,
+         mid-sentence in a report, because she finally found the
+         contradiction"; Kaiu Anzu, "will die certifying something as sound
+         when the stones have already failed, and she will know it as it
+         happens". Both dodge the letter of the bans below -- neither says
+         "dies …ing" -- and keep the idea whole: the ironic death of their own
+         flaw, narrated from outside. Flagged for a follow-up pass once a few
+         more characters exist (owner, 2026-09-06); the fix to try is a quoted
+         rejected example rather than another prohibition. */
       "It is their expectation, so it can be wrong, ordinary, or have nothing " +
       "to do with their flaw. Do not write the death scene: no \"dies " +
       "…ing\", no present-tense staging (\"bleeds out in an archive " +

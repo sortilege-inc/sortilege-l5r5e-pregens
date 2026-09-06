@@ -171,6 +171,27 @@ Two things to hold onto when editing it:
   coverage ledger key off. Two need explicit aliases: "Isawa Tensai" (the compendium's
   typo) and "Wandering Blade".
 
+### Two AI prompts are known not to have taken — pending a follow-up pass
+
+The suggestion prompts were rewritten on 2026-09-05 after auditing every
+free-text answer across 29 characters: the answers varied the nouns and repeated
+the sentence, one architecture per question. Six tics are now banned by name in
+the shared `STYLE` block, and five questions were rewritten.
+
+Three of the five are landing. **Questions 4 and 20 are not**, and both are
+flagged in place in `assets/creator.js` with the evidence:
+
+| | the shape that keeps coming back | seen in |
+|---|---|---|
+| Q4 | a strength with its cost bolted on — "…, **but she cannot** look at what the Shadowlands did" | Kaiu Anzu |
+| Q20 | the ironic death of the character's own flaw, narrated from outside them | Asako Yukitsuna, Kaiu Anzu |
+
+Deferred by the owner (2026-09-06) until a few more characters exist, so the fix
+is not tuned on one or two samples. **The fix to try is a quoted rejected
+example rather than another prohibition** — a named ban has now failed twice on
+each, and quoting the bad shape is what worked for the trailing participial
+flourish. Do not simply add more words to the ban.
+
 ### Advantages and disadvantages have no prerequisites — do not invent any
 
 `peculiarityPicker()` colours its list, and it is worth knowing what the colours can
