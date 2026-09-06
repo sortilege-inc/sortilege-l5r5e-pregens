@@ -1,0 +1,408 @@
+{
+ "slug": "kaiu-anzu",
+ "name": "Kaiu Anzu",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": "Crab",
+  "family": "Kaiu",
+  "school": "Kaiu Engineer School",
+  "role": "Artisan",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Anzu measures everything with her eyes and none of it with her face, which stays as blank as the stones she walks.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Kaiu Anzu",
+  "mode": "core",
+  "clan": "Crab",
+  "family": "Kaiu",
+  "school": "Kaiu Engineer School",
+  "role": "Artisan",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "void",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "labor": 1,
+   "design": 1,
+   "culture": 1
+  },
+  "distinctions": [
+   "Talented Herbalist"
+  ],
+  "adversities": [
+   "Penalty"
+  ],
+  "passions": [
+   "Provocation"
+  ],
+  "anxieties": [
+   "Intolerance"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Courage",
+   "lesser": "Courtesy",
+   "attitude": "B",
+   "skill": "labor"
+  },
+  "answers": {
+   "giri": "Anzu reports to Kaiu Haruka, the Wall's chief engineer, and must certify which sections can hold before Haruka decides whether to abandon them—a judgment Anzu makes from the stones upward, never looking at what made them weak.",
+   "ninjo": "Anzu wants to walk back through the Wall with a report that the castle can be held, even though the stones will not bear it.",
+   "standout_quality": "Anzu can read a ruin's load-bearing bones and predict where it will fail long before the collapse, but she cannot look at what the Shadowlands did to make those bones brittle.",
+   "accomplishment": "She identified which sections of the Kaiu Wall could still bear weight by reading the stone itself, never the corruption that weakened it, and Haruka built the defense on her word.",
+   "challenge": "Anzu cannot admit to Haruka that the section she certified is already failing, because admitting it would require her to say she lied about the stones, and Haruka is waiting for her to swear to the report on her way out through the gates.",
+   "peace": "Anzu measures the strength of salvaged stone pulled from the lower Wall, running her hands across each piece to map its grain and load before the smiths melt it down, and the ritual of refusing to look at anything but the stone itself settles the constant pull between what she sees and what she says.",
+   "fear": "Anzu certifies sections of the Wall by the strength of their stone alone, and when Haruka asks her to swear to the report before the gates close, she will have to choose between the oath and the lie she already made.",
+   "accoutrement": "She carries a piece of chalk and marks the load-bearing stones as she walks, numbering them in sequence, though the numbers never go past forty-seven.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Kaiu Yushiro",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Anzu certified a section of the Wall as sound when she knew the stones were already failing, and Haruka accepted the report without asking her to swear to it."
+   },
+   "mentor": {
+    "name": "Kaiu Mabuchi",
+    "path": "B",
+    "granted": "Overconfidence in Toughness",
+    "skill": "design",
+    "text": "",
+    "gender": "female",
+    "association": "Crab"
+   },
+   "first_impression": "Anzu measures everything with her eyes and none of it with her face, which stays as blank as the stones she walks.",
+   "stress_reaction": "Anzu stops marking the stones and stands motionless until someone speaks to her directly, which forces her to answer before she can decide what to say.",
+   "relationships": "Hida Tatsukichi (Crab) — Hida Tatsukichi certified the same section of Wall that Anzu did, signed his name to it, and is now somewhere beyond the gates with orders to hold it until the stones fail.",
+   "people": [
+    {
+     "name": "Hida Tatsukichi",
+     "gender": "female",
+     "association": "Crab",
+     "text": "Hida Tatsukichi certified the same section of Wall that Anzu did, signed his name to it, and is now somewhere beyond the gates with orders to hold it until the stones fail."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Anzu's father says she learned to read stone before she learned to read people, and now she cannot stop doing the first thing long enough to see that her mother is dying of it.",
+    "skill": "culture"
+   },
+   "heritage": "Lost Banner",
+   "heritage_table": "new-samurai-heritages-table",
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Anzu will die certifying something as sound when the stones have already failed, and she will know it as it happens."
+  },
+  "starting_item": "Saihai",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Smithing",
+    "Design",
+    "Command",
+    "Labor",
+    "Martial Arts [Ranged]"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Anzu can read a ruin's load-bearing bones and predict where it will fail long before the collapse, but she cannot look at what the Shadowlands did to make those bones brittle."
+   ],
+   "giri": [
+    "Anzu reports to Kaiu Haruka, the Wall's chief engineer, and must certify which sections can hold before Haruka decides whether to abandon them—a judgment Anzu makes from the stones upward, never looking at what made them weak."
+   ],
+   "ninjo": [
+    "Anzu wants to walk back through the Wall with a report that the castle can be held, even though the stones will not bear it."
+   ],
+   "clan_relationship": [
+    "Anzu certified a section of the Wall as sound when she knew the stones were already failing, and Haruka accepted the report without asking her to swear to it."
+   ],
+   "accomplishment": [
+    "She identified which sections of the Kaiu Wall could still bear weight by reading the stone itself, never the corruption that weakened it, and Haruka built the defense on her word."
+   ],
+   "challenge": [
+    "Anzu cannot admit to Haruka that the section she certified is already failing, because admitting it would require her to say she lied about the stones, and Haruka is waiting for her to swear to the report on her way out through the gates."
+   ],
+   "peace": [
+    "Anzu measures the strength of salvaged stone pulled from the lower Wall, running her hands across each piece to map its grain and load before the smiths melt it down, and the ritual of refusing to look at anything but the stone itself settles the constant pull between what she sees and what she says."
+   ],
+   "fear": [
+    "Anzu certifies sections of the Wall by the strength of their stone alone, and when Haruka asks her to swear to the report before the gates close, she will have to choose between the oath and the lie she already made."
+   ],
+   "first_impression": [
+    "Anzu measures everything with her eyes and none of it with her face, which stays as blank as the stones she walks."
+   ],
+   "accoutrement": [
+    "She carries a piece of chalk and marks the load-bearing stones as she walks, numbering them in sequence, though the numbers never go past forty-seven."
+   ],
+   "stress_reaction": [
+    "Anzu stops marking the stones and stands motionless until someone speaks to her directly, which forces her to answer before she can decide what to say."
+   ],
+   "relationship_person": [
+    "Hida Tatsukichi certified the same section of Wall that Anzu did, signed his name to it, and is now somewhere beyond the gates with orders to hold it until the stones fail."
+   ],
+   "parent_opinion": [
+    "Anzu's father says she learned to read stone before she learned to read people, and now she cannot stop doing the first thing long enough to see that her mother is dying of it."
+   ],
+   "death": [
+    "Anzu will die certifying something as sound when the stones have already failed, and she will know it as it happens."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Anzu can read a ruin's load-bearing bones and predict where it will fail long before the collapse, but she cannot look at what the Shadowlands did to make those bones brittle.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Anzu reports to Kaiu Haruka, the Wall's chief engineer, and must certify which sections can hold before Haruka decides whether to abandon them—a judgment Anzu makes from the stones upward, never looking at what made them weak.",
+     "lord_name": "Kaiu Yushiro"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Anzu wants to walk back through the Wall with a report that the castle can be held, even though the stones will not bear it."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Anzu certified a section of the Wall as sound when she knew the stones were already failing, and Haruka accepted the report without asking her to swear to it.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She identified which sections of the Kaiu Wall could still bear weight by reading the stone itself, never the corruption that weakened it, and Haruka built the defense on her word."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Anzu cannot admit to Haruka that the section she certified is already failing, because admitting it would require her to say she lied about the stones, and Haruka is waiting for her to swear to the report on her way out through the gates."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Anzu measures the strength of salvaged stone pulled from the lower Wall, running her hands across each piece to map its grain and load before the smiths melt it down, and the ritual of refusing to look at anything but the stone itself settles the constant pull between what she sees and what she says."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Anzu certifies sections of the Wall by the strength of their stone alone, and when Haruka asks her to swear to the report before the gates close, she will have to choose between the oath and the lie she already made."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Kaiu Mabuchi"
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Anzu measures everything with her eyes and none of it with her face, which stays as blank as the stones she walks.",
+     "accoutrement": "She carries a piece of chalk and marks the load-bearing stones as she walks, numbering them in sequence, though the numbers never go past forty-seven."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Anzu stops marking the stones and stands motionless until someone speaks to her directly, which forces her to answer before she can decide what to say."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Hida Tatsukichi (Crab) — Hida Tatsukichi certified the same section of Wall that Anzu did, signed his name to it, and is now somewhere beyond the gates with orders to hold it until the stones fail."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Anzu's father says she learned to read stone before she learned to read people, and now she cannot stop doing the first thing long enough to see that her mother is dying of it."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Lost Banner",
+     "heritage_table": "New Samurai Heritages Table",
+     "heritage_sub": null,
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Anzu will die certifying something as sound when the stones have already failed, and she will know it as it happens."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Kaiu Engineer School",
+   "foundry_id": null,
+   "rings": {
+    "air": 1,
+    "earth": 3,
+    "fire": 3,
+    "water": 1,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 2,
+     "smithing": 2
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 0,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 3,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 40,
+    "glory": 40,
+    "status": 30,
+    "ninjo": "Anzu wants to walk back through the Wall with a report that the castle can be held, even though the stones will not bear it.",
+    "giri": "Anzu reports to Kaiu Haruka, the Wall's chief engineer, and must certify which sections can hold before Haruka decides whether to abandon them—a judgment Anzu makes from the stones upward, never looking at what made them weak.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Courtesy"
+    }
+   },
+   "derived": {
+    "endurance": 12,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 1,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Tactical Assessment"
+    },
+    {
+     "name": "Stirring the Embers"
+    },
+    {
+     "name": "Stonewall Tactics"
+    },
+    {
+     "name": "Masterful Builder"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Talented Herbalist"
+    },
+    {
+     "name": "Penalty"
+    },
+    {
+     "name": "Provocation"
+    },
+    {
+     "name": "Intolerance"
+    },
+    {
+     "name": "Overconfidence in Toughness"
+    },
+    {
+     "name": "Indomitable Will"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Saihai"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

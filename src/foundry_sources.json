@@ -149,12 +149,6 @@
    "note": "Set in 1123: the PCs pass through the Crab Clan's defenses into the Shadowlands, to the ruins of Shiro Hiruma. Arc, cast and lore are converted — what is missing is the pack.",
    "pencilled_schools": [
     {
-     "school": "Kaiu Engineer School",
-     "family": "Kaiu",
-     "gender": "female",
-     "concept": "Sent to determine whether Shiro Hiruma can be held again, and privately certain of the answer before setting out."
-    },
-    {
      "school": "Shiba Guardian School",
      "family": "Shiba",
      "gender": "male",
@@ -204,7 +198,8 @@
     "Asako Inquisitor School": "Asako Yukitsuna — she/her where the entry pencilled male, Asako. Pencilled premise: Sent to determine what came out of Shiro Hiruma, and quietly certain someone in the party already knows.",
     "Bayushi Deathdealer School": "Bayushi Hirofumi — male, Bayushi. Pencilled premise: Attached to the expedition to make sure it comes back — or that the right parts of it do; a Scorpion who has killed people and never a demon, and is unbothered by the distinction in a way that unsettles everyone.",
     "Daidoji Iron Warrior School": "Daidoji Emon — male, Daidoji. Pencilled premise: A Crane sent to hold a line the Crab abandoned, too polite to put it that way, and the only one who has read the Kaiu's report and believes it.",
-    "Hiruma Scout School": "Hiruma Namiko — female, Hiruma. Pencilled premise: The scout guiding the expedition to a castle her family lost, who has been to its walls twice and inside neither time."
+    "Hiruma Scout School": "Hiruma Namiko — female, Hiruma. Pencilled premise: The scout guiding the expedition to a castle her family lost, who has been to its walls twice and inside neither time.",
+    "Kaiu Engineer School": "Kaiu Anzu — female, Kaiu. Pencilled premise: Sent to determine whether Shiro Hiruma can be held again, and privately certain of the answer before setting out."
    }
   },
   "No Scenario": {
