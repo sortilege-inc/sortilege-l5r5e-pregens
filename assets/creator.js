@@ -3462,37 +3462,62 @@
     C.pec_subjects[k] = { name: name, subject: subject || "", who: who || "" };
   }
 
-  /* The school's roles, stated rather than chosen.
+  /* The role, where the school offers more than one.
 
-     Question 3 in the corpus is "What Is Your Character's School, and What
-     Roles Does That School Fall Into?" — the roles belong to the school and
-     the question asks what they are. ^"School Role" says it outright: "A
-     school may have one or more roles." Technique access is the school's
-     too — Hiruma Scout carries ^"Techniques Available" ["Kata", "Rituals",
-     "Shūji"] for the school, not per role — so a role governs nothing
-     mechanical, and asking the player to pick one and blocking the step on it
-     was asking a question the game does not.
+     What the game says, so the wording here does not overclaim: question 3 is
+     "What Is Your Character's School, and What Roles Does That School Fall
+     Into?", ^"School Role" says "a school may have one or more roles", and
+     technique access is the school's — Hiruma Scout carries ^"Techniques
+     Available" ["Kata", "Rituals", "Shūji"] whichever role you call it. So a
+     role governs nothing mechanical.
 
-     The printed folios agree: Ide Yuina's sheet lists Roles ["Courtier"] and
-     Kaeru Akiara's lists ["Bushi", "Courtier"], each matching their school.
-
-     So this states them. `C.role` keeps the first for the roster's filter and
-     the character page, which are singular downstream; whether that should
-     become a list is a decision, not something to infer. */
-  function roleNote(body, sch) {
+     This archive still records one role per character, chosen deliberately
+     (owner, 2026-09-05), because a Kitsuki Investigator who is a courtier and
+     one who is a bushi are different characters to hand to a player even
+     though the school is the same. It is our convention, not a rule of the
+     game, and the step will not complete without it — the old behaviour took
+     roles[0] silently, which is how the archive ended up with eighteen
+     characters whose role nobody had chosen. */
+  function roleChoice(body, sch) {
     var roles = (sch && sch.roles) || [];
-    label(body, roles.length > 1 ? "Roles" : "Role");
-    var p = document.createElement("p");
-    p.className = "muted small";
-    p.textContent = !roles.length
-      ? "The corpus lists no role for this school."
-      : roles.length === 1
-        ? roles[0] + " — this school falls into one role."
-        : roles.join(" and ") + " — this school falls into both. Not a choice: "
-          + "the roles describe the school, and its technique access is the "
-          + "same either way.";
-    body.appendChild(p);
-    if (roles.length && C.role !== roles[0]) { C.role = roles[0]; save(); }
+    label(body, "Role");
+    if (!roles.length) {
+      var none = document.createElement("p");
+      none.className = "muted small";
+      none.textContent = "The corpus lists no role for this school.";
+      body.appendChild(none);
+      return;
+    }
+    if (roles.length === 1) {
+      var only = document.createElement("p");
+      only.className = "muted small";
+      only.textContent = roles[0] + " — the only role this school falls into, "
+        + "so there is nothing to choose.";
+      body.appendChild(only);
+      if (C.role !== roles[0]) { C.role = roles[0]; save(); }
+      return;
+    }
+    var row = document.createElement("div");
+    row.className = "choicerow";
+    roles.forEach(function (r) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "choice" + (C.role === r ? " active" : "");
+      b.textContent = r;
+      b.addEventListener("click", function () { C.role = r; save(); render(); });
+      row.appendChild(b);
+    });
+    body.appendChild(row);
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = C.role
+      ? "Chosen: " + C.role + ". The school falls into " + roles.join(" and ")
+        + "; this is the one this character is in."
+      : "This school falls into " + roles.join(" and ")
+        + ". Both are the school's; choose the one this character is in. It "
+        + "changes nothing mechanically — the school's technique access is the "
+        + "same — but it is how this archive files them, so it is required.";
+    body.appendChild(note);
   }
 
   function peculiarityStep(kind, listKey) {
@@ -3698,7 +3723,10 @@
 
     { id: "school", n: 3, label: "School", title: function () { return qText(3) || "Choose Your School"; },
       desc: "Your school determines your starting techniques, your curriculum, your starting skills, and your starting honor and outfit.",
-      done: function () { return has(C.school) && choicesMade(schoolByRollName(C.school), "school"); },
+      done: function () {
+        return has(C.school) && has(C.role) &&
+               choicesMade(schoolByRollName(C.school), "school");
+      },
       render: function (body) {
         var current = schoolByRollName(C.school);
         var pool = clanFilter(body, "school_all", "schools",
@@ -3736,7 +3764,7 @@
         });
         var sch = schoolByRollName(C.school);
         if (!sch) return;
-        roleNote(body, sch);
+        roleChoice(body, sch);
         renderChoices(body, sch, "school");
         var needsInspired = (sch.starting_techniques || []).some(function (g) {
           return (g.options || []).some(function (o) { return INSPIRED.test(o); });

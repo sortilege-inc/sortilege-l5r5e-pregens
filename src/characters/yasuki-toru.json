@@ -25,6 +25,9 @@
   "origin_type": null,
   "school": "Yasuki Merchant",
   "role": "Courtier",
+  "roles": [
+   "Courtier"
+  ],
   "age": ""
  },
  "portrait": null,

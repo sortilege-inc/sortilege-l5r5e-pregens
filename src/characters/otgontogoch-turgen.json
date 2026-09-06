@@ -25,6 +25,10 @@
   "origin_type": "gaijin",
   "school": "Treasure Hunter",
   "role": "Courtier",
+  "roles": [
+   "Courtier",
+   "Bushi"
+  ],
   "age": ""
  },
  "portrait": null,

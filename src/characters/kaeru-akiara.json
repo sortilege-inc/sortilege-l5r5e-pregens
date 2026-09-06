@@ -25,6 +25,10 @@
   "origin_type": null,
   "school": "Rōnin",
   "role": "Bushi",
+  "roles": [
+   "Bushi",
+   "Courtier"
+  ],
   "age": ""
  },
  "portrait": null,

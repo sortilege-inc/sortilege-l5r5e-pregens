@@ -25,6 +25,9 @@
   "origin_type": null,
   "school": "Kitsu Medium",
   "role": "Shugenja",
+  "roles": [
+   "Shugenja"
+  ],
   "age": ""
  },
  "portrait": null,

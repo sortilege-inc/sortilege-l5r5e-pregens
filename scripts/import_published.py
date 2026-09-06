@@ -498,7 +498,14 @@ def build(entity, source, report):
             "upbringing": P.get("Upbringing"),
             "origin_type": origin,
             "school": P.get("School"),
+            # A folio can print two roles -- Kaeru Akiara's sheet says Bushi
+            # and Courtier, Kakita Hikaru's Bushi and Artisan -- and taking
+            # only the first had nine of these records contradicting their own
+            # sheet. `role` stays singular for the roster filter and the
+            # character page, which are; `roles` keeps what the sheet says,
+            # because a transcription does not get to drop half a field.
             "role": (listing(P.get("Roles")) or [None])[0],
+            "roles": listing(P.get("Roles")) or None,
             "age": "",
         },
         "portrait": None,

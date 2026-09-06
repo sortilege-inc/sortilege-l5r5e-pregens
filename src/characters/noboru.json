@@ -25,6 +25,10 @@
   "origin_type": null,
   "school": "Mystic of the Mountain",
   "role": "Monk",
+  "roles": [
+   "Monk",
+   "Courtier"
+  ],
   "age": ""
  },
  "portrait": null,

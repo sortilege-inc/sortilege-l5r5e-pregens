@@ -25,6 +25,9 @@
   "origin_type": "peasant",
   "school": "Artisan of the Roads",
   "role": "Artisan",
+  "roles": [
+   "Artisan"
+  ],
   "age": ""
  },
  "portrait": null,

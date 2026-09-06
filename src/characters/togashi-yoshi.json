@@ -25,6 +25,9 @@
   "origin_type": null,
   "school": null,
   "role": "Tattooed Monk",
+  "roles": [
+   "Tattooed Monk"
+  ],
   "age": ""
  },
  "portrait": null,

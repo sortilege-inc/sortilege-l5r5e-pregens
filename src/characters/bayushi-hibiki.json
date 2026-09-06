@@ -25,6 +25,9 @@
   "origin_type": null,
   "school": "Bayushi Manipulator",
   "role": "Courtier",
+  "roles": [
+   "Courtier"
+  ],
   "age": ""
  },
  "portrait": null,

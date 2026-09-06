@@ -7,7 +7,7 @@
   "clan": "Crab",
   "family": "Hiruma",
   "school": "Hiruma Scout School",
-  "role": null,
+  "role": "Bushi",
   "age": "",
   "region": null,
   "upbringing": null,
@@ -415,7 +415,8 @@
      "name": "Shuriken"
     }
    ],
-   "advancements": []
+   "advancements": [],
+   "role": "Bushi"
   }
  ]
 }

@@ -25,6 +25,10 @@
   "origin_type": "gaijin",
   "school": "Ivory Kingdoms Sage",
   "role": "Sage",
+  "roles": [
+   "Sage",
+   "Bushi"
+  ],
   "age": ""
  },
  "portrait": null,

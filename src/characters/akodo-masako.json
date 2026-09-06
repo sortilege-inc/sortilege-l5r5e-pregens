@@ -25,6 +25,9 @@
   "origin_type": null,
   "school": null,
   "role": "Bushi",
+  "roles": [
+   "Bushi"
+  ],
   "age": ""
  },
  "portrait": null,

@@ -25,6 +25,9 @@
   "origin_type": null,
   "school": "Ide Trader",
   "role": "Courtier",
+  "roles": [
+   "Courtier"
+  ],
   "age": ""
  },
  "portrait": null,

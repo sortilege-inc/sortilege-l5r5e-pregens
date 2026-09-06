@@ -762,7 +762,9 @@
     "zeni": 0,
     "koku": 5,
     "bu": 0
-   }
+   },
+   "identity.role": "Shugenja",
+   "_why_identity.role": "Role chosen by the owner, 2026-09-05. The school offers more than one and this archive records the one the character is in; the Foundry actor carries 'Sage', which a re-extract would put back."
   },
   "shinjo-anzu": {
    "_why": "The actor carries no coin at all, while the family the character's own twenty-questions record names at step 2 — Shinjo — gives 8 koku (l5r5e-0.4-core-character.ttrpg: ^\"Wealth\" DEF { Count 8, Type \"koku\" }). Chargen wins over the actor, per Jordan 2026-09-04. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
@@ -820,7 +822,9 @@
     "zeni": 0,
     "koku": 0,
     "bu": 4
-   }
+   },
+   "identity.role": "Courtier",
+   "_why_identity.role": "Role chosen by the owner, 2026-09-05. The school offers more than one and this archive records the one the character is in; the Foundry actor carries '', which a re-extract would put back."
   },
   "kurosawa-genzo": {
    "_why": "The actor carries no coin at all. Foundry has no upbringing field, so \"Military\" arrived in the family slot; the Military Upbringing gives 1 koku. The character's own step-2 answers record wealth 5, which no upbringing gives, so the grant is taken and the 5 left as the stray. Flagged for review. Applied to every tier: nothing records what was spent after creation, and leaving the later tiers empty would assert it all went.",
@@ -829,6 +833,10 @@
     "koku": 1,
     "bu": 0
    }
+  },
+  "aarav": {
+   "identity.role": "Sage",
+   "_why_identity.role": "Role chosen by the owner, 2026-09-05. The school offers more than one and this archive records the one the character is in; the Foundry actor carries 'Bushi', which a re-extract would put back."
   }
  },
  "portraits": {

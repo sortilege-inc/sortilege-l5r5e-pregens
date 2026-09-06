@@ -25,6 +25,9 @@
   "origin_type": null,
   "school": "Matsu Berserker",
   "role": "Bushi",
+  "roles": [
+   "Bushi"
+  ],
   "age": ""
  },
  "portrait": null,

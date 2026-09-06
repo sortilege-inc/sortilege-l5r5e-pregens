@@ -25,6 +25,9 @@
   "origin_type": "ronin",
   "school": "Wandering Blade",
   "role": "Bushi",
+  "roles": [
+   "Bushi"
+  ],
   "age": ""
  },
  "portrait": null,

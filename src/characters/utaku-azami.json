@@ -25,6 +25,9 @@
   "origin_type": null,
   "school": "Utaku Battle Maiden",
   "role": "Bushi",
+  "roles": [
+   "Bushi"
+  ],
   "age": ""
  },
  "portrait": null,

@@ -25,6 +25,9 @@
   "origin_type": null,
   "school": "Kaito Shrine Keeper",
   "role": "Monk",
+  "roles": [
+   "Monk"
+  ],
   "age": ""
  },
  "portrait": null,
