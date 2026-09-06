@@ -3696,6 +3696,11 @@
     }, 0);
   }
 
+  function ringCapNeeded() {
+    return (C.ring_reassign || []).length > 0 ||
+           ringExcess(computed().rings) > 0;
+  }
+
   function ringCapSection(body) {
     var d = computed();
     var over = RINGS.filter(function (r) { return d.rings[r] > 3; });
@@ -10431,7 +10436,12 @@
     if (isCourt()) return COURT_STEPS;
     if (isArmy()) return ARMY_STEPS;
     if (isSchool()) return SCHOOL_STEPS;
-    return STEPS;
+    // The cap step is only asked when the cap actually binds. It stays once a
+    // rank has been moved, even though nothing is above 3 any more, because it
+    // is then holding a decision the player has to be able to see and undo.
+    return STEPS.filter(function (s) {
+      return s.id !== "ring-cap" || ringCapNeeded();
+    });
   }
 
   function activeSteps() {
