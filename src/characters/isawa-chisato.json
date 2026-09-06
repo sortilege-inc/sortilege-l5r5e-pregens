@@ -1,108 +1,299 @@
 {
  "slug": "isawa-chisato",
  "name": "Isawa Chisato",
- "folder_label": "Isawa Chisato",
  "campaign": "Imperfect Land",
  "status": null,
- "bucket": null,
- "accent": null,
  "identity": {
   "clan": "Phoenix",
   "family": "Isawa",
-  "region": null,
-  "upbringing": null,
-  "origin_type": null,
   "school": "Isawa Tensai School",
   "role": "Shugenja",
-  "age": ""
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
  },
+ "mode": "core",
  "portrait": "src/portraits/isawa-chisato.webp",
- "concept": null,
+ "concept": "When Chisato speaks about doctrine, her voice does not rise or fall—it holds one steady pitch until she stops, the way a flame burns straight up.",
  "summary": null,
  "notes": "",
+ "wizard": {
+  "name": "Isawa Chisato",
+  "mode": "core",
+  "clan": "Phoenix",
+  "family": "Isawa",
+  "school": "Isawa Tensai School",
+  "role": "Shugenja",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "aesthetics": 1
+  },
+  "distinctions": [
+   "Dashing Scar"
+  ],
+  "adversities": [
+   "Bluntness"
+  ],
+  "passions": [
+   "Bonsai"
+  ],
+  "anxieties": [
+   "Accustomed to Luxury"
+  ],
+  "bushido": {
+   "paramount": "Righteousness",
+   "lesser": "Compassion",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Chisato must report any deviation from orthodox doctrine to the Elemental Master of Fire, even if silence would spare her parents from scrutiny.",
+   "ninjo": "Chisato fears that if she admits her doubt about the Tao, even to herself, her parents will have unknowingly raised a heretic.",
+   "standout_quality": "When Chisato purified the tainted shrine by calling down divine flame, she glimpsed her own capacity for error in the ashes—a doubt she has not yet allowed herself to speak aloud.",
+   "accomplishment": "She surrounded herself in flame at the tainted shrine and emerged relatively unscathed; the scar across her shoulder is from the falling log, not the fire.",
+   "challenge": "Isawa Chisato speaks so forcefully about what she knows to be true that she misses when someone is trying to tell her she has frightened them, or hurt them, or that they need her to listen instead of correct.",
+   "peace": "She tends the bonsai in the temple garden every morning, pruning back what has grown wild during the night, and some days her hands move faster than her mind can follow.",
+   "fear": "Chisato insists on sleeping in the Master's quarters when traveling to distant temples, refusing the cell prepared for visiting shugenja, and grows visibly strained when told there is no alternative accommodation available.",
+   "accoutrement": "She practices fire kami invocations in the dark, speaking each word twice to catch the moment her own certainty falters and confirm it was just the flame wavering, not her voice.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Isawa Tetsuya, a scholar three generations removed from the priesthood, questions texts that Chisato has been taught to defend as unassailable, and she cannot decide whether to report his work or to read it."
+   },
+   "mentor": {
+    "name": "Moshi Hanae",
+    "path": "A",
+    "granted": "Sake",
+    "skill": "",
+    "text": "Moshi Hanae taught her that fire kami respond to someone who drinks with them, not at them, a lesson Chisato has never managed to apply to her own students.",
+    "gender": "female",
+    "association": "Centipede"
+   },
+   "first_impression": "When Chisato speaks about doctrine, her voice does not rise or fall—it holds one steady pitch until she stops, the way a flame burns straight up.",
+   "stress_reaction": "When her students hesitate or contradict her, Chisato's hands move to her sleeves and she begins rolling the fabric between her fingers, smoothing and unsmoothing it until someone speaks or she forces herself to stop.",
+   "relationships": "Miya Yoshikado (Imperial) — Miya Yoshikado invited her to court to advise on a matter of spiritual precedent, and Chisato spent the entire audience correcting his framings of the question instead of answering it.\nAsako Satoru (Phoenix) — Asako Satoru listens to her theological arguments without interrupting, and Chisato has begun checking whether he actually agrees with her or is simply waiting for her to finish.",
+   "people": [
+    {
+     "name": "Miya Yoshikado",
+     "gender": "male",
+     "association": "Imperial",
+     "text": "Miya Yoshikado invited her to court to advise on a matter of spiritual precedent, and Chisato spent the entire audience correcting his framings of the question instead of answering it."
+    },
+    {
+     "name": "Asako Satoru",
+     "gender": "female",
+     "association": "Phoenix",
+     "text": "Asako Satoru listens to her theological arguments without interrupting, and Chisato has begun checking whether he actually agrees with her or is simply waiting for her to finish."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Her parents take pride in her devotion to doctrine but cannot understand why she needs to sleep in the Master's quarters when she visits, insisting on rooms that suit her station, and they worry this fastidiousness will isolate her from the humbler work of the priesthood.",
+    "skill": "aesthetics"
+   },
+   "heritage": "Spirit of the Phoenix",
+   "heritage_table": "new-samurai-heritages-celestial-realms",
+   "heritage_sub": "9-10 — ^\"Famously Wealthy\"",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Chisato will die correcting someone's understanding of doctrine in the moment when she should have noticed the blade."
+  },
+  "starting_item": "Kiseru",
+  "campaign": "",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "school.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Courtesy",
+    "Sentiment",
+    "Survival"
+   ],
+   "school.inspired": [
+    "Fire"
+   ],
+   "school.tech.1": [
+    "Cleansing Rite",
+    "Threshold Barrier"
+   ],
+   "school.tech.2": [
+    "Truth Burns through Lies",
+    "Borrowed Courage"
+   ],
+   "school.tech.0": [
+    "The Cleansing Fire"
+   ],
+   "family.ring_increase": [
+    "Void"
+   ]
+  },
+  "ai_history": {
+   "accomplishment": [
+    "She called down divine fire to purify the Asako shrine, but the flames consumed a cache of texts her parents had hidden there, and she has never asked why they needed hiding.",
+    "She spent three days alone in the meditation chamber after the purification, carefully transcribing Tetsuya's condemned texts from memory before she could forget them, telling herself she was documenting heresy for the Elemental Master.",
+    "She silenced a rival shugenja's challenge to her authority by citing doctrine so precisely that even the Elemental Master's advisors could not find fault with her, though she had memorized the passages only because she was searching them for loopholes."
+   ],
+   "challenge": [
+    "Isawa Chisato speaks so forcefully about what she knows to be true that she misses when someone is trying to tell her she has frightened them, or hurt them, or that they need her to listen instead of correct."
+   ],
+   "peace": [
+    "She tends the bonsai in the temple garden every morning, pruning back what has grown wild during the night, and some days her hands move faster than her mind can follow."
+   ],
+   "fear": [
+    "Chisato corrects a junior priest's misunderstanding of a ritual so sharply that he flinches and steps back, and she does not notice—or notices only after he has already left the room.",
+    "Chisato insists on sleeping in the Master's quarters when traveling to distant temples, refusing the cell prepared for visiting shugenja, and grows visibly strained when told there is no alternative accommodation available."
+   ],
+   "mentor_relationship": [
+    "Moshi Hanae taught her that doubt tastes like sake—bitter, warming, inevitable—and Chisato has been sober ever since.",
+    "Isawa Tetsuya brings her a text each month and watches her read it without speaking, and she has stopped arguing with him before she finishes the first page.",
+    "Chisato's mother taught her that certainty is a kindness to those around her, and now she cannot distinguish between the conviction that sustains her duty and the wall it has built between herself and anyone who needs her to be wrong."
+   ],
+   "first_impression": [
+    "When Chisato speaks about doctrine, her voice does not rise or fall—it holds one steady pitch until she stops, the way a flame burns straight up."
+   ],
+   "accoutrement": [
+    "She practices fire kami invocations in the dark, speaking each word twice to catch the moment her own certainty falters and confirm it was just the flame wavering, not her voice."
+   ],
+   "stress_reaction": [
+    "When her students hesitate or contradict her, Chisato's hands move to her sleeves and she begins rolling the fabric between her fingers, smoothing and unsmoothing it until someone speaks or she forces herself to stop."
+   ],
+   "relationship_person": [
+    "Miya Yoshikado invited her to court to advise on a matter of spiritual precedent, and Chisato spent the entire audience correcting his framings of the question instead of answering it.",
+    "Asako Satoru listens to her theological arguments without interrupting, and Chisato has begun checking whether he actually agrees with her or is simply waiting for her to finish."
+   ],
+   "parent_opinion": [
+    "Her parents take pride in her devotion to doctrine but cannot understand why she needs to sleep in the Master's quarters when she visits, insisting on rooms that suit her station, and they worry this fastidiousness will isolate her from the humbler work of the priesthood."
+   ],
+   "death": [
+    "Chisato will die correcting someone's understanding of doctrine in the moment when she should have noticed the blade."
+   ]
+  }
+ },
  "twenty_questions": {
   "template": "core",
-  "generated": true,
+  "generated": false,
   "steps": {
-   "step1": {
-    "answers": {
-     "clan": "Phoenix",
-     "ring": "void",
-     "skill": "theology",
-     "social_status": 30
-    },
-    "picks": {}
-   },
-   "step2": {
-    "answers": {
-     "family": "Isawa",
-     "ring": "void",
-     "skill1": "meditation",
-     "skill2": "theology",
-     "wealth": 5,
-     "social_glory": 44
-    },
-    "picks": {}
-   },
-   "step3": {
-    "answers": {
-     "school": "Isawa Tensai School",
-     "roles": "Shugenja",
-     "ring1": "fire",
-     "ring2": "fire",
-     "skill1": "sentiment",
-     "skill2": "courtesy",
-     "skill3": "survival",
-     "social_honor": 50
-    },
-    "picks": {
-     "techniques": [
-      "Threshold Barrier",
-      "Borrowed Courage",
-      "Truth Burns through Lies",
-      "Cleansing Rite"
-     ],
-     "school_ability": [
-      "Elemental Inspiration"
-     ],
-     "equipment": [
-      "Sanctified Robes",
-      "Traveling Clothes",
-      "Traveling pack",
-      "Scroll satchel",
-      "Wakizashi"
-     ]
-    }
-   },
    "step4": {
     "answers": {
+     "stand_out": "When Chisato purified the tainted shrine by calling down divine flame, she glimpsed her own capacity for error in the ashes—a doubt she has not yet allowed herself to speak aloud.",
      "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Chisato must report any deviation from orthodox doctrine to the Elemental Master of Fire, even if silence would spare her parents from scrutiny.",
+     "lord_name": ""
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Chisato fears that if she admits her doubt about the Tao, even to herself, her parents will have unknowingly raised a heretic."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "social_add_glory": 5
+     "clan_relations": "Isawa Tetsuya, a scholar three generations removed from the priesthood, questions texts that Chisato has been taught to defend as unassailable, and she cannot decide whether to report his work or to read it."
     },
     "picks": {}
    },
    "step8": {
     "answers": {
-     "social_add_honor": 10
+     "tenet_paramount": "Righteousness",
+     "tenet_less_significant": "Compassion"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She surrounded herself in flame at the tainted shrine and emerged relatively unscathed; the scar across her shoulder is from the falling log, not the fire."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Isawa Chisato speaks so forcefully about what she knows to be true that she misses when someone is trying to tell her she has frightened them, or hurt them, or that they need her to listen instead of correct."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "She tends the bonsai in the temple garden every morning, pruning back what has grown wild during the night, and some days her hands move faster than her mind can follow."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Chisato insists on sleeping in the Master's quarters when traveling to distant temples, refusing the cell prepared for visiting shugenja, and grows visibly strained when told there is no alternative accommodation available."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Moshi Hanae — Moshi Hanae taught her that fire kami respond to someone who drinks with them, not at them, a lesson Chisato has never managed to apply to her own students."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "When Chisato speaks about doctrine, her voice does not rise or fall—it holds one steady pitch until she stops, the way a flame burns straight up.",
+     "accoutrement": "She practices fire kami invocations in the dark, speaking each word twice to catch the moment her own certainty falters and confirm it was just the flame wavering, not her voice."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When her students hesitate or contradict her, Chisato's hands move to her sleeves and she begins rolling the fabric between her fingers, smoothing and unsmoothing it until someone speaks or she forces herself to stop."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Miya Yoshikado (Imperial) — Miya Yoshikado invited her to court to advise on a matter of spiritual precedent, and Chisato spent the entire audience correcting his framings of the question instead of answering it.\nAsako Satoru (Phoenix) — Asako Satoru listens to her theological arguments without interrupting, and Chisato has begun checking whether he actually agrees with her or is simply waiting for her to finish."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Her parents take pride in her devotion to doctrine but cannot understand why she needs to sleep in the Master's quarters when she visits, insisting on rooms that suit her station, and they worry this fastidiousness will isolate her from the humbler work of the priesthood."
     },
     "picks": {}
    },
    "step18": {
     "answers": {
-     "heritage_add_honor": 0,
-     "heritage_add_glory": 0,
-     "heritage_add_status": 0
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Spirit of the Phoenix",
+     "heritage_table": "New Samurai Heritages (Celestial Realms)",
+     "heritage_sub": "9-10 — ^\"Famously Wealthy\""
     },
     "picks": {}
    },
-   "step19": {
+   "step20": {
     "answers": {
-     "firstname": "Chisato"
+     "death": "Chisato will die correcting someone's understanding of doctrine in the moment when she should have noticed the blade."
     },
     "picks": {}
    }
@@ -114,8 +305,7 @@
    "label": null,
    "rank": 1,
    "school": "Isawa Tensai School",
-   "foundry_id": "mi3cyhYMkaigwR8i",
-   "foundry_name": "Isawa Chisato",
+   "foundry_id": null,
    "rings": {
     "air": 2,
     "earth": 1,
@@ -125,7 +315,7 @@
    },
    "skills": {
     "artisan": {
-     "aesthetics": 0,
+     "aesthetics": 1,
      "composition": 0,
      "design": 0,
      "smithing": 0
@@ -161,13 +351,13 @@
    },
    "social": {
     "honor": 60,
-    "glory": 49,
+    "glory": 52,
     "status": 30,
-    "ninjo": "",
-    "giri": "",
+    "ninjo": "Chisato fears that if she admits her doubt about the Tao, even to herself, her parents will have unknowingly raised a heretic.",
+    "giri": "Chisato must report any deviation from orthodox doctrine to the Elemental Master of Fire, even if silence would spare her parents from scrutiny.",
     "bushido_tenets": {
-     "paramount": "",
-     "less_significant": ""
+     "paramount": "Righteousness",
+     "less_significant": "Compassion"
     }
    },
    "derived": {
@@ -184,75 +374,50 @@
    },
    "techniques": [
     {
-     "name": "Threshold Barrier",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "ritual",
-     "rank": 1
+     "name": "The Cleansing Fire"
     },
     {
-     "name": "Borrowed Courage",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "shuji",
-     "rank": 1
+     "name": "Cleansing Rite"
     },
     {
-     "name": "Truth Burns through Lies",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "shuji",
-     "rank": 1
+     "name": "Threshold Barrier"
     },
     {
-     "name": "Cleansing Rite",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "ritual",
-     "rank": 1
+     "name": "Truth Burns through Lies"
     },
     {
-     "name": "Elemental Inspiration",
-     "xp_used": 0,
-     "xp_cost": 0,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "school_ability",
-     "rank": 1
+     "name": "Borrowed Courage"
+    },
+    {
+     "name": "Elemental Inspiration"
     }
    ],
-   "peculiarities": [],
+   "peculiarities": [
+    {
+     "name": "Dashing Scar"
+    },
+    {
+     "name": "Bluntness"
+    },
+    {
+     "name": "Bonsai"
+    },
+    {
+     "name": "Accustomed to Luxury"
+    },
+    {
+     "name": "Sake"
+    },
+    {
+     "name": "Famously Wealthy"
+    }
+   ],
    "titles": [],
    "bonds": [],
    "signature_scrolls": [],
    "gear": [
     {
-     "name": "Wakizashi",
-     "quantity": 1
-    },
-    {
-     "name": "Sanctified Robes",
-     "quantity": 1
-    },
-    {
-     "name": "Traveling Clothes",
-     "quantity": 1
-    },
-    {
-     "name": "Traveling pack",
-     "quantity": 1
-    },
-    {
-     "name": "Scroll satchel",
-     "quantity": 1
+     "name": "Kiseru"
     }
    ],
    "advancements": []

@@ -1,109 +1,321 @@
 {
  "slug": "kurosawa-genzo",
  "name": "Kurosawa Genzō",
- "folder_label": "Kurosawa Genzō",
  "campaign": "Imperfect Land",
  "status": null,
- "bucket": null,
- "accent": null,
  "identity": {
   "clan": "River Region",
   "family": "Military",
-  "region": null,
-  "upbringing": null,
-  "origin_type": null,
   "school": "Worldly Rōnin Path",
   "role": "Bushi",
-  "age": ""
+  "age": "",
+  "region": "Sea River or Lake Region",
+  "upbringing": "Ronin Family Upbringing",
+  "origin_type": "ronin"
  },
+ "mode": "pow",
  "portrait": "src/portraits/kurosawa-genzo.webp",
  "concept": null,
  "summary": null,
  "notes": "",
+ "wizard": {
+  "name": "Kurosawa Genzō",
+  "mode": "pow",
+  "clan": "River Region",
+  "family": "Military",
+  "school": "Worldly Rōnin Path",
+  "role": "Bushi",
+  "region": "Sea River or Lake Region",
+  "upbringing": "Ronin Family Upbringing",
+  "standout_ring": "earth",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "tactics": 1,
+   "labor": 1,
+   "ranged": 1,
+   "smithing": 1
+  },
+  "distinctions": [
+   "Expert Tracker"
+  ],
+  "adversities": [
+   "Disdain for Courage"
+  ],
+  "passions": [
+   "Kyūdō"
+  ],
+  "anxieties": [
+   "Jealousy"
+  ],
+  "bushido": {
+   "paramount": "Honor",
+   "lesser": "Duty and Loyalty",
+   "attitude": "B",
+   "skill": "labor"
+  },
+  "answers": {
+   "giri": "",
+   "ninjo": "He wants to believe the next captain who hires him won't eventually ask him to do something that makes him run again.",
+   "standout_quality": "He accepts jobs that keep him moving and solvent, but turns down the ones that would require him to stay in one place long enough to form attachments.",
+   "accomplishment": "He followed a merchant captain's runaway daughter three days upriver through fog and fouled current to a shrine town, and brought her back without the captain ever learning she had gone.",
+   "challenge": "When a captain asks him to stay through winter to train the crew, Genzō finds himself caught between the steady work that would let him stop running and the certainty that staying means eventually being asked to do something unforgivable.",
+   "peace": "He stands at the river's edge before dawn with a bow he has never named, drawing and releasing until his shoulders burn and the strife drains from his chest like water through cupped hands.",
+   "fear": "When a younger swordsman bests him in a sparring match before the crew, Genzō finds himself accepting the captain's offer to stay through winter, teaching the boy everything he knows, each lesson a small wound he cannot stop reopening.",
+   "accoutrement": "",
+   "past": "He deserted his lord's service after witnessing the man order the execution of a fishing village that had sheltered enemy refugees, and he has been running jobs for merchant captains ever since rather than risk serving anyone who might ask him to do it again.",
+   "known_for": "The merchant captains in the River ports know he will cut a man down without hesitation, but they have never seen him take a job that would keep him docked longer than the hull needs caulking.",
+   "known_skill": "tactics",
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "The bowstring he braids from horsehair each winter is shorter than it should be, frayed where he has retied it a dozen times rather than replace it, because the bow itself came from Mirumoto Yoshitô and he cannot afford to know whether a new string would shoot true.",
+   "group_history": "Michio watches Genzō turn down a winter posting that would have paid enough to stop running, then accepts the same captain's offer three days later when the boy who beat him in sparring asks for instruction.",
+   "raised_by": "A merchant captain's widow raised him from fourteen after his parents drowned in a river accident, and he still cannot refuse work that takes him away from her port for more than a season.",
+   "raised_skill": "smithing",
+   "clan_relationship": {
+    "path": null,
+    "skill": null,
+    "text": ""
+   },
+   "mentor": {
+    "name": "Mirumoto Yoshitô",
+    "path": "B",
+    "granted": "Animal Signs",
+    "skill": "ranged",
+    "text": "",
+    "gender": "male",
+    "association": "Dragon"
+   },
+   "first_impression": "",
+   "stress_reaction": "When the pressure mounts and he cannot leave, Genzō's hands move to his bowstring—checking the fraying, retying the knots, running his thumb along the horsehair until his fingers bleed.",
+   "relationships": "Michio (Nezumi Tattered Ear Explorer Tradition) — Michio brings him work that moves upriver, and Genzō accepts every job without asking questions, though he watches the Nezumi's face to see if this one will be the kind that keeps him still.\nMirumoto Manami (Dragon) — Mirumoto Manami trained him in the forms after he fled his lord's service, and he has not spoken to her in three years because she keeps sending letters asking him to come home to the Dragon.",
+   "people": [
+    {
+     "name": "Michio",
+     "gender": "female",
+     "association": "Nezumi Tattered Ear Explorer Tradition",
+     "text": "Michio brings him work that moves upriver, and Genzō accepts every job without asking questions, though he watches the Nezumi's face to see if this one will be the kind that keeps him still."
+    },
+    {
+     "name": "Mirumoto Manami",
+     "gender": "female",
+     "association": "Dragon",
+     "text": "Mirumoto Manami trained him in the forms after he fled his lord's service, and he has not spoken to her in three years because she keeps sending letters asking him to come home to the Dragon."
+    }
+   ],
+   "parent_opinion": {
+    "description": "",
+    "skill": null
+   },
+   "heritage": null,
+   "heritage_table": null,
+   "heritage_sub": null,
+   "death": "Genzō dies teaching a student something he should have learned himself, his back to the river and his hands still moving through the form even as the blade finds him.",
+   "rolls": {
+    "q5.past": {
+     "roll": 60,
+     "label": "Family in Need"
+    }
+   }
+  },
+  "starting_item": "Sake Cup",
+  "campaign": "",
+  "notes": "",
+  "gender": "any",
+  "choices": {
+   "upbringing.ring_increase": [
+    "Water"
+   ],
+   "school.ring_increase": [
+    "Earth",
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Fitness",
+    "Martial Arts [Ranged]",
+    "Martial Arts [Melee]",
+    "Martial Arts [Unarmed]",
+    "Labor"
+   ],
+   "school.tech.0": [
+    "Pelting Hail Style"
+   ],
+   "school.tech.1": [
+    "All in Jest"
+   ],
+   "q4.trouble": [
+    "Patient, stoic, thorough"
+   ],
+   "q5.past": [
+    "Family in Need"
+   ],
+   "q7.known": [
+    "Wicked, harmful, or selfish deeds"
+   ],
+   "q14.prized": [
+    "Demon Mask"
+   ],
+   "q17.history": [
+    "The unthinkable"
+   ]
+  },
+  "school_all": true,
+  "ai_history": {
+   "standout_quality": [
+    "He accepts jobs that keep him moving and solvent, but turns down the ones that would require him to stay in one place long enough to form attachments."
+   ],
+   "past": [
+    "He deserted his lord's service after witnessing the man order the execution of a fishing village that had sheltered enemy refugees, and he has been running jobs for merchant captains ever since rather than risk serving anyone who might ask him to do it again."
+   ],
+   "ninjo": [
+    "He wants to believe the next captain who hires him won't eventually ask him to do something that makes him run again."
+   ],
+   "known_for": [
+    "The merchant captains in the River ports know he will cut a man down without hesitation, but they have never seen him take a job that would keep him docked longer than the hull needs caulking."
+   ],
+   "accomplishment": [
+    "He followed a merchant captain's runaway daughter three days upriver through fog and fouled current to a shrine town, and brought her back without the captain ever learning she had gone."
+   ],
+   "challenge": [
+    "When a captain asks him to stay through winter to train the crew, Genzō finds himself caught between the steady work that would let him stop running and the certainty that staying means eventually being asked to do something unforgivable."
+   ],
+   "peace": [
+    "He stands at the river's edge before dawn with a bow he has never named, drawing and releasing until his shoulders burn and the strife drains from his chest like water through cupped hands."
+   ],
+   "fear": [
+    "When a younger swordsman bests him in a sparring match before the crew, Genzō finds himself accepting the captain's offer to stay through winter, teaching the boy everything he knows, each lesson a small wound he cannot stop reopening."
+   ],
+   "prized_possession": [
+    "The bowstring he braids from horsehair each winter is shorter than it should be, frayed where he has retied it a dozen times rather than replace it, because the bow itself came from Mirumoto Yoshitô and he cannot afford to know whether a new string would shoot true."
+   ],
+   "stress_reaction": [
+    "When the pressure mounts and he cannot leave, Genzō's hands move to his bowstring—checking the fraying, retying the knots, running his thumb along the horsehair until his fingers bleed."
+   ],
+   "relationship_person": [
+    "Michio brings him work that moves upriver, and Genzō accepts every job without asking questions, though he watches the Nezumi's face to see if this one will be the kind that keeps him still.",
+    "Mirumoto Manami trained him in the forms after he fled his lord's service, and he has not spoken to her in three years because she keeps sending letters asking him to come home to the Dragon."
+   ],
+   "group_history": [
+    "Michio watches Genzō turn down a winter posting that would have paid enough to stop running, then accepts the same captain's offer three days later when the boy who beat him in sparring asks for instruction."
+   ],
+   "raised_by": [
+    "A merchant captain's widow raised him from fourteen after his parents drowned in a river accident, and he still cannot refuse work that takes him away from her port for more than a season."
+   ],
+   "death": [
+    "Genzō dies teaching a student something he should have learned himself, his back to the river and his hands still moving through the form even as the blade finds him."
+   ]
+  }
+ },
  "twenty_questions": {
   "template": "pow",
-  "generated": true,
+  "generated": false,
   "steps": {
-   "step1": {
-    "answers": {
-     "clan": "River Region",
-     "ring": "water",
-     "skill": "seafaring",
-     "social_status": 5
-    },
-    "picks": {}
-   },
-   "step2": {
-    "answers": {
-     "family": "Military",
-     "ring": "fire",
-     "skill1": "government",
-     "skill2": "command",
-     "wealth": 5,
-     "social_glory": 32
-    },
-    "picks": {}
-   },
-   "step3": {
-    "answers": {
-     "school": "Worldly Rōnin Path",
-     "roles": "Bushi",
-     "ring1": "earth",
-     "ring2": "air",
-     "skill1": "command",
-     "skill2": "melee",
-     "skill3": "ranged",
-     "skill4": "fitness",
-     "skill5": "unarmed",
-     "social_honor": 30
-    },
-    "picks": {
-     "techniques": [
-      "Crescent Moon Style",
-      "All in Jest"
-     ],
-     "school_ability": [
-      "School of Waves"
-     ],
-     "equipment": [
-      "Traveling Clothes",
-      "Yari",
-      "Katana",
-      "Wakizashi",
-      "Mempō",
-      "Climbing Kit"
-     ]
-    }
-   },
    "step4": {
     "answers": {
-     "ring": "void"
+     "stand_out": "He accepts jobs that keep him moving and solvent, but turns down the ones that would require him to stay in one place long enough to form attachments.",
+     "ring": "earth"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "",
+     "lord_name": ""
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "He wants to believe the next captain who hires him won't eventually ask him to do something that makes him run again."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "social_add_glory": 5
+     "clan_relations": ""
     },
     "picks": {}
    },
    "step8": {
     "answers": {
-     "social_add_honor": 10
+     "tenet_paramount": "Honor",
+     "tenet_less_significant": "Duty and Loyalty"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "He followed a merchant captain's runaway daughter three days upriver through fog and fouled current to a shrine town, and brought her back without the captain ever learning she had gone."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When a captain asks him to stay through winter to train the crew, Genzō finds himself caught between the steady work that would let him stop running and the certainty that staying means eventually being asked to do something unforgivable."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "He stands at the river's edge before dawn with a bow he has never named, drawing and releasing until his shoulders burn and the strife drains from his chest like water through cupped hands."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When a younger swordsman bests him in a sparring match before the crew, Genzō finds himself accepting the captain's offer to stay through winter, teaching the boy everything he knows, each lesson a small wound he cannot stop reopening."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Mirumoto Yoshitô"
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "",
+     "accoutrement": ""
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When the pressure mounts and he cannot leave, Genzō's hands move to his bowstring—checking the fraying, retying the knots, running his thumb along the horsehair until his fingers bleed."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Michio (Nezumi Tattered Ear Explorer Tradition) — Michio brings him work that moves upriver, and Genzō accepts every job without asking questions, though he watches the Nezumi's face to see if this one will be the kind that keeps him still.\nMirumoto Manami (Dragon) — Mirumoto Manami trained him in the forms after he fled his lord's service, and he has not spoken to her in three years because she keeps sending letters asking him to come home to the Dragon."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": ""
     },
     "picks": {}
    },
    "step18": {
     "answers": {
-     "heritage_add_honor": 0,
-     "heritage_add_glory": 0,
-     "heritage_add_status": 0
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": null,
+     "heritage_table": null,
+     "heritage_sub": null
     },
     "picks": {}
    },
-   "step19": {
+   "step20": {
     "answers": {
-     "firstname": "Genzō"
+     "death": "Genzō dies teaching a student something he should have learned himself, his back to the river and his hands still moving through the form even as the blade finds him."
     },
     "picks": {}
    }
@@ -115,68 +327,67 @@
    "label": null,
    "rank": 1,
    "school": "Worldly Rōnin Path",
-   "foundry_id": "mwzT1Mrded10UxWP",
-   "foundry_name": "Kurosawa Genzō",
+   "foundry_id": null,
    "rings": {
-    "air": 2,
-    "earth": 2,
+    "air": 1,
+    "earth": 3,
     "fire": 2,
-    "water": 2,
-    "void": 2
+    "water": 3,
+    "void": 1
    },
    "skills": {
     "artisan": {
      "aesthetics": 0,
      "composition": 0,
      "design": 0,
-     "smithing": 0
+     "smithing": 1
     },
     "martial": {
      "fitness": 1,
-     "melee": 1,
-     "ranged": 1,
+     "melee": 2,
+     "ranged": 2,
      "unarmed": 1,
      "meditation": 0,
-     "tactics": 0
+     "tactics": 1
     },
     "scholar": {
      "culture": 0,
-     "government": 1,
+     "government": 0,
      "medicine": 0,
      "sentiment": 0,
      "theology": 0
     },
     "social": {
-     "command": 2,
-     "courtesy": 0,
+     "command": 0,
+     "courtesy": 1,
      "games": 0,
      "performance": 0
     },
     "trade": {
      "commerce": 0,
-     "labor": 0,
+     "labor": 2,
      "seafaring": 1,
      "skulduggery": 0,
      "survival": 0
     }
    },
    "social": {
-    "honor": 40,
-    "glory": 37,
-    "status": 5,
-    "ninjo": "",
+    "honor": 30,
+    "glory": 32,
+    "status": 26,
+    "ninjo": "He wants to believe the next captain who hires him won't eventually ask him to do something that makes him run again.",
     "giri": "",
     "bushido_tenets": {
-     "paramount": "",
-     "less_significant": ""
+     "paramount": "Honor",
+     "less_significant": "Duty and Loyalty"
     }
    },
    "derived": {
-    "endurance": 8,
-    "composure": 8,
-    "focus": 4,
+    "endurance": 10,
+    "composure": 12,
+    "focus": 3,
     "vigilance": 2,
-    "void_points": 2
+    "void_points": 1
    },
    "money": {
     "zeni": 0,
@@ -185,61 +396,38 @@
    },
    "techniques": [
     {
-     "name": "Crescent Moon Style",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "kata",
-     "rank": 2
+     "name": "Pelting Hail Style"
     },
     {
-     "name": "All in Jest",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "shuji",
-     "rank": 1
+     "name": "All in Jest"
     },
     {
-     "name": "School of Waves",
-     "xp_used": 0,
-     "xp_cost": 0,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "school_ability",
-     "rank": 1
+     "name": "School of Waves"
     }
    ],
-   "peculiarities": [],
+   "peculiarities": [
+    {
+     "name": "Expert Tracker"
+    },
+    {
+     "name": "Disdain for Courage"
+    },
+    {
+     "name": "Kyūdō"
+    },
+    {
+     "name": "Jealousy"
+    },
+    {
+     "name": "Animal Signs"
+    }
+   ],
    "titles": [],
    "bonds": [],
    "signature_scrolls": [],
    "gear": [
     {
-     "name": "Yari",
-     "quantity": 1
-    },
-    {
-     "name": "Katana",
-     "quantity": 1
-    },
-    {
-     "name": "Wakizashi",
-     "quantity": 1
-    },
-    {
-     "name": "Traveling Clothes",
-     "quantity": 1
-    },
-    {
-     "name": "Mempō",
-     "quantity": 1
-    },
-    {
-     "name": "Climbing Kit",
-     "quantity": 1
+     "name": "Sake Cup"
     }
    ],
    "advancements": []

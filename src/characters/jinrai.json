@@ -1,107 +1,314 @@
 {
  "slug": "jinrai",
  "name": "Jinrai",
- "folder_label": "Jinrai",
  "campaign": "Imperfect Land",
  "status": null,
- "bucket": null,
- "accent": null,
  "identity": {
   "clan": "Rural Farmland Region",
   "family": "Military",
-  "region": null,
-  "upbringing": null,
-  "origin_type": null,
   "school": "Mystic of the Mountain",
   "role": "Monk",
-  "age": ""
+  "age": "",
+  "region": "Rural Farmland Region",
+  "upbringing": "Military Upbringing",
+  "origin_type": "ronin"
  },
+ "mode": "pow",
  "portrait": "src/portraits/jinrai.webp",
  "concept": null,
  "summary": null,
  "notes": "",
+ "wizard": {
+  "name": "Jinrai",
+  "mode": "pow",
+  "clan": "Rural Farmland Region",
+  "family": "Military",
+  "school": "Mystic of the Mountain",
+  "role": "Monk",
+  "region": "Rural Farmland Region",
+  "upbringing": "Military Upbringing",
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "melee": 1,
+   "medicine": 1
+  },
+  "distinctions": [
+   "Jurojin’s Blessing"
+  ],
+  "adversities": [
+   "Bullheaded"
+  ],
+  "passions": [
+   "Ikebana"
+  ],
+  "anxieties": [
+   "Fallen Ancestor"
+  ],
+  "bushido": {
+   "paramount": "Sincerity",
+   "lesser": "Courtesy",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "",
+   "ninjo": "Jinrai tells himself he has left the ashigaru life behind, but he still drills footwork every morning before the farmers wake, and last month he spent two days teaching a village headman's son how to hold a spear.",
+   "standout_quality": "He preaches forgiveness to farmers and merchants while his jaw tightens whenever a samurai enters the room, and he knows they can see it.",
+   "accomplishment": "Jinrai converted a bandit who had burned two granaries, and now that man tends crops in a village near Beiden while Jinrai takes a longer road to avoid the merchant who owned them.",
+   "challenge": "When he decides a farmer needs to learn spearwork or a village headman's judgment is wrong, Jinrai teaches or corrects them regardless of what he promised to do that day.",
+   "peace": "In the village temple's side room, Jinrai kneels before a low table arranging cut stems—a priest's discards, market flowers past their prime—rotating each one until the angles speak to each other, his shoulders dropping lower with each placement until his breathing settles into the rhythm of the work itself.",
+   "fear": "When Jinrai performs the evening sutras in an empty temple, he cannot shake the certainty that his dead grandmother—who bore a samurai's bastard son in shame—watches him teach forgiveness to the very class that destroyed her, waiting to see if he will finally break.",
+   "accoutrement": "",
+   "past": "He trained ashigaru recruits in the rice paddies outside Beiden, and three of them died in his first real command because he gave the order to hold a bridge too long.",
+   "known_for": "In a village near Beiden, Jinrai converted a bandit who had burned two granaries, and now the bandit works the fields while Jinrai avoids the merchant whose grain stores those were.",
+   "known_skill": null,
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "Jinrai's sandals are worn through at the heel on the right foot, and he refuses to replace them though he passes through towns that sell better ones.",
+   "group_history": "When the group stops to make camp, Jinrai always volunteers to gather firewood and walks farther than necessary to avoid watching them eat their evening meal together.",
+   "raised_by": "Kakita Tanomo raised him in the ashigaru barracks outside Beiden, and Jinrai has spent fifteen years trying to teach forgiveness while still drilling the footwork Tanomo beat into his spine.",
+   "raised_skill": "medicine",
+   "clan_relationship": {
+    "path": null,
+    "skill": null,
+    "text": ""
+   },
+   "mentor": {
+    "name": "Kakita Tanomo",
+    "path": "B",
+    "granted": "Overconfidence in Spiritual Sensitivity",
+    "skill": "melee",
+    "text": "",
+    "gender": "female",
+    "association": "Crane"
+   },
+   "first_impression": "",
+   "stress_reaction": "When the weight of responsibility presses down, Jinrai stops speaking mid-sentence and begins drilling footwork—the ashigaru drills from Beiden, precise and punishing—until his legs burn and his mind goes quiet, which troubles him because it means the monk is losing ground to the soldier.",
+   "relationships": "Agasha Yagorô (Dragon) — Agasha Yagorô brings him maps of the Dragon territories and asks which villages need teachers, and Jinrai accepts them though he knows Yagorô is testing whether he will finally agree that some people deserve enlightenment more than others.\nTasuoki (Ganzu Guardian Tradition) — Tasuoki stopped him on the road to ask if the Perfect Land teaching truly applied to warriors, and Jinrai spent an hour explaining that it did, but he has not walked that direction again.",
+   "people": [
+    {
+     "name": "Agasha Yagorô",
+     "gender": "male",
+     "association": "Dragon",
+     "text": "Agasha Yagorô brings him maps of the Dragon territories and asks which villages need teachers, and Jinrai accepts them though he knows Yagorô is testing whether he will finally agree that some people deserve enlightenment more than others."
+    },
+    {
+     "name": "Tasuoki",
+     "gender": "male",
+     "association": "Ganzu Guardian Tradition",
+     "text": "Tasuoki stopped him on the road to ask if the Perfect Land teaching truly applied to warriors, and Jinrai spent an hour explaining that it did, but he has not walked that direction again."
+    }
+   ],
+   "parent_opinion": {
+    "description": "",
+    "skill": null
+   },
+   "heritage": null,
+   "heritage_table": null,
+   "heritage_sub": null,
+   "death": "Jinrai teaching spearwork to a village boy notices samurai coming up the road, his hands tighten on the child's shoulders, and when he turns to send the boy inside, the samurai are close enough to see his jaw work—close enough to see what he thinks of them—and one of them decides that a monk who cannot hide his contempt deserves to learn humility before he dies teaching it to others.",
+   "rolls": {
+    "q5.past": {
+     "roll": 63,
+     "label": "Forsaken Vows"
+    }
+   }
+  },
+  "starting_item": "Gada",
+  "campaign": "",
+  "notes": "",
+  "gender": "any",
+  "choices": {
+   "upbringing.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Unarmed]",
+    "Martial Arts [Melee]",
+    "Survival",
+    "Theology"
+   ],
+   "school.tech.0": [
+    "The Great Silence"
+   ],
+   "school.tech.1": [
+    "Stirring the Embers"
+   ],
+   "q4.trouble": [
+    "Gregarious, adaptable, charming"
+   ],
+   "q5.past": [
+    "Forsaken Vows"
+   ],
+   "q7.known": [
+    "Positive deeds, skills, or helpful behavior"
+   ],
+   "q14.prized": [
+    "Tattoo Needles"
+   ],
+   "q17.history": [
+    "A great beast"
+   ]
+  },
+  "school_all": true,
+  "ai_history": {
+   "standout_quality": [
+    "He preaches forgiveness to farmers and merchants while his jaw tightens whenever a samurai enters the room, and he knows they can see it."
+   ],
+   "past": [
+    "He trained ashigaru recruits in the rice paddies outside Beiden, and three of them died in his first real command because he gave the order to hold a bridge too long."
+   ],
+   "ninjo": [
+    "Jinrai tells himself he has left the ashigaru life behind, but he still drills footwork every morning before the farmers wake, and last month he spent two days teaching a village headman's son how to hold a spear."
+   ],
+   "known_for": [
+    "In a village near Beiden, Jinrai converted a bandit who had burned two granaries, and now the bandit works the fields while Jinrai avoids the merchant whose grain stores those were."
+   ],
+   "accomplishment": [
+    "Jinrai converted a bandit who had burned two granaries, and now that man tends crops in a village near Beiden while Jinrai takes a longer road to avoid the merchant who owned them."
+   ],
+   "challenge": [
+    "When he decides a farmer needs to learn spearwork or a village headman's judgment is wrong, Jinrai teaches or corrects them regardless of what he promised to do that day."
+   ],
+   "peace": [
+    "In the village temple's side room, Jinrai kneels before a low table arranging cut stems—a priest's discards, market flowers past their prime—rotating each one until the angles speak to each other, his shoulders dropping lower with each placement until his breathing settles into the rhythm of the work itself."
+   ],
+   "fear": [
+    "When Jinrai performs the evening sutras in an empty temple, he cannot shake the certainty that his dead grandmother—who bore a samurai's bastard son in shame—watches him teach forgiveness to the very class that destroyed her, waiting to see if he will finally break."
+   ],
+   "prized_possession": [
+    "Jinrai's sandals are worn through at the heel on the right foot, and he refuses to replace them though he passes through towns that sell better ones."
+   ],
+   "stress_reaction": [
+    "When the weight of responsibility presses down, Jinrai stops speaking mid-sentence and begins drilling footwork—the ashigaru drills from Beiden, precise and punishing—until his legs burn and his mind goes quiet, which troubles him because it means the monk is losing ground to the soldier."
+   ],
+   "relationship_person": [
+    "Agasha Yagorô brings him maps of the Dragon territories and asks which villages need teachers, and Jinrai accepts them though he knows Yagorô is testing whether he will finally agree that some people deserve enlightenment more than others.",
+    "Tasuoki stopped him on the road to ask if the Perfect Land teaching truly applied to warriors, and Jinrai spent an hour explaining that it did, but he has not walked that direction again."
+   ],
+   "group_history": [
+    "When the group stops to make camp, Jinrai always volunteers to gather firewood and walks farther than necessary to avoid watching them eat their evening meal together."
+   ],
+   "raised_by": [
+    "Kakita Tanomo raised him in the ashigaru barracks outside Beiden, and Jinrai has spent fifteen years trying to teach forgiveness while still drilling the footwork Tanomo beat into his spine."
+   ],
+   "death": [
+    "Jinrai teaching spearwork to a village boy notices samurai coming up the road, his hands tighten on the child's shoulders, and when he turns to send the boy inside, the samurai are close enough to see his jaw work—close enough to see what he thinks of them—and one of them decides that a monk who cannot hide his contempt deserves to learn humility before he dies teaching it to others."
+   ]
+  }
+ },
  "twenty_questions": {
   "template": "pow",
-  "generated": true,
+  "generated": false,
   "steps": {
-   "step1": {
-    "answers": {
-     "clan": "Rural Farmland Region",
-     "ring": "earth",
-     "skill": "fitness",
-     "social_status": 5
-    },
-    "picks": {}
-   },
-   "step2": {
-    "answers": {
-     "family": "Military",
-     "ring": "fire",
-     "skill1": "government",
-     "skill2": "command",
-     "wealth": 1,
-     "social_glory": 34
-    },
-    "picks": {}
-   },
-   "step3": {
-    "answers": {
-     "school": "Mystic of the Mountain",
-     "roles": "Monk",
-     "ring1": "void",
-     "ring2": "air",
-     "skill1": "unarmed",
-     "skill2": "melee",
-     "skill3": "survival",
-     "skill4": "theology",
-     "social_honor": 40
-    },
-    "picks": {
-     "techniques": [
-      "The Great Silence",
-      "Stirring the Embers",
-      "Cleansing Rite",
-      "Artisan’s Appraisal"
-     ],
-     "school_ability": [
-      "Unexpected Wisdom"
-     ],
-     "equipment": [
-      "Traveling Clothes",
-      "Nunchaku",
-      "Chandu"
-     ]
-    }
-   },
    "step4": {
     "answers": {
-     "ring": "void"
+     "stand_out": "He preaches forgiveness to farmers and merchants while his jaw tightens whenever a samurai enters the room, and he knows they can see it.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "",
+     "lord_name": ""
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Jinrai tells himself he has left the ashigaru life behind, but he still drills footwork every morning before the farmers wake, and last month he spent two days teaching a village headman's son how to hold a spear."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "social_add_glory": 5
+     "clan_relations": ""
     },
     "picks": {}
    },
    "step8": {
     "answers": {
-     "social_add_honor": 10
+     "tenet_paramount": "Sincerity",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Jinrai converted a bandit who had burned two granaries, and now that man tends crops in a village near Beiden while Jinrai takes a longer road to avoid the merchant who owned them."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When he decides a farmer needs to learn spearwork or a village headman's judgment is wrong, Jinrai teaches or corrects them regardless of what he promised to do that day."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "In the village temple's side room, Jinrai kneels before a low table arranging cut stems—a priest's discards, market flowers past their prime—rotating each one until the angles speak to each other, his shoulders dropping lower with each placement until his breathing settles into the rhythm of the work itself."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When Jinrai performs the evening sutras in an empty temple, he cannot shake the certainty that his dead grandmother—who bore a samurai's bastard son in shame—watches him teach forgiveness to the very class that destroyed her, waiting to see if he will finally break."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Kakita Tanomo"
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "",
+     "accoutrement": ""
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When the weight of responsibility presses down, Jinrai stops speaking mid-sentence and begins drilling footwork—the ashigaru drills from Beiden, precise and punishing—until his legs burn and his mind goes quiet, which troubles him because it means the monk is losing ground to the soldier."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Agasha Yagorô (Dragon) — Agasha Yagorô brings him maps of the Dragon territories and asks which villages need teachers, and Jinrai accepts them though he knows Yagorô is testing whether he will finally agree that some people deserve enlightenment more than others.\nTasuoki (Ganzu Guardian Tradition) — Tasuoki stopped him on the road to ask if the Perfect Land teaching truly applied to warriors, and Jinrai spent an hour explaining that it did, but he has not walked that direction again."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": ""
     },
     "picks": {}
    },
    "step18": {
     "answers": {
-     "heritage_add_honor": 0,
-     "heritage_add_glory": 0,
-     "heritage_add_status": 0
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": null,
+     "heritage_table": null,
+     "heritage_sub": null
     },
     "picks": {}
    },
-   "step19": {
+   "step20": {
     "answers": {
-     "firstname": "Jinrai"
+     "death": "Jinrai teaching spearwork to a village boy notices samurai coming up the road, his hands tighten on the child's shoulders, and when he turns to send the boy inside, the samurai are close enough to see his jaw work—close enough to see what he thinks of them—and one of them decides that a monk who cannot hide his contempt deserves to learn humility before he dies teaching it to others."
     },
     "picks": {}
    }
@@ -113,14 +320,13 @@
    "label": null,
    "rank": 1,
    "school": "Mystic of the Mountain",
-   "foundry_id": "Tzc9DXEict08KLuS",
-   "foundry_name": "Jinrai",
+   "foundry_id": null,
    "rings": {
     "air": 2,
     "earth": 2,
     "fire": 2,
-    "water": 1,
-    "void": 3
+    "water": 2,
+    "void": 2
    },
    "skills": {
     "artisan": {
@@ -131,7 +337,7 @@
     },
     "martial": {
      "fitness": 1,
-     "melee": 1,
+     "melee": 2,
      "ranged": 0,
      "unarmed": 1,
      "meditation": 0,
@@ -140,7 +346,7 @@
     "scholar": {
      "culture": 0,
      "government": 1,
-     "medicine": 0,
+     "medicine": 1,
      "sentiment": 0,
      "theology": 1
     },
@@ -160,21 +366,21 @@
    },
    "social": {
     "honor": 50,
-    "glory": 39,
-    "status": 5,
-    "ninjo": "",
+    "glory": 34,
+    "status": 29,
+    "ninjo": "Jinrai tells himself he has left the ashigaru life behind, but he still drills footwork every morning before the farmers wake, and last month he spent two days teaching a village headman's son how to hold a spear.",
     "giri": "",
     "bushido_tenets": {
-     "paramount": "",
-     "less_significant": ""
+     "paramount": "Sincerity",
+     "less_significant": "Courtesy"
     }
    },
    "derived": {
     "endurance": 8,
-    "composure": 6,
+    "composure": 8,
     "focus": 4,
     "vigilance": 2,
-    "void_points": 3
+    "void_points": 2
    },
    "money": {
     "zeni": 0,
@@ -183,93 +389,44 @@
    },
    "techniques": [
     {
-     "name": "The Great Silence",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "kiho",
-     "rank": 1
+     "name": "The Great Silence"
     },
     {
-     "name": "Stirring the Embers",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "shuji",
-     "rank": 1
+     "name": "Stirring the Embers"
     },
     {
-     "name": "Cleansing Rite",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "ritual",
-     "rank": 1
+     "name": "Cleansing Rite"
     },
     {
-     "name": "Artisan’s Appraisal",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "shuji",
-     "rank": 2
+     "name": "Artisan's Appraisal"
     },
     {
-     "name": "Unexpected Wisdom",
-     "xp_used": 0,
-     "xp_cost": 0,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "school_ability",
-     "rank": 1
+     "name": "Unexpected Wisdom"
     }
    ],
-   "peculiarities": [],
+   "peculiarities": [
+    {
+     "name": "Jurojin’s Blessing"
+    },
+    {
+     "name": "Bullheaded"
+    },
+    {
+     "name": "Ikebana"
+    },
+    {
+     "name": "Fallen Ancestor"
+    },
+    {
+     "name": "Overconfidence in Spiritual Sensitivity"
+    }
+   ],
    "titles": [],
    "bonds": [],
    "signature_scrolls": [],
    "gear": [
     {
-     "name": "Nunchaku",
-     "quantity": 1
-    },
-    {
-     "name": "Traveling Clothes",
-     "quantity": 1
-    },
-    {
-     "name": "Chandu",
-     "quantity": 1
-    },
-    {
-     "name": "Journal",
-     "quantity": 1,
-     "custom": true,
-     "description": "",
-     "source_reference": {
-      "source": "",
-      "page": 0
-     },
-     "rarity": "0",
-     "zeni": "0",
-     "properties": []
-    },
-    {
-     "name": "Pouch of Ivory Kingdom Spices",
-     "quantity": 1,
-     "custom": true,
-     "description": "",
-     "source_reference": {
-      "source": "",
-      "page": 0
-     },
-     "rarity": "0",
-     "zeni": "0",
-     "properties": []
+     "name": "Gada"
     }
    ],
    "advancements": []

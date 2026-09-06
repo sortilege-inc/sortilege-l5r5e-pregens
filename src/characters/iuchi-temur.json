@@ -1,148 +1,292 @@
 {
  "slug": "iuchi-temur",
  "name": "Iuchi Temur",
- "folder_label": "Iuchi Temur",
  "campaign": "Imperfect Land",
  "status": null,
- "bucket": null,
- "accent": null,
  "identity": {
   "clan": "Unicorn",
-  "family": "",
-  "region": null,
-  "upbringing": null,
-  "origin_type": null,
+  "family": "Iuchi",
   "school": "Iuchi Meishodo Master School",
   "role": "Shugenja",
-  "age": ""
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
  },
+ "mode": "core",
  "portrait": "src/portraits/iuchi-temur.webp",
- "concept": null,
+ "concept": "His fingers are stained dark from the compounds he brews, the stains spreading further up his hands each week despite scrubbing, so he keeps his hands moving when he talks to hide them in the folds of his sleeves.",
  "summary": null,
  "notes": "",
+ "wizard": {
+  "name": "Iuchi Temur",
+  "mode": "core",
+  "clan": "Unicorn",
+  "family": "Iuchi",
+  "school": "Iuchi Meishodo Master School",
+  "role": "Shugenja",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "void",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "commerce": 1,
+   "labor": 1
+  },
+  "distinctions": [
+   "Ebisu’s Blessing"
+  ],
+  "adversities": [
+   "Overconfidence in Creativity"
+  ],
+  "passions": [
+   "Kabuki"
+  ],
+  "anxieties": [
+   "Delusions of Grandeur"
+  ],
+  "bushido": {
+   "paramount": "Compassion",
+   "lesser": "Courtesy",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Temur serves his Unicorn daimyō by reporting on the Dragon's affliction, but he treats every sick person he encounters, which means his reports arrive incomplete and his daimyō cannot trust them entirely.",
+   "ninjo": "Temur writes letters to his beloved that he never sends, each one asking whether she has found someone else to care for her while he remains with the Dragon.",
+   "standout_quality": "Temur compounds medicines for the other students' minor ailments without being asked, which means he arrives late to his own practice and has twice failed to complete assignments on time.",
+   "accomplishment": "Temur stopped the fever in the Dragon's garrison by brewing a compound from plants he had never seen before, working through three nights without sleeping, and the soldiers who had been dying began to recover.",
+   "challenge": "Temur brews a remedy he is certain will work, doses a Dragon soldier with it, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but by then he has already sent word to his daimyō that the compound is proven.",
+   "peace": "Temur sits in the theater gallery with a handful of other watchers, following the onnagata's careful gestures through a love scene, and for two hours he does not think about whether his letters should have been sent.",
+   "fear": "Temur doses a patient with a compound he is certain will work, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but the doubt arrives too late, because he has already sent word to his daimyō that the remedy is proven.",
+   "accoutrement": "He wears a medicine pouch sewn from Dragon silk, a gift from the garrison commander whose fever he broke, and he has never opened it to check whether the contents are truly his compounds or something the Dragon packed inside.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Iuchi Kensaburô",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Temur reports what the Dragon's healers tell him rather than what he observes, which keeps his daimyō satisfied but means he cannot warn the Unicorn if the affliction truly spreads."
+   },
+   "mentor": {
+    "name": "Ikoma Kawa",
+    "path": "B",
+    "granted": "Lost Name",
+    "skill": "commerce",
+    "text": "",
+    "gender": "female",
+    "association": "Lion"
+   },
+   "first_impression": "His fingers are stained dark from the compounds he brews, the stains spreading further up his hands each week despite scrubbing, so he keeps his hands moving when he talks to hide them in the folds of his sleeves.",
+   "stress_reaction": "When pressed past his composure, Temur's fingers go still inside his sleeves, and he stops moving them at all.",
+   "relationships": "Asako Buncho (Phoenix) — Asako Buncho tends the Phoenix shrine near the Dragon garrison, and Temur brings her his failed compounds—the batches that curdled or wouldn't set—because she burns them properly instead of letting them seep into the ground, but he has never asked her what she does with the ash.\nBaikin (Qamarist Alchemist Tradition) — Baikin taught Temur a technique for stabilizing volatile compounds that he uses daily, but Temur has never told his daimyō because the method comes from outside Unicorn tradition and his reports claim the compounds are entirely his own work.",
+   "people": [
+    {
+     "name": "Asako Buncho",
+     "gender": "male",
+     "association": "Phoenix",
+     "text": "Asako Buncho tends the Phoenix shrine near the Dragon garrison, and Temur brings her his failed compounds—the batches that curdled or wouldn't set—because she burns them properly instead of letting them seep into the ground, but he has never asked her what she does with the ash."
+    },
+    {
+     "name": "Baikin",
+     "gender": "male",
+     "association": "Qamarist Alchemist Tradition",
+     "text": "Baikin taught Temur a technique for stabilizing volatile compounds that he uses daily, but Temur has never told his daimyō because the method comes from outside Unicorn tradition and his reports claim the compounds are entirely his own work."
+    }
+   ],
+   "parent_opinion": {
+    "description": "His mother watches him pare his fingernails down to nothing and asks why he cannot simply wash his hands like other men, and when he does not answer she understands that the stains have gone deeper than her scrubbing ever reached.",
+    "skill": "labor"
+   },
+   "heritage": "Heart of the Horse",
+   "heritage_table": "new-samurai-heritages-table",
+   "heritage_sub": null,
+   "death": "Temur dies tending a patient he knows is poisoned, compounding remedies against a corruption his medicines cannot touch, and never sends word to his daimyō that the threat has already crossed into Unicorn lands."
+  },
+  "starting_item": "Musical Instrument",
+  "campaign": "",
+  "notes": "",
+  "gender": "any",
+  "choices": {
+   "family.ring_increase": [
+    "Air"
+   ],
+   "school.starting_skills": [
+    "Design",
+    "Theology",
+    "Aesthetics"
+   ],
+   "school.tech.0": [
+    "The Rushing Wave",
+    "Jurōjin's Balm"
+   ],
+   "school.tech.2": [
+    "Well of Desire"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Temur compounds medicines for the other students' minor ailments without being asked, which means he arrives late to his own practice and has twice failed to complete assignments on time."
+   ],
+   "giri": [
+    "Temur serves his Unicorn daimyō by reporting on the Dragon's affliction, but he treats every sick person he encounters, which means his reports arrive incomplete and his daimyō cannot trust them entirely."
+   ],
+   "ninjo": [
+    "Temur writes letters to his beloved that he never sends, each one asking whether she has found someone else to care for her while he remains with the Dragon."
+   ],
+   "clan_relationship": [
+    "Temur reports what the Dragon's healers tell him rather than what he observes, which keeps his daimyō satisfied but means he cannot warn the Unicorn if the affliction truly spreads."
+   ],
+   "accomplishment": [
+    "Temur stopped the fever in the Dragon's garrison by brewing a compound from plants he had never seen before, working through three nights without sleeping, and the soldiers who had been dying began to recover."
+   ],
+   "challenge": [
+    "Temur brews a remedy he is certain will work, doses a Dragon soldier with it, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but by then he has already sent word to his daimyō that the compound is proven."
+   ],
+   "peace": [
+    "Temur sits in the theater gallery with a handful of other watchers, following the onnagata's careful gestures through a love scene, and for two hours he does not think about whether his letters should have been sent."
+   ],
+   "fear": [
+    "Temur doses a patient with a compound he is certain will work, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but the doubt arrives too late, because he has already sent word to his daimyō that the remedy is proven."
+   ],
+   "first_impression": [
+    "His fingers are stained dark from the compounds he brews, the stains spreading further up his hands each week despite scrubbing, so he keeps his hands moving when he talks to hide them in the folds of his sleeves."
+   ],
+   "accoutrement": [
+    "He wears a medicine pouch sewn from Dragon silk, a gift from the garrison commander whose fever he broke, and he has never opened it to check whether the contents are truly his compounds or something the Dragon packed inside."
+   ],
+   "stress_reaction": [
+    "When pressed past his composure, Temur's fingers go still inside his sleeves, and he stops moving them at all."
+   ],
+   "relationship_person": [
+    "Asako Buncho tends the Phoenix shrine near the Dragon garrison, and Temur brings her his failed compounds—the batches that curdled or wouldn't set—because she burns them properly instead of letting them seep into the ground, but he has never asked her what she does with the ash.",
+    "Baikin taught Temur a technique for stabilizing volatile compounds that he uses daily, but Temur has never told his daimyō because the method comes from outside Unicorn tradition and his reports claim the compounds are entirely his own work."
+   ],
+   "parent_opinion": [
+    "His mother watches him pare his fingernails down to nothing and asks why he cannot simply wash his hands like other men, and when he does not answer she understands that the stains have gone deeper than her scrubbing ever reached."
+   ],
+   "death": [
+    "Temur dies tending a patient he knows is poisoned, compounding remedies against a corruption his medicines cannot touch, and never sends word to his daimyō that the threat has already crossed into Unicorn lands."
+   ]
+  }
+ },
  "twenty_questions": {
   "template": "core",
-  "generated": true,
+  "generated": false,
   "steps": {
-   "step1": {
-    "answers": {
-     "clan": "Unicorn",
-     "ring": "water",
-     "skill": "survival",
-     "social_status": 30
-    },
-    "picks": {}
-   },
-   "step2": {
-    "answers": {
-     "family": "Iuchi",
-     "ring": "air",
-     "skill1": "theology",
-     "skill2": "meditation",
-     "wealth": 6,
-     "social_glory": 40
-    },
-    "picks": {}
-   },
-   "step3": {
-    "answers": {
-     "school": "Iuchi Meishōdō Master",
-     "roles": "Shugenja",
-     "ring1": "earth",
-     "ring2": "water",
-     "skill1": "aesthetics",
-     "skill2": "design",
-     "skill3": "theology",
-     "social_honor": 40
-    },
-    "picks": {
-     "techniques": [
-      "Commune with the Spirits",
-      "Well of Desire"
-     ],
-     "school_ability": [
-      "The Way of Names"
-     ],
-     "equipment": [
-      "Ceremonial Clothes",
-      "Traveling Clothes",
-      "Wakizashi",
-      "Daikyū",
-      "Calligraphy Set"
-     ]
-    }
-   },
    "step4": {
     "answers": {
+     "stand_out": "Temur compounds medicines for the other students' minor ailments without being asked, which means he arrives late to his own practice and has twice failed to complete assignments on time.",
      "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Temur serves his Unicorn daimyō by reporting on the Dragon's affliction, but he treats every sick person he encounters, which means his reports arrive incomplete and his daimyō cannot trust them entirely.",
+     "lord_name": "Iuchi Kensaburô"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Temur writes letters to his beloved that he never sends, each one asking whether she has found someone else to care for her while he remains with the Dragon."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "social_add_glory": 5
+     "clan_relations": "Temur reports what the Dragon's healers tell him rather than what he observes, which keeps his daimyō satisfied but means he cannot warn the Unicorn if the affliction truly spreads."
     },
     "picks": {}
    },
    "step8": {
     "answers": {
-     "social_add_honor": 10
+     "tenet_paramount": "Compassion",
+     "tenet_less_significant": "Courtesy"
     },
     "picks": {}
    },
    "step9": {
-    "answers": {},
-    "picks": {
-     "distinction": [
-      "Keen Smell"
-     ]
-    }
-   },
-   "step10": {
-    "answers": {},
-    "picks": {
-     "adversity": [
-      "Nerve Damage"
-     ]
-    }
-   },
-   "step11": {
-    "answers": {},
-    "picks": {
-     "passion": [
-      "Gourmet"
-     ]
-    }
-   },
-   "step12": {
-    "answers": {},
-    "picks": {
-     "anxiety": [
-      "Obtuse"
-     ]
-    }
-   },
-   "step13": {
     "answers": {
-     "skill": "medicine"
-    },
-    "picks": {
-     "disadvantage": [
-      "Superstition"
-     ]
-    }
-   },
-   "step18": {
-    "answers": {
-     "heritage_add_honor": 0,
-     "heritage_add_glory": 0,
-     "heritage_add_status": 0
+     "success": "Temur stopped the fever in the Dragon's garrison by brewing a compound from plants he had never seen before, working through three nights without sleeping, and the soldiers who had been dying began to recover."
     },
     "picks": {}
    },
-   "step19": {
+   "step10": {
     "answers": {
-     "firstname": "Temur"
+     "difficulty": "Temur brews a remedy he is certain will work, doses a Dragon soldier with it, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but by then he has already sent word to his daimyō that the compound is proven."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Temur sits in the theater gallery with a handful of other watchers, following the onnagata's careful gestures through a love scene, and for two hours he does not think about whether his letters should have been sent."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Temur doses a patient with a compound he is certain will work, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but the doubt arrives too late, because he has already sent word to his daimyō that the remedy is proven."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Ikoma Kawa"
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "His fingers are stained dark from the compounds he brews, the stains spreading further up his hands each week despite scrubbing, so he keeps his hands moving when he talks to hide them in the folds of his sleeves.",
+     "accoutrement": "He wears a medicine pouch sewn from Dragon silk, a gift from the garrison commander whose fever he broke, and he has never opened it to check whether the contents are truly his compounds or something the Dragon packed inside."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When pressed past his composure, Temur's fingers go still inside his sleeves, and he stops moving them at all."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Asako Buncho (Phoenix) — Asako Buncho tends the Phoenix shrine near the Dragon garrison, and Temur brings her his failed compounds—the batches that curdled or wouldn't set—because she burns them properly instead of letting them seep into the ground, but he has never asked her what she does with the ash.\nBaikin (Qamarist Alchemist Tradition) — Baikin taught Temur a technique for stabilizing volatile compounds that he uses daily, but Temur has never told his daimyō because the method comes from outside Unicorn tradition and his reports claim the compounds are entirely his own work."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "His mother watches him pare his fingernails down to nothing and asks why he cannot simply wash his hands like other men, and when he does not answer she understands that the stains have gone deeper than her scrubbing ever reached."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Heart of the Horse",
+     "heritage_table": "New Samurai Heritages Table",
+     "heritage_sub": null
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Temur dies tending a patient he knows is poisoned, compounding remedies against a corruption his medicines cannot touch, and never sends word to his daimyō that the threat has already crossed into Unicorn lands."
     },
     "picks": {}
    }
@@ -154,8 +298,7 @@
    "label": null,
    "rank": 1,
    "school": "Iuchi Meishodo Master School",
-   "foundry_id": "fdosNCueCOWFGuGx",
-   "foundry_name": "Iuchi Temur",
+   "foundry_id": null,
    "rings": {
     "air": 2,
     "earth": 2,
@@ -192,8 +335,8 @@
      "performance": 0
     },
     "trade": {
-     "commerce": 0,
-     "labor": 0,
+     "commerce": 1,
+     "labor": 1,
      "seafaring": 0,
      "skulduggery": 0,
      "survival": 1
@@ -201,13 +344,13 @@
    },
    "social": {
     "honor": 50,
-    "glory": 45,
-    "status": 30,
-    "ninjo": "",
-    "giri": "",
+    "glory": 48,
+    "status": 27,
+    "ninjo": "Temur writes letters to his beloved that he never sends, each one asking whether she has found someone else to care for her while he remains with the Dragon.",
+    "giri": "Temur serves his Unicorn daimyō by reporting on the Dragon's affliction, but he treats every sick person he encounters, which means his reports arrive incomplete and his daimyō cannot trust them entirely.",
     "bushido_tenets": {
-     "paramount": "",
-     "less_significant": ""
+     "paramount": "Compassion",
+     "less_significant": "Courtesy"
     }
    },
    "derived": {
@@ -224,70 +367,51 @@
    },
    "techniques": [
     {
-     "name": "Commune with the Spirits",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "ritual",
-     "rank": 1
+     "name": "The Rushing Wave"
     },
     {
-     "name": "Well of Desire",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "shuji",
-     "rank": 1
+     "name": "Jurōjin's Balm"
     },
     {
-     "name": "The Way of Names",
-     "xp_used": 0,
-     "xp_cost": 0,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "school_ability",
-     "rank": 1
+     "name": "Commune with the Spirits"
+    },
+    {
+     "name": "Well of Desire"
+    },
+    {
+     "name": "The Way of Names"
     }
    ],
-   "peculiarities": [],
+   "peculiarities": [
+    {
+     "name": "Ebisu’s Blessing"
+    },
+    {
+     "name": "Overconfidence in Creativity"
+    },
+    {
+     "name": "Kabuki"
+    },
+    {
+     "name": "Delusions of Grandeur"
+    },
+    {
+     "name": "Lost Name"
+    },
+    {
+     "name": "Karmic Tie"
+    }
+   ],
    "titles": [],
    "bonds": [],
    "signature_scrolls": [],
    "gear": [
     {
-     "name": "Wakizashi",
-     "quantity": 1
+     "name": "Musical Instrument"
     },
     {
-     "name": "Daikyū",
-     "quantity": 1
-    },
-    {
-     "name": "Ceremonial Clothes",
-     "quantity": 1
-    },
-    {
-     "name": "Traveling Clothes",
-     "quantity": 1
-    },
-    {
-     "name": "Calligraphy Set",
-     "quantity": 1
-    },
-    {
-     "name": "Unicorn Warhorse",
-     "quantity": 1,
-     "custom": true,
-     "description": "",
-     "source_reference": {
-      "source": "",
-      "page": 0
-     },
-     "rarity": "0",
-     "zeni": "0",
-     "properties": []
+     "name": "Horse",
+     "custom": true
     }
    ],
    "advancements": []

@@ -34,32 +34,32 @@
   "air": 2,
   "earth": 2,
   "fire": 2,
-  "water": 1,
-  "void": 3
+  "water": 2,
+  "void": 2
  },
  "derived": {
   "endurance": 8,
-  "composure": 6,
+  "composure": 8,
   "focus": 4,
   "vigilance": 2
  },
  "trackers": {
   "strife": {
-   "max": 6
+   "max": 8
   },
   "fatigue": {
    "max": 8
   },
   "void": {
-   "max": 3,
-   "start": 3
+   "max": 2,
+   "start": 2
   }
  },
  "stance": "void",
  "social": {
   "honor": 50,
-  "glory": 39,
-  "status": 5
+  "glory": 34,
+  "status": 29
  },
  "xp": {
   "earned": 0,
@@ -71,14 +71,14 @@
   "design": 0,
   "smithing": 0,
   "fitness": 1,
-  "melee": 1,
+  "melee": 2,
   "ranged": 0,
   "unarmed": 1,
   "meditation": 0,
   "tactics": 0,
   "culture": 0,
   "government": 1,
-  "medicine": 0,
+  "medicine": 1,
   "sentiment": 0,
   "theology": 1,
   "command": 1,
@@ -92,90 +92,85 @@
   "survival": 1
  },
  "bushido": {
-  "paramount": "",
-  "less": ""
+  "paramount": "Sincerity",
+  "less": "Courtesy"
  },
- "ninjo": "",
+ "ninjo": "Jinrai tells himself he has left the ashigaru life behind, but he still drills footwork every morning before the farmers wake, and last month he spent two days teaching a village headman's son how to hold a spear.",
  "giri": "",
  "money": "1 koku",
  "techniques": [
   {
    "name": "The Great Silence",
-   "tag": "Kiho",
-   "kind": "kiho",
+   "tag": "Technique",
    "text": "<ul><li>The monk swirls their hands in a spiral, pulling noise inward and stealing even the reverberations that sounds make through the air. Lies die on the lips unspoken, and prayers never reach the spirits for whom they were intended. Skilled practitioners often maintain this technique, twisting the wind around them to steal away pernicious words and wicked prayers alike.</li><li>As a Scheme and Support action, make a TN 1 Theology (Air) check.</li><li>Increase the TN of Scheme action checks targeting you by one plus your ranks in Command.</li><li>2+ bonus successes: Characters at range 0-3 suffer Silenced and cannot hear. Persists until beginning of your next turn.</li></ul>"
   },
   {
    "name": "Stirring the Embers",
-   "tag": "Shuji",
-   "kind": "shuji",
+   "tag": "Technique",
    "text": "<ul><li>A good leader does not just compensate for the weaknesses of comrades, but also fosters their innate strengths. The courtier reminds an ally of one of their finer qualities, sparking their pride to get them to fight more fiercely or speak with greater conviction.</li><li>When making a Social skill (Fire) check targeting one or more characters, you may spend (op) in the following way:</li><li>Fire (op)+: Choose a target and one of their known distinctions per (op) spent this way. Until the end of the scene, when that advantage applies to a check, the target may reroll up to three dice (instead of two).</li></ul>"
   },
   {
    "name": "Cleansing Rite",
-   "tag": "Ritual",
-   "kind": "ritual",
+   "tag": "Technique",
    "text": "<ul><li>The ritualist sanctifies a person or group, anointing them with sacred substances that drive out unholy presences and malign sorcery.</li><li>As a downtime activity, make a TN 3 Theology (Void) check targeting up to five characters to remove spiritual contaminants from the targets before they spread. Note: this cannot remove a Shadowlands Taint disadvantage once it has taken hold, but it can prevent this spiritual contamination from taking root after a character is exposed.</li><li>If you succeed, remove the Afflicted condition from the target.</li><li>Void (op)(op): If one or more targets is an Otherworldly being, you become aware of it after completing the ritual — but you do not know which target.</li><li>Void (op)+: Choose one additional target per (op) spent this way.</li><li>Void (op)+: Instead of targeting characters, you may target an area encompassing a number of range bands around you equal to (op) spent this way. Remove the Defiled terrain quality from this area. If it is a deeply unhallowed place that has long been the domain of evil, the Defiled quality returns after one day, plus additional days equal to your bonus successes.</li></ul>"
   },
   {
-   "name": "Artisan’s Appraisal",
-   "tag": "Shuji",
-   "kind": "shuji",
+   "name": "Artisan's Appraisal",
+   "tag": "Technique",
    "text": "<ul><li>The courtier looks at an object but sees its maker. Each thumbprint tells a story about the hand that crafted the piece; every subtle choice reveals something about the desires that linger in the artist’s mind.</li><li>When assessing an object or performance with an Artisan skill (Air), Performance (Air), or Games (Air) check, you may spend (op) in the following ways:</li><li>Air (op): Choose a ring; learn the value of that ring for the creator or performer and all advantages and disadvantages attached to that ring that are not of the curse type.</li><li>Air (op): If the creator or performer is an NPC, learn their demeanor.</li></ul>"
   },
   {
    "name": "Unexpected Wisdom",
-   "tag": "School Ability",
-   "kind": "school_ability",
+   "tag": "Technique",
    "text": "<p>You may dispense wisdom a number of times per game session equal to your school rank. On your turn or at any appropriate time during a narrative scene, you may give a small bit of wisdom to a character who can hear you and has not benefitted from this ability this scene. The next time that character employs that wisdom they may reduce the TN of that check by 1 and may negate a number of strife up to your ranks in Sentiment or Theology.</p>"
   }
  ],
- "peculiarities": [],
+ "peculiarities": [
+  {
+   "name": "Jurojin’s Blessing",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You do not contract mundane diseases, and you recover from poisons and supernatural maladies in half the time it would take someone else.</li><li>When performing a check for which you need to survive and remain vital (such as a Fitness [Void] check to resist spiritual contamination or a Survival [Void] check to get by on bare minimum supplies), you may reroll up to two dice.</li></ul>"
+  },
+  {
+   "name": "Bullheaded",
+   "tag": "Peculiarity",
+   "text": "<ul><li>When pursuing a goal related to your ninjō, you have difficulty focusing on anything unrelated.</li><li>When you make a check related to your goal that requires planning, subtlety, or nuance (such as Culture [Earth] to recall proper introductions or Courtesy [Earth] to reason with a stubborn merchant), you must choose and reroll two dice containing success or explosion. If you failed, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Ikebana",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You can always identify a plant by any of its parts, and you know its physical properties and its hanakotoba (&quot;language of flowers&quot;) meaning.</li><li>After performing a check related to flower arrangement (such as an Aesthetics [Water] check to rearrange or improve an ikebana piece or a Survival [Water] check to acquire flowers from a marketplace), you remove 3 strife.</li></ul>"
+  },
+  {
+   "name": "Fallen Ancestor",
+   "tag": "Peculiarity",
+   "text": "<ul><li>One of your ancestors fell to darkness, and their shame haunts you.</li><li>After performing a check that involves the spirits or your family history (such as Theology [Void] to perform a family ritual or Sentiment [Void] to show mercy to a wounded opponent), you receive 3 strife. If this is the first time this scene, gain 1 Void point.</li></ul>"
+  },
+  {
+   "name": "Overconfidence in Spiritual Sensitivity",
+   "tag": "Peculiarity",
+   "text": "<ul><li>You are overconfident in a particular capacity, which blinds you to your limitations.</li><li>When performing a check for which you need to leverage the capacity about which you are overconfident (such as Fitness [Earth] to run several li or Composition [Fire] to draft an exciting poem), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, gain 1 Void point.</li></ul>"
+  }
+ ],
  "titles": [],
  "bonds": [],
  "gear": [
   {
-   "name": "Nunchaku",
+   "name": "Gada",
    "kind": "Weapon",
-   "category": "Hand Weapons",
+   "category": "Blunt Weapons",
    "skill": "melee",
-   "range": "0-1",
-   "damage": 4,
-   "deadliness": 2,
-   "grips": "Snaring",
-   "rarity": "6",
-   "text": "<p>Originally hailing from the Islands of Spice and Silk, nunchaku have been used in certain Rokugani martial arts schools for centuries. Adapted from a simple threshing tool, nunchaku consist of two wood or iron rods connected by a short length of chain or rope.</p>"
-  },
-  {
-   "name": "Traveling Clothes",
-   "kind": "Armor",
-   "physical": 2,
+   "range": "1",
+   "damage": 6,
+   "deadliness": 3,
+   "grips": "Deadliness +3",
    "qualities": [
-    "Durable",
-    "Mundane",
-    "Subtle"
+    "Ceremonial",
+    "Cumbersome",
+    "Wargear"
    ],
-   "rarity": "2",
-   "text": "<p>Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak.</p>"
-  },
-  {
-   "name": "Chandu",
-   "kind": "Item",
-   "qualities": [
-    "Forbidden"
-   ],
-   "rarity": "6",
-   "text": "<p>Opium prepared for smoking in a special ceramic or jade pipe. Alters perception so pain is bearable. Legal in Rokugan but recreational use frowned upon. Addiction develops with sufficient use.</p>"
-  },
-  {
-   "name": "Journal",
-   "kind": "Item",
-   "rarity": "0"
-  },
-  {
-   "name": "Pouch of Ivory Kingdom Spices",
-   "kind": "Item",
-   "rarity": "0"
+   "rarity": "9",
+   "text": "<p>An Ivory Kingdoms heavy mace: long shaft capped with spherical head and pointed spike. Red-coral versions are effective against rakshasa.</p>"
   }
  ]
 }
