@@ -68,6 +68,8 @@
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   }
+  function plural(n, one, many) { return n + " " + (n === 1 ? one : many); }
+
   function clanVar(clan) {
     var c = String(clan || "").toLowerCase().replace(/\s*clan$/, "");
     return GREAT.indexOf(c) >= 0 ? "var(--clan-" + c + ")" : "var(--clan-minor)";
@@ -273,6 +275,20 @@
         "</p>" +
         (d.connection
           ? '<p class="rm-quote">' + esc(d.connection) + "</p>" : "") +
+        // Why this character has no lines out to anybody. Two different
+        // states, and neither is "they know nobody".
+        (d.kind === "pc" && !d.named && d.asked === false
+          ? '<p class="rm-todo">Questions 5, 13 and 16 — their lord, who ' +
+            "taught them, who they know — are unanswered on this character, " +
+            "so there is nobody to draw. Open their page and answer them and " +
+            "they will appear here.</p>"
+          : "") +
+        (d.kind === "pc" && !d.named && d.asked && d.unread
+          ? '<p class="rm-todo">' + plural(d.unread, "line", "lines") +
+            " here name somebody in prose rather than at the start of the " +
+            "line, so the map does not guess at them. Rewriting one as " +
+            "<em>Name (Clan) — what it is</em> puts them on the map.</p>"
+          : "") +
         '<p><a class="rm-link" href="' + esc(d.slug) + '.html">Open their page →</a></p>' +
         '<p class="rm-eyebrow">In the party with</p><ul class="rm-list">' +
         party.map(function (e) {
@@ -377,7 +393,6 @@
     layout(state.nodes, state.edges, size.w, size.h);
     draw();
     fit();
-    function plural(n, one, many) { return n + " " + (n === 1 ? one : many); }
 
     if (c.published) {
       // A shipped party. Its pairs are described or not by the product, so
@@ -418,7 +433,14 @@
         ? " · " + plural(party.length, "pair", "pairs") + " in the party, " +
           (undef ? '<strong class="rm-todo">' + undef + " not yet written</strong>"
                  : "all written")
-        : " · nobody else in the campaign yet");
+        : " · nobody else in the campaign yet") +
+      /* An empty map and an unasked party look identical, and that is how
+         five promoted characters could sit here naming nobody without it
+         being visible. */
+      (c.unasked
+        ? ' · <strong class="rm-todo">' + c.unasked + " of " + c.pcs +
+          " not yet asked who they know</strong>"
+        : "");
     el("detail").innerHTML =
       '<p class="rm-eyebrow">' + esc(name) + "</p>" +
       "<p>Click a character, a person, or a line between them.</p>" +

@@ -122,6 +122,10 @@ def split_person(line):
     who = parts[0].strip()
     text = parts[1].strip() if len(parts) > 1 else ""
     aff = ""
+    # `Brother Kenzan (Yogo Kenzan).` parses only without the full stop, and a
+    # single character of punctuation was quietly costing a node.
+    if not text:
+        who = who.rstrip(".;,")
     m = PAREN.match(who)
     if m:
         who, aff = m.group(1).strip(), m.group(2).strip()
@@ -150,27 +154,72 @@ def contacts(doc):
     rest come back as `skipped` and get counted on the build.
     """
     out, skipped = [], []
-    for line in answer(doc, "step16", "relations").split("\n"):
+    out, skipped = parse_people(answer(doc, "step16", "relations"), "knows")
+    mentor_people, mentor_skipped = parse_people(
+        answer(doc, "step13", "most_learn"), "taught by")
+    # A mentor is one person, so only the first named counts; anything else in
+    # that answer is detail about them or prose, and parse_people has already
+    # attached the detail.
+    out.extend(mentor_people[:1])
+    skipped.extend(mentor_skipped)
+    lord = answer(doc, "step5", "lord_name").strip()
+    if lord and "\n" not in lord:
+        out.append({"name": lord, "affiliation": "", "via": "serves",
+                    "text": answer(doc, "step5", "social_giri").strip()})
+    elif lord:
+        lord_people, lord_skipped = parse_people(lord, "serves")
+        out.extend(lord_people[:1])
+        skipped.extend(lord_skipped)
+    return out, skipped
+
+
+def was_asked(doc):
+    """Has this character answered any of the three questions that name people?
+
+    Questions 5, 13 and 16 -- the lord, the mentor, the contacts. A character
+    generated from the mechanical steps alone has none of them, which is a
+    different thing from having answered and known nobody, and the map should
+    not show the two the same way.
+    """
+    return any(answer(doc, k, f).strip()
+               for k, f in (("step5", "lord_name"),
+                            ("step13", "most_learn"),
+                            ("step16", "relations")))
+
+
+def parse_people(text, via):
+    """(people, unreadable lines) for a free-text answer that names people.
+
+    Answers are not one line. Question 13 in particular can be a whole
+    markdown block -- Shinjō Harunobu's opens `### **Hida Katsuro – The
+    Commander Who Shaped Him**` and then details him in bullets -- and reading
+    the block as a single line found nobody in it and reported the whole thing
+    as unreadable.
+    """
+    out, skipped = [], []
+    for line in (text or "").split("\n"):
         if not line.strip():
             continue
         got = split_person(line)
         if got:
             out.append({"name": got[0], "affiliation": got[1], "text": got[2],
-                        "via": "knows"})
-        elif len(line.strip()) > 20:
+                        "via": via})
+            continue
+        # A bullet directly under a person says more about that person --
+        # seventeen of Shinjō Harunobu's eighteen lines are these, and counting
+        # them as lines that name nobody made his entry look unreadable when it
+        # is simply written as a list with detail under each name. Attached by
+        # shape (a bullet marker) and never by reading the sentence, so a prose
+        # line about somebody else still goes to `skipped` rather than onto the
+        # wrong person.
+        bullet = line.strip()
+        if out and bullet[0] in "-*•":
+            body = bullet.lstrip("-*• ").replace("**", "").strip()
+            if body:
+                out[-1]["text"] = (out[-1]["text"] + "\n" + body).strip()
+            continue
+        if len(line.strip()) > 20:
             skipped.append(line.strip())
-    mentor = answer(doc, "step13", "most_learn").strip()
-    if mentor:
-        got = split_person(mentor)
-        if got:
-            out.append({"name": got[0], "affiliation": got[1], "text": got[2],
-                        "via": "taught by"})
-        elif len(mentor) > 20:
-            skipped.append(mentor)
-    lord = answer(doc, "step5", "lord_name").strip()
-    if lord:
-        out.append({"name": lord, "affiliation": "", "via": "serves",
-                    "text": answer(doc, "step5", "social_giri").strip()})
     return out, skipped
 
 
@@ -270,13 +319,22 @@ def main():
 
     for camp, members in sorted(by_campaign.items()):
         pcs, nodes, edges = [], [], []
+        # Read each member's answers up front, so a node can say whether this
+        # character has named anybody and, if not, which kind of nothing it is.
+        # Five of Imperfect Land's seven named nobody and the map simply drew
+        # nothing, which is indistinguishable from having no relationships.
+        told = {d["slug"]: contacts(d) for d in members}
         for d in members:
             ident = d.get("identity") or {}
             pc = {"id": "pc:" + d["slug"], "kind": "pc", "name": d["name"],
                   "slug": d["slug"], "clan": ident.get("clan"),
                   "family": ident.get("family"), "school": ident.get("school"),
                   "role": ident.get("role"),
-                  "portrait": d.get("portrait")}
+                  "portrait": d.get("portrait"),
+                  # what they said about other people, and what could be read
+                  "named": len(told[d["slug"]][0]),
+                  "unread": len(told[d["slug"]][1]),
+                  "asked": was_asked(d)}
             pcs.append(pc)
             nodes.append(pc)
 
@@ -286,7 +344,7 @@ def main():
         written = {}          # pair -> what each of them wrote about the other
         npcs = {}
         for d in members:
-            got, skip = contacts(d)
+            got, skip = told[d["slug"]]
             if skip:
                 unreadable.setdefault(d["name"], []).extend(skip)
             for c in got:
@@ -333,7 +391,9 @@ def main():
                 edges.append({"a": p["id"], "b": q["id"], "kind": "party",
                               "text": text, "defined": bool(text)})
         campaigns[camp] = {"nodes": nodes, "edges": edges,
-                           "pcs": len(pcs), "npcs": len(npcs)}
+                           "pcs": len(pcs), "npcs": len(npcs),
+                           # how many of them have not been asked who they know
+                           "unasked": sum(1 for p in pcs if not p["asked"])}
 
     # ---------------------------------------------------------- the folios
     published, by_product = {}, {}
