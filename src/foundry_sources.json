@@ -183,12 +183,6 @@
      "concept": "A teacher who has outlived several such expeditions and joined this one because the nezumi asked her to."
     },
     {
-     "school": "Asako Inquisitor School",
-     "family": "Asako",
-     "gender": "male",
-     "concept": "Sent to determine what came out of Shiro Hiruma, and quietly certain someone in the party already knows."
-    },
-    {
      "school": "Kaito Spirit Seeker School",
      "family": "Kaito",
      "gender": "female",
@@ -207,6 +201,7 @@
    ],
    "built_from_shortlist": {
     "Agasha Alchemist School": "Agasha Kohana — female, Agasha. Pencilled premise: A Dragon who came for samples and is discovering that the Shadowlands does not hold still to be studied, carrying jade she is rationing badly because she has never had to spend it on herself before.",
+    "Asako Inquisitor School": "Asako Yukitsuna — she/her where the entry pencilled male, Asako. Pencilled premise: Sent to determine what came out of Shiro Hiruma, and quietly certain someone in the party already knows.",
     "Bayushi Deathdealer School": "Bayushi Hirofumi — male, Bayushi. Pencilled premise: Attached to the expedition to make sure it comes back — or that the right parts of it do; a Scorpion who has killed people and never a demon, and is unbothered by the distinction in a way that unsettles everyone.",
     "Daidoji Iron Warrior School": "Daidoji Emon — male, Daidoji. Pencilled premise: A Crane sent to hold a line the Crab abandoned, too polite to put it that way, and the only one who has read the Kaiu's report and believes it.",
     "Hiruma Scout School": "Hiruma Namiko — female, Hiruma. Pencilled premise: The scout guiding the expedition to a castle her family lost, who has been to its walls twice and inside neither time."

@@ -1,0 +1,420 @@
+{
+ "slug": "asako-yukitsuna",
+ "name": "Asako Yukitsuna",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": "Phoenix",
+  "family": "Asako",
+  "school": "Asako Inquisitor School",
+  "role": "Shugenja",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Yukitsuna stops mid-stride on steep ground, breathing audibly while the rest keep pace, and does not ask them to wait.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Asako Yukitsuna",
+  "mode": "core",
+  "clan": "Phoenix",
+  "family": "Asako",
+  "school": "Asako Inquisitor School",
+  "role": "Shugenja",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "aesthetics": 1,
+   "survival": 1,
+   "government": 1,
+   "commerce": 1
+  },
+  "distinctions": [
+   "Famously Kind"
+  ],
+  "adversities": [
+   "Out of Shape"
+  ],
+  "passions": [
+   "Researcher"
+  ],
+  "anxieties": [
+   "Impatience"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Righteousness",
+   "lesser": "Sincerity",
+   "attitude": "B",
+   "skill": "survival"
+  },
+  "answers": {
+   "giri": "Asako Yukitsuna serves Asako Satoru, the Phoenix's chief inquisitor, and must report what she finds at Shiro Hiruma even if it implicates someone she traveled with to get there.",
+   "ninjo": "Yukitsuna wants to believe the people she travels with are good, and stops asking hard questions when they give her reason to.",
+   "standout_quality": "Yukitsuna reads the currents in a room the way others read a text, and will pivot mid-sentence if she notices the mood shift beneath someone's words.",
+   "accomplishment": "She convinced a merchant caravan fleeing the Shadowlands approach to shelter a Hiruma widow and her children at Shiro Kaiu, though three families in the caravan had already refused them.",
+   "challenge": "During the climb up to Shiro Hiruma, Yukitsuna falls behind the others on the steeper passages, breathing hard while they move steadily on, and she will not ask them to slow down.",
+   "peace": "Yukitsuna spreads the maps Sokori stole across the castle floor and traces the Hiruma's retreat path in charcoal, checking Keiji's notations against the Asako archives she carried up the mountain, and finds the moment when Masami chose to stop running.",
+   "fear": "She stops asking Keiji about the maps the moment he offers an explanation, then spends the climb to Shiro Hiruma certain she's missed something and too impatient to go back and verify it.",
+   "accoutrement": "A charcoal stick worn down to a stub and kept in the breast fold of her kimono, its end stained darker than the rest.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Asako Tamaki",
+   "lord_gender": "female",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "B",
+    "skill": "aesthetics",
+    "text": "Yukitsuna files her reports to Asako Satoru with the same precision she'd use on a theological manuscript, which makes it easier not to mention the parts where she decided the people beside her were trustworthy and stopped looking."
+   },
+   "mentor": {
+    "name": "Moshi Yasunari",
+    "path": "B",
+    "granted": "Cursed Lineage",
+    "skill": "government",
+    "text": "Moshi Yasunari taught her to read omens in shell and bone, but Yukitsuna still cannot ask a direct question of the spirits without feeling she is forcing an answer that was never meant for her.",
+    "gender": "male",
+    "association": "Centipede"
+   },
+   "first_impression": "Yukitsuna stops mid-stride on steep ground, breathing audibly while the rest keep pace, and does not ask them to wait.",
+   "stress_reaction": "Yukitsuna stops filing her reports and starts cross-referencing them instead, pulling apart what she wrote to find the contradiction she is certain is there, and becomes unreachable until she locates it or admits she was wrong.",
+   "relationships": "Hiroaki (Fortunist Monk Order) — Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.\nMirumoto Gina (Dragon) — Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the climb to Shiro Hiruma easier and made it impossible to admit she was struggling.",
+   "people": [
+    {
+     "name": "Hiroaki",
+     "gender": "male",
+     "association": "Fortunist Monk Order",
+     "text": "Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking."
+    },
+    {
+     "name": "Mirumoto Gina",
+     "gender": "female",
+     "association": "Dragon",
+     "text": "Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the climb to Shiro Hiruma easier and made it impossible to admit she was struggling."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Her father says she learned to read before she learned to stop, and now she arrives at conclusions the way a stone arrives at the bottom of a well—fast, and without checking if the water is still there to catch it.",
+    "skill": "commerce"
+   },
+   "heritage": "Wondrous Work",
+   "heritage_table": "samurai-heritage-table",
+   "heritage_sub": "1-3 — Gain +1 ^\"Aesthetics\"",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Yukitsuna will die at her desk in the Phoenix archives, mid-sentence in a report, because she finally found the contradiction she was looking for and did not survive the moment of understanding that she had decided not to see it the first time."
+  },
+  "starting_item": "Nodachi",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Air"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Unarmed]",
+    "Theology",
+    "Meditation"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Yukitsuna reads the currents in a room the way others read a text, and will pivot mid-sentence if she notices the mood shift beneath someone's words."
+   ],
+   "giri": [
+    "Asako Yukitsuna serves Asako Satoru, the Phoenix's chief inquisitor, and must report what she finds at Shiro Hiruma even if it implicates someone she traveled with to get there."
+   ],
+   "ninjo": [
+    "Yukitsuna wants to believe the people she travels with are good, and stops asking hard questions when they give her reason to."
+   ],
+   "clan_relationship": [
+    "Yukitsuna files her reports to Asako Satoru with the same precision she'd use on a theological manuscript, which makes it easier not to mention the parts where she decided the people beside her were trustworthy and stopped looking."
+   ],
+   "accomplishment": [
+    "She convinced a merchant caravan fleeing the Shadowlands approach to shelter a Hiruma widow and her children at Shiro Kaiu, though three families in the caravan had already refused them."
+   ],
+   "challenge": [
+    "During the climb up to Shiro Hiruma, Yukitsuna falls behind the others on the steeper passages, breathing hard while they move steadily on, and she will not ask them to slow down."
+   ],
+   "peace": [
+    "Yukitsuna spreads the maps Sokori stole across the castle floor and traces the Hiruma's retreat path in charcoal, checking Keiji's notations against the Asako archives she carried up the mountain, and finds the moment when Masami chose to stop running."
+   ],
+   "fear": [
+    "She stops asking Keiji about the maps the moment he offers an explanation, then spends the climb to Shiro Hiruma certain she's missed something and too impatient to go back and verify it."
+   ],
+   "mentor_relationship": [
+    "Moshi Yasunari taught her to read omens in shell and bone, but Yukitsuna still cannot ask a direct question of the spirits without feeling she is forcing an answer that was never meant for her."
+   ],
+   "first_impression": [
+    "Yukitsuna stops mid-stride on steep ground, breathing audibly while the rest keep pace, and does not ask them to wait."
+   ],
+   "accoutrement": [
+    "A charcoal stick worn down to a stub and kept in the breast fold of her kimono, its end stained darker than the rest."
+   ],
+   "stress_reaction": [
+    "Yukitsuna stops filing her reports and starts cross-referencing them instead, pulling apart what she wrote to find the contradiction she is certain is there, and becomes unreachable until she locates it or admits she was wrong."
+   ],
+   "relationship_person": [
+    "Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.",
+    "Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the climb to Shiro Hiruma easier and made it impossible to admit she was struggling."
+   ],
+   "parent_opinion": [
+    "Her father says she learned to read before she learned to stop, and now she arrives at conclusions the way a stone arrives at the bottom of a well—fast, and without checking if the water is still there to catch it."
+   ],
+   "death": [
+    "Yukitsuna will die at her desk in the Phoenix archives, mid-sentence in a report, because she finally found the contradiction she was looking for and did not survive the moment of understanding that she had decided not to see it the first time."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Yukitsuna reads the currents in a room the way others read a text, and will pivot mid-sentence if she notices the mood shift beneath someone's words.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Asako Yukitsuna serves Asako Satoru, the Phoenix's chief inquisitor, and must report what she finds at Shiro Hiruma even if it implicates someone she traveled with to get there.",
+     "lord_name": "Asako Tamaki"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Yukitsuna wants to believe the people she travels with are good, and stops asking hard questions when they give her reason to."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Yukitsuna files her reports to Asako Satoru with the same precision she'd use on a theological manuscript, which makes it easier not to mention the parts where she decided the people beside her were trustworthy and stopped looking.",
+     "path": "B",
+     "skill": "aesthetics"
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Righteousness",
+     "tenet_less_significant": "Sincerity"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She convinced a merchant caravan fleeing the Shadowlands approach to shelter a Hiruma widow and her children at Shiro Kaiu, though three families in the caravan had already refused them."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "During the climb up to Shiro Hiruma, Yukitsuna falls behind the others on the steeper passages, breathing hard while they move steadily on, and she will not ask them to slow down."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Yukitsuna spreads the maps Sokori stole across the castle floor and traces the Hiruma's retreat path in charcoal, checking Keiji's notations against the Asako archives she carried up the mountain, and finds the moment when Masami chose to stop running."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "She stops asking Keiji about the maps the moment he offers an explanation, then spends the climb to Shiro Hiruma certain she's missed something and too impatient to go back and verify it."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Moshi Yasunari — Moshi Yasunari taught her to read omens in shell and bone, but Yukitsuna still cannot ask a direct question of the spirits without feeling she is forcing an answer that was never meant for her."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Yukitsuna stops mid-stride on steep ground, breathing audibly while the rest keep pace, and does not ask them to wait.",
+     "accoutrement": "A charcoal stick worn down to a stub and kept in the breast fold of her kimono, its end stained darker than the rest."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Yukitsuna stops filing her reports and starts cross-referencing them instead, pulling apart what she wrote to find the contradiction she is certain is there, and becomes unreachable until she locates it or admits she was wrong."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Hiroaki (Fortunist Monk Order) — Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.\nMirumoto Gina (Dragon) — Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the climb to Shiro Hiruma easier and made it impossible to admit she was struggling."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Her father says she learned to read before she learned to stop, and now she arrives at conclusions the way a stone arrives at the bottom of a well—fast, and without checking if the water is still there to catch it."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Wondrous Work",
+     "heritage_table": "Samurai Heritage Table",
+     "heritage_sub": "1-3 — Gain +1 ^\"Aesthetics\"",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Yukitsuna will die at her desk in the Phoenix archives, mid-sentence in a report, because she finally found the contradiction she was looking for and did not survive the moment of understanding that she had decided not to see it the first time."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Asako Inquisitor School",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 1,
+    "fire": 2,
+    "water": 2,
+    "void": 3
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 2,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 1,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 2
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 35,
+    "glory": 45,
+    "status": 30,
+    "ninjo": "Yukitsuna wants to believe the people she travels with are good, and stops asking hard questions when they give her reason to.",
+    "giri": "Asako Yukitsuna serves Asako Satoru, the Phoenix's chief inquisitor, and must report what she finds at Shiro Hiruma even if it implicates someone she traveled with to get there.",
+    "bushido_tenets": {
+     "paramount": "Righteousness",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 6,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 3
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Cleansing Rite"
+    },
+    {
+     "name": "Commune with the Spirits"
+    },
+    {
+     "name": "Divination"
+    },
+    {
+     "name": "Cadence"
+    },
+    {
+     "name": "Truth Burns through Lies"
+    },
+    {
+     "name": "Traces of Passage"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Famously Kind"
+    },
+    {
+     "name": "Out of Shape"
+    },
+    {
+     "name": "Researcher"
+    },
+    {
+     "name": "Impatience"
+    },
+    {
+     "name": "Cursed Lineage"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Nodachi"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
