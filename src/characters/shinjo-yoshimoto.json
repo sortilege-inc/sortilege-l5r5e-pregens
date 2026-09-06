@@ -14,7 +14,7 @@
   "origin_type": null
  },
  "mode": "core",
- "portrait": null,
+ "portrait": "src/portraits/shinjo-yoshimoto.webp",
  "concept": "Yoshimoto meets your eye a moment too long before answering a direct question, as if he's already read three answers you haven't given yet.",
  "summary": null,
  "notes": "",

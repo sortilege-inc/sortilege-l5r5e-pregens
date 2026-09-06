@@ -14,7 +14,7 @@
   "origin_type": null
  },
  "mode": "core",
- "portrait": null,
+ "portrait": "src/portraits/miya-ujitsuna.webp",
  "concept": "Ujitsuna's hands move constantly when she stands still—fingers drumming on her thigh, palms pressed flat against her sides, one thumb working the opposite wrist—as if her body is arguing with itself about whether to hold steady.",
  "summary": null,
  "notes": "",
@@ -126,7 +126,7 @@
   "starting_item": "Lucky Cricket",
   "campaign": "Blood of the Lioness",
   "notes": "",
-  "gender": "male",
+  "gender": "female",
   "choices": {
    "family.ring_increase": [
     "Earth"
