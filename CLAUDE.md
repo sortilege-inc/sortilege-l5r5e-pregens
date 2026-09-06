@@ -315,3 +315,63 @@ is `"custom": true` and carries its own text in the character source.
 
 `scripts/foundry_push.py` dry-runs by default. **Do not run `--apply` without explicit
 per-occasion approval** (standing position as of 2026-08-29: no pushes to Foundry).
+
+## Five passes owed once the characters are built (Jordan, 2026-09-06)
+
+Deliberately deferred to the end: each one wants the whole cast in front of it,
+because they are all judgements about the set rather than about one character.
+Counts below are as of 2026-09-06, 49 archive characters — re-run them, don't
+trust them.
+
+**1. Resolve the TBDs.** Open-ended peculiarities whose subject was never
+filled in. 14 entries across 7 distinct names, and one is literally
+`Pursued by TBD` (Moshi Sumitomo). The rest are unfilled brackets:
+`Scorn of [One Group]` ×5, `Hana [Doll]` ×3, `Summoning Mantra : [One
+Implement]` ×2, `Paragon of Bushidō Tenet [Righteousness]`, `Stalked by
+[Creature]`, `Hero of [Village]`. The Creator has the field for it —
+`pec_subjects`, question 18's picker — so this is filling in names, not
+building anything. Find them with a scan of `src/characters/*.json` for
+`TBD` and for `[…]` inside a peculiarity's `name`.
+
+**2. Audit the names.** Every personal name against the game's own lists in
+`data/chargen/names.js` (2158 entries) and against canon. Fold diacritics
+first: 14 look absent, 13 after folding, and most of those are legitimately
+outside the tables — Aarav is from the Ivory Kingdoms, Nergüi and Temur are
+Unicorn steppe names, Jinrai, Sanpei and the Beshkara Constrictor are not
+samurai at all. What is left is the real question: Sayaka, Setsuna, Nagiko,
+Genzō, Hisano, Renshō, Asahi. **Not a bug list** — the tables are the game's
+short lists, not the language.
+
+Also worth knowing before it looks alarming: eight archive characters share a
+full name with a compendium *actor*, and all eight are in the **Pregenerated
+Player Characters** pack — they are our own characters as Foundry holds them,
+not collisions.
+
+**3. Duplicate personal names.** Two pairs today: **Kaiu Anzu / Shinjō Anzu**
+and **Hiruma Kaede / Kitsu Kaede**. Different families, so both are legal in
+Rokugan and neither is wrong — the question is whether the archive wants two
+Anzu and two Kaede on one roster, and it is the owner's call, not the tool's.
+Watch the slugs when renaming: `kitsu-kaede` and `hiruma-kaede` are distinct
+files and distinct portraits.
+
+**4. NPC merges and collisions.** 161 NPCs on the relationship map, each
+written by whichever character's answers named them, so nobody has been
+reconciled against anybody. No two NPCs share a full name, but four personal
+names are shared across distinct NPCs — **Moshi Etsuko / Shiba Etsuko**,
+**Akodo Hanae / Moshi Hanae**, **Bayushi Konoye / Hida Konoye**, and
+**Kaiu Michio / Michio**, that last one likely the same person named twice.
+Two questions per pair: is this one person who should merge into one node, or
+two people who should be told apart. `scripts/relationship_map.py` is where a
+merge would be expressed.
+
+**5. Settle the outfit bundles.** 36 gear entries are exported `held: false`,
+and 66 custom entries are the school outfit's own either-or wording rather
+than a thing the character owns: `daishō (katana and wakizashi)` ×10,
+`Blunted or wooden sword` ×5, `one weapon of rarity 6 or lower` ×7 across two
+spellings, `an attendant or Rokugani pony` ×2, `Utaku steed` ×2, `Unicorn
+warhorse` ×2, `Horse` ×2, `any two items of rarity 4 or lower` ×2. Each wants
+one of three things: split into the items it names (the daishō is a katana and
+a wakizashi, both in the catalog), chosen (the rarity slots, the either-ors),
+or kept as an NPC-ish possession the sheet renders as prose (the mounts and
+the attendant — note the compendium stocks Utaku Steed and Horse as **NPC
+actors**, which is why gear resolution refuses them; see catalogHas()).

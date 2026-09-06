@@ -126,7 +126,7 @@
   "starting_item": "Fire Lance",
   "campaign": "Portents & Fortunes",
   "notes": "",
-  "gender": "male",
+  "gender": "female",
   "choices": {
    "family.ring_increase": [
     "Air"
