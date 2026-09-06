@@ -104,6 +104,7 @@
      coverage — just the retyping taken out of starting one: the school, the
      campaign it is for, and the question set its book uses. */
   var PACK_STUBS = window.L5R_PACK_STUBS || [];
+  var CAMPAIGNS = window.L5R_CAMPAIGNS || [];
   var CLAN_TENETS = window.L5R_CLAN_TENETS || {};
   var QUESTIONS = window.L5R_QUESTIONS || {};
   var NAMES = window.L5R_NAMES || {};
@@ -1885,6 +1886,43 @@
      itself last and immediately before the ask. And the precedence is stated
      rather than implied, because ordering alone is a hint and this needs to be
      a rule. */
+  /* What the adventure says about itself, for a character being made for it.
+
+     This was missing entirely: the AI was told the school, the clan, the
+     rings and every answered question, and nothing about the adventure the
+     character is for — so a Mask of the Oni character could be suggested a
+     quiet life at court, and nothing in the prompt disagreed. Every published
+     adventure is converted now, so each campaign's own .arc supplies its
+     setting, summary, themes and tone (scripts/build.py reads them), and a
+     campaign of the owner's own has its note instead.
+
+     It sits between the settled facts and the concept deliberately. It is the
+     world, not the subject: weaker than the concept, which is this character
+     in particular, and far weaker than the question. */
+  function adventureContext() {
+    var name = C.campaign;
+    if (!name) return null;
+    var c = null;
+    CAMPAIGNS.forEach(function (x) { if (x.name === name) c = x; });
+    if (!c) return null;
+    var a = c.adventure || {};
+    var b = [];
+    if (a.setting) b.push("Setting: " + a.setting);
+    if (a.summary) b.push("What happens: " + a.summary);
+    else if (a.description) b.push("What it is: " + a.description);
+    if ((a.themes || []).length) b.push("Themes: " + a.themes.join("; "));
+    if (a.tone) b.push("Tone: " + a.tone);
+    // stated where no arc does it: the owner's own campaigns
+    if (c.premise) b.push((a.summary || a.description ? "Also: " : "What happens: ")
+                          + c.premise);
+    if (a.player_count) b.push("The party: " + a.player_count);
+    // the owner's own note, which for a campaign with no arc is the only thing
+    // there is to say and for one with an arc says why this pack exists
+    if (c.note) b.push("Note: " + c.note);
+    if (!b.length) return null;
+    return name + "\n" + b.join("\n");
+  }
+
   function weightedContext(fieldKey, omit) {
     var facts = characterContext(omit);
     var qn = FIELD_QUESTION[fieldKey];
@@ -1897,6 +1935,15 @@
              "are not the subject of the answer and not a prompt to continue " +
              "any of them — several are answers to other questions, which have " +
              "already been asked and are done.\n\n" + facts);
+    }
+    var adv = adventureContext();
+    if (adv) {
+      b.push("THE ADVENTURE THIS CHARACTER IS BEING MADE FOR. The world the " +
+             "answer sits in: its places, its pressures, what the party will " +
+             "be doing. Draw on it for somewhere real to put this character " +
+             "rather than inventing a setting. It is not the subject of the " +
+             "answer, and the answer should not narrate the adventure's plot " +
+             "or assume its outcome:\n\n" + adv);
     }
     if (C.concept) {
       b.push("THE CONCEPT the player is holding for this character. This is " +

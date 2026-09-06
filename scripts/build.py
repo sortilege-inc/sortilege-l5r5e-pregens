@@ -381,6 +381,51 @@ def concept_pronoun(text):
     return hit[0] if len(hit) == 1 else None
 
 
+# The fields an .arc states about its adventure, in the order they are useful
+# to somebody making a character for it: where and when, what happens, what it
+# is about, how it feels. SUMMARY is long and that is fine -- it is the only
+# place the arc says what the party will actually be doing.
+ARC_FIELDS = ("SETTING", "SUMMARY", "DESCRIPTION", "TONE", "PLAYER_COUNT")
+# Anchored to exactly four spaces: that is the arc's own indentation level, and
+# every deeper DESCRIPTION belongs to a scene, a location or an NPC. Matching
+# any indentation took Dark Tides' *town* description as the adventure's, which
+# reads plausibly and is the wrong field -- the sort of near-miss that would
+# have gone unnoticed in a prompt.
+ARC_STR = r'^ {4}%s[ \t]+"((?:[^"\\]|\\.)*)"[ \t]*$'
+
+
+def adventure_context(arc_name):
+    """What an .arc says about its own adventure, for the Creator's AI context.
+
+    A character being made for Mask of the Oni had no way to know it was for
+    Mask of the Oni: the Creator was told the school, the clan and every
+    answered question, and nothing about the adventure. The corpus states all
+    of it -- setting, summary, tone, themes -- and now that every published
+    adventure is converted there is a block to read for each one.
+    """
+    if not arc_name:
+        return None
+    path = os.path.join(corpus_base_dir(), arc_name)
+    if not os.path.exists(path):
+        return None
+    text = open(path, encoding="utf-8").read()
+    out = {}
+    for field in ARC_FIELDS:
+        m = re.search(ARC_STR % field, text, re.M)
+        if m:
+            out[field.lower()] = m.group(1).replace('\\"', '"').strip()
+    # THEMES comes both ways: a bracketed list, and a brace block with one
+    # quoted line each. Both are in use -- Mask of the Oni writes the first,
+    # Dark Tides and the Lost Writer the second.
+    m = (re.search(r'^ {4}THEMES[ \t]+\[(.*?)\][ \t]*$', text, re.M | re.S)
+         or re.search(r'^ {4}THEMES[ \t]*\{(.*?)^ {4}\}', text, re.M | re.S))
+    if m:
+        themes = re.findall(r'"((?:[^"\\]|\\.)*)"', m.group(1))
+        if themes:
+            out["themes"] = [t.replace('\\"', '"').strip() for t in themes]
+    return out or None
+
+
 def campaigns(cx):
     """Every campaign the archive knows of, whether a character is tagged to
     one yet or not.
@@ -514,8 +559,17 @@ def campaigns(cx):
             pencilled.append({"school": roll[n], "covered": n in covered,
                               "concept": concept, "family": fam,
                               "gender": gender})
+        arc_name = spec.get("arc") or (declared.get(owner) or {}).get("arc")
         out.append({"name": name, "characters": counts.get(name, 0),
                     "arc": spec.get("arc"), "note": spec.get("note"),
+                    # what the adventure itself says, for anyone making a
+                    # character for it. A campaign of the owner's own has no
+                    # arc in the corpus, so its note is the only thing there is
+                    # to say and stands in.
+                    "adventure": adventure_context(arc_name),
+                    # what a character is made against where no arc states it
+                    "premise": spec.get("premise")
+                               or (declared.get(owner) or {}).get("premise"),
                     "pencilled": pencilled,
                     "pencilled_why": spec.get("pencilled_why")
                                      or (declared.get(owner) or {}).get("pencilled_why"),
@@ -539,6 +593,12 @@ def campaigns(cx):
             f"FAIL — {len(badfam)} pencilled family assignment(s) do not hold:\n"
             + "\n".join(f"   {c}: {s} — {f!r} {why}"
                          for c, s, f, why in badfam))
+    noctx = [c["name"] for c in out if c["arc"] and not c["adventure"]]
+    if noctx:
+        raise SystemExit(
+            f"FAIL — {len(noctx)} campaign(s) point at an arc that yielded no "
+            f"adventure context, so the Creator would be told nothing about "
+            f"the adventure: " + ", ".join(noctx))
     if badgender:
         raise SystemExit(
             f"FAIL — {len(badgender)} pencilled gender(s) do not hold:\n"
