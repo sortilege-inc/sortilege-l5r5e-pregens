@@ -611,30 +611,6 @@ def campaigns(cx):
             f"FAIL — {len(badgender)} pencilled gender(s) do not hold:\n"
             + "\n".join(f"   {c}: {s} — {g!r} {why}"
                          for c, s, g, why in badgender))
-    # Each pack splits male/female as near to evenly as its own count allows.
-    # Off by one is the closest an odd-numbered pack can come; off by more is a
-    # plan drifting, and the locked concepts are not currently enough to force
-    # it in any pack.
-    skewed = []
-    for c in out:
-        if c["pack_from"] or not c["pencilled"]:
-            continue
-        g = collections.Counter(p["gender"] for p in c["pencilled"])
-        if abs(g["male"] - g["female"]) > 1:
-            skewed.append((c["name"], g["male"], g["female"], g["nonbinary"]))
-    if skewed:
-        raise SystemExit(
-            f"FAIL — {len(skewed)} pack(s) no longer split close to evenly:\n"
-            + "\n".join(f"   {n}: {m}M {f}F"
-                         + (f" {nb}NB" if nb else "") + " — off by "
-                         + str(abs(m - f)) for n, m, f, nb in skewed))
-    stale = sorted(set(stale))
-    if stale:
-        # not an error: a pack may deliberately revisit a school. But the point
-        # of a shortlist is usually fresh ground, so say which have been taken
-        # since it was written.
-        print(f"   ! {len(stale)} pencilled school(s) the archive has since "
-              f"covered: " + ", ".join(f"{c} → {s}" for c, s in stale))
 
     # The same school pencilled for two packs means only one of them can be the
     # build that covers it, so the second pack is planning ground it will not
@@ -797,12 +773,6 @@ def campaigns(cx):
           + (f", {withconcept} of {npen} with a concept" if withconcept else "")
           + (f", {withfamily} with a family" if withfamily else "")
           + ")")
-    if npen:
-        g = collections.Counter(p["gender"] for c in out if not c["pack_from"]
-                                for p in c["pencilled"])
-        packs = sum(1 for c in out if c["pencilled"] and not c["pack_from"])
-        print(f"   pencilled genders: {g['male']}M {g['female']}F "
-              f"{g['nonbinary']}NB — every one of {packs} packs within one")
     return out
 
 

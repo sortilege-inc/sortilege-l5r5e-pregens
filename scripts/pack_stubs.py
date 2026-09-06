@@ -156,9 +156,6 @@ def main():
     for s in stubs:
         modes[s["mode"]] = modes.get(s["mode"], 0) + 1
     nfamily = sum(1 for s in stubs if s["family"])
-    gen = {}
-    for s in stubs:
-        gen[s["gender"]] = gen.get(s["gender"], 0) + 1
     nconcept = sum(1 for s in stubs if s["concept"])
     npub = sum(1 for s in stubs if s["built_by"] == "published")
     print(f"pack stubs: {len(stubs)} across {packs} packs -> "
@@ -166,9 +163,6 @@ def main():
           + ", ".join(f"{v} {k}" for k, v in sorted(modes.items()))
           + (f"; {nconcept} with a concept" if nconcept else "")
           + (f"; {nfamily} with a family" if nfamily else "")
-          + ("; " + " ".join(f"{gen.get(k, 0)}{a}" for k, a in
-                             (("male", "M"), ("female", "F"),
-                              ("nonbinary", "NB"))))
           + (f"; {npub} on a school a published pregen already has"
              if npub else ""))
     return 0
