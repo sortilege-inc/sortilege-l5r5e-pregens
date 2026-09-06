@@ -87,24 +87,6 @@
      "family": "Kitsu",
      "gender": "female",
      "concept": "Just out of her gempuku and already a medic in her own family's fortress, treating soldiers in halls her ancestors are buried under."
-    },
-    {
-     "school": "Mirumoto Two-Heavens Adept School",
-     "family": "Mirumoto",
-     "gender": "female",
-     "concept": "A teacher, unbeaten in duels where she can use the niten — both blades of the daishō at once — which is not the duel a Kakita will offer her."
-    },
-    {
-     "school": "Miya Cartographer School",
-     "family": "Miya",
-     "gender": "male",
-     "concept": "An Imperial observer whose report decides whether the Throne calls this a war or a dispute."
-    },
-    {
-     "school": "Shinjo Mounted Archer",
-     "family": "Shinjo",
-     "gender": "male",
-     "concept": "Newly appointed an Emerald Magistrate, and young for it."
     }
    ],
    "pencilled_why": "Chosen 2026-09-04, eight rather than six because the adventure runs two parties: Parts One and Three in the present, Part Two in the past, linked by Legacy advantages.\n\nThe Lion holds the castle — Akodo Commander for the school of the champion who built Hayaken no Shiro, Kitsu Medic for the family whose fortress home it is, Ikoma Shadow for the work a war needs done off the field. Kakita Swordsmith and Mirumoto Taoist Blade come over the borders the castle watches, and Utaku Battle Maiden brings the cavalry the northern border implies. Asako Loremaster and Miya Cartographer are what a campaign actually runs on: someone who knows the past that Part Two is set in, and someone who knows the ground.\n\nThree of the eight read as the older generation rather than the inheriting one — Akodo Commander (whose mastery is Akodo's Final Lesson), Kakita Swordsmith (a blade outlives its wielder, which is the legacy mechanic as a craft), and Asako Loremaster (the one who remembers). The split between the two parties is not fixed here.\n\nNoted and not acted on: both Kitsu shugenja schools, Medium and Realm Wanderer, are pencilled for Wheel of Judgment, so the Kitsu family is represented at its own castle by the medic. Utaku Battle Maiden is also the school of a published pregen (Utaku Azami, Wedding at Kyotei Castle) — untouched by the archive, so it still adds coverage.\n\nShinjo Mounted Archer added 2026-09-04 — a second Unicorn for a campaign fought on the Lion's northern border, and cavalry that belongs in a mass battle.\n\nConcepts chosen by the owner 2026-09-04 — four of the options offered, five written from their own direction — and all nine are present-day characters — Parts One and Three. The pack no longer tries to cover both generations: the adventure ships The Advisors on its own page 12 as the past party for Part Two, so the archive builds the generation that inherits and the book supplies the one inherited from. The three that read as ancestors when the pack was drawn (Akodo Commander, Kakita Swordsmith, Asako Loremaster) are written as the present-day holders of those legacies instead.\n\nEach of the nine implies a predecessor without naming one — a blade she did not forge, a bow that belonged to someone the Lion remember, an account whose author left something out. That is what a Legacy advantage wants: somewhere to attach, rather than an ancestor the players are handed.\n\nSwapped 2026-09-04: this pack held Mirumoto Taoist Blade and now holds Mirumoto Two-Heavens Adept, trading with The Bushi Oni. The concept is a niten teacher and Two-Heavens Adept is the school built on niten, so the two now say the same thing.",
@@ -114,6 +96,9 @@
     "Asako Loremaster School": "Asako Shuichi — male, Asako. Pencilled premise: Sent to make copies of key documents before they can be lost.",
     "Ikoma Shadow School": "Ikoma Chiaki — female, Ikoma. Pencilled premise: Tasked with rooting out possible traitors among the Lion, which means suspecting the garrison she is quartered with.",
     "Kakita Swordsmith School": "Kakita Kensaku — male, Kakita. Pencilled premise: A Crane at a Lion castle to repair blades he did not forge, and increasingly certain he knows whose hand made one of them.",
+    "Mirumoto Two-Heavens Adept School": "Mirumoto Hisa — female, Mirumoto. Pencilled premise: A teacher, unbeaten in duels where she can use the niten — both blades of the daishō at once — which is not the duel a Kakita will offer her.",
+    "Miya Cartographer School": "Miya Ujitsuna — male, Miya. Pencilled premise: An Imperial observer whose report decides whether the Throne calls this a war or a dispute.",
+    "Shinjo Mounted Archer": "Shinjo Yoshimoto — male, Shinjo. Pencilled premise: Newly appointed an Emerald Magistrate, and young for it.",
     "Utaku Battle Maiden School": "Utaku Seki — female, Utaku. Pencilled premise: A Battle Maiden taken prisoner in an earlier engagement, and still, by her own reckoning, on duty."
    }
   },

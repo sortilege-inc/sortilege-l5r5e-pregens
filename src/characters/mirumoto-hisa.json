@@ -1,0 +1,438 @@
+{
+ "slug": "mirumoto-hisa",
+ "name": "Mirumoto Hisa",
+ "campaign": "Blood of the Lioness",
+ "status": null,
+ "identity": {
+  "clan": "Dragon",
+  "family": "Mirumoto",
+  "school": "Mirumoto Two-Heavens Adept School",
+  "role": "Bushi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Hisa's eyes track the doorway long after a student leaves her classroom, following a path only she can see.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Mirumoto Hisa",
+  "mode": "core",
+  "clan": "Dragon",
+  "family": "Mirumoto",
+  "school": "Mirumoto Two-Heavens Adept School",
+  "role": "Bushi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "void",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "culture": 1,
+   "government": 1
+  },
+  "distinctions": [
+   "Knowledgeable Wilderness Guide"
+  ],
+  "adversities": [
+   "Overconfidence in Charm"
+  ],
+  "passions": [
+   "Navigator"
+  ],
+  "anxieties": [
+   "Disdain for Urban Sprawl"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Courage",
+   "lesser": "Compassion",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Mirumoto Hisa serves Akodo Heihachi, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade.",
+   "ninjo": "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Heihachi's war college.",
+   "standout_quality": "Hisa beats every opponent she faces with the niten except the ones who refuse to let her draw both blades.",
+   "accomplishment": "She kept three students who had already decided to leave the war college, by teaching them the niten not as a path to glory but as a way to survive what comes after the tournament ends.",
+   "challenge": "She pitches the niten to every promising student who walks through her classroom door, certain her charm will keep them, and watches them leave anyway because they want a master who will fight the Kakita, not one who teaches them to hide.",
+   "peace": "Hisa traces the routes between the war college and the villages that surrendered before Snow Plain, marking which paths the students who leave her actually take, mapping their dispersal as carefully as she would chart an unfamiliar coastline.",
+   "fear": "Hisa teaches in the war college's high tower and refuses assignments that would post her to the garrison towns spreading south from the castle, where ten thousand soldiers crowd the roads and the supply-master's compounds sprawl into villages that have no shape, because she cannot think in a place where everything is built on top of everything else.",
+   "accoutrement": "A brass compass the size of a thumbnail, worn on a cord under her collar; she checks it each time a student leaves the classroom, marking the direction they went.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Mirumoto Ton",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Hisa teaches the two-blades form to students who will never face a Kakita, and tells herself this serves the Dragon when what she is really doing is protecting them from a duel she cannot win."
+   },
+   "mentor": {
+    "name": "Kumi",
+    "path": "B",
+    "granted": "Demon Wound",
+    "skill": "culture",
+    "text": "Kumi taught her that a wound taken protecting someone else stops hurting differently than one taken for pride, and Hisa has spent fifteen years trying to prove that lesson wrong by pitching the niten to students she believes will stay.",
+    "gender": "female",
+    "association": "Shinseist Monk Order"
+   },
+   "first_impression": "Hisa's eyes track the doorway long after a student leaves her classroom, following a path only she can see.",
+   "stress_reaction": "Hisa stops talking mid-lesson and walks to the window, tracking the student's path down the mountain roads until the figure is too small to follow, and does not resume until someone asks her a direct question.",
+   "relationships": "Mirumoto Tsuru (Dragon) — Mirumoto Tsuru left the war college three years ago to join a merchant house that trades south along the coast, and Hisa still calculates which ports the supply ships pass through, cross-referencing them against the seasons.\nIchirō Masu (Badger) — Ichirō Masu of the Badger clan once refused Hisa's offer to teach him the niten, citing his family's traditional forms, and she has spent four years calculating whether his choice was honest principle or polite rejection she failed to charm away.",
+   "people": [
+    {
+     "name": "Mirumoto Tsuru",
+     "gender": "female",
+     "association": "Dragon",
+     "text": "Mirumoto Tsuru left the war college three years ago to join a merchant house that trades south along the coast, and Hisa still calculates which ports the supply ships pass through, cross-referencing them against the seasons."
+    },
+    {
+     "name": "Ichirō Masu",
+     "gender": "male",
+     "association": "Badger",
+     "text": "Ichirō Masu of the Badger clan once refused Hisa's offer to teach him the niten, citing his family's traditional forms, and she has spent four years calculating whether his choice was honest principle or polite rejection she failed to charm away."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Hisa's mother wishes she would stop running the war college's classroom like a lighthouse keeping watch for ships that have already sailed past the rocks.",
+    "skill": "government"
+   },
+   "heritage": "Ties to the Perfect Land Sect",
+   "heritage_table": "new-samurai-heritages-dragon",
+   "heritage_sub": "1-3 — Gain +1 ^\"Labor\"",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Hisa expects to die in the war college, teaching, with a student she thought had returned finally standing in the doorway."
+  },
+  "starting_item": "Folding Fan",
+  "campaign": "Blood of the Lioness",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Water"
+   ],
+   "school.starting_skills": [
+    "Tactics",
+    "Martial Arts [Melee]",
+    "Fitness",
+    "Command",
+    "Theology"
+   ],
+   "school.tech.0": [
+    "Striking as Fire"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Hisa beats every opponent she faces with the niten except the ones who refuse to let her draw both blades."
+   ],
+   "giri": [
+    "Mirumoto Hisa serves Akodo Heihachi, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade."
+   ],
+   "ninjo": [
+    "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Heihachi's war college."
+   ],
+   "clan_relationship": [
+    "Hisa teaches the two-blades form to students who will never face a Kakita, and tells herself this serves the Dragon when what she is really doing is protecting them from a duel she cannot win."
+   ],
+   "accomplishment": [
+    "Mirumoto Hisa defeated a visiting Kakita master in a sparring match at the war college by refusing to draw her second blade until he had already committed to his opening.",
+    "She kept three students who had already decided to leave the war college, by teaching them the niten not as a path to glory but as a way to survive what comes after the tournament ends."
+   ],
+   "challenge": [
+    "She pitches the niten to every promising student who walks through her classroom door, certain her charm will keep them, and watches them leave anyway because they want a master who will fight the Kakita, not one who teaches them to hide."
+   ],
+   "peace": [
+    "Hisa traces the routes between the war college and the villages that surrendered before Snow Plain, marking which paths the students who leave her actually take, mapping their dispersal as carefully as she would chart an unfamiliar coastline."
+   ],
+   "fear": [
+    "Hisa teaches in the war college's high tower and refuses assignments that would post her to the garrison towns spreading south from the castle, where ten thousand soldiers crowd the roads and the supply-master's compounds sprawl into villages that have no shape, because she cannot think in a place where everything is built on top of everything else."
+   ],
+   "mentor_relationship": [
+    "Kumi taught her that a wound taken protecting someone else stops hurting differently than one taken for pride, and Hisa has spent fifteen years trying to prove that lesson wrong by pitching the niten to students she believes will stay."
+   ],
+   "first_impression": [
+    "Hisa's eyes track the doorway long after a student leaves her classroom, following a path only she can see."
+   ],
+   "accoutrement": [
+    "A brass compass the size of a thumbnail, worn on a cord under her collar; she checks it each time a student leaves the classroom, marking the direction they went."
+   ],
+   "stress_reaction": [
+    "Hisa stops talking mid-lesson and walks to the window, tracking the student's path down the mountain roads until the figure is too small to follow, and does not resume until someone asks her a direct question."
+   ],
+   "relationship_person": [
+    "Mirumoto Tsuru left the war college three years ago to join a merchant house that trades south along the coast, and Hisa still calculates which ports the supply ships pass through, cross-referencing them against the seasons.",
+    "Ichirō Masu of the Badger clan once refused Hisa's offer to teach him the niten, citing his family's traditional forms, and she has spent four years calculating whether his choice was honest principle or polite rejection she failed to charm away."
+   ],
+   "parent_opinion": [
+    "Hisa's mother wishes she would stop running the war college's classroom like a lighthouse keeping watch for ships that have already sailed past the rocks."
+   ],
+   "death": [
+    "Hisa expects to die in the war college, teaching, with a student she thought had returned finally standing in the doorway."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Hisa beats every opponent she faces with the niten except the ones who refuse to let her draw both blades.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Mirumoto Hisa serves Akodo Heihachi, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade.",
+     "lord_name": "Mirumoto Ton"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Heihachi's war college."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Hisa teaches the two-blades form to students who will never face a Kakita, and tells herself this serves the Dragon when what she is really doing is protecting them from a duel she cannot win.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Compassion"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She kept three students who had already decided to leave the war college, by teaching them the niten not as a path to glory but as a way to survive what comes after the tournament ends."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "She pitches the niten to every promising student who walks through her classroom door, certain her charm will keep them, and watches them leave anyway because they want a master who will fight the Kakita, not one who teaches them to hide."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Hisa traces the routes between the war college and the villages that surrendered before Snow Plain, marking which paths the students who leave her actually take, mapping their dispersal as carefully as she would chart an unfamiliar coastline."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Hisa teaches in the war college's high tower and refuses assignments that would post her to the garrison towns spreading south from the castle, where ten thousand soldiers crowd the roads and the supply-master's compounds sprawl into villages that have no shape, because she cannot think in a place where everything is built on top of everything else."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Kumi — Kumi taught her that a wound taken protecting someone else stops hurting differently than one taken for pride, and Hisa has spent fifteen years trying to prove that lesson wrong by pitching the niten to students she believes will stay."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Hisa's eyes track the doorway long after a student leaves her classroom, following a path only she can see.",
+     "accoutrement": "A brass compass the size of a thumbnail, worn on a cord under her collar; she checks it each time a student leaves the classroom, marking the direction they went."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Hisa stops talking mid-lesson and walks to the window, tracking the student's path down the mountain roads until the figure is too small to follow, and does not resume until someone asks her a direct question."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Mirumoto Tsuru (Dragon) — Mirumoto Tsuru left the war college three years ago to join a merchant house that trades south along the coast, and Hisa still calculates which ports the supply ships pass through, cross-referencing them against the seasons.\nIchirō Masu (Badger) — Ichirō Masu of the Badger clan once refused Hisa's offer to teach him the niten, citing his family's traditional forms, and she has spent four years calculating whether his choice was honest principle or polite rejection she failed to charm away."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Hisa's mother wishes she would stop running the war college's classroom like a lighthouse keeping watch for ships that have already sailed past the rocks."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Ties to the Perfect Land Sect",
+     "heritage_table": "New Samurai Heritages (Dragon)",
+     "heritage_sub": "1-3 — Gain +1 ^\"Labor\"",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Hisa expects to die in the war college, teaching, with a student she thought had returned finally standing in the doorway."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Mirumoto Two-Heavens Adept School",
+   "foundry_id": null,
+   "rings": {
+    "air": 1,
+    "earth": 2,
+    "fire": 3,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 2,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 60,
+    "glory": 44,
+    "status": 30,
+    "ninjo": "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Heihachi's war college.",
+    "giri": "Mirumoto Hisa serves Akodo Heihachi, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Compassion"
+    }
+   },
+   "derived": {
+    "endurance": 10,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Fire"
+    },
+    {
+     "name": "Dazzling Performance"
+    },
+    {
+     "name": "Way of the Dragon"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Knowledgeable Wilderness Guide"
+    },
+    {
+     "name": "Overconfidence in Charm"
+    },
+    {
+     "name": "Navigator"
+    },
+    {
+     "name": "Disdain for Urban Sprawl"
+    },
+    {
+     "name": "Demon Wound"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Folding Fan"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Ceremonial Clothes"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "daishō (katana and wakizashi) or wakizashi (short sword) and any two weapons of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Mirumoto Two-Heavens Adept starting outfit",
+     "held": false
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "A brass compass the size of a thumbnail, worn on a cord under her collar; she checks it each time a student leaves the classroom, marking the direction they went.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

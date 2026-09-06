@@ -1,0 +1,460 @@
+{
+ "slug": "shinjo-yoshimoto",
+ "name": "Shinjo Yoshimoto",
+ "campaign": "Blood of the Lioness",
+ "status": null,
+ "identity": {
+  "clan": "Unicorn",
+  "family": "Shinjo",
+  "school": "Shinjo Mounted Archer",
+  "role": "Bushi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Yoshimoto meets your eye a moment too long before answering a direct question, as if he's already read three answers you haven't given yet.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Shinjo Yoshimoto",
+  "mode": "core",
+  "clan": "Unicorn",
+  "family": "Shinjo",
+  "school": "Shinjo Mounted Archer",
+  "role": "Bushi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "void",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "ranged": 1,
+   "melee": 1
+  },
+  "distinctions": [
+   "Lucky Hunter"
+  ],
+  "adversities": [
+   "Kisshōten’s Curse"
+  ],
+  "passions": [
+   "Horse Racing"
+  ],
+  "anxieties": [
+   "Irrepressible Flirtation"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Courage",
+   "lesser": "Righteousness",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Yoshimoto reports to the Emerald Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly.",
+   "ninjo": "Yoshimoto wants to return to the Unicorn grasslands before his posting to the Emerald Champion hardens him into something his clan no longer recognizes.",
+   "standout_quality": "Yoshimoto reads a room's currents before anyone speaks—the unspoken tension between instructors, the shame a student hides behind bravado—and knows which silences to let sit and which to break.",
+   "accomplishment": "Yoshimoto found the poacher's camp in the high grasslands where three search parties had passed through blind, and brought back not the man's head but his confession—which the daimyō needed more than a corpse to settle the matter quietly with the family whose lands the poacher had crossed.",
+   "challenge": "The children of the magistrates and scholars at the Castle of the Swift Sword sense something off in Yoshimoto and will not sit still for his questions about the records, no matter how carefully he phrases them or what he offers them to sweeten the task.",
+   "peace": "In the pre-dawn hours at the Castle's practice grounds, Yoshimoto runs a young horse through the set patterns his own mount refuses, and for the first time that week his shoulders drop below his ears.",
+   "fear": "At the Castle library Yoshimoto catches himself lingering over the magistrate's clerk's hands as she turns the archive pages, and realizes she has noticed, and cannot stop himself from meeting her eye when she looks up.",
+   "accoutrement": "His mare wears a magistrate's token on her bridle—the lacquer chipped where she scraped the stable doorway that morning, and Yoshimoto has not had it repaired.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Doji Hiroshige",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Yoshimoto cannot refuse a Unicorn request for favor without rehearsing the refusal for days afterward, testing which words would have cost him less."
+   },
+   "mentor": {
+    "name": "Ikoma Aiya",
+    "path": "B",
+    "granted": "Overconfidence in Charm",
+    "skill": "ranged",
+    "text": "Ikoma Aiya taught Yoshimoto to read a room's currents by reading hers first—what she wanted, what she feared, which silences meant she was calculating—but now at the Castle he finds himself using those same eyes on everyone else and cannot stop, which means he cannot trust what he sees.",
+    "gender": "female",
+    "association": "Lion"
+   },
+   "first_impression": "Yoshimoto meets your eye a moment too long before answering a direct question, as if he's already read three answers you haven't given yet.",
+   "stress_reaction": "Yoshimoto stops asking questions and starts answering them instead, offering solutions to problems no one has brought to him yet, which means the people around him have to keep interrupting to say what they actually need.",
+   "relationships": "Shika Junnosuke (Deer) — Shika Junnosuke of the Deer holds the records Yoshimoto needs for the magistrate's investigation, and Yoshimoto keeps asking him questions he could answer from the documents themselves, watching how Junnosuke's face shifts before he speaks.\nSango (Mantis) — Sango of the Mantis runs the docks where Yoshimoto's reports to Otosan Uchi arrive by courier boat, and he has learned to time his questions about the Unicorn's shipping movements to the moment when she is too busy to lie about what she knows.",
+   "people": [
+    {
+     "name": "Shika Junnosuke",
+     "gender": "male",
+     "association": "Deer",
+     "text": "Shika Junnosuke of the Deer holds the records Yoshimoto needs for the magistrate's investigation, and Yoshimoto keeps asking him questions he could answer from the documents themselves, watching how Junnosuke's face shifts before he speaks."
+    },
+    {
+     "name": "Sango",
+     "gender": "male",
+     "association": "Mantis",
+     "text": "Sango of the Mantis runs the docks where Yoshimoto's reports to Otosan Uchi arrive by courier boat, and he has learned to time his questions about the Unicorn's shipping movements to the moment when she is too busy to lie about what she knows."
+    }
+   ],
+   "parent_opinion": {
+    "description": "His father watched Yoshimoto leave the morning practice grounds at the Castle of the Swift Sword and told the stable-master that the boy had the gift for reading men that the Unicorn needed in an Emerald Magistrate, but would never stop checking the same records twice because he could not trust what he had seen the first time.",
+    "skill": "melee"
+   },
+   "heritage": "Ancestral Horse Line",
+   "heritage_table": "new-samurai-heritages-table",
+   "heritage_sub": "3-4 — Shinjo",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Yoshimoto will die giving testimony he knows will cost him everything—not shot through the heart on some battlefield, but at a magistrate's table, speaking a truth that splits the Unicorn from the Emerald Champion and leaves him with no side left to serve."
+  },
+  "starting_item": "Lacquered Armor",
+  "campaign": "Blood of the Lioness",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Water"
+   ],
+   "school.starting_skills": [
+    "Fitness",
+    "Martial Arts [Ranged]",
+    "Tactics",
+    "Culture",
+    "Performance"
+   ],
+   "school.tech.1": [
+    "Hawk's Precision"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Yoshimoto reads a room's currents before anyone speaks—the unspoken tension between instructors, the shame a student hides behind bravado—and knows which silences to let sit and which to break."
+   ],
+   "giri": [
+    "Yoshimoto reports to the Emerald Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly."
+   ],
+   "ninjo": [
+    "Yoshimoto wants to return to the Unicorn grasslands before his posting to the Emerald Champion hardens him into something his clan no longer recognizes."
+   ],
+   "clan_relationship": [
+    "Yoshimoto cannot refuse a Unicorn request for favor without rehearsing the refusal for days afterward, testing which words would have cost him less."
+   ],
+   "accomplishment": [
+    "Yoshimoto found the poacher's camp in the high grasslands where three search parties had passed through blind, and brought back not the man's head but his confession—which the daimyō needed more than a corpse to settle the matter quietly with the family whose lands the poacher had crossed."
+   ],
+   "challenge": [
+    "The children of the magistrates and scholars at the Castle of the Swift Sword sense something off in Yoshimoto and will not sit still for his questions about the records, no matter how carefully he phrases them or what he offers them to sweeten the task."
+   ],
+   "peace": [
+    "In the pre-dawn hours at the Castle's practice grounds, Yoshimoto runs a young horse through the set patterns his own mount refuses, and for the first time that week his shoulders drop below his ears."
+   ],
+   "fear": [
+    "At the Castle library Yoshimoto catches himself lingering over the magistrate's clerk's hands as she turns the archive pages, and realizes she has noticed, and cannot stop himself from meeting her eye when she looks up."
+   ],
+   "mentor_relationship": [
+    "Ikoma Aiya taught Yoshimoto to read a room's currents by reading hers first—what she wanted, what she feared, which silences meant she was calculating—but now at the Castle he finds himself using those same eyes on everyone else and cannot stop, which means he cannot trust what he sees."
+   ],
+   "first_impression": [
+    "Yoshimoto meets your eye a moment too long before answering a direct question, as if he's already read three answers you haven't given yet."
+   ],
+   "accoutrement": [
+    "His mare wears a magistrate's token on her bridle—the lacquer chipped where she scraped the stable doorway that morning, and Yoshimoto has not had it repaired."
+   ],
+   "stress_reaction": [
+    "Yoshimoto stops asking questions and starts answering them instead, offering solutions to problems no one has brought to him yet, which means the people around him have to keep interrupting to say what they actually need."
+   ],
+   "relationship_person": [
+    "Shika Junnosuke of the Deer holds the records Yoshimoto needs for the magistrate's investigation, and Yoshimoto keeps asking him questions he could answer from the documents themselves, watching how Junnosuke's face shifts before he speaks.",
+    "Sango of the Mantis runs the docks where Yoshimoto's reports to Otosan Uchi arrive by courier boat, and he has learned to time his questions about the Unicorn's shipping movements to the moment when she is too busy to lie about what she knows."
+   ],
+   "parent_opinion": [
+    "His father watched Yoshimoto leave the morning practice grounds at the Castle of the Swift Sword and told the stable-master that the boy had the gift for reading men that the Unicorn needed in an Emerald Magistrate, but would never stop checking the same records twice because he could not trust what he had seen the first time."
+   ],
+   "death": [
+    "Yoshimoto will die giving testimony he knows will cost him everything—not shot through the heart on some battlefield, but at a magistrate's table, speaking a truth that splits the Unicorn from the Emerald Champion and leaves him with no side left to serve."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Yoshimoto reads a room's currents before anyone speaks—the unspoken tension between instructors, the shame a student hides behind bravado—and knows which silences to let sit and which to break.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Yoshimoto reports to the Emerald Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly.",
+     "lord_name": "Doji Hiroshige"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Yoshimoto wants to return to the Unicorn grasslands before his posting to the Emerald Champion hardens him into something his clan no longer recognizes."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Yoshimoto cannot refuse a Unicorn request for favor without rehearsing the refusal for days afterward, testing which words would have cost him less.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Righteousness"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Yoshimoto found the poacher's camp in the high grasslands where three search parties had passed through blind, and brought back not the man's head but his confession—which the daimyō needed more than a corpse to settle the matter quietly with the family whose lands the poacher had crossed."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "The children of the magistrates and scholars at the Castle of the Swift Sword sense something off in Yoshimoto and will not sit still for his questions about the records, no matter how carefully he phrases them or what he offers them to sweeten the task."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "In the pre-dawn hours at the Castle's practice grounds, Yoshimoto runs a young horse through the set patterns his own mount refuses, and for the first time that week his shoulders drop below his ears."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "At the Castle library Yoshimoto catches himself lingering over the magistrate's clerk's hands as she turns the archive pages, and realizes she has noticed, and cannot stop himself from meeting her eye when she looks up."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Ikoma Aiya — Ikoma Aiya taught Yoshimoto to read a room's currents by reading hers first—what she wanted, what she feared, which silences meant she was calculating—but now at the Castle he finds himself using those same eyes on everyone else and cannot stop, which means he cannot trust what he sees."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Yoshimoto meets your eye a moment too long before answering a direct question, as if he's already read three answers you haven't given yet.",
+     "accoutrement": "His mare wears a magistrate's token on her bridle—the lacquer chipped where she scraped the stable doorway that morning, and Yoshimoto has not had it repaired."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Yoshimoto stops asking questions and starts answering them instead, offering solutions to problems no one has brought to him yet, which means the people around him have to keep interrupting to say what they actually need."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Shika Junnosuke (Deer) — Shika Junnosuke of the Deer holds the records Yoshimoto needs for the magistrate's investigation, and Yoshimoto keeps asking him questions he could answer from the documents themselves, watching how Junnosuke's face shifts before he speaks.\nSango (Mantis) — Sango of the Mantis runs the docks where Yoshimoto's reports to Otosan Uchi arrive by courier boat, and he has learned to time his questions about the Unicorn's shipping movements to the moment when she is too busy to lie about what she knows."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "His father watched Yoshimoto leave the morning practice grounds at the Castle of the Swift Sword and told the stable-master that the boy had the gift for reading men that the Unicorn needed in an Emerald Magistrate, but would never stop checking the same records twice because he could not trust what he had seen the first time."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Ancestral Horse Line",
+     "heritage_table": "New Samurai Heritages Table",
+     "heritage_sub": "3-4 — Shinjo",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Yoshimoto will die giving testimony he knows will cost him everything—not shot through the heart on some battlefield, but at a magistrate's table, speaking a truth that splits the Unicorn from the Emerald Champion and leaves him with no side left to serve."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Shinjo Mounted Archer",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 1,
+    "fire": 2,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 2,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 52,
+    "status": 30,
+    "ninjo": "Yoshimoto wants to return to the Unicorn grasslands before his posting to the Emerald Champion hardens him into something his clan no longer recognizes.",
+    "giri": "Yoshimoto reports to the Emerald Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Righteousness"
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Pelting Hail Style"
+    },
+    {
+     "name": "Hawk's Precision"
+    },
+    {
+     "name": "Unity of Horse and Rider"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Lucky Hunter"
+    },
+    {
+     "name": "Kisshōten’s Curse"
+    },
+    {
+     "name": "Horse Racing"
+    },
+    {
+     "name": "Irrepressible Flirtation"
+    },
+    {
+     "name": "Overconfidence in Charm"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Lacquered Armor"
+    },
+    {
+     "name": "Lacquered Armor"
+    },
+    {
+     "name": "Ceremonial Clothes"
+    },
+    {
+     "name": "daishō (katana or scimitar, wakizashi)",
+     "custom": true,
+     "text": "From the Shinjo Mounted Archer starting outfit",
+     "held": false
+    },
+    {
+     "name": "Shinjo horsebow",
+     "custom": true,
+     "text": "From the Shinjo Mounted Archer starting outfit"
+    },
+    {
+     "name": "quiver of arrows with three special arrows (one armor-piercing, one flesh-cutter, and one humming bulb)",
+     "custom": true,
+     "text": "From the Shinjo Mounted Archer starting outfit"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Bowyer’s Kit"
+    },
+    {
+     "name": "Shinjo courser or Unicorn warhorse",
+     "custom": true,
+     "text": "From the Shinjo Mounted Archer starting outfit",
+     "held": false
+    },
+    {
+     "name": "His mare wears a magistrate's token on her bridle—the lacquer chipped where she scraped the stable doorway that morning, and Yoshimoto has not had it repaired.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    },
+    {
+     "name": "Shinjo horse",
+     "custom": true
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

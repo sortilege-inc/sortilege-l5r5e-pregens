@@ -1,0 +1,482 @@
+{
+ "slug": "miya-ujitsuna",
+ "name": "Miya Ujitsuna",
+ "campaign": "Blood of the Lioness",
+ "status": null,
+ "identity": {
+  "clan": "Imperial",
+  "family": "Miya",
+  "school": "Miya Cartographer School",
+  "role": "Artisan",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Ujitsuna's hands move constantly when she stands still—fingers drumming on her thigh, palms pressed flat against her sides, one thumb working the opposite wrist—as if her body is arguing with itself about whether to hold steady.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Miya Ujitsuna",
+  "mode": "core",
+  "clan": "Imperial",
+  "family": "Miya",
+  "school": "Miya Cartographer School",
+  "role": "Artisan",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "design": 1
+  },
+  "distinctions": [
+   "Sea Legs"
+  ],
+  "adversities": [
+   "Lost Arm or Lost Hand"
+  ],
+  "passions": [
+   "City"
+  ],
+  "anxieties": [
+   "Braggart"
+  ],
+  "pec_subjects": {
+   "city": {
+    "name": "City",
+    "subject": "Otosan Uchi",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Courtesy",
+   "lesser": "Sincerity",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Ujitsuna reports to the Miya Daimyo that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible.",
+   "ninjo": "Ujitsuna wants the historical record to matter more than the harmony of the clans, and fears that when her report reaches the Throne, everyone will choose the lie.",
+   "standout_quality": "Ujitsuna maps the discrepancies between the Ikoma records and the Akodo archives without flinching, while her instructors argue about which version the Throne should believe.",
+   "accomplishment": "Ujitsuna cross-referenced the Ikoma account of Snow Plain against the Akodo military dispatches without telling either archive what the other claimed, and neither historian has yet realized she knows where their stories diverge.",
+   "challenge": "Ujitsuna cannot grip a brush steady enough to annotate the manuscripts herself, so she must dictate her findings to scribes who may not understand what discrepancy matters, and trust them to write down the right thing.",
+   "peace": "Ujitsuna walks the streets of whatever city holds the archives she needs, memorizing the routes between the scribal halls and the tea houses where historians drink, so that when she returns to report she can describe not just what the records claim but which building stands closer to the truth.",
+   "fear": "Ujitsuna's hands shake when she must dictate to a scribe she does not trust, and she cannot tell whether she is trembling from the palsy or from the terror that the wrong word, transcribed wrong, will send the Throne to war over a lie she could have caught.",
+   "accoutrement": "She keeps a leather map case scarred and re-stitched so many times that Otomo Hisayo laughed and said it looked like a battlefield itself, and Ujitsuna did not correct her.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Miya Miné",
+   "lord_gender": "female",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Ujitsuna accepts the Miya's charge to serve the Throne above the clans, but she resists it each time she chooses which archive to visit first, which historian to interview alone, which discrepancy to highlight in her preliminary notes."
+   },
+   "mentor": {
+    "name": "Otomo Hisayo",
+    "path": "A",
+    "granted": "Navigator",
+    "skill": "",
+    "text": "Otomo Hisayo taught Ujitsuna to read a harbor the way cartographers read coastlines—to see what a city's docks and markets and scribal houses reveal about which version of a story the powerful need to believe—and now, when Ujitsuna must choose which archive to visit first, she already knows the answer before she arrives.",
+    "gender": "female",
+    "association": "Imperial"
+   },
+   "first_impression": "Ujitsuna's hands move constantly when she stands still—fingers drumming on her thigh, palms pressed flat against her sides, one thumb working the opposite wrist—as if her body is arguing with itself about whether to hold steady.",
+   "stress_reaction": "When dictating to a scribe whose hand she does not trust, Ujitsuna stops mid-sentence and asks them to read back what they have written, then stops them again before they finish, then asks a third time—until the scribe either names what discrepancy she is afraid they have missed, or admits they do not understand it, and she must choose whether to find someone else or let the record go out flawed.",
+   "relationships": "Chaaya (Ivory Kingdoms Sage Tradition) — Chaaya reads back Ujitsuna's dictations word for word without comment, then waits for the correction, which means Ujitsuna must trust her own ear against the scribe's loyalty to what was actually said.\nKitsune Yu (Fox) — Kitsune Yu brought Ujitsuna a copy of the Ikoma account of Snow Plain transcribed in her own hand, then asked her not to say where it came from, which means Ujitsuna now sits alone with two versions of the same battle and no way to ask which one Kitsune trusts without breaking a confidence she is not sure she should have kept.",
+   "people": [
+    {
+     "name": "Chaaya",
+     "gender": "male",
+     "association": "Ivory Kingdoms Sage Tradition",
+     "text": "Chaaya reads back Ujitsuna's dictations word for word without comment, then waits for the correction, which means Ujitsuna must trust her own ear against the scribe's loyalty to what was actually said."
+    },
+    {
+     "name": "Kitsune Yu",
+     "gender": "male",
+     "association": "Fox",
+     "text": "Kitsune Yu brought Ujitsuna a copy of the Ikoma account of Snow Plain transcribed in her own hand, then asked her not to say where it came from, which means Ujitsuna now sits alone with two versions of the same battle and no way to ask which one Kitsune trusts without breaking a confidence she is not sure she should have kept."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Ujitsuna's father worries that she has learned to value being right more than being believed, and that when the Throne chooses the comfortable lie over her evidence, she will not forgive them for it.",
+    "skill": "design"
+   },
+   "heritage": "Elegant Craftsman",
+   "heritage_table": "courts-of-stone-heritages",
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Ujitsuna will die in a city she has mapped so carefully that she can navigate it blind, still arguing with a scribe about what a discrepancy means."
+  },
+  "starting_item": "Lucky Cricket",
+  "campaign": "Blood of the Lioness",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Earth"
+   ],
+   "school.starting_skills": [
+    "Aesthetics",
+    "Composition",
+    "Culture",
+    "Government",
+    "Seafaring"
+   ],
+   "school.tech.0": [
+    "Warrior's Resolve"
+   ],
+   "school.tech.1": [
+    "Civility Foremost"
+   ],
+   "heritage.elegant-craftsman.1.from": [
+    "earth"
+   ],
+   "heritage.elegant-craftsman.1.to": [
+    "fire"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Ujitsuna maps the discrepancies between the Ikoma records and the Akodo archives without flinching, while her instructors argue about which version the Throne should believe."
+   ],
+   "giri": [
+    "Ujitsuna reports to the Miya Daimyo that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible."
+   ],
+   "ninjo": [
+    "Ujitsuna wants the historical record to matter more than the harmony of the clans, and fears that when her report reaches the Throne, everyone will choose the lie."
+   ],
+   "clan_relationship": [
+    "Ujitsuna accepts the Miya's charge to serve the Throne above the clans, but she resists it each time she chooses which archive to visit first, which historian to interview alone, which discrepancy to highlight in her preliminary notes."
+   ],
+   "accomplishment": [
+    "Ujitsuna cross-referenced the Ikoma account of Snow Plain against the Akodo military dispatches without telling either archive what the other claimed, and neither historian has yet realized she knows where their stories diverge."
+   ],
+   "challenge": [
+    "Ujitsuna cannot grip a brush steady enough to annotate the manuscripts herself, so she must dictate her findings to scribes who may not understand what discrepancy matters, and trust them to write down the right thing."
+   ],
+   "peace": [
+    "Ujitsuna walks the streets of whatever city holds the archives she needs, memorizing the routes between the scribal halls and the tea houses where historians drink, so that when she returns to report she can describe not just what the records claim but which building stands closer to the truth."
+   ],
+   "fear": [
+    "Ujitsuna's hands shake when she must dictate to a scribe she does not trust, and she cannot tell whether she is trembling from the palsy or from the terror that the wrong word, transcribed wrong, will send the Throne to war over a lie she could have caught."
+   ],
+   "mentor_relationship": [
+    "Otomo Hisayo taught Ujitsuna to read a harbor the way cartographers read coastlines—to see what a city's docks and markets and scribal houses reveal about which version of a story the powerful need to believe—and now, when Ujitsuna must choose which archive to visit first, she already knows the answer before she arrives."
+   ],
+   "first_impression": [
+    "Ujitsuna's hands move constantly when she stands still—fingers drumming on her thigh, palms pressed flat against her sides, one thumb working the opposite wrist—as if her body is arguing with itself about whether to hold steady."
+   ],
+   "accoutrement": [
+    "She keeps a leather map case scarred and re-stitched so many times that Otomo Hisayo laughed and said it looked like a battlefield itself, and Ujitsuna did not correct her."
+   ],
+   "stress_reaction": [
+    "When dictating to a scribe whose hand she does not trust, Ujitsuna stops mid-sentence and asks them to read back what they have written, then stops them again before they finish, then asks a third time—until the scribe either names what discrepancy she is afraid they have missed, or admits they do not understand it, and she must choose whether to find someone else or let the record go out flawed."
+   ],
+   "relationship_person": [
+    "Chaaya reads back Ujitsuna's dictations word for word without comment, then waits for the correction, which means Ujitsuna must trust her own ear against the scribe's loyalty to what was actually said.",
+    "Kitsune Yu brought Ujitsuna a copy of the Ikoma account of Snow Plain transcribed in her own hand, then asked her not to say where it came from, which means Ujitsuna now sits alone with two versions of the same battle and no way to ask which one Kitsune trusts without breaking a confidence she is not sure she should have kept."
+   ],
+   "parent_opinion": [
+    "Ujitsuna's father worries that she has learned to value being right more than being believed, and that when the Throne chooses the comfortable lie over her evidence, she will not forgive them for it."
+   ],
+   "death": [
+    "Ujitsuna will die in a city she has mapped so carefully that she can navigate it blind, still arguing with a scribe about what a discrepancy means."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Ujitsuna maps the discrepancies between the Ikoma records and the Akodo archives without flinching, while her instructors argue about which version the Throne should believe.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Ujitsuna reports to the Miya Daimyo that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible.",
+     "lord_name": "Miya Miné"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Ujitsuna wants the historical record to matter more than the harmony of the clans, and fears that when her report reaches the Throne, everyone will choose the lie."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Ujitsuna accepts the Miya's charge to serve the Throne above the clans, but she resists it each time she chooses which archive to visit first, which historian to interview alone, which discrepancy to highlight in her preliminary notes.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courtesy",
+     "tenet_less_significant": "Sincerity"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Ujitsuna cross-referenced the Ikoma account of Snow Plain against the Akodo military dispatches without telling either archive what the other claimed, and neither historian has yet realized she knows where their stories diverge."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Ujitsuna cannot grip a brush steady enough to annotate the manuscripts herself, so she must dictate her findings to scribes who may not understand what discrepancy matters, and trust them to write down the right thing."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Ujitsuna walks the streets of whatever city holds the archives she needs, memorizing the routes between the scribal halls and the tea houses where historians drink, so that when she returns to report she can describe not just what the records claim but which building stands closer to the truth."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Ujitsuna's hands shake when she must dictate to a scribe she does not trust, and she cannot tell whether she is trembling from the palsy or from the terror that the wrong word, transcribed wrong, will send the Throne to war over a lie she could have caught."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Otomo Hisayo — Otomo Hisayo taught Ujitsuna to read a harbor the way cartographers read coastlines—to see what a city's docks and markets and scribal houses reveal about which version of a story the powerful need to believe—and now, when Ujitsuna must choose which archive to visit first, she already knows the answer before she arrives."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Ujitsuna's hands move constantly when she stands still—fingers drumming on her thigh, palms pressed flat against her sides, one thumb working the opposite wrist—as if her body is arguing with itself about whether to hold steady.",
+     "accoutrement": "She keeps a leather map case scarred and re-stitched so many times that Otomo Hisayo laughed and said it looked like a battlefield itself, and Ujitsuna did not correct her."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When dictating to a scribe whose hand she does not trust, Ujitsuna stops mid-sentence and asks them to read back what they have written, then stops them again before they finish, then asks a third time—until the scribe either names what discrepancy she is afraid they have missed, or admits they do not understand it, and she must choose whether to find someone else or let the record go out flawed."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Chaaya (Ivory Kingdoms Sage Tradition) — Chaaya reads back Ujitsuna's dictations word for word without comment, then waits for the correction, which means Ujitsuna must trust her own ear against the scribe's loyalty to what was actually said.\nKitsune Yu (Fox) — Kitsune Yu brought Ujitsuna a copy of the Ikoma account of Snow Plain transcribed in her own hand, then asked her not to say where it came from, which means Ujitsuna now sits alone with two versions of the same battle and no way to ask which one Kitsune trusts without breaking a confidence she is not sure she should have kept."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Ujitsuna's father worries that she has learned to value being right more than being believed, and that when the Throne chooses the comfortable lie over her evidence, she will not forgive them for it."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Elegant Craftsman",
+     "heritage_table": "Courts of Stone Heritages",
+     "heritage_sub": null,
+     "heritage_applied": true
+    },
+    "picks": {
+     "heritage.elegant-craftsman.1.from": [
+      "earth"
+     ],
+     "heritage.elegant-craftsman.1.to": [
+      "fire"
+     ]
+    }
+   },
+   "step20": {
+    "answers": {
+     "death": "Ujitsuna will die in a city she has mapped so carefully that she can navigate it blind, still arguing with a scribe about what a discrepancy means."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Miya Cartographer School",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 1,
+     "design": 1,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 2,
+     "government": 2,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 1,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 60,
+    "glory": 54,
+    "status": 40,
+    "ninjo": "Ujitsuna wants the historical record to matter more than the harmony of the clans, and fears that when her report reaches the Throne, everyone will choose the lie.",
+    "giri": "Ujitsuna reports to the Miya Daimyo that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible.",
+    "bushido_tenets": {
+     "paramount": "Courtesy",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Warrior's Resolve"
+    },
+    {
+     "name": "Civility Foremost"
+    },
+    {
+     "name": "Well Traveled"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Sea Legs"
+    },
+    {
+     "name": "Lost Arm or Lost Hand"
+    },
+    {
+     "name": "City Otosan Uchi",
+     "custom": true,
+     "subject": "Otosan Uchi",
+     "text": "You know a particular city extremely well and have extensive practical knowledge about it. You know as much about the city as any lifelong resident, including the popular locations, dangerous or disreputable areas, and open secrets. After performing a check to learn or share knowledge of the particular city (such as a Courtesy [Water] check to befriend a local resident or a Culture [Water] check to find an establishment offering a particular service), you remove 3 strife."
+    },
+    {
+     "name": "Braggart"
+    },
+    {
+     "name": "Navigator"
+    },
+    {
+     "name": "Isolation"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Lucky Cricket"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "yumi (bow) and quiver of arrows",
+     "custom": true,
+     "text": "From the Miya Cartographer starting outfit"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Calligraphy Set"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "personal chop",
+     "custom": true,
+     "text": "From the Miya Cartographer starting outfit"
+    },
+    {
+     "name": "an assortment of maps in scroll cases",
+     "custom": true,
+     "text": "From the Miya Cartographer starting outfit"
+    },
+    {
+     "name": "an attendant (see page 64 of the core rulebook) or Rokugani pony (see page 326 of the core rulebook)",
+     "custom": true,
+     "text": "From the Miya Cartographer starting outfit",
+     "held": false
+    },
+    {
+     "name": "She keeps a leather map case scarred and re-stitched so many times that Otomo Hisayo laughed and said it looked like a battlefield itself, and Ujitsuna did not correct her.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
