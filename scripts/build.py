@@ -712,6 +712,18 @@ def campaigns(cx):
     if seconds:
         pen_by_school = {p["school"]: p for c in out if not c["pack_from"]
                          for p in c["pencilled"]}
+        # A school whose first build exists is no longer pencilled -- the entry
+        # comes off the shortlist once the character is made -- so the family
+        # to check against is the character's, not the plan's. Reality is the
+        # better witness anyway: this now catches a second build planned
+        # against a family the first build does not actually have.
+        for slug, school, fam in cx.execute(
+                "SELECT slug, school, family FROM character"
+                " WHERE school IS NOT NULL AND " + ARCHIVE_ONLY):
+            if school in pen_by_school:
+                continue
+            pen_by_school[school] = {"school": school, "family": fam,
+                                     "built_by": slug}
         # Vassal houses this archive can place to a clan. All fourteen from
         # the corpus, plus Raikuto and Ishi from the L5R wiki — see the note on
         # second_builds for why only those two were taken from it.
@@ -723,7 +735,8 @@ def campaigns(cx):
         for school, spec in sorted(seconds.items()):
             first = pen_by_school.get(school)
             if first is None:
-                bad.append(f"{school}: no pack pencils this school")
+                bad.append(f"{school}: no pack pencils this school and no "
+                           f"character has been built for it")
                 continue
             if first["family"] != spec.get("first_build_family"):
                 bad.append(f"{school}: the pack's family is "
