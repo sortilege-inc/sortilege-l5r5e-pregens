@@ -3,7 +3,7 @@
  "name": "Kurosawa Genzō",
  "folder_label": "Kurosawa Genzō",
  "campaign": "Imperfect Land",
- "status": "draft",
+ "status": null,
  "bucket": null,
  "accent": null,
  "identity": {
@@ -244,5 +244,6 @@
    ],
    "advancements": []
   }
- ]
+ ],
+ "bio": "Kurosawa Genzō is a deserter-turned-rōnin duelist, wandering the land and offering his sword to whoever can meet his price. Though he carries himself with the discipline of a samurai, he no longer claims the title, instead forging his own sense of honor. He avoids pointless fights, only drawing his blade when there is purpose behind it.\n\nHis scarred, battle-hardened face still carries boyish charm, though he maintains a gruff default demeanor to keep others at a distance. He struggles to trust others, fearing betrayal or obligation, and regrets abandoning his duty, wondering if he can ever reclaim his lost honor. He sharpens his blade to find peace, a steady ritual that reminds him that he is still in control of his fate.\n\nGenzō once spared a defeated opponent who later repaid the debt, reinforcing his belief that honor is found in action, not station. However, he knows that one wrong move could lead to an ignominious death, a fate he refuses to accept. Though he gambles on fights, he does not gamble with his own survival — he has lived this long, and he does not intend to die easily."
 }

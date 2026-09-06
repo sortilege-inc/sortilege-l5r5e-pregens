@@ -3,7 +3,7 @@
  "name": "Iuchi Temur",
  "folder_label": "Iuchi Temur",
  "campaign": "Imperfect Land",
- "status": "draft",
+ "status": null,
  "bucket": null,
  "accent": null,
  "identity": {
@@ -292,5 +292,6 @@
    ],
    "advancements": []
   }
- ]
+ ],
+ "bio": "Iuchi Temur is a Unicorn shugenja and healer, sent to aid the Dragon Clan while ensuring that any affliction affecting them does not spread to his own people. His duty is to uncover the nature of the threat before it spreads, balancing his compassionate instincts with the need to protect the Unicorn. Though he follows Bushidō, he prioritizes kindness over rigid duty, believing that a healer's first obligation is to those in need.\n\nTemur wears furs, his beard carefully braided, and his hair in a bun, presenting himself as rugged yet composed. He carries himself with calm reassurance, making others feel safe and cared for. Despite this, he suppresses his homesickness, longing to return to the one he loves, while fearing that his duty may cost him his own happiness.\n\nHe finds peace in caring for his steed and compounding medicines, yet he struggles to take care of his own needs, constantly prioritizing others before himself. Though he once contained a deadly outbreak, proving his worth as a healer, he fears the corruption of the Shadowlands most of all, knowing that even magic has its limits."
 }

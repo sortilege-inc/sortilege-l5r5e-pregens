@@ -920,7 +920,15 @@ p.cur-meta{ margin:0 0 0.5rem; }
 /* The pointer target: eleven pixels wide, invisible, and drawn just before the
    line it belongs to so hovering it can light that line. The visible line
    takes no pointer events, so it cannot swallow the hover. */
-.rm-hit{ stroke:transparent; stroke-width:11; cursor:pointer; }
+/* `pointer-events:stroke` is what makes this work at all. The default is
+   `visiblePainted`, which only hits where the stroke is actually painted --
+   and this stroke is transparent, so a real click went straight through to the
+   canvas and no line was ever clickable or hoverable. (`elementFromPoint`
+   reports the line at those coordinates regardless, which is why driving the
+   handler from script looked fine.) */
+.rm-hit{
+  stroke:transparent; stroke-width:11; cursor:pointer; pointer-events:stroke;
+}
 .rm-hit:hover + .rm-edge{ stroke:var(--crimson); stroke-width:2.5; }
 .rm-hit:hover + .rm-edge.rm-party.rm-undefined{ opacity:1; }
 .rm-party{ stroke:var(--gold); stroke-width:2; }

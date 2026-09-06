@@ -3,7 +3,7 @@
  "name": "Jinrai",
  "folder_label": "Jinrai",
  "campaign": "Imperfect Land",
- "status": "draft",
+ "status": null,
  "bucket": null,
  "accent": null,
  "identity": {
@@ -274,5 +274,6 @@
    ],
    "advancements": []
   }
- ]
+ ],
+ "bio": "Jinrai is a former ashigaru turned monk, now a wandering teacher of the Perfect Land Sect. He believes that all people are equal in the eyes of enlightenment, rejecting the Celestial Order and spreading the sect's teachings to the common folk. Though he preaches peace, he struggles to let go of his resentment toward the samurai, finding it difficult to forgive their oppression.\n\nHis presence radiates determination and purpose, and he speaks passionately and inspiringly, ensuring that his words move those who listen. However, he suppresses hope, fearing that his efforts will ultimately change nothing. Though he enjoys luxuries when offered, he tries to live simply, though he sometimes indulges in a warm bed or fine meal.\n\nJinrai once converted a violent bandit to the Perfect Land Sect, proving the power of faith over force. He finds peace in chanting sutras, yet he secretly longs to be free of responsibility, growing weary of carrying the burden of leadership. His view of mortality is simple — his life is a sacrifice worth making if it furthers the cause of enlightenment."
 }

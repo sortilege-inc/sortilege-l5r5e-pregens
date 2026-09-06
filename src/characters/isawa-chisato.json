@@ -3,7 +3,7 @@
  "name": "Isawa Chisato",
  "folder_label": "Isawa Chisato",
  "campaign": "Imperfect Land",
- "status": "draft",
+ "status": null,
  "bucket": null,
  "accent": null,
  "identity": {
@@ -257,5 +257,6 @@
    ],
    "advancements": []
   }
- ]
+ ],
+ "bio": "Isawa Chisato is a devout shugenja of the Phoenix Clan, serving the Elemental Master of Fire with the duty to defend the purity of the Tao. She believes that fire burns away falsehoods, and she has been tasked with destroying heretical teachings and ensuring spiritual doctrine remains pure. Though she seeks understanding, she is often impatient with those who do not see the truth as clearly as she does.\n\nHer confidence is unshakable — she speaks passionately and forcefully, never softening her convictions. Yet, despite her outward certainty, she secretly suppresses her own doubt, fearing that her teachings could be flawed. She holds her parents on a pedestal, believing they set her on the right path, though she has never truly questioned their guidance.\n\nChisato finds peace in tending sacred flames, seeing fire as both a destroyer and an illuminator of truth. Her greatest accomplishment was purifying a tainted shrine, proving her faith in divine order. However, her harsh judgment of others and fear of being ignored sometimes alienate those who might otherwise listen, making her mission both righteous and isolating."
 }

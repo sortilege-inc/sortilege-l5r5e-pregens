@@ -3,7 +3,7 @@
  "name": "Doji Sayaka",
  "folder_label": "Doji Sayaka",
  "campaign": "Imperfect Land",
- "status": "draft",
+ "status": null,
  "bucket": null,
  "accent": null,
  "identity": {
@@ -262,5 +262,6 @@
    ],
    "advancements": []
   }
- ]
+ ],
+ "bio": "Doji Sayaka is a refined diplomat serving the Doji daimyō, tasked with monitoring the Perfect Land Sect to ensure the Crane are not caught off guard. If necessary, she is expected to subtly undermine its leadership and cause its collapse. A master of diplomacy, she always speaks in extended metaphors, guiding conversations with elegance and intent.\n\nShe is impeccably dressed, maintaining an air of poise and control. She appears perfectly at ease with any outcome, rarely showing joy or displeasure, always maintaining a neutral mask. Despite this, she secretly struggles with sincerity, as her life has been one of perceptions and careful maneuvering, making true honesty difficult.\n\nSayaka occasionally disguises herself as a peasant, blending among the common folk to see the world from their eyes. Though she longs for genuine connection, she keeps others at a careful distance, fearing vulnerability. Deep down, she sees death as the final performance, believing that even in her last moments, she must meet her fate with grace and dignity."
 }

@@ -185,9 +185,14 @@
       var ht = mk("title");
       ht.textContent = caption;
       hit.appendChild(ht);
-      hit.addEventListener("click", function (ev) {
-        ev.stopPropagation(); showEdge(e, s, t);
-      });
+      /* The activation hangs on the element rather than on a `click`
+         listener. A line is a hairline: press and release land a pixel apart
+         often enough, and a `click` whose mousedown and mouseup have different
+         targets is retargeted to their common ancestor -- the canvas. So every
+         line on this map was unclickable and unhoverable, in every campaign,
+         while driving the handler from script looked fine. The pointerdown /
+         pointerup pair in init() calls this. */
+      hit.__activate = function () { showEdge(e, s, t); };
 
       var ln = mk("line", { x1: s.x, y1: s.y, x2: t.x, y2: t.y, class: cls,
                             "data-i": i });
@@ -229,11 +234,10 @@
               : (d.named_by || []).length
                   ? " — named by " + d.named_by.join(", ") : "");
       grp.appendChild(tip);
-      grp.addEventListener("click", function (ev) {
-        ev.stopPropagation();
+      grp.__activate = function () {
         state.selected = state.selected === d.id ? null : d.id;
         draw(); showNode(d);
-      });
+      };
       dots.appendChild(grp);
     });
 
@@ -473,7 +477,34 @@
     ["pointerup", "pointercancel"].forEach(function (t) {
       svg.addEventListener(t, function () { drag = null; svg.classList.remove("rm-grabbing"); });
     });
-    svg.addEventListener("click", function () {
+    /* Click versus pan, decided by how far the pointer moved rather than by
+       what the browser chose to call the click's target. Under the threshold
+       and over a line or a node, that is a click on it; under the threshold
+       over nothing, a deselect; over the threshold, the pan already happened
+       and nothing else should. */
+    var CLICK_SLOP = 5;
+    var press = null;
+    svg.addEventListener("pointerdown", function (ev) {
+      var el2 = ev.target && ev.target.closest
+        ? ev.target.closest(".rm-hit, .rm-node") : null;
+      press = { x: ev.clientX, y: ev.clientY, el: el2 };
+    });
+    svg.addEventListener("pointerup", function (ev) {
+      if (!press) return;
+      var moved = Math.hypot(ev.clientX - press.x, ev.clientY - press.y);
+      var target = press.el;
+      press = null;
+      if (moved > CLICK_SLOP) return;
+      /* A hairline is easy to press and miss by a pixel, so if the press
+         landed on nothing, look again at where the pointer actually is. */
+      if (!target) {
+        var under = document.elementFromPoint(ev.clientX, ev.clientY);
+        target = under && under.closest ? under.closest(".rm-hit, .rm-node") : null;
+      }
+      if (target && typeof target.__activate === "function") {
+        target.__activate();
+        return;
+      }
       if (state.selected) { state.selected = null; draw(); }
     });
 
