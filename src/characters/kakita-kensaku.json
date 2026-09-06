@@ -1,0 +1,454 @@
+{
+ "slug": "kakita-kensaku",
+ "name": "Kakita Kensaku",
+ "campaign": "Blood of the Lioness",
+ "status": null,
+ "identity": {
+  "clan": "Crane",
+  "family": "Kakita",
+  "school": "Kakita Swordsmith School",
+  "role": "Courtier",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Kensaku's eyes move to a blade before they move to the person holding it, even when the person is speaking to him.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Kakita Kensaku",
+  "mode": "core",
+  "clan": "Crane",
+  "family": "Kakita",
+  "school": "Kakita Swordsmith School",
+  "role": "Courtier",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "tactics": 1,
+   "commerce": 1,
+   "government": 1
+  },
+  "distinctions": [
+   "Animal Trainer"
+  ],
+  "adversities": [
+   "Disdain for Righteousness"
+  ],
+  "passions": [
+   "Festivals"
+  ],
+  "anxieties": [
+   "Meekness"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Courtesy",
+   "lesser": "Courage",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Kensaku reports to the Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+   "ninjo": "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it.",
+   "standout_quality": "Kensaku has learned to read a workshop's temperament by how the smiths treat their tools and each other, a skill that makes him useful during his visits to repair blades but leaves him uncertain whether he belongs to any forge at all.",
+   "accomplishment": "He trained the Master of the Forges' hunting hawks to accept handling only from him, so that when the old man's hands began to fail, Kensaku could work the birds without being asked or refused.",
+   "challenge": "When Kensaku certifies a blade at the Castle of the Swift Sword, he is always aware that he is judging not just the steel but the smith's honor, and he cannot bring himself to do only the first.",
+   "peace": "At festival grounds where the noise of a crowd breaks into separate voices and paths, Kensaku can move through without needing to know who forged anything, and he does.",
+   "fear": "When Kensaku must tell a master smith that their work has failed inspection, he finds himself praising the steel instead, and leaves the Castle uncertain whether he has done his duty or protected a reputation at the cost of a Lion warrior's life.",
+   "accoutrement": "He wears a leather wristband tooled with the names of every blade he has ever certified, and refuses to add the Scorpion work until he is certain.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Kakita Namika",
+   "lord_gender": "female",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "B",
+    "skill": "tactics",
+    "text": "Kensaku's reluctance to trust a blade's maker's name—to set aside his skill and simply certify what he holds—reads to other smiths at the Castle as Crane fastidiousness, which the Lion forgive because his repairs hold, but which keeps him outside their forge's hierarchy in ways he has not resolved."
+   },
+   "mentor": {
+    "name": "Ide Tokimochi",
+    "path": "B",
+    "granted": "Whispers of Poverty",
+    "skill": "commerce",
+    "text": "Ide Tokimochi taught Kensaku that a blade's pedigree matters more than its quality, and now Kensaku cannot inspect steel without asking whose hands made it—a doubt that keeps him useful to the Lion but useless to himself.",
+    "gender": "male",
+    "association": "Unicorn"
+   },
+   "first_impression": "Kensaku's eyes move to a blade before they move to the person holding it, even when the person is speaking to him.",
+   "stress_reaction": "When a blade fails inspection at the Castle, Kensaku begins asking the smith questions about their other work, their training, their family's forges—circling outward until he has filled the silence where the word \"failed\" should be.",
+   "relationships": "Daidoji Rina (Crane) — Daidoji Rina sends word when she travels to the Castle of the Swift Sword, and Kensaku meets her away from the forges to avoid the appearance that a Crane courtier influences his certifications, a caution that has made their conversations shorter and less frequent than either would prefer.\nKakita Shirai (Crane) — Kakita Shirai watches Kensaku work and does not ask him which smiths he trusts, though she could read the answer in his face before he speaks it.",
+   "people": [
+    {
+     "name": "Daidoji Rina",
+     "gender": "female",
+     "association": "Crane",
+     "text": "Daidoji Rina sends word when she travels to the Castle of the Swift Sword, and Kensaku meets her away from the forges to avoid the appearance that a Crane courtier influences his certifications, a caution that has made their conversations shorter and less frequent than either would prefer."
+    },
+    {
+     "name": "Kakita Shirai",
+     "gender": "male",
+     "association": "Crane",
+     "text": "Kakita Shirai watches Kensaku work and does not ask him which smiths he trusts, though she could read the answer in his face before he speaks it."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Kensaku's mother is proud that he has never certified a flawed blade, but she has begun to wonder whether his caution serves the Lion or protects himself from having to live with a choice he cannot unmake.",
+    "skill": "government"
+   },
+   "heritage": "Dishonorable Cheat",
+   "heritage_table": "courts-of-stone-heritages",
+   "heritage_sub": "1-3 — Gain +1 ^\"Martial Arts [Choose One]\"",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Kensaku expects to die in a forge, with a master smith's hand on his shoulder, the way his mentor Ide Tokimochi would have wanted—except the hand will belong to a Lion, not a Crane, and he will never be certain the forgiveness is real."
+  },
+  "starting_item": "Concealed Armor",
+  "campaign": "Blood of the Lioness",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Melee]",
+    "Courtesy",
+    "Culture",
+    "Sentiment",
+    "Smithing"
+   ],
+   "school.tech.0": [
+    "Soaring Slice"
+   ],
+   "heritage.dishonorable-cheat.0": [
+    "Martial Arts [Melee]"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Kensaku can identify a blade's maker by its grain and balance alone, a skill that has made him invaluable to the school's maintenance but keeps him isolated from peers who see him as a curator of other people's work rather than a craftsman in his own right.",
+    "Kensaku has learned to read a workshop's temperament by how the smiths treat their tools and each other, a skill that makes him useful during his visits to repair blades but leaves him uncertain whether he belongs to any forge at all."
+   ],
+   "giri": [
+    "Kensaku reports to the Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it."
+   ],
+   "ninjo": [
+    "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it."
+   ],
+   "clan_relationship": [
+    "Kensaku's reluctance to trust a blade's maker's name—to set aside his skill and simply certify what he holds—reads to other smiths at the Castle as Crane fastidiousness, which the Lion forgive because his repairs hold, but which keeps him outside their forge's hierarchy in ways he has not resolved."
+   ],
+   "accomplishment": [
+    "He trained the Master of the Forges' hunting hawks to accept handling only from him, so that when the old man's hands began to fail, Kensaku could work the birds without being asked or refused."
+   ],
+   "challenge": [
+    "When Kensaku certifies a blade at the Castle of the Swift Sword, he is always aware that he is judging not just the steel but the smith's honor, and he cannot bring himself to do only the first."
+   ],
+   "peace": [
+    "At festival grounds where the noise of a crowd breaks into separate voices and paths, Kensaku can move through without needing to know who forged anything, and he does."
+   ],
+   "fear": [
+    "When Kensaku must tell a master smith that their work has failed inspection, he finds himself praising the steel instead, and leaves the Castle uncertain whether he has done his duty or protected a reputation at the cost of a Lion warrior's life."
+   ],
+   "mentor_relationship": [
+    "Ide Tokimochi taught Kensaku that a blade's pedigree matters more than its quality, and now Kensaku cannot inspect steel without asking whose hands made it—a doubt that keeps him useful to the Lion but useless to himself."
+   ],
+   "first_impression": [
+    "Kensaku's eyes move to a blade before they move to the person holding it, even when the person is speaking to him."
+   ],
+   "accoutrement": [
+    "He wears a leather wristband tooled with the names of every blade he has ever certified, and refuses to add the Scorpion work until he is certain."
+   ],
+   "stress_reaction": [
+    "When a blade fails inspection at the Castle, Kensaku begins asking the smith questions about their other work, their training, their family's forges—circling outward until he has filled the silence where the word \"failed\" should be."
+   ],
+   "relationship_person": [
+    "Daidoji Rina sends word when she travels to the Castle of the Swift Sword, and Kensaku meets her away from the forges to avoid the appearance that a Crane courtier influences his certifications, a caution that has made their conversations shorter and less frequent than either would prefer.",
+    "Kakita Shirai watches Kensaku work and does not ask him which smiths he trusts, though she could read the answer in his face before he speaks it."
+   ],
+   "parent_opinion": [
+    "Kensaku's mother is proud that he has never certified a flawed blade, but she has begun to wonder whether his caution serves the Lion or protects himself from having to live with a choice he cannot unmake."
+   ],
+   "death": [
+    "He will die certifying something he should have refused, and he will die knowing that he knew.",
+    "Kensaku expects to die in a forge, with a master smith's hand on his shoulder, the way his mentor Ide Tokimochi would have wanted—except the hand will belong to a Lion, not a Crane, and he will never be certain the forgiveness is real."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Kensaku has learned to read a workshop's temperament by how the smiths treat their tools and each other, a skill that makes him useful during his visits to repair blades but leaves him uncertain whether he belongs to any forge at all.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Kensaku reports to the Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+     "lord_name": "Kakita Namika"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Kensaku's reluctance to trust a blade's maker's name—to set aside his skill and simply certify what he holds—reads to other smiths at the Castle as Crane fastidiousness, which the Lion forgive because his repairs hold, but which keeps him outside their forge's hierarchy in ways he has not resolved.",
+     "path": "B",
+     "skill": "tactics"
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courtesy",
+     "tenet_less_significant": "Courage"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "He trained the Master of the Forges' hunting hawks to accept handling only from him, so that when the old man's hands began to fail, Kensaku could work the birds without being asked or refused."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When Kensaku certifies a blade at the Castle of the Swift Sword, he is always aware that he is judging not just the steel but the smith's honor, and he cannot bring himself to do only the first."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "At festival grounds where the noise of a crowd breaks into separate voices and paths, Kensaku can move through without needing to know who forged anything, and he does."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When Kensaku must tell a master smith that their work has failed inspection, he finds himself praising the steel instead, and leaves the Castle uncertain whether he has done his duty or protected a reputation at the cost of a Lion warrior's life."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Ide Tokimochi — Ide Tokimochi taught Kensaku that a blade's pedigree matters more than its quality, and now Kensaku cannot inspect steel without asking whose hands made it—a doubt that keeps him useful to the Lion but useless to himself."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Kensaku's eyes move to a blade before they move to the person holding it, even when the person is speaking to him.",
+     "accoutrement": "He wears a leather wristband tooled with the names of every blade he has ever certified, and refuses to add the Scorpion work until he is certain."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When a blade fails inspection at the Castle, Kensaku begins asking the smith questions about their other work, their training, their family's forges—circling outward until he has filled the silence where the word \"failed\" should be."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Daidoji Rina (Crane) — Daidoji Rina sends word when she travels to the Castle of the Swift Sword, and Kensaku meets her away from the forges to avoid the appearance that a Crane courtier influences his certifications, a caution that has made their conversations shorter and less frequent than either would prefer.\nKakita Shirai (Crane) — Kakita Shirai watches Kensaku work and does not ask him which smiths he trusts, though she could read the answer in his face before he speaks it."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Kensaku's mother is proud that he has never certified a flawed blade, but she has begun to wonder whether his caution serves the Lion or protects himself from having to live with a choice he cannot unmake."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Dishonorable Cheat",
+     "heritage_table": "Courts of Stone Heritages",
+     "heritage_sub": "1-3 — Gain +1 ^\"Martial Arts [Choose One]\"",
+     "heritage_applied": true
+    },
+    "picks": {
+     "heritage.dishonorable-cheat.0": [
+      "Martial Arts [Melee]"
+     ]
+    }
+   },
+   "step20": {
+    "answers": {
+     "death": "Kensaku expects to die in a forge, with a master smith's hand on his shoulder, the way his mentor Ide Tokimochi would have wanted—except the hand will belong to a Lion, not a Crane, and he will never be certain the forgiveness is real."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Kakita Swordsmith School",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 3,
+    "water": 2,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 0,
+     "design": 0,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 2,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 2,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 65,
+    "glory": 39,
+    "status": 35,
+    "ninjo": "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it.",
+    "giri": "Kensaku reports to the Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+    "bushido_tenets": {
+     "paramount": "Courtesy",
+     "less_significant": "Courage"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 6,
+    "focus": 6,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 7,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Soaring Slice"
+    },
+    {
+     "name": "Artisan's Appraisal"
+    },
+    {
+     "name": "Sacred Art of Steel"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Animal Trainer"
+    },
+    {
+     "name": "Disdain for Righteousness"
+    },
+    {
+     "name": "Festivals"
+    },
+    {
+     "name": "Meekness"
+    },
+    {
+     "name": "Whispers of Poverty"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Concealed Armor"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Ceremonial Clothes"
+    },
+    {
+     "name": "daishō (a personally crafted katana with Kakita pattern and wakizashi)",
+     "custom": true,
+     "text": "From the Kakita Swordsmith starting outfit"
+    },
+    {
+     "name": "smithing hammer",
+     "custom": true,
+     "text": "From the Kakita Swordsmith starting outfit"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "an attendant or Rokugani pony",
+     "custom": true,
+     "text": "From the Kakita Swordsmith starting outfit",
+     "held": false
+    },
+    {
+     "name": "He wears a leather wristband tooled with the names of every blade he has ever certified, and refuses to add the Scorpion work until he is certain.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

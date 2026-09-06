@@ -3184,6 +3184,13 @@
      stops the build. The two extra attempts are the corpus's own habits: it
      glosses a name ("yumi (bow)") and pluralises where the compendium does not
      ("quiver of arrows" against its "Quiver of Arrow"). */
+  /* Actors are skipped. The compendium's NPC Library holds a "Utaku Steed" and
+     a "Horse", and the Utaku Battle Maiden outfit's last line is "Utaku steed"
+     — so the name matched, the export wrote it as a plain reference, and the
+     build refused it: an NPC is not equipment, and gear resolves against the
+     item packs. Utaku Seki's export stopped the build on it. A mount the rules
+     confer and the catalog does not stock as an item is custom, the way the
+     Moto Avenger's "Unicorn warhorse" already was. */
   function catalogHas(name) {
     var n = String(name || "");
     var tries = [n, n.replace(/\s*\([^)]*\)\s*$/, ""),
@@ -3192,6 +3199,7 @@
     for (var i = 0; i < tries.length; i++) {
       var k = normName(tries[i]);
       for (var j = 0; j < CATALOG.length; j++) {
+        if (CATALOG[j].doc_type === "Actor") continue;
         if (normName(CATALOG[j].name) === k) return CATALOG[j].name;
       }
     }

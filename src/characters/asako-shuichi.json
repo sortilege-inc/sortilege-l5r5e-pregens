@@ -1,0 +1,452 @@
+{
+ "slug": "asako-shuichi",
+ "name": "Asako Shuichi",
+ "campaign": "Blood of the Lioness",
+ "status": null,
+ "identity": {
+  "clan": "Phoenix",
+  "family": "Asako",
+  "school": "Asako Loremaster School",
+  "role": "Courtier",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Shuichi's eyes move across a room before he does, cataloging and cross-referencing, and he is never quite finished looking at the person in front of him.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Asako Shuichi",
+  "mode": "core",
+  "clan": "Phoenix",
+  "family": "Asako",
+  "school": "Asako Loremaster School",
+  "role": "Courtier",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "aesthetics": 1,
+   "command": 1,
+   "government": 1
+  },
+  "distinctions": [
+   "Friend of the brotherhood"
+  ],
+  "adversities": [
+   "Elemental Deficiency (Earth)"
+  ],
+  "passions": [
+   "City"
+  ],
+  "anxieties": [
+   "Loathing for Peasants"
+  ],
+  "pec_subjects": {
+   "city": {
+    "name": "City",
+    "subject": "City of the Swift Sword",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Righteousness",
+   "lesser": "Duty and Loyalty",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Shuichi serves Shiba Tsukune, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them.",
+   "ninjo": "Shuichi wants the Ikoma historians to acknowledge that he found what they missed, even though admitting he succeeded means exposing how poorly they guarded their own archive.",
+   "standout_quality": "Shuichi arrived at the archive knowing which documents would vanish first and had already copied half the disputed records before anyone thought to ask why a courtier was taking notes in the military library.",
+   "accomplishment": "Shuichi copied the Ikoma Hall's records of Snow Plain before Shiba Tsukune told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them.",
+   "challenge": "When Shuichi kneels to examine the foundation stones beneath the Ikoma Hall, checking for rot and settling, the earth seems to resist him—he finds cracks where there should be none, misses damage that shows itself later to the stone-workers, and leaves the work half-done while the master mason has to return to finish what he began.",
+   "peace": "Shuichi sits in the Ikoma Hall with a stack of ledgers open before him, cross-referencing the military records against the temple accounts, and the work of finding what was missed—what *they* missed—steadies his hands in a way nothing else does.",
+   "fear": "When Shuichi kneels beside a farmer to examine the Ikoma Hall's foundation stones, the man's callused hands and the smell of field-work on his clothes make him recoil so visibly that the laborer steps back, leaving the inspection half-finished and the rot beneath the eastern wall undiscovered until the master mason returns.",
+   "accoutrement": "A leather satchel with the corners worn through from three nights of copying in the Ikoma Hall, the strap creased dark where it crosses his shoulder every day.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Asako Sakuko",
+   "lord_gender": "female",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "B",
+    "skill": "command",
+    "text": "Shuichi brings the Asako's methods to the Ikoma historians—patient copying, careful cross-reference, no dramatic revelation—and they treat his presence in their archive as a kind of gentle rebuke."
+   },
+   "mentor": {
+    "name": "Moshi Kuniko",
+    "path": "B",
+    "granted": "Jurōjin’s Curse",
+    "skill": "government",
+    "text": "",
+    "gender": "female",
+    "association": "Centipede"
+   },
+   "first_impression": "Shuichi's eyes move across a room before he does, cataloging and cross-referencing, and he is never quite finished looking at the person in front of him.",
+   "stress_reaction": "Shuichi begins asking the people around him rapid questions about details no one else has noticed yet, cataloging their answers against standards only he can see, until someone tells him to stop or the answers start matching what he already knows.",
+   "relationships": "Mirumoto Hyobe (Dragon) — Mirumoto Hyobe of the Dragon came to the Ikoma Hall asking what the Lion had erased about Snow Plain, and Shuichi showed her the copies he'd made before anyone could burn them, because a Dragon scholar who reads carefully enough to notice gaps in a chronicle is the only person he has met who will not mistake his work for proof that the Ikoma failed.\nShosuro Masamori (Scorpion) — Shosuro Masamori arrived at the Ikoma Hall three days after Shuichi finished copying the Snow Plain records, and when Shuichi saw him turn a page in the original ledger—saw his fingers know exactly where to look—he understood that the Scorpion had sent someone who could read what was missing as easily as what remained.",
+   "people": [
+    {
+     "name": "Mirumoto Hyobe",
+     "gender": "male",
+     "association": "Dragon",
+     "text": "Mirumoto Hyobe of the Dragon came to the Ikoma Hall asking what the Lion had erased about Snow Plain, and Shuichi showed her the copies he'd made before anyone could burn them, because a Dragon scholar who reads carefully enough to notice gaps in a chronicle is the only person he has met who will not mistake his work for proof that the Ikoma failed."
+    },
+    {
+     "name": "Shosuro Masamori",
+     "gender": "male",
+     "association": "Scorpion",
+     "text": "Shosuro Masamori arrived at the Ikoma Hall three days after Shuichi finished copying the Snow Plain records, and when Shuichi saw him turn a page in the original ledger—saw his fingers know exactly where to look—he understood that the Scorpion had sent someone who could read what was missing as easily as what remained."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Shuichi's mother told the village headman that her son had arrived at the house with the front of his robe still damp from kneeling in the Ikoma Hall's cellar, and when she asked him why he had not finished the inspection he said the stone-workers would manage it, but she knows he left because the farmers' hands reminded him he was Asako and they were not.",
+    "skill": "aesthetics"
+   },
+   "heritage": "Guardian of Forbidden Knowledge",
+   "heritage_table": "new-samurai-heritages-celestial-realms",
+   "heritage_sub": "7-8 — Gain +1 ^\"Theology\"",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Shuichi will die in an archive, kneeling among documents he was meant to preserve, when the building collapses because he did not finish inspecting the foundation stones."
+  },
+  "starting_item": "Herbal Medicines",
+  "campaign": "Blood of the Lioness",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Government",
+    "Sentiment",
+    "Theology",
+    "Culture",
+    "Martial Arts [Unarmed]"
+   ],
+   "school.tech.1": [
+    "Cadence"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Shuichi arrived at the archive knowing which documents would vanish first and had already copied half the disputed records before anyone thought to ask why a courtier was taking notes in the military library."
+   ],
+   "giri": [
+    "Shuichi serves Shiba Tsukune, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them."
+   ],
+   "ninjo": [
+    "Shuichi wants the Ikoma historians to acknowledge that he found what they missed, even though admitting he succeeded means exposing how poorly they guarded their own archive."
+   ],
+   "clan_relationship": [
+    "Shuichi brings the Asako's methods to the Ikoma historians—patient copying, careful cross-reference, no dramatic revelation—and they treat his presence in their archive as a kind of gentle rebuke."
+   ],
+   "accomplishment": [
+    "Shuichi copied the Ikoma Hall's records of Snow Plain before Shiba Tsukune told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them."
+   ],
+   "challenge": [
+    "When Shuichi kneels to examine the foundation stones beneath the Ikoma Hall, checking for rot and settling, the earth seems to resist him—he finds cracks where there should be none, misses damage that shows itself later to the stone-workers, and leaves the work half-done while the master mason has to return to finish what he began."
+   ],
+   "peace": [
+    "Shuichi sits in the Ikoma Hall with a stack of ledgers open before him, cross-referencing the military records against the temple accounts, and the work of finding what was missed—what *they* missed—steadies his hands in a way nothing else does."
+   ],
+   "fear": [
+    "When Shuichi kneels beside a farmer to examine the Ikoma Hall's foundation stones, the man's callused hands and the smell of field-work on his clothes make him recoil so visibly that the laborer steps back, leaving the inspection half-finished and the rot beneath the eastern wall undiscovered until the master mason returns."
+   ],
+   "first_impression": [
+    "Shuichi's eyes move across a room before he does, cataloging and cross-referencing, and he is never quite finished looking at the person in front of him."
+   ],
+   "accoutrement": [
+    "A leather satchel with the corners worn through from three nights of copying in the Ikoma Hall, the strap creased dark where it crosses his shoulder every day."
+   ],
+   "stress_reaction": [
+    "Shuichi begins asking the people around him rapid questions about details no one else has noticed yet, cataloging their answers against standards only he can see, until someone tells him to stop or the answers start matching what he already knows."
+   ],
+   "relationship_person": [
+    "Mirumoto Hyobe of the Dragon came to the Ikoma Hall asking what the Lion had erased about Snow Plain, and Shuichi showed her the copies he'd made before anyone could burn them, because a Dragon scholar who reads carefully enough to notice gaps in a chronicle is the only person he has met who will not mistake his work for proof that the Ikoma failed.",
+    "Shosuro Masamori arrived at the Ikoma Hall three days after Shuichi finished copying the Snow Plain records, and when Shuichi saw him turn a page in the original ledger—saw his fingers know exactly where to look—he understood that the Scorpion had sent someone who could read what was missing as easily as what remained."
+   ],
+   "parent_opinion": [
+    "Shuichi's mother told the village headman that her son had arrived at the house with the front of his robe still damp from kneeling in the Ikoma Hall's cellar, and when she asked him why he had not finished the inspection he said the stone-workers would manage it, but she knows he left because the farmers' hands reminded him he was Asako and they were not."
+   ],
+   "death": [
+    "Shuichi will die in an archive, kneeling among documents he was meant to preserve, when the building collapses because he did not finish inspecting the foundation stones."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Shuichi arrived at the archive knowing which documents would vanish first and had already copied half the disputed records before anyone thought to ask why a courtier was taking notes in the military library.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Shuichi serves Shiba Tsukune, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them.",
+     "lord_name": "Asako Sakuko"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Shuichi wants the Ikoma historians to acknowledge that he found what they missed, even though admitting he succeeded means exposing how poorly they guarded their own archive."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Shuichi brings the Asako's methods to the Ikoma historians—patient copying, careful cross-reference, no dramatic revelation—and they treat his presence in their archive as a kind of gentle rebuke.",
+     "path": "B",
+     "skill": "command"
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Righteousness",
+     "tenet_less_significant": "Duty and Loyalty"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Shuichi copied the Ikoma Hall's records of Snow Plain before Shiba Tsukune told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When Shuichi kneels to examine the foundation stones beneath the Ikoma Hall, checking for rot and settling, the earth seems to resist him—he finds cracks where there should be none, misses damage that shows itself later to the stone-workers, and leaves the work half-done while the master mason has to return to finish what he began."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Shuichi sits in the Ikoma Hall with a stack of ledgers open before him, cross-referencing the military records against the temple accounts, and the work of finding what was missed—what *they* missed—steadies his hands in a way nothing else does."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When Shuichi kneels beside a farmer to examine the Ikoma Hall's foundation stones, the man's callused hands and the smell of field-work on his clothes make him recoil so visibly that the laborer steps back, leaving the inspection half-finished and the rot beneath the eastern wall undiscovered until the master mason returns."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Moshi Kuniko"
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Shuichi's eyes move across a room before he does, cataloging and cross-referencing, and he is never quite finished looking at the person in front of him.",
+     "accoutrement": "A leather satchel with the corners worn through from three nights of copying in the Ikoma Hall, the strap creased dark where it crosses his shoulder every day."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Shuichi begins asking the people around him rapid questions about details no one else has noticed yet, cataloging their answers against standards only he can see, until someone tells him to stop or the answers start matching what he already knows."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Mirumoto Hyobe (Dragon) — Mirumoto Hyobe of the Dragon came to the Ikoma Hall asking what the Lion had erased about Snow Plain, and Shuichi showed her the copies he'd made before anyone could burn them, because a Dragon scholar who reads carefully enough to notice gaps in a chronicle is the only person he has met who will not mistake his work for proof that the Ikoma failed.\nShosuro Masamori (Scorpion) — Shosuro Masamori arrived at the Ikoma Hall three days after Shuichi finished copying the Snow Plain records, and when Shuichi saw him turn a page in the original ledger—saw his fingers know exactly where to look—he understood that the Scorpion had sent someone who could read what was missing as easily as what remained."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Shuichi's mother told the village headman that her son had arrived at the house with the front of his robe still damp from kneeling in the Ikoma Hall's cellar, and when she asked him why he had not finished the inspection he said the stone-workers would manage it, but she knows he left because the farmers' hands reminded him he was Asako and they were not."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Guardian of Forbidden Knowledge",
+     "heritage_table": "New Samurai Heritages (Celestial Realms)",
+     "heritage_sub": "7-8 — Gain +1 ^\"Theology\"",
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Shuichi will die in an archive, kneeling among documents he was meant to preserve, when the building collapses because he did not finish inspecting the foundation stones."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Asako Loremaster School",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 2,
+     "government": 2,
+     "medicine": 0,
+     "sentiment": 2,
+     "theology": 3
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 55,
+    "glory": 40,
+    "status": 25,
+    "ninjo": "Shuichi wants the Ikoma historians to acknowledge that he found what they missed, even though admitting he succeeded means exposing how poorly they guarded their own archive.",
+    "giri": "Shuichi serves Shiba Tsukune, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them.",
+    "bushido_tenets": {
+     "paramount": "Righteousness",
+     "less_significant": "Duty and Loyalty"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Civility Foremost"
+    },
+    {
+     "name": "Cadence"
+    },
+    {
+     "name": "Wisdom of the Ages"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Friend of the brotherhood"
+    },
+    {
+     "name": "Elemental Deficiency (Earth)"
+    },
+    {
+     "name": "City City of the Swift Sword",
+     "custom": true,
+     "subject": "City of the Swift Sword",
+     "text": "You know a particular city extremely well and have extensive practical knowledge about it. You know as much about the city as any lifelong resident, including the popular locations, dangerous or disreputable areas, and open secrets. After performing a check to learn or share knowledge of the particular city (such as a Courtesy [Water] check to befriend a local resident or a Culture [Water] check to find an establishment offering a particular service), you remove 3 strife."
+    },
+    {
+     "name": "Loathing for Peasants"
+    },
+    {
+     "name": "Jurōjin’s Curse"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Herbal Medicines"
+    },
+    {
+     "name": "Ceremonial robes",
+     "custom": true,
+     "text": "From the Asako Loremaster starting outfit"
+    },
+    {
+     "name": "Sanctified Robes"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Scroll satchel"
+    },
+    {
+     "name": "Calligraphy Set"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "A leather satchel with the corners worn through from three nights of copying in the Ikoma Hall, the strap creased dark where it crosses his shoulder every day.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

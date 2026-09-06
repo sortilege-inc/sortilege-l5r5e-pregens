@@ -1,0 +1,457 @@
+{
+ "slug": "akodo-umi",
+ "name": "Akodo Umi",
+ "campaign": "Blood of the Lioness",
+ "status": null,
+ "identity": {
+  "clan": "Lion",
+  "family": "Akodo",
+  "school": "Akodo Commander School",
+  "role": "Bushi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Umi's eyes move across the room before she does—mapping it, fixing each person in place—and they do not move back to check.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Akodo Umi",
+  "mode": "core",
+  "clan": "Lion",
+  "family": "Akodo",
+  "school": "Akodo Commander School",
+  "role": "Bushi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "culture": 1,
+   "composition": 1
+  },
+  "distinctions": [
+   "Scrappy"
+  ],
+  "adversities": [
+   "Momoku"
+  ],
+  "passions": [
+   "Attention"
+  ],
+  "anxieties": [
+   "Isolation"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Sincerity",
+   "lesser": "Compassion",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Akodo Umi must discover how the previous commander of the War College died, because her lord Akodo Tsanuri has forbidden anyone from telling her.",
+   "ninjo": "Umi needs to know what her predecessor did in the winter of 820, and cannot ask the one person who would tell her.",
+   "standout_quality": "Umi gives clear, immediate orders in the field because she has learned not to hesitate on decisions she does not fully understand, and her uncertainty never reaches her voice.",
+   "accomplishment": "She broke up a knife fight between two senior students in the library stacks without drawing her own blade, using nothing but her voice and the threat of reporting them both to Tsanuri.",
+   "challenge": "When Shosuro Amane or another spirit-touched presence moves through the War College library during her investigation, Umi corrects a student's grip while the air around her warps with something none of the archivists can name, and she notices nothing at all.",
+   "peace": "When she stands before the ranks at dawn drill and watches a junior student finally understand the correction she gave three days ago—the stance settling into bone, the grip loosening into true strength—Umi stops giving orders and simply observes, and the line of her shoulders drops.",
+   "fear": "When she stands in the library after the archivists have left, Umi realizes she cannot remember the last time anyone told her something she did not already know or deduce, and that she has stopped asking questions aloud because she learned long ago that the answers never came.",
+   "accoutrement": "She wears a commander's insignia on a cord she has rebraided seventeen times, each time tighter than the last.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Akodo Yoshisada",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "B",
+    "skill": "culture",
+    "text": "Umi leads the War College's morning drills with the same precision she brings to everything else, but when Akodo Tsanuri appears at the practice ground she stops mid-correction of a junior student's stance, unable to ask him directly why the previous commander's death remains forbidden knowledge."
+   },
+   "mentor": {
+    "name": "Akodo Hanae",
+    "path": "A",
+    "granted": "Paragon of Sincerity",
+    "skill": "",
+    "text": "Akodo Hanae taught Umi that a commander's first duty is to the decision itself, not its rightness, by refusing to explain why the previous winter's orders were given as they were—and Umi has spent three years since learning to live with that refusal.",
+    "gender": "female",
+    "association": "Lion"
+   },
+   "first_impression": "Umi's eyes move across the room before she does—mapping it, fixing each person in place—and they do not move back to check.",
+   "stress_reaction": "When the library's archivists bring her contradictory records about the winter of 820, Umi stops asking follow-up questions and begins cross-referencing the documents herself, spreading them across the table in expanding circles until the patterns she cannot name have filled every surface she can reach.",
+   "relationships": "Isawa Hachizuke (Phoenix) — Isawa Hachizuke, a Phoenix scholar of the spirit-touched, visited the War College three years ago to study the archives of the winter of 820, and Umi gave her access to records she now suspects Tsanuri did not know had been shown.",
+   "people": [
+    {
+     "name": "Isawa Hachizuke",
+     "gender": "male",
+     "association": "Phoenix",
+     "text": "Isawa Hachizuke, a Phoenix scholar of the spirit-touched, visited the War College three years ago to study the archives of the winter of 820, and Umi gave her access to records she now suspects Tsanuri did not know had been shown."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Akodo Umi's mother wished she would stop rebraiding that cord and ask someone—anyone—why the previous commander's name had been struck from the roster.",
+    "skill": "composition"
+   },
+   "heritage": "Mighty Conqueror",
+   "heritage_table": "fields-of-victory-heritages",
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Umi expects to die in the library, still turning pages, still looking for the answer Akodo Tsanuri will not give her."
+  },
+  "starting_item": "Whip",
+  "campaign": "Blood of the Lioness",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Air"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Melee]",
+    "Meditation",
+    "Government",
+    "Command",
+    "Tactics"
+   ],
+   "school.tech.0": [
+    "Striking as Water"
+   ],
+   "heritage.mighty-conqueror.0.pick": [
+    "2"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Umi gives clear, immediate orders in the field because she has learned not to hesitate on decisions she does not fully understand, and her uncertainty never reaches her voice."
+   ],
+   "giri": [
+    "Akodo Umi must discover how the previous commander of the War College died, because her lord Akodo Tsanuri has forbidden anyone from telling her."
+   ],
+   "ninjo": [
+    "Umi needs to know what her predecessor did in the winter of 820, and cannot ask the one person who would tell her."
+   ],
+   "clan_relationship": [
+    "Umi leads the War College's morning drills with the same precision she brings to everything else, but when Akodo Tsanuri appears at the practice ground she stops mid-correction of a junior student's stance, unable to ask him directly why the previous commander's death remains forbidden knowledge."
+   ],
+   "accomplishment": [
+    "Umi brought order to the War College's morning drills after the previous commander's death left them in chaos, and she did it without asking Akodo Tsanuri why he had forbidden anyone to speak of what happened.",
+    "She broke up a knife fight between two senior students in the library stacks without drawing her own blade, using nothing but her voice and the threat of reporting them both to Tsanuri."
+   ],
+   "challenge": [
+    "When Shosuro Amane or another spirit-touched presence moves through the War College library during her investigation, Umi corrects a student's grip while the air around her warps with something none of the archivists can name, and she notices nothing at all."
+   ],
+   "peace": [
+    "When she stands before the ranks at dawn drill and watches a junior student finally understand the correction she gave three days ago—the stance settling into bone, the grip loosening into true strength—Umi stops giving orders and simply observes, and the line of her shoulders drops."
+   ],
+   "fear": [
+    "When she stands in the library after the archivists have left, Umi realizes she cannot remember the last time anyone told her something she did not already know or deduce, and that she has stopped asking questions aloud because she learned long ago that the answers never came."
+   ],
+   "mentor_relationship": [
+    "Akodo Hanae taught Umi that a commander's first duty is to the decision itself, not its rightness, by refusing to explain why the previous winter's orders were given as they were—and Umi has spent three years since learning to live with that refusal."
+   ],
+   "first_impression": [
+    "Umi's eyes move across the room before she does—mapping it, fixing each person in place—and they do not move back to check."
+   ],
+   "accoutrement": [
+    "She wears a commander's insignia on a cord she has rebraided seventeen times, each time tighter than the last."
+   ],
+   "stress_reaction": [
+    "When the library's archivists bring her contradictory records about the winter of 820, Umi stops asking follow-up questions and begins cross-referencing the documents herself, spreading them across the table in expanding circles until the patterns she cannot name have filled every surface she can reach."
+   ],
+   "relationship_person": [
+    "Isawa Hachizuke, a Phoenix scholar of the spirit-touched, visited the War College three years ago to study the archives of the winter of 820, and Umi gave her access to records she now suspects Tsanuri did not know had been shown."
+   ],
+   "parent_opinion": [
+    "Akodo Umi's mother wished she would stop rebraiding that cord and ask someone—anyone—why the previous commander's name had been struck from the roster."
+   ],
+   "death": [
+    "Umi expects to die in the library, still turning pages, still looking for the answer Akodo Tsanuri will not give her."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Umi gives clear, immediate orders in the field because she has learned not to hesitate on decisions she does not fully understand, and her uncertainty never reaches her voice.",
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Akodo Umi must discover how the previous commander of the War College died, because her lord Akodo Tsanuri has forbidden anyone from telling her.",
+     "lord_name": "Akodo Yoshisada"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Umi needs to know what her predecessor did in the winter of 820, and cannot ask the one person who would tell her."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Umi leads the War College's morning drills with the same precision she brings to everything else, but when Akodo Tsanuri appears at the practice ground she stops mid-correction of a junior student's stance, unable to ask him directly why the previous commander's death remains forbidden knowledge.",
+     "path": "B",
+     "skill": "culture"
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Sincerity",
+     "tenet_less_significant": "Compassion"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She broke up a knife fight between two senior students in the library stacks without drawing her own blade, using nothing but her voice and the threat of reporting them both to Tsanuri."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When Shosuro Amane or another spirit-touched presence moves through the War College library during her investigation, Umi corrects a student's grip while the air around her warps with something none of the archivists can name, and she notices nothing at all."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "When she stands before the ranks at dawn drill and watches a junior student finally understand the correction she gave three days ago—the stance settling into bone, the grip loosening into true strength—Umi stops giving orders and simply observes, and the line of her shoulders drops."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When she stands in the library after the archivists have left, Umi realizes she cannot remember the last time anyone told her something she did not already know or deduce, and that she has stopped asking questions aloud because she learned long ago that the answers never came."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Akodo Hanae — Akodo Hanae taught Umi that a commander's first duty is to the decision itself, not its rightness, by refusing to explain why the previous winter's orders were given as they were—and Umi has spent three years since learning to live with that refusal."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Umi's eyes move across the room before she does—mapping it, fixing each person in place—and they do not move back to check.",
+     "accoutrement": "She wears a commander's insignia on a cord she has rebraided seventeen times, each time tighter than the last."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When the library's archivists bring her contradictory records about the winter of 820, Umi stops asking follow-up questions and begins cross-referencing the documents herself, spreading them across the table in expanding circles until the patterns she cannot name have filled every surface she can reach."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Isawa Hachizuke (Phoenix) — Isawa Hachizuke, a Phoenix scholar of the spirit-touched, visited the War College three years ago to study the archives of the winter of 820, and Umi gave her access to records she now suspects Tsanuri did not know had been shown."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Akodo Umi's mother wished she would stop rebraiding that cord and ask someone—anyone—why the previous commander's name had been struck from the roster."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Mighty Conqueror",
+     "heritage_table": "Fields of Victory Heritages",
+     "heritage_sub": null,
+     "heritage_applied": true
+    },
+    "picks": {
+     "heritage.mighty-conqueror.0.pick": [
+      "2"
+     ]
+    }
+   },
+   "step20": {
+    "answers": {
+     "death": "Umi expects to die in the library, still turning pages, still looking for the answer Akodo Tsanuri will not give her."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Akodo Commander School",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 2,
+    "fire": 1,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 2
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 2,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 2,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 57,
+    "glory": 47,
+    "status": 35,
+    "ninjo": "Umi needs to know what her predecessor did in the winter of 820, and cannot ask the one person who would tell her.",
+    "giri": "Akodo Umi must discover how the previous commander of the War College died, because her lord Akodo Tsanuri has forbidden anyone from telling her.",
+    "bushido_tenets": {
+     "paramount": "Sincerity",
+     "less_significant": "Compassion"
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Striking as Water"
+    },
+    {
+     "name": "Lord Akodo's Roar"
+    },
+    {
+     "name": "Way of the Lion"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Scrappy"
+    },
+    {
+     "name": "Momoku"
+    },
+    {
+     "name": "Attention"
+    },
+    {
+     "name": "Isolation"
+    },
+    {
+     "name": "Paragon of Sincerity"
+    },
+    {
+     "name": "Glorious Deeds"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Whip"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Akodo Commander starting outfit"
+    },
+    {
+     "name": "Yari"
+    },
+    {
+     "name": "any one weapon of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Akodo Commander starting outfit",
+     "held": false
+    },
+    {
+     "name": "two knives",
+     "custom": true,
+     "text": "From the Akodo Commander starting outfit"
+    },
+    {
+     "name": "Yumi"
+    },
+    {
+     "name": "Quiver of Arrow"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "She wears a commander's insignia on a cord she has rebraided seventeen times, each time tighter than the last.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
