@@ -1629,7 +1629,31 @@
     "clause (\"Having served…\"); a closing clause that restates the sentence in " +
     "grander words; the words weight, quiet, echo, whisper, tapestry, testament, " +
     "navigate, delve, resonate, unwavering, steely, haunted, or \"speaks volumes\". " +
-    "Do not restate the question. Do not explain the answer after giving it.";
+    "Do not restate the question. Do not explain the answer after giving it. " +
+    /* Counted across 29 finished characters: these are the shapes the
+       suggestions reached for over and over, so they are named the way the
+       trailing flourish is. The nouns were always specific; the sentence was
+       always the same one. */
+    "Six more, which are this tool's own habits and are banned by name. " +
+    "First: the hands. Do not put a character's inner life in their hands, " +
+    "fingers, fingernails, knuckles or jaw — no hands going still, finding a " +
+    "table edge, moving to sleeves, tightening, or stained and hidden; no jaw " +
+    "tightening. Twenty-seven answers in this archive did one of those. Hands " +
+    "are allowed only when they are the actual subject: a smith's burns, a " +
+    "missing finger. Second: \"not X, but Y\" in any wording — \"not " +
+    "fidgeting, but the precise adjustments a puppeteer makes\" — the ban " +
+    "covers the bare form as well as \"not just\". Third: a mid-sentence " +
+    "dash that renames what was just said (\"eats theirs first — a scout's " +
+    "habit that\u2026\"). Say it once. Fourth: the unawareness coda — \"and " +
+    "they do not seem aware they are doing it\", \"she never explains it\", " +
+    "\"she does not file them even\". Whether they notice is not the answer. " +
+    "Fifth: three -ing clauses in a row (\"checking the fraying, retying the " +
+    "knots, running his thumb\u2026\"). Two is a list; three is a tic. Sixth: " +
+    "the cost clause — \"which means\", \"which costs\", \"but cannot\", " +
+    "\"but turns down\" — bolted on to make a virtue into a flaw. Tension is " +
+    "asked for above; a formula for it is not. " +
+    "One sentence unless the question says otherwise, and shorter is better: " +
+    "the strongest answers in this archive are eight to twenty words.";
   /* One rejected shape and one good one. They are deliberately about different
      characters: an earlier version used the same character for both, and the
      answers for that archetype came back as paraphrases of the good example
@@ -1680,7 +1704,19 @@
   var PROMPTS = {
     giri: "You are helping create a character for " + SETTING + "\n\nWrite a single sentence describing this character's giri (duty/obligation to their lord). Giri is what they must do even at personal cost. It should be specific to their clan, school, and lord.\n\n" + STYLE,
     ninjo: "L5R 5e character creation. Write a single sentence describing this character's ninjō (personal desire). The ninjō should sit in tension with their giri — something they want for themselves that conflicts with their duty.\n\n" + STYLE,
-    standout_quality: "L5R 5e character creation. Write a single sentence naming and briefly framing the standout quality — a memorable trait or moment — that earned this character their +1 ring increase. Concrete and unmistakable.\n\n" + STYLE,
+    standout_quality: "L5R 5e character creation. Write a single sentence " +
+      "naming and briefly framing the standout quality — a memorable trait or " +
+      "moment — that earned this character their +1 ring increase. Concrete " +
+      "and unmistakable.\n\n" +
+      /* Every suggested answer here was a strength with its cost bolted on:
+         "…, which means she now spends entire study sessions recalculating",
+         "…, which costs him tournaments but makes him", "…, but cannot hear
+         when someone is lying". A good device once; as a template it makes
+         everyone the same person. */
+      "The quality itself is the answer. Do not append the price of it: no " +
+      "\"which means\", no \"which costs\", no \"but cannot\", no \"but " +
+      "turns down\". If it is genuinely double-edged, that can show in what " +
+      "the thing is, not in a clause explaining the downside.\n\n" + STYLE,
     clan_relationship: "L5R 5e character creation. Write a single sentence describing how this character carries, or resists, their clan's ideals. Specific to the clan they belong to.\n\n" + STYLE,
     /* Question 14 asks what people NOTICE, and the book's answer is a
        deviation from the norm rather than a portrait — "slight oddities of
@@ -1696,15 +1732,27 @@
        It also asked for the accoutrement, which is its own field on this same
        step, so the sentence was spent answering the next question. */
     first_impression: "L5R 5e character creation. Name the one thing a stranger " +
-      "notices first about this character, and make it something they could " +
-      "point at: a physical feature, a habit of movement, a mannerism, a tic, or " +
-      "a verbal habit. It should veer from what is expected of someone of their " +
-      "clan and station — that is why it gets noticed at all.\n\n" +
+      "notices first about this character. It should veer from what is expected " +
+      "of someone of their clan and station — that is why it gets noticed at " +
+      "all.\n\n" +
+      /* The question was being answered with a habit you could only learn by
+         watching someone for an hour: eating from other people's bowls,
+         stopping mid-sentence to reread a ledger, nodding along to a
+         fortification survey and then contradicting it. Every one of those
+         needs to be in the room with them for a while. The question is a
+         stranger's first look. */
+      "THE TEST: three seconds, across a room, before a word is spoken. If " +
+      "seeing it needs a conversation with them, a shared meal, or watching " +
+      "them more than once, it is the wrong answer to this question. Anything " +
+      "that begins \"when someone…\" or \"when they…\" is describing a " +
+      "habit, not a first sight.\n\n" +
+      "What does qualify: build, height, bearing, the state of their face or " +
+      "hair, a scar or a mark, how they hold themselves, how they move across " +
+      "a room, how their voice sounds to someone they are not talking to.\n\n" +
       "It must be observable. Not an impression, a bearing, or an air: " +
       "\"composed\", \"watchful\", \"an unsettling stillness\", \"carries " +
       "herself with quiet authority\" are all conclusions a stranger draws, not " +
-      "things they see. Give the thing that would make them draw it — where the " +
-      "eye goes, or what the hands do.\n\n" +
+      "things they see. Give the thing that would make them draw it.\n\n" +
       "Do not name anything they carry or wear. That is a separate answer on " +
       "this same question.\n\n" +
       "Describe the thing; do not assert that it is visible. \"A real visible " +
@@ -1717,7 +1765,20 @@
       "should either accent how they already strike people or cut against it. " +
       "Name the object and say what is particular about it; do not explain what " +
       "it means about them.\n\n" + STYLE,
-    stress_reaction: "L5R 5e character creation. Write a single sentence describing what this character does when pushed past their composure. Visible, physical, particular to them.\n\n" + STYLE,
+    stress_reaction: "L5R 5e character creation. Write a single sentence " +
+      "describing what this character does when they are under more pressure " +
+      "than they can carry. Visible, physical, particular to them.\n\n" +
+      /* Fifteen of twenty-nine answers opened on the literal clause "When …,"
+         and four used the phrase "past his composure" — the mechanic's own
+         name pasted into the fiction. */
+      "Do not open the sentence with \"When\". Do not use the word " +
+      "\"composure\": that is the game's term for the mechanic, not something " +
+      "anyone would say about a person. Do not reach for the jaw, the hands, " +
+      "or stopping mid-sentence — three answers here already stop mid-" +
+      "sentence.\n\n" +
+      "Aim at what the people around them have to deal with, not at the tell " +
+      "itself: what they start doing, stop doing, or make everyone else do.\n\n"
+      + STYLE,
     parent_opinion: "L5R 5e character creation. Write a single sentence reporting a parent or guardian's opinion of this character — what they are proud of, frustrated by, or worried about. Report it in the third person; do not write it as the parent speaking.\n\n" + STYLE,
     accomplishment: function () {
       return "L5R 5e character creation. Write a single sentence naming this " +
@@ -1738,7 +1799,12 @@
         "activity that most makes this character feel at peace — something they do " +
         "for themselves, unrelated to duty." + grants("passion", C.passions[0],
           "that activity, and what it looks like when they are doing it") +
-        "\n\n" + STYLE;
+        /* Thirteen of twenty-six were the same short film: a place, a posture,
+           an object in the hands, a small repeated action, a coda. */
+        "\n\nName the thing that settles them. Do not stage it as a scene: no " +
+        "sitting alone somewhere after everyone has left, no object warming in " +
+        "their hands, no time of day. The activity, and at most what it gives " +
+        "them.\n\n" + STYLE;
     },
     fear: function () {
       return "L5R 5e character creation. Write a single sentence describing the " +
@@ -1757,7 +1823,23 @@
       "sits between them. A rival, an ally, a relative, a creditor, a former " +
       "teacher — the relationship, not a description of the other person.\n\n" + STYLE,
     relationships: "L5R 5e character creation. Write a single sentence naming one or two people who matter to this character — a rival, an ally, a family member — and what stands between them.\n\n" + STYLE,
-    death: "L5R 5e character creation. Write a single sentence describing the death this character would not regret — the ending they invite, not the one the GM must give them. Solemn and declarative, in the third person.\n\n" + STYLE,
+    death: "L5R 5e character creation. Write a single sentence describing how " +
+      "this character expects to die — what they believe is coming, not a scene " +
+      "the GM would run.\n\n" +
+      /* Fourteen answers were the same idea: the character dies of their
+         defining flaw, mid-task, with the irony spelled out. And all of them
+         were shot from outside the character, in the third-person present,
+         which is a camera rather than a belief. */
+      "It is their expectation, so it can be wrong, ordinary, or have nothing " +
+      "to do with their flaw. Do not write the death scene: no \"dies " +
+      "…ing\", no present-tense staging (\"bleeds out in an archive " +
+      "basement\", \"collapses in the wings\"), and above all do not have " +
+      "them die of the very thing they are bad at, with the irony explained. " +
+      "That was every answer in this archive and it makes each character a " +
+      "moral about themselves.\n\n" +
+      "What works: a plain expectation (\"on the field, commanding\"), a " +
+      "resignation, a fear about the manner rather than the fact, or an " +
+      "indifference. Their voice, not a narrator's.\n\n" + STYLE,
     "default": "L5R 5e character creation suggestion. " + STYLE
   };
 
@@ -3380,6 +3462,50 @@
     C.pec_subjects[k] = { name: name, subject: subject || "", who: who || "" };
   }
 
+  /* The role, where the school offers more than one. It is question 3's other
+     half — the school and the role are chosen together — and it decides which
+     techniques the character may learn, so it is not cosmetic. */
+  function roleChoice(body, sch) {
+    var roles = (sch && sch.roles) || [];
+    label(body, "Role");
+    if (!roles.length) {
+      var none = document.createElement("p");
+      none.className = "muted small";
+      none.textContent = "The corpus lists no role for this school.";
+      body.appendChild(none);
+      return;
+    }
+    if (roles.length === 1) {
+      var only = document.createElement("p");
+      only.className = "muted small";
+      only.textContent = roles[0] + " — the only role this school offers, so "
+        + "there is nothing to choose.";
+      body.appendChild(only);
+      if (C.role !== roles[0]) { C.role = roles[0]; save(); }
+      return;
+    }
+    var row = document.createElement("div");
+    row.className = "choicerow";
+    roles.forEach(function (r) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "choice" + (C.role === r ? " active" : "");
+      b.textContent = r;
+      b.addEventListener("click", function () {
+        C.role = r; save(); render();
+      });
+      row.appendChild(b);
+    });
+    body.appendChild(row);
+    var note = document.createElement("p");
+    note.className = "muted small";
+    note.textContent = C.role
+      ? "Chosen: " + C.role + "."
+      : roles.join(" or ") + " — this school offers both, and the choice is "
+        + "yours to make. It governs which technique types they may learn.";
+    body.appendChild(note);
+  }
+
   function peculiarityStep(kind, listKey) {
     return function (body) {
       peculiarityPicker(body, [kind],
@@ -3583,7 +3709,10 @@
 
     { id: "school", n: 3, label: "School", title: function () { return qText(3) || "Choose Your School"; },
       desc: "Your school determines your starting techniques, your curriculum, your starting skills, and your starting honor and outfit.",
-      done: function () { return has(C.school) && choicesMade(schoolByRollName(C.school), "school"); },
+      done: function () {
+        return has(C.school) && has(C.role) &&
+               choicesMade(schoolByRollName(C.school), "school");
+      },
       render: function (body) {
         var current = schoolByRollName(C.school);
         var pool = clanFilter(body, "school_all", "schools",
@@ -3610,11 +3739,18 @@
           }
           C.school = v;
           var s = schoolByRollName(v);
-          C.role = s && s.roles ? s.roles[0] : null;
+          /* A school that offers two roles is asking a question, and taking
+             roles[0] answered it silently: every character built here came
+             out as the first role on their school's list, which is why the
+             archive has a Kitsuki Investigator who is a Courtier and never
+             considered Bushi. One role is not a choice and is still set. */
+          var rs = (s && s.roles) || [];
+          C.role = rs.length === 1 ? rs[0] : null;
           save(); render();
         });
         var sch = schoolByRollName(C.school);
         if (!sch) return;
+        roleChoice(body, sch);
         renderChoices(body, sch, "school");
         var needsInspired = (sch.starting_techniques || []).some(function (g) {
           return (g.options || []).some(function (o) { return INSPIRED.test(o); });
