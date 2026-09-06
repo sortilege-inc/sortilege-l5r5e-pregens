@@ -14,7 +14,7 @@
   "origin_type": null
  },
  "mode": "core",
- "portrait": null,
+ "portrait": "src/portraits/shiba-yoshiteru.webp",
  "concept": "Yoshiteru's eyes move to track a shugenja the moment one enters a room, and do not move away until they leave it.",
  "summary": null,
  "notes": "",

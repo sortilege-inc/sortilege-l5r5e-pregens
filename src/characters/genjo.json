@@ -14,7 +14,7 @@
   "origin_type": "peasant"
  },
  "mode": "wow",
- "portrait": null,
+ "portrait": "src/portraits/genjo.webp",
  "concept": null,
  "summary": null,
  "notes": "",
