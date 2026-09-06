@@ -216,6 +216,37 @@
    "gear": [
     {
      "name": "Sokutoki"
+    },
+    {
+     "name": "Sanctified Robes"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "one weapon of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Ujik Diviner starting outfit",
+     "held": false
+    },
+    {
+     "name": "a bag of scrying tools including mare's milk, bones, and incense",
+     "custom": true,
+     "text": "From the Ujik Diviner starting outfit"
+    },
+    {
+     "name": "a Unicorn warhorse",
+     "custom": true,
+     "text": "From the Ujik Diviner starting outfit"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "one trinket",
+     "custom": true,
+     "text": "From the Ujik Diviner starting outfit",
+     "held": false
     }
    ],
    "advancements": []

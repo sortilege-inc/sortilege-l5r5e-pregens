@@ -231,6 +231,33 @@
    "gear": [
     {
      "name": "Whetstone"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Ichiro Grappler starting outfit"
+    },
+    {
+     "name": "sumai garb",
+     "custom": true,
+     "text": "From the Ichiro Grappler starting outfit"
+    },
+    {
+     "name": "small drum",
+     "custom": true,
+     "text": "From the Ichiro Grappler starting outfit"
+    },
+    {
+     "name": "Ichirō Sapper Ax"
+    },
+    {
+     "name": "Traveling pack"
     }
    ],
    "advancements": []

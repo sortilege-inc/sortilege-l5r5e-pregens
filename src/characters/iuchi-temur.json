@@ -414,6 +414,37 @@
     {
      "name": "Horse",
      "custom": true
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Ceremonial Clothes"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "one weapon of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Iuchi Meishōdō Master starting outfit",
+     "held": false
+    },
+    {
+     "name": "Calligraphy Set"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Unicorn warhorse",
+     "custom": true,
+     "text": "From the Iuchi Meishōdō Master starting outfit"
+    },
+    {
+     "name": "He wears a medicine pouch sewn from Dragon silk, a gift from the garrison commander whose fever he broke, and he has never opened it to check whether the contents are truly his compounds or something the Dragon packed inside.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
     }
    ],
    "advancements": []

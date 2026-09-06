@@ -1,0 +1,475 @@
+{
+ "slug": "matsu-kasuga",
+ "name": "Matsu Kasuga",
+ "campaign": "Mask of the Oni",
+ "status": null,
+ "identity": {
+  "clan": "Lion",
+  "family": "Matsu",
+  "school": "Matsu Berserker School",
+  "role": "Bushi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Kasuga's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Matsu Kasuga",
+  "mode": "core",
+  "clan": "Lion",
+  "family": "Matsu",
+  "school": "Matsu Berserker School",
+  "role": "Bushi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "void",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "games": 1,
+   "survival": 1,
+   "seafaring": 1,
+   "performance": 1
+  },
+  "distinctions": [
+   "Affinity with"
+  ],
+  "adversities": [
+   "Many Mouths"
+  ],
+  "passions": [
+   "Military History"
+  ],
+  "anxieties": [
+   "Reformed Maho-Tsukai"
+  ],
+  "pec_subjects": {
+   "affinitywith": {
+    "name": "Affinity with",
+    "subject": "Felines",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Honor",
+   "lesser": "Compassion",
+   "attitude": "B",
+   "skill": "survival"
+  },
+  "answers": {
+   "giri": "Matsu Kasuga scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not.",
+   "ninjo": "Kasuga seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better.",
+   "standout_quality": "Kasuga volunteers to scout ahead into passages where her teachers said no one should go, and comes back alive when she shouldn't have.",
+   "accomplishment": "Kasuga mapped the eastern blind spot where the Kaiu engineers' foundation calculations repeated the error from the 1063 collapse, and Jirôzaemon changed the Wall's reinforcement schedule before the flaw could kill anyone.",
+   "challenge": "Kasuga sends most of what Vorantis pays her back to the Matsu compound where her mother tends six younger siblings and two cousins orphaned in the Crab wars, leaving her threadbare in the passages where a well-provisioned scout would live.",
+   "peace": "Kasuga spreads maps across the stone table in the Kaiu Wall's map room and traces the Shadowlands passages with a scout's finger, finding where the Crab engineers made the same mistake twice, sixty years apart, and will make it again if no one shows them the pattern.",
+   "fear": "Every time she traces the passages in the map room and finds the pattern the Crab engineers missed, she feels the blood-warmth return to her fingertips, and wonders if that recognition — that hunger to see what others cannot — came from the maho-tsukai she used to be, not the scout she claims to be now.",
+   "accoutrement": "A flask of unwatered sake, refilled by the map room's stone table, sitting beside her fingertips while she traces the passages that killed the last scouts to walk them.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Matsu Kadiri",
+   "lord_gender": "female",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "B",
+    "skill": "games",
+    "text": "Kasuga maps the Wall's blind spots as Vorantis demands, but she pushes past the passages he needs mapped into the ones that will kill her, and Vorantis watches her do it without ordering her back."
+   },
+   "mentor": {
+    "name": "Shigetaka",
+    "path": "B",
+    "granted": "Blood Feud",
+    "skill": "seafaring",
+    "text": "Shigetaka taught her to read the Shadowlands' geometry by walking its passages alive, and now she cannot stop walking them even when the maps are done.",
+    "gender": "male",
+    "association": "Mantis"
+   },
+   "first_impression": "Kasuga's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
+   "stress_reaction": "Kasuga stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first.",
+   "relationships": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Kasuga maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Vorantis.",
+   "people": [
+    {
+     "name": "Kaiu Jirôzaemon",
+     "gender": "male",
+     "association": "Crab",
+     "text": "Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Kasuga maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in."
+    },
+    {
+     "name": "Kitsu Tokuhei",
+     "gender": "female",
+     "association": "Lion",
+     "text": "Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Vorantis."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Matsu Kasuga's mother counts the coin her daughter sends home against the threadbare state of the scout's kit she arrives in, and says nothing about it to the younger children.",
+    "skill": "performance"
+   },
+   "heritage": "Associated with a Natural Disaster",
+   "heritage_table": "new-samurai-heritages-celestial-realms",
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Kasuga dies in a passage the maps said was clear, alone, because she stopped trusting the maps and started trusting the hunger instead."
+  },
+  "starting_item": "Butterfly sword",
+  "campaign": "Mask of the Oni",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Melee]",
+    "Martial Arts [Unarmed]",
+    "Command",
+    "Labor",
+    "Fitness"
+   ],
+   "school.tech.0": [
+    "Spinning Blades Style"
+   ],
+   "heritage.associated-with-a-natural-disaster.1.from": [
+    "earth"
+   ],
+   "heritage.associated-with-a-natural-disaster.1.to": [
+    "water"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Kasuga volunteers to scout ahead into passages where her teachers said no one should go, and comes back alive when she shouldn't have."
+   ],
+   "giri": [
+    "Matsu Kasuga scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not."
+   ],
+   "ninjo": [
+    "Kasuga seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better."
+   ],
+   "clan_relationship": [
+    "Kasuga maps the Wall's blind spots as Vorantis demands, but she pushes past the passages he needs mapped into the ones that will kill her, and Vorantis watches her do it without ordering her back."
+   ],
+   "challenge": [
+    "Kasuga sends most of what Vorantis pays her back to the Matsu compound where her mother tends six younger siblings and two cousins orphaned in the Crab wars, leaving her threadbare in the passages where a well-provisioned scout would live."
+   ],
+   "peace": [
+    "Kasuga spreads maps across the stone table in the Kaiu Wall's map room and traces the Shadowlands passages with a scout's finger, finding where the Crab engineers made the same mistake twice, sixty years apart, and will make it again if no one shows them the pattern."
+   ],
+   "fear": [
+    "Every time she traces the passages in the map room and finds the pattern the Crab engineers missed, she feels the blood-warmth return to her fingertips, and wonders if that recognition — that hunger to see what others cannot — came from the maho-tsukai she used to be, not the scout she claims to be now."
+   ],
+   "mentor_relationship": [
+    "Shigetaka taught her to read the Shadowlands' geometry by walking its passages alive, and now she cannot stop walking them even when the maps are done."
+   ],
+   "first_impression": [
+    "Kasuga's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you."
+   ],
+   "accoutrement": [
+    "A flask of unwatered sake, refilled by the map room's stone table, sitting beside her fingertips while she traces the passages that killed the last scouts to walk them."
+   ],
+   "stress_reaction": [
+    "Kasuga stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first."
+   ],
+   "relationship_person": [
+    "Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Kasuga maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.",
+    "Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Vorantis."
+   ],
+   "parent_opinion": [
+    "Matsu Kasuga's mother counts the coin her daughter sends home against the threadbare state of the scout's kit she arrives in, and says nothing about it to the younger children."
+   ],
+   "death": [
+    "Kasuga dies in a passage the maps said was clear, alone, because she stopped trusting the maps and started trusting the hunger instead."
+   ],
+   "accomplishment": [
+    "Kasuga mapped the eastern blind spot where the Kaiu engineers' foundation calculations repeated the error from the 1063 collapse, and Jirôzaemon changed the Wall's reinforcement schedule before the flaw could kill anyone."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Kasuga volunteers to scout ahead into passages where her teachers said no one should go, and comes back alive when she shouldn't have.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Matsu Kasuga scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not.",
+     "lord_name": "Matsu Kadiri"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Kasuga seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Kasuga maps the Wall's blind spots as Vorantis demands, but she pushes past the passages he needs mapped into the ones that will kill her, and Vorantis watches her do it without ordering her back.",
+     "path": "B",
+     "skill": "games"
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Honor",
+     "tenet_less_significant": "Compassion"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Kasuga mapped the eastern blind spot where the Kaiu engineers' foundation calculations repeated the error from the 1063 collapse, and Jirôzaemon changed the Wall's reinforcement schedule before the flaw could kill anyone."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Kasuga sends most of what Vorantis pays her back to the Matsu compound where her mother tends six younger siblings and two cousins orphaned in the Crab wars, leaving her threadbare in the passages where a well-provisioned scout would live."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Kasuga spreads maps across the stone table in the Kaiu Wall's map room and traces the Shadowlands passages with a scout's finger, finding where the Crab engineers made the same mistake twice, sixty years apart, and will make it again if no one shows them the pattern."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Every time she traces the passages in the map room and finds the pattern the Crab engineers missed, she feels the blood-warmth return to her fingertips, and wonders if that recognition — that hunger to see what others cannot — came from the maho-tsukai she used to be, not the scout she claims to be now."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Shigetaka — Shigetaka taught her to read the Shadowlands' geometry by walking its passages alive, and now she cannot stop walking them even when the maps are done."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Kasuga's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
+     "accoutrement": "A flask of unwatered sake, refilled by the map room's stone table, sitting beside her fingertips while she traces the passages that killed the last scouts to walk them."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Kasuga stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Kasuga maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Vorantis."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Matsu Kasuga's mother counts the coin her daughter sends home against the threadbare state of the scout's kit she arrives in, and says nothing about it to the younger children."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Associated with a Natural Disaster",
+     "heritage_table": "New Samurai Heritages (Celestial Realms)",
+     "heritage_sub": null,
+     "heritage_applied": true
+    },
+    "picks": {
+     "heritage.associated-with-a-natural-disaster.1.from": [
+      "earth"
+     ],
+     "heritage.associated-with-a-natural-disaster.1.to": [
+      "water"
+     ]
+    }
+   },
+   "step20": {
+    "answers": {
+     "death": "Kasuga dies in a passage the maps said was clear, alone, because she stopped trusting the maps and started trusting the hunger instead."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Matsu Berserker School",
+   "foundry_id": null,
+   "rings": {
+    "air": 1,
+    "earth": 1,
+    "fire": 3,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 2,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 1,
+     "meditation": 0,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 2,
+     "courtesy": 0,
+     "games": 1,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 1,
+     "seafaring": 1,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 52,
+    "glory": 44,
+    "status": 35,
+    "ninjo": "Kasuga seeks a death worthy of the Matsu name, and turns reckless in passages where a scout's caution would serve her lord better.",
+    "giri": "Matsu Kasuga scouts the Kaiu Wall's blind spots for her daimyō Matsu Vorantis, mapping the passages where even Crab engineers fear to send their own soldiers, because the Lion must know what the Crab does not.",
+    "bushido_tenets": {
+     "paramount": "Honor",
+     "less_significant": "Compassion"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Spinning Blades Style"
+    },
+    {
+     "name": "Stirring the Embers"
+    },
+    {
+     "name": "Matsu's Fury"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Affinity with Felines",
+     "subject": "Felines",
+     "custom": true,
+     "text": "You assisted an animal; now any animal of that type gives you extra consideration. When performing a check to interact with this type of animal, you may reroll up to two dice."
+    },
+    {
+     "name": "Many Mouths"
+    },
+    {
+     "name": "Military History"
+    },
+    {
+     "name": "Reformed Maho-Tsukai"
+    },
+    {
+     "name": "Blood Feud"
+    },
+    {
+     "name": "Whispers of Failure"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Butterfly sword"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Matsu Berserker starting outfit"
+    },
+    {
+     "name": "nodachi (greatsword) or tessen (war fan)",
+     "custom": true,
+     "text": "From the Matsu Berserker starting outfit",
+     "held": false
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Yumi"
+    },
+    {
+     "name": "Quiver of Arrow"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "A flask of unwatered sake, refilled by the map room's stone table, sitting beside her fingertips while she traces the passages that killed the last scouts to walk them.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

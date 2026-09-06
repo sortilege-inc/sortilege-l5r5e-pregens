@@ -208,6 +208,41 @@
    "gear": [
     {
      "name": "Sailor's garb"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "any one weapon of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Kasuga Smuggler starting outfit",
+     "held": false
+    },
+    {
+     "name": "Calligraphy Set"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Kiseru"
+    },
+    {
+     "name": "abacus or gaijin compass",
+     "custom": true,
+     "text": "From the Kasuga Smuggler starting outfit",
+     "held": false
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "pouch of gaijin coins",
+     "custom": true,
+     "text": "From the Kasuga Smuggler starting outfit"
     }
    ],
    "advancements": []

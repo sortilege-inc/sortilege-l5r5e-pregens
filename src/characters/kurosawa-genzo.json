@@ -428,6 +428,30 @@
    "gear": [
     {
      "name": "Sake Cup"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "any one weapon of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Worldly Rōnin Path starting outfit",
+     "held": false
+    },
+    {
+     "name": "katana (long sword) or yumi (bow)",
+     "custom": true,
+     "text": "From the Worldly Rōnin Path starting outfit",
+     "held": false
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "any two items of rarity 4 or lower",
+     "custom": true,
+     "text": "From the Worldly Rōnin Path starting outfit",
+     "held": false
     }
    ],
    "advancements": []

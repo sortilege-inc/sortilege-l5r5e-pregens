@@ -427,6 +427,32 @@
    "gear": [
     {
      "name": "Gada"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "one weapon of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Mystic of the Mountain starting outfit",
+     "held": false
+    },
+    {
+     "name": "one item of rarity 4 or lower",
+     "custom": true,
+     "text": "From the Mystic of the Mountain starting outfit",
+     "held": false
+    },
+    {
+     "name": "a journal containing little bits of knowledge",
+     "custom": true,
+     "text": "From the Mystic of the Mountain starting outfit"
+    },
+    {
+     "name": "one trinket",
+     "custom": true,
+     "text": "From the Mystic of the Mountain starting outfit",
+     "held": false
     }
    ],
    "advancements": []

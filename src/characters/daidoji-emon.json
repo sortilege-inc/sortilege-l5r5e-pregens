@@ -411,6 +411,43 @@
    "gear": [
     {
      "name": "Traveling Rations"
+    },
+    {
+     "name": "Lacquered Armor"
+    },
+    {
+     "name": "Ceremonial Clothes"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Daidoji Iron Warrior starting outfit"
+    },
+    {
+     "name": "yari (spear) or naginata (polearm)",
+     "custom": true,
+     "text": "From the Daidoji Iron Warrior starting outfit",
+     "held": false
+    },
+    {
+     "name": "Yumi"
+    },
+    {
+     "name": "Quiver of Arrow"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Calligraphy Set"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Emon carries the Kaiu survey in a canvas binding that has worn through at the spine, the pages reinforced with strips of silk he has sewn in himself, each patch a different shade depending on what year he added it.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
     }
    ],
    "advancements": []

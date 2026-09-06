@@ -233,6 +233,37 @@
    "gear": [
     {
      "name": "Kuwa"
+    },
+    {
+     "name": "Ceremonial Clothes"
+    },
+    {
+     "name": "Common Clothes"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Shosuro Infiltrator starting outfit"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Yumi"
+    },
+    {
+     "name": "Quiver of Arrow"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "The cracked teacup from the prop table sits on the shelf above Hisano's dressing mirror, the fractures filled with gold lacquer in varying stages of completion, and when the theatre company's new stagehand asked what it was for, Hisano said it was a practice piece and did not mention that they have been working on it for three years.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
     }
    ],
    "advancements": []

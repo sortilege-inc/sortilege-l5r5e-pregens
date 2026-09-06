@@ -413,6 +413,37 @@
    "gear": [
     {
      "name": "Shuriken"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Hiruma Scout starting outfit"
+    },
+    {
+     "name": "yari (spear) or yumi (bow) and quiver of arrows",
+     "custom": true,
+     "text": "From the Hiruma Scout starting outfit",
+     "held": false
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Finger of Jade"
+    },
+    {
+     "name": "She oils the expedition's boot leather every third night and sets the boots in pairs outside each scout's tent, but no one has ever thanked her for it or asked her to stop.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
     }
    ],
    "advancements": [],

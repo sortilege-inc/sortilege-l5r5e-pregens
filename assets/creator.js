@@ -3218,9 +3218,21 @@
          for" on two finished characters are: the question was never asked. */
       var sub = pecSubject(n);
       if (sub && sub.subject) {
-        // the subject is kept beside the filled name, so a consumer does not
-        // have to work out which part of "Ally Hida Sadao" is the person
-        var o2 = { name: pecFilled(n, sub.subject), subject: sub.subject };
+        /* Custom, for the reason the heritage path already gives: the
+           compendium holds the stem ("Affinity with [Animal Type]") and not
+           the filled wording, so a plain reference resolves to nothing and
+           stops the build. Matsu Kasuga's "Affinity with Felines" is what
+           caught it. The rules text rides along, because a custom entry
+           carries its own.
+
+           The subject is kept beside the filled name too, so a consumer does
+           not have to work out which part of "Ally Hida Sadao" is the
+           person. */
+        var o2 = { name: pecFilled(n, sub.subject), custom: true,
+                   subject: sub.subject };
+        var rt = refText(ruleTextFor(n) || "").replace(/<[^>]+>/g, " ")
+          .replace(/\s+/g, " ").trim();
+        if (rt) o2.text = rt;
         if (sub.who) o2.subject_note = sub.who;
         return o2;
       }

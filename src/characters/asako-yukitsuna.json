@@ -412,6 +412,29 @@
    "gear": [
     {
      "name": "Nodachi"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Sanctified Robes"
+    },
+    {
+     "name": "daishō (any one sword of rarity 7 or lower and wakizashi)",
+     "custom": true,
+     "text": "From the Asako Inquisitor starting outfit",
+     "held": false
+    },
+    {
+     "name": "Scroll satchel"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "A charcoal stick worn down to a stub and kept in the breast fold of her kimono, its end stained darker than the rest.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
     }
    ],
    "advancements": []

@@ -418,6 +418,27 @@
    "gear": [
     {
      "name": "Bisentō"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "any one weapon of your signature weapon category of rarity 8 or lower (with GM approval)",
+     "custom": true,
+     "text": "From the Wandering Blade starting outfit",
+     "held": false
+    },
+    {
+     "name": "any two items of rarity 4 or lower",
+     "custom": true,
+     "text": "From the Wandering Blade starting outfit",
+     "held": false
+    },
+    {
+     "name": "one trinket",
+     "custom": true,
+     "text": "From the Wandering Blade starting outfit",
+     "held": false
     }
    ],
    "advancements": []

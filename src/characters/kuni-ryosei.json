@@ -243,6 +243,29 @@
    "gear": [
     {
      "name": "Mono Imi Fuda (Taboo Plaque)"
+    },
+    {
+     "name": "Sanctified Robes"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Makeup Kit"
+    },
+    {
+     "name": "Scroll satchel"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "She wears a leather glove on her right hand, the palm worn through in three places where she has patched it with canvas, because she will not stop touching the components even when her skin begins to crack.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
     }
    ],
    "advancements": []

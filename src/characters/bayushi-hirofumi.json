@@ -399,6 +399,34 @@
    "gear": [
     {
      "name": "Gao"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "daishō",
+     "custom": true,
+     "text": "From the Bayushi Deathdealer starting outfit"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "shinobigatana or folding half bow",
+     "custom": true,
+     "text": "From the Bayushi Deathdealer starting outfit",
+     "held": false
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Hirofumi carries a small vial of Shadowlands soil sealed in wax, taken from each patrol that returns, kept in a pouch against his ribs; he cannot say what he is testing for or why the collection has stopped growing.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
     }
    ],
    "advancements": []

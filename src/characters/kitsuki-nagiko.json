@@ -235,6 +235,30 @@
    "gear": [
     {
      "name": "Ashigaru Armor"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Calligraphy Set"
+    },
+    {
+     "name": "bō (staff) or jian (straight-edged sword)",
+     "custom": true,
+     "text": "From the Kitsuki Investigator starting outfit",
+     "held": false
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Journal of observations"
     }
    ],
    "advancements": []

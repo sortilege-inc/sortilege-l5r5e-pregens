@@ -400,6 +400,39 @@
    "gear": [
     {
      "name": "Saihai"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Ceremonial Clothes"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Kaiu Engineer starting outfit"
+    },
+    {
+     "name": "Club"
+    },
+    {
+     "name": "Oyumi"
+    },
+    {
+     "name": "quiver of bolts",
+     "custom": true,
+     "text": "From the Kaiu Engineer starting outfit"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "She carries a piece of chalk and marks the load-bearing stones as she walks, numbering them in sequence, though the numbers never go past forty-seven.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
     }
    ],
    "advancements": []

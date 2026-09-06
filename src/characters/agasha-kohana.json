@@ -441,6 +441,46 @@
      "text": "lost — it exists somewhere in the world; quality chosen by the player: Razor-Edged; quality chosen by the GM: Unholy",
      "custom": true,
      "held": false
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "one weapon of rarity 7 or lower",
+     "custom": true,
+     "text": "From the Agasha Alchemist starting outfit",
+     "held": false
+    },
+    {
+     "name": "blowgun and pouch of darts",
+     "custom": true,
+     "text": "From the Agasha Alchemist starting outfit"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Medicine Kit"
+    },
+    {
+     "name": "one omamori (your choice)",
+     "custom": true,
+     "text": "From the Agasha Alchemist starting outfit"
+    },
+    {
+     "name": "a pouch of 5 blessed glass vials",
+     "custom": true,
+     "text": "From the Agasha Alchemist starting outfit"
+    },
+    {
+     "name": "small satchel of ingredients worth 10 bu",
+     "custom": true,
+     "text": "From the Agasha Alchemist starting outfit"
+    },
+    {
+     "name": "She keeps her jade vials in a leather satchel with the month and intended ward marked on each compartment in her own hand, and she repacks it every evening whether the arrangement has changed or not.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
     }
    ],
    "advancements": []
