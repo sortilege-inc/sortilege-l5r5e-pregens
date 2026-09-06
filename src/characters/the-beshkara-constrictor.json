@@ -1,88 +1,207 @@
 {
  "slug": "the-beshkara-constrictor",
  "name": "The Beshkara Constrictor",
- "folder_label": "The Beshkara Constrictor",
  "campaign": "The Bushi Oni Part II",
  "status": null,
- "bucket": null,
- "accent": null,
  "identity": {
   "clan": "Shinomen Forest",
   "family": "Hunter",
-  "region": null,
-  "upbringing": null,
-  "origin_type": null,
   "school": "Shinomen Naga Seer Tradition",
   "role": "Courtier",
-  "age": ""
+  "age": "",
+  "region": "Forest Region",
+  "upbringing": "Temple Upbringing",
+  "origin_type": "ronin"
  },
+ "mode": "pow",
  "portrait": null,
- "concept": null,
+ "concept": "Carries her sibling's sacred pearl, in hope of a greater future.",
  "summary": null,
  "notes": "",
+ "wizard": {
+  "name": "The Beshkara Constrictor",
+  "mode": "pow",
+  "clan": "Shinomen Forest",
+  "family": "Hunter",
+  "school": "Shinomen Naga Seer Tradition",
+  "role": "Courtier",
+  "region": "Forest Region",
+  "upbringing": "Temple Upbringing",
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "skills": {
+   "seafaring": 1,
+   "fitness": 1
+  },
+  "distinctions": [
+   "Large Stature",
+   "Expert Tracker"
+  ],
+  "adversities": [
+   "Stalked by [Creature]"
+  ],
+  "passions": [
+   "Bathing"
+  ],
+  "anxieties": [
+   "Fallen Ancestor"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Sincerity",
+   "lesser": "Courage",
+   "attitude": "B",
+   "skill": "seafaring"
+  },
+  "answers": {
+   "giri": "Selected to serve as an intermediary when the astradhari first entered the forests. Has a destiny to track and remove all tainted beings from the forests.",
+   "ninjo": "She is fascinated by the humans, and seeks to travel with and observe their ways.",
+   "standout_quality": "She finds answers in meditation that elude others through argument or force, turning the impasse with the oni into a problem she might yet solve rather than a fate she must accept.",
+   "accomplishment": "Successfully negotiating the first peaceful contact between the Naga and the Astradhari, establishing protocols that prevented bloodshed and created the foundation for ongoing cultural exchange.",
+   "challenge": "There is something, potentially an oni, that she has never been able to hunt, and that she believes hunts her instead.",
+   "peace": "A cold swim is the most refreshing and rejuvenating thing.",
+   "fear": "A sibling of theirs has succumbed to Jigoku's tainted corruption, and become a monstrous being.",
+   "accoutrement": "",
+   "past": "She can call the tainted thing by her sibling's name, and it still comes.",
+   "known_for": "The Beshkara Constrictor is known throughout the Phoenix and Dragon territories for sitting through disputes about the forest without taking sides, which leaves both clans certain she is listening to someone else.",
+   "known_skill": null,
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "She fills a clay bowl with river water before dawn and sits with it until the reflection steadies, waiting to see if her sibling's voice will answer this time.",
+   "group_history": "When Shiba Etsuko asked her to translate the forest's objection to the Phoenix expansion, the Beshkara Constrictor told her what the elders wanted her to say, and has not been able to sit across from her since without knowing exactly which part was a lie.",
+   "raised_by": "The Naga elders raised her in rotation, each teaching her a different aspect of forest stewardship, but none of them could teach her how to want what they wanted her to want.",
+   "raised_skill": "fitness",
+   "clan_relationship": {
+    "path": null,
+    "skill": null,
+    "text": "Is adept at initiating contact without causing panic."
+   },
+   "mentor": {
+    "name": "Togashi Chieko",
+    "path": "A",
+    "granted": "Syncretic Philosophy",
+    "skill": "",
+    "text": "Togashi Chieko taught her that a question asked in silence carries more weight than ten spoken aloud, and the Beshkara Constrictor still cannot bring herself to break that silence even when speaking might save someone's life.",
+    "gender": "female",
+    "association": "Dragon"
+   },
+   "first_impression": "Carries her sibling's sacred pearl, in hope of a greater future.",
+   "stress_reaction": "She instinctively moves to higher ground where she can see all approaches, a defensive habit developed from being constantly hunted.",
+   "relationships": "Kenshi (Naga) — The Naga elders view her work with surface-dwellers as necessary but suspect her growing sympathy for human ways. Among the clans, she's known primarily to the Phoenix and Dragon as a reliable contact for forest matters, though most samurai find her unsettling. She has cordial relationships with monks and traveling scholars who approach the forest with proper respect.\nShiba Etsuko (Phoenix) — Shiba Etsuko of the Phoenix treats her as a translator rather than a peer, which means the Beshkara Constrictor must choose each time whether to tell her what the forest actually wants or what the Phoenix need to hear.",
+   "people": [
+    {
+     "name": "Kenshi",
+     "gender": "any",
+     "association": "Naga",
+     "text": "The Naga elders view her work with surface-dwellers as necessary but suspect her growing sympathy for human ways. Among the clans, she's known primarily to the Phoenix and Dragon as a reliable contact for forest matters, though most samurai find her unsettling. She has cordial relationships with monks and traveling scholars who approach the forest with proper respect."
+    },
+    {
+     "name": "Shiba Etsuko",
+     "gender": "female",
+     "association": "Phoenix",
+     "text": "Shiba Etsuko of the Phoenix treats her as a translator rather than a peer, which means the Beshkara Constrictor must choose each time whether to tell her what the forest actually wants or what the Phoenix need to hear."
+    }
+   ],
+   "parent_opinion": {
+    "description": "The party encountered her while investigating the oni's trail into the Shinomen Forest, where her expertise in tracking tainted creatures proved invaluable to their mission.",
+    "skill": null
+   },
+   "heritage": "Her sibling (before their corruption) - they were raised together by the community, with her sibling being groomed as the primary guardian while she was trained as the diplomatic backup.",
+   "heritage_table": null,
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "One day, the thing that stalks her will catch her unawares.",
+   "rolls": {
+    "q5.past": {
+     "roll": 51,
+     "label": "Fallen Family Legacy"
+    }
+   }
+  },
+  "starting_item": "Mono Imi Fuda (Taboo Plaque)",
+  "campaign": "",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "upbringing.ring_increase": [
+    "Void"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Melee]",
+    "Martial Arts [Ranged]",
+    "Meditation",
+    "Survival",
+    "Courtesy"
+   ],
+   "school.tech.0": [
+    "Striking as Water"
+   ],
+   "school.tech.1": [
+    "Stonewall Tactics"
+   ],
+   "q4.trouble": [
+    "Empathetic, tricky, clever"
+   ],
+   "q5.past": [
+    "Fallen Family Legacy"
+   ],
+   "q7.known": [
+    "Positive deeds, skills, or helpful behavior"
+   ],
+   "q14.prized": [
+    "Arrows : Fire-Blossom"
+   ],
+   "q17.history": [
+    "A great beast"
+   ]
+  },
+  "school_all": true,
+  "ai_history": {
+   "past": [
+    "She can call the tainted thing by her sibling's name, and it still comes."
+   ],
+   "known_for": [
+    "The Beshkara Constrictor is known throughout the Phoenix and Dragon territories for sitting through disputes about the forest without taking sides, which leaves both clans certain she is listening to someone else."
+   ],
+   "mentor_relationship": [
+    "Togashi Chieko taught her that a question asked in silence carries more weight than ten spoken aloud, and the Beshkara Constrictor still cannot bring herself to break that silence even when speaking might save someone's life."
+   ],
+   "prized_possession": [
+    "She fills a clay bowl with river water before dawn and sits with it until the reflection steadies, waiting to see if her sibling's voice will answer this time."
+   ],
+   "relationship_person": [
+    "Shiba Etsuko of the Phoenix treats her as a translator rather than a peer, which means the Beshkara Constrictor must choose each time whether to tell her what the forest actually wants or what the Phoenix need to hear."
+   ],
+   "group_history": [
+    "When Shiba Etsuko asked her to translate the forest's objection to the Phoenix expansion, the Beshkara Constrictor told her what the elders wanted her to say, and has not been able to sit across from her since without knowing exactly which part was a lie."
+   ],
+   "raised_by": [
+    "The Naga elders raised her in rotation, each teaching her a different aspect of forest stewardship, but none of them could teach her how to want what they wanted her to want."
+   ]
+  }
+ },
  "twenty_questions": {
   "template": "pow",
-  "generated": true,
+  "generated": false,
   "steps": {
-   "step1": {
-    "answers": {
-     "clan": "Shinomen Forest",
-     "ring": "earth",
-     "skill": "survival",
-     "social_status": 3
-    },
-    "picks": {}
-   },
-   "step2": {
-    "answers": {
-     "family": "Hunter Upbringing",
-     "ring": "water",
-     "skill1": "labor",
-     "skill2": "survival",
-     "social_glory": 30
-    },
-    "picks": {}
-   },
-   "step3": {
-    "answers": {
-     "school": "Shinomen Naga Seer Tradition",
-     "ring1": "earth",
-     "ring2": "water",
-     "skill1": "performance",
-     "skill2": "meditation",
-     "skill3": "courtesy",
-     "skill4": "melee",
-     "skill5": "ranged",
-     "social_honor": 55
-    },
-    "picks": {
-     "techniques": [
-      "Crescent Moon Style",
-      "Weight of Duty"
-     ],
-     "school_ability": [
-      "Bend Perception"
-     ],
-     "equipment": [
-      "Personal Pearl (Sacred)",
-      "Naga Armor",
-      "Traveling pack",
-      "Naginata",
-      "Yumi",
-      "Quiver of Arrow"
-     ]
-    }
-   },
    "step4": {
     "answers": {
-     "stand_out": "Meditative insight yields creative solutions.",
-     "ring": "void"
+     "stand_out": "She finds answers in meditation that elude others through argument or force, turning the impasse with the oni into a problem she might yet solve rather than a fate she must accept.",
+     "ring": "air"
     },
     "picks": {}
    },
    "step5": {
     "answers": {
-     "social_giri": "Selected to serve as an intermediary when the astradhari first entered the forests. Has a destiny to track and remove all tainted beings from the forests."
+     "social_giri": "Selected to serve as an intermediary when the astradhari first entered the forests. Has a destiny to track and remove all tainted beings from the forests.",
+     "lord_name": ""
     },
     "picks": {}
    },
@@ -95,15 +214,13 @@
    "step7": {
     "answers": {
      "clan_relations": "Is adept at initiating contact without causing panic.",
-     "skill": "culture",
-     "social_add_glory": 0
+     "path": null,
+     "skill": null
     },
     "picks": {}
    },
    "step8": {
     "answers": {
-     "bushido": "She is curious and respectful about it, but does not understand it.",
-     "social_add_honor": 10,
      "tenet_paramount": "Sincerity",
      "tenet_less_significant": "Courage"
     },
@@ -113,55 +230,36 @@
     "answers": {
      "success": "Successfully negotiating the first peaceful contact between the Naga and the Astradhari, establishing protocols that prevented bloodshed and created the foundation for ongoing cultural exchange."
     },
-    "picks": {
-     "distinction": [
-      "Large Stature"
-     ]
-    }
+    "picks": {}
    },
    "step10": {
     "answers": {
      "difficulty": "There is something, potentially an oni, that she has never been able to hunt, and that she believes hunts her instead."
     },
-    "picks": {
-     "adversity": [
-      "Stalked by [Creature]"
-     ]
-    }
+    "picks": {}
    },
    "step11": {
     "answers": {
      "calms": "A cold swim is the most refreshing and rejuvenating thing."
     },
-    "picks": {
-     "passion": [
-      "Bathing"
-     ]
-    }
+    "picks": {}
    },
    "step12": {
     "answers": {
      "worries": "A sibling of theirs has succumbed to Jigoku's tainted corruption, and become a monstrous being."
     },
-    "picks": {
-     "anxiety": [
-      "Fallen Ancestor"
-     ]
-    }
+    "picks": {}
    },
    "step13": {
     "answers": {
-     "most_learn": "The creature that stalks her has taught her awareness of her surroundings."
+     "most_learn": "Togashi Chieko — Togashi Chieko taught her that a question asked in silence carries more weight than ten spoken aloud, and the Beshkara Constrictor still cannot bring herself to break that silence even when speaking might save someone's life."
     },
-    "picks": {
-     "advantage": [
-      "Expert Tracker"
-     ]
-    }
+    "picks": {}
    },
    "step14": {
     "answers": {
-     "first_sight": "Carries her sibling's sacred pearl, in hope of a greater future."
+     "first_sight": "Carries her sibling's sacred pearl, in hope of a greater future.",
+     "accoutrement": ""
     },
     "picks": {}
    },
@@ -173,37 +271,24 @@
    },
    "step16": {
     "answers": {
-     "relations": "The Naga elders view her work with surface-dwellers as necessary but suspect her growing sympathy for human ways. Among the clans, she's known primarily to the Phoenix and Dragon as a reliable contact for forest matters, though most samurai find her unsettling. She has cordial relationships with monks and traveling scholars who approach the forest with proper respect."
-    },
-    "picks": {
-     "item": [
-      "Herbal Medicines"
-     ]
-    }
-   },
-   "step17": {
-    "answers": {
-     "parents_pov": "The party encountered her while investigating the oni's trail into the Shinomen Forest, where her expertise in tracking tainted creatures proved invaluable to their mission.",
-     "skill": "medicine"
-    },
-    "picks": {
-     "bond": [
-      "Protector and Ward"
-     ]
-    }
-   },
-   "step18": {
-    "answers": {
-     "heritage_name": "Her sibling (before their corruption) - they were raised together by the community, with her sibling being groomed as the primary guardian while she was trained as the diplomatic backup.",
-     "heritage_add_honor": 0,
-     "heritage_add_glory": 0,
-     "heritage_add_status": 0
+     "relations": "Kenshi (Naga) — The Naga elders view her work with surface-dwellers as necessary but suspect her growing sympathy for human ways. Among the clans, she's known primarily to the Phoenix and Dragon as a reliable contact for forest matters, though most samurai find her unsettling. She has cordial relationships with monks and traveling scholars who approach the forest with proper respect.\nShiba Etsuko (Phoenix) — Shiba Etsuko of the Phoenix treats her as a translator rather than a peer, which means the Beshkara Constrictor must choose each time whether to tell her what the forest actually wants or what the Phoenix need to hear."
     },
     "picks": {}
    },
-   "step19": {
+   "step17": {
     "answers": {
-     "firstname": "The Beshkara Constrictor"
+     "parents_pov": "The party encountered her while investigating the oni's trail into the Shinomen Forest, where her expertise in tracking tainted creatures proved invaluable to their mission."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Her sibling (before their corruption) - they were raised together by the community, with her sibling being groomed as the primary guardian while she was trained as the diplomatic backup.",
+     "heritage_table": null,
+     "heritage_sub": null,
+     "heritage_applied": true
     },
     "picks": {}
    },
@@ -221,13 +306,12 @@
    "label": null,
    "rank": 1,
    "school": "Shinomen Naga Seer Tradition",
-   "foundry_id": "17P6RunUFwDsleJl",
-   "foundry_name": "The Beshkara Constrictor",
+   "foundry_id": null,
    "rings": {
-    "air": 1,
+    "air": 2,
     "earth": 3,
     "fire": 1,
-    "water": 3,
+    "water": 2,
     "void": 2
    },
    "skills": {
@@ -238,7 +322,7 @@
      "smithing": 0
     },
     "martial": {
-     "fitness": 0,
+     "fitness": 1,
      "melee": 1,
      "ranged": 1,
      "unarmed": 0,
@@ -246,30 +330,30 @@
      "tactics": 0
     },
     "scholar": {
-     "culture": 1,
+     "culture": 0,
      "government": 0,
-     "medicine": 1,
+     "medicine": 0,
      "sentiment": 0,
-     "theology": 0
+     "theology": 1
     },
     "social": {
      "command": 0,
-     "courtesy": 1,
+     "courtesy": 2,
      "games": 0,
-     "performance": 1
+     "performance": 0
     },
     "trade": {
      "commerce": 0,
-     "labor": 1,
-     "seafaring": 0,
+     "labor": 0,
+     "seafaring": 1,
      "skulduggery": 0,
      "survival": 2
     }
    },
    "social": {
-    "honor": 65,
+    "honor": 55,
     "glory": 30,
-    "status": 3,
+    "status": 35,
     "ninjo": "She is fascinated by the humans, and seeks to travel with and observe their ways.",
     "giri": "Selected to serve as an intermediary when the astradhari first entered the forests. Has a destiny to track and remove all tainted beings from the forests.",
     "bushido_tenets": {
@@ -279,149 +363,78 @@
    },
    "derived": {
     "endurance": 8,
-    "composure": 12,
-    "focus": 2,
+    "composure": 10,
+    "focus": 3,
     "vigilance": 2,
     "void_points": 2
    },
    "money": {
     "zeni": 0,
     "koku": 0,
-    "bu": 4
+    "bu": 0
    },
    "techniques": [
     {
-     "name": "Crescent Moon Style",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "kata",
-     "rank": 2
+     "name": "Striking as Water"
     },
     {
-     "name": "Weight of Duty",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "shuji",
-     "rank": 1
+     "name": "Stonewall Tactics"
     },
     {
-     "name": "Bend Perception",
-     "xp_used": 0,
-     "xp_cost": 0,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "school_ability",
-     "rank": 1
+     "name": "Bend Perception"
     }
    ],
    "peculiarities": [
     {
-     "name": "Large Stature",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "distinction",
-     "ring": "earth",
-     "types": "Physical"
+     "name": "Large Stature"
     },
     {
-     "name": "Stalked by [Creature]",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "adversity",
-     "ring": "earth",
-     "types": "Interpersonal, Mental, Spiritual"
+     "name": "Expert Tracker"
     },
     {
-     "name": "Bathing",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "passion",
-     "ring": "water",
-     "types": "Interpersonal, Mental"
+     "name": "Stalked by [Creature]"
     },
     {
-     "name": "Fallen Ancestor",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "anxiety",
-     "ring": "void",
-     "types": "Interpersonal, Spiritual"
+     "name": "Bathing"
     },
     {
-     "name": "Expert Tracker",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0,
-     "kind": "distinction",
-     "ring": "air",
-     "types": "Mental, Physical"
+     "name": "Fallen Ancestor"
+    },
+    {
+     "name": "Syncretic Philosophy"
     }
    ],
    "titles": [],
-   "bonds": [
-    {
-     "name": "Protector and Ward",
-     "xp_used": 0,
-     "xp_cost": 3,
-     "in_curriculum": false,
-     "bought_at_rank": 0
-    }
-   ],
+   "bonds": [],
    "signature_scrolls": [],
    "gear": [
     {
-     "name": "Naginata",
-     "quantity": 1
+     "name": "Mono Imi Fuda (Taboo Plaque)"
     },
     {
-     "name": "Yumi",
-     "quantity": 1
+     "name": "Naga Armor"
     },
     {
-     "name": "Naga Armor",
-     "quantity": 1
+     "name": "Yumi"
     },
     {
-     "name": "Personal Pearl (Sacred)",
-     "quantity": 1
-    },
-    {
-     "name": "Traveling pack",
-     "quantity": 1
-    },
-    {
-     "name": "Quiver of Arrow",
-     "quantity": 1
-    },
-    {
-     "name": "Sibling's Sacred Pearl",
-     "quantity": 1,
+     "name": "quiver",
      "custom": true,
-     "description": "",
-     "source_reference": {
-      "source": "",
-      "page": 0
-     },
-     "rarity": "0",
-     "zeni": "0",
-     "properties": []
+     "text": "From the Shinomen Naga Seer Tradition starting outfit"
     },
     {
-     "name": "Herbal Medicines",
-     "quantity": 1
+     "name": "Naginata"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Personal Pearl (Sacred)"
+    },
+    {
+     "name": "One day's rations",
+     "custom": true,
+     "text": "From Temple Upbringing"
     }
    ],
    "advancements": []
