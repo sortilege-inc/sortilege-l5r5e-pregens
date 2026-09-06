@@ -52,7 +52,7 @@
 
 <footer class="foot"><span class="mark">❖</span>Sortilege · Legend of the Five Rings 5th Edition</footer>
 
-<script src="../data/roster.js?v=edeea52a"></script>
+<script src="../data/roster.js?v=201e2c4f"></script>
 <script src="../data/campaigns.js?v=42f90280"></script>
 <script src="../assets/roster.js?v=2cefdb59"></script>
 <script>
@@ -124,10 +124,14 @@
     var term = q.value.trim().toLowerCase();
     var list = pool.filter(function (c) {
       if (clan.value && c.clan !== clan.value) return false;
-      if (role.value && c.role !== role.value) return false;
+      // a folio that prints "Bushi/Courtier" is in both, so either matches
+      if (role.value && !(c.roles && c.roles.length
+                            ? c.roles.indexOf(role.value) >= 0
+                            : c.role === role.value)) return false;
       if (campaign.value && c.campaign !== campaign.value) return false;
       if (!term) return true;
-      return [c.name, c.school, c.clan, c.family, c.role, c.campaign, c.product]
+      return [c.name, c.school, c.clan, c.family,
+              (c.roles || []).join(" ") || c.role, c.campaign, c.product]
         .join(" ").toLowerCase().indexOf(term) >= 0;
     });
     // Edit, +XP and Legacy under each card: this is the roster, where someone

@@ -330,6 +330,8 @@ def main():
                   "slug": d["slug"], "clan": ident.get("clan"),
                   "family": ident.get("family"), "school": ident.get("school"),
                   "role": ident.get("role"),
+                  # a folio printing "Bushi/Courtier" is in both
+                  "roles": ident.get("roles") or None,
                   "portrait": d.get("portrait"),
                   # what they said about other people, and what could be read
                   "named": len(told[d["slug"]][0]),
@@ -435,6 +437,7 @@ def main():
                   "clan": ident.get("clan") or ident.get("region"),
                   "family": ident.get("family") or ident.get("upbringing"),
                   "school": ident.get("school"), "role": ident.get("role"),
+                  "roles": ident.get("roles") or None,
                   "pronouns": ident.get("pronouns"),
                   "portrait": d.get("portrait"), "published": True}
             pcs.append(pc)

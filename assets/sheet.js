@@ -715,7 +715,12 @@
         ? '<span class="chip">' +
           esc(String(CHAR.upbringing).replace(/ Upbringing$/, "")) +
           " upbringing</span>" : "") +
-      (CHAR.role ? '<span class="chip">' + esc(CHAR.role) + "</span>" : "") +
+      /* A printed folio can fall into two roles and prints them with a
+         slash — "Bushi/Courtier" — so a transcription shows both. An archive
+         character has the one role this archive filed them under. */
+      (CHAR.roles && CHAR.roles.length > 1
+        ? '<span class="chip">' + esc(CHAR.roles.join("/")) + "</span>"
+        : CHAR.role ? '<span class="chip">' + esc(CHAR.role) + "</span>" : "") +
       (CHAR.campaign ? '<span class="chip crimson">' + esc(CHAR.campaign) + "</span>" : "") +
       '<span class="chip">' + CHAR.tier_count +
         (CHAR.tier_count === 1 ? " XP tier" : " XP tiers") + "</span>";

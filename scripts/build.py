@@ -156,7 +156,14 @@ def schema(cx):
       -- where a samurai has a clan and a family
       region TEXT, upbringing TEXT, origin_type TEXT,
       school TEXT,
-      school_norm TEXT, role TEXT, bucket TEXT, campaign TEXT, status TEXT, accent TEXT,
+      school_norm TEXT, role TEXT,
+      -- A printed folio can fall into two roles and prints them with a slash:
+      -- "Bushi/Courtier". `role` is the single one this archive files a
+      -- character under, and stays single because the roster filter and the
+      -- page are; `roles` is the full set where the source states one, so the
+      -- page can show what the sheet shows. JSON, or NULL.
+      roles TEXT,
+      bucket TEXT, campaign TEXT, status TEXT, accent TEXT,
       portrait TEXT, concept TEXT, summary TEXT, tier_count INTEGER,
       xp_min INTEGER, xp_max INTEGER,
       -- "archive" for a character built here, "published" for an official
@@ -868,12 +875,15 @@ def load_characters(cx):
         snorm = ALIASES.get(snorm, snorm)
         # then the corpus's short spelling, if that is what the record used
         snorm = SCHOOL_INDEX.get(snorm, snorm)
-        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 22) + ")", (
+        cx.execute("INSERT INTO character VALUES (" + ",".join("?" * 23) + ")", (
             c["slug"], c["name"], c["identity"].get("clan"), c["identity"].get("family"),
             c["identity"].get("region"), c["identity"].get("upbringing"),
             c["identity"].get("origin_type"),
             c["identity"].get("school"), snorm,
-            c["identity"].get("role"), c.get("bucket"), c.get("campaign"),
+            c["identity"].get("role"),
+            json.dumps(c["identity"]["roles"], ensure_ascii=False)
+            if (c["identity"].get("roles") or None) else None,
+            c.get("bucket"), c.get("campaign"),
             c.get("status"), c.get("accent"), c.get("portrait"),
             c.get("concept"), c.get("summary"),
             len(tiers), min(t["xp"] for t in tiers), max(t["xp"] for t in tiers),
@@ -1254,6 +1264,8 @@ def emit(cx):
                                 for e in entries],
                 }
         doc = {**{k: c[k] for k in c.keys() if k != "school_norm"},
+               # a JSON column, and the page wants the list it holds
+               "roles": json.loads(c["roles"]) if c["roles"] else None,
                "twenty_questions": src.get("twenty_questions", {}),
                "notes": src.get("notes", ""),
                # concept material, landed on promotion by scripts/promote.py
@@ -1272,7 +1284,7 @@ def emit(cx):
         size = write(os.path.join(chardir, c["slug"] + ".js"), "L5R_CHARACTER", doc)
         biggest = max(biggest, size)
         if c["status"] != "draft":
-            roster.append({k: c[k] for k in
+            row = {k: c[k] for k in
                            ("slug", "name", "clan", "family",
                             # a ronin's answers to questions 1 and 2
                             "region", "upbringing", "origin_type",
@@ -1282,7 +1294,11 @@ def emit(cx):
                             # "archive" or "published": the roster hides the
                             # published pregens unless asked, and names the
                             # product they came from when it shows them
-                            "provenance", "product")})
+                            "provenance", "product")}
+            # "Bushi/Courtier" on the sheet, a list here, and `role` still the
+            # one value the Role filter matches on
+            row["roles"] = json.loads(c["roles"]) if c["roles"] else None
+            roster.append(row)
 
     # the roster is the finished archive; drafts live in the Creator until promoted
     n1 = write(os.path.join(SITEDATA, "roster.js"), "L5R_ROSTER", roster)
@@ -1468,7 +1484,12 @@ def sheet_from_tier(char, tier):
         "id": f"{char['slug']}-{xp}xp",
         "name": char["name"], "clan": char.get("clan"), "family": char.get("family"),
         "school": tier.get("school") or char.get("school"),
-        "role": char.get("role"), "rank": tier.get("rank"),
+        "role": char.get("role"),
+        # `char` here is the built doc, where roles is already a list; the same
+        # function is fed a sqlite row elsewhere, where it is still JSON
+        "roles": (char.get("roles") if isinstance(char.get("roles"), list)
+                  else json.loads(char["roles"]) if char.get("roles") else None),
+        "rank": tier.get("rank"),
         "portrait": ("../" + char["portrait"]) if char.get("portrait") else None,
         "rings": tier.get("rings") or {},
         "derived": {k: derived.get(k) for k in

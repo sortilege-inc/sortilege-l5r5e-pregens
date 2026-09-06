@@ -271,7 +271,9 @@
         '<p class="rm-eyebrow">Player character</p>' +
         "<h2>" + esc(d.name) + "</h2>" +
         '<p class="rm-sub">' +
-          esc([d.clan, d.family, d.school, d.role].filter(Boolean).join(" · ")) +
+          esc([d.clan, d.family, d.school,
+               (d.roles && d.roles.length > 1) ? d.roles.join("/") : d.role]
+                .filter(Boolean).join(" · ")) +
         "</p>" +
         (d.connection
           ? '<p class="rm-quote">' + esc(d.connection) + "</p>" : "") +
