@@ -13,7 +13,7 @@
   "upbringing": null
  },
  "mode": "core",
- "portrait": null,
+ "portrait": "src/portraits/kitsuki-nagiko.webp",
  "concept": "She stops mid-sentence to reread something in a ledger, leaving whoever was speaking to wait while she traces a line with her finger.",
  "summary": null,
  "notes": "",
