@@ -1,0 +1,477 @@
+{
+ "slug": "seka",
+ "name": "Seka",
+ "campaign": "Sins of Regret",
+ "status": null,
+ "identity": {
+  "clan": null,
+  "family": null,
+  "school": "Woolen Hooves Trapper Tradition",
+  "role": "Artisan",
+  "age": "",
+  "region": "Rural Farmland Region",
+  "upbringing": "Hunter or Fisher Upbringing",
+  "origin_type": "peasant"
+ },
+ "mode": "wow",
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Seka",
+  "mode": "wow",
+  "clan": null,
+  "family": null,
+  "school": "Woolen Hooves Trapper Tradition",
+  "role": "Artisan",
+  "region": "Rural Farmland Region",
+  "upbringing": "Hunter or Fisher Upbringing",
+  "standout_ring": "fire",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "skills": {
+   "labor": 1,
+   "fitness": 1,
+   "commerce": 1
+  },
+  "distinctions": [
+   "Thoughtful Arbiter"
+  ],
+  "adversities": [
+   "Schism in Status"
+  ],
+  "passions": [
+   "Ikebana"
+  ],
+  "anxieties": [
+   "Irrepressible Flirtation"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Courage",
+   "lesser": "Duty and Loyalty",
+   "attitude": "B",
+   "skill": "labor"
+  },
+  "answers": {
+   "giri": "",
+   "ninjo": "Seka wants to be asked before someone else decides what happened, and she has never once volunteered the answer first.",
+   "standout_quality": "Seka finds herself alone at burnt places and says nothing about them until someone else notices, by which time the silence has already made her complicit in whatever happened there.",
+   "accomplishment": "When the village constable came to the burnt way station asking what she had found, Seka told him the poacher was trapped there, and let him ask three times before she said she had done the trapping.",
+   "challenge": "The village trappers won't take her word on anything until someone else has already confirmed it first, and Seka has stopped trying to convince them otherwise.",
+   "peace": "When she strips the outer leaves from flowers brought in from the margins—the ones nobody else has named—and builds them into form in a shallow bowl, the village trappers' refusal to listen stops mattering because the arrangement either works or it doesn't, and she will know which before she speaks.",
+   "fear": "At the burnt way station three winters past, she held the poacher's gaze while he asked for water, and she turned away because no one had asked her first what she had found there, and now when someone attractive meets her eye across a room she cannot look away the same manner, even though she knows the cost of that kind of refusal.",
+   "accoutrement": "",
+   "past": "Seka trapped a poacher at the burnt way station three winters ago and left him there without water or word to anyone, and the village still does not know if he died or walked out.",
+   "known_for": "The trappers along the Closed Shell road know Seka found the way station burnt down three winters past and never told anyone until the village constable asked her directly, and she still hasn't said whether the poacher walked out or didn't.",
+   "known_skill": null,
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "Seka keeps the poacher's water flask, a dented copper thing that caught the light wrong when she found it near the way station's burnt stones, and when Chikafusa asked her directly what she had brought back from that place, she handed it to him instead of speaking.",
+   "group_history": "When the party first sheltered at a burnt wayhouse on the Closed Shell road, Seka recognized the copper flask Akio pulled from the ash and could not meet his eyes until he asked her directly whose it had been.",
+   "raised_by": "Chikafusa taught her to read the land by listening to nothing, so now Seka brings burnt things to the village trappers' workshop and waits for them to notice what she has already named in silence.",
+   "raised_skill": "commerce",
+   "clan_relationship": {
+    "path": null,
+    "skill": null,
+    "text": ""
+   },
+   "mentor": {
+    "name": "Chikafusa",
+    "path": "B",
+    "granted": "Deafness",
+    "skill": "fitness",
+    "text": "Chikafusa taught Seka to read the land by touch and smell when his hearing went, which meant learning to say nothing until the silence itself had spoken first—a habit that fit her so well she has never shaken it, even now that she stands apart from him.",
+    "gender": "female",
+    "association": "Yobanjin"
+   },
+   "first_impression": "",
+   "stress_reaction": "She stops answering questions altogether and waits for someone else to speak first, which leaves her in rooms where the silence has already decided what happened before anyone admits to needing her.",
+   "relationships": "Akio (Yobanjin) — Akio of the Yobanjin came to the burnt way station asking about the poacher, and when Seka handed him the copper flask instead of speaking, he sat down beside the ash and waited until she had to break the silence herself.\nMirumoto Ichibei (Dragon) — Mirumoto Ichibei asked her to trap something that had been killing livestock in the Dragon lands, and when she brought him the dead thing instead of explaining how she had done it, he paid her in silver and never asked her name.",
+   "people": [
+    {
+     "name": "Akio",
+     "gender": "nonbinary",
+     "association": "Yobanjin",
+     "text": "Akio of the Yobanjin came to the burnt way station asking about the poacher, and when Seka handed him the copper flask instead of speaking, he sat down beside the ash and waited until she had to break the silence herself."
+    },
+    {
+     "name": "Mirumoto Ichibei",
+     "gender": "male",
+     "association": "Dragon",
+     "text": "Mirumoto Ichibei asked her to trap something that had been killing livestock in the Dragon lands, and when she brought him the dead thing instead of explaining how she had done it, he paid her in silver and never asked her name."
+    }
+   ],
+   "parent_opinion": {
+    "description": "",
+    "skill": null
+   },
+   "heritage": null,
+   "heritage_table": null,
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "She will drown in the river she was asked to read, having waited too long for someone else to name what the water was telling her.",
+   "rolls": {
+    "q5.past": {
+     "roll": 12,
+     "label": "Bad Family History"
+    }
+   }
+  },
+  "starting_item": "Ashigaru Armor",
+  "campaign": "Sins of Regret",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "upbringing.ring_increase": [
+    "Water"
+   ],
+   "upbringing.skill_increases": [
+    "Survival"
+   ],
+   "school.starting_skills": [
+    "Fitness",
+    "Labor",
+    "Martial Arts [Ranged]",
+    "Medicine",
+    "Survival"
+   ],
+   "school.tech.0": [
+    "Hawk's Precision",
+    "Bear's Swipe Style"
+   ],
+   "q4.trouble": [
+    "Abrasive, honest, driven"
+   ],
+   "q5.past": [
+    "Bad Family History"
+   ],
+   "q7.known": [
+    "Positive deeds"
+   ],
+   "q14.prized": [
+    "Spyglass"
+   ],
+   "q17.history": [
+    "A great beast"
+   ]
+  },
+  "origin_type": "peasant",
+  "school_all": true,
+  "ai_history": {
+   "standout_quality": [
+    "Seka finds herself alone at burnt places and says nothing about them until someone else notices, by which time the silence has already made her complicit in whatever happened there."
+   ],
+   "past": [
+    "Seka trapped a poacher at the burnt way station three winters ago and left him there without water or word to anyone, and the village still does not know if he died or walked out."
+   ],
+   "ninjo": [
+    "Seka wants to be asked before someone else decides what happened, and she has never once volunteered the answer first."
+   ],
+   "known_for": [
+    "The trappers along the Closed Shell road know Seka found the way station burnt down three winters past and never told anyone until the village constable asked her directly, and she still hasn't said whether the poacher walked out or didn't."
+   ],
+   "accomplishment": [
+    "When the village constable came to the burnt way station asking what she had found, Seka told him the poacher was trapped there, and let him ask three times before she said she had done the trapping."
+   ],
+   "challenge": [
+    "The village trappers won't take her word on anything until someone else has already confirmed it first, and Seka has stopped trying to convince them otherwise."
+   ],
+   "peace": [
+    "When she strips the outer leaves from flowers brought in from the margins—the ones nobody else has named—and builds them into form in a shallow bowl, the village trappers' refusal to listen stops mattering because the arrangement either works or it doesn't, and she will know which before she speaks."
+   ],
+   "fear": [
+    "At the burnt way station three winters past, she held the poacher's gaze while he asked for water, and she turned away because no one had asked her first what she had found there, and now when someone attractive meets her eye across a room she cannot look away the same manner, even though she knows the cost of that kind of refusal."
+   ],
+   "mentor_relationship": [
+    "Chikafusa taught Seka to read the land by touch and smell when his hearing went, which meant learning to say nothing until the silence itself had spoken first—a habit that fit her so well she has never shaken it, even now that she stands apart from him."
+   ],
+   "prized_possession": [
+    "Seka keeps the poacher's water flask, a dented copper thing that caught the light wrong when she found it near the way station's burnt stones, and when Chikafusa asked her directly what she had brought back from that place, she handed it to him instead of speaking."
+   ],
+   "stress_reaction": [
+    "She stops answering questions altogether and waits for someone else to speak first, which leaves her in rooms where the silence has already decided what happened before anyone admits to needing her."
+   ],
+   "relationship_person": [
+    "Akio of the Yobanjin came to the burnt way station asking about the poacher, and when Seka handed him the copper flask instead of speaking, he sat down beside the ash and waited until she had to break the silence herself.",
+    "Mirumoto Ichibei asked her to trap something that had been killing livestock in the Dragon lands, and when she brought him the dead thing instead of explaining how she had done it, he paid her in silver and never asked her name."
+   ],
+   "group_history": [
+    "When the party first sheltered at a burnt wayhouse on the Closed Shell road, Seka recognized the copper flask Akio pulled from the ash and could not meet his eyes until he asked her directly whose it had been."
+   ],
+   "raised_by": [
+    "Chikafusa taught her to read the land by listening to nothing, so now Seka brings burnt things to the village trappers' workshop and waits for them to notice what she has already named in silence."
+   ],
+   "death": [
+    "She will drown in the river she was asked to read, having waited too long for someone else to name what the water was telling her."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "pow",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Seka finds herself alone at burnt places and says nothing about them until someone else notices, by which time the silence has already made her complicit in whatever happened there.",
+     "ring": "fire"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "",
+     "lord_name": ""
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Seka wants to be asked before someone else decides what happened, and she has never once volunteered the answer first."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "",
+     "path": null,
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Duty and Loyalty"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "When the village constable came to the burnt way station asking what she had found, Seka told him the poacher was trapped there, and let him ask three times before she said she had done the trapping."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "The village trappers won't take her word on anything until someone else has already confirmed it first, and Seka has stopped trying to convince them otherwise."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "When she strips the outer leaves from flowers brought in from the margins—the ones nobody else has named—and builds them into form in a shallow bowl, the village trappers' refusal to listen stops mattering because the arrangement either works or it doesn't, and she will know which before she speaks."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "At the burnt way station three winters past, she held the poacher's gaze while he asked for water, and she turned away because no one had asked her first what she had found there, and now when someone attractive meets her eye across a room she cannot look away the same manner, even though she knows the cost of that kind of refusal."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Chikafusa — Chikafusa taught Seka to read the land by touch and smell when his hearing went, which meant learning to say nothing until the silence itself had spoken first—a habit that fit her so well she has never shaken it, even now that she stands apart from him."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "",
+     "accoutrement": ""
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "She stops answering questions altogether and waits for someone else to speak first, which leaves her in rooms where the silence has already decided what happened before anyone admits to needing her."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Akio (Yobanjin) — Akio of the Yobanjin came to the burnt way station asking about the poacher, and when Seka handed him the copper flask instead of speaking, he sat down beside the ash and waited until she had to break the silence herself.\nMirumoto Ichibei (Dragon) — Mirumoto Ichibei asked her to trap something that had been killing livestock in the Dragon lands, and when she brought him the dead thing instead of explaining how she had done it, he paid her in silver and never asked her name."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": ""
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": null,
+     "heritage_table": null,
+     "heritage_sub": null,
+     "heritage_applied": false
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "She will drown in the river she was asked to read, having waited too long for someone else to name what the water was telling her."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Woolen Hooves Trapper Tradition",
+   "foundry_id": null,
+   "rings": {
+    "air": 1,
+    "earth": 3,
+    "fire": 3,
+    "water": 2,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 3,
+     "melee": 0,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 1,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 3,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 2
+    }
+   },
+   "social": {
+    "honor": 28,
+    "glory": 34,
+    "status": 18,
+    "ninjo": "Seka wants to be asked before someone else decides what happened, and she has never once volunteered the answer first.",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Duty and Loyalty"
+    }
+   },
+   "derived": {
+    "endurance": 12,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 4
+   },
+   "techniques": [
+    {
+     "name": "Hawk's Precision"
+    },
+    {
+     "name": "Bear's Swipe Style"
+    },
+    {
+     "name": "Guard Against the Elements"
+    },
+    {
+     "name": "Evolution of the Wilds"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Thoughtful Arbiter"
+    },
+    {
+     "name": "Schism in Status"
+    },
+    {
+     "name": "Ikebana"
+    },
+    {
+     "name": "Irrepressible Flirtation"
+    },
+    {
+     "name": "Deafness"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "yobanjin armor (Physical 2, subtle)",
+     "custom": true,
+     "text": "From the Woolen Hooves Trapper Tradition starting outfit"
+    },
+    {
+     "name": "Horsebow"
+    },
+    {
+     "name": "Masakari"
+    },
+    {
+     "name": "Hammer"
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Bowyer’s Kit"
+    },
+    {
+     "name": "Medicine Kit"
+    },
+    {
+     "name": "resources for two hunting traps",
+     "custom": true,
+     "text": "From the Woolen Hooves Trapper Tradition starting outfit"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
