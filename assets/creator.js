@@ -407,6 +407,55 @@
     return pool[pool.length - 1];
   }
 
+  /* A heritage entry a promoted character took, and how many took it. The
+     heritage feed records who took what but not whether they are a draft, so
+     the slug is checked against the archive rather than trusted.
+
+     heritageTakenByPromoted() was deleted by accident while the peculiarity
+     bias was being rewritten, and the heritage step calls it three times — so
+     its render threw and the step came up empty. */
+  function heritageTimesTaken(tableKey, name) {
+    var who = HERITAGE_USED[tableKey + "::" + name] || [];
+    if (!who.length) return 0;
+    var promoted = promotedSlugs();
+    return who.filter(function (u) { return promoted[u.slug]; }).length;
+  }
+
+  function heritageTakenByPromoted(tableKey, name) {
+    return heritageTimesTaken(tableKey, name) > 0;
+  }
+
+  /* The heritage roll, loaded the same way the peculiarity roll is. A table is
+     its own pool, exactly as a kind is: an entry's scarcity is only ever
+     measured against the other entries on the table it is rolled on.
+
+     The width of the entry's roll span is the honest base — a "1-2" row is
+     twice as likely as a "5" row, which is what the die does — and
+     1/(1+n)^2 on the promoted characters who took it is the load. Nothing on
+     the table becomes unreachable.
+
+     What this replaced rerolled: honestly once, then up to twelve times past
+     anything already taken. That is a capped filter rather than a bias, and it
+     needed a note afterwards to admit the die had been overruled. */
+  function rollHeritage(key, entries) {
+    if (!COVERAGE_BIAS || entries.length < 2) {
+      return rollOn(entries, function (x) { return x.roll; });
+    }
+    var weight = entries.map(function (e) {
+      var width = rollSpan(e.roll).length || 1;
+      return width * pecDecay(heritageTimesTaken(key, e.name));
+    });
+    var total = weight.reduce(function (a, b) { return a + b; }, 0);
+    if (!(total > 0)) return rollOn(entries, function (x) { return x.roll; });
+    var GRID = 1000000;
+    var r = randomBelow(GRID) / GRID * total;
+    for (var i = 0; i < weight.length; i++) {
+      r -= weight[i];
+      if (r < 0) return entries[i];
+    }
+    return entries[entries.length - 1];
+  }
+
   // what the last biased heritage roll skipped, for the line under the button
   var heritageRerollNote = "";
   /* ─── end TEMPORARY ─────────────────────────────────────────────────── */
@@ -4561,25 +4610,18 @@
         var roll = document.createElement("button");
         roll.type = "button"; roll.className = "btn ghost"; roll.textContent = "Roll d10";
         roll.addEventListener("click", function () {
-          /* COVERAGE_BIAS: roll honestly, and reroll while the result is one a
-             promoted character already took. Bounded, and it says what it
-             skipped rather than quietly handing back a different answer than
-             the die gave. */
-          var e = rollOn(table.entries, function (x) { return x.roll; });
-          var skipped = [];
-          if (COVERAGE_BIAS) {
-            for (var i = 0; i < 12 && heritageTakenByPromoted(key, e.name); i++) {
-              if (skipped.indexOf(e.name) < 0) skipped.push(e.name);
-              e = rollOn(table.entries, function (x) { return x.roll; });
-            }
-          }
-          heritageRerollNote = skipped.length
-            ? (heritageTakenByPromoted(key, e.name)
-                ? "every entry on this table is already taken — kept " + e.name
-                : "rerolled past " + skipped.join(", ") +
-                  (skipped.length > 1 ? " — all already taken"
-                                      : " — already taken"))
-            : "";
+          // COVERAGE_BIAS: loaded towards the entries this table has had
+          // fewest of, the die's own span widths kept as the base
+          var e = rollHeritage(key, table.entries);
+          var free = COVERAGE_BIAS ? table.entries.filter(function (x) {
+            return !heritageTimesTaken(key, x.name);
+          }).length : 0;
+          heritageRerollNote = !COVERAGE_BIAS ? ""
+            : free
+              ? "loaded towards the " + free + " entr" + (free === 1 ? "y" : "ies")
+                + " nobody has taken yet"
+              : "every entry on this table is taken — loaded towards the "
+                + "least-taken";
           forgetHeritagePicks();
           C.answers.heritage = e.name;
           C.answers.heritage_sub = null;
