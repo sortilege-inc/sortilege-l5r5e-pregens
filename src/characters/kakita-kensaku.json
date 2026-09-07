@@ -60,8 +60,8 @@
    "skill": null
   },
   "answers": {
-   "giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
-   "ninjo": "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it.",
+   "giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+   "ninjo": "Kensaku wants to forge the blade Akodo Tsanuri carries into the field. Tsanuri carries his family's blade, and will die holding it before he sets it down for a Kakita's.",
    "standout_quality": "Kensaku has learned to read a workshop's temperament by how the smiths treat their tools and each other, a skill that makes him useful during his visits to repair blades but leaves him uncertain whether he belongs to any forge at all.",
    "accomplishment": "He trained the Master of the Forges' hunting hawks to accept handling only from him, so that when the old man's hands began to fail, Kensaku could work the birds without being asked or refused.",
    "challenge": "When Kensaku certifies a blade at the Castle of the Swift Sword, he is always aware that he is judging not just the steel but the smith's honor, and he cannot bring himself to do only the first.",
@@ -93,7 +93,7 @@
    },
    "first_impression": "Kensaku's eyes move to a blade before they move to the person holding it, even when the person is speaking to him.",
    "stress_reaction": "When a blade fails inspection at the Castle, Kensaku begins asking the smith questions about their other work, their training, their family's forges—circling outward until he has filled the silence where the word \"failed\" should be.",
-   "relationships": "Daidoji Rina (Crane) — Daidoji Rina sends word when she travels to the Castle of the Swift Sword, and Kensaku meets her away from the forges to avoid the appearance that a Crane courtier influences his certifications, a caution that has made their conversations shorter and less frequent than either would prefer.\nKakita Shirai (Crane) — Kakita Shirai watches Kensaku work and does not ask him which smiths he trusts, though she could read the answer in his face before he speaks it.",
+   "relationships": "Daidoji Rina (Crane) — Daidoji Rina sends word when she travels to the Castle of the Swift Sword, and Kensaku meets her away from the forges to avoid the appearance that a Crane courtier influences his certifications, a caution that has made their conversations shorter and less frequent than either would prefer.\nKakita Shirai (Crane) — Kakita Shirai watches Kensaku work and does not ask him which smiths he trusts, though she could read the answer in his face before he speaks it.\nMirumoto Hisa (Dragon) — Hisa has never asked Kensaku for the duel her students say she wants, and he has never offered it; they have spent two winters instead arguing whether a blade forged for one hand can be trusted in two.",
    "people": [
     {
      "name": "Daidoji Rina",
@@ -106,6 +106,12 @@
      "gender": "female",
      "association": "Crane",
      "text": "Kakita Shirai watches Kensaku work and does not ask him which smiths he trusts, though she could read the answer in his face before he speaks it."
+    },
+    {
+     "name": "Mirumoto Hisa",
+     "gender": "female",
+     "association": "Dragon",
+     "text": "Hisa has never asked Kensaku for the duel her students say she wants, and he has never offered it; they have spent two winters instead arguing whether a blade forged for one hand can be trusted in two."
     }
    ],
    "parent_opinion": {
@@ -147,10 +153,10 @@
     "Kensaku has learned to read a workshop's temperament by how the smiths treat their tools and each other, a skill that makes him useful during his visits to repair blades but leaves him uncertain whether he belongs to any forge at all."
    ],
    "giri": [
-    "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it."
+    "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it."
    ],
    "ninjo": [
-    "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it."
+    "Kensaku wants to forge the blade Akodo Tsanuri carries into the field. Tsanuri carries his family's blade, and will die holding it before he sets it down for a Kakita's."
    ],
    "clan_relationship": [
     "Kensaku's reluctance to trust a blade's maker's name—to set aside his skill and simply certify what he holds—reads to other smiths at the Castle as Crane fastidiousness, which the Lion forgive because his repairs hold, but which keeps him outside their forge's hierarchy in ways he has not resolved."
@@ -205,14 +211,14 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+     "social_giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
      "lord_name": "Kakita Namika"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it."
+     "social_ninjo": "Kensaku wants to forge the blade Akodo Tsanuri carries into the field. Tsanuri carries his family's blade, and will die holding it before he sets it down for a Kakita's."
     },
     "picks": {}
    },
@@ -276,7 +282,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Daidoji Rina (Crane) — Daidoji Rina sends word when she travels to the Castle of the Swift Sword, and Kensaku meets her away from the forges to avoid the appearance that a Crane courtier influences his certifications, a caution that has made their conversations shorter and less frequent than either would prefer.\nKakita Shirai (Crane) — Kakita Shirai watches Kensaku work and does not ask him which smiths he trusts, though she could read the answer in his face before he speaks it."
+     "relations": "Daidoji Rina (Crane) — Daidoji Rina sends word when she travels to the Castle of the Swift Sword, and Kensaku meets her away from the forges to avoid the appearance that a Crane courtier influences his certifications, a caution that has made their conversations shorter and less frequent than either would prefer.\nKakita Shirai (Crane) — Kakita Shirai watches Kensaku work and does not ask him which smiths he trusts, though she could read the answer in his face before he speaks it.\nMirumoto Hisa (Dragon) — Hisa has never asked Kensaku for the duel her students say she wants, and he has never offered it; they have spent two winters instead arguing whether a blade forged for one hand can be trusted in two."
     },
     "picks": {}
    },
@@ -363,8 +369,8 @@
     "honor": 65,
     "glory": 39,
     "status": 35,
-    "ninjo": "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it.",
-    "giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+    "ninjo": "Kensaku wants to forge the blade Akodo Tsanuri carries into the field. Tsanuri carries his family's blade, and will die holding it before he sets it down for a Kakita's.",
+    "giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
     "bushido_tenets": {
      "paramount": "Courtesy",
      "less_significant": "Courage"
