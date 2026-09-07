@@ -41,7 +41,7 @@ Heritage audit: all nine applied. Rings and skills: none over 3. Pipeline PASS.
 ## 2. Contradictions — flagged for a decision
 
 *Applied 2026-09-07: D1, D3, D4, D5, D7. Ruled no change: D2, D9. Withdrawn: D6 (my misread,
-see below). Open: D8 (clarification below), D10 (with D41).*
+see below). D8 ruled 2026-09-07: keep the mechanic — prose rewritten to the portrait (D47 applied); her yumi still open. Chiaki's lord field ruled: Ikoma Motonobu is her lord, Akodo Tsukune the garrison commander she is placed under — giri and Q7 say so. Open: D10 (with D41).*
 
 **D1. Mirumoto Hisa serves a man who has been dead for three hundred years.** Her giri:
 "serves **Akodo Heihachi**, commander of the war college's advanced students." Akodo

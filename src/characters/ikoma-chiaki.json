@@ -60,7 +60,7 @@
    "skill": "skulduggery"
   },
   "answers": {
-   "giri": "Chiaki's lord is Akodo Tsukune, commander of the garrison; her duty is to report suspected traitors among the soldiers she quarters with, which means she must build their trust first.",
+   "giri": "Chiaki serves her lord Ikoma Motonobu, who has placed her under Akodo Tsukune, commander of the garrison; her duty is to report suspected traitors among the soldiers she quarters with, which means she must build their trust first.",
    "ninjo": "Chiaki wants to protect the garrison from false accusation as fiercely as she investigates real treason, and each soldier she clears gnaws at her certainty that she is not simply freeing the guilty.",
    "standout_quality": "Chiaki remembers every name in the garrison and every debt she owes them, which makes suspecting them of treason a discipline that costs her more than the interrogations do.",
    "accomplishment": "Ikoma Chiaki turned a suspected spy's confession during interrogation into evidence that exonerated him instead, and Akodo Tsukune believed her report that the man was loyal despite her having built the case against him first.",
@@ -80,7 +80,7 @@
    "clan_relationship": {
     "path": "A",
     "skill": null,
-    "text": "Chiaki keeps the garrison's rosters in her own hand and corrects the Ikoma scribes when they miswrite a name, which makes her meticulous about record-keeping in ways that serve her lord's investigation and undermine the clan's need for her to move unseen."
+    "text": "Chiaki keeps the garrison's rosters in her own hand and corrects the Ikoma scribes when they miswrite a name, which makes her meticulous about record-keeping in ways that serve Tsukune's investigation and undermine the clan's need for her to move unseen."
    },
    "mentor": {
     "name": "Kuni Eichi",
@@ -143,13 +143,13 @@
     "Chiaki remembers every name in the garrison and every debt she owes them, which makes suspecting them of treason a discipline that costs her more than the interrogations do."
    ],
    "giri": [
-    "Chiaki's lord is Akodo Tsukune, commander of the garrison; her duty is to report suspected traitors among the soldiers she quarters with, which means she must build their trust first."
+    "Chiaki serves her lord Ikoma Motonobu, who has placed her under Akodo Tsukune, commander of the garrison; her duty is to report suspected traitors among the soldiers she quarters with, which means she must build their trust first."
    ],
    "ninjo": [
     "Chiaki wants to protect the garrison from false accusation as fiercely as she investigates real treason, and each soldier she clears gnaws at her certainty that she is not simply freeing the guilty."
    ],
    "clan_relationship": [
-    "Chiaki keeps the garrison's rosters in her own hand and corrects the Ikoma scribes when they miswrite a name, which makes her meticulous about record-keeping in ways that serve her lord's investigation and undermine the clan's need for her to move unseen."
+    "Chiaki keeps the garrison's rosters in her own hand and corrects the Ikoma scribes when they miswrite a name, which makes her meticulous about record-keeping in ways that serve Tsukune's investigation and undermine the clan's need for her to move unseen."
    ],
    "accomplishment": [
     "She caught a garrison quartermaster skimming supplies meant for the lower ranks and presented the evidence to Akodo Tsukune in a way that made him trust her findings instead of suspecting her motives for bringing down a man she'd shared meals with for three years.",
@@ -204,7 +204,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Chiaki's lord is Akodo Tsukune, commander of the garrison; her duty is to report suspected traitors among the soldiers she quarters with, which means she must build their trust first.",
+     "social_giri": "Chiaki serves her lord Ikoma Motonobu, who has placed her under Akodo Tsukune, commander of the garrison; her duty is to report suspected traitors among the soldiers she quarters with, which means she must build their trust first.",
      "lord_name": "Ikoma Motonobu"
     },
     "picks": {}
@@ -217,7 +217,7 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "Chiaki keeps the garrison's rosters in her own hand and corrects the Ikoma scribes when they miswrite a name, which makes her meticulous about record-keeping in ways that serve her lord's investigation and undermine the clan's need for her to move unseen.",
+     "clan_relations": "Chiaki keeps the garrison's rosters in her own hand and corrects the Ikoma scribes when they miswrite a name, which makes her meticulous about record-keeping in ways that serve Tsukune's investigation and undermine the clan's need for her to move unseen.",
      "path": "A",
      "skill": null
     },
@@ -359,7 +359,7 @@
     "glory": 50,
     "status": 35,
     "ninjo": "Chiaki wants to protect the garrison from false accusation as fiercely as she investigates real treason, and each soldier she clears gnaws at her certainty that she is not simply freeing the guilty.",
-    "giri": "Chiaki's lord is Akodo Tsukune, commander of the garrison; her duty is to report suspected traitors among the soldiers she quarters with, which means she must build their trust first.",
+    "giri": "Chiaki serves her lord Ikoma Motonobu, who has placed her under Akodo Tsukune, commander of the garrison; her duty is to report suspected traitors among the soldiers she quarters with, which means she must build their trust first.",
     "bushido_tenets": {
      "paramount": "Honor",
      "less_significant": "Compassion"

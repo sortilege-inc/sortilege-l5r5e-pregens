@@ -15,7 +15,7 @@
  },
  "mode": "core",
  "portrait": "src/portraits/miya-ujitsuna.webp",
- "concept": "Ujitsuna's hands move constantly when she stands still—fingers drumming on her thigh, palms pressed flat against her sides, one thumb working the opposite wrist—as if her body is arguing with itself about whether to hold steady.",
+ "concept": "Ujitsuna's left hand lives in a black glove and does nothing; her right is never still — drumming her thigh, pressed flat to her side, working the gloved wrist as if it might answer.",
  "summary": null,
  "notes": "",
  "wizard": {
@@ -95,7 +95,7 @@
     "gender": "female",
     "association": "Imperial"
    },
-   "first_impression": "Ujitsuna's hands move constantly when she stands still—fingers drumming on her thigh, palms pressed flat against her sides, one thumb working the opposite wrist—as if her body is arguing with itself about whether to hold steady.",
+   "first_impression": "Ujitsuna's left hand lives in a black glove and does nothing; her right is never still — drumming her thigh, pressed flat to her side, working the gloved wrist as if it might answer.",
    "stress_reaction": "When dictating to a scribe whose hand she does not trust, Ujitsuna stops mid-sentence and asks them to read back what they have written, then stops them again before they finish, then asks a third time—until the scribe either names what discrepancy she is afraid they have missed, or admits they do not understand it, and she must choose whether to find someone else or let the record go out flawed.",
    "relationships": "Chaaya (Ivory Kingdoms Sage Tradition) — Chaaya reads back Ujitsuna's dictations word for word without comment, then waits for the correction, which means Ujitsuna must trust her own ear against the scribe's loyalty to what was actually said.\nKitsune Yu (Fox) — Kitsune Yu brought Ujitsuna a copy of the Ikoma account of Snow Plain transcribed in her own hand, then asked her not to say where it came from, which means Ujitsuna now sits alone with two versions of the same battle and no way to ask which one Kitsune trusts without breaking a confidence she is not sure she should have kept.",
    "people": [
@@ -180,7 +180,7 @@
     "Otomo Hisayo taught Ujitsuna to read a harbor the way cartographers read coastlines—to see what a city's docks and markets and scribal houses reveal about which version of a story the powerful need to believe—and now, when Ujitsuna must choose which archive to visit first, she already knows the answer before she arrives."
    ],
    "first_impression": [
-    "Ujitsuna's hands move constantly when she stands still—fingers drumming on her thigh, palms pressed flat against her sides, one thumb working the opposite wrist—as if her body is arguing with itself about whether to hold steady."
+    "Ujitsuna's left hand lives in a black glove and does nothing; her right is never still — drumming her thigh, pressed flat to her side, working the gloved wrist as if it might answer."
    ],
    "accoutrement": [
     "She keeps a leather map case scarred and re-stitched so many times that Otomo Hisayo laughed and said it looked like a battlefield itself, and Ujitsuna did not correct her."
@@ -271,7 +271,7 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "Ujitsuna's hands move constantly when she stands still—fingers drumming on her thigh, palms pressed flat against her sides, one thumb working the opposite wrist—as if her body is arguing with itself about whether to hold steady.",
+     "first_sight": "Ujitsuna's left hand lives in a black glove and does nothing; her right is never still — drumming her thigh, pressed flat to her side, working the gloved wrist as if it might answer.",
      "accoutrement": "She keeps a leather map case scarred and re-stitched so many times that Otomo Hisayo laughed and said it looked like a battlefield itself, and Ujitsuna did not correct her."
     },
     "picks": {}
