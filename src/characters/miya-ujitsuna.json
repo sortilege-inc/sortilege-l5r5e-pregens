@@ -71,7 +71,7 @@
    "challenge": "Ujitsuna cannot grip a brush steady enough to annotate the manuscripts herself, so she must dictate her findings to scribes who may not understand what discrepancy matters, and trust them to write down the right thing.",
    "peace": "Ujitsuna walks the streets of whatever city holds the archives she needs, memorizing the routes between the scribal halls and the tea houses where historians drink, so that when she returns to report she can describe not just what the records claim but which building stands closer to the truth.",
    "fear": "Ujitsuna's hands shake when she must dictate to a scribe she does not trust, and she cannot tell whether she is trembling from the palsy or from the terror that the wrong word, transcribed wrong, will send the Throne to war over a lie she could have caught.",
-   "accoutrement": "She keeps a leather map case scarred and re-stitched so many times that Otomo Hisayo laughed and said it looked like a battlefield itself, and Ujitsuna did not correct her.",
+   "accoutrement": "Jade hairpin.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -121,7 +121,8 @@
    "heritage_sub": null,
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Ujitsuna will die in a city she has mapped so carefully that she can navigate it blind, still arguing with a scribe about what a discrepancy means."
+   "death": "Ujitsuna will die in a city she has mapped so carefully that she can navigate it blind, still arguing with a scribe about what a discrepancy means.",
+   "accoutrement_name": "Jade hairpin"
   },
   "starting_item": "Lucky Cricket",
   "campaign": "Blood of the Lioness",
@@ -272,7 +273,8 @@
    "step14": {
     "answers": {
      "first_sight": "Ujitsuna's left hand lives in a black glove and does nothing; her right is never still — drumming her thigh, pressed flat to her side, working the gloved wrist as if it might answer.",
-     "accoutrement": "She keeps a leather map case scarred and re-stitched so many times that Otomo Hisayo laughed and said it looked like a battlefield itself, and Ujitsuna did not correct her."
+     "accoutrement": "Jade hairpin.",
+     "accoutrement_name": "Jade hairpin"
     },
     "picks": {}
    },
@@ -470,9 +472,10 @@
      "text": "Her attendant is Chaaya, the scribe who reads her dictations back word for word — from the Miya Cartographer starting outfit."
     },
     {
-     "name": "She keeps a leather map case scarred and re-stitched so many times that Otomo Hisayo laughed and said it looked like a battlefield itself, and Ujitsuna did not correct her.",
+     "name": "Jade hairpin",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Jade hairpin.",
+     "accoutrement": true
     }
    ],
    "advancements": []

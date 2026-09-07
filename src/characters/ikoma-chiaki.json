@@ -67,7 +67,7 @@
    "challenge": "After a day spent carrying intelligence reports between the garrison's wings, Chiaki's shoulders lock and her hands move like rust, making the careful notation that keeps her soldiers' names perfect a labor that eats into the hours when she should be sleeping.",
    "peace": "Chiaki spreads oracle bones across the garrison's ledger at night, reading the cracks for the names of the loyal, and each night the bones refuse to name the guilty ones clearly enough that she can stop looking.",
    "fear": "Chiaki spreads the rosters across her desk each morning and sees only the names she might have to betray, which means she has stopped eating with the garrison and begun timing her patrols to walk alone.",
-   "accoutrement": "Chiaki keeps a tally of names scratched into the spine of her ledger, each mark a soldier she has cleared, and on the nights when no new marks come she scrapes at the old ones until her fingernail breaks.",
+   "accoutrement": "Oracle bones. Kept in the ledger's back cover.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -117,7 +117,8 @@
    "heritage_sub": "5-6 — Government",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Chiaki expects to die in the library, alone with the rosters, when her heart simply stops and no one finds her until morning."
+   "death": "Chiaki expects to die in the library, alone with the rosters, when her heart simply stops and no one finds her until morning.",
+   "accoutrement_name": "Oracle bones"
   },
   "starting_item": "Katar (Punch Dagger)",
   "campaign": "Blood of the Lioness",
@@ -263,7 +264,8 @@
    "step14": {
     "answers": {
      "first_sight": "Chiaki's shoulders sit high and forward even when she stands still, as though bracing against a weight that never shifts.",
-     "accoutrement": "Chiaki keeps a tally of names scratched into the spine of her ledger, each mark a soldier she has cleared, and on the nights when no new marks come she scrapes at the old ones until her fingernail breaks."
+     "accoutrement": "Oracle bones. Kept in the ledger's back cover.",
+     "accoutrement_name": "Oracle bones"
     },
     "picks": {}
    },
@@ -436,9 +438,10 @@
      "name": "Traveling pack"
     },
     {
-     "name": "Chiaki keeps a tally of names scratched into the spine of her ledger, each mark a soldier she has cleared, and on the nights when no new marks come she scrapes at the old ones until her fingernail breaks.",
+     "name": "Oracle bones",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Oracle bones. Kept in the ledger's back cover.",
+     "accoutrement": true
     }
    ],
    "advancements": []
