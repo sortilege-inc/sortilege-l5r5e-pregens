@@ -19,7 +19,7 @@ Officials Kasuga Mugatsu (governor) and Kasuga Mikoto (magistrate); crime lords 
 
 ---
 
-**State at 2026-09-07:** D1–D14 approved and applied (D6 as drafted). D15 applied (flatter Chiyo ↔ Ichirō line; `party_lines` block in the manifest, preferred by the map). D16 applied and widened to the whole pack (45 lines; list in the 2026-09-07 chat, revertable by number). D17 clarified (concept honor numbers are pre-build; left). D18 applied. D19 applied (Passion for Cartography; Shuichi's Kuniko text). D20 clarified. D21 noted.
+**State at 2026-09-07:** D1–D14 approved and applied (D6 as drafted). D15 applied (flatter Chiyo ↔ Ichirō line; `party_lines` block in the manifest, preferred by the map). D16 applied and widened to the whole pack (45 lines; list in the 2026-09-07 chat, revertable by number). D17 clarified (concept honor numbers are pre-build; left). D18 applied. D19 applied (Passion for Cartography; Shuichi's Kuniko text). D20 applied in the concept (GM-facing only). D21 noted. Register rewrites kept. **Pack closed 2026-09-07.**
 
 ## A. Errors
 

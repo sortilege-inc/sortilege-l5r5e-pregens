@@ -226,3 +226,19 @@ catches them. Two turned up in packs already closed.
 
 **The design method leaks into the fiction.** Tarot-built characters spoke of "the cards" when their
 gear was bones and mare's milk.
+
+## Slow Tide Harbor — how it closed (2026-09-07)
+
+**Legacy packs are a different job.** No wizard block, no people list, answers only in the step store,
+whole questions missing. Budget for writing, not just fixing; the owner approved eight new answers and
+four mentor texts drafted in the report.
+
+**GM material has three doors into public data:** `bio` (landed from the concept by promote.py, which
+now respects an explicit blank), the map's party lines (now from `party_lines` in the manifest), and
+the concept itself for drafts. Grep `data/` for a concept phrase before closing any pack.
+
+**A widened register pass is acceptable when asked for.** Forty-five lines in one go, listed by
+number so the owner can revert individually; none reverted. Show the list, don't ask line by line.
+
+**Name swaps carry pronouns.** Sekihara → Nagiko left "his face" behind. After any name swap, grep
+the record for the old person's pronouns.
