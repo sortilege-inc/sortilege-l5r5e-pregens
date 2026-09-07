@@ -23,27 +23,27 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "Ichirō waits longer than other grapplers before committing his weight, which costs him tournaments but makes him nearly impossible to provoke into a mistake during an interrogation.",
+     "stand_out": "Ichirō waits longer than other grapplers before committing his weight. It cost him tournaments. It makes him hard to provoke in an interrogation.",
      "ring": "void"
     },
     "picks": {}
    },
    "step5": {
     "answers": {
-     "social_giri": "Ichirō keeps Kasuga Chiyo's books balanced and her debtors reminded, work that pays better than sumai ever did and requires him to be the thing he already is: a man who doesn't move until he must.",
+     "social_giri": "Ichirō keeps Kasuga Chiyo's books balanced and her debtors reminded. It pays better than sumai did, and the work is standing still until he has to move.",
      "lord_name": "Kasuga Chiyo"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Ichirō sends money to a sumai stable in the interior, enough that the master there has stopped taking commissions and trains only the fighters Ichirō pays for, and Chiyo has never asked why her enforcer bleeds money into a town he doesn't live in anymore."
+     "social_ninjo": "Ichirō wants the sumai stable in the interior kept open, and pays for it out of Chiyo's wages. Chiyo has not asked why."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "clan_relations": "Ichirō agrees with the Badger clan's principle that a tool should do its job well, but he does his job so thoroughly that Chiyo's debtors now fear him more than they fear debt, which means she has to step in to negotiate terms he would simply enforce."
+     "clan_relations": "Ichirō agrees with the Badger principle that a tool should do its job well. He does his so thoroughly that Chiyo's debtors fear him more than the debt, and she has to step in to negotiate terms he would simply enforce."
     },
     "picks": {}
    },
@@ -56,7 +56,7 @@
    },
    "step9": {
     "answers": {
-     "success": "He talked a man out of throwing himself off the docks by sitting beside him for two hours without speaking, then walked away when the man stood up, never mentioning it to Chiyo or collecting any debt the man owed her."
+     "success": "He talked a man out of throwing himself off the docks by sitting beside him for two hours without speaking, then walked away when the man stood up, and left the man's debt to Chiyo uncollected."
     },
     "picks": {}
    },
@@ -68,7 +68,7 @@
    },
    "step11": {
     "answers": {
-     "calms": "Ichirō sits with the stable master in the interior, listening to how each fighter he pays for has trained that week, and when he leaves he can repeat back not just the names but the exact angle of the master's doubt about one man's shoulder, the specific bout where another found his opening."
+     "calms": "Ichirō sits with the stable master in the interior and listens to how each fighter he pays for has trained that week. When he leaves he can repeat the master's doubt about one man's shoulder and the bout where another found his opening."
     },
     "picks": {}
    },
@@ -80,7 +80,7 @@
    },
    "step13": {
     "answers": {
-     "most_learn": "Ichirō Namiyo — Ichirō's mother Namiyo taught him that strength meant holding still when it would be easier to move, a lesson he learned by watching her refuse to flinch when his father drank, and now he sends money to a stable in her name while working for a woman who fears his restraint more than she values it."
+     "most_learn": "Ichirō Namiyo — Ichirō's mother Namiyo taught him that strength meant holding still when it would be easier to move; he learned it watching her refuse to flinch when his father drank. He sends money to a stable in her name."
     },
     "picks": {}
    },
@@ -93,19 +93,19 @@
    },
    "step15": {
     "answers": {
-     "stress": "When pressed past composure, Ichirō's jaw tightens and he begins trimming his fingernails with short, precise strokes, the blade moving faster and faster until someone speaks directly to him or he draws blood."
+     "stress": "When pressed past composure, Ichirō takes out a small blade and trims his fingernails in short strokes until someone speaks to him directly or he draws blood."
     },
     "picks": {}
    },
    "step16": {
     "answers": {
-     "relations": "Kaito Koin (Phoenix) — Ichirō met Kaito Koin at a sumai bout in the interior three years ago, when Koin was there on Phoenix clan business and stopped to watch the wrestlers; Koin recognized the stable master's name from somewhere official, asked questions Ichirō shouldn't have answered, and never reported what he learned about the money flowing quietly through that town, a debt Ichirō has been repaying ever since by doing small favors Koin requests through intermediaries — nothing that would reach Chiyo, nothing that costs much, just enough that Ichirō knows Koin still has his measure and still chooses not to use it.\nKasuga Sanjiro (Tortoise) — Kasuga Sanjiro trained under the same sumai master Ichirō sends money to, left the sport before Ichirō did, and now when they cross paths at the stable Sanjiro watches him hand over coin with the expression of a man who made a different choice and knows exactly what it cost."
+     "relations": "Kaito Koin (Phoenix) — Ichirō met Kaito Koin at a sumai bout in the interior three years ago. Koin recognized the stable master's name from somewhere official, asked questions Ichirō should not have answered, and never reported the money flowing through that town. Since then Ichirō does small favors Koin asks for through intermediaries, none of them reaching Chiyo.\nKasuga Sanjiro (Tortoise) — Kasuga Sanjiro trained under the same sumai master Ichirō sends money to and left the sport before Ichirō did. When they cross paths at the stable, Sanjiro watches him hand over the coin and says nothing."
     },
     "picks": {}
    },
    "step17": {
     "answers": {
-     "parents_pov": "His mother Namiyo, now dead, taught him that strength meant holding still when it would be easier to move, a lesson he learned by watching her refuse to flinch when his father drank, and she would have approved of the money he sends to the stable in her name, though his father would not have understood why a man throws away what he earned."
+     "parents_pov": "His mother Namiyo, now dead, would have approved of the money he sends to the stable in her name. His father would have called it throwing away what he earned."
     },
     "picks": {}
    },
@@ -120,7 +120,7 @@
    },
    "step20": {
     "answers": {
-     "death": "Ichirō dies pinned under a falling beam during a fire at the stable, having gone back inside after everyone else was out, because the stable master was still calling for help and Ichirō could not make himself leave a man who had seen him at his worst and stayed anyway."
+     "death": "Ichirō dies pinned under a falling beam in a fire at the stable, having gone back in for the stable master after everyone else was out."
     },
     "picks": {}
    }
@@ -180,8 +180,8 @@
     "honor": 48,
     "glory": 32,
     "status": 25,
-    "ninjo": "Ichirō sends money to a sumai stable in the interior, enough that the master there has stopped taking commissions and trains only the fighters Ichirō pays for, and Chiyo has never asked why her enforcer bleeds money into a town he doesn't live in anymore.",
-    "giri": "Ichirō keeps Kasuga Chiyo's books balanced and her debtors reminded, work that pays better than sumai ever did and requires him to be the thing he already is: a man who doesn't move until he must.",
+    "ninjo": "Ichirō wants the sumai stable in the interior kept open, and pays for it out of Chiyo's wages. Chiyo has not asked why.",
+    "giri": "Ichirō keeps Kasuga Chiyo's books balanced and her debtors reminded. It pays better than sumai did, and the work is standing still until he has to move.",
     "bushido_tenets": {
      "paramount": "Duty and Loyalty",
      "less_significant": "Righteousness"

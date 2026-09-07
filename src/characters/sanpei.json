@@ -62,8 +62,8 @@
    "ninjo": "Sanpei wants a lord who will take him on with his debts, and a roof that is his by right. A weekly wage from a magistrate is the nearest he has come.",
    "standout_quality": "Sanpei grew up as a child of a geisha house and he knows where to run and hide to avoid consequences.",
    "accomplishment": "He talked a Mantis samurai down from a fight in the harbor without either of them losing face.",
-   "challenge": "Every ship that docks in Slow Tide Harbor, Sanpei finds work watching the cargo or the crew, and every few weeks a man he doesn't recognize hands him a bill for protection money owed, which he pays in full and on time because the alternative is that they'll come to Nagiko with what they know.",
-   "peace": "He sits alone in the dockside tea houses after closing and argues with the owner about the bill until they laugh and comp him a cup, which he could never afford to simply order.",
+   "challenge": "Whenever a ship docks in Slow Tide Harbor Sanpei finds work watching the cargo or the crew, and every few weeks a man he does not recognize hands him a bill for protection money, which he pays in full and on time, because otherwise they go to Nagiko.",
+   "peace": "He sits in the dockside tea houses after closing and argues with the owner about the bill until they laugh and pour him a cup he could not have paid for.",
    "fear": "Sanpei cannot sit still in the magistrate's office without finding something to clean—the desk, the floor, the scroll racks—and has not washed his own clothes since the spring.",
    "accoutrement": "",
    "past": "Sanpei's closest friend from the geisha house was adopted into the Kasuga family. Sanpei was not, and they have not spoken since.",
@@ -90,20 +90,20 @@
     "association": "Lion"
    },
    "first_impression": "",
-   "stress_reaction": "When his composure breaks, Sanpei starts cleaning—scrubbing the magistrate's desk with his sleeve, rewinding the scroll racks, arranging the writing implements in order of size—and he will not stop until someone orders him to or the room is immaculate enough that no one could reasonably find fault.",
-   "relationships": "Agasha Yui (Dragon) — Agasha Yui lent him money once, before she knew about the others, and he has been paying her back at half the rate of the protection men because he cannot bring himself to ask her for mercy on a debt that was actually kind.\nNobunari (Brotherhood of Shinsei) — Nobunari taught him to meditate in the monastery gardens, and Sanpei still cannot sit through a single full breath without his hands finding work to do.",
+   "stress_reaction": "When his composure breaks, Sanpei cleans—the magistrate's desk with his sleeve, the scroll racks, the writing implements set out by size—until someone orders him to stop.",
+   "relationships": "Agasha Yui (Dragon) — Agasha Yui lent him money once, before she knew about the others. He pays her back at half the rate he pays the protection men.\nNobunari (Brotherhood of Shinsei) — Nobunari taught him to meditate in the monastery gardens. Sanpei has never sat through a full breath.",
    "people": [
     {
      "name": "Agasha Yui",
      "gender": "female",
      "association": "Dragon",
-     "text": "Agasha Yui lent him money once, before she knew about the others, and he has been paying her back at half the rate of the protection men because he cannot bring himself to ask her for mercy on a debt that was actually kind."
+     "text": "Agasha Yui lent him money once, before she knew about the others. He pays her back at half the rate he pays the protection men."
     },
     {
      "name": "Nobunari",
      "gender": "male",
      "association": "Brotherhood of Shinsei",
-     "text": "Nobunari taught him to meditate in the monastery gardens, and Sanpei still cannot sit through a single full breath without his hands finding work to do."
+     "text": "Nobunari taught him to meditate in the monastery gardens. Sanpei has never sat through a full breath."
     }
    ],
    "parent_opinion": {
@@ -115,7 +115,7 @@
    "heritage_sub": null,
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Sanpei drowns in the harbor while trying to retrieve a ledger that washed overboard from a protection man's boat, because he miscalculated which debt was more urgent to hide."
+   "death": "Sanpei drowns in the harbor going after a ledger that washed overboard from a protection man's boat."
   },
   "starting_item": "Bisentō",
   "campaign": "Slow Tide Harbor",
@@ -265,13 +265,13 @@
    },
    "step10": {
     "answers": {
-     "difficulty": "Every ship that docks in Slow Tide Harbor, Sanpei finds work watching the cargo or the crew, and every few weeks a man he doesn't recognize hands him a bill for protection money owed, which he pays in full and on time because the alternative is that they'll come to Nagiko with what they know."
+     "difficulty": "Whenever a ship docks in Slow Tide Harbor Sanpei finds work watching the cargo or the crew, and every few weeks a man he does not recognize hands him a bill for protection money, which he pays in full and on time, because otherwise they go to Nagiko."
     },
     "picks": {}
    },
    "step11": {
     "answers": {
-     "calms": "He sits alone in the dockside tea houses after closing and argues with the owner about the bill until they laugh and comp him a cup, which he could never afford to simply order."
+     "calms": "He sits in the dockside tea houses after closing and argues with the owner about the bill until they laugh and pour him a cup he could not have paid for."
     },
     "picks": {}
    },
@@ -296,13 +296,13 @@
    },
    "step15": {
     "answers": {
-     "stress": "When his composure breaks, Sanpei starts cleaning—scrubbing the magistrate's desk with his sleeve, rewinding the scroll racks, arranging the writing implements in order of size—and he will not stop until someone orders him to or the room is immaculate enough that no one could reasonably find fault."
+     "stress": "When his composure breaks, Sanpei cleans—the magistrate's desk with his sleeve, the scroll racks, the writing implements set out by size—until someone orders him to stop."
     },
     "picks": {}
    },
    "step16": {
     "answers": {
-     "relations": "Agasha Yui (Dragon) — Agasha Yui lent him money once, before she knew about the others, and he has been paying her back at half the rate of the protection men because he cannot bring himself to ask her for mercy on a debt that was actually kind.\nNobunari (Brotherhood of Shinsei) — Nobunari taught him to meditate in the monastery gardens, and Sanpei still cannot sit through a single full breath without his hands finding work to do."
+     "relations": "Agasha Yui (Dragon) — Agasha Yui lent him money once, before she knew about the others. He pays her back at half the rate he pays the protection men.\nNobunari (Brotherhood of Shinsei) — Nobunari taught him to meditate in the monastery gardens. Sanpei has never sat through a full breath."
     },
     "picks": {}
    },
@@ -324,7 +324,7 @@
    },
    "step20": {
     "answers": {
-     "death": "Sanpei drowns in the harbor while trying to retrieve a ledger that washed overboard from a protection man's boat, because he miscalculated which debt was more urgent to hide."
+     "death": "Sanpei drowns in the harbor going after a ledger that washed overboard from a protection man's boat."
     },
     "picks": {}
    }

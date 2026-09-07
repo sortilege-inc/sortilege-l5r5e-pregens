@@ -42,7 +42,7 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "She follows the Kitsuki method so precisely that other clans' magistrates treat her findings as foreign law rather than evidence, which means she files everything anyway and lets the Emerald Champion decide what Rokugan believes.",
+     "clan_relations": "She follows the Kitsuki method so precisely that other clans' magistrates treat her findings as foreign law. She files everything anyway and lets the Emerald Champion decide what Rokugan believes.",
      "path": "A"
     },
     "picks": {}
@@ -68,7 +68,7 @@
    },
    "step11": {
     "answers": {
-     "calms": "She spreads the contents of a new province's archives across a table—ledgers, letters, permits, the mundane things no one else thinks to read—and begins the work of making its contradictions visible, her pen marking what does not fit, and for those hours nothing requires her to speak to anyone at all."
+     "calms": "She spreads a new province's archives across a table—ledgers, letters, permits—and marks what does not fit. For those hours nothing requires her to speak to anyone."
     },
     "picks": {}
    },
@@ -80,7 +80,7 @@
    },
    "step13": {
     "answers": {
-     "most_learn": "Tonbo Satoshi — Tonbo Satoshi taught her the Kitsuki method by example in the archives at Tonbo Castle, drilling her on contradictions in old records until she could spot a forged seal by the angle of the brush stroke, but he never taught her to want people to admit what she had proven, and now she mistakes her own certainty for their confession."
+     "most_learn": "Tonbo Satoshi — Tonbo Satoshi taught her the Kitsuki method in the archives at Tonbo Castle, drilling her on contradictions in old records until she could spot a forged seal by the angle of the brush stroke. He did not teach her what to do when the proven refuse to confess."
     },
     "picks": {}
    },
@@ -93,13 +93,13 @@
    },
    "step15": {
     "answers": {
-     "stress": "When someone contradicts evidence she has documented, she stops talking mid-word and begins rewriting her notes from the beginning, crossing out what she has already written, her jaw clenched so hard the tendons show in her neck."
+     "stress": "When someone contradicts evidence she has documented, she stops talking mid-word and rewrites her notes from the beginning, crossing out what she has already written."
     },
     "picks": {}
    },
    "step16": {
     "answers": {
-     "relations": "Yuifum (Scholar of al-Zawira Tradition) — Nagiko once asked Yuifum to verify the authenticity of a merchant's ledger written in foreign script, and Yuifum spotted the forgery in minutes while she had spent two days on it, which she has never mentioned to him.\nSeppun Atsumori (Imperial) — Seppun Atsumori signs off on her investigations without reading them, which means she files them anyway, which means the Emperor's household knows things about provincial magistrates that the provincial magistrates do not know she has told them."
+     "relations": "Yuifum (Scholar of al-Zawira Tradition) — Nagiko once asked Yuifum to verify a merchant's ledger written in a foreign script. He found the forgery in minutes; she had spent two days on it.\nSeppun Atsumori (Imperial) — Seppun Atsumori signs off on her investigations without reading them. She files them anyway, so the Emperor's household holds reports on provincial magistrates that those magistrates have never seen."
     },
     "picks": {}
    },
@@ -120,7 +120,7 @@
    },
    "step20": {
     "answers": {
-     "death": "She bleeds out in an archive basement after being stabbed by someone whose ledger she was about to prove falsified, alone except for the stacks, still trying to catalog which records the killer disturbed before she lost consciousness."
+     "death": "She bleeds out in an archive basement, stabbed by someone whose ledger she was about to prove falsified, still noting which records the killer disturbed."
     },
     "picks": {}
    }

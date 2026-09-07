@@ -14,7 +14,7 @@
  },
  "mode": "core",
  "portrait": "src/portraits/shosuro-hisano.webp",
- "concept": "Hisano's hands move while they listen—not fidgeting, but the precise small adjustments a puppeteer makes, testing invisible strings, and they do not seem aware they are doing it.",
+ "concept": "Hisano's hands move while they listen, small adjustments like a puppeteer's, testing strings that are not there.",
  "summary": null,
  "notes": "",
  "twenty_questions": {
@@ -23,21 +23,21 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "Hisano has played the same role in the same production for so long that they practice the understudy's lines in empty dressing rooms, uncertain whether they are preparing to step aside or simply afraid to stop.",
+     "stand_out": "Hisano has played the same role for so long that they practice the understudy's lines alone in the dressing room.",
      "ring": "fire"
     },
     "picks": {}
    },
    "step5": {
     "answers": {
-     "social_giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to Shosuro Masuko, their Scorpion handler, which means they cannot afford to miss a performance or be seen conferring with anyone the theatre company would recognize.",
+     "social_giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to Shosuro Masuko, their Scorpion handler. They cannot miss a performance, and cannot be seen conferring with anyone the company would recognize.",
      "lord_name": "Shosuro Masuko"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Hisano wants to direct a new production with actors other than themself, but every time they miss a performance to scout talent or develop a script, the theatre company loses money and their handlers grow impatient about the intelligence gap."
+     "social_ninjo": "Hisano wants to direct a new production with other actors in it. Every performance they miss to scout talent costs the company money and costs Masuko a night's intelligence."
     },
     "picks": {}
    },
@@ -56,13 +56,13 @@
    },
    "step9": {
     "answers": {
-     "success": "Hisano kept the lead role and took the director's chair when the theatre company's patron fell ill and they stepped in to finish staging the new production he had commissioned, and no one in the audience that opening night realized the masked actor and the figure moving in the wings were the same person."
+     "success": "When the company's patron fell ill, Hisano kept the lead and finished staging the new production he had commissioned. No one in the audience on opening night knew the masked actor and the figure in the wings were the same person."
     },
     "picks": {}
    },
    "step10": {
     "answers": {
-     "difficulty": "Every time Hisano books a scouting trip to look at new actors, the theatre company's box office drops and their handlers send a terse message about the intelligence gap they're leaving behind."
+     "difficulty": "Every time Hisano books a scouting trip to look at new actors, the company's box office drops and Masuko sends a terse message."
     },
     "picks": {}
    },
@@ -86,26 +86,26 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "Hisano's hands move while they listen—not fidgeting, but the precise small adjustments a puppeteer makes, testing invisible strings, and they do not seem aware they are doing it.",
+     "first_sight": "Hisano's hands move while they listen, small adjustments like a puppeteer's, testing strings that are not there.",
      "accoutrement": "Cracked mask. Gold in the seams."
     },
     "picks": {}
    },
    "step15": {
     "answers": {
-     "stress": "When Hisano's composure cracks, they begin speaking their lines—not from the role they're famous for, but from understudy parts they've memorized in empty dressing rooms, cycling through the words like prayer or inventory, which makes it impossible to tell whether they're steadying themselves or auditioning for a life they'll never live."
+     "stress": "When Hisano's composure cracks, they recite understudy parts they have memorized in empty dressing rooms, until the scene is finished."
     },
     "picks": {}
    },
    "step16": {
     "answers": {
-     "relations": "Shika Umi (Deer) — Shika Umi once paid for Hisano's entire run of a new production after the theatre company's patron withdrew his support, and Hisano has spent five years trying to find a way to repay her without admitting they cannot afford to.\nKasuga Tomomasa (Tortoise) — Kasuga Tomomasa sat in the front row for the opening night of Hisano's masked drama and did not return for a second viewing, though Hisano's handlers noted he attended three other productions at the theatre that season, which means he was there to see Hisano and decided once was enough."
+     "relations": "Shika Umi (Deer) — Shika Umi once paid for Hisano's entire run of a new production after the theatre company's patron withdrew his support, and Hisano has spent five years trying to find a way to repay her without admitting they cannot afford to.\nKasuga Tomomasa (Tortoise) — Kasuga Tomomasa sat in the front row on the opening night of Hisano's masked drama and did not come back, though he attended three other productions at the theatre that season."
     },
     "picks": {}
    },
    "step17": {
     "answers": {
-     "parents_pov": "Hisano's mother stopped attending performances after the third year, claiming the role never changed, though she still reads the programmes and has not mentioned to anyone that her child's stage name now appears in venues their handlers would never approve of."
+     "parents_pov": "Hisano's mother stopped attending after the third year, saying the role never changed. She still reads the programmes."
     },
     "picks": {}
    },
@@ -180,8 +180,8 @@
     "honor": 30,
     "glory": 37,
     "status": 35,
-    "ninjo": "Hisano wants to direct a new production with actors other than themself, but every time they miss a performance to scout talent or develop a script, the theatre company loses money and their handlers grow impatient about the intelligence gap.",
-    "giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to Shosuro Masuko, their Scorpion handler, which means they cannot afford to miss a performance or be seen conferring with anyone the theatre company would recognize.",
+    "ninjo": "Hisano wants to direct a new production with other actors in it. Every performance they miss to scout talent costs the company money and costs Masuko a night's intelligence.",
+    "giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to Shosuro Masuko, their Scorpion handler. They cannot miss a performance, and cannot be seen conferring with anyone the company would recognize.",
     "bushido_tenets": {
      "paramount": "Duty and Loyalty",
      "less_significant": "Honor"

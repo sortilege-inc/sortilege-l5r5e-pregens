@@ -93,7 +93,7 @@
     "path": "B",
     "granted": "Jurōjin’s Curse",
     "skill": "government",
-    "text": "",
+    "text": "Moshi Kuniko taught Shuichi how the Centipede file a petition so that it is granted before anyone reads it. She was ill through every lesson, and by the end of the winter so was he.",
     "gender": "female",
     "association": "Centipede"
    },
@@ -256,7 +256,7 @@
    },
    "step13": {
     "answers": {
-     "most_learn": "Moshi Kuniko"
+     "most_learn": "Moshi Kuniko — Moshi Kuniko taught Shuichi how the Centipede file a petition so that it is granted before anyone reads it. She was ill through every lesson, and by the end of the winter so was he."
     },
     "picks": {}
    },

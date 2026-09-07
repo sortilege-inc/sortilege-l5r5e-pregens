@@ -14,7 +14,7 @@
  },
  "mode": "core",
  "portrait": "src/portraits/kuni-ryosei.webp",
- "concept": "Her fingernails are worn flat on one side from years of scraping dried components off cataloging surfaces, and she does not file them even.",
+ "concept": "Her fingernails are worn flat on one side from years of scraping dried components off cataloging surfaces.",
  "summary": null,
  "notes": "",
  "twenty_questions": {
@@ -23,7 +23,7 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "During her final examination at the dōjō, she sat across from her instructor in absolute silence for two hours, watching him perform a warding ritual, and when he asked her what she had learned, she described not the words or gestures but the precise moment when his concentration shifted — and was right.",
+     "stand_out": "At her final examination she sat across from her instructor in silence for two hours while he performed a warding ritual. Asked what she had learned, she named the moment his concentration shifted. She was right.",
      "ring": "void"
     },
     "picks": {}
@@ -37,7 +37,7 @@
    },
    "step6": {
     "answers": {
-     "social_ninjo": "She wants to build a ward that holds against mahō itself rather than merely containing it, and she has already sketched the framework using principles the Kuni would call heresy if they knew how far she had taken them."
+     "social_ninjo": "She wants to build a ward that holds against mahō itself. She has already sketched the framework on principles the Kuni would call heresy."
     },
     "picks": {}
    },
@@ -69,13 +69,13 @@
    },
    "step11": {
     "answers": {
-     "calms": "She sits in the confiscation archive after the magistrate has left, a cup of last year's Kuni sake warming in her hands, reading the notes on components she has already memorized—not for the work, but because the repetition settles the wanting down to a hum she can live with."
+     "calms": "She sits in the confiscation archive after Nagiko has left, a cup of last year's Kuni sake in her hands, rereading notes on components she has already memorized."
     },
     "picks": {}
    },
    "step12": {
     "answers": {
-     "worries": "She sketched a ward that should hold against mahō itself, showed it to Nagiko because protocol demanded it, and watched his face close the moment he understood what she had actually built."
+     "worries": "She sketched a ward that should hold against mahō itself, showed it to Nagiko because protocol demanded it, and watched her face close when she understood what it was."
     },
     "picks": {}
    },
@@ -87,7 +87,7 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "Her fingernails are worn flat on one side from years of scraping dried components off cataloging surfaces, and she does not file them even.",
+     "first_sight": "Her fingernails are worn flat on one side from years of scraping dried components off cataloging surfaces.",
      "accoutrement": "Leather glove. Right hand, palm patched with canvas."
     },
     "picks": {}
@@ -100,7 +100,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Iuchi Okura (Unicorn) — Iuchi Okura taught her a Unicorn binding technique for containing volatile components, and now Ryōsei uses it on every catalog she prepares, which means every confiscation she handles carries a foreign mark that could get her examined if anyone looked closely enough."
+     "relations": "Iuchi Okura (Unicorn) — Iuchi Okura taught her a Unicorn binding technique for volatile components, and Ryōsei uses it on every catalog she prepares. Every confiscation she handles carries a foreign mark."
     },
     "picks": {}
    },
@@ -181,7 +181,7 @@
     "honor": 45,
     "glory": 40,
     "status": 30,
-    "ninjo": "She wants to build a ward that holds against mahō itself rather than merely containing it, and she has already sketched the framework using principles the Kuni would call heresy if they knew how far she had taken them.",
+    "ninjo": "She wants to build a ward that holds against mahō itself. She has already sketched the framework on principles the Kuni would call heresy.",
     "giri": "Ryōsei serves Kuni Isei, who has placed her as yoriki under the Emerald Magistrate Kitsuki Nagiko; she catalogs the ritual components confiscated from mahō-tsukai cells, cross-referencing their uses against Kuni doctrine so that none are ever used twice.",
     "bushido_tenets": {
      "paramount": "Courage",

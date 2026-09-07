@@ -201,6 +201,13 @@
    "one weapon of rarity 7 or lower": [
     "Bō"
    ]
+  },
+  "pec_subjects": {
+   "passionfor": {
+    "name": "Passion for",
+    "subject": "Cartography",
+    "who": ""
+   }
   }
  },
  "twenty_questions": {
@@ -432,7 +439,8 @@
      "name": "Addiction"
     },
     {
-     "name": "Passion for"
+     "name": "Passion for Cartography",
+     "subject": "Cartography"
     }
    ],
    "titles": [],
