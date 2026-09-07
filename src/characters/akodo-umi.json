@@ -59,8 +59,8 @@
    "skill": null
   },
   "answers": {
-   "giri": "Akodo Umi must discover how the previous commander of the War College died, because her lord Akodo Tsanuri has forbidden anyone from telling her.",
-   "ninjo": "Umi needs to know what her predecessor did in the winter of 820, and cannot ask the one person who would tell her.",
+   "giri": "Akodo Umi runs the War College's morning drills for its commander, Akodo Tsanuri, and he has ordered her to open the Military Library to the magistrate's party and answer whatever they ask about 820.",
+   "ninjo": "Umi wants to know how the last commander of the War College died. Tsanuri has forbidden anyone to tell her, and she has never once asked him why.",
    "standout_quality": "Umi gives clear, immediate orders in the field because she has learned not to hesitate on decisions she does not fully understand, and her uncertainty never reaches her voice.",
    "accomplishment": "She broke up a knife fight between two senior students in the library stacks without drawing her own blade, using nothing but her voice and the threat of reporting them both to Tsanuri.",
    "challenge": "When Shosuro Amane or another spirit-touched presence moves through the War College library during her investigation, Umi corrects a student's grip while the air around her warps with something none of the archivists can name, and she notices nothing at all.",
@@ -139,10 +139,10 @@
     "Umi gives clear, immediate orders in the field because she has learned not to hesitate on decisions she does not fully understand, and her uncertainty never reaches her voice."
    ],
    "giri": [
-    "Akodo Umi must discover how the previous commander of the War College died, because her lord Akodo Tsanuri has forbidden anyone from telling her."
+    "Akodo Umi runs the War College's morning drills for its commander, Akodo Tsanuri, and he has ordered her to open the Military Library to the magistrate's party and answer whatever they ask about 820."
    ],
    "ninjo": [
-    "Umi needs to know what her predecessor did in the winter of 820, and cannot ask the one person who would tell her."
+    "Umi wants to know how the last commander of the War College died. Tsanuri has forbidden anyone to tell her, and she has never once asked him why."
    ],
    "clan_relationship": [
     "Umi leads the War College's morning drills with the same precision she brings to everything else, but when Akodo Tsanuri appears at the practice ground she stops mid-correction of a junior student's stance, unable to ask him directly why the previous commander's death remains forbidden knowledge."
@@ -196,14 +196,14 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Akodo Umi must discover how the previous commander of the War College died, because her lord Akodo Tsanuri has forbidden anyone from telling her.",
+     "social_giri": "Akodo Umi runs the War College's morning drills for its commander, Akodo Tsanuri, and he has ordered her to open the Military Library to the magistrate's party and answer whatever they ask about 820.",
      "lord_name": "Akodo Tsanuri"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Umi needs to know what her predecessor did in the winter of 820, and cannot ask the one person who would tell her."
+     "social_ninjo": "Umi wants to know how the last commander of the War College died. Tsanuri has forbidden anyone to tell her, and she has never once asked him why."
     },
     "picks": {}
    },
@@ -354,8 +354,8 @@
     "honor": 57,
     "glory": 47,
     "status": 35,
-    "ninjo": "Umi needs to know what her predecessor did in the winter of 820, and cannot ask the one person who would tell her.",
-    "giri": "Akodo Umi must discover how the previous commander of the War College died, because her lord Akodo Tsanuri has forbidden anyone from telling her.",
+    "ninjo": "Umi wants to know how the last commander of the War College died. Tsanuri has forbidden anyone to tell her, and she has never once asked him why.",
+    "giri": "Akodo Umi runs the War College's morning drills for its commander, Akodo Tsanuri, and he has ordered her to open the Military Library to the magistrate's party and answer whatever they ask about 820.",
     "bushido_tenets": {
      "paramount": "Sincerity",
      "less_significant": "Compassion"
