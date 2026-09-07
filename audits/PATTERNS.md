@@ -186,3 +186,28 @@ the "rather than…" comparison tail, the aphorism.
 **What passes:** a person, a concrete act, a place, a time. "Kaiu Jirôzaemon draws the Wall's weak
 points on paper from the reports Rikona brings back, and pours for her at the stone table when she is
 done." Short sentences are allowed. A fact can stand without a clause explaining what it means.
+
+## Mask of the Oni — how it closed (2026-09-07)
+
+**The owner edits by cutting.** Every rewrite that survived a second look was the first half of what
+I wrote: "cut everything after 'said no'", "the whole last half is slop", "cut the rest". Write the
+fact, stop. If a sentence has a second half that explains, contrasts or forecasts, delete it before
+sending.
+
+**"Give the want a face" is a rule about content, not a licence for a clause.** Yoshiteru's ninjō
+lost its third sentence naming the Moto; the face can live elsewhere in the record.
+
+**Consolidation ran 5 of 6.** Adventure NPCs taken as PC contacts: Riko (mentor), Tsubasa, Nagahide,
+Ippei, Machiko shared between two PCs. The one refusal kept an invented Kaiu because the owner
+preferred a separate person — offer the merge, don't assume it.
+
+**A cross-clan "mercy" can be the lord's real motive.** Yasu's posting to the Wall became Shingorô's
+way of putting distance between her curse and her family; the ninjō then inverts (she wants the curse
+to fall here and be done). Owner-authored; worth reaching for when a posting has no stated reason.
+
+**Portrait contradictions: minimal fix.** "Adjust the text as minimally as possible to not be
+contradicted by the image" — not a rewrite around the picture.
+
+**Two false commits.** An apply script asserted on a phrase that lived in two places and aborted;
+I committed twice on the pipeline's PASS with messages claiming edits that had not landed. Gate the
+commit on the specific check (a grep count), never on PASS alone.
