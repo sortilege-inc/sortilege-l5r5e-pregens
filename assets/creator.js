@@ -356,48 +356,46 @@
     return (PEC_USED[uuid] || []).filter(function (u) { return !u.draft; }).length;
   }
 
-  /* COVERAGE_BIAS, one level up. While anything in the pool is untaken the
-     roll stays among the untaken — that is the strongest coverage move and
-     what this always did. Once every entry on offer has been taken at least
-     once, a uniform roll starts putting a third and fourth copy on entries
-     that already have three while others sit at one, so the bias moves to the
-     group: the ring whose entries carry the fewest takers each, and then the
-     least-taken entries within it.
+  /* COVERAGE_BIAS as loaded dice, not as a filter. Every entry the question
+     allows stays reachable — this only changes the odds. Two levels,
+     multiplied:
 
-     Mean rather than total, because the rings are not the same size — Air
-     holds more adversities than Void, and a total would make the small ring
-     look neglected for ever. */
-  function preferLeastUsed(pool) {
-    if (!COVERAGE_BIAS) return pool;
-    var free = pool.filter(function (x) { return !timesTaken(x.uuid); });
-    if (free.length) return free;
-    var ring = function (x) { return String(x.ring || "-").toLowerCase(); };
-    var sum = {}, n = {};
+       the entry  1/(1+n)^2 on the number of promoted characters carrying it,
+                  so an untaken entry is 4x as likely as one held once and 9x
+                  as likely as one held twice
+       the group  the same curve on the mean for its kind, which only bites
+                  where a question offers more than one kind — question 13's
+                  mentor grant is a distinction or a passion, and its path B
+                  an adversity or an anxiety
+
+     What this replaced filtered instead: the roll could only land on the
+     least-used entries and everything above that minimum was unreachable,
+     which is not what "prefer" should mean here. */
+  function pecDecay(n) { return 1 / ((1 + n) * (1 + n)); }
+
+  function rollLeastUsed(pool) {
+    if (!COVERAGE_BIAS || pool.length < 2) return pool[randomBelow(pool.length)];
+    var sum = {}, count = {};
     pool.forEach(function (x) {
-      var r = ring(x);
-      sum[r] = (sum[r] || 0) + timesTaken(x.uuid);
-      n[r] = (n[r] || 0) + 1;
+      var k = x.kind || "-";
+      sum[k] = (sum[k] || 0) + timesTaken(x.uuid);
+      count[k] = (count[k] || 0) + 1;
     });
-    var mean = {}, lowest = Infinity;
-    Object.keys(sum).forEach(function (r) {
-      mean[r] = sum[r] / n[r];
-      if (mean[r] < lowest) lowest = mean[r];
+    var weight = pool.map(function (x) {
+      var k = x.kind || "-";
+      return pecDecay(timesTaken(x.uuid)) * pecDecay(sum[k] / count[k]);
     });
-    var group = pool.filter(function (x) { return mean[ring(x)] === lowest; });
-    var least = Math.min.apply(null, group.map(function (x) {
-      return timesTaken(x.uuid);
-    }));
-    return group.filter(function (x) { return timesTaken(x.uuid) === least; });
-  }
-
-  /* A heritage entry a promoted character took. The heritage feed records who
-     took what but not whether they are a draft, so the slug is checked against
-     the archive rather than trusted. */
-  function heritageTakenByPromoted(tableKey, name) {
-    var who = HERITAGE_USED[tableKey + "::" + name] || [];
-    if (!who.length) return false;
-    var promoted = promotedSlugs();
-    return who.some(function (u) { return promoted[u.slug]; });
+    var total = weight.reduce(function (a, b) { return a + b; }, 0);
+    if (!(total > 0)) return pool[randomBelow(pool.length)];
+    // randomBelow is the unbiased source and wants an integer, so the draw is
+    // over a fine grid rather than Math.random()
+    var GRID = 1000000;
+    var r = randomBelow(GRID) / GRID * total;
+    for (var i = 0; i < weight.length; i++) {
+      r -= weight[i];
+      if (r < 0) return pool[i];
+    }
+    return pool[pool.length - 1];
   }
 
   // what the last biased heritage roll skipped, for the line under the button
@@ -3610,11 +3608,9 @@
         return pecStatus(e, kinds, get()).state !== "no";
       });
       if (!pool.length) return;
-      // COVERAGE_BIAS: prefer what no promoted character already carries,
-      // and once they all carry something, the least-carried ring's least-
-      // carried entries
-      var from = preferLeastUsed(pool);
-      var e = from[randomBelow(from.length)];
+      // COVERAGE_BIAS: loaded towards what the archive has fewest of, by
+      // entry and by kind — never restricted to it
+      var e = rollLeastUsed(pool);
       set(e.name);
       open[e.uuid] = true;
       draw();
