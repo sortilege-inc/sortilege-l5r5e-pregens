@@ -102,7 +102,7 @@
     },
     {
      "name": "Sango",
-     "gender": "male",
+     "gender": "female",
      "association": "Mantis",
      "text": "Sango of the Mantis runs the docks where Yoshimoto's reports to Otosan Uchi arrive by courier boat, and he has learned to time his questions about the Unicorn's shipping movements to the moment when she is too busy to lie about what she knows."
     }
@@ -404,9 +404,6 @@
    "bonds": [],
    "signature_scrolls": [],
    "gear": [
-    {
-     "name": "Lacquered Armor"
-    },
     {
      "name": "Lacquered Armor"
     },

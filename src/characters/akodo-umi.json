@@ -70,7 +70,7 @@
    "past": "",
    "known_for": "",
    "known_skill": null,
-   "lord_name": "Akodo Yoshisada",
+   "lord_name": "Akodo Tsanuri",
    "lord_gender": "male",
    "prized_possession": "",
    "group_history": "",
@@ -96,7 +96,7 @@
    "people": [
     {
      "name": "Isawa Hachizuke",
-     "gender": "male",
+     "gender": "female",
      "association": "Phoenix",
      "text": "Isawa Hachizuke, a Phoenix scholar of the spirit-touched, visited the War College three years ago to study the archives of the winter of 820, and Umi gave her access to records she now suspects Tsanuri did not know had been shown."
     }
@@ -197,7 +197,7 @@
    "step5": {
     "answers": {
      "social_giri": "Akodo Umi must discover how the previous commander of the War College died, because her lord Akodo Tsanuri has forbidden anyone from telling her.",
-     "lord_name": "Akodo Yoshisada"
+     "lord_name": "Akodo Tsanuri"
     },
     "picks": {}
    },
