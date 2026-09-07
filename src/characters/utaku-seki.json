@@ -55,6 +55,11 @@
     "name": "Karmic Tie",
     "subject": "Togashi Kagehisa",
     "who": "the Dragon who visited her in the Scorpion cells and left a jade token"
+   },
+   "blissfulbetrothal": {
+    "name": "Blissful Betrothal",
+    "subject": "Tetsu",
+    "who": "her husband, an ashigaru with the Lion levies in the west"
    }
   },
   "bushido": {
@@ -97,7 +102,7 @@
    },
    "first_impression": "Seki's water never moves the way she intends it to—the forms are exact, but the element will not answer her body, and anyone watching her drill can see the moment she stops expecting it to.",
    "stress_reaction": "She stops answering questions mid-report, finishing only the parts the commander has explicitly asked for, leaving the rest suspended until Tama prompts her again.",
-   "relationships": "Togashi Kagehisa (Dragon) — Togashi Kagehisa visited her in the Scorpion cells once, asked her nothing, left a jade token that meant something to the Dragon and nothing to the guards, and she has never told the Utaku commander he was there.\nUtaku Jinzaburo (Unicorn) — Utaku Jinzaburo taught Seki which Scorpion guards could be read by their breathing and which could not, during a single afternoon in the cells before she understood he was teaching her to survive, and she has never asked him whether the Utaku commander knows he visits prisoners.",
+   "relationships": "Togashi Kagehisa (Dragon) — Togashi Kagehisa visited her in the Scorpion cells once, asked her nothing, left a jade token that meant something to the Dragon and nothing to the guards, and she has never told the Utaku commander he was there.\nUtaku Jinzaburo (Unicorn) — Utaku Jinzaburo taught Seki which Scorpion guards could be read by their breathing and which could not, during a single afternoon in the cells before she understood he was teaching her to survive, and she has never asked him whether the Utaku commander knows he visits prisoners.\nTetsu (ashigaru) — Seki's husband marched with the Lion levies to the western front the spring after her release; his letters reach her through the Utaku commander's office.\nShosuro Aishi (Scorpion) — Seki has never met Aishi, and knows the name from the cells, where the guards said it the way soldiers say a general's.",
    "people": [
     {
      "name": "Togashi Kagehisa",
@@ -110,6 +115,18 @@
      "gender": "male",
      "association": "Unicorn",
      "text": "Utaku Jinzaburo taught Seki which Scorpion guards could be read by their breathing and which could not, during a single afternoon in the cells before she understood he was teaching her to survive, and she has never asked him whether the Utaku commander knows he visits prisoners."
+    },
+    {
+     "name": "Tetsu",
+     "gender": "male",
+     "association": "ashigaru",
+     "text": "Seki's husband marched with the Lion levies to the western front the spring after her release; his letters reach her through the Utaku commander's office."
+    },
+    {
+     "name": "Shosuro Aishi",
+     "gender": "female",
+     "association": "Scorpion",
+     "text": "Seki has never met Aishi, and knows the name from the cells, where the guards said it the way soldiers say a general's."
     }
    ],
    "parent_opinion": {
@@ -277,7 +294,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Togashi Kagehisa (Dragon) — Togashi Kagehisa visited her in the Scorpion cells once, asked her nothing, left a jade token that meant something to the Dragon and nothing to the guards, and she has never told the Utaku commander he was there.\nUtaku Jinzaburo (Unicorn) — Utaku Jinzaburo taught Seki which Scorpion guards could be read by their breathing and which could not, during a single afternoon in the cells before she understood he was teaching her to survive, and she has never asked him whether the Utaku commander knows he visits prisoners."
+     "relations": "Togashi Kagehisa (Dragon) — Togashi Kagehisa visited her in the Scorpion cells once, asked her nothing, left a jade token that meant something to the Dragon and nothing to the guards, and she has never told the Utaku commander he was there.\nUtaku Jinzaburo (Unicorn) — Utaku Jinzaburo taught Seki which Scorpion guards could be read by their breathing and which could not, during a single afternoon in the cells before she understood he was teaching her to survive, and she has never asked him whether the Utaku commander knows he visits prisoners.\nTetsu (ashigaru) — Seki's husband marched with the Lion levies to the western front the spring after her release; his letters reach her through the Utaku commander's office.\nShosuro Aishi (Scorpion) — Seki has never met Aishi, and knows the name from the cells, where the guards said it the way soldiers say a general's."
     },
     "picks": {}
    },

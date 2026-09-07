@@ -65,7 +65,7 @@
    "accomplishment": "Yoshimoto found the poacher's camp in the high grasslands where three search parties had passed through blind, and brought back not the man's head but his confession—which the daimyō needed more than a corpse to settle the matter quietly with the family whose lands the poacher had crossed.",
    "challenge": "Yoshimoto was sent to question a farmer's children about the poacher and got nothing; the youngest hid behind the well until he rode off.",
    "peace": "In the pre-dawn hours at the Castle's practice grounds, Yoshimoto runs a young horse through the set patterns his own mount refuses, and for the first time that week his shoulders drop below his ears.",
-   "fear": "At the Castle library Yoshimoto catches himself lingering over the magistrate's clerk's hands as she turns the archive pages, and realizes she has noticed, and cannot stop himself from meeting her eye when she looks up.",
+   "fear": "At his first inquest as magistrate Yoshimoto watched the clerk's hands instead of the witness, and had the testimony read back to him twice.",
    "accoutrement": "Magistrate's token. Worn on his mare's bridle.",
    "past": "",
    "known_for": "",
@@ -161,7 +161,7 @@
     "In the pre-dawn hours at the Castle's practice grounds, Yoshimoto runs a young horse through the set patterns his own mount refuses, and for the first time that week his shoulders drop below his ears."
    ],
    "fear": [
-    "At the Castle library Yoshimoto catches himself lingering over the magistrate's clerk's hands as she turns the archive pages, and realizes she has noticed, and cannot stop himself from meeting her eye when she looks up."
+    "At his first inquest as magistrate Yoshimoto watched the clerk's hands instead of the witness, and had the testimony read back to him twice."
    ],
    "mentor_relationship": [
     "Ikoma Aiya taught Yoshimoto to read a room's currents by reading hers first—what she wanted, what she feared, which silences meant she was calculating—but now at the Castle he finds himself using those same eyes on everyone else and cannot stop, which means he cannot trust what he sees."
@@ -246,7 +246,7 @@
    },
    "step12": {
     "answers": {
-     "worries": "At the Castle library Yoshimoto catches himself lingering over the magistrate's clerk's hands as she turns the archive pages, and realizes she has noticed, and cannot stop himself from meeting her eye when she looks up."
+     "worries": "At his first inquest as magistrate Yoshimoto watched the clerk's hands instead of the witness, and had the testimony read back to him twice."
     },
     "picks": {}
    },
