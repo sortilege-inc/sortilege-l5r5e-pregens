@@ -50,7 +50,13 @@
   "anxieties": [
    "Painful Honesty"
   ],
-  "pec_subjects": {},
+  "pec_subjects": {
+   "karmictie": {
+    "name": "Karmic Tie",
+    "subject": "Togashi Kagehisa",
+    "who": "the Dragon who visited her in the Scorpion cells and left a jade token"
+   }
+  },
   "bushido": {
    "paramount": "Compassion",
    "lesser": "Courtesy",
@@ -399,7 +405,7 @@
      "name": "Blissful Betrothal"
     },
     {
-     "name": "Karmic Tie"
+     "name": "Karmic Tie (Togashi Kagehisa)"
     }
    ],
    "titles": [],
@@ -416,10 +422,10 @@
      "name": "Ceremonial Clothes"
     },
     {
-     "name": "daishō (katana or scimitar, wakizashi)",
-     "custom": true,
-     "text": "From the Utaku Battle Maiden starting outfit",
-     "held": false
+     "name": "Scimitar"
+    },
+    {
+     "name": "Wakizashi"
     },
     {
      "name": "Yari"

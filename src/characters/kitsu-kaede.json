@@ -65,7 +65,7 @@
    "skill": null
   },
   "answers": {
-   "giri": "Kaede reports directly to the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
+   "giri": "Kaede reports directly to Kitsu Murashige, the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
    "ninjo": "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint.",
    "standout_quality": "Kaede stations herself in the infirmary gallery overlooking the training grounds, watching soldiers drill below while she prepares medicines, and can name each injury before the man who bears it limps through the door.",
    "accomplishment": "She convinced a Scorpion contact to delay a poison shipment by three days so the War College could requisition the antidote plants before they vanished from the market, and the soldiers who would have died in the next skirmish lived instead.",
@@ -151,7 +151,7 @@
     "Kaede stations herself in the infirmary gallery overlooking the training grounds, watching soldiers drill below while she prepares medicines, and can name each injury before the man who bears it limps through the door."
    ],
    "giri": [
-    "Kaede reports directly to the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts."
+    "Kaede reports directly to Kitsu Murashige, the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts."
    ],
    "ninjo": [
     "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint."
@@ -209,7 +209,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Kaede reports directly to the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
+     "social_giri": "Kaede reports directly to Kitsu Murashige, the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
      "lord_name": "Kitsu Murashige"
     },
     "picks": {}
@@ -364,7 +364,7 @@
     "glory": 45,
     "status": 35,
     "ninjo": "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint.",
-    "giri": "Kaede reports directly to the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
+    "giri": "Kaede reports directly to Kitsu Murashige, the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
     "bushido_tenets": {
      "paramount": "Compassion",
      "less_significant": "Duty and Loyalty"

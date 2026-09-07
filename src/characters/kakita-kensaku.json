@@ -60,7 +60,7 @@
    "skill": null
   },
   "answers": {
-   "giri": "Kensaku reports to the Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+   "giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
    "ninjo": "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it.",
    "standout_quality": "Kensaku has learned to read a workshop's temperament by how the smiths treat their tools and each other, a skill that makes him useful during his visits to repair blades but leaves him uncertain whether he belongs to any forge at all.",
    "accomplishment": "He trained the Master of the Forges' hunting hawks to accept handling only from him, so that when the old man's hands began to fail, Kensaku could work the birds without being asked or refused.",
@@ -147,7 +147,7 @@
     "Kensaku has learned to read a workshop's temperament by how the smiths treat their tools and each other, a skill that makes him useful during his visits to repair blades but leaves him uncertain whether he belongs to any forge at all."
    ],
    "giri": [
-    "Kensaku reports to the Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it."
+    "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it."
    ],
    "ninjo": [
     "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it."
@@ -205,7 +205,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Kensaku reports to the Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+     "social_giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
      "lord_name": "Kakita Namika"
     },
     "picks": {}
@@ -364,7 +364,7 @@
     "glory": 39,
     "status": 35,
     "ninjo": "Kensaku suspects that a blade in the Lion armory was forged by a Scorpion smith, and knows that certifying it as sound could mean a Lion warrior carries an enemy's work into battle—but that denouncing it without proof would dishonor both the blade's maker and the forge that received it.",
-    "giri": "Kensaku reports to the Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+    "giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
     "bushido_tenets": {
      "paramount": "Courtesy",
      "less_significant": "Courage"
@@ -437,10 +437,9 @@
      "name": "Traveling pack"
     },
     {
-     "name": "an attendant or Rokugani pony",
+     "name": "Rokugani pony",
      "custom": true,
-     "text": "From the Kakita Swordsmith starting outfit",
-     "held": false
+     "text": "From the Kakita Swordsmith starting outfit"
     },
     {
      "name": "He wears a leather wristband tooled with the names of every blade he has ever certified, and refuses to add the Scorpion work until he is certain.",

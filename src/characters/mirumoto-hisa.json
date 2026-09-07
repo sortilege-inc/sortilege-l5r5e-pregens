@@ -418,10 +418,10 @@
      "name": "Ashigaru Armor"
     },
     {
-     "name": "daishō (katana and wakizashi) or wakizashi (short sword) and any two weapons of rarity 6 or lower",
-     "custom": true,
-     "text": "From the Mirumoto Two-Heavens Adept starting outfit",
-     "held": false
+     "name": "Katana"
+    },
+    {
+     "name": "Wakizashi"
     },
     {
      "name": "Traveling pack"

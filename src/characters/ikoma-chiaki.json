@@ -416,25 +416,21 @@
      "name": "Katar (Punch Dagger)"
     },
     {
-     "name": "ashigaru armor or ceremonial clothes",
-     "custom": true,
-     "text": "From the Ikoma Shadow starting outfit",
-     "held": false
+     "name": "Ashigaru Armor"
     },
     {
-     "name": "daishō or wakizashi and kamayari",
-     "custom": true,
-     "text": "From the Ikoma Shadow starting outfit",
-     "held": false
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Kamayari"
     },
     {
      "name": "Yumi"
     },
     {
-     "name": "any one musical instrument or book of poetry",
+     "name": "Book of poetry",
      "custom": true,
-     "text": "From the Ikoma Shadow starting outfit",
-     "held": false
+     "text": "From the Ikoma Shadow starting outfit"
     },
     {
      "name": "Traveling pack"

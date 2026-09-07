@@ -411,10 +411,10 @@
      "name": "Ceremonial Clothes"
     },
     {
-     "name": "daishō (katana or scimitar, wakizashi)",
-     "custom": true,
-     "text": "From the Shinjo Mounted Archer starting outfit",
-     "held": false
+     "name": "Scimitar"
+    },
+    {
+     "name": "Wakizashi"
     },
     {
      "name": "Shinjo horsebow",
@@ -436,10 +436,9 @@
      "name": "Bowyer’s Kit"
     },
     {
-     "name": "Shinjo courser or Unicorn warhorse",
+     "name": "Shinjo courser",
      "custom": true,
-     "text": "From the Shinjo Mounted Archer starting outfit",
-     "held": false
+     "text": "From the Shinjo Mounted Archer starting outfit"
     },
     {
      "name": "His mare wears a magistrate's token on her bridle—the lacquer chipped where she scraped the stable doorway that morning, and Yoshimoto has not had it repaired.",

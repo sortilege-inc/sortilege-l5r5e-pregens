@@ -64,7 +64,7 @@
    "skill": null
   },
   "answers": {
-   "giri": "Ujitsuna reports to the Miya Daimyo that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible.",
+   "giri": "Ujitsuna reports to the Miya daimyō, Miya Miné, that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible.",
    "ninjo": "Ujitsuna wants the historical record to matter more than the harmony of the clans, and fears that when her report reaches the Throne, everyone will choose the lie.",
    "standout_quality": "Ujitsuna maps the discrepancies between the Ikoma records and the Akodo archives without flinching, while her instructors argue about which version the Throne should believe.",
    "accomplishment": "Ujitsuna cross-referenced the Ikoma account of Snow Plain against the Akodo military dispatches without telling either archive what the other claimed, and neither historian has yet realized she knows where their stories diverge.",
@@ -156,7 +156,7 @@
     "Ujitsuna maps the discrepancies between the Ikoma records and the Akodo archives without flinching, while her instructors argue about which version the Throne should believe."
    ],
    "giri": [
-    "Ujitsuna reports to the Miya Daimyo that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible."
+    "Ujitsuna reports to the Miya daimyō, Miya Miné, that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible."
    ],
    "ninjo": [
     "Ujitsuna wants the historical record to matter more than the harmony of the clans, and fears that when her report reaches the Throne, everyone will choose the lie."
@@ -213,7 +213,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Ujitsuna reports to the Miya Daimyo that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible.",
+     "social_giri": "Ujitsuna reports to the Miya daimyō, Miya Miné, that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible.",
      "lord_name": "Miya Miné"
     },
     "picks": {}
@@ -375,7 +375,7 @@
     "glory": 54,
     "status": 40,
     "ninjo": "Ujitsuna wants the historical record to matter more than the harmony of the clans, and fears that when her report reaches the Throne, everyone will choose the lie.",
-    "giri": "Ujitsuna reports to the Miya Daimyo that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible.",
+    "giri": "Ujitsuna reports to the Miya daimyō, Miya Miné, that the Ikoma archives contain deliberate omissions about the Battle of Snow Plain, and must decide whether to name the Lion historian responsible.",
     "bushido_tenets": {
      "paramount": "Courtesy",
      "less_significant": "Sincerity"
@@ -465,10 +465,9 @@
      "text": "From the Miya Cartographer starting outfit"
     },
     {
-     "name": "an attendant (see page 64 of the core rulebook) or Rokugani pony (see page 326 of the core rulebook)",
+     "name": "Attendant: Chaaya",
      "custom": true,
-     "text": "From the Miya Cartographer starting outfit",
-     "held": false
+     "text": "Her attendant is Chaaya, the scribe who reads her dictations back word for word — from the Miya Cartographer starting outfit."
     },
     {
      "name": "She keeps a leather map case scarred and re-stitched so many times that Otomo Hisayo laughed and said it looked like a battlefield itself, and Ujitsuna did not correct her.",
