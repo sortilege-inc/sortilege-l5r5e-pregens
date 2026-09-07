@@ -66,7 +66,7 @@
   },
   "answers": {
    "giri": "Kaede reports directly to Kitsu Murashige, the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
-   "ninjo": "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint.",
+   "ninjo": "Soshi Hayami has offered to cover the infirmary's whole shortfall off the books, at the price of Kaede's silence about what the Scorpion ask inside the fortress and her hands when they need them, and Kaede wants it badly enough that she has not yet said no.",
    "standout_quality": "Kaede stations herself in the infirmary gallery overlooking the training grounds, watching soldiers drill below while she prepares medicines, and can name each injury before the man who bears it limps through the door.",
    "accomplishment": "She convinced a Scorpion contact to delay a poison shipment by three days so the War College could requisition the antidote plants before they vanished from the market, and the soldiers who would have died in the next skirmish lived instead.",
    "challenge": "When the War College's official requisitions fail and soldiers arrive bleeding, Kaede must choose between the infirmary's empty shelves and the Scorpion agents who will extract a price she cannot name to her superiors.",
@@ -154,7 +154,7 @@
     "Kaede reports directly to Kitsu Murashige, the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts."
    ],
    "ninjo": [
-    "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint."
+    "Soshi Hayami has offered to cover the infirmary's whole shortfall off the books, at the price of Kaede's silence about what the Scorpion ask inside the fortress and her hands when they need them, and Kaede wants it badly enough that she has not yet said no."
    ],
    "clan_relationship": [
     "Kaede keeps the infirmary stocked by brewing medicines the War College officially forbids—poisons extracted from the same plants as the healers' antidotes—and trades them quietly to the Scorpion agents who pass through the fortress, which means she is betraying the Lion every time she saves a Lion soldier's life."
@@ -216,7 +216,7 @@
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint."
+     "social_ninjo": "Soshi Hayami has offered to cover the infirmary's whole shortfall off the books, at the price of Kaede's silence about what the Scorpion ask inside the fortress and her hands when they need them, and Kaede wants it badly enough that she has not yet said no."
     },
     "picks": {}
    },
@@ -363,7 +363,7 @@
     "honor": 57,
     "glory": 45,
     "status": 35,
-    "ninjo": "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint.",
+    "ninjo": "Soshi Hayami has offered to cover the infirmary's whole shortfall off the books, at the price of Kaede's silence about what the Scorpion ask inside the fortress and her hands when they need them, and Kaede wants it badly enough that she has not yet said no.",
     "giri": "Kaede reports directly to Kitsu Murashige, the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
     "bushido_tenets": {
      "paramount": "Compassion",
