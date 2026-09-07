@@ -200,7 +200,9 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "# Clan Relationship: Doji\n\nYou find yourself drawn to a distant Doji cousin whose genuine warmth makes the performance exhausting rather than natural, and you must choose whether the Crane's demand for perfect grace permits you to lower your mask, even fractionally, with one of your own blood."
+     "clan_relations": "# Clan Relationship: Doji\n\nYou find yourself drawn to a distant Doji cousin whose genuine warmth makes the performance exhausting rather than natural, and you must choose whether the Crane's demand for perfect grace permits you to lower your mask, even fractionally, with one of your own blood.",
+     "path": "B",
+     "skill": "skulduggery"
     },
     "picks": {}
    },

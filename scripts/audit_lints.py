@@ -61,7 +61,8 @@ def main(camp):
             if p.get("gender") == "female" and mm and not f:
                 warns.append(f"{n}: {p['name']} marked female; line uses only he/him")
         for g in t.get("gear") or []:
-            if g.get("held") is False:
+            if g.get("held") is False and not str(g.get("text") or "").startswith("lost"):
+                # held:false with a "lost —" text is a heritage heirloom, not an open outfit line
                 blocks.append(f"{n}: outfit either-or unsettled: {g['name'][:60]!r}")
             if g.get("text") == "The accoutrement named at question 14":
                 warns.append(f"{n}: accoutrement in the old shape ({len(g['name'].split())} words as the title)")

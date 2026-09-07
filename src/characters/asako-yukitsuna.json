@@ -61,18 +61,18 @@
    "skill": "survival"
   },
   "answers": {
-   "giri": "Asako Yukitsuna serves Asako Satoru, the Phoenix's chief inquisitor, and must report what she finds at Shiro Hiruma even if it implicates someone she traveled with to get there.",
+   "giri": "Asako Yukitsuna serves Asako Satoru of the Inquisitors, and must report what she finds where the Taint has been at work even when it implicates someone she travelled with to find it.",
    "ninjo": "Yukitsuna wants to believe the people she travels with are good, and stops asking hard questions when they give her reason to.",
    "standout_quality": "Yukitsuna reads the currents in a room the way others read a text, and will pivot mid-sentence if she notices the mood shift beneath someone's words.",
    "accomplishment": "She convinced a merchant caravan fleeing the Shadowlands approach to shelter a Hiruma widow and her children at Shiro Kaiu, though three families in the caravan had already refused them.",
-   "challenge": "During the climb up to Shiro Hiruma, Yukitsuna falls behind the others on the steeper passages, breathing hard while they move steadily on, and she will not ask them to slow down.",
-   "peace": "Yukitsuna spreads the maps Sokori stole across the castle floor and traces the Hiruma's retreat path in charcoal, checking Keiji's notations against the Asako archives she carried up the mountain, and finds the moment when Masami chose to stop running.",
-   "fear": "She stops asking Keiji about the maps the moment he offers an explanation, then spends the climb to Shiro Hiruma certain she's missed something and too impatient to go back and verify it.",
-   "accoutrement": "A charcoal stick worn down to a stub and kept in the breast fold of her kimono, its end stained darker than the rest.",
+   "challenge": "On the Inquisitors' winter circuit through the Dragon foothills Yukitsuna fell behind on the steep passages, breathing hard while the others moved steadily on, and she did not ask them to slow down; the report of that circuit is the only one she has ever filed late.",
+   "peace": "Yukitsuna spreads a case's papers across the archive floor and traces the order of events in charcoal, checking each witness against the Asako records, and finds the moment when someone chose to stop telling the truth.",
+   "fear": "She stops asking the moment a suspect offers an explanation, then spends the ride home certain she has missed something and too impatient to turn back and verify it.",
+   "accoutrement": "Charcoal stub. Kept in the breast fold.",
    "past": "",
    "known_for": "",
    "known_skill": null,
-   "lord_name": "Asako Tamaki",
+   "lord_name": "Asako Satoru",
    "lord_gender": "female",
    "prized_possession": "",
    "group_history": "",
@@ -94,7 +94,7 @@
    },
    "first_impression": "Yukitsuna stops mid-stride on steep ground, breathing audibly while the rest keep pace, and does not ask them to wait.",
    "stress_reaction": "Yukitsuna stops filing her reports and starts cross-referencing them instead, pulling apart what she wrote to find the contradiction she is certain is there, and becomes unreachable until she locates it or admits she was wrong.",
-   "relationships": "Hiroaki (Fortunist Monk Order) — Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.\nMirumoto Gina (Dragon) — Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the climb to Shiro Hiruma easier and made it impossible to admit she was struggling.",
+   "relationships": "Hiroaki (Fortunist Monk Order) — Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.\nMirumoto Gina (Dragon) — Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the mountain circuits shorter and made it impossible to admit she was struggling.",
    "people": [
     {
      "name": "Hiroaki",
@@ -106,7 +106,7 @@
      "name": "Mirumoto Gina",
      "gender": "female",
      "association": "Dragon",
-     "text": "Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the climb to Shiro Hiruma easier and made it impossible to admit she was struggling."
+     "text": "Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the mountain circuits shorter and made it impossible to admit she was struggling."
     }
    ],
    "parent_opinion": {
@@ -118,7 +118,8 @@
    "heritage_sub": "1-3 — Gain +1 ^\"Aesthetics\"",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Yukitsuna will die at her desk in the Phoenix archives, mid-sentence in a report, because she finally found the contradiction she was looking for and did not survive the moment of understanding that she had decided not to see it the first time."
+   "death": "Yukitsuna will die at her desk in the Phoenix archives, mid-sentence in a report, because she finally found the contradiction she was looking for and did not survive the moment of understanding that she had decided not to see it the first time.",
+   "accoutrement_name": "Charcoal stub"
   },
   "starting_item": "Nodachi",
   "campaign": "Mask of the Oni",
@@ -181,6 +182,12 @@
    "death": [
     "Yukitsuna will die at her desk in the Phoenix archives, mid-sentence in a report, because she finally found the contradiction she was looking for and did not survive the moment of understanding that she had decided not to see it the first time."
    ]
+  },
+  "outfit_choices": {
+   "daishō (any one sword of rarity 7 or lower and wakizashi)": [
+    "Nodachi",
+    "Wakizashi"
+   ]
   }
  },
  "twenty_questions": {
@@ -196,8 +203,8 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Asako Yukitsuna serves Asako Satoru, the Phoenix's chief inquisitor, and must report what she finds at Shiro Hiruma even if it implicates someone she traveled with to get there.",
-     "lord_name": "Asako Tamaki"
+     "social_giri": "Asako Yukitsuna serves Asako Satoru of the Inquisitors, and must report what she finds where the Taint has been at work even when it implicates someone she travelled with to find it.",
+     "lord_name": "Asako Satoru"
     },
     "picks": {}
    },
@@ -230,19 +237,19 @@
    },
    "step10": {
     "answers": {
-     "difficulty": "During the climb up to Shiro Hiruma, Yukitsuna falls behind the others on the steeper passages, breathing hard while they move steadily on, and she will not ask them to slow down."
+     "difficulty": "On the Inquisitors' winter circuit through the Dragon foothills Yukitsuna fell behind on the steep passages, breathing hard while the others moved steadily on, and she did not ask them to slow down; the report of that circuit is the only one she has ever filed late."
     },
     "picks": {}
    },
    "step11": {
     "answers": {
-     "calms": "Yukitsuna spreads the maps Sokori stole across the castle floor and traces the Hiruma's retreat path in charcoal, checking Keiji's notations against the Asako archives she carried up the mountain, and finds the moment when Masami chose to stop running."
+     "calms": "Yukitsuna spreads a case's papers across the archive floor and traces the order of events in charcoal, checking each witness against the Asako records, and finds the moment when someone chose to stop telling the truth."
     },
     "picks": {}
    },
    "step12": {
     "answers": {
-     "worries": "She stops asking Keiji about the maps the moment he offers an explanation, then spends the climb to Shiro Hiruma certain she's missed something and too impatient to go back and verify it."
+     "worries": "She stops asking the moment a suspect offers an explanation, then spends the ride home certain she has missed something and too impatient to turn back and verify it."
     },
     "picks": {}
    },
@@ -255,7 +262,7 @@
    "step14": {
     "answers": {
      "first_sight": "Yukitsuna stops mid-stride on steep ground, breathing audibly while the rest keep pace, and does not ask them to wait.",
-     "accoutrement": "A charcoal stick worn down to a stub and kept in the breast fold of her kimono, its end stained darker than the rest."
+     "accoutrement": "Charcoal stub. Kept in the breast fold."
     },
     "picks": {}
    },
@@ -267,7 +274,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Hiroaki (Fortunist Monk Order) — Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.\nMirumoto Gina (Dragon) — Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the climb to Shiro Hiruma easier and made it impossible to admit she was struggling."
+     "relations": "Hiroaki (Fortunist Monk Order) — Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.\nMirumoto Gina (Dragon) — Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the mountain circuits shorter and made it impossible to admit she was struggling."
     },
     "picks": {}
    },
@@ -351,7 +358,7 @@
     "glory": 45,
     "status": 30,
     "ninjo": "Yukitsuna wants to believe the people she travels with are good, and stops asking hard questions when they give her reason to.",
-    "giri": "Asako Yukitsuna serves Asako Satoru, the Phoenix's chief inquisitor, and must report what she finds at Shiro Hiruma even if it implicates someone she traveled with to get there.",
+    "giri": "Asako Yukitsuna serves Asako Satoru of the Inquisitors, and must report what she finds where the Taint has been at work even when it implicates someone she travelled with to find it.",
     "bushido_tenets": {
      "paramount": "Righteousness",
      "less_significant": "Sincerity"
@@ -411,7 +418,8 @@
    "signature_scrolls": [],
    "gear": [
     {
-     "name": "Nodachi"
+     "name": "Nodachi",
+     "settled_from": "daishō (any one sword of rarity 7 or lower and wakizashi)"
     },
     {
      "name": "Traveling Clothes"
@@ -420,21 +428,20 @@
      "name": "Sanctified Robes"
     },
     {
-     "name": "daishō (any one sword of rarity 7 or lower and wakizashi)",
-     "custom": true,
-     "text": "From the Asako Inquisitor starting outfit",
-     "held": false
-    },
-    {
      "name": "Scroll satchel"
     },
     {
      "name": "Traveling pack"
     },
     {
-     "name": "A charcoal stick worn down to a stub and kept in the breast fold of her kimono, its end stained darker than the rest.",
+     "name": "Charcoal stub",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Charcoal stub. Kept in the breast fold.",
+     "accoutrement": true
+    },
+    {
+     "name": "Wakizashi",
+     "settled_from": "daishō (any one sword of rarity 7 or lower and wakizashi)"
     }
    ],
    "advancements": []

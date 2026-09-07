@@ -60,18 +60,18 @@
    "skill": "labor"
   },
   "answers": {
-   "giri": "Anzu reports to Kaiu Haruka, the Wall's chief engineer, and must certify which sections can hold before Haruka decides whether to abandon them—a judgment Anzu makes from the stones upward, never looking at what made them weak.",
+   "giri": "Anzu serves Kaiu Haruka and certifies which sections of the Wall can hold before Haruka decides what to reinforce and what to give up—a judgment she makes from the stones upward, never looking at what made them weak.",
    "ninjo": "Anzu wants to walk back through the Wall with a report that the castle can be held, even though the stones will not bear it.",
    "standout_quality": "Anzu can read a ruin's load-bearing bones and predict where it will fail long before the collapse, but she cannot look at what the Shadowlands did to make those bones brittle.",
    "accomplishment": "She identified which sections of the Kaiu Wall could still bear weight by reading the stone itself, never the corruption that weakened it, and Haruka built the defense on her word.",
-   "challenge": "Anzu cannot admit to Haruka that the section she certified is already failing, because admitting it would require her to say she lied about the stones, and Haruka is waiting for her to swear to the report on her way out through the gates.",
+   "challenge": "Anzu has not told Haruka that the section she certified is already failing, because saying so means saying she lied about the stones, and every week Haruka does not ask her to swear to the report the lie costs more to take back.",
    "peace": "Anzu measures the strength of salvaged stone pulled from the lower Wall, running her hands across each piece to map its grain and load before the smiths melt it down, and the ritual of refusing to look at anything but the stone itself settles the constant pull between what she sees and what she says.",
-   "fear": "Anzu certifies sections of the Wall by the strength of their stone alone, and when Haruka asks her to swear to the report before the gates close, she will have to choose between the oath and the lie she already made.",
-   "accoutrement": "She carries a piece of chalk and marks the load-bearing stones as she walks, numbering them in sequence, though the numbers never go past forty-seven.",
+   "fear": "Anzu certifies sections of the Wall by the strength of their stone alone, and fears the day Haruka asks her to swear to a report she has already signed.",
+   "accoutrement": "Chalk. The numbers stop at forty-seven.",
    "past": "",
    "known_for": "",
    "known_skill": null,
-   "lord_name": "Kaiu Yushiro",
+   "lord_name": "Kaiu Haruka",
    "lord_gender": "male",
    "prized_possession": "",
    "group_history": "",
@@ -87,19 +87,19 @@
     "path": "B",
     "granted": "Overconfidence in Toughness",
     "skill": "design",
-    "text": "",
+    "text": "Kaiu Mabuchi taught Anzu that the old Crab fortifications were built to hold and will hold, and that an engineer who doubts the stone has already lost it; Anzu learned to certify from the stone up and to keep her doubts where Mabuchi kept hers.",
     "gender": "female",
     "association": "Crab"
    },
    "first_impression": "Anzu measures everything with her eyes and none of it with her face, which stays as blank as the stones she walks.",
    "stress_reaction": "Anzu stops marking the stones and stands motionless until someone speaks to her directly, which forces her to answer before she can decide what to say.",
-   "relationships": "Hida Tatsukichi (Crab) — Hida Tatsukichi certified the same section of Wall that Anzu did, signed his name to it, and is now somewhere beyond the gates with orders to hold it until the stones fail.",
+   "relationships": "Hida Tatsukichi (Crab) — Hida Tatsukichi certified the same section of Wall that Anzu did, signed his name under hers, and now commands the watch that stands on it.",
    "people": [
     {
      "name": "Hida Tatsukichi",
-     "gender": "female",
+     "gender": "male",
      "association": "Crab",
-     "text": "Hida Tatsukichi certified the same section of Wall that Anzu did, signed his name to it, and is now somewhere beyond the gates with orders to hold it until the stones fail."
+     "text": "Hida Tatsukichi certified the same section of Wall that Anzu did, signed his name under hers, and now commands the watch that stands on it."
     }
    ],
    "parent_opinion": {
@@ -111,7 +111,8 @@
    "heritage_sub": null,
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Anzu will die certifying something as sound when the stones have already failed, and she will know it as it happens."
+   "death": "Anzu will die certifying something as sound when the stones have already failed, and she will know it as it happens.",
+   "accoutrement_name": "Chalk"
   },
   "starting_item": "Saihai",
   "campaign": "Mask of the Oni",
@@ -187,8 +188,8 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Anzu reports to Kaiu Haruka, the Wall's chief engineer, and must certify which sections can hold before Haruka decides whether to abandon them—a judgment Anzu makes from the stones upward, never looking at what made them weak.",
-     "lord_name": "Kaiu Yushiro"
+     "social_giri": "Anzu serves Kaiu Haruka and certifies which sections of the Wall can hold before Haruka decides what to reinforce and what to give up—a judgment she makes from the stones upward, never looking at what made them weak.",
+     "lord_name": "Kaiu Haruka"
     },
     "picks": {}
    },
@@ -221,7 +222,7 @@
    },
    "step10": {
     "answers": {
-     "difficulty": "Anzu cannot admit to Haruka that the section she certified is already failing, because admitting it would require her to say she lied about the stones, and Haruka is waiting for her to swear to the report on her way out through the gates."
+     "difficulty": "Anzu has not told Haruka that the section she certified is already failing, because saying so means saying she lied about the stones, and every week Haruka does not ask her to swear to the report the lie costs more to take back."
     },
     "picks": {}
    },
@@ -233,20 +234,20 @@
    },
    "step12": {
     "answers": {
-     "worries": "Anzu certifies sections of the Wall by the strength of their stone alone, and when Haruka asks her to swear to the report before the gates close, she will have to choose between the oath and the lie she already made."
+     "worries": "Anzu certifies sections of the Wall by the strength of their stone alone, and fears the day Haruka asks her to swear to a report she has already signed."
     },
     "picks": {}
    },
    "step13": {
     "answers": {
-     "most_learn": "Kaiu Mabuchi"
+     "most_learn": "Kaiu Mabuchi — Kaiu Mabuchi taught Anzu that the old Crab fortifications were built to hold and will hold, and that an engineer who doubts the stone has already lost it; Anzu learned to certify from the stone up and to keep her doubts where Mabuchi kept hers."
     },
     "picks": {}
    },
    "step14": {
     "answers": {
      "first_sight": "Anzu measures everything with her eyes and none of it with her face, which stays as blank as the stones she walks.",
-     "accoutrement": "She carries a piece of chalk and marks the load-bearing stones as she walks, numbering them in sequence, though the numbers never go past forty-seven."
+     "accoutrement": "Chalk. The numbers stop at forty-seven."
     },
     "picks": {}
    },
@@ -258,7 +259,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Hida Tatsukichi (Crab) — Hida Tatsukichi certified the same section of Wall that Anzu did, signed his name to it, and is now somewhere beyond the gates with orders to hold it until the stones fail."
+     "relations": "Hida Tatsukichi (Crab) — Hida Tatsukichi certified the same section of Wall that Anzu did, signed his name under hers, and now commands the watch that stands on it."
     },
     "picks": {}
    },
@@ -342,7 +343,7 @@
     "glory": 40,
     "status": 30,
     "ninjo": "Anzu wants to walk back through the Wall with a report that the castle can be held, even though the stones will not bear it.",
-    "giri": "Anzu reports to Kaiu Haruka, the Wall's chief engineer, and must certify which sections can hold before Haruka decides whether to abandon them—a judgment Anzu makes from the stones upward, never looking at what made them weak.",
+    "giri": "Anzu serves Kaiu Haruka and certifies which sections of the Wall can hold before Haruka decides what to reinforce and what to give up—a judgment she makes from the stones upward, never looking at what made them weak.",
     "bushido_tenets": {
      "paramount": "Courage",
      "less_significant": "Courtesy"
@@ -430,9 +431,10 @@
      "name": "Traveling pack"
     },
     {
-     "name": "She carries a piece of chalk and marks the load-bearing stones as she walks, numbering them in sequence, though the numbers never go past forty-seven.",
+     "name": "Chalk",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Chalk. The numbers stop at forty-seven.",
+     "accoutrement": true
     }
    ],
    "advancements": []

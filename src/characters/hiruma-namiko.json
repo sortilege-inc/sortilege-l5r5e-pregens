@@ -61,18 +61,18 @@
    "skill": "survival"
   },
   "answers": {
-   "giri": "Namiko reports daily to Hiruma Kaiten on the state of the castle's approaches and what the scouts have found, though he has not yet asked her to lead an expedition back inside.",
+   "giri": "Namiko reports daily to her lord Hiruma Kaiten on what the scouts have seen of the approaches to Shiro Hiruma, and he has not yet ordered her inside.",
    "ninjo": "Namiko wants to walk inside the castle's walls and see what is still standing there, and she has already turned down two chances to ask Kaiten for the order that would let her go.",
    "standout_quality": "Namiko keeps the expedition's supplies sorted and rotated through the night watches while others sleep, and when asked why she does work no one assigned her, she says the castle will still be there tomorrow.",
-   "accomplishment": "Namiko sorted the expedition's provisions by expiration and weight while Kaiten slept, then when he woke asked him nothing, and he ordered her inside the castle the next morning because he had seen what she already knew.",
+   "accomplishment": "Namiko sorted a forward post's provisions by weight and spoilage while Kaiten slept, asked him nothing when he woke, and he put her on the next run toward the ruin because he had seen what she already knew.",
    "challenge": "Namiko's reports to Kaiten grow shorter each week, because she has started believing that what she failed to notice yesterday she will fail to notice again tomorrow.",
-   "peace": "She lies on the castle's outer wall at midnight with the charts spread beside her and checks each star against the positions she marked the week before, because the heavens have not moved an inch while everything else deteriorates.",
-   "fear": "Namiko marks the same three sections of perimeter chart deteriorating week after week and cannot tell whether the castle is crumbling or she has stopped noticing what changes.",
-   "accoutrement": "She oils the expedition's boot leather every third night and sets the boots in pairs outside each scout's tent, but no one has ever thanked her for it or asked her to stop.",
+   "peace": "She lies on the Wall's parapet at midnight with the charts spread beside her and checks each star against the positions she marked the week before, because the heavens have not moved while everything else falls in.",
+   "fear": "Namiko marks the same three sections of the ruin collapsing week after week on the approach charts and cannot tell whether the castle is crumbling or she has stopped noticing what changes.",
+   "accoutrement": "Tasting bowl. Never her own portion.",
    "past": "",
    "known_for": "",
    "known_skill": null,
-   "lord_name": "Hiruma Kaneie",
+   "lord_name": "Hiruma Kaiten",
    "lord_gender": "male",
    "prized_possession": "",
    "group_history": "",
@@ -81,7 +81,7 @@
    "clan_relationship": {
     "path": "B",
     "skill": "tactics",
-    "text": "Namiko checks the perimeter charts against the previous week's and finds herself marking the same deterioration in the same sections, which means either nothing has changed or she has stopped seeing what is actually there."
+    "text": "Namiko checks the approach charts against the previous week's and finds herself marking the same collapse in the same sections of the ruin, which means either nothing has changed or she has stopped seeing what is there."
    },
    "mentor": {
     "name": "Daidoji Katsuhisa",
@@ -94,7 +94,7 @@
    },
    "first_impression": "When Namiko sits to eat with others, she sets her portion aside and eats theirs first, tasting each one while watching their faces—a scout's habit that makes the other scouts uncomfortable because she never explains it and never seems to taste anything herself.",
    "stress_reaction": "When her reports to Kaiten fall below five sentences, she stops eating altogether until she has watched someone else finish a meal she prepared without falling ill.",
-   "relationships": "Soshi Machi (Scorpion) — Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight.\nKakita Den (Crane) — Namiko trades Kakita Den her scout's observations of the castle's deterioration for his sketches of its original architecture, then spends the next morning comparing what he drew to what still stands, trying to decide whether she is watching it fall or forgetting how to see.",
+   "relationships": "Soshi Machi (Scorpion) — Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight.\nKakita Den (Crane) — Namiko trades Kakita Den her observations of the ruin's collapse for his sketches of Shiro Hiruma as it stood, then spends the next morning comparing what he drew to what the scouts report still standing, trying to decide whether she is watching it fall or forgetting how to see.",
    "people": [
     {
      "name": "Soshi Machi",
@@ -104,9 +104,9 @@
     },
     {
      "name": "Kakita Den",
-     "gender": "female",
+     "gender": "male",
      "association": "Crane",
-     "text": "Namiko trades Kakita Den her scout's observations of the castle's deterioration for his sketches of its original architecture, then spends the next morning comparing what he drew to what still stands, trying to decide whether she is watching it fall or forgetting how to see."
+     "text": "Namiko trades Kakita Den her observations of the ruin's collapse for his sketches of Shiro Hiruma as it stood, then spends the next morning comparing what he drew to what the scouts report still standing, trying to decide whether she is watching it fall or forgetting how to see."
     }
    ],
    "parent_opinion": {
@@ -118,7 +118,8 @@
    "heritage_sub": "1-3 — Fitness",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Namiko dies on the castle wall at dawn, having checked the same three sections of perimeter chart against the stars one final time and found nothing changed, and she does not regret it because she was finally certain she had seen everything there was to see."
+   "death": "Namiko dies on the Wall at dawn, having checked the same three sections of chart against the stars one final time and found nothing changed, and she does not regret it because she was finally certain she had seen everything there was to see.",
+   "accoutrement_name": "Tasting bowl"
   },
   "starting_item": "Shuriken",
   "campaign": "Mask of the Oni",
@@ -190,6 +191,12 @@
    "death": [
     "Namiko dies on the castle wall at dawn, having checked the same three sections of perimeter chart against the stars one final time and found nothing changed, and she does not regret it because she was finally certain she had seen everything there was to see."
    ]
+  },
+  "outfit_choices": {
+   "yari (spear) or yumi (bow) and quiver of arrows": [
+    "Yumi",
+    "Quiver of Arrow"
+   ]
   }
  },
  "twenty_questions": {
@@ -205,8 +212,8 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Namiko reports daily to Hiruma Kaiten on the state of the castle's approaches and what the scouts have found, though he has not yet asked her to lead an expedition back inside.",
-     "lord_name": "Hiruma Kaneie"
+     "social_giri": "Namiko reports daily to her lord Hiruma Kaiten on what the scouts have seen of the approaches to Shiro Hiruma, and he has not yet ordered her inside.",
+     "lord_name": "Hiruma Kaiten"
     },
     "picks": {}
    },
@@ -218,7 +225,9 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "Namiko checks the perimeter charts against the previous week's and finds herself marking the same deterioration in the same sections, which means either nothing has changed or she has stopped seeing what is actually there."
+     "clan_relations": "Namiko checks the approach charts against the previous week's and finds herself marking the same collapse in the same sections of the ruin, which means either nothing has changed or she has stopped seeing what is there.",
+     "path": "B",
+     "skill": "tactics"
     },
     "picks": {}
    },
@@ -231,7 +240,7 @@
    },
    "step9": {
     "answers": {
-     "success": "Namiko sorted the expedition's provisions by expiration and weight while Kaiten slept, then when he woke asked him nothing, and he ordered her inside the castle the next morning because he had seen what she already knew."
+     "success": "Namiko sorted a forward post's provisions by weight and spoilage while Kaiten slept, asked him nothing when he woke, and he put her on the next run toward the ruin because he had seen what she already knew."
     },
     "picks": {}
    },
@@ -243,13 +252,13 @@
    },
    "step11": {
     "answers": {
-     "calms": "She lies on the castle's outer wall at midnight with the charts spread beside her and checks each star against the positions she marked the week before, because the heavens have not moved an inch while everything else deteriorates."
+     "calms": "She lies on the Wall's parapet at midnight with the charts spread beside her and checks each star against the positions she marked the week before, because the heavens have not moved while everything else falls in."
     },
     "picks": {}
    },
    "step12": {
     "answers": {
-     "worries": "Namiko marks the same three sections of perimeter chart deteriorating week after week and cannot tell whether the castle is crumbling or she has stopped noticing what changes."
+     "worries": "Namiko marks the same three sections of the ruin collapsing week after week on the approach charts and cannot tell whether the castle is crumbling or she has stopped noticing what changes."
     },
     "picks": {}
    },
@@ -262,7 +271,7 @@
    "step14": {
     "answers": {
      "first_sight": "When Namiko sits to eat with others, she sets her portion aside and eats theirs first, tasting each one while watching their faces—a scout's habit that makes the other scouts uncomfortable because she never explains it and never seems to taste anything herself.",
-     "accoutrement": "She oils the expedition's boot leather every third night and sets the boots in pairs outside each scout's tent, but no one has ever thanked her for it or asked her to stop."
+     "accoutrement": "Tasting bowl. Never her own portion."
     },
     "picks": {}
    },
@@ -274,7 +283,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Soshi Machi (Scorpion) — Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight.\nKakita Den (Crane) — Namiko trades Kakita Den her scout's observations of the castle's deterioration for his sketches of its original architecture, then spends the next morning comparing what he drew to what still stands, trying to decide whether she is watching it fall or forgetting how to see."
+     "relations": "Soshi Machi (Scorpion) — Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight.\nKakita Den (Crane) — Namiko trades Kakita Den her observations of the ruin's collapse for his sketches of Shiro Hiruma as it stood, then spends the next morning comparing what he drew to what the scouts report still standing, trying to decide whether she is watching it fall or forgetting how to see."
     },
     "picks": {}
    },
@@ -297,7 +306,7 @@
    },
    "step20": {
     "answers": {
-     "death": "Namiko dies on the castle wall at dawn, having checked the same three sections of perimeter chart against the stars one final time and found nothing changed, and she does not regret it because she was finally certain she had seen everything there was to see."
+     "death": "Namiko dies on the Wall at dawn, having checked the same three sections of chart against the stars one final time and found nothing changed, and she does not regret it because she was finally certain she had seen everything there was to see."
     },
     "picks": {}
    }
@@ -358,7 +367,7 @@
     "glory": 39,
     "status": 30,
     "ninjo": "Namiko wants to walk inside the castle's walls and see what is still standing there, and she has already turned down two chances to ask Kaiten for the order that would let her go.",
-    "giri": "Namiko reports daily to Hiruma Kaiten on the state of the castle's approaches and what the scouts have found, though he has not yet asked her to lead an expedition back inside.",
+    "giri": "Namiko reports daily to her lord Hiruma Kaiten on what the scouts have seen of the approaches to Shiro Hiruma, and he has not yet ordered her inside.",
     "bushido_tenets": {
      "paramount": "Courage",
      "less_significant": "Courtesy"
@@ -426,12 +435,6 @@
      "text": "From the Hiruma Scout starting outfit"
     },
     {
-     "name": "yari (spear) or yumi (bow) and quiver of arrows",
-     "custom": true,
-     "text": "From the Hiruma Scout starting outfit",
-     "held": false
-    },
-    {
      "name": "Knife"
     },
     {
@@ -441,9 +444,18 @@
      "name": "Finger of Jade"
     },
     {
-     "name": "She oils the expedition's boot leather every third night and sets the boots in pairs outside each scout's tent, but no one has ever thanked her for it or asked her to stop.",
+     "name": "Tasting bowl",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Tasting bowl. Never her own portion.",
+     "accoutrement": true
+    },
+    {
+     "name": "Yumi",
+     "settled_from": "yari (spear) or yumi (bow) and quiver of arrows"
+    },
+    {
+     "name": "Quiver of Arrow",
+     "settled_from": "yari (spear) or yumi (bow) and quiver of arrows"
     }
    ],
    "advancements": [],

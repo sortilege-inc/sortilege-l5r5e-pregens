@@ -60,14 +60,14 @@
    "skill": "labor"
   },
   "answers": {
-   "giri": "Yogo Yasu serves the Kaiu Wall's chief architect, Kaiu Sozen, and must report monthly on the integrity of the seals that bind the Shadowlands curse within the Yogo family crypts beneath the Wall itself.",
+   "giri": "Yogo Yasu serves Yogo Shingorô, and must report to him monthly on the integrity of the seals that bind the Shadowlands curse within the Yogo family crypts beneath the Wall itself.",
    "ninjo": "Yasu dreams of a family untouched by the curse—a wife, children, a household where she need not fear that love itself will betray them—but she has never asked the senior preservers whether such a thing is possible for a Yogo, and she will not, because she suspects she already knows the answer.",
    "standout_quality": "Yasu spends her free hours in the library asking the senior preservers uncomfortable questions about the limits of their own protections, and she listens more carefully to what they do not answer than to what they do.",
-   "accomplishment": "When Kaiu Sozen asked her to verify the seals beneath the Wall, Yasu spent three months in the crypts reading the original binding-work so carefully that she found the fracture-point the senior preservers had missed, and reported it to Sozen alone before the flaw could widen into catastrophe.",
+   "accomplishment": "When Yogo Shingorô asked her to verify the seals beneath the Wall, Yasu spent three months in the crypts reading the original binding-work so carefully that she found the fracture-point the senior preservers had missed, and reported it to Shingorô alone before the flaw could widen into catastrophe.",
    "challenge": "Yasu can work through her physical exhaustion in the crypts for exactly as long as her body permits, and then she must stop, which means the seals are sometimes only half-checked before she climbs back to daylight.",
    "peace": "Yasu sits in the library among the senior preservers' ledgers, cross-referencing the binding-work against texts they have never asked her to read, finding the small corruptions in their reasoning that none of them will ever know she has found.",
-   "fear": "Every month when she climbs back into the crypts to check the seals, Yasu carries the certainty that this time the fracture will have widened beyond what even three months of careful work could have found, and that Sozen will discover it only after the Shadowlands has already begun pouring through.",
-   "accoutrement": "Yasu keeps a length of silk cord wound around her wrist beneath her sleeve, knotted at seven points, one for each seal she has verified; she adds a new knot after each monthly descent into the crypts, and when a knot frays she retires the cord and begins again.",
+   "fear": "Every month when she climbs back into the crypts to check the seals, Yasu carries the certainty that this time the fracture will have widened beyond what even three months of careful work could have found, and that Shingorô will discover it only after the Shadowlands has already begun pouring through.",
+   "accoutrement": "Knotted silk cord. Seven knots, under the sleeve.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -97,7 +97,7 @@
    "people": [
     {
      "name": "Hida Mayo",
-     "gender": "male",
+     "gender": "female",
      "association": "Crab",
      "text": "Hida Mayo watches Yasu check the same joints in the Wall twice, and does not ask why, because she has learned that the Yogo do not answer questions about what they are afraid of."
     }
@@ -111,7 +111,8 @@
    "heritage_sub": "7-8 — Gain +1 ^\"Games\"",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Yasu will die in the crypts because she miscounts the knots on her cord and descends one month too late, finding the fracture already open."
+   "death": "Yasu will die in the crypts because she miscounts the knots on her cord and descends one month too late, finding the fracture already open.",
+   "accoutrement_name": "Knotted silk cord"
   },
   "starting_item": "Hammer",
   "campaign": "Mask of the Oni",
@@ -189,7 +190,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Yogo Yasu serves the Kaiu Wall's chief architect, Kaiu Sozen, and must report monthly on the integrity of the seals that bind the Shadowlands curse within the Yogo family crypts beneath the Wall itself.",
+     "social_giri": "Yogo Yasu serves Yogo Shingorô, and must report to him monthly on the integrity of the seals that bind the Shadowlands curse within the Yogo family crypts beneath the Wall itself.",
      "lord_name": "Yogo Shingorô"
     },
     "picks": {}
@@ -217,7 +218,7 @@
    },
    "step9": {
     "answers": {
-     "success": "When Kaiu Sozen asked her to verify the seals beneath the Wall, Yasu spent three months in the crypts reading the original binding-work so carefully that she found the fracture-point the senior preservers had missed, and reported it to Sozen alone before the flaw could widen into catastrophe."
+     "success": "When Yogo Shingorô asked her to verify the seals beneath the Wall, Yasu spent three months in the crypts reading the original binding-work so carefully that she found the fracture-point the senior preservers had missed, and reported it to Shingorô alone before the flaw could widen into catastrophe."
     },
     "picks": {}
    },
@@ -235,7 +236,7 @@
    },
    "step12": {
     "answers": {
-     "worries": "Every month when she climbs back into the crypts to check the seals, Yasu carries the certainty that this time the fracture will have widened beyond what even three months of careful work could have found, and that Sozen will discover it only after the Shadowlands has already begun pouring through."
+     "worries": "Every month when she climbs back into the crypts to check the seals, Yasu carries the certainty that this time the fracture will have widened beyond what even three months of careful work could have found, and that Shingorô will discover it only after the Shadowlands has already begun pouring through."
     },
     "picks": {}
    },
@@ -248,7 +249,7 @@
    "step14": {
     "answers": {
      "first_sight": "Yasu's eyes move constantly across surfaces—walls, floor, the joints where stone meets stone—even when someone is speaking directly to her, and it takes her several seconds to redirect her attention to their face.",
-     "accoutrement": "Yasu keeps a length of silk cord wound around her wrist beneath her sleeve, knotted at seven points, one for each seal she has verified; she adds a new knot after each monthly descent into the crypts, and when a knot frays she retires the cord and begins again."
+     "accoutrement": "Knotted silk cord. Seven knots, under the sleeve."
     },
     "picks": {}
    },
@@ -344,7 +345,7 @@
     "glory": 36,
     "status": 35,
     "ninjo": "Yasu dreams of a family untouched by the curse—a wife, children, a household where she need not fear that love itself will betray them—but she has never asked the senior preservers whether such a thing is possible for a Yogo, and she will not, because she suspects she already knows the answer.",
-    "giri": "Yogo Yasu serves the Kaiu Wall's chief architect, Kaiu Sozen, and must report monthly on the integrity of the seals that bind the Shadowlands curse within the Yogo family crypts beneath the Wall itself.",
+    "giri": "Yogo Yasu serves Yogo Shingorô, and must report to him monthly on the integrity of the seals that bind the Shadowlands curse within the Yogo family crypts beneath the Wall itself.",
     "bushido_tenets": {
      "paramount": "Duty and Loyalty",
      "less_significant": "Honor"
@@ -425,9 +426,10 @@
      "name": "Traveling pack"
     },
     {
-     "name": "Yasu keeps a length of silk cord wound around her wrist beneath her sleeve, knotted at seven points, one for each seal she has verified; she adds a new knot after each monthly descent into the crypts, and when a knot frays she retires the cord and begins again.",
+     "name": "Knotted silk cord",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Knotted silk cord. Seven knots, under the sleeve.",
+     "accoutrement": true
     }
    ],
    "advancements": []

@@ -15,6 +15,8 @@ book says it must reach the PCs only through the scroll in the library.
 
 Decisions are numbered for answering by number. Rewrites are full text. "Trade" says what is lost.
 
+**State at 2026-09-07:** approved and applied — D1–D9, D12, D14–D17, D33–D35 (commit below). Under review: D10, D13. Clarifying: D36–D38. Open (not yet answered): D11, D18–D32. D2's mentor text is written for the field's name (Kaiu Mabuchi); D18 would swap it to Riko. D5's Rikona line waits on D13.
+
 ---
 
 ## A. Errors (fix outright unless marked *ask*)
@@ -365,7 +367,7 @@ Yasu's **hammer**. Nothing in any picture contradicts a record except D29/D30.
 
 | PC | line | recommend | why |
 |---|---|---|---|
-| Agasha Kohana | one weapon ≤7 · *and* a stray open "Shinobigatana" | **Shinobigatana** closes the slot; delete the duplicate | the pick was made, the line never closed |
+| Agasha Kohana | one weapon ≤7 | ~~Shinobigatana~~ → **Bō** *(corrected at apply: the open "Shinobigatana" is her Glorious Sacrifice heirloom, marked lost — not an outfit pick; my misread. The slot was truly open; the portrait's staff settles it)* | portrait |
 | Asako Yukitsuna | daishō (any sword ≤7 + wakizashi) · *and* a stray "Nodachi" | **Nodachi + Wakizashi**; delete the duplicate | same |
 | Bayushi Hirofumi | shinobigatana or folding half bow | **shinobigatana** | Deathdealer; no bow in the portrait |
 | Daidoji Emon | yari or naginata | **yari** | portrait |

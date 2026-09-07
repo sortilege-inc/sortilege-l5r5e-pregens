@@ -154,3 +154,12 @@ question. Grep the pack's records for every name in the `.lore`'s background sec
 
 **Non-human PCs (Path of Waves set) have no Q14/accoutrement** — give them the object from their own
 gear (memory stick, journal).
+
+**A record holds its answers twice.** `wizard.answers` and `twenty_questions.steps` (the Foundry-shaped
+export, also public data). Hand edits to the first left the second stale on every Mask of the Oni record —
+the removed GM secret was still in step11. `scripts/sync_step_store.py` now runs in the pipeline; edit
+answers, never the step store.
+
+**`held:false` means two things.** An open outfit line, or a heritage heirloom marked lost ("lost — it
+exists somewhere in the world"). Agasha Kohana's lost shinobigatana read as an open pick in the first
+report; the lint now skips the lost ones.

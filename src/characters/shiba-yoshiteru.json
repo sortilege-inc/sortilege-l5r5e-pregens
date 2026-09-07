@@ -61,11 +61,11 @@
    "giri": "Yoshiteru serves Shiba Tamiko, the daimyō's secondmost advisor on Shadowlands doctrine, and must report to her weekly on threats the Phoenix's shugenja do not see coming—which means telling her when her own priests are wrong.",
    "ninjo": "Yoshiteru cannot look away when a shugenja begins to falter, and has already chosen which ones he will die protecting and which he will watch fail.",
    "standout_quality": "Yoshiteru practices drawing his blade in the courtyard at dusk when no one watches, counting the heartbeats between deciding and the steel clearing the saya, trying to shave them down to nothing.",
-   "accomplishment": "He recognized the tremor in a Phoenician shugenja's voice during a briefing at Shiro Kaiu and reported her advancing exhaustion to Tamiko before the woman collapsed into meditation-sickness, but now he listens to her breathing in the ward and knows he was wrong about which ones could be saved.",
+   "accomplishment": "He recognized the tremor in a Phoenix shugenja's voice during a briefing at Shiro Kaiu and reported her advancing exhaustion to Tamiko before the woman collapsed into meditation-sickness, but now he listens to her breathing in the ward and knows he was wrong about which ones could be saved.",
    "challenge": "He cannot pay court to the shugenja he serves without his sincerity showing through like a crack in lacquer, making them doubt whether his protection comes from duty or from his private arithmetic about their worth.",
    "peace": "Yoshiteru feeds the small grey cat that lives in the Phoenix compound's armory, setting down rice and dried fish while it winds between his boots, the only creature in his household that does not require him to know what he thinks of it.",
-   "fear": "When Yoshiteru reports to Tamiko on a shugenja's fraying concentration, the woman's face goes still in a way that costs him three strife and leaves him certain he has just condemned someone to die by his own hand rather than saved them.",
-   "accoutrement": "The saya of his katana is wrapped in fraying silk cord that he reties every few days, always a fraction tighter, though the blade has never loosened.",
+   "fear": "When Yoshiteru reports to Tamiko on a shugenja's fraying concentration, the woman's face goes still, and he is certain he has just condemned someone to die by his own hand instead of saving them.",
+   "accoutrement": "Saya cord. Retied a fraction tighter.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -101,7 +101,7 @@
     },
     {
      "name": "Moto Sakuro",
-     "gender": "male",
+     "gender": "female",
      "association": "Unicorn",
      "text": "Moto Sakuro of the Unicorn arrived at the Phoenix compound three years ago as part of a trade negotiation, spent a week in the courtyard watching Yoshiteru draw his blade at dusk, and has since written twice asking whether the Phoenix would consider a formal exchange of warriors—which Yoshiteru has not answered, because answering honestly would require admitting that he recognized in her the same fracture between duty and judgment that breaks him."
     }
@@ -115,7 +115,8 @@
    "heritage_sub": "10 — Mahō or ninjutsu",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Yoshiteru dies protecting a shugenja he has already marked for failure, because in the moment the choice arrives he cannot tell the difference between his duty and the thing he wants to believe about himself."
+   "death": "Yoshiteru dies protecting a shugenja he has already marked for failure, because in the moment the choice arrives he cannot tell the difference between his duty and the thing he wants to believe about himself.",
+   "accoutrement_name": "Saya cord"
   },
   "starting_item": "Chokutō",
   "campaign": "Mask of the Oni",
@@ -187,6 +188,11 @@
    "death": [
     "Yoshiteru dies protecting a shugenja he has already marked for failure, because in the moment the choice arrives he cannot tell the difference between his duty and the thing he wants to believe about himself."
    ]
+  },
+  "outfit_choices": {
+   "naginata (polearm) or yari (spear)": [
+    "Naginata"
+   ]
   }
  },
  "twenty_questions": {
@@ -230,7 +236,7 @@
    },
    "step9": {
     "answers": {
-     "success": "He recognized the tremor in a Phoenician shugenja's voice during a briefing at Shiro Kaiu and reported her advancing exhaustion to Tamiko before the woman collapsed into meditation-sickness, but now he listens to her breathing in the ward and knows he was wrong about which ones could be saved."
+     "success": "He recognized the tremor in a Phoenix shugenja's voice during a briefing at Shiro Kaiu and reported her advancing exhaustion to Tamiko before the woman collapsed into meditation-sickness, but now he listens to her breathing in the ward and knows he was wrong about which ones could be saved."
     },
     "picks": {}
    },
@@ -248,7 +254,7 @@
    },
    "step12": {
     "answers": {
-     "worries": "When Yoshiteru reports to Tamiko on a shugenja's fraying concentration, the woman's face goes still in a way that costs him three strife and leaves him certain he has just condemned someone to die by his own hand rather than saved them."
+     "worries": "When Yoshiteru reports to Tamiko on a shugenja's fraying concentration, the woman's face goes still, and he is certain he has just condemned someone to die by his own hand instead of saving them."
     },
     "picks": {}
    },
@@ -261,7 +267,7 @@
    "step14": {
     "answers": {
      "first_sight": "Yoshiteru's eyes move to track a shugenja the moment one enters a room, and do not move away until they leave it.",
-     "accoutrement": "The saya of his katana is wrapped in fraying silk cord that he reties every few days, always a fraction tighter, though the blade has never loosened."
+     "accoutrement": "Saya cord. Retied a fraction tighter."
     },
     "picks": {}
    },
@@ -429,18 +435,17 @@
      "text": "From the Shiba Guardian starting outfit"
     },
     {
-     "name": "naginata (polearm) or yari (spear)",
-     "custom": true,
-     "text": "From the Shiba Guardian starting outfit",
-     "held": false
-    },
-    {
      "name": "Traveling pack"
     },
     {
-     "name": "The saya of his katana is wrapped in fraying silk cord that he reties every few days, always a fraction tighter, though the blade has never loosened.",
+     "name": "Saya cord",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Saya cord. Retied a fraction tighter.",
+     "accoutrement": true
+    },
+    {
+     "name": "Naginata",
+     "settled_from": "naginata (polearm) or yari (spear)"
     }
    ],
    "advancements": []

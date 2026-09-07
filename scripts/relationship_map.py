@@ -404,7 +404,8 @@ def main():
             mine = "pc:" + d["slug"]
             for e in (d["tiers"][-1].get("peculiarities") or []):
                 who = (e.get("subject") or "").strip()
-                if not who:
+                if not who or e["name"].startswith("Affinity with"):
+                    # Affinity with [Animal] names a kind of beast, not a person.
                     continue
                 key = "npc:" + fold(who).replace(" ", "-")
                 n = npcs.setdefault(key, {"id": key, "kind": "npc", "name": who,

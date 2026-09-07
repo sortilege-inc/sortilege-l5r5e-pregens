@@ -44,6 +44,8 @@ PY
 
 # promotions are recorded in the manifest, so they survive a --force re-extract
 python3 scripts/promote.py --apply
+# hand edits land in wizard.answers; the Foundry-shaped step store must follow
+python3 scripts/sync_step_store.py > /dev/null
 
 # build once so derive_tiers has the curriculum table, then reconstruct tiers
 # for characters Foundry only holds at a single point, then build for real

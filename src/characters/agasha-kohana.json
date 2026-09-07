@@ -65,7 +65,7 @@
    "challenge": "Kohana cannot move quickly enough through the Shadowlands to reach safety when her wards fail, and she knows it.",
    "peace": "When Kohana recalculates her jade stores against the month's consumption figures, cross-checking her ledger against the vials ranked on the shelf, the numbers either reconcile or they do not, and for those hours the answer is settled.",
    "fear": "Kohana orders her jade by date and use because if she stops accounting for every vial she will have to admit how fast the Shadowlands is burning through her, and then she cannot pretend the reserves were ever meant to last.",
-   "accoutrement": "She keeps her jade vials in a leather satchel with the month and intended ward marked on each compartment in her own hand, and she repacks it every evening whether the arrangement has changed or not.",
+   "accoutrement": "Vial bandolier. Each slot dated in her hand.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -91,13 +91,13 @@
    },
    "first_impression": "Kohana moves through the garrison on a crutch, the stump of her left leg visible when her robes shift.",
    "stress_reaction": "When her hands shake, Kohana reaches for her jade vials and measures out a dose that is not in her ledger.",
-   "relationships": "Tonbo Katai (Dragonfly) — Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to him that the Shadowlands is not holding still.\nKuni Soichiro (Crab) — Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses.",
+   "relationships": "Tonbo Katai (Dragonfly) — Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to them that the Shadowlands is not holding still.\nKuni Soichiro (Crab) — Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses.",
    "people": [
     {
      "name": "Tonbo Katai",
      "gender": "nonbinary",
      "association": "Dragonfly",
-     "text": "Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to him that the Shadowlands is not holding still."
+     "text": "Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to them that the Shadowlands is not holding still."
     },
     {
      "name": "Kuni Soichiro",
@@ -115,7 +115,8 @@
    "heritage_sub": "1-3 — A weapon",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Kohana dies rationing jade she should have spent weeks ago, her ledger balanced to the vial, the Shadowlands at the door and her crutch propped against the wall because she will not move quickly enough to matter."
+   "death": "Kohana dies rationing jade she should have spent weeks ago, her ledger balanced to the vial, the Shadowlands at the door and her crutch propped against the wall because she will not move quickly enough to matter.",
+   "accoutrement_name": "Vial bandolier"
   },
   "starting_item": "Norimono (Planquin)",
   "campaign": "Mask of the Oni",
@@ -195,6 +196,11 @@
    "death": [
     "Kohana dies rationing jade she should have spent weeks ago, her ledger balanced to the vial, the Shadowlands at the door and her crutch propped against the wall because she will not move quickly enough to matter."
    ]
+  },
+  "outfit_choices": {
+   "one weapon of rarity 7 or lower": [
+    "Bō"
+   ]
   }
  },
  "twenty_questions": {
@@ -268,7 +274,7 @@
    "step14": {
     "answers": {
      "first_sight": "Kohana moves through the garrison on a crutch, the stump of her left leg visible when her robes shift.",
-     "accoutrement": "She keeps her jade vials in a leather satchel with the month and intended ward marked on each compartment in her own hand, and she repacks it every evening whether the arrangement has changed or not."
+     "accoutrement": "Vial bandolier. Each slot dated in her hand."
     },
     "picks": {}
    },
@@ -280,7 +286,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Tonbo Katai (Dragonfly) — Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to him that the Shadowlands is not holding still.\nKuni Soichiro (Crab) — Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses."
+     "relations": "Tonbo Katai (Dragonfly) — Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to them that the Shadowlands is not holding still.\nKuni Soichiro (Crab) — Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses."
     },
     "picks": {}
    },
@@ -446,12 +452,6 @@
      "name": "Traveling Clothes"
     },
     {
-     "name": "one weapon of rarity 7 or lower",
-     "custom": true,
-     "text": "From the Agasha Alchemist starting outfit",
-     "held": false
-    },
-    {
      "name": "blowgun and pouch of darts",
      "custom": true,
      "text": "From the Agasha Alchemist starting outfit"
@@ -478,9 +478,14 @@
      "text": "From the Agasha Alchemist starting outfit"
     },
     {
-     "name": "She keeps her jade vials in a leather satchel with the month and intended ward marked on each compartment in her own hand, and she repacks it every evening whether the arrangement has changed or not.",
+     "name": "Vial bandolier",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Vial bandolier. Each slot dated in her hand.",
+     "accoutrement": true
+    },
+    {
+     "name": "Bō",
+     "settled_from": "one weapon of rarity 7 or lower"
     }
    ],
    "advancements": []

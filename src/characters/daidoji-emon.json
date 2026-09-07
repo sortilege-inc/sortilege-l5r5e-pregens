@@ -15,7 +15,7 @@
  },
  "mode": "core",
  "portrait": "src/portraits/daidoji-emon.webp",
- "concept": "Emon listens to someone describe a fortification and begins nodding along, then stops mid-nod and says \"that's not what the Kaiu survey shows,\" which causes an immediate, visible strain in his face as he realizes he has just contradicted someone of higher rank without being asked.",
+ "concept": "Emon listens to someone describe a fortification and begins nodding along, then stops mid-nod and says \"that's not what the Kaiu survey shows,\" and the strain shows in his face as he realises he has contradicted someone of higher rank without being asked; his right hand stays curled at his side, the fingers slow to open.",
  "summary": null,
  "notes": "",
  "wizard": {
@@ -59,18 +59,18 @@
    "skill": null
   },
   "answers": {
-   "giri": "Emon holds the Kaiu Barrier against the Shadowlands for Daidoji Kenshin, and Kenshin has made it clear that abandoning it without written orders from the Crane Champion would be a dereliction that no amount of tactical sense could excuse.",
-   "ninjo": "Emon rewrites the barrier's defensive maps whenever scouts report new Shadowlands activity, convinced the Kaiu survey was incomplete and that he alone has noticed what everyone else missed.",
+   "giri": "Emon serves Daidoji Kenshin in the Crane detachment lent to the Kaiu Wall, and Kenshin has made it plain that the Crane hold their section until written orders from the Crane Champion say otherwise, whatever the surveys say.",
+   "ninjo": "Emon wants the Kaiu certification proven right in stone—the section Kaiu Anzu signed for holding where her report says it will—because he is the only Crane on the Wall who has read it and believed it, and he has begun to suspect she does not.",
    "standout_quality": "Emon was the only student in the dōjō who had actually read the Kaiu survey of the Shadowlands approaches, and he argued with his instructors about it until they asked him to stop coming to strategy lectures.",
-   "accomplishment": "Emon convinced the Kaiu engineers at the Barrier to redraw their fortifications according to his maps, though they resisted until he brought them the survey that contradicted their own.",
-   "challenge": "He cannot feel the ground shift under his feet until the fortification has already failed, and by then Kenshin's written orders are still weeks away.",
+   "accomplishment": "Emon convinced the Kaiu engineers on the Crane section to redraw a fortification to the survey he carried, though they resisted until he showed them the page that contradicted their own.",
+   "challenge": "At the dōjō Emon's right hand stiffened in the cold and would not close on the spear shaft; he learned to bind the grip and finish the drill, and no instructor was ever told why he was slow to the draw.",
    "peace": "Emon spreads the Kaiu survey across a map table in the dead hours and marks each correction in a different hand—Kenshin's formal script, the engineers' practical shorthand, his own—until the contradictions between them become a kind of argument he can hold in his palms without anyone hearing it.",
-   "fear": "When Emon finally receives word that the Barrier has fallen, he will know that somewhere in the survey's margins or the engineers' corrections or his own careful rewrites, he missed something that mattered, and he will have spent weeks arguing about it while people died.",
-   "accoutrement": "Emon carries the Kaiu survey in a canvas binding that has worn through at the spine, the pages reinforced with strips of silk he has sewn in himself, each patch a different shade depending on what year he added it.",
+   "fear": "Emon fears that somewhere in the survey's margins or the engineers' corrections or his own careful rewrites there is the one line that mattered, and that he will have spent weeks arguing about the rest while people died.",
+   "accoutrement": "Kaiu survey. Spine patched with silk.",
    "past": "",
    "known_for": "",
    "known_skill": null,
-   "lord_name": "Daidoji Watanabe",
+   "lord_name": "Daidoji Kenshin",
    "lord_gender": "male",
    "prized_possession": "",
    "group_history": "",
@@ -79,7 +79,7 @@
    "clan_relationship": {
     "path": "A",
     "skill": null,
-    "text": "Emon defers to Kenshin's orders with perfect courtesy while privately convinced that every strategy Kenshin approves is built on incomplete information."
+    "text": "Emon defers to Kenshin's orders with perfect courtesy while privately convinced that every disposition Kenshin approves is drawn from surveys a season out of date."
    },
    "mentor": {
     "name": "Hida Togai",
@@ -90,19 +90,19 @@
     "gender": "male",
     "association": "Crab"
    },
-   "first_impression": "Emon listens to someone describe a fortification and begins nodding along, then stops mid-nod and says \"that's not what the Kaiu survey shows,\" which causes an immediate, visible strain in his face as he realizes he has just contradicted someone of higher rank without being asked.",
+   "first_impression": "Emon listens to someone describe a fortification and begins nodding along, then stops mid-nod and says \"that's not what the Kaiu survey shows,\" and the strain shows in his face as he realises he has contradicted someone of higher rank without being asked; his right hand stays curled at his side, the fingers slow to open.",
    "stress_reaction": "When someone challenges his maps in front of the engineers, Emon's jaw tightens and he starts speaking faster, layering one correction over another until nobody can follow him, and he knows they can't follow him, and he keeps doing it anyway.",
-   "relationships": "Takuma (Mazoku's Enforcer Tradition) — Takuma runs the Mazoku's Enforcer house in the province, and Emon brings him the Kaiu survey to check against—not to ask permission, but to prove that someone else has read it carefully enough to catch what Kenshin and the engineers will not.\nAsahina Kano (Crane) — Asahina Kano sends Emon letters asking for his assessment of the Barrier's approaches, then does not act on them, and Emon keeps writing back because it is the only time anyone from the Crane mainland asks him to think out loud.",
+   "relationships": "Takuma (Mazoku's Enforcer Tradition) — Takuma runs the Mazoku's Enforcer house in the province, and Emon brings him the Kaiu survey to check against—not for permission, but to prove that someone else has read it carefully enough to catch what Kenshin and the engineers will not.\nAsahina Kano (Crane) — Asahina Kano sends Emon letters asking for his assessment of the Barrier's approaches, then does not act on them, and Emon keeps writing back because it is the only time anyone from the Crane mainland asks him to think out loud.",
    "people": [
     {
      "name": "Takuma",
-     "gender": "female",
+     "gender": "male",
      "association": "Mazoku's Enforcer Tradition",
-     "text": "Takuma runs the Mazoku's Enforcer house in the province, and Emon brings him the Kaiu survey to check against—not to ask permission, but to prove that someone else has read it carefully enough to catch what Kenshin and the engineers will not."
+     "text": "Takuma runs the Mazoku's Enforcer house in the province, and Emon brings him the Kaiu survey to check against—not for permission, but to prove that someone else has read it carefully enough to catch what Kenshin and the engineers will not."
     },
     {
      "name": "Asahina Kano",
-     "gender": "female",
+     "gender": "male",
      "association": "Crane",
      "text": "Asahina Kano sends Emon letters asking for his assessment of the Barrier's approaches, then does not act on them, and Emon keeps writing back because it is the only time anyone from the Crane mainland asks him to think out loud."
     }
@@ -116,7 +116,8 @@
    "heritage_sub": null,
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Emon dies holding a section of the Barrier that his maps said was sound, realizing as the stone cracks that he has been reading the Kaiu survey upside-down for three weeks."
+   "death": "Emon dies holding a section of the Barrier that his maps said was sound, realizing as the stone cracks that he has been reading the Kaiu survey upside-down for three weeks.",
+   "accoutrement_name": "Kaiu survey"
   },
   "starting_item": "Traveling Rations",
   "campaign": "Mask of the Oni",
@@ -186,6 +187,11 @@
    "death": [
     "Emon dies holding a section of the Barrier that his maps said was sound, realizing as the stone cracks that he has been reading the Kaiu survey upside-down for three weeks."
    ]
+  },
+  "outfit_choices": {
+   "yari (spear) or naginata (polearm)": [
+    "Yari"
+   ]
   }
  },
  "twenty_questions": {
@@ -201,20 +207,20 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Emon holds the Kaiu Barrier against the Shadowlands for Daidoji Kenshin, and Kenshin has made it clear that abandoning it without written orders from the Crane Champion would be a dereliction that no amount of tactical sense could excuse.",
-     "lord_name": "Daidoji Watanabe"
+     "social_giri": "Emon serves Daidoji Kenshin in the Crane detachment lent to the Kaiu Wall, and Kenshin has made it plain that the Crane hold their section until written orders from the Crane Champion say otherwise, whatever the surveys say.",
+     "lord_name": "Daidoji Kenshin"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Emon rewrites the barrier's defensive maps whenever scouts report new Shadowlands activity, convinced the Kaiu survey was incomplete and that he alone has noticed what everyone else missed."
+     "social_ninjo": "Emon wants the Kaiu certification proven right in stone—the section Kaiu Anzu signed for holding where her report says it will—because he is the only Crane on the Wall who has read it and believed it, and he has begun to suspect she does not."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "clan_relations": "Emon defers to Kenshin's orders with perfect courtesy while privately convinced that every strategy Kenshin approves is built on incomplete information.",
+     "clan_relations": "Emon defers to Kenshin's orders with perfect courtesy while privately convinced that every disposition Kenshin approves is drawn from surveys a season out of date.",
      "path": "A"
     },
     "picks": {}
@@ -228,13 +234,13 @@
    },
    "step9": {
     "answers": {
-     "success": "Emon convinced the Kaiu engineers at the Barrier to redraw their fortifications according to his maps, though they resisted until he brought them the survey that contradicted their own."
+     "success": "Emon convinced the Kaiu engineers on the Crane section to redraw a fortification to the survey he carried, though they resisted until he showed them the page that contradicted their own."
     },
     "picks": {}
    },
    "step10": {
     "answers": {
-     "difficulty": "He cannot feel the ground shift under his feet until the fortification has already failed, and by then Kenshin's written orders are still weeks away."
+     "difficulty": "At the dōjō Emon's right hand stiffened in the cold and would not close on the spear shaft; he learned to bind the grip and finish the drill, and no instructor was ever told why he was slow to the draw."
     },
     "picks": {}
    },
@@ -246,7 +252,7 @@
    },
    "step12": {
     "answers": {
-     "worries": "When Emon finally receives word that the Barrier has fallen, he will know that somewhere in the survey's margins or the engineers' corrections or his own careful rewrites, he missed something that mattered, and he will have spent weeks arguing about it while people died."
+     "worries": "Emon fears that somewhere in the survey's margins or the engineers' corrections or his own careful rewrites there is the one line that mattered, and that he will have spent weeks arguing about the rest while people died."
     },
     "picks": {}
    },
@@ -258,8 +264,8 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "Emon listens to someone describe a fortification and begins nodding along, then stops mid-nod and says \"that's not what the Kaiu survey shows,\" which causes an immediate, visible strain in his face as he realizes he has just contradicted someone of higher rank without being asked.",
-     "accoutrement": "Emon carries the Kaiu survey in a canvas binding that has worn through at the spine, the pages reinforced with strips of silk he has sewn in himself, each patch a different shade depending on what year he added it."
+     "first_sight": "Emon listens to someone describe a fortification and begins nodding along, then stops mid-nod and says \"that's not what the Kaiu survey shows,\" and the strain shows in his face as he realises he has contradicted someone of higher rank without being asked; his right hand stays curled at his side, the fingers slow to open.",
+     "accoutrement": "Kaiu survey. Spine patched with silk."
     },
     "picks": {}
    },
@@ -271,7 +277,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Takuma (Mazoku's Enforcer Tradition) — Takuma runs the Mazoku's Enforcer house in the province, and Emon brings him the Kaiu survey to check against—not to ask permission, but to prove that someone else has read it carefully enough to catch what Kenshin and the engineers will not.\nAsahina Kano (Crane) — Asahina Kano sends Emon letters asking for his assessment of the Barrier's approaches, then does not act on them, and Emon keeps writing back because it is the only time anyone from the Crane mainland asks him to think out loud."
+     "relations": "Takuma (Mazoku's Enforcer Tradition) — Takuma runs the Mazoku's Enforcer house in the province, and Emon brings him the Kaiu survey to check against—not for permission, but to prove that someone else has read it carefully enough to catch what Kenshin and the engineers will not.\nAsahina Kano (Crane) — Asahina Kano sends Emon letters asking for his assessment of the Barrier's approaches, then does not act on them, and Emon keeps writing back because it is the only time anyone from the Crane mainland asks him to think out loud."
     },
     "picks": {}
    },
@@ -354,8 +360,8 @@
     "honor": 68,
     "glory": 48,
     "status": 35,
-    "ninjo": "Emon rewrites the barrier's defensive maps whenever scouts report new Shadowlands activity, convinced the Kaiu survey was incomplete and that he alone has noticed what everyone else missed.",
-    "giri": "Emon holds the Kaiu Barrier against the Shadowlands for Daidoji Kenshin, and Kenshin has made it clear that abandoning it without written orders from the Crane Champion would be a dereliction that no amount of tactical sense could excuse.",
+    "ninjo": "Emon wants the Kaiu certification proven right in stone—the section Kaiu Anzu signed for holding where her report says it will—because he is the only Crane on the Wall who has read it and believed it, and he has begun to suspect she does not.",
+    "giri": "Emon serves Daidoji Kenshin in the Crane detachment lent to the Kaiu Wall, and Kenshin has made it plain that the Crane hold their section until written orders from the Crane Champion say otherwise, whatever the surveys say.",
     "bushido_tenets": {
      "paramount": "Courtesy",
      "less_significant": "Courage"
@@ -424,12 +430,6 @@
      "text": "From the Daidoji Iron Warrior starting outfit"
     },
     {
-     "name": "yari (spear) or naginata (polearm)",
-     "custom": true,
-     "text": "From the Daidoji Iron Warrior starting outfit",
-     "held": false
-    },
-    {
      "name": "Yumi"
     },
     {
@@ -445,9 +445,14 @@
      "name": "Traveling pack"
     },
     {
-     "name": "Emon carries the Kaiu survey in a canvas binding that has worn through at the spine, the pages reinforced with strips of silk he has sewn in himself, each patch a different shade depending on what year he added it.",
+     "name": "Kaiu survey",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Kaiu survey. Spine patched with silk.",
+     "accoutrement": true
+    },
+    {
+     "name": "Yari",
+     "settled_from": "yari (spear) or naginata (polearm)"
     }
    ],
    "advancements": []
