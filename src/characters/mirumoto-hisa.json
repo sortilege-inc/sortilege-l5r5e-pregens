@@ -15,7 +15,7 @@
  },
  "mode": "core",
  "portrait": "src/portraits/mirumoto-hisa.webp",
- "concept": "Hisa's eyes track the doorway long after a student leaves her classroom, following a path only she can see.",
+ "concept": "A dark scar runs from Hisa's collarbone up the left side of her neck; she wears her collar open over it. Her eyes track the doorway long after a student has left the room.",
  "summary": null,
  "notes": "",
  "wizard": {
@@ -66,7 +66,7 @@
    "challenge": "She pitches the niten to every promising student who walks through her classroom door, certain her charm will keep them, and watches them leave anyway because they want a master who will fight the Kakita, not one who teaches them to hide.",
    "peace": "Hisa traces the routes between the war college and the villages that surrendered before Snow Plain, marking which paths the students who leave her actually take, mapping their dispersal as carefully as she would chart an unfamiliar coastline.",
    "fear": "Hisa teaches in the war college's high tower and refuses assignments that would post her to the garrison towns spreading south from the castle, where ten thousand soldiers crowd the roads and the supply-master's compounds sprawl into villages that have no shape, because she cannot think in a place where everything is built on top of everything else.",
-   "accoutrement": "A brass compass the size of a thumbnail, worn on a cord under her collar; she checks it each time a student leaves the classroom, marking the direction they went.",
+   "accoutrement": "A brass compass the size of a thumbnail, worn on a cord at her collar; she checks it each time a student leaves the classroom, marking the direction they went.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -90,7 +90,7 @@
     "gender": "female",
     "association": "Shinseist Monk Order"
    },
-   "first_impression": "Hisa's eyes track the doorway long after a student leaves her classroom, following a path only she can see.",
+   "first_impression": "A dark scar runs from Hisa's collarbone up the left side of her neck; she wears her collar open over it. Her eyes track the doorway long after a student has left the room.",
    "stress_reaction": "Hisa stops talking mid-lesson and walks to the window, tracking the student's path down the mountain roads until the figure is too small to follow, and does not resume until someone asks her a direct question.",
    "relationships": "Mirumoto Tsuru (Dragon) — Mirumoto Tsuru left the war college three years ago to join a merchant house that trades south along the coast, and Hisa still calculates which ports the supply ships pass through, cross-referencing them against the seasons.\nIchirō Masu (Badger) — Ichirō Masu of the Badger clan once refused Hisa's offer to teach him the niten, citing his family's traditional forms, and she has spent four years calculating whether his choice was honest principle or polite rejection she failed to charm away.",
    "people": [
@@ -167,10 +167,10 @@
     "Kumi taught her that a wound taken protecting someone else stops hurting differently than one taken for pride, and Hisa has spent fifteen years trying to prove that lesson wrong by pitching the niten to students she believes will stay."
    ],
    "first_impression": [
-    "Hisa's eyes track the doorway long after a student leaves her classroom, following a path only she can see."
+    "A dark scar runs from Hisa's collarbone up the left side of her neck; she wears her collar open over it. Her eyes track the doorway long after a student has left the room."
    ],
    "accoutrement": [
-    "A brass compass the size of a thumbnail, worn on a cord under her collar; she checks it each time a student leaves the classroom, marking the direction they went."
+    "A brass compass the size of a thumbnail, worn on a cord at her collar; she checks it each time a student leaves the classroom, marking the direction they went."
    ],
    "stress_reaction": [
     "Hisa stops talking mid-lesson and walks to the window, tracking the student's path down the mountain roads until the figure is too small to follow, and does not resume until someone asks her a direct question."
@@ -258,8 +258,8 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "Hisa's eyes track the doorway long after a student leaves her classroom, following a path only she can see.",
-     "accoutrement": "A brass compass the size of a thumbnail, worn on a cord under her collar; she checks it each time a student leaves the classroom, marking the direction they went."
+     "first_sight": "A dark scar runs from Hisa's collarbone up the left side of her neck; she wears her collar open over it. Her eyes track the doorway long after a student has left the room.",
+     "accoutrement": "A brass compass the size of a thumbnail, worn on a cord at her collar; she checks it each time a student leaves the classroom, marking the direction they went."
     },
     "picks": {}
    },
@@ -427,7 +427,7 @@
      "name": "Traveling pack"
     },
     {
-     "name": "A brass compass the size of a thumbnail, worn on a cord under her collar; she checks it each time a student leaves the classroom, marking the direction they went.",
+     "name": "A brass compass the size of a thumbnail, worn on a cord at her collar; she checks it each time a student leaves the classroom, marking the direction they went.",
      "custom": true,
      "text": "The accoutrement named at question 14"
     }
