@@ -67,7 +67,7 @@
    "accomplishment": "When the Kaiu Wall's winter watch found three prayer-beads frozen against her ribs after she collapsed from spiritual exhaustion at the third shrine-station, Kaito Sumire recognized them as the voices she had chosen not to answer, and she reported the choice to Kaito Buzen herself rather than let the shrine-keepers discover it first.",
    "challenge": "The shrine-keepers have begun setting prayer-beads aside before Kaito even arrives, choosing which dead she will answer and which she will not, because they no longer trust her to make the choice herself.",
    "peace": "Kaito Sumire scrubs the shrine-dust from her skin at the bathhouse wall, working methodically from her collarbones downward in the order the prayer-beads sit layered against her, and lets each one slip from her awareness as the water takes it.",
-   "fear": "The shrine-keepers now set beads aside before Kaito Sumire arrives, choosing which dead she will answer, and she has stopped arguing with them; that frightens her more than the exhaustion does.",
+   "fear": "The shrine-keepers set beads aside before Kaito Sumire arrives and decide for her which dead she will answer. She has stopped arguing with them.",
    "accoutrement": "Prayer-bead cord. Worn against the ribs.",
    "past": "",
    "known_for": "",
@@ -271,7 +271,7 @@
    },
    "step12": {
     "answers": {
-     "worries": "The shrine-keepers now set beads aside before Kaito Sumire arrives, choosing which dead she will answer, and she has stopped arguing with them; that frightens her more than the exhaustion does."
+     "worries": "The shrine-keepers set beads aside before Kaito Sumire arrives and decide for her which dead she will answer. She has stopped arguing with them."
     },
     "picks": {}
    },

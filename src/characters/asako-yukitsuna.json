@@ -94,7 +94,7 @@
    },
    "first_impression": "Yukitsuna stops mid-stride on steep ground, breathing audibly while the rest keep pace, and does not ask them to wait.",
    "stress_reaction": "Yukitsuna stops filing her reports and starts cross-referencing them instead, pulling apart what she wrote to find the contradiction she is certain is there, and becomes unreachable until she locates it or admits she was wrong.",
-   "relationships": "Hiroaki (Fortunist Monk Order) — Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.\nMirumoto Gina (Dragon) — Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the mountain circuits shorter and made it impossible to admit she was struggling.",
+   "relationships": "Hiroaki (Fortunist Monk Order) — Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.\nMirumoto Gina (Dragon) — Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the mountain circuits shorter and made it impossible to admit she was struggling.\nIsawa Machiko (Phoenix) — Isawa Machiko trained beside Yukitsuna under the Inquisitors and spent a season observing the Scorpion's Deathdealers three years ago. She came back with a report that names no one and a habit of asking Yukitsuna whether a man who kills the Tainted before they can speak is doing the Inquisitors' work or his own.",
    "people": [
     {
      "name": "Hiroaki",
@@ -107,6 +107,12 @@
      "gender": "female",
      "association": "Dragon",
      "text": "Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the mountain circuits shorter and made it impossible to admit she was struggling."
+    },
+    {
+     "name": "Isawa Machiko",
+     "gender": "female",
+     "association": "Phoenix",
+     "text": "Isawa Machiko trained beside Yukitsuna under the Inquisitors and spent a season observing the Scorpion's Deathdealers three years ago. She came back with a report that names no one and a habit of asking Yukitsuna whether a man who kills the Tainted before they can speak is doing the Inquisitors' work or his own."
     }
    ],
    "parent_opinion": {
@@ -274,7 +280,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Hiroaki (Fortunist Monk Order) — Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.\nMirumoto Gina (Dragon) — Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the mountain circuits shorter and made it impossible to admit she was struggling."
+     "relations": "Hiroaki (Fortunist Monk Order) — Hiroaki listens without interruption when Yukitsuna files her reports, then asks her to walk through the parts she crossed out, which means she has to say aloud the moments she decided to stop looking.\nMirumoto Gina (Dragon) — Mirumoto Gina taught Yukitsuna to move through difficult terrain without stopping, which made the mountain circuits shorter and made it impossible to admit she was struggling.\nIsawa Machiko (Phoenix) — Isawa Machiko trained beside Yukitsuna under the Inquisitors and spent a season observing the Scorpion's Deathdealers three years ago. She came back with a report that names no one and a habit of asking Yukitsuna whether a man who kills the Tainted before they can speak is doing the Inquisitors' work or his own."
     },
     "picks": {}
    },

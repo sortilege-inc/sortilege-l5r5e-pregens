@@ -92,13 +92,13 @@
    },
    "first_impression": "",
    "stress_reaction": "Nara argues the point past any reasonable closing, and the person across from her has to decide whether to keep countering or simply walk away to end it.",
-   "relationships": "Miya Akazome (Imperial) — Miya Akazome of the Imperial courts holds the maps Nara needs to prove the Shadowlands route is still passable, and has made it clear she will not release them until Nara stops contradicting the official account of what happened to the Tattered Ear in the deep dark.",
+   "relationships": "Miya Akazome (Imperial) — Miya Akazome held Yasuki Keiji's maps of the Shadowlands routes for the Imperial survey and would not show them to Nara, who disputes the official account of what happened to the Tattered Ear in the deep dark. The maps were stolen this spring. Nara means to be there when they are found.",
    "people": [
     {
      "name": "Miya Akazome",
      "gender": "female",
      "association": "Imperial",
-     "text": "Miya Akazome of the Imperial courts holds the maps Nara needs to prove the Shadowlands route is still passable, and has made it clear she will not release them until Nara stops contradicting the official account of what happened to the Tattered Ear in the deep dark."
+     "text": "Miya Akazome held Yasuki Keiji's maps of the Shadowlands routes for the Imperial survey and would not show them to Nara, who disputes the official account of what happened to the Tattered Ear in the deep dark. The maps were stolen this spring. Nara means to be there when they are found."
     }
    ],
    "parent_opinion": {
@@ -286,7 +286,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Miya Akazome (Imperial) — Miya Akazome of the Imperial courts holds the maps Nara needs to prove the Shadowlands route is still passable, and has made it clear she will not release them until Nara stops contradicting the official account of what happened to the Tattered Ear in the deep dark."
+     "relations": "Miya Akazome (Imperial) — Miya Akazome held Yasuki Keiji's maps of the Shadowlands routes for the Imperial survey and would not show them to Nara, who disputes the official account of what happened to the Tattered Ear in the deep dark. The maps were stolen this spring. Nara means to be there when they are found."
     },
     "picks": {}
    },

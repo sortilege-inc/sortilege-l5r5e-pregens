@@ -15,7 +15,7 @@
  },
  "mode": "core",
  "portrait": "src/portraits/matsu-rikona.webp",
- "concept": "Rikona's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
+ "concept": "Rikona's fingernails are painted white over skin scarred from years of biting, and she picks at them even while talking to you.",
  "summary": null,
  "notes": "",
  "wizard": {
@@ -98,21 +98,21 @@
     "gender": "male",
     "association": "Mantis"
    },
-   "first_impression": "Rikona's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
+   "first_impression": "Rikona's fingernails are painted white over skin scarred from years of biting, and she picks at them even while talking to you.",
    "stress_reaction": "Rikona stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first.",
-   "relationships": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon draws the Wall's weak points on paper from the reports Rikona brings back, and pours for her at the stone table when she is done; he has stopped telling her which passages the last scouts did not come back from, because she asks for those first.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight whether the blood magic still had hold of her fingers—a spirit in a Shadowlands ruin had taught it to her over one winter—and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Kadiri.",
+   "relationships": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon draws the Wall's weak points on paper from the reports Rikona brings back, and pours for her at the stone table when she is done.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight whether the blood magic still had hold of her fingers—a spirit in a Shadowlands ruin had taught it to her over one winter—and she lied and said no.",
    "people": [
     {
      "name": "Kaiu Jirôzaemon",
      "gender": "male",
      "association": "Crab",
-     "text": "Kaiu Jirôzaemon draws the Wall's weak points on paper from the reports Rikona brings back, and pours for her at the stone table when she is done; he has stopped telling her which passages the last scouts did not come back from, because she asks for those first."
+     "text": "Kaiu Jirôzaemon draws the Wall's weak points on paper from the reports Rikona brings back, and pours for her at the stone table when she is done."
     },
     {
      "name": "Kitsu Tokuhei",
      "gender": "male",
      "association": "Lion",
-     "text": "Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight whether the blood magic still had hold of her fingers—a spirit in a Shadowlands ruin had taught it to her over one winter—and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Kadiri."
+     "text": "Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight whether the blood magic still had hold of her fingers—a spirit in a Shadowlands ruin had taught it to her over one winter—and she lied and said no."
     }
    ],
    "parent_opinion": {
@@ -277,7 +277,7 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "Rikona's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
+     "first_sight": "Rikona's fingernails are painted white over skin scarred from years of biting, and she picks at them even while talking to you.",
      "accoutrement": "Sake flask. Unwatered."
     },
     "picks": {}
@@ -290,7 +290,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon draws the Wall's weak points on paper from the reports Rikona brings back, and pours for her at the stone table when she is done; he has stopped telling her which passages the last scouts did not come back from, because she asks for those first.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight whether the blood magic still had hold of her fingers—a spirit in a Shadowlands ruin had taught it to her over one winter—and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Kadiri."
+     "relations": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon draws the Wall's weak points on paper from the reports Rikona brings back, and pours for her at the stone table when she is done.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight whether the blood magic still had hold of her fingers—a spirit in a Shadowlands ruin had taught it to her over one winter—and she lied and said no."
     },
     "picks": {}
    },
