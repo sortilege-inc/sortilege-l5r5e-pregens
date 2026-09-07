@@ -92,13 +92,13 @@
    },
    "first_impression": "A dark scar runs from Hisa's collarbone up the left side of her neck; she wears her collar open over it. Her eyes track the doorway long after a student has left the room.",
    "stress_reaction": "Hisa stops talking mid-lesson and walks to the window, tracking the student's path down the mountain roads until the figure is too small to follow, and does not resume until someone asks her a direct question.",
-   "relationships": "Mirumoto Tsuru (Dragon) — Mirumoto Tsuru left the war college three years ago to join a merchant house that trades south along the coast, and Hisa still calculates which ports the supply ships pass through, cross-referencing them against the seasons.\nIchirō Masu (Badger) — Ichirō Masu of the Badger clan once refused Hisa's offer to teach him the niten, citing his family's traditional forms, and she has spent four years calculating whether his choice was honest principle or polite rejection she failed to charm away.",
+   "relationships": "Mirumoto Kichiru (Dragon) — They met once, when Kichiru's delegation passed through the castle. Kichiru has fought ten duels for each of Hisa's, and against every clan but one.\nIchirō Masu (Badger) — Ichirō Masu of the Badger clan once refused Hisa's offer to teach him the niten, citing his family's traditional forms, and she has spent four years calculating whether his choice was honest principle or polite rejection she failed to charm away.",
    "people": [
     {
-     "name": "Mirumoto Tsuru",
+     "name": "Mirumoto Kichiru",
      "gender": "female",
      "association": "Dragon",
-     "text": "Mirumoto Tsuru left the war college three years ago to join a merchant house that trades south along the coast, and Hisa still calculates which ports the supply ships pass through, cross-referencing them against the seasons."
+     "text": "They met once, when Kichiru's delegation passed through the castle. Kichiru has fought ten duels for each of Hisa's, and against every clan but one."
     },
     {
      "name": "Ichirō Masu",
@@ -177,7 +177,7 @@
     "Hisa stops talking mid-lesson and walks to the window, tracking the student's path down the mountain roads until the figure is too small to follow, and does not resume until someone asks her a direct question."
    ],
    "relationship_person": [
-    "Mirumoto Tsuru left the war college three years ago to join a merchant house that trades south along the coast, and Hisa still calculates which ports the supply ships pass through, cross-referencing them against the seasons.",
+    "They met once, when Kichiru's delegation passed through the castle. Kichiru has fought ten duels for each of Hisa's, and against every clan but one.",
     "Ichirō Masu of the Badger clan once refused Hisa's offer to teach him the niten, citing his family's traditional forms, and she has spent four years calculating whether his choice was honest principle or polite rejection she failed to charm away."
    ],
    "parent_opinion": [
@@ -273,7 +273,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Mirumoto Tsuru (Dragon) — Mirumoto Tsuru left the war college three years ago to join a merchant house that trades south along the coast, and Hisa still calculates which ports the supply ships pass through, cross-referencing them against the seasons.\nIchirō Masu (Badger) — Ichirō Masu of the Badger clan once refused Hisa's offer to teach him the niten, citing his family's traditional forms, and she has spent four years calculating whether his choice was honest principle or polite rejection she failed to charm away."
+     "relations": "Mirumoto Kichiru (Dragon) — They met once, when Kichiru's delegation passed through the castle. Kichiru has fought ten duels for each of Hisa's, and against every clan but one.\nIchirō Masu (Badger) — Ichirō Masu of the Badger clan once refused Hisa's offer to teach him the niten, citing his family's traditional forms, and she has spent four years calculating whether his choice was honest principle or polite rejection she failed to charm away."
     },
     "picks": {}
    },
