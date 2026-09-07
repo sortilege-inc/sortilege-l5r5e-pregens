@@ -1,6 +1,6 @@
 {
- "slug": "kaito-kohana",
- "name": "Kaito Kohana",
+ "slug": "kaito-sumire",
+ "name": "Kaito Sumire",
  "campaign": "Mask of the Oni",
  "status": null,
  "identity": {
@@ -15,11 +15,11 @@
  },
  "mode": "core",
  "portrait": null,
- "concept": "Kaito Kohana stands with one hand pressed flat against her sternum, fingers splayed over the layers of prayer-beads beneath her robes, and her eyes track the people around her the way someone counts.",
+ "concept": "Kaito Sumire stands with one hand pressed flat against her sternum, fingers splayed over the layers of prayer-beads beneath her robes, and her eyes track the people around her the way someone counts.",
  "summary": null,
  "notes": "",
  "wizard": {
-  "name": "Kaito Kohana",
+  "name": "Kaito Sumire",
   "mode": "core",
   "clan": "Phoenix",
   "family": "Kaito",
@@ -51,7 +51,7 @@
    "Bathing"
   ],
   "anxieties": [
-   "Impatience"
+   "Meekness"
   ],
   "pec_subjects": {},
   "bushido": {
@@ -62,12 +62,12 @@
   },
   "answers": {
    "giri": "Her lord is Kaito Buzen, who sends her each season to walk the Kaiu Wall's length offering prayers for the dead sealed within its stones, a duty that takes three weeks and leaves her studies behind.",
-   "ninjo": "Kaito Kohana wants to answer every prayer-bead on her person, not just the ones her spiritual strength allows, and the deeper into the Shadowlands she goes, the more she will hear the dead begging her to choose them over the three-week circuit that keeps her lord's wall standing.",
-   "standout_quality": "Kaito Kohana tends to the shrine tokens and prayer-beads layered on her person during breaks between lessons, setting aside those for the dead she cannot afford the spiritual cost to answer today, and her instructors have stopped asking her to explain it.",
-   "accomplishment": "When the Kaiu Wall's winter watch found three prayer-beads frozen against her ribs after she collapsed from spiritual exhaustion at the third shrine-station, Kaito Kohana recognized them as the voices she had chosen not to answer, and she reported the choice to Kaito Buzen herself rather than let the shrine-keepers discover it first.",
+   "ninjo": "Kaito Sumire wants to answer every prayer-bead on her person, not just the ones her spiritual strength allows, and the deeper into the Shadowlands she goes, the more she will hear the dead begging her to choose them over the three-week circuit that keeps her lord's wall standing.",
+   "standout_quality": "Kaito Sumire tends to the shrine tokens and prayer-beads layered on her person during breaks between lessons, setting aside those for the dead she cannot afford the spiritual cost to answer today, and her instructors have stopped asking her to explain it.",
+   "accomplishment": "When the Kaiu Wall's winter watch found three prayer-beads frozen against her ribs after she collapsed from spiritual exhaustion at the third shrine-station, Kaito Sumire recognized them as the voices she had chosen not to answer, and she reported the choice to Kaito Buzen herself rather than let the shrine-keepers discover it first.",
    "challenge": "The shrine-keepers have begun setting prayer-beads aside before Kaito even arrives, choosing which dead she will answer and which she will not, because they no longer trust her to make the choice herself.",
-   "peace": "Kaito Kohana scrubs the shrine-dust from her skin at the bathhouse wall, working methodically from her collarbones downward in the order the prayer-beads sit layered against her, and lets each one slip from her awareness as the water takes it.",
-   "fear": "Kaito Kohana cannot sit still in the shrine-station while the prayer-beads against her ribs speak names she has not yet answered, and each season when the shrine-keepers set beads aside before she arrives, she feels the choice move from her hands into theirs, which costs her more than the spiritual exhaustion ever did.",
+   "peace": "Kaito Sumire scrubs the shrine-dust from her skin at the bathhouse wall, working methodically from her collarbones downward in the order the prayer-beads sit layered against her, and lets each one slip from her awareness as the water takes it.",
+   "fear": "The shrine-keepers now set beads aside before Kaito Sumire arrives, choosing which dead she will answer, and she has stopped arguing with them; that frightens her more than the exhaustion does.",
    "accoutrement": "Prayer-bead cord. Worn against the ribs.",
    "past": "",
    "known_for": "",
@@ -81,19 +81,19 @@
    "clan_relationship": {
     "path": "B",
     "skill": "unarmed",
-    "text": "Kaito Kohana has negotiated with her shrine-keepers to let her answer the prayers layered deepest against her skin first, which means the oldest dead speak through her before the new, and the ones who arrived in winter before the ones who arrived in spring, but the dead do not arrive in order."
+    "text": "Kaito Sumire has negotiated with her shrine-keepers to let her answer the prayers layered deepest against her skin first, which means the oldest dead speak through her before the new, and the ones who arrived in winter before the ones who arrived in spring, but the dead do not arrive in order."
    },
    "mentor": {
     "name": "Asako Yoritsune",
     "path": "B",
     "granted": "Animal Signs",
     "skill": "command",
-    "text": "Asako Yoritsune taught Kaito Kohana to read the animals that gather at shrine-stations—which dead draw which birds, which foxes, which insects—but Yoritsune's price was that Kaito must never ask the animals to speak directly, only to witness, and now when the shrine-keepers set prayer-beads aside before she arrives, Kaito sits among the gathered creatures and cannot tell them what she needs.",
+    "text": "Asako Yoritsune taught Kaito Sumire to read the animals that gather at shrine-stations—which dead draw which birds, which foxes, which insects—but Yoritsune's price was that Kaito must never ask the animals to speak directly, only to witness, and now when the shrine-keepers set prayer-beads aside before she arrives, Kaito sits among the gathered creatures and cannot tell them what she needs.",
     "gender": "male",
     "association": "Phoenix"
    },
-   "first_impression": "Kaito Kohana stands with one hand pressed flat against her sternum, fingers splayed over the layers of prayer-beads beneath her robes, and her eyes track the people around her the way someone counts.",
-   "stress_reaction": "Kaito Kohana stops answering the shrine-keepers when they speak to her, nodding or shaking her head instead, until someone she trusts enough to disappoint asks her directly what she needs.",
+   "first_impression": "Kaito Sumire stands with one hand pressed flat against her sternum, fingers splayed over the layers of prayer-beads beneath her robes, and her eyes track the people around her the way someone counts.",
+   "stress_reaction": "Kaito Sumire stops answering the shrine-keepers when they speak to her, nodding or shaking her head instead, until someone she trusts enough to disappoint asks her directly what she needs.",
    "relationships": "Toritaka Noriko (Falcon) — Toritaka Noriko of the Falcon brought Kaito a prayer-bead carved from bone taken at the Kaiu Wall's eastern watch-post, and now when Kaito answers it she hears a Crab voice she does not recognize asking her to find the Falcon who carried it there and tell them the dead remembers.\nSeppun Fujiko (Imperial) — Seppun Fujiko comes to the shrine-stations during Kaito's three-week circuit to deliver Imperial edicts about the Shadowlands watch, and Kaito has learned to answer the prayer-beads in her hands while Fujiko speaks, because the only time the dead stop demanding her attention is when she is actively listening to someone who outranks her.\nKitsuki Sanzo (Dragon) — Kitsuki Sanzo came to the Kaiu Wall three winters ago investigating a string of deaths the Crab deemed ordinary, and when Kaito answered the prayer-beads from those dead, the Dragon investigator sat across from her in the shrine-station for two days without speaking, writing down every name she spoke aloud, and has sent her a single letter each winter since asking if the pattern continues.",
    "people": [
     {
@@ -116,7 +116,7 @@
     }
    ],
    "parent_opinion": {
-    "description": "Kaito Kohana's mother wishes she would stop trying to answer prayers meant for priests, and worries that the shrine-keepers have noticed her daughter no longer argues when they set the beads aside.",
+    "description": "Kaito Sumire's mother wishes she would stop trying to answer prayers meant for priests, and worries that the shrine-keepers have noticed her daughter no longer argues when they set the beads aside.",
     "skill": "melee"
    },
    "heritage": "Mark of the Elements",
@@ -159,40 +159,40 @@
   },
   "ai_history": {
    "standout_quality": [
-    "Kaito Kohana tends to the shrine tokens and prayer-beads layered on her person during breaks between lessons, setting aside those for the dead she cannot afford the spiritual cost to answer today, and her instructors have stopped asking her to explain it."
+    "Kaito Sumire tends to the shrine tokens and prayer-beads layered on her person during breaks between lessons, setting aside those for the dead she cannot afford the spiritual cost to answer today, and her instructors have stopped asking her to explain it."
    ],
    "giri": [
     "Her lord is Kaiu Yotsubei, the Wall's chief architect, and she must walk the Kaiu Wall's length each season to offer prayers for the dead sealed within its stones, a duty that takes three weeks and leaves her shugenja studies behind."
    ],
    "ninjo": [
-    "Kaito Kohana wants to answer every prayer-bead on her person, not just the ones her spiritual strength allows, and the deeper into the Shadowlands she goes, the more she will hear the dead begging her to choose them over the three-week circuit that keeps her lord's wall standing."
+    "Kaito Sumire wants to answer every prayer-bead on her person, not just the ones her spiritual strength allows, and the deeper into the Shadowlands she goes, the more she will hear the dead begging her to choose them over the three-week circuit that keeps her lord's wall standing."
    ],
    "clan_relationship": [
-    "Kaito Kohana has negotiated with her shrine-keepers to let her answer the prayers layered deepest against her skin first, which means the oldest dead speak through her before the new, and the ones who arrived in winter before the ones who arrived in spring, but the dead do not arrive in order."
+    "Kaito Sumire has negotiated with her shrine-keepers to let her answer the prayers layered deepest against her skin first, which means the oldest dead speak through her before the new, and the ones who arrived in winter before the ones who arrived in spring, but the dead do not arrive in order."
    ],
    "accomplishment": [
-    "When the Kaiu Wall's winter watch found three prayer-beads frozen against her ribs after she collapsed from spiritual exhaustion at the third shrine-station, Kaito Kohana recognized them as the voices she had chosen not to answer, and she reported the choice to Kaiu Yotsubei herself rather than let the shrine-keepers discover it first."
+    "When the Kaiu Wall's winter watch found three prayer-beads frozen against her ribs after she collapsed from spiritual exhaustion at the third shrine-station, Kaito Sumire recognized them as the voices she had chosen not to answer, and she reported the choice to Kaiu Yotsubei herself rather than let the shrine-keepers discover it first."
    ],
    "challenge": [
     "The shrine-keepers have begun setting prayer-beads aside before Kaito even arrives, choosing which dead she will answer and which she will not, because they no longer trust her to make the choice herself."
    ],
    "peace": [
-    "Kaito Kohana scrubs the shrine-dust from her skin at the bathhouse wall, working methodically from her collarbones downward in the order the prayer-beads sit layered against her, and lets each one slip from her awareness as the water takes it."
+    "Kaito Sumire scrubs the shrine-dust from her skin at the bathhouse wall, working methodically from her collarbones downward in the order the prayer-beads sit layered against her, and lets each one slip from her awareness as the water takes it."
    ],
    "fear": [
-    "Kaito Kohana cannot sit still in the shrine-station while the prayer-beads against her ribs speak names she has not yet answered, and each season when the shrine-keepers set beads aside before she arrives, she feels the choice move from her hands into theirs, which costs her more than the spiritual exhaustion ever did."
+    "Kaito Sumire cannot sit still in the shrine-station while the prayer-beads against her ribs speak names she has not yet answered, and each season when the shrine-keepers set beads aside before she arrives, she feels the choice move from her hands into theirs, which costs her more than the spiritual exhaustion ever did."
    ],
    "mentor_relationship": [
-    "Asako Yoritsune taught Kaito Kohana to read the animals that gather at shrine-stations—which dead draw which birds, which foxes, which insects—but Yoritsune's price was that Kaito must never ask the animals to speak directly, only to witness, and now when the shrine-keepers set prayer-beads aside before she arrives, Kaito sits among the gathered creatures and cannot tell them what she needs."
+    "Asako Yoritsune taught Kaito Sumire to read the animals that gather at shrine-stations—which dead draw which birds, which foxes, which insects—but Yoritsune's price was that Kaito must never ask the animals to speak directly, only to witness, and now when the shrine-keepers set prayer-beads aside before she arrives, Kaito sits among the gathered creatures and cannot tell them what she needs."
    ],
    "first_impression": [
-    "Kaito Kohana stands with one hand pressed flat against her sternum, fingers splayed over the layers of prayer-beads beneath her robes, and her eyes track the people around her the way someone counts."
+    "Kaito Sumire stands with one hand pressed flat against her sternum, fingers splayed over the layers of prayer-beads beneath her robes, and her eyes track the people around her the way someone counts."
    ],
    "accoutrement": [
     "She unties the oldest prayer-bead from the cord against her ribs each morning before the shrine-keepers arrive, sets it on the altar in front of her, and does not touch it again until she has answered it or admitted she cannot."
    ],
    "stress_reaction": [
-    "Kaito Kohana stops answering the shrine-keepers when they speak to her, nodding or shaking her head instead, until someone she trusts enough to disappoint asks her directly what she needs."
+    "Kaito Sumire stops answering the shrine-keepers when they speak to her, nodding or shaking her head instead, until someone she trusts enough to disappoint asks her directly what she needs."
    ],
    "relationship_person": [
     "Toritaka Noriko of the Falcon brought Kaito a prayer-bead carved from bone taken at the Kaiu Wall's eastern watch-post, and now when Kaito answers it she hears a Crab voice she does not recognize asking her to find the Falcon who carried it there and tell them the dead remembers.",
@@ -200,7 +200,7 @@
     "Kitsuki Sanzo came to the Kaiu Wall three winters ago investigating a string of deaths the Crab deemed ordinary, and when Kaito answered the prayer-beads from those dead, the Dragon investigator sat across from her in the shrine-station for two days without speaking, writing down every name she spoke aloud, and has sent her a single letter each winter since asking if the pattern continues."
    ],
    "parent_opinion": [
-    "Kaito Kohana's mother wishes she would stop trying to answer prayers meant for priests, and worries that the shrine-keepers have noticed her daughter no longer argues when they set the beads aside."
+    "Kaito Sumire's mother wishes she would stop trying to answer prayers meant for priests, and worries that the shrine-keepers have noticed her daughter no longer argues when they set the beads aside."
    ],
    "death": [
     "She will collapse at a shrine-station three weeks into the circuit, answering a prayer-bead the shrine-keepers set aside, and Seppun Fujiko will find her there in the morning with her hand still pressed against her sternum and the bead answered at last."
@@ -218,7 +218,7 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "Kaito Kohana tends to the shrine tokens and prayer-beads layered on her person during breaks between lessons, setting aside those for the dead she cannot afford the spiritual cost to answer today, and her instructors have stopped asking her to explain it.",
+     "stand_out": "Kaito Sumire tends to the shrine tokens and prayer-beads layered on her person during breaks between lessons, setting aside those for the dead she cannot afford the spiritual cost to answer today, and her instructors have stopped asking her to explain it.",
      "ring": "air"
     },
     "picks": {}
@@ -232,13 +232,13 @@
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Kaito Kohana wants to answer every prayer-bead on her person, not just the ones her spiritual strength allows, and the deeper into the Shadowlands she goes, the more she will hear the dead begging her to choose them over the three-week circuit that keeps her lord's wall standing."
+     "social_ninjo": "Kaito Sumire wants to answer every prayer-bead on her person, not just the ones her spiritual strength allows, and the deeper into the Shadowlands she goes, the more she will hear the dead begging her to choose them over the three-week circuit that keeps her lord's wall standing."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "clan_relations": "Kaito Kohana has negotiated with her shrine-keepers to let her answer the prayers layered deepest against her skin first, which means the oldest dead speak through her before the new, and the ones who arrived in winter before the ones who arrived in spring, but the dead do not arrive in order.",
+     "clan_relations": "Kaito Sumire has negotiated with her shrine-keepers to let her answer the prayers layered deepest against her skin first, which means the oldest dead speak through her before the new, and the ones who arrived in winter before the ones who arrived in spring, but the dead do not arrive in order.",
      "path": "B",
      "skill": "unarmed"
     },
@@ -253,7 +253,7 @@
    },
    "step9": {
     "answers": {
-     "success": "When the Kaiu Wall's winter watch found three prayer-beads frozen against her ribs after she collapsed from spiritual exhaustion at the third shrine-station, Kaito Kohana recognized them as the voices she had chosen not to answer, and she reported the choice to Kaito Buzen herself rather than let the shrine-keepers discover it first."
+     "success": "When the Kaiu Wall's winter watch found three prayer-beads frozen against her ribs after she collapsed from spiritual exhaustion at the third shrine-station, Kaito Sumire recognized them as the voices she had chosen not to answer, and she reported the choice to Kaito Buzen herself rather than let the shrine-keepers discover it first."
     },
     "picks": {}
    },
@@ -265,32 +265,32 @@
    },
    "step11": {
     "answers": {
-     "calms": "Kaito Kohana scrubs the shrine-dust from her skin at the bathhouse wall, working methodically from her collarbones downward in the order the prayer-beads sit layered against her, and lets each one slip from her awareness as the water takes it."
+     "calms": "Kaito Sumire scrubs the shrine-dust from her skin at the bathhouse wall, working methodically from her collarbones downward in the order the prayer-beads sit layered against her, and lets each one slip from her awareness as the water takes it."
     },
     "picks": {}
    },
    "step12": {
     "answers": {
-     "worries": "Kaito Kohana cannot sit still in the shrine-station while the prayer-beads against her ribs speak names she has not yet answered, and each season when the shrine-keepers set beads aside before she arrives, she feels the choice move from her hands into theirs, which costs her more than the spiritual exhaustion ever did."
+     "worries": "The shrine-keepers now set beads aside before Kaito Sumire arrives, choosing which dead she will answer, and she has stopped arguing with them; that frightens her more than the exhaustion does."
     },
     "picks": {}
    },
    "step13": {
     "answers": {
-     "most_learn": "Asako Yoritsune — Asako Yoritsune taught Kaito Kohana to read the animals that gather at shrine-stations—which dead draw which birds, which foxes, which insects—but Yoritsune's price was that Kaito must never ask the animals to speak directly, only to witness, and now when the shrine-keepers set prayer-beads aside before she arrives, Kaito sits among the gathered creatures and cannot tell them what she needs."
+     "most_learn": "Asako Yoritsune — Asako Yoritsune taught Kaito Sumire to read the animals that gather at shrine-stations—which dead draw which birds, which foxes, which insects—but Yoritsune's price was that Kaito must never ask the animals to speak directly, only to witness, and now when the shrine-keepers set prayer-beads aside before she arrives, Kaito sits among the gathered creatures and cannot tell them what she needs."
     },
     "picks": {}
    },
    "step14": {
     "answers": {
-     "first_sight": "Kaito Kohana stands with one hand pressed flat against her sternum, fingers splayed over the layers of prayer-beads beneath her robes, and her eyes track the people around her the way someone counts.",
+     "first_sight": "Kaito Sumire stands with one hand pressed flat against her sternum, fingers splayed over the layers of prayer-beads beneath her robes, and her eyes track the people around her the way someone counts.",
      "accoutrement": "Prayer-bead cord. Worn against the ribs."
     },
     "picks": {}
    },
    "step15": {
     "answers": {
-     "stress": "Kaito Kohana stops answering the shrine-keepers when they speak to her, nodding or shaking her head instead, until someone she trusts enough to disappoint asks her directly what she needs."
+     "stress": "Kaito Sumire stops answering the shrine-keepers when they speak to her, nodding or shaking her head instead, until someone she trusts enough to disappoint asks her directly what she needs."
     },
     "picks": {}
    },
@@ -302,7 +302,7 @@
    },
    "step17": {
     "answers": {
-     "parents_pov": "Kaito Kohana's mother wishes she would stop trying to answer prayers meant for priests, and worries that the shrine-keepers have noticed her daughter no longer argues when they set the beads aside."
+     "parents_pov": "Kaito Sumire's mother wishes she would stop trying to answer prayers meant for priests, and worries that the shrine-keepers have noticed her daughter no longer argues when they set the beads aside."
     },
     "picks": {}
    },
@@ -386,7 +386,7 @@
     "honor": 55,
     "glory": 40,
     "status": 35,
-    "ninjo": "Kaito Kohana wants to answer every prayer-bead on her person, not just the ones her spiritual strength allows, and the deeper into the Shadowlands she goes, the more she will hear the dead begging her to choose them over the three-week circuit that keeps her lord's wall standing.",
+    "ninjo": "Kaito Sumire wants to answer every prayer-bead on her person, not just the ones her spiritual strength allows, and the deeper into the Shadowlands she goes, the more she will hear the dead begging her to choose them over the three-week circuit that keeps her lord's wall standing.",
     "giri": "Her lord is Kaito Buzen, who sends her each season to walk the Kaiu Wall's length offering prayers for the dead sealed within its stones, a duty that takes three weeks and leaves her studies behind.",
     "bushido_tenets": {
      "paramount": "Righteousness",
@@ -433,7 +433,7 @@
      "name": "Bathing"
     },
     {
-     "name": "Impatience"
+     "name": "Meekness"
     },
     {
      "name": "Animal Signs"

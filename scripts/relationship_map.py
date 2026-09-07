@@ -420,6 +420,21 @@ def main():
                               "defined": True})
         nodes.extend(npcs[k] for k in sorted(npcs) if npcs[k] not in nodes)
 
+        # A PC naming another PC in a giri, a ninjō or a question's answer is a
+        # written relationship too — Daidoji Emon's ninjō names Kaiu Anzu, whose
+        # certification he alone believes. Full name only; "the Moto healer" is
+        # a pointer the reader resolves, not a line the map can draw.
+        for d in members:
+            mine = "pc:" + d["slug"]
+            a = ((d.get("wizard") or {}).get("answers") or {})
+            for k in ("giri", "ninjo", "accomplishment", "challenge", "peace",
+                      "fear", "past", "raised_by", "standout_quality"):
+                t = a.get(k) or ""
+                for pc in pcs:
+                    if pc["id"] != mine and pc["name"] in t:
+                        written.setdefault(tuple(sorted((mine, pc["id"]))), []).append(
+                            d["name"] + ": " + t)
+
         # Every pair of PCs, written up or not. Two sources can describe a pair
         # — a Cross-character note, and one of them naming the other at
         # question 16 — and either counts as written.

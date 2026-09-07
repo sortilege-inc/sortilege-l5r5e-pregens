@@ -91,7 +91,7 @@
    },
    "first_impression": "Kohana moves through the garrison on a crutch, the stump of her left leg visible when her robes shift.",
    "stress_reaction": "When her hands shake, Kohana reaches for her jade vials and measures out a dose that is not in her ledger.",
-   "relationships": "Tonbo Katai (Dragonfly) — Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to them that the Shadowlands is not holding still.\nKuni Soichiro (Crab) — Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses.",
+   "relationships": "Tonbo Katai (Dragonfly) — Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to them that the Shadowlands is not holding still.\nKuni Soichiro (Crab) — Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab consider crude, but she has gotten so precise at it that she can identify adulteration he misses—and the last two issues from Yasuki Ippei's stores failed her tongue.",
    "people": [
     {
      "name": "Tonbo Katai",
@@ -103,7 +103,7 @@
      "name": "Kuni Soichiro",
      "gender": "male",
      "association": "Crab",
-     "text": "Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses."
+     "text": "Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab consider crude, but she has gotten so precise at it that she can identify adulteration he misses—and the last two issues from Yasuki Ippei's stores failed her tongue."
     }
    ],
    "parent_opinion": {
@@ -286,7 +286,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Tonbo Katai (Dragonfly) — Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to them that the Shadowlands is not holding still.\nKuni Soichiro (Crab) — Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab considers crude, but she has gotten so precise at it that she can now identify adulteration he misses."
+     "relations": "Tonbo Katai (Dragonfly) — Tonbo Katai's mapping expedition into the Shadowlands three years ago is the reason Kohana believed studying it was possible, and the reason she still cannot admit to them that the Shadowlands is not holding still.\nKuni Soichiro (Crab) — Kuni Soichiro taught Kohana to test jade purity by taste, a method the Crab consider crude, but she has gotten so precise at it that she can identify adulteration he misses—and the last two issues from Yasuki Ippei's stores failed her tongue."
     },
     "picks": {}
    },

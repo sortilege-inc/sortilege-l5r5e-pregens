@@ -92,13 +92,13 @@
    },
    "first_impression": "He rides ahead of messengers who have not finished their sentences, and arrives at the next camp before they do.",
    "stress_reaction": "When Shigeaki's messengers finally reach him with news that Azumamaro has already ridden past three days ahead, Azumamaro pulls out his map case and begins correcting their route aloud, talking faster with each correction, until Shigeaki has to ask him twice to stop speaking so the men can hear their orders.",
-   "relationships": "Kitsune Noriko (Fox) — Kitsune Noriko once brought Azumamaro word of Taint-sickness moving through a Fox breeding ground, and he has ridden to her encampment unannounced each spring since to ask if she needs him to ride ahead of her hunters again.",
+   "relationships": "Kitsune Sayuri (Fox) — Kitsune Sayuri once brought Azumamaro word of Taint-sickness moving through a Fox breeding ground, and he has ridden to her encampment unannounced each spring since to ask if she needs him to ride ahead of her hunters again.",
    "people": [
     {
-     "name": "Kitsune Noriko",
+     "name": "Kitsune Sayuri",
      "gender": "female",
      "association": "Fox",
-     "text": "Kitsune Noriko once brought Azumamaro word of Taint-sickness moving through a Fox breeding ground, and he has ridden to her encampment unannounced each spring since to ask if she needs him to ride ahead of her hunters again."
+     "text": "Kitsune Sayuri once brought Azumamaro word of Taint-sickness moving through a Fox breeding ground, and he has ridden to her encampment unannounced each spring since to ask if she needs him to ride ahead of her hunters again."
     }
    ],
    "parent_opinion": {
@@ -260,7 +260,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Kitsune Noriko (Fox) — Kitsune Noriko once brought Azumamaro word of Taint-sickness moving through a Fox breeding ground, and he has ridden to her encampment unannounced each spring since to ask if she needs him to ride ahead of her hunters again."
+     "relations": "Kitsune Sayuri (Fox) — Kitsune Sayuri once brought Azumamaro word of Taint-sickness moving through a Fox breeding ground, and he has ridden to her encampment unannounced each spring since to ask if she needs him to ride ahead of her hunters again."
     },
     "picks": {}
    },

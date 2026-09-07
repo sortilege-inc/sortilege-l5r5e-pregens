@@ -94,13 +94,13 @@
    },
    "first_impression": "When Namiko sits to eat with others, she sets her portion aside and eats theirs first, tasting each one while watching their faces—a scout's habit that makes the other scouts uncomfortable because she never explains it and never seems to taste anything herself.",
    "stress_reaction": "When her reports to Kaiten fall below five sentences, she stops eating altogether until she has watched someone else finish a meal she prepared without falling ill.",
-   "relationships": "Soshi Machi (Scorpion) — Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight.\nKakita Den (Crane) — Namiko trades Kakita Den her observations of the ruin's collapse for his sketches of Shiro Hiruma as it stood, then spends the next morning comparing what he drew to what the scouts report still standing, trying to decide whether she is watching it fall or forgetting how to see.",
+   "relationships": "Bayushi Tsubasa (Scorpion) — Bayushi Tsubasa sends Namiko's weekly reports on the ruin's approaches to Scorpion command sealed inside Tsubasa's own, and Namiko has learned not to ask what those reports say about her, because the answer would force her to choose between her duty to the Crab and letting someone else carry half the weight.\nKakita Den (Crane) — Namiko trades Kakita Den her observations of the ruin's collapse for his sketches of Shiro Hiruma as it stood, then spends the next morning comparing what he drew to what the scouts report still standing, trying to decide whether she is watching it fall or forgetting how to see.",
    "people": [
     {
-     "name": "Soshi Machi",
-     "gender": "male",
+     "name": "Bayushi Tsubasa",
+     "gender": "any",
      "association": "Scorpion",
-     "text": "Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight."
+     "text": "Bayushi Tsubasa sends Namiko's weekly reports on the ruin's approaches to Scorpion command sealed inside Tsubasa's own, and Namiko has learned not to ask what those reports say about her, because the answer would force her to choose between her duty to the Crab and letting someone else carry half the weight."
     },
     {
      "name": "Kakita Den",
@@ -283,7 +283,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Soshi Machi (Scorpion) — Soshi Machi sends her weekly reports on the castle's approaches sealed inside her own reports to Scorpion command, and Namiko has learned not to ask what Machi writes about her, because the answer would force her to choose between her duty to the Crab and her willingness to let someone else carry half the weight.\nKakita Den (Crane) — Namiko trades Kakita Den her observations of the ruin's collapse for his sketches of Shiro Hiruma as it stood, then spends the next morning comparing what he drew to what the scouts report still standing, trying to decide whether she is watching it fall or forgetting how to see."
+     "relations": "Bayushi Tsubasa (Scorpion) — Bayushi Tsubasa sends Namiko's weekly reports on the ruin's approaches to Scorpion command sealed inside Tsubasa's own, and Namiko has learned not to ask what those reports say about her, because the answer would force her to choose between her duty to the Crab and letting someone else carry half the weight.\nKakita Den (Crane) — Namiko trades Kakita Den her observations of the ruin's collapse for his sketches of Shiro Hiruma as it stood, then spends the next morning comparing what he drew to what the scouts report still standing, trying to decide whether she is watching it fall or forgetting how to see."
     },
     "picks": {}
    },

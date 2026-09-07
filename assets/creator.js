@@ -1782,7 +1782,22 @@
     "balanced line that sounds like a saying: \"the first thing anyone sees and " +
     "the last thing they mention\". Plain declaratives instead, every time. " +
     "One sentence unless the question says otherwise, and shorter is better: " +
-    "the strongest answers in this archive are eight to twenty words.";
+    "the strongest answers in this archive are eight to twenty words. " +
+    /* Seven more, named on the Mask of the Oni audit (2026-09-07), again by
+       the owner quoting the rejected line. */
+    "Seven more, rejected by name. The withheld-secret clause — a relative " +
+    "clause that gestures at a secret instead of stating a fact: \"in the " +
+    "winter she does not speak of\", \"the years she does not name\". An " +
+    "abstract noun doing the feeling — \"feels the choice move from her hands " +
+    "into theirs\", \"so the choosing is no longer his\": say what she does. " +
+    "The comparative escalation tail — \"which costs her more than the " +
+    "exhaustion ever did\". The antithesis pair — \"maps them on paper while " +
+    "she maps them in her body\". The doom tail — a future death appended to " +
+    "a present fact: \"the passages she will die in\". Negated action as " +
+    "characterisation — \"does not warn her away\", \"has never once asked\", " +
+    "\"does not seem to know she is doing it\": what someone pointedly does not " +
+    "do is not a portrait. Polysyndeton to a reveal — and… and… and… building " +
+    "to the last clause. What passes: a person, a concrete act, a place, a time.";
   /* One rejected shape and one good one. They are deliberately about different
      characters: an earlier version used the same character for both, and the
      answers for that archetype came back as paraphrases of the good example
@@ -1794,7 +1809,7 @@
     "inflated scale, an ornamental verb, and a trailing flourish that adds " +
     "nothing. A good answer, for an unrelated character, a quartermaster: " +
     "\"She signs for grain she knows is short and makes the difference up out of " +
-    "her own stipend, which she has never mentioned to anyone.\" — one incident, " +
+    "her own stipend.\" — one incident, " +
     "ordinary scale, and the tension is a fact rather than a mood. Match the " +
     "second in register, not in subject.";
   var STYLE = [VOICE, SHAPE, REGISTER, TENSION, AVOID, EXAMPLE].join(" ");

@@ -60,13 +60,13 @@
   },
   "answers": {
    "giri": "",
-   "ninjo": "Teruyo wants to teach someone who will actually survive long enough to teach others, and the nezumi's second asking has already cost her the answer to whether she can.",
+   "ninjo": "Teruyo wants to teach someone who will survive long enough to teach others, and the Tattered Ear's second asking has already cost her the answer to whether she can.",
    "standout_quality": "Teruyo teaches by example first and lecture never, which means the younger hunters learn her caution but not always her reasons, and follow her into traps she herself would skirt.",
-   "accomplishment": "Teruyo brought a hunter back from the Shadowlands when the nezumi elder's second asking sent her in after the kin she'd failed to recover, and the younger woman is still alive to doubt her own survival choices.",
+   "accomplishment": "Teruyo brought a hunter back from the Shadowlands when the Tattered Ear elder's second asking sent her in after the kin she had failed to recover, and the younger woman is still alive to doubt her own survival choices.",
    "challenge": "Teruyo teaches by showing what to do and what not to do, but when the younger hunters make choices she would not make, she cannot tell them why without breaking her own silence about what happened in the Shadowlands ten years ago.",
    "peace": "Teruyo traces the paths through the Shadowlands on borrowed maps, marking what has changed since her last crossing, since the one before that, finding the small differences that mean a hunter can still pass through alive.",
    "fear": "Teruyo accepted the Crab captain's gift of a Yasuki blade with the maker's seal still bright on the tsuba, and three days later found herself unable to trade it away when the younger hunter needed a better weapon and had nothing to offer but her own rusted steel.",
-   "past": "Teruyo led three hunters into the Shadowlands ten years ago when a nezumi elder asked her to find his kin, and only she came back, which is why she teaches now instead of ranging, and why she said yes when the nezumi asked again.",
+   "past": "Teruyo led three hunters into the Shadowlands ten years ago when a Tattered Ear elder asked her to find his kin, and only she came back, which is why she teaches now instead of ranging, and why she said yes when the Tattered Ear asked again.",
    "known_for": "The Crab soldiers at the Wall ask Teruyo to scout the Shadowlands approaches because she always comes back, but none of them ask her to take their younger brothers anymore.",
    "known_skill": "command",
    "lord_name": "",
@@ -219,7 +219,7 @@
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Teruyo wants to teach someone who will actually survive long enough to teach others, and the nezumi's second asking has already cost her the answer to whether she can."
+     "social_ninjo": "Teruyo wants to teach someone who will survive long enough to teach others, and the Tattered Ear's second asking has already cost her the answer to whether she can."
     },
     "picks": {}
    },
@@ -240,7 +240,7 @@
    },
    "step9": {
     "answers": {
-     "success": "Teruyo brought a hunter back from the Shadowlands when the nezumi elder's second asking sent her in after the kin she'd failed to recover, and the younger woman is still alive to doubt her own survival choices."
+     "success": "Teruyo brought a hunter back from the Shadowlands when the Tattered Ear elder's second asking sent her in after the kin she had failed to recover, and the younger woman is still alive to doubt her own survival choices."
     },
     "picks": {}
    },
@@ -365,7 +365,7 @@
     "honor": 65,
     "glory": 33,
     "status": 27,
-    "ninjo": "Teruyo wants to teach someone who will actually survive long enough to teach others, and the nezumi's second asking has already cost her the answer to whether she can.",
+    "ninjo": "Teruyo wants to teach someone who will survive long enough to teach others, and the Tattered Ear's second asking has already cost her the answer to whether she can.",
     "giri": "",
     "bushido_tenets": {
      "paramount": "Righteousness",

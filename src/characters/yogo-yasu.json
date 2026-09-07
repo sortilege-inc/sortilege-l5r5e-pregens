@@ -93,13 +93,13 @@
    },
    "first_impression": "Yasu's eyes move constantly across surfaces—walls, floor, the joints where stone meets stone—even when someone is speaking directly to her, and it takes her several seconds to redirect her attention to their face.",
    "stress_reaction": "Yasu stops speaking mid-conversation and turns to examine the nearest wall or sealed door, running her fingers along the joints and fracture-lines as though the structural integrity of the room has suddenly become more urgent than whoever was talking to her.",
-   "relationships": "Hida Mayo (Crab) — Hida Mayo watches Yasu check the same joints in the Wall twice, and does not ask why, because she has learned that the Yogo do not answer questions about what they are afraid of.",
+   "relationships": "Hida Nagahide (Crab) — Hida Nagahide watched Yasu check the same joints in the Wall twice on the day she arrived, and did not ask why, because she has learned that the Yogo do not answer questions about what they are afraid of.",
    "people": [
     {
-     "name": "Hida Mayo",
+     "name": "Hida Nagahide",
      "gender": "female",
      "association": "Crab",
-     "text": "Hida Mayo watches Yasu check the same joints in the Wall twice, and does not ask why, because she has learned that the Yogo do not answer questions about what they are afraid of."
+     "text": "Hida Nagahide watched Yasu check the same joints in the Wall twice on the day she arrived, and did not ask why, because she has learned that the Yogo do not answer questions about what they are afraid of."
     }
    ],
    "parent_opinion": {
@@ -261,7 +261,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Hida Mayo (Crab) — Hida Mayo watches Yasu check the same joints in the Wall twice, and does not ask why, because she has learned that the Yogo do not answer questions about what they are afraid of."
+     "relations": "Hida Nagahide (Crab) — Hida Nagahide watched Yasu check the same joints in the Wall twice on the day she arrived, and did not ask why, because she has learned that the Yogo do not answer questions about what they are afraid of."
     },
     "picks": {}
    },

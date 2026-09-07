@@ -64,7 +64,7 @@
    "ninjo": "Anzu wants to walk back through the Wall with a report that the castle can be held, even though the stones will not bear it.",
    "standout_quality": "Anzu can read a ruin's load-bearing bones and predict where it will fail long before the collapse, but she cannot look at what the Shadowlands did to make those bones brittle.",
    "accomplishment": "She identified which sections of the Kaiu Wall could still bear weight by reading the stone itself, never the corruption that weakened it, and Haruka built the defense on her word.",
-   "challenge": "Anzu has not told Haruka that the section she certified is already failing, because saying so means saying she lied about the stones, and every week Haruka does not ask her to swear to the report the lie costs more to take back.",
+   "challenge": "Anzu has not told Haruka that the section she certified is already failing, because saying so means saying she lied about the stones, and every week Haruka does not ask her to swear to the report the lie costs more to take back, and Daidoji Emon, who quotes her report back to her, has not asked either.",
    "peace": "Anzu measures the strength of salvaged stone pulled from the lower Wall, running her hands across each piece to map its grain and load before the smiths melt it down, and the ritual of refusing to look at anything but the stone itself settles the constant pull between what she sees and what she says.",
    "fear": "Anzu certifies sections of the Wall by the strength of their stone alone, and fears the day Haruka asks her to swear to a report she has already signed.",
    "accoutrement": "Chalk. The numbers stop at forty-seven.",
@@ -83,11 +83,11 @@
     "text": "Anzu certified a section of the Wall as sound when she knew the stones were already failing, and Haruka accepted the report without asking her to swear to it."
    },
    "mentor": {
-    "name": "Kaiu Mabuchi",
+    "name": "Kaiu Riko",
     "path": "B",
     "granted": "Overconfidence in Toughness",
     "skill": "design",
-    "text": "Kaiu Mabuchi taught Anzu that the old Crab fortifications were built to hold and will hold, and that an engineer who doubts the stone has already lost it; Anzu learned to certify from the stone up and to keep her doubts where Mabuchi kept hers.",
+    "text": "Kaiu Riko taught Anzu that the old Crab fortifications were built to hold and will hold, and that an engineer who doubts the stone has already lost it; Anzu learned to certify from the stone up and to keep her doubts where Riko kept hers.",
     "gender": "female",
     "association": "Crab"
    },
@@ -222,7 +222,7 @@
    },
    "step10": {
     "answers": {
-     "difficulty": "Anzu has not told Haruka that the section she certified is already failing, because saying so means saying she lied about the stones, and every week Haruka does not ask her to swear to the report the lie costs more to take back."
+     "difficulty": "Anzu has not told Haruka that the section she certified is already failing, because saying so means saying she lied about the stones, and every week Haruka does not ask her to swear to the report the lie costs more to take back, and Daidoji Emon, who quotes her report back to her, has not asked either."
     },
     "picks": {}
    },
@@ -240,7 +240,7 @@
    },
    "step13": {
     "answers": {
-     "most_learn": "Kaiu Mabuchi — Kaiu Mabuchi taught Anzu that the old Crab fortifications were built to hold and will hold, and that an engineer who doubts the stone has already lost it; Anzu learned to certify from the stone up and to keep her doubts where Mabuchi kept hers."
+     "most_learn": "Kaiu Riko — Kaiu Riko taught Anzu that the old Crab fortifications were built to hold and will hold, and that an engineer who doubts the stone has already lost it; Anzu learned to certify from the stone up and to keep her doubts where Riko kept hers."
     },
     "picks": {}
    },

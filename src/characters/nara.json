@@ -61,7 +61,7 @@
   },
   "answers": {
    "giri": "",
-   "ninjo": "Nara wants the pack to come back out on a route with her, just once, so she can stop being the only one who knows what she knows.",
+   "ninjo": "Nara wants the pack to come back out on a route with her, just once, so she can stop being the only one who knows what she knows; the tengu the elder sent for is the first outsider who has agreed to walk it.",
    "standout_quality": "Nara can read a path through the Shadowlands by signs too faint for anyone else to parse, but she has stopped trusting whether what she is following is still the route or has become something that wears the route's shape.",
    "accomplishment": "Nara held the doorway of a collapsed watchtower on the Hiruma route while three scouts she did not know crossed underneath, and when the lintel shifted she did not move until the last one cleared.",
    "challenge": "When Nara tries to shift her weight to her feet after kneeling by the fire, the scouts watching pretend not to notice how long it takes her spine to stop screaming.",
@@ -223,7 +223,7 @@
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Nara wants the pack to come back out on a route with her, just once, so she can stop being the only one who knows what she knows."
+     "social_ninjo": "Nara wants the pack to come back out on a route with her, just once, so she can stop being the only one who knows what she knows; the tengu the elder sent for is the first outsider who has agreed to walk it."
     },
     "picks": {}
    },
@@ -369,7 +369,7 @@
     "honor": 18,
     "glory": 34,
     "status": 22,
-    "ninjo": "Nara wants the pack to come back out on a route with her, just once, so she can stop being the only one who knows what she knows.",
+    "ninjo": "Nara wants the pack to come back out on a route with her, just once, so she can stop being the only one who knows what she knows; the tengu the elder sent for is the first outsider who has agreed to walk it.",
     "giri": "",
     "bushido_tenets": {
      "paramount": "Duty and Loyalty",

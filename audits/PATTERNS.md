@@ -163,3 +163,26 @@ answers, never the step store.
 **`held:false` means two things.** An open outfit line, or a heritage heirloom marked lost ("lost — it
 exists somewhere in the world"). Agasha Kohana's lost shinobigatana read as an open pick in the first
 report; the lint now skips the lost ones.
+
+## Register — the tics the owner named on Mask of the Oni (2026-09-07)
+
+Owner: "the writing style reeks of AI slop… make a note so that we get less writing like this going
+forward from you or from what is sent to the AI suggest." The lines rejected, and the shape each one is:
+
+| rejected | the tic |
+|---|---|
+| "in the winter she does not speak of" / "the years she does not name" | **the withheld-secret clause** — a relative clause that gestures at a secret instead of stating a fact |
+| "she feels the choice move from her hands into theirs" / "so the choosing is no longer his" | **an abstract noun doing the feeling** — choice, weight, cost, the choosing; say what she does |
+| "which costs her more than the spiritual exhaustion ever did" | **the comparative escalation tail** — "more than X ever did" |
+| "maps them on paper while Rikona maps them in her body" | **the antithesis pair** — a neat A/B mirror carrying the point |
+| "the passages she will die in" | **the doom tail** — a future death or fall appended to a present fact |
+| "does not warn her away" / "has never once asked" / "does not seem to know she is doing it" | **negated action as characterisation** — what someone pointedly does not do |
+| "she has never answered, and he has gone on choosing, and the Moto… is the first he has not been able to place on either list" | **polysyndeton to a reveal** — and… and… building to the last clause |
+
+Already on the list from Blood of the Lioness: the trailing participial/appositive flourish, the
+"as if" inner-state simile, the observing-tell clause, the closing observation ("She has noticed."),
+the "rather than…" comparison tail, the aphorism.
+
+**What passes:** a person, a concrete act, a place, a time. "Kaiu Jirôzaemon draws the Wall's weak
+points on paper from the reports Rikona brings back, and pours for her at the stone table when she is
+done." Short sentences are allowed. A fact can stand without a clause explaining what it means.
