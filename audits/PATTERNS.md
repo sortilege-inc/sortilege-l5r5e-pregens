@@ -122,3 +122,14 @@ answer from the corpus entry, not from memory.
 - accoutrement-as-gear-title: 33 of 58 archive characters on 2026-09-07, before this
   pack's backfill
 - NPCs shared by two records: 0 in this pack before the audit
+
+## Preventers built after this pack (2026-09-07)
+
+So the next pack's report is mostly judgement: export lints (lord in giri, mentor in text,
+open outfit lines block; NPC gender vs pronouns, physical peculiarity absent from Q14,
+duplicate personal name in the campaign warn); an Outfit step that settles either-ors
+under the printed rarity cap; giri/ninjō shape rules and the "before the summons" rule in
+the prompts; the adventure's cast and the party's existing NPCs handed to the
+people-naming questions; four more tics quoted in AVOID. Mask of the Oni's thirteen were
+built before all of it — expect the same distribution there, and run the lints' logic over
+its records first rather than reading for those defects by hand.

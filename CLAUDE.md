@@ -192,6 +192,35 @@ example rather than another prohibition** — a named ban has now failed twice o
 each, and quoting the bad shape is what worked for the trailing participial
 flourish. Do not simply add more words to the ban.
 
+### What the Creator now checks at export (from the Blood of the Lioness audit, 2026-09-07)
+
+Fourteen of that pack's sixty audit items were a structured field disagreeing with the
+prose beside it, and every one was checkable before export. `exportLints()` in
+`assets/creator.js` does it now. **Blocks** (Promote stays disabled): the lord named at
+question 5 is absent from the giri; the mentor named at question 13 is absent from the
+text about them; an outfit line is still an either-or. **Warnings** (shown, left to the
+player): an NPC's gender field against the only pronoun set the line uses; a physical
+peculiarity (Lost Eye, Lost Hand, Demon Wound, Small Stature…) that question 14 does not
+show; a personal name another promoted character in the same campaign already has.
+
+Two steps appear only when needed: **Rings** (a ring above 3 — the creation cap) and
+**Outfit** (a school-outfit line with a choice in it — "yari (spear) or naginata
+(polearm)", "any one weapon of rarity 6 or lower", "daishō (katana or scimitar,
+wakizashi)"). The Outfit step parses those three shapes into buttons or a rarity-capped
+catalog pick, stores the answer in `outfit_choices` keyed by the printed line, and the
+export writes the chosen items instead of the line. Unparseable lines get a free field.
+**The rarity cap is enforced by the pick** — which is how it emerged that a tessen (rarity
+7) had been approved for a "rarity 6 or lower" slot during the audit.
+
+The AI prompts changed with it: giri and ninjō carry their shapes (a duty the lord sets,
+naming the lord; a want stated as a want, with a face); the adventure block says everything
+in an answer happened *before the summons*; and the people-naming questions (5, 13, 16, 17)
+are handed the adventure's own cast (Person entities from its `.codex`, with the section
+that establishes each — present-day or historical) and the party's existing NPCs from the
+relationship map, to reuse before inventing. Four more rejected shapes are in `AVOID`, each
+quoted: the observing-tell clause, the closing observation, the "rather than" tail, the
+aphorism.
+
 ### Advantages and disadvantages have no prerequisites — do not invent any
 
 `peculiarityPicker()` colours its list, and it is worth knowing what the colours can

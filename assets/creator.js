@@ -515,6 +515,11 @@
          ring to increase instead, as long as that ring would not be increased
          above 3." One {from, to} per rank moved. */
       ring_reassign: [],
+      /* An outfit line that offers a choice — "yari (spear) or naginata
+         (polearm)", "any one weapon of rarity 6 or lower" — settled to the
+         item(s) chosen, keyed by the line as the corpus prints it. Twelve such
+         lines went out unsettled on one nine-character pack. */
+      outfit_choices: {},
       skills: {},
       distinctions: [], adversities: [], passions: [], anxieties: [],
       /* An open-ended peculiarity names somebody or something: "Ally [Name]",
@@ -1765,6 +1770,17 @@
     "the cost clause — \"which means\", \"which costs\", \"but cannot\", " +
     "\"but turns down\" — bolted on to make a virtue into a flaw. Tension is " +
     "asked for above; a formula for it is not. " +
+    /* Four more, named on the Blood of the Lioness audit (2026-09-07), where
+       the owner rejected each by quoting it. Quoting the rejected shape is
+       what has worked; adding adjectives to the ban has not. */
+    "Four more, rejected by name. The observing-tell clause — showing that a " +
+    "character reads people by having them watch a face: \"to watch how " +
+    "Junnosuke's face moves before he speaks\", \"reads a room's currents\". " +
+    "The closing observation — a two-word sentence tacked on after the fact: " +
+    "\"She has noticed.\" The comparison tail — \"rather than ask a Lion for " +
+    "the key\": say what he did, not what he did instead of. The aphorism — a " +
+    "balanced line that sounds like a saying: \"the first thing anyone sees and " +
+    "the last thing they mention\". Plain declaratives instead, every time. " +
     "One sentence unless the question says otherwise, and shorter is better: " +
     "the strongest answers in this archive are eight to twenty words.";
   /* One rejected shape and one good one. They are deliberately about different
@@ -1815,8 +1831,28 @@
   var SETTING = "Legend of the Five Rings 5th Edition, a samurai drama RPG set in " +
     "the fantasy realm of Rokugan.";
   var PROMPTS = {
-    giri: "You are helping create a character for " + SETTING + "\n\nWrite a single sentence describing this character's giri (duty/obligation to their lord). Giri is what they must do even at personal cost. It should be specific to their clan, school, and lord.\n\n" + STYLE,
-    ninjo: "L5R 5e character creation. Write a single sentence describing this character's ninjō (personal desire). The ninjō should sit in tension with their giri — something they want for themselves that conflicts with their duty.\n\n" + STYLE,
+    giri: "You are helping create a character for " + SETTING + "\n\nWrite a single sentence describing this character's giri (duty/obligation to their lord). Giri is what they must do even at personal cost. It should be specific to their clan, school, and lord.\n\n" +
+      /* Shape rules from the Blood of the Lioness audit, where four of nine
+         giri were not duties: one was a want, one was a lord forbidding
+         something, and the lord named in the field was absent twice. */
+      "A giri is a duty the lord SETS: name the lord, and say what they have " +
+      "tasked this character with. It is not a want dressed as a duty (\"must " +
+      "discover how the previous commander died\" — that is a ninjō), and not a " +
+      "prohibition (\"must keep his duelists from challenging her\" is the lord " +
+      "forbidding, not tasking; if the lord has a standing rule, state it as " +
+      "the lord's rule). If the character reports to someone other than their " +
+      "lord — a commander they are placed under — name both.\n\n" + STYLE,
+    ninjo: "L5R 5e character creation. Write a single sentence describing this character's ninjō (personal desire). The ninjō should sit in tension with their giri — something they want for themselves that conflicts with their duty.\n\n" +
+      "A ninjō is a WANT, stated as one: \"wants to…\". Not a situation, not a " +
+      "suspicion (\"suspects a blade was Scorpion-forged\" is a case file), and " +
+      "not the giri said again with feeling. Give the want a face where you " +
+      "can — a person in this party or already in the character's life — or an " +
+      "object somebody has and will not give up. Rejected: \"wants to keep the " +
+      "infirmary stocked so thoroughly that no soldier ever dies of a wound she " +
+      "could have treated\" (it restates the duty). Accepted: \"wants to forge " +
+      "the blade Akodo Tsanuri carries into the field. Tsanuri carries his " +
+      "family's blade, and will die holding it before he sets it down for a " +
+      "Kakita's.\"\n\n" + STYLE,
     standout_quality: "L5R 5e character creation. Write a single sentence " +
       "naming and briefly framing the standout quality — a memorable trait or " +
       "moment — that earned this character their +1 ring increase. Concrete " +
@@ -2148,6 +2184,46 @@
     return name + "\n" + b.join("\n");
   }
 
+  var CAST_FIELDS = { giri: 1, mentor_relationship: 1, relationship_person: 1,
+                      relationships: 1, parent_opinion: 1, group_history: 1,
+                      raised_by: 1 };
+
+  /* The adventure's own named people (from its .codex, via build.py) and the
+     people this party's other characters have already named (from the
+     relationship map). Both are lists the model can pick from. */
+  function castContext() {
+    var camp = C.campaign;
+    if (!camp) return null;
+    var c = null;
+    CAMPAIGNS.forEach(function (x) { if (x.name === camp) c = x; });
+    var b = [];
+    if (c && (c.cast || []).length) {
+      b.push("The adventure's own named people. Use one where a present-day " +
+             "person fits the role; a person the adventure places in its past " +
+             "is not alive to be anyone's lord:\n" +
+             c.cast.map(function (p) {
+               return "- " + p.name + (p.section ? " (" + p.section + ")" : "") +
+                      (p.note ? " — " + p.note : "");
+             }).join("\n"));
+    }
+    var g = ((window.L5R_RELMAP || {}).campaigns || {})[camp];
+    if (g) {
+      var pcs = g.nodes.filter(function (n) { return n.kind === "pc" && n.name !== C.name; })
+                       .map(function (n) { return n.name; });
+      var npcs = g.nodes.filter(function (n) { return n.kind !== "pc"; })
+                        .map(function (n) {
+                          return n.name + ((n.named_by || []).length
+                            ? " (already known to " + n.named_by.join(", ") + ")" : "");
+                        });
+      if (pcs.length) b.push("The other characters in this party: " + pcs.join(", ") +
+                             ". A relationship to one of them is worth more than a new stranger.");
+      if (npcs.length) b.push("People this party's other characters have already named — " +
+                              "reuse one before inventing another:\n" +
+                              npcs.map(function (x) { return "- " + x; }).join("\n"));
+    }
+    return b.length ? b.join("\n\n") : null;
+  }
+
   function weightedContext(fieldKey, omit) {
     var facts = characterContext(omit);
     var qn = FIELD_QUESTION[fieldKey];
@@ -2168,8 +2244,21 @@
              "be doing. Draw on it for somewhere real to put this character " +
              "rather than inventing a setting. It is not the subject of the " +
              "answer, and the answer should not narrate the adventure's plot " +
-             "or assume its outcome:\n\n" + adv);
+             "or assume its outcome. EVERYTHING IN THIS ANSWER HAPPENED BEFORE " +
+             "THE CHARACTER WAS SUMMONED TO IT: the adventure is who they are " +
+             "and where they stand, not events they have lived through. Do not " +
+             "stage the answer inside one of its scenes, do not have its events " +
+             "already under way, and do not put the character in a room with " +
+             "its cast — knowing of a person from before is fine; meeting them " +
+             "in the adventure's own library is not:\n\n" + adv);
     }
+    /* The pack's people, for the questions that name people. Nine characters
+       built for one adventure shared no NPC between them and touched none of
+       the adventure's ten present-day people, because the model was never
+       shown either list. */
+    var cast = CAST_FIELDS[fieldKey] ? castContext() : null;
+    if (cast) b.push("PEOPLE WHO ALREADY EXIST. Prefer one of these to a " +
+                     "stranger you would invent:\n\n" + cast);
     if (C.concept) {
       b.push("THE CONCEPT the player is holding for this character. This is " +
              "where the answer's material comes from — the people, the places, " +
@@ -3297,7 +3386,145 @@
       out.push({ name: accName || acc, note: accName ? acc : "The accoutrement named at question 14",
                  open: false, held: true, prose: true, accoutrement: true });
     }
-    return out;
+    // an either-or the player has settled travels as the items chosen
+    var ch = C.outfit_choices || {};
+    var settled = [];
+    out.forEach(function (g) {
+      if (g.open && ch[g.name] && ch[g.name].length) {
+        ch[g.name].forEach(function (it) {
+          settled.push({ name: it, note: g.note, open: false, held: true, settled_from: g.name });
+        });
+      } else {
+        settled.push(g);
+      }
+    });
+    return settled;
+  }
+
+  /* ---- the outfit's either-ors ---- */
+
+  // "wakizashi (short sword) and kamayari" -> ["wakizashi", "kamayari"]: the
+  // corpus glosses in parentheses, and a gloss is not an item
+  function outfitItems(s) {
+    return String(s).replace(/\([^)]*\)/g, "").split(/\s+and\s+/i)
+      .map(function (x) { return x.trim(); }).filter(Boolean);
+  }
+
+  /* What an open line offers: a choice between listed things, a pick from the
+     catalog under a rarity cap, or nothing this can parse. */
+  function outfitOffer(line) {
+    var s = String(line);
+    var m = /^(?:any\s+)?(one|two|three|\d+)\s+(weapon|item|trinket|armor)s?\s+of\s+rarity\s+(\d+)\s+or\s+lower/i.exec(s);
+    if (m) {
+      var n = { one: 1, two: 2, three: 3 }[m[1].toLowerCase()] || Number(m[1]);
+      return { kind: "pick", count: n, rarity: Number(m[3]), type: m[2].toLowerCase() };
+    }
+    // "daishō (katana or scimitar, wakizashi)": the choice sits inside the gloss
+    var d = /^daish[ōo]\s*\(([^)]*)\)/i.exec(s);
+    if (d) {
+      var parts = d[1].split(",").map(function (x) { return x.trim(); });
+      var alts = parts[0].split(/\s+or\s+/i).map(function (x) { return x.trim(); });
+      if (alts.length > 1) {
+        return { kind: "either", options: alts.map(function (a) { return [a].concat(parts.slice(1)); }) };
+      }
+    }
+    if (/\bor\b/i.test(s)) {
+      var sides = s.replace(/\([^)]*\)/g, "").split(/\s+or\s+/i);
+      if (sides.length >= 2) return { kind: "either", options: sides.map(outfitItems) };
+    }
+    return { kind: "free" };
+  }
+
+  function outfitOpen() {
+    return outfitGear().filter(function (g) { return g.open; });
+  }
+  function outfitNeeded() {
+    return outfitOpen().length > 0 || Object.keys(C.outfit_choices || {}).length > 0;
+  }
+
+  function outfitSection(body) {
+    var open = outfitOpen();
+    var ch = C.outfit_choices || {};
+    var SUB = { weapon: ["weapon"], armor: ["armor"], item: ["item"], trinket: ["item"] };
+
+    if (!open.length) {
+      var ok = document.createElement("p");
+      ok.className = "muted small";
+      ok.textContent = "Every line of the outfit now names a thing this character owns.";
+      body.appendChild(ok);
+    }
+    open.forEach(function (g) {
+      label(body, g.name);
+      var offer = outfitOffer(g.name);
+      if (offer.kind === "either") {
+        var row = document.createElement("div");
+        row.className = "choicerow";
+        offer.options.forEach(function (opt) {
+          var b = document.createElement("button");
+          b.type = "button"; b.className = "choice";
+          b.textContent = opt.join(" and ");
+          b.addEventListener("click", function () {
+            C.outfit_choices = C.outfit_choices || {};
+            C.outfit_choices[g.name] = opt.map(function (o) { return catalogHas(o) || o; });
+            save(); render();
+          });
+          row.appendChild(b);
+        });
+        body.appendChild(row);
+      } else if (offer.kind === "pick") {
+        var have = ch[g.name] || [];
+        var hint = document.createElement("p");
+        hint.className = "muted small";
+        hint.textContent = "Choose " + offer.count + " " + offer.type + (offer.count > 1 ? "s" : "") +
+          " of rarity " + offer.rarity + " or lower from the compendium" +
+          (have.length ? " — chosen so far: " + have.join(", ") : "") + ".";
+        body.appendChild(hint);
+        var items = CATALOG.filter(function (e) {
+          // the unarmed profiles (Bite, Punch, Kick) are weapon rows in the
+          // compendium and not things anybody is issued
+          return SUB[offer.type].indexOf(e.sub_type) >= 0 &&
+                 !/unarmed/i.test(e.category || e.kind || "") &&
+                 (e.rarity == null || Number(e.rarity) <= offer.rarity);
+        }).map(function (e) {
+          return { value: e.name, label: e.name,
+                   meta: [e.category || e.kind, e.rarity != null ? "rarity " + e.rarity : ""].filter(Boolean).join(" · ") };
+        });
+        pickList(body, items, null, function (v) {
+          var cur = (C.outfit_choices || {})[g.name] || [];
+          if (cur.length >= offer.count) cur = [];
+          C.outfit_choices = C.outfit_choices || {};
+          C.outfit_choices[g.name] = cur.concat([v]);
+          save(); render();
+        });
+      } else {
+        var ta = document.createElement("textarea");
+        ta.rows = 1;
+        ta.placeholder = "Name what this character actually carries for this line";
+        ta.addEventListener("change", function () {
+          if (!ta.value.trim()) return;
+          C.outfit_choices = C.outfit_choices || {};
+          C.outfit_choices[g.name] = [ta.value.trim()];
+          save(); render();
+        });
+        body.appendChild(ta);
+      }
+    });
+    var keys = Object.keys(ch);
+    if (keys.length) {
+      label(body, "Settled");
+      keys.forEach(function (k) {
+        var row = document.createElement("div");
+        row.className = "choicerow";
+        var t = document.createElement("span");
+        t.className = "muted small";
+        t.textContent = k + " → " + ch[k].join(" and ") + " ";
+        var u = document.createElement("button");
+        u.type = "button"; u.className = "btn ghost"; u.textContent = "Undo";
+        u.addEventListener("click", function () { delete C.outfit_choices[k]; save(); render(); });
+        row.appendChild(t); row.appendChild(u);
+        body.appendChild(row);
+      });
+    }
   }
 
   /* Does the compendium have this by name? Used to decide whether a piece of
@@ -4737,6 +4964,13 @@
       desc: "A ring cannot pass rank 3 during character creation. Every increase up to here was legal by itself; only the total can break the cap, so this is settled last — the excess rank moves to a ring you choose.",
       done: function () { return ringExcess(computed().rings) === 0; },
       render: ringCapSection },
+
+    { id: "outfit", n: 0, label: "Outfit",
+      eyebrow: "Before you export",
+      title: "The Outfit's Either-Ors",
+      desc: "The school outfit is printed with choices in it — \"yari (spear) or naginata (polearm)\", \"any one weapon of rarity 6 or lower\". A character owns things, not choices; settle each line to what they actually carry.",
+      done: function () { return outfitOpen().length === 0; },
+      render: outfitSection },
 
     { id: "export", n: 21,
       label: function () { return isEdit() ? "Save" : "Export"; },
@@ -7620,6 +7854,81 @@
     body.appendChild(pre);
   }
 
+  /* What the Blood of the Lioness audit found by hand, checked here instead.
+     Fourteen of that pack's sixty items were a structured field and the prose
+     beside it disagreeing — a lord named in the field and absent from the
+     giri, a mentor's text about somebody else, an NPC's gender field against
+     the pronoun the line uses — and every one was checkable at export. Blocks
+     stop Promote; warnings are shown and left to the player. */
+  function foldName(s) {
+    return String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  }
+  function mentionsName(hay, needle) {
+    return !!needle && foldName(hay).indexOf(foldName(needle)) >= 0;
+  }
+  var PHYSICAL = {
+    "lost eye": /\b(eye|socket|patch)\b/i,
+    "lost arm or lost hand": /\b(hand|arm|glove|sleeve|stump)\b/i,
+    "lost leg": /\b(leg|crutch|limp|stump)\b/i,
+    "lost fingers": /\bfinger/i,
+    "demon wound": /\b(scar|wound)\b/i,
+    "maimed visage": /\b(scar|face|mouth|lip|cheek|jaw)\b/i,
+    "dashing scar": /\bscar/i,
+    "large stature": /\b(tall|large|broad|towering|big|heavy)\b/i,
+    "small stature": /\b(small|short|slight|little)\b/i,
+    "fractured spine": /\b(stoop|spine|back|bent|hunch)\b/i,
+    "muteness": /\b(mute|sign|silent|speak|voice|slate)\b/i,
+    "nerve damage": /\b(hand|arm|stiff|tremor|shak)/i
+  };
+  function exportLints() {
+    var blocks = [], warns = [], a = C.answers;
+    if (a.lord_name && a.giri && !mentionsName(a.giri, a.lord_name)) {
+      blocks.push("Question 5 names the lord as \u201c" + a.lord_name + "\u201d and the giri " +
+                  "never says the name. Name the lord in the giri — and the commander " +
+                  "they are placed under, if that is someone else — or fix the field.");
+    }
+    if (a.mentor && a.mentor.name && a.mentor.text && !mentionsName(a.mentor.text, a.mentor.name)) {
+      blocks.push("Question 13's mentor is \u201c" + a.mentor.name + "\u201d and the text " +
+                  "about them never says the name. It was written about somebody else.");
+    }
+    var open = outfitOpen();
+    if (open.length) {
+      blocks.push(open.length + " outfit line" + (open.length === 1 ? "" : "s") +
+                  " still an either-or: " + open.map(function (g) { return g.name; }).join("; ") +
+                  ". Settle them at the Outfit step.");
+    }
+    (a.people || []).forEach(function (p) {
+      var t = p.text || "";
+      var f = (t.match(/\b(she|her|hers)\b/gi) || []).length;
+      var m = (t.match(/\b(he|him|his)\b/gi) || []).length;
+      if (p.gender === "male" && f && !m) {
+        warns.push(p.name + " is marked male and the line uses only she/her. If that is " +
+                   p.name + " and not " + (C.name || "the character") + ", the field is wrong.");
+      }
+      if (p.gender === "female" && m && !f) {
+        warns.push(p.name + " is marked female and the line uses only he/him.");
+      }
+    });
+    var q14 = (a.first_impression || "") + " " + (a.accoutrement || "");
+    peculiarityRefs().forEach(function (p) {
+      var re = PHYSICAL[String(p.name || "").toLowerCase().replace(/\s*\(.*$/, "")];
+      if (re && !re.test(q14)) {
+        warns.push("\u201c" + p.name + "\u201d is on the sheet and question 14 does not show it. " +
+                   "A portrait will.");
+      }
+    });
+    var mine = (C.name || "").trim().split(/\s+/).pop();
+    if (mine && C.campaign) {
+      ARCHIVE.forEach(function (x) {
+        if (x.campaign === C.campaign && x.status !== "draft" && x.name !== C.name &&
+            String(x.name).split(/\s+/).pop() === mine) {
+          warns.push("Another character in " + C.campaign + " is also called " + mine + ": " + x.name + ".");
+        }
+      });
+    }
+    return { blocks: blocks, warns: warns };
+  }
+
   function renderExport(body) {
     var edit = isEdit();
     var doc = edit ? toEditPatch() : toSourceJson();
@@ -7628,6 +7937,7 @@
     }).map(function (s) {
       return typeof s.label === "function" ? s.label() : s.label;
     });
+    var lints = edit ? { blocks: [], warns: [] } : exportLints();
 
     if (edit) {
       var head = document.createElement("p");
@@ -7680,7 +7990,21 @@
       body.appendChild(warn);
     }
 
-    var complete = missing.length === 0;
+    if (lints.blocks.length || lints.warns.length) {
+      var lint = document.createElement("div");
+      lint.className = "export-warn";
+      lint.innerHTML =
+        (lints.blocks.length
+          ? "<p><strong>Not yet exportable:</strong></p><ul>" +
+            lints.blocks.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>"
+          : "") +
+        (lints.warns.length
+          ? "<p><strong>Worth a look:</strong></p><ul>" +
+            lints.warns.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>"
+          : "");
+      body.appendChild(lint);
+    }
+    var complete = missing.length === 0 && lints.blocks.length === 0;
 
     var note = document.createElement("p");
     note.className = "muted small";
@@ -7694,7 +8018,7 @@
     row.innerHTML = '<button type="button" class="btn" id="dl">Download draft</button>' +
       '<button type="button" class="btn" id="cp">Copy JSON</button>' +
       '<button type="button" class="btn promote" id="promote"' +
-      (complete ? "" : " disabled title=\"Answer every question first\"") +
+      (complete ? "" : " disabled title=\"Answer every question and clear the blocks first\"") +
       ">Promote &amp; download</button>" +
       '<button type="button" class="btn ghost" id="reset">Delete this draft</button>';
     body.appendChild(row);
@@ -10543,7 +10867,9 @@
     // rank has been moved, even though nothing is above 3 any more, because it
     // is then holding a decision the player has to be able to see and undo.
     return STEPS.filter(function (s) {
-      return s.id !== "ring-cap" || ringCapNeeded();
+      if (s.id === "ring-cap") return ringCapNeeded();
+      if (s.id === "outfit") return outfitNeeded();
+      return true;
     });
   }
 

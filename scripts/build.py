@@ -496,6 +496,36 @@ def adventure_context(arc_name):
     return out or None
 
 
+def adventure_cast(arc_name):
+    """The adventure's own named people, from its .codex.
+
+    The Creator's AI was never shown who the adventure already has, so nine
+    characters built for Blood of the Lioness touched none of its ten present-
+    day people and invented lookalikes for two of them. The codex holds them
+    as Person entities, each anchored to the section of the .lore that
+    establishes them -- which is what tells a present-day librarian from an
+    820 general -- with the quote that does the establishing.
+    """
+    if not arc_name:
+        return None
+    path = os.path.join(corpus_base_dir(), re.sub(r"\.arc$", ".codex", arc_name))
+    if not os.path.exists(path):
+        return None
+    text = open(path, encoding="utf-8").read()
+    out = []
+    for m in re.finditer(r'ENTITY\s+#\S+\s+\^"((?:[^"\\]|\\.)*)"\s*\{(.*?)\n    \}',
+                         text, re.S):
+        name, body = m.group(1), m.group(2)
+        if not re.search(r'IS\s+\^"Person"', body):
+            continue
+        at = re.search(r'SOURCE\s+"[^"]*"\s+AT\s+"([^"]*)"', body)
+        q = re.search(r'FROM\s+"((?:[^"\\]|\\.)*)"', body)
+        out.append({"name": name.replace('\\"', '"'),
+                    "section": at.group(1).replace("-", " ") if at else None,
+                    "note": q.group(1).replace('\\"', '"')[:160] if q else None})
+    return out or None
+
+
 def campaigns(cx):
     """Every campaign the archive knows of, whether a character is tagged to
     one yet or not.
@@ -643,6 +673,9 @@ def campaigns(cx):
                     # arc in the corpus, so its note is the only thing there is
                     # to say and stands in.
                     "adventure": adventure_context(arc_name),
+                    # who the adventure already has, for the questions that
+                    # name people
+                    "cast": adventure_cast(arc_name),
                     # what a character is made against where no arc states it
                     "premise": spec.get("premise")
                                or (declared.get(owner) or {}).get("premise"),
