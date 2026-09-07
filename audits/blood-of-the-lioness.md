@@ -356,6 +356,11 @@ name Miné per D38), **Yoshimoto** (strong; lord per D2).
 
 ## 7. Narrative — proposals with full text
 
+*Applied 2026-09-07: D45 in full (Q10 as a past failure, on the owner's ruling that a
+challenge is a past event); D46 in the owner's own wording, set at the previous commander's
+funeral rather than in the adventure's shrine scene; D47 with D8; Yoshimoto's Q10 likewise
+moved to the past (the poacher's children). Open: D48, D50; D49/D51 are D13/D15/D16.*
+
 **D45. Asako Shuichi: the foundation-stones thread.** Q10, Q12, Q17 and Q20 are all one
 incident — a Phoenix courtier inspecting the Ikoma Hall's cellar masonry — written so that
 *Elemental Deficiency (Earth)* and *Loathing for Peasants* had a scene. It is not a job a

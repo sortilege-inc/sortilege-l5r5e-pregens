@@ -63,7 +63,7 @@
    "ninjo": "Umi wants to know how the last commander of the War College died. Tsanuri has forbidden anyone to tell her, and she has never once asked him why.",
    "standout_quality": "Umi gives clear, immediate orders in the field because she has learned not to hesitate on decisions she does not fully understand, and her uncertainty never reaches her voice.",
    "accomplishment": "She broke up a knife fight between two senior students in the library stacks without drawing her own blade or uncoiling the whip at her hip, using nothing but her voice and the threat of reporting them both to Tsanuri.",
-   "challenge": "When Shosuro Amane or another spirit-touched presence moves through the War College library during her investigation, Umi corrects a student's grip while the air around her warps with something none of the archivists can name, and she notices nothing at all.",
+   "challenge": "At the previous commander's funeral the Kitsu priests broke off mid-chant and turned to the altar, and hurriedly paid obeisance. Umi stood nearest it, confused, seeing only an altar and a candle.",
    "peace": "When she stands before the ranks at dawn drill and watches a junior student finally understand the correction she gave three days ago—the stance settling into bone, the grip loosening into true strength—Umi stops giving orders and simply observes, and the line of her shoulders drops.",
    "fear": "When she stands in the library after the archivists have left, Umi realizes she cannot remember the last time anyone told her something she did not already know or deduce, and that she has stopped asking questions aloud because she learned long ago that the answers never came.",
    "accoutrement": "Commander's insignia. Hangs on a braided cord.",
@@ -153,7 +153,7 @@
     "She broke up a knife fight between two senior students in the library stacks without drawing her own blade or uncoiling the whip at her hip, using nothing but her voice and the threat of reporting them both to Tsanuri."
    ],
    "challenge": [
-    "When Shosuro Amane or another spirit-touched presence moves through the War College library during her investigation, Umi corrects a student's grip while the air around her warps with something none of the archivists can name, and she notices nothing at all."
+    "At the previous commander's funeral the Kitsu priests broke off mid-chant and turned to the altar, and hurriedly paid obeisance. Umi stood nearest it, confused, seeing only an altar and a candle."
    ],
    "peace": [
     "When she stands before the ranks at dawn drill and watches a junior student finally understand the correction she gave three days ago—the stance settling into bone, the grip loosening into true strength—Umi stops giving orders and simply observes, and the line of her shoulders drops."
@@ -231,7 +231,7 @@
    },
    "step10": {
     "answers": {
-     "difficulty": "When Shosuro Amane or another spirit-touched presence moves through the War College library during her investigation, Umi corrects a student's grip while the air around her warps with something none of the archivists can name, and she notices nothing at all."
+     "difficulty": "At the previous commander's funeral the Kitsu priests broke off mid-chant and turned to the altar, and hurriedly paid obeisance. Umi stood nearest it, confused, seeing only an altar and a candle."
     },
     "picks": {}
    },

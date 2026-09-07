@@ -63,7 +63,7 @@
    "ninjo": "Yoshimoto wants to return to the Unicorn grasslands before his posting to the Emerald Champion hardens him into something his clan no longer recognizes.",
    "standout_quality": "Yoshimoto reads a room's currents before anyone speaks—the unspoken tension between instructors, the shame a student hides behind bravado—and knows which silences to let sit and which to break.",
    "accomplishment": "Yoshimoto found the poacher's camp in the high grasslands where three search parties had passed through blind, and brought back not the man's head but his confession—which the daimyō needed more than a corpse to settle the matter quietly with the family whose lands the poacher had crossed.",
-   "challenge": "The children of the magistrates and scholars at the Castle of the Swift Sword sense something off in Yoshimoto and will not sit still for his questions about the records, no matter how carefully he phrases them or what he offers them to sweeten the task.",
+   "challenge": "Yoshimoto was sent to question a farmer's children about the poacher and got nothing; the youngest hid behind the well until he rode off.",
    "peace": "In the pre-dawn hours at the Castle's practice grounds, Yoshimoto runs a young horse through the set patterns his own mount refuses, and for the first time that week his shoulders drop below his ears.",
    "fear": "At the Castle library Yoshimoto catches himself lingering over the magistrate's clerk's hands as she turns the archive pages, and realizes she has noticed, and cannot stop himself from meeting her eye when she looks up.",
    "accoutrement": "Magistrate's token. Worn on his mare's bridle.",
@@ -155,7 +155,7 @@
     "Yoshimoto found the poacher's camp in the high grasslands where three search parties had passed through blind, and brought back not the man's head but his confession—which the daimyō needed more than a corpse to settle the matter quietly with the family whose lands the poacher had crossed."
    ],
    "challenge": [
-    "The children of the magistrates and scholars at the Castle of the Swift Sword sense something off in Yoshimoto and will not sit still for his questions about the records, no matter how carefully he phrases them or what he offers them to sweeten the task."
+    "Yoshimoto was sent to question a farmer's children about the poacher and got nothing; the youngest hid behind the well until he rode off."
    ],
    "peace": [
     "In the pre-dawn hours at the Castle's practice grounds, Yoshimoto runs a young horse through the set patterns his own mount refuses, and for the first time that week his shoulders drop below his ears."
@@ -234,7 +234,7 @@
    },
    "step10": {
     "answers": {
-     "difficulty": "The children of the magistrates and scholars at the Castle of the Swift Sword sense something off in Yoshimoto and will not sit still for his questions about the records, no matter how carefully he phrases them or what he offers them to sweeten the task."
+     "difficulty": "Yoshimoto was sent to question a farmer's children about the poacher and got nothing; the youngest hid behind the well until he rode off."
     },
     "picks": {}
    },
