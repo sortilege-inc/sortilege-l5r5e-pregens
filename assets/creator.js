@@ -356,34 +356,43 @@
     return (PEC_USED[uuid] || []).filter(function (u) { return !u.draft; }).length;
   }
 
-  /* COVERAGE_BIAS as loaded dice, not as a filter. Every entry the question
-     allows stays reachable — this only changes the odds. Two levels,
-     multiplied:
+  /* COVERAGE_BIAS as loaded dice, not as a filter: every entry the question
+     allows stays reachable, and the ones the archive has fewest of are simply
+     likelier. 1/(1+n)^2 on the number of promoted characters carrying the
+     entry — untaken is 4x one held once and 9x one held twice.
 
-       the entry  1/(1+n)^2 on the number of promoted characters carrying it,
-                  so an untaken entry is 4x as likely as one held once and 9x
-                  as likely as one held twice
-       the group  the same curve on the mean for its kind, which only bites
-                  where a question offers more than one kind — question 13's
-                  mentor grant is a distinction or a passion, and its path B
-                  an adversity or an anxiety
+     The four kinds are independent pools. Each question rolls in exactly one
+     of them, so scarcity is only ever measured against the entry's own kind,
+     and there is nothing to weigh a distinction against a passion with. One
+     picker does offer two kinds at once — question 13's mentor grant, a
+     distinction or a passion on path A, an adversity or an anxiety on path B
+     — and there each kind keeps the share of the roll its size would give it
+     anyway, with the load applied inside it. So the mixed picker does not
+     quietly spend a passion's turn on a distinction because distinctions
+     happen to be better covered.
 
-     What this replaced filtered instead: the roll could only land on the
-     least-used entries and everything above that minimum was unreachable,
-     which is not what "prefer" should mean here. */
+     Two earlier attempts at this, for the record: it filtered rather than
+     loaded (anything above the minimum was unreachable), and it multiplied in
+     a factor built from the kind's mean take-count, which compares across
+     pools that never compete. */
   function pecDecay(n) { return 1 / ((1 + n) * (1 + n)); }
 
   function rollLeastUsed(pool) {
     if (!COVERAGE_BIAS || pool.length < 2) return pool[randomBelow(pool.length)];
+    var kindOf = function (x) { return x.kind || "-"; };
+    // each kind's own scarcity, and what it sums to inside this pool
+    var raw = pool.map(function (x) { return pecDecay(timesTaken(x.uuid)); });
     var sum = {}, count = {};
-    pool.forEach(function (x) {
-      var k = x.kind || "-";
-      sum[k] = (sum[k] || 0) + timesTaken(x.uuid);
+    pool.forEach(function (x, i) {
+      var k = kindOf(x);
+      sum[k] = (sum[k] || 0) + raw[i];
       count[k] = (count[k] || 0) + 1;
     });
-    var weight = pool.map(function (x) {
-      var k = x.kind || "-";
-      return pecDecay(timesTaken(x.uuid)) * pecDecay(sum[k] / count[k]);
+    // normalised per kind, then given back that kind's share by count: the
+    // pools keep their proportions and the load works within each
+    var weight = pool.map(function (x, i) {
+      var k = kindOf(x);
+      return sum[k] ? (raw[i] / sum[k]) * (count[k] / pool.length) : 0;
     });
     var total = weight.reduce(function (a, b) { return a + b; }, 0);
     if (!(total > 0)) return pool[randomBelow(pool.length)];
