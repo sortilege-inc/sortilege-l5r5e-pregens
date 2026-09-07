@@ -14,7 +14,7 @@
  },
  "mode": "core",
  "portrait": "src/portraits/kitsuki-nagiko.webp",
- "concept": "She stops mid-sentence to reread something in a ledger, leaving whoever was speaking to wait while she traces a line with her finger.",
+ "concept": "A scar runs from Nagiko's left brow across the cheek. She stops mid-sentence to reread something in a ledger, leaving whoever was speaking to wait while she traces a line with her finger.",
  "summary": null,
  "notes": "",
  "twenty_questions": {
@@ -86,7 +86,8 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "She stops mid-sentence to reread something in a ledger, leaving whoever was speaking to wait while she traces a line with her finger."
+     "first_sight": "A scar runs from Nagiko's left brow across the cheek. She stops mid-sentence to reread something in a ledger, leaving whoever was speaking to wait while she traces a line with her finger.",
+     "accoutrement": "Journal of observations."
     },
     "picks": {}
    },
@@ -249,20 +250,24 @@
      "name": "Calligraphy Set"
     },
     {
-     "name": "bō (staff) or jian (straight-edged sword)",
-     "custom": true,
-     "text": "From the Kitsuki Investigator starting outfit",
-     "held": false
-    },
-    {
      "name": "Traveling pack"
     },
     {
      "name": "Journal of observations"
+    },
+    {
+     "name": "Journal of observations",
+     "custom": true,
+     "text": "Journal of observations.",
+     "accoutrement": true
+    },
+    {
+     "name": "Jian",
+     "settled_from": "bō (staff) or jian (straight-edged sword)"
     }
    ],
    "advancements": []
   }
  ],
- "bio": "Kitsuki Nagiko — she/her — Emerald Magistrate\n\n**Kitsuki Investigator** · Dragon · Courtier/Bushi · Air +1, Earth +1 · Honor 45 · she/her\n**Emerald Magistrate**\n\n### Cards\n- **The Emperor, reversed** — rigid; will follow her method thoroughly regardless of what anyone else thinks.\n- **Knight of Swords, reversed** — tactless, unsympathetic; idealises a moment when people would simply cede to her correct, factual assessments.\n- **Knight of Pentacles, upright** — hard-working, practical, uncomplaining about her own difficulties. She will complain about others.\n\n### Reading\nTwo Knights and a reversed Emperor. She holds the *office* of authority while both other cards say she is still a Knight — in service, in motion, not yet a master. She has the writ before she has the maturity, and the Emperor reversed is what fills that gap with procedure.\n\nThe two Knights run at opposite tempos, and that is her: patient with the work, impatient with people. Nine hours on a body, ninety seconds on your feelings about it.\n\nThe Knight of Pentacles gives her a running audit of who is falling short, while she says nothing about her own difficulties. That isn't hypocrisy she is aware of — it doesn't occur to her that the two are the same ledger.\n\nThe Knight of Swords fantasy is her emotional core: a room where facts land and everyone concedes. Rokugan is not that room, and the Kitsuki evidence method specifically has contested standing outside Dragon lands. The Emperor reversed therefore puts her in the position of insisting on a procedure that the people present may not be obliged to accept."
+ "bio": ""
 }

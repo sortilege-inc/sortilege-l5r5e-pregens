@@ -30,7 +30,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to their Scorpion handlers, which means they cannot afford to miss a performance or be seen conferring with anyone the theatre company would recognize.",
+     "social_giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to Shosuro Masuko, their Scorpion handler, which means they cannot afford to miss a performance or be seen conferring with anyone the theatre company would recognize.",
      "lord_name": "Shosuro Masuko"
     },
     "picks": {}
@@ -68,7 +68,7 @@
    },
    "step11": {
     "answers": {
-     "calms": "Hisano sits alone in the dressing room after the final curtain, holding a cracked teacup from the prop table, carefully painting gold lacquer into the fracture lines until the break becomes something worth looking at."
+     "calms": "Hisano sits alone in the dressing room after the final curtain with the cracked mask of their role, painting gold lacquer into the break."
     },
     "picks": {}
    },
@@ -80,14 +80,14 @@
    },
    "step13": {
     "answers": {
-     "most_learn": "Kaiu Michio"
+     "most_learn": "Kaiu Michio — Kaiu Michio built the stage machinery for the company Hisano performs with and taught them where every trapdoor and counterweight is; Hisano has used it twice for the Scorpion and forty times for the play."
     },
     "picks": {}
    },
    "step14": {
     "answers": {
      "first_sight": "Hisano's hands move while they listen—not fidgeting, but the precise small adjustments a puppeteer makes, testing invisible strings, and they do not seem aware they are doing it.",
-     "accoutrement": "The cracked teacup from the prop table sits on the shelf above Hisano's dressing mirror, the fractures filled with gold lacquer in varying stages of completion, and when the theatre company's new stagehand asked what it was for, Hisano said it was a practice piece and did not mention that they have been working on it for three years."
+     "accoutrement": "Cracked mask. Gold in the seams."
     },
     "picks": {}
    },
@@ -120,7 +120,7 @@
    },
    "step20": {
     "answers": {
-     "death": "Hisano collapses in the wings during the final act, the teacup still in their hand, and the understudy goes on for the curtain call while Hisano's handlers spend three days deciding whether to report the death or simply mark them inactive in the ledgers."
+     "death": "Hisano collapses in the wings during the final act, the mask still in their hand, and the understudy goes on for the curtain call."
     },
     "picks": {}
    }
@@ -181,7 +181,7 @@
     "glory": 37,
     "status": 35,
     "ninjo": "Hisano wants to direct a new production with actors other than themself, but every time they miss a performance to scout talent or develop a script, the theatre company loses money and their handlers grow impatient about the intelligence gap.",
-    "giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to their Scorpion handlers, which means they cannot afford to miss a performance or be seen conferring with anyone the theatre company would recognize.",
+    "giri": "Hisano performs the lead in the masked drama four nights a week and reports what they observe of the audience to Shosuro Masuko, their Scorpion handler, which means they cannot afford to miss a performance or be seen conferring with anyone the theatre company would recognize.",
     "bushido_tenets": {
      "paramount": "Duty and Loyalty",
      "less_significant": "Honor"
@@ -261,13 +261,14 @@
      "name": "Traveling pack"
     },
     {
-     "name": "The cracked teacup from the prop table sits on the shelf above Hisano's dressing mirror, the fractures filled with gold lacquer in varying stages of completion, and when the theatre company's new stagehand asked what it was for, Hisano said it was a practice piece and did not mention that they have been working on it for three years.",
+     "name": "Cracked mask",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Cracked mask. Gold in the seams.",
+     "accoutrement": true
     }
    ],
    "advancements": []
   }
  ],
- "bio": "Shosuro Hisano — they/them — Scorpion asset on loan to Nagiko\n\n**Shosuro Infiltrator** · Scorpion · Shinobi/Courtier · Air +1, Fire +1 · Honor 30 · they/them\n**Not a yoriki.** A long-dormant Scorpion asset whose use has been granted to Nagiko as a favour from the Scorpion.\n\n### Cards\n- **Six of Wands** — a highly regarded performer.\n- **Eight of Pentacles, reversed** — wants to be able to manage other artists, but is too embroiled in their own craft.\n- **Page of Wands** — also blocked by inexperience, but has big ideas for what they hope to do as they move into more of a producer role.\n\n### Reading\nNothing in this spread is about espionage. Three cards on craft and ambition, none on tradecraft. Hisano is an artist who happens to have been trained to lie professionally, rather than a spy with a cover story.\n\nThe acclaim was accumulated *during the sleep*. A dormant asset lives their cover, and theirs is a stage career they've had nothing to do but excel at. The cover stopped being a cover and became the only life they've actually lived.\n\nSix of Wands over Page of Wands is an unusual position: senior at the thing they want to stop doing, novice at the thing they want to start. Both true simultaneously. Not impostor syndrome — a person whose actual credential is in the wrong field, and who knows it.\n\nThe Eight of Pentacles reversed is the mechanism. Excellence keeps them at the bench. Every strong performance earns another performance. Success is the cage, and it's invisible from outside, because it looks like a career going well.\n\nThe Page of Wands does double duty: inexperienced as a producer, and rusty as an operative. The one thing everyone will assume they're good at is the thing they're least current in."
+ "bio": ""
 }

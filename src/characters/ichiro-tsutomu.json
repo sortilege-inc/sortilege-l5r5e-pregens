@@ -30,7 +30,8 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Ichirō keeps Chiyo's books balanced and her debtors reminded, work that pays better than sumai ever did and requires him to be the thing he already is: a man who doesn't move until he must."
+     "social_giri": "Ichirō keeps Kasuga Chiyo's books balanced and her debtors reminded, work that pays better than sumai ever did and requires him to be the thing he already is: a man who doesn't move until he must.",
+     "lord_name": "Kasuga Chiyo"
     },
     "picks": {}
    },
@@ -85,7 +86,8 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "Ichirō still has the shoulders and chest of a sumai wrestler, though he has not fought in several months."
+     "first_sight": "Ichirō still has the shoulders and chest of a sumai wrestler, though he has not fought in several months.",
+     "accoutrement": "Small drum."
     },
     "picks": {}
    },
@@ -179,7 +181,7 @@
     "glory": 32,
     "status": 25,
     "ninjo": "Ichirō sends money to a sumai stable in the interior, enough that the master there has stopped taking commissions and trains only the fighters Ichirō pays for, and Chiyo has never asked why her enforcer bleeds money into a town he doesn't live in anymore.",
-    "giri": "Ichirō keeps Chiyo's books balanced and her debtors reminded, work that pays better than sumai ever did and requires him to be the thing he already is: a man who doesn't move until he must.",
+    "giri": "Ichirō keeps Kasuga Chiyo's books balanced and her debtors reminded, work that pays better than sumai ever did and requires him to be the thing he already is: a man who doesn't move until he must.",
     "bushido_tenets": {
      "paramount": "Duty and Loyalty",
      "less_significant": "Righteousness"
@@ -213,7 +215,8 @@
      "name": "Keen Smell"
     },
     {
-     "name": "Blackmailed by"
+     "name": "Blackmailed by Boss Hana",
+     "subject": "Boss Hana"
     },
     {
      "name": "Stories"
@@ -258,10 +261,16 @@
     },
     {
      "name": "Traveling pack"
+    },
+    {
+     "name": "Small drum",
+     "custom": true,
+     "text": "Small drum.",
+     "accoutrement": true
     }
    ],
    "advancements": []
   }
  ],
- "bio": "Ichirō Tsutomu — he/him — Chiyo's hired muscle\n\n**Ichirō Grappler** · Badger · Bushi · Earth +1, Water +1 · Honor 45 · he/him\n**Not a yoriki.** Hired by Chiyo personally as her own muscle.\n\n### Cards\n- **Two of Wands, reversed** — risk averse, defensive.\n- **Ten of Swords, reversed** — came out of failure pivoting into something else, or with the gumption to re-enter the sport.\n- **Justice (XI)** — he got absolutely trounced because of his cautious style.\n\n### Reading\nJustice is cruel in a specific way: no bad call, no injury, no rigged bout. He lost because of how he fights, and the verdict was correct. An unfair defeat lets a man stay who he is and blame the world; a just one doesn't. And the Two of Wands reversed says the thing he'd have to change is temperamental, not tactical. You don't decide to stop being risk-averse.\n\nThe defensive grappler picture is concrete: waiting, not committing, letting the other man make the mistake. Against an opponent who doesn't make mistakes, that's standing there while it happens.\n\n**His liability in sport is an asset in law enforcement.** A magistrate's retinue needs suspects alive and witnesses unbroken. The strongest body in the party being the least inclined to commit to violence is precisely right for a portside interrogation. Whether he's realised that is a better arc than \"learns to be aggressive.\"\n\nHe is also the only one whose failure is public. Chiyo's ruin is secret, Sanpei's debt hidden, Hisano's rut looks like success, Nergüi's difference is visible but isn't shame. Ichirō lost in front of a crowd — nobody can threaten to expose a man whose worst moment already had an audience.\n\n**The pivot isn't upward.** Several months out from losing a title he was favoured for, and the work he's found is being someone's available muscle in a portside town. Not a new calling — the same asset, his body, rented out in a worse setting.\n\n**\"Favoured for\" is the sharpest detail.** He never held it. The room expected him to take it and his caution let it go. There's no title to reclaim, only one to finally earn, and the version of himself who could earn it is the version he isn't.\n\n**The one decisive act of his life was leaving.** He didn't drift — he came looking for work. A man who lost a title by never committing made exactly one commitment: get out and sell the only thing that still works."
+ "bio": ""
 }

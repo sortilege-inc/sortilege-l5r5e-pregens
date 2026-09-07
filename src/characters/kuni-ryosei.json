@@ -30,7 +30,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Ryōsei catalogs the ritual components confiscated from mahō-tsukai cells for Magistrate Sekihara, cross-referencing their applications against Kuni doctrine so that none are ever used twice.",
+     "social_giri": "Ryōsei serves Kuni Isei, who has placed her as yoriki under the Emerald Magistrate Kitsuki Nagiko; she catalogs the ritual components confiscated from mahō-tsukai cells, cross-referencing their uses against Kuni doctrine so that none are ever used twice.",
      "lord_name": "Kuni Isei"
     },
     "picks": {}
@@ -57,7 +57,7 @@
    },
    "step9": {
     "answers": {
-     "success": "She identified the mahō components in Magistrate Sekihara's first confiscation by their absence—the ones that should have been there, cross-referenced against three separate Kuni catalogs, and proved the cell had sold their most potent materials to an outsider before the raids began."
+     "success": "She identified the mahō components in Magistrate Nagiko's first confiscation by their absence—the ones that should have been there, cross-referenced against three separate Kuni catalogs, and proved the cell had sold their most potent materials to an outsider before the raids began."
     },
     "picks": {}
    },
@@ -75,20 +75,20 @@
    },
    "step12": {
     "answers": {
-     "worries": "She sketched a ward that should hold against mahō itself, showed it to Sekihara because protocol demanded it, and watched his face close the moment he understood what she had actually built."
+     "worries": "She sketched a ward that should hold against mahō itself, showed it to Nagiko because protocol demanded it, and watched his face close the moment he understood what she had actually built."
     },
     "picks": {}
    },
    "step13": {
     "answers": {
-     "most_learn": "Katsuhito"
+     "most_learn": "Katsuhito — Katsuhito, a rōnin who had served three Kuni, taught Ryōsei to catalog a confiscation before touching any of it, and to touch none of it alone."
     },
     "picks": {}
    },
    "step14": {
     "answers": {
      "first_sight": "Her fingernails are worn flat on one side from years of scraping dried components off cataloging surfaces, and she does not file them even.",
-     "accoutrement": "She wears a leather glove on her right hand, the palm worn through in three places where she has patched it with canvas, because she will not stop touching the components even when her skin begins to crack."
+     "accoutrement": "Leather glove. Right hand, palm patched with canvas."
     },
     "picks": {}
    },
@@ -121,7 +121,7 @@
    },
    "step20": {
     "answers": {
-     "death": "She dies in the confiscation archive after hours, alone with a ward design that finally holds, before she can decide whether to burn it or show it to Sekihara."
+     "death": "She dies in the confiscation archive after hours, alone with a ward design that finally holds, before she can decide whether to burn it or show it to Nagiko."
     },
     "picks": {}
    }
@@ -182,7 +182,7 @@
     "glory": 40,
     "status": 30,
     "ninjo": "She wants to build a ward that holds against mahō itself rather than merely containing it, and she has already sketched the framework using principles the Kuni would call heresy if they knew how far she had taken them.",
-    "giri": "Ryōsei catalogs the ritual components confiscated from mahō-tsukai cells for Magistrate Sekihara, cross-referencing their applications against Kuni doctrine so that none are ever used twice.",
+    "giri": "Ryōsei serves Kuni Isei, who has placed her as yoriki under the Emerald Magistrate Kitsuki Nagiko; she catalogs the ritual components confiscated from mahō-tsukai cells, cross-referencing their uses against Kuni doctrine so that none are ever used twice.",
     "bushido_tenets": {
      "paramount": "Courage",
      "less_significant": "Courtesy"
@@ -263,13 +263,14 @@
      "name": "Traveling pack"
     },
     {
-     "name": "She wears a leather glove on her right hand, the palm worn through in three places where she has patched it with canvas, because she will not stop touching the components even when her skin begins to crack.",
+     "name": "Leather glove",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Leather glove. Right hand, palm patched with canvas.",
+     "accoutrement": true
     }
    ],
    "advancements": []
   }
  ],
- "bio": "Kuni Ryōsei — she/her — Yoriki\n\n**Kuni Purifier** · Crab · Shugenja/Bushi · Earth +1, Fire +1 · Honor 35 · she/her\n**Yoriki**\n\n### Cards\n- **King of Cups** — a willingness to explore the dark side, but never in a way that has risked or tempted her.\n- **Queen of Wands, reversed** — there is a pull towards darkness, and she knows the path to take.\n- **Temperance (XIV)** — this is avoided because she maintains a life balanced in all things, not overly rigid.\n\n### Reading\nThe calmest spread in the party, and the only adult one — King, Queen, and a major, where others drew Pages and Knights. She is not developing; she is maintained. That is a function, not a flaw.\n\nKing of Cups is competence, not innocence. She has looked at the thing directly, professionally, repeatedly, and it never got a hook in. The exposure is the job. What the card says is that the exposure never converted into appetite.\n\nThe Queen of Wands reversed matters because of the precision of the phrasing — not vague temptation, but *she knows the path to take*. Which is simply true of her training. Understanding how mahō works is the curriculum. Nothing needs to be discovered; something would only need to be decided.\n\nTemperance is a practice, not a victory. Not-rigid was specified, and it matters: this holds because it is maintained daily, not because it is locked. The opposite mechanism from Nagiko, who also does not fall but stays upright by being immovable."
+ "bio": ""
 }

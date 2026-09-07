@@ -86,7 +86,10 @@ def apply_promotions():
             dirty = True
             changed.append(doc["slug"])
         concept = concepts.get(doc["slug"])
-        if concept and not (doc.get("bio") or "").strip():
+        # An explicit empty bio is a decision (the Slow Tide Harbor audit blanked
+        # seven whose "player-facing" cut still carried the tarot reading); only
+        # a record with no bio key at all gets one landed.
+        if concept and "bio" not in doc:
             bio = player_facing(concept)
             if bio:
                 doc["bio"] = bio

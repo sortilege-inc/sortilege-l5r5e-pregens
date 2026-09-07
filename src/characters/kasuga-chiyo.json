@@ -30,7 +30,8 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "She must certify the magistrates' expenditures from the harbor fund, which means accounting for money she knows went missing on her watch and never admitting where it actually went."
+     "social_giri": "Kasuga Chiyo is assigned by Governor Kasuga Mugatsu to guide the Emerald Magistrate's party through Slow Tide Harbor, and still certifies the harbor fund's ledgers as she has for three years, accounting for money she knows went missing on her watch.",
+     "lord_name": "Kasuga Mugatsu"
     },
     "picks": {}
    },
@@ -56,13 +57,14 @@
    },
    "step13": {
     "answers": {
-     "most_learn": "Soshi Masaharu"
+     "most_learn": "Soshi Masaharu — Soshi Masaharu taught Chiyo to keep two ledgers and let the magistrates see the one they expected."
     },
     "picks": {}
    },
    "step14": {
     "answers": {
-     "first_sight": "Her fingers go to the hilt of her wakizashi when she's thinking hard about something, not drawing it, just resting there, and she does this in the middle of conversations with people she's known for years."
+     "first_sight": "Her fingers go to the hilt of her wakizashi when she's thinking hard about something, not drawing it, just resting there, and she does this in the middle of conversations with people she's known for years.",
+     "accoutrement": "Abacus. At the belt."
     },
     "picks": {}
    },
@@ -156,7 +158,7 @@
     "glory": 41,
     "status": 25,
     "ninjo": "She wants to be read as competent by someone who matters, and she'll lie about what she knows to make it happen.",
-    "giri": "She must certify the magistrates' expenditures from the harbor fund, which means accounting for money she knows went missing on her watch and never admitting where it actually went.",
+    "giri": "Kasuga Chiyo is assigned by Governor Kasuga Mugatsu to guide the Emerald Magistrate's party through Slow Tide Harbor, and still certifies the harbor fund's ledgers as she has for three years, accounting for money she knows went missing on her watch.",
     "bushido_tenets": {
      "paramount": "Courtesy",
      "less_significant": "Sincerity"
@@ -187,7 +189,8 @@
    ],
    "peculiarities": [
     {
-     "name": "Blackmail on"
+     "name": "Blackmail on Junichi",
+     "subject": "Junichi"
     },
     {
      "name": "Hunted by Chikusho-Do"
@@ -196,7 +199,8 @@
      "name": "Charity"
     },
     {
-     "name": "Fear of"
+     "name": "Fear of Rats",
+     "subject": "Rats"
     },
     {
      "name": "Paranoia"
@@ -216,12 +220,6 @@
      "name": "Wakizashi"
     },
     {
-     "name": "any one weapon of rarity 6 or lower",
-     "custom": true,
-     "text": "From the Kasuga Smuggler starting outfit",
-     "held": false
-    },
-    {
      "name": "Calligraphy Set"
     },
     {
@@ -231,22 +229,31 @@
      "name": "Kiseru"
     },
     {
-     "name": "abacus or gaijin compass",
-     "custom": true,
-     "text": "From the Kasuga Smuggler starting outfit",
-     "held": false
-    },
-    {
      "name": "Traveling pack"
     },
     {
      "name": "pouch of gaijin coins",
      "custom": true,
      "text": "From the Kasuga Smuggler starting outfit"
+    },
+    {
+     "name": "Abacus",
+     "custom": true,
+     "text": "Abacus. At the belt.",
+     "accoutrement": true
+    },
+    {
+     "name": "Bō",
+     "settled_from": "any one weapon of rarity 6 or lower"
+    },
+    {
+     "name": "abacus",
+     "settled_from": "abacus or gaijin compass",
+     "custom": true
     }
    ],
    "advancements": []
   }
  ],
- "bio": "Kasuga Chiyo — she/her — Governor Mugatsu's assigned minder\n\n**Kasuga Smuggler** · Tortoise · Courtier · Air +1, Water +1 · Honor 29 · she/her\n**Not a yoriki.** Assigned by Governor Kasuga Mugatsu as the magistrates' \"guide.\"\n\n### Cards\n- **King of Swords, reversed** — she is acting out; she has made bad investments; she is easily provoked.\n- **Nine of Swords** — she does not see any future for herself; she feels doomed.\n- **The Fool** — she is deluding herself that this mission, that helping out this Emerald Magistrate, is a kind of fresh start.\n\n### Reading\nHer standing came from her judgement, and her judgement failed. She is privately certain she's finished, and she is misreading a leash as an open road.\n\nA partnership leaves paper. A lost cargo is deniable; a partnership is a thing two people entered into, and someone somewhere has a record. Her exposure is *discoverable* — the Kitsuki can find her without her confessing. Her ruin and the party's investigation are the same document.\n\nBecause she's centrally implicated, the Nine of Swords is **accurate** rather than distorted dread. She has correctly assessed her position. She can't be talked down.\n\nCondescension is the one trigger she can't avoid: Emerald Magistrates condescending to a Tortoise smuggler is the default state of the assignment, not a scene anyone has to write. So her King of Swords temper gets reached repeatedly, for free.\n\n**She has no idea what the partnership actually is.** That reverses the obvious reading and improves her. The dread isn't about the cult — it's about ordinary ruin: the partnership, the money, the standing. She is correct that she's finished and wrong about why. The Fool sharpens accordingly: she isn't hiding evidence, she's *carrying* it into the magistrate's presence and calling it a fresh start. She can still be surprised by what the party finds, which makes her playable rather than static."
+ "bio": ""
 }

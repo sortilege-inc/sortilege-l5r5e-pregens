@@ -14,7 +14,7 @@
  },
  "mode": "core",
  "portrait": "src/portraits/iuchi-nergui.webp",
- "concept": "Nergüi's Rokugani catches on certain words and he knows it, so he speaks slowly in order to speak clearly and reduce the extremity of Ujik inflection.",
+ "concept": "Nergüi's eyes are white and do not track. His Rokugani catches on certain words and he knows it, so he speaks slowly in order to speak clearly.",
  "summary": null,
  "notes": "",
  "twenty_questions": {
@@ -23,26 +23,27 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "When Nergüi read the Kitsuki's fortune before accepting her service, the cards showed him a debt she would collect, and he accepted anyway.",
+     "stand_out": "When Nergüi read the Kitsuki's fortune before accepting her service, the bones showed him a debt she would collect, and he accepted anyway.",
      "ring": "earth"
     },
     "picks": {}
    },
    "step5": {
     "answers": {
-     "social_giri": "Nergüi reads the cards for Nagiko's investigations even when the revelations yield nightmares."
+     "social_giri": "Nergüi reads the bones for Kitsuki Nagiko's investigations even when what they show him yields nightmares.",
+     "lord_name": "Kitsuki Nagiko"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "He wants to read the bones without hearing Nagiko's questions echo underneath, but he accepted what the cards showed him and he will not break that debt."
+     "social_ninjo": "He wants to read the bones without hearing Nagiko's questions underneath, but he accepted what they showed him and he will not break that debt."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "clan_relations": "The Unicorn's pragmatism permits what the other clans call exile: Nergüi serves a Kitsuki investigator because the debt shown in the cards admitted no refusal, and the steppes will wait for a man who honors his obligations."
+     "clan_relations": "The Unicorn's pragmatism permits what the other clans call exile: Nergüi serves a Kitsuki investigator because the debt shown in the bones admitted no refusal, and the steppes will wait for a man who honors his obligations."
     },
     "picks": {}
    },
@@ -61,7 +62,8 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "Nergüi's Rokugani catches on certain words and he knows it, so he speaks slowly in order to speak clearly and reduce the extremity of Ujik inflection."
+     "first_sight": "Nergüi's eyes are white and do not track. His Rokugani catches on certain words and he knows it, so he speaks slowly in order to speak clearly.",
+     "accoutrement": "Brass sun-disc. Worn on the chest."
     },
     "picks": {}
    },
@@ -154,8 +156,8 @@
     "honor": 40,
     "glory": 37,
     "status": 33,
-    "ninjo": "He wants to read the bones without hearing Nagiko's questions echo underneath, but he accepted what the cards showed him and he will not break that debt.",
-    "giri": "Nergüi reads the cards for Nagiko's investigations even when the revelations yield nightmares.",
+    "ninjo": "He wants to read the bones without hearing Nagiko's questions underneath, but he accepted what they showed him and he will not break that debt.",
+    "giri": "Nergüi reads the bones for Kitsuki Nagiko's investigations even when what they show him yields nightmares.",
     "bushido_tenets": {
      "paramount": "Duty and Loyalty",
      "less_significant": "Sincerity"
@@ -224,12 +226,6 @@
      "name": "Traveling Clothes"
     },
     {
-     "name": "one weapon of rarity 6 or lower",
-     "custom": true,
-     "text": "From the Ujik Diviner starting outfit",
-     "held": false
-    },
-    {
      "name": "a bag of scrying tools including mare's milk, bones, and incense",
      "custom": true,
      "text": "From the Ujik Diviner starting outfit"
@@ -243,14 +239,23 @@
      "name": "Traveling pack"
     },
     {
-     "name": "one trinket",
+     "name": "Brass sun-disc",
      "custom": true,
-     "text": "From the Ujik Diviner starting outfit",
-     "held": false
+     "text": "Brass sun-disc. Worn on the chest.",
+     "accoutrement": true
+    },
+    {
+     "name": "Knife",
+     "settled_from": "one weapon of rarity 6 or lower"
+    },
+    {
+     "name": "brass sun-disc",
+     "settled_from": "one trinket",
+     "custom": true
     }
    ],
    "advancements": []
   }
  ],
- "bio": "Iuchi Nergüi — he/him — Yoriki to Nagiko\n\n**Ujik Diviner** · Iuchi family, Ujik background · Sage · Void +1, Water +1 · Honor 40 · he/him\n**Yoriki to Nagiko**\n\nName meaning: \"no one\" — traditionally given to a child to hide them from malicious spirits. Every Rokugani who asks his name is told *no one*, and has to decide whether that's insolence, a joke, or a foreigner mangling the language. The Hermit reversed generates itself in any scene, unstaged.\n\n### Cards\n- **The Chariot** — goal-oriented, balanced, driven.\n- **Knight of Pentacles** — wants to see a mission through to the end; is not generally in control of it; currently serving the Kitsuki as yoriki.\n- **The Hermit, reversed** — his Rokugani is imperfect; he stands out and is somewhat ostracised. The Kitsuki doesn't treat him any differently, however — she's an asshole to everyone.\n\n### Reading\nThe Chariot's image is a driver holding two opposing forces in harness. Here he is *in* the harness rather than holding it. All that drive, pointed down a road someone else chose — the specific frustration of a competent subordinate.\n\nKnight of Pentacles is the second appearance of that card in this party. Nagiko drew it upright too, and it means the same thing both times: finish the work. That is the actual bond between them, and there is nothing warm in it. They aren't loyal to each other, they're loyal to completion, and that turns out to be enough.\n\nThe Hermit upright is the seeker who withdraws for wisdom and returns carrying a lamp — a diviner's job description. Reversed, the apartness isn't chosen and the lamp buys him nothing. The role that should earn deference earns distance, and the reason is accent, not competence.\n\nNagiko's tactlessness is a liability in every other scene she's in. Here it is the one place he is treated as an equal, because she is contemptuous of everyone equally. An ugly, real basis for trust."
+ "bio": ""
 }
