@@ -71,7 +71,7 @@
    "challenge": "When Seki calls water to move with her body as a Battle Maiden should, it refuses her—and in that moment of fumbled kata before the Utaku commander, she cannot tell if her intelligence reports ring as hollow as her drills.",
    "peace": "Seki prepares a meal from unfamiliar ingredients—testing each one on her tongue, naming what the Scorpion kitchens taught her hands to recognize—and finds that this one thing she learned in the cells was not a betrayal.",
    "fear": "When Seki reports her intelligence to the Utaku commander, she omits what she gave the Scorpion to make them stop, and cannot find a way to tell Tama that does not sound like a confession of something worse.",
-   "accoutrement": "Seki's rice bowl from the Scorpion kitchens sits on her shelf in the barracks, chipped at the rim, and when the other Battle Maidens ask why she keeps it she says it is because the clay is good, which is true, but she does not say that the Utaku commander has never asked her to put it away.",
+   "accoutrement": "Rice bowl. Repaired with kintsugi.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -121,7 +121,8 @@
    "heritage_sub": null,
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Seki expects to die at dawn in the yard, still drilling, when her body finally stops moving the way her mind commands it to."
+   "death": "Seki expects to die at dawn in the yard, still drilling, when her body finally stops moving the way her mind commands it to.",
+   "accoutrement_name": "Rice bowl"
   },
   "starting_item": "Magari Yari",
   "campaign": "Blood of the Lioness",
@@ -263,7 +264,8 @@
    "step14": {
     "answers": {
      "first_sight": "Seki's water never moves the way she intends it to—the forms are exact, but the element will not answer her body, and anyone watching her drill can see the moment she stops expecting it to.",
-     "accoutrement": "Seki's rice bowl from the Scorpion kitchens sits on her shelf in the barracks, chipped at the rim, and when the other Battle Maidens ask why she keeps it she says it is because the clay is good, which is true, but she does not say that the Utaku commander has never asked her to put it away."
+     "accoutrement": "Rice bowl. Repaired with kintsugi.",
+     "accoutrement_name": "Rice bowl"
     },
     "picks": {}
    },
@@ -448,9 +450,10 @@
      "text": "From the Utaku Battle Maiden starting outfit"
     },
     {
-     "name": "Seki's rice bowl from the Scorpion kitchens sits on her shelf in the barracks, chipped at the rim, and when the other Battle Maidens ask why she keeps it she says it is because the clay is good, which is true, but she does not say that the Utaku commander has never asked her to put it away.",
+     "name": "Rice bowl",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Rice bowl. Repaired with kintsugi.",
+     "accoutrement": true
     },
     {
      "name": "Horse",

@@ -66,7 +66,7 @@
    "challenge": "She pitches the niten to every promising student who walks through her classroom door, certain her charm will keep them, and watches them leave anyway because they want a master who will fight the Kakita, not one who teaches them to hide.",
    "peace": "Hisa traces the routes between the war college and the villages that surrendered before Snow Plain, marking which paths the students who leave her actually take, mapping their dispersal as carefully as she would chart an unfamiliar coastline.",
    "fear": "Hisa teaches in the war college's high tower and refuses assignments that would post her to the garrison towns spreading south from the castle, where ten thousand soldiers crowd the roads and the supply-master's compounds sprawl into villages that have no shape, because she cannot think in a place where everything is built on top of everything else.",
-   "accoutrement": "A brass compass the size of a thumbnail, worn on a cord at her collar; she checks it each time a student leaves the classroom, marking the direction they went.",
+   "accoutrement": "Brass compass.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -116,7 +116,8 @@
    "heritage_sub": "1-3 — Gain +1 ^\"Labor\"",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Hisa expects to die in the war college, teaching, with a student she thought had returned finally standing in the doorway."
+   "death": "Hisa expects to die in the war college, teaching, with a student she thought had returned finally standing in the doorway.",
+   "accoutrement_name": "Brass compass"
   },
   "starting_item": "Folding Fan",
   "campaign": "Blood of the Lioness",
@@ -259,7 +260,8 @@
    "step14": {
     "answers": {
      "first_sight": "A dark scar runs from Hisa's collarbone up the left side of her neck; she wears her collar open over it. Her eyes track the doorway long after a student has left the room.",
-     "accoutrement": "A brass compass the size of a thumbnail, worn on a cord at her collar; she checks it each time a student leaves the classroom, marking the direction they went."
+     "accoutrement": "Brass compass.",
+     "accoutrement_name": "Brass compass"
     },
     "picks": {}
    },
@@ -427,9 +429,10 @@
      "name": "Traveling pack"
     },
     {
-     "name": "A brass compass the size of a thumbnail, worn on a cord at her collar; she checks it each time a student leaves the classroom, marking the direction they went.",
+     "name": "Brass compass",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Brass compass.",
+     "accoutrement": true
     }
    ],
    "advancements": []

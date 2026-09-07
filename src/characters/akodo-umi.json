@@ -66,7 +66,7 @@
    "challenge": "When Shosuro Amane or another spirit-touched presence moves through the War College library during her investigation, Umi corrects a student's grip while the air around her warps with something none of the archivists can name, and she notices nothing at all.",
    "peace": "When she stands before the ranks at dawn drill and watches a junior student finally understand the correction she gave three days ago—the stance settling into bone, the grip loosening into true strength—Umi stops giving orders and simply observes, and the line of her shoulders drops.",
    "fear": "When she stands in the library after the archivists have left, Umi realizes she cannot remember the last time anyone told her something she did not already know or deduce, and that she has stopped asking questions aloud because she learned long ago that the answers never came.",
-   "accoutrement": "She wears a commander's insignia on a cord she has rebraided seventeen times, each time tighter than the last.",
+   "accoutrement": "Commander's insignia. Hangs on a braided cord.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -110,7 +110,8 @@
    "heritage_sub": null,
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Umi expects to die in the library, still turning pages, still looking for the answer Akodo Tsanuri will not give her."
+   "death": "Umi expects to die in the library, still turning pages, still looking for the answer Akodo Tsanuri will not give her.",
+   "accoutrement_name": "Commander's insignia"
   },
   "starting_item": "Whip",
   "campaign": "Blood of the Lioness",
@@ -255,7 +256,8 @@
    "step14": {
     "answers": {
      "first_sight": "Umi's eyes move across the room before she does—mapping it, fixing each person in place—and they do not move back to check.",
-     "accoutrement": "She wears a commander's insignia on a cord she has rebraided seventeen times, each time tighter than the last."
+     "accoutrement": "Commander's insignia. Hangs on a braided cord.",
+     "accoutrement_name": "Commander's insignia"
     },
     "picks": {}
    },
@@ -444,9 +446,10 @@
      "name": "Traveling pack"
     },
     {
-     "name": "She wears a commander's insignia on a cord she has rebraided seventeen times, each time tighter than the last.",
+     "name": "Commander's insignia",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Commander's insignia. Hangs on a braided cord.",
+     "accoutrement": true
     }
    ],
    "advancements": []

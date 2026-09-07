@@ -73,7 +73,7 @@
    "challenge": "When Shuichi kneels to examine the foundation stones beneath the Ikoma Hall, checking for rot and settling, the earth seems to resist him—he finds cracks where there should be none, misses damage that shows itself later to the stone-workers, and leaves the work half-done while the master mason has to return to finish what he began.",
    "peace": "Shuichi sits in the Ikoma Hall with a stack of ledgers open before him, cross-referencing the military records against the temple accounts, and the work of finding what was missed—what *they* missed—steadies his hands in a way nothing else does.",
    "fear": "When Shuichi kneels beside a farmer to examine the Ikoma Hall's foundation stones, the man's callused hands and the smell of field-work on his clothes make him recoil so visibly that the laborer steps back, leaving the inspection half-finished and the rot beneath the eastern wall undiscovered until the master mason returns.",
-   "accoutrement": "A leather satchel with the corners worn through from three nights of copying in the Ikoma Hall, the strap creased dark where it crosses his shoulder every day.",
+   "accoutrement": "Leather scroll satchel.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -123,7 +123,8 @@
    "heritage_sub": "7-8 — Gain +1 ^\"Theology\"",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Shuichi will die in an archive, kneeling among documents he was meant to preserve, when the building collapses because he did not finish inspecting the foundation stones."
+   "death": "Shuichi will die in an archive, kneeling among documents he was meant to preserve, when the building collapses because he did not finish inspecting the foundation stones.",
+   "accoutrement_name": "Leather scroll satchel"
   },
   "starting_item": "Herbal Medicines",
   "campaign": "Blood of the Lioness",
@@ -262,7 +263,8 @@
    "step14": {
     "answers": {
      "first_sight": "Shuichi's eyes move across a room before he does, cataloging and cross-referencing, and he is never quite finished looking at the person in front of him.",
-     "accoutrement": "A leather satchel with the corners worn through from three nights of copying in the Ikoma Hall, the strap creased dark where it crosses his shoulder every day."
+     "accoutrement": "Leather scroll satchel.",
+     "accoutrement_name": "Leather scroll satchel"
     },
     "picks": {}
    },
@@ -439,9 +441,10 @@
      "name": "Traveling pack"
     },
     {
-     "name": "A leather satchel with the corners worn through from three nights of copying in the Ikoma Hall, the strap creased dark where it crosses his shoulder every day.",
+     "name": "Leather scroll satchel",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Leather scroll satchel.",
+     "accoutrement": true
     }
    ],
    "advancements": []

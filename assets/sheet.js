@@ -160,7 +160,13 @@
     var src = sourceLine(e);
     return '<details class="entry' + (isNew ? " new" : "") + '">' +
       "<summary>" + '<span class="en">' + esc(e.name) + "</span>" + badges.join("") + "</summary>" +
-      '<div class="body">' + (syms(e.description) || '<p class="muted">No text recorded.</p>') +
+      /* A custom entry carries its own words in `text` rather than a catalog
+         description — the accoutrement's particulars, an outfit line's
+         provenance, a filled peculiarity's rule — and the body was showing
+         "No text recorded." over all of them. */
+      '<div class="body">' + (syms(e.description) ||
+        (e.custom && e.text ? "<p>" + esc(e.text) + "</p>" : "") ||
+        '<p class="muted">No text recorded.</p>') +
       entryMechanics(e) +
       (src ? '<div class="src">' + esc(src) + "</div>" : "") +
       "</div></details>";

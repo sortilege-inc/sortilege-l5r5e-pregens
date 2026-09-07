@@ -534,7 +534,8 @@
         clan_relationship: { path: null, skill: null, text: "" },
         mentor: { name: "", path: null, granted: null, skill: "", text: "",
                   gender: "any", association: "" },
-        first_impression: "", accoutrement: "", stress_reaction: "",
+        first_impression: "", accoutrement: "", accoutrement_name: "",
+        stress_reaction: "",
         relationships: "", people: [],
         parent_opinion: { description: "", skill: null },
         heritage: null, heritage_table: null, heritage_sub: null,
@@ -876,6 +877,7 @@
     c.answers.mentor.text = m13.slice(1).join(" — ").trim();
     c.answers.first_impression = ans("step14", "first_sight");
     c.answers.accoutrement = ans("step14", "accoutrement");
+    c.answers.accoutrement_name = ans("step14", "accoutrement_name");
     c.answers.stress_reaction = ans("step15", "stress");
     c.answers.relationships = ans("step16", "relations");
     c.answers.lord_name = ans("step5", "lord_name");
@@ -1880,12 +1882,14 @@
       "flinch\", \"a noticeable habit of\", \"an observable tendency to\" are " +
       "the instruction leaking into the answer — if the reader can see it, " +
       "saying so is wasted words.\n\n" + STYLE,
-    accoutrement: "L5R 5e character creation. Write a phrase or a short sentence " +
-      "naming one distinctive thing this character carries or wears most of the " +
-      "time — a scarf, a hair ornament, an engraved scabbard, an eyepatch. It " +
-      "should either accent how they already strike people or cut against it. " +
-      "Name the object and say what is particular about it; do not explain what " +
-      "it means about them.\n\n" + STYLE,
+    accoutrement: "L5R 5e character creation. Name one distinctive thing this " +
+      "character carries or wears most of the time, in at most two short " +
+      "fragments: the object, then — only if there is one — a single concrete " +
+      "particular. Exactly this shape: \"Commander's insignia. Hangs on a braided " +
+      "cord.\" \"Rice bowl. Repaired with kintsugi.\" \"Brass compass.\" No verb of " +
+      "wearing or keeping, no clause about what it means to them, no second " +
+      "detail. Rejected: \"She wears a commander's insignia on a cord she has " +
+      "rebraided seventeen times, each time tighter than the last.\"\n\n" + STYLE,
     stress_reaction: "L5R 5e character creation. Write a single sentence " +
       "describing what this character does when they are under more pressure " +
       "than they can carry. Visible, physical, particular to them.\n\n" +
@@ -2796,6 +2800,9 @@
         save();
       });
       body.appendChild(ta);
+      // a field with no prompt key — the accoutrement's object name — gets no
+      // Suggest row; there is nothing to ask the model for a two-word label
+      if (!fieldKey) return;
       wireAi(ta, fieldKey, function (v) {
         var parts = key.split("."), o = C;
         for (var i = 0; i < parts.length - 1; i++) o = o[parts[i]];
@@ -3283,9 +3290,12 @@
       }
     });
     var acc = (C.answers.accoutrement || "").trim();
-    if (acc) {
-      out.push({ name: acc, note: "The accoutrement named at question 14",
-                 open: false, held: true, prose: true });
+    var accName = (C.answers.accoutrement_name || "").trim();
+    if (acc || accName) {
+      // the object is the title and the sentence the body; a record without
+      // an object name (built before the field existed) keeps the old shape
+      out.push({ name: accName || acc, note: accName ? acc : "The accoutrement named at question 14",
+                 open: false, held: true, prose: true, accoutrement: true });
     }
     return out;
   }
@@ -4395,7 +4405,8 @@
       },
       done: function () {
         if (qAlt(14)) return has(C.answers.prized_possession);
-        return has(C.answers.first_impression) && has(C.answers.accoutrement);
+        return has(C.answers.first_impression) && has(C.answers.accoutrement) &&
+               has(C.answers.accoutrement_name);
       },
       render: function (body) {
         var alt = qAlt(14);
@@ -4405,9 +4416,20 @@
           // Core p.93: "choose one distinctive aesthetic accoutrement that your
           // character carries or wears most of the time" — a second answer the
           // question asks for, and the step had nowhere to put it.
-          label(body, "Aesthetic accoutrement");
+          /* Two fields, because the answer goes two places. The object, in a
+             few words, is the gear line's title on the sheet; the sentence is
+             its body. With one field the whole sentence was the title — thirty
+             words as an item name, and the body holding a bookkeeping note.
+             Register settled by the owner on the Blood of the Lioness audit
+             (2026-09-07): object only, terse — "Commander's insignia. Hangs on
+             a braided cord." "Rice bowl. Repaired with kintsugi." */
+          label(body, "Aesthetic accoutrement — the object, in a few words");
+          var nameField = textStep("accoutrement_name", "answers.accoutrement_name",
+            null, "Commander's insignia · Brass compass · Rice bowl");
+          nameField(body);
+          label(body, "…and what is particular about it");
           textStep("accoutrement", "answers.accoutrement", "accoutrement",
-            "A scarf, a hair ornament, an engraved scabbard, an eyepatch…")(body);
+            "Hangs on a braided cord. / Repaired with kintsugi.")(body);
           return;
         }
         label(body, "The possession");
@@ -6025,6 +6047,7 @@
             if (hit && !g.open) return { name: hit };
             var o = { name: g.name, custom: true, text: g.note };
             if (g.open) o.held = false;
+            if (g.accoutrement) o.accoutrement = true;
             return o;
           })).concat(
           heritageGrants().gear.filter(function (g) {
