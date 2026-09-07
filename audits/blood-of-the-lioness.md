@@ -263,7 +263,7 @@ Gear either-ors and unnamed subjects. Recommendation first, alternatives after.
 
 | | item | recommendation | why | alternatives |
 |---|---|---|---|---|
-| **D21** | Umi — *any one weapon of rarity 6 or lower* | **tessen** (war fan) | a commander's weapon; she has Command 2 | naginata; jitte |
+| **D21** | Umi — *any one weapon of rarity 6 or lower* | ~~tessen~~ → **jitte** (amended 2026-09-07: a tessen is rarity 7, over the line's cap; the Creator's new Outfit step caught it) | a magistrate's baton for a commander | naginata; bō |
 | **D22** | Chiaki — *ashigaru armor or ceremonial clothes* | **ashigaru armor** | the portrait shows lacquered shoulder plates | ceremonial clothes |
 | **D23** | Chiaki — *daishō, or wakizashi and kamayari* | **wakizashi and kamayari** | shinobi kit; the portrait shows a short blade, not a katana | daishō |
 | **D24** | Chiaki — *musical instrument or book of poetry* | **book of poetry** | an Ikoma; she keeps ledgers | shamisen |

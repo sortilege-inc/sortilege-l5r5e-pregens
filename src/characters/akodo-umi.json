@@ -182,6 +182,11 @@
    "death": [
     "Umi expects to die in the library, still turning pages, still looking for the answer Akodo Tsanuri will not give her."
    ]
+  },
+  "outfit_choices": {
+   "any one weapon of rarity 6 or lower": [
+    "Jitte"
+   ]
   }
  },
  "twenty_questions": {
@@ -428,7 +433,7 @@
      "name": "Yari"
     },
     {
-     "name": "Tessen"
+     "name": "Jitte"
     },
     {
      "name": "Knife"
