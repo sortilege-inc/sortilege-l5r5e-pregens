@@ -93,7 +93,7 @@
    },
    "first_impression": "Chiaki's shoulders sit high and forward even when she stands still, as though bracing against a weight that never shifts.",
    "stress_reaction": "Chiaki stops answering questions during interrogations, sitting across from the suspect in complete silence until they speak again, which means the guilty confess to fill the quiet and the innocent begin to doubt whether she believes them at all.",
-   "relationships": "Toritaka Emiko (Falcon) — Toritaka Emiko shelters Chiaki in her quarters when the interrogations leave her unable to eat in the garrison mess, and Chiaki has begun to wonder whether Emiko knows the garrison better than its own commander does.\nKitsu Kinuko (Lion) — Kitsu Kinuko comes to the garrison library where Chiaki keeps the rosters and sits with her in the dark before dawn, reading the same ledger page twice without speaking, and Chiaki has never asked her why but knows it means Kinuko does not believe the names written there either.",
+   "relationships": "Toritaka Emiko (Falcon) — Toritaka Emiko shelters Chiaki in her quarters when the interrogations leave her unable to eat in the garrison mess, and Chiaki has begun to wonder whether Emiko knows the garrison better than its own commander does.\nKitsu Ayako (Lion) — Kitsu Ayako comes to the garrison library before dawn and sits with Chiaki over the same roster page, reading it twice without speaking, and Chiaki has never asked why.",
    "people": [
     {
      "name": "Toritaka Emiko",
@@ -102,10 +102,10 @@
      "text": "Toritaka Emiko shelters Chiaki in her quarters when the interrogations leave her unable to eat in the garrison mess, and Chiaki has begun to wonder whether Emiko knows the garrison better than its own commander does."
     },
     {
-     "name": "Kitsu Kinuko",
+     "name": "Kitsu Ayako",
      "gender": "female",
      "association": "Lion",
-     "text": "Kitsu Kinuko comes to the garrison library where Chiaki keeps the rosters and sits with her in the dark before dawn, reading the same ledger page twice without speaking, and Chiaki has never asked her why but knows it means Kinuko does not believe the names written there either."
+     "text": "Kitsu Ayako comes to the garrison library before dawn and sits with Chiaki over the same roster page, reading it twice without speaking, and Chiaki has never asked why."
     }
    ],
    "parent_opinion": {
@@ -182,7 +182,7 @@
    ],
    "relationship_person": [
     "Toritaka Emiko shelters Chiaki in her quarters when the interrogations leave her unable to eat in the garrison mess, and Chiaki has begun to wonder whether Emiko knows the garrison better than its own commander does.",
-    "Kitsu Kinuko comes to the garrison library where Chiaki keeps the rosters and sits with her in the dark before dawn, reading the same ledger page twice without speaking, and Chiaki has never asked her why but knows it means Kinuko does not believe the names written there either."
+    "Kitsu Ayako comes to the garrison library before dawn and sits with Chiaki over the same roster page, reading it twice without speaking, and Chiaki has never asked why."
    ],
    "parent_opinion": [
     "Ikoma Chiaki's mother has stopped asking when she will come home for the festival, knowing now that her daughter will spend the evening alone with the garrison rosters instead of with her family."
@@ -277,7 +277,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Toritaka Emiko (Falcon) — Toritaka Emiko shelters Chiaki in her quarters when the interrogations leave her unable to eat in the garrison mess, and Chiaki has begun to wonder whether Emiko knows the garrison better than its own commander does.\nKitsu Kinuko (Lion) — Kitsu Kinuko comes to the garrison library where Chiaki keeps the rosters and sits with her in the dark before dawn, reading the same ledger page twice without speaking, and Chiaki has never asked her why but knows it means Kinuko does not believe the names written there either."
+     "relations": "Toritaka Emiko (Falcon) — Toritaka Emiko shelters Chiaki in her quarters when the interrogations leave her unable to eat in the garrison mess, and Chiaki has begun to wonder whether Emiko knows the garrison better than its own commander does.\nKitsu Ayako (Lion) — Kitsu Ayako comes to the garrison library before dawn and sits with Chiaki over the same roster page, reading it twice without speaking, and Chiaki has never asked why."
     },
     "picks": {}
    },

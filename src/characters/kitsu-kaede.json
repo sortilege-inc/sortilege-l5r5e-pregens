@@ -98,7 +98,7 @@
    },
    "first_impression": "Kaede's eyes move across a room before her body does—tracking the doors, the corners, the places where blood would pool if the walls came down, the way a soldier scans a battlefield from the ridge line.",
    "stress_reaction": "When the infirmary empties at nightfall, Kaede counts the stock against the requisition lists she keeps in three separate ledgers—one for the War College, one for what the infirmary actually holds, one for what the Scorpion expect her to have promised them—and recounts them until the numbers stop contradicting themselves or she runs out of candles.",
-   "relationships": "Soshi Hayami (Scorpion) — Soshi Hayami brings the requisitions Kaede cannot get through official channels, and Kaede has stopped asking what debt accumulates each time she accepts them.\nKaito Ujitsuna (Phoenix) — Kaito Ujitsuna of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them.",
+   "relationships": "Soshi Hayami (Scorpion) — Soshi Hayami brings the requisitions Kaede cannot get through official channels, and Kaede has stopped asking what debt accumulates each time she accepts them.\nKaito Nobumoto (Phoenix) — Kaito Nobumoto of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them.",
    "people": [
     {
      "name": "Soshi Hayami",
@@ -107,10 +107,10 @@
      "text": "Soshi Hayami brings the requisitions Kaede cannot get through official channels, and Kaede has stopped asking what debt accumulates each time she accepts them."
     },
     {
-     "name": "Kaito Ujitsuna",
+     "name": "Kaito Nobumoto",
      "gender": "male",
      "association": "Phoenix",
-     "text": "Kaito Ujitsuna of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them."
+     "text": "Kaito Nobumoto of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them."
     }
    ],
    "parent_opinion": {
@@ -186,7 +186,7 @@
    ],
    "relationship_person": [
     "Soshi Hayami brings the requisitions Kaede cannot get through official channels, and Kaede has stopped asking what debt accumulates each time she accepts them.",
-    "Kaito Ujitsuna of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them."
+    "Kaito Nobumoto of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them."
    ],
    "parent_opinion": [
     "Kaede's mother worries that her daughter has learned to see the infirmary as a problem to be solved rather than a duty to be served, and that the maps and ledgers and back-alley routes matter more to her now than the soldiers themselves."
@@ -282,7 +282,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Soshi Hayami (Scorpion) — Soshi Hayami brings the requisitions Kaede cannot get through official channels, and Kaede has stopped asking what debt accumulates each time she accepts them.\nKaito Ujitsuna (Phoenix) — Kaito Ujitsuna of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them."
+     "relations": "Soshi Hayami (Scorpion) — Soshi Hayami brings the requisitions Kaede cannot get through official channels, and Kaede has stopped asking what debt accumulates each time she accepts them.\nKaito Nobumoto (Phoenix) — Kaito Nobumoto of the Phoenix brought back herbs from the southern provinces that grow nowhere near the Lion's lands, and now Kaede requisitions them under false names through a merchant in the lower city rather than ask him directly how he obtained them or why he keeps sending them."
     },
     "picks": {}
    },

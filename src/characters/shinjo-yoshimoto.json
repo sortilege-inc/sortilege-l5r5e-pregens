@@ -92,13 +92,13 @@
    },
    "first_impression": "Yoshimoto meets your eye a moment too long before answering a direct question, as if he's already read three answers you haven't given yet.",
    "stress_reaction": "Yoshimoto stops asking questions and starts answering them instead, offering solutions to problems no one has brought to him yet, which means the people around him have to keep interrupting to say what they actually need.",
-   "relationships": "Shika Junnosuke (Deer) — Shika Junnosuke of the Deer holds the records Yoshimoto needs for the magistrate's investigation, and Yoshimoto keeps asking him questions he could answer from the documents themselves, watching how Junnosuke's face shifts before he speaks.\nSango (Mantis) — Sango of the Mantis runs the docks where Yoshimoto's reports to Otosan Uchi arrive by courier boat, and he has learned to time his questions about the Unicorn's shipping movements to the moment when she is too busy to lie about what she knows.",
+   "relationships": "Shika Junnosuke (Deer) — Shika Junnosuke of the Deer holds the marriage records of three provinces, and Yoshimoto asks him questions he could answer from the ledgers himself, to watch how Junnosuke's face moves before he speaks.\nSango (Mantis) — Sango of the Mantis runs the docks where Yoshimoto's reports to Otosan Uchi arrive by courier boat, and he has learned to time his questions about the Unicorn's shipping movements to the moment when she is too busy to lie about what she knows.",
    "people": [
     {
      "name": "Shika Junnosuke",
      "gender": "male",
      "association": "Deer",
-     "text": "Shika Junnosuke of the Deer holds the records Yoshimoto needs for the magistrate's investigation, and Yoshimoto keeps asking him questions he could answer from the documents themselves, watching how Junnosuke's face shifts before he speaks."
+     "text": "Shika Junnosuke of the Deer holds the marriage records of three provinces, and Yoshimoto asks him questions he could answer from the ledgers himself, to watch how Junnosuke's face moves before he speaks."
     },
     {
      "name": "Sango",
@@ -176,7 +176,7 @@
     "Yoshimoto stops asking questions and starts answering them instead, offering solutions to problems no one has brought to him yet, which means the people around him have to keep interrupting to say what they actually need."
    ],
    "relationship_person": [
-    "Shika Junnosuke of the Deer holds the records Yoshimoto needs for the magistrate's investigation, and Yoshimoto keeps asking him questions he could answer from the documents themselves, watching how Junnosuke's face shifts before he speaks.",
+    "Shika Junnosuke of the Deer holds the marriage records of three provinces, and Yoshimoto asks him questions he could answer from the ledgers himself, to watch how Junnosuke's face moves before he speaks.",
     "Sango of the Mantis runs the docks where Yoshimoto's reports to Otosan Uchi arrive by courier boat, and he has learned to time his questions about the Unicorn's shipping movements to the moment when she is too busy to lie about what she knows."
    ],
    "parent_opinion": [
@@ -272,7 +272,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Shika Junnosuke (Deer) — Shika Junnosuke of the Deer holds the records Yoshimoto needs for the magistrate's investigation, and Yoshimoto keeps asking him questions he could answer from the documents themselves, watching how Junnosuke's face shifts before he speaks.\nSango (Mantis) — Sango of the Mantis runs the docks where Yoshimoto's reports to Otosan Uchi arrive by courier boat, and he has learned to time his questions about the Unicorn's shipping movements to the moment when she is too busy to lie about what she knows."
+     "relations": "Shika Junnosuke (Deer) — Shika Junnosuke of the Deer holds the marriage records of three provinces, and Yoshimoto asks him questions he could answer from the ledgers himself, to watch how Junnosuke's face moves before he speaks.\nSango (Mantis) — Sango of the Mantis runs the docks where Yoshimoto's reports to Otosan Uchi arrive by courier boat, and he has learned to time his questions about the Unicorn's shipping movements to the moment when she is too busy to lie about what she knows."
     },
     "picks": {}
    },

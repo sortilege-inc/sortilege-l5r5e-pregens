@@ -92,13 +92,13 @@
    },
    "first_impression": "Umi's eyes move across the room before she does—mapping it, fixing each person in place—and they do not move back to check.",
    "stress_reaction": "When the library's archivists bring her contradictory records about the winter of 820, Umi stops asking follow-up questions and begins cross-referencing the documents herself, spreading them across the table in expanding circles until the patterns she cannot name have filled every surface she can reach.",
-   "relationships": "Isawa Hachizuke (Phoenix) — Isawa Hachizuke, a Phoenix scholar of the spirit-touched, visited the War College three years ago to study the archives of the winter of 820, and Umi gave her access to records she now suspects Tsanuri did not know had been shown.",
+   "relationships": "Asako Shuichi (Phoenix) — Umi let him into the Military Library's closed stacks three years ago to read the records of 820, and has never told Tsanuri. It is how Shuichi knew which documents would vanish first.",
    "people": [
     {
-     "name": "Isawa Hachizuke",
-     "gender": "female",
+     "name": "Asako Shuichi",
+     "gender": "male",
      "association": "Phoenix",
-     "text": "Isawa Hachizuke, a Phoenix scholar of the spirit-touched, visited the War College three years ago to study the archives of the winter of 820, and Umi gave her access to records she now suspects Tsanuri did not know had been shown."
+     "text": "Umi let him into the Military Library's closed stacks three years ago to read the records of 820, and has never told Tsanuri. It is how Shuichi knew which documents would vanish first."
     }
    ],
    "parent_opinion": {
@@ -174,7 +174,7 @@
     "When the library's archivists bring her contradictory records about the winter of 820, Umi stops asking follow-up questions and begins cross-referencing the documents herself, spreading them across the table in expanding circles until the patterns she cannot name have filled every surface she can reach."
    ],
    "relationship_person": [
-    "Isawa Hachizuke, a Phoenix scholar of the spirit-touched, visited the War College three years ago to study the archives of the winter of 820, and Umi gave her access to records she now suspects Tsanuri did not know had been shown."
+    "Umi let him into the Military Library's closed stacks three years ago to read the records of 820, and has never told Tsanuri. It is how Shuichi knew which documents would vanish first."
    ],
    "parent_opinion": [
     "Akodo Umi's mother wished she would stop rebraiding that cord and ask someone—anyone—why the previous commander's name had been struck from the roster."
@@ -269,7 +269,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Isawa Hachizuke (Phoenix) — Isawa Hachizuke, a Phoenix scholar of the spirit-touched, visited the War College three years ago to study the archives of the winter of 820, and Umi gave her access to records she now suspects Tsanuri did not know had been shown."
+     "relations": "Asako Shuichi (Phoenix) — Umi let him into the Military Library's closed stacks three years ago to read the records of 820, and has never told Tsanuri. It is how Shuichi knew which documents would vanish first."
     },
     "picks": {}
    },
