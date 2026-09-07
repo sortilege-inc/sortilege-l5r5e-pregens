@@ -58,13 +58,13 @@
    "skill": null
   },
   "answers": {
-   "giri": "Seki's lord is the Utaku daimyō, and she must report directly to the Utaku commander on Scorpion movements and strength—intelligence she gathered during her captivity, which she has not yet fully disclosed.",
+   "giri": "Seki's lord is Utaku Tama, the Utaku commander at the castle, and she must report directly to her on Scorpion movements and strength—intelligence she gathered during her captivity, which she has not yet fully disclosed.",
    "ninjo": "Seki wants the Akodo and Unicorn to know that she broke under captivity and gave the Scorpion something they wanted, and she cannot say it to either without losing everything.",
    "standout_quality": "Seki continued her drills and meditation through two years of captivity after the Scorpion raid, and returned to the Utaku with a practice regimen so exact that her instructors cannot tell whether she is still drilling to stay sharp or drilling to stay sane.",
    "accomplishment": "During her two years in the Scorpion cells, Seki maintained her kata and zazen so precisely that the guards could not distinguish between the discipline that kept her alive and the discipline that kept her sane, and she has not broken the habit since.",
    "challenge": "When Seki calls water to move with her body as a Battle Maiden should, it refuses her—and in that moment of fumbled kata before the Utaku commander, she cannot tell if her intelligence reports ring as hollow as her drills.",
    "peace": "Seki prepares a meal from unfamiliar ingredients—testing each one on her tongue, naming what the Scorpion kitchens taught her hands to recognize—and finds that this one thing she learned in the cells was not a betrayal.",
-   "fear": "When Seki reports her intelligence to the Utaku commander, she omits what she gave the Scorpion to make them stop, and cannot find a way to tell him that does not sound like a confession of something worse.",
+   "fear": "When Seki reports her intelligence to the Utaku commander, she omits what she gave the Scorpion to make them stop, and cannot find a way to tell Tama that does not sound like a confession of something worse.",
    "accoutrement": "Seki's rice bowl from the Scorpion kitchens sits on her shelf in the barracks, chipped at the rim, and when the other Battle Maidens ask why she keeps it she says it is because the clay is good, which is true, but she does not say that the Utaku commander has never asked her to put it away.",
    "past": "",
    "known_for": "",
@@ -90,7 +90,7 @@
     "association": "Dragonfly"
    },
    "first_impression": "Seki's water never moves the way she intends it to—the forms are exact, but the element will not answer her body, and anyone watching her drill can see the moment she stops expecting it to.",
-   "stress_reaction": "She stops answering questions mid-report, finishing only the parts the commander has explicitly asked for, leaving the rest suspended until he prompts her again.",
+   "stress_reaction": "She stops answering questions mid-report, finishing only the parts the commander has explicitly asked for, leaving the rest suspended until Tama prompts her again.",
    "relationships": "Togashi Kagehisa (Dragon) — Togashi Kagehisa visited her in the Scorpion cells once, asked her nothing, left a jade token that meant something to the Dragon and nothing to the guards, and she has never told the Utaku commander he was there.\nUtaku Jinzaburo (Unicorn) — Utaku Jinzaburo taught Seki which Scorpion guards could be read by their breathing and which could not, during a single afternoon in the cells before she understood he was teaching her to survive, and she has never asked him whether the Utaku commander knows he visits prisoners.",
    "people": [
     {
@@ -141,7 +141,7 @@
     "Seki continued her drills and meditation through two years of captivity after the Scorpion raid, and returned to the Utaku with a practice regimen so exact that her instructors cannot tell whether she is still drilling to stay sharp or drilling to stay sane."
    ],
    "giri": [
-    "Seki's lord is the Utaku daimyō, and she must report directly to the Utaku commander on Scorpion movements and strength—intelligence she gathered during her captivity, which she has not yet fully disclosed."
+    "Seki's lord is Utaku Tama, the Utaku commander at the castle, and she must report directly to her on Scorpion movements and strength—intelligence she gathered during her captivity, which she has not yet fully disclosed."
    ],
    "ninjo": [
     "Seki wants the Akodo and Unicorn to know that she broke under captivity and gave the Scorpion something they wanted, and she cannot say it to either without losing everything."
@@ -159,7 +159,7 @@
     "Seki prepares a meal from unfamiliar ingredients—testing each one on her tongue, naming what the Scorpion kitchens taught her hands to recognize—and finds that this one thing she learned in the cells was not a betrayal."
    ],
    "fear": [
-    "When Seki reports her intelligence to the Utaku commander, she omits what she gave the Scorpion to make them stop, and cannot find a way to tell him that does not sound like a confession of something worse."
+    "When Seki reports her intelligence to the Utaku commander, she omits what she gave the Scorpion to make them stop, and cannot find a way to tell Tama that does not sound like a confession of something worse."
    ],
    "mentor_relationship": [
     "Tonbo Misao taught Seki to read a room by the angle of a cup, the pause before an answer, the meal someone chooses not to eat—and when Seki was released from the Scorpion cells, Misao asked her nothing about what she had given away, which Seki has never forgiven."
@@ -171,7 +171,7 @@
     "Seki's rice bowl from the Scorpion kitchens sits on her shelf in the barracks, chipped at the rim, and when the other Battle Maidens ask why she keeps it she says it is because the clay is good, which is true, but she does not say that the Utaku commander has never asked her to put it away."
    ],
    "stress_reaction": [
-    "She stops answering questions mid-report, finishing only the parts the commander has explicitly asked for, leaving the rest suspended until he prompts her again."
+    "She stops answering questions mid-report, finishing only the parts the commander has explicitly asked for, leaving the rest suspended until Tama prompts her again."
    ],
    "relationship_person": [
     "Togashi Kagehisa visited her in the Scorpion cells once, asked her nothing, left a jade token that meant something to the Dragon and nothing to the guards, and she has never told the Utaku commander he was there.",
@@ -198,7 +198,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Seki's lord is the Utaku daimyō, and she must report directly to the Utaku commander on Scorpion movements and strength—intelligence she gathered during her captivity, which she has not yet fully disclosed.",
+     "social_giri": "Seki's lord is Utaku Tama, the Utaku commander at the castle, and she must report directly to her on Scorpion movements and strength—intelligence she gathered during her captivity, which she has not yet fully disclosed.",
      "lord_name": "Utaku Tama"
     },
     "picks": {}
@@ -244,7 +244,7 @@
    },
    "step12": {
     "answers": {
-     "worries": "When Seki reports her intelligence to the Utaku commander, she omits what she gave the Scorpion to make them stop, and cannot find a way to tell him that does not sound like a confession of something worse."
+     "worries": "When Seki reports her intelligence to the Utaku commander, she omits what she gave the Scorpion to make them stop, and cannot find a way to tell Tama that does not sound like a confession of something worse."
     },
     "picks": {}
    },
@@ -263,7 +263,7 @@
    },
    "step15": {
     "answers": {
-     "stress": "She stops answering questions mid-report, finishing only the parts the commander has explicitly asked for, leaving the rest suspended until he prompts her again."
+     "stress": "She stops answering questions mid-report, finishing only the parts the commander has explicitly asked for, leaving the rest suspended until Tama prompts her again."
     },
     "picks": {}
    },
@@ -353,7 +353,7 @@
     "glory": 52,
     "status": 27,
     "ninjo": "Seki wants the Akodo and Unicorn to know that she broke under captivity and gave the Scorpion something they wanted, and she cannot say it to either without losing everything.",
-    "giri": "Seki's lord is the Utaku daimyō, and she must report directly to the Utaku commander on Scorpion movements and strength—intelligence she gathered during her captivity, which she has not yet fully disclosed.",
+    "giri": "Seki's lord is Utaku Tama, the Utaku commander at the castle, and she must report directly to her on Scorpion movements and strength—intelligence she gathered during her captivity, which she has not yet fully disclosed.",
     "bushido_tenets": {
      "paramount": "Compassion",
      "less_significant": "Courtesy"

@@ -59,8 +59,8 @@
    "skill": null
   },
   "answers": {
-   "giri": "Mirumoto Hisa serves Akodo Heihachi, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade.",
-   "ninjo": "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Heihachi's war college.",
+   "giri": "Mirumoto Hisa serves Akodo Tsanuri, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade.",
+   "ninjo": "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Tsanuri's war college.",
    "standout_quality": "Hisa beats every opponent she faces with the niten except the ones who refuse to let her draw both blades.",
    "accomplishment": "She kept three students who had already decided to leave the war college, by teaching them the niten not as a path to glory but as a way to survive what comes after the tournament ends.",
    "challenge": "She pitches the niten to every promising student who walks through her classroom door, certain her charm will keep them, and watches them leave anyway because they want a master who will fight the Kakita, not one who teaches them to hide.",
@@ -70,7 +70,7 @@
    "past": "",
    "known_for": "",
    "known_skill": null,
-   "lord_name": "Mirumoto Ton",
+   "lord_name": "Akodo Tsanuri",
    "lord_gender": "male",
    "prized_possession": "",
    "group_history": "",
@@ -142,10 +142,10 @@
     "Hisa beats every opponent she faces with the niten except the ones who refuse to let her draw both blades."
    ],
    "giri": [
-    "Mirumoto Hisa serves Akodo Heihachi, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade."
+    "Mirumoto Hisa serves Akodo Tsanuri, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade."
    ],
    "ninjo": [
-    "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Heihachi's war college."
+    "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Tsanuri's war college."
    ],
    "clan_relationship": [
     "Hisa teaches the two-blades form to students who will never face a Kakita, and tells herself this serves the Dragon when what she is really doing is protecting them from a duel she cannot win."
@@ -200,14 +200,14 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Mirumoto Hisa serves Akodo Heihachi, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade.",
-     "lord_name": "Mirumoto Ton"
+     "social_giri": "Mirumoto Hisa serves Akodo Tsanuri, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade.",
+     "lord_name": "Akodo Tsanuri"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Heihachi's war college."
+     "social_ninjo": "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Tsanuri's war college."
     },
     "picks": {}
    },
@@ -354,8 +354,8 @@
     "honor": 60,
     "glory": 44,
     "status": 30,
-    "ninjo": "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Heihachi's war college.",
-    "giri": "Mirumoto Hisa serves Akodo Heihachi, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade.",
+    "ninjo": "Hisa wants to teach the bright students who leave her classroom and never come back, the ones who choose safer paths or other masters, and she cannot follow them without abandoning Tsanuri's war college.",
+    "giri": "Mirumoto Hisa serves Akodo Tsanuri, commander of the war college's advanced students, and must keep his eager duelists from challenging her to single-combat tournaments that would prove the niten inferior to the Kakita blade.",
     "bushido_tenets": {
      "paramount": "Courage",
      "less_significant": "Compassion"

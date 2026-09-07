@@ -87,7 +87,7 @@
     "path": "A",
     "granted": "Small Stature",
     "skill": "",
-    "text": "Akodo Tsukune taught Chiaki that a commander owes her soldiers certainty about their loyalty, but Chiaki discovered during her first interrogation that the guilty man could be innocent and the innocent man could confess, leaving her uncertain whether her lord's faith in her judgment was a gift or a burden she cannot set down.",
+    "text": "Kuni Eichi taught Chiaki that the guilty confess to end the silence and the innocent confess to end the doubt, and that the whole craft is telling which; she has cleared eleven men since and is not sure of one of them.",
     "gender": "male",
     "association": "Crab"
    },
@@ -168,7 +168,7 @@
     "Kuni Eichi taught her that the small and overlooked see what the tall miss, but Chiaki cannot follow his example and stay small when her lord needs her name spoken aloud in a garrison full of soldiers who know her by it.",
     "Ikoma Chiaki's garrison commander Akodo Tsukune taught her to read silence for the tremor that betrays guilt, but Chiaki has learned that the soldiers who go quiet around her are often the ones with nothing left to hide.",
     "Chiaki's mother taught her to keep the garrison's rosters by hand, in her own handwriting, so that no scribe could slip a name through unnoticed; now the meticulous work that was meant to protect her soldiers binds her to each one so tightly that suspecting them feels like suspecting the hand that holds the pen.",
-    "Akodo Tsukune taught Chiaki that a commander owes her soldiers certainty about their loyalty, but Chiaki discovered during her first interrogation that the guilty man could be innocent and the innocent man could confess, leaving her uncertain whether her lord's faith in her judgment was a gift or a burden she cannot set down."
+    "Kuni Eichi taught Chiaki that the guilty confess to end the silence and the innocent confess to end the doubt, and that the whole craft is telling which; she has cleared eleven men since and is not sure of one of them."
    ],
    "first_impression": [
     "Chiaki's shoulders sit high and forward even when she stands still, as though bracing against a weight that never shifts."
@@ -256,7 +256,7 @@
    },
    "step13": {
     "answers": {
-     "most_learn": "Kuni Eichi — Akodo Tsukune taught Chiaki that a commander owes her soldiers certainty about their loyalty, but Chiaki discovered during her first interrogation that the guilty man could be innocent and the innocent man could confess, leaving her uncertain whether her lord's faith in her judgment was a gift or a burden she cannot set down."
+     "most_learn": "Kuni Eichi — Kuni Eichi taught Chiaki that the guilty confess to end the silence and the innocent confess to end the doubt, and that the whole craft is telling which; she has cleared eleven men since and is not sure of one of them."
     },
     "picks": {}
    },

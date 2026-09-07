@@ -40,6 +40,9 @@ Heritage audit: all nine applied. Rings and skills: none over 3. Pipeline PASS.
 
 ## 2. Contradictions — flagged for a decision
 
+*Applied 2026-09-07: D1, D3, D4, D5, D7. Ruled no change: D2, D9. Withdrawn: D6 (my misread,
+see below). Open: D8 (clarification below), D10 (with D41).*
+
 **D1. Mirumoto Hisa serves a man who has been dead for three hundred years.** Her giri:
 "serves **Akodo Heihachi**, commander of the war college's advanced students." Akodo
 Heihachi is one of the adventure's **Advisors** — the 820 persona party (p.12). A present-day
@@ -49,7 +52,9 @@ serves; `lord_name` → Akodo Tsanuri. **Trade:** Mirumoto Ton (named nowhere el
 pack gains a lord two PCs share, and Heihachi is free to be the ancestor in Part Two.
 *Alternative:* keep Ton as lord and only rename the commander.
 
-**D2. Shinjo Yoshimoto's lord is a Crane.** `lord_name` **Doji Hiroshige**; his giri says
+**D2. Shinjo Yoshimoto's lord is a Crane.** *Ruled 2026-09-07: keep as is. Doji Hiroshige
+is himself an Emerald Magistrate — middle management between Agasha Sumiko and the PCs.
+Not a contradiction; the record stands.* `lord_name` **Doji Hiroshige**; his giri says
 he "reports to the Emerald Champion in Otosan Uchi" as a Unicorn-nominated magistrate. In
 this adventure the acting Emerald Champion is **Agasha Sumiko**, and by default she is who
 sends the PCs. → *Recommendation:* lord → **Agasha Sumiko**. **Trade:** Hiroshige (named

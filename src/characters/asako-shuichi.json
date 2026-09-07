@@ -66,10 +66,10 @@
    "skill": null
   },
   "answers": {
-   "giri": "Shuichi serves Shiba Tsukune, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them.",
+   "giri": "Shuichi serves Asako Sakuko, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them.",
    "ninjo": "Shuichi wants the Ikoma historians to acknowledge that he found what they missed, even though admitting he succeeded means exposing how poorly they guarded their own archive.",
    "standout_quality": "Shuichi arrived at the archive knowing which documents would vanish first and had already copied half the disputed records before anyone thought to ask why a courtier was taking notes in the military library.",
-   "accomplishment": "Shuichi copied the Ikoma Hall's records of Snow Plain before Shiba Tsukune told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them.",
+   "accomplishment": "Shuichi copied the Ikoma Hall's records of Snow Plain before Asako Sakuko told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them.",
    "challenge": "When Shuichi kneels to examine the foundation stones beneath the Ikoma Hall, checking for rot and settling, the earth seems to resist him—he finds cracks where there should be none, misses damage that shows itself later to the stone-workers, and leaves the work half-done while the master mason has to return to finish what he began.",
    "peace": "Shuichi sits in the Ikoma Hall with a stack of ledgers open before him, cross-referencing the military records against the temple accounts, and the work of finding what was missed—what *they* missed—steadies his hands in a way nothing else does.",
    "fear": "When Shuichi kneels beside a farmer to examine the Ikoma Hall's foundation stones, the man's callused hands and the smell of field-work on his clothes make him recoil so visibly that the laborer steps back, leaving the inspection half-finished and the rot beneath the eastern wall undiscovered until the master mason returns.",
@@ -149,7 +149,7 @@
     "Shuichi arrived at the archive knowing which documents would vanish first and had already copied half the disputed records before anyone thought to ask why a courtier was taking notes in the military library."
    ],
    "giri": [
-    "Shuichi serves Shiba Tsukune, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them."
+    "Shuichi serves Asako Sakuko, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them."
    ],
    "ninjo": [
     "Shuichi wants the Ikoma historians to acknowledge that he found what they missed, even though admitting he succeeded means exposing how poorly they guarded their own archive."
@@ -158,7 +158,7 @@
     "Shuichi brings the Asako's methods to the Ikoma historians—patient copying, careful cross-reference, no dramatic revelation—and they treat his presence in their archive as a kind of gentle rebuke."
    ],
    "accomplishment": [
-    "Shuichi copied the Ikoma Hall's records of Snow Plain before Shiba Tsukune told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them."
+    "Shuichi copied the Ikoma Hall's records of Snow Plain before Asako Sakuko told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them."
    ],
    "challenge": [
     "When Shuichi kneels to examine the foundation stones beneath the Ikoma Hall, checking for rot and settling, the earth seems to resist him—he finds cracks where there should be none, misses damage that shows itself later to the stone-workers, and leaves the work half-done while the master mason has to return to finish what he began."
@@ -203,7 +203,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Shuichi serves Shiba Tsukune, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them.",
+     "social_giri": "Shuichi serves Asako Sakuko, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them.",
      "lord_name": "Asako Sakuko"
     },
     "picks": {}
@@ -231,7 +231,7 @@
    },
    "step9": {
     "answers": {
-     "success": "Shuichi copied the Ikoma Hall's records of Snow Plain before Shiba Tsukune told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them."
+     "success": "Shuichi copied the Ikoma Hall's records of Snow Plain before Asako Sakuko told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them."
     },
     "picks": {}
    },
@@ -358,7 +358,7 @@
     "glory": 40,
     "status": 25,
     "ninjo": "Shuichi wants the Ikoma historians to acknowledge that he found what they missed, even though admitting he succeeded means exposing how poorly they guarded their own archive.",
-    "giri": "Shuichi serves Shiba Tsukune, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them.",
+    "giri": "Shuichi serves Asako Sakuko, the Phoenix's archivist-diplomat to the Akodo War College, and must retrieve and preserve the Ikoma Hall's records of Snow Plain before the Scorpion delegation pressures the Lion into destroying them.",
     "bushido_tenets": {
      "paramount": "Righteousness",
      "less_significant": "Duty and Loyalty"

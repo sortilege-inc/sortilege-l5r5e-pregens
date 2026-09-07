@@ -59,7 +59,7 @@
    }
   },
   "bushido": {
-   "paramount": "Honor",
+   "paramount": "Compassion",
    "lesser": "Duty and Loyalty",
    "attitude": "A",
    "skill": null
@@ -230,7 +230,7 @@
    },
    "step8": {
     "answers": {
-     "tenet_paramount": "Honor",
+     "tenet_paramount": "Compassion",
      "tenet_less_significant": "Duty and Loyalty"
     },
     "picks": {}
@@ -366,7 +366,7 @@
     "ninjo": "Kaede wants to keep the infirmary stocked so thoroughly that no soldier ever dies of a wound she could have treated, but each year the treasury tightens and she must choose which medicines to brew and which soldiers to disappoint.",
     "giri": "Kaede reports directly to the Akodo War College's chief physician, and must ensure the infirmary never runs short of the medicines soldiers need before the next drill, even when the Lion's treasury is stretched thin across three fronts.",
     "bushido_tenets": {
-     "paramount": "Honor",
+     "paramount": "Compassion",
      "less_significant": "Duty and Loyalty"
     }
    },
