@@ -316,6 +316,9 @@ def main():
     # Cross-character notes that name them.
     docs = [json.load(open(path, encoding="utf-8"))
             for path in sorted(glob.glob(os.path.join(SRC, "*.json")))]
+    party_lines = {k: v for k, v in
+                   ((json.load(open(SOURCES, encoding="utf-8")).get("party_lines") or {}).items())
+                   if not k.startswith("_")}
     concepts = {k: v for k, v in
                 ((json.load(open(SOURCES, encoding="utf-8")).get("concepts") or {}).items())
                 if not k.startswith("_")}
@@ -435,11 +438,25 @@ def main():
                         written.setdefault(tuple(sorted((mine, pc["id"]))), []).append(
                             d["name"] + ": " + t)
 
+        # A public line for a pair, from `party_lines` in the manifest, wins
+        # outright: the Cross-character note it replaces is GM prep, and the
+        # first pack's notes named tarot spreads and plot on the public map.
+        public = {}
+        for e in (party_lines.get(camp) or []):
+            pa, pb = by_pc_name.get(fold(e["a"])), by_pc_name.get(fold(e["b"]))
+            if pa and pb:
+                public[tuple(sorted((pa["id"], pb["id"])))] = e["text"]
+
         # Every pair of PCs, written up or not. Two sources can describe a pair
         # — a Cross-character note, and one of them naming the other at
         # question 16 — and either counts as written.
         for i, p in enumerate(pcs):
             for q in pcs[i + 1:]:
+                pub = public.get(tuple(sorted((p["id"], q["id"]))))
+                if pub:
+                    edges.append({"a": p["id"], "b": q["id"], "kind": "party",
+                                  "text": pub, "defined": True})
+                    continue
                 parts = []
                 for key, body in notes.items():
                     m1, m2 = (match_pc(key[0], pcs), match_pc(key[1], pcs))

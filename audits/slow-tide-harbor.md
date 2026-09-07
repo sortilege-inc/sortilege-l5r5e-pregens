@@ -19,7 +19,7 @@ Officials Kasuga Mugatsu (governor) and Kasuga Mikoto (magistrate); crime lords 
 
 ---
 
-**State at 2026-09-07:** D1–D14 approved and applied (D6 as drafted). D15 next, then D16–D21.
+**State at 2026-09-07:** D1–D14 approved and applied (D6 as drafted). D15 applied (flatter Chiyo ↔ Ichirō line; `party_lines` block in the manifest, preferred by the map). D16–D21 next.
 
 ## A. Errors
 

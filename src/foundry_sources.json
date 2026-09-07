@@ -1712,5 +1712,45 @@
    "patron": "Mirumoto",
    "clan": "Dragon"
   }
+ },
+ "party_lines": {
+  "_note": "Public PC-to-PC lines the relationship map prefers over a concept's Cross-character prep note. Names are the characters' full names; order does not matter. Added 2026-09-07 (Slow Tide Harbor D15) so the concepts stay GM-facing.",
+  "Slow Tide Harbor": [
+   {
+    "a": "Kitsuki Nagiko",
+    "b": "Iuchi Nergüi",
+    "text": "Both finish what they start. She is contemptuous of everyone equally, and he is the only one who takes that as fairness."
+   },
+   {
+    "a": "Kitsuki Nagiko",
+    "b": "Kuni Ryōsei",
+    "text": "Neither will break: Nagiko by rigidity, Ryōsei by balance. They will find out which holds the first time they disagree about the investigation."
+   },
+   {
+    "a": "Kitsuki Nagiko",
+    "b": "Kasuga Chiyo",
+    "text": "Nagiko is tactless with everyone; Chiyo cannot bear condescension. Neither has to try."
+   },
+   {
+    "a": "Kuni Ryōsei",
+    "b": "Iuchi Nergüi",
+    "text": "The party's two specialists in what cannot be seen. He reads; she builds."
+   },
+   {
+    "a": "Kasuga Chiyo",
+    "b": "Sanpei",
+    "text": "Two debts. She believes hers is past saving; he believes his is not."
+   },
+   {
+    "a": "Kasuga Chiyo",
+    "b": "Ichirō Tsutomu",
+    "text": "Employer and hired muscle. He has worked for her four months and knows nothing of her business."
+   },
+   {
+    "a": "Sanpei",
+    "b": "Ichirō Tsutomu",
+    "text": "Two bodies for hire. One auditioning for permanence, one taking wages and asking for nothing more."
+   }
+  ]
  }
 }
