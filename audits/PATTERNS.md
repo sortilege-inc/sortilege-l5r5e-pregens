@@ -78,7 +78,20 @@ catalog item ("Ceremonial robes", "two knives") resolve to it — the sheet gain
 
 **Open subjects.** Karmic Tie → a person already written as a bond (the jade token).
 Spiritual Protector → leave unnamed on purpose. A never-mentioned spouse (Blissful
-Betrothal) → deferred by the owner; do not invent one unasked.
+Betrothal) → the owner supplied the fact (an ashigaru with the Lion levies in the west) and
+accepted a placeholder name; the rule text assumes a present spouse and the owner took the
+tension knowingly. Set `pec_subjects` for the Creator when a subject is settled.
+
+**Adventure NPCs in a record.** Knowing one from the character's past passes (Seki knows
+Aishi's name from the cells); a scene with one inside the adventure's own events does not
+(Yoshimoto flirting with Ayako at the library) — the same ruling as Q10, applied to Q12
+and Q16. Where a PC names another PC in Q16, the map folds the text into their party line
+rather than drawing a second one; that is the intended shape.
+
+**Disadvantage vs outfit.** Lost Hand and a school-issued yumi: replace the item with one the
+disadvantage allows, from the catalog, owner's pick (shuriken). The grips live in Foundry's
+`grip_1`/`grip_2` (empty = usable, `N/A` = not) and in the printed table; the corpus carries
+them only for supplement weapons.
 
 **Register.** Plain declaratives. The observing-tell clause is out — "to watch how his face
 moves before he speaks", "reading the room's currents" — as is the closing observation and

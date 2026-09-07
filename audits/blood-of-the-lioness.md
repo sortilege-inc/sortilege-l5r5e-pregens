@@ -4,6 +4,15 @@ Pass A read: the nine records in full, all nine portraits, the adventure's three
 (`l5r5e-0.4-blood-of-the-lioness.arc` / `.lore`), the pack's relationship map, and the
 pencilled rationale. 2026-09-07. Decisions are numbered **D1…** for answering by number.
 
+**State at close (2026-09-07):** every numbered decision resolved by the owner. Applied:
+D1, D3, D4, D5, D7, D8(a), D11–D14, D16–D50 (D14 as (b), D17 as (a), D18 with the Deer kept,
+D20 as an oblique parallel, D42–D44 in the owner's own wording, D46 and Yoshimoto's Q10 moved
+to the past). Ruled no change: D2, D9, D15 (latent). Withdrawn: D6 (my misread). Also done
+outside the numbering: all nine accoutrements restructured and rewritten; Ujitsuna's yumi →
+shuriken; Chiaki's lord/commander split. Final sweep: no open gear slot, no unfilled subject,
+no old-shape accoutrement; two lord fields still unnamed in their prose (Kensaku's Kakita
+Namika, Yoshimoto's Doji Hiroshige) — one clause each, proposed in chat.
+
 The adventure, in one paragraph, because half the proposals hang on it: in **1123** the PCs
 are summoned to the **Akodo War College** in the **Castle of the Swift Sword** — by default as
 Emerald Magistrates sent by acting Emerald Champion **Agasha Sumiko** — to research a
