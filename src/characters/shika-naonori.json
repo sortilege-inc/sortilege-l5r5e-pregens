@@ -1,0 +1,465 @@
+{
+ "slug": "shika-naonori",
+ "name": "Shika Naonori",
+ "campaign": "Winter's Embrace",
+ "status": null,
+ "identity": {
+  "clan": "Deer",
+  "family": "Shika",
+  "school": "Shika Speardancer School",
+  "role": "Shinobi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Naonori's eyes move to track a servant crossing a distant corridor while she bows to the person directly in front of her, and do not return.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Shika Naonori",
+  "mode": "core",
+  "clan": "Deer",
+  "family": "Shika",
+  "school": "Shika Speardancer School",
+  "role": "Shinobi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "void",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "skills": {
+   "skulduggery": 0,
+   "survival": 1,
+   "tactics": 1
+  },
+  "distinctions": [
+   "Light Sleeper"
+  ],
+  "adversities": [
+   "Encompassing Duty"
+  ],
+  "passions": [
+   "Decorum"
+  ],
+  "anxieties": [
+   "Paranoia"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Duty and Loyalty",
+   "lesser": "Righteousness",
+   "attitude": "A",
+   "skill": "survival"
+  },
+  "answers": {
+   "giri": "Shika Naonori's lord is the Deer clan's delegate to the Winter Court, and she must keep him alive through the two weeks of the embassy, which means sleeping in the corridor outside his chamber and turning away visitors she does not recognize, even when they claim to bring messages from his allies.",
+   "ninjo": "Naonori watches the delegate's allies come and go through the palace corridors and wonders whether she is keeping him alive or keeping him isolated, and she has started letting through visitors she cannot quite verify.",
+   "standout_quality": "Shika Naonori keeps watch outside the delegate's chamber at night while other students sleep, and does not complain when the day's lessons begin.",
+   "accomplishment": "When the Crane chamberlain tried to turn away a Mantis merchant at the delegate's door just before dawn, Naonori woke from light sleep at the sound of his sandals on stone and recognized the forgery in his credentials before he had finished speaking.",
+   "challenge": "Naonori cannot tell the difference between protecting her lord and imprisoning him, so she turns away people she should admit and admits people she should refuse.",
+   "peace": "Naonori corrects a visitor's bow in the palace corridor before they see the delegate, adjusting their sleeves and the angle of their spine until the form is flawless, and feels the knot in her chest loosen.",
+   "fear": "In the corridor outside the delegate's chamber, Naonori turns away a merchant with forged papers and does not sleep for the rest of the night, certain she has just prevented an assassination and equally certain she has just refused entry to a legitimate ally, and the two certainties will not resolve into anything she can act on.",
+   "accoutrement": "She wears the Deer clan's sigil on a cord around her wrist, knotted so tightly that the silk has begun to fray, and she retied it this morning without thinking about why.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Doji Hamako",
+   "lord_gender": "female",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Naonori accepts the Deer's counsel that minor clans survive through service, but she is beginning to suspect that absolute loyalty to one man—even her lord—narrows what she can see."
+   },
+   "mentor": {
+    "name": "Kakita Kansuke",
+    "path": "A",
+    "granted": "Paragon of Duty and Loyalty",
+    "skill": "",
+    "text": "Kakita Kansuke taught her that duty meant seeing clearly, but she has learned that clear sight costs her the trust of people her lord actually needs, and she cannot ask him which one he requires.",
+    "gender": "male",
+    "association": "Crane"
+   },
+   "first_impression": "Naonori's eyes move to track a servant crossing a distant corridor while she bows to the person directly in front of her, and do not return.",
+   "stress_reaction": "Naonori stops answering questions halfway through, her eyes still on the corridor behind whoever is speaking, and will not continue the conversation until they acknowledge what she has seen.",
+   "relationships": "Bayushi Yaemon (Scorpion) — Bayushi Yaemon offered her a way to verify the merchant's papers before the Mantis reached the delegate's door, and she refused it, certain that accepting help from the Scorpion would obligate her to let through whoever he wanted next.\nShika Shumkichi (Deer) — Shika Shumkichi wrote the Winter Court invitation for the Deer's delegate and Naonori copied it three times to memorize the seal, then asked him whether the merchant's papers matched, and he told her he could not say without seeing them himself.",
+   "people": [
+    {
+     "name": "Bayushi Yaemon",
+     "gender": "male",
+     "association": "Scorpion",
+     "text": "Bayushi Yaemon offered her a way to verify the merchant's papers before the Mantis reached the delegate's door, and she refused it, certain that accepting help from the Scorpion would obligate her to let through whoever he wanted next."
+    },
+    {
+     "name": "Shika Shumkichi",
+     "gender": "male",
+     "association": "Deer",
+     "text": "Shika Shumkichi wrote the Winter Court invitation for the Deer's delegate and Naonori copied it three times to memorize the seal, then asked him whether the merchant's papers matched, and he told her he could not say without seeing them himself."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Her father watches her retie the frayed cord around her wrist for the third time in an hour and does not ask why she cannot leave it alone.",
+    "skill": "tactics"
+   },
+   "heritage": "Triumph over the Lion",
+   "heritage_table": "courts-of-stone-heritages",
+   "heritage_sub": "4-6 — A game set of your choice",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "She will die in the corridor outside the delegate's chamber, turned away by someone she should have admitted, their blade finding her before she realizes she made the wrong choice."
+  },
+  "starting_item": "Yoroi-Doshi",
+  "campaign": "Winter's Embrace",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Fitness",
+    "Sentiment",
+    "Meditation",
+    "Martial Arts [Melee]",
+    "Skulduggery"
+   ],
+   "school.tech.1": [
+    "Striking as Fire"
+   ],
+   "heritage.triumph-over-the-lion.0.item": [
+    "Traveling Board Games"
+   ],
+   "heritage.triumph-over-the-lion.0.quality": [
+    "Concealable"
+   ],
+   "heritage.triumph-over-the-lion.0.gm_quality": [
+    "Forbidden"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Shika Naonori keeps watch outside the delegate's chamber at night while other students sleep, and does not complain when the day's lessons begin."
+   ],
+   "giri": [
+    "Shika Naonori's lord is the Deer clan's delegate to the Winter Court, and she must keep him alive through the two weeks of the embassy, which means sleeping in the corridor outside his chamber and turning away visitors she does not recognize, even when they claim to bring messages from his allies."
+   ],
+   "ninjo": [
+    "Naonori watches the delegate's allies come and go through the palace corridors and wonders whether she is keeping him alive or keeping him isolated, and she has started letting through visitors she cannot quite verify."
+   ],
+   "clan_relationship": [
+    "Naonori accepts the Deer's counsel that minor clans survive through service, but she is beginning to suspect that absolute loyalty to one man—even her lord—narrows what she can see."
+   ],
+   "accomplishment": [
+    "When the Crane chamberlain tried to turn away a Mantis merchant at the delegate's door just before dawn, Naonori woke from light sleep at the sound of his sandals on stone and recognized the forgery in his credentials before he had finished speaking."
+   ],
+   "challenge": [
+    "Naonori cannot tell the difference between protecting her lord and imprisoning him, so she turns away people she should admit and admits people she should refuse."
+   ],
+   "peace": [
+    "Naonori corrects a visitor's bow in the palace corridor before they see the delegate, adjusting their sleeves and the angle of their spine until the form is flawless, and feels the knot in her chest loosen."
+   ],
+   "fear": [
+    "In the corridor outside the delegate's chamber, Naonori turns away a merchant with forged papers and does not sleep for the rest of the night, certain she has just prevented an assassination and equally certain she has just refused entry to a legitimate ally, and the two certainties will not resolve into anything she can act on."
+   ],
+   "mentor_relationship": [
+    "Kakita Kansuke taught her that duty meant seeing clearly, but she has learned that clear sight costs her the trust of people her lord actually needs, and she cannot ask him which one he requires."
+   ],
+   "first_impression": [
+    "Naonori's eyes move to track a servant crossing a distant corridor while she bows to the person directly in front of her, and do not return."
+   ],
+   "accoutrement": [
+    "She wears the Deer clan's sigil on a cord around her wrist, knotted so tightly that the silk has begun to fray, and she retied it this morning without thinking about why."
+   ],
+   "stress_reaction": [
+    "Naonori stops answering questions halfway through, her eyes still on the corridor behind whoever is speaking, and will not continue the conversation until they acknowledge what she has seen."
+   ],
+   "relationship_person": [
+    "Bayushi Yaemon offered her a way to verify the merchant's papers before the Mantis reached the delegate's door, and she refused it, certain that accepting help from the Scorpion would obligate her to let through whoever he wanted next.",
+    "Shika Shumkichi wrote the Winter Court invitation for the Deer's delegate and Naonori copied it three times to memorize the seal, then asked him whether the merchant's papers matched, and he told her he could not say without seeing them himself."
+   ],
+   "parent_opinion": [
+    "Her father watches her retie the frayed cord around her wrist for the third time in an hour and does not ask why she cannot leave it alone."
+   ],
+   "death": [
+    "She will die in the corridor outside the delegate's chamber, turned away by someone she should have admitted, their blade finding her before she realizes she made the wrong choice."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Shika Naonori keeps watch outside the delegate's chamber at night while other students sleep, and does not complain when the day's lessons begin.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Shika Naonori's lord is the Deer clan's delegate to the Winter Court, and she must keep him alive through the two weeks of the embassy, which means sleeping in the corridor outside his chamber and turning away visitors she does not recognize, even when they claim to bring messages from his allies.",
+     "lord_name": "Doji Hamako"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Naonori watches the delegate's allies come and go through the palace corridors and wonders whether she is keeping him alive or keeping him isolated, and she has started letting through visitors she cannot quite verify."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Naonori accepts the Deer's counsel that minor clans survive through service, but she is beginning to suspect that absolute loyalty to one man—even her lord—narrows what she can see.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Duty and Loyalty",
+     "tenet_less_significant": "Righteousness"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "When the Crane chamberlain tried to turn away a Mantis merchant at the delegate's door just before dawn, Naonori woke from light sleep at the sound of his sandals on stone and recognized the forgery in his credentials before he had finished speaking."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Naonori cannot tell the difference between protecting her lord and imprisoning him, so she turns away people she should admit and admits people she should refuse."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Naonori corrects a visitor's bow in the palace corridor before they see the delegate, adjusting their sleeves and the angle of their spine until the form is flawless, and feels the knot in her chest loosen."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "In the corridor outside the delegate's chamber, Naonori turns away a merchant with forged papers and does not sleep for the rest of the night, certain she has just prevented an assassination and equally certain she has just refused entry to a legitimate ally, and the two certainties will not resolve into anything she can act on."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Kakita Kansuke — Kakita Kansuke taught her that duty meant seeing clearly, but she has learned that clear sight costs her the trust of people her lord actually needs, and she cannot ask him which one he requires."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Naonori's eyes move to track a servant crossing a distant corridor while she bows to the person directly in front of her, and do not return.",
+     "accoutrement": "She wears the Deer clan's sigil on a cord around her wrist, knotted so tightly that the silk has begun to fray, and she retied it this morning without thinking about why."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Naonori stops answering questions halfway through, her eyes still on the corridor behind whoever is speaking, and will not continue the conversation until they acknowledge what she has seen."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Bayushi Yaemon (Scorpion) — Bayushi Yaemon offered her a way to verify the merchant's papers before the Mantis reached the delegate's door, and she refused it, certain that accepting help from the Scorpion would obligate her to let through whoever he wanted next.\nShika Shumkichi (Deer) — Shika Shumkichi wrote the Winter Court invitation for the Deer's delegate and Naonori copied it three times to memorize the seal, then asked him whether the merchant's papers matched, and he told her he could not say without seeing them himself."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Her father watches her retie the frayed cord around her wrist for the third time in an hour and does not ask why she cannot leave it alone."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Triumph over the Lion",
+     "heritage_table": "Courts of Stone Heritages",
+     "heritage_sub": "4-6 — A game set of your choice",
+     "heritage_applied": true
+    },
+    "picks": {
+     "heritage.triumph-over-the-lion.0.gm_quality": [
+      "Forbidden"
+     ],
+     "heritage.triumph-over-the-lion.0.item": [
+      "Traveling Board Games"
+     ],
+     "heritage.triumph-over-the-lion.0.quality": [
+      "Concealable"
+     ]
+    }
+   },
+   "step20": {
+    "answers": {
+     "death": "She will die in the corridor outside the delegate's chamber, turned away by someone she should have admitted, their blade finding her before she realizes she made the wrong choice."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Shika Speardancer School",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 3,
+    "water": 1,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 1,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 2,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 1,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 50,
+    "glory": 40,
+    "status": 30,
+    "ninjo": "Naonori watches the delegate's allies come and go through the palace corridors and wonders whether she is keeping him alive or keeping him isolated, and she has started letting through visitors she cannot quite verify.",
+    "giri": "Shika Naonori's lord is the Deer clan's delegate to the Winter Court, and she must keep him alive through the two weeks of the embassy, which means sleeping in the corridor outside his chamber and turning away visitors she does not recognize, even when they claim to bring messages from his allies.",
+    "bushido_tenets": {
+     "paramount": "Duty and Loyalty",
+     "less_significant": "Righteousness"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 4,
+    "focus": 6,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Trip the Leg"
+    },
+    {
+     "name": "Striking as Fire"
+    },
+    {
+     "name": "Typhoon in the Bamboo Grove"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Light Sleeper"
+    },
+    {
+     "name": "Encompassing Duty"
+    },
+    {
+     "name": "Decorum"
+    },
+    {
+     "name": "Paranoia"
+    },
+    {
+     "name": "Paragon of Duty and Loyalty"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Yoroi-Doshi"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "stealth clothing or ashigaru armor",
+     "custom": true,
+     "text": "From the Shika Speardancer starting outfit",
+     "held": false
+    },
+    {
+     "name": "yari or kamayari",
+     "custom": true,
+     "text": "From the Shika Speardancer starting outfit",
+     "held": false
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "She wears the Deer clan's sigil on a cord around her wrist, knotted so tightly that the silk has begun to fray, and she retied it this morning without thinking about why.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    },
+    {
+     "name": "Traveling Board Games",
+     "text": "quality chosen by the player: Concealable; quality chosen by the GM: Forbidden"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

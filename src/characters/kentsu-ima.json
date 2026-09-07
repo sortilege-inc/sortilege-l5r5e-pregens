@@ -1,0 +1,447 @@
+{
+ "slug": "kentsu-ima",
+ "name": "Kentsu Ima",
+ "campaign": "Winter's Embrace",
+ "status": null,
+ "identity": {
+  "clan": "Scorpion",
+  "family": "Kentsu",
+  "school": "Bayushi Manipulator School",
+  "role": "Courtier",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Her fingers move while she listens, tracing cipher patterns in the air before she catches herself and flattens her hands against her thighs.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Kentsu Ima",
+  "mode": "core",
+  "clan": "Scorpion",
+  "family": "Bayushi",
+  "school": "Bayushi Manipulator School",
+  "role": "Courtier",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "skills": {
+   "composition": 1
+  },
+  "distinctions": [
+   "Urbane and Worldly"
+  ],
+  "adversities": [
+   "Allergy"
+  ],
+  "passions": [
+   "Provocation"
+  ],
+  "anxieties": [
+   "Addiction"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Duty and Loyalty",
+   "lesser": "Honor",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Her lord is Bayushi Yojiro, absent from court, and she reports to him weekly through a cipher that changes with the moon—what the Crane believe about Scorpion movements at Kyūden Doji, which clans are fracturing, which marriages are possible, which are not.",
+   "ninjo": "Kentsu Ima wants to know why Bayushi Yojiro stopped writing back, and whether she should ride to find him or keep pretending his silence means nothing has changed.",
+   "standout_quality": "Kentsu Ima reads a room the way a scout reads terrain—not for beauty, but for exits, for who stands where, for what shifts when someone enters—and she does not miss the ones the Bayushi courtiers around her have learned to overlook.",
+   "accomplishment": "She convinced a Crane ambassador's wife that the Scorpion delegation's late arrival to Kyūden Doji was deliberate courtliness rather than an insult, using the woman's own complaints about her husband's timing to make the story land.",
+   "challenge": "Kentsu Ima's lungs close around pollen and perfume at the very court where her usefulness depends on breathing the same air as everyone else.",
+   "peace": "Kentsu Ima sits across from Bayushi Yojiro's seal—the one she uses to break his ciphers—and forges his hand in a letter back to herself, watching the strokes come out wrong on purpose, deliberately clumsy in ways he would never allow, until she has proved beyond argument that she knows exactly what he would say if he were still saying anything at all.",
+   "fear": "Kentsu Ima keeps ink and paper in the folds of her court robe so that when the silence from Bayushi Yojiro goes three days without breaking, she can sit in the garden pavilion and write his replies in his hand until her fingers cramp, which is easier than sitting still while her hands shake and everyone around her learns that the Scorpion do not know where their own lord has gone.",
+   "accoutrement": "She carries Bayushi Yojiro's seal in a silk wrapping inside her sleeve, and when the silence stretches past three days she takes it out in the garden pavilion to compare the weight of it in her palm to the weight of what she might forge in his name.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Bayushi Asa",
+   "lord_gender": "female",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Kentsu Ima sends her weekly reports to a man who no longer answers, which means she is either still serving the Scorpion or has already betrayed them and simply has not admitted it yet."
+   },
+   "mentor": {
+    "name": "Asahina Nori",
+    "path": "A",
+    "granted": "Decorum",
+    "skill": "",
+    "text": "Asahina Nori taught her that a cipher broken is a cipher worthless, so Kentsu Ima destroys every decoded letter from Bayushi Yojiro the moment she has memorized it, and now she cannot prove he ever wrote back at all.",
+    "gender": "female",
+    "association": "Crane"
+   },
+   "first_impression": "Her fingers move while she listens, tracing cipher patterns in the air before she catches herself and flattens her hands against her thighs.",
+   "stress_reaction": "When the silence from Bayushi Yojiro stretches past a week, Kentsu Ima stops looking directly at anyone in the room and addresses only the people who have already proven they will not ask her a direct question.",
+   "relationships": "Iuchi Juzaburo (Unicorn) — Iuchi Juzaburo taught her that Unicorn merchants move faster than Scorpion cipher couriers, and now when the silence from Bayushi Yojiro stretches past ten days she finds reasons to attend the same tea houses Juzaburo frequents, hoping to trade gossip about absent lords for word of anyone matching Yojiro's description on the roads west.\nOtomo Ikuyo (Imperial) — Otomo Ikuyo catches her in the garden pavilion during the third day of silence and does not ask why Kentsu Ima is there alone with paper and ink; instead, Otomo Ikuyo sits down across from her every time and talks about nothing until Kentsu Ima's hands stop moving.",
+   "people": [
+    {
+     "name": "Iuchi Juzaburo",
+     "gender": "male",
+     "association": "Unicorn",
+     "text": "Iuchi Juzaburo taught her that Unicorn merchants move faster than Scorpion cipher couriers, and now when the silence from Bayushi Yojiro stretches past ten days she finds reasons to attend the same tea houses Juzaburo frequents, hoping to trade gossip about absent lords for word of anyone matching Yojiro's description on the roads west."
+    },
+    {
+     "name": "Otomo Ikuyo",
+     "gender": "female",
+     "association": "Imperial",
+     "text": "Otomo Ikuyo catches her in the garden pavilion during the third day of silence and does not ask why Kentsu Ima is there alone with paper and ink; instead, Otomo Ikuyo sits down across from her every time and talks about nothing until Kentsu Ima's hands stop moving."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Kentsu Ima's mother worries that her daughter has learned to forge her lord's hand so well she may forget which letters are actually his.",
+    "skill": "composition"
+   },
+   "heritage": "Touched by the Fortunes",
+   "heritage_table": "new-samurai-heritages-celestial-realms",
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Kentsu Ima will die in a room where no one asks her a direct question, and she will answer anyway."
+  },
+  "starting_item": "Personal Seal or Chop",
+  "campaign": "Winter's Embrace",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Performance",
+    "Skulduggery",
+    "Sentiment",
+    "Courtesy",
+    "Command"
+   ],
+   "school.tech.1": [
+    "Rustling of Leaves"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Kentsu Ima reads a room the way a scout reads terrain—not for beauty, but for exits, for who stands where, for what shifts when someone enters—and she does not miss the ones the Bayushi courtiers around her have learned to overlook."
+   ],
+   "giri": [
+    "Her lord is Bayushi Yojiro, absent from court, and she reports to him weekly through a cipher that changes with the moon—what the Crane believe about Scorpion movements at Kyūden Doji, which clans are fracturing, which marriages are possible, which are not."
+   ],
+   "ninjo": [
+    "Kentsu Ima wants to know why Bayushi Yojiro stopped writing back, and whether she should ride to find him or keep pretending his silence means nothing has changed."
+   ],
+   "clan_relationship": [
+    "Kentsu Ima sends her weekly reports to a man who no longer answers, which means she is either still serving the Scorpion or has already betrayed them and simply has not admitted it yet."
+   ],
+   "accomplishment": [
+    "Kentsu Ima convinced Bayushi Yojiro's wife that her husband's silence was a test of loyalty, not abandonment, and the woman stopped asking questions before Ima herself had to decide whether to lie.",
+    "She convinced a Crane ambassador's wife that the Scorpion delegation's late arrival to Kyūden Doji was deliberate courtliness rather than an insult, using the woman's own complaints about her husband's timing to make the story land."
+   ],
+   "challenge": [
+    "Kentsu Ima's lungs close around pollen and perfume at the very court where her usefulness depends on breathing the same air as everyone else."
+   ],
+   "peace": [
+    "Kentsu Ima sits across from Bayushi Yojiro's seal—the one she uses to break his ciphers—and forges his hand in a letter back to herself, watching the strokes come out wrong on purpose, deliberately clumsy in ways he would never allow, until she has proved beyond argument that she knows exactly what he would say if he were still saying anything at all."
+   ],
+   "fear": [
+    "Kentsu Ima keeps ink and paper in the folds of her court robe so that when the silence from Bayushi Yojiro goes three days without breaking, she can sit in the garden pavilion and write his replies in his hand until her fingers cramp, which is easier than sitting still while her hands shake and everyone around her learns that the Scorpion do not know where their own lord has gone."
+   ],
+   "mentor_relationship": [
+    "Asahina Nori taught her that a cipher broken is a cipher worthless, so Kentsu Ima destroys every decoded letter from Bayushi Yojiro the moment she has memorized it, and now she cannot prove he ever wrote back at all."
+   ],
+   "first_impression": [
+    "Her fingers move while she listens, tracing cipher patterns in the air before she catches herself and flattens her hands against her thighs."
+   ],
+   "accoutrement": [
+    "She carries Bayushi Yojiro's seal in a silk wrapping inside her sleeve, and when the silence stretches past three days she takes it out in the garden pavilion to compare the weight of it in her palm to the weight of what she might forge in his name."
+   ],
+   "stress_reaction": [
+    "When the silence from Bayushi Yojiro stretches past a week, Kentsu Ima stops looking directly at anyone in the room and addresses only the people who have already proven they will not ask her a direct question."
+   ],
+   "relationship_person": [
+    "Iuchi Juzaburo taught her that Unicorn merchants move faster than Scorpion cipher couriers, and now when the silence from Bayushi Yojiro stretches past ten days she finds reasons to attend the same tea houses Juzaburo frequents, hoping to trade gossip about absent lords for word of anyone matching Yojiro's description on the roads west.",
+    "Otomo Ikuyo catches her in the garden pavilion during the third day of silence and does not ask why Kentsu Ima is there alone with paper and ink; instead, Otomo Ikuyo sits down across from her every time and talks about nothing until Kentsu Ima's hands stop moving."
+   ],
+   "parent_opinion": [
+    "Kentsu Ima's mother worries that her daughter has learned to forge her lord's hand so well she may forget which letters are actually his."
+   ],
+   "death": [
+    "Kentsu Ima will die in a room where no one asks her a direct question, and she will answer anyway."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Kentsu Ima reads a room the way a scout reads terrain—not for beauty, but for exits, for who stands where, for what shifts when someone enters—and she does not miss the ones the Bayushi courtiers around her have learned to overlook.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Her lord is Bayushi Yojiro, absent from court, and she reports to him weekly through a cipher that changes with the moon—what the Crane believe about Scorpion movements at Kyūden Doji, which clans are fracturing, which marriages are possible, which are not.",
+     "lord_name": "Bayushi Asa"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Kentsu Ima wants to know why Bayushi Yojiro stopped writing back, and whether she should ride to find him or keep pretending his silence means nothing has changed."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Kentsu Ima sends her weekly reports to a man who no longer answers, which means she is either still serving the Scorpion or has already betrayed them and simply has not admitted it yet.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Duty and Loyalty",
+     "tenet_less_significant": "Honor"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "She convinced a Crane ambassador's wife that the Scorpion delegation's late arrival to Kyūden Doji was deliberate courtliness rather than an insult, using the woman's own complaints about her husband's timing to make the story land."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Kentsu Ima's lungs close around pollen and perfume at the very court where her usefulness depends on breathing the same air as everyone else."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Kentsu Ima sits across from Bayushi Yojiro's seal—the one she uses to break his ciphers—and forges his hand in a letter back to herself, watching the strokes come out wrong on purpose, deliberately clumsy in ways he would never allow, until she has proved beyond argument that she knows exactly what he would say if he were still saying anything at all."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Kentsu Ima keeps ink and paper in the folds of her court robe so that when the silence from Bayushi Yojiro goes three days without breaking, she can sit in the garden pavilion and write his replies in his hand until her fingers cramp, which is easier than sitting still while her hands shake and everyone around her learns that the Scorpion do not know where their own lord has gone."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Asahina Nori — Asahina Nori taught her that a cipher broken is a cipher worthless, so Kentsu Ima destroys every decoded letter from Bayushi Yojiro the moment she has memorized it, and now she cannot prove he ever wrote back at all."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Her fingers move while she listens, tracing cipher patterns in the air before she catches herself and flattens her hands against her thighs.",
+     "accoutrement": "She carries Bayushi Yojiro's seal in a silk wrapping inside her sleeve, and when the silence stretches past three days she takes it out in the garden pavilion to compare the weight of it in her palm to the weight of what she might forge in his name."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When the silence from Bayushi Yojiro stretches past a week, Kentsu Ima stops looking directly at anyone in the room and addresses only the people who have already proven they will not ask her a direct question."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Iuchi Juzaburo (Unicorn) — Iuchi Juzaburo taught her that Unicorn merchants move faster than Scorpion cipher couriers, and now when the silence from Bayushi Yojiro stretches past ten days she finds reasons to attend the same tea houses Juzaburo frequents, hoping to trade gossip about absent lords for word of anyone matching Yojiro's description on the roads west.\nOtomo Ikuyo (Imperial) — Otomo Ikuyo catches her in the garden pavilion during the third day of silence and does not ask why Kentsu Ima is there alone with paper and ink; instead, Otomo Ikuyo sits down across from her every time and talks about nothing until Kentsu Ima's hands stop moving."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Kentsu Ima's mother worries that her daughter has learned to forge her lord's hand so well she may forget which letters are actually his."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Touched by the Fortunes",
+     "heritage_table": "New Samurai Heritages (Celestial Realms)",
+     "heritage_sub": null,
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Kentsu Ima will die in a room where no one asks her a direct question, and she will answer anyway."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Bayushi Manipulator School",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 3,
+    "water": 2,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 1,
+     "design": 1,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 2,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 2,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 44,
+    "status": 35,
+    "ninjo": "Kentsu Ima wants to know why Bayushi Yojiro stopped writing back, and whether she should ride to find him or keep pretending his silence means nothing has changed.",
+    "giri": "Her lord is Bayushi Yojiro, absent from court, and she reports to him weekly through a cipher that changes with the moon—what the Crane believe about Scorpion movements at Kyūden Doji, which clans are fracturing, which marriages are possible, which are not.",
+    "bushido_tenets": {
+     "paramount": "Duty and Loyalty",
+     "less_significant": "Honor"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 6,
+    "focus": 6,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 8,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Lord Bayushi's Whispers"
+    },
+    {
+     "name": "Rustling of Leaves"
+    },
+    {
+     "name": "Weakness Is My Strength"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Urbane and Worldly"
+    },
+    {
+     "name": "Allergy"
+    },
+    {
+     "name": "Provocation"
+    },
+    {
+     "name": "Addiction"
+    },
+    {
+     "name": "Decorum"
+    },
+    {
+     "name": "Sixth Sense"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Personal Seal or Chop"
+    },
+    {
+     "name": "Ceremonial Clothes"
+    },
+    {
+     "name": "Common Clothes"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "any one weapon of rarity 6 or lower",
+     "custom": true,
+     "text": "From the Bayushi Manipulator starting outfit",
+     "held": false
+    },
+    {
+     "name": "Calligraphy Set"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "She carries Bayushi Yojiro's seal in a silk wrapping inside her sleeve, and when the silence stretches past three days she takes it out in the garden pavilion to compare the weight of it in her palm to the weight of what she might forge in his name.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

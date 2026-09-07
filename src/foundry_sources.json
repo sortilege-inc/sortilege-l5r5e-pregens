@@ -274,12 +274,6 @@
      "concept": "In Otosan Uchi on other business, conscripted because she was the only shugenja not already spoken for."
     },
     {
-     "school": "Seppun Palace Guard School",
-     "family": "Seppun",
-     "gender": "female",
-     "concept": "The reason team B exists: a guard who does not accept team A's suspect and has the standing to be humoured."
-    },
-    {
      "school": "Utaku Silent Shadow Yōjimbō",
      "family": "Utaku",
      "gender": "female",
@@ -293,7 +287,10 @@
    ],
    "pencilled_why": "Chosen 2026-09-04. A party assembled across the Empire rather than from one clan: a Crab bodyguard, an Isawa who picks their own two rings, a Shinseist monk for the Kihō and the Void, a Mirumoto of the Taoist Blade, a Mantis tide seer and an Imperial palace guard.\n\nTwo added 2026-09-04: Utaku Silent Shadow Yōjimbō, the pack's first Unicorn, whose mastery is Reputation Sentinel; and a Kolat Saboteur at honour 20, the lowest in the pack by eighteen.\n\nSwapped 2026-09-04: this pack held Mirumoto Two-Heavens Adept and now holds Mirumoto Taoist Blade, trading with Blood of the Lioness, whose Mirumoto is a niten teacher and wanted the school built on niten. The Taoist Blade suits this pack better than the trade suggests: it already carries a Shinseist monk for the Kihō and the Void, and the Taoist Blade is the Mirumoto who follows the Tao of Shinsei — Bushi and Monk both, opening on Water Fist — so the pack gains a second ki tradition rather than losing a swordsman.\n\nConcepts written 2026-09-04. Six take the first option and two the second, which puts the weight on the second investigation as an institution rather than on the forensics: a Seppun senior enough to be humoured when he refuses team A's answer, a Dragon watching team A rather than the case, a yōjimbō who knows how the last investigator died, a Utaku guarding a reputation instead of a body, a Mantis conscripted because she was the only shugenja spare, and a Kolat embedded under a borrowed name and genuinely useful.\n\nThe two seconds supply the spine the politics hangs on. The Isawa has found the same hand at every scene and the monk reads a pattern of intention rather than of method — and with Nasu Kōgo, a Shosuro Shadowweaver, on the other side of the case, \"the same hand\" and \"seemingly supernatural\" point in the same direction without either concept having to say so.",
    "setting": "Otosan Uchi, per the owner 2026-09-04. The party is team B on a series of seemingly supernatural murders, and exists because team A's investigation has already produced a suspect — so this is a second, quieter look at a case somebody considers closed. Two questions run under it: whether the murders are supernatural at all, and why anyone wanted a second team.\n\nNasu Kōgo and Tsume Kunimichi are tagged to this campaign and are ANTAGONISTS, not party members. An earlier version of this note had them as allies covering the espionage end, which was wrong. A Shosuro Shadowweaver and a Daidoji Harrier on the other side of an investigation into murders that look supernatural is a different campaign from the one that reading described.\n\nConcepts for this pack should assume the Imperial capital and an investigation with a political floor under it, not a wilderness.",
-   "premise": "Set in Otosan Uchi. The PCs are a second team — team B — put on a series of seemingly supernatural murders because team A's investigation already has a suspect (owner, 2026-09-05)."
+   "premise": "Set in Otosan Uchi. The PCs are a second team — team B — put on a series of seemingly supernatural murders because team A's investigation already has a suspect (owner, 2026-09-05).",
+   "built_from_shortlist": {
+    "Seppun Palace Guard School": "Seppun Rei — female, Seppun. Pencilled premise: The reason team B exists: a guard who does not accept team A's suspect and has the standing to be humoured."
+   }
   },
   "The Bushi Oni Part II": {
    "arc": null,
@@ -495,12 +492,6 @@
      "concept": "A Lion telling stories at a Crane court, in a room where the Lion are why half the guests are in mourning; the court's unofficial record-keeper, because everyone tells a bard what they would never write down."
     },
     {
-     "school": "Bayushi Manipulator School",
-     "family": "Bayushi",
-     "gender": "female",
-     "concept": "Attending on behalf of someone who is not attending, whose name is the one thing she will not trade."
-    },
-    {
      "school": "Kitsune Mediator School",
      "family": "Kitsune",
      "gender": "female",
@@ -531,12 +522,6 @@
      "concept": "Attending as somebody's attendant, which is exactly as much of the truth as anyone needs."
     },
     {
-     "school": "Shika Speardancer School",
-     "family": "Shika",
-     "gender": "male",
-     "concept": "A minor-clan bushi keeping the Deer's delegate alive in a palace where two great clans are counting bodies."
-    },
-    {
      "school": "Ide Messenger School",
      "family": "Ide",
      "gender": "male",
@@ -545,6 +530,8 @@
    ],
    "pencilled_why": "Chosen 2026-09-04 for the Winter Court at Kyūden Doji, and for The Scroll or the Blade with it — that storyline runs during or after this one in the same palace, so one pack serves both. Twelve rather than a party's worth because it covers two adventures.\n\nThe two clans whose reputations are the stake are both in it: Doji Diplomat and Kakita Duelist hosting, Storm Fleet Sailor as the Mantis who does not belong in a winter palace. Otomo Schemer is the Throne watching; Ikoma Bard and Bayushi Manipulator are reputation made and unmade. Kitsune Mediator is there to stop it becoming blood and Shika Matchmaker to make the betrothals a Winter Court exists for — her mastery ability is a curse, which is a plot by itself. Togashi Chronicler records it, Shiba Artist enters the poetry competition the Asahina priest oversees, Soshi Illusionist and Shika Speardancer do the quiet work in the corridors.\n\nKakita Duelist and Bayushi Manipulator are also the schools of published pregens (Kakita Hikaru and Bayushi Hibiki, Wedding at Kyotei Castle) — untouched by the archive, so they still add coverage, but not fresh ground. That overlap is not a coincidence: Wedding at Kyotei Castle is a court adventure too.\n\nIde Messenger added 2026-09-04, closing the one real hole in this pack: nine clans were represented at a Crane–Mantis winter court and the Unicorn were not one of them. A courtier whose mastery is The Herd Flourishes Together, at a court about two clans' reputations.\n\nConcepts for the first six written 2026-09-04. The Kakita's carries the owner's own framing — functionally a courtier assassin, killing by challenge rather than by knife — which pairs her with the young Doji being quietly examined: the Crane arrive with a diplomat and an executioner and only one of them has been told what she is. The Ikoma's folds both options together, so the Lion who is the reason half the room is in mourning is also the person everyone confides in. The Otomo decides which clan the Throne backs, and the Doji and the Mantis sailor are the two trying to make that decision for him.\n\nThe remaining seven have none yet. Two of those — the Togashi Chronicler and the Shiba Artist — are the natural hooks for The Scroll or the Blade, which shares this pack and turns on Masayo, an orphaned child of Dragon and Phoenix parents, so their concepts should be written with that in view rather than for the court alone.\n\nThe remaining seven written 2026-09-04, completing the pack. The matchmaker's folds both options together at the owner's direction, so she arrives to make the match that ends the quarrel already knowing it will not hold.\n\nTwo Scorpions now attend with concealed principals — the Bayushi on behalf of someone who is not here, the Soshi as somebody's attendant — and neither concept knows about the other. The Kitsune has worked out what the Kakita is for. The Speardancer guards the Deer's delegate, who is the matchmaker, which makes the minor clan a pair.\n\nOne consequence worth naming: with the Shiba's garden concept chosen over its Masayo one, The Scroll or the Blade has a single character pointing at it — the Togashi, who is the first to notice the child nobody will explain. That is enough to start the storyline but it is one thread, not two, and the Shiba is no longer the Phoenix in the room when a Dragon-and-Phoenix child becomes everyone's business.",
    "built_from_shortlist": {
+    "Bayushi Manipulator School": "Kentsu Ima — female, Kentsu. Pencilled premise: Attending on behalf of someone who is not attending, whose name is the one thing she will not trade.",
+    "Shika Speardancer School": "Shika Naonori — male, Shika. Pencilled premise: A minor-clan bushi keeping the Deer's delegate alive in a palace where two great clans are counting bodies.",
     "Storm Fleet Sailor School": "Morohisa — male, Families of the Fleet. Pencilled premise: A sailor sent to a winter palace as a delegate, doing a courtier's job in a courtier's clothes and fooling nobody."
    }
   }
@@ -958,7 +945,7 @@
   },
   "Bayushi Manipulator School": {
    "campaign": "Winter's Embrace",
-   "first_build_family": "Bayushi",
+   "first_build_family": "Kentsu",
    "clan": "Scorpion",
    "kind": "vassal",
    "family": "Rokugo"

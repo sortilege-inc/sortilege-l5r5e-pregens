@@ -1,0 +1,473 @@
+{
+ "slug": "seppun-rei",
+ "name": "Seppun Rei",
+ "campaign": "The Bushi Oni",
+ "status": null,
+ "identity": {
+  "clan": "Imperial",
+  "family": "Seppun",
+  "school": "Seppun Palace Guard School",
+  "role": "Bushi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "She stands very still while listening to you, her eyes tracking your mouth instead of your face, and does not nod or make the small sounds that tell you she is tracking along—you find yourself uncertain whether she is absorbing what you say or waiting for you to finish so she can move on to something that matters.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Seppun Rei",
+  "mode": "core",
+  "clan": "Imperial",
+  "family": "Seppun",
+  "school": "Seppun Palace Guard School",
+  "role": "Bushi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "skills": {
+   "command": 1,
+   "culture": 1
+  },
+  "distinctions": [
+   "Well Connected"
+  ],
+  "adversities": [
+   "Skepticism"
+  ],
+  "passions": [
+   "Ancestry"
+  ],
+  "anxieties": [
+   "Failure"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Honor",
+   "lesser": "Compassion",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Seppun Rei answers to the Captain of the Palace Guard, and must report team A's findings even if she believes them wrong, which means either endorsing a suspect she thinks innocent or filing a dissent that names her own captain's judgment flawed.",
+   "ninjo": "Seppun Rei wants the people she has pressed into doubt to trust her judgment again, which means she cannot afford to be wrong about team A's suspect.",
+   "standout_quality": "Seppun Rei pressed for a second hearing on team A's suspect when every protocol said to defer, and held the position through three days of mounting pressure from superiors who did not appreciate the doubt.",
+   "accomplishment": "Seppun Rei convinced the Captain of the Palace Guard to convene a second investigation team by invoking connections among the throne's inner circle who remembered her father's service, though the Captain still believes she is wrong.",
+   "challenge": "Rei insists her judgment about team A's suspect is sound, but she cannot articulate why without admitting she dismissed their evidence because it pointed toward the spirit realms, which she does not believe exist.",
+   "peace": "Rei sits in the archive rooms late, pulling records of Seppun service across generations and cross-referencing them against the suspect's known movements, the work methodical and its logic airtight in a way the investigation refuses to be.",
+   "fear": "Rei files her dissent naming the Captain's judgment flawed, and in doing so loses the trust of every superior who might have backed her next time she presses for something they do not want to hear.",
+   "accoutrement": "Rei carries her father's case files in a leather folio that she has not opened in six months, though she checks its seals every morning.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Seppun Yoshirô",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "B",
+    "skill": "command",
+    "text": "Rei accepts the Seppun duty to serve the throne above all factions, but she cannot accept that this means deferring to a captain whose judgment she has watched fail."
+   },
+   "mentor": {
+    "name": "Seppun Hisayuki",
+    "path": "A",
+    "granted": "Famously Wealthy",
+    "skill": "",
+    "text": "Rei's father never told her which of his cases he had solved through instinct versus documentation, so she learned to distrust the instinct and trust only what could be written down and proved—a discipline that has made her invaluable in the archives and useless when the answer will not hold still long enough to be filed.",
+    "gender": "male",
+    "association": "Imperial"
+   },
+   "first_impression": "She stands very still while listening to you, her eyes tracking your mouth instead of your face, and does not nod or make the small sounds that tell you she is tracking along—you find yourself uncertain whether she is absorbing what you say or waiting for you to finish so she can move on to something that matters.",
+   "stress_reaction": "Rei stops speaking mid-briefing and returns to the beginning, walking through the same points again with the same evidence in the same order, unable to move forward until someone confirms they are tracking her logic.",
+   "relationships": "Doji Yoshiharu (Crane) — Doji Yoshiharu of the Crane extended her a courtesy when her father died—attendance at the funeral, a formal letter—and Rei has been filing his letters away unopened for three years, uncertain whether accepting his sympathy means she owes the Crane something, or whether refusing it means she has already refused.\nAkodo Rinako (Lion) — Akodo Rinako defeated Rei's father in a sanctioned duel twenty years ago, and Rei cannot decide whether Rinako proved herself honorable by fighting fairly or dishonorable by winning against a man she knew was already dying.",
+   "people": [
+    {
+     "name": "Doji Yoshiharu",
+     "gender": "male",
+     "association": "Crane",
+     "text": "Doji Yoshiharu of the Crane extended her a courtesy when her father died—attendance at the funeral, a formal letter—and Rei has been filing his letters away unopened for three years, uncertain whether accepting his sympathy means she owes the Crane something, or whether refusing it means she has already refused."
+    },
+    {
+     "name": "Akodo Rinako",
+     "gender": "female",
+     "association": "Lion",
+     "text": "Akodo Rinako defeated Rei's father in a sanctioned duel twenty years ago, and Rei cannot decide whether Rinako proved herself honorable by fighting fairly or dishonorable by winning against a man she knew was already dying."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Rei's mother stopped asking about the case files three years ago, and now when Rei mentions her work at the archives her mother changes the subject to ask whether she has eaten, which Rei recognizes as a way of saying she has given up.",
+    "skill": "culture"
+   },
+   "heritage": "Glorious Sacrifice",
+   "heritage_table": "samurai-heritage-table",
+   "heritage_sub": "1-3 — A weapon",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Rei will die at her desk in the archives, still cross-referencing, still unable to file the case closed."
+  },
+  "starting_item": "Lacquered Armor",
+  "campaign": "The Bushi Oni",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Earth"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Melee]",
+    "Martial Arts [Ranged]",
+    "Martial Arts [Unarmed]",
+    "Tactics",
+    "Fitness"
+   ],
+   "school.tech.0": [
+    "Iaijutsu Cut: Crossing Blade"
+   ],
+   "school.tech.1": [
+    "Honest Assessment"
+   ],
+   "heritage.glorious-sacrifice.0.item": [
+    "Shinobigatana"
+   ],
+   "heritage.glorious-sacrifice.0.quality": [
+    "Durable"
+   ],
+   "heritage.glorious-sacrifice.0.gm_quality": [
+    "Subtle"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Seppun Rei pressed for a second hearing on team A's suspect when every protocol said to defer, and held the position through three days of mounting pressure from superiors who did not appreciate the doubt."
+   ],
+   "giri": [
+    "Seppun Rei answers to the Captain of the Palace Guard, and must report team A's findings even if she believes them wrong, which means either endorsing a suspect she thinks innocent or filing a dissent that names her own captain's judgment flawed."
+   ],
+   "ninjo": [
+    "Seppun Rei wants the people she has pressed into doubt to trust her judgment again, which means she cannot afford to be wrong about team A's suspect."
+   ],
+   "clan_relationship": [
+    "Rei accepts the Seppun duty to serve the throne above all factions, but she cannot accept that this means deferring to a captain whose judgment she has watched fail."
+   ],
+   "accomplishment": [
+    "Seppun Rei convinced the Captain of the Palace Guard to convene a second investigation team by invoking connections among the throne's inner circle who remembered her father's service, though the Captain still believes she is wrong."
+   ],
+   "challenge": [
+    "Rei insists her judgment about team A's suspect is sound, but she cannot articulate why without admitting she dismissed their evidence because it pointed toward the spirit realms, which she does not believe exist."
+   ],
+   "peace": [
+    "Rei sits in the archive rooms late, pulling records of Seppun service across generations and cross-referencing them against the suspect's known movements, the work methodical and its logic airtight in a way the investigation refuses to be."
+   ],
+   "fear": [
+    "Rei files her dissent naming the Captain's judgment flawed, and in doing so loses the trust of every superior who might have backed her next time she presses for something they do not want to hear."
+   ],
+   "mentor_relationship": [
+    "Hisayuki taught her that the archive's logic was superior to the politics around it, which means she now trusts a dead man's records more readily than the living men who outrank her.",
+    "Captain Yoritomo watched Rei argue against the consensus during her first Palace Guard briefing and afterward told her that being right and being heard were not the same skill, then never corrected her when she chose to stop trying at the second one.",
+    "Rei's father never told her which of his cases he had solved through instinct versus documentation, so she learned to distrust the instinct and trust only what could be written down and proved—a discipline that has made her invaluable in the archives and useless when the answer will not hold still long enough to be filed."
+   ],
+   "first_impression": [
+    "She stands very still while listening to you, her eyes tracking your mouth instead of your face, and does not nod or make the small sounds that tell you she is tracking along—you find yourself uncertain whether she is absorbing what you say or waiting for you to finish so she can move on to something that matters."
+   ],
+   "accoutrement": [
+    "Rei carries her father's case files in a leather folio that she has not opened in six months, though she checks its seals every morning."
+   ],
+   "stress_reaction": [
+    "Rei stops speaking mid-briefing and returns to the beginning, walking through the same points again with the same evidence in the same order, unable to move forward until someone confirms they are tracking her logic."
+   ],
+   "relationship_person": [
+    "Doji Yoshiharu of the Crane extended her a courtesy when her father died—attendance at the funeral, a formal letter—and Rei has been filing his letters away unopened for three years, uncertain whether accepting his sympathy means she owes the Crane something, or whether refusing it means she has already refused.",
+    "Akodo Rinako defeated Rei's father in a sanctioned duel twenty years ago, and Rei cannot decide whether Rinako proved herself honorable by fighting fairly or dishonorable by winning against a man she knew was already dying."
+   ],
+   "parent_opinion": [
+    "Rei's mother stopped asking about the case files three years ago, and now when Rei mentions her work at the archives her mother changes the subject to ask whether she has eaten, which Rei recognizes as a way of saying she has given up."
+   ],
+   "death": [
+    "Rei will die at her desk in the archives, still cross-referencing, still unable to file the case closed."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Seppun Rei pressed for a second hearing on team A's suspect when every protocol said to defer, and held the position through three days of mounting pressure from superiors who did not appreciate the doubt.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Seppun Rei answers to the Captain of the Palace Guard, and must report team A's findings even if she believes them wrong, which means either endorsing a suspect she thinks innocent or filing a dissent that names her own captain's judgment flawed.",
+     "lord_name": "Seppun Yoshirô"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Seppun Rei wants the people she has pressed into doubt to trust her judgment again, which means she cannot afford to be wrong about team A's suspect."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Rei accepts the Seppun duty to serve the throne above all factions, but she cannot accept that this means deferring to a captain whose judgment she has watched fail.",
+     "path": "B",
+     "skill": "command"
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Honor",
+     "tenet_less_significant": "Compassion"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Seppun Rei convinced the Captain of the Palace Guard to convene a second investigation team by invoking connections among the throne's inner circle who remembered her father's service, though the Captain still believes she is wrong."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Rei insists her judgment about team A's suspect is sound, but she cannot articulate why without admitting she dismissed their evidence because it pointed toward the spirit realms, which she does not believe exist."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Rei sits in the archive rooms late, pulling records of Seppun service across generations and cross-referencing them against the suspect's known movements, the work methodical and its logic airtight in a way the investigation refuses to be."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Rei files her dissent naming the Captain's judgment flawed, and in doing so loses the trust of every superior who might have backed her next time she presses for something they do not want to hear."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Seppun Hisayuki — Rei's father never told her which of his cases he had solved through instinct versus documentation, so she learned to distrust the instinct and trust only what could be written down and proved—a discipline that has made her invaluable in the archives and useless when the answer will not hold still long enough to be filed."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "She stands very still while listening to you, her eyes tracking your mouth instead of your face, and does not nod or make the small sounds that tell you she is tracking along—you find yourself uncertain whether she is absorbing what you say or waiting for you to finish so she can move on to something that matters.",
+     "accoutrement": "Rei carries her father's case files in a leather folio that she has not opened in six months, though she checks its seals every morning."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Rei stops speaking mid-briefing and returns to the beginning, walking through the same points again with the same evidence in the same order, unable to move forward until someone confirms they are tracking her logic."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Doji Yoshiharu (Crane) — Doji Yoshiharu of the Crane extended her a courtesy when her father died—attendance at the funeral, a formal letter—and Rei has been filing his letters away unopened for three years, uncertain whether accepting his sympathy means she owes the Crane something, or whether refusing it means she has already refused.\nAkodo Rinako (Lion) — Akodo Rinako defeated Rei's father in a sanctioned duel twenty years ago, and Rei cannot decide whether Rinako proved herself honorable by fighting fairly or dishonorable by winning against a man she knew was already dying."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Rei's mother stopped asking about the case files three years ago, and now when Rei mentions her work at the archives her mother changes the subject to ask whether she has eaten, which Rei recognizes as a way of saying she has given up."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Glorious Sacrifice",
+     "heritage_table": "Samurai Heritage Table",
+     "heritage_sub": "1-3 — A weapon",
+     "heritage_applied": true
+    },
+    "picks": {
+     "heritage.glorious-sacrifice.0.gm_quality": [
+      "Subtle"
+     ],
+     "heritage.glorious-sacrifice.0.item": [
+      "Shinobigatana"
+     ],
+     "heritage.glorious-sacrifice.0.quality": [
+      "Durable"
+     ]
+    }
+   },
+   "step20": {
+    "answers": {
+     "death": "Rei will die at her desk in the archives, still cross-referencing, still unable to file the case closed."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Seppun Palace Guard School",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 3,
+    "fire": 1,
+    "water": 2,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 1,
+     "unarmed": 1,
+     "meditation": 1,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 1,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 1
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 0
+    }
+   },
+   "social": {
+    "honor": 65,
+    "glory": 50,
+    "status": 40,
+    "ninjo": "Seppun Rei wants the people she has pressed into doubt to trust her judgment again, which means she cannot afford to be wrong about team A's suspect.",
+    "giri": "Seppun Rei answers to the Captain of the Palace Guard, and must report team A's findings even if she believes them wrong, which means either endorsing a suspect she thinks innocent or filing a dissent that names her own captain's judgment flawed.",
+    "bushido_tenets": {
+     "paramount": "Honor",
+     "less_significant": "Compassion"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 10,
+    "focus": 3,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 6,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Iaijutsu Cut: Crossing Blade"
+    },
+    {
+     "name": "Honest Assessment"
+    },
+    {
+     "name": "Speed of Heaven"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Well Connected"
+    },
+    {
+     "name": "Skepticism"
+    },
+    {
+     "name": "Ancestry"
+    },
+    {
+     "name": "Failure"
+    },
+    {
+     "name": "Famously Wealthy"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Lacquered Armor"
+    },
+    {
+     "name": "Lacquered Armor"
+    },
+    {
+     "name": "Sanctified Robes"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Seppun Palace Guard starting outfit"
+    },
+    {
+     "name": "naginata or bisento",
+     "custom": true,
+     "text": "From the Seppun Palace Guard starting outfit",
+     "held": false
+    },
+    {
+     "name": "Knife"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Rei carries her father's case files in a leather folio that she has not opened in six months, though she checks its seals every morning.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    },
+    {
+     "name": "Shinobigatana",
+     "text": "lost — it exists somewhere in the world; quality chosen by the player: Durable; quality chosen by the GM: Subtle",
+     "custom": true,
+     "held": false
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
