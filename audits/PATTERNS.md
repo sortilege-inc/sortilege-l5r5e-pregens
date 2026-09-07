@@ -80,7 +80,11 @@ catalog item ("Ceremonial robes", "two knives") resolve to it — the sheet gain
 Spiritual Protector → leave unnamed on purpose. A never-mentioned spouse (Blissful
 Betrothal) → deferred by the owner; do not invent one unasked.
 
-**Register.** Plain declaratives. The owner rejects the aphorism shape — "the first thing
+**Register.** Plain declaratives. The observing-tell clause is out — "to watch how his face
+moves before he speaks", "reading the room's currents" — as is the closing observation and
+the "rather than…" comparison. Question 16 relationships, like question 10, are shown on
+past or standing ground, not inside the adventure's own events: a Scorpion who arrives in
+response to the dispute became a Scorpion known years earlier at another archive. The owner rejects the aphorism shape — "the first thing
 anyone sees and the last thing they mention" — and the trailing meaning-clause. A rewrite
 that keeps the image and drops the flourish is the right size.
 

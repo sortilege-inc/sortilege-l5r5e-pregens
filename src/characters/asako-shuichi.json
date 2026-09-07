@@ -99,7 +99,7 @@
    },
    "first_impression": "Shuichi's eyes move across a room before he does, cataloging and cross-referencing, and he is never quite finished looking at the person in front of him.",
    "stress_reaction": "Shuichi begins asking the people around him rapid questions about details no one else has noticed yet, cataloging their answers against standards only he can see, until someone tells him to stop or the answers start matching what he already knows.",
-   "relationships": "Mirumoto Hyobe (Dragon) — Mirumoto Hyobe of the Dragon came to the Ikoma Hall asking what the Lion had erased about Snow Plain, and Shuichi showed her the copies he'd made before anyone could burn them, because a Dragon scholar who reads carefully enough to notice gaps in a chronicle is the only person he has met who will not mistake his work for proof that the Ikoma failed.\nShosuro Masamori (Scorpion) — Shosuro Masamori arrived at the Ikoma Hall three days after Shuichi finished copying the Snow Plain records, and when Shuichi saw him turn a page in the original ledger—saw his fingers know exactly where to look—he understood that the Scorpion had sent someone who could read what was missing as easily as what remained.",
+   "relationships": "Mirumoto Hyobe (Dragon) — Mirumoto Hyobe of the Dragon came to the Ikoma Hall asking what the Lion had erased about Snow Plain, and Shuichi showed her the copies he'd made before anyone could burn them, because a Dragon scholar who reads carefully enough to notice gaps in a chronicle is the only person he has met who will not mistake his work for proof that the Ikoma failed.\nShosuro Masamori (Scorpion) — Masamori worked the Asako libraries the same year Shuichi did, and read the gaps in a chronicle the way Shuichi read the text; they have not spoken since, and Shuichi checks every Scorpion delegation's roster for the name.",
    "people": [
     {
      "name": "Mirumoto Hyobe",
@@ -111,7 +111,7 @@
      "name": "Shosuro Masamori",
      "gender": "male",
      "association": "Scorpion",
-     "text": "Shosuro Masamori arrived at the Ikoma Hall three days after Shuichi finished copying the Snow Plain records, and when Shuichi saw him turn a page in the original ledger—saw his fingers know exactly where to look—he understood that the Scorpion had sent someone who could read what was missing as easily as what remained."
+     "text": "Masamori worked the Asako libraries the same year Shuichi did, and read the gaps in a chronicle the way Shuichi read the text; they have not spoken since, and Shuichi checks every Scorpion delegation's roster for the name."
     }
    ],
    "parent_opinion": {
@@ -181,7 +181,7 @@
    ],
    "relationship_person": [
     "Mirumoto Hyobe of the Dragon came to the Ikoma Hall asking what the Lion had erased about Snow Plain, and Shuichi showed her the copies he'd made before anyone could burn them, because a Dragon scholar who reads carefully enough to notice gaps in a chronicle is the only person he has met who will not mistake his work for proof that the Ikoma failed.",
-    "Shosuro Masamori arrived at the Ikoma Hall three days after Shuichi finished copying the Snow Plain records, and when Shuichi saw him turn a page in the original ledger—saw his fingers know exactly where to look—he understood that the Scorpion had sent someone who could read what was missing as easily as what remained."
+    "Masamori worked the Asako libraries the same year Shuichi did, and read the gaps in a chronicle the way Shuichi read the text; they have not spoken since, and Shuichi checks every Scorpion delegation's roster for the name."
    ],
    "parent_opinion": [
     "Shuichi's mother tells visitors that her son will not eat at an inn that seats farmers, and that he copied a Lion archive through three nights."
@@ -276,7 +276,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Mirumoto Hyobe (Dragon) — Mirumoto Hyobe of the Dragon came to the Ikoma Hall asking what the Lion had erased about Snow Plain, and Shuichi showed her the copies he'd made before anyone could burn them, because a Dragon scholar who reads carefully enough to notice gaps in a chronicle is the only person he has met who will not mistake his work for proof that the Ikoma failed.\nShosuro Masamori (Scorpion) — Shosuro Masamori arrived at the Ikoma Hall three days after Shuichi finished copying the Snow Plain records, and when Shuichi saw him turn a page in the original ledger—saw his fingers know exactly where to look—he understood that the Scorpion had sent someone who could read what was missing as easily as what remained."
+     "relations": "Mirumoto Hyobe (Dragon) — Mirumoto Hyobe of the Dragon came to the Ikoma Hall asking what the Lion had erased about Snow Plain, and Shuichi showed her the copies he'd made before anyone could burn them, because a Dragon scholar who reads carefully enough to notice gaps in a chronicle is the only person he has met who will not mistake his work for proof that the Ikoma failed.\nShosuro Masamori (Scorpion) — Masamori worked the Asako libraries the same year Shuichi did, and read the gaps in a chronicle the way Shuichi read the text; they have not spoken since, and Shuichi checks every Scorpion delegation's roster for the name."
     },
     "picks": {}
    },

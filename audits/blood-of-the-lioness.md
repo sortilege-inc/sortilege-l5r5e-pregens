@@ -159,8 +159,12 @@ against the PC **Miya Ujitsuna** (D19).
 
 *Applied 2026-09-07: D11, D12, D13 (Chiaki's half; Shuichi's via D45), D16, D18 (kept the Deer,
 as the owner directed — Junnosuke holds marriage records), D19. Ruled: D15 stays latent — the
-tension exists in the two records without being written. Open: D14 (reasoning requested), D17
-(scenario-contemporary; to be rewritten), D20 (under review).*
+tension exists in the two records without being written. D14 taken as (b), Masamori moved to the past; D17 as (a), Kitsune Yu moved to the past. D20: oblique
+mention, per the owner — wording pending.*
+
+*Corpus follow-up found here: the corpus's Mirumoto Kichiru entry (writ-of-wilds-npcs) stops at
+"She proceeded to win every match"; the printed p.58 continues with the thwarting paragraph.
+Same page-break truncation as the heritage tables.*
 
 **D11. Umi and Hisa share a lord.** Both serve **Akodo Tsanuri** at the War College (falls
 out of D1). *Existing NPC.* **Trade:** nothing lost but Mirumoto Ton.

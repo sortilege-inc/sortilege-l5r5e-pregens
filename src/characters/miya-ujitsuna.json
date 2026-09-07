@@ -97,7 +97,7 @@
    },
    "first_impression": "Ujitsuna's left hand lives in a black glove and does nothing; her right is never still — drumming her thigh, pressed flat to her side, working the gloved wrist as if it might answer.",
    "stress_reaction": "When dictating to a scribe whose hand she does not trust, Ujitsuna stops mid-sentence and asks them to read back what they have written, then stops them again before they finish, then asks a third time—until the scribe either names what discrepancy she is afraid they have missed, or admits they do not understand it, and she must choose whether to find someone else or let the record go out flawed.",
-   "relationships": "Chaaya (Ivory Kingdoms Sage Tradition) — Chaaya reads back Ujitsuna's dictations word for word without comment, then waits for the correction, which means Ujitsuna must trust her own ear against the scribe's loyalty to what was actually said.\nKitsune Yu (Fox) — Kitsune Yu brought Ujitsuna a copy of the Ikoma account of Snow Plain transcribed in her own hand, then asked her not to say where it came from, which means Ujitsuna now sits alone with two versions of the same battle and no way to ask which one Kitsune trusts without breaking a confidence she is not sure she should have kept.",
+   "relationships": "Chaaya (Ivory Kingdoms Sage Tradition) — Chaaya reads back Ujitsuna's dictations word for word without comment, then waits for the correction, which means Ujitsuna must trust her own ear against the scribe's loyalty to what was actually said.\nKitsune Yu (Fox) — Yu and Ujitsuna surveyed the Kitsune Mori boundary stones together the summer Ujitsuna's left hand failed; Yu finished the map, and put both their names on it.",
    "people": [
     {
      "name": "Chaaya",
@@ -109,7 +109,7 @@
      "name": "Kitsune Yu",
      "gender": "female",
      "association": "Fox",
-     "text": "Kitsune Yu brought Ujitsuna a copy of the Ikoma account of Snow Plain transcribed in her own hand, then asked her not to say where it came from, which means Ujitsuna now sits alone with two versions of the same battle and no way to ask which one Kitsune trusts without breaking a confidence she is not sure she should have kept."
+     "text": "Yu and Ujitsuna surveyed the Kitsune Mori boundary stones together the summer Ujitsuna's left hand failed; Yu finished the map, and put both their names on it."
     }
    ],
    "parent_opinion": {
@@ -191,7 +191,7 @@
    ],
    "relationship_person": [
     "Chaaya reads back Ujitsuna's dictations word for word without comment, then waits for the correction, which means Ujitsuna must trust her own ear against the scribe's loyalty to what was actually said.",
-    "Kitsune Yu brought Ujitsuna a copy of the Ikoma account of Snow Plain transcribed in her own hand, then asked her not to say where it came from, which means Ujitsuna now sits alone with two versions of the same battle and no way to ask which one Kitsune trusts without breaking a confidence she is not sure she should have kept."
+    "Yu and Ujitsuna surveyed the Kitsune Mori boundary stones together the summer Ujitsuna's left hand failed; Yu finished the map, and put both their names on it."
    ],
    "parent_opinion": [
     "Ujitsuna's father worries that she has learned to value being right more than being believed, and that when the Throne chooses the comfortable lie over her evidence, she will not forgive them for it."
@@ -286,7 +286,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Chaaya (Ivory Kingdoms Sage Tradition) — Chaaya reads back Ujitsuna's dictations word for word without comment, then waits for the correction, which means Ujitsuna must trust her own ear against the scribe's loyalty to what was actually said.\nKitsune Yu (Fox) — Kitsune Yu brought Ujitsuna a copy of the Ikoma account of Snow Plain transcribed in her own hand, then asked her not to say where it came from, which means Ujitsuna now sits alone with two versions of the same battle and no way to ask which one Kitsune trusts without breaking a confidence she is not sure she should have kept."
+     "relations": "Chaaya (Ivory Kingdoms Sage Tradition) — Chaaya reads back Ujitsuna's dictations word for word without comment, then waits for the correction, which means Ujitsuna must trust her own ear against the scribe's loyalty to what was actually said.\nKitsune Yu (Fox) — Yu and Ujitsuna surveyed the Kitsune Mori boundary stones together the summer Ujitsuna's left hand failed; Yu finished the map, and put both their names on it."
     },
     "picks": {}
    },
