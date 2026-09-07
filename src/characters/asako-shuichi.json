@@ -70,7 +70,7 @@
    "ninjo": "Shuichi wants the Ikoma historians to acknowledge that he found what they missed, even though admitting he succeeded means exposing how poorly they guarded their own archive.",
    "standout_quality": "Shuichi arrived at the archive knowing which documents would vanish first and had already copied half the disputed records before anyone thought to ask why a courtier was taking notes in the military library.",
    "accomplishment": "Shuichi copied the Ikoma Hall's records of Snow Plain before Asako Sakuko told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them.",
-   "challenge": "When Shuichi kneels to examine the foundation stones beneath the Ikoma Hall, checking for rot and settling, the earth seems to resist him—he finds cracks where there should be none, misses damage that shows itself later to the stone-workers, and leaves the work half-done while the master mason has to return to finish what he began.",
+   "challenge": "Shuichi failed his first commission for the Asako: he could not hold the order of a twelve-scroll commentary in his head, and returned it copied out of sequence. He has laid every text out on the floor since.",
    "peace": "Shuichi sits in the Ikoma Hall with a stack of ledgers open before him, cross-referencing the military records against the temple accounts, and the work of finding what was missed—what *they* missed—steadies his hands in a way nothing else does.",
    "fear": "The Hall's copyists are peasant-born, and when Kitsu Ayako — peasant-born herself — hands him the official scroll, Shuichi takes it by the far end of the roller so their hands will not touch.",
    "accoutrement": "Leather scroll satchel.",
@@ -162,7 +162,7 @@
     "Shuichi copied the Ikoma Hall's records of Snow Plain before Asako Sakuko told him to, working through three nights while the historians slept, because he knew the Scorpion would pressure the Lion into burning them."
    ],
    "challenge": [
-    "When Shuichi kneels to examine the foundation stones beneath the Ikoma Hall, checking for rot and settling, the earth seems to resist him—he finds cracks where there should be none, misses damage that shows itself later to the stone-workers, and leaves the work half-done while the master mason has to return to finish what he began."
+    "Shuichi failed his first commission for the Asako: he could not hold the order of a twelve-scroll commentary in his head, and returned it copied out of sequence. He has laid every text out on the floor since."
    ],
    "peace": [
     "Shuichi sits in the Ikoma Hall with a stack of ledgers open before him, cross-referencing the military records against the temple accounts, and the work of finding what was missed—what *they* missed—steadies his hands in a way nothing else does."
@@ -238,7 +238,7 @@
    },
    "step10": {
     "answers": {
-     "difficulty": "When Shuichi kneels to examine the foundation stones beneath the Ikoma Hall, checking for rot and settling, the earth seems to resist him—he finds cracks where there should be none, misses damage that shows itself later to the stone-workers, and leaves the work half-done while the master mason has to return to finish what he began."
+     "difficulty": "Shuichi failed his first commission for the Asako: he could not hold the order of a twelve-scroll commentary in his head, and returned it copied out of sequence. He has laid every text out on the floor since."
     },
     "picks": {}
    },
