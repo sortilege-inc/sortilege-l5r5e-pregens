@@ -17,7 +17,7 @@
  "portrait": "src/portraits/agasha-kohana.webp",
  "concept": "Kohana moves through the garrison on a crutch, the stump of her left leg visible when her robes shift.",
  "summary": null,
- "notes": "",
+ "notes": "AUDIT 2026-09-07 (D10): giri/Q7 regrounded on the Dragon detachment at the Wall; owner flagged the whole record to be refined or reworked later. Norimono kept pending that rework.",
  "wizard": {
   "name": "Agasha Kohana",
   "mode": "core",
@@ -58,7 +58,7 @@
    "skill": "medicine"
   },
   "answers": {
-   "giri": "Kohana reports her ward consumption to the Dragon's Shadowlands garrison commander each month, knowing the numbers show she has burned through reserves meant to last three seasons.",
+   "giri": "Kohana brews and rations the jade wards for the Dragon detachment at the Kaiu Wall, and accounts for every vial to Agasha Hachijûrô each month, knowing the numbers show she has burned through reserves meant to last three seasons.",
    "ninjo": "Kohana wants to prove that the Shadowlands can be understood through careful study and mapping, not just survived through jade consumption, but her monthly reports of depleted reserves make that work look like waste.",
    "standout_quality": "Kohana labels her jade stores by date and intended use, which means she now spends entire study sessions recalculating which wards she can afford to break.",
    "accomplishment": "Kohana developed a system for distilling shadowlands fauna into reagents that hold their properties longer than raw samples, which means she now spends her evenings testing batches that should have failed weeks ago to prove the method works.",
@@ -78,7 +78,7 @@
    "clan_relationship": {
     "path": "A",
     "skill": null,
-    "text": "Kohana tells the garrison commander her consumption figures are higher than they should be, which the Dragon clan interprets as diligence, when she is actually documenting her own failure to ration."
+    "text": "Kohana reports to Hachijûrô consumption figures higher than they should be, which the Dragon read as diligence, when she is documenting her own failure to ration."
    },
    "mentor": {
     "name": "Miya Miho",
@@ -216,7 +216,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Kohana reports her ward consumption to the Dragon's Shadowlands garrison commander each month, knowing the numbers show she has burned through reserves meant to last three seasons.",
+     "social_giri": "Kohana brews and rations the jade wards for the Dragon detachment at the Kaiu Wall, and accounts for every vial to Agasha Hachijûrô each month, knowing the numbers show she has burned through reserves meant to last three seasons.",
      "lord_name": "Agasha Hachijûrô"
     },
     "picks": {}
@@ -229,7 +229,7 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "Kohana tells the garrison commander her consumption figures are higher than they should be, which the Dragon clan interprets as diligence, when she is actually documenting her own failure to ration.",
+     "clan_relations": "Kohana reports to Hachijûrô consumption figures higher than they should be, which the Dragon read as diligence, when she is documenting her own failure to ration.",
      "path": "A"
     },
     "picks": {}
@@ -380,7 +380,7 @@
     "glory": 50,
     "status": 30,
     "ninjo": "Kohana wants to prove that the Shadowlands can be understood through careful study and mapping, not just survived through jade consumption, but her monthly reports of depleted reserves make that work look like waste.",
-    "giri": "Kohana reports her ward consumption to the Dragon's Shadowlands garrison commander each month, knowing the numbers show she has burned through reserves meant to last three seasons.",
+    "giri": "Kohana brews and rations the jade wards for the Dragon detachment at the Kaiu Wall, and accounts for every vial to Agasha Hachijûrô each month, knowing the numbers show she has burned through reserves meant to last three seasons.",
     "bushido_tenets": {
      "paramount": "Sincerity",
      "less_significant": "Duty and Loyalty"
