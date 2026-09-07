@@ -1,0 +1,463 @@
+{
+ "slug": "suio-kurva",
+ "name": "Suio Kurva",
+ "campaign": "The Lost Writer in the City of the Rich Frog",
+ "status": null,
+ "identity": {
+  "clan": "Unicorn",
+  "family": "Suio",
+  "school": "Ide Trader School",
+  "role": "Courtier",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Suio's eyes move across a merchant's face while he is still speaking, cataloguing what shifts—a tightness at the corner of his mouth, a pause that lasts a beat too long—and her questions come faster after that, each one smaller and more precise than the last, until he stops answering altogether.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Suio Kurva",
+  "mode": "core",
+  "clan": "Unicorn",
+  "family": "Ide",
+  "school": "Ide Trader School",
+  "role": "Courtier",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "earth",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "skills": {
+   "composition": 1,
+   "commerce": 1,
+   "aesthetics": 1
+  },
+  "distinctions": [
+   "Daikoku’s Blessing"
+  ],
+  "adversities": [
+   "Incurable Illness"
+  ],
+  "passions": [
+   "Local Flare for {Region}"
+  ],
+  "anxieties": [
+   "Belligerent"
+  ],
+  "pec_subjects": {
+   "localflareforregion": {
+    "name": "Local Flare for {Region}",
+    "subject": "Burning Sands",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Honor",
+   "lesser": "Courtesy",
+   "attitude": "B",
+   "skill": "commerce"
+  },
+  "answers": {
+   "giri": "Suio must account for every item in the curio shop's inventory to her lord's factor, and she cannot remember what half of it was.",
+   "ninjo": "Suio wants to know what she forgot, and will push anyone who might have seen that consignment until they admit what she should remember.",
+   "standout_quality": "Suio supplied the curio shop's foreign stock from memory alone after the original manifests burned, correctly naming goods she'd only glanced at months before.",
+   "accomplishment": "After the manifests burned, Suio rebuilt the curio shop's entire foreign inventory from memory and sold three pieces to the factor's own wife before the lord's auditors arrived.",
+   "challenge": "When the fits take her, Suio cannot work the shop floor for days, and she has already used up her lord's patience with inventory she cannot account for.",
+   "peace": "Suio sorts through a merchant's ledger line by line, correcting entries no one asked her to check, her finger moving down the page while the shopkeeper watches her find errors he didn't know were there.",
+   "fear": "When a merchant hesitates or contradicts herself during inventory, Suio leans in with another question, and another, her voice staying level while the shopkeeper's face goes pale, until she realizes she has backed someone into a corner and cannot find the way back out.",
+   "accoutrement": "She keeps the burned corner of a merchant's ledger in her sleeve and takes it out to run her thumb across the char when she cannot remember if she already asked someone the same question twice.",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Ide Teika",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "B",
+    "skill": "composition",
+    "text": "Suio can talk a merchant into anything, but she cannot stop questioning them past the point where they have nothing left to give."
+   },
+   "mentor": {
+    "name": "Shreyas",
+    "path": "A",
+    "granted": "Playfulness",
+    "skill": "",
+    "text": "Shreyas taught her to watch a room for what was missing rather than what was there, and she has never stopped applying it to people's faces.",
+    "gender": "female",
+    "association": "Ivory Kingdoms Sage Tradition"
+   },
+   "first_impression": "Suio's eyes move across a merchant's face while he is still speaking, cataloguing what shifts—a tightness at the corner of his mouth, a pause that lasts a beat too long—and her questions come faster after that, each one smaller and more precise than the last, until he stops answering altogether.",
+   "stress_reaction": "When the shop closes and the manifests are still incomplete, Suio pulls the burned ledger corner from her sleeve and begins reciting the inventory aloud to the empty room, faster and faster, describing pieces she can almost see, until her voice cracks on a description she cannot finish and she starts over from the beginning.",
+   "relationships": "Kitsune Imako (Fox) — Kitsune Imako sold Suio three bolts of silk the week before the manifests burned, and Suio has asked her the same questions about that sale four times in the past month, each time finding a new inconsistency in what Imako said before.\nJahiz (Qamarist Shield Bearer Tradition) — Jahiz tolerates Suio's inventory questions about the shield bearings he traded to the shop three years ago, but stopped correcting her when she began insisting the leather was a different color than his own records show.",
+   "people": [
+    {
+     "name": "Kitsune Imako",
+     "gender": "female",
+     "association": "Fox",
+     "text": "Kitsune Imako sold Suio three bolts of silk the week before the manifests burned, and Suio has asked her the same questions about that sale four times in the past month, each time finding a new inconsistency in what Imako said before."
+    },
+    {
+     "name": "Jahiz",
+     "gender": "male",
+     "association": "Qamarist Shield Bearer Tradition",
+     "text": "Jahiz tolerates Suio's inventory questions about the shield bearings he traded to the shop three years ago, but stopped correcting her when she began insisting the leather was a different color than his own records show."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Suio's mother wishes she would stop correcting the household accounts and attend to her own marriage prospects instead.",
+    "skill": "aesthetics"
+   },
+   "heritage": "Sacred Wilderness",
+   "heritage_table": "new-samurai-heritages-table",
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Suio will die asking the same question twice and never knowing it, realizing too late that the gaps in her memory have grown large enough to swallow her whole."
+  },
+  "starting_item": "Chandu",
+  "campaign": "The Lost Writer in the City of the Rich Frog",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Earth"
+   ],
+   "school.starting_skills": [
+    "Commerce",
+    "Courtesy",
+    "Games",
+    "Martial Arts [Ranged]",
+    "Labor"
+   ],
+   "school.tech.1": [
+    "Shallow Waters"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Suio supplied the curio shop's foreign stock from memory alone after the original manifests burned, correctly naming goods she'd only glanced at months before."
+   ],
+   "giri": [
+    "Suio must account for every item in the curio shop's inventory to her lord's factor, and she cannot remember what half of it was."
+   ],
+   "ninjo": [
+    "Suio wants to know what she forgot, and will push anyone who might have seen that consignment until they admit what she should remember."
+   ],
+   "clan_relationship": [
+    "Suio can talk a merchant into anything, but she cannot stop questioning them past the point where they have nothing left to give."
+   ],
+   "accomplishment": [
+    "After the manifests burned, Suio rebuilt the curio shop's entire foreign inventory from memory and sold three pieces to the factor's own wife before the lord's auditors arrived."
+   ],
+   "challenge": [
+    "When the fits take her, Suio cannot work the shop floor for days, and she has already used up her lord's patience with inventory she cannot account for."
+   ],
+   "peace": [
+    "Suio sorts through a merchant's ledger line by line, correcting entries no one asked her to check, her finger moving down the page while the shopkeeper watches her find errors he didn't know were there."
+   ],
+   "fear": [
+    "When a merchant hesitates or contradicts herself during inventory, Suio leans in with another question, and another, her voice staying level while the shopkeeper's face goes pale, until she realizes she has backed someone into a corner and cannot find the way back out."
+   ],
+   "mentor_relationship": [
+    "Shreyas taught her to watch a room for what was missing rather than what was there, and she has never stopped applying it to people's faces."
+   ],
+   "first_impression": [
+    "Suio's eyes move across a merchant's face while he is still speaking, cataloguing what shifts—a tightness at the corner of his mouth, a pause that lasts a beat too long—and her questions come faster after that, each one smaller and more precise than the last, until he stops answering altogether."
+   ],
+   "accoutrement": [
+    "She keeps the burned corner of a merchant's ledger in her sleeve and takes it out to run her thumb across the char when she cannot remember if she already asked someone the same question twice."
+   ],
+   "stress_reaction": [
+    "When the shop closes and the manifests are still incomplete, Suio pulls the burned ledger corner from her sleeve and begins reciting the inventory aloud to the empty room, faster and faster, describing pieces she can almost see, until her voice cracks on a description she cannot finish and she starts over from the beginning."
+   ],
+   "relationship_person": [
+    "Kitsune Imako sold Suio three bolts of silk the week before the manifests burned, and Suio has asked her the same questions about that sale four times in the past month, each time finding a new inconsistency in what Imako said before.",
+    "Jahiz tolerates Suio's inventory questions about the shield bearings he traded to the shop three years ago, but stopped correcting her when she began insisting the leather was a different color than his own records show."
+   ],
+   "parent_opinion": [
+    "Suio's mother wishes she would stop correcting the household accounts and attend to her own marriage prospects instead."
+   ],
+   "death": [
+    "Suio will die asking the same question twice and never knowing it, realizing too late that the gaps in her memory have grown large enough to swallow her whole."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Suio supplied the curio shop's foreign stock from memory alone after the original manifests burned, correctly naming goods she'd only glanced at months before.",
+     "ring": "earth"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Suio must account for every item in the curio shop's inventory to her lord's factor, and she cannot remember what half of it was.",
+     "lord_name": "Ide Teika"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Suio wants to know what she forgot, and will push anyone who might have seen that consignment until they admit what she should remember."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Suio can talk a merchant into anything, but she cannot stop questioning them past the point where they have nothing left to give.",
+     "path": "B",
+     "skill": "composition"
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Honor",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "After the manifests burned, Suio rebuilt the curio shop's entire foreign inventory from memory and sold three pieces to the factor's own wife before the lord's auditors arrived."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "When the fits take her, Suio cannot work the shop floor for days, and she has already used up her lord's patience with inventory she cannot account for."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Suio sorts through a merchant's ledger line by line, correcting entries no one asked her to check, her finger moving down the page while the shopkeeper watches her find errors he didn't know were there."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When a merchant hesitates or contradicts herself during inventory, Suio leans in with another question, and another, her voice staying level while the shopkeeper's face goes pale, until she realizes she has backed someone into a corner and cannot find the way back out."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Shreyas — Shreyas taught her to watch a room for what was missing rather than what was there, and she has never stopped applying it to people's faces."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Suio's eyes move across a merchant's face while he is still speaking, cataloguing what shifts—a tightness at the corner of his mouth, a pause that lasts a beat too long—and her questions come faster after that, each one smaller and more precise than the last, until he stops answering altogether.",
+     "accoutrement": "She keeps the burned corner of a merchant's ledger in her sleeve and takes it out to run her thumb across the char when she cannot remember if she already asked someone the same question twice."
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "When the shop closes and the manifests are still incomplete, Suio pulls the burned ledger corner from her sleeve and begins reciting the inventory aloud to the empty room, faster and faster, describing pieces she can almost see, until her voice cracks on a description she cannot finish and she starts over from the beginning."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Kitsune Imako (Fox) — Kitsune Imako sold Suio three bolts of silk the week before the manifests burned, and Suio has asked her the same questions about that sale four times in the past month, each time finding a new inconsistency in what Imako said before.\nJahiz (Qamarist Shield Bearer Tradition) — Jahiz tolerates Suio's inventory questions about the shield bearings he traded to the shop three years ago, but stopped correcting her when she began insisting the leather was a different color than his own records show."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Suio's mother wishes she would stop correcting the household accounts and attend to her own marriage prospects instead."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Sacred Wilderness",
+     "heritage_table": "New Samurai Heritages Table",
+     "heritage_sub": null,
+     "heritage_applied": true
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Suio will die asking the same question twice and never knowing it, realizing too late that the gaps in her memory have grown large enough to swallow her whole."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Ide Trader School",
+   "foundry_id": null,
+   "rings": {
+    "air": 2,
+    "earth": 3,
+    "fire": 1,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 1,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 1,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 2,
+     "games": 1,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 3,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 45,
+    "glory": 40,
+    "status": 35,
+    "ninjo": "Suio wants to know what she forgot, and will push anyone who might have seen that consignment until they admit what she should remember.",
+    "giri": "Suio must account for every item in the curio shop's inventory to her lord's factor, and she cannot remember what half of it was.",
+    "bushido_tenets": {
+     "paramount": "Honor",
+     "less_significant": "Courtesy"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 12,
+    "focus": 3,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 9,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Tributaries of Trade"
+    },
+    {
+     "name": "Shallow Waters"
+    },
+    {
+     "name": "Vendor of Strange Wares"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Daikoku’s Blessing"
+    },
+    {
+     "name": "Incurable Illness"
+    },
+    {
+     "name": "Local Flare for Burning Sands",
+     "custom": true,
+     "subject": "Burning Sands",
+     "text": "You have an intimate knowledge of a specific region and its people. After performing a check to remember information about the specific region you have chosen (such as Culture [Earth] to know current events or Sentiment [Earth] to recall attitudes of local inhabitants), you remove 3 strife."
+    },
+    {
+     "name": "Belligerent"
+    },
+    {
+     "name": "Playfulness"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Chandu"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Wakizashi"
+    },
+    {
+     "name": "Yumi"
+    },
+    {
+     "name": "Quiver of Arrow"
+    },
+    {
+     "name": "Calligraphy Set"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "Unicorn warhorse",
+     "custom": true,
+     "text": "From the Ide Trader starting outfit"
+    },
+    {
+     "name": "journal",
+     "custom": true,
+     "text": "From the Ide Trader starting outfit"
+    },
+    {
+     "name": "She keeps the burned corner of a merchant's ledger in her sleeve and takes it out to run her thumb across the char when she cannot remember if she already asked someone the same question twice.",
+     "custom": true,
+     "text": "The accoutrement named at question 14"
+    },
+    {
+     "name": "Estate",
+     "custom": true,
+     "text": "free food, shelter, and medical care"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

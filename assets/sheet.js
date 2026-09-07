@@ -707,7 +707,16 @@
          chips carry whichever the character actually has. */
       (CHAR.clan ? '<span class="chip clan" data-clan="' + esc(CHAR.clan) + '">' +
         esc(CHAR.clan) + "</span>" : "") +
-      (CHAR.family ? '<span class="chip">' + esc(CHAR.family) + " family</span>" : "") +
+      /* Rule 3 on vassal families: the name shown is always the vassal's own,
+         and the patron it serves is on hover. build.py resolves it from the
+         manifest's vassal_families. */
+      (CHAR.family
+        ? '<span class="chip"'
+          + (CHAR.family_patron
+              ? ' title="Vassal family of the ' + esc(CHAR.family_patron)
+                + ', whose benefits they take"' : "")
+          + ">" + esc(CHAR.family) + " family</span>"
+        : "") +
       (!CHAR.clan && CHAR.region
         ? '<span class="chip">' + esc(String(CHAR.region).replace(/ Region$/, "")) +
           "</span>" : "") +

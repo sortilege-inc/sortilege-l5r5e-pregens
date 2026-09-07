@@ -237,6 +237,26 @@ def schema(cx):
     """)
 
 
+def vassal_families():
+    """Vassal house -> {patron, clan}, from the manifest.
+
+    Three rules ride on this, and every reader of it follows them: the family
+    name is always the vassal's own; the vassal takes the patron family's
+    mechanical benefits, coin included; and the site names the patron on hover.
+    """
+    src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
+    return {k: v for k, v in (src.get("vassal_families") or {}).items()
+            if not k.startswith("_")}
+
+
+VASSALS = vassal_families()
+
+
+def patron_of(family):
+    """The patron family a vassal house serves, or None if it is not one."""
+    return (VASSALS.get(family or "") or {}).get("patron")
+
+
 def school_name_corrections():
     """Upstream pack typos in school titles, fixed before anything sees them."""
     src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json")))
@@ -518,6 +538,11 @@ def campaigns(cx):
     # shortlist and the other points at it rather than repeating it. A link
     # that only goes one way is refused: a pack_from with nothing pointing back
     # is as likely a typo as an intent.
+    #
+    # A finished pack still counts as a pack. This asked only for pencilled
+    # schools until Kaito Kohana emptied Mask of the Oni's shortlist, which
+    # read as The Knotted Tails' link breaking when in fact its pack had just
+    # been built: thirteen characters, nothing left to pencil.
     links = []
     for name in names:
         spec = declared.get(name) or {}
@@ -527,9 +552,10 @@ def campaigns(cx):
         owner = declared.get(src_name)
         if owner is None:
             links.append(f"{name}: pack_from {src_name!r} is not a declared campaign")
-        elif not owner.get("pencilled_schools"):
-            links.append(f"{name}: pack_from {src_name!r} has no pencilled schools "
-                         f"to share")
+        elif not (owner.get("pencilled_schools")
+                  or owner.get("built_from_shortlist")):
+            links.append(f"{name}: pack_from {src_name!r} has no pack to share — "
+                         f"neither pencilled schools nor built ones")
         elif name not in (owner.get("pack_shared_with") or []):
             links.append(f"{name}: pack_from {src_name!r}, but {src_name} does not "
                          f"list it in pack_shared_with")
@@ -743,12 +769,11 @@ def campaigns(cx):
                 continue
             pen_by_school[school] = {"school": school, "family": fam,
                                      "built_by": slug}
-        # Vassal houses this archive can place to a clan. All fourteen from
-        # the corpus, plus Raikuto and Ishi from the L5R wiki — see the note on
-        # second_builds for why only those two were taken from it.
-        VASSAL = {"Fureheshu", "Ashidaka", "Hanako", "Hiramori", "Tsume",
-                  "Izaku", "Reju", "Damasu", "Goseki", "Itagawa", "Naoko",
-                  "Rokugo", "Shiko", "Nasu", "Raikuto", "Ishi"}
+        # Vassal houses, from the manifest's vassal_families — the owner's
+        # canonical list, which names a patron and a clan for each. This was a
+        # hand-curated set of sixteen while only the corpus's fourteen
+        # attributions and two from the wiki were available.
+        VASSAL = VASSALS
         KINDS = {"vassal", "out of family", "out of clan"}
         bad = []
         for school, spec in sorted(seconds.items()):
@@ -769,6 +794,10 @@ def campaigns(cx):
                 if fam not in VASSAL:
                     bad.append(f"{school}: {fam!r} is not a vassal family this "
                                f"archive can place")
+                # A clan check belongs here too — the registry knows which
+                # clan each patron is of — but it turns up four existing plans
+                # to settle and those are the owner's calls, so it is not
+                # switched on yet. See the note in CLAUDE.md.
             elif spec.get("kind") == "out of family":
                 if not fam:
                     bad.append(f"{school}: out of family with no family named")
@@ -1143,6 +1172,8 @@ def archive_drafts(docs):
             "portrait": c.get("portrait"),
             "status": c.get("status"),
             "tier_count": c.get("tier_count") or len(c["tiers"]),
+            # rule 3: the site names the patron on hover over a vassal family
+            "family_patron": patron_of(c.get("family")),
             "identity": {"clan": c.get("clan"), "family": c.get("family"),
                          "region": c.get("region"),
                          "upbringing": c.get("upbringing"),
@@ -1332,6 +1363,9 @@ def emit(cx):
         doc = {**{k: c[k] for k in c.keys() if k != "school_norm"},
                # a JSON column, and the page wants the list it holds
                "roles": json.loads(c["roles"]) if c["roles"] else None,
+               # rule 3 on vassal families: the page shows the vassal's own
+               # name and names its patron on hover
+               "family_patron": patron_of(c["family"]),
                "twenty_questions": src.get("twenty_questions", {}),
                "notes": src.get("notes", ""),
                # concept material, landed on promotion by scripts/promote.py
@@ -1549,6 +1583,9 @@ def sheet_from_tier(char, tier):
     return {
         "id": f"{char['slug']}-{xp}xp",
         "name": char["name"], "clan": char.get("clan"), "family": char.get("family"),
+        # computed, not read: `char` is a built doc here and a sqlite row
+        # elsewhere, and neither carries it
+        "family_patron": patron_of(char.get("family")),
         "school": tier.get("school") or char.get("school"),
         "role": char.get("role"),
         # `char` here is the built doc, where roles is already a list; the same

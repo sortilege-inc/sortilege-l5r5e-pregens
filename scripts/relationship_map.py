@@ -83,6 +83,23 @@ NAME_MAX_WORDS = 5
 NAME_MAX_CHARS = 44
 
 
+
+def vassal_families():
+    """Vassal house -> {patron, clan}. Rule 3 wants the patron on hover, so the
+    map's detail panel needs it beside the family name."""
+    src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json"),
+                         encoding="utf-8"))
+    return {k: v for k, v in (src.get("vassal_families") or {}).items()
+            if not k.startswith("_")}
+
+
+VASSALS = vassal_families()
+
+
+def patron_of(family):
+    return (VASSALS.get(family or "") or {}).get("patron")
+
+
 def looks_like_a_name(s):
     """Is this a person's name, or the start of a sentence?
 
@@ -328,7 +345,9 @@ def main():
             ident = d.get("identity") or {}
             pc = {"id": "pc:" + d["slug"], "kind": "pc", "name": d["name"],
                   "slug": d["slug"], "clan": ident.get("clan"),
-                  "family": ident.get("family"), "school": ident.get("school"),
+                  "family": ident.get("family"),
+                  "family_patron": patron_of(ident.get("family")),
+                  "school": ident.get("school"),
                   "role": ident.get("role"),
                   # a folio printing "Bushi/Courtier" is in both
                   "roles": ident.get("roles") or None,
@@ -436,6 +455,7 @@ def main():
                   # the node is coloured by something rather than by nothing
                   "clan": ident.get("clan") or ident.get("region"),
                   "family": ident.get("family") or ident.get("upbringing"),
+                  "family_patron": patron_of(ident.get("family")),
                   "school": ident.get("school"), "role": ident.get("role"),
                   "roles": ident.get("roles") or None,
                   "pronouns": ident.get("pronouns"),

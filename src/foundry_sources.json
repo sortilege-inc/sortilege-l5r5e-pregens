@@ -103,14 +103,7 @@
   "Mask of the Oni": {
    "arc": "l5r5e-0.4-mask-of-the-oni.arc",
    "note": "Set in 1123: the PCs pass through the Crab Clan's defenses into the Shadowlands, to the ruins of Shiro Hiruma. Arc, cast and lore are converted — what is missing is the pack.",
-   "pencilled_schools": [
-    {
-     "school": "Kaito Spirit Seeker School",
-     "family": "Kaito",
-     "gender": "female",
-     "concept": "Carrying a shrine's worth of prayers on her person, and rationing which of the dead she stops for."
-    }
-   ],
+   "pencilled_schools": [],
    "pencilled_why": "Chosen 2026-09-04 for the expedition the adventure actually is: out through Crab lands into the Shadowlands, to the ruins of Shiro Hiruma. The Hiruma Scout is going home to that ruin and the Kaiu Engineer can read what is left standing; the Agasha Alchemist brews against the Taint and the Shiba Guardian keeps them alive doing it; the Yogo Preserver wards, and carries a curse that belongs to this story. The Nezumi Tattered Ear Explorer is the party's way into The Knotted Tails, which is played inside this adventure and shares this pack (decided 2026-09-04) — and at honour 18 it is a different game from the other five.\n\nSix more added 2026-09-04, taking the pack to twelve — the weight the Winter's Embrace pack carries, and appropriate now that this one serves The Knotted Tails as well. The first six were an expedition; these fill what an expedition into the Shadowlands cannot do without. Moto Avenger is the healer, and heals by Empathic Transfer — taking the wound himself, which out there is a decision every time. Asako Inquisitor reads what came through the ruin and hunts mahō. Tengu Mask of Air brings the three things the first six had none of at once: the monk role, the Sage role, and Kihō — and a tengu walking into the Shadowlands beside a nezumi is a party worth watching. Kaito Spirit Seeker fights and cleanses without choosing between them. Matsu Berserker and Bayushi Deathdealer are the weight and the knife the first six lacked: a scout, an engineer and a bodyguard, and nobody who simply wades in.\n\nKuni Warden was offered for the monk and Kihō gap and passed over; Tengu Mask of Air covers both, so nothing is missing by it.\n\nDaidoji Iron Warrior added 2026-09-04 — honour 55, Vigilance of Mind, and the Crane's field-army school going into the Shadowlands with everyone else.\n\nConcepts for the first six written 2026-09-04 — the original expedition, before the six that filled its gaps. Each has a job that ropes them to the others: a guide to a castle his family lost, a surveyor already certain of his answer, an alchemist rationing jade badly, a yōjimbō who has decided which shugenja he cannot save, a nezumi who knew this route before the humans named it, and a warder who will not say what he was sent to seal. The Agasha's and the Yogo's each fold both options together at the owner's direction, so those two carry a job and a grievance where the rest carry a job. The remaining seven have none yet.\n\nThe remaining seven written 2026-09-04, completing the pack. The Bayushi's and the Daidoji's fold both options together at the owner's direction.\n\nFour of the seven were chosen so the pack argues with itself without a GM having to arrange it. The Asako is sent to find what came out of Shiro Hiruma while the Yogo will not say what he was sent to seal. The Daidoji is the only one who has read the Kaiu's report and believes it, and the Kaiu is privately certain the castle cannot be held. The tengu is here because the nezumi asked him, which makes the party's two non-humans a pair rather than a coincidence. And the Moto joined to recognise the Taint early, which is the job nobody else can do and the one the Shiba cannot protect him from.",
    "pack_shared_with": [
     "The Knotted Tails"
@@ -121,6 +114,7 @@
     "Bayushi Deathdealer School": "Bayushi Hirofumi — male, Bayushi. Pencilled premise: Attached to the expedition to make sure it comes back — or that the right parts of it do; a Scorpion who has killed people and never a demon, and is unbothered by the distinction in a way that unsettles everyone.",
     "Daidoji Iron Warrior School": "Daidoji Emon — male, Daidoji. Pencilled premise: A Crane sent to hold a line the Crab abandoned, too polite to put it that way, and the only one who has read the Kaiu's report and believes it.",
     "Hiruma Scout School": "Hiruma Namiko — female, Hiruma. Pencilled premise: The scout guiding the expedition to a castle her family lost, who has been to its walls twice and inside neither time.",
+    "Kaito Spirit Seeker School": "Kaito Kohana — female, Kaito. Pencilled premise: Carrying a shrine's worth of prayers on her person, and rationing which of the dead she stops for.",
     "Kaiu Engineer School": "Kaiu Anzu — female, Kaiu. Pencilled premise: Sent to determine whether Shiro Hiruma can be held again, and privately certain of the answer before setting out.",
     "Matsu Berserker School": "Matsu Rikona — female, Matsu; built as Kasuga and renamed 2026-09-06. Pencilled premise: Here to die well, and disappointed by how much walking is involved.",
     "Moto Avenger School": "Moto Azumamaro — male, Moto. Pencilled premise: A Moto who has seen the Taint before, in his own people, and volunteered so someone present would recognise it early.",
@@ -346,12 +340,6 @@
      "concept": "A Crab with a stall at the Unicorn docks who knows which crates are not what the manifest says; retained to find the author and paid by the day, which suits her."
     },
     {
-     "school": "Ide Trader School",
-     "family": "Ide",
-     "gender": "female",
-     "concept": "Supplied the curio shop with half its foreign stock, and is trying very hard to remember what else was in that consignment."
-    },
-    {
      "school": "School of Leaves",
      "gender": "male",
      "concept": "Reads Hana-no-Ame, and is the only person in the city who noticed the stories stopped."
@@ -374,7 +362,10 @@
     }
    ],
    "pencilled_why": "Chosen 2026-09-04 for a city, not a battlefield: an Imperial holding at a river junction that the Dragon, Lion, Unicorn and Dragonfly all want, with Kaeru rōnin keeping the peace. Two traders — a Yasuki and an Ide — because a river junction is about goods; a Scholar of al-Zawira and an Ivory Kingdoms blade because a trade city is full of people from elsewhere; a School of Leaves at honour 26 for what is happening under it; and a Utaku stablemaster at honour 55 as the one who will not bend. Yasuki Merchant is also the school of a published pregen (Yasuki Toru, Wedding at Kyotei Castle) — untouched by the archive, so it still adds coverage.\n\nNote on the source: the owner recalled this adventure shipping a publisher party. Nothing on disk shows one — Children of the Five Winds' PDF has no mention of pregenerated characters and no character sheets, where Wedding at Kyotei Castle's has both. Either way this pack stands alone.\n\nConcepts written 2026-09-04, completing the pack. The Yasuki's folds both options together and the Utaku's takes the first with a hint of the second, both at the owner's direction.\n\nThe party arrives already holding the case rather than waiting to be given it: one of them noticed the stories stopped, one supplied the curio shop, one can say what an ifrit is without guessing, one knows which crates lie, and one lost the client he was guarding. The Utaku matters more than she looks — the missing author is a Shinjo, so the senior Unicorn in the city is the person the Kaeru come to when the problem is a Unicorn, which this one is.\n\nNote on the name: this is the adventure, not the \"City of the Rich Frog\" campaign tag also in this list, which is the city and holds a character of its own.",
-   "setting": "Children of the Five Winds chapter 4. An Imperial holding at a river junction, three clan districts — Dragon, Lion, Unicorn — with the Dragonfly also invested and neutral Kaeru rōnin keeping the peace. The missing author is Shinjo Higuchi, who wrote as Hana-no-Ame and is possessed by an ifrit out of a meishōdō talisman. The arc names its own themes: freedom and captivity, literal and spiritual, and art as a vessel for truth with the dangers of uncovering it. Smuggling at the Unicorn docks is an open secret and the curio shop is full of foreign talismans and sealed scrolls."
+   "setting": "Children of the Five Winds chapter 4. An Imperial holding at a river junction, three clan districts — Dragon, Lion, Unicorn — with the Dragonfly also invested and neutral Kaeru rōnin keeping the peace. The missing author is Shinjo Higuchi, who wrote as Hana-no-Ame and is possessed by an ifrit out of a meishōdō talisman. The arc names its own themes: freedom and captivity, literal and spiritual, and art as a vessel for truth with the dangers of uncovering it. Smuggling at the Unicorn docks is an open secret and the curio shop is full of foreign talismans and sealed scrolls.",
+   "built_from_shortlist": {
+    "Ide Trader School": "Suio Kurva — female, Suio. Pencilled premise: Supplied the curio shop with half its foreign stock, and is trying very hard to remember what else was in that consignment."
+   }
   },
   "The Scroll or the Blade": {
    "arc": "l5r5e-0.4-scroll-or-blade.arc",
@@ -1016,7 +1007,7 @@
   },
   "Ide Trader School": {
    "campaign": "The Lost Writer in the City of the Rich Frog",
-   "first_build_family": "Ide",
+   "first_build_family": "Suio",
    "clan": "Unicorn",
    "kind": "vassal",
    "family": "Shiko"
@@ -1335,6 +1326,406 @@
    "clan": "Scorpion",
    "kind": "out of clan",
    "family": null
+  }
+ },
+ "vassal_families": {
+  "_comment": "Vassal families, with the patron whose family they serve and that patron's clan. Owner-supplied list, 2026-09-06, and the archive's canon for this: the corpus names 98 vassal houses in its own name tables but attributes none of them to a patron. Three rules go with it, and the code follows them: (1) the family name, everywhere on a record and on the site, is the vassal family's own name -- Suio, Nasu, Tsume, never the patron's; (2) a vassal takes the patron family's mechanical benefits, coin included, so Tsume Kunimichi is paid on Doji's figures; (3) the site shows the patron on hover over the vassal name. Cross-checked against the corpus's 98: 96 agree, Tsi is here and not in the corpus's names, and the corpus names Hanegansi and Shimizu with no patron on this list. Two entries the list itself qualifies keep a _note, and Izaku serves two patrons -- the second is in `also`.",
+  "Anou": {
+   "patron": "Miya",
+   "clan": "Imperial Families"
+  },
+  "Aotora": {
+   "patron": "Bayushi",
+   "clan": "Scorpion"
+  },
+  "Ashidaka": {
+   "patron": "Kakita",
+   "clan": "Crane"
+  },
+  "Atsumaru": {
+   "patron": "Agasha",
+   "clan": "Phoenix"
+  },
+  "Battue": {
+   "patron": "Iuchi",
+   "clan": "Unicorn"
+  },
+  "Byako": {
+   "patron": "Kitsune",
+   "clan": "Mantis"
+  },
+  "Chirichi": {
+   "patron": "Yoritomo",
+   "clan": "Mantis"
+  },
+  "Chiyu": {
+   "patron": "Tamori",
+   "clan": "Dragon"
+  },
+  "Chukan": {
+   "patron": "Asako",
+   "clan": "Phoenix"
+  },
+  "Damasu": {
+   "patron": "Akodo",
+   "clan": "Lion"
+  },
+  "Edakumi": {
+   "patron": "Suzume",
+   "clan": "Sparrow"
+  },
+  "Endo": {
+   "patron": "Hiruma",
+   "clan": "Crab"
+  },
+  "Fujihiro": {
+   "patron": "Daidoji",
+   "clan": "Crane"
+  },
+  "Fundai": {
+   "patron": "Kaiu",
+   "clan": "Crab"
+  },
+  "Fureheshu": {
+   "patron": "Ichiro",
+   "clan": "Badger"
+  },
+  "Goraiku": {
+   "patron": "Moshi",
+   "clan": "Mantis"
+  },
+  "Goseki": {
+   "patron": "Matsu",
+   "clan": "Lion"
+  },
+  "Gyushi": {
+   "patron": "Daigotsu",
+   "clan": "Spider",
+   "_note": "Former vassals of the Daigotsu; the list notes it is now a Great Clan family in its own right."
+  },
+  "Hanako": {
+   "patron": "Seppun",
+   "clan": "Imperial Families"
+  },
+  "Hateru": {
+   "patron": "Ide",
+   "clan": "Unicorn"
+  },
+  "Hayameru": {
+   "patron": "Matsu",
+   "clan": "Lion"
+  },
+  "Hiasobi": {
+   "patron": "Tamori",
+   "clan": "Dragon"
+  },
+  "Hiramichi": {
+   "patron": "Daidoji",
+   "clan": "Crane"
+  },
+  "Hiramori": {
+   "patron": "Daidoji",
+   "clan": "Crane"
+  },
+  "Hogosha": {
+   "patron": "Yoritomo",
+   "clan": "Mantis"
+  },
+  "Hoji": {
+   "patron": "Yoritomo",
+   "clan": "Mantis"
+  },
+  "Hosokawa": {
+   "patron": "Ikoma",
+   "clan": "Lion"
+  },
+  "Hyobe": {
+   "patron": "Kasuga",
+   "clan": "Tortoise"
+  },
+  "Hyuga": {
+   "patron": "Utaku",
+   "clan": "Unicorn"
+  },
+  "Ichime": {
+   "patron": "Akodo",
+   "clan": "Lion"
+  },
+  "Iga": {
+   "patron": "Shiba",
+   "clan": "Phoenix"
+  },
+  "Ikeda": {
+   "patron": "Matsu",
+   "clan": "Lion"
+  },
+  "Iongi": {
+   "patron": "Komori",
+   "clan": "Bat"
+  },
+  "Ise": {
+   "patron": "Kitsu",
+   "clan": "Lion"
+  },
+  "Ishi": {
+   "patron": "Kaiu",
+   "clan": "Crab"
+  },
+  "Itagawa": {
+   "patron": "Akodo",
+   "clan": "Lion"
+  },
+  "Iwasaki": {
+   "patron": "Kakita",
+   "clan": "Crane"
+  },
+  "Izaku": {
+   "patron": "Agasha",
+   "clan": "Phoenix",
+   "also": [
+    {
+     "patron": "Tamori",
+     "clan": "Dragon"
+    }
+   ],
+   "_note": "Serves both the Agasha of the Phoenix and the Tamori of the Dragon."
+  },
+  "Jitsuyoteki": {
+   "patron": "Shosuro",
+   "clan": "Scorpion"
+  },
+  "Junichi": {
+   "patron": "Daidoji",
+   "clan": "Crane"
+  },
+  "Kaeru": {
+   "patron": "Ikoma",
+   "clan": "Lion"
+  },
+  "Kagehisa": {
+   "patron": "Tsuruchi",
+   "clan": "Mantis"
+  },
+  "Kakeguchi": {
+   "patron": "Hida",
+   "clan": "Crab"
+  },
+  "Kano": {
+   "patron": "Yasuki",
+   "clan": "Crab"
+  },
+  "Katai": {
+   "patron": "Akodo",
+   "clan": "Lion"
+  },
+  "Katogama": {
+   "patron": "Doji",
+   "clan": "Crane"
+  },
+  "Kenru": {
+   "patron": "Kaiu",
+   "clan": "Crab"
+  },
+  "Kenshin": {
+   "patron": "Iuchi",
+   "clan": "Unicorn"
+  },
+  "Kentsu": {
+   "patron": "Bayushi",
+   "clan": "Scorpion"
+  },
+  "Kijuro": {
+   "patron": "Morito",
+   "clan": "Ox"
+  },
+  "Kochako": {
+   "patron": "Soshi",
+   "clan": "Scorpion",
+   "_note": "Formerly a Shosuro vassal."
+  },
+  "Koebi": {
+   "patron": "Hida",
+   "clan": "Crab"
+  },
+  "Koganshi": {
+   "patron": "Shiba",
+   "clan": "Phoenix"
+  },
+  "Koritome": {
+   "patron": "Matsu",
+   "clan": "Lion"
+  },
+  "Koshei": {
+   "patron": "Tonbo",
+   "clan": "Dragonfly"
+  },
+  "Kouken": {
+   "patron": "Mirumoto",
+   "clan": "Dragon"
+  },
+  "Maisuna": {
+   "patron": "Kaiu",
+   "clan": "Crab"
+  },
+  "Marta": {
+   "patron": "Shinjo",
+   "clan": "Unicorn"
+  },
+  "Meishozo": {
+   "patron": "Kuni",
+   "clan": "Crab"
+  },
+  "Morehei": {
+   "patron": "Doji",
+   "clan": "Crane"
+  },
+  "Moshibaru": {
+   "patron": "Hida",
+   "clan": "Crab"
+  },
+  "Murame": {
+   "patron": "Ikoma",
+   "clan": "Lion"
+  },
+  "Naganori": {
+   "patron": "Yogo",
+   "clan": "Scorpion"
+  },
+  "Nanbu": {
+   "patron": "Soshi",
+   "clan": "Scorpion"
+  },
+  "Nani": {
+   "patron": "Asako",
+   "clan": "Phoenix"
+  },
+  "Naoko": {
+   "patron": "Utaku",
+   "clan": "Unicorn"
+  },
+  "Nasu": {
+   "patron": "Shiba",
+   "clan": "Phoenix"
+  },
+  "Nobuto": {
+   "patron": "Yasuki",
+   "clan": "Crab"
+  },
+  "Noroko": {
+   "patron": "Kitsu",
+   "clan": "Lion"
+  },
+  "Onshigawa": {
+   "patron": "Moto",
+   "clan": "Unicorn"
+  },
+  "Raikuto": {
+   "patron": "Hiruma",
+   "clan": "Crab"
+  },
+  "Reju": {
+   "patron": "Otomo",
+   "clan": "Imperial Families"
+  },
+  "Remiki": {
+   "patron": "Tamori",
+   "clan": "Dragon"
+  },
+  "Rokugo": {
+   "patron": "Bayushi",
+   "clan": "Scorpion"
+  },
+  "Sakura": {
+   "patron": "Kitsuki",
+   "clan": "Dragon"
+  },
+  "Satoshi": {
+   "patron": "Miya",
+   "clan": "Imperial Families"
+  },
+  "Seizuka": {
+   "patron": "Akodo",
+   "clan": "Lion"
+  },
+  "Senkensha": {
+   "patron": "Tonbo",
+   "clan": "Dragonfly"
+  },
+  "Sesai": {
+   "patron": "Shiba",
+   "clan": "Phoenix"
+  },
+  "Shiko": {
+   "patron": "Ide",
+   "clan": "Unicorn"
+  },
+  "Shingon": {
+   "patron": "Isawa",
+   "clan": "Phoenix"
+  },
+  "Shudo": {
+   "patron": "Kitsune",
+   "clan": "Mantis"
+  },
+  "Sodona": {
+   "patron": "Shiba",
+   "clan": "Phoenix"
+  },
+  "Someisa": {
+   "patron": "Kasuga",
+   "clan": "Tortoise"
+  },
+  "Suguru": {
+   "patron": "Tsuruchi",
+   "clan": "Mantis"
+  },
+  "Suio": {
+   "patron": "Ide",
+   "clan": "Unicorn"
+  },
+  "Tansaku": {
+   "patron": "Yogo",
+   "clan": "Scorpion"
+  },
+  "Tashimi": {
+   "patron": "Ichiro",
+   "clan": "Badger"
+  },
+  "Tokagure": {
+   "patron": "Shosuro",
+   "clan": "Scorpion"
+  },
+  "Tsi": {
+   "patron": "Hantei",
+   "clan": "Imperial Families"
+  },
+  "Tsume": {
+   "patron": "Doji",
+   "clan": "Crane"
+  },
+  "Ugawa": {
+   "patron": "Bayushi",
+   "clan": "Scorpion"
+  },
+  "Ugawari": {
+   "patron": "Kuni",
+   "clan": "Crab"
+  },
+  "Watanabe": {
+   "patron": "Yoritomo",
+   "clan": "Mantis"
+  },
+  "Yotsu": {
+   "patron": "Seppun",
+   "clan": "Imperial Families"
+  },
+  "Zeshi": {
+   "patron": "Iuchi",
+   "clan": "Unicorn"
+  },
+  "Zurui": {
+   "patron": "Mirumoto",
+   "clan": "Dragon"
   }
  }
 }

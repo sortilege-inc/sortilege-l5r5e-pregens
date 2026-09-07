@@ -375,3 +375,45 @@ a wakizashi, both in the catalog), chosen (the rarity slots, the either-ors),
 or kept as an NPC-ish possession the sheet renders as prose (the mounts and
 the attendant — note the compendium stocks Utaku Steed and Horse as **NPC
 actors**, which is why gear resolution refuses them; see catalogHas()).
+
+## Vassal families (Jordan, 2026-09-06)
+
+Three rules, and every reader of the data follows them:
+
+1. **The family name, everywhere, is the vassal family's own name** — Suio, Nasu,
+   Tsume, never the patron's. On the record, on the roster, on the page.
+2. **A vassal takes the patron family's mechanical benefits, coin included.** Tsume
+   Kunimichi is paid on Doji's figures, Nasu Kōgo on Shiba's, Suio Kurva on Ide's.
+3. **The site names the patron on hover** over the vassal name — the chip on the
+   character page, the family in the relationship map's detail panel.
+
+The list lives in `vassal_families` in `src/foundry_sources.json`: 97 houses, each
+with its patron and that patron's clan, supplied by the owner and canonical for
+this archive. The corpus names 98 vassal houses in its own name tables and
+attributes **none** of them to a patron, which is why this is a manifest
+declaration rather than corpus-derived. Cross-checked against those 98: 96 agree,
+**Tsi** is on the owner's list and not in the corpus's names, and the corpus names
+**Hanegansi** and **Shimizu** with no patron on the list. Izaku serves two patrons
+(Agasha of the Phoenix, Tamori of the Dragon) and carries the second in `also`;
+Kochako and Gyushi carry a `_note` for what the list itself qualifies about them.
+
+Readers: `patron_of()` in `scripts/build.py` (the page and play-sheet payloads, and
+the second-build gate's set of placeable houses) and in
+`scripts/relationship_map.py`; `scripts/coin_audit.py` resolves a bare "Suio" or
+"Tsume" through its patron's `^"Wealth"`. Before the list existed, only a record
+that spelled the patron out in a parenthetical — `"Nasu (Shiba Vassal)"`, which is
+what one Foundry actor happened to write — could be resolved at all, and the
+placeable set was sixteen names hand-curated from the corpus and the wiki.
+
+### One check written and left switched off
+
+`build.py`'s second-build gate could also check that a planned vassal serves the
+clan the plan names — the registry knows. It is written and commented out, because
+switching it on fails four existing plans and each is the owner's call:
+
+| plan | the registry says |
+|---|---|
+| Agasha Alchemist, Agasha Ascetic → Izaku | Izaku serves the Agasha of the **Phoenix**; both plans say Dragon. Izaku's second patron is the Tamori of the Dragon, so this may just want the `also` consulted. |
+| Daidoji Iron Warrior → Hanako | Hanako serves the Seppun of the **Imperial Families**, not the Crane. |
+| Ikoma Shadow → Naoko | Naoko serves the Utaku of the **Unicorn**, not the Lion. |
+| Miya Cartographer, Miya Herald → Reju | Reju serves the Otomo of the Imperial Families. The plan's clan string is `"Imperial"` against the list's `"Imperial Families"` — a label mismatch, not a real one. |

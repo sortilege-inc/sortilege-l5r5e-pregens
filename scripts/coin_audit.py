@@ -65,6 +65,17 @@ def zeni(coins):
     return sum(int((coins or {}).get(k) or 0) * v for k, v in ZENI_PER.items())
 
 
+def vassals():
+    """Vassal house -> {patron, clan}, from the manifest's own list."""
+    src = json.load(open(os.path.join(ROOT, "src", "foundry_sources.json"),
+                        encoding="utf-8"))
+    return {k: v for k, v in (src.get("vassal_families") or {}).items()
+            if not k.startswith("_")}
+
+
+VASSALS = vassals()
+
+
 def q2_source(doc, grants):
     """(what question 2 gives in zeni, how it was resolved), or (None, why not).
 
@@ -86,6 +97,31 @@ def q2_source(doc, grants):
         if norm(bare) in grants:
             z, label = grants[norm(bare)]
             return z, f"{bare} -> {label}"
+        # The archive's own list of vassal houses names each one's patron, and
+        # rule 2 is that a vassal takes the patron family's benefits, coin
+        # included. This is how a bare "Suio" or "Tsume" resolves: before the
+        # list existed only a record that spelled the patron out in a
+        # parenthetical — "Nasu (Shiba Vassal)", which is what one Foundry
+        # actor happened to write — could be resolved at all.
+        houses = [h for h in (VASSALS.get(bare), VASSALS.get(str(raw).strip()))
+                  if h]
+        for house in houses:
+            patrons = [house] + list(house.get("also") or [])
+            figures = {grants[norm(pt["patron"])][0] for pt in patrons
+                       if norm(pt.get("patron") or "") in grants}
+            if len(figures) == 1:
+                pt = patrons[0]["patron"]
+                z, label = grants[norm(pt)]
+                if len(patrons) > 1:
+                    return z, (f"{bare}, vassal to the {pt} and the "
+                               f"{patrons[1]['patron']}, who give the same "
+                               f"-> {label}")
+                return z, f"{bare}, vassal to the {pt} -> {label}"
+            if len(figures) > 1:
+                return None, (f"{bare} serves "
+                              + " and ".join(f"the {pt['patron']}"
+                                             for pt in patrons)
+                              + ", and they do not give the same coin")
         m = re.search(r"\(([^)]*?)\s+vassal\)", str(raw), re.I)
         if m and norm(m.group(1)) in grants:
             z, label = grants[norm(m.group(1))]

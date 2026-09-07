@@ -271,9 +271,19 @@
         '<p class="rm-eyebrow">Player character</p>' +
         "<h2>" + esc(d.name) + "</h2>" +
         '<p class="rm-sub">' +
-          esc([d.clan, d.family, d.school,
-               (d.roles && d.roles.length > 1) ? d.roles.join("/") : d.role]
-                .filter(Boolean).join(" · ")) +
+          // the family is its own span so a vassal house can name its patron
+          // on hover, which is rule 3; the rest of the line is plain text
+          [d.clan,
+           d.family
+             ? (d.family_patron
+                 ? '<span title="Vassal family of the '
+                   + esc(d.family_patron) + '">' + esc(d.family) + "</span>"
+                 : esc(d.family))
+             : null,
+           d.school ? esc(d.school) : null,
+           (d.roles && d.roles.length > 1)
+             ? esc(d.roles.join("/")) : (d.role ? esc(d.role) : null)]
+            .filter(Boolean).join(" · ") +
         "</p>" +
         (d.connection
           ? '<p class="rm-quote">' + esc(d.connection) + "</p>" : "") +
