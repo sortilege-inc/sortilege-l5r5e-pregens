@@ -67,7 +67,6 @@
    "challenge": "When Nara tries to shift her weight to her feet after kneeling by the fire, the scouts watching pretend not to notice how long it takes her spine to stop screaming.",
    "peace": "Nara strips the rust from a Crab-forged spear point with a whetstone the Tattered Ear found in a dead scout's pack, and the metal under her thumb stops fighting her.",
    "fear": "Nara walks back to the Tattered Ear from a route she has scouted alone, and finds herself already composing the reasons why they will not believe what she found there.",
-   "accoutrement": "Memory stick.",
    "past": "Nara led a Tattered Ear pack deeper into the Shadowlands following a path she had walked before the Taint came, and when the others turned back at the wall, she kept going because the route was still there—still *is* there—and now none of them will scout with her.",
    "known_for": "The Tattered Ear will not take the Hiruma route with her anymore, and she has stopped asking them why.",
    "known_skill": null,
@@ -112,8 +111,7 @@
    "legacy": null,
    "legacy_inverted": false,
    "death": "Nara will die on a route she has walked a hundred times, following a sign that was never there before, and she will not know until the last moment whether she chose to keep going or was being led.",
-   "rolls": {},
-   "accoutrement_name": "Memory stick"
+   "rolls": {}
   },
   "starting_item": "Folding Half-Bow",
   "campaign": "Mask of the Oni",
@@ -276,8 +274,7 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "",
-     "accoutrement": "Memory stick."
+     "first_sight": ""
     },
     "picks": {}
    },
@@ -436,9 +433,7 @@
     },
     {
      "name": "memory stick",
-     "custom": true,
-     "text": "Memory stick.",
-     "accoutrement": true
+     "custom": true
     },
     {
      "name": "small tent",

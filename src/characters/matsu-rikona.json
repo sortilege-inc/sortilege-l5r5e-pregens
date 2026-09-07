@@ -100,7 +100,7 @@
    },
    "first_impression": "Rikona's fingernails are bitten past the quick, the skin around them scarred white from years of the same habit, and she does not seem to know she is doing it even while talking to you.",
    "stress_reaction": "Rikona stops talking mid-report and drinks from her flask instead, holding the silence long enough that whoever is listening has to decide whether to wait or speak first.",
-   "relationships": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Rikona maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Kadiri.",
+   "relationships": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Rikona maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had taught herself from a scroll pulled out of a Shadowlands ruin still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Kadiri.",
    "people": [
     {
      "name": "Kaiu Jirôzaemon",
@@ -112,7 +112,7 @@
      "name": "Kitsu Tokuhei",
      "gender": "male",
      "association": "Lion",
-     "text": "Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Kadiri."
+     "text": "Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had taught herself from a scroll pulled out of a Shadowlands ruin still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Kadiri."
     }
    ],
    "parent_opinion": {
@@ -290,7 +290,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Rikona maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had studied under the mahō-tsukai Sokori still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Kadiri."
+     "relations": "Kaiu Jirôzaemon (Crab) — Kaiu Jirôzaemon, the Crab engineer who maps the Wall's structural weaknesses on paper while Rikona maps them in her body, watches her drink from the flask beside the stone table and does not warn her away from the passages she will die in.\nKitsu Tokuhei (Lion) — Kitsu Tokuhei sat across from her at the war table in the Lion compound three winters ago, before she took the scout's work, and asked her straight if the blood magic she had taught herself from a scroll pulled out of a Shadowlands ruin still had hold of her fingers, and she lied and said no, and he has not asked again, but he watches the passages she chooses to map and does not report them to Kadiri."
     },
     "picks": {}
    },

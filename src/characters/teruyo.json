@@ -66,7 +66,6 @@
    "challenge": "Teruyo teaches by showing what to do and what not to do, but when the younger hunters make choices she would not make, she cannot tell them why without breaking her own silence about what happened in the Shadowlands ten years ago.",
    "peace": "Teruyo traces the paths through the Shadowlands on borrowed maps, marking what has changed since her last crossing, since the one before that, finding the small differences that mean a hunter can still pass through alive.",
    "fear": "Teruyo accepted the Crab captain's gift of a Yasuki blade with the maker's seal still bright on the tsuba, and three days later found herself unable to trade it away when the younger hunter needed a better weapon and had nothing to offer but her own rusted steel.",
-   "accoutrement": "Journal of insights.",
    "past": "Teruyo led three hunters into the Shadowlands ten years ago when a nezumi elder asked her to find his kin, and only she came back, which is why she teaches now instead of ranging, and why she said yes when the nezumi asked again.",
    "known_for": "The Crab soldiers at the Wall ask Teruyo to scout the Shadowlands approaches because she always comes back, but none of them ask her to take their younger brothers anymore.",
    "known_skill": "command",
@@ -111,8 +110,7 @@
    "legacy": null,
    "legacy_inverted": false,
    "death": "She will die still checking her weapons, in some safe place far enough from the Shadowlands that she has convinced herself the ritual matters, long after the younger hunters have stopped asking her to teach them anything but silence.",
-   "rolls": {},
-   "accoutrement_name": "Journal of insights"
+   "rolls": {}
   },
   "starting_item": "Sai",
   "campaign": "Mask of the Oni",
@@ -272,8 +270,7 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "",
-     "accoutrement": "Journal of insights."
+     "first_sight": ""
     },
     "picks": {}
    },
@@ -449,9 +446,7 @@
     },
     {
      "name": "journal of insights",
-     "custom": true,
-     "text": "Journal of insights.",
-     "accoutrement": true
+     "custom": true
     }
    ],
    "advancements": []

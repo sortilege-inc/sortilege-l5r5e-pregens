@@ -74,7 +74,8 @@ def main(camp):
             q14 = (a.get("first_impression") or "") + " " + (a.get("accoutrement") or "")
             if key in PHYSICAL and not re.search(PHYSICAL[key], q14, re.I):
                 warns.append(f"{n}: {nm!r} on the sheet, not shown at Q14")
-        if not a.get("accoutrement_name"):
+        if not a.get("accoutrement_name") and a.get("first_impression") is not None:
+            # the Path of Waves set has its own question 14 and asks for no object
             warns.append(f"{n}: no accoutrement object name")
         # giri shape: a want or a prohibition rather than a duty
         gi = a.get("giri") or ""

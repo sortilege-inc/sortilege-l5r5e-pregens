@@ -15,7 +15,7 @@ book says it must reach the PCs only through the scroll in the library.
 
 Decisions are numbered for answering by number. Rewrites are full text. "Trade" says what is lost.
 
-**State at 2026-09-07:** approved and applied — D1–D9, D12, D14–D17, D33–D35 (commit below). Under review: D10, D13. Clarifying: D36–D38. Open (not yet answered): D11, D18–D32. D2's mentor text is written for the field's name (Kaiu Mabuchi); D18 would swap it to Riko. D5's Rikona line waits on D13.
+**State at 2026-09-07:** approved and applied — D1–D9, D12, D14–D17, D33–D35 (commit below). D10 applied, whole record flagged by the owner for later rework (Norimono kept until then). D13 applied as a discovery — a scroll from a Shadowlands ruin, not a teacher. D36: reverted — the Path of Waves set asks for no object. D37 noted. D38: alternative offered. Open (not yet answered): D11, D18–D32. D2's mentor text is written for the field's name (Kaiu Mabuchi); D18 would swap it to Riko. D5's Rikona line waits on D13.
 
 ---
 
