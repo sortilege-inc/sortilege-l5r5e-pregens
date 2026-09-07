@@ -56,7 +56,8 @@ def answers(d):
                 a[ak] = v
     if a.get("mentor_line"):
         m = re.match(r"^([^—]+?)\s*(?:—\s*(.*))?$", a["mentor_line"], re.S)
-        a["mentor"] = {"name": m.group(1).strip(), "text": (m.group(2) or "").strip()}
+        name = re.sub(r"\s*\([^)]*\)\s*$", "", m.group(1).strip())   # "Tonbo Umeko (Tonbo)"
+        a["mentor"] = {"name": name, "text": (m.group(2) or "").strip()}
     return a, True
 
 
