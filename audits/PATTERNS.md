@@ -133,3 +133,24 @@ the prompts; the adventure's cast and the party's existing NPCs handed to the
 people-naming questions; four more tics quoted in AVOID. Mask of the Oni's thirteen were
 built before all of it — expect the same distribution there, and run the lints' logic over
 its records first rather than reading for those defects by hand.
+
+## Mask of the Oni — from Pass A (2026-09-07)
+
+**Run the lint first.** `scripts/audit_lints.py "<pack>"` now does the deterministic half (lord in
+giri, mentor in text, NPC gender vs pronoun, physical peculiarity vs Q14, open outfit lines, unfilled
+subjects, old-shape accoutrements, giri/ninjō shape, duplicate names); on this pack it produced 22
+blocks and 40 warnings before a record was read, and every one placed into the report.
+
+**Expedition adventures pull records into the present tense.** Six of thirteen records were written
+at the gate or on the climb (Anzu swearing "on her way out through the gates", Yukitsuna "during the
+climb up to Shiro Hiruma"). Check Q10/Q15/Q16 for the adventure's own geography, not just its events.
+
+**Invented posts multiply.** Three PCs each invented a head of the Kaiu Wall. When several records
+need the same institution, look for the adventure's own NPC first (Kaiu Riko) before accepting three
+invented ones.
+
+**GM secrets can leak through Q15.** The book's one named secret (Masami) appeared in a PC's peace
+question. Grep the pack's records for every name in the `.lore`'s background section.
+
+**Non-human PCs (Path of Waves set) have no Q14/accoutrement** — give them the object from their own
+gear (memory stick, journal).
