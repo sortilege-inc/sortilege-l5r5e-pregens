@@ -51,6 +51,13 @@ want becomes something the lord *has* and won't give ("the family blade… will 
 it before he sets it down for a Kakita's"); an offer on the table, wanted and not yet
 refused (Kaede and Soshi Hayami).
 
+**Question 10 is a past challenge.** The owner's ruling on Shuichi: what holds the
+character back is shown in something that already happened, or a standing condition — not
+a scene inside the adventure the pack is built for. Check every Q10 in a pack against the
+adventure's own events; the same disadvantage can nearly always be shown on prior work.
+(Owner edits on the same rewrite, worth keeping as style: drop the closing observation —
+"She has noticed." — and the "rather than…" comparison clause.)
+
 **Tenets vs conduct.** When the paramount tenet contradicts what the character does
 (Honor, and she sells poisons to the Scorpion), change the tenet, not the honour — attitude
 A's +10 is mechanical and stands; the tenet has no mechanical effect.
