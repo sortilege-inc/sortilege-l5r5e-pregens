@@ -100,6 +100,30 @@
      "death": "She drowns in the harbor she has spent years reading for threats that move, pulled under by a current she did not see because she was watching the wrong surface."
     },
     "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Chiyo talked a Mantis captain out of unloading a hold of untaxed steel at the public wharf and had it moved to a warehouse the governor's men never inspect. The harbor fund gained a fee."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Chiyo entered a trading partnership two years ago on her own judgment. The partner's cargo, money and name are gone, and she has not found out where."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Chiyo walks the wharves at dawn before the harbor office opens and counts the hulls against yesterday's list."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Chiyo fears the day a magistrate asks her to read the harbor ledgers aloud, line by line."
+    },
+    "picks": {}
    }
   }
  },

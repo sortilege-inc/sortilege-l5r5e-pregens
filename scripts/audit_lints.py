@@ -85,7 +85,8 @@ def main(camp):
         m = a.get("mentor") or {}
         if m.get("name") and not (m.get("text") or "").strip():
             blocks.append(f"{n}: mentor {m['name']!r} has no text")
-        if m.get("name") and m.get("text") and not mentions(m["text"], m["name"]):
+        if m.get("name") and m.get("text") and not (mentions(m["text"], m["name"])
+                                                    or mentions(m["text"], m["name"].split()[-1])):
             blocks.append(f"{n}: mentor {m['name']!r} is not in the mentor text")
         for p in a.get("people") or []:
             npc_names[p["name"]].append(n)

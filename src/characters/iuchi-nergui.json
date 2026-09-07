@@ -99,6 +99,30 @@
      "death": "Nergüi read the bones already and knows the end is here, and accepts it."
     },
     "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Nergüi read the bones for a Unicorn caravan master at the Tortoise docks and told him not to sail. The ship that left in his place went down off the peninsula with all hands."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Nergüi has been blind since a fever in his twelfth year and reads the bones by touch. Rokugani who watch him work assume the blindness is the trick."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Nergüi warms mare's milk over the brazier at night, pours a cup for the spirit that travels with him, and sits until it is cold."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Nergüi fears the day the bones answer a question Nagiko has not asked yet, and he has to decide whether to tell her."
+    },
+    "picks": {}
    }
   }
  },
