@@ -270,6 +270,12 @@ D33 and D36 are invented names and are flagged as such.
 
 ## 5. Image canon
 
+*Applied 2026-09-07: D39; D40 with the aphorism removed. And a finding the portraits
+surfaced that was not in the report: every accoutrement was a 19–58-word sentence stored as
+the gear line's title. Restructured (object as title, particulars as body — Creator field,
+export shape, sheet fallback) and all nine rewritten to the owner's register; see
+PATTERNS.md.*
+
 What each portrait shows, against the prose.
 
 | PC | the portrait | prose check |
@@ -300,6 +306,12 @@ being a line item nobody can see; the doorway image is kept.
 ---
 
 ## 6. Ninjō and giri
+
+*Applied 2026-09-07: D41 as proposed; D42 with the owner's framing (Tsanuri has forbidden
+duels among the College's staff; the Kakita is Kensaku, and D16 went in with it); D43 on the
+owner's direction (Hayami's off-the-books offer, wanted and not yet refused); D44 as the
+owner's own — Kensaku wants to forge the blade Tsanuri carries, and Tsanuri will die holding
+his family's blade first.*
 
 **D41. Akodo Umi** (see D10).
 > **Giri:** Akodo Umi runs the War College's morning drills for its commander, Akodo Tsanuri,

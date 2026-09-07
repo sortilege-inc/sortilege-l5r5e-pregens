@@ -67,7 +67,7 @@
    "challenge": "When Kensaku certifies a blade at the Castle of the Swift Sword, he is always aware that he is judging not just the steel but the smith's honor, and he cannot bring himself to do only the first.",
    "peace": "At festival grounds where the noise of a crowd breaks into separate voices and paths, Kensaku can move through without needing to know who forged anything, and he does.",
    "fear": "When Kensaku must tell a master smith that their work has failed inspection, he finds himself praising the steel instead, and leaves the Castle uncertain whether he has done his duty or protected a reputation at the cost of a Lion warrior's life.",
-   "accoutrement": "He wears a leather wristband tooled with the names of every blade he has ever certified, and refuses to add the Scorpion work until he is certain.",
+   "accoutrement": "Hawking glove. Matsu Ryōzō's; never given back.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -123,7 +123,8 @@
    "heritage_sub": "1-3 — Gain +1 ^\"Martial Arts [Choose One]\"",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Kensaku expects to die in a forge, with a master smith's hand on his shoulder, the way his mentor Ide Tokimochi would have wanted—except the hand will belong to a Lion, not a Crane, and he will never be certain the forgiveness is real."
+   "death": "Kensaku expects to die in a forge, with a master smith's hand on his shoulder, the way his mentor Ide Tokimochi would have wanted—except the hand will belong to a Lion, not a Crane, and he will never be certain the forgiveness is real.",
+   "accoutrement_name": "Hawking glove"
   },
   "starting_item": "Concealed Armor",
   "campaign": "Blood of the Lioness",
@@ -270,7 +271,8 @@
    "step14": {
     "answers": {
      "first_sight": "Kensaku's eyes move to a blade before they move to the person holding it, even when the person is speaking to him.",
-     "accoutrement": "He wears a leather wristband tooled with the names of every blade he has ever certified, and refuses to add the Scorpion work until he is certain."
+     "accoutrement": "Hawking glove. Matsu Ryōzō's; never given back.",
+     "accoutrement_name": "Hawking glove"
     },
     "picks": {}
    },
@@ -448,9 +450,10 @@
      "text": "From the Kakita Swordsmith starting outfit"
     },
     {
-     "name": "He wears a leather wristband tooled with the names of every blade he has ever certified, and refuses to add the Scorpion work until he is certain.",
+     "name": "Hawking glove",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Hawking glove. Matsu Ryōzō's; never given back.",
+     "accoutrement": true
     }
    ],
    "advancements": []

@@ -72,7 +72,7 @@
    "challenge": "When the War College's official requisitions fail and soldiers arrive bleeding, Kaede must choose between the infirmary's empty shelves and the Scorpion agents who will extract a price she cannot name to her superiors.",
    "peace": "She maps the fortress quarter by quarter on her own time, marking which apothecaries still stock which herbs, which back-alley brewers owe favors to the Scorpion, and which routes the requisition carts take when the official ones fail, until the city inside the castle's walls stops being a problem she cannot solve and becomes instead a ledger she can read.",
    "fear": "When the infirmary doors open to admit the first casualty of the day, Kaede's breath catches and her mind empties until she has already moved three times and cannot remember doing it.",
-   "accoutrement": "She wears her mentor's copper cuff on her left wrist—a Crab smith's work, too heavy for the bone beneath, and she has not learned to favor her right hand when she reaches for a scalpel, so the weight pulls her cut a hair too shallow when speed matters.",
+   "accoutrement": "Tekagi. Hung on the infirmary wall.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -122,7 +122,8 @@
    "heritage_sub": "5-6 — Tactics",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Kaede will die on requisition duty in the lower city, caught between a Scorpion agent and a War College inspector who arrives unannounced at the merchant's stall, unable to move in either direction without burning the other."
+   "death": "Kaede will die on requisition duty in the lower city, caught between a Scorpion agent and a War College inspector who arrives unannounced at the merchant's stall, unable to move in either direction without burning the other.",
+   "accoutrement_name": "Tekagi"
   },
   "starting_item": "Tekagi",
   "campaign": "Blood of the Lioness",
@@ -268,7 +269,8 @@
    "step14": {
     "answers": {
      "first_sight": "Kaede's eyes move across a room before her body does—tracking the doors, the corners, the places where blood would pool if the walls came down, the way a soldier scans a battlefield from the ridge line.",
-     "accoutrement": "She wears her mentor's copper cuff on her left wrist—a Crab smith's work, too heavy for the bone beneath, and she has not learned to favor her right hand when she reaches for a scalpel, so the weight pulls her cut a hair too shallow when speed matters."
+     "accoutrement": "Tekagi. Hung on the infirmary wall.",
+     "accoutrement_name": "Tekagi"
     },
     "picks": {}
    },
@@ -443,9 +445,10 @@
      "name": "Traveling pack"
     },
     {
-     "name": "She wears her mentor's copper cuff on her left wrist—a Crab smith's work, too heavy for the bone beneath, and she has not learned to favor her right hand when she reaches for a scalpel, so the weight pulls her cut a hair too shallow when speed matters.",
+     "name": "Tekagi",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Tekagi. Hung on the infirmary wall.",
+     "accoutrement": true
     }
    ],
    "advancements": []

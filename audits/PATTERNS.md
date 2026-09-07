@@ -85,7 +85,13 @@ has the object-name field and the export writes this shape; records built before
 the sentence as the title until backfilled. A broken keepsake can be re-read as repaired
 (chipped → kintsugi) — offer that reading. The object is bound by the portrait: where the
 picture shows the ledger, the wristband, the cuff, the token, offer wordings and
-portrait-visible alternatives, not new objects.
+portrait-visible alternatives first — the owner took those for five of nine — and a new
+object off the portrait only when asked ("new object, does not need to be present in
+portrait": Kensaku). Two more shapes the owner chose: an outfit item that is also in the
+picture can *be* the accoutrement (Kaede's tekagi, from the Kitsu Medic outfit and hung on
+the wall behind her); and an object from another answer can be promoted to it (Kensaku's
+hawking glove, from his Q9). When an object is unfamiliar, the owner will ask what it is —
+answer from the corpus entry, not from memory.
 
 ## Counts to re-run on the next pack
 
