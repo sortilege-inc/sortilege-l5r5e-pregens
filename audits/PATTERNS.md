@@ -211,3 +211,18 @@ contradicted by the image" — not a rewrite around the picture.
 **Two false commits.** An apply script asserted on a phrase that lived in two places and aborted;
 I committed twice on the pipeline's PASS with messages claiming edits that had not landed. Gate the
 commit on the specific check (a grep count), never on PASS alone.
+
+## Slow Tide Harbor — from Pass A (2026-09-07)
+
+**Legacy records hide from the lint.** Six of seven had no wizard block; the lint read nothing and
+reported only gear. It now rebuilds answers from the step store. Check `WIZARD=NO` before trusting a
+clean lint on an old pack.
+
+**`bio` is public.** The first pack's bios are the GM concepts verbatim, rendered on the sheet. Grep
+`data/` for a phrase from the concept before closing any pack.
+
+**Bare parametric names** ("Debt to", "Fear of", "Passion for") are unfilled subjects; the lint now
+catches them. Two turned up in packs already closed.
+
+**The design method leaks into the fiction.** Tarot-built characters spoke of "the cards" when their
+gear was bones and mare's milk.

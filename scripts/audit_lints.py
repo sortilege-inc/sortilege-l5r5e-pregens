@@ -21,6 +21,7 @@ PHYSICAL = {
     "large stature": r"\b(tall|large|broad|towering|big|heavy)\b", "small stature": r"\b(small|short|slight|little)\b",
     "fractured spine": r"\b(stoop|spine|back|bent|hunch)\b", "muteness": r"\b(mute|sign|silent|speak|voice|slate)\b",
     "nerve damage": r"\b(hand|arm|stiff|tremor|shak)", "one eye": r"\b(eye|socket|patch)\b",
+    "blindness": r"\b(blind|eyes|sight|see)\b", "horrible scar": r"\b(scar)", "missing eye": r"\b(eye|socket|patch)\b",
 }
 
 
@@ -31,6 +32,35 @@ def fold(s):
 
 def mentions(hay, needle):
     return bool(needle) and fold(needle) in fold(hay)
+
+
+INV = {"step4": {"stand_out": "standout_quality"}, "step5": {"social_giri": "giri", "lord_name": "lord_name"},
+       "step6": {"social_ninjo": "ninjo"}, "step9": {"success": "accomplishment"}, "step10": {"difficulty": "challenge"},
+       "step11": {"calms": "peace"}, "step12": {"worries": "fear"}, "step13": {"most_learn": "mentor_line"},
+       "step14": {"first_sight": "first_impression", "accoutrement": "accoutrement"}, "step15": {"stress": "stress_reaction"},
+       "step16": {"relations": "relationships"}, "step20": {"death": "death"}}
+
+
+def answers(d):
+    """wizard.answers, or the same shape rebuilt from the Foundry step store on a
+    record made before the wizard kept its own state (Slow Tide Harbor, 6 of 7)."""
+    w = d.get("wizard") or {}
+    if w.get("answers"):
+        return w["answers"], False
+    a = {}
+    steps = (d.get("twenty_questions") or {}).get("steps") or {}
+    for st, keys in INV.items():
+        for k, ak in keys.items():
+            v = (steps.get(st) or {}).get("answers", {}).get(k)
+            if v is not None:
+                a[ak] = v
+    if a.get("mentor_line"):
+        m = re.match(r"^([^—]+?)\s*(?:—\s*(.*))?$", a["mentor_line"], re.S)
+        a["mentor"] = {"name": m.group(1).strip(), "text": (m.group(2) or "").strip()}
+    return a, True
+
+
+BARE = re.compile(r"\b(to|by|on|of|with|for|in|from)$", re.I)
 
 
 def main(camp):
@@ -45,11 +75,16 @@ def main(camp):
     given = collections.defaultdict(list)
     npc_names = collections.defaultdict(list)
     for d in docs:
-        n = d["name"]; w = d.get("wizard") or {}; a = w.get("answers") or {}; t = d["tiers"][0]
+        n = d["name"]; t = d["tiers"][0]
+        a, legacy = answers(d)
+        if legacy:
+            warns.append(f"{n}: legacy record (no wizard block) — answers read from the step store; no people[] to check")
         given[n.split()[-1]].append(n)
         if a.get("lord_name") and a.get("giri") and not mentions(a["giri"], a["lord_name"]):
             blocks.append(f"{n}: lord {a['lord_name']!r} is not in the giri")
         m = a.get("mentor") or {}
+        if m.get("name") and not (m.get("text") or "").strip():
+            blocks.append(f"{n}: mentor {m['name']!r} has no text")
         if m.get("name") and m.get("text") and not mentions(m["text"], m["name"]):
             blocks.append(f"{n}: mentor {m['name']!r} is not in the mentor text")
         for p in a.get("people") or []:
@@ -68,7 +103,7 @@ def main(camp):
                 warns.append(f"{n}: accoutrement in the old shape ({len(g['name'].split())} words as the title)")
         for pcl in t.get("peculiarities") or []:
             nm = pcl["name"]
-            if "TBD" in nm or re.search(r"\[[^\]]+\]", nm):
+            if "TBD" in nm or re.search(r"\[[^\]]+\]", nm) or BARE.search(nm):
                 blocks.append(f"{n}: unfilled subject {nm!r}")
             key = re.sub(r"\s*\(.*$", "", nm).lower()
             q14 = (a.get("first_impression") or "") + " " + (a.get("accoutrement") or "")
