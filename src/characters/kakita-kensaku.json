@@ -60,7 +60,7 @@
    "skill": null
   },
   "answers": {
-   "giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+   "giri": "Kensaku is Kakita Namika's man, lent to the Castle of the Swift Sword; he reports to Matsu Ryōzō, Master of the Forges, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
    "ninjo": "Kensaku wants to forge the blade Akodo Tsanuri carries into the field. Tsanuri carries his family's blade, and will die holding it before he sets it down for a Kakita's.",
    "standout_quality": "Kensaku has learned to read a workshop's temperament by how the smiths treat their tools and each other, a skill that makes him useful during his visits to repair blades but leaves him uncertain whether he belongs to any forge at all.",
    "accomplishment": "He trained the Master of the Forges' hunting hawks to accept handling only from him, so that when the old man's hands began to fail, Kensaku could work the birds without being asked or refused.",
@@ -154,7 +154,7 @@
     "Kensaku has learned to read a workshop's temperament by how the smiths treat their tools and each other, a skill that makes him useful during his visits to repair blades but leaves him uncertain whether he belongs to any forge at all."
    ],
    "giri": [
-    "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it."
+    "Kensaku is Kakita Namika's man, lent to the Castle of the Swift Sword; he reports to Matsu Ryōzō, Master of the Forges, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it."
    ],
    "ninjo": [
     "Kensaku wants to forge the blade Akodo Tsanuri carries into the field. Tsanuri carries his family's blade, and will die holding it before he sets it down for a Kakita's."
@@ -212,7 +212,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+     "social_giri": "Kensaku is Kakita Namika's man, lent to the Castle of the Swift Sword; he reports to Matsu Ryōzō, Master of the Forges, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
      "lord_name": "Kakita Namika"
     },
     "picks": {}
@@ -372,7 +372,7 @@
     "glory": 39,
     "status": 35,
     "ninjo": "Kensaku wants to forge the blade Akodo Tsanuri carries into the field. Tsanuri carries his family's blade, and will die holding it before he sets it down for a Kakita's.",
-    "giri": "Kensaku reports to Matsu Ryōzō, Master of the Forges at the Castle of the Swift Sword, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
+    "giri": "Kensaku is Kakita Namika's man, lent to the Castle of the Swift Sword; he reports to Matsu Ryōzō, Master of the Forges, and is counted among the War College's staff; he must certify which blades in the Lion armory are sound enough for the field, knowing that a flawed edge he misses could kill the warrior who carries it.",
     "bushido_tenets": {
      "paramount": "Courtesy",
      "less_significant": "Courage"

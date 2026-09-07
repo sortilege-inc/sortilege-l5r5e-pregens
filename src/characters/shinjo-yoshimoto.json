@@ -59,7 +59,7 @@
    "skill": null
   },
   "answers": {
-   "giri": "Yoshimoto reports to the Emerald Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly.",
+   "giri": "Yoshimoto reports to Doji Hiroshige, the Emerald Magistrate who stands between him and the Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly.",
    "ninjo": "Yoshimoto wants to return to the Unicorn grasslands before his posting to the Emerald Champion hardens him into something his clan no longer recognizes.",
    "standout_quality": "Yoshimoto reads a room's currents before anyone speaks—the unspoken tension between instructors, the shame a student hides behind bravado—and knows which silences to let sit and which to break.",
    "accomplishment": "Yoshimoto found the poacher's camp in the high grasslands where three search parties had passed through blind, and brought back not the man's head but his confession—which the daimyō needed more than a corpse to settle the matter quietly with the family whose lands the poacher had crossed.",
@@ -143,7 +143,7 @@
     "Yoshimoto reads a room's currents before anyone speaks—the unspoken tension between instructors, the shame a student hides behind bravado—and knows which silences to let sit and which to break."
    ],
    "giri": [
-    "Yoshimoto reports to the Emerald Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly."
+    "Yoshimoto reports to Doji Hiroshige, the Emerald Magistrate who stands between him and the Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly."
    ],
    "ninjo": [
     "Yoshimoto wants to return to the Unicorn grasslands before his posting to the Emerald Champion hardens him into something his clan no longer recognizes."
@@ -200,7 +200,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Yoshimoto reports to the Emerald Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly.",
+     "social_giri": "Yoshimoto reports to Doji Hiroshige, the Emerald Magistrate who stands between him and the Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly.",
      "lord_name": "Doji Hiroshige"
     },
     "picks": {}
@@ -356,7 +356,7 @@
     "glory": 52,
     "status": 30,
     "ninjo": "Yoshimoto wants to return to the Unicorn grasslands before his posting to the Emerald Champion hardens him into something his clan no longer recognizes.",
-    "giri": "Yoshimoto reports to the Emerald Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly.",
+    "giri": "Yoshimoto reports to Doji Hiroshige, the Emerald Magistrate who stands between him and the Champion in Otosan Uchi, but the Unicorn daimyō who nominated him expects him to favor Unicorn interests when the Champion's will and clan loyalty diverge—a conflict he has not yet faced directly.",
     "bushido_tenets": {
      "paramount": "Courage",
      "less_significant": "Righteousness"
