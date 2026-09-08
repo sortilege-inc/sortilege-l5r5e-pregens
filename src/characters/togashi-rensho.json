@@ -80,7 +80,7 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Renshō is to guide seekers along the path for ten years of wandering without imposing his own understanding on them.",
+     "social_giri": "Renshō is to guide seekers along the path for ten years of wandering, as his abbot Mirumoto Kenshin instructed, without imposing his own understanding on them.",
      "lord_name": "Mirumoto Kenshin"
     },
     "picks": {}
@@ -264,7 +264,7 @@
     "glory": 48,
     "status": 30,
     "ninjo": "Renshō wants one moment of certainty: to know he has grasped true understanding and not another comforting illusion.",
-    "giri": "Renshō is to guide seekers along the path for ten years of wandering without imposing his own understanding on them.",
+    "giri": "Renshō is to guide seekers along the path for ten years of wandering, as his abbot Mirumoto Kenshin instructed, without imposing his own understanding on them.",
     "bushido_tenets": {
      "paramount": "Sincerity",
      "less_significant": "Duty and Loyalty"
