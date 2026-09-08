@@ -15,7 +15,7 @@
  },
  "mode": "core",
  "portrait": "src/portraits/doji-sayaka.webp",
- "concept": "She speaks in elaborate metaphors even when a direct answer would serve, turning simple questions into riddles that give her time to measure who is listening and what they want to hear, though it leaves people uncertain whether she is being evasive or simply cannot help herself anymore.",
+ "concept": "She speaks in elaborate metaphors even when a direct answer would serve, turning simple questions into riddles that give her time to measure who is listening.",
  "summary": null,
  "notes": "",
  "wizard": {
@@ -61,11 +61,11 @@
    "giri": "Sayaka serves Daidoji Ikki, who has set her to dismantle the Perfect Land Sect's influence before it unsettles the Crane, by words where others would use steel.",
    "ninjo": "Sayaka wants to be known truly by one other person, once, before the performance is all that is left of her.",
    "standout_quality": "Sayaka can seem ordinary. She has walked through crowds as a laborer, a servant and a pilgrim, and been looked at by no one.",
-   "accomplishment": "She identified a Perfect Land Sect recruiter operating from within the Doji household by watching how his eyes moved when servants spoke of the harvest, and reported him to her daimyō before he could sway anyone to the sect's cause.",
-   "challenge": "During her briefings with the daimyō, Sayaka sometimes cannot recall whether she witnessed the sect recruiter's movements herself or only heard them described, and must ask carefully neutral questions to reconstruct what she actually saw.",
-   "peace": "In the dusty archive rooms of the Doji household, she reconstructs the sect recruiter's movements by cross-referencing old ledgers and servant records, each verified detail settling the fog between what she witnessed and what she was told, until the past becomes solid ground beneath her.",
-   "fear": "Three days into arranging the sect recruiter's movements under house arrest, Sayaka realizes she cannot remember whether she ordered the guards herself or simply approved an order someone else had drafted, and the uncertainty keeps her in the Doji compound retracing every conversation instead of pursuing the network spreading through the merchant quarters.",
-   "accoutrement": "She wears a jade comb carved to look like layered water, which she takes from her hair and sets on the table during negotiations, though she never seems to notice when it goes missing and always has another one the next day.",
+   "accomplishment": "She identified a Perfect Land Sect recruiter inside the Doji household and reported him to Ikki before he could sway anyone.",
+   "challenge": "In her briefings with Ikki, Sayaka sometimes cannot recall whether she saw the recruiter's movements herself or only heard them described, and asks neutral questions to find out which.",
+   "peace": "In the archive rooms of the Doji household she reconstructs the recruiter's movements from old ledgers and servant records, one verified detail at a time.",
+   "fear": "Sayaka cannot remember whether she ordered the recruiter's guards herself or approved an order someone else drafted, and has spent three days in the Doji compound retracing conversations instead of following the network into the merchant quarters.",
+   "accoutrement": "Jade comb. Carved like layered water.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -85,13 +85,13 @@
     "path": "A",
     "granted": "Thoughtful Arbiter",
     "skill": "",
-    "text": "Yogo Morishige taught her to trace a lie through what people choose not to say, but Sayaka has spent so long listening for absences that she sometimes cannot tell what she actually heard from what the silence suggested.",
+    "text": "Yogo Morishige taught her to trace a lie through what people choose not to say. She has listened for absences so long that she sometimes cannot tell what she heard from what the silence suggested.",
     "gender": "male",
     "association": "Scorpion"
    },
-   "first_impression": "She speaks in elaborate metaphors even when a direct answer would serve, turning simple questions into riddles that give her time to measure who is listening and what they want to hear, though it leaves people uncertain whether she is being evasive or simply cannot help herself anymore.",
-   "stress_reaction": "When pushed past composure, Sayaka's hands go still—she stops adjusting her sleeves, stops touching the jade comb, stops the small precise movements that fill her silences—and speaks in direct sentences without metaphor until the moment passes.",
-   "relationships": "Doji Kenzaburo (Crane) — Kenzaburo once asked her directly whether the metaphors were a choice or a habit, and she answered him in plain sentences for three minutes before reaching for the jade comb and never speaking that way to him again.\nOtomo Koemi (Imperial) — Otomo Koemi caught her in the merchant quarter dressed as a laborer and said nothing about it to anyone, which means Sayaka must now decide whether to trust her or treat her as a threat that will eventually move.",
+   "first_impression": "She speaks in elaborate metaphors even when a direct answer would serve, turning simple questions into riddles that give her time to measure who is listening.",
+   "stress_reaction": "When pushed past composure, Sayaka speaks in direct sentences without metaphor until the moment passes.",
+   "relationships": "Doji Kenzaburo (Crane) — Kenzaburo once asked her directly whether the metaphors were a choice or a habit, and she answered him in plain sentences for three minutes before reaching for the jade comb and never speaking that way to him again.\nOtomo Koemi (Imperial) — Otomo Koemi caught her in the merchant quarter dressed as a laborer and has said nothing about it to anyone.",
    "people": [
     {
      "name": "Doji Kenzaburo",
@@ -103,17 +103,18 @@
      "name": "Otomo Koemi",
      "gender": "female",
      "association": "Imperial",
-     "text": "Otomo Koemi caught her in the merchant quarter dressed as a laborer and said nothing about it to anyone, which means Sayaka must now decide whether to trust her or treat her as a threat that will eventually move."
+     "text": "Otomo Koemi caught her in the merchant quarter dressed as a laborer and has said nothing about it to anyone."
     }
    ],
    "parent_opinion": {
-    "description": "Her mother worries that Sayaka has perfected the art of answering without ever actually responding, and cannot tell anymore whether this is strategy or whether her daughter has simply forgotten how to say what she means.",
+    "description": "Her mother says Sayaka has perfected answering without responding, and does not know any more whether it is strategy.",
     "skill": "unarmed"
    },
    "heritage": "A Little Too Close to Heaven",
    "heritage_table": "courts-of-stone-heritages",
    "heritage_sub": "1-2 — Gain +1 ^\"Government\"",
-   "death": "Sayaka dies in the archive room she loves, surrounded by ledgers and records, finally certain of what she witnessed and what she merely heard—and realizes in that moment of perfect clarity that she can no longer remember her own face without consulting a mirror."
+   "death": "Sayaka dies in the archive room among the ledgers, finally certain of what she witnessed and what she only heard.",
+   "accoutrement_name": "Jade comb"
   },
   "starting_item": "Omamori (Boon of Hotei)",
   "campaign": "",
@@ -215,56 +216,56 @@
    },
    "step9": {
     "answers": {
-     "success": "She identified a Perfect Land Sect recruiter operating from within the Doji household by watching how his eyes moved when servants spoke of the harvest, and reported him to her daimyō before he could sway anyone to the sect's cause."
+     "success": "She identified a Perfect Land Sect recruiter inside the Doji household and reported him to Ikki before he could sway anyone."
     },
     "picks": {}
    },
    "step10": {
     "answers": {
-     "difficulty": "During her briefings with the daimyō, Sayaka sometimes cannot recall whether she witnessed the sect recruiter's movements herself or only heard them described, and must ask carefully neutral questions to reconstruct what she actually saw."
+     "difficulty": "In her briefings with Ikki, Sayaka sometimes cannot recall whether she saw the recruiter's movements herself or only heard them described, and asks neutral questions to find out which."
     },
     "picks": {}
    },
    "step11": {
     "answers": {
-     "calms": "In the dusty archive rooms of the Doji household, she reconstructs the sect recruiter's movements by cross-referencing old ledgers and servant records, each verified detail settling the fog between what she witnessed and what she was told, until the past becomes solid ground beneath her."
+     "calms": "In the archive rooms of the Doji household she reconstructs the recruiter's movements from old ledgers and servant records, one verified detail at a time."
     },
     "picks": {}
    },
    "step12": {
     "answers": {
-     "worries": "Three days into arranging the sect recruiter's movements under house arrest, Sayaka realizes she cannot remember whether she ordered the guards herself or simply approved an order someone else had drafted, and the uncertainty keeps her in the Doji compound retracing every conversation instead of pursuing the network spreading through the merchant quarters."
+     "worries": "Sayaka cannot remember whether she ordered the recruiter's guards herself or approved an order someone else drafted, and has spent three days in the Doji compound retracing conversations instead of following the network into the merchant quarters."
     },
     "picks": {}
    },
    "step13": {
     "answers": {
-     "most_learn": "Yogo Morishige — Yogo Morishige taught her to trace a lie through what people choose not to say, but Sayaka has spent so long listening for absences that she sometimes cannot tell what she actually heard from what the silence suggested."
+     "most_learn": "Yogo Morishige — Yogo Morishige taught her to trace a lie through what people choose not to say. She has listened for absences so long that she sometimes cannot tell what she heard from what the silence suggested."
     },
     "picks": {}
    },
    "step14": {
     "answers": {
-     "first_sight": "She speaks in elaborate metaphors even when a direct answer would serve, turning simple questions into riddles that give her time to measure who is listening and what they want to hear, though it leaves people uncertain whether she is being evasive or simply cannot help herself anymore.",
-     "accoutrement": "She wears a jade comb carved to look like layered water, which she takes from her hair and sets on the table during negotiations, though she never seems to notice when it goes missing and always has another one the next day."
+     "first_sight": "She speaks in elaborate metaphors even when a direct answer would serve, turning simple questions into riddles that give her time to measure who is listening.",
+     "accoutrement": "Jade comb. Carved like layered water."
     },
     "picks": {}
    },
    "step15": {
     "answers": {
-     "stress": "When pushed past composure, Sayaka's hands go still—she stops adjusting her sleeves, stops touching the jade comb, stops the small precise movements that fill her silences—and speaks in direct sentences without metaphor until the moment passes."
+     "stress": "When pushed past composure, Sayaka speaks in direct sentences without metaphor until the moment passes."
     },
     "picks": {}
    },
    "step16": {
     "answers": {
-     "relations": "Doji Kenzaburo (Crane) — Kenzaburo once asked her directly whether the metaphors were a choice or a habit, and she answered him in plain sentences for three minutes before reaching for the jade comb and never speaking that way to him again.\nOtomo Koemi (Imperial) — Otomo Koemi caught her in the merchant quarter dressed as a laborer and said nothing about it to anyone, which means Sayaka must now decide whether to trust her or treat her as a threat that will eventually move."
+     "relations": "Doji Kenzaburo (Crane) — Kenzaburo once asked her directly whether the metaphors were a choice or a habit, and she answered him in plain sentences for three minutes before reaching for the jade comb and never speaking that way to him again.\nOtomo Koemi (Imperial) — Otomo Koemi caught her in the merchant quarter dressed as a laborer and has said nothing about it to anyone."
     },
     "picks": {}
    },
    "step17": {
     "answers": {
-     "parents_pov": "Her mother worries that Sayaka has perfected the art of answering without ever actually responding, and cannot tell anymore whether this is strategy or whether her daughter has simply forgotten how to say what she means."
+     "parents_pov": "Her mother says Sayaka has perfected answering without responding, and does not know any more whether it is strategy."
     },
     "picks": {}
    },
@@ -281,7 +282,7 @@
    },
    "step20": {
     "answers": {
-     "death": "Sayaka dies in the archive room she loves, surrounded by ledgers and records, finally certain of what she witnessed and what she merely heard—and realizes in that moment of perfect clarity that she can no longer remember her own face without consulting a mirror."
+     "death": "Sayaka dies in the archive room among the ledgers, finally certain of what she witnessed and what she only heard."
     },
     "picks": {}
    }
@@ -419,9 +420,10 @@
      "text": "From the Daidoji Spymaster starting outfit"
     },
     {
-     "name": "She wears a jade comb carved to look like layered water, which she takes from her hair and sets on the table during negotiations, though she never seems to notice when it goes missing and always has another one the next day.",
+     "name": "Jade comb",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Jade comb. Carved like layered water.",
+     "accoutrement": true
     }
    ],
    "advancements": []

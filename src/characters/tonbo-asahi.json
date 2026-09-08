@@ -167,7 +167,8 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "She speaks so quietly that people must lean in to hear her, and she never raises her voice, even in crisis."
+     "first_sight": "She speaks so quietly that people must lean in to hear her, and she never raises her voice, even in crisis.",
+     "accoutrement": "Dragonfly glass ornaments."
     },
     "picks": {}
    },
@@ -477,6 +478,12 @@
     {
      "name": "Journal of observations",
      "quantity": 1
+    },
+    {
+     "name": "Dragonfly glass ornaments",
+     "custom": true,
+     "text": "Dragonfly glass ornaments.",
+     "accoutrement": true
     }
    ],
    "advancements": []

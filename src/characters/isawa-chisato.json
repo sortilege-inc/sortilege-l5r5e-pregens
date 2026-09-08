@@ -59,12 +59,12 @@
   "answers": {
    "giri": "Chisato must report any deviation from orthodox doctrine to the Elemental Master of Fire, even if silence would spare her parents from scrutiny.",
    "ninjo": "Chisato wants her doubt about the Tao answered by someone else before she has to speak it, so that her parents never learn what they raised.",
-   "standout_quality": "When Chisato purified the tainted shrine by calling down divine flame, she glimpsed her own capacity for error in the ashes—a doubt she has not yet allowed herself to speak aloud.",
+   "standout_quality": "When Chisato purified the tainted shrine by calling down divine flame, she saw in the ashes how easily it could have gone wrong. She has not said so to anyone.",
    "accomplishment": "She surrounded herself in flame at the tainted shrine and emerged relatively unscathed; the scar across her shoulder is from the falling log, not the fire.",
    "challenge": "Isawa Chisato speaks so forcefully about what she knows to be true that she misses when someone is trying to tell her she has frightened them, or hurt them, or that they need her to listen instead of correct.",
-   "peace": "She tends the bonsai in the temple garden every morning, pruning back what has grown wild during the night, and some days her hands move faster than her mind can follow.",
-   "fear": "Chisato insists on sleeping in the Master's quarters when traveling to distant temples, refusing the cell prepared for visiting shugenja, and grows visibly strained when told there is no alternative accommodation available.",
-   "accoutrement": "She practices fire kami invocations in the dark, speaking each word twice to catch the moment her own certainty falters and confirm it was just the flame wavering, not her voice.",
+   "peace": "She tends the bonsai in the temple garden every morning, pruning back what grew in the night.",
+   "fear": "Chisato insists on the Master's quarters when traveling to distant temples, refusing the cell prepared for visiting shugenja, and cannot settle when there is no alternative.",
+   "accoutrement": "Gold hair ornaments.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -84,13 +84,13 @@
     "path": "A",
     "granted": "Sake",
     "skill": "",
-    "text": "Moshi Hanae taught her that fire kami respond to someone who drinks with them, not at them, a lesson Chisato has never managed to apply to her own students.",
+    "text": "Moshi Hanae taught her that fire kami answer someone who drinks with them, not at them. Chisato has never managed it with her own students.",
     "gender": "female",
     "association": "Centipede"
    },
    "first_impression": "When Chisato speaks about doctrine, her voice does not rise or fall—it holds one steady pitch until she stops, the way a flame burns straight up.",
-   "stress_reaction": "When her students hesitate or contradict her, Chisato's hands move to her sleeves and she begins rolling the fabric between her fingers, smoothing and unsmoothing it until someone speaks or she forces herself to stop.",
-   "relationships": "Miya Yoshikado (Imperial) — Miya Yoshikado invited her to court to advise on a matter of spiritual precedent, and Chisato spent the entire audience correcting his framings of the question instead of answering it.\nAsako Satoru (Phoenix) — Asako Satoru listens to her theological arguments without interrupting, and Chisato has begun checking whether he actually agrees with her or is simply waiting for her to finish.",
+   "stress_reaction": "When her students hesitate or contradict her, Chisato stops speaking and waits until one of them fills the silence.",
+   "relationships": "Miya Yoshikado (Imperial) — Miya Yoshikado invited her to court to advise on a matter of spiritual precedent, and Chisato spent the entire audience correcting his framings of the question instead of answering it.\nAsako Satoru (Phoenix) — Asako Satoru listens to her theological arguments without interrupting. Chisato has begun to wonder whether he agrees.",
    "people": [
     {
      "name": "Miya Yoshikado",
@@ -102,11 +102,11 @@
      "name": "Asako Satoru",
      "gender": "male",
      "association": "Phoenix",
-     "text": "Asako Satoru listens to her theological arguments without interrupting, and Chisato has begun checking whether he actually agrees with her or is simply waiting for her to finish."
+     "text": "Asako Satoru listens to her theological arguments without interrupting. Chisato has begun to wonder whether he agrees."
     }
    ],
    "parent_opinion": {
-    "description": "Her parents take pride in her devotion to doctrine but cannot understand why she needs to sleep in the Master's quarters when she visits, insisting on rooms that suit her station, and they worry this fastidiousness will isolate her from the humbler work of the priesthood.",
+    "description": "Her parents take pride in her devotion and cannot understand why she needs the Master's quarters when she visits a temple; they worry it will keep her from the humbler work of the priesthood.",
     "skill": "aesthetics"
    },
    "heritage": "Spirit of the Phoenix",
@@ -114,7 +114,8 @@
    "heritage_sub": "9-10 — ^\"Famously Wealthy\"",
    "legacy": null,
    "legacy_inverted": false,
-   "death": "Chisato will die correcting someone's understanding of doctrine in the moment when she should have noticed the blade."
+   "death": "Chisato will die correcting someone's understanding of doctrine in the moment when she should have noticed the blade.",
+   "accoutrement_name": "Gold hair ornaments"
   },
   "starting_item": "Kiseru",
   "campaign": "",
@@ -195,7 +196,7 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "When Chisato purified the tainted shrine by calling down divine flame, she glimpsed her own capacity for error in the ashes—a doubt she has not yet allowed herself to speak aloud.",
+     "stand_out": "When Chisato purified the tainted shrine by calling down divine flame, she saw in the ashes how easily it could have gone wrong. She has not said so to anyone.",
      "ring": "air"
     },
     "picks": {}
@@ -241,44 +242,44 @@
    },
    "step11": {
     "answers": {
-     "calms": "She tends the bonsai in the temple garden every morning, pruning back what has grown wild during the night, and some days her hands move faster than her mind can follow."
+     "calms": "She tends the bonsai in the temple garden every morning, pruning back what grew in the night."
     },
     "picks": {}
    },
    "step12": {
     "answers": {
-     "worries": "Chisato insists on sleeping in the Master's quarters when traveling to distant temples, refusing the cell prepared for visiting shugenja, and grows visibly strained when told there is no alternative accommodation available."
+     "worries": "Chisato insists on the Master's quarters when traveling to distant temples, refusing the cell prepared for visiting shugenja, and cannot settle when there is no alternative."
     },
     "picks": {}
    },
    "step13": {
     "answers": {
-     "most_learn": "Moshi Hanae — Moshi Hanae taught her that fire kami respond to someone who drinks with them, not at them, a lesson Chisato has never managed to apply to her own students."
+     "most_learn": "Moshi Hanae — Moshi Hanae taught her that fire kami answer someone who drinks with them, not at them. Chisato has never managed it with her own students."
     },
     "picks": {}
    },
    "step14": {
     "answers": {
      "first_sight": "When Chisato speaks about doctrine, her voice does not rise or fall—it holds one steady pitch until she stops, the way a flame burns straight up.",
-     "accoutrement": "She practices fire kami invocations in the dark, speaking each word twice to catch the moment her own certainty falters and confirm it was just the flame wavering, not her voice."
+     "accoutrement": "Gold hair ornaments."
     },
     "picks": {}
    },
    "step15": {
     "answers": {
-     "stress": "When her students hesitate or contradict her, Chisato's hands move to her sleeves and she begins rolling the fabric between her fingers, smoothing and unsmoothing it until someone speaks or she forces herself to stop."
+     "stress": "When her students hesitate or contradict her, Chisato stops speaking and waits until one of them fills the silence."
     },
     "picks": {}
    },
    "step16": {
     "answers": {
-     "relations": "Miya Yoshikado (Imperial) — Miya Yoshikado invited her to court to advise on a matter of spiritual precedent, and Chisato spent the entire audience correcting his framings of the question instead of answering it.\nAsako Satoru (Phoenix) — Asako Satoru listens to her theological arguments without interrupting, and Chisato has begun checking whether he actually agrees with her or is simply waiting for her to finish."
+     "relations": "Miya Yoshikado (Imperial) — Miya Yoshikado invited her to court to advise on a matter of spiritual precedent, and Chisato spent the entire audience correcting his framings of the question instead of answering it.\nAsako Satoru (Phoenix) — Asako Satoru listens to her theological arguments without interrupting. Chisato has begun to wonder whether he agrees."
     },
     "picks": {}
    },
    "step17": {
     "answers": {
-     "parents_pov": "Her parents take pride in her devotion to doctrine but cannot understand why she needs to sleep in the Master's quarters when she visits, insisting on rooms that suit her station, and they worry this fastidiousness will isolate her from the humbler work of the priesthood."
+     "parents_pov": "Her parents take pride in her devotion and cannot understand why she needs the Master's quarters when she visits a temple; they worry it will keep her from the humbler work of the priesthood."
     },
     "picks": {}
    },
@@ -437,9 +438,10 @@
      "name": "Traveling pack"
     },
     {
-     "name": "She practices fire kami invocations in the dark, speaking each word twice to catch the moment her own certainty falters and confirm it was just the flame wavering, not her voice.",
+     "name": "Gold hair ornaments",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Gold hair ornaments.",
+     "accoutrement": true
     }
    ],
    "advancements": []

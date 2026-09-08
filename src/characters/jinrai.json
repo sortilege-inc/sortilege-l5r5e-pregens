@@ -60,11 +60,11 @@
   "answers": {
    "giri": "",
    "ninjo": "Jinrai wants to set the teaching down and hand it to someone who will not need him, and no one has come.",
-   "standout_quality": "He preaches forgiveness to farmers and merchants while his jaw tightens whenever a samurai enters the room, and he knows they can see it.",
+   "standout_quality": "He preaches forgiveness to farmers and merchants, and goes quiet whenever a samurai enters the room.",
    "accomplishment": "Jinrai converted a bandit who had burned two granaries, and now that man tends crops in a village near Beiden while Jinrai takes a longer road to avoid the merchant who owned them.",
    "challenge": "When he decides a farmer needs to learn spearwork or a village headman's judgment is wrong, Jinrai teaches or corrects them regardless of what he promised to do that day.",
-   "peace": "In the village temple's side room, Jinrai kneels before a low table arranging cut stems—a priest's discards, market flowers past their prime—rotating each one until the angles speak to each other, his shoulders dropping lower with each placement until his breathing settles into the rhythm of the work itself.",
-   "fear": "When Jinrai performs the evening sutras in an empty temple, he cannot shake the certainty that his dead grandmother—who bore a samurai's bastard son in shame—watches him teach forgiveness to the very class that destroyed her, waiting to see if he will finally break.",
+   "peace": "In the village temple's side room Jinrai arranges cut stems, a priest's discards and market flowers past their prime, turning each until the angles agree.",
+   "fear": "When Jinrai chants the evening sutras in an empty temple, he is certain his dead grandmother, who bore a samurai's bastard in shame, is watching him teach forgiveness to that class.",
    "accoutrement": "",
    "past": "He trained ashigaru recruits in the rice paddies outside Beiden, and three of them died in his first real command because he gave the order to hold a bridge too long.",
    "known_for": "In the villages below Beiden Jinrai is known as the monk who will teach a farmer's son to hold a spear, and will not say why.",
@@ -73,7 +73,7 @@
    "lord_gender": "any",
    "prized_possession": "Jinrai's sandals are worn through at the heel on the right foot, and he refuses to replace them though he passes through towns that sell better ones.",
    "group_history": "When the group stops to make camp, Jinrai always volunteers to gather firewood and walks farther than necessary to avoid watching them eat their evening meal together.",
-   "raised_by": "Kakita Tanomo raised him in the ashigaru barracks outside Beiden, and Jinrai has spent fifteen years trying to teach forgiveness while still drilling the footwork Tanomo beat into his spine.",
+   "raised_by": "Kakita Tanomo raised him in the ashigaru barracks outside Beiden. Jinrai has spent fifteen years teaching forgiveness and still drills her footwork every morning.",
    "raised_skill": "medicine",
    "clan_relationship": {
     "path": null,
@@ -90,14 +90,14 @@
     "association": "Crane"
    },
    "first_impression": "",
-   "stress_reaction": "When the weight of responsibility presses down, Jinrai stops speaking mid-sentence and begins drilling footwork—the ashigaru drills from Beiden, precise and punishing—until his legs burn and his mind goes quiet, which troubles him because it means the monk is losing ground to the soldier.",
-   "relationships": "Agasha Yagorô (Dragon) — Agasha Yagorô brings him maps of the Dragon territories and asks which villages need teachers, and Jinrai accepts them though he knows Yagorô is testing whether he will finally agree that some people deserve enlightenment more than others.\nTasuoki (Ganzu Guardian Tradition) — Tasuoki stopped him on the road to ask if the Perfect Land teaching truly applied to warriors, and Jinrai spent an hour explaining that it did, but he has not walked that direction again.",
+   "stress_reaction": "When the weight of it presses down, Jinrai stops mid-sentence and drills footwork, the ashigaru drills from Beiden, until his legs burn and his mind goes quiet.",
+   "relationships": "Agasha Yagorô (Dragon) — Agasha Yagorô brings him maps of the Dragon territories and asks which villages need teachers. Jinrai has not yet told him that all of them do.\nTasuoki (Ganzu Guardian Tradition) — Tasuoki stopped him on the road to ask if the Perfect Land teaching truly applied to warriors, and Jinrai spent an hour explaining that it did, but he has not walked that direction again.",
    "people": [
     {
      "name": "Agasha Yagorô",
      "gender": "male",
      "association": "Dragon",
-     "text": "Agasha Yagorô brings him maps of the Dragon territories and asks which villages need teachers, and Jinrai accepts them though he knows Yagorô is testing whether he will finally agree that some people deserve enlightenment more than others."
+     "text": "Agasha Yagorô brings him maps of the Dragon territories and asks which villages need teachers. Jinrai has not yet told him that all of them do."
     },
     {
      "name": "Tasuoki",
@@ -113,7 +113,7 @@
    "heritage": null,
    "heritage_table": null,
    "heritage_sub": null,
-   "death": "Jinrai teaching spearwork to a village boy notices samurai coming up the road, his hands tighten on the child's shoulders, and when he turns to send the boy inside, the samurai are close enough to see his jaw work—close enough to see what he thinks of them—and one of them decides that a monk who cannot hide his contempt deserves to learn humility before he dies teaching it to others.",
+   "death": "Jinrai is teaching spearwork to a village boy when samurai come up the road. He sends the boy inside too slowly, and one of them decides a monk who cannot hide his contempt should learn humility.",
    "rolls": {
     "q5.past": {
      "roll": 63,
@@ -202,6 +202,17 @@
    "death": [
     "Jinrai teaching spearwork to a village boy notices samurai coming up the road, his hands tighten on the child's shoulders, and when he turns to send the boy inside, the samurai are close enough to see his jaw work—close enough to see what he thinks of them—and one of them decides that a monk who cannot hide his contempt deserves to learn humility before he dies teaching it to others."
    ]
+  },
+  "outfit_choices": {
+   "one weapon of rarity 6 or lower": [
+    "Yari"
+   ],
+   "one item of rarity 4 or lower": [
+    "prayer beads"
+   ],
+   "one trinket": [
+    "kie tablet"
+   ]
   }
  },
  "twenty_questions": {
@@ -210,7 +221,7 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "He preaches forgiveness to farmers and merchants while his jaw tightens whenever a samurai enters the room, and he knows they can see it.",
+     "stand_out": "He preaches forgiveness to farmers and merchants, and goes quiet whenever a samurai enters the room.",
      "ring": "water"
     },
     "picks": {}
@@ -255,13 +266,13 @@
    },
    "step11": {
     "answers": {
-     "calms": "In the village temple's side room, Jinrai kneels before a low table arranging cut stems—a priest's discards, market flowers past their prime—rotating each one until the angles speak to each other, his shoulders dropping lower with each placement until his breathing settles into the rhythm of the work itself."
+     "calms": "In the village temple's side room Jinrai arranges cut stems, a priest's discards and market flowers past their prime, turning each until the angles agree."
     },
     "picks": {}
    },
    "step12": {
     "answers": {
-     "worries": "When Jinrai performs the evening sutras in an empty temple, he cannot shake the certainty that his dead grandmother—who bore a samurai's bastard son in shame—watches him teach forgiveness to the very class that destroyed her, waiting to see if he will finally break."
+     "worries": "When Jinrai chants the evening sutras in an empty temple, he is certain his dead grandmother, who bore a samurai's bastard in shame, is watching him teach forgiveness to that class."
     },
     "picks": {}
    },
@@ -280,13 +291,13 @@
    },
    "step15": {
     "answers": {
-     "stress": "When the weight of responsibility presses down, Jinrai stops speaking mid-sentence and begins drilling footwork—the ashigaru drills from Beiden, precise and punishing—until his legs burn and his mind goes quiet, which troubles him because it means the monk is losing ground to the soldier."
+     "stress": "When the weight of it presses down, Jinrai stops mid-sentence and drills footwork, the ashigaru drills from Beiden, until his legs burn and his mind goes quiet."
     },
     "picks": {}
    },
    "step16": {
     "answers": {
-     "relations": "Agasha Yagorô (Dragon) — Agasha Yagorô brings him maps of the Dragon territories and asks which villages need teachers, and Jinrai accepts them though he knows Yagorô is testing whether he will finally agree that some people deserve enlightenment more than others.\nTasuoki (Ganzu Guardian Tradition) — Tasuoki stopped him on the road to ask if the Perfect Land teaching truly applied to warriors, and Jinrai spent an hour explaining that it did, but he has not walked that direction again."
+     "relations": "Agasha Yagorô (Dragon) — Agasha Yagorô brings him maps of the Dragon territories and asks which villages need teachers. Jinrai has not yet told him that all of them do.\nTasuoki (Ganzu Guardian Tradition) — Tasuoki stopped him on the road to ask if the Perfect Land teaching truly applied to warriors, and Jinrai spent an hour explaining that it did, but he has not walked that direction again."
     },
     "picks": {}
    },
@@ -308,7 +319,7 @@
    },
    "step20": {
     "answers": {
-     "death": "Jinrai teaching spearwork to a village boy notices samurai coming up the road, his hands tighten on the child's shoulders, and when he turns to send the boy inside, the samurai are close enough to see his jaw work—close enough to see what he thinks of them—and one of them decides that a monk who cannot hide his contempt deserves to learn humility before he dies teaching it to others."
+     "death": "Jinrai is teaching spearwork to a village boy when samurai come up the road. He sends the boy inside too slowly, and one of them decides a monk who cannot hide his contempt should learn humility."
     },
     "picks": {}
    }
@@ -432,27 +443,23 @@
      "name": "Traveling Clothes"
     },
     {
-     "name": "one weapon of rarity 6 or lower",
-     "custom": true,
-     "text": "From the Mystic of the Mountain starting outfit",
-     "held": false
-    },
-    {
-     "name": "one item of rarity 4 or lower",
-     "custom": true,
-     "text": "From the Mystic of the Mountain starting outfit",
-     "held": false
-    },
-    {
      "name": "a journal containing little bits of knowledge",
      "custom": true,
      "text": "From the Mystic of the Mountain starting outfit"
     },
     {
-     "name": "one trinket",
-     "custom": true,
-     "text": "From the Mystic of the Mountain starting outfit",
-     "held": false
+     "name": "Yari",
+     "settled_from": "one weapon of rarity 6 or lower"
+    },
+    {
+     "name": "prayer beads",
+     "settled_from": "one item of rarity 4 or lower",
+     "custom": true
+    },
+    {
+     "name": "kie tablet",
+     "settled_from": "one trinket",
+     "custom": true
     }
    ],
    "advancements": []

@@ -15,7 +15,7 @@
  },
  "mode": "core",
  "portrait": "src/portraits/iuchi-temur.webp",
- "concept": "His fingers are stained dark from the compounds he brews, the stains spreading further up his hands each week despite scrubbing, so he keeps his hands moving when he talks to hide them in the folds of his sleeves.",
+ "concept": "Temur's fingers are stained dark from the compounds he brews, further up the hand each week, and he keeps them in his sleeves when he talks.",
  "summary": null,
  "notes": "",
  "wizard": {
@@ -60,12 +60,12 @@
   "answers": {
    "giri": "Temur serves Iuchi Kensaburô by reporting on the Dragon's affliction, but he treats every sick person he meets, so his reports arrive incomplete and Kensaburô cannot trust them entirely.",
    "ninjo": "Temur wants to go home to Shinjo Sarangerel before she stops waiting, and has not sent the letters that would ask her to.",
-   "standout_quality": "Temur compounds medicines for the other students' minor ailments without being asked, which means he arrives late to his own practice and has twice failed to complete assignments on time.",
+   "standout_quality": "Temur compounds medicines for the other students' minor ailments without being asked, and has twice handed in his own work late because of it.",
    "accomplishment": "Temur stopped the fever in the Dragon's garrison by brewing a compound from plants he had never seen before, working through three nights without sleeping, and the soldiers who had been dying began to recover.",
-   "challenge": "Temur brews a remedy he is certain will work, doses a Dragon soldier with it, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but by then he has already sent word to his daimyō that the compound is proven.",
-   "peace": "Temur sits in the theater gallery with a handful of other watchers, following the onnagata's careful gestures through a love scene, and for two hours he does not think about whether his letters should have been sent.",
+   "challenge": "Temur brews a remedy he is certain will work, doses a Dragon soldier, and only after the man recovers wonders whether the fever broke from the medicine or despite it. By then he has told Kensaburô the compound is proven.",
+   "peace": "Temur sits in the theater gallery and follows the onnagata's gestures through a love scene, and for two hours does not think about the letters.",
    "fear": "Temur fears the day a Dragon officer asks him, in front of his own daimyō's courier, which of his compounds are Unicorn work.",
-   "accoutrement": "He wears a medicine pouch sewn from Dragon silk, a gift from the garrison commander whose fever he broke, and he has never opened it to check whether the contents are truly his compounds or something the Dragon packed inside.",
+   "accoutrement": "Medicine pouch. Dragon silk.",
    "past": "",
    "known_for": "",
    "known_skill": null,
@@ -78,7 +78,7 @@
    "clan_relationship": {
     "path": "A",
     "skill": null,
-    "text": "Temur reports what the Dragon's healers tell him rather than what he observes, which keeps his daimyō satisfied but means he cannot warn the Unicorn if the affliction truly spreads."
+    "text": "Temur reports what the Dragon's healers tell him, not what he observes. Kensaburô is satisfied; the Unicorn will not be warned."
    },
    "mentor": {
     "name": "Ikoma Kawa",
@@ -89,31 +89,32 @@
     "gender": "female",
     "association": "Lion"
    },
-   "first_impression": "His fingers are stained dark from the compounds he brews, the stains spreading further up his hands each week despite scrubbing, so he keeps his hands moving when he talks to hide them in the folds of his sleeves.",
-   "stress_reaction": "When pressed past his composure, Temur's fingers go still inside his sleeves, and he stops moving them at all.",
-   "relationships": "Asako Buncho (Phoenix) — Asako Buncho tends the Phoenix shrine near the Dragon garrison, and Temur brings her his failed compounds—the batches that curdled or wouldn't set—because she burns them properly instead of letting them seep into the ground, but he has never asked her what she does with the ash.\nBaikin (Qamarist Alchemist Tradition) — Baikin taught Temur a technique for stabilizing volatile compounds that he uses daily, but Temur has never told his daimyō because the method comes from outside Unicorn tradition and his reports claim the compounds are entirely his own work.",
+   "first_impression": "Temur's fingers are stained dark from the compounds he brews, further up the hand each week, and he keeps them in his sleeves when he talks.",
+   "stress_reaction": "When pressed past his composure, Temur takes his hands out of his sleeves and sets them flat on the table, stains up.",
+   "relationships": "Asako Buncho (Phoenix) — Asako Buncho tends the Phoenix shrine near the Dragon garrison. Temur brings her the compounds that curdled or would not set, and she burns them properly.\nBaikin (Qamarist Alchemist Tradition) — Baikin taught Temur a technique for stabilizing volatile compounds that he uses daily. Kensaburô believes the compounds are Unicorn work, because Temur's reports say so.",
    "people": [
     {
      "name": "Asako Buncho",
      "gender": "female",
      "association": "Phoenix",
-     "text": "Asako Buncho tends the Phoenix shrine near the Dragon garrison, and Temur brings her his failed compounds—the batches that curdled or wouldn't set—because she burns them properly instead of letting them seep into the ground, but he has never asked her what she does with the ash."
+     "text": "Asako Buncho tends the Phoenix shrine near the Dragon garrison. Temur brings her the compounds that curdled or would not set, and she burns them properly."
     },
     {
      "name": "Baikin",
      "gender": "male",
      "association": "Qamarist Alchemist Tradition",
-     "text": "Baikin taught Temur a technique for stabilizing volatile compounds that he uses daily, but Temur has never told his daimyō because the method comes from outside Unicorn tradition and his reports claim the compounds are entirely his own work."
+     "text": "Baikin taught Temur a technique for stabilizing volatile compounds that he uses daily. Kensaburô believes the compounds are Unicorn work, because Temur's reports say so."
     }
    ],
    "parent_opinion": {
-    "description": "His mother watches him pare his fingernails down to nothing and asks why he cannot simply wash his hands like other men, and when he does not answer she understands that the stains have gone deeper than her scrubbing ever reached.",
+    "description": "His mother watches him pare his fingernails to nothing and asks why he cannot wash his hands like other men. He does not answer.",
     "skill": "labor"
    },
    "heritage": "Heart of the Horse",
    "heritage_table": "new-samurai-heritages-table",
    "heritage_sub": null,
-   "death": "Temur dies tending a patient he knows is poisoned, compounding remedies against a corruption his medicines cannot touch, and never sends word to his daimyō that the threat has already crossed into Unicorn lands."
+   "death": "Temur dies tending a patient he knows is poisoned, compounding remedies against a corruption his medicines cannot touch.",
+   "accoutrement_name": "Medicine pouch"
   },
   "starting_item": "Musical Instrument",
   "campaign": "",
@@ -187,6 +188,11 @@
     "subject": "Shinjo Sarangerel",
     "who": ""
    }
+  },
+  "outfit_choices": {
+   "one weapon of rarity 6 or lower": [
+    "Knife"
+   ]
   }
  },
  "twenty_questions": {
@@ -195,7 +201,7 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "Temur compounds medicines for the other students' minor ailments without being asked, which means he arrives late to his own practice and has twice failed to complete assignments on time.",
+     "stand_out": "Temur compounds medicines for the other students' minor ailments without being asked, and has twice handed in his own work late because of it.",
      "ring": "void"
     },
     "picks": {}
@@ -215,7 +221,7 @@
    },
    "step7": {
     "answers": {
-     "clan_relations": "Temur reports what the Dragon's healers tell him rather than what he observes, which keeps his daimyō satisfied but means he cannot warn the Unicorn if the affliction truly spreads.",
+     "clan_relations": "Temur reports what the Dragon's healers tell him, not what he observes. Kensaburô is satisfied; the Unicorn will not be warned.",
      "path": "A"
     },
     "picks": {}
@@ -235,13 +241,13 @@
    },
    "step10": {
     "answers": {
-     "difficulty": "Temur brews a remedy he is certain will work, doses a Dragon soldier with it, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but by then he has already sent word to his daimyō that the compound is proven."
+     "difficulty": "Temur brews a remedy he is certain will work, doses a Dragon soldier, and only after the man recovers wonders whether the fever broke from the medicine or despite it. By then he has told Kensaburô the compound is proven."
     },
     "picks": {}
    },
    "step11": {
     "answers": {
-     "calms": "Temur sits in the theater gallery with a handful of other watchers, following the onnagata's careful gestures through a love scene, and for two hours he does not think about whether his letters should have been sent."
+     "calms": "Temur sits in the theater gallery and follows the onnagata's gestures through a love scene, and for two hours does not think about the letters."
     },
     "picks": {}
    },
@@ -259,26 +265,26 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "His fingers are stained dark from the compounds he brews, the stains spreading further up his hands each week despite scrubbing, so he keeps his hands moving when he talks to hide them in the folds of his sleeves.",
-     "accoutrement": "He wears a medicine pouch sewn from Dragon silk, a gift from the garrison commander whose fever he broke, and he has never opened it to check whether the contents are truly his compounds or something the Dragon packed inside."
+     "first_sight": "Temur's fingers are stained dark from the compounds he brews, further up the hand each week, and he keeps them in his sleeves when he talks.",
+     "accoutrement": "Medicine pouch. Dragon silk."
     },
     "picks": {}
    },
    "step15": {
     "answers": {
-     "stress": "When pressed past his composure, Temur's fingers go still inside his sleeves, and he stops moving them at all."
+     "stress": "When pressed past his composure, Temur takes his hands out of his sleeves and sets them flat on the table, stains up."
     },
     "picks": {}
    },
    "step16": {
     "answers": {
-     "relations": "Asako Buncho (Phoenix) — Asako Buncho tends the Phoenix shrine near the Dragon garrison, and Temur brings her his failed compounds—the batches that curdled or wouldn't set—because she burns them properly instead of letting them seep into the ground, but he has never asked her what she does with the ash.\nBaikin (Qamarist Alchemist Tradition) — Baikin taught Temur a technique for stabilizing volatile compounds that he uses daily, but Temur has never told his daimyō because the method comes from outside Unicorn tradition and his reports claim the compounds are entirely his own work."
+     "relations": "Asako Buncho (Phoenix) — Asako Buncho tends the Phoenix shrine near the Dragon garrison. Temur brings her the compounds that curdled or would not set, and she burns them properly.\nBaikin (Qamarist Alchemist Tradition) — Baikin taught Temur a technique for stabilizing volatile compounds that he uses daily. Kensaburô believes the compounds are Unicorn work, because Temur's reports say so."
     },
     "picks": {}
    },
    "step17": {
     "answers": {
-     "parents_pov": "His mother watches him pare his fingernails down to nothing and asks why he cannot simply wash his hands like other men, and when he does not answer she understands that the stains have gone deeper than her scrubbing ever reached."
+     "parents_pov": "His mother watches him pare his fingernails to nothing and asks why he cannot wash his hands like other men. He does not answer."
     },
     "picks": {}
    },
@@ -295,7 +301,7 @@
    },
    "step20": {
     "answers": {
-     "death": "Temur dies tending a patient he knows is poisoned, compounding remedies against a corruption his medicines cannot touch, and never sends word to his daimyō that the threat has already crossed into Unicorn lands."
+     "death": "Temur dies tending a patient he knows is poisoned, compounding remedies against a corruption his medicines cannot touch."
     },
     "picks": {}
    }
@@ -429,12 +435,6 @@
      "name": "Wakizashi"
     },
     {
-     "name": "one weapon of rarity 6 or lower",
-     "custom": true,
-     "text": "From the Iuchi Meishōdō Master starting outfit",
-     "held": false
-    },
-    {
      "name": "Calligraphy Set"
     },
     {
@@ -446,9 +446,14 @@
      "text": "From the Iuchi Meishōdō Master starting outfit"
     },
     {
-     "name": "He wears a medicine pouch sewn from Dragon silk, a gift from the garrison commander whose fever he broke, and he has never opened it to check whether the contents are truly his compounds or something the Dragon packed inside.",
+     "name": "Medicine pouch",
      "custom": true,
-     "text": "The accoutrement named at question 14"
+     "text": "Medicine pouch. Dragon silk.",
+     "accoutrement": true
+    },
+    {
+     "name": "Knife",
+     "settled_from": "one weapon of rarity 6 or lower"
     }
    ],
    "advancements": []

@@ -16,7 +16,7 @@ and Dragonfly.
 
 ---
 
-**State at 2026-09-08:** D1–D6, D8–D10, D12, D17 approved and applied (D6 as proposed: Hero of the Mountain Song Temple after D12; Shinjo Sarangerel). D9 texts under review. Open: D7 (leave), D11, D13–D16, D18–D23.
+**State at 2026-09-08:** D1–D6, D8–D10, D12, D17 approved and applied (D6 as proposed: Hero of the Mountain Song Temple after D12; Shinjo Sarangerel). D9 texts under review. Second round 2026-09-08: D13, D15, D18–D21 applied (register pass: 41 lines across the five wizard records). Open: D11 (Michio), D14 (Takeshi → Masashige; Morishige → Hiroue), D16 (Sayaka's bio). D7 left as written.
 
 ## A. Errors
 

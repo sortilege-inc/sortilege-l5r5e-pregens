@@ -64,11 +64,11 @@
    "ninjo": "He wants to believe the next captain who hires him won't eventually ask him to do something that makes him run again.",
    "standout_quality": "He accepts jobs that keep him moving and solvent, but turns down the ones that would require him to stay in one place long enough to form attachments.",
    "accomplishment": "He followed a merchant captain's runaway daughter three days upriver through fog and fouled current to a shrine town, and brought her back without the captain ever learning she had gone.",
-   "challenge": "When a captain asks him to stay through winter to train the crew, Genzō finds himself caught between the steady work that would let him stop running and the certainty that staying means eventually being asked to do something unforgivable.",
-   "peace": "He stands at the river's edge before dawn with a bow he has never named, drawing and releasing until his shoulders burn and the strife drains from his chest like water through cupped hands.",
-   "fear": "When a younger swordsman bests him in a sparring match before the crew, Genzō finds himself accepting the captain's offer to stay through winter, teaching the boy everything he knows, each lesson a small wound he cannot stop reopening.",
+   "challenge": "When a captain asks him to stay through winter and train the crew, Genzō names a price he knows will not be met.",
+   "peace": "He stands at the river's edge before dawn with a bow he has never named, drawing and releasing until his shoulders burn.",
+   "fear": "When a younger swordsman bests him in a sparring match before the crew, Genzō accepts the captain's offer to stay through winter and teaches the boy everything he knows.",
    "accoutrement": "",
-   "past": "He deserted his lord's service after witnessing the man order the execution of a fishing village that had sheltered enemy refugees, and he has been running jobs for merchant captains ever since rather than risk serving anyone who might ask him to do it again.",
+   "past": "He deserted his lord's service after the man ordered a fishing village executed for sheltering enemy refugees, and has run jobs for merchant captains since.",
    "known_for": "The merchant captains in the River ports know he will cut a man down without hesitation, but they have never seen him take a job that would keep him docked longer than the hull needs caulking.",
    "known_skill": "tactics",
    "lord_name": "",
@@ -92,14 +92,14 @@
     "association": "Dragon"
    },
    "first_impression": "",
-   "stress_reaction": "When the pressure mounts and he cannot leave, Genzō's hands move to his bowstring—checking the fraying, retying the knots, running his thumb along the horsehair until his fingers bleed.",
-   "relationships": "Michio (Nezumi Tattered Ear Explorer Tradition) — Michio brings him work that moves upriver, and Genzō accepts every job without asking questions, though he watches the Nezumi's face to see if this one will be the kind that keeps him still.\nMirumoto Manami (Dragon) — Mirumoto Manami trained him in the forms after he fled his lord's service, and he has not spoken to her in three years because she keeps sending letters asking him to come home to the Dragon.",
+   "stress_reaction": "When the pressure mounts and he cannot leave, Genzō restrings his bow, whether or not it needs it.",
+   "relationships": "Michio (Nezumi Tattered Ear Explorer Tradition) — Michio brings him work that moves upriver, and Genzō takes every job without asking questions.\nMirumoto Manami (Dragon) — Mirumoto Manami trained him in the forms after he fled his lord's service, and he has not spoken to her in three years because she keeps sending letters asking him to come home to the Dragon.",
    "people": [
     {
      "name": "Michio",
      "gender": "female",
      "association": "Nezumi Tattered Ear Explorer Tradition",
-     "text": "Michio brings him work that moves upriver, and Genzō accepts every job without asking questions, though he watches the Nezumi's face to see if this one will be the kind that keeps him still."
+     "text": "Michio brings him work that moves upriver, and Genzō takes every job without asking questions."
     },
     {
      "name": "Mirumoto Manami",
@@ -115,7 +115,7 @@
    "heritage": null,
    "heritage_table": null,
    "heritage_sub": null,
-   "death": "Genzō dies teaching a student something he should have learned himself, his back to the river and his hands still moving through the form even as the blade finds him.",
+   "death": "Genzō dies teaching a student something he should have learned himself, his back to the river.",
    "rolls": {
     "q5.past": {
      "roll": 60,
@@ -209,6 +209,18 @@
    "death": [
     "Genzō dies teaching a student something he should have learned himself, his back to the river and his hands still moving through the form even as the blade finds him."
    ]
+  },
+  "outfit_choices": {
+   "katana (long sword) or yumi (bow)": [
+    "Katana"
+   ],
+   "any one weapon of rarity 6 or lower": [
+    "Yumi"
+   ],
+   "any two items of rarity 4 or lower": [
+    "Quiver of Arrow",
+    "Whetstone"
+   ]
   }
  },
  "twenty_questions": {
@@ -256,19 +268,19 @@
    },
    "step10": {
     "answers": {
-     "difficulty": "When a captain asks him to stay through winter to train the crew, Genzō finds himself caught between the steady work that would let him stop running and the certainty that staying means eventually being asked to do something unforgivable."
+     "difficulty": "When a captain asks him to stay through winter and train the crew, Genzō names a price he knows will not be met."
     },
     "picks": {}
    },
    "step11": {
     "answers": {
-     "calms": "He stands at the river's edge before dawn with a bow he has never named, drawing and releasing until his shoulders burn and the strife drains from his chest like water through cupped hands."
+     "calms": "He stands at the river's edge before dawn with a bow he has never named, drawing and releasing until his shoulders burn."
     },
     "picks": {}
    },
    "step12": {
     "answers": {
-     "worries": "When a younger swordsman bests him in a sparring match before the crew, Genzō finds himself accepting the captain's offer to stay through winter, teaching the boy everything he knows, each lesson a small wound he cannot stop reopening."
+     "worries": "When a younger swordsman bests him in a sparring match before the crew, Genzō accepts the captain's offer to stay through winter and teaches the boy everything he knows."
     },
     "picks": {}
    },
@@ -287,13 +299,13 @@
    },
    "step15": {
     "answers": {
-     "stress": "When the pressure mounts and he cannot leave, Genzō's hands move to his bowstring—checking the fraying, retying the knots, running his thumb along the horsehair until his fingers bleed."
+     "stress": "When the pressure mounts and he cannot leave, Genzō restrings his bow, whether or not it needs it."
     },
     "picks": {}
    },
    "step16": {
     "answers": {
-     "relations": "Michio (Nezumi Tattered Ear Explorer Tradition) — Michio brings him work that moves upriver, and Genzō accepts every job without asking questions, though he watches the Nezumi's face to see if this one will be the kind that keeps him still.\nMirumoto Manami (Dragon) — Mirumoto Manami trained him in the forms after he fled his lord's service, and he has not spoken to her in three years because she keeps sending letters asking him to come home to the Dragon."
+     "relations": "Michio (Nezumi Tattered Ear Explorer Tradition) — Michio brings him work that moves upriver, and Genzō takes every job without asking questions.\nMirumoto Manami (Dragon) — Mirumoto Manami trained him in the forms after he fled his lord's service, and he has not spoken to her in three years because she keeps sending letters asking him to come home to the Dragon."
     },
     "picks": {}
    },
@@ -315,7 +327,7 @@
    },
    "step20": {
     "answers": {
-     "death": "Genzō dies teaching a student something he should have learned himself, his back to the river and his hands still moving through the form even as the blade finds him."
+     "death": "Genzō dies teaching a student something he should have learned himself, his back to the river."
     },
     "picks": {}
    }
@@ -433,29 +445,27 @@
      "name": "Traveling Clothes"
     },
     {
-     "name": "any one weapon of rarity 6 or lower",
-     "custom": true,
-     "text": "From the Worldly Rōnin Path starting outfit",
-     "held": false
-    },
-    {
-     "name": "katana (long sword) or yumi (bow)",
-     "custom": true,
-     "text": "From the Worldly Rōnin Path starting outfit",
-     "held": false
-    },
-    {
      "name": "Wakizashi"
     },
     {
-     "name": "any two items of rarity 4 or lower",
-     "custom": true,
-     "text": "From the Worldly Rōnin Path starting outfit",
-     "held": false
+     "name": "Katana",
+     "settled_from": "katana (long sword) or yumi (bow)"
+    },
+    {
+     "name": "Yumi",
+     "settled_from": "any one weapon of rarity 6 or lower"
+    },
+    {
+     "name": "Quiver of Arrow",
+     "settled_from": "any two items of rarity 4 or lower"
+    },
+    {
+     "name": "Whetstone",
+     "settled_from": "any two items of rarity 4 or lower"
     }
    ],
    "advancements": []
   }
  ],
- "bio": "Kurosawa Genzō is a deserter-turned-rōnin duelist, wandering the land and offering his sword to whoever can meet his price. Though he carries himself with the discipline of a samurai, he no longer claims the title, instead forging his own sense of honor. He avoids pointless fights, only drawing his blade when there is purpose behind it.\n\nHis scarred, battle-hardened face still carries boyish charm, though he maintains a gruff default demeanor to keep others at a distance. He struggles to trust others, fearing betrayal or obligation, and regrets abandoning his duty, wondering if he can ever reclaim his lost honor. He sharpens his blade to find peace, a steady ritual that reminds him that he is still in control of his fate.\n\nGenzō once spared a defeated opponent who later repaid the debt, reinforcing his belief that honor is found in action, not station. However, he knows that one wrong move could lead to an ignominious death, a fate he refuses to accept. Though he gambles on fights, he does not gamble with his own survival — he has lived this long, and he does not intend to die easily."
+ "bio": "Kurosawa Genzō is a deserter-turned-rōnin duelist, wandering the land and offering his sword to whoever can meet his price. Though he carries himself with the discipline of a samurai, he no longer claims the title, instead forging his own sense of honor. He avoids pointless fights, only drawing his blade when there is purpose behind it.\n\nHis weathered, battle-hardened face still carries boyish charm, though he maintains a gruff default demeanor to keep others at a distance. He struggles to trust others, fearing betrayal or obligation, and regrets abandoning his duty, wondering if he can ever reclaim his lost honor. He sharpens his blade to find peace, a steady ritual that reminds him that he is still in control of his fate.\n\nGenzō once spared a defeated opponent who later repaid the debt, reinforcing his belief that honor is found in action, not station. However, he knows that one wrong move could lead to an ignominious death, a fate he refuses to accept. Though he gambles on fights, he does not gamble with his own survival — he has lived this long, and he does not intend to die easily."
 }

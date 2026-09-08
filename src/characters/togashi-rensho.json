@@ -80,8 +80,8 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Renshō is to guide seekers along the path for ten years of wandering, as his abbot Mirumoto Kenshin instructed, without imposing his own understanding on them.",
-     "lord_name": "Mirumoto Kenshin"
+     "social_giri": "Renshō is to guide seekers along the path for ten years of wandering, as his abbot Togashi Kenshin instructed, without imposing his own understanding on them.",
+     "lord_name": "Togashi Kenshin"
     },
     "picks": {}
    },
@@ -160,7 +160,8 @@
    },
    "step14": {
     "answers": {
-     "first_sight": "Hands are rugged from climbing, he is lean and strong, and a ragged scar mars the back of his head and running down his neck and back from the rockfall he survived. He wears a single zuni on a necklace, a gift from a child."
+     "first_sight": "Hands are rugged from climbing, he is lean and strong, and a ragged scar mars the back of his head and running down his neck and back from the rockfall he survived. He wears a single zuni on a necklace, a gift from a child.",
+     "accoutrement": "Zuni pendant. A child's gift."
     },
     "picks": {}
    },
@@ -172,7 +173,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Mirumoto Kenshin: Former abbot of Renshō's monastery who sent him wandering three years ago. Believed Renshō was becoming too comfortable and needed to test his philosophy against the world.\n\nIuchi Temur: A Unicorn shugenja investigating the Dragon Clan's mysterious infertility. Renshō respects Temur's compassionate approach and careful observations, seeing in him a kindred spirit who values understanding over quick solutions."
+     "relations": "Togashi Kenshin: Former abbot of Renshō's monastery who sent him wandering three years ago. Believed Renshō was becoming too comfortable and needed to test his philosophy against the world.\n\nIuchi Temur: A Unicorn shugenja investigating the Dragon Clan's mysterious infertility. Renshō respects Temur's compassionate approach and careful observations, seeing in him a kindred spirit who values understanding over quick solutions."
     },
     "picks": {}
    },
@@ -264,7 +265,7 @@
     "glory": 48,
     "status": 30,
     "ninjo": "Renshō wants one moment of certainty: to know he has grasped true understanding and not another comforting illusion.",
-    "giri": "Renshō is to guide seekers along the path for ten years of wandering, as his abbot Mirumoto Kenshin instructed, without imposing his own understanding on them.",
+    "giri": "Renshō is to guide seekers along the path for ten years of wandering, as his abbot Togashi Kenshin instructed, without imposing his own understanding on them.",
     "bushido_tenets": {
      "paramount": "Sincerity",
      "less_significant": "Duty and Loyalty"
@@ -417,6 +418,12 @@
      "rarity": "0",
      "zeni": "0",
      "properties": []
+    },
+    {
+     "name": "Zuni pendant",
+     "custom": true,
+     "text": "Zuni pendant. A child's gift.",
+     "accoutrement": true
     }
    ],
    "advancements": []

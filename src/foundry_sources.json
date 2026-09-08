@@ -1751,6 +1751,33 @@
     "b": "Ichirō Tsutomu",
     "text": "Two bodies for hire. One auditioning for permanence, one taking wages and asking for nothing more."
    }
+  ],
+  "Imperfect Land": [
+   {
+    "a": "Isawa Chisato",
+    "b": "Jinrai",
+    "text": "She is here to see his teaching branded a False Path. He knows, and has not stopped speaking to her."
+   },
+   {
+    "a": "Doji Sayaka",
+    "b": "Jinrai",
+    "text": "She has sat among his listeners dressed as a laborer. He does not know it was her."
+   },
+   {
+    "a": "Kurosawa Genzō",
+    "b": "Doji Sayaka",
+    "text": "She is paying him. He has not asked what for."
+   },
+   {
+    "a": "Iuchi Temur",
+    "b": "Isawa Chisato",
+    "text": "He treats the sick; she judges the doctrine. They agree on almost nothing and share a table every night."
+   },
+   {
+    "a": "Tonbo Asahi",
+    "b": "Doji Sayaka",
+    "text": "Two courtiers who say little. Asahi cannot tell whether Sayaka's metaphors are a mask or a habit, and Sayaka has never been asked so quietly."
+   }
   ]
  }
 }
