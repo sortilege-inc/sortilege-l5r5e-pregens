@@ -1,0 +1,471 @@
+{
+ "slug": "densaburo",
+ "name": "Densaburô",
+ "campaign": "Sins of Regret",
+ "status": null,
+ "identity": {
+  "clan": null,
+  "family": null,
+  "school": "Artisan of the Roads",
+  "role": "Artisan",
+  "age": "",
+  "region": "Forest Region",
+  "upbringing": "Tradesperson Upbringing",
+  "origin_type": "ronin"
+ },
+ "mode": "pow",
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Densaburô",
+  "mode": "pow",
+  "clan": null,
+  "family": null,
+  "school": "Artisan of the Roads",
+  "role": "Artisan",
+  "region": "Forest Region",
+  "upbringing": "Tradesperson Upbringing",
+  "standout_ring": "air",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "outfit_choices": {
+   "one weapon of rarity 6 or lower": [
+    "Boat Oar"
+   ],
+   "one trinket": [
+    "TBD"
+   ],
+   "one item of rarity 4 or lower": [
+    "Lantern (Personal)"
+   ]
+  },
+  "skills": {
+   "government": 1,
+   "commerce": 1,
+   "culture": 1,
+   "seafaring": 1
+  },
+  "distinctions": [
+   "Bishamon’s Blessing"
+  ],
+  "adversities": [
+   "Disdain for Sincerity"
+  ],
+  "passions": [
+   "Secrets"
+  ],
+  "anxieties": [
+   "Delusions of Grandeur"
+  ],
+  "pec_subjects": {},
+  "bushido": {
+   "paramount": "Courage",
+   "lesser": "Sincerity",
+   "attitude": "B",
+   "skill": "commerce"
+  },
+  "answers": {
+   "giri": "",
+   "ninjo": "Densaburô wants to know if the river at Twin Blessings can be healed without him having to watch it die first, because he has already chosen to believe in one ruined thing and cannot afford to be wrong twice.",
+   "standout_quality": "Densaburô remembers the fish in Twin Blessings' river and cannot stop feeding people who have none, even when it means eating a season on credit he may never collect.",
+   "accomplishment": "Densaburô kept the Twin Blessings river in his memory well enough to recognize it was dying, and now he travels with ledgers full of debts he knows the village will never settle because at least the village is still there to owe them.",
+   "challenge": "Densaburô cannot stop paying for other people's survival with debts he knows will never be collected, and so he cannot stop being a man the village will always owe instead of feed.",
+   "peace": "Densaburô tallies the credit notes in his ledger against the dried fish he has left, knowing the numbers will not match, and finds the work itself settles him more than any answer could.",
+   "fear": "Densaburô cannot bear the thought that the river might heal itself without his sacrifice, leaving him merely a merchant who once fed a village instead of its savior.",
+   "accoutrement": "",
+   "past": "Densaburô trades his own hunger against the memory of a river that ran full, and every village he passes through teaches him which debts the people will never pay back.",
+   "known_for": "Densaburô brings back dried fish to villages that cannot pay him, and the merchants at the Forest Region markets have stopped asking what he means to do with the credit notes he collects like prayer slips.",
+   "known_skill": "government",
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "Densaburô keeps the ledger Moshi Yajibei gave him a decade ago, its margins now crowded with notes about who ate and who didn't, because the day a village elder asked him to stop writing down the debts was the day he realized Yajibei had been asking him to stop pretending the numbers meant anything at all.",
+   "group_history": "When Densaburô came back through Twin Blessings three seasons ago with dried fish and found the river so low he could see the riverbed, he sat down at the well with Seka and did not speak until she asked him what he was counting.",
+   "raised_by": "Moshi Yajibei raised him, teaching him to keep ledgers, and Densaburô has never forgiven him for it because Yajibei meant the numbers to be honest and Densaburô chose to make them holy.",
+   "raised_skill": "seafaring",
+   "clan_relationship": {
+    "path": null,
+    "skill": null,
+    "text": ""
+   },
+   "mentor": {
+    "name": "Moshi Yajibei",
+    "path": "B",
+    "granted": "Conspiracy",
+    "skill": "culture",
+    "text": "Moshi Yajibei taught him that a merchant's ledger and a village's survival are not the same thing, and Densaburô has spent ten years proving Yajibei wrong by writing them both down in the same book.",
+    "gender": "male",
+    "association": "Centipede"
+   },
+   "first_impression": "",
+   "accoutrement_name": "",
+   "stress_reaction": "Densaburô stops bartering mid-sentence and begins adding up the numbers in his ledger aloud, his voice flattening into a merchant's recitation while the person he was negotiating with watches their own problem become peripheral to his accounting.",
+   "relationships": "Soshi Otsune (Scorpion) — Soshi Otsune of the Scorpion fronts a tea merchant's house in the Forest Region markets where Densaburô brings his credit notes, and she has never once asked him to explain why a man who trades in dried fish keeps accounts that read like a famine's ledger.",
+   "people": [
+    {
+     "name": "Soshi Otsune",
+     "gender": "male",
+     "association": "Scorpion",
+     "text": "Soshi Otsune of the Scorpion fronts a tea merchant's house in the Forest Region markets where Densaburô brings his credit notes, and she has never once asked him to explain why a man who trades in dried fish keeps accounts that read like a famine's ledger."
+    }
+   ],
+   "parent_opinion": {
+    "description": "",
+    "skill": null
+   },
+   "heritage": null,
+   "heritage_table": null,
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Densaburô will die still writing in the ledger, because he has never learned to stop accounting for what he cannot pay back.",
+   "rolls": {
+    "q5.past": {
+     "roll": 4,
+     "label": "Spiritual Troubles"
+    }
+   }
+  },
+  "starting_item": "Tea Set (Portable)",
+  "campaign": "Sins of Regret",
+  "notes": "",
+  "gender": "male",
+  "choices": {
+   "upbringing.ring_increase": [
+    "Air"
+   ],
+   "school.ring_increase": [
+    "Water"
+   ],
+   "school.starting_skills": [
+    "Courtesy",
+    "Commerce",
+    "Culture",
+    "Smithing",
+    "Design"
+   ],
+   "school.tech.0": [
+    "Whispers of Court"
+   ],
+   "q4.trouble": [
+    "Empathetic, tricky, clever"
+   ],
+   "q5.past": [
+    "Spiritual Troubles"
+   ],
+   "q7.known": [
+    "Wicked, harmful, or selfish deeds"
+   ],
+   "q14.prized": [
+    "Disguise Kit"
+   ],
+   "q17.history": [
+    "A debt"
+   ]
+  },
+  "school_all": true,
+  "ai_history": {
+   "standout_quality": [
+    "Densaburô remembers the fish in Twin Blessings' river and cannot stop feeding people who have none, even when it means eating a season on credit he may never collect."
+   ],
+   "past": [
+    "Densaburô trades his own hunger against the memory of a river that ran full, and every village he passes through teaches him which debts the people will never pay back."
+   ],
+   "ninjo": [
+    "Densaburô wants to know if the river at Twin Blessings can be healed without him having to watch it die first, because he has already chosen to believe in one ruined thing and cannot afford to be wrong twice."
+   ],
+   "known_for": [
+    "Densaburô brings back dried fish to villages that cannot pay him, and the merchants at the Forest Region markets have stopped asking what he means to do with the credit notes he collects like prayer slips."
+   ],
+   "accomplishment": [
+    "Densaburô kept the Twin Blessings river in his memory well enough to recognize it was dying, and now he travels with ledgers full of debts he knows the village will never settle because at least the village is still there to owe them."
+   ],
+   "challenge": [
+    "Densaburô cannot stop paying for other people's survival with debts he knows will never be collected, and so he cannot stop being a man the village will always owe instead of feed."
+   ],
+   "peace": [
+    "Densaburô tallies the credit notes in his ledger against the dried fish he has left, knowing the numbers will not match, and finds the work itself settles him more than any answer could."
+   ],
+   "fear": [
+    "Densaburô cannot bear the thought that the river might heal itself without his sacrifice, leaving him merely a merchant who once fed a village instead of its savior."
+   ],
+   "mentor_relationship": [
+    "Moshi Yajibei taught him that a merchant's ledger and a village's survival are not the same thing, and Densaburô has spent ten years proving Yajibei wrong by writing them both down in the same book."
+   ],
+   "prized_possession": [
+    "Densaburô keeps the ledger Moshi Yajibei gave him a decade ago, its margins now crowded with notes about who ate and who didn't, because the day a village elder asked him to stop writing down the debts was the day he realized Yajibei had been asking him to stop pretending the numbers meant anything at all."
+   ],
+   "stress_reaction": [
+    "Densaburô stops bartering mid-sentence and begins adding up the numbers in his ledger aloud, his voice flattening into a merchant's recitation while the person he was negotiating with watches their own problem become peripheral to his accounting."
+   ],
+   "relationship_person": [
+    "Soshi Otsune of the Scorpion fronts a tea merchant's house in the Forest Region markets where Densaburô brings his credit notes, and she has never once asked him to explain why a man who trades in dried fish keeps accounts that read like a famine's ledger."
+   ],
+   "group_history": [
+    "When Densaburô came back through Twin Blessings three seasons ago with dried fish and found the river so low he could see the riverbed, he sat down at the well with Seka and did not speak until she asked him what he was counting."
+   ],
+   "raised_by": [
+    "Moshi Yajibei raised him, teaching him to keep ledgers, and Densaburô has never forgiven him for it because Yajibei meant the numbers to be honest and Densaburô chose to make them holy."
+   ],
+   "death": [
+    "Densaburô will die still writing in the ledger, because he has never learned to stop accounting for what he cannot pay back."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "pow",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Densaburô remembers the fish in Twin Blessings' river and cannot stop feeding people who have none, even when it means eating a season on credit he may never collect.",
+     "ring": "air"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "",
+     "lord_name": ""
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Densaburô wants to know if the river at Twin Blessings can be healed without him having to watch it die first, because he has already chosen to believe in one ruined thing and cannot afford to be wrong twice."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "",
+     "path": null,
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Sincerity"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Densaburô kept the Twin Blessings river in his memory well enough to recognize it was dying, and now he travels with ledgers full of debts he knows the village will never settle because at least the village is still there to owe them."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Densaburô cannot stop paying for other people's survival with debts he knows will never be collected, and so he cannot stop being a man the village will always owe instead of feed."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Densaburô tallies the credit notes in his ledger against the dried fish he has left, knowing the numbers will not match, and finds the work itself settles him more than any answer could."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Densaburô cannot bear the thought that the river might heal itself without his sacrifice, leaving him merely a merchant who once fed a village instead of its savior."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Moshi Yajibei — Moshi Yajibei taught him that a merchant's ledger and a village's survival are not the same thing, and Densaburô has spent ten years proving Yajibei wrong by writing them both down in the same book."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "",
+     "accoutrement": ""
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Densaburô stops bartering mid-sentence and begins adding up the numbers in his ledger aloud, his voice flattening into a merchant's recitation while the person he was negotiating with watches their own problem become peripheral to his accounting."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Soshi Otsune (Scorpion) — Soshi Otsune of the Scorpion fronts a tea merchant's house in the Forest Region markets where Densaburô brings his credit notes, and she has never once asked him to explain why a man who trades in dried fish keeps accounts that read like a famine's ledger."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": ""
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": null,
+     "heritage_table": null,
+     "heritage_sub": null,
+     "heritage_applied": false
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Densaburô will die still writing in the ledger, because he has never learned to stop accounting for what he cannot pay back."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Artisan of the Roads",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 2,
+    "fire": 2,
+    "water": 2,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 1,
+     "composition": 0,
+     "design": 1,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 0,
+     "melee": 0,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 2,
+     "government": 1,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 1,
+     "games": 0,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 3,
+     "labor": 0,
+     "seafaring": 1,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 30,
+    "glory": 30,
+    "status": 18,
+    "ninjo": "Densaburô wants to know if the river at Twin Blessings can be healed without him having to watch it die first, because he has already chosen to believe in one ruined thing and cannot afford to be wrong twice.",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Sincerity"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 2,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Whispers of Court"
+    },
+    {
+     "name": "Fanning the Flames"
+    },
+    {
+     "name": "Resourceful Artistry"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Bishamon’s Blessing"
+    },
+    {
+     "name": "Disdain for Sincerity"
+    },
+    {
+     "name": "Secrets"
+    },
+    {
+     "name": "Delusions of Grandeur"
+    },
+    {
+     "name": "Conspiracy"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Tea Set (Portable)"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Boat Oar"
+    },
+    {
+     "name": "one piece of art that is half finished",
+     "custom": true,
+     "text": "From the Artisan of the Roads starting outfit"
+    },
+    {
+     "name": "a pack of haphazard art supplies",
+     "custom": true,
+     "text": "From the Artisan of the Roads starting outfit"
+    },
+    {
+     "name": "Lantern (Personal)"
+    },
+    {
+     "name": "TBD",
+     "custom": true,
+     "text": "From the Artisan of the Roads starting outfit"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

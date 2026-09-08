@@ -1,0 +1,452 @@
+{
+ "slug": "akira",
+ "name": "Akira",
+ "campaign": "Sins of Regret",
+ "status": null,
+ "identity": {
+  "clan": null,
+  "family": null,
+  "school": "Student of the Talon",
+  "role": "Shinobi",
+  "age": "",
+  "region": "Urban Region",
+  "upbringing": "Street Urchin Upbringing",
+  "origin_type": "ronin"
+ },
+ "mode": "pow",
+ "portrait": null,
+ "concept": null,
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Akira",
+  "mode": "pow",
+  "clan": null,
+  "family": null,
+  "school": "Student of the Talon",
+  "role": "Shinobi",
+  "region": "Urban Region",
+  "upbringing": "Street Urchin Upbringing",
+  "standout_ring": "water",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "outfit_choices": {
+   "any one weapon of rarity 6 or lower": [
+    "Blowgun"
+   ],
+   "yumi (bow) and a quiver of arrows with three special arrows (one armor-piercing, one flesh-cutter, one humming-bulb) or yari (spear)": [
+    "Yari"
+   ],
+   "one trinket": [
+    "TBD"
+   ]
+  },
+  "skills": {
+   "unarmed": 1,
+   "labor": 1,
+   "games": 1
+  },
+  "distinctions": [
+   "Expert Tracker"
+  ],
+  "adversities": [
+   "Sailor’s Tongue"
+  ],
+  "passions": [
+   "Wordplay"
+  ],
+  "anxieties": [
+   "Web of Lies"
+  ],
+  "pec_subjects": {
+   "ally": {
+    "name": "Ally",
+    "subject": "Toritaka Go",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Righteousness",
+   "lesser": "Honor",
+   "attitude": "B",
+   "skill": "labor"
+  },
+  "answers": {
+   "giri": "",
+   "ninjo": "Akira wants to know who hired the merchant house to hire her, and has begun refusing jobs until someone answers—which means turning down commissions and the coin that keeps her fed.",
+   "standout_quality": "Akira accepts commissions without asking who hired them, and has twice had to abandon a job halfway through when the patron's true intent became clear.",
+   "accomplishment": "Akira followed a merchant's courier through three districts and across the dockside to a house where no one had hired her, and sat outside it for two days before leaving without breaking in.",
+   "challenge": "Akira's contacts at the dockside house have begun asking fewer questions about what she wants to know, which means she no longer knows whether to trust the silence as an answer or break the arrangement that feeds her.",
+   "peace": "Akira spreads a merchant's ledger across a table in the dockside house and reads backward through months of entries, finding the moment where the handwriting changes and knowing without lifting her eyes that someone else held the brush, and stops there.",
+   "fear": "Akira's contacts at the dockside house have stopped asking what she wants to know, and she cannot tell if they are protecting her or if the silence means the person pulling strings no longer cares whether she finds out.",
+   "accoutrement": "",
+   "past": "Akira takes commissions from a merchant house in the city's dockside quarter, and has never learned whether the house itself hired her or merely passes on orders from someone deeper in the chain.",
+   "known_for": "Akira can strip a merchant's accounts down to what was actually paid and to whom, but refuses to look at the ledgers long enough to see the pattern across years.",
+   "known_skill": "unarmed",
+   "lord_name": "",
+   "lord_gender": "any",
+   "prized_possession": "A ledger from the dockside house, kept separate from the merchant's official books, where Akira has copied each entry in her own hand and stopped halfway through a year ago when the handwriting changed—and will not let herself turn the page to see whose brush took over.",
+   "group_history": "TBD",
+   "raised_by": "Akira was orphaned young and raised on the streets of the dockside quarter, where she learned to move unseen before anyone thought to teach her why.",
+   "raised_skill": "games",
+   "clan_relationship": {
+    "path": null,
+    "skill": null,
+    "text": ""
+   },
+   "mentor": {
+    "name": "Toritaka Go",
+    "path": "A",
+    "granted": "Ally",
+    "skill": "",
+    "text": "",
+    "gender": "male",
+    "association": "Falcon"
+   },
+   "first_impression": "",
+   "accoutrement_name": "",
+   "stress_reaction": "Akira stops asking questions and starts following people instead, picking up a trail that leads nowhere in particular so long as it leads somewhere away from the silence.",
+   "relationships": "Suzume (Heiman) — Suzume of the Heiman hired her three years ago and has not explained the work since, and Akira takes the commissions anyway because Suzume is the only person who has never lied to her about the cost.",
+   "people": [
+    {
+     "name": "Suzume",
+     "gender": "female",
+     "association": "Heiman",
+     "text": "Suzume of the Heiman hired her three years ago and has not explained the work since, and Akira takes the commissions anyway because Suzume is the only person who has never lied to her about the cost."
+    }
+   ],
+   "parent_opinion": {
+    "description": "",
+    "skill": null
+   },
+   "heritage": null,
+   "heritage_table": null,
+   "heritage_sub": null,
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Akira will die waiting for an answer that never comes, having turned down so many commissions that the dockside house stops sending them altogether, and she will not know if that silence means she finally learned the truth or if she has simply starved.",
+   "rolls": {}
+  },
+  "starting_item": "Musical Instrument",
+  "campaign": "Sins of Regret",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "upbringing.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Skulduggery",
+    "Martial Arts [Ranged]",
+    "Martial Arts [Melee]",
+    "Fitness",
+    "Survival"
+   ],
+   "school.tech.0": [
+    "Soaring Slice"
+   ],
+   "q4.trouble": [
+    "Gregarious, adaptable, charming"
+   ],
+   "q5.past": [
+    "Witness"
+   ],
+   "q7.known": [
+    "Wicked, harmful, or selfish deeds"
+   ],
+   "q14.prized": [
+    "Thievery Kit"
+   ],
+   "q17.history": [
+    "The unthinkable"
+   ]
+  },
+  "school_all": true,
+  "ai_history": {
+   "standout_quality": [
+    "Akira accepts commissions without asking who hired them, and has twice had to abandon a job halfway through when the patron's true intent became clear."
+   ],
+   "past": [
+    "Akira takes commissions from a merchant house in the city's dockside quarter, and has never learned whether the house itself hired her or merely passes on orders from someone deeper in the chain."
+   ],
+   "ninjo": [
+    "Akira wants to know who hired the merchant house to hire her, and has begun refusing jobs until someone answers—which means turning down commissions and the coin that keeps her fed."
+   ],
+   "known_for": [
+    "Akira can strip a merchant's accounts down to what was actually paid and to whom, but refuses to look at the ledgers long enough to see the pattern across years."
+   ],
+   "accomplishment": [
+    "Akira followed a merchant's courier through three districts and across the dockside to a house where no one had hired her, and sat outside it for two days before leaving without breaking in."
+   ],
+   "challenge": [
+    "Akira's contacts at the dockside house have begun asking fewer questions about what she wants to know, which means she no longer knows whether to trust the silence as an answer or break the arrangement that feeds her."
+   ],
+   "peace": [
+    "Akira spreads a merchant's ledger across a table in the dockside house and reads backward through months of entries, finding the moment where the handwriting changes and knowing without lifting her eyes that someone else held the brush, and stops there."
+   ],
+   "fear": [
+    "Akira's contacts at the dockside house have stopped asking what she wants to know, and she cannot tell if they are protecting her or if the silence means the person pulling strings no longer cares whether she finds out."
+   ],
+   "prized_possession": [
+    "A ledger from the dockside house, kept separate from the merchant's official books, where Akira has copied each entry in her own hand and stopped halfway through a year ago when the handwriting changed—and will not let herself turn the page to see whose brush took over."
+   ],
+   "stress_reaction": [
+    "Akira stops asking questions and starts following people instead, picking up a trail that leads nowhere in particular so long as it leads somewhere away from the silence."
+   ],
+   "relationship_person": [
+    "Suzume of the Heiman hired her three years ago and has not explained the work since, and Akira takes the commissions anyway because Suzume is the only person who has never lied to her about the cost."
+   ],
+   "death": [
+    "Akira will die waiting for an answer that never comes, having turned down so many commissions that the dockside house stops sending them altogether, and she will not know if that silence means she finally learned the truth or if she has simply starved."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "pow",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Akira accepts commissions without asking who hired them, and has twice had to abandon a job halfway through when the patron's true intent became clear.",
+     "ring": "water"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "",
+     "lord_name": ""
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Akira wants to know who hired the merchant house to hire her, and has begun refusing jobs until someone answers—which means turning down commissions and the coin that keeps her fed."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "",
+     "path": null,
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Righteousness",
+     "tenet_less_significant": "Honor"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Akira followed a merchant's courier through three districts and across the dockside to a house where no one had hired her, and sat outside it for two days before leaving without breaking in."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "Akira's contacts at the dockside house have begun asking fewer questions about what she wants to know, which means she no longer knows whether to trust the silence as an answer or break the arrangement that feeds her."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Akira spreads a merchant's ledger across a table in the dockside house and reads backward through months of entries, finding the moment where the handwriting changes and knowing without lifting her eyes that someone else held the brush, and stops there."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "Akira's contacts at the dockside house have stopped asking what she wants to know, and she cannot tell if they are protecting her or if the silence means the person pulling strings no longer cares whether she finds out."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Toritaka Go"
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "",
+     "accoutrement": ""
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Akira stops asking questions and starts following people instead, picking up a trail that leads nowhere in particular so long as it leads somewhere away from the silence."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Suzume (Heiman) — Suzume of the Heiman hired her three years ago and has not explained the work since, and Akira takes the commissions anyway because Suzume is the only person who has never lied to her about the cost."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": ""
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": null,
+     "heritage_table": null,
+     "heritage_sub": null,
+     "heritage_applied": false
+    },
+    "picks": {}
+   },
+   "step20": {
+    "answers": {
+     "death": "Akira will die waiting for an answer that never comes, having turned down so many commissions that the dockside house stops sending them altogether, and she will not know if that silence means she finally learned the truth or if she has simply starved."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Student of the Talon",
+   "foundry_id": null,
+   "rings": {
+    "air": 3,
+    "earth": 1,
+    "fire": 2,
+    "water": 3,
+    "void": 1
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 0
+    },
+    "martial": {
+     "fitness": 1,
+     "melee": 1,
+     "ranged": 1,
+     "unarmed": 1,
+     "meditation": 0,
+     "tactics": 0
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 0,
+     "theology": 0
+    },
+    "social": {
+     "command": 0,
+     "courtesy": 0,
+     "games": 1,
+     "performance": 0
+    },
+    "trade": {
+     "commerce": 1,
+     "labor": 1,
+     "seafaring": 0,
+     "skulduggery": 3,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 30,
+    "glory": 29,
+    "status": 17,
+    "ninjo": "Akira wants to know who hired the merchant house to hire her, and has begun refusing jobs until someone answers—which means turning down commissions and the coin that keeps her fed.",
+    "giri": "",
+    "bushido_tenets": {
+     "paramount": "Righteousness",
+     "less_significant": "Honor"
+    }
+   },
+   "derived": {
+    "endurance": 6,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 3,
+    "void_points": 1
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 0,
+    "bu": 4
+   },
+   "techniques": [
+    {
+     "name": "Soaring Slice"
+    },
+    {
+     "name": "Skulk"
+    },
+    {
+     "name": "Piercing Insight"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Expert Tracker"
+    },
+    {
+     "name": "Sailor’s Tongue"
+    },
+    {
+     "name": "Wordplay"
+    },
+    {
+     "name": "Web of Lies"
+    },
+    {
+     "name": "Ally Toritaka Go",
+     "custom": true,
+     "subject": "Toritaka Go",
+     "text": "You have proven yourself to someone, who is willing to help you (within reason). They are open to sharing what they know about most topics, whether via a face-to-face meeting or written correspondence. They are also willing to arrange introductions for you with people they know. When performing a check that benefits from your close relationship with the character (such as a Courtesy [Water] check to requisition an item through them or a Sentiment [Water] check to read their emotions), you may reroll up to two dice."
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Musical Instrument"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "Blowgun"
+    },
+    {
+     "name": "Yari"
+    },
+    {
+     "name": "TBD",
+     "custom": true,
+     "text": "From the Student of the Talon starting outfit"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}

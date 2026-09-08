@@ -1,0 +1,474 @@
+{
+ "slug": "matsu-tamane",
+ "name": "Matsu Tamane",
+ "campaign": "Portents & Fortunes",
+ "status": null,
+ "identity": {
+  "clan": "Lion",
+  "family": "Matsu",
+  "school": "Matsu Beastmaster School",
+  "role": "Bushi",
+  "age": "",
+  "region": null,
+  "upbringing": null,
+  "origin_type": null
+ },
+ "mode": "core",
+ "portrait": null,
+ "concept": "Tamane's eyes move to the door the moment someone else enters a room, and she does not look away until she has placed them.",
+ "summary": null,
+ "notes": "",
+ "wizard": {
+  "name": "Matsu Tamane",
+  "mode": "core",
+  "clan": "Lion",
+  "family": "Matsu",
+  "school": "Matsu Beastmaster School",
+  "role": "Bushi",
+  "region": null,
+  "upbringing": null,
+  "standout_ring": "void",
+  "rings": {
+   "air": 1,
+   "earth": 1,
+   "fire": 1,
+   "water": 1,
+   "void": 1
+  },
+  "ring_reassign": [],
+  "outfit_choices": {
+   "zanbato or nagae yari or nagamaki": [
+    "Zanbatō"
+   ]
+  },
+  "skills": {
+   "unarmed": 0,
+   "smithing": 1
+  },
+  "distinctions": [
+   "Famously Lucky"
+  ],
+  "adversities": [
+   "Despised in"
+  ],
+  "passions": [
+   "Pot Stirrer"
+  ],
+  "anxieties": [
+   "Eyes of Many"
+  ],
+  "pec_subjects": {
+   "despisedin": {
+    "name": "Despised in",
+    "subject": "Kyuden Kakita",
+    "who": ""
+   }
+  },
+  "bushido": {
+   "paramount": "Courage",
+   "lesser": "Courtesy",
+   "attitude": "A",
+   "skill": null
+  },
+  "answers": {
+   "giri": "Matsu Kinzo, has tasked Matsu Tamane with holding his militia intact through the winter raids, and she keeps them alive by methods he has forbidden her to use and does not ask about.",
+   "ninjo": "Tamane wants Agasha Tetsuya to recognize that she sees what he refuses to: that the raiders will not learn the forms, and that holding his men to them costs him soldiers he cannot spare, and she cannot watch him lose another one to a rule that serves his pride more than his militia.",
+   "standout_quality": "Tamane reads the moment when discipline breaks in another person and moves before they do, which saves lives and infuriates her instructors.",
+   "accomplishment": "Matsu Tamane held Agasha Tetsuya's border garrison together through two winters of raiders without losing a man to the forms, though she has never told him how.",
+   "challenge": "The militia in Agasha Tetsuya's borderlands know better than to ask Matsu Tamane for help getting around his orders, but they do it anyway, and she has to choose between the man she serves and the men she cannot watch die for his rules.",
+   "peace": "Tamane watches a raider's son learn to hold a spear properly from someone who isn't his father, and doesn't mention it to Tetsuya.",
+   "fear": "When Tamane addresses Agasha Tetsuya's officers in the garrison hall, she feels the weight of their eyes cataloguing which orders she will enforce and which she has already bent, and she cannot tell if they despise her for the bending or for the enforcement.",
+   "accoutrement": "TBD",
+   "past": "",
+   "known_for": "",
+   "known_skill": null,
+   "lord_name": "Matsu Kinzo",
+   "lord_gender": "male",
+   "prized_possession": "",
+   "group_history": "",
+   "raised_by": "",
+   "raised_skill": null,
+   "clan_relationship": {
+    "path": "A",
+    "skill": null,
+    "text": "Matsu Tamane agrees that discipline and kata are the Lion's strength, but she has stopped believing they work on men who were never taught them, and she no longer reports this disagreement up the chain."
+   },
+   "mentor": {
+    "name": "Hida Yoshikado",
+    "path": "A",
+    "granted": "Kuge Lineage",
+    "skill": "",
+    "text": "Hida Yoshikado taught her that a man can believe in kata until his garrison starves, and that watching him believe it costs more than breaking the rules to stop him.",
+    "gender": "any",
+    "association": "Crab"
+   },
+   "first_impression": "Tamane's eyes move to the door the moment someone else enters a room, and she does not look away until she has placed them.",
+   "accoutrement_name": "TBD",
+   "stress_reaction": "Tamane stops listening to what people say and starts answering what they haven't, which means the officers in the garrison never know whether she's heard them or read them, and neither do they.",
+   "relationships": "Doji Utamuro (Crane) — Doji Utamuro came to the borderlands as a trade negotiator and saw immediately that Agasha Tetsuya's rigid insistence on kata made him a poor ally; Tamane has spent three years making sure Utamuro never needs to say so to his superiors, which means she tells him things she does not tell Tetsuya, and now owes a Crane courtier more honesty than she owes the Dragon lord she actually serves.\nShinjo Yori (Unicorn) — Shinjo Yori rode into the garrison one autumn with a merchant caravan and asked Tamane, in front of the officers, whether Agasha Tetsuya's men were disciplined or just afraid; Tamane answered him honestly instead of defending her lord, and Yori has since sent word twice asking her to ride west and see how the Unicorn actually train their border scouts, which she cannot do without admitting to Tetsuya that she finds his methods lacking.",
+   "people": [
+    {
+     "name": "Doji Utamuro",
+     "gender": "male",
+     "association": "Crane",
+     "text": "Doji Utamuro came to the borderlands as a trade negotiator and saw immediately that Agasha Tetsuya's rigid insistence on kata made him a poor ally; Tamane has spent three years making sure Utamuro never needs to say so to his superiors, which means she tells him things she does not tell Tetsuya, and now owes a Crane courtier more honesty than she owes the Dragon lord she actually serves."
+    },
+    {
+     "name": "Shinjo Yori",
+     "gender": "female",
+     "association": "Unicorn",
+     "text": "Shinjo Yori rode into the garrison one autumn with a merchant caravan and asked Tamane, in front of the officers, whether Agasha Tetsuya's men were disciplined or just afraid; Tamane answered him honestly instead of defending her lord, and Yori has since sent word twice asking her to ride west and see how the Unicorn actually train their border scouts, which she cannot do without admitting to Tetsuya that she finds his methods lacking."
+    }
+   ],
+   "parent_opinion": {
+    "description": "Tamane's mother says she has never known her daughter to ask for permission, only forgiveness, and that this works until the day it does not.",
+    "skill": "smithing"
+   },
+   "heritage": "Victory against the Crane",
+   "heritage_table": "fields-of-victory-heritages",
+   "heritage_sub": "1-3 — a weapon",
+   "legacy": null,
+   "legacy_inverted": false,
+   "death": "Tamane expects to die in garrison, having finally told Tetsuya what he refused to hear, and having lost the men she kept alive by keeping silent."
+  },
+  "starting_item": "Charging Lance",
+  "campaign": "Portents & Fortunes",
+  "notes": "",
+  "gender": "female",
+  "choices": {
+   "family.ring_increase": [
+    "Fire"
+   ],
+   "school.starting_skills": [
+    "Martial Arts [Melee]",
+    "Fitness",
+    "Survival",
+    "Sentiment",
+    "Performance"
+   ],
+   "school.tech.1": [
+    "Righteous Example",
+    "Coursing March Chant"
+   ],
+   "heritage.victory-against-the-crane.0.item": [
+    "Trident"
+   ]
+  },
+  "ai_history": {
+   "standout_quality": [
+    "Tamane reads the moment when discipline breaks in another person and moves before they do, which saves lives and infuriates her instructors."
+   ],
+   "giri": [
+    "Matsu Tamane serves Agasha Tetsuya, a Dragon vassal lord in the borderlands, and he has tasked her with holding his militia to the kata when every season brings raiders who do not fight by the forms.",
+    "Agasha Tetsuya, the Dragon vassal lord of the borderlands garrison, has tasked Matsu Tamane with holding his militia intact through the winter raids, and she keeps them alive by methods he has forbidden her to use and does not ask about."
+   ],
+   "ninjo": [
+    "Tamane wants Agasha Tetsuya to recognize that she sees what he refuses to: that the raiders will not learn the forms, and that holding his men to them costs him soldiers he cannot spare, and she cannot watch him lose another one to a rule that serves his pride more than his militia."
+   ],
+   "clan_relationship": [
+    "Matsu Tamane agrees that discipline and kata are the Lion's strength, but she has stopped believing they work on men who were never taught them, and she no longer reports this disagreement up the chain."
+   ],
+   "accomplishment": [
+    "Matsu Tamane held Agasha Tetsuya's border garrison together through two winters of raiders without losing a man to the forms, though she has never told him how."
+   ],
+   "peace": [
+    "Tamane watches a raider's son learn to hold a spear properly from someone who isn't his father, and doesn't mention it to Tetsuya."
+   ],
+   "challenge": [
+    "The militia in Agasha Tetsuya's borderlands know better than to ask Matsu Tamane for help getting around his orders, but they do it anyway, and she has to choose between the man she serves and the men she cannot watch die for his rules."
+   ],
+   "fear": [
+    "When Tamane addresses Agasha Tetsuya's officers in the garrison hall, she feels the weight of their eyes cataloguing which orders she will enforce and which she has already bent, and she cannot tell if they despise her for the bending or for the enforcement."
+   ],
+   "mentor_relationship": [
+    "Hida Yoshikado taught her that a man can believe in kata until his garrison starves, and that watching him believe it costs more than breaking the rules to stop him."
+   ],
+   "first_impression": [
+    "Tamane's eyes move to the door the moment someone else enters a room, and she does not look away until she has placed them."
+   ],
+   "stress_reaction": [
+    "Tamane stops listening to what people say and starts answering what they haven't, which means the officers in the garrison never know whether she's heard them or read them, and neither do they."
+   ],
+   "relationship_person": [
+    "Doji Utamuro came to the borderlands as a trade negotiator and saw immediately that Agasha Tetsuya's rigid insistence on kata made him a poor ally; Tamane has spent three years making sure Utamuro never needs to say so to his superiors, which means she tells him things she does not tell Tetsuya, and now owes a Crane courtier more honesty than she owes the Dragon lord she actually serves.",
+    "Shinjo Yori rode into the garrison one autumn with a merchant caravan and asked Tamane, in front of the officers, whether Agasha Tetsuya's men were disciplined or just afraid; Tamane answered him honestly instead of defending her lord, and Yori has since sent word twice asking her to ride west and see how the Unicorn actually train their border scouts, which she cannot do without admitting to Tetsuya that she finds his methods lacking."
+   ],
+   "parent_opinion": [
+    "Tamane's mother says she has never known her daughter to ask for permission, only forgiveness, and that this works until the day it does not."
+   ],
+   "death": [
+    "Tamane expects to die in garrison, having finally told Tetsuya what he refused to hear, and having lost the men she kept alive by keeping silent."
+   ]
+  }
+ },
+ "twenty_questions": {
+  "template": "core",
+  "generated": false,
+  "steps": {
+   "step4": {
+    "answers": {
+     "stand_out": "Tamane reads the moment when discipline breaks in another person and moves before they do, which saves lives and infuriates her instructors.",
+     "ring": "void"
+    },
+    "picks": {}
+   },
+   "step5": {
+    "answers": {
+     "social_giri": "Matsu Kinzo, has tasked Matsu Tamane with holding his militia intact through the winter raids, and she keeps them alive by methods he has forbidden her to use and does not ask about.",
+     "lord_name": "Matsu Kinzo"
+    },
+    "picks": {}
+   },
+   "step6": {
+    "answers": {
+     "social_ninjo": "Tamane wants Agasha Tetsuya to recognize that she sees what he refuses to: that the raiders will not learn the forms, and that holding his men to them costs him soldiers he cannot spare, and she cannot watch him lose another one to a rule that serves his pride more than his militia."
+    },
+    "picks": {}
+   },
+   "step7": {
+    "answers": {
+     "clan_relations": "Matsu Tamane agrees that discipline and kata are the Lion's strength, but she has stopped believing they work on men who were never taught them, and she no longer reports this disagreement up the chain.",
+     "path": "A",
+     "skill": null
+    },
+    "picks": {}
+   },
+   "step8": {
+    "answers": {
+     "tenet_paramount": "Courage",
+     "tenet_less_significant": "Courtesy"
+    },
+    "picks": {}
+   },
+   "step9": {
+    "answers": {
+     "success": "Matsu Tamane held Agasha Tetsuya's border garrison together through two winters of raiders without losing a man to the forms, though she has never told him how."
+    },
+    "picks": {}
+   },
+   "step10": {
+    "answers": {
+     "difficulty": "The militia in Agasha Tetsuya's borderlands know better than to ask Matsu Tamane for help getting around his orders, but they do it anyway, and she has to choose between the man she serves and the men she cannot watch die for his rules."
+    },
+    "picks": {}
+   },
+   "step11": {
+    "answers": {
+     "calms": "Tamane watches a raider's son learn to hold a spear properly from someone who isn't his father, and doesn't mention it to Tetsuya."
+    },
+    "picks": {}
+   },
+   "step12": {
+    "answers": {
+     "worries": "When Tamane addresses Agasha Tetsuya's officers in the garrison hall, she feels the weight of their eyes cataloguing which orders she will enforce and which she has already bent, and she cannot tell if they despise her for the bending or for the enforcement."
+    },
+    "picks": {}
+   },
+   "step13": {
+    "answers": {
+     "most_learn": "Hida Yoshikado — Hida Yoshikado taught her that a man can believe in kata until his garrison starves, and that watching him believe it costs more than breaking the rules to stop him."
+    },
+    "picks": {}
+   },
+   "step14": {
+    "answers": {
+     "first_sight": "Tamane's eyes move to the door the moment someone else enters a room, and she does not look away until she has placed them.",
+     "accoutrement": "TBD"
+    },
+    "picks": {}
+   },
+   "step15": {
+    "answers": {
+     "stress": "Tamane stops listening to what people say and starts answering what they haven't, which means the officers in the garrison never know whether she's heard them or read them, and neither do they."
+    },
+    "picks": {}
+   },
+   "step16": {
+    "answers": {
+     "relations": "Doji Utamuro (Crane) — Doji Utamuro came to the borderlands as a trade negotiator and saw immediately that Agasha Tetsuya's rigid insistence on kata made him a poor ally; Tamane has spent three years making sure Utamuro never needs to say so to his superiors, which means she tells him things she does not tell Tetsuya, and now owes a Crane courtier more honesty than she owes the Dragon lord she actually serves.\nShinjo Yori (Unicorn) — Shinjo Yori rode into the garrison one autumn with a merchant caravan and asked Tamane, in front of the officers, whether Agasha Tetsuya's men were disciplined or just afraid; Tamane answered him honestly instead of defending her lord, and Yori has since sent word twice asking her to ride west and see how the Unicorn actually train their border scouts, which she cannot do without admitting to Tetsuya that she finds his methods lacking."
+    },
+    "picks": {}
+   },
+   "step17": {
+    "answers": {
+     "parents_pov": "Tamane's mother says she has never known her daughter to ask for permission, only forgiveness, and that this works until the day it does not."
+    },
+    "picks": {}
+   },
+   "step18": {
+    "answers": {
+     "legacy": null,
+     "legacy_inverted": false,
+     "heritage_name": "Victory against the Crane",
+     "heritage_table": "Fields of Victory Heritages",
+     "heritage_sub": "1-3 — a weapon",
+     "heritage_applied": true
+    },
+    "picks": {
+     "heritage.victory-against-the-crane.0.item": [
+      "Trident"
+     ]
+    }
+   },
+   "step20": {
+    "answers": {
+     "death": "Tamane expects to die in garrison, having finally told Tetsuya what he refused to hear, and having lost the men she kept alive by keeping silent."
+    },
+    "picks": {}
+   }
+  }
+ },
+ "tiers": [
+  {
+   "xp": 0,
+   "label": null,
+   "rank": 1,
+   "school": "Matsu Beastmaster School",
+   "foundry_id": null,
+   "rings": {
+    "air": 1,
+    "earth": 1,
+    "fire": 3,
+    "water": 3,
+    "void": 2
+   },
+   "skills": {
+    "artisan": {
+     "aesthetics": 0,
+     "composition": 0,
+     "design": 0,
+     "smithing": 1
+    },
+    "martial": {
+     "fitness": 2,
+     "melee": 1,
+     "ranged": 0,
+     "unarmed": 0,
+     "meditation": 0,
+     "tactics": 1
+    },
+    "scholar": {
+     "culture": 0,
+     "government": 0,
+     "medicine": 0,
+     "sentiment": 1,
+     "theology": 0
+    },
+    "social": {
+     "command": 1,
+     "courtesy": 0,
+     "games": 0,
+     "performance": 1
+    },
+    "trade": {
+     "commerce": 0,
+     "labor": 0,
+     "seafaring": 0,
+     "skulduggery": 0,
+     "survival": 1
+    }
+   },
+   "social": {
+    "honor": 55,
+    "glory": 52,
+    "status": 35,
+    "ninjo": "Tamane wants Agasha Tetsuya to recognize that she sees what he refuses to: that the raiders will not learn the forms, and that holding his men to them costs him soldiers he cannot spare, and she cannot watch him lose another one to a rule that serves his pride more than his militia.",
+    "giri": "Matsu Kinzo, has tasked Matsu Tamane with holding his militia intact through the winter raids, and she keeps them alive by methods he has forbidden her to use and does not ask about.",
+    "bushido_tenets": {
+     "paramount": "Courage",
+     "less_significant": "Courtesy"
+    }
+   },
+   "derived": {
+    "endurance": 8,
+    "composure": 8,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": 2
+   },
+   "money": {
+    "zeni": 0,
+    "koku": 5,
+    "bu": 0
+   },
+   "techniques": [
+    {
+     "name": "Warrior's Resolve"
+    },
+    {
+     "name": "Righteous Example"
+    },
+    {
+     "name": "Coursing March Chant"
+    },
+    {
+     "name": "One with the Pride"
+    }
+   ],
+   "peculiarities": [
+    {
+     "name": "Famously Lucky"
+    },
+    {
+     "name": "Despised in Kyuden Kakita",
+     "custom": true,
+     "subject": "Kyuden Kakita",
+     "text": "You are infamous among the residents of a particular city (chosen with the GM). People within this city resist cooperating with you and may actively hinder your activities within the city. When performing a check to gain assistance or cooperation from a resident of the city that despises you (such as a Courtesy [Water] check to learn the latest sake house rumors or a Commerce [Water] check to purchase goods within the city), you must choose and reroll two dice showing (op) or (st) results. After resolving the check, if you failed, you regain 1 Void point."
+    },
+    {
+     "name": "Pot Stirrer"
+    },
+    {
+     "name": "Eyes of Many"
+    },
+    {
+     "name": "Kuge Lineage"
+    }
+   ],
+   "titles": [],
+   "bonds": [],
+   "signature_scrolls": [],
+   "gear": [
+    {
+     "name": "Charging Lance"
+    },
+    {
+     "name": "Ashigaru Armor"
+    },
+    {
+     "name": "Traveling Clothes"
+    },
+    {
+     "name": "daishō (katana and wakizashi)",
+     "custom": true,
+     "text": "From the Matsu Beastmaster starting outfit"
+    },
+    {
+     "name": "Zanbatō"
+    },
+    {
+     "name": "Yoroi-Doshi"
+    },
+    {
+     "name": "1-2 bonded animals",
+     "custom": true,
+     "text": "From the Matsu Beastmaster starting outfit"
+    },
+    {
+     "name": "Traveling pack"
+    },
+    {
+     "name": "TBD",
+     "custom": true,
+     "text": "TBD",
+     "accoutrement": true
+    },
+    {
+     "name": "Trident",
+     "text": "battlefield heirloom"
+    }
+   ],
+   "advancements": []
+  }
+ ]
+}
