@@ -88,7 +88,8 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Tonbo Unkei, her daimyō, wants her to present the Dragonfly clan as an independent entity, not merely a vassal of the Dragon clan."
+     "social_giri": "Tonbo Unkei, her daimyō, wants her to present the Dragonfly clan as an independent entity, not merely a vassal of the Dragon clan.",
+     "lord_name": "Tonbo Unkei"
     },
     "picks": {}
    },
@@ -116,7 +117,7 @@
    },
    "step9": {
     "answers": {
-     "success": "Visions of prosperity comingled with ruin came to her during negotiations at Still Water Temple. She urged the negotiator to accept the treaty, but to prepare contingencies. When mercenaries attacked, the clan was prepared; but as a result her visions are sometimes viewed with more certainty than she is comfortable ascribing to them."
+     "success": "Visions of prosperity mingled with ruin came to her during negotiations at the Mountain Song Temple. She urged the negotiator to accept the treaty, but to prepare contingencies. When mercenaries attacked, the clan was prepared; as a result her visions are sometimes viewed with more certainty than she is comfortable ascribing to them."
     },
     "picks": {
      "distinction": [
@@ -136,7 +137,7 @@
    },
    "step11": {
     "answers": {
-     "calms": "There is nothing quite like the practice of rock gardening to help center yourself."
+     "calms": "Asahi rakes the temple's rock garden before anyone is awake; it is the one hour her visions leave her alone."
     },
     "picks": {
      "passion": [
@@ -178,7 +179,7 @@
    },
    "step16": {
     "answers": {
-     "relations": "Mirumoto Takeshi: Dragon clan liason; he is Asahi's main contact, but it's always a strictly business relationship.\n\nYogo Ren: A Scorpion clan courtier who passes through often; they are on friendly terms.\n\nStill Water Temple (monks): She has a delicate relationship with them; her reputation is good, but she is not a monk and she tries to maintain a formal distinction."
+     "relations": "Mirumoto Takeshi: Dragon clan liason; he is Asahi's main contact, but it's always a strictly business relationship.\n\nYogo Ren: A Scorpion clan courtier who passes through often; they are on friendly terms.\n\nYohori, Abbot of the Mountain Song Temple: She has a delicate relationship with his monks; her reputation there is good, but she is not a monk and she keeps a formal distance."
     },
     "picks": {
      "item": [
@@ -351,14 +352,15 @@
    ],
    "peculiarities": [
     {
-     "name": "Hero of [Village]",
+     "name": "Hero of the Mountain Song Temple",
      "xp_used": 0,
      "xp_cost": 3,
      "in_curriculum": false,
      "bought_at_rank": 0,
      "kind": "distinction",
      "ring": "fire",
-     "types": "Fame, Interpersonal"
+     "types": "Fame, Interpersonal",
+     "subject": "the Mountain Song Temple"
     },
     {
      "name": "Lost Memories",

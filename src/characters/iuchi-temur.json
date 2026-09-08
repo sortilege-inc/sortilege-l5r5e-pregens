@@ -58,13 +58,13 @@
    "skill": null
   },
   "answers": {
-   "giri": "Temur serves his Unicorn daimyō by reporting on the Dragon's affliction, but he treats every sick person he encounters, which means his reports arrive incomplete and his daimyō cannot trust them entirely.",
-   "ninjo": "Temur writes letters to his beloved that he never sends, each one asking whether she has found someone else to care for her while he remains with the Dragon.",
+   "giri": "Temur serves Iuchi Kensaburô by reporting on the Dragon's affliction, but he treats every sick person he meets, so his reports arrive incomplete and Kensaburô cannot trust them entirely.",
+   "ninjo": "Temur wants to go home to Shinjo Sarangerel before she stops waiting, and has not sent the letters that would ask her to.",
    "standout_quality": "Temur compounds medicines for the other students' minor ailments without being asked, which means he arrives late to his own practice and has twice failed to complete assignments on time.",
    "accomplishment": "Temur stopped the fever in the Dragon's garrison by brewing a compound from plants he had never seen before, working through three nights without sleeping, and the soldiers who had been dying began to recover.",
    "challenge": "Temur brews a remedy he is certain will work, doses a Dragon soldier with it, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but by then he has already sent word to his daimyō that the compound is proven.",
    "peace": "Temur sits in the theater gallery with a handful of other watchers, following the onnagata's careful gestures through a love scene, and for two hours he does not think about whether his letters should have been sent.",
-   "fear": "Temur doses a patient with a compound he is certain will work, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but the doubt arrives too late, because he has already sent word to his daimyō that the remedy is proven.",
+   "fear": "Temur fears the day a Dragon officer asks him, in front of his own daimyō's courier, which of his compounds are Unicorn work.",
    "accoutrement": "He wears a medicine pouch sewn from Dragon silk, a gift from the garrison commander whose fever he broke, and he has never opened it to check whether the contents are truly his compounds or something the Dragon packed inside.",
    "past": "",
    "known_for": "",
@@ -85,7 +85,7 @@
     "path": "B",
     "granted": "Lost Name",
     "skill": "commerce",
-    "text": "",
+    "text": "Ikoma Kawa kept the Unicorn garrison's accounts for the Lion and taught Temur to price a remedy so the Dragon would pay for it. She never used his given name in three years, and by the end neither did anyone else at the garrison.",
     "gender": "female",
     "association": "Lion"
    },
@@ -95,7 +95,7 @@
    "people": [
     {
      "name": "Asako Buncho",
-     "gender": "male",
+     "gender": "female",
      "association": "Phoenix",
      "text": "Asako Buncho tends the Phoenix shrine near the Dragon garrison, and Temur brings her his failed compounds—the batches that curdled or wouldn't set—because she burns them properly instead of letting them seep into the ground, but he has never asked her what she does with the ash."
     },
@@ -118,7 +118,7 @@
   "starting_item": "Musical Instrument",
   "campaign": "",
   "notes": "",
-  "gender": "any",
+  "gender": "male",
   "choices": {
    "family.ring_increase": [
     "Air"
@@ -180,6 +180,13 @@
    "death": [
     "Temur dies tending a patient he knows is poisoned, compounding remedies against a corruption his medicines cannot touch, and never sends word to his daimyō that the threat has already crossed into Unicorn lands."
    ]
+  },
+  "pec_subjects": {
+   "karmictie": {
+    "name": "Karmic Tie",
+    "subject": "Shinjo Sarangerel",
+    "who": ""
+   }
   }
  },
  "twenty_questions": {
@@ -195,14 +202,14 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "Temur serves his Unicorn daimyō by reporting on the Dragon's affliction, but he treats every sick person he encounters, which means his reports arrive incomplete and his daimyō cannot trust them entirely.",
+     "social_giri": "Temur serves Iuchi Kensaburô by reporting on the Dragon's affliction, but he treats every sick person he meets, so his reports arrive incomplete and Kensaburô cannot trust them entirely.",
      "lord_name": "Iuchi Kensaburô"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Temur writes letters to his beloved that he never sends, each one asking whether she has found someone else to care for her while he remains with the Dragon."
+     "social_ninjo": "Temur wants to go home to Shinjo Sarangerel before she stops waiting, and has not sent the letters that would ask her to."
     },
     "picks": {}
    },
@@ -240,13 +247,13 @@
    },
    "step12": {
     "answers": {
-     "worries": "Temur doses a patient with a compound he is certain will work, and only after the man recovers does he wonder whether the fever broke from the medicine or despite it—but the doubt arrives too late, because he has already sent word to his daimyō that the remedy is proven."
+     "worries": "Temur fears the day a Dragon officer asks him, in front of his own daimyō's courier, which of his compounds are Unicorn work."
     },
     "picks": {}
    },
    "step13": {
     "answers": {
-     "most_learn": "Ikoma Kawa"
+     "most_learn": "Ikoma Kawa — Ikoma Kawa kept the Unicorn garrison's accounts for the Lion and taught Temur to price a remedy so the Dragon would pay for it. She never used his given name in three years, and by the end neither did anyone else at the garrison."
     },
     "picks": {}
    },
@@ -348,8 +355,8 @@
     "honor": 50,
     "glory": 48,
     "status": 27,
-    "ninjo": "Temur writes letters to his beloved that he never sends, each one asking whether she has found someone else to care for her while he remains with the Dragon.",
-    "giri": "Temur serves his Unicorn daimyō by reporting on the Dragon's affliction, but he treats every sick person he encounters, which means his reports arrive incomplete and his daimyō cannot trust them entirely.",
+    "ninjo": "Temur wants to go home to Shinjo Sarangerel before she stops waiting, and has not sent the letters that would ask her to.",
+    "giri": "Temur serves Iuchi Kensaburô by reporting on the Dragon's affliction, but he treats every sick person he meets, so his reports arrive incomplete and Kensaburô cannot trust them entirely.",
     "bushido_tenets": {
      "paramount": "Compassion",
      "less_significant": "Courtesy"
@@ -401,7 +408,8 @@
      "name": "Lost Name"
     },
     {
-     "name": "Karmic Tie"
+     "name": "Karmic Tie (Shinjo Sarangerel)",
+     "subject": "Shinjo Sarangerel"
     }
    ],
    "titles": [],
@@ -410,10 +418,6 @@
    "gear": [
     {
      "name": "Musical Instrument"
-    },
-    {
-     "name": "Horse",
-     "custom": true
     },
     {
      "name": "Traveling Clothes"

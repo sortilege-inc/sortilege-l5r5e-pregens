@@ -59,7 +59,7 @@
   },
   "answers": {
    "giri": "",
-   "ninjo": "Jinrai tells himself he has left the ashigaru life behind, but he still drills footwork every morning before the farmers wake, and last month he spent two days teaching a village headman's son how to hold a spear.",
+   "ninjo": "Jinrai wants to set the teaching down and hand it to someone who will not need him, and no one has come.",
    "standout_quality": "He preaches forgiveness to farmers and merchants while his jaw tightens whenever a samurai enters the room, and he knows they can see it.",
    "accomplishment": "Jinrai converted a bandit who had burned two granaries, and now that man tends crops in a village near Beiden while Jinrai takes a longer road to avoid the merchant who owned them.",
    "challenge": "When he decides a farmer needs to learn spearwork or a village headman's judgment is wrong, Jinrai teaches or corrects them regardless of what he promised to do that day.",
@@ -67,7 +67,7 @@
    "fear": "When Jinrai performs the evening sutras in an empty temple, he cannot shake the certainty that his dead grandmother—who bore a samurai's bastard son in shame—watches him teach forgiveness to the very class that destroyed her, waiting to see if he will finally break.",
    "accoutrement": "",
    "past": "He trained ashigaru recruits in the rice paddies outside Beiden, and three of them died in his first real command because he gave the order to hold a bridge too long.",
-   "known_for": "In a village near Beiden, Jinrai converted a bandit who had burned two granaries, and now the bandit works the fields while Jinrai avoids the merchant whose grain stores those were.",
+   "known_for": "In the villages below Beiden Jinrai is known as the monk who will teach a farmer's son to hold a spear, and will not say why.",
    "known_skill": null,
    "lord_name": "",
    "lord_gender": "any",
@@ -85,7 +85,7 @@
     "path": "B",
     "granted": "Overconfidence in Spiritual Sensitivity",
     "skill": "melee",
-    "text": "",
+    "text": "Kakita Tanomo drilled the ashigaru at Beiden with a spear butt and a sutra, and told them the kami stood behind every man who held the line. Jinrai held the line. Three of his did not.",
     "gender": "female",
     "association": "Crane"
    },
@@ -124,7 +124,7 @@
   "starting_item": "Gada",
   "campaign": "",
   "notes": "",
-  "gender": "any",
+  "gender": "male",
   "choices": {
    "upbringing.ring_increase": [
     "Fire"
@@ -224,7 +224,7 @@
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Jinrai tells himself he has left the ashigaru life behind, but he still drills footwork every morning before the farmers wake, and last month he spent two days teaching a village headman's son how to hold a spear."
+     "social_ninjo": "Jinrai wants to set the teaching down and hand it to someone who will not need him, and no one has come."
     },
     "picks": {}
    },
@@ -267,7 +267,7 @@
    },
    "step13": {
     "answers": {
-     "most_learn": "Kakita Tanomo"
+     "most_learn": "Kakita Tanomo — Kakita Tanomo drilled the ashigaru at Beiden with a spear butt and a sutra, and told them the kami stood behind every man who held the line. Jinrai held the line. Three of his did not."
     },
     "picks": {}
    },
@@ -368,7 +368,7 @@
     "honor": 50,
     "glory": 34,
     "status": 29,
-    "ninjo": "Jinrai tells himself he has left the ashigaru life behind, but he still drills footwork every morning before the farmers wake, and last month he spent two days teaching a village headman's son how to hold a spear.",
+    "ninjo": "Jinrai wants to set the teaching down and hand it to someone who will not need him, and no one has come.",
     "giri": "",
     "bushido_tenets": {
      "paramount": "Sincerity",

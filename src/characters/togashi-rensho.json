@@ -80,13 +80,14 @@
    },
    "step5": {
     "answers": {
-     "social_giri": "To guide seekers along the path to enlightenment for the next ten years of wandering, without imposing my own understanding upon them."
+     "social_giri": "Renshō is to guide seekers along the path for ten years of wandering without imposing his own understanding on them.",
+     "lord_name": "Mirumoto Kenshin"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "To find one moment of absolute certainty—to know beyond doubt that he has grasped true understanding, not just another comforting illusion."
+     "social_ninjo": "Renshō wants one moment of certainty: to know he has grasped true understanding and not another comforting illusion."
     },
     "picks": {}
    },
@@ -129,7 +130,7 @@
    },
    "step11": {
     "answers": {
-     "calms": "Pushing himself, climbing rock faces without rope, exhilirates him and makes him feel alive."
+     "calms": "Pushing himself, climbing rock faces without rope, exhilarates him and makes him feel alive."
     },
     "picks": {
      "passion": [
@@ -262,8 +263,8 @@
     "honor": 50,
     "glory": 48,
     "status": 30,
-    "ninjo": "To find one moment of absolute certainty—to know beyond doubt that he has grasped true understanding, not just another comforting illusion.",
-    "giri": "To guide seekers along the path to enlightenment for the next ten years of wandering, without imposing my own understanding upon them.",
+    "ninjo": "Renshō wants one moment of certainty: to know he has grasped true understanding and not another comforting illusion.",
+    "giri": "Renshō is to guide seekers along the path for ten years of wandering without imposing his own understanding on them.",
     "bushido_tenets": {
      "paramount": "Sincerity",
      "less_significant": "Duty and Loyalty"

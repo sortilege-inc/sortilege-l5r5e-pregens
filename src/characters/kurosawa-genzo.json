@@ -87,7 +87,7 @@
     "path": "B",
     "granted": "Animal Signs",
     "skill": "ranged",
-    "text": "",
+    "text": "Mirumoto Yoshitô taught Genzō to read a river by its birds before he taught him to draw, and never let him shoot at anything he had not first named.",
     "gender": "male",
     "association": "Dragon"
    },
@@ -126,7 +126,7 @@
   "starting_item": "Sake Cup",
   "campaign": "",
   "notes": "",
-  "gender": "any",
+  "gender": "male",
   "choices": {
    "upbringing.ring_increase": [
     "Water"
@@ -274,7 +274,7 @@
    },
    "step13": {
     "answers": {
-     "most_learn": "Mirumoto Yoshitô"
+     "most_learn": "Mirumoto Yoshitô — Mirumoto Yoshitô taught Genzō to read a river by its birds before he taught him to draw, and never let him shoot at anything he had not first named."
     },
     "picks": {}
    },

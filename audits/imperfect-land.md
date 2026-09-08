@@ -16,6 +16,8 @@ and Dragonfly.
 
 ---
 
+**State at 2026-09-08:** D1–D6, D8–D10, D12, D17 approved and applied (D6 as proposed: Hero of the Mountain Song Temple after D12; Shinjo Sarangerel). D9 texts under review. Open: D7 (leave), D11, D13–D16, D18–D23.
+
 ## A. Errors
 
 **D1 — Doji Sayaka's answers are in the second person**, alone in the archive: "You must dismantle…",

@@ -58,9 +58,9 @@
    "skill": "skulduggery"
   },
   "answers": {
-   "giri": "You must dismantle the Perfect Land Sect's influence before it unsettles the Crane, using honeyed words where others would wield steel, even as the mask you wear grows indistinguishable from your face.",
-   "ninjo": "You hunger to be known truly by another soul, even once, before you become merely the perfect performance that greets death's stage.",
-   "standout_quality": "You mastered the art of seeming ordinary, dissolving into crowds as easily as water takes the shape of any vessel, earning your Water ring's advancement through countless missions where invisibility proved more valuable than any blade.",
+   "giri": "Sayaka serves Daidoji Ikki, who has set her to dismantle the Perfect Land Sect's influence before it unsettles the Crane, by words where others would use steel.",
+   "ninjo": "Sayaka wants to be known truly by one other person, once, before the performance is all that is left of her.",
+   "standout_quality": "Sayaka can seem ordinary. She has walked through crowds as a laborer, a servant and a pilgrim, and been looked at by no one.",
    "accomplishment": "She identified a Perfect Land Sect recruiter operating from within the Doji household by watching how his eyes moved when servants spoke of the harvest, and reported him to her daimyō before he could sway anyone to the sect's cause.",
    "challenge": "During her briefings with the daimyō, Sayaka sometimes cannot recall whether she witnessed the sect recruiter's movements herself or only heard them described, and must ask carefully neutral questions to reconstruct what she actually saw.",
    "peace": "In the dusty archive rooms of the Doji household, she reconstructs the sect recruiter's movements by cross-referencing old ledgers and servant records, each verified detail settling the fog between what she witnessed and what she was told, until the past becomes solid ground beneath her.",
@@ -78,7 +78,7 @@
    "clan_relationship": {
     "path": "B",
     "skill": "skulduggery",
-    "text": "# Clan Relationship: Doji\n\nYou find yourself drawn to a distant Doji cousin whose genuine warmth makes the performance exhausting rather than natural, and you must choose whether the Crane's demand for perfect grace permits you to lower your mask, even fractionally, with one of your own blood."
+    "text": "Sayaka is drawn to a distant Doji cousin whose warmth makes the performance exhausting, and has not decided whether the Crane's demand for perfect grace lets her lower the mask, even a little, with one of her own blood."
    },
    "mentor": {
     "name": "Yogo Morishige",
@@ -118,7 +118,7 @@
   "starting_item": "Omamori (Boon of Hotei)",
   "campaign": "",
   "notes": "",
-  "gender": "any",
+  "gender": "female",
   "choices": {
    "family.ring_increase": [
     "Water"
@@ -180,27 +180,27 @@
   "steps": {
    "step4": {
     "answers": {
-     "stand_out": "You mastered the art of seeming ordinary, dissolving into crowds as easily as water takes the shape of any vessel, earning your Water ring's advancement through countless missions where invisibility proved more valuable than any blade.",
+     "stand_out": "Sayaka can seem ordinary. She has walked through crowds as a laborer, a servant and a pilgrim, and been looked at by no one.",
      "ring": "water"
     },
     "picks": {}
    },
    "step5": {
     "answers": {
-     "social_giri": "You must dismantle the Perfect Land Sect's influence before it unsettles the Crane, using honeyed words where others would wield steel, even as the mask you wear grows indistinguishable from your face.",
+     "social_giri": "Sayaka serves Daidoji Ikki, who has set her to dismantle the Perfect Land Sect's influence before it unsettles the Crane, by words where others would use steel.",
      "lord_name": "Daidoji Ikki"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "You hunger to be known truly by another soul, even once, before you become merely the perfect performance that greets death's stage."
+     "social_ninjo": "Sayaka wants to be known truly by one other person, once, before the performance is all that is left of her."
     },
     "picks": {}
    },
    "step7": {
     "answers": {
-     "clan_relations": "# Clan Relationship: Doji\n\nYou find yourself drawn to a distant Doji cousin whose genuine warmth makes the performance exhausting rather than natural, and you must choose whether the Crane's demand for perfect grace permits you to lower your mask, even fractionally, with one of your own blood.",
+     "clan_relations": "Sayaka is drawn to a distant Doji cousin whose warmth makes the performance exhausting, and has not decided whether the Crane's demand for perfect grace lets her lower the mask, even a little, with one of her own blood.",
      "path": "B",
      "skill": "skulduggery"
     },
@@ -341,8 +341,8 @@
     "honor": 30,
     "glory": 44,
     "status": 40,
-    "ninjo": "You hunger to be known truly by another soul, even once, before you become merely the perfect performance that greets death's stage.",
-    "giri": "You must dismantle the Perfect Land Sect's influence before it unsettles the Crane, using honeyed words where others would wield steel, even as the mask you wear grows indistinguishable from your face.",
+    "ninjo": "Sayaka wants to be known truly by one other person, once, before the performance is all that is left of her.",
+    "giri": "Sayaka serves Daidoji Ikki, who has set her to dismantle the Perfect Land Sect's influence before it unsettles the Crane, by words where others would use steel.",
     "bushido_tenets": {
      "paramount": "Duty and Loyalty",
      "less_significant": "Honor"

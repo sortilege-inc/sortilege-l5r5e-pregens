@@ -58,7 +58,7 @@
   },
   "answers": {
    "giri": "Chisato must report any deviation from orthodox doctrine to the Elemental Master of Fire, even if silence would spare her parents from scrutiny.",
-   "ninjo": "Chisato fears that if she admits her doubt about the Tao, even to herself, her parents will have unknowingly raised a heretic.",
+   "ninjo": "Chisato wants her doubt about the Tao answered by someone else before she has to speak it, so that her parents never learn what they raised.",
    "standout_quality": "When Chisato purified the tainted shrine by calling down divine flame, she glimpsed her own capacity for error in the ashes—a doubt she has not yet allowed herself to speak aloud.",
    "accomplishment": "She surrounded herself in flame at the tainted shrine and emerged relatively unscathed; the scar across her shoulder is from the falling log, not the fire.",
    "challenge": "Isawa Chisato speaks so forcefully about what she knows to be true that she misses when someone is trying to tell her she has frightened them, or hurt them, or that they need her to listen instead of correct.",
@@ -68,7 +68,7 @@
    "past": "",
    "known_for": "",
    "known_skill": null,
-   "lord_name": "",
+   "lord_name": "the Elemental Master of Fire",
    "lord_gender": "any",
    "prized_possession": "",
    "group_history": "",
@@ -100,7 +100,7 @@
     },
     {
      "name": "Asako Satoru",
-     "gender": "female",
+     "gender": "male",
      "association": "Phoenix",
      "text": "Asako Satoru listens to her theological arguments without interrupting, and Chisato has begun checking whether he actually agrees with her or is simply waiting for her to finish."
     }
@@ -203,13 +203,13 @@
    "step5": {
     "answers": {
      "social_giri": "Chisato must report any deviation from orthodox doctrine to the Elemental Master of Fire, even if silence would spare her parents from scrutiny.",
-     "lord_name": ""
+     "lord_name": "the Elemental Master of Fire"
     },
     "picks": {}
    },
    "step6": {
     "answers": {
-     "social_ninjo": "Chisato fears that if she admits her doubt about the Tao, even to herself, her parents will have unknowingly raised a heretic."
+     "social_ninjo": "Chisato wants her doubt about the Tao answered by someone else before she has to speak it, so that her parents never learn what they raised."
     },
     "picks": {}
    },
@@ -355,7 +355,7 @@
     "honor": 60,
     "glory": 52,
     "status": 30,
-    "ninjo": "Chisato fears that if she admits her doubt about the Tao, even to herself, her parents will have unknowingly raised a heretic.",
+    "ninjo": "Chisato wants her doubt about the Tao answered by someone else before she has to speak it, so that her parents never learn what they raised.",
     "giri": "Chisato must report any deviation from orthodox doctrine to the Elemental Master of Fire, even if silence would spare her parents from scrutiny.",
     "bushido_tenets": {
      "paramount": "Righteousness",
